@@ -199,3 +199,8 @@ Version 1.10.0 expands the class-note context cards with deeper explanations, me
 ## v1.11.0 UI cleanup
 
 This version simplifies the main hub and focused session flow: the brand block is blended into the background, route cards are compact status/action cards, the admin-style filter panel is hidden, and multiple-choice cards now automatically move to Mastered or Revisit based on the selected answer.
+
+
+## v1.12.0 Learning mode selector
+
+The hub now uses a single active learning mode, multi-select unit/sub-unit filtering, one entry button, sub-unit Class Notes buttons, and unit-specific visual graphics.

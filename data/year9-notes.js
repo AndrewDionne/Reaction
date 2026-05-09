@@ -1,5 +1,5 @@
 window.YEAR9_NOTES = {
-  "version": "1.10.0",
+  "version": "1.12.0",
   "title": "Year 9 Science Enhanced Class Notes",
   "notes": [
     {

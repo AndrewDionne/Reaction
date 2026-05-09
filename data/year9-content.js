@@ -1,5 +1,5 @@
 window.YEAR9_CONTENT = {
-  "version": "1.9.0",
+  "version": "1.12.0",
   "title": "Year 9 Science End-of-Year Study",
   "subtitle": "Expanded Year 9 study content with learning objectives, source-fidelity diagrams and class-note study context",
   "units": [

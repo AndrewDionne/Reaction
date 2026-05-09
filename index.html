@@ -8,7 +8,7 @@
   <title>Reaction · Year 9 Science Study</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
   <link rel="manifest" href="manifest.webmanifest" />
-  <link rel="stylesheet" href="styles.css?v=1.11.1" />
+  <link rel="stylesheet" href="styles.css?v=1.12.0" />
 </head>
 <body>
   <canvas id="burstCanvas" aria-hidden="true"></canvas>
@@ -42,33 +42,38 @@
       <section class="journey-panel panel">
         <div class="section-heading-row compact-heading">
           <div>
-            <p class="eyebrow">Choose your route</p>
-            <h2>Pick what you want to practise.</h2>
+            <p class="eyebrow">Learning mode</p>
+            <h2>Choose how you want to learn.</h2>
           </div>
+          <p class="journey-hint">Choose one mode, then select one or more units or sub-units below.</p>
         </div>
 
-        <div class="journey-grid journey-grid-three">
-          <button class="journey-card status-route route-card-button" data-start-mode="practice" type="button">
+        <div class="journey-grid journey-grid-three" role="radiogroup" aria-label="Learning mode">
+          <button class="journey-card status-route route-card-button active" data-mode-select="practice" type="button" role="radio" aria-checked="true">
             <span class="journey-icon">↻</span>
             <strong>Revision journey</strong>
-            <small>Work through selected revision cards and sort them as you go.</small>
+            <small>Work through selected cards and sort them as you go.</small>
             <em><span id="journeyCount">0 / 0 sorted</span></em>
-            <span class="route-action-text">Start revision</span>
           </button>
-          <button class="journey-card revisit status-route route-card-button" data-start-mode="revisit" type="button">
+          <button class="journey-card revisit status-route route-card-button" data-mode-select="revisit" type="button" role="radio" aria-checked="false">
             <span class="journey-icon">⟳</span>
             <strong>Revisit</strong>
-            <small>Cards you nearly know and want to come back to.</small>
-            <em><span id="revisitStat">0</span> cards</em>
-            <span class="route-action-text">Open queue</span>
+            <small>Practise cards you nearly know and want to come back to.</small>
+            <em><span id="revisitStat">0</span> ready</em>
           </button>
-          <button class="journey-card test status-route route-card-button" data-start-mode="test" type="button">
+          <button class="journey-card test status-route route-card-button" data-mode-select="test" type="button" role="radio" aria-checked="false">
             <span class="journey-icon">✓</span>
             <strong>Mastery check</strong>
-            <small>Test only the cards you have already mastered.</small>
+            <small>Test your knowledge using cards you have already mastered.</small>
             <em><span id="masteredStat">0</span> ready</em>
-            <span class="route-action-text">Test knowledge</span>
           </button>
+        </div>
+        <div class="journey-entry-row">
+          <div>
+            <strong id="selectionSummary">All units selected</strong>
+            <span id="selectionDetail">Use the unit cards below to narrow the journey.</span>
+          </div>
+          <button id="routeEntryButton" class="primary-button route-entry-button" type="button">Start revision</button>
         </div>
       </section>
 
@@ -94,17 +99,7 @@
       </div>
 
       <section class="dashboard-grid" id="unitDashboard" aria-label="Unit status cards"></section>
-
-      <section class="notes-panel panel">
-        <div class="section-heading-row">
-          <div>
-            <p class="eyebrow">Class notes</p>
-            <h2>Review class notes by subject.</h2>
-          </div>
-          <p class="journey-hint">Use these when a question needs more context than the answer alone.</p>
-        </div>
-        <div class="notes-grid" id="notesDashboard" aria-label="Class notes"></div>
-      </section>
+    </section>
 
     <section id="sessionView" class="session-view hidden">
       <section class="session-header panel">
@@ -125,8 +120,8 @@
     </section>
   </main>
 
-  <script src="data/year9-content.js?v=1.11.1"></script>
-  <script src="data/year9-notes.js?v=1.11.1"></script>
-  <script src="app.js?v=1.11.1"></script>
+  <script src="data/year9-content.js?v=1.12.0"></script>
+  <script src="data/year9-notes.js?v=1.12.0"></script>
+  <script src="app.js?v=1.12.0"></script>
 </body>
 </html>

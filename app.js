@@ -26,6 +26,9 @@
     shuffleButton: byId("shuffleButton"),
     unitDashboard: byId("unitDashboard"),
     notesDashboard: byId("notesDashboard"),
+    routeEntryButton: byId("routeEntryButton"),
+    selectionSummary: byId("selectionSummary"),
+    selectionDetail: byId("selectionDetail"),
     studyPanel: byId("studyPanel"),
     resultPanel: byId("resultPanel"),
     totalCardCount: byId("totalCardCount"),
@@ -78,6 +81,9 @@
 
   const state = {
     mode: "practice",
+    selectedMode: "practice",
+    selectedUnits: new Set(),
+    selectedObjectives: new Set(),
     deck: [],
     index: 0,
     revealed: false,
@@ -165,6 +171,35 @@
 
   function unitTitle(unitId) {
     return units.find((unit) => unit.id === unitId)?.title || unitId;
+  }
+
+  const unitGraphicMap = {
+    "9A": "assets/brand/unit-9A-dna.webp",
+    "9B": "assets/brand/unit-9B-plant.webp",
+    "9E": "assets/brand/unit-9E-crystal.webp",
+    "9F": "assets/brand/unit-9F-reaction.webp",
+    "9I": "assets/brand/unit-9I-forces.webp",
+    "9J": "assets/brand/unit-9J-magnet.webp",
+  };
+
+  function unitGraphic(unitId) {
+    return unitGraphicMap[unitId] || "";
+  }
+
+  function modeEntryText(mode = state.selectedMode) {
+    if (mode === "revisit") return "Revisit your studies";
+    if (mode === "test") return "Test your knowledge";
+    return "Start revision";
+  }
+
+  function modeReadyCount(mode = state.selectedMode) {
+    return cardsForMode(mode).length;
+  }
+
+  function modeLabel(mode = state.selectedMode) {
+    if (mode === "revisit") return "Revisit";
+    if (mode === "test") return "Mastery check";
+    return "Revision journey";
   }
 
   function objectiveMeta(objectiveId) {
@@ -281,19 +316,25 @@
 
   function activeFilters() {
     return {
-      unit: els.unitFilter?.value || "all",
-      objective: els.objectiveFilter?.value || "all",
+      units: new Set(state.selectedUnits || []),
+      objectives: new Set(state.selectedObjectives || []),
       type: els.typeFilter?.value || "all",
       level: els.levelFilter?.value || "all",
       search: (els.searchBox?.value || "").trim().toLowerCase(),
     };
   }
 
+  function selectionMatchesCard(card, filters = activeFilters()) {
+    const unitsSelected = filters.units && filters.units.size > 0;
+    const objectivesSelected = filters.objectives && filters.objectives.size > 0;
+    if (!unitsSelected && !objectivesSelected) return true;
+    return (unitsSelected && filters.units.has(card.unit)) || (objectivesSelected && filters.objectives.has(card.learningObjective));
+  }
+
   function baseFilteredCards() {
     const f = activeFilters();
     return cards.filter((card) => {
-      if (f.unit !== "all" && card.unit !== f.unit) return false;
-      if (f.objective !== "all" && card.learningObjective !== f.objective) return false;
+      if (!selectionMatchesCard(card, f)) return false;
       if (f.type !== "all" && card.type !== f.type) return false;
       if (f.level !== "all" && String(card.level) !== f.level) return false;
       if (f.search) {
@@ -312,6 +353,24 @@
       }
       return true;
     });
+  }
+
+  function selectedObjectivesForUnit(unitId) {
+    return learningObjectives.filter((objective) => objective.unit === unitId && state.selectedObjectives.has(objective.id));
+  }
+
+  function toggleUnitSelection(unitId) {
+    if (state.selectedUnits.has(unitId)) state.selectedUnits.delete(unitId);
+    else state.selectedUnits.add(unitId);
+    renderStats();
+    renderDashboard();
+  }
+
+  function toggleObjectiveSelection(objectiveId) {
+    if (state.selectedObjectives.has(objectiveId)) state.selectedObjectives.delete(objectiveId);
+    else state.selectedObjectives.add(objectiveId);
+    renderStats();
+    renderDashboard();
   }
 
   function cardsForMode(mode = state.mode) {
@@ -339,13 +398,11 @@
     const types = unique(cards.map((card) => card.type));
     if (els.typeFilter) els.typeFilter.innerHTML = `<option value="all">All card types</option>` + types.map((type) => `<option value="${escapeHtml(type)}">${escapeHtml(type)}</option>`).join("");
 
-    [els.unitFilter, els.objectiveFilter, els.typeFilter, els.levelFilter, els.searchBox].filter(Boolean).forEach((el) => {
+    [els.typeFilter, els.levelFilter, els.searchBox].filter(Boolean).forEach((el) => {
       el.addEventListener("input", () => {
-        if (el === els.unitFilter) updateObjectiveOptions();
         if (els.sessionView.classList.contains("hidden")) {
           renderStats();
           renderDashboard();
-          renderNotesDashboard();
         } else {
           rebuildDeck(true);
           renderSession();
@@ -385,7 +442,6 @@
     state.selectedChoice = null;
     renderStats();
     renderDashboard();
-    renderNotesDashboard();
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
@@ -396,16 +452,35 @@
 
     const selectedCards = baseFilteredCards();
     const sortedSelected = selectedCards.filter((card) => mastered.has(card.id) || revisit.has(card.id) || study.has(card.id)).length;
+    const ready = modeReadyCount(state.selectedMode);
     if (els.totalCardCount) els.totalCardCount.textContent = cards.length;
     if (els.journeyCount) els.journeyCount.textContent = `${sortedSelected} / ${selectedCards.length} sorted`;
     if (els.xpStat) els.xpStat.textContent = state.progress.xp || 0;
     if (els.streakStat) els.streakStat.textContent = state.progress.streak || 0;
-    if (els.masteredStat) els.masteredStat.textContent = mastered.size;
+    if (els.masteredStat) els.masteredStat.textContent = cardsForMode("test").length;
     if (els.hubMasteredStat) els.hubMasteredStat.textContent = mastered.size;
-    if (els.revisitStat) els.revisitStat.textContent = revisit.size;
+    if (els.revisitStat) els.revisitStat.textContent = cardsForMode("revisit").length;
     if (els.hubRevisitStat) els.hubRevisitStat.textContent = revisit.size;
     if (els.studyStat) els.studyStat.textContent = study.size;
     if (els.hubStudyStat) els.hubStudyStat.textContent = study.size;
+    if (els.routeEntryButton) {
+      els.routeEntryButton.textContent = `${modeEntryText()} (${ready})`;
+      els.routeEntryButton.disabled = ready === 0;
+    }
+    if (els.selectionSummary) {
+      const unitCount = state.selectedUnits.size;
+      const objectiveCount = state.selectedObjectives.size;
+      if (!unitCount && !objectiveCount) els.selectionSummary.textContent = "All units selected";
+      else els.selectionSummary.textContent = `${unitCount} unit${unitCount === 1 ? "" : "s"} · ${objectiveCount} sub-unit${objectiveCount === 1 ? "" : "s"} selected`;
+    }
+    if (els.selectionDetail) {
+      els.selectionDetail.textContent = `${modeLabel()} will use ${ready} matching card${ready === 1 ? "" : "s"}. Click unit cards or sub-units below to change the selection.`;
+    }
+    $$('[data-mode-select]').forEach((button) => {
+      const active = button.dataset.modeSelect === state.selectedMode;
+      button.classList.toggle('active', active);
+      button.setAttribute('aria-checked', String(active));
+    });
     els.soundToggle.textContent = state.sound ? "Sound on" : "Sound off";
     els.soundToggle.setAttribute("aria-pressed", String(state.sound));
   }
@@ -421,17 +496,29 @@
       const revisitCount = unitCards.filter((card) => revisit.has(card.id)).length;
       const studyCount = unitCards.filter((card) => study.has(card.id)).length;
       const pct = unitCards.length ? Math.round((masteredCount / unitCards.length) * 100) : 0;
+      const selectedUnit = state.selectedUnits.has(unit.id);
+      const graphic = unitGraphic(unit.id);
       const objectiveRows = learningObjectives
         .filter((objective) => objective.unit === unit.id)
         .map((objective) => {
           const objectiveCards = unitCards.filter((card) => card.learningObjective === objective.id);
           const objectiveMastered = objectiveCards.filter((card) => mastered.has(card.id)).length;
+          const objectiveRevisit = objectiveCards.filter((card) => revisit.has(card.id)).length;
+          const objectiveStudy = objectiveCards.filter((card) => study.has(card.id)).length;
           const objectivePct = objectiveCards.length ? Math.round((objectiveMastered / objectiveCards.length) * 100) : 0;
-          return `<button class="objective-chip" data-objective-start="${escapeHtml(objective.id)}" data-unit-start="${escapeHtml(unit.id)}" type="button"><strong>${escapeHtml(objective.title)}</strong><span>${objectiveCards.length} cards · ${objectivePct}% mastered</span></button>`;
+          const selectedObjective = state.selectedObjectives.has(objective.id);
+          return `<div class="objective-row ${selectedObjective ? "selected" : ""}">
+            <button class="objective-toggle" data-objective-toggle="${escapeHtml(objective.id)}" type="button" aria-pressed="${selectedObjective}">
+              <strong>${escapeHtml(objective.title)}</strong>
+              <span>${objectiveCards.length} cards · ${objectivePct}% mastered · ${objectiveRevisit} revisit · ${objectiveStudy} study</span>
+            </button>
+            <button class="objective-notes-button" data-note-open="${escapeHtml(objective.id)}" type="button">Class Notes</button>
+          </div>`;
         }).join("");
       const sortedCount = masteredCount + revisitCount + studyCount;
       return `
-        <article class="panel unit-card">
+        <article class="panel unit-card ${selectedUnit ? "selected" : ""}" data-unit-card="${escapeHtml(unit.id)}">
+          ${graphic ? `<div class="unit-graphic"><img src="${escapeHtml(graphic)}" alt="" loading="lazy"></div>` : ""}
           <div class="card-title-row unit-status-row">
             <span class="pill good">${masteredCount} mastered</span>
             <span class="pill warn">${revisitCount} revisit</span>
@@ -444,60 +531,33 @@
             <span class="pill">${pct}% mastered</span>
           </div>
           <div class="progress-track" aria-label="${pct}% mastered"><div class="progress-fill" style="width:${pct}%"></div></div>
+          <div class="unit-select-row">
+            <button class="secondary-button unit-select-button" data-unit-toggle="${escapeHtml(unit.id)}" type="button" aria-pressed="${selectedUnit}">${selectedUnit ? "Selected" : "Select whole unit"}</button>
+          </div>
           <div class="objective-list" aria-label="Learning objectives in ${escapeHtml(unit.title)}">
             ${objectiveRows}
-          </div>
-          <div class="card-actions">
-            <button class="secondary-button" data-unit-start="${escapeHtml(unit.id)}" type="button">Revise whole unit</button>
           </div>
         </article>
       `;
     }).join("");
 
-    $$("[data-unit-start]", els.unitDashboard).forEach((button) => {
-      button.addEventListener("click", () => {
-        els.unitFilter.value = button.dataset.unitStart;
-        updateObjectiveOptions();
-        if (button.dataset.objectiveStart) els.objectiveFilter.value = button.dataset.objectiveStart;
-        else if (!button.classList.contains("objective-chip")) els.objectiveFilter.value = "all";
-        startSession("practice");
+    $$('[data-unit-toggle]', els.unitDashboard).forEach((button) => {
+      button.addEventListener('click', () => toggleUnitSelection(button.dataset.unitToggle));
+    });
+    $$('[data-objective-toggle]', els.unitDashboard).forEach((button) => {
+      button.addEventListener('click', () => toggleObjectiveSelection(button.dataset.objectiveToggle));
+    });
+    $$('[data-note-open]', els.unitDashboard).forEach((button) => {
+      button.addEventListener('click', (event) => {
+        event.stopPropagation();
+        openNoteContext(button.dataset.noteOpen);
       });
     });
   }
 
 
   function renderNotesDashboard() {
-    if (!els.notesDashboard) return;
-    const f = activeFilters();
-    const visibleNotes = classNotes.filter((note) => {
-      if (f.unit !== "all" && note.unit !== f.unit) return false;
-      if (f.objective !== "all" && note.id !== f.objective) return false;
-      const text = [note.title, note.summary, note.explanation, note.memoryHook, note.selfCheck, note.sentenceStarter, ...(note.keyPoints || []), ...(note.commonMistakes || [])].join(" " ).toLowerCase();
-      if (f.search && !text.includes(f.search)) return false;
-      return true;
-    });
-    if (!visibleNotes.length) {
-      els.notesDashboard.innerHTML = `<div class="empty-inline">No class notes match these filters.</div>`;
-      return;
-    }
-    els.notesDashboard.innerHTML = visibleNotes.map((note) => {
-      const linked = linkedCardsForNote(note.id);
-      const mediaCard = linked.find((card) => Array.isArray(card.media) && card.media.length);
-      const thumb = mediaCard?.media?.[0]?.src ? `<img src="${escapeHtml(mediaCard.media[0].src)}" alt="" loading="lazy">` : `<span class="note-symbol">${escapeHtml(note.unit)}</span>`;
-      return `
-        <button class="note-card" data-note-open="${escapeHtml(note.id)}" type="button">
-          <span class="note-thumb">${thumb}</span>
-          <span class="note-copy">
-            <strong>${escapeHtml(note.title)}</strong>
-            <small>${escapeHtml(note.summary)}</small>
-            <em>${linked.length} linked cards</em>
-          </span>
-        </button>
-      `;
-    }).join("");
-    $$('[data-note-open]', els.notesDashboard).forEach((button) => {
-      button.addEventListener("click", () => openNoteContext(button.dataset.noteOpen));
-    });
+    return;
   }
 
   function openNoteContext(noteId, cardId = null) {
@@ -1002,9 +1062,14 @@
   }
 
   function bindGlobalActions() {
-    $$("[data-start-mode]").forEach((button) => {
-      button.addEventListener("click", () => startSession(button.dataset.startMode));
+    $$('[data-mode-select]').forEach((button) => {
+      button.addEventListener('click', () => {
+        state.selectedMode = button.dataset.modeSelect || 'practice';
+        renderStats();
+      });
     });
+
+    els.routeEntryButton?.addEventListener('click', () => startSession(state.selectedMode || 'practice'));
 
     els.backToHub.addEventListener("click", showHub);
     els.homeLink.addEventListener("click", (event) => {
