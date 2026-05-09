@@ -90,6 +90,9 @@
     selectedChoice: null,
     test: null,
     noteContext: null,
+    definitionInput: "",
+    definitionCompared: false,
+    definitionReview: null,
     sound: true,
     progress: loadProgress(),
   };
@@ -246,6 +249,52 @@
     const prefix = `${answer} `;
     const match = (card.choices || []).find((choice) => choice.startsWith(prefix));
     return match ? match.slice(prefix.length) : String(answer || "");
+  }
+
+  function cardIsDefinition(card) {
+    return !cardIsMcq(card) && (String(card?.type || "").toLowerCase() === "vocabulary" || /^define[:\s]/i.test(String(card?.question || "")));
+  }
+
+  const DEFINITION_STOP_WORDS = new Set([
+    "about", "after", "also", "and", "are", "because", "been", "being", "between", "but", "can", "called", "does", "from", "have", "into", "means", "more", "most", "that", "the", "their", "them", "then", "there", "these", "they", "this", "through", "used", "when", "where", "which", "with", "your"
+  ]);
+
+  function normalizeWord(word) {
+    return String(word || "")
+      .toLowerCase()
+      .replace(/[^a-z0-9]/g, "")
+      .replace(/(ing|ed|es|s)$/i, "");
+  }
+
+  function definitionKeywords(card) {
+    const text = `${card?.question || ""} ${card?.answer || ""} ${card?.explanation || ""}`;
+    const raw = text.match(/[A-Za-z0-9]+/g) || [];
+    const words = raw
+      .map(normalizeWord)
+      .filter((word) => word && (word.length >= 4 || ["dna", "ion", "ohm"].includes(word)))
+      .filter((word) => !DEFINITION_STOP_WORDS.has(word));
+    const uniqueWords = [...new Set(words)];
+    return uniqueWords.slice(0, 8);
+  }
+
+  function definitionReview(card, learnerAnswer) {
+    const keywords = definitionKeywords(card);
+    const learnerWords = new Set((String(learnerAnswer || "").match(/[A-Za-z0-9]+/g) || []).map(normalizeWord));
+    const matched = keywords.filter((word) => learnerWords.has(word));
+    const ratio = keywords.length ? matched.length / keywords.length : 0;
+    let label = "Compare carefully";
+    let tone = "warn";
+    let guidance = "Your wording may still be valid, but compare it with the key idea and missing words.";
+    if (ratio >= 0.6) {
+      label = "Looks like a good match";
+      tone = "good";
+      guidance = "You included most of the key ideas. If the meaning is clear, mark it Mastered.";
+    } else if (ratio >= 0.3) {
+      label = "Partly there";
+      tone = "partial";
+      guidance = "You have some of the right idea. Check the missing keywords before deciding.";
+    }
+    return { keywords, matched, missing: keywords.filter((word) => !matched.includes(word)), ratio, label, tone, guidance };
   }
 
   function setMembership(cardId) {
@@ -505,36 +554,35 @@
           const objectiveMastered = objectiveCards.filter((card) => mastered.has(card.id)).length;
           const objectiveRevisit = objectiveCards.filter((card) => revisit.has(card.id)).length;
           const objectiveStudy = objectiveCards.filter((card) => study.has(card.id)).length;
-          const objectivePct = objectiveCards.length ? Math.round((objectiveMastered / objectiveCards.length) * 100) : 0;
           const selectedObjective = state.selectedObjectives.has(objective.id);
           return `<div class="objective-row ${selectedObjective ? "selected" : ""}">
             <button class="objective-toggle" data-objective-toggle="${escapeHtml(objective.id)}" type="button" aria-pressed="${selectedObjective}">
               <strong>${escapeHtml(objective.title)}</strong>
-              <span>${objectiveCards.length} cards · ${objectivePct}% mastered · ${objectiveRevisit} revisit · ${objectiveStudy} study</span>
+              <span>${objectiveCards.length} cards · ${objectiveMastered}/${objectiveCards.length} mastered · ${objectiveRevisit} revisit · ${objectiveStudy} study</span>
             </button>
-            <button class="objective-notes-button" data-note-open="${escapeHtml(objective.id)}" type="button">Class Notes</button>
+            <button class="objective-notes-button" data-note-open="${escapeHtml(objective.id)}" type="button" aria-label="Open class notes for ${escapeHtml(objective.title)}"><span aria-hidden="true">📘</span><span class="notes-button-text">Class Notes</span></button>
           </div>`;
         }).join("");
       const sortedCount = masteredCount + revisitCount + studyCount;
       return `
         <article class="panel unit-card ${selectedUnit ? "selected" : ""}" data-unit-card="${escapeHtml(unit.id)}">
           ${graphic ? `<div class="unit-graphic"><img src="${escapeHtml(graphic)}" alt="" loading="lazy"></div>` : ""}
-          <div class="card-title-row unit-status-row">
-            <span class="pill good">${masteredCount} mastered</span>
+          <div class="unit-summary-row">
+            <span class="pill">${sortedCount} / ${unitCards.length} sorted</span>
+            <span class="pill good">${masteredCount}/${unitCards.length} mastered</span>
             <span class="pill warn">${revisitCount} revisit</span>
             <span class="pill study">${studyCount} study</span>
           </div>
           <h3>${escapeHtml(unit.title)}</h3>
           <p>${escapeHtml(unit.theme)}</p>
-          <div class="unit-meta">
-            <span class="pill">${sortedCount} / ${unitCards.length} sorted</span>
-            <span class="pill">${pct}% mastered</span>
-          </div>
-          <div class="progress-track" aria-label="${pct}% mastered"><div class="progress-fill" style="width:${pct}%"></div></div>
-          <div class="unit-select-row">
-            <button class="secondary-button unit-select-button" data-unit-toggle="${escapeHtml(unit.id)}" type="button" aria-pressed="${selectedUnit}">${selectedUnit ? "Selected" : "Select whole unit"}</button>
-          </div>
+          <div class="progress-track" aria-label="${masteredCount} of ${unitCards.length} cards mastered"><div class="progress-fill" style="width:${pct}%"></div></div>
           <div class="objective-list" aria-label="Learning objectives in ${escapeHtml(unit.title)}">
+            <div class="objective-row full-unit-row ${selectedUnit ? "selected" : ""}">
+              <button class="objective-toggle full-unit-toggle" data-unit-toggle="${escapeHtml(unit.id)}" type="button" aria-pressed="${selectedUnit}">
+                <strong>${escapeHtml(unit.title)}</strong>
+                <span>Full unit option · ${unitCards.length} revision cards</span>
+              </button>
+            </div>
             ${objectiveRows}
           </div>
         </article>
@@ -582,7 +630,8 @@
       return;
     }
     const linked = linkedCardsForNote(note.id);
-    const mediaCard = sourceCard || linked.find((card) => Array.isArray(card.media) && card.media.length);
+    const sourceMedia = sourceCard && Array.isArray(sourceCard.media) ? sourceCard.media.filter((item) => !item.mediaTiming || item.mediaTiming === "question") : [];
+    const noteMedia = Array.isArray(note.media) ? note.media : [];
     els.sessionEyebrow.textContent = sourceCard ? "Study this concept" : "Class notes";
     els.sessionTitle.textContent = note.title;
     els.sessionSubtitle.textContent = sourceCard ? "Read the context, then decide what to do with the original card." : "Use this note to review the topic, then practise the linked cards.";
@@ -600,7 +649,8 @@
           </div>
         </div>
         ${sourceCard ? `<aside class="source-question"><span class="eyebrow">Original question</span><p>${escapeHtml(sourceCard.question)}</p></aside>` : ""}
-        ${mediaCard ? renderMedia(mediaCard) : ""}
+        ${sourceMedia.length ? renderMediaItems(sourceMedia, sourceCard.question || note.title, "media-grid note-source-media") : ""}
+        ${noteMedia.length ? `<section class="note-section note-visual-section"><h3>Study visual</h3>${renderMediaItems(noteMedia, note.title, "media-grid note-media-grid")}</section>` : ""}
         <section class="note-section note-summary">
           <h2>Big idea</h2>
           <p>${escapeHtml(note.summary)}</p>
@@ -706,14 +756,20 @@
     return "fidelity derived";
   }
 
-  function renderMedia(card) {
-    if (!Array.isArray(card.media) || !card.media.length) return "";
-    return `<div class="media-grid">${card.media.map((item) => {
+  function renderMediaItems(items, fallbackAlt = "Study image", className = "media-grid") {
+    if (!Array.isArray(items) || !items.length) return "";
+    return `<div class="${className}">${items.map((item) => {
       const src = escapeHtml(item.src || "");
-      const alt = escapeHtml(item.alt || card.question || "Diagram");
+      const alt = escapeHtml(item.alt || fallbackAlt || "Study image");
       const caption = item.caption ? `<figcaption>${escapeHtml(item.caption)}</figcaption>` : "";
       return `<figure class="card-media"><img src="${src}" alt="${alt}" loading="lazy">${caption}</figure>`;
     }).join("")}</div>`;
+  }
+
+  function renderMedia(card) {
+    if (!Array.isArray(card.media) || !card.media.length) return "";
+    const questionMedia = card.media.filter((item) => !item.mediaTiming || item.mediaTiming === "question");
+    return renderMediaItems(questionMedia, card.question || "Diagram");
   }
 
   function renderObjectivePanel(card) {
@@ -739,6 +795,7 @@
   function renderCard() {
     const card = state.deck[state.index];
     const isMcq = cardIsMcq(card);
+    const isDefinition = cardIsDefinition(card);
     const membership = setMembership(card.id);
     const testMode = state.mode === "test";
     const fidelityText = card.sourceFidelity ? fidelityLabel(card.sourceFidelity) : "";
@@ -766,11 +823,12 @@
         <p class="question-text">${escapeHtml(card.question)}</p>
         ${renderMedia(card)}
         ${card.cue ? `<p class="explanation"><strong>Cue:</strong> ${escapeHtml(card.cue)}</p>` : ""}
-        ${isMcq ? renderChoices(card, testMode) : renderOpenResponse(testMode)}
+        ${isMcq ? renderChoices(card, testMode) : isDefinition && !testMode ? renderDefinitionResponse(card) : renderOpenResponse(testMode)}
         ${state.revealed ? renderReveal(card) : ""}
 
         <div class="card-actions primary-actions">
-          ${!state.revealed && !testMode ? `<button class="primary-button" data-action="reveal" type="button">Reveal answer</button>` : ""}
+          ${!state.revealed && !testMode && !isDefinition ? `<button class="primary-button" data-action="reveal" type="button">Reveal answer</button>` : ""}
+          ${isDefinition && !testMode && !state.definitionCompared ? `<button class="primary-button" data-action="compare-definition" type="button">Compare notes</button>` : ""}
           ${!isMcq && testMode && !state.revealed ? `<button class="primary-button" data-action="test-open-submit" type="button">Show mark scheme</button>` : ""}
           ${!isMcq && testMode && state.revealed ? `<button class="primary-button" data-action="test-right" type="button">Mark right</button><button class="danger-button" data-action="test-wrong" type="button">Mark wrong</button>` : ""}
           <button class="secondary-button" data-action="prev" type="button">Previous</button>
@@ -778,10 +836,10 @@
           ${!testMode ? `<button class="secondary-button class-notes-button" data-action="study-context" type="button">Class Notes</button>` : ""}
         </div>
 
-        ${!testMode ? `
+        ${!testMode && (!isDefinition || state.definitionCompared) ? `
           <div class="state-actions" aria-label="Learning state">
-            <button class="primary-button" data-state="mastered" type="button">I know this · Mastered</button>
-            <button class="secondary-button" data-state="revisit" type="button">Come back · Revisit</button>
+            <button class="primary-button" data-state="mastered" type="button">Good match · Mastered</button>
+            <button class="secondary-button" data-state="revisit" type="button">Nearly there · Revisit</button>
           </div>
         ` : ""}
 
@@ -806,6 +864,44 @@
         return `<button class="${cls}" data-choice="${escapeHtml(key)}" type="button" aria-label="${label}: ${escapeHtml(choice)}">${escapeHtml(choice)}</button>`;
       }).join("")}
     </div>`;
+  }
+
+  function renderDefinitionResponse(card) {
+    const review = state.definitionReview;
+    const typed = state.definitionInput || "";
+    const note = noteForCard(card);
+    return `
+      <div class="definition-response">
+        <label for="definitionAnswer"><strong>Write your definition in your own words.</strong></label>
+        <textarea id="definitionAnswer" class="open-answer definition-answer" placeholder="Type your answer, then compare notes.">${escapeHtml(typed)}</textarea>
+        ${state.definitionCompared && review ? `
+          <div class="compare-notes-panel ${escapeHtml(review.tone)}">
+            <div class="compare-notes-header">
+              <strong>${escapeHtml(review.label)}</strong>
+              <span>${Math.round(review.ratio * 100)}% keyword match</span>
+            </div>
+            <p>${escapeHtml(review.guidance)}</p>
+            <div class="definition-comparison-grid">
+              <div>
+                <h4>Your answer</h4>
+                <p>${escapeHtml(typed || "No answer typed yet.")}</p>
+              </div>
+              <div>
+                <h4>Expected definition</h4>
+                <p>${escapeHtml(card.answer || card.explanation || "Check the class notes for this term.")}</p>
+              </div>
+            </div>
+            <div class="keyword-row">
+              <span>Key words:</span>
+              ${review.keywords.map((word) => `<em class="${review.matched.includes(word) ? "matched" : "missing"}">${escapeHtml(word)}</em>`).join("")}
+            </div>
+            ${note ? `<button class="secondary-button class-notes-button" data-action="study-context" type="button">Open Class Notes</button>` : ""}
+          </div>
+        ` : `
+          <p class="definition-hint">Your wording does not need to be identical. The comparison checks for key ideas, then you choose the final status.</p>
+        `}
+      </div>
+    `;
   }
 
   function renderOpenResponse(testMode) {
@@ -848,12 +944,28 @@
       button.addEventListener("click", () => setCardStatus(card, button.dataset.state));
     });
 
+    const definitionAnswer = byId("definitionAnswer");
+    if (definitionAnswer) {
+      definitionAnswer.addEventListener("input", () => {
+        state.definitionInput = definitionAnswer.value;
+      });
+    }
+
     $$("[data-action]", els.studyPanel).forEach((button) => {
       button.addEventListener("click", () => handleAction(button.dataset.action, card));
     });
   }
 
   function handleAction(action, card) {
+    if (action === "compare-definition") {
+      const typed = byId("definitionAnswer")?.value || state.definitionInput || "";
+      state.definitionInput = typed;
+      state.definitionReview = definitionReview(card, typed);
+      state.definitionCompared = true;
+      state.revealed = false;
+      renderCard();
+      return;
+    }
     if (action === "reveal") {
       state.revealed = true;
       if (state.mode !== "test") setCardStatus(card, "revisit", { advance: false, countAttempt: true });
@@ -900,6 +1012,9 @@
     }
     state.revealed = false;
     state.selectedChoice = null;
+    state.definitionInput = "";
+    state.definitionCompared = false;
+    state.definitionReview = null;
     renderSession();
   }
 
@@ -908,6 +1023,9 @@
     state.index = (state.index - 1 + state.deck.length) % state.deck.length;
     state.revealed = false;
     state.selectedChoice = null;
+    state.definitionInput = "";
+    state.definitionCompared = false;
+    state.definitionReview = null;
     renderSession();
   }
 

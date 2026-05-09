@@ -1,5 +1,5 @@
 window.YEAR9_NOTES = {
-  "version": "1.12.0",
+  "version": "1.13.0",
   "title": "Year 9 Science Enhanced Class Notes",
   "notes": [
     {
@@ -54,7 +54,14 @@ window.YEAR9_NOTES = {
       "memoryHook": "Order: cell → nucleus → chromosome → DNA → gene section.",
       "selfCheck": "Can you explain why a human sperm cell has 23 chromosomes but a liver cell has 46?",
       "sentenceStarter": "A gene is a section of DNA found on a chromosome, and it can affect ___.",
-      "practicePrompt": "Pick one linked revision card for Inheritance, DNA and genes and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered."
+      "practicePrompt": "Pick one linked revision card for Inheritance, DNA and genes and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
+      "media": [
+        {
+          "src": "assets/diagrams/9A-dna-genes-chromosomes.svg",
+          "alt": "Diagram linking chromosomes, DNA and genes.",
+          "caption": "Use this when the words chromosome, DNA and gene start to blend together."
+        }
+      ]
     },
     {
       "id": "9A-biodiversity",
@@ -81,7 +88,14 @@ window.YEAR9_NOTES = {
       "memoryHook": "Biodiversity = variety of life. Conservation = protecting that variety.",
       "selfCheck": "Can you give one reason biodiversity matters and one way humans can protect it?",
       "sentenceStarter": "Biodiversity is important because ___, so conservation methods such as ___ help by ___.",
-      "practicePrompt": "Pick one linked revision card for Biodiversity, conservation and extinction and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered."
+      "practicePrompt": "Pick one linked revision card for Biodiversity, conservation and extinction and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
+      "media": [
+        {
+          "src": "assets/webp/9A-seed-bank-conservation.webp",
+          "alt": "Seed bank storage room with seed samples.",
+          "caption": "Gene banks and seed banks preserve biodiversity by storing useful genetic material."
+        }
+      ]
     },
     {
       "id": "9A-evolution",
@@ -110,7 +124,14 @@ window.YEAR9_NOTES = {
       "memoryHook": "Variation → pressure → survival → reproduction → change over generations.",
       "selfCheck": "Can you use the giraffe example or a beak-length example to explain natural selection in five steps?",
       "sentenceStarter": "Individuals with ___ were more likely to survive because ___, so they reproduced and passed on ___.",
-      "practicePrompt": "Pick one linked revision card for Adaptation, natural selection and evolution and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered."
+      "practicePrompt": "Pick one linked revision card for Adaptation, natural selection and evolution and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
+      "media": [
+        {
+          "src": "assets/webp/9A-natural-selection-giraffes.webp",
+          "alt": "Giraffes of different heights feeding from trees.",
+          "caption": "Natural selection is easier to remember when you think of variation, competition, survival and reproduction."
+        }
+      ]
     },
     {
       "id": "9B-photosynthesis",
@@ -139,7 +160,14 @@ window.YEAR9_NOTES = {
       "memoryHook": "Photosynthesis equation: carbon dioxide + water → glucose + oxygen, using light.",
       "selfCheck": "Can you name the two reactants, two products and one limiting factor?",
       "sentenceStarter": "The rate stops increasing because ___ is no longer the limiting factor; instead ___ limits the rate.",
-      "practicePrompt": "Pick one linked revision card for Photosynthesis and respiration and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered."
+      "practicePrompt": "Pick one linked revision card for Photosynthesis and respiration and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
+      "media": [
+        {
+          "src": "assets/diagrams/9B-photosynthesis-light-graph.svg",
+          "alt": "Graph showing photosynthesis rate increasing then levelling off as light intensity increases.",
+          "caption": "Photosynthesis increases with light at first, then another factor becomes limiting."
+        }
+      ]
     },
     {
       "id": "9B-plant-transport",
@@ -166,7 +194,19 @@ window.YEAR9_NOTES = {
       "memoryHook": "Xylem: water up. Phloem: food/sugars around the plant.",
       "selfCheck": "Can you trace the route of water from soil to leaf?",
       "sentenceStarter": "Water enters through ___, then travels through ___ to reach ___.",
-      "practicePrompt": "Pick one linked revision card for Plant transport and specialised cells and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered."
+      "practicePrompt": "Pick one linked revision card for Plant transport and specialised cells and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
+      "media": [
+        {
+          "src": "assets/diagrams/9B-leaf-xylem-phloem.svg",
+          "alt": "Leaf and plant transport diagram showing xylem and phloem.",
+          "caption": "Xylem carries water and minerals up; phloem carries dissolved sugars around the plant."
+        },
+        {
+          "src": "assets/webp/9B-stomata-micrograph.webp",
+          "alt": "Microscope-style close-up of stomata on a leaf.",
+          "caption": "Stomata are pores controlled by guard cells; they let gases move in and out."
+        }
+      ]
     },
     {
       "id": "9B-plant-products",
@@ -193,7 +233,14 @@ window.YEAR9_NOTES = {
       "memoryHook": "Glucose is a building block: starch for storage, cellulose for walls, proteins with nitrates.",
       "selfCheck": "Can you explain why nitrate mineral salts help plants grow?",
       "sentenceStarter": "Farmers can increase yield by ___ because this gives the plant more ___.",
-      "practicePrompt": "Pick one linked revision card for Plant products, seeds and food production and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered."
+      "practicePrompt": "Pick one linked revision card for Plant products, seeds and food production and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
+      "media": [
+        {
+          "src": "assets/webp/9B-food-production-methods.webp",
+          "alt": "Greenhouse and farming methods that increase food production.",
+          "caption": "Yield can be improved by controlling growing conditions and providing the resources plants need."
+        }
+      ]
     },
     {
       "id": "9B-food-webs",
@@ -220,7 +267,14 @@ window.YEAR9_NOTES = {
       "memoryHook": "Follow the arrows: less food for one organism can reduce the population that depends on it.",
       "selfCheck": "Can you predict what happens to a predator population if its main prey decreases?",
       "sentenceStarter": "If the number of ___ decreases, then ___ may decrease because ___.",
-      "practicePrompt": "Pick one linked revision card for Food webs, biodiversity and ecosystems and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered."
+      "practicePrompt": "Pick one linked revision card for Food webs, biodiversity and ecosystems and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
+      "media": [
+        {
+          "src": "assets/diagrams/9B-food-web.svg",
+          "alt": "Food web showing rose bush, insects and wrens.",
+          "caption": "Arrows in a food web show energy transfer, not simply who eats who."
+        }
+      ]
     },
     {
       "id": "9E-ceramics",
@@ -247,7 +301,14 @@ window.YEAR9_NOTES = {
       "memoryHook": "Ceramics: hard and heat-resistant, but brittle.",
       "selfCheck": "Can you explain why pottery is useful for teapots but can still break if dropped?",
       "sentenceStarter": "This material is suitable because it is ___, but a limitation is ___.",
-      "practicePrompt": "Pick one linked revision card for Ceramics, crystals and materials properties and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered."
+      "practicePrompt": "Pick one linked revision card for Ceramics, crystals and materials properties and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
+      "media": [
+        {
+          "src": "assets/webp/9E-crystal-cooling-comparison.webp",
+          "alt": "Comparison of large crystals from slow cooling and small crystals from fast cooling.",
+          "caption": "Cooling speed affects crystal size: slow cooling gives larger crystals."
+        }
+      ]
     },
     {
       "id": "9E-polymers",
@@ -276,7 +337,14 @@ window.YEAR9_NOTES = {
       "memoryHook": "Polymer = many repeating units. Cross-links = bridges between chains.",
       "selfCheck": "Can you describe how vulcanisation changes the structure and properties of rubber?",
       "sentenceStarter": "Vulcanisation changes rubber because cross-links ___, which makes the material ___.",
-      "practicePrompt": "Pick one linked revision card for Polymers and polymerisation and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered."
+      "practicePrompt": "Pick one linked revision card for Polymers and polymerisation and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
+      "media": [
+        {
+          "src": "assets/diagrams/9E-vulcanisation-crosslinks-source-style.svg",
+          "alt": "Polymer chains with cross-links after vulcanisation.",
+          "caption": "Vulcanisation adds cross-links, changing rubber’s properties."
+        }
+      ]
     },
     {
       "id": "9E-composites",
@@ -303,7 +371,14 @@ window.YEAR9_NOTES = {
       "memoryHook": "Composite = combination. Matrix holds it together; reinforcement adds strength.",
       "selfCheck": "Can you explain why glass-reinforced plastic is useful for boats?",
       "sentenceStarter": "This is a composite because it contains ___ and ___, giving it properties such as ___.",
-      "practicePrompt": "Pick one linked revision card for Composites and material choice and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered."
+      "practicePrompt": "Pick one linked revision card for Composites and material choice and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
+      "media": [
+        {
+          "src": "assets/diagrams/9E-polymers-composites.svg",
+          "alt": "Polymer chains and composite material diagram.",
+          "caption": "Composites combine a matrix with reinforcement to improve material properties."
+        }
+      ]
     },
     {
       "id": "9E-environment",
@@ -330,7 +405,14 @@ window.YEAR9_NOTES = {
       "memoryHook": "Reduce harm by using less, recycling more, and choosing materials carefully.",
       "selfCheck": "Can you give one problem with landfill and one advantage of recycling?",
       "sentenceStarter": "Recycling helps because it reduces ___ and saves ___.",
-      "practicePrompt": "Pick one linked revision card for Environmental impacts and recycling and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered."
+      "practicePrompt": "Pick one linked revision card for Environmental impacts and recycling and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
+      "media": [
+        {
+          "src": "assets/webp/9E-sustainable-living-solutions.webp",
+          "alt": "Solar panels, wind energy and home insulation.",
+          "caption": "Reducing fossil-fuel use can reduce greenhouse gas and acid-rain impacts."
+        }
+      ]
     },
     {
       "id": "9F-changes",
@@ -357,7 +439,14 @@ window.YEAR9_NOTES = {
       "memoryHook": "Physical = same substance, different form. Chemical = new substance.",
       "selfCheck": "Can you decide whether melting ice, burning magnesium and rusting iron are physical or chemical changes?",
       "sentenceStarter": "This is a chemical change because ___.",
-      "practicePrompt": "Pick one linked revision card for Physical and chemical changes and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered."
+      "practicePrompt": "Pick one linked revision card for Physical and chemical changes and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
+      "media": [
+        {
+          "src": "assets/webp/9F-heating-metal-oxide.webp",
+          "alt": "A test tube containing a black powder being heated over a Bunsen burner.",
+          "caption": "Heating can be part of a chemical change when substances react and new products form."
+        }
+      ]
     },
     {
       "id": "9F-reactivity",
@@ -384,7 +473,14 @@ window.YEAR9_NOTES = {
       "memoryHook": "More reactive kicks out less reactive.",
       "selfCheck": "Can magnesium displace copper from copper sulfate? Explain using reactivity.",
       "sentenceStarter": "___ is more reactive than ___, so it displaces ___ from its compound.",
-      "practicePrompt": "Pick one linked revision card for Reactivity and displacement and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered."
+      "practicePrompt": "Pick one linked revision card for Reactivity and displacement and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
+      "media": [
+        {
+          "src": "assets/diagrams/9F-displacement-reaction.svg",
+          "alt": "Iron displacing copper from copper sulfate.",
+          "caption": "A more reactive metal can displace a less reactive metal from its compound."
+        }
+      ]
     },
     {
       "id": "9F-extraction",
@@ -413,7 +509,19 @@ window.YEAR9_NOTES = {
       "memoryHook": "Below carbon: carbon can extract. Above carbon: electrolysis.",
       "selfCheck": "Why can iron be extracted using carbon but aluminium cannot?",
       "sentenceStarter": "Aluminium is extracted by electrolysis because ___.",
-      "practicePrompt": "Pick one linked revision card for Metal extraction and reduction and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered."
+      "practicePrompt": "Pick one linked revision card for Metal extraction and reduction and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
+      "media": [
+        {
+          "src": "assets/webp/9F-blast-furnace-process.webp",
+          "alt": "Blast furnace cutaway for extracting iron.",
+          "caption": "Iron can be extracted using carbon because it is below carbon in the reactivity series."
+        },
+        {
+          "src": "assets/webp/9F-extraction-apparatus.webp",
+          "alt": "Comparison of blast furnace and electrolysis extraction methods.",
+          "caption": "Very reactive metals need electrolysis; less reactive metals can often be extracted using carbon."
+        }
+      ]
     },
     {
       "id": "9F-rusting",
@@ -440,7 +548,14 @@ window.YEAR9_NOTES = {
       "memoryHook": "Rusting needs oxygen + water. Sacrificial protection means another metal “takes the hit”.",
       "selfCheck": "Why does coating iron in plastic prevent rusting?",
       "sentenceStarter": "This method prevents rusting because it stops ___ from reaching the iron.",
-      "practicePrompt": "Pick one linked revision card for Rusting and corrosion protection and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered."
+      "practicePrompt": "Pick one linked revision card for Rusting and corrosion protection and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
+      "media": [
+        {
+          "src": "assets/webp/9F-rusting-protection.webp",
+          "alt": "Rusting compared with sacrificial protection.",
+          "caption": "Rusting needs water and oxygen; coatings or sacrificial metals can protect iron and steel."
+        }
+      ]
     },
     {
       "id": "9I-forces",
@@ -467,7 +582,14 @@ window.YEAR9_NOTES = {
       "memoryHook": "Terminal velocity: forces balanced, speed constant.",
       "selfCheck": "Can you explain why a parachutist slows down when the parachute opens?",
       "sentenceStarter": "The parachute increases ___, so the upward force becomes ___ than before.",
-      "practicePrompt": "Pick one linked revision card for Forces, drag and terminal velocity and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered."
+      "practicePrompt": "Pick one linked revision card for Forces, drag and terminal velocity and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
+      "media": [
+        {
+          "src": "assets/webp/9I-forces-parachutist.webp",
+          "alt": "Parachutist with weight and air resistance force arrows.",
+          "caption": "Terminal velocity happens when weight and air resistance balance."
+        }
+      ]
     },
     {
       "id": "9I-energy-work",
@@ -494,7 +616,14 @@ window.YEAR9_NOTES = {
       "memoryHook": "Less force usually means more distance; energy is not free.",
       "selfCheck": "If a ramp reduces the force needed, why does it not reduce the total energy needed?",
       "sentenceStarter": "A ramp reduces the force because ___, but the object must move ___.",
-      "practicePrompt": "Pick one linked revision card for Energy, work and simple machines and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered."
+      "practicePrompt": "Pick one linked revision card for Energy, work and simple machines and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
+      "media": [
+        {
+          "src": "assets/diagrams/9I-sankey-efficiency.svg",
+          "alt": "Sankey diagrams comparing useful and wasted energy.",
+          "caption": "Sankey diagrams show how much input energy becomes useful output and how much is wasted."
+        }
+      ]
     },
     {
       "id": "9I-speed",
@@ -521,7 +650,14 @@ window.YEAR9_NOTES = {
       "memoryHook": "Distance-time graph: slope = speed; flat = stopped.",
       "selfCheck": "Can you calculate speed for 20 km in 2 hours and identify a stopped section on a graph?",
       "sentenceStarter": "The object is stopped during section ___ because the distance ___ while time ___.",
-      "practicePrompt": "Pick one linked revision card for Speed and distance-time graphs and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered."
+      "practicePrompt": "Pick one linked revision card for Speed and distance-time graphs and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
+      "media": [
+        {
+          "src": "assets/diagrams/9I-distance-time-VWXYZ.svg",
+          "alt": "Distance-time graph labelled V, W, X, Y and Z.",
+          "caption": "Flat sections mean stopped; steeper lines mean greater speed."
+        }
+      ]
     },
     {
       "id": "9I-moments",
@@ -548,7 +684,14 @@ window.YEAR9_NOTES = {
       "memoryHook": "Moment gets bigger if force gets bigger or distance from pivot gets bigger.",
       "selfCheck": "What is the moment from a 5 N force acting 0.4 m from a pivot?",
       "sentenceStarter": "The moment is ___ N m because moment = ___ × ___.",
-      "practicePrompt": "Pick one linked revision card for Levers, pivots and moments and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered."
+      "practicePrompt": "Pick one linked revision card for Levers, pivots and moments and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
+      "media": [
+        {
+          "src": "assets/diagrams/9I-moments-balance.svg",
+          "alt": "Lever balance diagram showing moments around a pivot.",
+          "caption": "Moment = force × perpendicular distance from the pivot."
+        }
+      ]
     },
     {
       "id": "9J-fields",
@@ -575,7 +718,14 @@ window.YEAR9_NOTES = {
       "memoryHook": "Fields let forces act without touching.",
       "selfCheck": "Can you explain why the same person weighs less on the Moon than on Earth?",
       "sentenceStarter": "The person’s mass is the same, but their weight is different because ___.",
-      "practicePrompt": "Pick one linked revision card for Force fields, gravity and magnetism and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered."
+      "practicePrompt": "Pick one linked revision card for Force fields, gravity and magnetism and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
+      "media": [
+        {
+          "src": "assets/webp/9J-magnetic-field-pattern.webp",
+          "alt": "Iron filings showing the magnetic field pattern around a bar magnet.",
+          "caption": "Field lines show the shape and direction of a magnetic field."
+        }
+      ]
     },
     {
       "id": "9J-static",
@@ -602,7 +752,14 @@ window.YEAR9_NOTES = {
       "memoryHook": "Electrons move. Negative means extra electrons.",
       "selfCheck": "Why does a rubbed polythene rod become negatively charged?",
       "sentenceStarter": "The rod becomes negatively charged because electrons ___.",
-      "practicePrompt": "Pick one linked revision card for Static electricity and charge and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered."
+      "practicePrompt": "Pick one linked revision card for Static electricity and charge and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
+      "media": [
+        {
+          "src": "assets/webp/9J-static-electricity-demo.webp",
+          "alt": "Static electricity demonstration with charged objects.",
+          "caption": "Static electricity is a build-up of charge; like charges repel and opposite charges attract."
+        }
+      ]
     },
     {
       "id": "9J-circuits",
@@ -632,7 +789,19 @@ window.YEAR9_NOTES = {
       "memoryHook": "Current flows; voltage pushes/transfers energy; resistance opposes.",
       "selfCheck": "Can you compare current and voltage in series and parallel circuits?",
       "sentenceStarter": "In a series circuit, current is ___, whereas in a parallel circuit current ___.",
-      "practicePrompt": "Pick one linked revision card for Current, voltage and circuits and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered."
+      "practicePrompt": "Pick one linked revision card for Current, voltage and circuits and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
+      "media": [
+        {
+          "src": "assets/webp/9J-series-parallel-circuits-photo.webp",
+          "alt": "Series circuit and parallel circuit comparison.",
+          "caption": "Series circuits have one loop; parallel circuits have branches."
+        },
+        {
+          "src": "assets/webp/9J-circuit-components-photo.webp",
+          "alt": "Circuit components including battery, wires, switch, bulb, ammeter and voltmeter.",
+          "caption": "Recognising components helps you understand how circuits are built and measured."
+        }
+      ]
     },
     {
       "id": "9J-resistance",
@@ -659,7 +828,19 @@ window.YEAR9_NOTES = {
       "memoryHook": "Resistance resists current. R = V ÷ I.",
       "selfCheck": "Calculate the resistance when voltage is 8 V and current is 0.02 A.",
       "sentenceStarter": "The resistance is ___ Ω because R = ___ ÷ ___.",
-      "practicePrompt": "Pick one linked revision card for Resistance and Ohm’s law and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered."
+      "practicePrompt": "Pick one linked revision card for Resistance and Ohm’s law and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
+      "media": [
+        {
+          "src": "assets/diagrams/9J-current-voltage-graph.svg",
+          "alt": "Current-voltage graph comparing two resistors.",
+          "caption": "A shallower current-voltage line means higher resistance."
+        },
+        {
+          "src": "assets/webp/9E-conductors-insulators-materials.webp",
+          "alt": "Copper beside insulating materials such as plastic, wood and rubber.",
+          "caption": "Copper is a good conductor; plastic, wood and rubber are high-resistance insulators."
+        }
+      ]
     },
     {
       "id": "9J-electromagnets",
@@ -687,7 +868,15 @@ window.YEAR9_NOTES = {
       "memoryHook": "Coil + current = electromagnet. More turns or more current = stronger field.",
       "selfCheck": "Name two ways to make an electromagnet stronger and explain why relays are useful.",
       "sentenceStarter": "The electromagnet becomes stronger when ___ because ___.",
-      "practicePrompt": "Pick one linked revision card for Electromagnets, relays and motors and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered."
+      "practicePrompt": "Pick one linked revision card for Electromagnets, relays and motors and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
+      "media": [
+        {
+          "src": "assets/webp/9J-electromagnet-relay-motor.webp",
+          "alt": "Electromagnet, relay and motor hardware examples.",
+          "caption": "Electromagnets are used in relays and motors because current can switch magnetism on and off."
+        }
+      ]
     }
-  ]
+  ],
+  "mediaPolicy": "question cards use only required source-style media; conceptual images live in class notes."
 };

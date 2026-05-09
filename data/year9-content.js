@@ -1,7 +1,7 @@
 window.YEAR9_CONTENT = {
-  "version": "1.12.0",
+  "version": "1.14.0",
   "title": "Year 9 Science End-of-Year Study",
-  "subtitle": "Expanded Year 9 study content with learning objectives, source-fidelity diagrams and class-note study context",
+  "subtitle": "Lean question cards with Compare Notes support for definition answers.",
   "units": [
     {
       "id": "9A",
@@ -56,7 +56,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9A-variation",
       "learningObjectiveTitle": "Variation and classification",
       "learningObjectiveDescription": "Types of variation, inherited and environmental causes, and classification challenges.",
-      "noteId": "9A-variation"
+      "noteId": "9A-variation",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-002-9a-of-the-following-which-is-the-best-example-of-an-environmental-variati",
@@ -79,7 +80,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9A-variation",
       "learningObjectiveTitle": "Variation and classification",
       "learningObjectiveDescription": "Types of variation, inherited and environmental causes, and classification challenges.",
-      "noteId": "9A-variation"
+      "noteId": "9A-variation",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-003-9a-environmental-variation-is-caused",
@@ -102,7 +104,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9A-variation",
       "learningObjectiveTitle": "Variation and classification",
       "learningObjectiveDescription": "Types of variation, inherited and environmental causes, and classification challenges.",
-      "noteId": "9A-variation"
+      "noteId": "9A-variation",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-004-9a-what-sort-of-variation-is-shown-when-measurements-can-take-any-value-o",
@@ -125,14 +128,16 @@ window.YEAR9_CONTENT = {
         {
           "src": "assets/diagrams/9A-continuous-variation.svg",
           "alt": "Chart showing continuous variation with a bell-shaped normal distribution curve.",
-          "caption": "Continuous variation data can be shown as a spread of measurements across a range."
+          "caption": "Continuous variation data can be shown as a spread of measurements across a range.",
+          "mediaTiming": "question"
         }
       ],
       "sourceFidelity": "text-equivalent",
       "learningObjective": "9A-variation",
       "learningObjectiveTitle": "Variation and classification",
       "learningObjectiveDescription": "Types of variation, inherited and environmental causes, and classification challenges.",
-      "noteId": "9A-variation"
+      "noteId": "9A-variation",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-005-9a-of-the-following-which-is-the-best-example-of-an-inherited-variation",
@@ -155,7 +160,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9A-inheritance",
       "learningObjectiveTitle": "Inheritance, DNA and genes",
       "learningObjectiveDescription": "Cells, nuclei, chromosomes, DNA, genes and preserving genetic information.",
-      "noteId": "9A-inheritance"
+      "noteId": "9A-inheritance",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-006-9a-inherited-characteristics-in-humans-are-caused-by",
@@ -178,7 +184,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9A-inheritance",
       "learningObjectiveTitle": "Inheritance, DNA and genes",
       "learningObjectiveDescription": "Cells, nuclei, chromosomes, DNA, genes and preserving genetic information.",
-      "noteId": "9A-inheritance"
+      "noteId": "9A-inheritance",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-007-9a-genetic-information-can-be-found-in-a-sperm-cell-in-the",
@@ -201,7 +208,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9A-inheritance",
       "learningObjectiveTitle": "Inheritance, DNA and genes",
       "learningObjectiveDescription": "Cells, nuclei, chromosomes, DNA, genes and preserving genetic information.",
-      "noteId": "9A-inheritance"
+      "noteId": "9A-inheritance",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-008-9a-the-overall-bell-shape-on-a-continuous-variation-chart-is-called",
@@ -224,14 +232,16 @@ window.YEAR9_CONTENT = {
         {
           "src": "assets/diagrams/9A-continuous-variation.svg",
           "alt": "Bell-shaped normal distribution over continuous variation data.",
-          "caption": "The overall bell shape is called a normal distribution."
+          "caption": "The overall bell shape is called a normal distribution.",
+          "mediaTiming": "question"
         }
       ],
       "sourceFidelity": "exact-source-text",
       "learningObjective": "9A-variation",
       "learningObjectiveTitle": "Variation and classification",
       "learningObjectiveDescription": "Types of variation, inherited and environmental causes, and classification challenges.",
-      "noteId": "9A-variation"
+      "noteId": "9A-variation",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-009-9a-each-chromosome-contains-one-molecule-of-a-certain-substance-what-is-t",
@@ -250,18 +260,12 @@ window.YEAR9_CONTENT = {
       "level": 1,
       "cue": "",
       "tags": [],
-      "media": [
-        {
-          "src": "assets/diagrams/9A-dna-genes-chromosomes.svg",
-          "alt": "Hierarchy of chromosome, DNA and gene.",
-          "caption": "Each chromosome is made of DNA, and genes are short sections of that DNA."
-        }
-      ],
       "sourceFidelity": "exact-source-text",
       "learningObjective": "9A-inheritance",
       "learningObjectiveTitle": "Inheritance, DNA and genes",
       "learningObjectiveDescription": "Cells, nuclei, chromosomes, DNA, genes and preserving genetic information.",
-      "noteId": "9A-inheritance"
+      "noteId": "9A-inheritance",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-010-9a-the-total-number-of-chromosomes-in-a-human-liver-cell-is-46-so-the-num",
@@ -284,7 +288,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9A-inheritance",
       "learningObjectiveTitle": "Inheritance, DNA and genes",
       "learningObjectiveDescription": "Cells, nuclei, chromosomes, DNA, genes and preserving genetic information.",
-      "noteId": "9A-inheritance"
+      "noteId": "9A-inheritance",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-011-9a-a-gene-is",
@@ -303,18 +308,12 @@ window.YEAR9_CONTENT = {
       "level": 1,
       "cue": "",
       "tags": [],
-      "media": [
-        {
-          "src": "assets/diagrams/9A-dna-genes-chromosomes.svg",
-          "alt": "DNA and gene hierarchy diagram.",
-          "caption": "A gene is a short section of DNA on a chromosome."
-        }
-      ],
       "sourceFidelity": "exact-source-text",
       "learningObjective": "9A-inheritance",
       "learningObjectiveTitle": "Inheritance, DNA and genes",
       "learningObjectiveDescription": "Cells, nuclei, chromosomes, DNA, genes and preserving genetic information.",
-      "noteId": "9A-inheritance"
+      "noteId": "9A-inheritance",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-012-9a-the-structure-of-the-long-molecule-found-in-chromosomes-was-worked-out",
@@ -337,7 +336,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9A-inheritance",
       "learningObjectiveTitle": "Inheritance, DNA and genes",
       "learningObjectiveDescription": "Cells, nuclei, chromosomes, DNA, genes and preserving genetic information.",
-      "noteId": "9A-inheritance"
+      "noteId": "9A-inheritance",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-013-9a-which-of-these-is-least-likely-to-cause-the-endangerment-of-a-species",
@@ -360,7 +360,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9A-evolution",
       "learningObjectiveTitle": "Adaptation, natural selection and evolution",
       "learningObjectiveDescription": "Adaptations, evidence from fossils, natural selection and evolution over time.",
-      "noteId": "9A-evolution"
+      "noteId": "9A-evolution",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-014-9a-which-of-these-is-least-likely-to-be-used-for-conservation",
@@ -383,7 +384,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9A-biodiversity",
       "learningObjectiveTitle": "Biodiversity, conservation and extinction",
       "learningObjectiveDescription": "Endangered species, biodiversity, conservation, gene banks and extinction pressures.",
-      "noteId": "9A-biodiversity"
+      "noteId": "9A-biodiversity",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-015-9a-which-feature-of-an-animal-suggests-that-it-is-prey-for-larger-animals",
@@ -406,14 +408,16 @@ window.YEAR9_CONTENT = {
         {
           "src": "assets/diagrams/9A-prey-adaptation-source-style.svg",
           "alt": "Four animal feature options showing spines, long nose, small ears and whiskers.",
-          "caption": "Spines suggest a prey animal because they help defend against predators."
+          "caption": "Spines suggest a prey animal because they help defend against predators.",
+          "mediaTiming": "question"
         }
       ],
       "sourceFidelity": "source-style-redraw",
       "learningObjective": "9A-evolution",
       "learningObjectiveTitle": "Adaptation, natural selection and evolution",
       "learningObjectiveDescription": "Adaptations, evidence from fossils, natural selection and evolution over time.",
-      "noteId": "9A-evolution"
+      "noteId": "9A-evolution",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-016-9a-which-of-these-would-you-expect-to-find-in-a-gene-bank",
@@ -432,18 +436,12 @@ window.YEAR9_CONTENT = {
       "level": 2,
       "cue": "",
       "tags": [],
-      "media": [
-        {
-          "src": "assets/webp/9A-seed-bank-conservation.webp",
-          "alt": "A seed bank storage room with seed packets, jars and cold storage.",
-          "caption": "Gene banks can store seeds and other biological material to help preserve biodiversity."
-        }
-      ],
       "sourceFidelity": "exact-source-text",
       "learningObjective": "9A-inheritance",
       "learningObjectiveTitle": "Inheritance, DNA and genes",
       "learningObjectiveDescription": "Cells, nuclei, chromosomes, DNA, genes and preserving genetic information.",
-      "noteId": "9A-inheritance"
+      "noteId": "9A-inheritance",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-017-9a-adult-birds-of-the-same-species-have-slightly-different-beak-lengths-w",
@@ -466,7 +464,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9A-inheritance",
       "learningObjectiveTitle": "Inheritance, DNA and genes",
       "learningObjectiveDescription": "Cells, nuclei, chromosomes, DNA, genes and preserving genetic information.",
-      "noteId": "9A-inheritance"
+      "noteId": "9A-inheritance",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-018-9a-if-there-is-plenty-of-food-what-will-happen-to-the-number-of-longer-be",
@@ -489,7 +488,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9A-evolution",
       "learningObjectiveTitle": "Adaptation, natural selection and evolution",
       "learningObjectiveDescription": "Adaptations, evidence from fossils, natural selection and evolution over time.",
-      "noteId": "9A-evolution"
+      "noteId": "9A-evolution",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-019-9a-evolution-is",
@@ -512,7 +512,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9A-inheritance",
       "learningObjectiveTitle": "Inheritance, DNA and genes",
       "learningObjectiveDescription": "Cells, nuclei, chromosomes, DNA, genes and preserving genetic information.",
-      "noteId": "9A-inheritance"
+      "noteId": "9A-inheritance",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-020-9a-the-theory-of-evolution-that-most-scientists-believe-today-was-put-for",
@@ -531,18 +532,12 @@ window.YEAR9_CONTENT = {
       "level": 1,
       "cue": "",
       "tags": [],
-      "media": [
-        {
-          "src": "assets/webp/9A-natural-selection-giraffes.webp",
-          "alt": "Giraffes of different neck lengths reaching for leaves in a savanna.",
-          "caption": "This image supports natural selection: giraffes with longer necks are more likely to reach food and survive to reproduce."
-        }
-      ],
       "sourceFidelity": "exact-source-text",
       "learningObjective": "9A-evolution",
       "learningObjectiveTitle": "Adaptation, natural selection and evolution",
       "learningObjectiveDescription": "Adaptations, evidence from fossils, natural selection and evolution over time.",
-      "noteId": "9A-evolution"
+      "noteId": "9A-evolution",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-021-9b-where-does-photosynthesis-occur-in-a-plant",
@@ -565,14 +560,16 @@ window.YEAR9_CONTENT = {
         {
           "src": "assets/diagrams/9B-photosynthesis-source-style-QRS.svg",
           "alt": "Source-style plant diagram labelled Q, R and S.",
-          "caption": "Q and R are green tissues and can carry out photosynthesis; S is root tissue."
+          "caption": "Q and R are green tissues and can carry out photosynthesis; S is root tissue.",
+          "mediaTiming": "question"
         }
       ],
       "sourceFidelity": "source-style-redraw",
       "learningObjective": "9B-plant-transport",
       "learningObjectiveTitle": "Plant transport and specialised cells",
       "learningObjectiveDescription": "Root hair cells, stomata, guard cells, xylem, phloem and plant structure.",
-      "noteId": "9B-plant-transport"
+      "noteId": "9B-plant-transport",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-022-9b-in-the-summary-of-aerobic-respiration-glucose-oxygen-carbon-dioxide-x-",
@@ -595,7 +592,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9B-photosynthesis",
       "learningObjectiveTitle": "Photosynthesis and respiration",
       "learningObjectiveDescription": "Reactants, products, chlorophyll, limiting factors and photosynthesis rate.",
-      "noteId": "9B-photosynthesis"
+      "noteId": "9B-photosynthesis",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-023-9b-what-does-a-photosynthesis-rate-graph-usually-show-as-light-intensity-",
@@ -618,14 +616,16 @@ window.YEAR9_CONTENT = {
         {
           "src": "assets/diagrams/9B-photosynthesis-light-graph.svg",
           "alt": "Graph of photosynthesis rate increasing with light intensity and then leveling off.",
-          "caption": "The graph rises, then levels off when another factor becomes limiting."
+          "caption": "The graph rises, then levels off when another factor becomes limiting.",
+          "mediaTiming": "question"
         }
       ],
       "sourceFidelity": "text-equivalent",
       "learningObjective": "9B-photosynthesis",
       "learningObjectiveTitle": "Photosynthesis and respiration",
       "learningObjectiveDescription": "Reactants, products, chlorophyll, limiting factors and photosynthesis rate.",
-      "noteId": "9B-photosynthesis"
+      "noteId": "9B-photosynthesis",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-024-9b-which-sentence-best-describes-what-chlorophyll-does",
@@ -648,7 +648,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9B-photosynthesis",
       "learningObjectiveTitle": "Photosynthesis and respiration",
       "learningObjectiveDescription": "Reactants, products, chlorophyll, limiting factors and photosynthesis rate.",
-      "noteId": "9B-photosynthesis"
+      "noteId": "9B-photosynthesis",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-025-9b-leaves-are-often-wide-so-that-they",
@@ -671,7 +672,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9B-photosynthesis",
       "learningObjectiveTitle": "Photosynthesis and respiration",
       "learningObjectiveDescription": "Reactants, products, chlorophyll, limiting factors and photosynthesis rate.",
-      "noteId": "9B-photosynthesis"
+      "noteId": "9B-photosynthesis",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-026-9b-roots-are-adapted-to-their-function-by",
@@ -694,7 +696,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9B-photosynthesis",
       "learningObjectiveTitle": "Photosynthesis and respiration",
       "learningObjectiveDescription": "Reactants, products, chlorophyll, limiting factors and photosynthesis rate.",
-      "noteId": "9B-photosynthesis"
+      "noteId": "9B-photosynthesis",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-027-9b-if-plants-do-not-get-enough-water-they-start-to",
@@ -717,7 +720,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9B-photosynthesis",
       "learningObjectiveTitle": "Photosynthesis and respiration",
       "learningObjectiveDescription": "Reactants, products, chlorophyll, limiting factors and photosynthesis rate.",
-      "noteId": "9B-photosynthesis"
+      "noteId": "9B-photosynthesis",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-028-9b-the-specialised-cell-with-a-long-projection-for-absorbing-water-from-s",
@@ -736,18 +740,12 @@ window.YEAR9_CONTENT = {
       "level": 1,
       "cue": "",
       "tags": [],
-      "media": [
-        {
-          "src": "assets/diagrams/9B-root-hair-cell.svg",
-          "alt": "Root hair cell with a long hair-like projection.",
-          "caption": "The root hair cell is adapted for absorption because it has a long projection and a large surface area."
-        }
-      ],
       "sourceFidelity": "text-equivalent",
       "learningObjective": "9B-plant-transport",
       "learningObjectiveTitle": "Plant transport and specialised cells",
       "learningObjectiveDescription": "Root hair cells, stomata, guard cells, xylem, phloem and plant structure.",
-      "noteId": "9B-plant-transport"
+      "noteId": "9B-plant-transport",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-029-9b-the-substance-used-to-test-for-starch-is",
@@ -770,7 +768,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9B-plant-products",
       "learningObjectiveTitle": "Plant products, seeds and food production",
       "learningObjectiveDescription": "Glucose, starch, cellulose, oils, minerals, crop yield and farming methods.",
-      "noteId": "9B-plant-products"
+      "noteId": "9B-plant-products",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-030-9b-in-which-part-of-a-plant-would-you-expect-to-find-the-most-starch",
@@ -793,7 +792,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9B-plant-products",
       "learningObjectiveTitle": "Plant products, seeds and food production",
       "learningObjectiveDescription": "Glucose, starch, cellulose, oils, minerals, crop yield and farming methods.",
-      "noteId": "9B-plant-products"
+      "noteId": "9B-plant-products",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-031-9b-glucose-is-used-to-make-a-polymer-found-in-cell-walls-this-polymer-is-",
@@ -816,7 +816,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9B-plant-products",
       "learningObjectiveTitle": "Plant products, seeds and food production",
       "learningObjectiveDescription": "Glucose, starch, cellulose, oils, minerals, crop yield and farming methods.",
-      "noteId": "9B-plant-products"
+      "noteId": "9B-plant-products",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-032-9b-plants-use-nitrate-mineral-salts-to-make",
@@ -839,7 +840,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9B-plant-products",
       "learningObjectiveTitle": "Plant products, seeds and food production",
       "learningObjectiveDescription": "Glucose, starch, cellulose, oils, minerals, crop yield and farming methods.",
-      "noteId": "9B-plant-products"
+      "noteId": "9B-plant-products",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-033-9b-plants-are-cross-bred-in-order-to",
@@ -862,7 +864,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9B-photosynthesis",
       "learningObjectiveTitle": "Photosynthesis and respiration",
       "learningObjectiveDescription": "Reactants, products, chlorophyll, limiting factors and photosynthesis rate.",
-      "noteId": "9B-photosynthesis"
+      "noteId": "9B-photosynthesis",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-034-9b-selective-breeding-is",
@@ -885,7 +888,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9B-photosynthesis",
       "learningObjectiveTitle": "Photosynthesis and respiration",
       "learningObjectiveDescription": "Reactants, products, chlorophyll, limiting factors and photosynthesis rate.",
-      "noteId": "9B-photosynthesis"
+      "noteId": "9B-photosynthesis",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-035-9b-plants-cannot-survive-long-without-soil-nutrients-containing",
@@ -908,7 +912,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9B-plant-products",
       "learningObjectiveTitle": "Plant products, seeds and food production",
       "learningObjectiveDescription": "Glucose, starch, cellulose, oils, minerals, crop yield and farming methods.",
-      "noteId": "9B-plant-products"
+      "noteId": "9B-plant-products",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-036-9b-herbicides-are",
@@ -931,7 +936,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9B-photosynthesis",
       "learningObjectiveTitle": "Photosynthesis and respiration",
       "learningObjectiveDescription": "Reactants, products, chlorophyll, limiting factors and photosynthesis rate.",
-      "noteId": "9B-photosynthesis"
+      "noteId": "9B-photosynthesis",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-037-9b-if-insecticide-is-sprayed-in-a-food-web-with-insects-eaten-by-wrens-wh",
@@ -950,18 +956,12 @@ window.YEAR9_CONTENT = {
       "level": 3,
       "cue": "",
       "tags": [],
-      "media": [
-        {
-          "src": "assets/diagrams/9B-food-web.svg",
-          "alt": "Food web showing rose bush, insects and wrens.",
-          "caption": "If insect numbers drop, the wren population is likely to go down as well."
-        }
-      ],
       "sourceFidelity": "text-equivalent",
       "learningObjective": "9B-food-webs",
       "learningObjectiveTitle": "Food webs, biodiversity and ecosystems",
       "learningObjectiveDescription": "Food webs, pesticides, biodiversity, sampling and effects of farming.",
-      "noteId": "9B-food-webs"
+      "noteId": "9B-food-webs",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-038-9b-an-increase-in-which-organism-could-control-aphids",
@@ -984,7 +984,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9B-photosynthesis",
       "learningObjectiveTitle": "Photosynthesis and respiration",
       "learningObjectiveDescription": "Reactants, products, chlorophyll, limiting factors and photosynthesis rate.",
-      "noteId": "9B-photosynthesis"
+      "noteId": "9B-photosynthesis",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-039-9b-the-carbon-cycle",
@@ -1007,7 +1008,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9B-photosynthesis",
       "learningObjectiveTitle": "Photosynthesis and respiration",
       "learningObjectiveDescription": "Reactants, products, chlorophyll, limiting factors and photosynthesis rate.",
-      "noteId": "9B-photosynthesis"
+      "noteId": "9B-photosynthesis",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-040-9b-plants-are-important-in-keeping-the-amount-of-carbon-in-balance-becaus",
@@ -1030,7 +1032,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9B-photosynthesis",
       "learningObjectiveTitle": "Photosynthesis and respiration",
       "learningObjectiveDescription": "Reactants, products, chlorophyll, limiting factors and photosynthesis rate.",
-      "noteId": "9B-photosynthesis"
+      "noteId": "9B-photosynthesis",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-041-9e-which-of-the-following-is-a-ceramic-material",
@@ -1049,18 +1052,12 @@ window.YEAR9_CONTENT = {
       "level": 1,
       "cue": "",
       "tags": [],
-      "media": [
-        {
-          "src": "assets/webp/9E-material-textures.webp",
-          "alt": "Materials comparison showing ceramic, polymer, composite and reinforced concrete.",
-          "caption": "Compare different material types and their properties."
-        }
-      ],
       "sourceFidelity": "exact-source-text",
       "learningObjective": "9E-ceramics",
       "learningObjectiveTitle": "Ceramics, crystals and materials properties",
       "learningObjectiveDescription": "Ceramics, glass, clay, crystal formation, melting point and brittleness.",
-      "noteId": "9E-ceramics"
+      "noteId": "9E-ceramics",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-042-9e-pottery-and-china-are-suitable-for-making-tea-pots-because-they-are",
@@ -1083,7 +1080,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9E-ceramics",
       "learningObjectiveTitle": "Ceramics, crystals and materials properties",
       "learningObjectiveDescription": "Ceramics, glass, clay, crystal formation, melting point and brittleness.",
-      "noteId": "9E-ceramics"
+      "noteId": "9E-ceramics",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-043-9e-which-statement-about-the-formation-of-solid-crystals-is-correct",
@@ -1102,18 +1100,12 @@ window.YEAR9_CONTENT = {
       "level": 2,
       "cue": "",
       "tags": [],
-      "media": [
-        {
-          "src": "assets/webp/9E-crystal-cooling-comparison.webp",
-          "alt": "Comparison of slow cooling making large crystals and fast cooling making small crystals.",
-          "caption": "Slow cooling tends to form fewer larger crystals, while fast cooling tends to form many smaller crystals."
-        }
-      ],
       "sourceFidelity": "exact-source-text",
       "learningObjective": "9E-ceramics",
       "learningObjectiveTitle": "Ceramics, crystals and materials properties",
       "learningObjectiveDescription": "Ceramics, glass, clay, crystal formation, melting point and brittleness.",
-      "noteId": "9E-ceramics"
+      "noteId": "9E-ceramics",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-044-9e-a-substance-with-a-high-melting-point-but-brittle-structure-is-best-re",
@@ -1136,14 +1128,16 @@ window.YEAR9_CONTENT = {
         {
           "src": "assets/diagrams/9E-lattice-options-source-style.svg",
           "alt": "Four particle diagram options A to D; C is a regular lattice.",
-          "caption": "C shows a regular giant lattice: many strong bonds and planes that can crack."
+          "caption": "C shows a regular giant lattice: many strong bonds and planes that can crack.",
+          "mediaTiming": "question"
         }
       ],
       "sourceFidelity": "source-style-redraw",
       "learningObjective": "9E-ceramics",
       "learningObjectiveTitle": "Ceramics, crystals and materials properties",
       "learningObjectiveDescription": "Ceramics, glass, clay, crystal formation, melting point and brittleness.",
-      "noteId": "9E-ceramics"
+      "noteId": "9E-ceramics",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-045-9e-which-of-the-following-is-a-synthetic-polymer",
@@ -1162,18 +1156,12 @@ window.YEAR9_CONTENT = {
       "level": 1,
       "cue": "",
       "tags": [],
-      "media": [
-        {
-          "src": "assets/webp/9E-material-textures.webp",
-          "alt": "Material examples including polymer bottle.",
-          "caption": "Polymers are lightweight and durable materials used in everyday products."
-        }
-      ],
       "sourceFidelity": "exact-source-text",
       "learningObjective": "9E-polymers",
       "learningObjectiveTitle": "Polymers and polymerisation",
       "learningObjectiveDescription": "Natural and synthetic polymers, polymerisation, vulcanisation and biodegradability.",
-      "noteId": "9E-polymers"
+      "noteId": "9E-polymers",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-046-9e-a-polymer-is-formed-when",
@@ -1192,18 +1180,12 @@ window.YEAR9_CONTENT = {
       "level": 1,
       "cue": "",
       "tags": [],
-      "media": [
-        {
-          "src": "assets/diagrams/9E-polymers-composites.svg",
-          "alt": "Polymer chain from repeating units.",
-          "caption": "Polymers form when many small molecules join into long chains."
-        }
-      ],
       "sourceFidelity": "exact-source-text",
       "learningObjective": "9E-polymers",
       "learningObjectiveTitle": "Polymers and polymerisation",
       "learningObjectiveDescription": "Natural and synthetic polymers, polymerisation, vulcanisation and biodegradability.",
-      "noteId": "9E-polymers"
+      "noteId": "9E-polymers",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-047-9e-some-polymerisation-reactions-are-endothermic-what-does-this-mean",
@@ -1226,7 +1208,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9E-polymers",
       "learningObjectiveTitle": "Polymers and polymerisation",
       "learningObjectiveDescription": "Natural and synthetic polymers, polymerisation, vulcanisation and biodegradability.",
-      "noteId": "9E-polymers"
+      "noteId": "9E-polymers",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-048-9e-vulcanisation-adds-cross-links-in-rubber-how-does-this-change-natural-",
@@ -1249,14 +1232,16 @@ window.YEAR9_CONTENT = {
         {
           "src": "assets/diagrams/9E-vulcanisation-crosslinks-source-style.svg",
           "alt": "Before and after diagram showing cross-links in rubber.",
-          "caption": "Vulcanisation adds cross-links, making rubber harder and more useful while it remains elastic."
+          "caption": "Vulcanisation adds cross-links, making rubber harder and more useful while it remains elastic.",
+          "mediaTiming": "question"
         }
       ],
       "sourceFidelity": "source-style-redraw",
       "learningObjective": "9E-polymers",
       "learningObjectiveTitle": "Polymers and polymerisation",
       "learningObjectiveDescription": "Natural and synthetic polymers, polymerisation, vulcanisation and biodegradability.",
-      "noteId": "9E-polymers"
+      "noteId": "9E-polymers",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-049-9e-which-of-the-following-is-a-composite-material",
@@ -1275,18 +1260,12 @@ window.YEAR9_CONTENT = {
       "level": 1,
       "cue": "",
       "tags": [],
-      "media": [
-        {
-          "src": "assets/webp/9E-material-textures.webp",
-          "alt": "Materials comparison including a composite example.",
-          "caption": "A composite is made by combining materials to get improved properties."
-        }
-      ],
       "sourceFidelity": "exact-source-text",
       "learningObjective": "9E-composites",
       "learningObjectiveTitle": "Composites and material choice",
       "learningObjectiveDescription": "Composite materials, concrete, reinforced concrete and glass-reinforced plastic.",
-      "noteId": "9E-composites"
+      "noteId": "9E-composites",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-050-9e-why-is-concrete-described-as-a-composite-material",
@@ -1305,18 +1284,12 @@ window.YEAR9_CONTENT = {
       "level": 1,
       "cue": "",
       "tags": [],
-      "media": [
-        {
-          "src": "assets/webp/9E-material-textures.webp",
-          "alt": "Reinforced concrete as a composite.",
-          "caption": "Concrete can be seen as a composite, especially when reinforced with steel."
-        }
-      ],
       "sourceFidelity": "exact-source-text",
       "learningObjective": "9E-composites",
       "learningObjectiveTitle": "Composites and material choice",
       "learningObjectiveDescription": "Composite materials, concrete, reinforced concrete and glass-reinforced plastic.",
-      "noteId": "9E-composites"
+      "noteId": "9E-composites",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-051-9e-glass-reinforced-plastic-is-used-for-building-boats-because-it-is",
@@ -1339,7 +1312,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9E-polymers",
       "learningObjectiveTitle": "Polymers and polymerisation",
       "learningObjectiveDescription": "Natural and synthetic polymers, polymerisation, vulcanisation and biodegradability.",
-      "noteId": "9E-polymers"
+      "noteId": "9E-polymers",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-052-9e-what-happens-during-the-decomposition-of-calcium-carbonate-to-make-cal",
@@ -1362,7 +1336,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9E-ceramics",
       "learningObjectiveTitle": "Ceramics, crystals and materials properties",
       "learningObjectiveDescription": "Ceramics, glass, clay, crystal formation, melting point and brittleness.",
-      "noteId": "9E-ceramics"
+      "noteId": "9E-ceramics",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-053-9e-which-substance-is-thought-to-be-one-of-the-main-greenhouse-gases",
@@ -1385,7 +1360,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9E-environment",
       "learningObjectiveTitle": "Environmental impacts and recycling",
       "learningObjectiveDescription": "Landfill, recycling, fossil fuels, acid rain, greenhouse effect and reducing impacts.",
-      "noteId": "9E-environment"
+      "noteId": "9E-environment",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-054-9e-what-is-a-non-biodegradable-polymer",
@@ -1408,7 +1384,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9E-polymers",
       "learningObjectiveTitle": "Polymers and polymerisation",
       "learningObjectiveDescription": "Natural and synthetic polymers, polymerisation, vulcanisation and biodegradability.",
-      "noteId": "9E-polymers"
+      "noteId": "9E-polymers",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-055-9e-why-can-low-toxin-levels-released-into-the-sea-cause-serious-problems-",
@@ -1431,7 +1408,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9E-ceramics",
       "learningObjectiveTitle": "Ceramics, crystals and materials properties",
       "learningObjectiveDescription": "Ceramics, glass, clay, crystal formation, melting point and brittleness.",
-      "noteId": "9E-ceramics"
+      "noteId": "9E-ceramics",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-056-9e-which-would-help-reduce-the-possibility-of-global-warming",
@@ -1450,18 +1428,12 @@ window.YEAR9_CONTENT = {
       "level": 2,
       "cue": "",
       "tags": [],
-      "media": [
-        {
-          "src": "assets/webp/9E-sustainable-living-solutions.webp",
-          "alt": "Solar panels, wind turbine and home insulation shown as ways to reduce energy use and emissions.",
-          "caption": "Using renewable energy and improving insulation can help reduce greenhouse gas emissions."
-        }
-      ],
       "sourceFidelity": "exact-source-text",
       "learningObjective": "9E-environment",
       "learningObjectiveTitle": "Environmental impacts and recycling",
       "learningObjectiveDescription": "Landfill, recycling, fossil fuels, acid rain, greenhouse effect and reducing impacts.",
-      "noteId": "9E-environment"
+      "noteId": "9E-environment",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-057-9e-how-are-landfill-sites-used-to-deal-with-waste-materials",
@@ -1484,7 +1456,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9E-environment",
       "learningObjectiveTitle": "Environmental impacts and recycling",
       "learningObjectiveDescription": "Landfill, recycling, fossil fuels, acid rain, greenhouse effect and reducing impacts.",
-      "noteId": "9E-environment"
+      "noteId": "9E-environment",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-058-9e-recycling-a-metal-helps-us-use-that-metal-further-into-the-future-beca",
@@ -1507,7 +1480,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9E-environment",
       "learningObjectiveTitle": "Environmental impacts and recycling",
       "learningObjectiveDescription": "Landfill, recycling, fossil fuels, acid rain, greenhouse effect and reducing impacts.",
-      "noteId": "9E-environment"
+      "noteId": "9E-environment",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-059-9e-which-material-is-recycled-by-crushing-and-grading-to-make-aggregate-f",
@@ -1530,7 +1504,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9E-composites",
       "learningObjectiveTitle": "Composites and material choice",
       "learningObjectiveDescription": "Composite materials, concrete, reinforced concrete and glass-reinforced plastic.",
-      "noteId": "9E-composites"
+      "noteId": "9E-composites",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-060-9e-the-most-important-reason-for-recycling-glass-is-that-it-saves-large-a",
@@ -1553,7 +1528,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9E-environment",
       "learningObjectiveTitle": "Environmental impacts and recycling",
       "learningObjectiveDescription": "Landfill, recycling, fossil fuels, acid rain, greenhouse effect and reducing impacts.",
-      "noteId": "9E-environment"
+      "noteId": "9E-environment",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-061-9f-which-of-these-describes-a-physical-change",
@@ -1576,7 +1552,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9F-changes",
       "learningObjectiveTitle": "Physical and chemical changes",
       "learningObjectiveDescription": "Physical changes, chemical reactions, particles, molecules, formulae and gas pressure.",
-      "noteId": "9F-changes"
+      "noteId": "9F-changes",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-062-9f-gas-pressure-is-caused-by-gas-particles",
@@ -1599,7 +1576,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9F-changes",
       "learningObjectiveTitle": "Physical and chemical changes",
       "learningObjectiveDescription": "Physical changes, chemical reactions, particles, molecules, formulae and gas pressure.",
-      "noteId": "9F-changes"
+      "noteId": "9F-changes",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-063-9f-the-pressure-of-a-gas-increases-as-temperature-increases-because",
@@ -1622,7 +1600,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9F-extraction",
       "learningObjectiveTitle": "Metal extraction and reduction",
       "learningObjectiveDescription": "Mining, ores, reduction, blast furnaces, electrolysis and extraction method choice.",
-      "noteId": "9F-extraction"
+      "noteId": "9F-extraction",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-064-9f-in-h2-what-tells-you-that-a-hydrogen-molecule-contains-2-atoms",
@@ -1645,7 +1624,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9F-changes",
       "learningObjectiveTitle": "Physical and chemical changes",
       "learningObjectiveDescription": "Physical changes, chemical reactions, particles, molecules, formulae and gas pressure.",
-      "noteId": "9F-changes"
+      "noteId": "9F-changes",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-065-9f-which-salt-is-formed-when-magnesium-reacts-with-dilute-nitric-acid",
@@ -1668,7 +1648,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9F-reactivity",
       "learningObjectiveTitle": "Reactivity and displacement",
       "learningObjectiveDescription": "Reactivity series, displacement reactions and metal reactions with acids.",
-      "noteId": "9F-reactivity"
+      "noteId": "9F-reactivity",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-066-9f-magnesium-reacts-slowly-with-cold-water-calcium-more-quickly-potassium",
@@ -1691,7 +1672,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9F-extraction",
       "learningObjectiveTitle": "Metal extraction and reduction",
       "learningObjectiveDescription": "Mining, ores, reduction, blast furnaces, electrolysis and extraction method choice.",
-      "noteId": "9F-extraction"
+      "noteId": "9F-extraction",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-067-9f-the-two-subatomic-particles-found-in-the-nucleus-are",
@@ -1714,7 +1696,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9F-changes",
       "learningObjectiveTitle": "Physical and chemical changes",
       "learningObjectiveDescription": "Physical changes, chemical reactions, particles, molecules, formulae and gas pressure.",
-      "noteId": "9F-changes"
+      "noteId": "9F-changes",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-068-9f-in-the-periodic-table-elements-are-listed-in-order-of",
@@ -1737,7 +1720,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9F-changes",
       "learningObjectiveTitle": "Physical and chemical changes",
       "learningObjectiveDescription": "Physical changes, chemical reactions, particles, molecules, formulae and gas pressure.",
-      "noteId": "9F-changes"
+      "noteId": "9F-changes",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-069-9f-the-test-for-oxygen-is-that-it",
@@ -1760,7 +1744,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9F-changes",
       "learningObjectiveTitle": "Physical and chemical changes",
       "learningObjectiveDescription": "Physical changes, chemical reactions, particles, molecules, formulae and gas pressure.",
-      "noteId": "9F-changes"
+      "noteId": "9F-changes",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-070-9f-which-products-form-when-a-hydrocarbon-burns-in-plenty-of-air",
@@ -1783,7 +1768,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9F-extraction",
       "learningObjectiveTitle": "Metal extraction and reduction",
       "learningObjectiveDescription": "Mining, ores, reduction, blast furnaces, electrolysis and extraction method choice.",
-      "noteId": "9F-extraction"
+      "noteId": "9F-extraction",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-071-9f-which-reaction-needs-an-input-of-energy-to-start-it",
@@ -1806,7 +1792,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9F-changes",
       "learningObjectiveTitle": "Physical and chemical changes",
       "learningObjectiveDescription": "Physical changes, chemical reactions, particles, molecules, formulae and gas pressure.",
-      "noteId": "9F-changes"
+      "noteId": "9F-changes",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-072-9f-an-exothermic-reaction-is-one-in-which",
@@ -1829,7 +1816,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9F-changes",
       "learningObjectiveTitle": "Physical and chemical changes",
       "learningObjectiveDescription": "Physical changes, chemical reactions, particles, molecules, formulae and gas pressure.",
-      "noteId": "9F-changes"
+      "noteId": "9F-changes",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-073-9f-which-of-these-is-a-displacement-reaction",
@@ -1848,18 +1836,12 @@ window.YEAR9_CONTENT = {
       "level": 2,
       "cue": "",
       "tags": [],
-      "media": [
-        {
-          "src": "assets/diagrams/9F-displacement-reaction.svg",
-          "alt": "Example displacement reaction.",
-          "caption": "In a displacement reaction, a more reactive metal replaces a less reactive one."
-        }
-      ],
       "sourceFidelity": "exact-source-text",
       "learningObjective": "9F-extraction",
       "learningObjectiveTitle": "Metal extraction and reduction",
       "learningObjectiveDescription": "Mining, ores, reduction, blast furnaces, electrolysis and extraction method choice.",
-      "noteId": "9F-extraction"
+      "noteId": "9F-extraction",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-074-9f-what-is-seen-when-magnesium-reacts-fully-with-copper-sulfate-solution",
@@ -1882,7 +1864,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9F-changes",
       "learningObjectiveTitle": "Physical and chemical changes",
       "learningObjectiveDescription": "Physical changes, chemical reactions, particles, molecules, formulae and gas pressure.",
-      "noteId": "9F-changes"
+      "noteId": "9F-changes",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-075-9f-given-z-displaces-x-y-displaces-x-and-y-displaces-z-what-is-the-reacti",
@@ -1905,7 +1888,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9F-extraction",
       "learningObjectiveTitle": "Metal extraction and reduction",
       "learningObjectiveDescription": "Mining, ores, reduction, blast furnaces, electrolysis and extraction method choice.",
-      "noteId": "9F-extraction"
+      "noteId": "9F-extraction",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-076-9f-aluminium-reacts-with-iron-oxide-to-form-aluminium-oxide-and-iron-whic",
@@ -1928,7 +1912,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9F-extraction",
       "learningObjectiveTitle": "Metal extraction and reduction",
       "learningObjectiveDescription": "Mining, ores, reduction, blast furnaces, electrolysis and extraction method choice.",
-      "noteId": "9F-extraction"
+      "noteId": "9F-extraction",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-077-9f-metals-are-usually-extracted-from",
@@ -1951,7 +1936,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9F-extraction",
       "learningObjectiveTitle": "Metal extraction and reduction",
       "learningObjectiveDescription": "Mining, ores, reduction, blast furnaces, electrolysis and extraction method choice.",
-      "noteId": "9F-extraction"
+      "noteId": "9F-extraction",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-078-9f-which-metal-was-first-extracted-most-recently-in-history",
@@ -1974,7 +1960,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9F-extraction",
       "learningObjectiveTitle": "Metal extraction and reduction",
       "learningObjectiveDescription": "Mining, ores, reduction, blast furnaces, electrolysis and extraction method choice.",
-      "noteId": "9F-extraction"
+      "noteId": "9F-extraction",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-079-9f-what-is-reduced-in-zinc-oxide-carbon-zinc-carbon-dioxide",
@@ -1997,7 +1984,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9F-extraction",
       "learningObjectiveTitle": "Metal extraction and reduction",
       "learningObjectiveDescription": "Mining, ores, reduction, blast furnaces, electrolysis and extraction method choice.",
-      "noteId": "9F-extraction"
+      "noteId": "9F-extraction",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-080-9f-which-metal-can-only-be-extracted-using-electrolysis",
@@ -2016,18 +2004,12 @@ window.YEAR9_CONTENT = {
       "level": 2,
       "cue": "",
       "tags": [],
-      "media": [
-        {
-          "src": "assets/webp/9F-extraction-apparatus.webp",
-          "alt": "Comparison of blast furnace and electrolysis cell extraction methods.",
-          "caption": "Aluminium is extracted using electrolysis, unlike iron in a blast furnace."
-        }
-      ],
       "sourceFidelity": "exact-source-text",
       "learningObjective": "9F-extraction",
       "learningObjectiveTitle": "Metal extraction and reduction",
       "learningObjectiveDescription": "Mining, ores, reduction, blast furnaces, electrolysis and extraction method choice.",
-      "noteId": "9F-extraction"
+      "noteId": "9F-extraction",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-081-9i-for-a-falling-object-which-labels-best-match-the-forces-weight-downwar",
@@ -2046,18 +2028,12 @@ window.YEAR9_CONTENT = {
       "level": 1,
       "cue": "",
       "tags": [],
-      "media": [
-        {
-          "src": "assets/diagrams/9I-falling-forces.svg",
-          "alt": "Falling object with X downwards and Y upwards force arrows.",
-          "caption": "X points downwards (weight) and Y points upwards (air resistance)."
-        }
-      ],
       "sourceFidelity": "text-equivalent",
       "learningObjective": "9I-forces",
       "learningObjectiveTitle": "Forces, drag and terminal velocity",
       "learningObjectiveDescription": "Balanced forces, air/water resistance, top speed and terminal velocity.",
-      "noteId": "9I-forces"
+      "noteId": "9I-forces",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-082-9i-balanced-forces",
@@ -2080,7 +2056,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9I-forces",
       "learningObjectiveTitle": "Forces, drag and terminal velocity",
       "learningObjectiveDescription": "Balanced forces, air/water resistance, top speed and terminal velocity.",
-      "noteId": "9I-forces"
+      "noteId": "9I-forces",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-083-9i-a-boat-has-a-forwards-force-of-500-n-and-water-resistance-of-400-n-whi",
@@ -2103,7 +2080,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9I-forces",
       "learningObjectiveTitle": "Forces, drag and terminal velocity",
       "learningObjectiveDescription": "Balanced forces, air/water resistance, top speed and terminal velocity.",
-      "noteId": "9I-forces"
+      "noteId": "9I-forces",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-084-9i-all-vehicles-have-a-top-speed-this-is-when",
@@ -2126,7 +2104,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9I-speed",
       "learningObjectiveTitle": "Speed and distance-time graphs",
       "learningObjectiveDescription": "Speed calculations, mean speed and interpreting distance-time graphs.",
-      "noteId": "9I-speed"
+      "noteId": "9I-speed",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-085-9i-which-of-these-is-not-a-way-in-which-energy-is-stored",
@@ -2149,7 +2128,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9I-energy-work",
       "learningObjectiveTitle": "Energy, work and simple machines",
       "learningObjectiveDescription": "Work done, machines, ramps, friction and energy transfer.",
-      "noteId": "9I-energy-work"
+      "noteId": "9I-energy-work",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-086-9i-which-of-these-is-a-way-in-which-energy-can-be-transferred",
@@ -2172,7 +2152,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9I-energy-work",
       "learningObjectiveTitle": "Energy, work and simple machines",
       "learningObjectiveDescription": "Work done, machines, ramps, friction and energy transfer.",
-      "noteId": "9I-energy-work"
+      "noteId": "9I-energy-work",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-087-9i-in-which-ways-is-energy-most-often-transferred-as-wasted-energy",
@@ -2195,7 +2176,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9I-energy-work",
       "learningObjectiveTitle": "Energy, work and simple machines",
       "learningObjectiveDescription": "Work done, machines, ramps, friction and energy transfer.",
-      "noteId": "9I-energy-work"
+      "noteId": "9I-energy-work",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-088-9i-which-machine-is-more-efficient-in-a-sankey-diagram",
@@ -2218,14 +2200,16 @@ window.YEAR9_CONTENT = {
         {
           "src": "assets/diagrams/9I-sankey-efficiency.svg",
           "alt": "Two Sankey diagrams comparing machine efficiency.",
-          "caption": "Machine Y wastes a smaller share of the input energy."
+          "caption": "Machine Y wastes a smaller share of the input energy.",
+          "mediaTiming": "question"
         }
       ],
       "sourceFidelity": "text-equivalent",
       "learningObjective": "9I-energy-work",
       "learningObjectiveTitle": "Energy, work and simple machines",
       "learningObjectiveDescription": "Work done, machines, ramps, friction and energy transfer.",
-      "noteId": "9I-energy-work"
+      "noteId": "9I-energy-work",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-089-9i-the-speed-of-a-car-is-a-measure-of-how",
@@ -2248,7 +2232,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9I-speed",
       "learningObjectiveTitle": "Speed and distance-time graphs",
       "learningObjectiveDescription": "Speed calculations, mean speed and interpreting distance-time graphs.",
-      "noteId": "9I-speed"
+      "noteId": "9I-speed",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-090-9i-a-bus-travelled-20-km-in-2-hours-its-speed-was",
@@ -2271,7 +2256,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9I-speed",
       "learningObjectiveTitle": "Speed and distance-time graphs",
       "learningObjectiveDescription": "Speed calculations, mean speed and interpreting distance-time graphs.",
-      "noteId": "9I-speed"
+      "noteId": "9I-speed",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-091-9i-the-mean-speed-of-something-is",
@@ -2294,7 +2280,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9I-speed",
       "learningObjectiveTitle": "Speed and distance-time graphs",
       "learningObjectiveDescription": "Speed calculations, mean speed and interpreting distance-time graphs.",
-      "noteId": "9I-speed"
+      "noteId": "9I-speed",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-092-9i-on-a-distance-time-graph-which-section-shows-where-a-car-has-stopped",
@@ -2317,14 +2304,16 @@ window.YEAR9_CONTENT = {
         {
           "src": "assets/diagrams/9I-distance-time-VWXYZ.svg",
           "alt": "Distance-time graph with sections V, W, X, Y and Z.",
-          "caption": "Horizontal sections W and Y show that the car has stopped."
+          "caption": "Horizontal sections W and Y show that the car has stopped.",
+          "mediaTiming": "question"
         }
       ],
       "sourceFidelity": "source-style-redraw",
       "learningObjective": "9I-speed",
       "learningObjectiveTitle": "Speed and distance-time graphs",
       "learningObjectiveDescription": "Speed calculations, mean speed and interpreting distance-time graphs.",
-      "noteId": "9I-speed"
+      "noteId": "9I-speed",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-093-9i-for-a-lever-the-pivot-is-also-called-the",
@@ -2342,14 +2331,16 @@ window.YEAR9_CONTENT = {
         {
           "src": "assets/diagrams/9I-lever-XYZ-source-style.svg",
           "alt": "Lever diagram with labels X, Y and Z.",
-          "caption": "Y points to the pivot, which is also called the fulcrum."
+          "caption": "Y points to the pivot, which is also called the fulcrum.",
+          "mediaTiming": "question"
         }
       ],
       "sourceFidelity": "source-style-redraw",
       "learningObjective": "9I-moments",
       "learningObjectiveTitle": "Levers, pivots and moments",
       "learningObjectiveDescription": "Levers, pivots/fulcrums, moment calculations and mechanical advantage.",
-      "noteId": "9I-moments"
+      "noteId": "9I-moments",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-094-9i-which-lever-makes-it-easiest-to-move-a-heavy-rock",
@@ -2372,14 +2363,16 @@ window.YEAR9_CONTENT = {
         {
           "src": "assets/diagrams/9I-rock-lever-options-source-style.svg",
           "alt": "Four lever options A to D for moving a rock.",
-          "caption": "Option D has the pivot close to the rock and the effort far from the pivot."
+          "caption": "Option D has the pivot close to the rock and the effort far from the pivot.",
+          "mediaTiming": "question"
         }
       ],
       "sourceFidelity": "source-style-redraw",
       "learningObjective": "9I-moments",
       "learningObjectiveTitle": "Levers, pivots and moments",
       "learningObjectiveDescription": "Levers, pivots/fulcrums, moment calculations and mechanical advantage.",
-      "noteId": "9I-moments"
+      "noteId": "9I-moments",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-095-9i-you-open-a-paint-can-with-a-screwdriver-you-apply-10-n-at-0-2-m-from-t",
@@ -2398,18 +2391,12 @@ window.YEAR9_CONTENT = {
       "level": 2,
       "cue": "",
       "tags": [],
-      "media": [
-        {
-          "src": "assets/diagrams/9I-moments-balance.svg",
-          "alt": "Moment equals force times distance.",
-          "caption": "Moment = force × distance from the pivot."
-        }
-      ],
       "sourceFidelity": "exact-source-text",
       "learningObjective": "9I-moments",
       "learningObjectiveTitle": "Levers, pivots and moments",
       "learningObjectiveDescription": "Levers, pivots/fulcrums, moment calculations and mechanical advantage.",
-      "noteId": "9I-moments"
+      "noteId": "9I-moments",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-096-9i-a-seesaw-is-balanced-boy-300-n-m-girl-450-n-2-m-what-is-the-distance-f",
@@ -2432,7 +2419,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9I-moments",
       "learningObjectiveTitle": "Levers, pivots and moments",
       "learningObjectiveDescription": "Levers, pivots/fulcrums, moment calculations and mechanical advantage.",
-      "noteId": "9I-moments"
+      "noteId": "9I-moments",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-097-9i-which-of-these-is-not-a-simple-machine",
@@ -2455,7 +2443,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9I-energy-work",
       "learningObjectiveTitle": "Energy, work and simple machines",
       "learningObjectiveDescription": "Work done, machines, ramps, friction and energy transfer.",
-      "noteId": "9I-energy-work"
+      "noteId": "9I-energy-work",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-098-9i-which-statement-is-true",
@@ -2478,7 +2467,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9I-energy-work",
       "learningObjectiveTitle": "Energy, work and simple machines",
       "learningObjectiveDescription": "Work done, machines, ramps, friction and energy transfer.",
-      "noteId": "9I-energy-work"
+      "noteId": "9I-energy-work",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-099-9i-a-pulley-lets-you-lift-100-n-using-50-n-how-is-energy-conserved",
@@ -2501,7 +2491,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9I-energy-work",
       "learningObjectiveTitle": "Energy, work and simple machines",
       "learningObjectiveDescription": "Work done, machines, ramps, friction and energy transfer.",
-      "noteId": "9I-energy-work"
+      "noteId": "9I-energy-work",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-100-9i-a-girl-pushes-a-wheelbarrow-2-m-with-a-force-of-30-n-how-much-work-did",
@@ -2524,7 +2515,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9I-energy-work",
       "learningObjectiveTitle": "Energy, work and simple machines",
       "learningObjectiveDescription": "Work done, machines, ramps, friction and energy transfer.",
-      "noteId": "9I-energy-work"
+      "noteId": "9I-energy-work",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-101-9j-the-direction-of-a-magnetic-field-is-from",
@@ -2543,18 +2535,12 @@ window.YEAR9_CONTENT = {
       "level": 1,
       "cue": "",
       "tags": [],
-      "media": [
-        {
-          "src": "assets/webp/9J-magnetic-field-pattern.webp",
-          "alt": "Bar magnet with iron filings showing magnetic field lines.",
-          "caption": "Magnetic field lines go from north to south outside the magnet."
-        }
-      ],
       "sourceFidelity": "exact-source-text",
       "learningObjective": "9J-fields",
       "learningObjectiveTitle": "Force fields, gravity and magnetism",
       "learningObjectiveDescription": "Magnetic, gravitational and electric fields, weight and gravitational potential energy.",
-      "noteId": "9J-fields"
+      "noteId": "9J-fields",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-102-9j-an-object-s-weight",
@@ -2577,7 +2563,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9J-fields",
       "learningObjectiveTitle": "Force fields, gravity and magnetism",
       "learningObjectiveDescription": "Magnetic, gravitational and electric fields, weight and gravitational potential energy.",
-      "noteId": "9J-fields"
+      "noteId": "9J-fields",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-103-9j-gravity-is-less-on-the-moon-than-on-earth-because",
@@ -2600,7 +2587,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9J-fields",
       "learningObjectiveTitle": "Force fields, gravity and magnetism",
       "learningObjectiveDescription": "Magnetic, gravitational and electric fields, weight and gravitational potential energy.",
-      "noteId": "9J-fields"
+      "noteId": "9J-fields",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-104-9j-which-object-has-the-greatest-store-of-gravitational-potential-energy",
@@ -2623,7 +2611,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9J-fields",
       "learningObjectiveTitle": "Force fields, gravity and magnetism",
       "learningObjectiveDescription": "Magnetic, gravitational and electric fields, weight and gravitational potential energy.",
-      "noteId": "9J-fields"
+      "noteId": "9J-fields",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-105-9j-which-statement-about-atoms-is-not-true",
@@ -2646,7 +2635,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9J-static",
       "learningObjectiveTitle": "Static electricity and charge",
       "learningObjectiveDescription": "Charge transfer, attraction, repulsion, dangers and uses of static electricity.",
-      "noteId": "9J-static"
+      "noteId": "9J-static",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-106-9j-an-object-has-a-negative-charge-which-statement-is-correct",
@@ -2669,7 +2659,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9J-static",
       "learningObjectiveTitle": "Static electricity and charge",
       "learningObjectiveDescription": "Charge transfer, attraction, repulsion, dangers and uses of static electricity.",
-      "noteId": "9J-static"
+      "noteId": "9J-static",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-107-9j-why-can-we-not-detect-static-charge-if-we-rub-a-metal-rod",
@@ -2692,7 +2683,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9J-static",
       "learningObjectiveTitle": "Static electricity and charge",
       "learningObjectiveDescription": "Charge transfer, attraction, repulsion, dangers and uses of static electricity.",
-      "noteId": "9J-static"
+      "noteId": "9J-static",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-108-9j-an-electric-field-is-the-space-around-a-charged-object-where-it",
@@ -2715,7 +2707,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9J-static",
       "learningObjectiveTitle": "Static electricity and charge",
       "learningObjectiveDescription": "Charge transfer, attraction, repulsion, dangers and uses of static electricity.",
-      "noteId": "9J-static"
+      "noteId": "9J-static",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-109-9j-which-is-the-best-description-of-electric-current",
@@ -2738,7 +2731,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9J-static",
       "learningObjectiveTitle": "Static electricity and charge",
       "learningObjectiveDescription": "Charge transfer, attraction, repulsion, dangers and uses of static electricity.",
-      "noteId": "9J-static"
+      "noteId": "9J-static",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-110-9j-voltage-is",
@@ -2761,7 +2755,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9J-static",
       "learningObjectiveTitle": "Static electricity and charge",
       "learningObjectiveDescription": "Charge transfer, attraction, repulsion, dangers and uses of static electricity.",
-      "noteId": "9J-static"
+      "noteId": "9J-static",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-111-9j-which-statement-is-not-true-for-a-series-circuit",
@@ -2780,18 +2775,12 @@ window.YEAR9_CONTENT = {
       "level": 2,
       "cue": "",
       "tags": [],
-      "media": [
-        {
-          "src": "assets/webp/9J-series-parallel-circuits-photo.webp",
-          "alt": "Side-by-side photo comparison of a series circuit and a parallel circuit.",
-          "caption": "In a series circuit there is one loop. In a parallel circuit there is more than one branch."
-        }
-      ],
       "sourceFidelity": "exact-source-text",
       "learningObjective": "9J-circuits",
       "learningObjectiveTitle": "Current, voltage and circuits",
       "learningObjectiveDescription": "Current, voltage/potential difference, series and parallel circuits, meters and components.",
-      "noteId": "9J-circuits"
+      "noteId": "9J-circuits",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-112-9j-which-statement-is-true-for-a-parallel-circuit",
@@ -2810,18 +2799,12 @@ window.YEAR9_CONTENT = {
       "level": 2,
       "cue": "",
       "tags": [],
-      "media": [
-        {
-          "src": "assets/webp/9J-series-parallel-circuits-photo.webp",
-          "alt": "Series and parallel circuit comparison.",
-          "caption": "The parallel circuit on the right has separate branches for each bulb."
-        }
-      ],
       "sourceFidelity": "exact-source-text",
       "learningObjective": "9J-circuits",
       "learningObjectiveTitle": "Current, voltage and circuits",
       "learningObjectiveDescription": "Current, voltage/potential difference, series and parallel circuits, meters and components.",
-      "noteId": "9J-circuits"
+      "noteId": "9J-circuits",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-113-9j-which-statement-is-correct",
@@ -2840,18 +2823,12 @@ window.YEAR9_CONTENT = {
       "level": 1,
       "cue": "",
       "tags": [],
-      "media": [
-        {
-          "src": "assets/webp/9E-conductors-insulators-materials.webp",
-          "alt": "Conducting and insulating materials.",
-          "caption": "The image helps compare conductors such as copper with insulating materials such as plastic and wood."
-        }
-      ],
       "sourceFidelity": "exact-source-text",
       "learningObjective": "9J-circuits",
       "learningObjectiveTitle": "Current, voltage and circuits",
       "learningObjectiveDescription": "Current, voltage/potential difference, series and parallel circuits, meters and components.",
-      "noteId": "9J-circuits"
+      "noteId": "9J-circuits",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-114-9j-which-copper-wire-has-the-highest-resistance",
@@ -2874,7 +2851,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9J-resistance",
       "learningObjectiveTitle": "Resistance and Ohm’s law",
       "learningObjectiveDescription": "Resistance, current-voltage graphs, high-resistance materials and calculations.",
-      "noteId": "9J-resistance"
+      "noteId": "9J-resistance",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-115-9j-the-units-for-measuring-resistance-are",
@@ -2897,7 +2875,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9J-resistance",
       "learningObjectiveTitle": "Resistance and Ohm’s law",
       "learningObjectiveDescription": "Resistance, current-voltage graphs, high-resistance materials and calculations.",
-      "noteId": "9J-resistance"
+      "noteId": "9J-resistance",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-116-9j-what-is-the-formula-for-calculating-resistance",
@@ -2920,7 +2899,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9J-resistance",
       "learningObjectiveTitle": "Resistance and Ohm’s law",
       "learningObjectiveDescription": "Resistance, current-voltage graphs, high-resistance materials and calculations.",
-      "noteId": "9J-resistance"
+      "noteId": "9J-resistance",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-117-9j-which-change-will-make-an-electromagnet-stronger",
@@ -2939,18 +2919,12 @@ window.YEAR9_CONTENT = {
       "level": 1,
       "cue": "",
       "tags": [],
-      "media": [
-        {
-          "src": "assets/diagrams/9J-electromagnet.svg",
-          "alt": "Electromagnet with coil and iron core.",
-          "caption": "More turns, more current and an iron core make the electromagnet stronger."
-        }
-      ],
       "sourceFidelity": "exact-source-text",
       "learningObjective": "9J-electromagnets",
       "learningObjectiveTitle": "Electromagnets, relays and motors",
       "learningObjectiveDescription": "Electromagnets, relays, motor effect and factors affecting magnetic force.",
-      "noteId": "9J-electromagnets"
+      "noteId": "9J-electromagnets",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-118-9j-why-are-relays-useful",
@@ -2969,18 +2943,12 @@ window.YEAR9_CONTENT = {
       "level": 2,
       "cue": "",
       "tags": [],
-      "media": [
-        {
-          "src": "assets/webp/9J-electromagnet-relay-motor.webp",
-          "alt": "Hardware examples of an electromagnet, relay and motor.",
-          "caption": "A relay allows a small current to control a larger circuit."
-        }
-      ],
       "sourceFidelity": "exact-source-text",
       "learningObjective": "9J-electromagnets",
       "learningObjectiveTitle": "Electromagnets, relays and motors",
       "learningObjectiveDescription": "Electromagnets, relays, motor effect and factors affecting magnetic force.",
-      "noteId": "9J-electromagnets"
+      "noteId": "9J-electromagnets",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-119-9j-a-wire-carrying-a-current-in-a-magnetic-field-experiences-a-force-how-",
@@ -2999,18 +2967,12 @@ window.YEAR9_CONTENT = {
       "level": 2,
       "cue": "",
       "tags": [],
-      "media": [
-        {
-          "src": "assets/diagrams/9J-motor-effect.svg",
-          "alt": "Wire in magnetic field showing motor effect.",
-          "caption": "A bigger current or stronger magnetic field produces a bigger force."
-        }
-      ],
       "sourceFidelity": "exact-source-text",
       "learningObjective": "9J-circuits",
       "learningObjectiveTitle": "Current, voltage and circuits",
       "learningObjectiveDescription": "Current, voltage/potential difference, series and parallel circuits, meters and components.",
-      "noteId": "9J-circuits"
+      "noteId": "9J-circuits",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-120-9j-which-list-shows-the-parts-of-an-electric-motor",
@@ -3029,18 +2991,12 @@ window.YEAR9_CONTENT = {
       "level": 2,
       "cue": "",
       "tags": [],
-      "media": [
-        {
-          "src": "assets/webp/9J-electromagnet-relay-motor.webp",
-          "alt": "Electromagnet, relay and DC motor hardware image.",
-          "caption": "The image shows typical hardware forms of an electromagnet, relay and motor."
-        }
-      ],
       "sourceFidelity": "exact-source-text",
       "learningObjective": "9J-electromagnets",
       "learningObjectiveTitle": "Electromagnets, relays and motors",
       "learningObjectiveDescription": "Electromagnets, relays, motor effect and factors affecting magnetic force.",
-      "noteId": "9J-electromagnets"
+      "noteId": "9J-electromagnets",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-121-9a-define-species",
@@ -3060,7 +3016,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9A-variation",
       "learningObjectiveTitle": "Variation and classification",
       "learningObjectiveDescription": "Types of variation, inherited and environmental causes, and classification challenges.",
-      "noteId": "9A-variation"
+      "noteId": "9A-variation",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-122-9a-define-genus",
@@ -3080,7 +3037,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9A-variation",
       "learningObjectiveTitle": "Variation and classification",
       "learningObjectiveDescription": "Types of variation, inherited and environmental causes, and classification challenges.",
-      "noteId": "9A-variation"
+      "noteId": "9A-variation",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-123-9a-define-variation",
@@ -3100,7 +3058,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9A-variation",
       "learningObjectiveTitle": "Variation and classification",
       "learningObjectiveDescription": "Types of variation, inherited and environmental causes, and classification challenges.",
-      "noteId": "9A-variation"
+      "noteId": "9A-variation",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-124-9a-define-characteristic",
@@ -3120,7 +3079,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9A-variation",
       "learningObjectiveTitle": "Variation and classification",
       "learningObjectiveDescription": "Types of variation, inherited and environmental causes, and classification challenges.",
-      "noteId": "9A-variation"
+      "noteId": "9A-variation",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-125-9a-define-classification",
@@ -3140,7 +3100,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9A-variation",
       "learningObjectiveTitle": "Variation and classification",
       "learningObjectiveDescription": "Types of variation, inherited and environmental causes, and classification challenges.",
-      "noteId": "9A-variation"
+      "noteId": "9A-variation",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-126-9a-define-environmental-variation",
@@ -3160,7 +3121,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9A-variation",
       "learningObjectiveTitle": "Variation and classification",
       "learningObjectiveDescription": "Types of variation, inherited and environmental causes, and classification challenges.",
-      "noteId": "9A-variation"
+      "noteId": "9A-variation",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-127-9a-define-inherited-variation",
@@ -3180,7 +3142,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9A-inheritance",
       "learningObjectiveTitle": "Inheritance, DNA and genes",
       "learningObjectiveDescription": "Cells, nuclei, chromosomes, DNA, genes and preserving genetic information.",
-      "noteId": "9A-inheritance"
+      "noteId": "9A-inheritance",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-128-9a-define-continuous-variation",
@@ -3200,7 +3163,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9A-variation",
       "learningObjectiveTitle": "Variation and classification",
       "learningObjectiveDescription": "Types of variation, inherited and environmental causes, and classification challenges.",
-      "noteId": "9A-variation"
+      "noteId": "9A-variation",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-129-9a-define-discontinuous-variation",
@@ -3220,7 +3184,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9A-variation",
       "learningObjectiveTitle": "Variation and classification",
       "learningObjectiveDescription": "Types of variation, inherited and environmental causes, and classification challenges.",
-      "noteId": "9A-variation"
+      "noteId": "9A-variation",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-130-9a-define-gamete",
@@ -3240,7 +3205,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9A-variation",
       "learningObjectiveTitle": "Variation and classification",
       "learningObjectiveDescription": "Types of variation, inherited and environmental causes, and classification challenges.",
-      "noteId": "9A-variation"
+      "noteId": "9A-variation",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-131-9a-define-fertilisation",
@@ -3260,7 +3226,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9A-variation",
       "learningObjectiveTitle": "Variation and classification",
       "learningObjectiveDescription": "Types of variation, inherited and environmental causes, and classification challenges.",
-      "noteId": "9A-variation"
+      "noteId": "9A-variation",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-132-9a-define-zygote",
@@ -3280,7 +3247,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9A-variation",
       "learningObjectiveTitle": "Variation and classification",
       "learningObjectiveDescription": "Types of variation, inherited and environmental causes, and classification challenges.",
-      "noteId": "9A-variation"
+      "noteId": "9A-variation",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-133-9a-define-gene",
@@ -3296,18 +3264,12 @@ window.YEAR9_CONTENT = {
       "tags": [
         "vocabulary"
       ],
-      "media": [
-        {
-          "src": "assets/diagrams/9A-dna-genes-chromosomes.svg",
-          "alt": "Gene highlighted on a DNA molecule.",
-          "caption": "Use this to explain what a gene is and where it is found."
-        }
-      ],
       "sourceFidelity": "exact-source-text",
       "learningObjective": "9A-inheritance",
       "learningObjectiveTitle": "Inheritance, DNA and genes",
       "learningObjectiveDescription": "Cells, nuclei, chromosomes, DNA, genes and preserving genetic information.",
-      "noteId": "9A-inheritance"
+      "noteId": "9A-inheritance",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-134-9a-define-chromosome",
@@ -3323,18 +3285,12 @@ window.YEAR9_CONTENT = {
       "tags": [
         "vocabulary"
       ],
-      "media": [
-        {
-          "src": "assets/diagrams/9A-dna-genes-chromosomes.svg",
-          "alt": "Chromosome linked to DNA and genes.",
-          "caption": "A chromosome is a long coiled structure made from DNA."
-        }
-      ],
       "sourceFidelity": "exact-source-text",
       "learningObjective": "9A-inheritance",
       "learningObjectiveTitle": "Inheritance, DNA and genes",
       "learningObjectiveDescription": "Cells, nuclei, chromosomes, DNA, genes and preserving genetic information.",
-      "noteId": "9A-inheritance"
+      "noteId": "9A-inheritance",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-135-9a-define-dna",
@@ -3350,18 +3306,12 @@ window.YEAR9_CONTENT = {
       "tags": [
         "vocabulary"
       ],
-      "media": [
-        {
-          "src": "assets/diagrams/9A-dna-genes-chromosomes.svg",
-          "alt": "DNA double helix with highlighted gene.",
-          "caption": "DNA carries genetic information."
-        }
-      ],
       "sourceFidelity": "exact-source-text",
       "learningObjective": "9A-inheritance",
       "learningObjectiveTitle": "Inheritance, DNA and genes",
       "learningObjectiveDescription": "Cells, nuclei, chromosomes, DNA, genes and preserving genetic information.",
-      "noteId": "9A-inheritance"
+      "noteId": "9A-inheritance",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-136-9a-define-normal-distribution",
@@ -3381,7 +3331,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9A-variation",
       "learningObjectiveTitle": "Variation and classification",
       "learningObjectiveDescription": "Types of variation, inherited and environmental causes, and classification challenges.",
-      "noteId": "9A-variation"
+      "noteId": "9A-variation",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-137-9a-define-adaptation",
@@ -3401,7 +3352,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9A-evolution",
       "learningObjectiveTitle": "Adaptation, natural selection and evolution",
       "learningObjectiveDescription": "Adaptations, evidence from fossils, natural selection and evolution over time.",
-      "noteId": "9A-evolution"
+      "noteId": "9A-evolution",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-138-9a-define-biodiversity",
@@ -3421,7 +3373,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9A-biodiversity",
       "learningObjectiveTitle": "Biodiversity, conservation and extinction",
       "learningObjectiveDescription": "Endangered species, biodiversity, conservation, gene banks and extinction pressures.",
-      "noteId": "9A-biodiversity"
+      "noteId": "9A-biodiversity",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-139-9a-define-conservation",
@@ -3441,7 +3394,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9A-biodiversity",
       "learningObjectiveTitle": "Biodiversity, conservation and extinction",
       "learningObjectiveDescription": "Endangered species, biodiversity, conservation, gene banks and extinction pressures.",
-      "noteId": "9A-biodiversity"
+      "noteId": "9A-biodiversity",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-140-9a-define-natural-selection",
@@ -3457,18 +3411,12 @@ window.YEAR9_CONTENT = {
       "tags": [
         "vocabulary"
       ],
-      "media": [
-        {
-          "src": "assets/webp/9A-natural-selection-giraffes.webp",
-          "alt": "Giraffes of different neck lengths reaching for leaves.",
-          "caption": "Natural selection means individuals with helpful inherited characteristics are more likely to survive and reproduce."
-        }
-      ],
       "sourceFidelity": "exact-source-text",
       "learningObjective": "9A-evolution",
       "learningObjectiveTitle": "Adaptation, natural selection and evolution",
       "learningObjectiveDescription": "Adaptations, evidence from fossils, natural selection and evolution over time.",
-      "noteId": "9A-evolution"
+      "noteId": "9A-evolution",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-141-9a-define-evolution",
@@ -3488,7 +3436,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9A-evolution",
       "learningObjectiveTitle": "Adaptation, natural selection and evolution",
       "learningObjectiveDescription": "Adaptations, evidence from fossils, natural selection and evolution over time.",
-      "noteId": "9A-evolution"
+      "noteId": "9A-evolution",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-142-9b-define-photosynthesis",
@@ -3508,7 +3457,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9B-photosynthesis",
       "learningObjectiveTitle": "Photosynthesis and respiration",
       "learningObjectiveDescription": "Reactants, products, chlorophyll, limiting factors and photosynthesis rate.",
-      "noteId": "9B-photosynthesis"
+      "noteId": "9B-photosynthesis",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-143-9b-define-chlorophyll",
@@ -3528,7 +3478,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9B-photosynthesis",
       "learningObjectiveTitle": "Photosynthesis and respiration",
       "learningObjectiveDescription": "Reactants, products, chlorophyll, limiting factors and photosynthesis rate.",
-      "noteId": "9B-photosynthesis"
+      "noteId": "9B-photosynthesis",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-144-9b-define-limiting-factor",
@@ -3548,7 +3499,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9B-photosynthesis",
       "learningObjectiveTitle": "Photosynthesis and respiration",
       "learningObjectiveDescription": "Reactants, products, chlorophyll, limiting factors and photosynthesis rate.",
-      "noteId": "9B-photosynthesis"
+      "noteId": "9B-photosynthesis",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-145-9b-define-aerobic-respiration",
@@ -3568,7 +3520,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9B-photosynthesis",
       "learningObjectiveTitle": "Photosynthesis and respiration",
       "learningObjectiveDescription": "Reactants, products, chlorophyll, limiting factors and photosynthesis rate.",
-      "noteId": "9B-photosynthesis"
+      "noteId": "9B-photosynthesis",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-146-9b-define-phloem",
@@ -3588,7 +3541,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9B-plant-transport",
       "learningObjectiveTitle": "Plant transport and specialised cells",
       "learningObjectiveDescription": "Root hair cells, stomata, guard cells, xylem, phloem and plant structure.",
-      "noteId": "9B-plant-transport"
+      "noteId": "9B-plant-transport",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-147-9b-define-xylem",
@@ -3608,7 +3562,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9B-plant-transport",
       "learningObjectiveTitle": "Plant transport and specialised cells",
       "learningObjectiveDescription": "Root hair cells, stomata, guard cells, xylem, phloem and plant structure.",
-      "noteId": "9B-plant-transport"
+      "noteId": "9B-plant-transport",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-148-9b-define-root-hair-cell",
@@ -3624,18 +3579,12 @@ window.YEAR9_CONTENT = {
       "tags": [
         "vocabulary"
       ],
-      "media": [
-        {
-          "src": "assets/webp/9B-root-hair-micrograph.webp",
-          "alt": "Microscope-style root hair cell image with labels for root hair, cell wall and minerals.",
-          "caption": "Root hair cells have a large surface area to absorb water and minerals from the soil."
-        }
-      ],
       "sourceFidelity": "exact-source-text",
       "learningObjective": "9B-plant-transport",
       "learningObjectiveTitle": "Plant transport and specialised cells",
       "learningObjectiveDescription": "Root hair cells, stomata, guard cells, xylem, phloem and plant structure.",
-      "noteId": "9B-plant-transport"
+      "noteId": "9B-plant-transport",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-149-9b-define-stomata",
@@ -3651,18 +3600,12 @@ window.YEAR9_CONTENT = {
       "tags": [
         "vocabulary"
       ],
-      "media": [
-        {
-          "src": "assets/webp/9B-stomata-micrograph.webp",
-          "alt": "Microscope-style close-up of stomata on a leaf surface.",
-          "caption": "Stomata are tiny pores in leaves that allow gas exchange."
-        }
-      ],
       "sourceFidelity": "exact-source-text",
       "learningObjective": "9B-plant-transport",
       "learningObjectiveTitle": "Plant transport and specialised cells",
       "learningObjectiveDescription": "Root hair cells, stomata, guard cells, xylem, phloem and plant structure.",
-      "noteId": "9B-plant-transport"
+      "noteId": "9B-plant-transport",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-150-9b-define-guard-cells",
@@ -3678,18 +3621,12 @@ window.YEAR9_CONTENT = {
       "tags": [
         "vocabulary"
       ],
-      "media": [
-        {
-          "src": "assets/webp/9B-stomata-micrograph.webp",
-          "alt": "Close-up view of stomata and guard cells.",
-          "caption": "Guard cells are the pair of cells around each stoma that control its opening and closing."
-        }
-      ],
       "sourceFidelity": "exact-source-text",
       "learningObjective": "9B-plant-transport",
       "learningObjectiveTitle": "Plant transport and specialised cells",
       "learningObjectiveDescription": "Root hair cells, stomata, guard cells, xylem, phloem and plant structure.",
-      "noteId": "9B-plant-transport"
+      "noteId": "9B-plant-transport",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-151-9b-define-starch",
@@ -3709,7 +3646,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9B-plant-products",
       "learningObjectiveTitle": "Plant products, seeds and food production",
       "learningObjectiveDescription": "Glucose, starch, cellulose, oils, minerals, crop yield and farming methods.",
-      "noteId": "9B-plant-products"
+      "noteId": "9B-plant-products",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-152-9b-define-iodine-test",
@@ -3729,7 +3667,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9B-plant-products",
       "learningObjectiveTitle": "Plant products, seeds and food production",
       "learningObjectiveDescription": "Glucose, starch, cellulose, oils, minerals, crop yield and farming methods.",
-      "noteId": "9B-plant-products"
+      "noteId": "9B-plant-products",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-153-9b-define-cellulose",
@@ -3749,7 +3688,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9B-plant-products",
       "learningObjectiveTitle": "Plant products, seeds and food production",
       "learningObjectiveDescription": "Glucose, starch, cellulose, oils, minerals, crop yield and farming methods.",
-      "noteId": "9B-plant-products"
+      "noteId": "9B-plant-products",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-154-9b-define-nitrate",
@@ -3769,7 +3709,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9B-plant-products",
       "learningObjectiveTitle": "Plant products, seeds and food production",
       "learningObjectiveDescription": "Glucose, starch, cellulose, oils, minerals, crop yield and farming methods.",
-      "noteId": "9B-plant-products"
+      "noteId": "9B-plant-products",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-155-9b-define-selective-breeding",
@@ -3789,7 +3730,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9B-photosynthesis",
       "learningObjectiveTitle": "Photosynthesis and respiration",
       "learningObjectiveDescription": "Reactants, products, chlorophyll, limiting factors and photosynthesis rate.",
-      "noteId": "9B-photosynthesis"
+      "noteId": "9B-photosynthesis",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-156-9b-define-herbicide",
@@ -3809,7 +3751,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9B-photosynthesis",
       "learningObjectiveTitle": "Photosynthesis and respiration",
       "learningObjectiveDescription": "Reactants, products, chlorophyll, limiting factors and photosynthesis rate.",
-      "noteId": "9B-photosynthesis"
+      "noteId": "9B-photosynthesis",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-157-9b-define-insecticide",
@@ -3829,7 +3772,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9B-food-webs",
       "learningObjectiveTitle": "Food webs, biodiversity and ecosystems",
       "learningObjectiveDescription": "Food webs, pesticides, biodiversity, sampling and effects of farming.",
-      "noteId": "9B-food-webs"
+      "noteId": "9B-food-webs",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-158-9b-define-biological-control",
@@ -3849,7 +3793,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9B-photosynthesis",
       "learningObjectiveTitle": "Photosynthesis and respiration",
       "learningObjectiveDescription": "Reactants, products, chlorophyll, limiting factors and photosynthesis rate.",
-      "noteId": "9B-photosynthesis"
+      "noteId": "9B-photosynthesis",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-159-9b-define-carbon-cycle",
@@ -3869,7 +3814,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9B-photosynthesis",
       "learningObjectiveTitle": "Photosynthesis and respiration",
       "learningObjectiveDescription": "Reactants, products, chlorophyll, limiting factors and photosynthesis rate.",
-      "noteId": "9B-photosynthesis"
+      "noteId": "9B-photosynthesis",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-160-9e-define-ceramic",
@@ -3885,18 +3831,12 @@ window.YEAR9_CONTENT = {
       "tags": [
         "vocabulary"
       ],
-      "media": [
-        {
-          "src": "assets/webp/9E-material-textures.webp",
-          "alt": "Ceramic example shown in a materials comparison chart.",
-          "caption": "Ceramics are hard, brittle and heat resistant."
-        }
-      ],
       "sourceFidelity": "exact-source-text",
       "learningObjective": "9E-ceramics",
       "learningObjectiveTitle": "Ceramics, crystals and materials properties",
       "learningObjectiveDescription": "Ceramics, glass, clay, crystal formation, melting point and brittleness.",
-      "noteId": "9E-ceramics"
+      "noteId": "9E-ceramics",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-161-9e-define-brittle",
@@ -3916,7 +3856,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9E-ceramics",
       "learningObjectiveTitle": "Ceramics, crystals and materials properties",
       "learningObjectiveDescription": "Ceramics, glass, clay, crystal formation, melting point and brittleness.",
-      "noteId": "9E-ceramics"
+      "noteId": "9E-ceramics",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-162-9e-define-bond",
@@ -3936,7 +3877,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9E-ceramics",
       "learningObjectiveTitle": "Ceramics, crystals and materials properties",
       "learningObjectiveDescription": "Ceramics, glass, clay, crystal formation, melting point and brittleness.",
-      "noteId": "9E-ceramics"
+      "noteId": "9E-ceramics",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-163-9e-define-lattice",
@@ -3956,7 +3898,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9E-ceramics",
       "learningObjectiveTitle": "Ceramics, crystals and materials properties",
       "learningObjectiveDescription": "Ceramics, glass, clay, crystal formation, melting point and brittleness.",
-      "noteId": "9E-ceramics"
+      "noteId": "9E-ceramics",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-164-9e-define-polymer",
@@ -3976,7 +3919,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9E-polymers",
       "learningObjectiveTitle": "Polymers and polymerisation",
       "learningObjectiveDescription": "Natural and synthetic polymers, polymerisation, vulcanisation and biodegradability.",
-      "noteId": "9E-polymers"
+      "noteId": "9E-polymers",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-165-9e-define-monomer",
@@ -3996,7 +3940,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9E-polymers",
       "learningObjectiveTitle": "Polymers and polymerisation",
       "learningObjectiveDescription": "Natural and synthetic polymers, polymerisation, vulcanisation and biodegradability.",
-      "noteId": "9E-polymers"
+      "noteId": "9E-polymers",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-166-9e-define-synthetic-polymer",
@@ -4016,7 +3961,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9E-polymers",
       "learningObjectiveTitle": "Polymers and polymerisation",
       "learningObjectiveDescription": "Natural and synthetic polymers, polymerisation, vulcanisation and biodegradability.",
-      "noteId": "9E-polymers"
+      "noteId": "9E-polymers",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-167-9e-define-vulcanisation",
@@ -4036,7 +3982,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9E-polymers",
       "learningObjectiveTitle": "Polymers and polymerisation",
       "learningObjectiveDescription": "Natural and synthetic polymers, polymerisation, vulcanisation and biodegradability.",
-      "noteId": "9E-polymers"
+      "noteId": "9E-polymers",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-168-9e-define-composite",
@@ -4052,18 +3999,12 @@ window.YEAR9_CONTENT = {
       "tags": [
         "vocabulary"
       ],
-      "media": [
-        {
-          "src": "assets/webp/9E-material-textures.webp",
-          "alt": "Composite example in materials comparison chart.",
-          "caption": "Composites combine materials to give useful combined properties."
-        }
-      ],
       "sourceFidelity": "exact-source-text",
       "learningObjective": "9E-composites",
       "learningObjectiveTitle": "Composites and material choice",
       "learningObjectiveDescription": "Composite materials, concrete, reinforced concrete and glass-reinforced plastic.",
-      "noteId": "9E-composites"
+      "noteId": "9E-composites",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-169-9e-define-concrete",
@@ -4079,18 +4020,12 @@ window.YEAR9_CONTENT = {
       "tags": [
         "vocabulary"
       ],
-      "media": [
-        {
-          "src": "assets/webp/9E-material-textures.webp",
-          "alt": "Reinforced concrete example in materials chart.",
-          "caption": "Concrete is widely used in buildings and structures."
-        }
-      ],
       "sourceFidelity": "exact-source-text",
       "learningObjective": "9E-composites",
       "learningObjectiveTitle": "Composites and material choice",
       "learningObjectiveDescription": "Composite materials, concrete, reinforced concrete and glass-reinforced plastic.",
-      "noteId": "9E-composites"
+      "noteId": "9E-composites",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-170-9e-define-glass-reinforced-plastic",
@@ -4106,18 +4041,12 @@ window.YEAR9_CONTENT = {
       "tags": [
         "vocabulary"
       ],
-      "media": [
-        {
-          "src": "assets/diagrams/9E-polymers-composites.svg",
-          "alt": "Composite material diagram with reinforcement.",
-          "caption": "GRP is a composite with plastic reinforced by glass fibres."
-        }
-      ],
       "sourceFidelity": "exact-source-text",
       "learningObjective": "9E-polymers",
       "learningObjectiveTitle": "Polymers and polymerisation",
       "learningObjectiveDescription": "Natural and synthetic polymers, polymerisation, vulcanisation and biodegradability.",
-      "noteId": "9E-polymers"
+      "noteId": "9E-polymers",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-171-9e-define-thermal-decomposition",
@@ -4137,7 +4066,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9E-ceramics",
       "learningObjectiveTitle": "Ceramics, crystals and materials properties",
       "learningObjectiveDescription": "Ceramics, glass, clay, crystal formation, melting point and brittleness.",
-      "noteId": "9E-ceramics"
+      "noteId": "9E-ceramics",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-172-9e-define-greenhouse-gas",
@@ -4157,7 +4087,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9E-environment",
       "learningObjectiveTitle": "Environmental impacts and recycling",
       "learningObjectiveDescription": "Landfill, recycling, fossil fuels, acid rain, greenhouse effect and reducing impacts.",
-      "noteId": "9E-environment"
+      "noteId": "9E-environment",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-173-9e-define-biomagnification",
@@ -4177,7 +4108,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9E-ceramics",
       "learningObjectiveTitle": "Ceramics, crystals and materials properties",
       "learningObjectiveDescription": "Ceramics, glass, clay, crystal formation, melting point and brittleness.",
-      "noteId": "9E-ceramics"
+      "noteId": "9E-ceramics",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-174-9e-define-biodegradable",
@@ -4197,7 +4129,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9E-polymers",
       "learningObjectiveTitle": "Polymers and polymerisation",
       "learningObjectiveDescription": "Natural and synthetic polymers, polymerisation, vulcanisation and biodegradability.",
-      "noteId": "9E-polymers"
+      "noteId": "9E-polymers",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-175-9e-define-non-biodegradable",
@@ -4217,7 +4150,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9E-polymers",
       "learningObjectiveTitle": "Polymers and polymerisation",
       "learningObjectiveDescription": "Natural and synthetic polymers, polymerisation, vulcanisation and biodegradability.",
-      "noteId": "9E-polymers"
+      "noteId": "9E-polymers",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-176-9e-define-landfill",
@@ -4237,7 +4171,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9E-environment",
       "learningObjectiveTitle": "Environmental impacts and recycling",
       "learningObjectiveDescription": "Landfill, recycling, fossil fuels, acid rain, greenhouse effect and reducing impacts.",
-      "noteId": "9E-environment"
+      "noteId": "9E-environment",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-177-9e-define-recycling",
@@ -4257,7 +4192,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9E-environment",
       "learningObjectiveTitle": "Environmental impacts and recycling",
       "learningObjectiveDescription": "Landfill, recycling, fossil fuels, acid rain, greenhouse effect and reducing impacts.",
-      "noteId": "9E-environment"
+      "noteId": "9E-environment",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-178-9f-define-physical-change",
@@ -4277,7 +4213,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9F-changes",
       "learningObjectiveTitle": "Physical and chemical changes",
       "learningObjectiveDescription": "Physical changes, chemical reactions, particles, molecules, formulae and gas pressure.",
-      "noteId": "9F-changes"
+      "noteId": "9F-changes",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-179-9f-define-chemical-reaction",
@@ -4297,7 +4234,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9F-changes",
       "learningObjectiveTitle": "Physical and chemical changes",
       "learningObjectiveDescription": "Physical changes, chemical reactions, particles, molecules, formulae and gas pressure.",
-      "noteId": "9F-changes"
+      "noteId": "9F-changes",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-180-9f-define-gas-pressure",
@@ -4317,7 +4255,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9F-changes",
       "learningObjectiveTitle": "Physical and chemical changes",
       "learningObjectiveDescription": "Physical changes, chemical reactions, particles, molecules, formulae and gas pressure.",
-      "noteId": "9F-changes"
+      "noteId": "9F-changes",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-181-9f-define-reactivity",
@@ -4337,7 +4276,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9F-reactivity",
       "learningObjectiveTitle": "Reactivity and displacement",
       "learningObjectiveDescription": "Reactivity series, displacement reactions and metal reactions with acids.",
-      "noteId": "9F-reactivity"
+      "noteId": "9F-reactivity",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-182-9f-define-periodic-table",
@@ -4357,7 +4297,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9F-changes",
       "learningObjectiveTitle": "Physical and chemical changes",
       "learningObjectiveDescription": "Physical changes, chemical reactions, particles, molecules, formulae and gas pressure.",
-      "noteId": "9F-changes"
+      "noteId": "9F-changes",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-183-9f-define-proton",
@@ -4377,7 +4318,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9F-changes",
       "learningObjectiveTitle": "Physical and chemical changes",
       "learningObjectiveDescription": "Physical changes, chemical reactions, particles, molecules, formulae and gas pressure.",
-      "noteId": "9F-changes"
+      "noteId": "9F-changes",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-184-9f-define-neutron",
@@ -4397,7 +4339,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9F-changes",
       "learningObjectiveTitle": "Physical and chemical changes",
       "learningObjectiveDescription": "Physical changes, chemical reactions, particles, molecules, formulae and gas pressure.",
-      "noteId": "9F-changes"
+      "noteId": "9F-changes",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-185-9f-define-electron",
@@ -4417,7 +4360,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9F-changes",
       "learningObjectiveTitle": "Physical and chemical changes",
       "learningObjectiveDescription": "Physical changes, chemical reactions, particles, molecules, formulae and gas pressure.",
-      "noteId": "9F-changes"
+      "noteId": "9F-changes",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-186-9f-define-salt",
@@ -4437,7 +4381,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9F-reactivity",
       "learningObjectiveTitle": "Reactivity and displacement",
       "learningObjectiveDescription": "Reactivity series, displacement reactions and metal reactions with acids.",
-      "noteId": "9F-reactivity"
+      "noteId": "9F-reactivity",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-187-9f-define-combustion",
@@ -4457,7 +4402,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9F-changes",
       "learningObjectiveTitle": "Physical and chemical changes",
       "learningObjectiveDescription": "Physical changes, chemical reactions, particles, molecules, formulae and gas pressure.",
-      "noteId": "9F-changes"
+      "noteId": "9F-changes",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-188-9f-define-hydrocarbon",
@@ -4477,7 +4423,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9F-changes",
       "learningObjectiveTitle": "Physical and chemical changes",
       "learningObjectiveDescription": "Physical changes, chemical reactions, particles, molecules, formulae and gas pressure.",
-      "noteId": "9F-changes"
+      "noteId": "9F-changes",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-189-9f-define-exothermic-reaction",
@@ -4497,7 +4444,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9F-changes",
       "learningObjectiveTitle": "Physical and chemical changes",
       "learningObjectiveDescription": "Physical changes, chemical reactions, particles, molecules, formulae and gas pressure.",
-      "noteId": "9F-changes"
+      "noteId": "9F-changes",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-190-9f-define-endothermic-reaction",
@@ -4517,7 +4465,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9F-changes",
       "learningObjectiveTitle": "Physical and chemical changes",
       "learningObjectiveDescription": "Physical changes, chemical reactions, particles, molecules, formulae and gas pressure.",
-      "noteId": "9F-changes"
+      "noteId": "9F-changes",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-191-9f-define-displacement-reaction",
@@ -4533,18 +4482,12 @@ window.YEAR9_CONTENT = {
       "tags": [
         "vocabulary"
       ],
-      "media": [
-        {
-          "src": "assets/diagrams/9F-displacement-reaction.svg",
-          "alt": "Example displacement reaction.",
-          "caption": "This example helps show what “displacement” means."
-        }
-      ],
       "sourceFidelity": "exact-source-text",
       "learningObjective": "9F-extraction",
       "learningObjectiveTitle": "Metal extraction and reduction",
       "learningObjectiveDescription": "Mining, ores, reduction, blast furnaces, electrolysis and extraction method choice.",
-      "noteId": "9F-extraction"
+      "noteId": "9F-extraction",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-192-9f-define-oxidation",
@@ -4564,7 +4507,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9F-changes",
       "learningObjectiveTitle": "Physical and chemical changes",
       "learningObjectiveDescription": "Physical changes, chemical reactions, particles, molecules, formulae and gas pressure.",
-      "noteId": "9F-changes"
+      "noteId": "9F-changes",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-193-9f-define-reduction",
@@ -4580,18 +4524,12 @@ window.YEAR9_CONTENT = {
       "tags": [
         "vocabulary"
       ],
-      "media": [
-        {
-          "src": "assets/webp/9F-heating-metal-oxide.webp",
-          "alt": "School lab setup heating a solid in a test tube with a Bunsen burner.",
-          "caption": "In metal extraction, reduction means removing oxygen from a metal oxide."
-        }
-      ],
       "sourceFidelity": "exact-source-text",
       "learningObjective": "9F-extraction",
       "learningObjectiveTitle": "Metal extraction and reduction",
       "learningObjectiveDescription": "Mining, ores, reduction, blast furnaces, electrolysis and extraction method choice.",
-      "noteId": "9F-extraction"
+      "noteId": "9F-extraction",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-194-9f-define-ore",
@@ -4611,7 +4549,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9F-extraction",
       "learningObjectiveTitle": "Metal extraction and reduction",
       "learningObjectiveDescription": "Mining, ores, reduction, blast furnaces, electrolysis and extraction method choice.",
-      "noteId": "9F-extraction"
+      "noteId": "9F-extraction",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-195-9f-define-electrolysis",
@@ -4627,18 +4566,12 @@ window.YEAR9_CONTENT = {
       "tags": [
         "vocabulary"
       ],
-      "media": [
-        {
-          "src": "assets/webp/9F-extraction-apparatus.webp",
-          "alt": "Industrial electrolysis cell and blast furnace comparison.",
-          "caption": "Electrolysis is used to extract very reactive metals such as aluminium."
-        }
-      ],
       "sourceFidelity": "exact-source-text",
       "learningObjective": "9F-extraction",
       "learningObjectiveTitle": "Metal extraction and reduction",
       "learningObjectiveDescription": "Mining, ores, reduction, blast furnaces, electrolysis and extraction method choice.",
-      "noteId": "9F-extraction"
+      "noteId": "9F-extraction",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-196-9i-define-balanced-forces",
@@ -4658,7 +4591,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9I-forces",
       "learningObjectiveTitle": "Forces, drag and terminal velocity",
       "learningObjectiveDescription": "Balanced forces, air/water resistance, top speed and terminal velocity.",
-      "noteId": "9I-forces"
+      "noteId": "9I-forces",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-197-9i-define-resultant-force",
@@ -4678,7 +4612,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9I-forces",
       "learningObjectiveTitle": "Forces, drag and terminal velocity",
       "learningObjectiveDescription": "Balanced forces, air/water resistance, top speed and terminal velocity.",
-      "noteId": "9I-forces"
+      "noteId": "9I-forces",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-198-9i-define-air-resistance",
@@ -4698,7 +4633,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9I-forces",
       "learningObjectiveTitle": "Forces, drag and terminal velocity",
       "learningObjectiveDescription": "Balanced forces, air/water resistance, top speed and terminal velocity.",
-      "noteId": "9I-forces"
+      "noteId": "9I-forces",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-199-9i-define-terminal-velocity",
@@ -4714,18 +4650,12 @@ window.YEAR9_CONTENT = {
       "tags": [
         "vocabulary"
       ],
-      "media": [
-        {
-          "src": "assets/webp/9I-forces-parachutist.webp",
-          "alt": "Terminal velocity explained using a parachutist.",
-          "caption": "Terminal velocity happens when air resistance equals weight, so the object falls at constant speed."
-        }
-      ],
       "sourceFidelity": "exact-source-text",
       "learningObjective": "9I-speed",
       "learningObjectiveTitle": "Speed and distance-time graphs",
       "learningObjectiveDescription": "Speed calculations, mean speed and interpreting distance-time graphs.",
-      "noteId": "9I-speed"
+      "noteId": "9I-speed",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-200-9i-define-energy-store",
@@ -4745,7 +4675,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9I-energy-work",
       "learningObjectiveTitle": "Energy, work and simple machines",
       "learningObjectiveDescription": "Work done, machines, ramps, friction and energy transfer.",
-      "noteId": "9I-energy-work"
+      "noteId": "9I-energy-work",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-201-9i-define-energy-transfer",
@@ -4765,7 +4696,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9I-energy-work",
       "learningObjectiveTitle": "Energy, work and simple machines",
       "learningObjectiveDescription": "Work done, machines, ramps, friction and energy transfer.",
-      "noteId": "9I-energy-work"
+      "noteId": "9I-energy-work",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-202-9i-define-efficiency",
@@ -4785,7 +4717,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9I-energy-work",
       "learningObjectiveTitle": "Energy, work and simple machines",
       "learningObjectiveDescription": "Work done, machines, ramps, friction and energy transfer.",
-      "noteId": "9I-energy-work"
+      "noteId": "9I-energy-work",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-203-9i-define-speed",
@@ -4805,7 +4738,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9I-speed",
       "learningObjectiveTitle": "Speed and distance-time graphs",
       "learningObjectiveDescription": "Speed calculations, mean speed and interpreting distance-time graphs.",
-      "noteId": "9I-speed"
+      "noteId": "9I-speed",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-204-9i-define-mean-speed",
@@ -4825,7 +4759,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9I-speed",
       "learningObjectiveTitle": "Speed and distance-time graphs",
       "learningObjectiveDescription": "Speed calculations, mean speed and interpreting distance-time graphs.",
-      "noteId": "9I-speed"
+      "noteId": "9I-speed",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-205-9i-define-distance-time-graph",
@@ -4845,7 +4780,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9I-speed",
       "learningObjectiveTitle": "Speed and distance-time graphs",
       "learningObjectiveDescription": "Speed calculations, mean speed and interpreting distance-time graphs.",
-      "noteId": "9I-speed"
+      "noteId": "9I-speed",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-206-9i-define-lever",
@@ -4865,7 +4801,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9I-moments",
       "learningObjectiveTitle": "Levers, pivots and moments",
       "learningObjectiveDescription": "Levers, pivots/fulcrums, moment calculations and mechanical advantage.",
-      "noteId": "9I-moments"
+      "noteId": "9I-moments",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-207-9i-define-pivot",
@@ -4885,7 +4822,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9I-moments",
       "learningObjectiveTitle": "Levers, pivots and moments",
       "learningObjectiveDescription": "Levers, pivots/fulcrums, moment calculations and mechanical advantage.",
-      "noteId": "9I-moments"
+      "noteId": "9I-moments",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-208-9i-define-moment",
@@ -4901,18 +4839,12 @@ window.YEAR9_CONTENT = {
       "tags": [
         "vocabulary"
       ],
-      "media": [
-        {
-          "src": "assets/diagrams/9I-moments-balance.svg",
-          "alt": "Balanced moments diagram.",
-          "caption": "A moment is the turning effect of a force around a pivot."
-        }
-      ],
       "sourceFidelity": "exact-source-text",
       "learningObjective": "9I-moments",
       "learningObjectiveTitle": "Levers, pivots and moments",
       "learningObjectiveDescription": "Levers, pivots/fulcrums, moment calculations and mechanical advantage.",
-      "noteId": "9I-moments"
+      "noteId": "9I-moments",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-209-9i-define-simple-machine",
@@ -4932,7 +4864,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9I-moments",
       "learningObjectiveTitle": "Levers, pivots and moments",
       "learningObjectiveDescription": "Levers, pivots/fulcrums, moment calculations and mechanical advantage.",
-      "noteId": "9I-moments"
+      "noteId": "9I-moments",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-210-9i-define-work-done",
@@ -4952,7 +4885,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9I-energy-work",
       "learningObjectiveTitle": "Energy, work and simple machines",
       "learningObjectiveDescription": "Work done, machines, ramps, friction and energy transfer.",
-      "noteId": "9I-energy-work"
+      "noteId": "9I-energy-work",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-211-9j-define-force-field",
@@ -4972,7 +4906,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9J-fields",
       "learningObjectiveTitle": "Force fields, gravity and magnetism",
       "learningObjectiveDescription": "Magnetic, gravitational and electric fields, weight and gravitational potential energy.",
-      "noteId": "9J-fields"
+      "noteId": "9J-fields",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-212-9j-define-magnetic-field",
@@ -4988,18 +4923,12 @@ window.YEAR9_CONTENT = {
       "tags": [
         "vocabulary"
       ],
-      "media": [
-        {
-          "src": "assets/webp/9J-magnetic-field-pattern.webp",
-          "alt": "Iron filings around a bar magnet showing the magnetic field pattern.",
-          "caption": "A magnetic field is the region where magnetic materials and magnets feel a force."
-        }
-      ],
       "sourceFidelity": "exact-source-text",
       "learningObjective": "9J-fields",
       "learningObjectiveTitle": "Force fields, gravity and magnetism",
       "learningObjectiveDescription": "Magnetic, gravitational and electric fields, weight and gravitational potential energy.",
-      "noteId": "9J-fields"
+      "noteId": "9J-fields",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-213-9j-define-gravitational-field",
@@ -5019,7 +4948,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9J-static",
       "learningObjectiveTitle": "Static electricity and charge",
       "learningObjectiveDescription": "Charge transfer, attraction, repulsion, dangers and uses of static electricity.",
-      "noteId": "9J-static"
+      "noteId": "9J-static",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-214-9j-define-gravitational-field-strength",
@@ -5039,7 +4969,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9J-fields",
       "learningObjectiveTitle": "Force fields, gravity and magnetism",
       "learningObjectiveDescription": "Magnetic, gravitational and electric fields, weight and gravitational potential energy.",
-      "noteId": "9J-fields"
+      "noteId": "9J-fields",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-215-9j-define-weight",
@@ -5059,7 +4990,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9J-fields",
       "learningObjectiveTitle": "Force fields, gravity and magnetism",
       "learningObjectiveDescription": "Magnetic, gravitational and electric fields, weight and gravitational potential energy.",
-      "noteId": "9J-fields"
+      "noteId": "9J-fields",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-216-9j-define-mass",
@@ -5079,7 +5011,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9J-fields",
       "learningObjectiveTitle": "Force fields, gravity and magnetism",
       "learningObjectiveDescription": "Magnetic, gravitational and electric fields, weight and gravitational potential energy.",
-      "noteId": "9J-fields"
+      "noteId": "9J-fields",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-217-9j-define-gravitational-potential-energy",
@@ -5099,7 +5032,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9J-fields",
       "learningObjectiveTitle": "Force fields, gravity and magnetism",
       "learningObjectiveDescription": "Magnetic, gravitational and electric fields, weight and gravitational potential energy.",
-      "noteId": "9J-fields"
+      "noteId": "9J-fields",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-218-9j-define-electric-field",
@@ -5119,7 +5053,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9J-static",
       "learningObjectiveTitle": "Static electricity and charge",
       "learningObjectiveDescription": "Charge transfer, attraction, repulsion, dangers and uses of static electricity.",
-      "noteId": "9J-static"
+      "noteId": "9J-static",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-219-9j-define-static-electricity",
@@ -5135,18 +5070,12 @@ window.YEAR9_CONTENT = {
       "tags": [
         "vocabulary"
       ],
-      "media": [
-        {
-          "src": "assets/webp/9J-static-electricity-demo.webp",
-          "alt": "Static electricity demo with balloon on hair and charged rod attracting paper.",
-          "caption": "Static electricity is caused by the build-up of charge on an insulator."
-        }
-      ],
       "sourceFidelity": "exact-source-text",
       "learningObjective": "9J-static",
       "learningObjectiveTitle": "Static electricity and charge",
       "learningObjectiveDescription": "Charge transfer, attraction, repulsion, dangers and uses of static electricity.",
-      "noteId": "9J-static"
+      "noteId": "9J-static",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-220-9j-define-electric-current",
@@ -5166,7 +5095,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9J-static",
       "learningObjectiveTitle": "Static electricity and charge",
       "learningObjectiveDescription": "Charge transfer, attraction, repulsion, dangers and uses of static electricity.",
-      "noteId": "9J-static"
+      "noteId": "9J-static",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-221-9j-define-series-circuit",
@@ -5182,18 +5112,12 @@ window.YEAR9_CONTENT = {
       "tags": [
         "vocabulary"
       ],
-      "media": [
-        {
-          "src": "assets/webp/9J-series-parallel-circuits-photo.webp",
-          "alt": "Series circuit compared with parallel circuit.",
-          "caption": "A series circuit has all components in a single loop."
-        }
-      ],
       "sourceFidelity": "exact-source-text",
       "learningObjective": "9J-circuits",
       "learningObjectiveTitle": "Current, voltage and circuits",
       "learningObjectiveDescription": "Current, voltage/potential difference, series and parallel circuits, meters and components.",
-      "noteId": "9J-circuits"
+      "noteId": "9J-circuits",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-222-9j-define-parallel-circuit",
@@ -5209,18 +5133,12 @@ window.YEAR9_CONTENT = {
       "tags": [
         "vocabulary"
       ],
-      "media": [
-        {
-          "src": "assets/webp/9J-series-parallel-circuits-photo.webp",
-          "alt": "Parallel circuit compared with series circuit.",
-          "caption": "A parallel circuit has components on separate branches."
-        }
-      ],
       "sourceFidelity": "exact-source-text",
       "learningObjective": "9J-circuits",
       "learningObjectiveTitle": "Current, voltage and circuits",
       "learningObjectiveDescription": "Current, voltage/potential difference, series and parallel circuits, meters and components.",
-      "noteId": "9J-circuits"
+      "noteId": "9J-circuits",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-223-9j-define-voltage",
@@ -5240,7 +5158,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9J-static",
       "learningObjectiveTitle": "Static electricity and charge",
       "learningObjectiveDescription": "Charge transfer, attraction, repulsion, dangers and uses of static electricity.",
-      "noteId": "9J-static"
+      "noteId": "9J-static",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-224-9j-define-resistance",
@@ -5260,7 +5179,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9J-resistance",
       "learningObjectiveTitle": "Resistance and Ohm’s law",
       "learningObjectiveDescription": "Resistance, current-voltage graphs, high-resistance materials and calculations.",
-      "noteId": "9J-resistance"
+      "noteId": "9J-resistance",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-225-9j-define-ohm",
@@ -5280,7 +5200,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9J-resistance",
       "learningObjectiveTitle": "Resistance and Ohm’s law",
       "learningObjectiveDescription": "Resistance, current-voltage graphs, high-resistance materials and calculations.",
-      "noteId": "9J-resistance"
+      "noteId": "9J-resistance",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-226-9j-define-electromagnet",
@@ -5296,18 +5217,12 @@ window.YEAR9_CONTENT = {
       "tags": [
         "vocabulary"
       ],
-      "media": [
-        {
-          "src": "assets/webp/9J-electromagnet-relay-motor.webp",
-          "alt": "Comparison image of an electromagnet, relay and motor.",
-          "caption": "An electromagnet uses a current-carrying coil, often wrapped around an iron core."
-        }
-      ],
       "sourceFidelity": "exact-source-text",
       "learningObjective": "9J-electromagnets",
       "learningObjectiveTitle": "Electromagnets, relays and motors",
       "learningObjectiveDescription": "Electromagnets, relays, motor effect and factors affecting magnetic force.",
-      "noteId": "9J-electromagnets"
+      "noteId": "9J-electromagnets",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-227-9j-define-relay",
@@ -5323,18 +5238,12 @@ window.YEAR9_CONTENT = {
       "tags": [
         "vocabulary"
       ],
-      "media": [
-        {
-          "src": "assets/webp/9J-electromagnet-relay-motor.webp",
-          "alt": "Electromagnet, relay and motor comparison.",
-          "caption": "A relay is an electrically operated switch using an electromagnet."
-        }
-      ],
       "sourceFidelity": "exact-source-text",
       "learningObjective": "9J-electromagnets",
       "learningObjectiveTitle": "Electromagnets, relays and motors",
       "learningObjectiveDescription": "Electromagnets, relays, motor effect and factors affecting magnetic force.",
-      "noteId": "9J-electromagnets"
+      "noteId": "9J-electromagnets",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-228-9j-define-motor-effect",
@@ -5350,18 +5259,12 @@ window.YEAR9_CONTENT = {
       "tags": [
         "vocabulary"
       ],
-      "media": [
-        {
-          "src": "assets/diagrams/9J-motor-effect.svg",
-          "alt": "Motor effect diagram.",
-          "caption": "The motor effect is the force on a current-carrying wire in a magnetic field."
-        }
-      ],
       "sourceFidelity": "exact-source-text",
       "learningObjective": "9J-electromagnets",
       "learningObjectiveTitle": "Electromagnets, relays and motors",
       "learningObjectiveDescription": "Electromagnets, relays, motor effect and factors affecting magnetic force.",
-      "noteId": "9J-electromagnets"
+      "noteId": "9J-electromagnets",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-229-9a-describe-what-environmental-variation-is",
@@ -5381,7 +5284,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9A-variation",
       "learningObjectiveTitle": "Variation and classification",
       "learningObjectiveDescription": "Types of variation, inherited and environmental causes, and classification challenges.",
-      "noteId": "9A-variation"
+      "noteId": "9A-variation",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-230-9a-give-three-examples-of-environmental-variation-in-plants",
@@ -5401,7 +5305,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9A-variation",
       "learningObjectiveTitle": "Variation and classification",
       "learningObjectiveDescription": "Types of variation, inherited and environmental causes, and classification challenges.",
-      "noteId": "9A-variation"
+      "noteId": "9A-variation",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-231-9a-give-three-examples-of-environmental-variation-in-humans",
@@ -5421,7 +5326,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9A-variation",
       "learningObjectiveTitle": "Variation and classification",
       "learningObjectiveDescription": "Types of variation, inherited and environmental causes, and classification challenges.",
-      "noteId": "9A-variation"
+      "noteId": "9A-variation",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-232-9a-define-classification",
@@ -5441,7 +5347,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9A-variation",
       "learningObjectiveTitle": "Variation and classification",
       "learningObjectiveDescription": "Types of variation, inherited and environmental causes, and classification challenges.",
-      "noteId": "9A-variation"
+      "noteId": "9A-variation",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-233-9a-define-species",
@@ -5461,7 +5368,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9A-variation",
       "learningObjectiveTitle": "Variation and classification",
       "learningObjectiveDescription": "Types of variation, inherited and environmental causes, and classification challenges.",
-      "noteId": "9A-variation"
+      "noteId": "9A-variation",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-234-9a-explain-how-environmental-variation-can-cause-problems-with-classifica",
@@ -5481,7 +5389,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9A-variation",
       "learningObjectiveTitle": "Variation and classification",
       "learningObjectiveDescription": "Types of variation, inherited and environmental causes, and classification challenges.",
-      "noteId": "9A-variation"
+      "noteId": "9A-variation",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-235-9a-describe-what-happens-during-fertilisation-and-what-is-formed",
@@ -5501,7 +5410,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9A-variation",
       "learningObjectiveTitle": "Variation and classification",
       "learningObjectiveDescription": "Types of variation, inherited and environmental causes, and classification challenges.",
-      "noteId": "9A-variation"
+      "noteId": "9A-variation",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-236-9a-describe-how-chromosomes-dna-and-genes-are-linked-together",
@@ -5517,18 +5427,12 @@ window.YEAR9_CONTENT = {
       "tags": [
         "written"
       ],
-      "media": [
-        {
-          "src": "assets/diagrams/9A-dna-genes-chromosomes.svg",
-          "alt": "DNA, genes and chromosomes relationship.",
-          "caption": "Describe the link from chromosome to DNA to gene."
-        }
-      ],
       "sourceFidelity": "progress-check-derived",
       "learningObjective": "9A-inheritance",
       "learningObjectiveTitle": "Inheritance, DNA and genes",
       "learningObjectiveDescription": "Cells, nuclei, chromosomes, DNA, genes and preserving genetic information.",
-      "noteId": "9A-inheritance"
+      "noteId": "9A-inheritance",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-237-9a-state-three-ways-we-can-preserve-biodiversity",
@@ -5544,18 +5448,12 @@ window.YEAR9_CONTENT = {
       "tags": [
         "written"
       ],
-      "media": [
-        {
-          "src": "assets/webp/9A-seed-bank-conservation.webp",
-          "alt": "Seed bank and conservation storage facility.",
-          "caption": "One way to preserve biodiversity is to store seeds or genetic material in a gene bank."
-        }
-      ],
       "sourceFidelity": "progress-check-derived",
       "learningObjective": "9A-inheritance",
       "learningObjectiveTitle": "Inheritance, DNA and genes",
       "learningObjectiveDescription": "Cells, nuclei, chromosomes, DNA, genes and preserving genetic information.",
-      "noteId": "9A-inheritance"
+      "noteId": "9A-inheritance",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-238-9a-describe-natural-selection",
@@ -5571,18 +5469,12 @@ window.YEAR9_CONTENT = {
       "tags": [
         "written"
       ],
-      "media": [
-        {
-          "src": "assets/webp/9A-natural-selection-giraffes.webp",
-          "alt": "Natural selection illustrated by giraffes reaching for leaves.",
-          "caption": "Use the giraffe example to describe variation, competition, survival and reproduction."
-        }
-      ],
       "sourceFidelity": "progress-check-derived",
       "learningObjective": "9A-inheritance",
       "learningObjectiveTitle": "Inheritance, DNA and genes",
       "learningObjectiveDescription": "Cells, nuclei, chromosomes, DNA, genes and preserving genetic information.",
-      "noteId": "9A-inheritance"
+      "noteId": "9A-inheritance",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-239-9b-state-where-a-plant-gets-the-reactants-it-needs-for-photosynthesis",
@@ -5598,18 +5490,12 @@ window.YEAR9_CONTENT = {
       "tags": [
         "written"
       ],
-      "media": [
-        {
-          "src": "assets/webp/9B-stomata-micrograph.webp",
-          "alt": "Leaf stomata micrograph.",
-          "caption": "Carbon dioxide enters a leaf through stomata."
-        }
-      ],
       "sourceFidelity": "progress-check-derived",
       "learningObjective": "9B-plant-transport",
       "learningObjectiveTitle": "Plant transport and specialised cells",
       "learningObjectiveDescription": "Root hair cells, stomata, guard cells, xylem, phloem and plant structure.",
-      "noteId": "9B-plant-transport"
+      "noteId": "9B-plant-transport",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-240-9b-describe-what-happens-to-the-products-of-photosynthesis",
@@ -5629,7 +5515,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9B-plant-transport",
       "learningObjectiveTitle": "Plant transport and specialised cells",
       "learningObjectiveDescription": "Root hair cells, stomata, guard cells, xylem, phloem and plant structure.",
-      "noteId": "9B-plant-transport"
+      "noteId": "9B-plant-transport",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-241-9b-describe-what-a-limiting-factor-is",
@@ -5649,7 +5536,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9B-photosynthesis",
       "learningObjectiveTitle": "Photosynthesis and respiration",
       "learningObjectiveDescription": "Reactants, products, chlorophyll, limiting factors and photosynthesis rate.",
-      "noteId": "9B-photosynthesis"
+      "noteId": "9B-photosynthesis",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-242-9b-suggest-when-photosynthesis-might-occur-in-plants",
@@ -5669,7 +5557,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9B-photosynthesis",
       "learningObjectiveTitle": "Photosynthesis and respiration",
       "learningObjectiveDescription": "Reactants, products, chlorophyll, limiting factors and photosynthesis rate.",
-      "noteId": "9B-photosynthesis"
+      "noteId": "9B-photosynthesis",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-243-9b-describe-the-route-water-takes-from-soil-to-a-leaf",
@@ -5685,18 +5574,12 @@ window.YEAR9_CONTENT = {
       "tags": [
         "written"
       ],
-      "media": [
-        {
-          "src": "assets/diagrams/9B-leaf-xylem-phloem.svg",
-          "alt": "Leaf and xylem-phloem transport diagram.",
-          "caption": "Water enters root hair cells, moves into xylem, and travels up to the leaves."
-        }
-      ],
       "sourceFidelity": "progress-check-derived",
       "learningObjective": "9B-plant-transport",
       "learningObjectiveTitle": "Plant transport and specialised cells",
       "learningObjectiveDescription": "Root hair cells, stomata, guard cells, xylem, phloem and plant structure.",
-      "noteId": "9B-plant-transport"
+      "noteId": "9B-plant-transport",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-244-9b-explain-the-structure-of-xylem-vessels",
@@ -5712,18 +5595,12 @@ window.YEAR9_CONTENT = {
       "tags": [
         "written"
       ],
-      "media": [
-        {
-          "src": "assets/diagrams/9B-leaf-xylem-phloem.svg",
-          "alt": "Transport tissues diagram with xylem highlighted.",
-          "caption": "Xylem forms hollow tubes that carry water and minerals upward."
-        }
-      ],
       "sourceFidelity": "progress-check-derived",
       "learningObjective": "9B-plant-transport",
       "learningObjectiveTitle": "Plant transport and specialised cells",
       "learningObjectiveDescription": "Root hair cells, stomata, guard cells, xylem, phloem and plant structure.",
-      "noteId": "9B-plant-transport"
+      "noteId": "9B-plant-transport",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-245-9b-state-the-cells-that-control-gas-exchange-in-leaves",
@@ -5739,18 +5616,12 @@ window.YEAR9_CONTENT = {
       "tags": [
         "written"
       ],
-      "media": [
-        {
-          "src": "assets/webp/9B-stomata-micrograph.webp",
-          "alt": "Leaf surface showing stomata.",
-          "caption": "Guard cells control the stomata and therefore gas exchange."
-        }
-      ],
       "sourceFidelity": "progress-check-derived",
       "learningObjective": "9B-plant-transport",
       "learningObjectiveTitle": "Plant transport and specialised cells",
       "learningObjectiveDescription": "Root hair cells, stomata, guard cells, xylem, phloem and plant structure.",
-      "noteId": "9B-plant-transport"
+      "noteId": "9B-plant-transport",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-246-9b-suggest-why-stomata-shut-at-night",
@@ -5766,18 +5637,12 @@ window.YEAR9_CONTENT = {
       "tags": [
         "written"
       ],
-      "media": [
-        {
-          "src": "assets/webp/9B-stomata-micrograph.webp",
-          "alt": "Microscopic stomata image.",
-          "caption": "Plants close stomata at night to reduce water loss when photosynthesis is not taking place."
-        }
-      ],
       "sourceFidelity": "progress-check-derived",
       "learningObjective": "9B-plant-transport",
       "learningObjectiveTitle": "Plant transport and specialised cells",
       "learningObjectiveDescription": "Root hair cells, stomata, guard cells, xylem, phloem and plant structure.",
-      "noteId": "9B-plant-transport"
+      "noteId": "9B-plant-transport",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-247-9b-draw-or-describe-the-relationship-between-glucose-and-starch",
@@ -5797,7 +5662,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9B-plant-products",
       "learningObjectiveTitle": "Plant products, seeds and food production",
       "learningObjectiveDescription": "Glucose, starch, cellulose, oils, minerals, crop yield and farming methods.",
-      "noteId": "9B-plant-products"
+      "noteId": "9B-plant-products",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-248-9b-suggest-why-seeds-need-starch",
@@ -5817,7 +5683,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9B-plant-products",
       "learningObjectiveTitle": "Plant products, seeds and food production",
       "learningObjectiveDescription": "Glucose, starch, cellulose, oils, minerals, crop yield and farming methods.",
-      "noteId": "9B-plant-products"
+      "noteId": "9B-plant-products",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-249-9e-design-poster-prompt-list-what-a-year-9-poster-on-ceramics-polymers-an",
@@ -5833,18 +5700,12 @@ window.YEAR9_CONTENT = {
       "tags": [
         "written"
       ],
-      "media": [
-        {
-          "src": "assets/diagrams/9E-polymers-composites.svg",
-          "alt": "Support diagram for polymers and composites.",
-          "caption": "Use the structure and property ideas here as part of the poster."
-        }
-      ],
       "sourceFidelity": "progress-check-derived",
       "learningObjective": "9E-environment",
       "learningObjectiveTitle": "Environmental impacts and recycling",
       "learningObjectiveDescription": "Landfill, recycling, fossil fuels, acid rain, greenhouse effect and reducing impacts.",
-      "noteId": "9E-environment"
+      "noteId": "9E-environment",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-250-9e-explain-how-properties-of-ceramics-link-to-bonding-and-structure",
@@ -5864,7 +5725,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9E-ceramics",
       "learningObjectiveTitle": "Ceramics, crystals and materials properties",
       "learningObjectiveDescription": "Ceramics, glass, clay, crystal formation, melting point and brittleness.",
-      "noteId": "9E-ceramics"
+      "noteId": "9E-ceramics",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-251-9e-explain-why-composites-often-have-better-properties-than-their-separat",
@@ -5884,7 +5746,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9E-composites",
       "learningObjectiveTitle": "Composites and material choice",
       "learningObjectiveDescription": "Composite materials, concrete, reinforced concrete and glass-reinforced plastic.",
-      "noteId": "9E-composites"
+      "noteId": "9E-composites",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-252-9e-explain-one-environmental-problem-caused-by-making-materials",
@@ -5904,7 +5767,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9E-environment",
       "learningObjectiveTitle": "Environmental impacts and recycling",
       "learningObjectiveDescription": "Landfill, recycling, fossil fuels, acid rain, greenhouse effect and reducing impacts.",
-      "noteId": "9E-environment"
+      "noteId": "9E-environment",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-253-9f-prepare-a-talk-what-should-be-included-on-extracting-iron-and-preventi",
@@ -5920,18 +5784,12 @@ window.YEAR9_CONTENT = {
       "tags": [
         "written"
       ],
-      "media": [
-        {
-          "src": "assets/webp/9F-blast-furnace-process.webp",
-          "alt": "Blast furnace cutaway showing iron ore, coke, limestone and molten iron.",
-          "caption": "A blast furnace uses iron ore, coke and limestone to extract iron."
-        }
-      ],
       "sourceFidelity": "progress-check-derived",
       "learningObjective": "9F-rusting",
       "learningObjectiveTitle": "Rusting and corrosion protection",
       "learningObjectiveDescription": "Rusting, coatings, sacrificial protection and preventing corrosion.",
-      "noteId": "9F-rusting"
+      "noteId": "9F-rusting",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-254-9f-why-is-a-metal-oxide-reduced-when-carbon-extracts-a-metal",
@@ -5947,18 +5805,12 @@ window.YEAR9_CONTENT = {
       "tags": [
         "written"
       ],
-      "media": [
-        {
-          "src": "assets/webp/9F-heating-metal-oxide.webp",
-          "alt": "Heating a metal oxide in a test tube.",
-          "caption": "A metal oxide is reduced when oxygen is removed from it during extraction."
-        }
-      ],
       "sourceFidelity": "progress-check-derived",
       "learningObjective": "9F-extraction",
       "learningObjectiveTitle": "Metal extraction and reduction",
       "learningObjectiveDescription": "Mining, ores, reduction, blast furnaces, electrolysis and extraction method choice.",
-      "noteId": "9F-extraction"
+      "noteId": "9F-extraction",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-255-9f-explain-why-aluminium-is-extracted-by-electrolysis-rather-than-carbon-",
@@ -5974,18 +5826,12 @@ window.YEAR9_CONTENT = {
       "tags": [
         "written"
       ],
-      "media": [
-        {
-          "src": "assets/webp/9F-heating-metal-oxide.webp",
-          "alt": "Heating a solid in a test tube as an extraction demonstration.",
-          "caption": "Carbon can reduce some metal oxides, but very reactive metals like aluminium need electrolysis instead."
-        }
-      ],
       "sourceFidelity": "progress-check-derived",
       "learningObjective": "9F-extraction",
       "learningObjectiveTitle": "Metal extraction and reduction",
       "learningObjectiveDescription": "Mining, ores, reduction, blast furnaces, electrolysis and extraction method choice.",
-      "noteId": "9F-extraction"
+      "noteId": "9F-extraction",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-256-9f-explain-why-rusting-is-a-problem-and-name-two-prevention-methods",
@@ -6005,7 +5851,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9F-rusting",
       "learningObjectiveTitle": "Rusting and corrosion protection",
       "learningObjectiveDescription": "Rusting, coatings, sacrificial protection and preventing corrosion.",
-      "noteId": "9F-rusting"
+      "noteId": "9F-rusting",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-257-9i-describe-how-to-raise-a-large-upright-stone-using-levers-moments-and-r",
@@ -6021,18 +5868,12 @@ window.YEAR9_CONTENT = {
       "tags": [
         "written"
       ],
-      "media": [
-        {
-          "src": "assets/diagrams/9I-moments-balance.svg",
-          "alt": "Lever and moment support diagram.",
-          "caption": "A longer lever arm gives a larger moment for the same force."
-        }
-      ],
       "sourceFidelity": "progress-check-derived",
       "learningObjective": "9I-moments",
       "learningObjectiveTitle": "Levers, pivots and moments",
       "learningObjectiveDescription": "Levers, pivots/fulcrums, moment calculations and mechanical advantage.",
-      "noteId": "9I-moments"
+      "noteId": "9I-moments",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-258-9i-explain-why-a-shallow-ramp-needs-less-force-but-more-distance",
@@ -6052,7 +5893,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9I-energy-work",
       "learningObjectiveTitle": "Energy, work and simple machines",
       "learningObjectiveDescription": "Work done, machines, ramps, friction and energy transfer.",
-      "noteId": "9I-energy-work"
+      "noteId": "9I-energy-work",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-259-9i-calculate-the-weight-of-a-54-kg-person-on-earth-where-g-10-n-kg",
@@ -6072,7 +5914,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9I-forces",
       "learningObjectiveTitle": "Forces, drag and terminal velocity",
       "learningObjectiveDescription": "Balanced forces, air/water resistance, top speed and terminal velocity.",
-      "noteId": "9I-forces"
+      "noteId": "9I-forces",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-260-9i-a-96-kg-person-is-on-a-planet-where-g-14-n-kg-calculate-weight",
@@ -6092,7 +5935,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9I-forces",
       "learningObjectiveTitle": "Forces, drag and terminal velocity",
       "learningObjectiveDescription": "Balanced forces, air/water resistance, top speed and terminal velocity.",
-      "noteId": "9I-forces"
+      "noteId": "9I-forces",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-261-9i-a-person-weighs-1220-n-on-earth-where-g-10-n-kg-calculate-mass",
@@ -6112,7 +5956,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9I-forces",
       "learningObjectiveTitle": "Forces, drag and terminal velocity",
       "learningObjectiveDescription": "Balanced forces, air/water resistance, top speed and terminal velocity.",
-      "noteId": "9I-forces"
+      "noteId": "9I-forces",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-262-9j-describe-what-an-electromagnet-is-and-how-its-magnetic-field-is-shaped",
@@ -6128,18 +5973,12 @@ window.YEAR9_CONTENT = {
       "tags": [
         "written"
       ],
-      "media": [
-        {
-          "src": "assets/webp/9J-magnetic-field-pattern.webp",
-          "alt": "Magnetic field pattern around a bar magnet.",
-          "caption": "The field around an electromagnet is similar in shape to the field around a bar magnet."
-        }
-      ],
       "sourceFidelity": "progress-check-derived",
       "learningObjective": "9J-electromagnets",
       "learningObjectiveTitle": "Electromagnets, relays and motors",
       "learningObjectiveDescription": "Electromagnets, relays, motor effect and factors affecting magnetic force.",
-      "noteId": "9J-electromagnets"
+      "noteId": "9J-electromagnets",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-263-9j-how-can-the-strength-of-an-electromagnet-be-increased",
@@ -6155,18 +5994,12 @@ window.YEAR9_CONTENT = {
       "tags": [
         "written"
       ],
-      "media": [
-        {
-          "src": "assets/diagrams/9J-electromagnet.svg",
-          "alt": "Electromagnet strength factors.",
-          "caption": "Use the checklist in the diagram to answer the question."
-        }
-      ],
       "sourceFidelity": "progress-check-derived",
       "learningObjective": "9J-electromagnets",
       "learningObjectiveTitle": "Electromagnets, relays and motors",
       "learningObjectiveDescription": "Electromagnets, relays, motor effect and factors affecting magnetic force.",
-      "noteId": "9J-electromagnets"
+      "noteId": "9J-electromagnets",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-264-9j-explain-how-a-relay-works",
@@ -6182,18 +6015,12 @@ window.YEAR9_CONTENT = {
       "tags": [
         "written"
       ],
-      "media": [
-        {
-          "src": "assets/webp/9J-electromagnet-relay-motor.webp",
-          "alt": "Relay hardware comparison image.",
-          "caption": "A relay contains an electromagnet, moving armature and switch contacts."
-        }
-      ],
       "sourceFidelity": "progress-check-derived",
       "learningObjective": "9J-electromagnets",
       "learningObjectiveTitle": "Electromagnets, relays and motors",
       "learningObjectiveDescription": "Electromagnets, relays, motor effect and factors affecting magnetic force.",
-      "noteId": "9J-electromagnets"
+      "noteId": "9J-electromagnets",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-265-9j-describe-the-difference-between-current-and-voltage",
@@ -6213,7 +6040,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9J-static",
       "learningObjectiveTitle": "Static electricity and charge",
       "learningObjectiveDescription": "Charge transfer, attraction, repulsion, dangers and uses of static electricity.",
-      "noteId": "9J-static"
+      "noteId": "9J-static",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-266-9j-explain-why-plastic-handles-are-safe-on-electrical-wires",
@@ -6229,18 +6057,12 @@ window.YEAR9_CONTENT = {
       "tags": [
         "written"
       ],
-      "media": [
-        {
-          "src": "assets/webp/9E-conductors-insulators-materials.webp",
-          "alt": "Conductors and insulators materials set.",
-          "caption": "Plastic has high resistance, so it acts as an insulator and helps keep users safe."
-        }
-      ],
       "sourceFidelity": "progress-check-derived",
       "learningObjective": "9J-resistance",
       "learningObjectiveTitle": "Resistance and Ohm’s law",
       "learningObjectiveDescription": "Resistance, current-voltage graphs, high-resistance materials and calculations.",
-      "noteId": "9J-resistance"
+      "noteId": "9J-resistance",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-267-9j-describe-how-to-test-whether-resistance-depends-on-wire-length",
@@ -6260,7 +6082,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9J-resistance",
       "learningObjectiveTitle": "Resistance and Ohm’s law",
       "learningObjectiveDescription": "Resistance, current-voltage graphs, high-resistance materials and calculations.",
-      "noteId": "9J-resistance"
+      "noteId": "9J-resistance",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-268-9j-calculate-weight-mass-34-kg-and-gravitational-field-strength-6-8-n-kg",
@@ -6280,7 +6103,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9J-fields",
       "learningObjectiveTitle": "Force fields, gravity and magnetism",
       "learningObjectiveDescription": "Magnetic, gravitational and electric fields, weight and gravitational potential energy.",
-      "noteId": "9J-fields"
+      "noteId": "9J-fields",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-269-9j-a-person-has-weight-686-n-and-mass-56-kg-calculate-gravitational-field",
@@ -6300,7 +6124,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9J-fields",
       "learningObjectiveTitle": "Force fields, gravity and magnetism",
       "learningObjectiveDescription": "Magnetic, gravitational and electric fields, weight and gravitational potential energy.",
-      "noteId": "9J-fields"
+      "noteId": "9J-fields",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-270-9j-a-component-has-voltage-10-v-and-current-0-5-a-calculate-resistance",
@@ -6320,7 +6145,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9J-resistance",
       "learningObjectiveTitle": "Resistance and Ohm’s law",
       "learningObjectiveDescription": "Resistance, current-voltage graphs, high-resistance materials and calculations.",
-      "noteId": "9J-resistance"
+      "noteId": "9J-resistance",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-271-9j-a-resistor-has-voltage-6-v-and-current-0-2-a-calculate-resistance",
@@ -6340,7 +6166,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9J-resistance",
       "learningObjectiveTitle": "Resistance and Ohm’s law",
       "learningObjectiveDescription": "Resistance, current-voltage graphs, high-resistance materials and calculations.",
-      "noteId": "9J-resistance"
+      "noteId": "9J-resistance",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-272-9i-a-cyclist-travels-12-km-in-0-5-h-calculate-mean-speed",
@@ -6360,7 +6187,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9I-speed",
       "learningObjectiveTitle": "Speed and distance-time graphs",
       "learningObjectiveDescription": "Speed calculations, mean speed and interpreting distance-time graphs.",
-      "noteId": "9I-speed"
+      "noteId": "9I-speed",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-273-9i-a-force-of-40-n-moves-a-box-3-m-calculate-work-done",
@@ -6380,7 +6208,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9I-energy-work",
       "learningObjectiveTitle": "Energy, work and simple machines",
       "learningObjectiveDescription": "Work done, machines, ramps, friction and energy transfer.",
-      "noteId": "9I-energy-work"
+      "noteId": "9I-energy-work",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9-274-9i-a-5-n-force-acts-0-4-m-from-a-pivot-calculate-the-moment",
@@ -6396,18 +6225,12 @@ window.YEAR9_CONTENT = {
       "tags": [
         "calculation"
       ],
-      "media": [
-        {
-          "src": "assets/diagrams/9I-moments-balance.svg",
-          "alt": "Moment calculation support diagram.",
-          "caption": "Multiply force by perpendicular distance from the pivot."
-        }
-      ],
       "sourceFidelity": "calculation-practice-derived",
       "learningObjective": "9I-moments",
       "learningObjectiveTitle": "Levers, pivots and moments",
       "learningObjectiveDescription": "Levers, pivots/fulcrums, moment calculations and mechanical advantage.",
-      "noteId": "9I-moments"
+      "noteId": "9I-moments",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-001-9a-state-what-variation-is",
@@ -6428,7 +6251,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9A-variation",
       "learningObjectiveTitle": "Variation and classification",
       "learningObjectiveDescription": "Types of variation, inherited and environmental causes, and classification challenges.",
-      "noteId": "9A-variation"
+      "noteId": "9A-variation",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-002-9a-outline-why-dinosaurs-became-extinct",
@@ -6449,7 +6273,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9A-variation",
       "learningObjectiveTitle": "Variation and classification",
       "learningObjectiveDescription": "Types of variation, inherited and environmental causes, and classification challenges.",
-      "noteId": "9A-variation"
+      "noteId": "9A-variation",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-003-9a-use-evidence-to-explain-how-scientists-can-infer-something-about-triceratops-suc",
@@ -6466,18 +6291,12 @@ window.YEAR9_CONTENT = {
         "assess",
         "written"
       ],
-      "media": [
-        {
-          "src": "assets/webp/9A-triceratops-evidence.webp",
-          "alt": "Triceratops diagram showing fossil evidence and key adaptations.",
-          "caption": "Use the fossil evidence and adaptations to explain how scientists infer what Triceratops was like."
-        }
-      ],
       "sourceFidelity": "success-criterion-derived",
       "learningObjective": "9A-evolution",
       "learningObjectiveTitle": "Adaptation, natural selection and evolution",
       "learningObjectiveDescription": "Adaptations, evidence from fossils, natural selection and evolution over time.",
-      "noteId": "9A-evolution"
+      "noteId": "9A-evolution",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-004-9a-identify-examples-of-environmental-variation",
@@ -6498,7 +6317,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9A-variation",
       "learningObjectiveTitle": "Variation and classification",
       "learningObjectiveDescription": "Types of variation, inherited and environmental causes, and classification challenges.",
-      "noteId": "9A-variation"
+      "noteId": "9A-variation",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-005-9a-identify-examples-of-inherited-variation",
@@ -6519,7 +6339,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9A-inheritance",
       "learningObjectiveTitle": "Inheritance, DNA and genes",
       "learningObjectiveDescription": "Cells, nuclei, chromosomes, DNA, genes and preserving genetic information.",
-      "noteId": "9A-inheritance"
+      "noteId": "9A-inheritance",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-006-9a-explain-how-changes-in-an-ecosystem-can-cause-extinction",
@@ -6540,7 +6361,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9A-biodiversity",
       "learningObjectiveTitle": "Biodiversity, conservation and extinction",
       "learningObjectiveDescription": "Endangered species, biodiversity, conservation, gene banks and extinction pressures.",
-      "noteId": "9A-biodiversity"
+      "noteId": "9A-biodiversity",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-007-9a-identify-adaptations-of-triceratops-that-could-be-labelled-on-a-model",
@@ -6561,7 +6383,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9A-evolution",
       "learningObjectiveTitle": "Adaptation, natural selection and evolution",
       "learningObjectiveDescription": "Adaptations, evidence from fossils, natural selection and evolution over time.",
-      "noteId": "9A-evolution"
+      "noteId": "9A-evolution",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-008-9a-explain-how-environmental-variation-is-caused",
@@ -6582,7 +6405,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9A-variation",
       "learningObjectiveTitle": "Variation and classification",
       "learningObjectiveDescription": "Types of variation, inherited and environmental causes, and classification challenges.",
-      "noteId": "9A-variation"
+      "noteId": "9A-variation",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-009-9a-outline-how-some-variation-is-inherited-from-parents",
@@ -6603,7 +6427,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9A-inheritance",
       "learningObjectiveTitle": "Inheritance, DNA and genes",
       "learningObjectiveDescription": "Cells, nuclei, chromosomes, DNA, genes and preserving genetic information.",
-      "noteId": "9A-inheritance"
+      "noteId": "9A-inheritance",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-010-9a-explain-how-triceratops-adaptations-helped-survival",
@@ -6624,7 +6449,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9A-evolution",
       "learningObjectiveTitle": "Adaptation, natural selection and evolution",
       "learningObjectiveDescription": "Adaptations, evidence from fossils, natural selection and evolution over time.",
-      "noteId": "9A-evolution"
+      "noteId": "9A-evolution",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-011-9a-identify-and-explain-triceratops-adaptations-beyond-the-obvious-labels",
@@ -6645,7 +6471,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9A-evolution",
       "learningObjectiveTitle": "Adaptation, natural selection and evolution",
       "learningObjectiveDescription": "Adaptations, evidence from fossils, natural selection and evolution over time.",
-      "noteId": "9A-evolution"
+      "noteId": "9A-evolution",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-012-9a-describe-the-relationship-between-cells-nuclei-chromosomes-genes-dna-and-genetic",
@@ -6666,7 +6493,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9A-inheritance",
       "learningObjectiveTitle": "Inheritance, DNA and genes",
       "learningObjectiveDescription": "Cells, nuclei, chromosomes, DNA, genes and preserving genetic information.",
-      "noteId": "9A-inheritance"
+      "noteId": "9A-inheritance",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-013-9a-describe-how-variation-in-adaptations-affects-survival-within-a-species",
@@ -6687,7 +6515,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9A-inheritance",
       "learningObjectiveTitle": "Inheritance, DNA and genes",
       "learningObjectiveDescription": "Cells, nuclei, chromosomes, DNA, genes and preserving genetic information.",
-      "noteId": "9A-inheritance"
+      "noteId": "9A-inheritance",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-014-9a-state-what-evolution-is",
@@ -6708,7 +6537,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9A-inheritance",
       "learningObjectiveTitle": "Inheritance, DNA and genes",
       "learningObjectiveDescription": "Cells, nuclei, chromosomes, DNA, genes and preserving genetic information.",
-      "noteId": "9A-inheritance"
+      "noteId": "9A-inheritance",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-015-9a-explain-how-natural-selection-works",
@@ -6725,18 +6555,12 @@ window.YEAR9_CONTENT = {
         "assess",
         "written"
       ],
-      "media": [
-        {
-          "src": "assets/webp/9A-natural-selection-giraffes.webp",
-          "alt": "Giraffes competing for food in a savanna.",
-          "caption": "Variation in neck length can affect survival and reproduction, making some traits more common over time."
-        }
-      ],
       "sourceFidelity": "success-criterion-derived",
       "learningObjective": "9A-inheritance",
       "learningObjectiveTitle": "Inheritance, DNA and genes",
       "learningObjectiveDescription": "Cells, nuclei, chromosomes, DNA, genes and preserving genetic information.",
-      "noteId": "9A-inheritance"
+      "noteId": "9A-inheritance",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-016-9b-name-some-common-crop-plants",
@@ -6757,7 +6581,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9B-plant-products",
       "learningObjectiveTitle": "Plant products, seeds and food production",
       "learningObjectiveDescription": "Glucose, starch, cellulose, oils, minerals, crop yield and farming methods.",
-      "noteId": "9B-plant-products"
+      "noteId": "9B-plant-products",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-017-9b-explain-why-it-is-important-to-look-after-crop-plants",
@@ -6778,7 +6603,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9B-plant-products",
       "learningObjectiveTitle": "Plant products, seeds and food production",
       "learningObjectiveDescription": "Glucose, starch, cellulose, oils, minerals, crop yield and farming methods.",
-      "noteId": "9B-plant-products"
+      "noteId": "9B-plant-products",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-018-9b-state-that-plants-make-their-own-food",
@@ -6799,7 +6625,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9B-photosynthesis",
       "learningObjectiveTitle": "Photosynthesis and respiration",
       "learningObjectiveDescription": "Reactants, products, chlorophyll, limiting factors and photosynthesis rate.",
-      "noteId": "9B-photosynthesis"
+      "noteId": "9B-photosynthesis",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-019-9b-recall-the-resources-plants-need-to-grow-well",
@@ -6820,7 +6647,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9B-plant-products",
       "learningObjectiveTitle": "Plant products, seeds and food production",
       "learningObjectiveDescription": "Glucose, starch, cellulose, oils, minerals, crop yield and farming methods.",
-      "noteId": "9B-plant-products"
+      "noteId": "9B-plant-products",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-020-9b-list-chemical-substances-farmers-may-apply-to-crops",
@@ -6841,7 +6669,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9B-plant-products",
       "learningObjectiveTitle": "Plant products, seeds and food production",
       "learningObjectiveDescription": "Glucose, starch, cellulose, oils, minerals, crop yield and farming methods.",
-      "noteId": "9B-plant-products"
+      "noteId": "9B-plant-products",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-021-9b-describe-photosynthesis-in-terms-of-reactants-products-and-energy-source",
@@ -6862,7 +6691,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9B-photosynthesis",
       "learningObjectiveTitle": "Photosynthesis and respiration",
       "learningObjectiveDescription": "Reactants, products, chlorophyll, limiting factors and photosynthesis rate.",
-      "noteId": "9B-photosynthesis"
+      "noteId": "9B-photosynthesis",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-022-9b-explain-how-leaves-roots-and-stems-help-photosynthesis",
@@ -6879,18 +6709,12 @@ window.YEAR9_CONTENT = {
         "assess",
         "written"
       ],
-      "media": [
-        {
-          "src": "assets/diagrams/9B-leaf-xylem-phloem.svg",
-          "alt": "Leaf and transport tissue support diagram.",
-          "caption": "Leaves capture light, roots absorb water, and stems support transport."
-        }
-      ],
       "sourceFidelity": "success-criterion-derived",
       "learningObjective": "9B-plant-transport",
       "learningObjectiveTitle": "Plant transport and specialised cells",
       "learningObjectiveDescription": "Root hair cells, stomata, guard cells, xylem, phloem and plant structure.",
-      "noteId": "9B-plant-transport"
+      "noteId": "9B-plant-transport",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-023-9b-explain-why-insecticides-and-fungicides-are-used-on-crop-plants",
@@ -6911,7 +6735,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9B-plant-products",
       "learningObjectiveTitle": "Plant products, seeds and food production",
       "learningObjectiveDescription": "Glucose, starch, cellulose, oils, minerals, crop yield and farming methods.",
-      "noteId": "9B-plant-products"
+      "noteId": "9B-plant-products",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-024-9b-explain-why-herbicides-or-weedkillers-are-used-on-crop-plants",
@@ -6932,7 +6757,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9B-plant-products",
       "learningObjectiveTitle": "Plant products, seeds and food production",
       "learningObjectiveDescription": "Glucose, starch, cellulose, oils, minerals, crop yield and farming methods.",
-      "noteId": "9B-plant-products"
+      "noteId": "9B-plant-products",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-025-9b-explain-how-fertilisers-help-crop-plants-grow-well",
@@ -6953,7 +6779,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9B-plant-products",
       "learningObjectiveTitle": "Plant products, seeds and food production",
       "learningObjectiveDescription": "Glucose, starch, cellulose, oils, minerals, crop yield and farming methods.",
-      "noteId": "9B-plant-products"
+      "noteId": "9B-plant-products",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-026-9b-use-word-equations-for-photosynthesis-and-aerobic-respiration",
@@ -6974,7 +6801,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9B-photosynthesis",
       "learningObjectiveTitle": "Photosynthesis and respiration",
       "learningObjectiveDescription": "Reactants, products, chlorophyll, limiting factors and photosynthesis rate.",
-      "noteId": "9B-photosynthesis"
+      "noteId": "9B-photosynthesis",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-027-9b-explain-what-happens-when-plants-lack-water-or-mineral-salts",
@@ -6995,7 +6823,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9B-plant-transport",
       "learningObjectiveTitle": "Plant transport and specialised cells",
       "learningObjectiveDescription": "Root hair cells, stomata, guard cells, xylem, phloem and plant structure.",
-      "noteId": "9B-plant-transport"
+      "noteId": "9B-plant-transport",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-028-9b-describe-substances-made-in-plants-and-their-uses",
@@ -7016,7 +6845,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9B-plant-products",
       "learningObjectiveTitle": "Plant products, seeds and food production",
       "learningObjectiveDescription": "Glucose, starch, cellulose, oils, minerals, crop yield and farming methods.",
-      "noteId": "9B-plant-products"
+      "noteId": "9B-plant-products",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-029-9b-explain-that-chlorophyll-traps-energy-transferred-by-light",
@@ -7037,7 +6867,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9B-photosynthesis",
       "learningObjectiveTitle": "Photosynthesis and respiration",
       "learningObjectiveDescription": "Reactants, products, chlorophyll, limiting factors and photosynthesis rate.",
-      "noteId": "9B-photosynthesis"
+      "noteId": "9B-photosynthesis",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-030-9b-explain-how-farming-can-change-the-carbon-cycle",
@@ -7058,7 +6889,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9B-plant-products",
       "learningObjectiveTitle": "Plant products, seeds and food production",
       "learningObjectiveDescription": "Glucose, starch, cellulose, oils, minerals, crop yield and farming methods.",
-      "noteId": "9B-plant-products"
+      "noteId": "9B-plant-products",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-031-9b-explain-problems-caused-by-fertilisers-including-effects-on-fish-in-lakes",
@@ -7079,7 +6911,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9B-plant-products",
       "learningObjectiveTitle": "Plant products, seeds and food production",
       "learningObjectiveDescription": "Glucose, starch, cellulose, oils, minerals, crop yield and farming methods.",
-      "noteId": "9B-plant-products"
+      "noteId": "9B-plant-products",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-032-9b-explain-problems-caused-by-pesticides-including-persistent-insecticides",
@@ -7100,7 +6933,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9B-food-webs",
       "learningObjectiveTitle": "Food webs, biodiversity and ecosystems",
       "learningObjectiveDescription": "Food webs, pesticides, biodiversity, sampling and effects of farming.",
-      "noteId": "9B-food-webs"
+      "noteId": "9B-food-webs",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-033-9b-describe-how-limiting-factors-stop-photosynthesis-rate-increasing",
@@ -7121,7 +6955,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9B-photosynthesis",
       "learningObjectiveTitle": "Photosynthesis and respiration",
       "learningObjectiveDescription": "Reactants, products, chlorophyll, limiting factors and photosynthesis rate.",
-      "noteId": "9B-photosynthesis"
+      "noteId": "9B-photosynthesis",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-034-9e-name-common-conductors-and-insulators",
@@ -7138,18 +6973,12 @@ window.YEAR9_CONTENT = {
         "assess",
         "written"
       ],
-      "media": [
-        {
-          "src": "assets/webp/9E-conductors-insulators-materials.webp",
-          "alt": "Copper wire and rod beside plastic, wood and rubber materials.",
-          "caption": "Copper is a good conductor, while plastic, wood and rubber are insulators or high-resistance materials."
-        }
-      ],
       "sourceFidelity": "success-criterion-derived",
       "learningObjective": "9E-polymers",
       "learningObjectiveTitle": "Polymers and polymerisation",
       "learningObjectiveDescription": "Natural and synthetic polymers, polymerisation, vulcanisation and biodegradability.",
-      "noteId": "9E-polymers"
+      "noteId": "9E-polymers",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-035-9e-explain-what-a-landfill-site-is-and-why-it-can-cause-problems",
@@ -7170,7 +6999,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9E-environment",
       "learningObjectiveTitle": "Environmental impacts and recycling",
       "learningObjectiveDescription": "Landfill, recycling, fossil fuels, acid rain, greenhouse effect and reducing impacts.",
-      "noteId": "9E-environment"
+      "noteId": "9E-environment",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-036-9e-name-examples-of-ceramic-polymer-and-composite-materials",
@@ -7191,7 +7021,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9E-polymers",
       "learningObjectiveTitle": "Polymers and polymerisation",
       "learningObjectiveDescription": "Natural and synthetic polymers, polymerisation, vulcanisation and biodegradability.",
-      "noteId": "9E-polymers"
+      "noteId": "9E-polymers",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-037-9e-name-the-main-source-of-raw-materials-for-making-polymers",
@@ -7212,7 +7043,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9E-polymers",
       "learningObjectiveTitle": "Polymers and polymerisation",
       "learningObjectiveDescription": "Natural and synthetic polymers, polymerisation, vulcanisation and biodegradability.",
-      "noteId": "9E-polymers"
+      "noteId": "9E-polymers",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-038-9e-describe-the-difference-between-biodegradable-and-non-biodegradable-polymers",
@@ -7233,7 +7065,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9E-polymers",
       "learningObjectiveTitle": "Polymers and polymerisation",
       "learningObjectiveDescription": "Natural and synthetic polymers, polymerisation, vulcanisation and biodegradability.",
-      "noteId": "9E-polymers"
+      "noteId": "9E-polymers",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-039-9e-describe-pollution-problems-caused-by-burning-fossil-fuels",
@@ -7254,7 +7087,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9E-environment",
       "learningObjectiveTitle": "Environmental impacts and recycling",
       "learningObjectiveDescription": "Landfill, recycling, fossil fuels, acid rain, greenhouse effect and reducing impacts.",
-      "noteId": "9E-environment"
+      "noteId": "9E-environment",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-040-9e-describe-what-a-composite-material-is",
@@ -7275,7 +7109,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9E-composites",
       "learningObjectiveTitle": "Composites and material choice",
       "learningObjectiveDescription": "Composite materials, concrete, reinforced concrete and glass-reinforced plastic.",
-      "noteId": "9E-composites"
+      "noteId": "9E-composites",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-041-9e-describe-problems-caused-by-disposal-of-artificial-polymers",
@@ -7296,7 +7131,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9E-environment",
       "learningObjectiveTitle": "Environmental impacts and recycling",
       "learningObjectiveDescription": "Landfill, recycling, fossil fuels, acid rain, greenhouse effect and reducing impacts.",
-      "noteId": "9E-environment"
+      "noteId": "9E-environment",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-042-9e-explain-the-causes-and-problems-of-acid-rain-and-the-greenhouse-effect",
@@ -7313,18 +7149,12 @@ window.YEAR9_CONTENT = {
         "assess",
         "written"
       ],
-      "media": [
-        {
-          "src": "assets/webp/9E-sustainable-living-solutions.webp",
-          "alt": "Energy-efficient house with solar panels, wind energy and insulation.",
-          "caption": "Cleaner energy and better insulation can reduce fossil fuel use and help lower greenhouse gas emissions."
-        }
-      ],
       "sourceFidelity": "success-criterion-derived",
       "learningObjective": "9E-environment",
       "learningObjectiveTitle": "Environmental impacts and recycling",
       "learningObjectiveDescription": "Landfill, recycling, fossil fuels, acid rain, greenhouse effect and reducing impacts.",
-      "noteId": "9E-environment"
+      "noteId": "9E-environment",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-043-9e-link-uses-of-ceramics-polymers-and-composites-to-their-properties",
@@ -7345,7 +7175,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9E-polymers",
       "learningObjectiveTitle": "Polymers and polymerisation",
       "learningObjectiveDescription": "Natural and synthetic polymers, polymerisation, vulcanisation and biodegradability.",
-      "noteId": "9E-polymers"
+      "noteId": "9E-polymers",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-044-9e-describe-how-polymers-are-formed-from-monomers",
@@ -7366,7 +7197,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9E-polymers",
       "learningObjectiveTitle": "Polymers and polymerisation",
       "learningObjectiveDescription": "Natural and synthetic polymers, polymerisation, vulcanisation and biodegradability.",
-      "noteId": "9E-polymers"
+      "noteId": "9E-polymers",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-045-9e-identify-thermal-decomposition-reactions",
@@ -7387,7 +7219,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9E-ceramics",
       "learningObjectiveTitle": "Ceramics, crystals and materials properties",
       "learningObjectiveDescription": "Ceramics, glass, clay, crystal formation, melting point and brittleness.",
-      "noteId": "9E-ceramics"
+      "noteId": "9E-ceramics",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-046-9e-explain-advantages-of-recycling-with-specific-examples",
@@ -7408,7 +7241,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9E-environment",
       "learningObjectiveTitle": "Environmental impacts and recycling",
       "learningObjectiveDescription": "Landfill, recycling, fossil fuels, acid rain, greenhouse effect and reducing impacts.",
-      "noteId": "9E-environment"
+      "noteId": "9E-environment",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-047-9e-justify-using-a-ceramic-polymer-or-composite-for-a-particular-use",
@@ -7429,7 +7263,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9E-polymers",
       "learningObjectiveTitle": "Polymers and polymerisation",
       "learningObjectiveDescription": "Natural and synthetic polymers, polymerisation, vulcanisation and biodegradability.",
-      "noteId": "9E-polymers"
+      "noteId": "9E-polymers",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-048-9e-explain-how-crystal-size-depends-on-cooling-speed",
@@ -7446,18 +7281,12 @@ window.YEAR9_CONTENT = {
         "assess",
         "written"
       ],
-      "media": [
-        {
-          "src": "assets/webp/9E-crystal-cooling-comparison.webp",
-          "alt": "Crystal size comparison for different cooling speeds.",
-          "caption": "Use the comparison to explain how cooling speed affects crystal size."
-        }
-      ],
       "sourceFidelity": "success-criterion-derived",
       "learningObjective": "9E-ceramics",
       "learningObjectiveTitle": "Ceramics, crystals and materials properties",
       "learningObjectiveDescription": "Ceramics, glass, clay, crystal formation, melting point and brittleness.",
-      "noteId": "9E-ceramics"
+      "noteId": "9E-ceramics",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-049-9e-explain-how-properties-of-a-material-depend-on-bonding-and-structure",
@@ -7478,7 +7307,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9E-ceramics",
       "learningObjectiveTitle": "Ceramics, crystals and materials properties",
       "learningObjectiveDescription": "Ceramics, glass, clay, crystal formation, melting point and brittleness.",
-      "noteId": "9E-ceramics"
+      "noteId": "9E-ceramics",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-050-9e-classify-exothermic-and-endothermic-reactions-by-temperature-change-and-energy-t",
@@ -7499,7 +7329,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9E-ceramics",
       "learningObjectiveTitle": "Ceramics, crystals and materials properties",
       "learningObjectiveDescription": "Ceramics, glass, clay, crystal formation, melting point and brittleness.",
-      "noteId": "9E-ceramics"
+      "noteId": "9E-ceramics",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-051-9e-explain-biomagnification-of-toxins-through-food-chains",
@@ -7520,7 +7351,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9E-ceramics",
       "learningObjectiveTitle": "Ceramics, crystals and materials properties",
       "learningObjectiveDescription": "Ceramics, glass, clay, crystal formation, melting point and brittleness.",
-      "noteId": "9E-ceramics"
+      "noteId": "9E-ceramics",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-052-9e-suggest-ways-to-reduce-global-warming-and-acid-rain-impacts",
@@ -7537,18 +7369,12 @@ window.YEAR9_CONTENT = {
         "assess",
         "written"
       ],
-      "media": [
-        {
-          "src": "assets/webp/9E-sustainable-living-solutions.webp",
-          "alt": "Renewable energy and insulation collage.",
-          "caption": "The image shows practical ways to reduce reliance on fossil fuels."
-        }
-      ],
       "sourceFidelity": "success-criterion-derived",
       "learningObjective": "9E-environment",
       "learningObjectiveTitle": "Environmental impacts and recycling",
       "learningObjectiveDescription": "Landfill, recycling, fossil fuels, acid rain, greenhouse effect and reducing impacts.",
-      "noteId": "9E-environment"
+      "noteId": "9E-environment",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-053-9f-describe-what-causes-rusting",
@@ -7569,7 +7395,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9F-rusting",
       "learningObjectiveTitle": "Rusting and corrosion protection",
       "learningObjectiveDescription": "Rusting, coatings, sacrificial protection and preventing corrosion.",
-      "noteId": "9F-rusting"
+      "noteId": "9F-rusting",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-054-9f-describe-one-simple-method-of-preventing-rusting",
@@ -7590,7 +7417,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9F-rusting",
       "learningObjectiveTitle": "Rusting and corrosion protection",
       "learningObjectiveDescription": "Rusting, coatings, sacrificial protection and preventing corrosion.",
-      "noteId": "9F-rusting"
+      "noteId": "9F-rusting",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-055-9f-explain-why-rusting-is-a-problem",
@@ -7611,7 +7439,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9F-rusting",
       "learningObjectiveTitle": "Rusting and corrosion protection",
       "learningObjectiveDescription": "Rusting, coatings, sacrificial protection and preventing corrosion.",
-      "noteId": "9F-rusting"
+      "noteId": "9F-rusting",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-056-9f-use-scientific-words-to-explain-how-iron-rusts",
@@ -7632,7 +7461,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9F-rusting",
       "learningObjectiveTitle": "Rusting and corrosion protection",
       "learningObjectiveDescription": "Rusting, coatings, sacrificial protection and preventing corrosion.",
-      "noteId": "9F-rusting"
+      "noteId": "9F-rusting",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-057-9f-explain-why-iron-or-steel-is-used-for-a-purpose-because-of-its-properties",
@@ -7653,7 +7483,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9F-extraction",
       "learningObjectiveTitle": "Metal extraction and reduction",
       "learningObjectiveDescription": "Mining, ores, reduction, blast furnaces, electrolysis and extraction method choice.",
-      "noteId": "9F-extraction"
+      "noteId": "9F-extraction",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-058-9f-describe-how-iron-ore-is-obtained-from-mining",
@@ -7670,18 +7501,12 @@ window.YEAR9_CONTENT = {
         "assess",
         "written"
       ],
-      "media": [
-        {
-          "src": "assets/webp/9F-blast-furnace-process.webp",
-          "alt": "Blast furnace diagram for iron extraction.",
-          "caption": "Iron ore is mined, then processed and heated in a blast furnace to extract iron."
-        }
-      ],
       "sourceFidelity": "success-criterion-derived",
       "learningObjective": "9F-extraction",
       "learningObjectiveTitle": "Metal extraction and reduction",
       "learningObjectiveDescription": "Mining, ores, reduction, blast furnaces, electrolysis and extraction method choice.",
-      "noteId": "9F-extraction"
+      "noteId": "9F-extraction",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-059-9f-use-word-equations-to-describe-reactions",
@@ -7702,7 +7527,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9F-extraction",
       "learningObjectiveTitle": "Metal extraction and reduction",
       "learningObjectiveDescription": "Mining, ores, reduction, blast furnaces, electrolysis and extraction method choice.",
-      "noteId": "9F-extraction"
+      "noteId": "9F-extraction",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-060-9f-describe-the-reactivity-series-and-the-position-of-iron",
@@ -7719,18 +7545,12 @@ window.YEAR9_CONTENT = {
         "assess",
         "written"
       ],
-      "media": [
-        {
-          "src": "assets/diagrams/9F-reactivity-extraction.svg",
-          "alt": "Reactivity series chart.",
-          "caption": "Iron is below carbon, so it can be extracted by reduction with carbon."
-        }
-      ],
       "sourceFidelity": "success-criterion-derived",
       "learningObjective": "9F-extraction",
       "learningObjectiveTitle": "Metal extraction and reduction",
       "learningObjectiveDescription": "Mining, ores, reduction, blast furnaces, electrolysis and extraction method choice.",
-      "noteId": "9F-extraction"
+      "noteId": "9F-extraction",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-061-9f-explain-how-metal-reactivity-determines-extraction-method",
@@ -7747,18 +7567,12 @@ window.YEAR9_CONTENT = {
         "assess",
         "written"
       ],
-      "media": [
-        {
-          "src": "assets/webp/9F-blast-furnace-process.webp",
-          "alt": "Blast furnace and extraction context.",
-          "caption": "Less reactive metals such as iron can be extracted using carbon in a blast furnace."
-        }
-      ],
       "sourceFidelity": "success-criterion-derived",
       "learningObjective": "9F-extraction",
       "learningObjectiveTitle": "Metal extraction and reduction",
       "learningObjectiveDescription": "Mining, ores, reduction, blast furnaces, electrolysis and extraction method choice.",
-      "noteId": "9F-extraction"
+      "noteId": "9F-extraction",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-062-9f-explain-why-energy-needs-and-cost-matter-when-selecting-extraction-methods",
@@ -7779,7 +7593,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9F-extraction",
       "learningObjectiveTitle": "Metal extraction and reduction",
       "learningObjectiveDescription": "Mining, ores, reduction, blast furnaces, electrolysis and extraction method choice.",
-      "noteId": "9F-extraction"
+      "noteId": "9F-extraction",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-063-9f-describe-sacrificial-protection-for-preventing-rusting",
@@ -7800,7 +7615,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9F-rusting",
       "learningObjectiveTitle": "Rusting and corrosion protection",
       "learningObjectiveDescription": "Rusting, coatings, sacrificial protection and preventing corrosion.",
-      "noteId": "9F-rusting"
+      "noteId": "9F-rusting",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-064-9f-explain-how-sacrificial-protection-prevents-rusting-and-link-this-to-the-reactiv",
@@ -7817,18 +7633,12 @@ window.YEAR9_CONTENT = {
         "assess",
         "written"
       ],
-      "media": [
-        {
-          "src": "assets/webp/9F-rusting-protection.webp",
-          "alt": "Zinc sacrificial protection diagram.",
-          "caption": "A more reactive metal corrodes instead of the iron or steel, keeping the steel protected."
-        }
-      ],
       "sourceFidelity": "success-criterion-derived",
       "learningObjective": "9F-rusting",
       "learningObjectiveTitle": "Rusting and corrosion protection",
       "learningObjectiveDescription": "Rusting, coatings, sacrificial protection and preventing corrosion.",
-      "noteId": "9F-rusting"
+      "noteId": "9F-rusting",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-065-9f-explain-why-certain-metals-are-used-for-sacrificial-protection",
@@ -7845,18 +7655,12 @@ window.YEAR9_CONTENT = {
         "assess",
         "written"
       ],
-      "media": [
-        {
-          "src": "assets/webp/9F-rusting-protection.webp",
-          "alt": "Protected steel with zinc sacrificial metal.",
-          "caption": "The sacrificial metal must be more reactive than iron."
-        }
-      ],
       "sourceFidelity": "success-criterion-derived",
       "learningObjective": "9F-rusting",
       "learningObjectiveTitle": "Rusting and corrosion protection",
       "learningObjectiveDescription": "Rusting, coatings, sacrificial protection and preventing corrosion.",
-      "noteId": "9F-rusting"
+      "noteId": "9F-rusting",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-066-9f-explain-other-reactions-taking-place-in-a-blast-furnace",
@@ -7873,18 +7677,12 @@ window.YEAR9_CONTENT = {
         "assess",
         "written"
       ],
-      "media": [
-        {
-          "src": "assets/webp/9F-blast-furnace-process.webp",
-          "alt": "Industrial blast furnace process image.",
-          "caption": "The blast furnace image supports explanations of combustion, reduction and slag formation."
-        }
-      ],
       "sourceFidelity": "success-criterion-derived",
       "learningObjective": "9F-extraction",
       "learningObjectiveTitle": "Metal extraction and reduction",
       "learningObjectiveDescription": "Mining, ores, reduction, blast furnaces, electrolysis and extraction method choice.",
-      "noteId": "9F-extraction"
+      "noteId": "9F-extraction",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-067-9f-use-balanced-equations-to-represent-reactions",
@@ -7905,7 +7703,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9F-changes",
       "learningObjectiveTitle": "Physical and chemical changes",
       "learningObjectiveDescription": "Physical changes, chemical reactions, particles, molecules, formulae and gas pressure.",
-      "noteId": "9F-changes"
+      "noteId": "9F-changes",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-068-9f-describe-the-formation-of-stainless-steel",
@@ -7926,7 +7725,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9F-rusting",
       "learningObjectiveTitle": "Rusting and corrosion protection",
       "learningObjectiveDescription": "Rusting, coatings, sacrificial protection and preventing corrosion.",
-      "noteId": "9F-rusting"
+      "noteId": "9F-rusting",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-069-9i-recall-units-for-speed-and-explain-what-speed-means",
@@ -7947,7 +7747,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9I-speed",
       "learningObjectiveTitle": "Speed and distance-time graphs",
       "learningObjectiveDescription": "Speed calculations, mean speed and interpreting distance-time graphs.",
-      "noteId": "9I-speed"
+      "noteId": "9I-speed",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-070-9i-explain-how-distance-and-time-affect-speed",
@@ -7968,7 +7769,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9I-speed",
       "learningObjectiveTitle": "Speed and distance-time graphs",
       "learningObjectiveDescription": "Speed calculations, mean speed and interpreting distance-time graphs.",
-      "noteId": "9I-speed"
+      "noteId": "9I-speed",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-071-9i-use-the-formula-relating-speed-distance-and-time",
@@ -7989,7 +7791,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9I-speed",
       "learningObjectiveTitle": "Speed and distance-time graphs",
       "learningObjectiveDescription": "Speed calculations, mean speed and interpreting distance-time graphs.",
-      "noteId": "9I-speed"
+      "noteId": "9I-speed",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-072-9i-describe-levers-ramps-and-pulleys-and-how-they-help-move-loads",
@@ -8010,7 +7813,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9I-moments",
       "learningObjectiveTitle": "Levers, pivots and moments",
       "learningObjectiveDescription": "Levers, pivots/fulcrums, moment calculations and mechanical advantage.",
-      "noteId": "9I-moments"
+      "noteId": "9I-moments",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-073-9i-explain-how-levers-ramps-or-pulleys-could-raise-or-lift-stones",
@@ -8031,7 +7835,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9I-moments",
       "learningObjectiveTitle": "Levers, pivots and moments",
       "learningObjectiveDescription": "Levers, pivots/fulcrums, moment calculations and mechanical advantage.",
-      "noteId": "9I-moments"
+      "noteId": "9I-moments",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-074-9i-state-what-a-moment-is-and-when-something-balances",
@@ -8052,7 +7857,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9I-moments",
       "learningObjectiveTitle": "Levers, pivots and moments",
       "learningObjectiveDescription": "Levers, pivots/fulcrums, moment calculations and mechanical advantage.",
-      "noteId": "9I-moments"
+      "noteId": "9I-moments",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-075-9i-explain-why-simple-machines-do-not-mean-less-energy-is-needed",
@@ -8073,7 +7879,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9I-energy-work",
       "learningObjectiveTitle": "Energy, work and simple machines",
       "learningObjectiveDescription": "Work done, machines, ramps, friction and energy transfer.",
-      "noteId": "9I-energy-work"
+      "noteId": "9I-energy-work",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-076-9i-represent-part-of-a-journey-on-a-distance-time-graph",
@@ -8090,18 +7897,12 @@ window.YEAR9_CONTENT = {
         "assess",
         "written"
       ],
-      "media": [
-        {
-          "src": "assets/diagrams/9I-distance-time-graph.svg",
-          "alt": "Distance-time graph example.",
-          "caption": "Use a graph like this to sketch sections of a journey and explain stops or constant speed."
-        }
-      ],
       "sourceFidelity": "success-criterion-derived",
       "learningObjective": "9I-speed",
       "learningObjectiveTitle": "Speed and distance-time graphs",
       "learningObjectiveDescription": "Speed calculations, mean speed and interpreting distance-time graphs.",
-      "noteId": "9I-speed"
+      "noteId": "9I-speed",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-077-9i-use-the-formula-for-moment-force-and-perpendicular-distance",
@@ -8122,7 +7923,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9I-moments",
       "learningObjectiveTitle": "Levers, pivots and moments",
       "learningObjectiveDescription": "Levers, pivots/fulcrums, moment calculations and mechanical advantage.",
-      "noteId": "9I-moments"
+      "noteId": "9I-moments",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-078-9i-explain-the-effect-of-friction-on-force-needed-to-move-a-load",
@@ -8143,7 +7945,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9I-energy-work",
       "learningObjectiveTitle": "Energy, work and simple machines",
       "learningObjectiveDescription": "Work done, machines, ramps, friction and energy transfer.",
-      "noteId": "9I-energy-work"
+      "noteId": "9I-energy-work",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-079-9i-explain-why-friction-usually-means-more-energy-is-needed-with-a-simple-machine",
@@ -8164,7 +7967,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9I-energy-work",
       "learningObjectiveTitle": "Energy, work and simple machines",
       "learningObjectiveDescription": "Work done, machines, ramps, friction and energy transfer.",
-      "noteId": "9I-energy-work"
+      "noteId": "9I-energy-work",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-080-9i-explain-how-ramp-angle-affects-friction-and-required-force-using-force-component",
@@ -8185,7 +7989,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9I-energy-work",
       "learningObjectiveTitle": "Energy, work and simple machines",
       "learningObjectiveDescription": "Work done, machines, ramps, friction and energy transfer.",
-      "noteId": "9I-energy-work"
+      "noteId": "9I-energy-work",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-081-9b-describe-what-gas-exchange-is-and-why-it-needs-to-occur-in-plants",
@@ -8206,7 +8011,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9B-plant-transport",
       "learningObjectiveTitle": "Plant transport and specialised cells",
       "learningObjectiveDescription": "Root hair cells, stomata, guard cells, xylem, phloem and plant structure.",
-      "noteId": "9B-plant-transport"
+      "noteId": "9B-plant-transport",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-082-9b-describe-how-a-leaf-is-adapted-so-palisade-cells-get-the-resources-they-need",
@@ -8223,18 +8029,12 @@ window.YEAR9_CONTENT = {
         "ppt",
         "written"
       ],
-      "media": [
-        {
-          "src": "assets/webp/9B-stomata-micrograph.webp",
-          "alt": "Microscopic view of stomata on a leaf.",
-          "caption": "Stomata help the leaf take in carbon dioxide needed for photosynthesis."
-        }
-      ],
       "sourceFidelity": "progress-check-derived",
       "learningObjective": "9B-plant-transport",
       "learningObjectiveTitle": "Plant transport and specialised cells",
       "learningObjectiveDescription": "Root hair cells, stomata, guard cells, xylem, phloem and plant structure.",
-      "noteId": "9B-plant-transport"
+      "noteId": "9B-plant-transport",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-083-9b-describe-why-starch-in-chloroplasts-is-broken-down",
@@ -8255,7 +8055,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9B-plant-transport",
       "learningObjectiveTitle": "Plant transport and specialised cells",
       "learningObjectiveDescription": "Root hair cells, stomata, guard cells, xylem, phloem and plant structure.",
-      "noteId": "9B-plant-transport"
+      "noteId": "9B-plant-transport",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-084-9b-suggest-when-starch-is-broken-down-in-chloroplasts-and-explain-why",
@@ -8276,7 +8077,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9B-plant-products",
       "learningObjectiveTitle": "Plant products, seeds and food production",
       "learningObjectiveDescription": "Glucose, starch, cellulose, oils, minerals, crop yield and farming methods.",
-      "noteId": "9B-plant-products"
+      "noteId": "9B-plant-products",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-085-9b-explain-why-plants-do-not-grow-well-if-the-soil-lacks-nitrates",
@@ -8297,7 +8099,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9B-plant-products",
       "learningObjectiveTitle": "Plant products, seeds and food production",
       "learningObjectiveDescription": "Glucose, starch, cellulose, oils, minerals, crop yield and farming methods.",
-      "noteId": "9B-plant-products"
+      "noteId": "9B-plant-products",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-086-9b-put-the-main-stages-of-germination-into-a-logical-order",
@@ -8318,7 +8121,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9B-plant-products",
       "learningObjectiveTitle": "Plant products, seeds and food production",
       "learningObjectiveDescription": "Glucose, starch, cellulose, oils, minerals, crop yield and farming methods.",
-      "noteId": "9B-plant-products"
+      "noteId": "9B-plant-products",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-087-9b-list-three-substances-found-in-seeds-and-explain-their-functions",
@@ -8339,7 +8143,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9B-plant-products",
       "learningObjectiveTitle": "Plant products, seeds and food production",
       "learningObjectiveDescription": "Glucose, starch, cellulose, oils, minerals, crop yield and farming methods.",
-      "noteId": "9B-plant-products"
+      "noteId": "9B-plant-products",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-088-9b-describe-why-plants-are-cross-bred",
@@ -8360,7 +8165,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9B-plant-products",
       "learningObjectiveTitle": "Plant products, seeds and food production",
       "learningObjectiveDescription": "Glucose, starch, cellulose, oils, minerals, crop yield and farming methods.",
-      "noteId": "9B-plant-products"
+      "noteId": "9B-plant-products",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-089-9b-recall-the-main-mineral-nutrients-plants-need",
@@ -8381,7 +8187,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9B-plant-products",
       "learningObjectiveTitle": "Plant products, seeds and food production",
       "learningObjectiveDescription": "Glucose, starch, cellulose, oils, minerals, crop yield and farming methods.",
-      "noteId": "9B-plant-products"
+      "noteId": "9B-plant-products",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-090-9b-explain-how-food-production-for-humans-can-be-increased",
@@ -8402,7 +8209,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9B-plant-products",
       "learningObjectiveTitle": "Plant products, seeds and food production",
       "learningObjectiveDescription": "Glucose, starch, cellulose, oils, minerals, crop yield and farming methods.",
-      "noteId": "9B-plant-products"
+      "noteId": "9B-plant-products",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-091-9b-explain-why-phosphates-and-potassium-are-important-nutrients-for-plants",
@@ -8423,7 +8231,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9B-photosynthesis",
       "learningObjectiveTitle": "Photosynthesis and respiration",
       "learningObjectiveDescription": "Reactants, products, chlorophyll, limiting factors and photosynthesis rate.",
-      "noteId": "9B-photosynthesis"
+      "noteId": "9B-photosynthesis",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-092-9b-define-biodiversity",
@@ -8444,7 +8253,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9B-food-webs",
       "learningObjectiveTitle": "Food webs, biodiversity and ecosystems",
       "learningObjectiveDescription": "Food webs, pesticides, biodiversity, sampling and effects of farming.",
-      "noteId": "9B-food-webs"
+      "noteId": "9B-food-webs",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-093-9b-describe-how-sampling-can-estimate-biodiversity-in-a-field",
@@ -8465,7 +8275,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9B-food-webs",
       "learningObjectiveTitle": "Food webs, biodiversity and ecosystems",
       "learningObjectiveDescription": "Food webs, pesticides, biodiversity, sampling and effects of farming.",
-      "noteId": "9B-food-webs"
+      "noteId": "9B-food-webs",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-094-9b-explain-why-relying-on-one-crop-variety-can-be-risky",
@@ -8486,7 +8297,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9B-plant-products",
       "learningObjectiveTitle": "Plant products, seeds and food production",
       "learningObjectiveDescription": "Glucose, starch, cellulose, oils, minerals, crop yield and farming methods.",
-      "noteId": "9B-plant-products"
+      "noteId": "9B-plant-products",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-095-9b-label-the-main-processes-in-the-carbon-cycle",
@@ -8507,7 +8319,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9B-photosynthesis",
       "learningObjectiveTitle": "Photosynthesis and respiration",
       "learningObjectiveDescription": "Reactants, products, chlorophyll, limiting factors and photosynthesis rate.",
-      "noteId": "9B-photosynthesis"
+      "noteId": "9B-photosynthesis",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-096-9b-explain-how-farming-affects-the-carbon-cycle",
@@ -8528,7 +8341,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9B-plant-products",
       "learningObjectiveTitle": "Plant products, seeds and food production",
       "learningObjectiveDescription": "Glucose, starch, cellulose, oils, minerals, crop yield and farming methods.",
-      "noteId": "9B-plant-products"
+      "noteId": "9B-plant-products",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-097-9b-give-advantages-and-disadvantages-of-clearing-land-for-farming",
@@ -8549,7 +8363,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9B-plant-products",
       "learningObjectiveTitle": "Plant products, seeds and food production",
       "learningObjectiveDescription": "Glucose, starch, cellulose, oils, minerals, crop yield and farming methods.",
-      "noteId": "9B-plant-products"
+      "noteId": "9B-plant-products",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-098-9b-give-advantages-and-disadvantages-of-insecticides-and-herbicides",
@@ -8570,7 +8385,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9B-plant-products",
       "learningObjectiveTitle": "Plant products, seeds and food production",
       "learningObjectiveDescription": "Glucose, starch, cellulose, oils, minerals, crop yield and farming methods.",
-      "noteId": "9B-plant-products"
+      "noteId": "9B-plant-products",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-099-9b-give-advantages-and-disadvantages-of-fertilisers",
@@ -8591,7 +8407,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9B-plant-products",
       "learningObjectiveTitle": "Plant products, seeds and food production",
       "learningObjectiveDescription": "Glucose, starch, cellulose, oils, minerals, crop yield and farming methods.",
-      "noteId": "9B-plant-products"
+      "noteId": "9B-plant-products",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-100-9b-explain-why-changing-from-wheat-to-rapeseed-after-many-years-may-reduce-yield",
@@ -8612,7 +8429,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9B-plant-products",
       "learningObjectiveTitle": "Plant products, seeds and food production",
       "learningObjectiveDescription": "Glucose, starch, cellulose, oils, minerals, crop yield and farming methods.",
-      "noteId": "9B-plant-products"
+      "noteId": "9B-plant-products",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-101-9j-state-where-electrons-are-found-in-an-atom",
@@ -8633,7 +8451,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9J-static",
       "learningObjectiveTitle": "Static electricity and charge",
       "learningObjectiveDescription": "Charge transfer, attraction, repulsion, dangers and uses of static electricity.",
-      "noteId": "9J-static"
+      "noteId": "9J-static",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-102-9j-describe-the-dangers-of-static-electricity",
@@ -8650,18 +8469,12 @@ window.YEAR9_CONTENT = {
         "ppt",
         "written"
       ],
-      "media": [
-        {
-          "src": "assets/webp/9J-static-electricity-demo.webp",
-          "alt": "Static electricity demonstration.",
-          "caption": "Static charge can build up and then discharge suddenly as a spark."
-        }
-      ],
       "sourceFidelity": "progress-check-derived",
       "learningObjective": "9J-static",
       "learningObjectiveTitle": "Static electricity and charge",
       "learningObjectiveDescription": "Charge transfer, attraction, repulsion, dangers and uses of static electricity.",
-      "noteId": "9J-static"
+      "noteId": "9J-static",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-103-9j-explain-why-only-negative-charges-transfer-onto-an-insulating-material",
@@ -8678,18 +8491,12 @@ window.YEAR9_CONTENT = {
         "ppt",
         "written"
       ],
-      "media": [
-        {
-          "src": "assets/webp/9J-static-electricity-demo.webp",
-          "alt": "Static electricity image showing electrons transferred.",
-          "caption": "In solids, electrons move; the image shows electrons transferring from hair to the balloon."
-        }
-      ],
       "sourceFidelity": "progress-check-derived",
       "learningObjective": "9J-static",
       "learningObjectiveTitle": "Static electricity and charge",
       "learningObjectiveDescription": "Charge transfer, attraction, repulsion, dangers and uses of static electricity.",
-      "noteId": "9J-static"
+      "noteId": "9J-static",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-104-9j-explain-why-a-rubbed-polythene-rod-has-an-overall-negative-charge",
@@ -8706,18 +8513,12 @@ window.YEAR9_CONTENT = {
         "ppt",
         "written"
       ],
-      "media": [
-        {
-          "src": "assets/webp/9J-static-electricity-demo.webp",
-          "alt": "Balloon and charged rod static electricity demonstration.",
-          "caption": "A rubbed insulating object gains extra electrons and becomes negatively charged."
-        }
-      ],
       "sourceFidelity": "progress-check-derived",
       "learningObjective": "9J-static",
       "learningObjectiveTitle": "Static electricity and charge",
       "learningObjectiveDescription": "Charge transfer, attraction, repulsion, dangers and uses of static electricity.",
-      "noteId": "9J-static"
+      "noteId": "9J-static",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-105-9j-describe-how-charged-objects-attract-or-repel-each-other",
@@ -8734,18 +8535,12 @@ window.YEAR9_CONTENT = {
         "ppt",
         "written"
       ],
-      "media": [
-        {
-          "src": "assets/webp/9J-static-electricity-demo.webp",
-          "alt": "Static electricity poster with attract and repel examples.",
-          "caption": "Like charges repel and opposite charges attract."
-        }
-      ],
       "sourceFidelity": "progress-check-derived",
       "learningObjective": "9J-static",
       "learningObjectiveTitle": "Static electricity and charge",
       "learningObjectiveDescription": "Charge transfer, attraction, repulsion, dangers and uses of static electricity.",
-      "noteId": "9J-static"
+      "noteId": "9J-static",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-106-9j-describe-a-fair-investigation-of-forces-between-charged-rods",
@@ -8766,7 +8561,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9J-static",
       "learningObjectiveTitle": "Static electricity and charge",
       "learningObjectiveDescription": "Charge transfer, attraction, repulsion, dangers and uses of static electricity.",
-      "noteId": "9J-static"
+      "noteId": "9J-static",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-107-9j-state-three-materials-that-have-high-resistance",
@@ -8783,18 +8579,12 @@ window.YEAR9_CONTENT = {
         "ppt",
         "written"
       ],
-      "media": [
-        {
-          "src": "assets/webp/9E-conductors-insulators-materials.webp",
-          "alt": "Materials including plastic, wood and rubber beside copper.",
-          "caption": "Plastic, wood and rubber are examples of materials with high resistance."
-        }
-      ],
       "sourceFidelity": "progress-check-derived",
       "learningObjective": "9J-resistance",
       "learningObjectiveTitle": "Resistance and Ohm’s law",
       "learningObjectiveDescription": "Resistance, current-voltage graphs, high-resistance materials and calculations.",
-      "noteId": "9J-resistance"
+      "noteId": "9J-resistance",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-108-9j-describe-what-resistance-is",
@@ -8815,7 +8605,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9J-resistance",
       "learningObjectiveTitle": "Resistance and Ohm’s law",
       "learningObjectiveDescription": "Resistance, current-voltage graphs, high-resistance materials and calculations.",
-      "noteId": "9J-resistance"
+      "noteId": "9J-resistance",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-109-9j-describe-how-to-increase-resistance-in-a-circuit",
@@ -8836,7 +8627,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9J-resistance",
       "learningObjectiveTitle": "Resistance and Ohm’s law",
       "learningObjectiveDescription": "Resistance, current-voltage graphs, high-resistance materials and calculations.",
-      "noteId": "9J-resistance"
+      "noteId": "9J-resistance",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-110-9j-state-the-units-for-voltage-current-and-resistance",
@@ -8857,7 +8649,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9J-resistance",
       "learningObjectiveTitle": "Resistance and Ohm’s law",
       "learningObjectiveDescription": "Resistance, current-voltage graphs, high-resistance materials and calculations.",
-      "noteId": "9J-resistance"
+      "noteId": "9J-resistance",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-111-9j-explain-which-wire-has-higher-resistance-a-long-thin-wire-or-a-short-thick-wire-",
@@ -8878,7 +8671,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9J-resistance",
       "learningObjectiveTitle": "Resistance and Ohm’s law",
       "learningObjectiveDescription": "Resistance, current-voltage graphs, high-resistance materials and calculations.",
-      "noteId": "9J-resistance"
+      "noteId": "9J-resistance",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-112-9j-explain-how-a-current-voltage-graph-shows-which-resistor-has-the-higher-resistan",
@@ -8899,14 +8693,16 @@ window.YEAR9_CONTENT = {
         {
           "src": "assets/diagrams/9J-current-voltage-graph.svg",
           "alt": "Current-voltage graph with one steeper and one shallower line.",
-          "caption": "The shallower line means less current for the same voltage, so the resistance is higher."
+          "caption": "The shallower line means less current for the same voltage, so the resistance is higher.",
+          "mediaTiming": "question"
         }
       ],
       "sourceFidelity": "progress-check-derived",
       "learningObjective": "9J-resistance",
       "learningObjectiveTitle": "Resistance and Ohm’s law",
       "learningObjectiveDescription": "Resistance, current-voltage graphs, high-resistance materials and calculations.",
-      "noteId": "9J-resistance"
+      "noteId": "9J-resistance",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-113-9j-plan-an-investigation-into-how-wire-thickness-affects-resistance",
@@ -8927,7 +8723,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9J-resistance",
       "learningObjectiveTitle": "Resistance and Ohm’s law",
       "learningObjectiveDescription": "Resistance, current-voltage graphs, high-resistance materials and calculations.",
-      "noteId": "9J-resistance"
+      "noteId": "9J-resistance",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-114-9j-explain-why-copper-is-commonly-used-for-wires-in-circuits",
@@ -8944,18 +8741,12 @@ window.YEAR9_CONTENT = {
         "ppt",
         "written"
       ],
-      "media": [
-        {
-          "src": "assets/webp/9E-conductors-insulators-materials.webp",
-          "alt": "Copper wire compared with insulating materials.",
-          "caption": "Copper is used for wires because it has low resistance and is a very good conductor."
-        }
-      ],
       "sourceFidelity": "progress-check-derived",
       "learningObjective": "9J-resistance",
       "learningObjectiveTitle": "Resistance and Ohm’s law",
       "learningObjectiveDescription": "Resistance, current-voltage graphs, high-resistance materials and calculations.",
-      "noteId": "9J-resistance"
+      "noteId": "9J-resistance",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-115-9j-describe-how-current-behaves-in-series-and-parallel-circuits",
@@ -8972,18 +8763,12 @@ window.YEAR9_CONTENT = {
         "ppt",
         "written"
       ],
-      "media": [
-        {
-          "src": "assets/webp/9J-series-parallel-circuits-photo.webp",
-          "alt": "Physical comparison of series and parallel circuits.",
-          "caption": "Use the comparison image to explain how current behaves differently in one loop versus multiple branches."
-        }
-      ],
       "sourceFidelity": "progress-check-derived",
       "learningObjective": "9J-circuits",
       "learningObjectiveTitle": "Current, voltage and circuits",
       "learningObjectiveDescription": "Current, voltage/potential difference, series and parallel circuits, meters and components.",
-      "noteId": "9J-circuits"
+      "noteId": "9J-circuits",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-116-9j-describe-how-voltage-behaves-in-series-and-parallel-circuits",
@@ -9000,18 +8785,12 @@ window.YEAR9_CONTENT = {
         "ppt",
         "written"
       ],
-      "media": [
-        {
-          "src": "assets/webp/9J-series-parallel-circuits-photo.webp",
-          "alt": "Series and parallel circuits with bulbs and battery packs.",
-          "caption": "Use the image to help compare how voltage is shared in series circuits and matched across branches in parallel circuits."
-        }
-      ],
       "sourceFidelity": "progress-check-derived",
       "learningObjective": "9J-circuits",
       "learningObjectiveTitle": "Current, voltage and circuits",
       "learningObjectiveDescription": "Current, voltage/potential difference, series and parallel circuits, meters and components.",
-      "noteId": "9J-circuits"
+      "noteId": "9J-circuits",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-117-9j-explain-the-difference-between-an-electromagnet-and-a-bar-magnet",
@@ -9028,18 +8807,12 @@ window.YEAR9_CONTENT = {
         "ppt",
         "written"
       ],
-      "media": [
-        {
-          "src": "assets/webp/9J-magnetic-field-pattern.webp",
-          "alt": "Bar magnet and field pattern.",
-          "caption": "Use the bar magnet field pattern as a reference point when comparing it with an electromagnet."
-        }
-      ],
       "sourceFidelity": "progress-check-derived",
       "learningObjective": "9J-electromagnets",
       "learningObjectiveTitle": "Electromagnets, relays and motors",
       "learningObjectiveDescription": "Electromagnets, relays, motor effect and factors affecting magnetic force.",
-      "noteId": "9J-electromagnets"
+      "noteId": "9J-electromagnets",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-118-9j-predict-how-changing-current-magnetic-field-strength-or-current-direction-affect",
@@ -9056,18 +8829,12 @@ window.YEAR9_CONTENT = {
         "ppt",
         "written"
       ],
-      "media": [
-        {
-          "src": "assets/diagrams/9J-motor-effect.svg",
-          "alt": "Motor effect support diagram.",
-          "caption": "Changing current or magnetic field strength changes the force."
-        }
-      ],
       "sourceFidelity": "progress-check-derived",
       "learningObjective": "9J-electromagnets",
       "learningObjectiveTitle": "Electromagnets, relays and motors",
       "learningObjectiveDescription": "Electromagnets, relays, motor effect and factors affecting magnetic force.",
-      "noteId": "9J-electromagnets"
+      "noteId": "9J-electromagnets",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-119-9j-gamora-has-mass-54-kg-calculate-her-weight-on-earth-where-g-10-n-kg",
@@ -9087,7 +8854,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9J-fields",
       "learningObjectiveTitle": "Force fields, gravity and magnetism",
       "learningObjectiveDescription": "Magnetic, gravitational and electric fields, weight and gravitational potential energy.",
-      "noteId": "9J-fields"
+      "noteId": "9J-fields",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-120-9j-gamora-has-mass-54-kg-on-a-planet-where-g-5-n-kg-calculate-her-weight",
@@ -9107,7 +8875,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9J-fields",
       "learningObjectiveTitle": "Force fields, gravity and magnetism",
       "learningObjectiveDescription": "Magnetic, gravitational and electric fields, weight and gravitational potential energy.",
-      "noteId": "9J-fields"
+      "noteId": "9J-fields",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-121-9j-star-lord-has-mass-96-kg-calculate-his-weight-on-earth-where-g-10-n-kg",
@@ -9127,7 +8896,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9J-fields",
       "learningObjectiveTitle": "Force fields, gravity and magnetism",
       "learningObjectiveDescription": "Magnetic, gravitational and electric fields, weight and gravitational potential energy.",
-      "noteId": "9J-fields"
+      "noteId": "9J-fields",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-122-9j-star-lord-has-mass-96-kg-on-a-planet-where-g-14-n-kg-calculate-his-weight",
@@ -9147,7 +8917,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9J-fields",
       "learningObjectiveTitle": "Force fields, gravity and magnetism",
       "learningObjectiveDescription": "Magnetic, gravitational and electric fields, weight and gravitational potential energy.",
-      "noteId": "9J-fields"
+      "noteId": "9J-fields",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-123-9j-drax-weighs-1220-n-on-earth-where-g-10-n-kg-calculate-his-mass",
@@ -9167,7 +8938,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9J-fields",
       "learningObjectiveTitle": "Force fields, gravity and magnetism",
       "learningObjectiveDescription": "Magnetic, gravitational and electric fields, weight and gravitational potential energy.",
-      "noteId": "9J-fields"
+      "noteId": "9J-fields",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-124-9j-drax-has-mass-122-kg-on-a-planet-where-g-7-5-n-kg-calculate-his-weight",
@@ -9187,7 +8959,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9J-fields",
       "learningObjectiveTitle": "Force fields, gravity and magnetism",
       "learningObjectiveDescription": "Magnetic, gravitational and electric fields, weight and gravitational potential energy.",
-      "noteId": "9J-fields"
+      "noteId": "9J-fields",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-125-9j-rocket-weighs-470-n-on-earth-where-g-10-n-kg-calculate-his-mass",
@@ -9207,7 +8980,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9J-fields",
       "learningObjectiveTitle": "Force fields, gravity and magnetism",
       "learningObjectiveDescription": "Magnetic, gravitational and electric fields, weight and gravitational potential energy.",
-      "noteId": "9J-fields"
+      "noteId": "9J-fields",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-126-9j-rocket-has-mass-47-kg-on-a-planet-where-g-22-8-n-kg-calculate-his-weight",
@@ -9227,7 +9001,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9J-fields",
       "learningObjectiveTitle": "Force fields, gravity and magnetism",
       "learningObjectiveDescription": "Magnetic, gravitational and electric fields, weight and gravitational potential energy.",
-      "noteId": "9J-fields"
+      "noteId": "9J-fields",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-127-9j-mantis-has-mass-56-kg-calculate-her-weight-on-earth-where-g-10-n-kg",
@@ -9247,7 +9022,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9J-fields",
       "learningObjectiveTitle": "Force fields, gravity and magnetism",
       "learningObjectiveDescription": "Magnetic, gravitational and electric fields, weight and gravitational potential energy.",
-      "noteId": "9J-fields"
+      "noteId": "9J-fields",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-128-9j-mantis-has-mass-56-kg-and-weight-686-n-on-a-planet-calculate-g",
@@ -9267,7 +9043,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9J-fields",
       "learningObjectiveTitle": "Force fields, gravity and magnetism",
       "learningObjectiveDescription": "Magnetic, gravitational and electric fields, weight and gravitational potential energy.",
-      "noteId": "9J-fields"
+      "noteId": "9J-fields",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-129-9j-groot-has-mass-34-kg-on-a-planet-where-g-6-8-n-kg-calculate-his-weight",
@@ -9287,7 +9064,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9J-fields",
       "learningObjectiveTitle": "Force fields, gravity and magnetism",
       "learningObjectiveDescription": "Magnetic, gravitational and electric fields, weight and gravitational potential energy.",
-      "noteId": "9J-fields"
+      "noteId": "9J-fields",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-130-9j-groot-has-mass-34-kg-and-weight-724-2-n-on-a-planet-calculate-g",
@@ -9307,7 +9085,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9J-fields",
       "learningObjectiveTitle": "Force fields, gravity and magnetism",
       "learningObjectiveDescription": "Magnetic, gravitational and electric fields, weight and gravitational potential energy.",
-      "noteId": "9J-fields"
+      "noteId": "9J-fields",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-131-9j-oberon-has-about-1-3-times-the-mass-of-rhea-but-a-similar-diameter-which-moon-ha",
@@ -9327,7 +9106,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9J-fields",
       "learningObjectiveTitle": "Force fields, gravity and magnetism",
       "learningObjectiveDescription": "Magnetic, gravitational and electric fields, weight and gravitational potential energy.",
-      "noteId": "9J-fields"
+      "noteId": "9J-fields",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-132-9j-calculate-resistance-voltage-12-v-current-2-a",
@@ -9347,7 +9127,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9J-resistance",
       "learningObjectiveTitle": "Resistance and Ohm’s law",
       "learningObjectiveDescription": "Resistance, current-voltage graphs, high-resistance materials and calculations.",
-      "noteId": "9J-resistance"
+      "noteId": "9J-resistance",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-133-9j-calculate-resistance-voltage-9-v-current-0-3-a",
@@ -9367,7 +9148,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9J-resistance",
       "learningObjectiveTitle": "Resistance and Ohm’s law",
       "learningObjectiveDescription": "Resistance, current-voltage graphs, high-resistance materials and calculations.",
-      "noteId": "9J-resistance"
+      "noteId": "9J-resistance",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-134-9j-calculate-resistance-voltage-8-v-current-0-02-a",
@@ -9387,7 +9169,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9J-resistance",
       "learningObjectiveTitle": "Resistance and Ohm’s law",
       "learningObjectiveDescription": "Resistance, current-voltage graphs, high-resistance materials and calculations.",
-      "noteId": "9J-resistance"
+      "noteId": "9J-resistance",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-135-9j-calculate-current-voltage-6-v-resistance-30",
@@ -9407,7 +9190,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9J-resistance",
       "learningObjectiveTitle": "Resistance and Ohm’s law",
       "learningObjectiveDescription": "Resistance, current-voltage graphs, high-resistance materials and calculations.",
-      "noteId": "9J-resistance"
+      "noteId": "9J-resistance",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-136-9j-calculate-voltage-current-0-5-a-resistance-20",
@@ -9427,7 +9211,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9J-resistance",
       "learningObjectiveTitle": "Resistance and Ohm’s law",
       "learningObjectiveDescription": "Resistance, current-voltage graphs, high-resistance materials and calculations.",
-      "noteId": "9J-resistance"
+      "noteId": "9J-resistance",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-137-9j-calculate-voltage-current-0-02-a-resistance-5200",
@@ -9447,7 +9232,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9J-resistance",
       "learningObjectiveTitle": "Resistance and Ohm’s law",
       "learningObjectiveDescription": "Resistance, current-voltage graphs, high-resistance materials and calculations.",
-      "noteId": "9J-resistance"
+      "noteId": "9J-resistance",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-138-9i-a-stone-is-moved-65-km-in-65-h-calculate-the-mean-speed",
@@ -9467,7 +9253,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9I-speed",
       "learningObjectiveTitle": "Speed and distance-time graphs",
       "learningObjectiveDescription": "Speed calculations, mean speed and interpreting distance-time graphs.",
-      "noteId": "9I-speed"
+      "noteId": "9I-speed",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-139-9i-a-river-section-is-40-km-and-the-stones-move-at-3-km-h-calculate-the-time-taken",
@@ -9487,7 +9274,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9I-speed",
       "learningObjectiveTitle": "Speed and distance-time graphs",
       "learningObjectiveDescription": "Speed calculations, mean speed and interpreting distance-time graphs.",
-      "noteId": "9I-speed"
+      "noteId": "9I-speed",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-140-9i-a-final-overland-section-is-5-km-at-1-km-h-calculate-the-time-taken",
@@ -9507,7 +9295,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9I-speed",
       "learningObjectiveTitle": "Speed and distance-time graphs",
       "learningObjectiveDescription": "Speed calculations, mean speed and interpreting distance-time graphs.",
-      "noteId": "9I-speed"
+      "noteId": "9I-speed",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-141-9i-a-force-of-200-n-acts-0-5-m-from-a-pivot-calculate-the-moment",
@@ -9527,7 +9316,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9I-moments",
       "learningObjectiveTitle": "Levers, pivots and moments",
       "learningObjectiveDescription": "Levers, pivots/fulcrums, moment calculations and mechanical advantage.",
-      "noteId": "9I-moments"
+      "noteId": "9I-moments",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-142-9i-a-moment-of-120-n-m-is-needed-using-a-lever-2-m-from-the-pivot-calculate-the-for",
@@ -9547,7 +9337,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9I-moments",
       "learningObjectiveTitle": "Levers, pivots and moments",
       "learningObjectiveDescription": "Levers, pivots/fulcrums, moment calculations and mechanical advantage.",
-      "noteId": "9I-moments"
+      "noteId": "9I-moments",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-143-9i-a-300-n-force-moves-a-load-4-m-calculate-the-work-done",
@@ -9567,7 +9358,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9I-energy-work",
       "learningObjectiveTitle": "Energy, work and simple machines",
       "learningObjectiveDescription": "Work done, machines, ramps, friction and energy transfer.",
-      "noteId": "9I-energy-work"
+      "noteId": "9I-energy-work",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-144-9i-a-ramp-requires-1500-j-of-work-over-5-m-calculate-the-average-force",
@@ -9587,7 +9379,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9I-energy-work",
       "learningObjectiveTitle": "Energy, work and simple machines",
       "learningObjectiveDescription": "Work done, machines, ramps, friction and energy transfer.",
-      "noteId": "9I-energy-work"
+      "noteId": "9I-energy-work",
+      "mediaPolicy": "question-media-only-if-required"
     },
     {
       "id": "y9x-145-9i-a-cyclist-travels-at-6-m-s-for-20-s-calculate-the-distance-travelled",
@@ -9607,7 +9400,8 @@ window.YEAR9_CONTENT = {
       "learningObjective": "9I-speed",
       "learningObjectiveTitle": "Speed and distance-time graphs",
       "learningObjectiveDescription": "Speed calculations, mean speed and interpreting distance-time graphs.",
-      "noteId": "9I-speed"
+      "noteId": "9I-speed",
+      "mediaPolicy": "question-media-only-if-required"
     }
   ],
   "notes": [

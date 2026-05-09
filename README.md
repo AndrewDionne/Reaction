@@ -204,3 +204,13 @@ This version simplifies the main hub and focused session flow: the brand block i
 ## v1.12.0 Learning mode selector
 
 The hub now uses a single active learning mode, multi-select unit/sub-unit filtering, one entry button, sub-unit Class Notes buttons, and unit-specific visual graphics.
+
+
+## v1.13.0 Image discipline
+
+Question cards now show images only when the visual is required for the task, such as source-style diagrams, labelled options, graphs or chart interpretation. Conceptual and photographic images have been moved into Class Notes so they support deeper explanation without cluttering recall questions.
+
+
+## Definition compare notes
+
+Version 1.14.0 adds a typed-answer comparison flow for definition/vocabulary cards. Students write definitions in their own words, compare against the expected definition and keywords, then self-mark as Mastered or Revisit. This avoids false negatives from acceptable alternate wording.
