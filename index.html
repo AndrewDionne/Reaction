@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#155e75" />
+  <meta name="description" content="Year 9 science end-of-year study app with practice mode, quick quizzes and boss mode tests." />
+  <title>Year 9 Science Study</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <canvas id="burstCanvas" aria-hidden="true"></canvas>
+
+  <header class="site-header">
+    <a class="brand" href="#top" id="homeLink" aria-label="Year 9 Science Study home">
+      <span class="brand-mark">Y9</span>
+      <span>
+        <strong>Year 9 Science Study</strong>
+        <small>End-of-year revision · Quick quizzes · Boss mode</small>
+      </span>
+    </a>
+    <div class="top-actions">
+      <button id="soundToggle" class="ghost-button" type="button" aria-pressed="true">🔊 Sound on</button>
+      <button id="exportProgress" class="ghost-button" type="button">Export</button>
+      <label class="ghost-button import-label" for="importProgressFile">Import</label>
+      <input id="importProgressFile" type="file" accept="application/json" hidden />
+    </div>
+  </header>
+
+  <main id="top" class="app-shell">
+    <aside class="sidebar" aria-label="Study controls">
+      <section class="panel compact-panel">
+        <p class="eyebrow">Modes</p>
+        <div class="mode-buttons" role="group" aria-label="Choose study mode">
+          <button class="mode-button active" data-mode="practice" type="button">Practice</button>
+          <button class="mode-button" data-mode="quiz" type="button">Quick quiz</button>
+          <button class="mode-button" data-mode="boss" type="button">Boss mode</button>
+          <button class="mode-button" data-mode="weak" type="button">Weak review</button>
+        </div>
+      </section>
+
+      <section class="panel filters-panel" id="filtersPanel">
+        <p class="eyebrow">Filters</p>
+        <label for="unitFilter">Unit</label>
+        <select id="unitFilter"></select>
+        <label for="typeFilter">Card type</label>
+        <select id="typeFilter"></select>
+        <label for="levelFilter">Level</label>
+        <select id="levelFilter">
+          <option value="all">All levels</option>
+          <option value="1">Level 1 · recall</option>
+          <option value="2">Level 2 · apply</option>
+          <option value="3">Level 3 · explain</option>
+          <option value="4">Level 4 · exam reasoning</option>
+          <option value="5">Level 5 · extended task</option>
+        </select>
+        <label for="searchBox">Search</label>
+        <input id="searchBox" type="search" placeholder="DNA, resistance, starch…" />
+        <button id="shuffleButton" class="secondary-button" type="button">Shuffle practice deck</button>
+      </section>
+
+      <section class="panel compact-panel">
+        <p class="eyebrow">Progress</p>
+        <div class="stat-grid">
+          <div><strong id="xpStat">0</strong><span>XP</span></div>
+          <div><strong id="streakStat">0</strong><span>streak</span></div>
+          <div><strong id="masteredStat">0</strong><span>mastered</span></div>
+          <div><strong id="weakStat">0</strong><span>weak</span></div>
+        </div>
+      </section>
+    </aside>
+
+    <section class="main-panel">
+      <section class="hero panel" id="heroPanel">
+        <div>
+          <p class="eyebrow">Drop-in static repo</p>
+          <h1>Year 9 Science — boss-mode study app</h1>
+          <p class="hero-copy">Built from the Electric Bones static-app pattern, with the Year 7 content removed and replaced by Year 9 quick quizzes, progression checks, vocabulary and calculation practice.</p>
+        </div>
+        <div class="hero-card">
+          <strong id="totalCardCount">0</strong>
+          <span>revision cards</span>
+        </div>
+      </section>
+
+      <section class="dashboard-grid" id="unitDashboard"></section>
+
+      <section class="panel boss-panel hidden" id="bossSetupPanel"></section>
+      <section class="panel card-panel" id="studyPanel"></section>
+      <section class="panel result-panel hidden" id="resultPanel"></section>
+    </section>
+  </main>
+
+  <script src="data/year9-content.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "name": "Year 9 Science Study",
+  "short_name": "Y9 Science",
+  "description": "Static Year 9 science end-of-year study app.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f8fafc",
+  "theme_color": "#155e75",
+  "icons": [
+    { "src": "assets/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}
