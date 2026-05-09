@@ -3,6 +3,7 @@
   const content = window.YEAR9_CONTENT || { units: [], cards: [] };
   const cards = Array.isArray(content.cards) ? content.cards : [];
   const units = Array.isArray(content.units) ? content.units : [];
+  const learningObjectives = Array.isArray(content.learningObjectives) ? content.learningObjectives : [];
   const STORAGE_KEY = "reaction-y9-progress-v2";
   const LEGACY_STORAGE_KEY = "year9-science-study-progress-v1";
 
@@ -16,6 +17,7 @@
     sessionView: byId("sessionView"),
     backToHub: byId("backToHub"),
     unitFilter: byId("unitFilter"),
+    objectiveFilter: byId("objectiveFilter"),
     typeFilter: byId("typeFilter"),
     levelFilter: byId("levelFilter"),
     searchBox: byId("searchBox"),
@@ -160,6 +162,30 @@
     return units.find((unit) => unit.id === unitId)?.title || unitId;
   }
 
+  function objectiveMeta(objectiveId) {
+    return learningObjectives.find((objective) => objective.id === objectiveId) || null;
+  }
+
+  function objectiveTitle(objectiveId) {
+    return objectiveMeta(objectiveId)?.title || objectiveId || "Learning objective";
+  }
+
+  function objectivesForUnit(unitId) {
+    const list = unitId && unitId !== "all"
+      ? learningObjectives.filter((objective) => objective.unit === unitId)
+      : learningObjectives;
+    return list;
+  }
+
+  function updateObjectiveOptions() {
+    if (!els.objectiveFilter) return;
+    const current = els.objectiveFilter.value || "all";
+    const unit = els.unitFilter.value || "all";
+    const list = objectivesForUnit(unit);
+    els.objectiveFilter.innerHTML = `<option value="all">All learning objectives</option>` + list.map((objective) => `<option value="${escapeHtml(objective.id)}">${escapeHtml(objective.title)}</option>`).join("");
+    els.objectiveFilter.value = list.some((objective) => objective.id === current) ? current : "all";
+  }
+
   function cardIsMcq(card) {
     return Array.isArray(card.choices) && card.choices.length >= 2 && /^[A-Z]$/.test(String(card.answer || ""));
   }
@@ -236,6 +262,7 @@
   function activeFilters() {
     return {
       unit: els.unitFilter.value || "all",
+      objective: els.objectiveFilter?.value || "all",
       type: els.typeFilter.value || "all",
       level: els.levelFilter.value || "all",
       search: (els.searchBox.value || "").trim().toLowerCase(),
@@ -246,6 +273,7 @@
     const f = activeFilters();
     return cards.filter((card) => {
       if (f.unit !== "all" && card.unit !== f.unit) return false;
+      if (f.objective !== "all" && card.learningObjective !== f.objective) return false;
       if (f.type !== "all" && card.type !== f.type) return false;
       if (f.level !== "all" && String(card.level) !== f.level) return false;
       if (f.search) {
@@ -255,6 +283,8 @@
           card.explanation,
           card.source,
           card.cue,
+          card.learningObjectiveTitle,
+          card.learningObjectiveDescription,
           ...(card.choices || []),
           ...(card.tags || []),
         ].join(" ").toLowerCase();
@@ -285,11 +315,13 @@
 
   function initFilters() {
     els.unitFilter.innerHTML = `<option value="all">All units</option>` + units.map((unit) => `<option value="${escapeHtml(unit.id)}">${escapeHtml(unit.title)}</option>`).join("");
+    updateObjectiveOptions();
     const types = unique(cards.map((card) => card.type));
     els.typeFilter.innerHTML = `<option value="all">All card types</option>` + types.map((type) => `<option value="${escapeHtml(type)}">${escapeHtml(type)}</option>`).join("");
 
-    [els.unitFilter, els.typeFilter, els.levelFilter, els.searchBox].forEach((el) => {
+    [els.unitFilter, els.objectiveFilter, els.typeFilter, els.levelFilter, els.searchBox].filter(Boolean).forEach((el) => {
       el.addEventListener("input", () => {
+        if (el === els.unitFilter) updateObjectiveOptions();
         if (els.sessionView.classList.contains("hidden")) {
           renderStats();
           renderDashboard();
@@ -363,6 +395,14 @@
       const revisitCount = unitCards.filter((card) => revisit.has(card.id)).length;
       const studyCount = unitCards.filter((card) => study.has(card.id)).length;
       const pct = unitCards.length ? Math.round((masteredCount / unitCards.length) * 100) : 0;
+      const objectiveRows = learningObjectives
+        .filter((objective) => objective.unit === unit.id)
+        .map((objective) => {
+          const objectiveCards = unitCards.filter((card) => card.learningObjective === objective.id);
+          const objectiveMastered = objectiveCards.filter((card) => mastered.has(card.id)).length;
+          const objectivePct = objectiveCards.length ? Math.round((objectiveMastered / objectiveCards.length) * 100) : 0;
+          return `<button class="objective-chip" data-objective-start="${escapeHtml(objective.id)}" data-unit-start="${escapeHtml(unit.id)}" type="button"><strong>${escapeHtml(objective.title)}</strong><span>${objectiveCards.length} cards · ${objectivePct}% mastered</span></button>`;
+        }).join("");
       return `
         <article class="panel unit-card">
           <div class="card-title-row">
@@ -374,11 +414,14 @@
           <p>${escapeHtml(unit.theme)}</p>
           <div class="unit-meta">
             <span class="pill">${unitCards.length} revision cards</span>
-            <span class="pill">${pct}% complete</span>
+            <span class="pill">${pct}% mastered</span>
           </div>
           <div class="progress-track" aria-label="${pct}% mastered"><div class="progress-fill" style="width:${pct}%"></div></div>
+          <div class="objective-list" aria-label="Learning objectives in ${escapeHtml(unit.title)}">
+            ${objectiveRows}
+          </div>
           <div class="card-actions">
-            <button class="secondary-button" data-unit-start="${escapeHtml(unit.id)}" type="button">Study this unit</button>
+            <button class="secondary-button" data-unit-start="${escapeHtml(unit.id)}" type="button">Revise whole unit</button>
           </div>
         </article>
       `;
@@ -387,6 +430,9 @@
     $$("[data-unit-start]", els.unitDashboard).forEach((button) => {
       button.addEventListener("click", () => {
         els.unitFilter.value = button.dataset.unitStart;
+        updateObjectiveOptions();
+        if (button.dataset.objectiveStart) els.objectiveFilter.value = button.dataset.objectiveStart;
+        else if (!button.classList.contains("objective-chip")) els.objectiveFilter.value = "all";
         startSession("practice");
       });
     });
@@ -415,6 +461,27 @@
     renderCard();
   }
 
+
+  function fidelityLabel(value) {
+    const labels = {
+      "exact-source-text": "Exact source text",
+      "source-style-redraw": "Source-style redraw",
+      "text-equivalent": "Text equivalent",
+      "success-criterion-derived": "Success criterion",
+      "progress-check-derived": "Progress check",
+      "calculation-practice-derived": "Calculation practice",
+      "derived": "Derived"
+    };
+    return labels[value] || value || "";
+  }
+
+  function fidelityClass(value) {
+    if (value === "exact-source-text") return "fidelity exact";
+    if (value === "source-style-redraw") return "fidelity redraw";
+    if (value === "text-equivalent") return "fidelity equivalent";
+    return "fidelity derived";
+  }
+
   function renderMedia(card) {
     if (!Array.isArray(card.media) || !card.media.length) return "";
     return `<div class="media-grid">${card.media.map((item) => {
@@ -423,6 +490,34 @@
       const caption = item.caption ? `<figcaption>${escapeHtml(item.caption)}</figcaption>` : "";
       return `<figure class="card-media"><img src="${src}" alt="${alt}" loading="lazy">${caption}</figure>`;
     }).join("")}</div>`;
+  }
+
+  function renderObjectivePanel(card) {
+    const meta = objectiveMeta(card.learningObjective);
+    if (!meta) return "";
+    return `
+      <aside class="objective-panel">
+        <span class="eyebrow">Learning objective</span>
+        <strong>${escapeHtml(meta.title)}</strong>
+        <p>${escapeHtml(meta.description)}</p>
+      </aside>
+    `;
+  }
+
+  function renderStudyPrompt(card) {
+    if (state.mode !== "study") return "";
+    const explanation = card.explanation || card.cue || "Read the question, inspect any diagram, reveal the answer, then decide whether this should move to Revisit or Mastered.";
+    return `
+      <aside class="study-support">
+        <strong>Study focus</strong>
+        <p>${escapeHtml(explanation)}</p>
+        <ul>
+          <li>Say the key idea out loud in your own words.</li>
+          <li>Use the diagram or source clue if one is shown.</li>
+          <li>Move it to Revisit if it is nearly secure, or Mastered if it is confident.</li>
+        </ul>
+      </aside>
+    `;
   }
 
   function renderCard() {
@@ -439,8 +534,10 @@
       <div class="card-topline">
         <div class="card-title-row">
           <span class="pill">${escapeHtml(unitTitle(card.unit))}</span>
+          ${card.learningObjective ? `<span class="pill objective-pill">${escapeHtml(objectiveTitle(card.learningObjective))}</span>` : ""}
           <span class="pill">Level ${card.level}</span>
           <span class="pill">${escapeHtml(card.type)}</span>
+          ${card.sourceFidelity ? `<span class="pill ${fidelityClass(card.sourceFidelity)}">${escapeHtml(fidelityLabel(card.sourceFidelity))}</span>` : ""}
           ${membership.mastered ? `<span class="pill good">Mastered</span>` : ""}
           ${membership.revisit ? `<span class="pill warn">Revisit</span>` : ""}
           ${membership.study ? `<span class="pill study">Study</span>` : ""}
@@ -449,6 +546,8 @@
       </div>
 
       <article class="study-card">
+        ${renderObjectivePanel(card)}
+        ${renderStudyPrompt(card)}
         <p class="question-text">${escapeHtml(card.question)}</p>
         ${renderMedia(card)}
         ${card.cue ? `<p class="explanation"><strong>Cue:</strong> ${escapeHtml(card.cue)}</p>` : ""}
@@ -466,9 +565,9 @@
 
         ${!testMode ? `
           <div class="state-actions" aria-label="Learning state">
-            <button class="primary-button" data-state="mastered" type="button">Mark mastered</button>
-            <button class="secondary-button" data-state="revisit" type="button">Mark revisit</button>
-            <button class="secondary-button" data-state="study" type="button">Mark study</button>
+            <button class="primary-button" data-state="mastered" type="button">I know this · Mastered</button>
+            <button class="secondary-button" data-state="revisit" type="button">Come back · Revisit</button>
+            <button class="secondary-button" data-state="study" type="button">Need help · Study</button>
           </div>
         ` : ""}
 

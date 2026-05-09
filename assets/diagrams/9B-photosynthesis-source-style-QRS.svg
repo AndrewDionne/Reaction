@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" role="img" aria-labelledby="title desc">
+<title id="title">Source-style plant diagram labelled Q, R and S</title>
+<desc id="desc">A simple rose-bush style plant labelled Q on a green leaf, R on the green stem, and S on roots.</desc>
+<rect width="900" height="560" fill="#fff"/>
+<rect x="50" y="42" width="800" height="476" rx="22" fill="#fbfff8" stroke="#cbdcc7" stroke-width="2"/>
+<text x="90" y="90" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" fill="#213547">Photosynthesis in a plant</text>
+<text x="90" y="122" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#4d6378">Which labelled parts carry out photosynthesis?</text>
+<line x1="120" y1="405" x2="775" y2="405" stroke="#8a6a45" stroke-width="5"/>
+<g transform="translate(285 145)">
+  <path d="M155 260 C142 210 150 165 162 120 C171 85 177 52 170 25" stroke="#3b8c42" stroke-width="20" fill="none" stroke-linecap="round"/>
+  <path d="M159 145 C115 112 75 89 45 55" stroke="#3b8c42" stroke-width="9" fill="none" stroke-linecap="round"/>
+  <path d="M163 180 C214 138 255 118 300 88" stroke="#3b8c42" stroke-width="9" fill="none" stroke-linecap="round"/>
+  <path d="M158 230 C112 248 68 265 30 300" stroke="#3b8c42" stroke-width="8" fill="none" stroke-linecap="round"/>
+  <ellipse cx="50" cy="58" rx="54" ry="26" fill="#74c978" stroke="#35833c" stroke-width="3" transform="rotate(-26 50 58)"/>
+  <ellipse cx="20" cy="94" rx="42" ry="22" fill="#8bd887" stroke="#35833c" stroke-width="3" transform="rotate(-48 20 94)"/>
+  <ellipse cx="300" cy="88" rx="56" ry="26" fill="#74c978" stroke="#35833c" stroke-width="3" transform="rotate(-28 300 88)"/>
+  <ellipse cx="270" cy="130" rx="43" ry="22" fill="#8bd887" stroke="#35833c" stroke-width="3" transform="rotate(18 270 130)"/>
+  <ellipse cx="35" cy="300" rx="50" ry="24" fill="#74c978" stroke="#35833c" stroke-width="3" transform="rotate(-22 35 300)"/>
+  <path d="M152 260 C130 310 95 335 62 378" stroke="#9a7652" stroke-width="8" fill="none" stroke-linecap="round"/>
+  <path d="M156 260 C164 313 166 345 166 388" stroke="#9a7652" stroke-width="8" fill="none" stroke-linecap="round"/>
+  <path d="M160 260 C190 310 226 335 265 376" stroke="#9a7652" stroke-width="8" fill="none" stroke-linecap="round"/>
+</g>
+<g font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="28" text-anchor="middle">
+  <circle cx="282" cy="202" r="28" fill="#fff" stroke="#415a77" stroke-width="3"/><text x="282" y="212" fill="#223044">Q</text>
+  <circle cx="520" cy="283" r="28" fill="#fff" stroke="#415a77" stroke-width="3"/><text x="520" y="293" fill="#223044">R</text>
+  <circle cx="390" cy="444" r="28" fill="#fff" stroke="#415a77" stroke-width="3"/><text x="390" y="454" fill="#223044">S</text>
+</g>
+<g stroke="#415a77" stroke-width="2.5"><line x1="310" y1="202" x2="365" y2="202"/><line x1="492" y1="283" x2="458" y2="283"/><line x1="390" y1="416" x2="410" y2="385"/></g>
+<rect x="620" y="260" width="175" height="118" rx="16" fill="#fff" stroke="#cbdcc7" stroke-width="2"/>
+<text x="642" y="296" font-family="Arial" font-size="20" font-weight="700" fill="#2b7a35">Source-style cue</text>
+<text x="642" y="326" font-family="Arial" font-size="17" fill="#4d6378">Photosynthesis occurs in</text>
+<text x="642" y="350" font-family="Arial" font-size="17" fill="#4d6378">green tissues: Q and R.</text>
+</svg>

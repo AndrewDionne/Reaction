@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#6d28d9" />
-  <meta name="description" content="Reaction — Year 9 science revision journey app." />
+  <meta name="description" content="Reaction — Year 9 science guided revision journey app." />
   <title>Reaction · Year 9 Science Study</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
   <link rel="manifest" href="manifest.webmanifest" />
@@ -95,7 +95,7 @@
         <div class="section-heading-row">
           <div>
             <p class="eyebrow">Learning objectives</p>
-            <h2>Choose a unit or filter the deck.</h2>
+            <h2>Choose a unit, objective, or card type.</h2>
           </div>
           <button id="shuffleButton" class="secondary-button" type="button">Shuffle journey</button>
         </div>
@@ -103,6 +103,9 @@
         <div class="filters-row" id="filtersPanel">
           <label>Unit
             <select id="unitFilter"></select>
+          </label>
+          <label>Learning objective
+            <select id="objectiveFilter"></select>
           </label>
           <label>Card type
             <select id="typeFilter"></select>

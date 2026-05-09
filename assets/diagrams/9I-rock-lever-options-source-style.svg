@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" role="img" aria-labelledby="title desc">
+<title id="title">Source-style lever options for moving a rock</title>
+<desc id="desc">Four lever options A to D for moving a rock. Option D has the pivot closest to the rock and the longest effort arm.</desc>
+<rect width="900" height="560" fill="#fff"/>
+<rect x="50" y="40" width="800" height="480" rx="22" fill="#fbfdff" stroke="#c7d3e0" stroke-width="2"/>
+<text x="92" y="92" font-family="Arial" font-size="30" font-weight="700" fill="#213547">Which lever makes the rock easiest to move?</text>
+<text x="92" y="124" font-family="Arial" font-size="18" fill="#4d6378">Look for the longest effort arm and the shortest load arm.</text>
+<defs><marker id="downblue" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#2364aa"/></marker></defs>
+<g font-family="Arial" font-size="22" font-weight="700" fill="#213547" text-anchor="middle">
+<text x="180" y="175">A</text><text x="365" y="175">B</text><text x="550" y="175">C</text><text x="735" y="175">D</text>
+</g>
+<g transform="translate(105 210)">
+  <g transform="translate(0 0)"><rect x="20" y="88" width="130" height="15" rx="7" fill="#b9854d" stroke="#8b5e2d" stroke-width="2"/><polygon points="70,130 100,130 85,102" fill="#8aa4b7" stroke="#57738a" stroke-width="2"/><circle cx="25" cy="78" r="18" fill="#777"/><line x1="140" y1="45" x2="140" y2="83" stroke="#2364aa" stroke-width="5" marker-end="url(#downblue)"/></g>
+  <g transform="translate(185 0)"><rect x="20" y="88" width="130" height="15" rx="7" fill="#b9854d" stroke="#8b5e2d" stroke-width="2"/><polygon points="100,130 130,130 115,102" fill="#8aa4b7" stroke="#57738a" stroke-width="2"/><circle cx="25" cy="78" r="18" fill="#777"/><line x1="140" y1="45" x2="140" y2="83" stroke="#2364aa" stroke-width="5" marker-end="url(#downblue)"/></g>
+  <g transform="translate(370 0)"><rect x="20" y="88" width="130" height="15" rx="7" fill="#b9854d" stroke="#8b5e2d" stroke-width="2"/><polygon points="45,130 75,130 60,102" fill="#8aa4b7" stroke="#57738a" stroke-width="2"/><circle cx="25" cy="78" r="18" fill="#777"/><line x1="112" y1="45" x2="112" y2="83" stroke="#2364aa" stroke-width="5" marker-end="url(#downblue)"/></g>
+  <g transform="translate(555 0)"><rect x="20" y="88" width="150" height="15" rx="7" fill="#b9854d" stroke="#8b5e2d" stroke-width="2"/><polygon points="45,130 75,130 60,102" fill="#8aa4b7" stroke="#57738a" stroke-width="2"/><circle cx="25" cy="78" r="18" fill="#777"/><line x1="165" y1="45" x2="165" y2="83" stroke="#2364aa" stroke-width="5" marker-end="url(#downblue)"/><rect x="118" y="10" width="58" height="26" rx="13" fill="#dbf7df" stroke="#75b47b"/><text x="147" y="30" font-family="Arial" font-size="16" fill="#176a2a" text-anchor="middle">best</text></g>
+</g>
+<rect x="210" y="400" width="480" height="70" rx="16" fill="#fff" stroke="#c7d3e0" stroke-width="2"/>
+<text x="450" y="428" text-anchor="middle" font-family="Arial" font-size="18" font-weight="700" fill="#213547">Option D is easiest</text>
+<text x="450" y="454" text-anchor="middle" font-family="Arial" font-size="17" fill="#4d6378">The pivot is close to the rock and the effort is far from the pivot.</text>
+</svg>

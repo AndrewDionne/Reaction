@@ -179,3 +179,8 @@ Version 1.5.0 adds a second set of realistic PNG study images for topics such as
 ## UI journey patch
 
 Version 1.6.0 changes the app from a test-heavy dashboard into a focused revision journey. Cards can now be sorted into Mastered, Revisit, and Study. The Mastery check tests cards marked Mastered, while Revisit and Study open focused queues. The Reaction brand image is included in `assets/brand/`.
+
+
+## Source fidelity patch
+
+Version 1.7.0 adds source-style redraws for key visual quiz questions, tightens terminology for voltage/potential difference and gravitational-field-strength wording, adds card-level source-fidelity metadata, and switches PNG study image references to smaller WebP copies for faster loading.
