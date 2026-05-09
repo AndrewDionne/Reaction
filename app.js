@@ -66,15 +66,15 @@
       empty: "No Revisit cards match these filters yet.",
     },
     study: {
-      eyebrow: "Study queue",
-      title: "Study cards",
+      eyebrow: "Need notes queue",
+      title: "Cards that need notes",
       subtitle: "These are cards marked Still confused after using a class-note context card.",
-      empty: "No Study cards match these filters yet. Use Study this on a card, then choose Still confused to add one here.",
+      empty: "No Need Notes cards match these filters yet. Open Class Notes from a card, then choose Still confused to add one here.",
     },
     test: {
       eyebrow: "Focused check",
-      title: "Mastery check",
-      subtitle: "This checks only cards already marked Mastered. Answers are scored as you go.",
+      title: "Test your knowledge",
+      subtitle: "This checks only cards you have already marked Mastered. Answers are scored as you go.",
       empty: "No Mastered cards match these filters yet. Mark some cards as Mastered first.",
     },
   };
@@ -89,6 +89,7 @@
     revealed: false,
     selectedChoice: null,
     test: null,
+    session: null,
     noteContext: null,
     definitionInput: "",
     definitionCompared: false,
@@ -201,7 +202,7 @@
 
   function modeLabel(mode = state.selectedMode) {
     if (mode === "revisit") return "Revisit";
-    if (mode === "test") return "Mastery check";
+    if (mode === "test") return "Test your knowledge";
     return "Revision journey";
   }
 
@@ -305,6 +306,30 @@
     };
   }
 
+  function startSessionTracker(mode) {
+    state.session = {
+      mode,
+      startedAt: new Date().toISOString(),
+      cardIds: state.deck.map((card) => card.id),
+      statuses: {},
+    };
+  }
+
+  function recordSessionStatus(card, status) {
+    if (!state.session || !card || state.mode === "test") return;
+    state.session.statuses[card.id] = status;
+  }
+
+  function sessionStatusCounts() {
+    const statuses = Object.values(state.session?.statuses || {});
+    return {
+      reviewed: statuses.length,
+      mastered: statuses.filter((status) => status === "mastered").length,
+      revisit: statuses.filter((status) => status === "revisit").length,
+      study: statuses.filter((status) => status === "study").length,
+    };
+  }
+
   function setCardStatus(card, status, options = {}) {
     const { advance = true, countAttempt = true } = options;
     const mastered = new Set(state.progress.masteredIds || []);
@@ -336,6 +361,7 @@
     state.progress.revisitIds = [...revisit];
     state.progress.studyIds = [...study];
     if (countAttempt) recordSeen(card, status === "mastered");
+    recordSessionStatus(card, status);
     saveProgress();
 
     if (state.mode === "revisit" || state.mode === "study" || state.mode === "test") {
@@ -345,7 +371,7 @@
       if (stillHere >= 0) state.index = stillHere;
       else if (state.index >= state.deck.length) state.index = Math.max(0, state.deck.length - 1);
       if (!state.deck.length) {
-        renderSession();
+        finishSession();
         return;
       }
     }
@@ -474,6 +500,7 @@
     state.revealed = false;
     state.selectedChoice = null;
     if (!options.preserveDeck) rebuildDeck(true);
+    if (mode !== "test") startSessionTracker(mode);
 
     els.hubView.classList.add("hidden");
     els.sessionView.classList.remove("hidden");
@@ -486,6 +513,7 @@
     els.sessionView.classList.add("hidden");
     els.hubView.classList.remove("hidden");
     state.test = null;
+    state.session = null;
     state.noteContext = null;
     state.revealed = false;
     state.selectedChoice = null;
@@ -519,11 +547,11 @@
     if (els.selectionSummary) {
       const unitCount = state.selectedUnits.size;
       const objectiveCount = state.selectedObjectives.size;
-      if (!unitCount && !objectiveCount) els.selectionSummary.textContent = "All units selected";
-      else els.selectionSummary.textContent = `${unitCount} unit${unitCount === 1 ? "" : "s"} · ${objectiveCount} sub-unit${objectiveCount === 1 ? "" : "s"} selected`;
+      if (!unitCount && !objectiveCount) els.selectionSummary.textContent = `Selected revision set: all units · ${ready} card${ready === 1 ? "" : "s"}`;
+      else els.selectionSummary.textContent = `Selected revision set: ${unitCount || "all"} unit${unitCount === 1 ? "" : "s"} · ${objectiveCount} sub-unit${objectiveCount === 1 ? "" : "s"} · ${ready} card${ready === 1 ? "" : "s"}`;
     }
     if (els.selectionDetail) {
-      els.selectionDetail.textContent = `${modeLabel()} will use ${ready} matching card${ready === 1 ? "" : "s"}. Click unit cards or sub-units below to change the selection.`;
+      els.selectionDetail.textContent = `Mode: ${modeLabel()}. Select more units or sub-units below, then use the main button to begin.`;
     }
     $$('[data-mode-select]').forEach((button) => {
       const active = button.dataset.modeSelect === state.selectedMode;
@@ -558,7 +586,7 @@
           return `<div class="objective-row ${selectedObjective ? "selected" : ""}">
             <button class="objective-toggle" data-objective-toggle="${escapeHtml(objective.id)}" type="button" aria-pressed="${selectedObjective}">
               <strong>${escapeHtml(objective.title)}</strong>
-              <span>${objectiveCards.length} cards · ${objectiveMastered}/${objectiveCards.length} mastered · ${objectiveRevisit} revisit · ${objectiveStudy} study</span>
+              <span>${objectiveCards.length} cards · ${objectiveMastered}/${objectiveCards.length} mastered · ${objectiveRevisit} revisit · ${objectiveStudy} need notes</span>
             </button>
             <button class="objective-notes-button" data-note-open="${escapeHtml(objective.id)}" type="button" aria-label="Open class notes for ${escapeHtml(objective.title)}"><span aria-hidden="true">📘</span><span class="notes-button-text">Class Notes</span></button>
           </div>`;
@@ -571,7 +599,7 @@
             <span class="pill">${sortedCount} / ${unitCards.length} sorted</span>
             <span class="pill good">${masteredCount}/${unitCards.length} mastered</span>
             <span class="pill warn">${revisitCount} revisit</span>
-            <span class="pill study">${studyCount} study</span>
+            <span class="pill study">${studyCount} need notes</span>
           </div>
           <h3>${escapeHtml(unit.title)}</h3>
           <p>${escapeHtml(unit.theme)}</p>
@@ -620,6 +648,36 @@
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
+  function renderCommonMistakes(mistakes = []) {
+    if (!Array.isArray(mistakes) || !mistakes.length) return "";
+    const rows = mistakes.map((item) => {
+      if (typeof item === "string") {
+        return `
+          <article class="mistake-card legacy-mistake">
+            <div class="mistake-block">
+              <span class="mistake-label caution">Check carefully</span>
+              <p>${escapeHtml(item)}</p>
+            </div>
+          </article>
+        `;
+      }
+      return `
+        <article class="mistake-card">
+          <div class="mistake-block wrong-idea">
+            <span class="mistake-label wrong">Common mistake</span>
+            <p>${escapeHtml(item.wrong || "")}</p>
+          </div>
+          <div class="mistake-block correct-idea">
+            <span class="mistake-label correct">Actually</span>
+            <p>${escapeHtml(item.correct || "")}</p>
+          </div>
+          ${item.why ? `<div class="mistake-block why-idea"><span class="mistake-label why">Why</span><p>${escapeHtml(item.why)}</p></div>` : ""}
+        </article>
+      `;
+    }).join("");
+    return `<section class="note-section warning-note"><h3>Common mistakes</h3><div class="mistake-list">${rows}</div></section>`;
+  }
+
   function renderNoteContext() {
     const ctx = state.noteContext;
     const note = noteMeta(ctx?.noteId);
@@ -661,7 +719,7 @@
           <ul>${(note.keyPoints || []).map((point) => `<li>${escapeHtml(point)}</li>`).join("")}</ul>
         </section>
         ${note.memoryHook ? `<section class="note-section memory-note"><h3>Memory hook</h3><p>${escapeHtml(note.memoryHook)}</p></section>` : ""}
-        ${(note.commonMistakes || []).length ? `<section class="note-section warning-note"><h3>Common mistakes</h3><ul>${note.commonMistakes.map((point) => `<li>${escapeHtml(point)}</li>`).join("")}</ul></section>` : ""}
+        ${renderCommonMistakes(note.commonMistakes)}
         ${note.example ? `<section class="note-section example-note"><h3>Worked / model example</h3><p><strong>Question:</strong> ${escapeHtml(note.example.question)}</p><p><strong>Answer:</strong> ${escapeHtml(note.example.answer)}</p></section>` : ""}
         ${note.selfCheck ? `<section class="note-section self-check-note"><h3>Quick self-check</h3><p>${escapeHtml(note.selfCheck)}</p></section>` : ""}
         ${note.sentenceStarter ? `<section class="note-section sentence-note"><h3>Useful answer sentence</h3><p>${escapeHtml(note.sentenceStarter)}</p></section>` : ""}
@@ -670,7 +728,7 @@
           ${sourceCard ? `
             <button class="primary-button" data-note-action="mastered" type="button">I get it now · Mastered</button>
             <button class="secondary-button" data-note-action="revisit" type="button">Almost · Revisit</button>
-            <button class="danger-button" data-note-action="study" type="button">Still confused · Keep in Study</button>
+            <button class="danger-button" data-note-action="study" type="button">Still confused · Need notes</button>
             <button class="secondary-button" data-note-action="back-card" type="button">Back to card</button>
           ` : `
             <button class="primary-button" data-note-action="practice" type="button">Practise linked cards</button>
@@ -781,12 +839,12 @@
     const explanation = card.explanation || card.cue || "Read the question, inspect any diagram, then use Study this if you need the class-note explanation before deciding.";
     return `
       <aside class="study-support">
-        <strong>Study focus</strong>
+        <strong>Need notes focus</strong>
         <p>${escapeHtml(explanation)}</p>
         <ul>
           <li>Say the key idea out loud in your own words.</li>
           <li>Use the diagram or source clue if one is shown.</li>
-          <li>Use Study this for the class-note context, then move it to Revisit or Mastered.</li>
+          <li>Use Class Notes for the class-note context, then move it to Revisit or Mastered.</li>
         </ul>
       </aside>
     `;
@@ -814,7 +872,7 @@
             <span class="pill">${escapeHtml(card.type)}</span>
             ${membership.mastered ? `<span class="pill good">mastered</span>` : ""}
             ${membership.revisit ? `<span class="pill warn">revisit</span>` : ""}
-            ${membership.study ? `<span class="pill study">study</span>` : ""}
+            ${membership.study ? `<span class="pill study">need notes</span>` : ""}
           </div>
           <span class="pill progress-pill">${state.index + 1} / ${state.deck.length}</span>
         </div>
@@ -825,18 +883,20 @@
         ${card.cue ? `<p class="explanation"><strong>Cue:</strong> ${escapeHtml(card.cue)}</p>` : ""}
         ${isMcq ? renderChoices(card, testMode) : isDefinition && !testMode ? renderDefinitionResponse(card) : renderOpenResponse(testMode)}
         ${state.revealed ? renderReveal(card) : ""}
+        ${isMcq && state.selectedChoice ? renderChoiceFeedback(card) : ""}
 
         <div class="card-actions primary-actions">
-          ${!state.revealed && !testMode && !isDefinition ? `<button class="primary-button" data-action="reveal" type="button">Reveal answer</button>` : ""}
+          ${!state.revealed && !testMode && !isDefinition && !state.selectedChoice ? `<button class="primary-button" data-action="reveal" type="button">Reveal answer</button>` : ""}
           ${isDefinition && !testMode && !state.definitionCompared ? `<button class="primary-button" data-action="compare-definition" type="button">Compare notes</button>` : ""}
           ${!isMcq && testMode && !state.revealed ? `<button class="primary-button" data-action="test-open-submit" type="button">Show mark scheme</button>` : ""}
           ${!isMcq && testMode && state.revealed ? `<button class="primary-button" data-action="test-right" type="button">Mark right</button><button class="danger-button" data-action="test-wrong" type="button">Mark wrong</button>` : ""}
+          ${isMcq && state.selectedChoice ? `<button class="primary-button" data-action="next" type="button">Next card</button>` : ""}
           <button class="secondary-button" data-action="prev" type="button">Previous</button>
-          <button class="secondary-button" data-action="next" type="button">Skip</button>
+          ${!(isMcq && state.selectedChoice) ? `<button class="secondary-button" data-action="next" type="button">Skip</button>` : ""}
           ${!testMode ? `<button class="secondary-button class-notes-button" data-action="study-context" type="button">Class Notes</button>` : ""}
         </div>
 
-        ${!testMode && (!isDefinition || state.definitionCompared) ? `
+        ${!testMode && (!isDefinition || state.definitionCompared) && !(isMcq && state.selectedChoice) ? `
           <div class="state-actions" aria-label="Learning state">
             <button class="primary-button" data-state="mastered" type="button">Good match · Mastered</button>
             <button class="secondary-button" data-state="revisit" type="button">Nearly there · Revisit</button>
@@ -848,6 +908,17 @@
     `;
 
     bindCardActions(card);
+  }
+
+  function renderChoiceFeedback(card) {
+    const correct = state.selectedChoice === card.answer;
+    return `
+      <div class="choice-feedback ${correct ? "good" : "needs-review"}">
+        <strong>${correct ? "Correct — moved to Mastered." : "Not quite — moved to Revisit."}</strong>
+        <p>The answer is <strong>${escapeHtml(card.answer)} — ${escapeHtml(choiceText(card))}</strong>.</p>
+        ${card.explanation ? `<p>${escapeHtml(card.explanation)}</p>` : ""}
+      </div>
+    `;
   }
 
   function renderChoices(card, testMode) {
@@ -936,7 +1007,7 @@
           renderCard();
           return;
         }
-        setCardStatus(card, correct ? "mastered" : "revisit", { advance: true, countAttempt: true });
+        setCardStatus(card, correct ? "mastered" : "revisit", { advance: false, countAttempt: true });
       });
     });
 
@@ -1006,7 +1077,8 @@
     }
     if (state.index >= state.deck.length - 1) {
       if (state.mode === "test") finishTest();
-      else state.index = 0;
+      else finishSession();
+      return;
     } else {
       state.index += 1;
     }
@@ -1027,6 +1099,36 @@
     state.definitionCompared = false;
     state.definitionReview = null;
     renderSession();
+  }
+
+  function finishSession() {
+    const counts = sessionStatusCounts();
+    const total = state.deck.length;
+    els.studyPanel.innerHTML = "";
+    els.resultPanel.classList.remove("hidden");
+    els.sessionEyebrow.textContent = "Session complete";
+    els.sessionTitle.textContent = "Revision session complete";
+    els.sessionSubtitle.textContent = "Use the summary to choose what to practise next.";
+    els.sessionIndex.textContent = String(counts.reviewed);
+    els.sessionTotal.textContent = `/ ${total}`;
+    els.resultPanel.innerHTML = `
+      <h2>Session complete</h2>
+      <p>You reviewed <strong>${counts.reviewed}/${total}</strong> card${total === 1 ? "" : "s"}.</p>
+      <div class="session-summary-grid">
+        <div><strong>${counts.mastered}</strong><span>mastered</span></div>
+        <div><strong>${counts.revisit}</strong><span>revisit</span></div>
+        <div><strong>${counts.study}</strong><span>need notes</span></div>
+      </div>
+      <p>${counts.revisit ? `Recommended next: review your ${counts.revisit} Revisit card${counts.revisit === 1 ? "" : "s"}.` : counts.study ? `Recommended next: open Class Notes for the ${counts.study} card${counts.study === 1 ? "" : "s"} that need notes.` : "Recommended next: test your knowledge when you feel ready."}</p>
+      <div class="card-actions">
+        ${counts.revisit ? `<button class="primary-button" data-result-action="revisit" type="button">Review revisit cards</button>` : ""}
+        ${counts.mastered ? `<button class="secondary-button" data-result-action="test" type="button">Test your knowledge</button>` : ""}
+        <button class="secondary-button" data-result-action="hub" type="button">Back to revision hub</button>
+      </div>
+    `;
+    $("[data-result-action='hub']", els.resultPanel)?.addEventListener("click", showHub);
+    $("[data-result-action='revisit']", els.resultPanel)?.addEventListener("click", () => startSession("revisit"));
+    $("[data-result-action='test']", els.resultPanel)?.addEventListener("click", () => startSession("test"));
   }
 
   function recordTestAnswer(card, correct, answer) {
@@ -1067,12 +1169,12 @@
     els.studyPanel.innerHTML = "";
     els.resultPanel.classList.remove("hidden");
     els.resultPanel.innerHTML = `
-      <h2>Mastery check complete</h2>
+      <h2>Test complete</h2>
       <p>You scored <strong>${score}/${total}</strong> (${percent}%).</p>
       <p>${percent === 100 ? "Perfect. Those cards stayed mastered." : "Missed cards were moved into Revisit so they come back later."}</p>
       <div class="card-actions">
         <button class="primary-button" data-result-action="hub" type="button">Back to revision hub</button>
-        <button class="secondary-button" data-result-action="again" type="button">Run another check</button>
+        <button class="secondary-button" data-result-action="again" type="button">Test again</button>
       </div>
     `;
     $("[data-result-action='hub']", els.resultPanel)?.addEventListener("click", showHub);

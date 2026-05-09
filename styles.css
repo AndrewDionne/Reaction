@@ -1819,3 +1819,126 @@ select:focus, input:focus, textarea:focus {
     grid-template-columns: 1fr;
   }
 }
+
+.mistake-list {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.mistake-card {
+  display: grid;
+  gap: 0.65rem;
+  padding: 0.85rem;
+  border: 1px solid rgba(245, 158, 11, 0.28);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.74);
+}
+
+.mistake-block {
+  display: grid;
+  gap: 0.25rem;
+}
+
+.mistake-block p {
+  margin: 0;
+  color: #334155;
+  line-height: 1.48;
+}
+
+.mistake-label {
+  width: fit-content;
+  border-radius: 999px;
+  padding: 0.18rem 0.55rem;
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.mistake-label.wrong {
+  color: #991b1b;
+  background: #fee2e2;
+  border: 1px solid #fecaca;
+}
+
+.mistake-label.correct {
+  color: #166534;
+  background: #dcfce7;
+  border: 1px solid #bbf7d0;
+}
+
+.mistake-label.why,
+.mistake-label.caution {
+  color: #854d0e;
+  background: #fef3c7;
+  border: 1px solid #fde68a;
+}
+
+.correct-idea {
+  padding-left: 0.75rem;
+  border-left: 4px solid #22c55e;
+}
+
+.wrong-idea {
+  padding-left: 0.75rem;
+  border-left: 4px solid #ef4444;
+}
+
+.why-idea {
+  padding-left: 0.75rem;
+  border-left: 4px solid #f59e0b;
+}
+
+
+/* v1.19.0 guided session flow */
+.choice-feedback {
+  margin: 1rem 0;
+  padding: 1rem 1.1rem;
+  border-radius: 18px;
+  border: 1px solid rgba(15, 23, 42, 0.1);
+  background: #f8fafc;
+}
+.choice-feedback.good {
+  border-color: rgba(22, 163, 74, 0.22);
+  background: #ecfdf5;
+  color: #14532d;
+}
+.choice-feedback.needs-review {
+  border-color: rgba(245, 158, 11, 0.28);
+  background: #fffbeb;
+  color: #78350f;
+}
+.choice-feedback p {
+  margin: 0.35rem 0 0;
+}
+.session-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.8rem;
+  margin: 1rem 0;
+}
+.session-summary-grid div {
+  padding: 1rem;
+  border-radius: 18px;
+  background: #f8fafc;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+}
+.session-summary-grid strong {
+  display: block;
+  font-size: 2rem;
+  line-height: 1;
+  color: var(--ink);
+}
+.session-summary-grid span {
+  display: block;
+  margin-top: 0.25rem;
+  color: var(--muted);
+  font-weight: 800;
+}
+.journey-card.test strong::after {
+  content: "";
+}
+.pill.study {
+  background: var(--study-soft);
+  color: #5b21b6;
+}

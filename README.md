@@ -214,3 +214,23 @@ Question cards now show images only when the visual is required for the task, su
 ## Definition compare notes
 
 Version 1.14.0 adds a typed-answer comparison flow for definition/vocabulary cards. Students write definitions in their own words, compare against the expected definition and keywords, then self-mark as Mastered or Revisit. This avoids false negatives from acceptable alternate wording.
+
+
+## v1.15.0 Common Mistakes Clarity
+
+Class Notes now show misconceptions in a clear paired format: **Common mistake**, **Actually**, and **Why**. This removes ambiguity where a correct statement could previously appear under a “Common mistakes” heading and be mistaken as wrong.
+
+
+## Detailed Class Note Images v1.17.0
+
+Five detailed generated study visuals have been added to the Class Notes layer for plant transport, carbon cycle, metal extraction, circuit components/symbols, and levers/moments. They are intentionally kept out of the question-card flow unless a question explicitly requires a visual.
+
+
+## v1.18.0 detailed class-note image pack 2
+
+Adds five split, optimized WebP panels from the generated infographic collage and uses them in Class Notes only: static electricity, electromagnets/relays/motor effect, terminal velocity, series vs parallel current/voltage, and environmental impacts/recycling.
+
+
+## v1.19.0 Guided Session Flow
+
+This patch renames the mastery route to **Test your knowledge**, changes visible Study labels to **Need notes**, adds a clearer selected revision-set summary, improves multiple-choice feedback before moving to the next card, preserves Class Notes back-navigation, and adds an end-of-session summary with recommended next actions.

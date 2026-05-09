@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" role="img" aria-labelledby="title desc">
+  <title id="title">Falling object force diagram with X and Y labels</title>
+  <desc id="desc">A falling object has a downward arrow labelled X and an upward arrow labelled Y.</desc>
+  <rect width="900" height="560" fill="#fff"/>
+  <rect x="55" y="40" width="790" height="480" rx="22" fill="#fbfdff" stroke="#d5dde8" stroke-width="2"/>
+  <text x="95" y="95" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" fill="#243447">Forces on a falling object</text>
+  <text x="95" y="126" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#52667a">Use the arrows to decide which force acts in each direction.</text>
+  <g transform="translate(380 155)">
+    <ellipse cx="70" cy="150" rx="58" ry="70" fill="#d9ecff" stroke="#4f82b8" stroke-width="4"/>
+    <path d="M70 229 C58 270, 62 308, 70 342 C80 308, 84 270, 70 229" fill="#eef7ff" stroke="#4f82b8" stroke-width="3"/>
+    <line x1="70" y1="244" x2="70" y2="372" stroke="#2e86de" stroke-width="8" marker-end="url(#arrowBlue)"/>
+    <line x1="70" y1="56" x2="70" y2="-42" stroke="#d64541" stroke-width="8" marker-end="url(#arrowRed)"/>
+    <text x="102" y="330" font-family="Arial, Helvetica, sans-serif" font-size="36" font-weight="700" fill="#2e86de">X</text>
+    <text x="102" y="5" font-family="Arial, Helvetica, sans-serif" font-size="36" font-weight="700" fill="#d64541">Y</text>
+  </g>
+  <g font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#52667a">
+    <text x="125" y="405">Question: which label matches the downward force and which label matches the upward force?</text>
+  </g>
+  <defs>
+    <marker id="arrowBlue" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#2e86de"/></marker>
+    <marker id="arrowRed" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#d64541"/></marker>
+  </defs>
+</svg>

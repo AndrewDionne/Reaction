@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" role="img" aria-labelledby="title desc">
+  <title id="title">Specialised plant cell with a long projection</title>
+  <desc id="desc">A plant cell has a long narrow projection extending into soil particles.</desc>
+  <rect width="900" height="560" fill="#fff"/>
+  <rect x="55" y="40" width="790" height="480" rx="22" fill="#fffdf8" stroke="#dfd7c7" stroke-width="2"/>
+  <text x="95" y="95" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" fill="#243447">Specialised plant cell</text>
+  <text x="95" y="126" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#52667a">Look at the long projection and where the cell is found.</text>
+  <g transform="translate(150 175)">
+    <circle cx="70" cy="230" r="18" fill="#9b7653"/><circle cx="125" cy="255" r="15" fill="#b08b65"/><circle cx="190" cy="225" r="20" fill="#8f704f"/>
+    <circle cx="515" cy="240" r="18" fill="#9b7653"/><circle cx="575" cy="215" r="15" fill="#b08b65"/><circle cx="620" cy="260" r="20" fill="#8f704f"/>
+    <rect x="100" y="82" width="245" height="126" rx="38" fill="#f6e6a8" stroke="#b9933d" stroke-width="4"/>
+    <path d="M342 142 C420 145, 500 105, 595 72 C640 56, 670 88, 648 123 C667 160, 638 200, 590 184 C500 153, 418 145, 342 142" fill="#fff0c8" stroke="#b9933d" stroke-width="4"/>
+    <ellipse cx="178" cy="145" rx="36" ry="28" fill="#f6cf83" stroke="#b9933d" stroke-width="3"/>
+    <line x1="450" y1="95" x2="595" y2="35" stroke="#607d8b" stroke-width="3"/>
+    <text x="602" y="39" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#52667a">long projection</text>
+    <line x1="185" y1="214" x2="170" y2="260" stroke="#607d8b" stroke-width="3"/>
+    <text x="90" y="292" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#52667a">soil particles</text>
+  </g>
+</svg>

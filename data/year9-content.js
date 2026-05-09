@@ -1,7 +1,7 @@
 window.YEAR9_CONTENT = {
-  "version": "1.14.0",
+  "version": "1.19.0",
   "title": "Year 9 Science End-of-Year Study",
-  "subtitle": "Lean question cards with Compare Notes support for definition answers.",
+  "subtitle": "Required visual-question diagrams restored without decorative image clutter",
   "units": [
     {
       "id": "9A",
@@ -740,12 +740,20 @@ window.YEAR9_CONTENT = {
       "level": 1,
       "cue": "",
       "tags": [],
-      "sourceFidelity": "text-equivalent",
+      "sourceFidelity": "source-style-redraw",
       "learningObjective": "9B-plant-transport",
       "learningObjectiveTitle": "Plant transport and specialised cells",
       "learningObjectiveDescription": "Root hair cells, stomata, guard cells, xylem, phloem and plant structure.",
       "noteId": "9B-plant-transport",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "required-for-question",
+      "media": [
+        {
+          "src": "assets/diagrams/9B-root-hair-source-style.svg",
+          "alt": "Specialised plant cell with a long projection extending into soil.",
+          "caption": "Use the long projection and the soil context to identify the specialised cell."
+        }
+      ],
+      "mediaTiming": "question"
     },
     {
       "id": "y9-029-9b-the-substance-used-to-test-for-starch-is",
@@ -956,12 +964,20 @@ window.YEAR9_CONTENT = {
       "level": 3,
       "cue": "",
       "tags": [],
-      "sourceFidelity": "text-equivalent",
+      "sourceFidelity": "source-style-redraw",
       "learningObjective": "9B-food-webs",
       "learningObjectiveTitle": "Food webs, biodiversity and ecosystems",
       "learningObjectiveDescription": "Food webs, pesticides, biodiversity, sampling and effects of farming.",
       "noteId": "9B-food-webs",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "required-for-question",
+      "media": [
+        {
+          "src": "assets/diagrams/9B-food-web.svg",
+          "alt": "Food web showing rose bush, insects and wrens connected by energy-transfer arrows.",
+          "caption": "Use the food web to predict what happens when insect numbers decrease."
+        }
+      ],
+      "mediaTiming": "question"
     },
     {
       "id": "y9-038-9b-an-increase-in-which-organism-could-control-aphids",
@@ -2028,12 +2044,20 @@ window.YEAR9_CONTENT = {
       "level": 1,
       "cue": "",
       "tags": [],
-      "sourceFidelity": "text-equivalent",
+      "sourceFidelity": "source-style-redraw",
       "learningObjective": "9I-forces",
       "learningObjectiveTitle": "Forces, drag and terminal velocity",
       "learningObjectiveDescription": "Balanced forces, air/water resistance, top speed and terminal velocity.",
       "noteId": "9I-forces",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "required-for-question",
+      "media": [
+        {
+          "src": "assets/diagrams/9I-falling-forces-source-style-XY.svg",
+          "alt": "Falling object diagram with a downward arrow labelled X and an upward arrow labelled Y.",
+          "caption": "Use the direction of each arrow to match the correct force label."
+        }
+      ],
+      "mediaTiming": "question"
     },
     {
       "id": "y9-082-9i-balanced-forces",
@@ -6384,7 +6408,15 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Adaptation, natural selection and evolution",
       "learningObjectiveDescription": "Adaptations, evidence from fossils, natural selection and evolution over time.",
       "noteId": "9A-evolution",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "required-for-question",
+      "media": [
+        {
+          "src": "assets/diagrams/9A-triceratops-adaptations-source-style.svg",
+          "alt": "Simplified Triceratops model with blank callout points for adaptations.",
+          "caption": "Use the callout points to identify adaptations that could be labelled on a model."
+        }
+      ],
+      "mediaTiming": "question"
     },
     {
       "id": "y9x-008-9a-explain-how-environmental-variation-is-caused",
@@ -6472,7 +6504,15 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Adaptation, natural selection and evolution",
       "learningObjectiveDescription": "Adaptations, evidence from fossils, natural selection and evolution over time.",
       "noteId": "9A-evolution",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "required-for-question",
+      "media": [
+        {
+          "src": "assets/diagrams/9A-triceratops-adaptations-source-style.svg",
+          "alt": "Simplified Triceratops model with blank callout points for adaptations.",
+          "caption": "Use the model to explain how each adaptation could have helped the animal survive."
+        }
+      ],
+      "mediaTiming": "question"
     },
     {
       "id": "y9x-012-9a-describe-the-relationship-between-cells-nuclei-chromosomes-genes-dna-and-genetic",
@@ -7902,7 +7942,15 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Speed and distance-time graphs",
       "learningObjectiveDescription": "Speed calculations, mean speed and interpreting distance-time graphs.",
       "noteId": "9I-speed",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "required-for-question",
+      "media": [
+        {
+          "src": "assets/diagrams/9I-distance-time-graph.svg",
+          "alt": "Example distance-time graph with rising and flat sections.",
+          "caption": "Use this graph style to represent moving, stopping and changing speed."
+        }
+      ],
+      "mediaTiming": "question"
     },
     {
       "id": "y9x-077-9i-use-the-formula-for-moment-force-and-perpendicular-distance",
@@ -8320,7 +8368,15 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Photosynthesis and respiration",
       "learningObjectiveDescription": "Reactants, products, chlorophyll, limiting factors and photosynthesis rate.",
       "noteId": "9B-photosynthesis",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "required-for-question",
+      "media": [
+        {
+          "src": "assets/diagrams/9B-carbon-cycle-source-style.svg",
+          "alt": "Carbon cycle diagram with plants, animals, dead material, fossil fuels and carbon dioxide in air.",
+          "caption": "Use the arrows to label the main carbon-cycle processes."
+        }
+      ],
+      "mediaTiming": "question"
     },
     {
       "id": "y9x-096-9b-explain-how-farming-affects-the-carbon-cycle",

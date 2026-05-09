@@ -1,5 +1,5 @@
 window.YEAR9_NOTES = {
-  "version": "1.13.0",
+  "version": "1.19.0",
   "title": "Year 9 Science Enhanced Class Notes",
   "notes": [
     {
@@ -15,9 +15,21 @@ window.YEAR9_NOTES = {
         "Environmental variation is caused by surroundings or experiences, such as diet, sunlight or exercise."
       ],
       "commonMistakes": [
-        "Do not call every difference genetic; many features are environmental or mixed.",
-        "Continuous variation is not “better” than discontinuous variation; it is just measured over a range.",
-        "A chart with a bell-shaped spread usually shows continuous variation."
+        {
+          "wrong": "Every difference between people or organisms is genetic.",
+          "correct": "Some variation is inherited, some is environmental, and some is caused by both genes and environment.",
+          "why": "A suntan, diet-related mass change, or improved fitness from training is caused mainly by environmental factors, not directly by genes."
+        },
+        {
+          "wrong": "Continuous variation is a better or more advanced type of variation.",
+          "correct": "Continuous variation just means the measurement can take any value across a range.",
+          "why": "Height, mass and hand span vary continuously because they are measured on a scale; this does not make them better than categories such as blood group."
+        },
+        {
+          "wrong": "A bell-shaped chart shows discontinuous categories.",
+          "correct": "A bell-shaped spread usually shows continuous variation and is called a normal distribution.",
+          "why": "The values blend across a range, with many individuals near the middle and fewer at the extremes."
+        }
       ],
       "example": {
         "question": "Is a suntan inherited or environmental variation?",
@@ -42,9 +54,21 @@ window.YEAR9_NOTES = {
         "Sex cells contain half the normal number of chromosomes so that fertilisation restores the full number."
       ],
       "commonMistakes": [
-        "Do not say a chromosome is inside a gene; genes are sections of DNA on chromosomes.",
-        "Do not confuse DNA with the nucleus; DNA is found inside the nucleus.",
-        "Human body cells have 46 chromosomes, but sperm and egg cells have 23."
+        {
+          "wrong": "A chromosome is inside a gene.",
+          "correct": "A gene is a short section of DNA, and DNA is packaged into chromosomes.",
+          "why": "The order is cell → nucleus → chromosome → DNA → gene section."
+        },
+        {
+          "wrong": "DNA and the nucleus are the same thing.",
+          "correct": "DNA is a molecule found inside the nucleus of most body cells.",
+          "why": "The nucleus is the cell compartment; DNA is the genetic material stored inside it."
+        },
+        {
+          "wrong": "All human cells have 46 chromosomes.",
+          "correct": "Most human body cells have 46 chromosomes, but sperm and egg cells have 23.",
+          "why": "Sex cells have half the usual chromosome number so fertilisation restores the full number."
+        }
       ],
       "example": {
         "question": "How are genes, DNA and chromosomes linked?",
@@ -76,9 +100,21 @@ window.YEAR9_NOTES = {
         "High biodiversity makes ecosystems more stable and resilient."
       ],
       "commonMistakes": [
-        "A gene bank is not a bank for money; it stores biological material.",
-        "A species can be endangered even if some individuals are still alive.",
-        "Conservation protects both organisms and their habitats."
+        {
+          "wrong": "A gene bank is a normal bank or a place that stores money for conservation.",
+          "correct": "A gene bank stores biological material such as seeds, sperm, eggs or tissue samples.",
+          "why": "The purpose is to preserve genetic variation so species or varieties can be protected in the future."
+        },
+        {
+          "wrong": "A species is only endangered when there are no individuals left.",
+          "correct": "A species is endangered when the population is so low that extinction is a serious risk.",
+          "why": "Extinction means none are left; endangered means it could become extinct if the decline continues."
+        },
+        {
+          "wrong": "Conservation only means protecting individual animals.",
+          "correct": "Conservation protects organisms, habitats and biodiversity.",
+          "why": "A species usually cannot survive long-term unless its habitat and ecosystem are also protected."
+        }
       ],
       "example": {
         "question": "Give three ways to preserve biodiversity.",
@@ -112,9 +148,21 @@ window.YEAR9_NOTES = {
         "An adaptation is only useful if it improves survival or reproduction in a particular environment."
       ],
       "commonMistakes": [
-        "Individuals do not evolve during their lifetime; populations change over generations.",
-        "An adaptation must help survival or reproduction in a particular environment.",
-        "Fossils are evidence that organisms in the past were different from organisms alive today."
+        {
+          "wrong": "An individual animal evolves because it wants or needs a new feature.",
+          "correct": "Populations evolve over generations as inherited helpful characteristics become more common.",
+          "why": "Individuals can grow or learn, but inherited genetic changes are passed through reproduction across generations."
+        },
+        {
+          "wrong": "Any noticeable feature is automatically an adaptation.",
+          "correct": "An adaptation is a feature that helps survival or reproduction in a particular environment.",
+          "why": "A feature only counts as an adaptation if it gives an advantage in the conditions the organism lives in."
+        },
+        {
+          "wrong": "Fossils are just old bones and do not tell us about evolution.",
+          "correct": "Fossils are evidence that organisms in the past were different from organisms alive today.",
+          "why": "Comparing fossils with living organisms helps scientists infer changes over long periods of time."
+        }
       ],
       "example": {
         "question": "Why might longer-necked animals become more common where food is high in trees?",
@@ -148,9 +196,21 @@ window.YEAR9_NOTES = {
         "Respiration releases energy from glucose and happens in plant and animal cells."
       ],
       "commonMistakes": [
-        "Plants do not “eat” food from soil; they make glucose by photosynthesis.",
-        "More light only increases the rate until another factor becomes limiting.",
-        "Respiration and photosynthesis are different processes, although plants do both."
+        {
+          "wrong": "Plants eat food from the soil.",
+          "correct": "Plants make glucose by photosynthesis using carbon dioxide and water, with energy from light.",
+          "why": "Soil supplies water and mineral ions, but the food molecule glucose is made in the plant."
+        },
+        {
+          "wrong": "More light always means photosynthesis gets faster without limit.",
+          "correct": "More light increases the rate only until another factor becomes limiting.",
+          "why": "Carbon dioxide concentration, temperature or chlorophyll can limit the rate once light is no longer the limiting factor."
+        },
+        {
+          "wrong": "Photosynthesis and respiration are the same process.",
+          "correct": "Photosynthesis makes glucose using light energy; respiration releases energy from glucose.",
+          "why": "Plants do both, but the processes have different reactants, products and purposes."
+        }
       ],
       "example": {
         "question": "Why does the photosynthesis rate level off at high light intensity?",
@@ -182,9 +242,21 @@ window.YEAR9_NOTES = {
         "Stomata are pores controlled by guard cells."
       ],
       "commonMistakes": [
-        "Do not confuse xylem and phloem: xylem carries water; phloem carries sugars.",
-        "Stomata are openings, not the guard cells themselves.",
-        "Root hair cells absorb water and minerals; they do not photosynthesise underground."
+        {
+          "wrong": "Xylem and phloem do the same job.",
+          "correct": "Xylem carries water and mineral ions; phloem carries dissolved sugars.",
+          "why": "Mixing these up leads to wrong explanations of how water reaches leaves and how glucose is transported."
+        },
+        {
+          "wrong": "Stomata are the guard cells.",
+          "correct": "Stomata are the pores or openings; guard cells are the cells that open and close them.",
+          "why": "Guard cells control gas exchange and water loss by changing the size of the stomatal opening."
+        },
+        {
+          "wrong": "Root hair cells photosynthesise underground.",
+          "correct": "Root hair cells absorb water and mineral ions from soil.",
+          "why": "They are underground and do not receive enough light; their long projection increases surface area for absorption."
+        }
       ],
       "example": {
         "question": "Why are root hair cells good at absorbing water?",
@@ -197,9 +269,9 @@ window.YEAR9_NOTES = {
       "practicePrompt": "Pick one linked revision card for Plant transport and specialised cells and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
       "media": [
         {
-          "src": "assets/diagrams/9B-leaf-xylem-phloem.svg",
-          "alt": "Leaf and plant transport diagram showing xylem and phloem.",
-          "caption": "Xylem carries water and minerals up; phloem carries dissolved sugars around the plant."
+          "src": "assets/webp/9B-plant-transport-root-xylem-phloem.webp",
+          "alt": "Plant transport diagram showing root hair cells, xylem, phloem, leaves, water, mineral ions and glucose movement.",
+          "caption": "Root hair cells absorb water and mineral ions. Xylem carries them up to the leaves; phloem carries glucose and sugars away from the leaves."
         },
         {
           "src": "assets/webp/9B-stomata-micrograph.webp",
@@ -221,9 +293,21 @@ window.YEAR9_NOTES = {
         "Crop yield can be increased with fertilisers, irrigation, greenhouses, pest control and selective breeding."
       ],
       "commonMistakes": [
-        "Starch is not the same as glucose; starch is made from many glucose units.",
-        "Fertilisers do not provide energy; they provide mineral ions.",
-        "Yield means the useful amount produced, not just how tall a plant is."
+        {
+          "wrong": "Starch and glucose are exactly the same substance.",
+          "correct": "Starch is a polymer made from many glucose units joined together.",
+          "why": "Plants store glucose as starch because starch is less soluble and better for storage."
+        },
+        {
+          "wrong": "Fertilisers give plants energy.",
+          "correct": "Fertilisers provide mineral ions such as nitrates, phosphates and potassium compounds.",
+          "why": "Plants get energy input from light for photosynthesis; minerals are used to make proteins and other substances."
+        },
+        {
+          "wrong": "Yield just means how tall a plant grows.",
+          "correct": "Yield means the useful amount produced, such as mass of crop harvested.",
+          "why": "A taller plant is not necessarily a better crop if it produces fewer seeds, fruits or useful parts."
+        }
       ],
       "example": {
         "question": "Why do farmers add fertiliser to fields?",
@@ -255,9 +339,21 @@ window.YEAR9_NOTES = {
         "Sampling can estimate biodiversity in a field without counting every organism."
       ],
       "commonMistakes": [
-        "Arrows do not point to what an organism eats; they point from food to consumer.",
-        "A pesticide may affect organisms that were not the original target.",
-        "Biodiversity is about variety of organisms, not just the total number of individuals."
+        {
+          "wrong": "Food-web arrows point to what an organism eats.",
+          "correct": "Food-web arrows point from the food to the consumer that receives the energy.",
+          "why": "The arrow shows energy transfer direction, not the direction the animal is looking or hunting."
+        },
+        {
+          "wrong": "A pesticide only affects the pest it is sprayed on.",
+          "correct": "A pesticide can affect predators, prey and other organisms in the food web.",
+          "why": "If one population falls, organisms that depend on it for food may also fall; toxins can also pass along food chains."
+        },
+        {
+          "wrong": "Biodiversity only means the total number of organisms.",
+          "correct": "Biodiversity means the variety of different organisms in an area.",
+          "why": "An area with many individuals of only one species can still have low biodiversity."
+        }
       ],
       "example": {
         "question": "If insecticide reduces insects eaten by wrens, what may happen to wrens?",
@@ -269,6 +365,11 @@ window.YEAR9_NOTES = {
       "sentenceStarter": "If the number of ___ decreases, then ___ may decrease because ___.",
       "practicePrompt": "Pick one linked revision card for Food webs, biodiversity and ecosystems and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
       "media": [
+        {
+          "src": "assets/webp/9B-carbon-cycle-context.webp",
+          "alt": "Carbon cycle diagram showing carbon dioxide in air, plants, animals, respiration, decomposers, fossil fuels and combustion.",
+          "caption": "Carbon moves between air, plants, animals, decomposers and fossil fuels. Photosynthesis removes carbon dioxide; respiration and combustion return it."
+        },
         {
           "src": "assets/diagrams/9B-food-web.svg",
           "alt": "Food web showing rose bush, insects and wrens.",
@@ -289,9 +390,21 @@ window.YEAR9_NOTES = {
         "A regular giant lattice can have many strong bonds but still be brittle."
       ],
       "commonMistakes": [
-        "Hard does not mean tough; a material can be hard but brittle.",
-        "A high melting point does not mean a material bends easily.",
-        "Fast cooling usually makes many small crystals, not large crystals."
+        {
+          "wrong": "Hard and tough mean the same thing.",
+          "correct": "Hard means difficult to scratch or dent; tough means difficult to break.",
+          "why": "Ceramics can be hard and heat resistant but still brittle, so they can crack or shatter."
+        },
+        {
+          "wrong": "A high melting point means a material will bend easily.",
+          "correct": "A high melting point means strong bonding or structure resists melting; it does not mean flexible.",
+          "why": "Ceramics often have high melting points but are rigid and brittle."
+        },
+        {
+          "wrong": "Fast cooling makes large crystals.",
+          "correct": "Fast cooling usually makes many small crystals; slow cooling allows larger crystals to form.",
+          "why": "With slow cooling, particles have more time to arrange into larger regular crystals."
+        }
       ],
       "example": {
         "question": "Why are ceramics useful for teapots?",
@@ -325,9 +438,21 @@ window.YEAR9_NOTES = {
         "Cross-linking reduces how easily chains slide past each other."
       ],
       "commonMistakes": [
-        "A polymer is not just any plastic; it is a long-chain molecule.",
-        "Biodegradable means decomposed by living organisms, not just “breaks into pieces”.",
-        "Cross-linking changes properties because chains cannot slide past each other as easily."
+        {
+          "wrong": "A polymer is just any plastic object.",
+          "correct": "A polymer is a long-chain molecule made from many repeating units.",
+          "why": "Many plastics are polymers, but the word polymer describes the molecular structure, not just the object."
+        },
+        {
+          "wrong": "Biodegradable means a material simply breaks into smaller visible pieces.",
+          "correct": "Biodegradable means microorganisms can decompose the material into simpler substances.",
+          "why": "Plastic fragments can get smaller without truly decomposing, which can still cause pollution."
+        },
+        {
+          "wrong": "Cross-linking only changes appearance, not properties.",
+          "correct": "Cross-linking changes properties because polymer chains cannot slide past each other as easily.",
+          "why": "This can make a polymer stronger, harder, more elastic or more heat resistant depending on the material."
+        }
       ],
       "example": {
         "question": "What happens in polymerisation?",
@@ -359,9 +484,21 @@ window.YEAR9_NOTES = {
         "Composites are chosen because their combined properties are useful for a job."
       ],
       "commonMistakes": [
-        "A mixture is not automatically a useful composite; the combined material must give useful properties.",
-        "Concrete and reinforced concrete are related but not identical.",
-        "Composite materials can be natural or manufactured."
+        {
+          "wrong": "Any mixture of materials is automatically a useful composite.",
+          "correct": "A useful composite combines materials so the final material has improved properties.",
+          "why": "The matrix and reinforcement must work together to produce a useful property combination."
+        },
+        {
+          "wrong": "Concrete and reinforced concrete are identical.",
+          "correct": "Concrete is a composite; reinforced concrete includes reinforcement, usually steel, to improve tensile strength.",
+          "why": "Plain concrete is strong in compression but weak in tension, while steel reinforcement helps resist tension."
+        },
+        {
+          "wrong": "All composite materials are manufactured modern materials.",
+          "correct": "Composite materials can be natural or manufactured.",
+          "why": "Wood is a natural composite; glass-reinforced plastic and reinforced concrete are manufactured composites."
+        }
       ],
       "example": {
         "question": "Why is reinforced concrete useful?",
@@ -393,9 +530,21 @@ window.YEAR9_NOTES = {
         "Reducing, reusing and recycling all help reduce waste."
       ],
       "commonMistakes": [
-        "Recycling is useful, but reducing use is often better.",
-        "Global warming and acid rain are not the same problem, though both can be linked to burning fuels.",
-        "A material being useful does not mean it has no environmental cost."
+        {
+          "wrong": "Recycling is always the best environmental option.",
+          "correct": "Reducing use and reusing items can be better than recycling.",
+          "why": "Recycling still needs collection, transport and processing energy, while reducing use avoids making waste in the first place."
+        },
+        {
+          "wrong": "Global warming and acid rain are the same problem.",
+          "correct": "Global warming is linked to greenhouse gases; acid rain is linked to acidic gases such as sulfur dioxide and nitrogen oxides.",
+          "why": "Both can be connected to burning fuels, but they have different causes and effects."
+        },
+        {
+          "wrong": "If a material is useful, it has no environmental cost.",
+          "correct": "Useful materials can still cause environmental problems during extraction, manufacture, use or disposal.",
+          "why": "A full answer should consider benefits and costs across the material life cycle."
+        }
       ],
       "example": {
         "question": "Why does recycling metals help us use metals further into the future?",
@@ -408,9 +557,9 @@ window.YEAR9_NOTES = {
       "practicePrompt": "Pick one linked revision card for Environmental impacts and recycling and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
       "media": [
         {
-          "src": "assets/webp/9E-sustainable-living-solutions.webp",
-          "alt": "Solar panels, wind energy and home insulation.",
-          "caption": "Reducing fossil-fuel use can reduce greenhouse gas and acid-rain impacts."
+          "src": "assets/webp/9E-environmental-impacts-recycling.webp",
+          "alt": "Four-panel infographic showing landfill, recycling, acid rain and global warming.",
+          "caption": "Environmental impacts are linked but different: landfill wastes resources, recycling saves resources, acid rain damages ecosystems, and greenhouse gases warm the planet."
         }
       ]
     },
@@ -427,9 +576,21 @@ window.YEAR9_NOTES = {
         "Heating a gas makes particles move faster, increasing pressure if volume is fixed."
       ],
       "commonMistakes": [
-        "Melting is usually a physical change, not a chemical reaction.",
-        "Gas pressure is caused by particle collisions, not by particles getting heavier.",
-        "Formulae show the atoms in a substance, not the mass directly."
+        {
+          "wrong": "Melting is usually a chemical reaction.",
+          "correct": "Melting is usually a physical change because no new substance is made.",
+          "why": "The particles change arrangement or state, but the substance remains the same chemical substance."
+        },
+        {
+          "wrong": "Gas pressure increases because particles get heavier when heated.",
+          "correct": "Gas pressure increases because particles move faster and collide more often or harder with the container walls.",
+          "why": "Heating increases particle kinetic energy, not particle mass."
+        },
+        {
+          "wrong": "A chemical formula directly tells you the mass of the substance.",
+          "correct": "A formula tells you which atoms are present and how many of each are in one unit of the substance.",
+          "why": "Mass can be calculated from the formula, but the formula itself is about atom types and ratios."
+        }
       ],
       "example": {
         "question": "Why does gas pressure increase when temperature increases?",
@@ -461,9 +622,21 @@ window.YEAR9_NOTES = {
         "Iron is more reactive than copper, so iron can displace copper."
       ],
       "commonMistakes": [
-        "Displacement is not random; it depends on relative reactivity.",
-        "A less reactive metal cannot displace a more reactive metal from its compound.",
-        "Reactivity with acid is related to position in the reactivity series."
+        {
+          "wrong": "Displacement reactions happen randomly.",
+          "correct": "A more reactive metal displaces a less reactive metal from its compound.",
+          "why": "The reaction depends on the relative positions of the metals in the reactivity series."
+        },
+        {
+          "wrong": "A less reactive metal can displace a more reactive metal.",
+          "correct": "A less reactive metal cannot displace a more reactive metal from its compound.",
+          "why": "The less reactive metal does not have enough tendency to form the compound instead."
+        },
+        {
+          "wrong": "Reactivity with acid is unrelated to the reactivity series.",
+          "correct": "A metal’s reaction with acid is evidence for its position in the reactivity series.",
+          "why": "More reactive metals tend to react more vigorously with acids, producing hydrogen gas faster."
+        }
       ],
       "example": {
         "question": "Why can iron displace copper from copper sulfate?",
@@ -497,9 +670,21 @@ window.YEAR9_NOTES = {
         "Carbon is useful in extraction because it reacts with oxygen from the metal oxide."
       ],
       "commonMistakes": [
-        "Mining obtains ore; extraction separates the metal from its compound.",
-        "Reduction in this topic means oxygen is removed, not that the amount simply gets smaller.",
-        "Electrolysis uses electricity and is energy-intensive."
+        {
+          "wrong": "Mining and extraction mean the same thing.",
+          "correct": "Mining obtains ore from the ground; extraction separates the metal from its compound.",
+          "why": "Ore still contains the metal chemically combined or mixed with other material, so further processing is needed."
+        },
+        {
+          "wrong": "Reduction just means making the amount of substance smaller.",
+          "correct": "In metal extraction, reduction means removing oxygen from a metal oxide.",
+          "why": "For example, iron oxide is reduced to iron when oxygen is removed."
+        },
+        {
+          "wrong": "Electrolysis is used because it is cheap and low energy.",
+          "correct": "Electrolysis uses electricity and is energy-intensive, so it is used when carbon reduction will not work.",
+          "why": "Very reactive metals such as aluminium cannot be extracted by carbon reduction."
+        }
       ],
       "example": {
         "question": "Why is aluminium extracted by electrolysis rather than carbon reduction?",
@@ -512,14 +697,9 @@ window.YEAR9_NOTES = {
       "practicePrompt": "Pick one linked revision card for Metal extraction and reduction and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
       "media": [
         {
-          "src": "assets/webp/9F-blast-furnace-process.webp",
-          "alt": "Blast furnace cutaway for extracting iron.",
-          "caption": "Iron can be extracted using carbon because it is below carbon in the reactivity series."
-        },
-        {
-          "src": "assets/webp/9F-extraction-apparatus.webp",
-          "alt": "Comparison of blast furnace and electrolysis extraction methods.",
-          "caption": "Very reactive metals need electrolysis; less reactive metals can often be extracted using carbon."
+          "src": "assets/webp/9F-extraction-carbon-vs-electrolysis.webp",
+          "alt": "Split diagram comparing iron extraction by carbon reduction with aluminium extraction by electrolysis and a reactivity series strip.",
+          "caption": "Metals below carbon, such as iron, can be extracted by carbon reduction. Metals above carbon, such as aluminium, need electrolysis."
         }
       ]
     },
@@ -536,9 +716,21 @@ window.YEAR9_NOTES = {
         "Sacrificial protection uses a more reactive metal that corrodes instead of iron."
       ],
       "commonMistakes": [
-        "Rusting is specific to iron and steel, not all metals.",
-        "A coating only works while it remains intact.",
-        "For sacrificial protection, the protecting metal must be more reactive than iron."
+        {
+          "wrong": "Rusting is the name for corrosion of any metal.",
+          "correct": "Rusting specifically describes corrosion of iron and steel.",
+          "why": "Other metals can corrode, but the word rust usually refers to hydrated iron oxide forming on iron or steel."
+        },
+        {
+          "wrong": "A painted or plastic coating protects forever even if scratched.",
+          "correct": "A coating protects only while it keeps oxygen and water away from the metal.",
+          "why": "If the coating is damaged, oxygen and water can reach the iron and rusting can start."
+        },
+        {
+          "wrong": "Any metal can be used for sacrificial protection of iron.",
+          "correct": "The sacrificial metal must be more reactive than iron.",
+          "why": "The more reactive metal corrodes first, protecting the iron or steel."
+        }
       ],
       "example": {
         "question": "Why does plastic coating stop iron rusting?",
@@ -570,9 +762,21 @@ window.YEAR9_NOTES = {
         "Terminal velocity is reached when weight and drag are balanced, so speed is constant."
       ],
       "commonMistakes": [
-        "A falling object at terminal velocity is still moving; it is just not accelerating.",
-        "Air resistance increases as speed increases.",
-        "Balanced forces mean constant velocity, not necessarily no movement."
+        {
+          "wrong": "At terminal velocity, a falling object has stopped.",
+          "correct": "At terminal velocity, the object is still moving but no longer accelerating.",
+          "why": "The upward air resistance equals the downward weight, so the resultant force is zero."
+        },
+        {
+          "wrong": "Air resistance is always the same size.",
+          "correct": "Air resistance increases as speed increases.",
+          "why": "A faster object collides with more air particles each second, increasing the drag force."
+        },
+        {
+          "wrong": "Balanced forces always mean no movement.",
+          "correct": "Balanced forces mean no acceleration; the object may be stationary or moving at constant velocity.",
+          "why": "Zero resultant force means the motion does not change."
+        }
       ],
       "example": {
         "question": "Why does a parachutist eventually fall at constant speed?",
@@ -585,9 +789,9 @@ window.YEAR9_NOTES = {
       "practicePrompt": "Pick one linked revision card for Forces, drag and terminal velocity and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
       "media": [
         {
-          "src": "assets/webp/9I-forces-parachutist.webp",
-          "alt": "Parachutist with weight and air resistance force arrows.",
-          "caption": "Terminal velocity happens when weight and air resistance balance."
+          "src": "assets/webp/9I-forces-terminal-velocity-sequence.webp",
+          "alt": "Skydiver sequence showing weight, air resistance, terminal velocity and parachute opening.",
+          "caption": "Terminal velocity happens when weight and air resistance are balanced, so speed becomes constant rather than zero."
         }
       ]
     },
@@ -604,9 +808,21 @@ window.YEAR9_NOTES = {
         "Machines transfer energy; they do not create free energy."
       ],
       "commonMistakes": [
-        "A simple machine does not remove the need for energy.",
-        "Less force often means the force is applied over a greater distance.",
-        "Friction means more energy is usually needed overall."
+        {
+          "wrong": "A simple machine removes the need for energy or work.",
+          "correct": "A simple machine changes the size or direction of force but does not remove the need for energy.",
+          "why": "The same job usually requires similar useful work, and friction can make the total energy needed larger."
+        },
+        {
+          "wrong": "Using less force always means less work is done.",
+          "correct": "Using less force often means applying the force over a greater distance.",
+          "why": "Work done = force × distance, so reducing force can be balanced by increasing distance."
+        },
+        {
+          "wrong": "Friction helps simple machines save energy overall.",
+          "correct": "Friction usually means more energy is needed overall because some energy is dissipated as heat.",
+          "why": "Real machines are not perfectly efficient."
+        }
       ],
       "example": {
         "question": "Why does a shallow ramp need less force but more distance?",
@@ -638,9 +854,21 @@ window.YEAR9_NOTES = {
         "A horizontal line means the object has stopped."
       ],
       "commonMistakes": [
-        "Do not confuse distance-time graphs with speed-time graphs.",
-        "A flat line on a distance-time graph means stopped, not accelerating.",
-        "Always check units before calculating speed."
+        {
+          "wrong": "Distance-time graphs and speed-time graphs show the same thing.",
+          "correct": "A distance-time graph shows distance against time; the slope shows speed.",
+          "why": "A speed-time graph directly plots speed and has different meanings for the line and area."
+        },
+        {
+          "wrong": "A flat line on a distance-time graph means the object is accelerating.",
+          "correct": "A flat line on a distance-time graph means the object is stopped.",
+          "why": "Time is passing but distance is not changing."
+        },
+        {
+          "wrong": "Units do not matter when calculating speed.",
+          "correct": "Units must be consistent, and the answer must include distance per time units.",
+          "why": "For example, km/h and m/s are both speed units but are not the same size."
+        }
       ],
       "example": {
         "question": "A bus travels 20 km in 2 hours. What is its speed?",
@@ -672,9 +900,21 @@ window.YEAR9_NOTES = {
         "An object balances when clockwise and anticlockwise moments are equal."
       ],
       "commonMistakes": [
-        "The force must be multiplied by distance from the pivot, not the whole lever length unless that is the correct distance.",
-        "The easiest lever has a long effort arm and short load arm.",
-        "Moment units are newton metres, N m."
+        {
+          "wrong": "Moment is force times the whole lever length every time.",
+          "correct": "Moment = force × perpendicular distance from the pivot to the line of action of the force.",
+          "why": "Only the relevant distance from the pivot matters, not necessarily the full object length."
+        },
+        {
+          "wrong": "The easiest lever has a short effort arm and long load arm.",
+          "correct": "The easiest lever has a long effort arm and short load arm.",
+          "why": "A longer effort distance gives a larger moment for the same force."
+        },
+        {
+          "wrong": "Moment is measured in newtons only.",
+          "correct": "Moment is measured in newton metres, N m.",
+          "why": "Moment combines force in newtons with distance in metres."
+        }
       ],
       "example": {
         "question": "A 5 N force acts 0.4 m from a pivot. Calculate the moment.",
@@ -687,9 +927,9 @@ window.YEAR9_NOTES = {
       "practicePrompt": "Pick one linked revision card for Levers, pivots and moments and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
       "media": [
         {
-          "src": "assets/diagrams/9I-moments-balance.svg",
-          "alt": "Lever balance diagram showing moments around a pivot.",
-          "caption": "Moment = force × perpendicular distance from the pivot."
+          "src": "assets/webp/9I-lever-moment-context.webp",
+          "alt": "Lever diagram lifting a rock showing load, fulcrum, effort, distances from pivot and moment equals force times distance.",
+          "caption": "A longer distance from the pivot gives a larger moment for the same force. Moment = force × distance from the pivot."
         }
       ]
     },
@@ -706,9 +946,21 @@ window.YEAR9_NOTES = {
         "Gravitational potential energy increases when an object is lifted higher."
       ],
       "commonMistakes": [
-        "Mass and weight are not the same; mass is in kg and weight is in N.",
-        "Gravity is not the same as gravitational field strength, although they are related.",
-        "Field lines show direction of force, not physical strings."
+        {
+          "wrong": "Mass and weight are the same thing.",
+          "correct": "Mass is the amount of matter in kilograms; weight is a force in newtons.",
+          "why": "Weight depends on gravitational field strength, using weight = mass × gravitational field strength."
+        },
+        {
+          "wrong": "Gravity and gravitational field strength mean exactly the same thing.",
+          "correct": "Gravity is the attractive force; gravitational field strength is the force per kilogram at a location.",
+          "why": "Gravitational field strength has units N/kg and changes from place to place."
+        },
+        {
+          "wrong": "Field lines are physical strings or wires around magnets and masses.",
+          "correct": "Field lines are diagrams that show the direction a force would act.",
+          "why": "They are a model used to represent invisible fields."
+        }
       ],
       "example": {
         "question": "A 34 kg object is on a planet with gravitational field strength 6.8 N/kg. What is its weight?",
@@ -740,9 +992,21 @@ window.YEAR9_NOTES = {
         "Like charges repel; opposite charges attract."
       ],
       "commonMistakes": [
-        "Only electrons move in these static electricity examples; positive charges do not usually transfer through the solid.",
-        "A neutral object has equal positive and negative charge overall.",
-        "Attraction can happen between opposite charges or between a charged object and an induced neutral object."
+        {
+          "wrong": "Positive charges usually move through the solid in these static electricity examples.",
+          "correct": "Electrons move; positive charges usually remain fixed in the solid structure.",
+          "why": "An object becomes negatively charged if it gains electrons and positively charged if it loses electrons."
+        },
+        {
+          "wrong": "A neutral object has no charges in it.",
+          "correct": "A neutral object has equal amounts of positive and negative charge overall.",
+          "why": "The charges cancel overall, but the charged particles are still present."
+        },
+        {
+          "wrong": "Only opposite charged objects can attract.",
+          "correct": "Opposite charges attract, and a charged object can also attract an induced neutral object.",
+          "why": "The charged object can shift charges slightly in the neutral object, causing attraction."
+        }
       ],
       "example": {
         "question": "Why does a rubbed polythene rod become negatively charged?",
@@ -755,9 +1019,9 @@ window.YEAR9_NOTES = {
       "practicePrompt": "Pick one linked revision card for Static electricity and charge and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
       "media": [
         {
-          "src": "assets/webp/9J-static-electricity-demo.webp",
-          "alt": "Static electricity demonstration with charged objects.",
-          "caption": "Static electricity is a build-up of charge; like charges repel and opposite charges attract."
+          "src": "assets/webp/9J-static-electricity-charge-transfer.webp",
+          "alt": "Infographic explaining static electricity by rubbing, electron transfer, negative and positive charge, and attraction or repulsion.",
+          "caption": "Static electricity comes from charge transfer. Electrons move; like charges repel and opposite charges attract."
         }
       ]
     },
@@ -777,9 +1041,21 @@ window.YEAR9_NOTES = {
         "Voltmeter: measures potential difference and is connected in parallel."
       ],
       "commonMistakes": [
-        "Do not say voltage flows; current flows.",
-        "Do not connect a voltmeter in series when measuring across a component.",
-        "Parallel circuits have more than one path for current."
+        {
+          "wrong": "Voltage flows around a circuit.",
+          "correct": "Current flows around a circuit; voltage, or potential difference, is measured between two points.",
+          "why": "Voltage describes energy transferred per unit charge, not a substance moving through wires."
+        },
+        {
+          "wrong": "A voltmeter should be connected in series to measure a component.",
+          "correct": "A voltmeter is connected in parallel across the component.",
+          "why": "It measures the potential difference between the two sides of that component."
+        },
+        {
+          "wrong": "A parallel circuit has only one path for current.",
+          "correct": "A parallel circuit has more than one path or branch for current.",
+          "why": "Current splits between branches and can continue through other branches if one branch is broken."
+        }
       ],
       "example": {
         "question": "Why are bulbs in a parallel circuit independent?",
@@ -792,14 +1068,14 @@ window.YEAR9_NOTES = {
       "practicePrompt": "Pick one linked revision card for Current, voltage and circuits and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
       "media": [
         {
-          "src": "assets/webp/9J-series-parallel-circuits-photo.webp",
-          "alt": "Series circuit and parallel circuit comparison.",
-          "caption": "Series circuits have one loop; parallel circuits have branches."
+          "src": "assets/webp/9J-real-components-vs-symbols.webp",
+          "alt": "Chart matching real electrical components to circuit symbols for cell, battery, lamp, resistor, open switch, closed switch, ammeter and voltmeter.",
+          "caption": "Use this chart to connect physical circuit equipment with the symbols used in circuit diagrams."
         },
         {
-          "src": "assets/webp/9J-circuit-components-photo.webp",
-          "alt": "Circuit components including battery, wires, switch, bulb, ammeter and voltmeter.",
-          "caption": "Recognising components helps you understand how circuits are built and measured."
+          "src": "assets/webp/9J-series-parallel-current-voltage.webp",
+          "alt": "Infographic comparing series and parallel circuits, including current and voltage behaviour.",
+          "caption": "Series circuits have the same current everywhere and share voltage. Parallel circuits split current between branches and have the same voltage across each branch."
         }
       ]
     },
@@ -816,9 +1092,21 @@ window.YEAR9_NOTES = {
         "On a current-voltage graph, the shallower line has higher resistance."
       ],
       "commonMistakes": [
-        "Do not confuse resistance with current; high resistance usually means lower current.",
-        "Use V ÷ I, not I ÷ V, when calculating resistance.",
-        "Remember to include units: ohms, Ω."
+        {
+          "wrong": "Resistance and current are the same thing.",
+          "correct": "Resistance is how difficult it is for current to flow; current is the rate of flow of charge.",
+          "why": "For the same voltage, higher resistance usually means lower current."
+        },
+        {
+          "wrong": "Resistance is calculated using current divided by voltage.",
+          "correct": "Resistance = voltage ÷ current, or R = V ÷ I.",
+          "why": "Using I ÷ V gives the wrong quantity and wrong units."
+        },
+        {
+          "wrong": "A resistance answer does not need units.",
+          "correct": "Resistance should be given in ohms, Ω.",
+          "why": "Units show what quantity has been calculated and help catch formula mistakes."
+        }
       ],
       "example": {
         "question": "A resistor has 8 V across it and current 0.02 A. Calculate resistance.",
@@ -856,9 +1144,21 @@ window.YEAR9_NOTES = {
         "The motor effect is the force on a current-carrying wire in a magnetic field."
       ],
       "commonMistakes": [
-        "A bar magnet is permanent; an electromagnet depends on current.",
-        "A relay is not a motor; it is an electrically operated switch.",
-        "Changing current direction can change force direction in the motor effect."
+        {
+          "wrong": "A bar magnet and an electromagnet work in exactly the same way.",
+          "correct": "A bar magnet is permanent; an electromagnet depends on current flowing in a coil.",
+          "why": "An electromagnet can be switched on and off and its strength can be changed."
+        },
+        {
+          "wrong": "A relay is a motor.",
+          "correct": "A relay is an electrically operated switch.",
+          "why": "It uses an electromagnet to open or close contacts in another circuit."
+        },
+        {
+          "wrong": "Changing current direction has no effect on the motor effect.",
+          "correct": "Changing current direction can reverse the direction of the force.",
+          "why": "The force direction depends on both current direction and magnetic field direction."
+        }
       ],
       "example": {
         "question": "How can the force on a wire in a magnetic field be increased?",
@@ -871,12 +1171,14 @@ window.YEAR9_NOTES = {
       "practicePrompt": "Pick one linked revision card for Electromagnets, relays and motors and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
       "media": [
         {
-          "src": "assets/webp/9J-electromagnet-relay-motor.webp",
-          "alt": "Electromagnet, relay and motor hardware examples.",
-          "caption": "Electromagnets are used in relays and motors because current can switch magnetism on and off."
+          "src": "assets/webp/9J-electromagnets-relays-motor-effect-sequence.webp",
+          "alt": "Three-panel infographic linking electromagnets, relays and the motor effect.",
+          "caption": "An electromagnet creates a magnetic field from current. Relays use this to switch another circuit, and motors use the force on a current-carrying wire."
         }
       ]
     }
   ],
-  "mediaPolicy": "question cards use only required source-style media; conceptual images live in class notes."
+  "mediaPolicy": "question cards use only required source-style media; conceptual images live in class notes.",
+  "mediaPolicyV117": "Detailed generated images are used in Class Notes only, not as question-card prompts, unless the question explicitly requires visual interpretation.",
+  "mediaPolicyV118": "Five generated infographic panels are split from a single collage and used as Class Notes visuals only. They are not attached to question cards."
 };
