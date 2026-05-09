@@ -1,7 +1,7 @@
 window.YEAR9_CONTENT = {
-  "version": "1.0.0",
+  "version": "1.5.0",
   "title": "Year 9 Science End-of-Year Study",
-  "subtitle": "Quick quizzes, progression checks, vocabulary and boss-mode tests",
+  "subtitle": "Expanded Year 9 study content with SVG diagrams plus PNG pack 1 and PNG pack 2",
   "units": [
     {
       "id": "9A",
@@ -105,7 +105,14 @@ window.YEAR9_CONTENT = {
       "source": "9A quick quiz 9Aa Q4 - text reconstruction of chart question",
       "level": 2,
       "cue": "",
-      "tags": []
+      "tags": [],
+      "media": [
+        {
+          "src": "assets/diagrams/9A-continuous-variation.svg",
+          "alt": "Chart showing continuous variation with a bell-shaped normal distribution curve.",
+          "caption": "Continuous variation data can be shown as a spread of measurements across a range."
+        }
+      ]
     },
     {
       "id": "y9-005-9a-of-the-following-which-is-the-best-example-of-an-inherited-variation",
@@ -177,7 +184,14 @@ window.YEAR9_CONTENT = {
       "source": "9A quick quiz 9Ab Q4",
       "level": 2,
       "cue": "",
-      "tags": []
+      "tags": [],
+      "media": [
+        {
+          "src": "assets/diagrams/9A-continuous-variation.svg",
+          "alt": "Bell-shaped normal distribution over continuous variation data.",
+          "caption": "The overall bell shape is called a normal distribution."
+        }
+      ]
     },
     {
       "id": "y9-009-9a-each-chromosome-contains-one-molecule-of-a-certain-substance-what-is-t",
@@ -195,7 +209,14 @@ window.YEAR9_CONTENT = {
       "source": "9A quick quiz 9Ac Q1",
       "level": 1,
       "cue": "",
-      "tags": []
+      "tags": [],
+      "media": [
+        {
+          "src": "assets/diagrams/9A-dna-genes-chromosomes.svg",
+          "alt": "Hierarchy of chromosome, DNA and gene.",
+          "caption": "Each chromosome is made of DNA, and genes are short sections of that DNA."
+        }
+      ]
     },
     {
       "id": "y9-010-9a-the-total-number-of-chromosomes-in-a-human-liver-cell-is-46-so-the-num",
@@ -231,7 +252,14 @@ window.YEAR9_CONTENT = {
       "source": "9A quick quiz 9Ac Q3",
       "level": 1,
       "cue": "",
-      "tags": []
+      "tags": [],
+      "media": [
+        {
+          "src": "assets/diagrams/9A-dna-genes-chromosomes.svg",
+          "alt": "DNA and gene hierarchy diagram.",
+          "caption": "A gene is a short section of DNA on a chromosome."
+        }
+      ]
     },
     {
       "id": "y9-012-9a-the-structure-of-the-long-molecule-found-in-chromosomes-was-worked-out",
@@ -321,7 +349,14 @@ window.YEAR9_CONTENT = {
       "source": "9A quick quiz 9Ad Q4",
       "level": 2,
       "cue": "",
-      "tags": []
+      "tags": [],
+      "media": [
+        {
+          "src": "assets/png/9A-seed-bank-conservation.png",
+          "alt": "A seed bank storage room with seed packets, jars and cold storage.",
+          "caption": "Gene banks can store seeds and other biological material to help preserve biodiversity."
+        }
+      ]
     },
     {
       "id": "y9-017-9a-adult-birds-of-the-same-species-have-slightly-different-beak-lengths-w",
@@ -393,7 +428,14 @@ window.YEAR9_CONTENT = {
       "source": "9A quick quiz 9Ae Q4",
       "level": 1,
       "cue": "",
-      "tags": []
+      "tags": [],
+      "media": [
+        {
+          "src": "assets/png/9A-natural-selection-giraffes.png",
+          "alt": "Giraffes of different neck lengths reaching for leaves in a savanna.",
+          "caption": "This image supports natural selection: giraffes with longer necks are more likely to reach food and survive to reproduce."
+        }
+      ]
     },
     {
       "id": "y9-021-9b-where-does-photosynthesis-occur-in-a-plant",
@@ -411,7 +453,14 @@ window.YEAR9_CONTENT = {
       "source": "9B quick quiz 9Ba Q1 - text reconstruction of labelled diagram",
       "level": 1,
       "cue": "",
-      "tags": []
+      "tags": [],
+      "media": [
+        {
+          "src": "assets/diagrams/9B-photosynthesis-plant.svg",
+          "alt": "Plant diagram showing green leaves and stem as the places where photosynthesis happens.",
+          "caption": "Use the diagram to identify the green parts of the plant."
+        }
+      ]
     },
     {
       "id": "y9-022-9b-in-the-summary-of-aerobic-respiration-glucose-oxygen-carbon-dioxide-x-",
@@ -447,7 +496,14 @@ window.YEAR9_CONTENT = {
       "source": "9B quick quiz 9Ba Q3 - text reconstruction of graph question",
       "level": 2,
       "cue": "",
-      "tags": []
+      "tags": [],
+      "media": [
+        {
+          "src": "assets/diagrams/9B-photosynthesis-light-graph.svg",
+          "alt": "Graph of photosynthesis rate increasing with light intensity and then leveling off.",
+          "caption": "The graph rises, then levels off when another factor becomes limiting."
+        }
+      ]
     },
     {
       "id": "y9-024-9b-which-sentence-best-describes-what-chlorophyll-does",
@@ -537,7 +593,14 @@ window.YEAR9_CONTENT = {
       "source": "9B quick quiz 9Bb Q4 - text reconstruction of drawing question",
       "level": 1,
       "cue": "",
-      "tags": []
+      "tags": [],
+      "media": [
+        {
+          "src": "assets/diagrams/9B-root-hair-cell.svg",
+          "alt": "Root hair cell with a long hair-like projection.",
+          "caption": "The root hair cell is adapted for absorption because it has a long projection and a large surface area."
+        }
+      ]
     },
     {
       "id": "y9-029-9b-the-substance-used-to-test-for-starch-is",
@@ -699,7 +762,14 @@ window.YEAR9_CONTENT = {
       "source": "9B quick quiz 9Be Q1 - text reconstruction of food-web question",
       "level": 3,
       "cue": "",
-      "tags": []
+      "tags": [],
+      "media": [
+        {
+          "src": "assets/diagrams/9B-food-web.svg",
+          "alt": "Food web showing rose bush, insects and wrens.",
+          "caption": "If insect numbers drop, the wren population is likely to go down as well."
+        }
+      ]
     },
     {
       "id": "y9-038-9b-an-increase-in-which-organism-could-control-aphids",
@@ -771,7 +841,14 @@ window.YEAR9_CONTENT = {
       "source": "9E quick quiz 9Ea Q1",
       "level": 1,
       "cue": "",
-      "tags": []
+      "tags": [],
+      "media": [
+        {
+          "src": "assets/png/9E-material-textures.png",
+          "alt": "Materials comparison showing ceramic, polymer, composite and reinforced concrete.",
+          "caption": "Compare different material types and their properties."
+        }
+      ]
     },
     {
       "id": "y9-042-9e-pottery-and-china-are-suitable-for-making-tea-pots-because-they-are",
@@ -807,7 +884,14 @@ window.YEAR9_CONTENT = {
       "source": "9E quick quiz 9Ea Q3",
       "level": 2,
       "cue": "",
-      "tags": []
+      "tags": [],
+      "media": [
+        {
+          "src": "assets/png/9E-crystal-cooling-comparison.png",
+          "alt": "Comparison of slow cooling making large crystals and fast cooling making small crystals.",
+          "caption": "Slow cooling tends to form fewer larger crystals, while fast cooling tends to form many smaller crystals."
+        }
+      ]
     },
     {
       "id": "y9-044-9e-a-substance-with-a-high-melting-point-but-brittle-structure-is-best-re",
@@ -820,7 +904,14 @@ window.YEAR9_CONTENT = {
       "source": "9E quick quiz 9Ea Q4 - diagram reconstructed as open response",
       "level": 3,
       "cue": "",
-      "tags": []
+      "tags": [],
+      "media": [
+        {
+          "src": "assets/diagrams/9E-brittle-lattice.svg",
+          "alt": "Regular giant lattice with strong bonds and a crack line.",
+          "caption": "A regular giant lattice helps show how strong bonds can coexist with brittleness."
+        }
+      ]
     },
     {
       "id": "y9-045-9e-which-of-the-following-is-a-synthetic-polymer",
@@ -838,7 +929,14 @@ window.YEAR9_CONTENT = {
       "source": "9E quick quiz 9Eb Q1",
       "level": 1,
       "cue": "",
-      "tags": []
+      "tags": [],
+      "media": [
+        {
+          "src": "assets/png/9E-material-textures.png",
+          "alt": "Material examples including polymer bottle.",
+          "caption": "Polymers are lightweight and durable materials used in everyday products."
+        }
+      ]
     },
     {
       "id": "y9-046-9e-a-polymer-is-formed-when",
@@ -856,7 +954,14 @@ window.YEAR9_CONTENT = {
       "source": "9E quick quiz 9Eb Q2",
       "level": 1,
       "cue": "",
-      "tags": []
+      "tags": [],
+      "media": [
+        {
+          "src": "assets/diagrams/9E-polymers-composites.svg",
+          "alt": "Polymer chain from repeating units.",
+          "caption": "Polymers form when many small molecules join into long chains."
+        }
+      ]
     },
     {
       "id": "y9-047-9e-some-polymerisation-reactions-are-endothermic-what-does-this-mean",
@@ -910,7 +1015,14 @@ window.YEAR9_CONTENT = {
       "source": "9E quick quiz 9Ec Q1",
       "level": 1,
       "cue": "",
-      "tags": []
+      "tags": [],
+      "media": [
+        {
+          "src": "assets/png/9E-material-textures.png",
+          "alt": "Materials comparison including a composite example.",
+          "caption": "A composite is made by combining materials to get improved properties."
+        }
+      ]
     },
     {
       "id": "y9-050-9e-why-is-concrete-described-as-a-composite-material",
@@ -928,7 +1040,14 @@ window.YEAR9_CONTENT = {
       "source": "9E quick quiz 9Ec Q2",
       "level": 1,
       "cue": "",
-      "tags": []
+      "tags": [],
+      "media": [
+        {
+          "src": "assets/png/9E-material-textures.png",
+          "alt": "Reinforced concrete as a composite.",
+          "caption": "Concrete can be seen as a composite, especially when reinforced with steel."
+        }
+      ]
     },
     {
       "id": "y9-051-9e-glass-reinforced-plastic-is-used-for-building-boats-because-it-is",
@@ -1036,7 +1155,14 @@ window.YEAR9_CONTENT = {
       "source": "9E quick quiz 9Ed Q4",
       "level": 2,
       "cue": "",
-      "tags": []
+      "tags": [],
+      "media": [
+        {
+          "src": "assets/png/9E-sustainable-living-solutions.png",
+          "alt": "Solar panels, wind turbine and home insulation shown as ways to reduce energy use and emissions.",
+          "caption": "Using renewable energy and improving insulation can help reduce greenhouse gas emissions."
+        }
+      ]
     },
     {
       "id": "y9-057-9e-how-are-landfill-sites-used-to-deal-with-waste-materials",
@@ -1342,7 +1468,14 @@ window.YEAR9_CONTENT = {
       "source": "9F quick quiz 9Fd Q1",
       "level": 2,
       "cue": "",
-      "tags": []
+      "tags": [],
+      "media": [
+        {
+          "src": "assets/diagrams/9F-displacement-reaction.svg",
+          "alt": "Example displacement reaction.",
+          "caption": "In a displacement reaction, a more reactive metal replaces a less reactive one."
+        }
+      ]
     },
     {
       "id": "y9-074-9f-what-is-seen-when-magnesium-reacts-fully-with-copper-sulfate-solution",
@@ -1468,7 +1601,14 @@ window.YEAR9_CONTENT = {
       "source": "9F quick quiz 9Fe Q4",
       "level": 2,
       "cue": "",
-      "tags": []
+      "tags": [],
+      "media": [
+        {
+          "src": "assets/png/9F-extraction-apparatus.png",
+          "alt": "Comparison of blast furnace and electrolysis cell extraction methods.",
+          "caption": "Aluminium is extracted using electrolysis, unlike iron in a blast furnace."
+        }
+      ]
     },
     {
       "id": "y9-081-9i-for-a-falling-object-which-labels-best-match-the-forces-weight-downwar",
@@ -1486,7 +1626,14 @@ window.YEAR9_CONTENT = {
       "source": "9I quick quiz 9Ia Q1 - diagram reconstructed",
       "level": 1,
       "cue": "",
-      "tags": []
+      "tags": [],
+      "media": [
+        {
+          "src": "assets/diagrams/9I-falling-forces.svg",
+          "alt": "Falling object with X downwards and Y upwards force arrows.",
+          "caption": "X points downwards (weight) and Y points upwards (air resistance)."
+        }
+      ]
     },
     {
       "id": "y9-082-9i-balanced-forces",
@@ -1612,7 +1759,14 @@ window.YEAR9_CONTENT = {
       "source": "9I quick quiz 9Ib Q4 - diagram reconstructed",
       "level": 3,
       "cue": "",
-      "tags": []
+      "tags": [],
+      "media": [
+        {
+          "src": "assets/diagrams/9I-sankey-efficiency.svg",
+          "alt": "Two Sankey diagrams comparing machine efficiency.",
+          "caption": "Machine Y wastes a smaller share of the input energy."
+        }
+      ]
     },
     {
       "id": "y9-089-9i-the-speed-of-a-car-is-a-measure-of-how",
@@ -1684,7 +1838,14 @@ window.YEAR9_CONTENT = {
       "source": "9I quick quiz 9Ic Q4 - graph reconstructed",
       "level": 2,
       "cue": "",
-      "tags": []
+      "tags": [],
+      "media": [
+        {
+          "src": "assets/diagrams/9I-distance-time-graph.svg",
+          "alt": "Distance-time graph with section B horizontal.",
+          "caption": "A flat section on a distance-time graph means the object is stopped."
+        }
+      ]
     },
     {
       "id": "y9-093-9i-for-a-lever-the-pivot-is-also-called-the",
@@ -1697,7 +1858,14 @@ window.YEAR9_CONTENT = {
       "source": "9I quick quiz 9Id Q1 - diagram reconstructed as open response",
       "level": 1,
       "cue": "",
-      "tags": []
+      "tags": [],
+      "media": [
+        {
+          "src": "assets/diagrams/9I-fulcrum-lever.svg",
+          "alt": "Lever resting on a triangular fulcrum.",
+          "caption": "The pivot point of a lever is called the fulcrum."
+        }
+      ]
     },
     {
       "id": "y9-094-9i-which-lever-makes-it-easiest-to-move-a-heavy-rock",
@@ -1710,7 +1878,14 @@ window.YEAR9_CONTENT = {
       "source": "9I quick quiz 9Id Q2 - diagram reconstructed as open response",
       "level": 3,
       "cue": "",
-      "tags": []
+      "tags": [],
+      "media": [
+        {
+          "src": "assets/diagrams/9I-lever-advantage.svg",
+          "alt": "Three lever arrangements labelled A, B and C, with C being the best.",
+          "caption": "The easiest lever has the longest effort arm and the shortest load arm."
+        }
+      ]
     },
     {
       "id": "y9-095-9i-you-open-a-paint-can-with-a-screwdriver-you-apply-10-n-at-0-2-m-from-t",
@@ -1728,7 +1903,14 @@ window.YEAR9_CONTENT = {
       "source": "9I quick quiz 9Id Q3",
       "level": 2,
       "cue": "",
-      "tags": []
+      "tags": [],
+      "media": [
+        {
+          "src": "assets/diagrams/9I-moments-balance.svg",
+          "alt": "Moment equals force times distance.",
+          "caption": "Moment = force × distance from the pivot."
+        }
+      ]
     },
     {
       "id": "y9-096-9i-a-seesaw-is-balanced-boy-300-n-m-girl-450-n-2-m-what-is-the-distance-f",
@@ -1836,7 +2018,14 @@ window.YEAR9_CONTENT = {
       "source": "9J quick quiz 9Ja Q1",
       "level": 1,
       "cue": "",
-      "tags": []
+      "tags": [],
+      "media": [
+        {
+          "src": "assets/png/9J-magnetic-field-pattern.png",
+          "alt": "Bar magnet with iron filings showing magnetic field lines.",
+          "caption": "Magnetic field lines go from north to south outside the magnet."
+        }
+      ]
     },
     {
       "id": "y9-102-9j-an-object-s-weight",
@@ -2016,7 +2205,14 @@ window.YEAR9_CONTENT = {
       "source": "9J quick quiz 9Jc Q3",
       "level": 2,
       "cue": "",
-      "tags": []
+      "tags": [],
+      "media": [
+        {
+          "src": "assets/png/9J-series-parallel-circuits-photo.png",
+          "alt": "Side-by-side photo comparison of a series circuit and a parallel circuit.",
+          "caption": "In a series circuit there is one loop. In a parallel circuit there is more than one branch."
+        }
+      ]
     },
     {
       "id": "y9-112-9j-which-statement-is-true-for-a-parallel-circuit",
@@ -2034,7 +2230,14 @@ window.YEAR9_CONTENT = {
       "source": "9J quick quiz 9Jc Q4",
       "level": 2,
       "cue": "",
-      "tags": []
+      "tags": [],
+      "media": [
+        {
+          "src": "assets/png/9J-series-parallel-circuits-photo.png",
+          "alt": "Series and parallel circuit comparison.",
+          "caption": "The parallel circuit on the right has separate branches for each bulb."
+        }
+      ]
     },
     {
       "id": "y9-113-9j-which-statement-is-correct",
@@ -2052,7 +2255,14 @@ window.YEAR9_CONTENT = {
       "source": "9J quick quiz 9Jd Q1",
       "level": 1,
       "cue": "",
-      "tags": []
+      "tags": [],
+      "media": [
+        {
+          "src": "assets/png/9E-conductors-insulators-materials.png",
+          "alt": "Conducting and insulating materials.",
+          "caption": "The image helps compare conductors such as copper with insulating materials such as plastic and wood."
+        }
+      ]
     },
     {
       "id": "y9-114-9j-which-copper-wire-has-the-highest-resistance",
@@ -2124,7 +2334,14 @@ window.YEAR9_CONTENT = {
       "source": "9J quick quiz 9Je Q1",
       "level": 1,
       "cue": "",
-      "tags": []
+      "tags": [],
+      "media": [
+        {
+          "src": "assets/diagrams/9J-electromagnet.svg",
+          "alt": "Electromagnet with coil and iron core.",
+          "caption": "More turns, more current and an iron core make the electromagnet stronger."
+        }
+      ]
     },
     {
       "id": "y9-118-9j-why-are-relays-useful",
@@ -2142,7 +2359,14 @@ window.YEAR9_CONTENT = {
       "source": "9J quick quiz 9Je Q2",
       "level": 2,
       "cue": "",
-      "tags": []
+      "tags": [],
+      "media": [
+        {
+          "src": "assets/png/9J-electromagnet-relay-motor.png",
+          "alt": "Hardware examples of an electromagnet, relay and motor.",
+          "caption": "A relay allows a small current to control a larger circuit."
+        }
+      ]
     },
     {
       "id": "y9-119-9j-a-wire-carrying-a-current-in-a-magnetic-field-experiences-a-force-how-",
@@ -2160,7 +2384,14 @@ window.YEAR9_CONTENT = {
       "source": "9J quick quiz 9Je Q3",
       "level": 2,
       "cue": "",
-      "tags": []
+      "tags": [],
+      "media": [
+        {
+          "src": "assets/diagrams/9J-motor-effect.svg",
+          "alt": "Wire in magnetic field showing motor effect.",
+          "caption": "A bigger current or stronger magnetic field produces a bigger force."
+        }
+      ]
     },
     {
       "id": "y9-120-9j-which-list-shows-the-parts-of-an-electric-motor",
@@ -2178,7 +2409,14 @@ window.YEAR9_CONTENT = {
       "source": "9J quick quiz 9Je Q4",
       "level": 2,
       "cue": "",
-      "tags": []
+      "tags": [],
+      "media": [
+        {
+          "src": "assets/png/9J-electromagnet-relay-motor.png",
+          "alt": "Electromagnet, relay and DC motor hardware image.",
+          "caption": "The image shows typical hardware forms of an electromagnet, relay and motor."
+        }
+      ]
     },
     {
       "id": "y9-121-9a-define-species",
@@ -2373,6 +2611,13 @@ window.YEAR9_CONTENT = {
       "cue": "Say the definition in your own words first.",
       "tags": [
         "vocabulary"
+      ],
+      "media": [
+        {
+          "src": "assets/diagrams/9A-dna-genes-chromosomes.svg",
+          "alt": "Gene highlighted on a DNA molecule.",
+          "caption": "Use this to explain what a gene is and where it is found."
+        }
       ]
     },
     {
@@ -2388,6 +2633,13 @@ window.YEAR9_CONTENT = {
       "cue": "Say the definition in your own words first.",
       "tags": [
         "vocabulary"
+      ],
+      "media": [
+        {
+          "src": "assets/diagrams/9A-dna-genes-chromosomes.svg",
+          "alt": "Chromosome linked to DNA and genes.",
+          "caption": "A chromosome is a long coiled structure made from DNA."
+        }
       ]
     },
     {
@@ -2403,6 +2655,13 @@ window.YEAR9_CONTENT = {
       "cue": "Say the definition in your own words first.",
       "tags": [
         "vocabulary"
+      ],
+      "media": [
+        {
+          "src": "assets/diagrams/9A-dna-genes-chromosomes.svg",
+          "alt": "DNA double helix with highlighted gene.",
+          "caption": "DNA carries genetic information."
+        }
       ]
     },
     {
@@ -2478,6 +2737,13 @@ window.YEAR9_CONTENT = {
       "cue": "Say the definition in your own words first.",
       "tags": [
         "vocabulary"
+      ],
+      "media": [
+        {
+          "src": "assets/png/9A-natural-selection-giraffes.png",
+          "alt": "Giraffes of different neck lengths reaching for leaves.",
+          "caption": "Natural selection means individuals with helpful inherited characteristics are more likely to survive and reproduce."
+        }
       ]
     },
     {
@@ -2598,6 +2864,13 @@ window.YEAR9_CONTENT = {
       "cue": "Say the definition in your own words first.",
       "tags": [
         "vocabulary"
+      ],
+      "media": [
+        {
+          "src": "assets/png/9B-root-hair-micrograph.png",
+          "alt": "Microscope-style root hair cell image with labels for root hair, cell wall and minerals.",
+          "caption": "Root hair cells have a large surface area to absorb water and minerals from the soil."
+        }
       ]
     },
     {
@@ -2613,6 +2886,13 @@ window.YEAR9_CONTENT = {
       "cue": "Say the definition in your own words first.",
       "tags": [
         "vocabulary"
+      ],
+      "media": [
+        {
+          "src": "assets/png/9B-stomata-micrograph.png",
+          "alt": "Microscope-style close-up of stomata on a leaf surface.",
+          "caption": "Stomata are tiny pores in leaves that allow gas exchange."
+        }
       ]
     },
     {
@@ -2628,6 +2908,13 @@ window.YEAR9_CONTENT = {
       "cue": "Say the definition in your own words first.",
       "tags": [
         "vocabulary"
+      ],
+      "media": [
+        {
+          "src": "assets/png/9B-stomata-micrograph.png",
+          "alt": "Close-up view of stomata and guard cells.",
+          "caption": "Guard cells are the pair of cells around each stoma that control its opening and closing."
+        }
       ]
     },
     {
@@ -2778,6 +3065,13 @@ window.YEAR9_CONTENT = {
       "cue": "Say the definition in your own words first.",
       "tags": [
         "vocabulary"
+      ],
+      "media": [
+        {
+          "src": "assets/png/9E-material-textures.png",
+          "alt": "Ceramic example shown in a materials comparison chart.",
+          "caption": "Ceramics are hard, brittle and heat resistant."
+        }
       ]
     },
     {
@@ -2898,6 +3192,13 @@ window.YEAR9_CONTENT = {
       "cue": "Say the definition in your own words first.",
       "tags": [
         "vocabulary"
+      ],
+      "media": [
+        {
+          "src": "assets/png/9E-material-textures.png",
+          "alt": "Composite example in materials comparison chart.",
+          "caption": "Composites combine materials to give useful combined properties."
+        }
       ]
     },
     {
@@ -2913,6 +3214,13 @@ window.YEAR9_CONTENT = {
       "cue": "Say the definition in your own words first.",
       "tags": [
         "vocabulary"
+      ],
+      "media": [
+        {
+          "src": "assets/png/9E-material-textures.png",
+          "alt": "Reinforced concrete example in materials chart.",
+          "caption": "Concrete is widely used in buildings and structures."
+        }
       ]
     },
     {
@@ -2928,6 +3236,13 @@ window.YEAR9_CONTENT = {
       "cue": "Say the definition in your own words first.",
       "tags": [
         "vocabulary"
+      ],
+      "media": [
+        {
+          "src": "assets/diagrams/9E-polymers-composites.svg",
+          "alt": "Composite material diagram with reinforcement.",
+          "caption": "GRP is a composite with plastic reinforced by glass fibres."
+        }
       ]
     },
     {
@@ -3243,6 +3558,13 @@ window.YEAR9_CONTENT = {
       "cue": "Say the definition in your own words first.",
       "tags": [
         "vocabulary"
+      ],
+      "media": [
+        {
+          "src": "assets/diagrams/9F-displacement-reaction.svg",
+          "alt": "Example displacement reaction.",
+          "caption": "This example helps show what “displacement” means."
+        }
       ]
     },
     {
@@ -3273,6 +3595,13 @@ window.YEAR9_CONTENT = {
       "cue": "Say the definition in your own words first.",
       "tags": [
         "vocabulary"
+      ],
+      "media": [
+        {
+          "src": "assets/png/9F-heating-metal-oxide.png",
+          "alt": "School lab setup heating a solid in a test tube with a Bunsen burner.",
+          "caption": "In metal extraction, reduction means removing oxygen from a metal oxide."
+        }
       ]
     },
     {
@@ -3303,6 +3632,13 @@ window.YEAR9_CONTENT = {
       "cue": "Say the definition in your own words first.",
       "tags": [
         "vocabulary"
+      ],
+      "media": [
+        {
+          "src": "assets/png/9F-extraction-apparatus.png",
+          "alt": "Industrial electrolysis cell and blast furnace comparison.",
+          "caption": "Electrolysis is used to extract very reactive metals such as aluminium."
+        }
       ]
     },
     {
@@ -3363,6 +3699,13 @@ window.YEAR9_CONTENT = {
       "cue": "Say the definition in your own words first.",
       "tags": [
         "vocabulary"
+      ],
+      "media": [
+        {
+          "src": "assets/png/9I-forces-parachutist.png",
+          "alt": "Terminal velocity explained using a parachutist.",
+          "caption": "Terminal velocity happens when air resistance equals weight, so the object falls at constant speed."
+        }
       ]
     },
     {
@@ -3498,6 +3841,13 @@ window.YEAR9_CONTENT = {
       "cue": "Say the definition in your own words first.",
       "tags": [
         "vocabulary"
+      ],
+      "media": [
+        {
+          "src": "assets/diagrams/9I-moments-balance.svg",
+          "alt": "Balanced moments diagram.",
+          "caption": "A moment is the turning effect of a force around a pivot."
+        }
       ]
     },
     {
@@ -3558,6 +3908,13 @@ window.YEAR9_CONTENT = {
       "cue": "Say the definition in your own words first.",
       "tags": [
         "vocabulary"
+      ],
+      "media": [
+        {
+          "src": "assets/png/9J-magnetic-field-pattern.png",
+          "alt": "Iron filings around a bar magnet showing the magnetic field pattern.",
+          "caption": "A magnetic field is the region where magnetic materials and magnets feel a force."
+        }
       ]
     },
     {
@@ -3663,6 +4020,13 @@ window.YEAR9_CONTENT = {
       "cue": "Say the definition in your own words first.",
       "tags": [
         "vocabulary"
+      ],
+      "media": [
+        {
+          "src": "assets/png/9J-static-electricity-demo.png",
+          "alt": "Static electricity demo with balloon on hair and charged rod attracting paper.",
+          "caption": "Static electricity is caused by the build-up of charge on an insulator."
+        }
       ]
     },
     {
@@ -3693,6 +4057,13 @@ window.YEAR9_CONTENT = {
       "cue": "Say the definition in your own words first.",
       "tags": [
         "vocabulary"
+      ],
+      "media": [
+        {
+          "src": "assets/png/9J-series-parallel-circuits-photo.png",
+          "alt": "Series circuit compared with parallel circuit.",
+          "caption": "A series circuit has all components in a single loop."
+        }
       ]
     },
     {
@@ -3708,6 +4079,13 @@ window.YEAR9_CONTENT = {
       "cue": "Say the definition in your own words first.",
       "tags": [
         "vocabulary"
+      ],
+      "media": [
+        {
+          "src": "assets/png/9J-series-parallel-circuits-photo.png",
+          "alt": "Parallel circuit compared with series circuit.",
+          "caption": "A parallel circuit has components on separate branches."
+        }
       ]
     },
     {
@@ -3768,6 +4146,13 @@ window.YEAR9_CONTENT = {
       "cue": "Say the definition in your own words first.",
       "tags": [
         "vocabulary"
+      ],
+      "media": [
+        {
+          "src": "assets/png/9J-electromagnet-relay-motor.png",
+          "alt": "Comparison image of an electromagnet, relay and motor.",
+          "caption": "An electromagnet uses a current-carrying coil, often wrapped around an iron core."
+        }
       ]
     },
     {
@@ -3783,6 +4168,13 @@ window.YEAR9_CONTENT = {
       "cue": "Say the definition in your own words first.",
       "tags": [
         "vocabulary"
+      ],
+      "media": [
+        {
+          "src": "assets/png/9J-electromagnet-relay-motor.png",
+          "alt": "Electromagnet, relay and motor comparison.",
+          "caption": "A relay is an electrically operated switch using an electromagnet."
+        }
       ]
     },
     {
@@ -3798,6 +4190,13 @@ window.YEAR9_CONTENT = {
       "cue": "Say the definition in your own words first.",
       "tags": [
         "vocabulary"
+      ],
+      "media": [
+        {
+          "src": "assets/diagrams/9J-motor-effect.svg",
+          "alt": "Motor effect diagram.",
+          "caption": "The motor effect is the force on a current-carrying wire in a magnetic field."
+        }
       ]
     },
     {
@@ -3918,6 +4317,13 @@ window.YEAR9_CONTENT = {
       "cue": "Try to answer in full sentences before revealing the mark-scheme version.",
       "tags": [
         "written"
+      ],
+      "media": [
+        {
+          "src": "assets/diagrams/9A-dna-genes-chromosomes.svg",
+          "alt": "DNA, genes and chromosomes relationship.",
+          "caption": "Describe the link from chromosome to DNA to gene."
+        }
       ]
     },
     {
@@ -3933,6 +4339,13 @@ window.YEAR9_CONTENT = {
       "cue": "Try to answer in full sentences before revealing the mark-scheme version.",
       "tags": [
         "written"
+      ],
+      "media": [
+        {
+          "src": "assets/png/9A-seed-bank-conservation.png",
+          "alt": "Seed bank and conservation storage facility.",
+          "caption": "One way to preserve biodiversity is to store seeds or genetic material in a gene bank."
+        }
       ]
     },
     {
@@ -3948,6 +4361,13 @@ window.YEAR9_CONTENT = {
       "cue": "Try to answer in full sentences before revealing the mark-scheme version.",
       "tags": [
         "written"
+      ],
+      "media": [
+        {
+          "src": "assets/png/9A-natural-selection-giraffes.png",
+          "alt": "Natural selection illustrated by giraffes reaching for leaves.",
+          "caption": "Use the giraffe example to describe variation, competition, survival and reproduction."
+        }
       ]
     },
     {
@@ -3963,6 +4383,13 @@ window.YEAR9_CONTENT = {
       "cue": "Try to answer in full sentences before revealing the mark-scheme version.",
       "tags": [
         "written"
+      ],
+      "media": [
+        {
+          "src": "assets/png/9B-stomata-micrograph.png",
+          "alt": "Leaf stomata micrograph.",
+          "caption": "Carbon dioxide enters a leaf through stomata."
+        }
       ]
     },
     {
@@ -4023,6 +4450,13 @@ window.YEAR9_CONTENT = {
       "cue": "Try to answer in full sentences before revealing the mark-scheme version.",
       "tags": [
         "written"
+      ],
+      "media": [
+        {
+          "src": "assets/diagrams/9B-leaf-xylem-phloem.svg",
+          "alt": "Leaf and xylem-phloem transport diagram.",
+          "caption": "Water enters root hair cells, moves into xylem, and travels up to the leaves."
+        }
       ]
     },
     {
@@ -4038,6 +4472,13 @@ window.YEAR9_CONTENT = {
       "cue": "Try to answer in full sentences before revealing the mark-scheme version.",
       "tags": [
         "written"
+      ],
+      "media": [
+        {
+          "src": "assets/diagrams/9B-leaf-xylem-phloem.svg",
+          "alt": "Transport tissues diagram with xylem highlighted.",
+          "caption": "Xylem forms hollow tubes that carry water and minerals upward."
+        }
       ]
     },
     {
@@ -4053,6 +4494,13 @@ window.YEAR9_CONTENT = {
       "cue": "Try to answer in full sentences before revealing the mark-scheme version.",
       "tags": [
         "written"
+      ],
+      "media": [
+        {
+          "src": "assets/png/9B-stomata-micrograph.png",
+          "alt": "Leaf surface showing stomata.",
+          "caption": "Guard cells control the stomata and therefore gas exchange."
+        }
       ]
     },
     {
@@ -4068,6 +4516,13 @@ window.YEAR9_CONTENT = {
       "cue": "Try to answer in full sentences before revealing the mark-scheme version.",
       "tags": [
         "written"
+      ],
+      "media": [
+        {
+          "src": "assets/png/9B-stomata-micrograph.png",
+          "alt": "Microscopic stomata image.",
+          "caption": "Plants close stomata at night to reduce water loss when photosynthesis is not taking place."
+        }
       ]
     },
     {
@@ -4113,6 +4568,13 @@ window.YEAR9_CONTENT = {
       "cue": "Try to answer in full sentences before revealing the mark-scheme version.",
       "tags": [
         "written"
+      ],
+      "media": [
+        {
+          "src": "assets/diagrams/9E-polymers-composites.svg",
+          "alt": "Support diagram for polymers and composites.",
+          "caption": "Use the structure and property ideas here as part of the poster."
+        }
       ]
     },
     {
@@ -4173,6 +4635,13 @@ window.YEAR9_CONTENT = {
       "cue": "Try to answer in full sentences before revealing the mark-scheme version.",
       "tags": [
         "written"
+      ],
+      "media": [
+        {
+          "src": "assets/png/9F-blast-furnace-process.png",
+          "alt": "Blast furnace cutaway showing iron ore, coke, limestone and molten iron.",
+          "caption": "A blast furnace uses iron ore, coke and limestone to extract iron."
+        }
       ]
     },
     {
@@ -4188,6 +4657,13 @@ window.YEAR9_CONTENT = {
       "cue": "Try to answer in full sentences before revealing the mark-scheme version.",
       "tags": [
         "written"
+      ],
+      "media": [
+        {
+          "src": "assets/png/9F-heating-metal-oxide.png",
+          "alt": "Heating a metal oxide in a test tube.",
+          "caption": "A metal oxide is reduced when oxygen is removed from it during extraction."
+        }
       ]
     },
     {
@@ -4203,6 +4679,13 @@ window.YEAR9_CONTENT = {
       "cue": "Try to answer in full sentences before revealing the mark-scheme version.",
       "tags": [
         "written"
+      ],
+      "media": [
+        {
+          "src": "assets/png/9F-heating-metal-oxide.png",
+          "alt": "Heating a solid in a test tube as an extraction demonstration.",
+          "caption": "Carbon can reduce some metal oxides, but very reactive metals like aluminium need electrolysis instead."
+        }
       ]
     },
     {
@@ -4233,6 +4716,13 @@ window.YEAR9_CONTENT = {
       "cue": "Try to answer in full sentences before revealing the mark-scheme version.",
       "tags": [
         "written"
+      ],
+      "media": [
+        {
+          "src": "assets/diagrams/9I-moments-balance.svg",
+          "alt": "Lever and moment support diagram.",
+          "caption": "A longer lever arm gives a larger moment for the same force."
+        }
       ]
     },
     {
@@ -4308,6 +4798,13 @@ window.YEAR9_CONTENT = {
       "cue": "Try to answer in full sentences before revealing the mark-scheme version.",
       "tags": [
         "written"
+      ],
+      "media": [
+        {
+          "src": "assets/png/9J-magnetic-field-pattern.png",
+          "alt": "Magnetic field pattern around a bar magnet.",
+          "caption": "The field around an electromagnet is similar in shape to the field around a bar magnet."
+        }
       ]
     },
     {
@@ -4323,6 +4820,13 @@ window.YEAR9_CONTENT = {
       "cue": "Try to answer in full sentences before revealing the mark-scheme version.",
       "tags": [
         "written"
+      ],
+      "media": [
+        {
+          "src": "assets/diagrams/9J-electromagnet.svg",
+          "alt": "Electromagnet strength factors.",
+          "caption": "Use the checklist in the diagram to answer the question."
+        }
       ]
     },
     {
@@ -4338,6 +4842,13 @@ window.YEAR9_CONTENT = {
       "cue": "Try to answer in full sentences before revealing the mark-scheme version.",
       "tags": [
         "written"
+      ],
+      "media": [
+        {
+          "src": "assets/png/9J-electromagnet-relay-motor.png",
+          "alt": "Relay hardware comparison image.",
+          "caption": "A relay contains an electromagnet, moving armature and switch contacts."
+        }
       ]
     },
     {
@@ -4368,6 +4879,13 @@ window.YEAR9_CONTENT = {
       "cue": "Try to answer in full sentences before revealing the mark-scheme version.",
       "tags": [
         "written"
+      ],
+      "media": [
+        {
+          "src": "assets/png/9E-conductors-insulators-materials.png",
+          "alt": "Conductors and insulators materials set.",
+          "caption": "Plastic has high resistance, so it acts as an insulator and helps keep users safe."
+        }
       ]
     },
     {
@@ -4488,12 +5006,2495 @@ window.YEAR9_CONTENT = {
       "cue": "Write the formula, substitute numbers, then add units.",
       "tags": [
         "calculation"
+      ],
+      "media": [
+        {
+          "src": "assets/diagrams/9I-moments-balance.svg",
+          "alt": "Moment calculation support diagram.",
+          "caption": "Multiply force by perpendicular distance from the pivot."
+        }
+      ]
+    },
+    {
+      "id": "y9x-001-9a-state-what-variation-is",
+      "unit": "9A",
+      "type": "Assess check",
+      "question": "State what variation is.",
+      "answer": "Variation means differences in characteristics between organisms, such as height, mass, colour, shape or behaviour.",
+      "choices": [],
+      "explanation": "Variation means differences in characteristics between organisms, such as height, mass, colour, shape or behaviour.",
+      "source": "9A assess-yourself success criterion 01",
+      "level": 1,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "assess",
+        "written"
+      ]
+    },
+    {
+      "id": "y9x-002-9a-outline-why-dinosaurs-became-extinct",
+      "unit": "9A",
+      "type": "Assess check",
+      "question": "Outline why dinosaurs became extinct.",
+      "answer": "Dinosaurs became extinct after major environmental change, probably linked to an asteroid impact and climate change, which disrupted food chains and habitats.",
+      "choices": [],
+      "explanation": "Dinosaurs became extinct after major environmental change, probably linked to an asteroid impact and climate change, which disrupted food chains and habitats.",
+      "source": "9A assess-yourself success criterion 02",
+      "level": 2,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "assess",
+        "written"
+      ]
+    },
+    {
+      "id": "y9x-003-9a-use-evidence-to-explain-how-scientists-can-infer-something-about-triceratops-suc",
+      "unit": "9A",
+      "type": "Assess check",
+      "question": "Use evidence to explain how scientists can infer something about Triceratops, such as whether it was prey.",
+      "answer": "Scientists use fossil evidence such as bones, bite marks, fossil position, skull shape and defensive structures to infer how Triceratops lived and interacted with predators.",
+      "choices": [],
+      "explanation": "Scientists use fossil evidence such as bones, bite marks, fossil position, skull shape and defensive structures to infer how Triceratops lived and interacted with predators.",
+      "source": "9A assess-yourself success criterion 03",
+      "level": 3,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "assess",
+        "written"
+      ],
+      "media": [
+        {
+          "src": "assets/png/9A-triceratops-evidence.png",
+          "alt": "Triceratops diagram showing fossil evidence and key adaptations.",
+          "caption": "Use the fossil evidence and adaptations to explain how scientists infer what Triceratops was like."
+        }
+      ]
+    },
+    {
+      "id": "y9x-004-9a-identify-examples-of-environmental-variation",
+      "unit": "9A",
+      "type": "Assess check",
+      "question": "Identify examples of environmental variation.",
+      "answer": "Examples include suntan, scars, language spoken, fitness after training, plant height affected by light, and leaf size affected by water supply.",
+      "choices": [],
+      "explanation": "Examples include suntan, scars, language spoken, fitness after training, plant height affected by light, and leaf size affected by water supply.",
+      "source": "9A assess-yourself success criterion 04",
+      "level": 1,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "assess",
+        "written"
+      ]
+    },
+    {
+      "id": "y9x-005-9a-identify-examples-of-inherited-variation",
+      "unit": "9A",
+      "type": "Assess check",
+      "question": "Identify examples of inherited variation.",
+      "answer": "Examples include blood group, natural eye colour, natural hair colour, earlobe type and inherited body features controlled by genes.",
+      "choices": [],
+      "explanation": "Examples include blood group, natural eye colour, natural hair colour, earlobe type and inherited body features controlled by genes.",
+      "source": "9A assess-yourself success criterion 05",
+      "level": 1,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "assess",
+        "written"
+      ]
+    },
+    {
+      "id": "y9x-006-9a-explain-how-changes-in-an-ecosystem-can-cause-extinction",
+      "unit": "9A",
+      "type": "Assess check",
+      "question": "Explain how changes in an ecosystem can cause extinction.",
+      "answer": "If food, habitat, climate, predators, competitors or disease pressures change too much, a species may fail to survive and reproduce, causing extinction.",
+      "choices": [],
+      "explanation": "If food, habitat, climate, predators, competitors or disease pressures change too much, a species may fail to survive and reproduce, causing extinction.",
+      "source": "9A assess-yourself success criterion 06",
+      "level": 3,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "assess",
+        "written"
+      ]
+    },
+    {
+      "id": "y9x-007-9a-identify-adaptations-of-triceratops-that-could-be-labelled-on-a-model",
+      "unit": "9A",
+      "type": "Assess check",
+      "question": "Identify adaptations of Triceratops that could be labelled on a model.",
+      "answer": "Likely adaptations include horns for defence, a frill for protection or display, a strong beak for tough plants, grinding teeth, and powerful legs.",
+      "choices": [],
+      "explanation": "Likely adaptations include horns for defence, a frill for protection or display, a strong beak for tough plants, grinding teeth, and powerful legs.",
+      "source": "9A assess-yourself success criterion 07",
+      "level": 2,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "assess",
+        "written"
+      ]
+    },
+    {
+      "id": "y9x-008-9a-explain-how-environmental-variation-is-caused",
+      "unit": "9A",
+      "type": "Assess check",
+      "question": "Explain how environmental variation is caused.",
+      "answer": "Environmental variation is caused by surroundings and experiences, such as diet, climate, light, water, exercise, disease or injury.",
+      "choices": [],
+      "explanation": "Environmental variation is caused by surroundings and experiences, such as diet, climate, light, water, exercise, disease or injury.",
+      "source": "9A assess-yourself success criterion 08",
+      "level": 2,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "assess",
+        "written"
+      ]
+    },
+    {
+      "id": "y9x-009-9a-outline-how-some-variation-is-inherited-from-parents",
+      "unit": "9A",
+      "type": "Assess check",
+      "question": "Outline how some variation is inherited from parents.",
+      "answer": "Inherited variation is caused by genetic information passed from parents to offspring in gametes during reproduction.",
+      "choices": [],
+      "explanation": "Inherited variation is caused by genetic information passed from parents to offspring in gametes during reproduction.",
+      "source": "9A assess-yourself success criterion 09",
+      "level": 2,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "assess",
+        "written"
+      ]
+    },
+    {
+      "id": "y9x-010-9a-explain-how-triceratops-adaptations-helped-survival",
+      "unit": "9A",
+      "type": "Assess check",
+      "question": "Explain how Triceratops adaptations helped survival.",
+      "answer": "Horns and frill could reduce predation risk, a beak and teeth helped feeding on tough plants, and strong legs supported a large body.",
+      "choices": [],
+      "explanation": "Horns and frill could reduce predation risk, a beak and teeth helped feeding on tough plants, and strong legs supported a large body.",
+      "source": "9A assess-yourself success criterion 10",
+      "level": 3,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "assess",
+        "written"
+      ]
+    },
+    {
+      "id": "y9x-011-9a-identify-and-explain-triceratops-adaptations-beyond-the-obvious-labels",
+      "unit": "9A",
+      "type": "Assess check",
+      "question": "Identify and explain Triceratops adaptations beyond the obvious labels.",
+      "answer": "A large body could deter predators, eyes placed for awareness could help detect danger, and a strong neck could support the heavy skull and frill.",
+      "choices": [],
+      "explanation": "A large body could deter predators, eyes placed for awareness could help detect danger, and a strong neck could support the heavy skull and frill.",
+      "source": "9A assess-yourself success criterion 11",
+      "level": 3,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "assess",
+        "written"
+      ]
+    },
+    {
+      "id": "y9x-012-9a-describe-the-relationship-between-cells-nuclei-chromosomes-genes-dna-and-genetic",
+      "unit": "9A",
+      "type": "Assess check",
+      "question": "Describe the relationship between cells, nuclei, chromosomes, genes, DNA and genetic information.",
+      "answer": "Cells contain nuclei. Nuclei contain chromosomes. Chromosomes are made of DNA. Genes are sections of DNA that carry genetic information.",
+      "choices": [],
+      "explanation": "Cells contain nuclei. Nuclei contain chromosomes. Chromosomes are made of DNA. Genes are sections of DNA that carry genetic information.",
+      "source": "9A assess-yourself success criterion 12",
+      "level": 3,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "assess",
+        "written"
+      ]
+    },
+    {
+      "id": "y9x-013-9a-describe-how-variation-in-adaptations-affects-survival-within-a-species",
+      "unit": "9A",
+      "type": "Assess check",
+      "question": "Describe how variation in adaptations affects survival within a species.",
+      "answer": "Individuals with better-suited adaptations are more likely to survive, reproduce and pass on their genes than less well-adapted individuals.",
+      "choices": [],
+      "explanation": "Individuals with better-suited adaptations are more likely to survive, reproduce and pass on their genes than less well-adapted individuals.",
+      "source": "9A assess-yourself success criterion 13",
+      "level": 3,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "assess",
+        "written"
+      ]
+    },
+    {
+      "id": "y9x-014-9a-state-what-evolution-is",
+      "unit": "9A",
+      "type": "Assess check",
+      "question": "State what evolution is.",
+      "answer": "Evolution is the gradual change in inherited characteristics of a population over many generations.",
+      "choices": [],
+      "explanation": "Evolution is the gradual change in inherited characteristics of a population over many generations.",
+      "source": "9A assess-yourself success criterion 14",
+      "level": 1,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "assess",
+        "written"
+      ]
+    },
+    {
+      "id": "y9x-015-9a-explain-how-natural-selection-works",
+      "unit": "9A",
+      "type": "Assess check",
+      "question": "Explain how natural selection works.",
+      "answer": "Individuals vary; some inherited variations give an advantage; those individuals survive and reproduce more; useful genes become more common over generations.",
+      "choices": [],
+      "explanation": "Individuals vary; some inherited variations give an advantage; those individuals survive and reproduce more; useful genes become more common over generations.",
+      "source": "9A assess-yourself success criterion 15",
+      "level": 4,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "assess",
+        "written"
+      ],
+      "media": [
+        {
+          "src": "assets/png/9A-natural-selection-giraffes.png",
+          "alt": "Giraffes competing for food in a savanna.",
+          "caption": "Variation in neck length can affect survival and reproduction, making some traits more common over time."
+        }
+      ]
+    },
+    {
+      "id": "y9x-016-9b-name-some-common-crop-plants",
+      "unit": "9B",
+      "type": "Assess check",
+      "question": "Name some common crop plants.",
+      "answer": "Examples include wheat, lettuce, potatoes, maize, rice, barley, peas, beans, tomatoes and rapeseed.",
+      "choices": [],
+      "explanation": "Examples include wheat, lettuce, potatoes, maize, rice, barley, peas, beans, tomatoes and rapeseed.",
+      "source": "9B assess-yourself success criterion 01",
+      "level": 1,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "assess",
+        "written"
+      ]
+    },
+    {
+      "id": "y9x-017-9b-explain-why-it-is-important-to-look-after-crop-plants",
+      "unit": "9B",
+      "type": "Assess check",
+      "question": "Explain why it is important to look after crop plants.",
+      "answer": "Healthy crops grow better and produce a higher yield, which provides more food and more income for the farmer.",
+      "choices": [],
+      "explanation": "Healthy crops grow better and produce a higher yield, which provides more food and more income for the farmer.",
+      "source": "9B assess-yourself success criterion 02",
+      "level": 2,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "assess",
+        "written"
+      ]
+    },
+    {
+      "id": "y9x-018-9b-state-that-plants-make-their-own-food",
+      "unit": "9B",
+      "type": "Assess check",
+      "question": "State that plants make their own food.",
+      "answer": "Plants make their own food by photosynthesis, producing glucose from carbon dioxide and water using light energy.",
+      "choices": [],
+      "explanation": "Plants make their own food by photosynthesis, producing glucose from carbon dioxide and water using light energy.",
+      "source": "9B assess-yourself success criterion 03",
+      "level": 1,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "assess",
+        "written"
+      ]
+    },
+    {
+      "id": "y9x-019-9b-recall-the-resources-plants-need-to-grow-well",
+      "unit": "9B",
+      "type": "Assess check",
+      "question": "Recall the resources plants need to grow well.",
+      "answer": "Plants need light, carbon dioxide, oxygen for respiration, water, warmth and mineral ions such as nitrates.",
+      "choices": [],
+      "explanation": "Plants need light, carbon dioxide, oxygen for respiration, water, warmth and mineral ions such as nitrates.",
+      "source": "9B assess-yourself success criterion 04",
+      "level": 1,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "assess",
+        "written"
+      ]
+    },
+    {
+      "id": "y9x-020-9b-list-chemical-substances-farmers-may-apply-to-crops",
+      "unit": "9B",
+      "type": "Assess check",
+      "question": "List chemical substances farmers may apply to crops.",
+      "answer": "Farmers may apply fertilisers, herbicides, insecticides, fungicides and other pesticides.",
+      "choices": [],
+      "explanation": "Farmers may apply fertilisers, herbicides, insecticides, fungicides and other pesticides.",
+      "source": "9B assess-yourself success criterion 05",
+      "level": 1,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "assess",
+        "written"
+      ]
+    },
+    {
+      "id": "y9x-021-9b-describe-photosynthesis-in-terms-of-reactants-products-and-energy-source",
+      "unit": "9B",
+      "type": "Assess check",
+      "question": "Describe photosynthesis in terms of reactants, products and energy source.",
+      "answer": "Photosynthesis uses carbon dioxide and water to make glucose and oxygen. Light energy powers the reaction and chlorophyll absorbs the light.",
+      "choices": [],
+      "explanation": "Photosynthesis uses carbon dioxide and water to make glucose and oxygen. Light energy powers the reaction and chlorophyll absorbs the light.",
+      "source": "9B assess-yourself success criterion 06",
+      "level": 2,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "assess",
+        "written"
+      ]
+    },
+    {
+      "id": "y9x-022-9b-explain-how-leaves-roots-and-stems-help-photosynthesis",
+      "unit": "9B",
+      "type": "Assess check",
+      "question": "Explain how leaves, roots and stems help photosynthesis.",
+      "answer": "Leaves absorb light and exchange gases, roots absorb water and mineral ions, and stems/xylem transport water to the leaves.",
+      "choices": [],
+      "explanation": "Leaves absorb light and exchange gases, roots absorb water and mineral ions, and stems/xylem transport water to the leaves.",
+      "source": "9B assess-yourself success criterion 07",
+      "level": 3,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "assess",
+        "written"
+      ],
+      "media": [
+        {
+          "src": "assets/diagrams/9B-leaf-xylem-phloem.svg",
+          "alt": "Leaf and transport tissue support diagram.",
+          "caption": "Leaves capture light, roots absorb water, and stems support transport."
+        }
+      ]
+    },
+    {
+      "id": "y9x-023-9b-explain-why-insecticides-and-fungicides-are-used-on-crop-plants",
+      "unit": "9B",
+      "type": "Assess check",
+      "question": "Explain why insecticides and fungicides are used on crop plants.",
+      "answer": "Insecticides kill insect pests and fungicides kill fungal diseases, reducing damage and helping maintain crop yield.",
+      "choices": [],
+      "explanation": "Insecticides kill insect pests and fungicides kill fungal diseases, reducing damage and helping maintain crop yield.",
+      "source": "9B assess-yourself success criterion 08",
+      "level": 2,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "assess",
+        "written"
+      ]
+    },
+    {
+      "id": "y9x-024-9b-explain-why-herbicides-or-weedkillers-are-used-on-crop-plants",
+      "unit": "9B",
+      "type": "Assess check",
+      "question": "Explain why herbicides or weedkillers are used on crop plants.",
+      "answer": "Herbicides kill weeds that compete with crops for light, water, mineral ions and space.",
+      "choices": [],
+      "explanation": "Herbicides kill weeds that compete with crops for light, water, mineral ions and space.",
+      "source": "9B assess-yourself success criterion 09",
+      "level": 2,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "assess",
+        "written"
+      ]
+    },
+    {
+      "id": "y9x-025-9b-explain-how-fertilisers-help-crop-plants-grow-well",
+      "unit": "9B",
+      "type": "Assess check",
+      "question": "Explain how fertilisers help crop plants grow well.",
+      "answer": "Fertilisers add mineral ions such as nitrates, phosphates and potassium compounds, which plants need for growth and making useful substances.",
+      "choices": [],
+      "explanation": "Fertilisers add mineral ions such as nitrates, phosphates and potassium compounds, which plants need for growth and making useful substances.",
+      "source": "9B assess-yourself success criterion 10",
+      "level": 2,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "assess",
+        "written"
+      ]
+    },
+    {
+      "id": "y9x-026-9b-use-word-equations-for-photosynthesis-and-aerobic-respiration",
+      "unit": "9B",
+      "type": "Assess check",
+      "question": "Use word equations for photosynthesis and aerobic respiration.",
+      "answer": "Photosynthesis: carbon dioxide + water → glucose + oxygen. Aerobic respiration: glucose + oxygen → carbon dioxide + water.",
+      "choices": [],
+      "explanation": "Photosynthesis: carbon dioxide + water → glucose + oxygen. Aerobic respiration: glucose + oxygen → carbon dioxide + water.",
+      "source": "9B assess-yourself success criterion 11",
+      "level": 2,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "assess",
+        "written"
+      ]
+    },
+    {
+      "id": "y9x-027-9b-explain-what-happens-when-plants-lack-water-or-mineral-salts",
+      "unit": "9B",
+      "type": "Assess check",
+      "question": "Explain what happens when plants lack water or mineral salts.",
+      "answer": "Lack of water causes wilting and poor transport. Lack of mineral ions causes poor growth, yellow leaves or weak plants depending on the missing ion.",
+      "choices": [],
+      "explanation": "Lack of water causes wilting and poor transport. Lack of mineral ions causes poor growth, yellow leaves or weak plants depending on the missing ion.",
+      "source": "9B assess-yourself success criterion 12",
+      "level": 3,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "assess",
+        "written"
+      ]
+    },
+    {
+      "id": "y9x-028-9b-describe-substances-made-in-plants-and-their-uses",
+      "unit": "9B",
+      "type": "Assess check",
+      "question": "Describe substances made in plants and their uses.",
+      "answer": "Plants make glucose for respiration, starch for storage, cellulose for cell walls, lipids for energy stores and proteins for growth/enzymes.",
+      "choices": [],
+      "explanation": "Plants make glucose for respiration, starch for storage, cellulose for cell walls, lipids for energy stores and proteins for growth/enzymes.",
+      "source": "9B assess-yourself success criterion 13",
+      "level": 3,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "assess",
+        "written"
+      ]
+    },
+    {
+      "id": "y9x-029-9b-explain-that-chlorophyll-traps-energy-transferred-by-light",
+      "unit": "9B",
+      "type": "Assess check",
+      "question": "Explain that chlorophyll traps energy transferred by light.",
+      "answer": "Chlorophyll absorbs light energy, which is transferred to the chemical reactions of photosynthesis.",
+      "choices": [],
+      "explanation": "Chlorophyll absorbs light energy, which is transferred to the chemical reactions of photosynthesis.",
+      "source": "9B assess-yourself success criterion 14",
+      "level": 2,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "assess",
+        "written"
+      ]
+    },
+    {
+      "id": "y9x-030-9b-explain-how-farming-can-change-the-carbon-cycle",
+      "unit": "9B",
+      "type": "Assess check",
+      "question": "Explain how farming can change the carbon cycle.",
+      "answer": "Clearing land, burning fuels, livestock, soil disturbance and harvesting can release carbon dioxide or reduce carbon stored in plants and soils.",
+      "choices": [],
+      "explanation": "Clearing land, burning fuels, livestock, soil disturbance and harvesting can release carbon dioxide or reduce carbon stored in plants and soils.",
+      "source": "9B assess-yourself success criterion 15",
+      "level": 4,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "assess",
+        "written"
+      ]
+    },
+    {
+      "id": "y9x-031-9b-explain-problems-caused-by-fertilisers-including-effects-on-fish-in-lakes",
+      "unit": "9B",
+      "type": "Assess check",
+      "question": "Explain problems caused by fertilisers, including effects on fish in lakes.",
+      "answer": "Fertilisers can wash into lakes, causing algal blooms. Decomposition uses oxygen, so fish and other animals may suffocate.",
+      "choices": [],
+      "explanation": "Fertilisers can wash into lakes, causing algal blooms. Decomposition uses oxygen, so fish and other animals may suffocate.",
+      "source": "9B assess-yourself success criterion 16",
+      "level": 4,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "assess",
+        "written"
+      ]
+    },
+    {
+      "id": "y9x-032-9b-explain-problems-caused-by-pesticides-including-persistent-insecticides",
+      "unit": "9B",
+      "type": "Assess check",
+      "question": "Explain problems caused by pesticides, including persistent insecticides.",
+      "answer": "Pesticides can kill non-target organisms. Persistent insecticides may remain in food chains and build up in predators.",
+      "choices": [],
+      "explanation": "Pesticides can kill non-target organisms. Persistent insecticides may remain in food chains and build up in predators.",
+      "source": "9B assess-yourself success criterion 17",
+      "level": 4,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "assess",
+        "written"
+      ]
+    },
+    {
+      "id": "y9x-033-9b-describe-how-limiting-factors-stop-photosynthesis-rate-increasing",
+      "unit": "9B",
+      "type": "Assess check",
+      "question": "Describe how limiting factors stop photosynthesis rate increasing.",
+      "answer": "When light, carbon dioxide, water, temperature or chlorophyll becomes limiting, increasing other factors no longer increases photosynthesis rate.",
+      "choices": [],
+      "explanation": "When light, carbon dioxide, water, temperature or chlorophyll becomes limiting, increasing other factors no longer increases photosynthesis rate.",
+      "source": "9B assess-yourself success criterion 18",
+      "level": 3,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "assess",
+        "written"
+      ]
+    },
+    {
+      "id": "y9x-034-9e-name-common-conductors-and-insulators",
+      "unit": "9E",
+      "type": "Assess check",
+      "question": "Name common conductors and insulators.",
+      "answer": "Common conductors include metals such as copper and aluminium. Common insulators include plastic, rubber, glass, ceramics and dry wood.",
+      "choices": [],
+      "explanation": "Common conductors include metals such as copper and aluminium. Common insulators include plastic, rubber, glass, ceramics and dry wood.",
+      "source": "9E assess-yourself success criterion 01",
+      "level": 1,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "assess",
+        "written"
+      ],
+      "media": [
+        {
+          "src": "assets/png/9E-conductors-insulators-materials.png",
+          "alt": "Copper wire and rod beside plastic, wood and rubber materials.",
+          "caption": "Copper is a good conductor, while plastic, wood and rubber are insulators or high-resistance materials."
+        }
+      ]
+    },
+    {
+      "id": "y9x-035-9e-explain-what-a-landfill-site-is-and-why-it-can-cause-problems",
+      "unit": "9E",
+      "type": "Assess check",
+      "question": "Explain what a landfill site is and why it can cause problems.",
+      "answer": "A landfill site is where waste is buried. Problems include land use, smells, pests, methane release, pollution and slow decay of plastics.",
+      "choices": [],
+      "explanation": "A landfill site is where waste is buried. Problems include land use, smells, pests, methane release, pollution and slow decay of plastics.",
+      "source": "9E assess-yourself success criterion 02",
+      "level": 2,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "assess",
+        "written"
+      ]
+    },
+    {
+      "id": "y9x-036-9e-name-examples-of-ceramic-polymer-and-composite-materials",
+      "unit": "9E",
+      "type": "Assess check",
+      "question": "Name examples of ceramic, polymer and composite materials.",
+      "answer": "Ceramics: glass, brick, porcelain. Polymers: polythene, PVC, nylon. Composites: concrete, fibreglass, carbon fibre composite.",
+      "choices": [],
+      "explanation": "Ceramics: glass, brick, porcelain. Polymers: polythene, PVC, nylon. Composites: concrete, fibreglass, carbon fibre composite.",
+      "source": "9E assess-yourself success criterion 03",
+      "level": 1,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "assess",
+        "written"
+      ]
+    },
+    {
+      "id": "y9x-037-9e-name-the-main-source-of-raw-materials-for-making-polymers",
+      "unit": "9E",
+      "type": "Assess check",
+      "question": "Name the main source of raw materials for making polymers.",
+      "answer": "Most synthetic polymers are made from chemicals obtained from crude oil or natural gas.",
+      "choices": [],
+      "explanation": "Most synthetic polymers are made from chemicals obtained from crude oil or natural gas.",
+      "source": "9E assess-yourself success criterion 04",
+      "level": 1,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "assess",
+        "written"
+      ]
+    },
+    {
+      "id": "y9x-038-9e-describe-the-difference-between-biodegradable-and-non-biodegradable-polymers",
+      "unit": "9E",
+      "type": "Assess check",
+      "question": "Describe the difference between biodegradable and non-biodegradable polymers.",
+      "answer": "Biodegradable polymers can be broken down by microorganisms; non-biodegradable polymers do not break down easily and persist in the environment.",
+      "choices": [],
+      "explanation": "Biodegradable polymers can be broken down by microorganisms; non-biodegradable polymers do not break down easily and persist in the environment.",
+      "source": "9E assess-yourself success criterion 05",
+      "level": 2,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "assess",
+        "written"
+      ]
+    },
+    {
+      "id": "y9x-039-9e-describe-pollution-problems-caused-by-burning-fossil-fuels",
+      "unit": "9E",
+      "type": "Assess check",
+      "question": "Describe pollution problems caused by burning fossil fuels.",
+      "answer": "Burning fossil fuels releases carbon dioxide, sulfur dioxide, nitrogen oxides and particulates, contributing to climate change, acid rain and poor air quality.",
+      "choices": [],
+      "explanation": "Burning fossil fuels releases carbon dioxide, sulfur dioxide, nitrogen oxides and particulates, contributing to climate change, acid rain and poor air quality.",
+      "source": "9E assess-yourself success criterion 06",
+      "level": 3,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "assess",
+        "written"
+      ]
+    },
+    {
+      "id": "y9x-040-9e-describe-what-a-composite-material-is",
+      "unit": "9E",
+      "type": "Assess check",
+      "question": "Describe what a composite material is.",
+      "answer": "A composite is made from two or more materials combined so the final material has useful properties from both.",
+      "choices": [],
+      "explanation": "A composite is made from two or more materials combined so the final material has useful properties from both.",
+      "source": "9E assess-yourself success criterion 07",
+      "level": 2,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "assess",
+        "written"
+      ]
+    },
+    {
+      "id": "y9x-041-9e-describe-problems-caused-by-disposal-of-artificial-polymers",
+      "unit": "9E",
+      "type": "Assess check",
+      "question": "Describe problems caused by disposal of artificial polymers.",
+      "answer": "Artificial polymers can take a very long time to break down, fill landfill, harm wildlife and create microplastic pollution.",
+      "choices": [],
+      "explanation": "Artificial polymers can take a very long time to break down, fill landfill, harm wildlife and create microplastic pollution.",
+      "source": "9E assess-yourself success criterion 08",
+      "level": 3,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "assess",
+        "written"
+      ]
+    },
+    {
+      "id": "y9x-042-9e-explain-the-causes-and-problems-of-acid-rain-and-the-greenhouse-effect",
+      "unit": "9E",
+      "type": "Assess check",
+      "question": "Explain the causes and problems of acid rain and the greenhouse effect.",
+      "answer": "Acid rain is caused by acidic gases such as sulfur dioxide and nitrogen oxides; it damages ecosystems and buildings. The greenhouse effect is increased by greenhouse gases and can cause global warming.",
+      "choices": [],
+      "explanation": "Acid rain is caused by acidic gases such as sulfur dioxide and nitrogen oxides; it damages ecosystems and buildings. The greenhouse effect is increased by greenhouse gases and can cause global warming.",
+      "source": "9E assess-yourself success criterion 09",
+      "level": 4,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "assess",
+        "written"
+      ],
+      "media": [
+        {
+          "src": "assets/png/9E-sustainable-living-solutions.png",
+          "alt": "Energy-efficient house with solar panels, wind energy and insulation.",
+          "caption": "Cleaner energy and better insulation can reduce fossil fuel use and help lower greenhouse gas emissions."
+        }
+      ]
+    },
+    {
+      "id": "y9x-043-9e-link-uses-of-ceramics-polymers-and-composites-to-their-properties",
+      "unit": "9E",
+      "type": "Assess check",
+      "question": "Link uses of ceramics, polymers and composites to their properties.",
+      "answer": "Materials are chosen because their properties fit the job: ceramics are hard/heat resistant, polymers are light/flexible, and composites can be strong and light.",
+      "choices": [],
+      "explanation": "Materials are chosen because their properties fit the job: ceramics are hard/heat resistant, polymers are light/flexible, and composites can be strong and light.",
+      "source": "9E assess-yourself success criterion 10",
+      "level": 3,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "assess",
+        "written"
+      ]
+    },
+    {
+      "id": "y9x-044-9e-describe-how-polymers-are-formed-from-monomers",
+      "unit": "9E",
+      "type": "Assess check",
+      "question": "Describe how polymers are formed from monomers.",
+      "answer": "Many small monomer molecules join together in polymerisation to form long-chain polymer molecules.",
+      "choices": [],
+      "explanation": "Many small monomer molecules join together in polymerisation to form long-chain polymer molecules.",
+      "source": "9E assess-yourself success criterion 11",
+      "level": 2,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "assess",
+        "written"
+      ]
+    },
+    {
+      "id": "y9x-045-9e-identify-thermal-decomposition-reactions",
+      "unit": "9E",
+      "type": "Assess check",
+      "question": "Identify thermal decomposition reactions.",
+      "answer": "Thermal decomposition is when a compound breaks down into simpler substances when heated.",
+      "choices": [],
+      "explanation": "Thermal decomposition is when a compound breaks down into simpler substances when heated.",
+      "source": "9E assess-yourself success criterion 12",
+      "level": 2,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "assess",
+        "written"
+      ]
+    },
+    {
+      "id": "y9x-046-9e-explain-advantages-of-recycling-with-specific-examples",
+      "unit": "9E",
+      "type": "Assess check",
+      "question": "Explain advantages of recycling with specific examples.",
+      "answer": "Recycling saves raw materials and energy, reduces landfill and can reduce pollution; for example, recycling aluminium uses less energy than extracting new aluminium.",
+      "choices": [],
+      "explanation": "Recycling saves raw materials and energy, reduces landfill and can reduce pollution; for example, recycling aluminium uses less energy than extracting new aluminium.",
+      "source": "9E assess-yourself success criterion 13",
+      "level": 3,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "assess",
+        "written"
+      ]
+    },
+    {
+      "id": "y9x-047-9e-justify-using-a-ceramic-polymer-or-composite-for-a-particular-use",
+      "unit": "9E",
+      "type": "Assess check",
+      "question": "Justify using a ceramic, polymer or composite for a particular use.",
+      "answer": "Choose the material by matching properties to the use, such as using concrete for compressive strength or fibreglass for light, corrosion-resistant panels.",
+      "choices": [],
+      "explanation": "Choose the material by matching properties to the use, such as using concrete for compressive strength or fibreglass for light, corrosion-resistant panels.",
+      "source": "9E assess-yourself success criterion 14",
+      "level": 4,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "assess",
+        "written"
+      ]
+    },
+    {
+      "id": "y9x-048-9e-explain-how-crystal-size-depends-on-cooling-speed",
+      "unit": "9E",
+      "type": "Assess check",
+      "question": "Explain how crystal size depends on cooling speed.",
+      "answer": "Slow cooling gives particles more time to form larger crystals; fast cooling produces smaller crystals.",
+      "choices": [],
+      "explanation": "Slow cooling gives particles more time to form larger crystals; fast cooling produces smaller crystals.",
+      "source": "9E assess-yourself success criterion 15",
+      "level": 3,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "assess",
+        "written"
+      ],
+      "media": [
+        {
+          "src": "assets/png/9E-crystal-cooling-comparison.png",
+          "alt": "Crystal size comparison for different cooling speeds.",
+          "caption": "Use the comparison to explain how cooling speed affects crystal size."
+        }
+      ]
+    },
+    {
+      "id": "y9x-049-9e-explain-how-properties-of-a-material-depend-on-bonding-and-structure",
+      "unit": "9E",
+      "type": "Assess check",
+      "question": "Explain how properties of a material depend on bonding and structure.",
+      "answer": "Strong bonds and rigid structures often give hardness and high melting point; chain length, cross-linking, fibres and layers affect strength and flexibility.",
+      "choices": [],
+      "explanation": "Strong bonds and rigid structures often give hardness and high melting point; chain length, cross-linking, fibres and layers affect strength and flexibility.",
+      "source": "9E assess-yourself success criterion 16",
+      "level": 4,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "assess",
+        "written"
+      ]
+    },
+    {
+      "id": "y9x-050-9e-classify-exothermic-and-endothermic-reactions-by-temperature-change-and-energy-t",
+      "unit": "9E",
+      "type": "Assess check",
+      "question": "Classify exothermic and endothermic reactions by temperature change and energy transfer.",
+      "answer": "Exothermic reactions transfer energy to the surroundings and temperature rises. Endothermic reactions take energy from surroundings and temperature falls.",
+      "choices": [],
+      "explanation": "Exothermic reactions transfer energy to the surroundings and temperature rises. Endothermic reactions take energy from surroundings and temperature falls.",
+      "source": "9E assess-yourself success criterion 17",
+      "level": 3,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "assess",
+        "written"
+      ]
+    },
+    {
+      "id": "y9x-051-9e-explain-biomagnification-of-toxins-through-food-chains",
+      "unit": "9E",
+      "type": "Assess check",
+      "question": "Explain biomagnification of toxins through food chains.",
+      "answer": "Persistent toxins can accumulate in organisms and become more concentrated at higher trophic levels, harming top predators most.",
+      "choices": [],
+      "explanation": "Persistent toxins can accumulate in organisms and become more concentrated at higher trophic levels, harming top predators most.",
+      "source": "9E assess-yourself success criterion 18",
+      "level": 4,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "assess",
+        "written"
+      ]
+    },
+    {
+      "id": "y9x-052-9e-suggest-ways-to-reduce-global-warming-and-acid-rain-impacts",
+      "unit": "9E",
+      "type": "Assess check",
+      "question": "Suggest ways to reduce global warming and acid rain impacts.",
+      "answer": "Use less fossil fuel, use renewable energy, remove sulfur from fuels, fit scrubbers to chimneys, improve efficiency, recycle and protect forests.",
+      "choices": [],
+      "explanation": "Use less fossil fuel, use renewable energy, remove sulfur from fuels, fit scrubbers to chimneys, improve efficiency, recycle and protect forests.",
+      "source": "9E assess-yourself success criterion 19",
+      "level": 3,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "assess",
+        "written"
+      ],
+      "media": [
+        {
+          "src": "assets/png/9E-sustainable-living-solutions.png",
+          "alt": "Renewable energy and insulation collage.",
+          "caption": "The image shows practical ways to reduce reliance on fossil fuels."
+        }
+      ]
+    },
+    {
+      "id": "y9x-053-9f-describe-what-causes-rusting",
+      "unit": "9F",
+      "type": "Assess check",
+      "question": "Describe what causes rusting.",
+      "answer": "Rusting happens when iron or steel reacts with oxygen and water to form hydrated iron oxide.",
+      "choices": [],
+      "explanation": "Rusting happens when iron or steel reacts with oxygen and water to form hydrated iron oxide.",
+      "source": "9F assess-yourself success criterion 01",
+      "level": 2,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "assess",
+        "written"
+      ]
+    },
+    {
+      "id": "y9x-054-9f-describe-one-simple-method-of-preventing-rusting",
+      "unit": "9F",
+      "type": "Assess check",
+      "question": "Describe one simple method of preventing rusting.",
+      "answer": "Painting, oiling, greasing or coating with plastic prevents water and oxygen from reaching the iron.",
+      "choices": [],
+      "explanation": "Painting, oiling, greasing or coating with plastic prevents water and oxygen from reaching the iron.",
+      "source": "9F assess-yourself success criterion 02",
+      "level": 1,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "assess",
+        "written"
+      ]
+    },
+    {
+      "id": "y9x-055-9f-explain-why-rusting-is-a-problem",
+      "unit": "9F",
+      "type": "Assess check",
+      "question": "Explain why rusting is a problem.",
+      "answer": "Rusting weakens iron and steel, damages structures, makes objects unsafe and creates repair or replacement costs.",
+      "choices": [],
+      "explanation": "Rusting weakens iron and steel, damages structures, makes objects unsafe and creates repair or replacement costs.",
+      "source": "9F assess-yourself success criterion 03",
+      "level": 2,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "assess",
+        "written"
+      ]
+    },
+    {
+      "id": "y9x-056-9f-use-scientific-words-to-explain-how-iron-rusts",
+      "unit": "9F",
+      "type": "Assess check",
+      "question": "Use scientific words to explain how iron rusts.",
+      "answer": "Iron atoms react with oxygen and water in an oxidation process to form hydrated iron oxide, which flakes away as rust.",
+      "choices": [],
+      "explanation": "Iron atoms react with oxygen and water in an oxidation process to form hydrated iron oxide, which flakes away as rust.",
+      "source": "9F assess-yourself success criterion 04",
+      "level": 3,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "assess",
+        "written"
+      ]
+    },
+    {
+      "id": "y9x-057-9f-explain-why-iron-or-steel-is-used-for-a-purpose-because-of-its-properties",
+      "unit": "9F",
+      "type": "Assess check",
+      "question": "Explain why iron or steel is used for a purpose because of its properties.",
+      "answer": "Iron and steel are strong, tough and relatively cheap, so they are useful for buildings, bridges, vehicles and machinery.",
+      "choices": [],
+      "explanation": "Iron and steel are strong, tough and relatively cheap, so they are useful for buildings, bridges, vehicles and machinery.",
+      "source": "9F assess-yourself success criterion 05",
+      "level": 2,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "assess",
+        "written"
+      ]
+    },
+    {
+      "id": "y9x-058-9f-describe-how-iron-ore-is-obtained-from-mining",
+      "unit": "9F",
+      "type": "Assess check",
+      "question": "Describe how iron ore is obtained from mining.",
+      "answer": "Iron ore is removed from the ground by mining, crushed and processed before being transported for extraction in a blast furnace.",
+      "choices": [],
+      "explanation": "Iron ore is removed from the ground by mining, crushed and processed before being transported for extraction in a blast furnace.",
+      "source": "9F assess-yourself success criterion 06",
+      "level": 2,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "assess",
+        "written"
+      ],
+      "media": [
+        {
+          "src": "assets/png/9F-blast-furnace-process.png",
+          "alt": "Blast furnace diagram for iron extraction.",
+          "caption": "Iron ore is mined, then processed and heated in a blast furnace to extract iron."
+        }
+      ]
+    },
+    {
+      "id": "y9x-059-9f-use-word-equations-to-describe-reactions",
+      "unit": "9F",
+      "type": "Assess check",
+      "question": "Use word equations to describe reactions.",
+      "answer": "Example: iron oxide + carbon monoxide → iron + carbon dioxide. Word equations show reactants changing into products.",
+      "choices": [],
+      "explanation": "Example: iron oxide + carbon monoxide → iron + carbon dioxide. Word equations show reactants changing into products.",
+      "source": "9F assess-yourself success criterion 07",
+      "level": 2,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "assess",
+        "written"
+      ]
+    },
+    {
+      "id": "y9x-060-9f-describe-the-reactivity-series-and-the-position-of-iron",
+      "unit": "9F",
+      "type": "Assess check",
+      "question": "Describe the reactivity series and the position of iron.",
+      "answer": "The reactivity series ranks metals by reactivity. Iron is less reactive than carbon, so carbon can reduce iron oxide.",
+      "choices": [],
+      "explanation": "The reactivity series ranks metals by reactivity. Iron is less reactive than carbon, so carbon can reduce iron oxide.",
+      "source": "9F assess-yourself success criterion 08",
+      "level": 2,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "assess",
+        "written"
+      ],
+      "media": [
+        {
+          "src": "assets/diagrams/9F-reactivity-extraction.svg",
+          "alt": "Reactivity series chart.",
+          "caption": "Iron is below carbon, so it can be extracted by reduction with carbon."
+        }
+      ]
+    },
+    {
+      "id": "y9x-061-9f-explain-how-metal-reactivity-determines-extraction-method",
+      "unit": "9F",
+      "type": "Assess check",
+      "question": "Explain how metal reactivity determines extraction method.",
+      "answer": "Metals less reactive than carbon can be extracted by carbon reduction; metals more reactive than carbon usually need electrolysis.",
+      "choices": [],
+      "explanation": "Metals less reactive than carbon can be extracted by carbon reduction; metals more reactive than carbon usually need electrolysis.",
+      "source": "9F assess-yourself success criterion 09",
+      "level": 3,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "assess",
+        "written"
+      ],
+      "media": [
+        {
+          "src": "assets/png/9F-blast-furnace-process.png",
+          "alt": "Blast furnace and extraction context.",
+          "caption": "Less reactive metals such as iron can be extracted using carbon in a blast furnace."
+        }
+      ]
+    },
+    {
+      "id": "y9x-062-9f-explain-why-energy-needs-and-cost-matter-when-selecting-extraction-methods",
+      "unit": "9F",
+      "type": "Assess check",
+      "question": "Explain why energy needs and cost matter when selecting extraction methods.",
+      "answer": "Extraction methods use different amounts of energy and equipment; electrolysis is expensive, so cost and energy demand affect industrial choices.",
+      "choices": [],
+      "explanation": "Extraction methods use different amounts of energy and equipment; electrolysis is expensive, so cost and energy demand affect industrial choices.",
+      "source": "9F assess-yourself success criterion 10",
+      "level": 3,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "assess",
+        "written"
+      ]
+    },
+    {
+      "id": "y9x-063-9f-describe-sacrificial-protection-for-preventing-rusting",
+      "unit": "9F",
+      "type": "Assess check",
+      "question": "Describe sacrificial protection for preventing rusting.",
+      "answer": "Sacrificial protection attaches a more reactive metal such as zinc or magnesium to iron so the other metal corrodes first.",
+      "choices": [],
+      "explanation": "Sacrificial protection attaches a more reactive metal such as zinc or magnesium to iron so the other metal corrodes first.",
+      "source": "9F assess-yourself success criterion 11",
+      "level": 3,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "assess",
+        "written"
+      ]
+    },
+    {
+      "id": "y9x-064-9f-explain-how-sacrificial-protection-prevents-rusting-and-link-this-to-the-reactiv",
+      "unit": "9F",
+      "type": "Assess check",
+      "question": "Explain how sacrificial protection prevents rusting and link this to the reactivity series.",
+      "answer": "A more reactive metal loses electrons more readily and corrodes instead of iron, protecting the iron because it is lower in the reactivity series.",
+      "choices": [],
+      "explanation": "A more reactive metal loses electrons more readily and corrodes instead of iron, protecting the iron because it is lower in the reactivity series.",
+      "source": "9F assess-yourself success criterion 12",
+      "level": 4,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "assess",
+        "written"
+      ],
+      "media": [
+        {
+          "src": "assets/png/9F-rusting-protection.png",
+          "alt": "Zinc sacrificial protection diagram.",
+          "caption": "A more reactive metal corrodes instead of the iron or steel, keeping the steel protected."
+        }
+      ]
+    },
+    {
+      "id": "y9x-065-9f-explain-why-certain-metals-are-used-for-sacrificial-protection",
+      "unit": "9F",
+      "type": "Assess check",
+      "question": "Explain why certain metals are used for sacrificial protection.",
+      "answer": "Metals above iron in the reactivity series, such as zinc or magnesium, are used because they react more readily than iron.",
+      "choices": [],
+      "explanation": "Metals above iron in the reactivity series, such as zinc or magnesium, are used because they react more readily than iron.",
+      "source": "9F assess-yourself success criterion 13",
+      "level": 3,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "assess",
+        "written"
+      ],
+      "media": [
+        {
+          "src": "assets/png/9F-rusting-protection.png",
+          "alt": "Protected steel with zinc sacrificial metal.",
+          "caption": "The sacrificial metal must be more reactive than iron."
+        }
+      ]
+    },
+    {
+      "id": "y9x-066-9f-explain-other-reactions-taking-place-in-a-blast-furnace",
+      "unit": "9F",
+      "type": "Assess check",
+      "question": "Explain other reactions taking place in a blast furnace.",
+      "answer": "Carbon burns to carbon dioxide, carbon dioxide reacts with carbon to form carbon monoxide, and limestone decomposes then removes impurities as slag.",
+      "choices": [],
+      "explanation": "Carbon burns to carbon dioxide, carbon dioxide reacts with carbon to form carbon monoxide, and limestone decomposes then removes impurities as slag.",
+      "source": "9F assess-yourself success criterion 14",
+      "level": 4,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "assess",
+        "written"
+      ],
+      "media": [
+        {
+          "src": "assets/png/9F-blast-furnace-process.png",
+          "alt": "Industrial blast furnace process image.",
+          "caption": "The blast furnace image supports explanations of combustion, reduction and slag formation."
+        }
+      ]
+    },
+    {
+      "id": "y9x-067-9f-use-balanced-equations-to-represent-reactions",
+      "unit": "9F",
+      "type": "Assess check",
+      "question": "Use balanced equations to represent reactions.",
+      "answer": "Balanced equations have the same number of each type of atom on both sides, for example Fe2O3 + 3CO → 2Fe + 3CO2.",
+      "choices": [],
+      "explanation": "Balanced equations have the same number of each type of atom on both sides, for example Fe2O3 + 3CO → 2Fe + 3CO2.",
+      "source": "9F assess-yourself success criterion 15",
+      "level": 4,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "assess",
+        "written"
+      ]
+    },
+    {
+      "id": "y9x-068-9f-describe-the-formation-of-stainless-steel",
+      "unit": "9F",
+      "type": "Assess check",
+      "question": "Describe the formation of stainless steel.",
+      "answer": "Stainless steel is made by mixing iron with chromium and often nickel; chromium forms a protective oxide layer that resists corrosion.",
+      "choices": [],
+      "explanation": "Stainless steel is made by mixing iron with chromium and often nickel; chromium forms a protective oxide layer that resists corrosion.",
+      "source": "9F assess-yourself success criterion 16",
+      "level": 3,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "assess",
+        "written"
+      ]
+    },
+    {
+      "id": "y9x-069-9i-recall-units-for-speed-and-explain-what-speed-means",
+      "unit": "9I",
+      "type": "Assess check",
+      "question": "Recall units for speed and explain what speed means.",
+      "answer": "Speed is distance travelled per unit time. Common units include m/s and km/h.",
+      "choices": [],
+      "explanation": "Speed is distance travelled per unit time. Common units include m/s and km/h.",
+      "source": "9I assess-yourself success criterion 01",
+      "level": 1,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "assess",
+        "written"
+      ]
+    },
+    {
+      "id": "y9x-070-9i-explain-how-distance-and-time-affect-speed",
+      "unit": "9I",
+      "type": "Assess check",
+      "question": "Explain how distance and time affect speed.",
+      "answer": "For the same time, more distance means higher speed. For the same distance, more time means lower speed.",
+      "choices": [],
+      "explanation": "For the same time, more distance means higher speed. For the same distance, more time means lower speed.",
+      "source": "9I assess-yourself success criterion 02",
+      "level": 2,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "assess",
+        "written"
+      ]
+    },
+    {
+      "id": "y9x-071-9i-use-the-formula-relating-speed-distance-and-time",
+      "unit": "9I",
+      "type": "Assess check",
+      "question": "Use the formula relating speed, distance and time.",
+      "answer": "Speed = distance ÷ time. Rearranged: distance = speed × time; time = distance ÷ speed.",
+      "choices": [],
+      "explanation": "Speed = distance ÷ time. Rearranged: distance = speed × time; time = distance ÷ speed.",
+      "source": "9I assess-yourself success criterion 03",
+      "level": 2,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "assess",
+        "written"
+      ]
+    },
+    {
+      "id": "y9x-072-9i-describe-levers-ramps-and-pulleys-and-how-they-help-move-loads",
+      "unit": "9I",
+      "type": "Assess check",
+      "question": "Describe levers, ramps and pulleys and how they help move loads.",
+      "answer": "Levers turn about pivots, ramps spread lifting over a longer distance, and pulleys change direction or reduce force using multiple rope sections.",
+      "choices": [],
+      "explanation": "Levers turn about pivots, ramps spread lifting over a longer distance, and pulleys change direction or reduce force using multiple rope sections.",
+      "source": "9I assess-yourself success criterion 04",
+      "level": 2,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "assess",
+        "written"
+      ]
+    },
+    {
+      "id": "y9x-073-9i-explain-how-levers-ramps-or-pulleys-could-raise-or-lift-stones",
+      "unit": "9I",
+      "type": "Assess check",
+      "question": "Explain how levers, ramps or pulleys could raise or lift stones.",
+      "answer": "They can reduce the force needed or change the direction of force, but usually require pulling or pushing over a greater distance.",
+      "choices": [],
+      "explanation": "They can reduce the force needed or change the direction of force, but usually require pulling or pushing over a greater distance.",
+      "source": "9I assess-yourself success criterion 05",
+      "level": 3,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "assess",
+        "written"
+      ]
+    },
+    {
+      "id": "y9x-074-9i-state-what-a-moment-is-and-when-something-balances",
+      "unit": "9I",
+      "type": "Assess check",
+      "question": "State what a moment is and when something balances.",
+      "answer": "A moment is the turning effect of a force. An object balances when clockwise and anticlockwise moments are equal and opposite.",
+      "choices": [],
+      "explanation": "A moment is the turning effect of a force. An object balances when clockwise and anticlockwise moments are equal and opposite.",
+      "source": "9I assess-yourself success criterion 06",
+      "level": 2,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "assess",
+        "written"
+      ]
+    },
+    {
+      "id": "y9x-075-9i-explain-why-simple-machines-do-not-mean-less-energy-is-needed",
+      "unit": "9I",
+      "type": "Assess check",
+      "question": "Explain why simple machines do not mean less energy is needed.",
+      "answer": "Simple machines reduce force by increasing distance moved, so the work done is similar; friction can make the actual energy needed greater.",
+      "choices": [],
+      "explanation": "Simple machines reduce force by increasing distance moved, so the work done is similar; friction can make the actual energy needed greater.",
+      "source": "9I assess-yourself success criterion 07",
+      "level": 3,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "assess",
+        "written"
+      ]
+    },
+    {
+      "id": "y9x-076-9i-represent-part-of-a-journey-on-a-distance-time-graph",
+      "unit": "9I",
+      "type": "Assess check",
+      "question": "Represent part of a journey on a distance-time graph.",
+      "answer": "Put time on the x-axis and distance on the y-axis. A steeper line means greater speed; a flat line means stopped.",
+      "choices": [],
+      "explanation": "Put time on the x-axis and distance on the y-axis. A steeper line means greater speed; a flat line means stopped.",
+      "source": "9I assess-yourself success criterion 08",
+      "level": 3,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "assess",
+        "written"
+      ],
+      "media": [
+        {
+          "src": "assets/diagrams/9I-distance-time-graph.svg",
+          "alt": "Distance-time graph example.",
+          "caption": "Use a graph like this to sketch sections of a journey and explain stops or constant speed."
+        }
+      ]
+    },
+    {
+      "id": "y9x-077-9i-use-the-formula-for-moment-force-and-perpendicular-distance",
+      "unit": "9I",
+      "type": "Assess check",
+      "question": "Use the formula for moment, force and perpendicular distance.",
+      "answer": "Moment = force × perpendicular distance from the pivot. Rearranged: force = moment ÷ distance.",
+      "choices": [],
+      "explanation": "Moment = force × perpendicular distance from the pivot. Rearranged: force = moment ÷ distance.",
+      "source": "9I assess-yourself success criterion 09",
+      "level": 2,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "assess",
+        "written"
+      ]
+    },
+    {
+      "id": "y9x-078-9i-explain-the-effect-of-friction-on-force-needed-to-move-a-load",
+      "unit": "9I",
+      "type": "Assess check",
+      "question": "Explain the effect of friction on force needed to move a load.",
+      "answer": "Friction opposes motion, so a larger applied force is needed to start or keep the load moving.",
+      "choices": [],
+      "explanation": "Friction opposes motion, so a larger applied force is needed to start or keep the load moving.",
+      "source": "9I assess-yourself success criterion 10",
+      "level": 2,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "assess",
+        "written"
+      ]
+    },
+    {
+      "id": "y9x-079-9i-explain-why-friction-usually-means-more-energy-is-needed-with-a-simple-machine",
+      "unit": "9I",
+      "type": "Assess check",
+      "question": "Explain why friction usually means more energy is needed with a simple machine.",
+      "answer": "Friction transfers some energy to thermal energy stores, so extra work is needed compared with an ideal frictionless machine.",
+      "choices": [],
+      "explanation": "Friction transfers some energy to thermal energy stores, so extra work is needed compared with an ideal frictionless machine.",
+      "source": "9I assess-yourself success criterion 11",
+      "level": 3,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "assess",
+        "written"
+      ]
+    },
+    {
+      "id": "y9x-080-9i-explain-how-ramp-angle-affects-friction-and-required-force-using-force-component",
+      "unit": "9I",
+      "type": "Assess check",
+      "question": "Explain how ramp angle affects friction and required force using force components.",
+      "answer": "A shallow ramp reduces the component of weight down the slope but increases distance and contact; a steeper ramp needs more force along the slope.",
+      "choices": [],
+      "explanation": "A shallow ramp reduces the component of weight down the slope but increases distance and contact; a steeper ramp needs more force along the slope.",
+      "source": "9I assess-yourself success criterion 12",
+      "level": 4,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "assess",
+        "written"
+      ]
+    },
+    {
+      "id": "y9x-081-9b-describe-what-gas-exchange-is-and-why-it-needs-to-occur-in-plants",
+      "unit": "9B",
+      "type": "Progress check",
+      "question": "Describe what gas exchange is and why it needs to occur in plants.",
+      "answer": "Gas exchange is the movement of gases such as carbon dioxide and oxygen in and out of leaves. Plants need it for photosynthesis and respiration.",
+      "choices": [],
+      "explanation": "Gas exchange is the movement of gases such as carbon dioxide and oxygen in and out of leaves. Plants need it for photosynthesis and respiration.",
+      "source": "9B Plant Growth PPT slide 48 progress check",
+      "level": 3,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "ppt",
+        "written"
+      ]
+    },
+    {
+      "id": "y9x-082-9b-describe-how-a-leaf-is-adapted-so-palisade-cells-get-the-resources-they-need",
+      "unit": "9B",
+      "type": "Progress check",
+      "question": "Describe how a leaf is adapted so palisade cells get the resources they need.",
+      "answer": "Leaves are broad and thin, have stomata for carbon dioxide, veins/xylem for water, and palisade cells near the top packed with chloroplasts.",
+      "choices": [],
+      "explanation": "Leaves are broad and thin, have stomata for carbon dioxide, veins/xylem for water, and palisade cells near the top packed with chloroplasts.",
+      "source": "9B Plant Growth PPT slide 48 progress check",
+      "level": 3,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "ppt",
+        "written"
+      ],
+      "media": [
+        {
+          "src": "assets/png/9B-stomata-micrograph.png",
+          "alt": "Microscopic view of stomata on a leaf.",
+          "caption": "Stomata help the leaf take in carbon dioxide needed for photosynthesis."
+        }
+      ]
+    },
+    {
+      "id": "y9x-083-9b-describe-why-starch-in-chloroplasts-is-broken-down",
+      "unit": "9B",
+      "type": "Progress check",
+      "question": "Describe why starch in chloroplasts is broken down.",
+      "answer": "Starch is broken down into smaller sugars so it can be transported around the plant and used for respiration, growth or storage elsewhere.",
+      "choices": [],
+      "explanation": "Starch is broken down into smaller sugars so it can be transported around the plant and used for respiration, growth or storage elsewhere.",
+      "source": "9B Plant Growth PPT slide 62 progress check",
+      "level": 3,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "ppt",
+        "written"
+      ]
+    },
+    {
+      "id": "y9x-084-9b-suggest-when-starch-is-broken-down-in-chloroplasts-and-explain-why",
+      "unit": "9B",
+      "type": "Progress check",
+      "question": "Suggest when starch is broken down in chloroplasts and explain why.",
+      "answer": "Starch is mainly broken down when photosynthesis stops or slows, such as at night, so stored carbohydrate can be moved and used.",
+      "choices": [],
+      "explanation": "Starch is mainly broken down when photosynthesis stops or slows, such as at night, so stored carbohydrate can be moved and used.",
+      "source": "9B Plant Growth PPT slide 62 progress check",
+      "level": 3,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "ppt",
+        "written"
+      ]
+    },
+    {
+      "id": "y9x-085-9b-explain-why-plants-do-not-grow-well-if-the-soil-lacks-nitrates",
+      "unit": "9B",
+      "type": "Progress check",
+      "question": "Explain why plants do not grow well if the soil lacks nitrates.",
+      "answer": "Nitrates are needed to make amino acids and proteins. Without enough nitrates, plants cannot make enough protein for growth and enzymes.",
+      "choices": [],
+      "explanation": "Nitrates are needed to make amino acids and proteins. Without enough nitrates, plants cannot make enough protein for growth and enzymes.",
+      "source": "9B Plant Growth PPT slide 65 extending",
+      "level": 3,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "ppt",
+        "written"
+      ]
+    },
+    {
+      "id": "y9x-086-9b-put-the-main-stages-of-germination-into-a-logical-order",
+      "unit": "9B",
+      "type": "Progress check",
+      "question": "Put the main stages of germination into a logical order.",
+      "answer": "Water enters the seed, reactions restart, enzymes are released/activated, starch is digested to glucose, glucose enters the embryo, and the embryo respires and grows.",
+      "choices": [],
+      "explanation": "Water enters the seed, reactions restart, enzymes are released/activated, starch is digested to glucose, glucose enters the embryo, and the embryo respires and grows.",
+      "source": "9B Plant Growth PPT slide 67",
+      "level": 3,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "ppt",
+        "written"
+      ]
+    },
+    {
+      "id": "y9x-087-9b-list-three-substances-found-in-seeds-and-explain-their-functions",
+      "unit": "9B",
+      "type": "Progress check",
+      "question": "List three substances found in seeds and explain their functions.",
+      "answer": "Starch or lipids store energy, enzymes digest stores during germination, proteins provide amino acids, and cellulose forms cell walls.",
+      "choices": [],
+      "explanation": "Starch or lipids store energy, enzymes digest stores during germination, proteins provide amino acids, and cellulose forms cell walls.",
+      "source": "9B Plant Growth PPT slide 67 extending",
+      "level": 3,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "ppt",
+        "written"
+      ]
+    },
+    {
+      "id": "y9x-088-9b-describe-why-plants-are-cross-bred",
+      "unit": "9B",
+      "type": "Progress check",
+      "question": "Describe why plants are cross-bred.",
+      "answer": "Plants are cross-bred to combine useful inherited characteristics, such as higher yield, disease resistance, better taste or drought tolerance.",
+      "choices": [],
+      "explanation": "Plants are cross-bred to combine useful inherited characteristics, such as higher yield, disease resistance, better taste or drought tolerance.",
+      "source": "9B Plant Growth PPT slide 73 objective",
+      "level": 2,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "ppt",
+        "written"
+      ]
+    },
+    {
+      "id": "y9x-089-9b-recall-the-main-mineral-nutrients-plants-need",
+      "unit": "9B",
+      "type": "Progress check",
+      "question": "Recall the main mineral nutrients plants need.",
+      "answer": "Important mineral nutrients include nitrates for proteins, phosphates for DNA/cell membranes/root growth, and potassium compounds for healthy growth and enzymes.",
+      "choices": [],
+      "explanation": "Important mineral nutrients include nitrates for proteins, phosphates for DNA/cell membranes/root growth, and potassium compounds for healthy growth and enzymes.",
+      "source": "9B Plant Growth PPT slide 73 objective",
+      "level": 2,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "ppt",
+        "written"
+      ]
+    },
+    {
+      "id": "y9x-090-9b-explain-how-food-production-for-humans-can-be-increased",
+      "unit": "9B",
+      "type": "Progress check",
+      "question": "Explain how food production for humans can be increased.",
+      "answer": "Food production can be increased using selective breeding, fertilisers, pest control, greenhouses, irrigation and choosing suitable crop varieties.",
+      "choices": [],
+      "explanation": "Food production can be increased using selective breeding, fertilisers, pest control, greenhouses, irrigation and choosing suitable crop varieties.",
+      "source": "9B Plant Growth PPT slide 73 objective",
+      "level": 3,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "ppt",
+        "written"
+      ]
+    },
+    {
+      "id": "y9x-091-9b-explain-why-phosphates-and-potassium-are-important-nutrients-for-plants",
+      "unit": "9B",
+      "type": "Progress check",
+      "question": "Explain why phosphates and potassium are important nutrients for plants.",
+      "answer": "Phosphates are needed for DNA, energy transfer and root growth; potassium helps enzymes and healthy flower/fruit development.",
+      "choices": [],
+      "explanation": "Phosphates are needed for DNA, energy transfer and root growth; potassium helps enzymes and healthy flower/fruit development.",
+      "source": "9B Plant Growth PPT slide 73 objective",
+      "level": 3,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "ppt",
+        "written"
+      ]
+    },
+    {
+      "id": "y9x-092-9b-define-biodiversity",
+      "unit": "9B",
+      "type": "Progress check",
+      "question": "Define biodiversity.",
+      "answer": "Biodiversity is the range of different species living in a particular area.",
+      "choices": [],
+      "explanation": "Biodiversity is the range of different species living in a particular area.",
+      "source": "9B Plant Growth PPT slide 95",
+      "level": 1,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "ppt",
+        "written"
+      ]
+    },
+    {
+      "id": "y9x-093-9b-describe-how-sampling-can-estimate-biodiversity-in-a-field",
+      "unit": "9B",
+      "type": "Progress check",
+      "question": "Describe how sampling can estimate biodiversity in a field.",
+      "answer": "Use quadrats placed randomly or along a transect, count species in each quadrat, then use the sample to estimate diversity in the whole area.",
+      "choices": [],
+      "explanation": "Use quadrats placed randomly or along a transect, count species in each quadrat, then use the sample to estimate diversity in the whole area.",
+      "source": "9B Plant Growth PPT slides 97-98",
+      "level": 3,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "ppt",
+        "written"
+      ]
+    },
+    {
+      "id": "y9x-094-9b-explain-why-relying-on-one-crop-variety-can-be-risky",
+      "unit": "9B",
+      "type": "Progress check",
+      "question": "Explain why relying on one crop variety can be risky.",
+      "answer": "A single variety may all be vulnerable to the same disease, pest or environmental change, so a whole crop can fail.",
+      "choices": [],
+      "explanation": "A single variety may all be vulnerable to the same disease, pest or environmental change, so a whole crop can fail.",
+      "source": "9B Plant Growth PPT slide 99 extending",
+      "level": 3,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "ppt",
+        "written"
+      ]
+    },
+    {
+      "id": "y9x-095-9b-label-the-main-processes-in-the-carbon-cycle",
+      "unit": "9B",
+      "type": "Progress check",
+      "question": "Label the main processes in the carbon cycle.",
+      "answer": "Photosynthesis removes carbon dioxide; feeding transfers carbon; respiration and combustion release carbon dioxide; decomposition returns carbon from dead material.",
+      "choices": [],
+      "explanation": "Photosynthesis removes carbon dioxide; feeding transfers carbon; respiration and combustion release carbon dioxide; decomposition returns carbon from dead material.",
+      "source": "9B Plant Growth PPT slide 103",
+      "level": 3,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "ppt",
+        "written"
+      ]
+    },
+    {
+      "id": "y9x-096-9b-explain-how-farming-affects-the-carbon-cycle",
+      "unit": "9B",
+      "type": "Progress check",
+      "question": "Explain how farming affects the carbon cycle.",
+      "answer": "Farming can remove trees, disturb soils, burn fuels, use crops or livestock and release carbon dioxide, reducing long-term carbon storage.",
+      "choices": [],
+      "explanation": "Farming can remove trees, disturb soils, burn fuels, use crops or livestock and release carbon dioxide, reducing long-term carbon storage.",
+      "source": "9B Plant Growth PPT slide 103 extending",
+      "level": 4,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "ppt",
+        "written"
+      ]
+    },
+    {
+      "id": "y9x-097-9b-give-advantages-and-disadvantages-of-clearing-land-for-farming",
+      "unit": "9B",
+      "type": "Progress check",
+      "question": "Give advantages and disadvantages of clearing land for farming.",
+      "answer": "Advantages include more crop land and food. Disadvantages include habitat loss, reduced biodiversity, soil erosion and carbon dioxide release.",
+      "choices": [],
+      "explanation": "Advantages include more crop land and food. Disadvantages include habitat loss, reduced biodiversity, soil erosion and carbon dioxide release.",
+      "source": "9B Plant Growth PPT slide 105",
+      "level": 3,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "ppt",
+        "written"
+      ]
+    },
+    {
+      "id": "y9x-098-9b-give-advantages-and-disadvantages-of-insecticides-and-herbicides",
+      "unit": "9B",
+      "type": "Progress check",
+      "question": "Give advantages and disadvantages of insecticides and herbicides.",
+      "answer": "They protect yield by killing pests or weeds, but can kill non-target species, reduce biodiversity and sometimes persist in food chains.",
+      "choices": [],
+      "explanation": "They protect yield by killing pests or weeds, but can kill non-target species, reduce biodiversity and sometimes persist in food chains.",
+      "source": "9B Plant Growth PPT slide 105",
+      "level": 3,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "ppt",
+        "written"
+      ]
+    },
+    {
+      "id": "y9x-099-9b-give-advantages-and-disadvantages-of-fertilisers",
+      "unit": "9B",
+      "type": "Progress check",
+      "question": "Give advantages and disadvantages of fertilisers.",
+      "answer": "Fertilisers increase growth and yield, but runoff can cause eutrophication, algal blooms and oxygen loss in lakes.",
+      "choices": [],
+      "explanation": "Fertilisers increase growth and yield, but runoff can cause eutrophication, algal blooms and oxygen loss in lakes.",
+      "source": "9B Plant Growth PPT slide 105",
+      "level": 3,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "ppt",
+        "written"
+      ]
+    },
+    {
+      "id": "y9x-100-9b-explain-why-changing-from-wheat-to-rapeseed-after-many-years-may-reduce-yield",
+      "unit": "9B",
+      "type": "Progress check",
+      "question": "Explain why changing from wheat to rapeseed after many years may reduce yield.",
+      "answer": "The soil may be depleted of particular nutrients, pests or diseases may be present, and soil structure/biodiversity may have been affected by long-term monoculture.",
+      "choices": [],
+      "explanation": "The soil may be depleted of particular nutrients, pests or diseases may be present, and soil structure/biodiversity may have been affected by long-term monoculture.",
+      "source": "9B Plant Growth PPT slide 105 extending",
+      "level": 4,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "ppt",
+        "written"
+      ]
+    },
+    {
+      "id": "y9x-101-9j-state-where-electrons-are-found-in-an-atom",
+      "unit": "9J",
+      "type": "Progress check",
+      "question": "State where electrons are found in an atom.",
+      "answer": "Electrons are found around the nucleus in shells or energy levels.",
+      "choices": [],
+      "explanation": "Electrons are found around the nucleus in shells or energy levels.",
+      "source": "9Jb Static Electricity PPT slide 9 progress check",
+      "level": 1,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "ppt",
+        "written"
+      ]
+    },
+    {
+      "id": "y9x-102-9j-describe-the-dangers-of-static-electricity",
+      "unit": "9J",
+      "type": "Progress check",
+      "question": "Describe the dangers of static electricity.",
+      "answer": "Static sparks can ignite flammable vapours or dust, damage electronic components and give small electric shocks.",
+      "choices": [],
+      "explanation": "Static sparks can ignite flammable vapours or dust, damage electronic components and give small electric shocks.",
+      "source": "9Jb Static Electricity PPT slide 9 progress check",
+      "level": 2,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "ppt",
+        "written"
+      ],
+      "media": [
+        {
+          "src": "assets/png/9J-static-electricity-demo.png",
+          "alt": "Static electricity demonstration.",
+          "caption": "Static charge can build up and then discharge suddenly as a spark."
+        }
+      ]
+    },
+    {
+      "id": "y9x-103-9j-explain-why-only-negative-charges-transfer-onto-an-insulating-material",
+      "unit": "9J",
+      "type": "Progress check",
+      "question": "Explain why only negative charges transfer onto an insulating material.",
+      "answer": "Only electrons can move between materials; positive charges are fixed in the nuclei of atoms.",
+      "choices": [],
+      "explanation": "Only electrons can move between materials; positive charges are fixed in the nuclei of atoms.",
+      "source": "9Jb Static Electricity PPT slide 9 progress check",
+      "level": 3,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "ppt",
+        "written"
+      ],
+      "media": [
+        {
+          "src": "assets/png/9J-static-electricity-demo.png",
+          "alt": "Static electricity image showing electrons transferred.",
+          "caption": "In solids, electrons move; the image shows electrons transferring from hair to the balloon."
+        }
+      ]
+    },
+    {
+      "id": "y9x-104-9j-explain-why-a-rubbed-polythene-rod-has-an-overall-negative-charge",
+      "unit": "9J",
+      "type": "Progress check",
+      "question": "Explain why a rubbed polythene rod has an overall negative charge.",
+      "answer": "Rubbing transfers electrons onto the polythene, so it has more electrons than protons and becomes negatively charged.",
+      "choices": [],
+      "explanation": "Rubbing transfers electrons onto the polythene, so it has more electrons than protons and becomes negatively charged.",
+      "source": "9Jb Static Electricity PPT slide 9 progress check",
+      "level": 3,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "ppt",
+        "written"
+      ],
+      "media": [
+        {
+          "src": "assets/png/9J-static-electricity-demo.png",
+          "alt": "Balloon and charged rod static electricity demonstration.",
+          "caption": "A rubbed insulating object gains extra electrons and becomes negatively charged."
+        }
+      ]
+    },
+    {
+      "id": "y9x-105-9j-describe-how-charged-objects-attract-or-repel-each-other",
+      "unit": "9J",
+      "type": "Progress check",
+      "question": "Describe how charged objects attract or repel each other.",
+      "answer": "Like charges repel; opposite charges attract. Charged objects can also attract uncharged light objects by inducing charge separation.",
+      "choices": [],
+      "explanation": "Like charges repel; opposite charges attract. Charged objects can also attract uncharged light objects by inducing charge separation.",
+      "source": "9Jb Static Electricity PPT slides 8 and 10",
+      "level": 2,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "ppt",
+        "written"
+      ],
+      "media": [
+        {
+          "src": "assets/png/9J-static-electricity-demo.png",
+          "alt": "Static electricity poster with attract and repel examples.",
+          "caption": "Like charges repel and opposite charges attract."
+        }
+      ]
+    },
+    {
+      "id": "y9x-106-9j-describe-a-fair-investigation-of-forces-between-charged-rods",
+      "unit": "9J",
+      "type": "Progress check",
+      "question": "Describe a fair investigation of forces between charged rods.",
+      "answer": "Rub rods in the same way, suspend one rod, bring another charged rod near without touching, record attraction/repulsion, and repeat with different rod combinations.",
+      "choices": [],
+      "explanation": "Rub rods in the same way, suspend one rod, bring another charged rod near without touching, record attraction/repulsion, and repeat with different rod combinations.",
+      "source": "9Jb Static Electricity PPT slide 12",
+      "level": 3,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "ppt",
+        "written"
+      ]
+    },
+    {
+      "id": "y9x-107-9j-state-three-materials-that-have-high-resistance",
+      "unit": "9J",
+      "type": "Progress check",
+      "question": "State three materials that have high resistance.",
+      "answer": "Insulators such as plastic, rubber, glass or ceramic have high resistance.",
+      "choices": [],
+      "explanation": "Insulators such as plastic, rubber, glass or ceramic have high resistance.",
+      "source": "9Jd Resistance PPT slide 9 progress check",
+      "level": 1,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "ppt",
+        "written"
+      ],
+      "media": [
+        {
+          "src": "assets/png/9E-conductors-insulators-materials.png",
+          "alt": "Materials including plastic, wood and rubber beside copper.",
+          "caption": "Plastic, wood and rubber are examples of materials with high resistance."
+        }
+      ]
+    },
+    {
+      "id": "y9x-108-9j-describe-what-resistance-is",
+      "unit": "9J",
+      "type": "Progress check",
+      "question": "Describe what resistance is.",
+      "answer": "Resistance is how difficult it is for current to flow through a component or material.",
+      "choices": [],
+      "explanation": "Resistance is how difficult it is for current to flow through a component or material.",
+      "source": "9Jd Resistance PPT slide 9 progress check",
+      "level": 1,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "ppt",
+        "written"
+      ]
+    },
+    {
+      "id": "y9x-109-9j-describe-how-to-increase-resistance-in-a-circuit",
+      "unit": "9J",
+      "type": "Progress check",
+      "question": "Describe how to increase resistance in a circuit.",
+      "answer": "Use a longer wire, a thinner wire, a higher-resistance material, add resistors, or increase a variable resistor.",
+      "choices": [],
+      "explanation": "Use a longer wire, a thinner wire, a higher-resistance material, add resistors, or increase a variable resistor.",
+      "source": "9Jd Resistance PPT slide 9 progress check",
+      "level": 2,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "ppt",
+        "written"
+      ]
+    },
+    {
+      "id": "y9x-110-9j-state-the-units-for-voltage-current-and-resistance",
+      "unit": "9J",
+      "type": "Progress check",
+      "question": "State the units for voltage, current and resistance.",
+      "answer": "Voltage is measured in volts (V), current in amperes/amps (A), and resistance in ohms (Ω).",
+      "choices": [],
+      "explanation": "Voltage is measured in volts (V), current in amperes/amps (A), and resistance in ohms (Ω).",
+      "source": "9Jd Resistance PPT slide 10",
+      "level": 1,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "ppt",
+        "written"
+      ]
+    },
+    {
+      "id": "y9x-111-9j-explain-which-wire-has-higher-resistance-a-long-thin-wire-or-a-short-thick-wire-",
+      "unit": "9J",
+      "type": "Progress check",
+      "question": "Explain which wire has higher resistance: a long thin wire or a short thick wire of the same material.",
+      "answer": "The long thin wire has higher resistance because length increases resistance and smaller thickness reduces the space for current to flow.",
+      "choices": [],
+      "explanation": "The long thin wire has higher resistance because length increases resistance and smaller thickness reduces the space for current to flow.",
+      "source": "9Jd Resistance PPT slide 8",
+      "level": 3,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "ppt",
+        "written"
+      ]
+    },
+    {
+      "id": "y9x-112-9j-explain-how-a-current-voltage-graph-shows-which-resistor-has-the-higher-resistan",
+      "unit": "9J",
+      "type": "Progress check",
+      "question": "Explain how a current-voltage graph shows which resistor has the higher resistance.",
+      "answer": "At the same voltage, the resistor with the lower current has the higher resistance because R = V/I.",
+      "choices": [],
+      "explanation": "At the same voltage, the resistor with the lower current has the higher resistance because R = V/I.",
+      "source": "9Jd Resistance PPT slide 16",
+      "level": 3,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "ppt",
+        "written"
+      ],
+      "media": [
+        {
+          "src": "assets/diagrams/9J-current-voltage-graph.svg",
+          "alt": "Current-voltage graph with one steeper and one shallower line.",
+          "caption": "The shallower line means less current for the same voltage, so the resistance is higher."
+        }
+      ]
+    },
+    {
+      "id": "y9x-113-9j-plan-an-investigation-into-how-wire-thickness-affects-resistance",
+      "unit": "9J",
+      "type": "Progress check",
+      "question": "Plan an investigation into how wire thickness affects resistance.",
+      "answer": "Use wires of the same material and length but different thicknesses, measure voltage and current, calculate resistance, and control temperature.",
+      "choices": [],
+      "explanation": "Use wires of the same material and length but different thicknesses, measure voltage and current, calculate resistance, and control temperature.",
+      "source": "9Jd Resistance PPT objective",
+      "level": 4,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "ppt",
+        "written"
+      ]
+    },
+    {
+      "id": "y9x-114-9j-explain-why-copper-is-commonly-used-for-wires-in-circuits",
+      "unit": "9J",
+      "type": "Progress check",
+      "question": "Explain why copper is commonly used for wires in circuits.",
+      "answer": "Copper is a good electrical conductor with low resistance, is ductile and is not too expensive compared with metals such as silver.",
+      "choices": [],
+      "explanation": "Copper is a good electrical conductor with low resistance, is ductile and is not too expensive compared with metals such as silver.",
+      "source": "9Jc Current Electricity PPT slide 3 extending",
+      "level": 2,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "ppt",
+        "written"
+      ],
+      "media": [
+        {
+          "src": "assets/png/9E-conductors-insulators-materials.png",
+          "alt": "Copper wire compared with insulating materials.",
+          "caption": "Copper is used for wires because it has low resistance and is a very good conductor."
+        }
+      ]
+    },
+    {
+      "id": "y9x-115-9j-describe-how-current-behaves-in-series-and-parallel-circuits",
+      "unit": "9J",
+      "type": "Progress check",
+      "question": "Describe how current behaves in series and parallel circuits.",
+      "answer": "Current is the same everywhere in a series circuit. In a parallel circuit, current splits at junctions and recombines afterwards.",
+      "choices": [],
+      "explanation": "Current is the same everywhere in a series circuit. In a parallel circuit, current splits at junctions and recombines afterwards.",
+      "source": "9Jc Current Electricity PPT slide 10",
+      "level": 3,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "ppt",
+        "written"
+      ],
+      "media": [
+        {
+          "src": "assets/png/9J-series-parallel-circuits-photo.png",
+          "alt": "Physical comparison of series and parallel circuits.",
+          "caption": "Use the comparison image to explain how current behaves differently in one loop versus multiple branches."
+        }
+      ]
+    },
+    {
+      "id": "y9x-116-9j-describe-how-voltage-behaves-in-series-and-parallel-circuits",
+      "unit": "9J",
+      "type": "Progress check",
+      "question": "Describe how voltage behaves in series and parallel circuits.",
+      "answer": "In series, voltages across components add to the supply voltage. In parallel, each branch has the same voltage as the supply.",
+      "choices": [],
+      "explanation": "In series, voltages across components add to the supply voltage. In parallel, each branch has the same voltage as the supply.",
+      "source": "9Jc Current Electricity PPT slide 13",
+      "level": 3,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "ppt",
+        "written"
+      ],
+      "media": [
+        {
+          "src": "assets/png/9J-series-parallel-circuits-photo.png",
+          "alt": "Series and parallel circuits with bulbs and battery packs.",
+          "caption": "Use the image to help compare how voltage is shared in series circuits and matched across branches in parallel circuits."
+        }
+      ]
+    },
+    {
+      "id": "y9x-117-9j-explain-the-difference-between-an-electromagnet-and-a-bar-magnet",
+      "unit": "9J",
+      "type": "Progress check",
+      "question": "Explain the difference between an electromagnet and a bar magnet.",
+      "answer": "An electromagnet can be switched on and off and its strength can be changed by current, turns or core; a bar magnet is permanently magnetic.",
+      "choices": [],
+      "explanation": "An electromagnet can be switched on and off and its strength can be changed by current, turns or core; a bar magnet is permanently magnetic.",
+      "source": "9Je Electromagnets PPT slide 3 extending",
+      "level": 2,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "ppt",
+        "written"
+      ],
+      "media": [
+        {
+          "src": "assets/png/9J-magnetic-field-pattern.png",
+          "alt": "Bar magnet and field pattern.",
+          "caption": "Use the bar magnet field pattern as a reference point when comparing it with an electromagnet."
+        }
+      ]
+    },
+    {
+      "id": "y9x-118-9j-predict-how-changing-current-magnetic-field-strength-or-current-direction-affect",
+      "unit": "9J",
+      "type": "Progress check",
+      "question": "Predict how changing current, magnetic field strength or current direction affects a motor.",
+      "answer": "Increasing current increases force, a weaker magnetic field reduces force, and reversing current reverses the direction of the force.",
+      "choices": [],
+      "explanation": "Increasing current increases force, a weaker magnetic field reduces force, and reversing current reverses the direction of the force.",
+      "source": "9Je Electromagnets PPT slide 8",
+      "level": 4,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "ppt",
+        "written"
+      ],
+      "media": [
+        {
+          "src": "assets/diagrams/9J-motor-effect.svg",
+          "alt": "Motor effect support diagram.",
+          "caption": "Changing current or magnetic field strength changes the force."
+        }
+      ]
+    },
+    {
+      "id": "y9x-119-9j-gamora-has-mass-54-kg-calculate-her-weight-on-earth-where-g-10-n-kg",
+      "unit": "9J",
+      "type": "Calculation",
+      "question": "Gamora has mass 54 kg. Calculate her weight on Earth, where g = 10 N/kg.",
+      "answer": "540 N",
+      "choices": [],
+      "explanation": "Weight = mass × g = 54 × 10 = 540 N.",
+      "source": "9Ja Force Fields PPT slide 17",
+      "level": 2,
+      "cue": "Write the formula, substitute the numbers, then add units.",
+      "tags": [
+        "calculation"
+      ]
+    },
+    {
+      "id": "y9x-120-9j-gamora-has-mass-54-kg-on-a-planet-where-g-5-n-kg-calculate-her-weight",
+      "unit": "9J",
+      "type": "Calculation",
+      "question": "Gamora has mass 54 kg on a planet where g = 5 N/kg. Calculate her weight.",
+      "answer": "270 N",
+      "choices": [],
+      "explanation": "Weight = 54 × 5 = 270 N.",
+      "source": "9Ja Force Fields PPT slide 17",
+      "level": 2,
+      "cue": "Write the formula, substitute the numbers, then add units.",
+      "tags": [
+        "calculation"
+      ]
+    },
+    {
+      "id": "y9x-121-9j-star-lord-has-mass-96-kg-calculate-his-weight-on-earth-where-g-10-n-kg",
+      "unit": "9J",
+      "type": "Calculation",
+      "question": "Star Lord has mass 96 kg. Calculate his weight on Earth, where g = 10 N/kg.",
+      "answer": "960 N",
+      "choices": [],
+      "explanation": "Weight = 96 × 10 = 960 N.",
+      "source": "9Ja Force Fields PPT slide 18",
+      "level": 2,
+      "cue": "Write the formula, substitute the numbers, then add units.",
+      "tags": [
+        "calculation"
+      ]
+    },
+    {
+      "id": "y9x-122-9j-star-lord-has-mass-96-kg-on-a-planet-where-g-14-n-kg-calculate-his-weight",
+      "unit": "9J",
+      "type": "Calculation",
+      "question": "Star Lord has mass 96 kg on a planet where g = 14 N/kg. Calculate his weight.",
+      "answer": "1344 N",
+      "choices": [],
+      "explanation": "Weight = 96 × 14 = 1344 N.",
+      "source": "9Ja Force Fields PPT slide 18",
+      "level": 3,
+      "cue": "Write the formula, substitute the numbers, then add units.",
+      "tags": [
+        "calculation"
+      ]
+    },
+    {
+      "id": "y9x-123-9j-drax-weighs-1220-n-on-earth-where-g-10-n-kg-calculate-his-mass",
+      "unit": "9J",
+      "type": "Calculation",
+      "question": "Drax weighs 1220 N on Earth where g = 10 N/kg. Calculate his mass.",
+      "answer": "122 kg",
+      "choices": [],
+      "explanation": "Mass = weight ÷ g = 1220 ÷ 10 = 122 kg.",
+      "source": "9Ja Force Fields PPT slide 19",
+      "level": 2,
+      "cue": "Write the formula, substitute the numbers, then add units.",
+      "tags": [
+        "calculation"
+      ]
+    },
+    {
+      "id": "y9x-124-9j-drax-has-mass-122-kg-on-a-planet-where-g-7-5-n-kg-calculate-his-weight",
+      "unit": "9J",
+      "type": "Calculation",
+      "question": "Drax has mass 122 kg on a planet where g = 7.5 N/kg. Calculate his weight.",
+      "answer": "915 N",
+      "choices": [],
+      "explanation": "Weight = 122 × 7.5 = 915 N.",
+      "source": "9Ja Force Fields PPT slide 19",
+      "level": 3,
+      "cue": "Write the formula, substitute the numbers, then add units.",
+      "tags": [
+        "calculation"
+      ]
+    },
+    {
+      "id": "y9x-125-9j-rocket-weighs-470-n-on-earth-where-g-10-n-kg-calculate-his-mass",
+      "unit": "9J",
+      "type": "Calculation",
+      "question": "Rocket weighs 470 N on Earth where g = 10 N/kg. Calculate his mass.",
+      "answer": "47 kg",
+      "choices": [],
+      "explanation": "Mass = 470 ÷ 10 = 47 kg.",
+      "source": "9Ja Force Fields PPT slide 20",
+      "level": 2,
+      "cue": "Write the formula, substitute the numbers, then add units.",
+      "tags": [
+        "calculation"
+      ]
+    },
+    {
+      "id": "y9x-126-9j-rocket-has-mass-47-kg-on-a-planet-where-g-22-8-n-kg-calculate-his-weight",
+      "unit": "9J",
+      "type": "Calculation",
+      "question": "Rocket has mass 47 kg on a planet where g = 22.8 N/kg. Calculate his weight.",
+      "answer": "1071.6 N",
+      "choices": [],
+      "explanation": "Weight = 47 × 22.8 = 1071.6 N.",
+      "source": "9Ja Force Fields PPT slide 20",
+      "level": 3,
+      "cue": "Write the formula, substitute the numbers, then add units.",
+      "tags": [
+        "calculation"
+      ]
+    },
+    {
+      "id": "y9x-127-9j-mantis-has-mass-56-kg-calculate-her-weight-on-earth-where-g-10-n-kg",
+      "unit": "9J",
+      "type": "Calculation",
+      "question": "Mantis has mass 56 kg. Calculate her weight on Earth where g = 10 N/kg.",
+      "answer": "560 N",
+      "choices": [],
+      "explanation": "Weight = 56 × 10 = 560 N.",
+      "source": "9Ja Force Fields PPT slide 21",
+      "level": 2,
+      "cue": "Write the formula, substitute the numbers, then add units.",
+      "tags": [
+        "calculation"
+      ]
+    },
+    {
+      "id": "y9x-128-9j-mantis-has-mass-56-kg-and-weight-686-n-on-a-planet-calculate-g",
+      "unit": "9J",
+      "type": "Calculation",
+      "question": "Mantis has mass 56 kg and weight 686 N on a planet. Calculate g.",
+      "answer": "12.25 N/kg",
+      "choices": [],
+      "explanation": "g = weight ÷ mass = 686 ÷ 56 = 12.25 N/kg.",
+      "source": "9Ja Force Fields PPT slide 21",
+      "level": 4,
+      "cue": "Write the formula, substitute the numbers, then add units.",
+      "tags": [
+        "calculation"
+      ]
+    },
+    {
+      "id": "y9x-129-9j-groot-has-mass-34-kg-on-a-planet-where-g-6-8-n-kg-calculate-his-weight",
+      "unit": "9J",
+      "type": "Calculation",
+      "question": "Groot has mass 34 kg on a planet where g = 6.8 N/kg. Calculate his weight.",
+      "answer": "231.2 N",
+      "choices": [],
+      "explanation": "Weight = 34 × 6.8 = 231.2 N.",
+      "source": "9Ja Force Fields PPT slide 22",
+      "level": 3,
+      "cue": "Write the formula, substitute the numbers, then add units.",
+      "tags": [
+        "calculation"
+      ]
+    },
+    {
+      "id": "y9x-130-9j-groot-has-mass-34-kg-and-weight-724-2-n-on-a-planet-calculate-g",
+      "unit": "9J",
+      "type": "Calculation",
+      "question": "Groot has mass 34 kg and weight 724.2 N on a planet. Calculate g.",
+      "answer": "21.3 N/kg",
+      "choices": [],
+      "explanation": "g = 724.2 ÷ 34 = 21.3 N/kg.",
+      "source": "9Ja Force Fields PPT slide 22",
+      "level": 4,
+      "cue": "Write the formula, substitute the numbers, then add units.",
+      "tags": [
+        "calculation"
+      ]
+    },
+    {
+      "id": "y9x-131-9j-oberon-has-about-1-3-times-the-mass-of-rhea-but-a-similar-diameter-which-moon-ha",
+      "unit": "9J",
+      "type": "Calculation",
+      "question": "Oberon has about 1.3 times the mass of Rhea but a similar diameter. Which moon has greater surface gravity?",
+      "answer": "Oberon",
+      "choices": [],
+      "explanation": "With similar diameters, the more massive moon has a stronger gravitational field, so Oberon has greater surface gravity.",
+      "source": "9Ja Force Fields PPT slide 23 practice question",
+      "level": 4,
+      "cue": "Write the formula, substitute the numbers, then add units.",
+      "tags": [
+        "calculation"
+      ]
+    },
+    {
+      "id": "y9x-132-9j-calculate-resistance-voltage-12-v-current-2-a",
+      "unit": "9J",
+      "type": "Calculation",
+      "question": "Calculate resistance: voltage = 12 V, current = 2 A.",
+      "answer": "6 Ω",
+      "choices": [],
+      "explanation": "R = V ÷ I = 12 ÷ 2 = 6 Ω.",
+      "source": "9Jd Resistance formula practice",
+      "level": 2,
+      "cue": "Write the formula, substitute the numbers, then add units.",
+      "tags": [
+        "calculation"
+      ]
+    },
+    {
+      "id": "y9x-133-9j-calculate-resistance-voltage-9-v-current-0-3-a",
+      "unit": "9J",
+      "type": "Calculation",
+      "question": "Calculate resistance: voltage = 9 V, current = 0.3 A.",
+      "answer": "30 Ω",
+      "choices": [],
+      "explanation": "R = 9 ÷ 0.3 = 30 Ω.",
+      "source": "9Jd Resistance formula practice",
+      "level": 2,
+      "cue": "Write the formula, substitute the numbers, then add units.",
+      "tags": [
+        "calculation"
+      ]
+    },
+    {
+      "id": "y9x-134-9j-calculate-resistance-voltage-8-v-current-0-02-a",
+      "unit": "9J",
+      "type": "Calculation",
+      "question": "Calculate resistance: voltage = 8 V, current = 0.02 A.",
+      "answer": "400 Ω",
+      "choices": [],
+      "explanation": "R = 8 ÷ 0.02 = 400 Ω.",
+      "source": "9Jd Resistance PPT table-style practice",
+      "level": 3,
+      "cue": "Write the formula, substitute the numbers, then add units.",
+      "tags": [
+        "calculation"
+      ]
+    },
+    {
+      "id": "y9x-135-9j-calculate-current-voltage-6-v-resistance-30",
+      "unit": "9J",
+      "type": "Calculation",
+      "question": "Calculate current: voltage = 6 V, resistance = 30 Ω.",
+      "answer": "0.2 A",
+      "choices": [],
+      "explanation": "I = V ÷ R = 6 ÷ 30 = 0.2 A.",
+      "source": "9Jd Resistance formula practice",
+      "level": 3,
+      "cue": "Write the formula, substitute the numbers, then add units.",
+      "tags": [
+        "calculation"
+      ]
+    },
+    {
+      "id": "y9x-136-9j-calculate-voltage-current-0-5-a-resistance-20",
+      "unit": "9J",
+      "type": "Calculation",
+      "question": "Calculate voltage: current = 0.5 A, resistance = 20 Ω.",
+      "answer": "10 V",
+      "choices": [],
+      "explanation": "V = I × R = 0.5 × 20 = 10 V.",
+      "source": "9Jd Resistance PPT modelled answer extension",
+      "level": 2,
+      "cue": "Write the formula, substitute the numbers, then add units.",
+      "tags": [
+        "calculation"
+      ]
+    },
+    {
+      "id": "y9x-137-9j-calculate-voltage-current-0-02-a-resistance-5200",
+      "unit": "9J",
+      "type": "Calculation",
+      "question": "Calculate voltage: current = 0.02 A, resistance = 5200 Ω.",
+      "answer": "104 V",
+      "choices": [],
+      "explanation": "V = I × R = 0.02 × 5200 = 104 V.",
+      "source": "9Jd Resistance PPT table-style practice",
+      "level": 4,
+      "cue": "Write the formula, substitute the numbers, then add units.",
+      "tags": [
+        "calculation"
+      ]
+    },
+    {
+      "id": "y9x-138-9i-a-stone-is-moved-65-km-in-65-h-calculate-the-mean-speed",
+      "unit": "9I",
+      "type": "Calculation",
+      "question": "A stone is moved 65 km in 65 h. Calculate the mean speed.",
+      "answer": "1 km/h",
+      "choices": [],
+      "explanation": "Speed = distance ÷ time = 65 ÷ 65 = 1 km/h.",
+      "source": "9I assess-yourself journey context",
+      "level": 2,
+      "cue": "Write the formula, substitute the numbers, then add units.",
+      "tags": [
+        "calculation"
+      ]
+    },
+    {
+      "id": "y9x-139-9i-a-river-section-is-40-km-and-the-stones-move-at-3-km-h-calculate-the-time-taken",
+      "unit": "9I",
+      "type": "Calculation",
+      "question": "A river section is 40 km and the stones move at 3 km/h. Calculate the time taken.",
+      "answer": "13.3 h, or about 13 h 20 min",
+      "choices": [],
+      "explanation": "Time = distance ÷ speed = 40 ÷ 3 = 13.33 h.",
+      "source": "9I assess-yourself journey context",
+      "level": 3,
+      "cue": "Write the formula, substitute the numbers, then add units.",
+      "tags": [
+        "calculation"
+      ]
+    },
+    {
+      "id": "y9x-140-9i-a-final-overland-section-is-5-km-at-1-km-h-calculate-the-time-taken",
+      "unit": "9I",
+      "type": "Calculation",
+      "question": "A final overland section is 5 km at 1 km/h. Calculate the time taken.",
+      "answer": "5 h",
+      "choices": [],
+      "explanation": "Time = 5 ÷ 1 = 5 h.",
+      "source": "9I assess-yourself journey context",
+      "level": 2,
+      "cue": "Write the formula, substitute the numbers, then add units.",
+      "tags": [
+        "calculation"
+      ]
+    },
+    {
+      "id": "y9x-141-9i-a-force-of-200-n-acts-0-5-m-from-a-pivot-calculate-the-moment",
+      "unit": "9I",
+      "type": "Calculation",
+      "question": "A force of 200 N acts 0.5 m from a pivot. Calculate the moment.",
+      "answer": "100 N m",
+      "choices": [],
+      "explanation": "Moment = force × distance = 200 × 0.5 = 100 N m.",
+      "source": "9I moments practice",
+      "level": 2,
+      "cue": "Write the formula, substitute the numbers, then add units.",
+      "tags": [
+        "calculation"
+      ]
+    },
+    {
+      "id": "y9x-142-9i-a-moment-of-120-n-m-is-needed-using-a-lever-2-m-from-the-pivot-calculate-the-for",
+      "unit": "9I",
+      "type": "Calculation",
+      "question": "A moment of 120 N m is needed using a lever 2 m from the pivot. Calculate the force.",
+      "answer": "60 N",
+      "choices": [],
+      "explanation": "Force = moment ÷ distance = 120 ÷ 2 = 60 N.",
+      "source": "9I moments practice",
+      "level": 3,
+      "cue": "Write the formula, substitute the numbers, then add units.",
+      "tags": [
+        "calculation"
+      ]
+    },
+    {
+      "id": "y9x-143-9i-a-300-n-force-moves-a-load-4-m-calculate-the-work-done",
+      "unit": "9I",
+      "type": "Calculation",
+      "question": "A 300 N force moves a load 4 m. Calculate the work done.",
+      "answer": "1200 J",
+      "choices": [],
+      "explanation": "Work done = force × distance = 300 × 4 = 1200 J.",
+      "source": "9I work-done practice",
+      "level": 2,
+      "cue": "Write the formula, substitute the numbers, then add units.",
+      "tags": [
+        "calculation"
+      ]
+    },
+    {
+      "id": "y9x-144-9i-a-ramp-requires-1500-j-of-work-over-5-m-calculate-the-average-force",
+      "unit": "9I",
+      "type": "Calculation",
+      "question": "A ramp requires 1500 J of work over 5 m. Calculate the average force.",
+      "answer": "300 N",
+      "choices": [],
+      "explanation": "Force = work done ÷ distance = 1500 ÷ 5 = 300 N.",
+      "source": "9I ramps/work-done practice",
+      "level": 3,
+      "cue": "Write the formula, substitute the numbers, then add units.",
+      "tags": [
+        "calculation"
+      ]
+    },
+    {
+      "id": "y9x-145-9i-a-cyclist-travels-at-6-m-s-for-20-s-calculate-the-distance-travelled",
+      "unit": "9I",
+      "type": "Calculation",
+      "question": "A cyclist travels at 6 m/s for 20 s. Calculate the distance travelled.",
+      "answer": "120 m",
+      "choices": [],
+      "explanation": "Distance = speed × time = 6 × 20 = 120 m.",
+      "source": "9I speed practice",
+      "level": 2,
+      "cue": "Write the formula, substitute the numbers, then add units.",
+      "tags": [
+        "calculation"
       ]
     }
   ],
   "notes": [
     "Quick-quiz cards are reconstructed from the provided Year 9 PDFs.",
     "Diagram-only questions were converted into text prompts where the original image was not carried into the static app.",
-    "Use only where the source-pack licence permits classroom/institution copying."
+    "Use only where the source-pack licence permits classroom/institution copying.",
+    "v1.1.0 adds one-card-per-assess-yourself coverage plus missing PowerPoint progress checks and expanded calculation practice."
   ]
 };

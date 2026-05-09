@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" role="img" aria-labelledby="title desc">
+  <title id="title">Brittle giant lattice</title>
+  <desc id="desc">A regular lattice of particles with strong bonds and a crack plane, used to represent a brittle material with a high melting point.</desc>
+  <rect width="900" height="560" fill="#ffffff"/>
+  <rect x="50" y="40" width="800" height="480" rx="24" fill="#fbfcff" stroke="#d0d8e4" stroke-width="2"/>
+  <text x="90" y="95" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#243447">Particle model: high melting point and brittle</text>
+  <text x="90" y="127" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#43576b">A giant lattice has many strong bonds, but rigid layers can crack when stressed.</text>
+  <g transform="translate(170 165)">
+    <rect x="0" y="0" width="320" height="240" rx="18" fill="#eef5ff" stroke="#a6bdd8" stroke-width="3"/>
+    <g stroke="#7d97b6" stroke-width="3">
+      <line x1="50" y1="30" x2="50" y2="210"/><line x1="110" y1="30" x2="110" y2="210"/><line x1="170" y1="30" x2="170" y2="210"/><line x1="230" y1="30" x2="230" y2="210"/><line x1="290" y1="30" x2="290" y2="210"/>
+      <line x1="30" y1="50" x2="290" y2="50"/><line x1="30" y1="90" x2="290" y2="90"/><line x1="30" y1="130" x2="290" y2="130"/><line x1="30" y1="170" x2="290" y2="170"/><line x1="30" y1="210" x2="290" y2="210"/>
+    </g>
+    <g fill="#5c84b1">
+      <circle cx="50" cy="50" r="9"/><circle cx="110" cy="50" r="9"/><circle cx="170" cy="50" r="9"/><circle cx="230" cy="50" r="9"/><circle cx="290" cy="50" r="9"/>
+      <circle cx="50" cy="90" r="9"/><circle cx="110" cy="90" r="9"/><circle cx="170" cy="90" r="9"/><circle cx="230" cy="90" r="9"/><circle cx="290" cy="90" r="9"/>
+      <circle cx="50" cy="130" r="9"/><circle cx="110" cy="130" r="9"/><circle cx="170" cy="130" r="9"/><circle cx="230" cy="130" r="9"/><circle cx="290" cy="130" r="9"/>
+      <circle cx="50" cy="170" r="9"/><circle cx="110" cy="170" r="9"/><circle cx="170" cy="170" r="9"/><circle cx="230" cy="170" r="9"/><circle cx="290" cy="170" r="9"/>
+      <circle cx="50" cy="210" r="9"/><circle cx="110" cy="210" r="9"/><circle cx="170" cy="210" r="9"/><circle cx="230" cy="210" r="9"/><circle cx="290" cy="210" r="9"/>
+    </g>
+    <path d="M15 30 L90 95 L130 110 L160 150 L220 175 L305 240" stroke="#d64541" stroke-width="7" fill="none" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(560 190)" font-family="Arial, Helvetica, sans-serif">
+    <rect x="0" y="0" width="210" height="165" rx="16" fill="#ffffff" stroke="#d0d8e4" stroke-width="2"/>
+    <text x="20" y="35" font-size="22" font-weight="700" fill="#243447">Key features</text>
+    <text x="20" y="68" font-size="18" fill="#43576b">• many strong bonds</text>
+    <text x="20" y="98" font-size="18" fill="#43576b">• high melting point</text>
+    <text x="20" y="128" font-size="18" fill="#43576b">• rigid structure can crack</text>
+  </g>
+</svg>

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" role="img" aria-labelledby="title desc">
+<title id="title">DNA, genes and chromosomes</title>
+<desc id="desc">A hierarchy diagram showing a cell nucleus, a chromosome, a DNA double helix, and a highlighted gene section.</desc>
+<rect width="900" height="560" fill="#ffffff"/>
+<rect x="50" y="40" width="800" height="480" rx="24" fill="#fbfdff" stroke="#c7d3e0" stroke-width="2"/>
+<text x="90" y="92" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#243447">How DNA, genes and chromosomes are linked</text>
+<text x="90" y="124" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#43576b">Chromosomes are made of DNA. A gene is a short section of DNA.</text>
+<g transform="translate(115 170)">
+  <circle cx="85" cy="110" r="72" fill="#dff0ff" stroke="#7aa7d9" stroke-width="3"/>
+  <circle cx="85" cy="110" r="30" fill="#b7d7ff" stroke="#7aa7d9" stroke-width="3"/>
+  <text x="85" y="206" text-anchor="middle" font-family="Arial" font-size="20" fill="#243447">Cell nucleus</text>
+  <line x1="160" y1="110" x2="240" y2="110" stroke="#6b7f91" stroke-width="3" marker-end="url(#arr)"/>
+  <g transform="translate(260 40)">
+    <path d="M55 10 C20 40, 20 150, 55 180 C90 150, 90 40, 55 10" fill="#ffd9e2" stroke="#c56b83" stroke-width="4"/>
+    <path d="M55 10 C90 40, 90 150, 55 180 C20 150, 20 40, 55 10" fill="#ffe7ec" stroke="#c56b83" stroke-width="4"/>
+    <text x="55" y="220" text-anchor="middle" font-family="Arial" font-size="20" fill="#243447">Chromosome</text>
+  </g>
+  <line x1="410" y1="110" x2="500" y2="110" stroke="#6b7f91" stroke-width="3" marker-end="url(#arr)"/>
+  <g transform="translate(520 20)">
+    <path d="M20 30 C70 60, 70 160, 20 190" fill="none" stroke="#2e86de" stroke-width="6"/>
+    <path d="M100 30 C50 60, 50 160, 100 190" fill="none" stroke="#e74c3c" stroke-width="6"/>
+    <g stroke="#8f9fb0" stroke-width="3">
+      <line x1="27" y1="40" x2="93" y2="40"/>
+      <line x1="36" y1="63" x2="84" y2="63"/>
+      <line x1="41" y1="86" x2="79" y2="86"/>
+      <line x1="43" y1="109" x2="77" y2="109"/>
+      <line x1="41" y1="132" x2="79" y2="132"/>
+      <line x1="36" y1="155" x2="84" y2="155"/>
+      <line x1="27" y1="178" x2="93" y2="178"/>
+    </g>
+    <rect x="16" y="82" width="88" height="34" rx="10" fill="rgba(255,215,0,0.3)" stroke="#c79a2d" stroke-width="3"/>
+    <text x="60" y="225" text-anchor="middle" font-family="Arial" font-size="20" fill="#243447">DNA molecule</text>
+    <text x="118" y="104" font-family="Arial" font-size="18" fill="#7a5b00">gene</text>
+    <line x1="113" y1="98" x2="104" y2="98" stroke="#7a5b00" stroke-width="2"/>
+  </g>
+</g>
+<defs><marker id="arr" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#6b7f91"/></marker></defs>
+</svg>

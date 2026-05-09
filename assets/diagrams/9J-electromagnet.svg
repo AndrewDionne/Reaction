@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" role="img" aria-labelledby="title desc">
+<title id="title">Electromagnet diagram</title>
+<desc id="desc">A coil of wire wrapped around an iron core connected to a battery. The diagram notes that more turns and more current make the electromagnet stronger.</desc>
+<rect width="900" height="560" fill="#ffffff"/>
+<rect x="50" y="40" width="800" height="480" rx="24" fill="#fbfdff" stroke="#c7d3e0" stroke-width="2"/>
+<text x="90" y="95" font-family="Arial" font-size="30" font-weight="700" fill="#243447">Electromagnet</text>
+<text x="90" y="127" font-family="Arial" font-size="18" fill="#43576b">A current through a coil makes a magnetic field. An iron core makes it stronger.</text>
+<g transform="translate(150 190)">
+  <rect x="200" y="90" width="220" height="60" rx="12" fill="#cfd8dc" stroke="#7f8c8d" stroke-width="3"/>
+  <g fill="none" stroke="#e67e22" stroke-width="6">
+    <path d="M190 100 C175 100, 175 140, 190 140"/>
+    <path d="M220 100 C205 100, 205 140, 220 140"/>
+    <path d="M250 100 C235 100, 235 140, 250 140"/>
+    <path d="M280 100 C265 100, 265 140, 280 140"/>
+    <path d="M310 100 C295 100, 295 140, 310 140"/>
+    <path d="M340 100 C325 100, 325 140, 340 140"/>
+    <path d="M370 100 C355 100, 355 140, 370 140"/>
+    <path d="M400 100 C385 100, 385 140, 400 140"/>
+    <path d="M430 100 C415 100, 415 140, 430 140"/>
+  </g>
+  <path d="M190 120 H120 V220 H90" fill="none" stroke="#43576b" stroke-width="4"/>
+  <path d="M430 120 H500 V220 H530" fill="none" stroke="#43576b" stroke-width="4"/>
+  <line x1="90" y1="220" x2="110" y2="220" stroke="#43576b" stroke-width="4"/>
+  <line x1="110" y1="210" x2="110" y2="230" stroke="#43576b" stroke-width="4"/>
+  <line x1="530" y1="220" x2="550" y2="220" stroke="#43576b" stroke-width="4"/>
+  <line x1="550" y1="205" x2="550" y2="235" stroke="#43576b" stroke-width="7"/>
+  <text x="275" y="70" font-family="Arial" font-size="18" fill="#43576b">coil of wire</text>
+  <text x="245" y="175" font-family="Arial" font-size="18" fill="#43576b">iron core</text>
+</g>
+<rect x="600" y="205" width="170" height="125" rx="18" fill="#ffffff" stroke="#c7d3e0" stroke-width="2"/>
+<text x="620" y="240" font-family="Arial" font-size="20" font-weight="700" fill="#243447">Make it stronger</text>
+<text x="620" y="272" font-family="Arial" font-size="18" fill="#43576b">• more turns</text>
+<text x="620" y="298" font-family="Arial" font-size="18" fill="#43576b">• more current</text>
+<text x="620" y="324" font-family="Arial" font-size="18" fill="#43576b">• iron core</text>
+</svg>

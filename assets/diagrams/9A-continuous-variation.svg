@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" role="img" aria-labelledby="title desc">
+  <title id="title">Continuous variation and normal distribution</title>
+  <desc id="desc">A classroom-style chart showing a histogram of heights with a bell-shaped curve over it.</desc>
+  <rect width="900" height="560" fill="#ffffff"/>
+  <rect x="50" y="40" width="800" height="480" rx="24" fill="#fbfdff" stroke="#c7d3e0" stroke-width="2"/>
+  <text x="90" y="95" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#243447">Continuous variation</text>
+  <text x="90" y="127" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#43576b">Measurements can take any value over a range.</text>
+  <line x1="120" y1="440" x2="760" y2="440" stroke="#2f3f4f" stroke-width="3"/>
+  <line x1="120" y1="440" x2="120" y2="170" stroke="#2f3f4f" stroke-width="3"/>
+  <text x="430" y="487" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#34495e">Measurement (for example: height)</text>
+  <g font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#34495e">
+    <text x="92" y="440" text-anchor="end">0</text>
+    <text x="92" y="370" text-anchor="end">10</text>
+    <text x="92" y="300" text-anchor="end">20</text>
+    <text x="92" y="230" text-anchor="end">30</text>
+    <text x="60" y="310" transform="rotate(-90 60 310)">Number of students</text>
+    <text x="180" y="468" text-anchor="middle">shorter</text>
+    <text x="440" y="468" text-anchor="middle">average</text>
+    <text x="700" y="468" text-anchor="middle">taller</text>
+  </g>
+  <g fill="#92c5ff" stroke="#5185bf" stroke-width="2">
+    <rect x="150" y="400" width="60" height="40"/>
+    <rect x="220" y="355" width="60" height="85"/>
+    <rect x="290" y="285" width="60" height="155"/>
+    <rect x="360" y="225" width="60" height="215"/>
+    <rect x="430" y="205" width="60" height="235"/>
+    <rect x="500" y="235" width="60" height="205"/>
+    <rect x="570" y="300" width="60" height="140"/>
+    <rect x="640" y="365" width="60" height="75"/>
+  </g>
+  <path d="M150 410 C200 395, 240 350, 290 300 S390 190, 450 185 S560 240, 610 305 S685 390, 705 410" fill="none" stroke="#e74c3c" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="450" cy="185" r="6" fill="#e74c3c"/>
+  <text x="570" y="165" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#c0392b">Normal distribution</text>
+  <text x="570" y="192" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#43576b">The overall bell shape is called a normal distribution.</text>
+</svg>

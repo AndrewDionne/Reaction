@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" role="img" aria-labelledby="title desc">
+<title id="title">Natural selection flow</title>
+<desc id="desc">A flow chart showing variation, selection pressure, survival, reproduction and evolution over generations.</desc>
+<rect width="900" height="560" fill="#ffffff"/>
+<rect x="50" y="40" width="800" height="480" rx="24" fill="#fbfff8" stroke="#cfe0c8" stroke-width="2"/>
+<text x="90" y="95" font-family="Arial" font-size="30" font-weight="700" fill="#243447">Natural selection</text>
+<text x="90" y="127" font-family="Arial" font-size="18" fill="#43576b">Helpful inherited variations make survival and reproduction more likely.</text>
+<g font-family="Arial" font-size="18" fill="#243447" stroke="#9fc59f" stroke-width="2">
+  <rect x="110" y="200" width="145" height="90" rx="16" fill="#ffffff"/>
+  <text x="182" y="235" text-anchor="middle">variation in</text><text x="182" y="259" text-anchor="middle">a population</text>
+  <rect x="295" y="200" width="145" height="90" rx="16" fill="#ffffff"/>
+  <text x="367" y="235" text-anchor="middle">selection</text><text x="367" y="259" text-anchor="middle">pressure</text>
+  <rect x="480" y="200" width="145" height="90" rx="16" fill="#ffffff"/>
+  <text x="552" y="235" text-anchor="middle">better-adapted</text><text x="552" y="259" text-anchor="middle">survive</text>
+  <rect x="665" y="200" width="145" height="90" rx="16" fill="#ffffff"/>
+  <text x="737" y="235" text-anchor="middle">they reproduce</text><text x="737" y="259" text-anchor="middle">more</text>
+  <rect x="370" y="360" width="180" height="95" rx="16" fill="#eef9ee"/>
+  <text x="460" y="397" text-anchor="middle">helpful genes become</text><text x="460" y="421" text-anchor="middle">more common over time</text>
+</g>
+<g stroke="#6f8a6f" stroke-width="4" fill="none" marker-end="url(#arr)">
+  <line x1="255" y1="245" x2="295" y2="245"/>
+  <line x1="440" y1="245" x2="480" y2="245"/>
+  <line x1="625" y1="245" x2="665" y2="245"/>
+  <line x1="737" y1="290" x2="737" y2="320"/>
+  <line x1="737" y1="320" x2="550" y2="320"/>
+  <line x1="550" y1="320" x2="550" y2="360"/>
+</g>
+<defs><marker id="arr" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#6f8a6f"/></marker></defs>
+</svg>

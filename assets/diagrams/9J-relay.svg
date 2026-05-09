@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" role="img" aria-labelledby="title desc">
+<title id="title">Relay diagram</title>
+<desc id="desc">A simple relay diagram showing a small control circuit operating an electromagnet to close a separate switch in a larger power circuit.</desc>
+<rect width="900" height="560" fill="#ffffff"/>
+<rect x="50" y="40" width="800" height="480" rx="24" fill="#fffdf8" stroke="#dfd8c8" stroke-width="2"/>
+<text x="90" y="95" font-family="Arial" font-size="30" font-weight="700" fill="#243447">Relay</text>
+<text x="90" y="127" font-family="Arial" font-size="18" fill="#43576b">A small current in one circuit can switch a larger current in another circuit.</text>
+<g font-family="Arial" fill="#243447">
+  <rect x="120" y="180" width="250" height="210" rx="18" fill="#fbfdff" stroke="#c7d3e0" stroke-width="2"/>
+  <text x="245" y="210" text-anchor="middle" font-size="22" font-weight="700">Control circuit</text>
+  <path d="M150 250 H320 V350 H150 Z" fill="none" stroke="#43576b" stroke-width="4"/>
+  <path d="M220 250 V210" stroke="#43576b" stroke-width="4"/>
+  <path d="M200 250 C190 250,190 310,200 310" fill="none" stroke="#e67e22" stroke-width="5"/>
+  <path d="M220 250 C210 250,210 310,220 310" fill="none" stroke="#e67e22" stroke-width="5"/>
+  <path d="M240 250 C230 250,230 310,240 310" fill="none" stroke="#e67e22" stroke-width="5"/>
+  <text x="180" y="335" font-size="17" fill="#43576b">electromagnet coil</text>
+  <rect x="520" y="180" width="250" height="210" rx="18" fill="#fbfdff" stroke="#c7d3e0" stroke-width="2"/>
+  <text x="645" y="210" text-anchor="middle" font-size="22" font-weight="700">Power circuit</text>
+  <path d="M550 250 H720 V350 H550 Z" fill="none" stroke="#43576b" stroke-width="4"/>
+  <circle cx="640" cy="300" r="25" fill="#ffe082" stroke="#c79a2d" stroke-width="3"/>
+  <line x1="590" y1="250" x2="635" y2="225" stroke="#7f8c8d" stroke-width="4"/>
+  <line x1="635" y1="225" x2="680" y2="225" stroke="#7f8c8d" stroke-width="4"/>
+  <text x="592" y="365" font-size="17" fill="#43576b">switch closed by relay</text>
+  <line x1="370" y1="285" x2="520" y2="255" stroke="#7f8c8d" stroke-width="3" marker-end="url(#a)"/>
+  <text x="420" y="270" font-size="17" fill="#43576b">pulls armature</text>
+</g>
+<defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#7f8c8d"/></marker></defs>
+</svg>

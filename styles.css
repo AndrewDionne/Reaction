@@ -286,3 +286,31 @@ button:disabled { cursor: not-allowed; opacity: .55; }
   .dashboard-grid, .boss-controls { grid-template-columns: 1fr; }
   .card-actions button, .card-actions label, .mode-button { width: 100%; text-align: center; justify-content: center; }
 }
+
+
+.media-grid {
+  display: grid;
+  gap: 0.9rem;
+  margin: 0.9rem 0 1rem;
+}
+
+.card-media {
+  margin: 0;
+  border: 1px solid rgba(15, 23, 42, 0.10);
+  background: rgba(255, 255, 255, 0.75);
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.card-media img {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: #fff;
+}
+
+.card-media figcaption {
+  padding: 0.75rem 0.9rem 0.9rem;
+  font-size: 0.92rem;
+  color: var(--muted-text, #5b6472);
+}

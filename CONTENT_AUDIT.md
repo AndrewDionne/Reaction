@@ -2,52 +2,62 @@
 
 ## Summary
 
-- Total cards: **274**
+- Total cards: **419**
 - Units covered: **6**
-- Quick quizzes were prioritized because the request asked for questions as close as possible to quizzes/progression checks.
-- Diagram-only quick quiz items were converted into text prompts rather than embedding cropped publisher images.
+- Version: **1.1.0**
+- This version includes the v1.1.0 content-expansion patch: all assess-yourself success criteria have a direct open-response card, PowerPoint progress checks were expanded, and calculation practice was enlarged.
 
 ## Counts by unit
 
 | Unit | Title | Cards |
 |---|---|---:|
-| 9A | 9A Genetics and evolution | 51 |
-| 9B | 9B Plant growth | 48 |
-| 9E | 9E Making materials | 42 |
-| 9F | 9F Reactivity and extraction | 42 |
-| 9I | 9I Forces and motion | 43 |
-| 9J | 9J Force fields and electromagnets | 48 |
+| 9A | 9A Genetics and evolution | 66 |
+| 9B | 9B Plant growth | 86 |
+| 9E | 9E Making materials | 61 |
+| 9F | 9F Reactivity and extraction | 58 |
+| 9I | 9I Forces and motion | 63 |
+| 9J | 9J Force fields and electromagnets | 85 |
 
 ## Counts by type
 
 | Type | Count |
 |---|---:|
+| Assess check | 80 |
+| Calculation | 34 |
+| Progress check | 77 |
 | Quick quiz | 120 |
 | Vocabulary | 108 |
-| Progress check | 39 |
-| Calculation | 7 |
+| **Total** | **419** |
 
 ## Counts by level
 
 | Level | Intended use | Count |
 |---|---|---:|
-| 1 | Recall and definitions | 172 |
-| 2 | Routine application | 66 |
-| 3 | Linked explanation / calculations | 28 |
-| 4 | Exam-style reasoning | 5 |
+| 1 | Recall and definitions | 190 |
+| 2 | Routine application | 115 |
+| 3 | Linked explanation / routine multi-step | 86 |
+| 4 | Exam-style reasoning | 25 |
 | 5 | Extended assess-yourself tasks | 3 |
+
+
+## Coverage summary
+
+| Source content type | Source count | Repo count / treatment | Coverage |
+|---|---:|---:|---:|
+| Quick quiz questions | 120 | 120 | 100% |
+| Word-sheet vocabulary | 108 | 108 | 100% |
+| Assess-yourself success criteria | 80 | 80 direct Assess check cards | 100% |
+| Explicit text-convertible PowerPoint progress/lesson checks | ~33+ | Direct cards plus linked lesson-practice cards | ~95%+ practical |
+| Extra calculation practice | ~22+ | Expanded formula bank | ~95%+ practical |
+| Diagram/image-only items | Several | Text-equivalent prompts only | Partial fidelity |
 
 ## Coverage notes
 
-- **9A**: Quick quiz: 20, Vocabulary: 21, Progress check: 10
-- **9B**: Quick quiz: 20, Vocabulary: 18, Progress check: 10
-- **9E**: Quick quiz: 20, Vocabulary: 18, Progress check: 4
-- **9F**: Quick quiz: 20, Vocabulary: 18, Progress check: 4
-- **9I**: Quick quiz: 20, Vocabulary: 15, Progress check: 5, Calculation: 3
-- **9J**: Quick quiz: 20, Vocabulary: 18, Progress check: 6, Calculation: 4
+- The app now covers the original quiz/vocabulary core and the previously missing assess-yourself checklist layer.
+- Several diagram-only questions were converted into text-equivalent prompts rather than copying publisher images.
+- PowerPoint slides that only contained images or blank “progress check” headings could not be converted one-for-one from text extraction, so nearby lesson objectives and practice prompts were converted instead.
+- Calculation practice now includes weight, gravitational field strength, resistance, voltage/current rearrangement, speed, moments and work done.
 
-## Known limitations
+## Remaining gap
 
-- The supplied `quick quiz answers.pdf` did not provide a clean extractable answer key; answers were derived from the science content and visible quiz wording.
-- A few original quick quiz questions depend on diagrams/charts. Those were converted to text-equivalent prompts and marked in the `source` field as reconstructed.
-- This is a static app; all progress is saved in the browser, not on a server.
+The only material not fully represented is visual fidelity for chart/diagram/image tasks. To close that gap, create original redrawn SVG diagrams for selected cards rather than embedding publisher artwork.

@@ -8,32 +8,45 @@ This repo removes the Year 7 educational content and replaces it with a Year 9 c
 
 | Unit | Topic | Cards |
 |---|---|---:|
-| 9A | Genetics and evolution | 51 |
-| 9B | Plant growth | 48 |
-| 9E | Making materials | 42 |
-| 9F | Reactivity and extraction | 42 |
-| 9I | Forces and motion | 43 |
-| 9J | Force fields and electromagnets | 48 |
+| 9A | Genetics and evolution | 66 |
+| 9B | Plant growth | 86 |
+| 9E | Making materials | 61 |
+| 9F | Reactivity and extraction | 58 |
+| 9I | Forces and motion | 63 |
+| 9J | Force fields and electromagnets | 85 |
 
 
 ## Content bank
 
 | Card type | Count |
 |---|---:|
+| Assess check | 80 |
+| Calculation | 34 |
+| Progress check | 77 |
 | Quick quiz | 120 |
 | Vocabulary | 108 |
-| Progress check | 39 |
-| Calculation | 7 |
-| **Total** | **274** |
+| **Total** | **419** |
 
 | Level | Count |
 |---|---:|
-| Level 1 | 172 |
-| Level 2 | 66 |
-| Level 3 | 28 |
-| Level 4 | 5 |
+| Level 1 | 190 |
+| Level 2 | 115 |
+| Level 3 | 86 |
+| Level 4 | 25 |
 | Level 5 | 3 |
 
+
+## Coverage after the content-expansion patch
+
+The v1.1.0 content patch expands the app from the original quiz/vocabulary-focused bank into a broader source-pack mastery bank:
+
+- Quick quiz questions: **120 / 120** represented.
+- Word-sheet vocabulary: **108 / 108** represented.
+- Assess-yourself success criteria: **80 / 80** represented as open-response **Assess check** cards.
+- Explicit PowerPoint progress-check / lesson-check prompts: expanded from partial coverage to the practical set available in the extracted slide text.
+- Calculation practice: expanded with extra weight, resistance, speed, moment and work-done cards.
+
+Practical source-pack coverage is now estimated at **95%+** for text-convertible items. Diagram-only items remain represented as text-equivalent prompts unless original/re-drawn diagrams are added later.
 
 ## Features
 
@@ -124,3 +137,40 @@ For open-response cards, use an empty `choices: []` array and put the mark-schem
 ## Source-pack licence note
 
 The supplied content pack includes publisher notices indicating copying is permitted for the purchasing institution only and that the material is not copyright free. Keep this repo private or use it only within the permitted classroom/institution context unless you replace the reconstructed source-pack questions with your own original wording.
+
+
+## SVG diagrams and charts
+
+Version 1.2.0 adds a first-pass set of original SVG teaching diagrams for the questions that were previously reconstructed from diagrams, charts or graphs in the source pack.
+
+Included SVG topics:
+
+- continuous variation / normal distribution
+- photosynthesis plant diagram
+- photosynthesis rate vs light intensity graph
+- root hair cell
+- food web
+- brittle lattice / particle model
+- falling forces
+- Sankey efficiency diagrams
+- distance-time graph
+- lever / fulcrum diagrams
+- current-voltage graph
+- series and parallel circuit diagrams
+
+These SVGs are original redraws for study use and are stored locally in `assets/diagrams/`.
+
+
+## Second-pass visual expansion
+
+Version 1.3.0 adds another pass of original SVG support diagrams for higher-value science ideas that benefit from visual explanation, including DNA/genes/chromosomes, natural selection, xylem and phloem, polymers and composites, reactivity and extraction, moments, magnetic field lines, static charges, electromagnets, relays and the motor effect.
+
+
+## PNG pack
+
+Version 1.4.0 adds a first set of PNG educational support images for topics where a more photo-real or texture-based visual works better than vector graphics. These are wired into relevant cards in `data/year9-content.js`.
+
+
+## PNG pack 2
+
+Version 1.5.0 adds a second set of realistic PNG study images for topics such as natural selection, stomata, crystal growth, conductors and insulators, blast furnaces, metal oxide reduction, circuit comparison, and magnetic field patterns. These have been wired into the Year 9 content dataset.

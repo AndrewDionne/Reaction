@@ -230,6 +230,17 @@
     }).join("");
   }
 
+
+  function renderMedia(card) {
+    if (!Array.isArray(card.media) || !card.media.length) return "";
+    return `<div class="media-grid">${card.media.map((item) => {
+      const src = escapeHtml(item.src || "");
+      const alt = escapeHtml(item.alt || card.question || "Diagram");
+      const caption = item.caption ? `<figcaption>${escapeHtml(item.caption)}</figcaption>` : "";
+      return `<figure class="card-media"><img src="${src}" alt="${alt}" loading="lazy">${caption}</figure>`;
+    }).join("")}</div>`;
+  }
+
   function renderStudy() {
     els.bossSetupPanel.classList.toggle("hidden", state.mode !== "boss");
     els.resultPanel.classList.add("hidden");
@@ -260,6 +271,7 @@
       </div>
       <article class="study-card">
         <p class="question-text">${escapeHtml(card.question)}</p>
+        ${renderMedia(card)}
         ${card.cue ? `<p class="explanation"><strong>Cue:</strong> ${escapeHtml(card.cue)}</p>` : ""}
         ${isMcq ? renderChoices(card) : renderOpenResponse(card)}
         ${state.revealed ? renderReveal(card) : ""}
@@ -502,6 +514,7 @@
         </div>
         <article class="study-card">
           <p class="question-text">${escapeHtml(card.question)}</p>
+          ${renderMedia(card)}
           ${isMcq ? renderBossChoices(card) : `<textarea class="open-answer" id="bossTypedAnswer" placeholder="Type your answer. You will self-mark against the mark scheme after submitting.">${escapeHtml(boss.typedAnswer || "")}</textarea>`}
           ${boss.submitted ? renderReveal(card) : ""}
           <div class="card-actions">

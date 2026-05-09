@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" role="img" aria-labelledby="title desc">
+  <title id="title">Root hair cell</title>
+  <desc id="desc">A root hair cell with a long hair-like projection that increases surface area for absorbing water and minerals.</desc>
+  <rect width="900" height="560" fill="#ffffff"/>
+  <rect x="50" y="40" width="800" height="480" rx="24" fill="#fffdf8" stroke="#dfd8c8" stroke-width="2"/>
+  <text x="90" y="95" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#243447">Root hair cell</text>
+  <text x="90" y="127" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#43576b">The long projection increases the surface area for absorbing water from the soil.</text>
+  <g transform="translate(180 165)">
+    <rect x="40" y="60" width="250" height="140" rx="40" fill="#f7e4a8" stroke="#c2a24d" stroke-width="4"/>
+    <path d="M290 120 C360 120, 470 95, 560 60 C610 42, 640 85, 620 120 C640 155, 610 198, 560 180 C470 145, 360 120, 290 120" fill="#f9efc8" stroke="#c2a24d" stroke-width="4"/>
+    <ellipse cx="120" cy="130" rx="42" ry="34" fill="#f6d28d" stroke="#c2943a" stroke-width="3"/>
+    <circle cx="200" cy="125" r="14" fill="#98c379" stroke="#5f8d44" stroke-width="2"/>
+  </g>
+  <g stroke="#8aa4b7" stroke-width="2" fill="#43576b" font-family="Arial, Helvetica, sans-serif" font-size="18">
+    <line x1="252" y1="230" x2="120" y2="210"/><text x="90" y="205">cell body</text>
+    <line x1="420" y1="285" x2="640" y2="350"/><text x="648" y="360">root hair projection</text>
+    <line x1="380" y1="230" x2="630" y2="205"/><text x="640" y="208">large surface area</text>
+    <line x1="305" y1="275" x2="155" y2="370"/><text x="95" y="385">absorbs water and minerals</text>
+  </g>
+</svg>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" role="img" aria-labelledby="title desc">
+<title id="title">Displacement reaction example</title>
+<desc id="desc">An example showing iron displacing copper from copper sulfate because iron is more reactive.</desc>
+<rect width="900" height="560" fill="#ffffff"/>
+<rect x="50" y="40" width="800" height="480" rx="24" fill="#fbfdff" stroke="#c7d3e0" stroke-width="2"/>
+<text x="90" y="95" font-family="Arial" font-size="30" font-weight="700" fill="#243447">Displacement reaction</text>
+<text x="90" y="127" font-family="Arial" font-size="18" fill="#43576b">A more reactive metal can displace a less reactive metal from its compound.</text>
+<g font-family="Arial" font-size="24" fill="#243447" text-anchor="middle">
+  <rect x="100" y="230" width="200" height="110" rx="18" fill="#e3f2fd" stroke="#7aa7d9" stroke-width="3"/>
+  <text x="200" y="278">iron</text>
+  <text x="200" y="308">+</text>
+  <text x="200" y="338">copper sulfate</text>
+  <text x="450" y="298" font-size="42">→</text>
+  <rect x="560" y="230" width="240" height="110" rx="18" fill="#e8f5e9" stroke="#7db77d" stroke-width="3"/>
+  <text x="680" y="278">iron sulfate</text>
+  <text x="680" y="308">+</text>
+  <text x="680" y="338">copper</text>
+</g>
+<rect x="230" y="385" width="430" height="72" rx="16" fill="#ffffff" stroke="#c7d3e0" stroke-width="2"/>
+<text x="445" y="415" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700" fill="#243447">Why does this happen?</text>
+<text x="445" y="442" text-anchor="middle" font-family="Arial" font-size="18" fill="#43576b">Iron is more reactive than copper, so it displaces copper.</text>
+</svg>
