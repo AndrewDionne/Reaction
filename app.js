@@ -53,7 +53,7 @@
     practice: {
       eyebrow: "Revision journey",
       title: "Work through your revision cards",
-      subtitle: "Reveal the answer, then sort each card into Mastered, Revisit, or Study.",
+      subtitle: "Answer each card. Correct answers move to Mastered; revealed or missed answers move to Revisit.",
       empty: "No cards match these filters.",
     },
     revisit: {
@@ -221,7 +221,8 @@
     };
   }
 
-  function setCardStatus(card, status) {
+  function setCardStatus(card, status, options = {}) {
+    const { advance = true, countAttempt = true } = options;
     const mastered = new Set(state.progress.masteredIds || []);
     const revisit = new Set(state.progress.revisitIds || []);
     const study = new Set(state.progress.studyIds || []);
@@ -250,8 +251,9 @@
     state.progress.masteredIds = [...mastered];
     state.progress.revisitIds = [...revisit];
     state.progress.studyIds = [...study];
-    recordSeen(card, status === "mastered");
+    if (countAttempt) recordSeen(card, status === "mastered");
     saveProgress();
+
     if (state.mode === "revisit" || state.mode === "study" || state.mode === "test") {
       const currentId = card.id;
       rebuildDeck(false);
@@ -263,7 +265,8 @@
         return;
       }
     }
-    nextCard();
+    if (advance) nextCard();
+    else renderCard();
   }
 
   function recordSeen(card, correct) {
@@ -391,7 +394,7 @@
     const revisit = new Set(state.progress.revisitIds || []);
     const study = new Set(state.progress.studyIds || []);
 
-    els.totalCardCount.textContent = cards.length;
+    if (els.totalCardCount) els.totalCardCount.textContent = cards.length;
     els.journeyCount.textContent = `${baseFilteredCards().length} cards`;
     els.xpStat.textContent = state.progress.xp || 0;
     els.streakStat.textContent = state.progress.streak || 0;
@@ -399,7 +402,7 @@
     els.hubMasteredStat.textContent = mastered.size;
     els.revisitStat.textContent = revisit.size;
     els.hubRevisitStat.textContent = revisit.size;
-    els.studyStat.textContent = study.size;
+    if (els.studyStat) els.studyStat.textContent = study.size;
     els.hubStudyStat.textContent = study.size;
     els.soundToggle.textContent = state.sound ? "Sound on" : "Sound off";
     els.soundToggle.setAttribute("aria-pressed", String(state.sound));
@@ -466,7 +469,7 @@
     const visibleNotes = classNotes.filter((note) => {
       if (f.unit !== "all" && note.unit !== f.unit) return false;
       if (f.objective !== "all" && note.id !== f.objective) return false;
-      const text = [note.title, note.summary, ...(note.keyPoints || []), ...(note.commonMistakes || [])].join(" ").toLowerCase();
+      const text = [note.title, note.summary, note.explanation, note.memoryHook, note.selfCheck, note.sentenceStarter, ...(note.keyPoints || []), ...(note.commonMistakes || [])].join(" " ).toLowerCase();
       if (f.search && !text.includes(f.search)) return false;
       return true;
     });
@@ -539,12 +542,17 @@
           <h2>Big idea</h2>
           <p>${escapeHtml(note.summary)}</p>
         </section>
+        ${note.explanation ? `<section class="note-section explanation-note"><h3>Deeper explanation</h3><p>${escapeHtml(note.explanation)}</p></section>` : ""}
         <section class="note-section">
           <h3>Key points</h3>
           <ul>${(note.keyPoints || []).map((point) => `<li>${escapeHtml(point)}</li>`).join("")}</ul>
         </section>
+        ${note.memoryHook ? `<section class="note-section memory-note"><h3>Memory hook</h3><p>${escapeHtml(note.memoryHook)}</p></section>` : ""}
         ${(note.commonMistakes || []).length ? `<section class="note-section warning-note"><h3>Common mistakes</h3><ul>${note.commonMistakes.map((point) => `<li>${escapeHtml(point)}</li>`).join("")}</ul></section>` : ""}
-        ${note.example ? `<section class="note-section example-note"><h3>Example</h3><p><strong>Question:</strong> ${escapeHtml(note.example.question)}</p><p><strong>Answer:</strong> ${escapeHtml(note.example.answer)}</p></section>` : ""}
+        ${note.example ? `<section class="note-section example-note"><h3>Worked / model example</h3><p><strong>Question:</strong> ${escapeHtml(note.example.question)}</p><p><strong>Answer:</strong> ${escapeHtml(note.example.answer)}</p></section>` : ""}
+        ${note.selfCheck ? `<section class="note-section self-check-note"><h3>Quick self-check</h3><p>${escapeHtml(note.selfCheck)}</p></section>` : ""}
+        ${note.sentenceStarter ? `<section class="note-section sentence-note"><h3>Useful answer sentence</h3><p>${escapeHtml(note.sentenceStarter)}</p></section>` : ""}
+        ${note.practicePrompt ? `<section class="note-section practice-note"><h3>Try next</h3><p>${escapeHtml(note.practicePrompt)}</p></section>` : ""}
         <div class="card-actions">
           ${sourceCard ? `
             <button class="primary-button" data-note-action="mastered" type="button">I get it now · Mastered</button>
@@ -646,15 +654,7 @@
   }
 
   function renderObjectivePanel(card) {
-    const meta = objectiveMeta(card.learningObjective);
-    if (!meta) return "";
-    return `
-      <aside class="objective-panel">
-        <span class="eyebrow">Learning objective</span>
-        <strong>${escapeHtml(meta.title)}</strong>
-        <p>${escapeHtml(meta.description)}</p>
-      </aside>
-    `;
+    return "";
   }
 
   function renderStudyPrompt(card) {
@@ -678,28 +678,27 @@
     const isMcq = cardIsMcq(card);
     const membership = setMembership(card.id);
     const testMode = state.mode === "test";
+    const fidelityText = card.sourceFidelity ? fidelityLabel(card.sourceFidelity) : "";
 
     els.sessionIndex.textContent = String(state.index + 1);
     els.sessionTotal.textContent = `/ ${state.deck.length}`;
     els.resultPanel.classList.add("hidden");
 
     els.studyPanel.innerHTML = `
-      <div class="card-topline">
-        <div class="card-title-row">
-          <span class="pill">${escapeHtml(unitTitle(card.unit))}</span>
-          ${card.learningObjective ? `<span class="pill objective-pill">${escapeHtml(objectiveTitle(card.learningObjective))}</span>` : ""}
-          <span class="pill">Level ${card.level}</span>
-          <span class="pill">${escapeHtml(card.type)}</span>
-          ${card.sourceFidelity ? `<span class="pill ${fidelityClass(card.sourceFidelity)}">${escapeHtml(fidelityLabel(card.sourceFidelity))}</span>` : ""}
-          ${membership.mastered ? `<span class="pill good">Mastered</span>` : ""}
-          ${membership.revisit ? `<span class="pill warn">Revisit</span>` : ""}
-          ${membership.study ? `<span class="pill study">Study</span>` : ""}
-        </div>
-        <span class="pill">${state.index + 1} / ${state.deck.length}</span>
-      </div>
-
       <article class="study-card">
-        ${renderObjectivePanel(card)}
+        <div class="card-topline card-topline-clean">
+          <div class="card-title-row">
+            <span class="pill">${escapeHtml(unitTitle(card.unit))}</span>
+            ${card.learningObjective ? `<span class="pill objective-pill">${escapeHtml(objectiveTitle(card.learningObjective))}</span>` : ""}
+            <span class="pill">Level ${card.level}</span>
+            <span class="pill">${escapeHtml(card.type)}</span>
+            ${membership.mastered ? `<span class="pill good">mastered</span>` : ""}
+            ${membership.revisit ? `<span class="pill warn">revisit</span>` : ""}
+            ${membership.study ? `<span class="pill study">study</span>` : ""}
+          </div>
+          <span class="pill progress-pill">${state.index + 1} / ${state.deck.length}</span>
+        </div>
+
         ${renderStudyPrompt(card)}
         <p class="question-text">${escapeHtml(card.question)}</p>
         ${renderMedia(card)}
@@ -707,24 +706,23 @@
         ${isMcq ? renderChoices(card, testMode) : renderOpenResponse(testMode)}
         ${state.revealed ? renderReveal(card) : ""}
 
-        <div class="card-actions">
+        <div class="card-actions primary-actions">
           ${!state.revealed && !testMode ? `<button class="primary-button" data-action="reveal" type="button">Reveal answer</button>` : ""}
           ${!isMcq && testMode && !state.revealed ? `<button class="primary-button" data-action="test-open-submit" type="button">Show mark scheme</button>` : ""}
           ${!isMcq && testMode && state.revealed ? `<button class="primary-button" data-action="test-right" type="button">Mark right</button><button class="danger-button" data-action="test-wrong" type="button">Mark wrong</button>` : ""}
-          <button class="secondary-button" data-action="read" type="button">Read aloud</button>
           <button class="secondary-button" data-action="prev" type="button">Previous</button>
           <button class="secondary-button" data-action="next" type="button">Skip</button>
+          ${!testMode ? `<button class="secondary-button class-notes-button" data-action="study-context" type="button">Class Notes</button>` : ""}
         </div>
 
         ${!testMode ? `
           <div class="state-actions" aria-label="Learning state">
             <button class="primary-button" data-state="mastered" type="button">I know this · Mastered</button>
             <button class="secondary-button" data-state="revisit" type="button">Come back · Revisit</button>
-            <button class="secondary-button" data-action="study-context" type="button">Study this</button>
           </div>
         ` : ""}
 
-        <p class="source-note">Source: ${escapeHtml(card.source || "Year 9 content pack")}</p>
+        <p class="source-note">Source: ${escapeHtml(card.source || "Year 9 content pack")}${fidelityText ? ` · ${escapeHtml(fidelityText.toLowerCase())}` : ""}</p>
       </article>
     `;
 
@@ -774,17 +772,12 @@
         const correct = state.selectedChoice === card.answer;
         if (state.mode === "test") {
           recordTestAnswer(card, correct, state.selectedChoice);
-        } else {
-          recordSeen(card, correct);
-          saveProgress();
+          if (correct) celebrate();
+          beep(correct);
+          renderCard();
+          return;
         }
-        if (correct) {
-          celebrate();
-          beep(true);
-        } else {
-          beep(false);
-        }
-        renderCard();
+        setCardStatus(card, correct ? "mastered" : "revisit", { advance: true, countAttempt: true });
       });
     });
 
@@ -800,7 +793,8 @@
   function handleAction(action, card) {
     if (action === "reveal") {
       state.revealed = true;
-      renderCard();
+      if (state.mode !== "test") setCardStatus(card, "revisit", { advance: false, countAttempt: true });
+      else renderCard();
       return;
     }
     if (action === "test-open-submit") {

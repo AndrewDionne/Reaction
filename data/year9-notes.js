@@ -1,6 +1,6 @@
 window.YEAR9_NOTES = {
-  "version": "1.9.0",
-  "title": "Year 9 Science Class Notes",
+  "version": "1.10.0",
+  "title": "Year 9 Science Enhanced Class Notes",
   "notes": [
     {
       "id": "9A-variation",
@@ -22,7 +22,12 @@ window.YEAR9_NOTES = {
       "example": {
         "question": "Is a suntan inherited or environmental variation?",
         "answer": "Environmental. A suntan is caused by exposure to sunlight, not by a gene directly inherited from parents."
-      }
+      },
+      "explanation": "When scientists describe variation, they are looking for patterns in characteristics. Some characteristics fall into clear groups, such as blood group, while others spread smoothly across a range, such as height. A good answer should usually identify the type of variation and give the cause: genes, environment, or both.",
+      "memoryHook": "Ask: “Can I measure it on a scale?” If yes, it is often continuous. Ask: “Does it fall into named groups?” If yes, it is often discontinuous.",
+      "selfCheck": "Can you classify height, blood group, a suntan and eye colour as inherited, environmental, continuous or discontinuous?",
+      "sentenceStarter": "This is an example of ___ variation because ___.",
+      "practicePrompt": "Pick one linked revision card for Variation and classification and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered."
     },
     {
       "id": "9A-inheritance",
@@ -44,7 +49,12 @@ window.YEAR9_NOTES = {
       "example": {
         "question": "How are genes, DNA and chromosomes linked?",
         "answer": "A chromosome is made from one long DNA molecule. A gene is a short section of that DNA."
-      }
+      },
+      "explanation": "Inheritance questions often test whether you can place biological structures in the right order. The nucleus is the compartment inside most body cells. Chromosomes are inside the nucleus. Chromosomes are made from DNA. A gene is a section of DNA that affects a characteristic. Sex cells are different because they contain half the normal chromosome number.",
+      "memoryHook": "Order: cell → nucleus → chromosome → DNA → gene section.",
+      "selfCheck": "Can you explain why a human sperm cell has 23 chromosomes but a liver cell has 46?",
+      "sentenceStarter": "A gene is a section of DNA found on a chromosome, and it can affect ___.",
+      "practicePrompt": "Pick one linked revision card for Inheritance, DNA and genes and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered."
     },
     {
       "id": "9A-biodiversity",
@@ -66,7 +76,12 @@ window.YEAR9_NOTES = {
       "example": {
         "question": "Give three ways to preserve biodiversity.",
         "answer": "Protect habitats, reduce pollution or hunting, and store seeds or genetic material in gene banks."
-      }
+      },
+      "explanation": "Biodiversity is not just the number of animals in one place. It includes the variety of species and the genetic variation within those species. Conservation protects this variety because ecosystems with more biodiversity are usually more stable. Gene banks are one conservation tool because they preserve biological material for the future.",
+      "memoryHook": "Biodiversity = variety of life. Conservation = protecting that variety.",
+      "selfCheck": "Can you give one reason biodiversity matters and one way humans can protect it?",
+      "sentenceStarter": "Biodiversity is important because ___, so conservation methods such as ___ help by ___.",
+      "practicePrompt": "Pick one linked revision card for Biodiversity, conservation and extinction and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered."
     },
     {
       "id": "9A-evolution",
@@ -78,7 +93,9 @@ window.YEAR9_NOTES = {
         "There is variation within a population.",
         "Selection pressures, such as predators or food shortage, affect survival.",
         "Better-adapted individuals are more likely to survive and reproduce.",
-        "Over many generations, helpful inherited characteristics become more common."
+        "Over many generations, helpful inherited characteristics become more common.",
+        "Evolution means a change in inherited characteristics in a population over many generations.",
+        "An adaptation is only useful if it improves survival or reproduction in a particular environment."
       ],
       "commonMistakes": [
         "Individuals do not evolve during their lifetime; populations change over generations.",
@@ -88,7 +105,12 @@ window.YEAR9_NOTES = {
       "example": {
         "question": "Why might longer-necked animals become more common where food is high in trees?",
         "answer": "Longer-necked animals can reach more food, survive better and reproduce more, passing on genes for longer necks."
-      }
+      },
+      "explanation": "Natural selection is a chain of reasoning, not just “animals change”. Start with variation in a population. Then a selection pressure, such as predators or food shortage, makes some variants more likely to survive. Those survivors reproduce and pass on their genes. Over many generations, the helpful characteristic becomes more common.",
+      "memoryHook": "Variation → pressure → survival → reproduction → change over generations.",
+      "selfCheck": "Can you use the giraffe example or a beak-length example to explain natural selection in five steps?",
+      "sentenceStarter": "Individuals with ___ were more likely to survive because ___, so they reproduced and passed on ___.",
+      "practicePrompt": "Pick one linked revision card for Adaptation, natural selection and evolution and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered."
     },
     {
       "id": "9B-photosynthesis",
@@ -100,7 +122,9 @@ window.YEAR9_NOTES = {
         "Word equation: carbon dioxide + water → glucose + oxygen.",
         "Photosynthesis mainly happens in green parts of plants, especially leaves.",
         "Chlorophyll absorbs light energy.",
-        "Light intensity, carbon dioxide and temperature can be limiting factors."
+        "Light intensity, carbon dioxide and temperature can be limiting factors.",
+        "Green parts of the plant photosynthesise because they contain chloroplasts.",
+        "Respiration releases energy from glucose and happens in plant and animal cells."
       ],
       "commonMistakes": [
         "Plants do not “eat” food from soil; they make glucose by photosynthesis.",
@@ -110,7 +134,12 @@ window.YEAR9_NOTES = {
       "example": {
         "question": "Why does the photosynthesis rate level off at high light intensity?",
         "answer": "Light is no longer the limiting factor. Another factor, such as carbon dioxide or temperature, limits the rate."
-      }
+      },
+      "explanation": "Photosynthesis is how plants make glucose using light energy. The reactants are carbon dioxide and water. The products are glucose and oxygen. Questions often ask where the reactants come from: carbon dioxide enters through stomata, and water is absorbed by roots then carried in xylem. Light intensity, carbon dioxide and temperature can each become a limiting factor.",
+      "memoryHook": "Photosynthesis equation: carbon dioxide + water → glucose + oxygen, using light.",
+      "selfCheck": "Can you name the two reactants, two products and one limiting factor?",
+      "sentenceStarter": "The rate stops increasing because ___ is no longer the limiting factor; instead ___ limits the rate.",
+      "practicePrompt": "Pick one linked revision card for Photosynthesis and respiration and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered."
     },
     {
       "id": "9B-plant-transport",
@@ -132,7 +161,12 @@ window.YEAR9_NOTES = {
       "example": {
         "question": "Why are root hair cells good at absorbing water?",
         "answer": "They have a long projection, giving a large surface area for absorption from the soil."
-      }
+      },
+      "explanation": "Plants need transport tissues because materials must move between roots, stems and leaves. Root hair cells absorb water and mineral ions from the soil. Xylem carries water and minerals upward to leaves. Phloem carries dissolved sugars from photosynthesis to parts of the plant that need them.",
+      "memoryHook": "Xylem: water up. Phloem: food/sugars around the plant.",
+      "selfCheck": "Can you trace the route of water from soil to leaf?",
+      "sentenceStarter": "Water enters through ___, then travels through ___ to reach ___.",
+      "practicePrompt": "Pick one linked revision card for Plant transport and specialised cells and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered."
     },
     {
       "id": "9B-plant-products",
@@ -154,7 +188,12 @@ window.YEAR9_NOTES = {
       "example": {
         "question": "Why do farmers add fertiliser to fields?",
         "answer": "Fertilisers provide mineral ions, such as nitrates, that plants need to make proteins and grow well."
-      }
+      },
+      "explanation": "Plants use glucose for more than energy. Glucose can be changed into starch for storage, cellulose for cell walls, and other substances such as oils and proteins if mineral ions are available. Farmers increase yield by improving the conditions plants need for growth, such as light, water, minerals and protection from pests.",
+      "memoryHook": "Glucose is a building block: starch for storage, cellulose for walls, proteins with nitrates.",
+      "selfCheck": "Can you explain why nitrate mineral salts help plants grow?",
+      "sentenceStarter": "Farmers can increase yield by ___ because this gives the plant more ___.",
+      "practicePrompt": "Pick one linked revision card for Plant products, seeds and food production and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered."
     },
     {
       "id": "9B-food-webs",
@@ -176,7 +215,12 @@ window.YEAR9_NOTES = {
       "example": {
         "question": "If insecticide reduces insects eaten by wrens, what may happen to wrens?",
         "answer": "Wren numbers may decrease because there is less food available."
-      }
+      },
+      "explanation": "Food webs show feeding relationships and energy transfer. A change to one population can affect others. If insects are reduced by insecticide, animals that eat insects may decrease. Persistent chemicals can also become more concentrated along a food chain, which is called biomagnification.",
+      "memoryHook": "Follow the arrows: less food for one organism can reduce the population that depends on it.",
+      "selfCheck": "Can you predict what happens to a predator population if its main prey decreases?",
+      "sentenceStarter": "If the number of ___ decreases, then ___ may decrease because ___.",
+      "practicePrompt": "Pick one linked revision card for Food webs, biodiversity and ecosystems and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered."
     },
     {
       "id": "9E-ceramics",
@@ -198,7 +242,12 @@ window.YEAR9_NOTES = {
       "example": {
         "question": "Why are ceramics useful for teapots?",
         "answer": "They are heat resistant and poor conductors of heat, so they tolerate hot water and help keep it warm."
-      }
+      },
+      "explanation": "Ceramics are usually hard, heat resistant and brittle. Their properties come from strong bonding and rigid structures. Crystals form when particles arrange into an ordered pattern as a substance solidifies. Slow cooling usually gives particles more time to form larger crystals; fast cooling usually produces smaller crystals.",
+      "memoryHook": "Ceramics: hard and heat-resistant, but brittle.",
+      "selfCheck": "Can you explain why pottery is useful for teapots but can still break if dropped?",
+      "sentenceStarter": "This material is suitable because it is ___, but a limitation is ___.",
+      "practicePrompt": "Pick one linked revision card for Ceramics, crystals and materials properties and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered."
     },
     {
       "id": "9E-polymers",
@@ -210,7 +259,9 @@ window.YEAR9_NOTES = {
         "Polymerisation joins small molecules into long chains.",
         "Some polymerisation reactions are endothermic, meaning they take in energy.",
         "Vulcanisation adds cross-links between polymer chains, making rubber tougher.",
-        "Non-biodegradable polymers do not break down easily in the environment."
+        "Non-biodegradable polymers do not break down easily in the environment.",
+        "Endothermic reactions take in energy from the surroundings.",
+        "Cross-linking reduces how easily chains slide past each other."
       ],
       "commonMistakes": [
         "A polymer is not just any plastic; it is a long-chain molecule.",
@@ -220,7 +271,12 @@ window.YEAR9_NOTES = {
       "example": {
         "question": "What happens in polymerisation?",
         "answer": "Many small molecules join together to form a long-chain polymer."
-      }
+      },
+      "explanation": "Polymers are made from many repeating units joined together. Polymerisation is the process that makes polymers. Some polymerisation reactions are endothermic, meaning they take in energy. Vulcanisation adds cross-links between polymer chains, making rubber stronger, harder and less sticky.",
+      "memoryHook": "Polymer = many repeating units. Cross-links = bridges between chains.",
+      "selfCheck": "Can you describe how vulcanisation changes the structure and properties of rubber?",
+      "sentenceStarter": "Vulcanisation changes rubber because cross-links ___, which makes the material ___.",
+      "practicePrompt": "Pick one linked revision card for Polymers and polymerisation and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered."
     },
     {
       "id": "9E-composites",
@@ -242,7 +298,12 @@ window.YEAR9_NOTES = {
       "example": {
         "question": "Why is reinforced concrete useful?",
         "answer": "Concrete resists compression well, while steel reinforcement resists tension, so the combination is stronger for structures."
-      }
+      },
+      "explanation": "A composite combines two or more materials so that the final material has useful properties from each part. Concrete is a composite because it contains cement, sand and aggregate; reinforced concrete adds steel to improve tensile strength. Glass-reinforced plastic uses glass fibres to strengthen plastic.",
+      "memoryHook": "Composite = combination. Matrix holds it together; reinforcement adds strength.",
+      "selfCheck": "Can you explain why glass-reinforced plastic is useful for boats?",
+      "sentenceStarter": "This is a composite because it contains ___ and ___, giving it properties such as ___.",
+      "practicePrompt": "Pick one linked revision card for Composites and material choice and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered."
     },
     {
       "id": "9E-environment",
@@ -264,7 +325,12 @@ window.YEAR9_NOTES = {
       "example": {
         "question": "Why does recycling metals help us use metals further into the future?",
         "answer": "It conserves limited metal ores and reduces the need for mining and extraction."
-      }
+      },
+      "explanation": "Making and disposing of materials can affect the environment. Burning fossil fuels releases gases linked to acid rain and global warming. Landfill uses land and can cause pollution. Recycling saves raw materials and often reduces energy use compared with making new material from ores or crude oil.",
+      "memoryHook": "Reduce harm by using less, recycling more, and choosing materials carefully.",
+      "selfCheck": "Can you give one problem with landfill and one advantage of recycling?",
+      "sentenceStarter": "Recycling helps because it reduces ___ and saves ___.",
+      "practicePrompt": "Pick one linked revision card for Environmental impacts and recycling and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered."
     },
     {
       "id": "9F-changes",
@@ -286,7 +352,12 @@ window.YEAR9_NOTES = {
       "example": {
         "question": "Why does gas pressure increase when temperature increases?",
         "answer": "Gas particles move faster and collide more often and harder with the container walls."
-      }
+      },
+      "explanation": "Physical changes do not make new substances and are often reversible, such as melting or dissolving. Chemical changes make new substances and are often harder to reverse. Signs of chemical change can include gas production, colour change, temperature change or a new solid forming, but the strongest evidence is that a new substance has been produced.",
+      "memoryHook": "Physical = same substance, different form. Chemical = new substance.",
+      "selfCheck": "Can you decide whether melting ice, burning magnesium and rusting iron are physical or chemical changes?",
+      "sentenceStarter": "This is a chemical change because ___.",
+      "practicePrompt": "Pick one linked revision card for Physical and chemical changes and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered."
     },
     {
       "id": "9F-reactivity",
@@ -308,7 +379,12 @@ window.YEAR9_NOTES = {
       "example": {
         "question": "Why can iron displace copper from copper sulfate?",
         "answer": "Iron is more reactive than copper, so it takes copper’s place in the compound."
-      }
+      },
+      "explanation": "The reactivity series ranks metals by how easily they react. A more reactive metal can displace a less reactive metal from its compound. This is why iron can displace copper from copper sulfate, but copper cannot displace iron from iron sulfate. Displacement questions usually ask you to compare the positions of two metals in the reactivity series.",
+      "memoryHook": "More reactive kicks out less reactive.",
+      "selfCheck": "Can magnesium displace copper from copper sulfate? Explain using reactivity.",
+      "sentenceStarter": "___ is more reactive than ___, so it displaces ___ from its compound.",
+      "practicePrompt": "Pick one linked revision card for Reactivity and displacement and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered."
     },
     {
       "id": "9F-extraction",
@@ -320,7 +396,9 @@ window.YEAR9_NOTES = {
         "An ore is a rock containing enough metal compound to be useful.",
         "Reduction means removing oxygen from a metal oxide.",
         "Carbon can reduce metal oxides below carbon in the reactivity series.",
-        "Aluminium is too reactive for carbon extraction and is extracted by electrolysis."
+        "Aluminium is too reactive for carbon extraction and is extracted by electrolysis.",
+        "Reduction means removal of oxygen from a compound.",
+        "Carbon is useful in extraction because it reacts with oxygen from the metal oxide."
       ],
       "commonMistakes": [
         "Mining obtains ore; extraction separates the metal from its compound.",
@@ -330,7 +408,12 @@ window.YEAR9_NOTES = {
       "example": {
         "question": "Why is aluminium extracted by electrolysis rather than carbon reduction?",
         "answer": "Aluminium is more reactive than carbon, so carbon cannot remove oxygen from aluminium oxide."
-      }
+      },
+      "explanation": "Metals are often found in ores as compounds. To extract a metal, the compound must be broken down. Metals below carbon in the reactivity series can often be extracted by reduction with carbon. Metals above carbon, such as aluminium, are too reactive for carbon reduction and must be extracted by electrolysis.",
+      "memoryHook": "Below carbon: carbon can extract. Above carbon: electrolysis.",
+      "selfCheck": "Why can iron be extracted using carbon but aluminium cannot?",
+      "sentenceStarter": "Aluminium is extracted by electrolysis because ___.",
+      "practicePrompt": "Pick one linked revision card for Metal extraction and reduction and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered."
     },
     {
       "id": "9F-rusting",
@@ -352,7 +435,12 @@ window.YEAR9_NOTES = {
       "example": {
         "question": "Why does plastic coating stop iron rusting?",
         "answer": "It forms a barrier that prevents oxygen and water reaching the iron."
-      }
+      },
+      "explanation": "Rusting is the corrosion of iron or steel. It needs both oxygen and water. Coatings such as paint, oil or plastic prevent rusting by blocking oxygen and water. Sacrificial protection uses a more reactive metal, such as zinc or magnesium, which corrodes instead of the iron.",
+      "memoryHook": "Rusting needs oxygen + water. Sacrificial protection means another metal “takes the hit”.",
+      "selfCheck": "Why does coating iron in plastic prevent rusting?",
+      "sentenceStarter": "This method prevents rusting because it stops ___ from reaching the iron.",
+      "practicePrompt": "Pick one linked revision card for Rusting and corrosion protection and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered."
     },
     {
       "id": "9I-forces",
@@ -374,7 +462,12 @@ window.YEAR9_NOTES = {
       "example": {
         "question": "Why does a parachutist eventually fall at constant speed?",
         "answer": "As air resistance increases, it balances weight, so the resultant force becomes zero and speed stays constant."
-      }
+      },
+      "explanation": "Forces are pushes or pulls. Weight acts downward because of gravity. Air resistance and water resistance are drag forces that oppose motion. As a falling object speeds up, air resistance increases. Terminal velocity happens when upward drag equals downward weight, so the resultant force is zero and speed becomes constant.",
+      "memoryHook": "Terminal velocity: forces balanced, speed constant.",
+      "selfCheck": "Can you explain why a parachutist slows down when the parachute opens?",
+      "sentenceStarter": "The parachute increases ___, so the upward force becomes ___ than before.",
+      "practicePrompt": "Pick one linked revision card for Forces, drag and terminal velocity and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered."
     },
     {
       "id": "9I-energy-work",
@@ -396,7 +489,12 @@ window.YEAR9_NOTES = {
       "example": {
         "question": "Why does a shallow ramp need less force but more distance?",
         "answer": "The load is lifted gradually, so a smaller force is needed, but it acts over a longer distance."
-      }
+      },
+      "explanation": "Work is done when a force moves an object through a distance. The equation is work done = force × distance. Simple machines such as ramps and levers can reduce the force needed, but they usually increase the distance moved. Because of friction, real machines often need extra energy.",
+      "memoryHook": "Less force usually means more distance; energy is not free.",
+      "selfCheck": "If a ramp reduces the force needed, why does it not reduce the total energy needed?",
+      "sentenceStarter": "A ramp reduces the force because ___, but the object must move ___.",
+      "practicePrompt": "Pick one linked revision card for Energy, work and simple machines and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered."
     },
     {
       "id": "9I-speed",
@@ -418,7 +516,12 @@ window.YEAR9_NOTES = {
       "example": {
         "question": "A bus travels 20 km in 2 hours. What is its speed?",
         "answer": "Speed = distance ÷ time = 20 ÷ 2 = 10 km/h."
-      }
+      },
+      "explanation": "Speed tells you how far something travels in a certain time. Mean speed = distance ÷ time. On a distance-time graph, a steeper line means a higher speed because more distance is covered per unit time. A horizontal line means the object is stopped because time passes but distance does not change.",
+      "memoryHook": "Distance-time graph: slope = speed; flat = stopped.",
+      "selfCheck": "Can you calculate speed for 20 km in 2 hours and identify a stopped section on a graph?",
+      "sentenceStarter": "The object is stopped during section ___ because the distance ___ while time ___.",
+      "practicePrompt": "Pick one linked revision card for Speed and distance-time graphs and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered."
     },
     {
       "id": "9I-moments",
@@ -440,7 +543,12 @@ window.YEAR9_NOTES = {
       "example": {
         "question": "A 5 N force acts 0.4 m from a pivot. Calculate the moment.",
         "answer": "Moment = 5 × 0.4 = 2 N m."
-      }
+      },
+      "explanation": "A moment is the turning effect of a force about a pivot. Moment = force × perpendicular distance from the pivot. A longer effort arm gives a larger moment for the same force, which is why a long lever makes it easier to lift a heavy load. For balance, clockwise moments equal anticlockwise moments.",
+      "memoryHook": "Moment gets bigger if force gets bigger or distance from pivot gets bigger.",
+      "selfCheck": "What is the moment from a 5 N force acting 0.4 m from a pivot?",
+      "sentenceStarter": "The moment is ___ N m because moment = ___ × ___.",
+      "practicePrompt": "Pick one linked revision card for Levers, pivots and moments and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered."
     },
     {
       "id": "9J-fields",
@@ -462,7 +570,12 @@ window.YEAR9_NOTES = {
       "example": {
         "question": "A 34 kg object is on a planet with gravitational field strength 6.8 N/kg. What is its weight?",
         "answer": "Weight = mass × gravitational field strength = 34 × 6.8 = 231.2 N."
-      }
+      },
+      "explanation": "A force field is a region where an object experiences a non-contact force. Gravitational fields act on masses, magnetic fields act on magnets and magnetic materials, and electric fields act on charges. Weight depends on mass and gravitational field strength: weight = mass × gravitational field strength.",
+      "memoryHook": "Fields let forces act without touching.",
+      "selfCheck": "Can you explain why the same person weighs less on the Moon than on Earth?",
+      "sentenceStarter": "The person’s mass is the same, but their weight is different because ___.",
+      "practicePrompt": "Pick one linked revision card for Force fields, gravity and magnetism and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered."
     },
     {
       "id": "9J-static",
@@ -484,7 +597,12 @@ window.YEAR9_NOTES = {
       "example": {
         "question": "Why does a rubbed polythene rod become negatively charged?",
         "answer": "It gains electrons, so it has more negative charge than positive charge overall."
-      }
+      },
+      "explanation": "Static electricity happens when charge builds up on an insulator. In solids, electrons are the charges that move. If an object gains electrons it becomes negatively charged; if it loses electrons it becomes positively charged. Like charges repel and opposite charges attract.",
+      "memoryHook": "Electrons move. Negative means extra electrons.",
+      "selfCheck": "Why does a rubbed polythene rod become negatively charged?",
+      "sentenceStarter": "The rod becomes negatively charged because electrons ___.",
+      "practicePrompt": "Pick one linked revision card for Static electricity and charge and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered."
     },
     {
       "id": "9J-circuits",
@@ -497,7 +615,9 @@ window.YEAR9_NOTES = {
         "Voltage/potential difference is measured in volts, V.",
         "An ammeter measures current and is connected in series.",
         "A voltmeter measures voltage/potential difference and is connected in parallel.",
-        "Current is the same everywhere in a series circuit, but splits between branches in parallel."
+        "Current is the same everywhere in a series circuit, but splits between branches in parallel.",
+        "Ammeter: measures current and is connected in series.",
+        "Voltmeter: measures potential difference and is connected in parallel."
       ],
       "commonMistakes": [
         "Do not say voltage flows; current flows.",
@@ -507,7 +627,12 @@ window.YEAR9_NOTES = {
       "example": {
         "question": "Why are bulbs in a parallel circuit independent?",
         "answer": "Each bulb has its own branch, so if one branch is broken, current can still flow through the other branch."
-      }
+      },
+      "explanation": "Current is the rate of flow of charge. Voltage, or potential difference, is the energy transferred per unit charge. In series circuits, current is the same everywhere. In parallel circuits, current splits between branches and voltage is the same across each branch.",
+      "memoryHook": "Current flows; voltage pushes/transfers energy; resistance opposes.",
+      "selfCheck": "Can you compare current and voltage in series and parallel circuits?",
+      "sentenceStarter": "In a series circuit, current is ___, whereas in a parallel circuit current ___.",
+      "practicePrompt": "Pick one linked revision card for Current, voltage and circuits and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered."
     },
     {
       "id": "9J-resistance",
@@ -529,7 +654,12 @@ window.YEAR9_NOTES = {
       "example": {
         "question": "A resistor has 8 V across it and current 0.02 A. Calculate resistance.",
         "answer": "R = V ÷ I = 8 ÷ 0.02 = 400 Ω."
-      }
+      },
+      "explanation": "Resistance tells you how difficult it is for current to flow. The equation is resistance = voltage ÷ current, or R = V ÷ I. A steeper current-voltage graph means more current for the same voltage, so resistance is lower. Longer or thinner wires usually have more resistance.",
+      "memoryHook": "Resistance resists current. R = V ÷ I.",
+      "selfCheck": "Calculate the resistance when voltage is 8 V and current is 0.02 A.",
+      "sentenceStarter": "The resistance is ___ Ω because R = ___ ÷ ___.",
+      "practicePrompt": "Pick one linked revision card for Resistance and Ohm’s law and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered."
     },
     {
       "id": "9J-electromagnets",
@@ -552,7 +682,12 @@ window.YEAR9_NOTES = {
       "example": {
         "question": "How can the force on a wire in a magnetic field be increased?",
         "answer": "Increase the current or use a stronger magnetic field."
-      }
+      },
+      "explanation": "An electromagnet is made when current flows through a coil of wire, often wrapped around an iron core. Its magnetic field can be switched on and off by changing the current. Relays use electromagnets to let a small current switch a larger current. The motor effect is the force on a current-carrying wire in a magnetic field.",
+      "memoryHook": "Coil + current = electromagnet. More turns or more current = stronger field.",
+      "selfCheck": "Name two ways to make an electromagnet stronger and explain why relays are useful.",
+      "sentenceStarter": "The electromagnet becomes stronger when ___ because ___.",
+      "practicePrompt": "Pick one linked revision card for Electromagnets, relays and motors and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered."
     }
   ]
 };

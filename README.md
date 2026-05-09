@@ -189,3 +189,13 @@ Version 1.7.0 adds source-style redraws for key visual quiz questions, tightens 
 ## Class notes
 
 Version 1.9.0 adds a class-notes layer. The **Study this** action now opens a context card with the big idea, key points, common mistakes and an example. The main hub also includes **Review Class Notes** for browsing notes by unit or learning objective.
+
+
+## Enhanced class notes
+
+Version 1.10.0 expands the class-note context cards with deeper explanations, memory hooks, quick self-checks, useful answer sentence starters, and follow-up practice prompts. The goal is to make “Study this” feel like a short teaching moment rather than a simple tag.
+
+
+## v1.11.0 UI cleanup
+
+This version simplifies the main hub and focused session flow: the brand block is blended into the background, route cards are compact status/action cards, the admin-style filter panel is hidden, and multiple-choice cards now automatically move to Mastered or Revisit based on the selected answer.

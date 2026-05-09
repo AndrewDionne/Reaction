@@ -31,67 +31,48 @@
 
   <main id="top" class="app-shell">
     <section id="hubView" class="hub-view">
-      <section class="brand-hero panel">
+      <section class="brand-hero panel" aria-label="Reaction brand">
         <div class="brand-copy">
           <p class="eyebrow">Revision journey</p>
           <h1>Reaction</h1>
           <p class="tagline">Year 9 Science Study</p>
-          <p class="hero-copy">
-            Work through every revision card, decide what is mastered, what needs a revisit,
-            and what needs deeper study. Test mode is saved for cards you already feel confident with.
-          </p>
-          <div class="hero-actions">
-            <button class="primary-button" data-start-mode="practice" type="button">Start revision</button>
-            <button class="secondary-button" data-start-mode="revisit" type="button">Open revisit queue</button>
-          </div>
-        </div>
-        <div class="brand-image-wrap">
-          <img src="assets/brand/reaction-brand-hero.png" alt="Reaction brand image with glowing chemistry beaker and science diagrams" class="brand-image" />
-        </div>
-        <div class="hero-card">
-          <strong id="totalCardCount">0</strong>
-          <span>revision cards</span>
         </div>
       </section>
 
       <section class="journey-panel panel">
-        <div class="section-heading-row">
+        <div class="section-heading-row compact-heading">
           <div>
             <p class="eyebrow">Choose your route</p>
             <h2>Pick what you want to practise.</h2>
           </div>
-          <p class="journey-hint">Every card can be marked as Mastered, Revisit, or Study.</p>
         </div>
 
-        <div class="journey-grid">
-          <button class="journey-card" data-start-mode="practice" type="button">
+        <div class="journey-grid journey-grid-three">
+          <article class="journey-card status-route">
             <span class="journey-icon">↻</span>
             <strong>Revision journey</strong>
-            <small>All selected cards. Sort them as you go.</small>
-            <em id="journeyCount">0 cards</em>
-          </button>
-          <button class="journey-card revisit" data-start-mode="revisit" type="button">
+            <small>Work through selected cards and sort them as you go.</small>
+            <em><span id="journeyCount">0 cards</span></em>
+            <button class="route-action" data-start-mode="practice" type="button">Start revision</button>
+          </article>
+          <article class="journey-card revisit status-route">
             <span class="journey-icon">⟳</span>
             <strong>Revisit</strong>
-            <small>Cards you nearly know, but want to come back to.</small>
+            <small>Cards you nearly know and want to come back to.</small>
             <em><span id="revisitStat">0</span> cards</em>
-          </button>
-          <button class="journey-card study" data-start-mode="study" type="button">
-            <span class="journey-icon">✎</span>
-            <strong>Study</strong>
-            <small>Cards that need a slower explanation or deeper review.</small>
-            <em><span id="studyStat">0</span> cards</em>
-          </button>
-          <button class="journey-card test" data-start-mode="test" type="button">
+            <button class="route-action" data-start-mode="revisit" type="button">Open queue</button>
+          </article>
+          <article class="journey-card test status-route">
             <span class="journey-icon">✓</span>
             <strong>Mastery check</strong>
-            <small>Test only the cards you have marked Mastered.</small>
+            <small>Test your knowledge using cards you have already mastered.</small>
             <em><span id="masteredStat">0</span> ready</em>
-          </button>
+            <button class="route-action" data-start-mode="test" type="button">Test knowledge</button>
+          </article>
         </div>
       </section>
 
-      <section class="control-panel panel">
+      <section class="control-panel panel utility-filters" aria-hidden="true">
         <div class="section-heading-row">
           <div>
             <p class="eyebrow">Learning objectives</p>
