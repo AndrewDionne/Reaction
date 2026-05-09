@@ -1,12 +1,16 @@
 {
-  "name": "Year 9 Science Study",
-  "short_name": "Y9 Science",
-  "description": "Static Year 9 science end-of-year study app.",
+  "name": "Reaction \u2014 Year 9 Science Study",
+  "short_name": "Reaction",
+  "description": "Reaction is a Year 9 science revision journey app.",
   "start_url": "./",
   "display": "standalone",
-  "background_color": "#f8fafc",
-  "theme_color": "#155e75",
+  "background_color": "#f4f7fb",
+  "theme_color": "#6d28d9",
   "icons": [
-    { "src": "assets/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+    {
+      "src": "assets/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
   ]
 }

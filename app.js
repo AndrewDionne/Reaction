@@ -1,16 +1,20 @@
+
 (() => {
   const content = window.YEAR9_CONTENT || { units: [], cards: [] };
   const cards = Array.isArray(content.cards) ? content.cards : [];
   const units = Array.isArray(content.units) ? content.units : [];
-  const STORAGE_KEY = "year9-science-study-progress-v1";
+  const STORAGE_KEY = "reaction-y9-progress-v2";
+  const LEGACY_STORAGE_KEY = "year9-science-study-progress-v1";
 
   const $ = (selector, root = document) => root.querySelector(selector);
   const $$ = (selector, root = document) => Array.from(root.querySelectorAll(selector));
   const byId = (id) => document.getElementById(id);
 
   const els = {
-    modeButtons: $$(".mode-button"),
-    filtersPanel: byId("filtersPanel"),
+    homeLink: byId("homeLink"),
+    hubView: byId("hubView"),
+    sessionView: byId("sessionView"),
+    backToHub: byId("backToHub"),
     unitFilter: byId("unitFilter"),
     typeFilter: byId("typeFilter"),
     levelFilter: byId("levelFilter"),
@@ -18,17 +22,53 @@
     shuffleButton: byId("shuffleButton"),
     unitDashboard: byId("unitDashboard"),
     studyPanel: byId("studyPanel"),
-    bossSetupPanel: byId("bossSetupPanel"),
     resultPanel: byId("resultPanel"),
     totalCardCount: byId("totalCardCount"),
+    journeyCount: byId("journeyCount"),
     xpStat: byId("xpStat"),
     streakStat: byId("streakStat"),
     masteredStat: byId("masteredStat"),
-    weakStat: byId("weakStat"),
+    hubMasteredStat: byId("hubMasteredStat"),
+    revisitStat: byId("revisitStat"),
+    hubRevisitStat: byId("hubRevisitStat"),
+    studyStat: byId("studyStat"),
+    hubStudyStat: byId("hubStudyStat"),
     soundToggle: byId("soundToggle"),
     exportProgress: byId("exportProgress"),
     importProgressFile: byId("importProgressFile"),
     canvas: byId("burstCanvas"),
+    sessionEyebrow: byId("sessionEyebrow"),
+    sessionTitle: byId("sessionTitle"),
+    sessionSubtitle: byId("sessionSubtitle"),
+    sessionIndex: byId("sessionIndex"),
+    sessionTotal: byId("sessionTotal"),
+  };
+
+  const modeText = {
+    practice: {
+      eyebrow: "Revision journey",
+      title: "Work through your revision cards",
+      subtitle: "Reveal the answer, then sort each card into Mastered, Revisit, or Study.",
+      empty: "No cards match these filters.",
+    },
+    revisit: {
+      eyebrow: "Revisit queue",
+      title: "Revisit cards",
+      subtitle: "These are the cards you nearly know. Move them to Mastered when they feel secure.",
+      empty: "No Revisit cards match these filters yet.",
+    },
+    study: {
+      eyebrow: "Study queue",
+      title: "Study cards",
+      subtitle: "These are the cards that need slower review before they become Revisit or Mastered.",
+      empty: "No Study cards match these filters yet.",
+    },
+    test: {
+      eyebrow: "Focused check",
+      title: "Mastery check",
+      subtitle: "This checks only cards already marked Mastered. Answers are scored as you go.",
+      empty: "No Mastered cards match these filters yet. Mark some cards as Mastered first.",
+    },
   };
 
   const state = {
@@ -37,49 +77,61 @@
     index: 0,
     revealed: false,
     selectedChoice: null,
-    boss: null,
+    test: null,
     sound: true,
     progress: loadProgress(),
   };
 
   function defaultProgress() {
-    const unlocked = {};
-    units.forEach((unit) => { unlocked[unit.id] = 1; });
-    unlocked.all = 1;
     return {
       xp: 0,
       streak: 0,
       bestStreak: 0,
-      mastered: [],
-      weakIds: [],
+      masteredIds: [],
+      revisitIds: [],
+      studyIds: [],
       attempts: {},
-      bossHistory: [],
-      unlockedLevels: unlocked,
+      testHistory: [],
+      sound: true,
       updatedAt: new Date().toISOString(),
+    };
+  }
+
+  function normalizeProgress(raw) {
+    const base = defaultProgress();
+    if (!raw || typeof raw !== "object") return base;
+    const masteredIds = raw.masteredIds || raw.mastered || [];
+    const revisitIds = raw.revisitIds || raw.weakIds || [];
+    return {
+      ...base,
+      ...raw,
+      masteredIds: Array.isArray(masteredIds) ? masteredIds : [],
+      revisitIds: Array.isArray(revisitIds) ? revisitIds : [],
+      studyIds: Array.isArray(raw.studyIds) ? raw.studyIds : [],
+      attempts: raw.attempts && typeof raw.attempts === "object" ? raw.attempts : {},
+      testHistory: Array.isArray(raw.testHistory) ? raw.testHistory : Array.isArray(raw.bossHistory) ? raw.bossHistory : [],
+      sound: typeof raw.sound === "boolean" ? raw.sound : true,
     };
   }
 
   function loadProgress() {
     try {
       const raw = localStorage.getItem(STORAGE_KEY);
-      if (!raw) return defaultProgress();
-      const parsed = JSON.parse(raw);
-      return { ...defaultProgress(), ...parsed, unlockedLevels: { ...defaultProgress().unlockedLevels, ...(parsed.unlockedLevels || {}) } };
+      if (raw) return normalizeProgress(JSON.parse(raw));
+      const legacy = localStorage.getItem(LEGACY_STORAGE_KEY);
+      if (legacy) return normalizeProgress(JSON.parse(legacy));
     } catch (error) {
       console.warn("Could not load progress", error);
-      return defaultProgress();
     }
+    return defaultProgress();
   }
 
   function saveProgress() {
     state.progress.updatedAt = new Date().toISOString();
+    state.progress.sound = state.sound;
     localStorage.setItem(STORAGE_KEY, JSON.stringify(state.progress));
     renderStats();
     renderDashboard();
-  }
-
-  function unique(values) {
-    return [...new Set(values.filter(Boolean))].sort((a, b) => String(a).localeCompare(String(b)));
   }
 
   function escapeHtml(value) {
@@ -91,18 +143,8 @@
       .replace(/'/g, "&#039;");
   }
 
-  function choiceText(card, answer = card.answer) {
-    const prefix = `${answer} `;
-    const match = (card.choices || []).find((choice) => choice.startsWith(prefix));
-    return match ? match.slice(prefix.length) : answer;
-  }
-
-  function unitTitle(unitId) {
-    return units.find((unit) => unit.id === unitId)?.title || unitId;
-  }
-
-  function cardIsMcq(card) {
-    return Array.isArray(card.choices) && card.choices.length >= 2 && /^[A-Z]$/.test(String(card.answer || ""));
+  function unique(values) {
+    return [...new Set(values.filter(Boolean))].sort((a, b) => String(a).localeCompare(String(b)));
   }
 
   function shuffle(array) {
@@ -114,6 +156,83 @@
     return copy;
   }
 
+  function unitTitle(unitId) {
+    return units.find((unit) => unit.id === unitId)?.title || unitId;
+  }
+
+  function cardIsMcq(card) {
+    return Array.isArray(card.choices) && card.choices.length >= 2 && /^[A-Z]$/.test(String(card.answer || ""));
+  }
+
+  function choiceText(card, answer = card.answer) {
+    const prefix = `${answer} `;
+    const match = (card.choices || []).find((choice) => choice.startsWith(prefix));
+    return match ? match.slice(prefix.length) : String(answer || "");
+  }
+
+  function setMembership(cardId) {
+    return {
+      mastered: new Set(state.progress.masteredIds || []).has(cardId),
+      revisit: new Set(state.progress.revisitIds || []).has(cardId),
+      study: new Set(state.progress.studyIds || []).has(cardId),
+    };
+  }
+
+  function setCardStatus(card, status) {
+    const mastered = new Set(state.progress.masteredIds || []);
+    const revisit = new Set(state.progress.revisitIds || []);
+    const study = new Set(state.progress.studyIds || []);
+
+    mastered.delete(card.id);
+    revisit.delete(card.id);
+    study.delete(card.id);
+
+    if (status === "mastered") {
+      mastered.add(card.id);
+      state.progress.xp = (state.progress.xp || 0) + Math.max(5, (card.level || 1) * 5);
+      state.progress.streak = (state.progress.streak || 0) + 1;
+      state.progress.bestStreak = Math.max(state.progress.bestStreak || 0, state.progress.streak || 0);
+      celebrate();
+      beep(true);
+    } else if (status === "revisit") {
+      revisit.add(card.id);
+      state.progress.streak = 0;
+      beep(false);
+    } else if (status === "study") {
+      study.add(card.id);
+      state.progress.streak = 0;
+      beep(false);
+    }
+
+    state.progress.masteredIds = [...mastered];
+    state.progress.revisitIds = [...revisit];
+    state.progress.studyIds = [...study];
+    recordSeen(card, status === "mastered");
+    saveProgress();
+    if (state.mode === "revisit" || state.mode === "study" || state.mode === "test") {
+      const currentId = card.id;
+      rebuildDeck(false);
+      const stillHere = state.deck.findIndex((candidate) => candidate.id === currentId);
+      if (stillHere >= 0) state.index = stillHere;
+      else if (state.index >= state.deck.length) state.index = Math.max(0, state.deck.length - 1);
+      if (!state.deck.length) {
+        renderSession();
+        return;
+      }
+    }
+    nextCard();
+  }
+
+  function recordSeen(card, correct) {
+    const attempts = state.progress.attempts || {};
+    const current = attempts[card.id] || { seen: 0, correct: 0, wrong: 0 };
+    current.seen += 1;
+    if (correct) current.correct += 1;
+    else current.wrong += 1;
+    attempts[card.id] = current;
+    state.progress.attempts = attempts;
+  }
+
   function activeFilters() {
     return {
       unit: els.unitFilter.value || "all",
@@ -123,113 +242,178 @@
     };
   }
 
-  function filteredCards({ mcqOnly = false, weakOnly = false } = {}) {
+  function baseFilteredCards() {
     const f = activeFilters();
-    const weakSet = new Set(state.progress.weakIds || []);
     return cards.filter((card) => {
-      if (mcqOnly && !cardIsMcq(card)) return false;
-      if (weakOnly && !weakSet.has(card.id)) return false;
       if (f.unit !== "all" && card.unit !== f.unit) return false;
       if (f.type !== "all" && card.type !== f.type) return false;
       if (f.level !== "all" && String(card.level) !== f.level) return false;
       if (f.search) {
-        const haystack = [card.question, card.answer, card.explanation, card.source, ...(card.choices || [])].join(" ").toLowerCase();
+        const haystack = [
+          card.question,
+          card.answer,
+          card.explanation,
+          card.source,
+          card.cue,
+          ...(card.choices || []),
+          ...(card.tags || []),
+        ].join(" ").toLowerCase();
         if (!haystack.includes(f.search)) return false;
       }
       return true;
     });
   }
 
-  function currentDeck() {
-    if (state.mode === "quiz") return filteredCards({ mcqOnly: true });
-    if (state.mode === "weak") return filteredCards({ weakOnly: true });
-    return filteredCards();
+  function cardsForMode(mode = state.mode) {
+    const base = baseFilteredCards();
+    const mastered = new Set(state.progress.masteredIds || []);
+    const revisit = new Set(state.progress.revisitIds || []);
+    const study = new Set(state.progress.studyIds || []);
+
+    if (mode === "revisit") return base.filter((card) => revisit.has(card.id));
+    if (mode === "study") return base.filter((card) => study.has(card.id));
+    if (mode === "test") return base.filter((card) => mastered.has(card.id));
+    return base;
   }
 
   function rebuildDeck(resetIndex = true) {
-    state.deck = currentDeck();
+    state.deck = cardsForMode();
     if (resetIndex || state.index >= state.deck.length) state.index = 0;
     state.revealed = false;
     state.selectedChoice = null;
   }
 
   function initFilters() {
-    els.unitFilter.innerHTML = `<option value="all">All units</option>` + units.map((unit) => `<option value="${unit.id}">${escapeHtml(unit.title)}</option>`).join("");
+    els.unitFilter.innerHTML = `<option value="all">All units</option>` + units.map((unit) => `<option value="${escapeHtml(unit.id)}">${escapeHtml(unit.title)}</option>`).join("");
     const types = unique(cards.map((card) => card.type));
     els.typeFilter.innerHTML = `<option value="all">All card types</option>` + types.map((type) => `<option value="${escapeHtml(type)}">${escapeHtml(type)}</option>`).join("");
+
     [els.unitFilter, els.typeFilter, els.levelFilter, els.searchBox].forEach((el) => {
       el.addEventListener("input", () => {
-        rebuildDeck(true);
-        render();
+        if (els.sessionView.classList.contains("hidden")) {
+          renderStats();
+          renderDashboard();
+        } else {
+          rebuildDeck(true);
+          renderSession();
+        }
       });
     });
+
     els.shuffleButton.addEventListener("click", () => {
-      state.deck = shuffle(currentDeck());
+      state.deck = shuffle(cardsForMode("practice"));
       state.index = 0;
-      state.revealed = false;
-      state.selectedChoice = null;
-      renderStudy();
+      state.mode = "practice";
+      startSession("practice", { preserveDeck: true });
     });
   }
 
-  function setMode(mode) {
-    if (state.boss?.active) {
-      const leave = confirm("Bail out of this boss round? Your current unsaved score will be lost.");
-      if (!leave) return;
-      state.boss = null;
-    }
+  function startSession(mode, options = {}) {
     state.mode = mode;
+    state.test = mode === "test" ? { score: 0, answered: 0, answers: [] } : null;
     state.revealed = false;
     state.selectedChoice = null;
-    els.modeButtons.forEach((button) => button.classList.toggle("active", button.dataset.mode === mode));
-    els.filtersPanel.classList.toggle("hidden", mode === "boss");
-    els.bossSetupPanel.classList.toggle("hidden", mode !== "boss");
-    els.studyPanel.classList.toggle("hidden", false);
+    if (!options.preserveDeck) rebuildDeck(true);
+
+    els.hubView.classList.add("hidden");
+    els.sessionView.classList.remove("hidden");
     els.resultPanel.classList.add("hidden");
-    if (mode === "boss") {
-      renderBossSetup();
-    } else {
-      rebuildDeck(true);
-      renderStudy();
-    }
+    renderSession();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+
+  function showHub() {
+    els.sessionView.classList.add("hidden");
+    els.hubView.classList.remove("hidden");
+    state.test = null;
+    state.revealed = false;
+    state.selectedChoice = null;
+    renderStats();
     renderDashboard();
+    window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
   function renderStats() {
+    const mastered = new Set(state.progress.masteredIds || []);
+    const revisit = new Set(state.progress.revisitIds || []);
+    const study = new Set(state.progress.studyIds || []);
+
     els.totalCardCount.textContent = cards.length;
+    els.journeyCount.textContent = `${baseFilteredCards().length} cards`;
     els.xpStat.textContent = state.progress.xp || 0;
     els.streakStat.textContent = state.progress.streak || 0;
-    els.masteredStat.textContent = (state.progress.mastered || []).length;
-    els.weakStat.textContent = (state.progress.weakIds || []).length;
+    els.masteredStat.textContent = mastered.size;
+    els.hubMasteredStat.textContent = mastered.size;
+    els.revisitStat.textContent = revisit.size;
+    els.hubRevisitStat.textContent = revisit.size;
+    els.studyStat.textContent = study.size;
+    els.hubStudyStat.textContent = study.size;
+    els.soundToggle.textContent = state.sound ? "Sound on" : "Sound off";
+    els.soundToggle.setAttribute("aria-pressed", String(state.sound));
   }
 
   function renderDashboard() {
-    const mastered = new Set(state.progress.mastered || []);
-    const weak = new Set(state.progress.weakIds || []);
+    const mastered = new Set(state.progress.masteredIds || []);
+    const revisit = new Set(state.progress.revisitIds || []);
+    const study = new Set(state.progress.studyIds || []);
+
     els.unitDashboard.innerHTML = units.map((unit) => {
       const unitCards = cards.filter((card) => card.unit === unit.id);
-      const done = unitCards.filter((card) => mastered.has(card.id)).length;
-      const weakCount = unitCards.filter((card) => weak.has(card.id)).length;
-      const pct = unitCards.length ? Math.round((done / unitCards.length) * 100) : 0;
-      const unlocked = state.progress.unlockedLevels?.[unit.id] || 1;
+      const masteredCount = unitCards.filter((card) => mastered.has(card.id)).length;
+      const revisitCount = unitCards.filter((card) => revisit.has(card.id)).length;
+      const studyCount = unitCards.filter((card) => study.has(card.id)).length;
+      const pct = unitCards.length ? Math.round((masteredCount / unitCards.length) * 100) : 0;
       return `
         <article class="panel unit-card">
           <div class="card-title-row">
-            <span class="pill good">Level ${unlocked} unlocked</span>
-            ${weakCount ? `<span class="pill warn">${weakCount} weak</span>` : `<span class="pill">clean</span>`}
+            <span class="pill good">${masteredCount} mastered</span>
+            <span class="pill warn">${revisitCount} revisit</span>
+            <span class="pill study">${studyCount} study</span>
           </div>
           <h3>${escapeHtml(unit.title)}</h3>
           <p>${escapeHtml(unit.theme)}</p>
           <div class="unit-meta">
-            <span class="pill">${unitCards.length} cards</span>
-            <span class="pill">${pct}% mastered</span>
+            <span class="pill">${unitCards.length} revision cards</span>
+            <span class="pill">${pct}% complete</span>
           </div>
           <div class="progress-track" aria-label="${pct}% mastered"><div class="progress-fill" style="width:${pct}%"></div></div>
+          <div class="card-actions">
+            <button class="secondary-button" data-unit-start="${escapeHtml(unit.id)}" type="button">Study this unit</button>
+          </div>
         </article>
       `;
     }).join("");
+
+    $$("[data-unit-start]", els.unitDashboard).forEach((button) => {
+      button.addEventListener("click", () => {
+        els.unitFilter.value = button.dataset.unitStart;
+        startSession("practice");
+      });
+    });
   }
 
+  function renderSession() {
+    const text = modeText[state.mode] || modeText.practice;
+    els.sessionEyebrow.textContent = text.eyebrow;
+    els.sessionTitle.textContent = text.title;
+    els.sessionSubtitle.textContent = text.subtitle;
+    els.sessionIndex.textContent = state.deck.length ? String(state.index + 1) : "0";
+    els.sessionTotal.textContent = `/ ${state.deck.length}`;
+
+    if (!state.deck.length) {
+      els.studyPanel.innerHTML = `
+        <div class="empty-state">
+          <h2>${escapeHtml(text.empty)}</h2>
+          <p>Try changing the filters, or go back to the revision hub and choose another route.</p>
+          <button class="primary-button" data-empty-back type="button">Back to hub</button>
+        </div>
+      `;
+      $("[data-empty-back]", els.studyPanel)?.addEventListener("click", showHub);
+      return;
+    }
+
+    renderCard();
+  }
 
   function renderMedia(card) {
     if (!Array.isArray(card.media) || !card.media.length) return "";
@@ -241,54 +425,61 @@
     }).join("")}</div>`;
   }
 
-  function renderStudy() {
-    els.bossSetupPanel.classList.toggle("hidden", state.mode !== "boss");
-    els.resultPanel.classList.add("hidden");
-    if (state.mode === "boss") {
-      if (state.boss?.active) renderBossQuestion();
-      else renderBossSetup();
-      return;
-    }
-
-    const deck = state.deck;
-    if (!deck.length) {
-      const weakText = state.mode === "weak" ? "No weak cards match these filters. Missed cards appear here after saved quiz or boss attempts." : "No cards match these filters.";
-      els.studyPanel.innerHTML = `<div class="empty-state"><h2>Nothing to show</h2><p>${escapeHtml(weakText)}</p></div>`;
-      return;
-    }
-    const card = deck[state.index];
+  function renderCard() {
+    const card = state.deck[state.index];
     const isMcq = cardIsMcq(card);
-    const modeLabel = state.mode === "quiz" ? "Quick quiz" : state.mode === "weak" ? "Weak review" : "Practice";
+    const membership = setMembership(card.id);
+    const testMode = state.mode === "test";
+
+    els.sessionIndex.textContent = String(state.index + 1);
+    els.sessionTotal.textContent = `/ ${state.deck.length}`;
+    els.resultPanel.classList.add("hidden");
+
     els.studyPanel.innerHTML = `
       <div class="card-topline">
         <div class="card-title-row">
-          <span class="pill">${escapeHtml(modeLabel)}</span>
           <span class="pill">${escapeHtml(unitTitle(card.unit))}</span>
           <span class="pill">Level ${card.level}</span>
           <span class="pill">${escapeHtml(card.type)}</span>
+          ${membership.mastered ? `<span class="pill good">Mastered</span>` : ""}
+          ${membership.revisit ? `<span class="pill warn">Revisit</span>` : ""}
+          ${membership.study ? `<span class="pill study">Study</span>` : ""}
         </div>
-        <span class="card-count">${state.index + 1} / ${deck.length}</span>
+        <span class="pill">${state.index + 1} / ${state.deck.length}</span>
       </div>
+
       <article class="study-card">
         <p class="question-text">${escapeHtml(card.question)}</p>
         ${renderMedia(card)}
         ${card.cue ? `<p class="explanation"><strong>Cue:</strong> ${escapeHtml(card.cue)}</p>` : ""}
-        ${isMcq ? renderChoices(card) : renderOpenResponse(card)}
+        ${isMcq ? renderChoices(card, testMode) : renderOpenResponse(testMode)}
         ${state.revealed ? renderReveal(card) : ""}
+
         <div class="card-actions">
-          ${!state.revealed ? `<button class="primary-button" data-action="reveal" type="button">Reveal answer</button>` : ""}
-          ${!isMcq && state.revealed ? `<button class="primary-button" data-action="self-correct" type="button">I got it right</button><button class="danger-button" data-action="self-wrong" type="button">I missed it</button>` : ""}
+          ${!state.revealed && !testMode ? `<button class="primary-button" data-action="reveal" type="button">Reveal answer</button>` : ""}
+          ${!isMcq && testMode && !state.revealed ? `<button class="primary-button" data-action="test-open-submit" type="button">Show mark scheme</button>` : ""}
+          ${!isMcq && testMode && state.revealed ? `<button class="primary-button" data-action="test-right" type="button">Mark right</button><button class="danger-button" data-action="test-wrong" type="button">Mark wrong</button>` : ""}
           <button class="secondary-button" data-action="read" type="button">Read aloud</button>
           <button class="secondary-button" data-action="prev" type="button">Previous</button>
-          <button class="primary-button" data-action="next" type="button">Next</button>
+          <button class="secondary-button" data-action="next" type="button">Skip</button>
         </div>
+
+        ${!testMode ? `
+          <div class="state-actions" aria-label="Learning state">
+            <button class="primary-button" data-state="mastered" type="button">Mark mastered</button>
+            <button class="secondary-button" data-state="revisit" type="button">Mark revisit</button>
+            <button class="secondary-button" data-state="study" type="button">Mark study</button>
+          </div>
+        ` : ""}
+
         <p class="source-note">Source: ${escapeHtml(card.source || "Year 9 content pack")}</p>
       </article>
     `;
-    bindStudyActions(card);
+
+    bindCardActions(card);
   }
 
-  function renderChoices(card) {
+  function renderChoices(card, testMode) {
     return `<div class="answer-grid" role="group" aria-label="Answer choices">
       ${card.choices.map((choice) => {
         const key = choice.trim().slice(0, 1);
@@ -298,13 +489,17 @@
           else if (key === state.selectedChoice) cls += " wrong";
           else cls += " neutral";
         }
-        return `<button class="${cls}" data-choice="${escapeHtml(key)}" type="button">${escapeHtml(choice)}</button>`;
+        const label = testMode && !state.selectedChoice ? "Choose answer" : "Answer choice";
+        return `<button class="${cls}" data-choice="${escapeHtml(key)}" type="button" aria-label="${label}: ${escapeHtml(choice)}">${escapeHtml(choice)}</button>`;
       }).join("")}
     </div>`;
   }
 
-  function renderOpenResponse() {
-    return `<textarea class="open-answer" placeholder="Type a rough answer here, then reveal the mark-scheme answer."></textarea>`;
+  function renderOpenResponse(testMode) {
+    const placeholder = testMode
+      ? "Type your answer. Then show the mark scheme and self-mark."
+      : "Type a rough answer here, then reveal the mark-scheme answer.";
+    return `<textarea class="open-answer" placeholder="${escapeHtml(placeholder)}"></textarea>`;
   }
 
   function renderReveal(card) {
@@ -318,40 +513,56 @@
     `;
   }
 
-  function bindStudyActions(card) {
+  function bindCardActions(card) {
     $$("[data-choice]", els.studyPanel).forEach((button) => {
       button.addEventListener("click", () => {
         if (state.selectedChoice) return;
         state.selectedChoice = button.dataset.choice;
         state.revealed = true;
         const correct = state.selectedChoice === card.answer;
-        recordAttempt(card, correct, { saveImmediately: true });
-        if (correct) celebrate();
-        beep(correct);
-        renderStudy();
+        if (state.mode === "test") {
+          recordTestAnswer(card, correct, state.selectedChoice);
+        } else {
+          recordSeen(card, correct);
+          saveProgress();
+        }
+        if (correct) {
+          celebrate();
+          beep(true);
+        } else {
+          beep(false);
+        }
+        renderCard();
       });
     });
+
+    $$("[data-state]", els.studyPanel).forEach((button) => {
+      button.addEventListener("click", () => setCardStatus(card, button.dataset.state));
+    });
+
     $$("[data-action]", els.studyPanel).forEach((button) => {
-      button.addEventListener("click", () => handleStudyAction(button.dataset.action, card));
+      button.addEventListener("click", () => handleAction(button.dataset.action, card));
     });
   }
 
-  function handleStudyAction(action, card) {
+  function handleAction(action, card) {
     if (action === "reveal") {
       state.revealed = true;
-      renderStudy();
+      renderCard();
       return;
     }
-    if (action === "self-correct") {
-      recordAttempt(card, true, { saveImmediately: true });
-      celebrate();
-      beep(true);
+    if (action === "test-open-submit") {
+      state.revealed = true;
+      renderCard();
+      return;
+    }
+    if (action === "test-right") {
+      recordTestAnswer(card, true, "open");
       nextCard();
       return;
     }
-    if (action === "self-wrong") {
-      recordAttempt(card, false, { saveImmediately: true });
-      beep(false);
+    if (action === "test-wrong") {
+      recordTestAnswer(card, false, "open");
       nextCard();
       return;
     }
@@ -362,10 +573,19 @@
 
   function nextCard() {
     if (!state.deck.length) return;
-    state.index = (state.index + 1) % state.deck.length;
+    if (state.mode === "test" && state.test?.answered >= state.deck.length) {
+      finishTest();
+      return;
+    }
+    if (state.index >= state.deck.length - 1) {
+      if (state.mode === "test") finishTest();
+      else state.index = 0;
+    } else {
+      state.index += 1;
+    }
     state.revealed = false;
     state.selectedChoice = null;
-    renderStudy();
+    renderSession();
   }
 
   function prevCard() {
@@ -373,398 +593,185 @@
     state.index = (state.index - 1 + state.deck.length) % state.deck.length;
     state.revealed = false;
     state.selectedChoice = null;
-    renderStudy();
+    renderSession();
   }
 
-  function recordAttempt(card, correct, { saveImmediately = false } = {}) {
-    const attempts = state.progress.attempts || {};
-    const current = attempts[card.id] || { seen: 0, correct: 0, wrong: 0 };
-    current.seen += 1;
-    if (correct) current.correct += 1;
-    else current.wrong += 1;
-    attempts[card.id] = current;
-    state.progress.attempts = attempts;
-
-    const weak = new Set(state.progress.weakIds || []);
-    const mastered = new Set(state.progress.mastered || []);
+  function recordTestAnswer(card, correct, answer) {
+    if (!state.test) return;
+    const already = state.test.answers.find((item) => item.cardId === card.id);
+    if (already) return;
+    state.test.answers.push({ cardId: card.id, correct, answer });
+    state.test.answered += 1;
+    if (correct) state.test.score += 1;
+    recordSeen(card, correct);
     if (correct) {
-      weak.delete(card.id);
-      mastered.add(card.id);
-      state.progress.xp = (state.progress.xp || 0) + (card.level || 1) * 5;
+      state.progress.xp = (state.progress.xp || 0) + Math.max(5, (card.level || 1) * 5);
       state.progress.streak = (state.progress.streak || 0) + 1;
       state.progress.bestStreak = Math.max(state.progress.bestStreak || 0, state.progress.streak || 0);
     } else {
-      weak.add(card.id);
       state.progress.streak = 0;
+      const revisit = new Set(state.progress.revisitIds || []);
+      revisit.add(card.id);
+      state.progress.revisitIds = [...revisit];
     }
-    state.progress.weakIds = [...weak];
-    state.progress.mastered = [...mastered];
-    if (saveImmediately) saveProgress();
+    saveProgress();
   }
 
-  function renderBossSetup() {
-    state.boss = state.boss?.active ? state.boss : null;
-    const history = state.progress.bossHistory || [];
-    const rows = history.slice(-6).reverse().map((h) => `
-      <tr><td>${escapeHtml(h.date.slice(0, 10))}</td><td>${escapeHtml(h.unit === "all" ? "All units" : unitTitle(h.unit))}</td><td>Level ${h.level}</td><td>${h.score}/${h.total}</td><td>${h.percent}%</td></tr>
-    `).join("");
-    els.studyPanel.innerHTML = `<div class="empty-state"><h2>Boss mode is locked-in testing.</h2><p>Choose a unit and level, press “Let’s go!”, then complete the test without changing filters. A perfect saved score unlocks the next level.</p></div>`;
-    els.bossSetupPanel.innerHTML = `
-      <h2>Boss mode setup</h2>
-      <p class="explanation">This is the strict test route: no browsing, no answer reveal until submitted, and bail-out asks for confirmation.</p>
-      <div class="boss-controls">
-        <label>Unit
-          <select id="bossUnitSelect">
-            <option value="all">All units</option>
-            ${units.map((unit) => `<option value="${unit.id}">${escapeHtml(unit.title)}</option>`).join("")}
-          </select>
-        </label>
-        <label>Level
-          <select id="bossLevelSelect">${[1,2,3,4,5].map((level) => `<option value="${level}">Level ${level}</option>`).join("")}</select>
-        </label>
-        <label>Length
-          <select id="bossLengthSelect">
-            <option value="8">8 questions</option>
-            <option value="12" selected>12 questions</option>
-            <option value="20">20 questions</option>
-          </select>
-        </label>
-        <button class="primary-button" id="startBossButton" type="button">Let’s go!</button>
-      </div>
-      <p class="boss-warning" id="bossLockNote"></p>
-      ${history.length ? `<h3>Recent saved boss scores</h3><table class="history-table"><thead><tr><th>Date</th><th>Unit</th><th>Level</th><th>Score</th><th>%</th></tr></thead><tbody>${rows}</tbody></table>` : ""}
-    `;
-    const unitSelect = byId("bossUnitSelect");
-    const levelSelect = byId("bossLevelSelect");
-    const updateLockNote = () => {
-      const unit = unitSelect.value;
-      const unlocked = state.progress.unlockedLevels?.[unit] || 1;
-      [...levelSelect.options].forEach((option) => { option.disabled = Number(option.value) > unlocked; });
-      if (Number(levelSelect.value) > unlocked) levelSelect.value = String(unlocked);
-      byId("bossLockNote").textContent = `Unlocked for ${unit === "all" ? "All units" : unitTitle(unit)}: Level ${unlocked}. Get 100% on a saved boss round to unlock the next level.`;
-    };
-    unitSelect.addEventListener("change", updateLockNote);
-    levelSelect.addEventListener("change", updateLockNote);
-    byId("startBossButton").addEventListener("click", startBoss);
-    updateLockNote();
-  }
-
-  function bossPool(unit, level) {
-    return cards.filter((card) => {
-      if (unit !== "all" && card.unit !== unit) return false;
-      if (card.level > Number(level)) return false;
-      return true;
-    });
-  }
-
-  function startBoss() {
-    const unit = byId("bossUnitSelect").value;
-    const level = Number(byId("bossLevelSelect").value || 1);
-    const length = Number(byId("bossLengthSelect").value || 12);
-    const unlocked = state.progress.unlockedLevels?.[unit] || 1;
-    if (level > unlocked) {
-      alert("That boss level is still locked.");
-      return;
-    }
-    const pool = bossPool(unit, level);
-    if (!pool.length) {
-      alert("No cards available for that boss setup.");
-      return;
-    }
-    const weakSet = new Set(state.progress.weakIds || []);
-    const currentLevel = pool.filter((card) => card.level === level);
-    const weakCurrent = currentLevel.filter((card) => weakSet.has(card.id));
-    const freshCurrent = currentLevel.filter((card) => !weakSet.has(card.id));
-    const weakLower = pool.filter((card) => card.level < level && weakSet.has(card.id));
-    const freshLower = pool.filter((card) => card.level < level && !weakSet.has(card.id));
-    const weighted = [...shuffle(weakCurrent), ...shuffle(freshCurrent), ...shuffle(weakLower), ...shuffle(freshLower)];
-    const deck = weighted.slice(0, Math.min(length, weighted.length));
-    state.boss = {
-      active: true,
-      unit,
-      level,
-      deck,
-      index: 0,
-      answers: [],
-      selectedChoice: null,
-      typedAnswer: "",
-      submitted: false,
-      startedAt: new Date().toISOString(),
-    };
-    els.bossSetupPanel.classList.add("hidden");
-    els.resultPanel.classList.add("hidden");
-    renderBossQuestion();
-  }
-
-  function renderBossQuestion() {
-    const boss = state.boss;
-    if (!boss?.active) return renderBossSetup();
-    const card = boss.deck[boss.index];
-    const isMcq = cardIsMcq(card);
-    els.studyPanel.innerHTML = `
-      <div class="boss-screen">
-        <div class="card-topline">
-          <div class="card-title-row">
-            <span class="pill warn">Boss mode</span>
-            <span class="pill">${escapeHtml(boss.unit === "all" ? "All units" : unitTitle(boss.unit))}</span>
-            <span class="pill">Level ${boss.level}</span>
-            <span class="pill">${escapeHtml(card.type)}</span>
-          </div>
-          <span class="card-count">${boss.index + 1} / ${boss.deck.length}</span>
-        </div>
-        <article class="study-card">
-          <p class="question-text">${escapeHtml(card.question)}</p>
-          ${renderMedia(card)}
-          ${isMcq ? renderBossChoices(card) : `<textarea class="open-answer" id="bossTypedAnswer" placeholder="Type your answer. You will self-mark against the mark scheme after submitting.">${escapeHtml(boss.typedAnswer || "")}</textarea>`}
-          ${boss.submitted ? renderReveal(card) : ""}
-          <div class="card-actions">
-            ${isMcq ? "" : boss.submitted ? `<button class="primary-button" data-boss-action="self-correct" type="button">Mark right</button><button class="danger-button" data-boss-action="self-wrong" type="button">Mark wrong</button>` : `<button class="primary-button" data-boss-action="submit-open" type="button">Submit answer</button>`}
-            <button class="secondary-button" data-boss-action="read" type="button">Read aloud</button>
-            <button class="danger-button" data-boss-action="bail" type="button">Bail out</button>
-          </div>
-          <p class="source-note">Source: ${escapeHtml(card.source || "Year 9 content pack")}</p>
-        </article>
-      </div>
-    `;
-    if (!isMcq && !boss.submitted) {
-      byId("bossTypedAnswer")?.addEventListener("input", (event) => { boss.typedAnswer = event.target.value; });
-    }
-    $$("[data-boss-choice]", els.studyPanel).forEach((button) => {
-      button.addEventListener("click", () => answerBossMcq(button.dataset.bossChoice));
-    });
-    $$("[data-boss-action]", els.studyPanel).forEach((button) => {
-      button.addEventListener("click", () => handleBossAction(button.dataset.bossAction, card));
-    });
-  }
-
-  function renderBossChoices(card) {
-    return `<div class="answer-grid" role="group" aria-label="Boss answer choices">
-      ${card.choices.map((choice) => {
-        const key = choice.trim().slice(0, 1);
-        return `<button class="answer-button" data-boss-choice="${escapeHtml(key)}" type="button">${escapeHtml(choice)}</button>`;
-      }).join("")}
-    </div>`;
-  }
-
-  function answerBossMcq(choice) {
-    const boss = state.boss;
-    const card = boss.deck[boss.index];
-    const correct = choice === card.answer;
-    boss.answers.push({ cardId: card.id, correct, choice, unit: card.unit });
-    beep(correct);
-    if (correct) celebrate();
-    advanceBoss();
-  }
-
-  function handleBossAction(action, card) {
-    const boss = state.boss;
-    if (action === "bail") {
-      if (confirm("Are you sure? This boss attempt will not be saved.")) {
-        state.boss = null;
-        els.bossSetupPanel.classList.remove("hidden");
-        renderBossSetup();
-      }
-      return;
-    }
-    if (action === "read") speak(card.question);
-    if (action === "submit-open") {
-      boss.submitted = true;
-      renderBossQuestion();
-    }
-    if (action === "self-correct" || action === "self-wrong") {
-      const correct = action === "self-correct";
-      boss.answers.push({ cardId: card.id, correct, typed: boss.typedAnswer, unit: card.unit });
-      beep(correct);
-      if (correct) celebrate();
-      advanceBoss();
-    }
-  }
-
-  function advanceBoss() {
-    const boss = state.boss;
-    boss.index += 1;
-    boss.selectedChoice = null;
-    boss.typedAnswer = "";
-    boss.submitted = false;
-    if (boss.index >= boss.deck.length) renderBossResult();
-    else renderBossQuestion();
-  }
-
-  function renderBossResult() {
-    const boss = state.boss;
-    const score = boss.answers.filter((answer) => answer.correct).length;
-    const total = boss.deck.length;
+  function finishTest() {
+    const total = state.deck.length;
+    const score = state.test?.score || 0;
     const percent = total ? Math.round((score / total) * 100) : 0;
-    els.studyPanel.innerHTML = "";
-    els.resultPanel.classList.remove("hidden");
-    els.resultPanel.style.setProperty("--score", `${percent}%`);
-    els.resultPanel.innerHTML = `
-      <h2>Boss round complete</h2>
-      <div class="score-ring"><span>${percent}%</span></div>
-      <p class="explanation">Score: <strong>${score}/${total}</strong>. Save the score to update level progress, mastered cards and weak-review cards. Or choose “forget this ever happened” to discard the attempt.</p>
-      <div class="card-actions" style="justify-content:center">
-        <button class="primary-button" id="saveBossScore" type="button">Save score</button>
-        <button class="danger-button" id="forgetBossScore" type="button">Forget this ever happened</button>
-      </div>
-      ${percent === 100 && boss.level < 5 ? `<p class="boss-warning">Perfect score. Saving will unlock Level ${boss.level + 1}.</p>` : ""}
-    `;
-    byId("saveBossScore").addEventListener("click", saveBossResult);
-    byId("forgetBossScore").addEventListener("click", () => {
-      state.boss = null;
-      els.resultPanel.classList.add("hidden");
-      els.bossSetupPanel.classList.remove("hidden");
-      renderBossSetup();
-    });
-  }
-
-  function saveBossResult() {
-    const boss = state.boss;
-    const answerMap = new Map(boss.answers.map((answer) => [answer.cardId, answer.correct]));
-    boss.deck.forEach((card) => recordAttempt(card, Boolean(answerMap.get(card.id)), { saveImmediately: false }));
-    const score = boss.answers.filter((answer) => answer.correct).length;
-    const total = boss.deck.length;
-    const percent = total ? Math.round((score / total) * 100) : 0;
-    state.progress.bossHistory = [...(state.progress.bossHistory || []), {
+    const record = {
       date: new Date().toISOString(),
-      unit: boss.unit,
-      level: boss.level,
+      unit: activeFilters().unit,
       score,
       total,
       percent,
-    }].slice(-40);
-    if (percent === 100 && boss.level < 5) {
-      const current = state.progress.unlockedLevels?.[boss.unit] || 1;
-      state.progress.unlockedLevels[boss.unit] = Math.max(current, boss.level + 1);
-    }
+    };
+    state.progress.testHistory = [...(state.progress.testHistory || []), record].slice(-20);
     saveProgress();
-    state.boss = null;
-    els.resultPanel.classList.add("hidden");
-    els.bossSetupPanel.classList.remove("hidden");
-    renderBossSetup();
+
+    els.studyPanel.innerHTML = "";
+    els.resultPanel.classList.remove("hidden");
+    els.resultPanel.innerHTML = `
+      <h2>Mastery check complete</h2>
+      <p>You scored <strong>${score}/${total}</strong> (${percent}%).</p>
+      <p>${percent === 100 ? "Perfect. Those cards stayed mastered." : "Missed cards were moved into Revisit so they come back later."}</p>
+      <div class="card-actions">
+        <button class="primary-button" data-result-action="hub" type="button">Back to revision hub</button>
+        <button class="secondary-button" data-result-action="again" type="button">Run another check</button>
+      </div>
+    `;
+    $("[data-result-action='hub']", els.resultPanel)?.addEventListener("click", showHub);
+    $("[data-result-action='again']", els.resultPanel)?.addEventListener("click", () => startSession("test"));
   }
 
   function speak(text) {
-    if (!window.speechSynthesis || !text) return;
+    if (!state.sound || !("speechSynthesis" in window)) return;
     window.speechSynthesis.cancel();
-    const utter = new SpeechSynthesisUtterance(text);
-    utter.rate = 0.92;
-    utter.pitch = 1;
-    window.speechSynthesis.speak(utter);
+    const utterance = new SpeechSynthesisUtterance(String(text || ""));
+    utterance.rate = 0.96;
+    utterance.pitch = 1;
+    window.speechSynthesis.speak(utterance);
   }
 
-  function beep(correct) {
-    if (!state.sound) return;
+  function beep(ok) {
+    if (!state.sound || !window.AudioContext) return;
     try {
-      const AudioContext = window.AudioContext || window.webkitAudioContext;
-      if (!AudioContext) return;
       const ctx = new AudioContext();
-      const osc = ctx.createOscillator();
+      const oscillator = ctx.createOscillator();
       const gain = ctx.createGain();
-      osc.type = correct ? "triangle" : "sawtooth";
-      osc.frequency.value = correct ? 660 : 180;
-      gain.gain.setValueAtTime(0.001, ctx.currentTime);
-      gain.gain.exponentialRampToValueAtTime(0.05, ctx.currentTime + 0.02);
-      gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.18);
-      osc.connect(gain).connect(ctx.destination);
-      osc.start();
-      osc.stop(ctx.currentTime + 0.2);
+      oscillator.type = "sine";
+      oscillator.frequency.value = ok ? 740 : 240;
+      gain.gain.value = 0.035;
+      oscillator.connect(gain).connect(ctx.destination);
+      oscillator.start();
+      oscillator.stop(ctx.currentTime + 0.12);
     } catch (error) {
-      console.warn("Audio unavailable", error);
+      // Sound is optional.
     }
   }
 
   function celebrate() {
     const canvas = els.canvas;
+    if (!canvas) return;
     const ctx = canvas.getContext("2d");
     const ratio = window.devicePixelRatio || 1;
-    canvas.width = Math.floor(window.innerWidth * ratio);
-    canvas.height = Math.floor(window.innerHeight * ratio);
+    const width = window.innerWidth;
+    const height = window.innerHeight;
+    canvas.width = width * ratio;
+    canvas.height = height * ratio;
+    canvas.style.width = `${width}px`;
+    canvas.style.height = `${height}px`;
     ctx.scale(ratio, ratio);
-    const particles = Array.from({ length: 42 }, () => ({
-      x: window.innerWidth * (0.35 + Math.random() * 0.3),
-      y: window.innerHeight * (0.25 + Math.random() * 0.2),
-      vx: (Math.random() - 0.5) * 8,
-      vy: (Math.random() - 0.9) * 8,
-      life: 50 + Math.random() * 20,
-      r: 3 + Math.random() * 5,
+
+    const particles = Array.from({ length: 38 }, () => ({
+      x: width / 2,
+      y: Math.min(height * 0.34, 280),
+      vx: (Math.random() - 0.5) * 9,
+      vy: Math.random() * -7 - 2,
+      size: Math.random() * 5 + 3,
+      life: 42,
     }));
+
     let frame = 0;
+    const colors = ["#6d28d9", "#0891b2", "#ec4899", "#16a34a", "#f59e0b"];
     function draw() {
-      frame += 1;
-      ctx.clearRect(0, 0, window.innerWidth, window.innerHeight);
-      particles.forEach((p) => {
+      ctx.clearRect(0, 0, width, height);
+      particles.forEach((p, i) => {
         p.x += p.vx;
         p.y += p.vy;
-        p.vy += 0.18;
+        p.vy += 0.22;
         p.life -= 1;
-        ctx.globalAlpha = Math.max(p.life / 70, 0);
+        ctx.globalAlpha = Math.max(0, p.life / 42);
+        ctx.fillStyle = colors[i % colors.length];
         ctx.beginPath();
-        ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
-        ctx.fillStyle = frame % 3 === 0 ? "#22c55e" : frame % 3 === 1 ? "#06b6d4" : "#f59e0b";
+        ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
         ctx.fill();
       });
-      ctx.globalAlpha = 1;
-      if (particles.some((p) => p.life > 0)) requestAnimationFrame(draw);
-      else ctx.clearRect(0, 0, window.innerWidth, window.innerHeight);
+      frame += 1;
+      if (frame < 46) requestAnimationFrame(draw);
+      else ctx.clearRect(0, 0, width, height);
     }
     draw();
   }
 
   function exportProgress() {
-    const payload = {
-      app: content.title,
-      exportedAt: new Date().toISOString(),
-      progress: state.progress,
-    };
-    const blob = new Blob([JSON.stringify(payload, null, 2)], { type: "application/json" });
+    const blob = new Blob([JSON.stringify(state.progress, null, 2)], { type: "application/json" });
     const url = URL.createObjectURL(blob);
     const a = document.createElement("a");
     a.href = url;
-    a.download = `year9-science-progress-${new Date().toISOString().slice(0, 10)}.json`;
-    document.body.append(a);
+    a.download = `reaction-progress-${new Date().toISOString().slice(0, 10)}.json`;
     a.click();
-    a.remove();
     URL.revokeObjectURL(url);
   }
 
-  function importProgress(file) {
+  function importProgress(event) {
+    const file = event.target.files?.[0];
     if (!file) return;
     const reader = new FileReader();
     reader.onload = () => {
       try {
-        const payload = JSON.parse(String(reader.result || "{}"));
-        const imported = payload.progress || payload;
-        state.progress = { ...defaultProgress(), ...imported, unlockedLevels: { ...defaultProgress().unlockedLevels, ...(imported.unlockedLevels || {}) } };
+        state.progress = normalizeProgress(JSON.parse(String(reader.result || "{}")));
+        state.sound = state.progress.sound !== false;
         saveProgress();
-        rebuildDeck(true);
-        render();
+        renderStats();
+        renderDashboard();
         alert("Progress imported.");
       } catch (error) {
-        alert("Could not import that progress file.");
+        alert("Could not import this progress file.");
       }
     };
     reader.readAsText(file);
+    event.target.value = "";
   }
 
-  function render() {
-    renderStats();
-    renderDashboard();
-    if (state.mode === "boss") renderBossSetup();
-    else renderStudy();
+  function bindGlobalActions() {
+    $$("[data-start-mode]").forEach((button) => {
+      button.addEventListener("click", () => startSession(button.dataset.startMode));
+    });
+
+    els.backToHub.addEventListener("click", showHub);
+    els.homeLink.addEventListener("click", (event) => {
+      event.preventDefault();
+      showHub();
+    });
+
+    els.soundToggle.addEventListener("click", () => {
+      state.sound = !state.sound;
+      saveProgress();
+    });
+
+    els.exportProgress.addEventListener("click", exportProgress);
+    els.importProgressFile.addEventListener("change", importProgress);
   }
 
   function init() {
+    state.sound = state.progress.sound !== false;
     initFilters();
-    els.modeButtons.forEach((button) => button.addEventListener("click", () => setMode(button.dataset.mode)));
-    els.soundToggle.addEventListener("click", () => {
-      state.sound = !state.sound;
-      els.soundToggle.textContent = state.sound ? "🔊 Sound on" : "🔇 Sound off";
-      els.soundToggle.setAttribute("aria-pressed", String(state.sound));
-    });
-    els.exportProgress.addEventListener("click", exportProgress);
-    els.importProgressFile.addEventListener("change", (event) => importProgress(event.target.files?.[0]));
-    rebuildDeck(true);
-    render();
+    bindGlobalActions();
+    renderStats();
+    renderDashboard();
   }
 
   init();

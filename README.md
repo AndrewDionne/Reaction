@@ -174,3 +174,8 @@ Version 1.4.0 adds a first set of PNG educational support images for topics wher
 ## PNG pack 2
 
 Version 1.5.0 adds a second set of realistic PNG study images for topics such as natural selection, stomata, crystal growth, conductors and insulators, blast furnaces, metal oxide reduction, circuit comparison, and magnetic field patterns. These have been wired into the Year 9 content dataset.
+
+
+## UI journey patch
+
+Version 1.6.0 changes the app from a test-heavy dashboard into a focused revision journey. Cards can now be sorted into Mastered, Revisit, and Study. The Mastery check tests cards marked Mastered, while Revisit and Study open focused queues. The Reaction brand image is included in `assets/brand/`.
