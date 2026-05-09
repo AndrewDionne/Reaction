@@ -797,3 +797,163 @@ select:focus, input:focus, textarea:focus {
 @media (max-width: 640px) {
   .filters-row { grid-template-columns: 1fr; }
 }
+
+
+.notes-panel { margin-top: 1rem; }
+
+.notes-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+.note-card {
+  display: grid;
+  grid-template-columns: 74px 1fr;
+  gap: 0.75rem;
+  width: 100%;
+  min-height: 104px;
+  padding: 0.8rem;
+  text-align: left;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: rgba(255,255,255,0.78);
+  color: var(--ink);
+  transition: transform 0.16s ease, border-color 0.16s ease, background 0.16s ease;
+}
+
+.note-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(109,40,217,0.28);
+  background: #fbf7ff;
+}
+
+.note-thumb {
+  display: grid;
+  place-items: center;
+  width: 74px;
+  height: 74px;
+  border-radius: 16px;
+  overflow: hidden;
+  background: linear-gradient(135deg, rgba(224,242,254,0.95), rgba(237,233,254,0.95));
+  border: 1px solid rgba(148,163,184,0.25);
+}
+
+.note-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.note-symbol {
+  font-size: 1.25rem;
+  font-weight: 1000;
+  color: var(--brand);
+}
+
+.note-copy {
+  display: grid;
+  gap: 0.25rem;
+}
+
+.note-copy strong {
+  font-size: 0.98rem;
+  line-height: 1.16;
+}
+
+.note-copy small {
+  color: var(--muted);
+  font-weight: 700;
+  line-height: 1.3;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.note-copy em {
+  color: #075985;
+  font-size: 0.78rem;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.note-context-card {
+  display: grid;
+  gap: 1rem;
+}
+
+.source-question {
+  border: 1px solid rgba(109,40,217,0.18);
+  border-radius: 18px;
+  padding: 0.85rem 0.95rem;
+  background: rgba(250,245,255,0.8);
+}
+
+.source-question p {
+  margin: 0.35rem 0 0;
+  font-size: 1.05rem;
+  font-weight: 800;
+  line-height: 1.45;
+}
+
+.note-section {
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 1rem;
+  background: rgba(255,255,255,0.86);
+}
+
+.note-section h2,
+.note-section h3 {
+  margin: 0 0 0.55rem;
+  letter-spacing: -0.03em;
+}
+
+.note-section p {
+  margin: 0.35rem 0;
+  color: #334155;
+  line-height: 1.55;
+}
+
+.note-section ul {
+  margin: 0;
+  padding-left: 1.25rem;
+  color: #334155;
+  line-height: 1.55;
+}
+
+.note-summary {
+  background: linear-gradient(135deg, rgba(240,249,255,0.92), rgba(237,233,254,0.78));
+  border-color: rgba(8,145,178,0.20);
+}
+
+.warning-note {
+  background: rgba(255,247,237,0.88);
+  border-color: rgba(245,158,11,0.28);
+}
+
+.example-note {
+  background: rgba(236,253,245,0.86);
+  border-color: rgba(34,197,94,0.22);
+}
+
+.empty-inline {
+  grid-column: 1 / -1;
+  padding: 1.25rem;
+  border: 1px dashed var(--line);
+  border-radius: 18px;
+  color: var(--muted);
+  text-align: center;
+  font-weight: 800;
+}
+
+@media (max-width: 980px) {
+  .notes-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 640px) {
+  .notes-grid { grid-template-columns: 1fr; }
+  .note-card { grid-template-columns: 58px 1fr; }
+  .note-thumb { width: 58px; height: 58px; }
+}

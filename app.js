@@ -4,6 +4,8 @@
   const cards = Array.isArray(content.cards) ? content.cards : [];
   const units = Array.isArray(content.units) ? content.units : [];
   const learningObjectives = Array.isArray(content.learningObjectives) ? content.learningObjectives : [];
+  const notesBundle = window.YEAR9_NOTES || { notes: [] };
+  const classNotes = Array.isArray(notesBundle.notes) ? notesBundle.notes : [];
   const STORAGE_KEY = "reaction-y9-progress-v2";
   const LEGACY_STORAGE_KEY = "year9-science-study-progress-v1";
 
@@ -23,6 +25,7 @@
     searchBox: byId("searchBox"),
     shuffleButton: byId("shuffleButton"),
     unitDashboard: byId("unitDashboard"),
+    notesDashboard: byId("notesDashboard"),
     studyPanel: byId("studyPanel"),
     resultPanel: byId("resultPanel"),
     totalCardCount: byId("totalCardCount"),
@@ -62,8 +65,8 @@
     study: {
       eyebrow: "Study queue",
       title: "Study cards",
-      subtitle: "These are the cards that need slower review before they become Revisit or Mastered.",
-      empty: "No Study cards match these filters yet.",
+      subtitle: "These are cards marked Still confused after using a class-note context card.",
+      empty: "No Study cards match these filters yet. Use Study this on a card, then choose Still confused to add one here.",
     },
     test: {
       eyebrow: "Focused check",
@@ -80,6 +83,7 @@
     revealed: false,
     selectedChoice: null,
     test: null,
+    noteContext: null,
     sound: true,
     progress: loadProgress(),
   };
@@ -134,6 +138,7 @@
     localStorage.setItem(STORAGE_KEY, JSON.stringify(state.progress));
     renderStats();
     renderDashboard();
+    renderNotesDashboard();
   }
 
   function escapeHtml(value) {
@@ -168,6 +173,18 @@
 
   function objectiveTitle(objectiveId) {
     return objectiveMeta(objectiveId)?.title || objectiveId || "Learning objective";
+  }
+
+  function noteMeta(noteId) {
+    return classNotes.find((note) => note.id === noteId) || null;
+  }
+
+  function noteForCard(card) {
+    return noteMeta(card?.noteId || card?.learningObjective) || null;
+  }
+
+  function linkedCardsForNote(noteId) {
+    return cards.filter((card) => (card.noteId || card.learningObjective) === noteId);
   }
 
   function objectivesForUnit(unitId) {
@@ -325,6 +342,7 @@
         if (els.sessionView.classList.contains("hidden")) {
           renderStats();
           renderDashboard();
+          renderNotesDashboard();
         } else {
           rebuildDeck(true);
           renderSession();
@@ -342,6 +360,7 @@
 
   function startSession(mode, options = {}) {
     state.mode = mode;
+    state.noteContext = null;
     state.test = mode === "test" ? { score: 0, answered: 0, answers: [] } : null;
     state.revealed = false;
     state.selectedChoice = null;
@@ -358,10 +377,12 @@
     els.sessionView.classList.add("hidden");
     els.hubView.classList.remove("hidden");
     state.test = null;
+    state.noteContext = null;
     state.revealed = false;
     state.selectedChoice = null;
     renderStats();
     renderDashboard();
+    renderNotesDashboard();
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
@@ -438,7 +459,139 @@
     });
   }
 
+
+  function renderNotesDashboard() {
+    if (!els.notesDashboard) return;
+    const f = activeFilters();
+    const visibleNotes = classNotes.filter((note) => {
+      if (f.unit !== "all" && note.unit !== f.unit) return false;
+      if (f.objective !== "all" && note.id !== f.objective) return false;
+      const text = [note.title, note.summary, ...(note.keyPoints || []), ...(note.commonMistakes || [])].join(" ").toLowerCase();
+      if (f.search && !text.includes(f.search)) return false;
+      return true;
+    });
+    if (!visibleNotes.length) {
+      els.notesDashboard.innerHTML = `<div class="empty-inline">No class notes match these filters.</div>`;
+      return;
+    }
+    els.notesDashboard.innerHTML = visibleNotes.map((note) => {
+      const linked = linkedCardsForNote(note.id);
+      const mediaCard = linked.find((card) => Array.isArray(card.media) && card.media.length);
+      const thumb = mediaCard?.media?.[0]?.src ? `<img src="${escapeHtml(mediaCard.media[0].src)}" alt="" loading="lazy">` : `<span class="note-symbol">${escapeHtml(note.unit)}</span>`;
+      return `
+        <button class="note-card" data-note-open="${escapeHtml(note.id)}" type="button">
+          <span class="note-thumb">${thumb}</span>
+          <span class="note-copy">
+            <strong>${escapeHtml(note.title)}</strong>
+            <small>${escapeHtml(note.summary)}</small>
+            <em>${linked.length} linked cards</em>
+          </span>
+        </button>
+      `;
+    }).join("");
+    $$('[data-note-open]', els.notesDashboard).forEach((button) => {
+      button.addEventListener("click", () => openNoteContext(button.dataset.noteOpen));
+    });
+  }
+
+  function openNoteContext(noteId, cardId = null) {
+    state.noteContext = { noteId, cardId };
+    state.test = null;
+    state.revealed = false;
+    state.selectedChoice = null;
+    els.hubView.classList.add("hidden");
+    els.sessionView.classList.remove("hidden");
+    els.resultPanel.classList.add("hidden");
+    renderSession();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+
+  function renderNoteContext() {
+    const ctx = state.noteContext;
+    const note = noteMeta(ctx?.noteId);
+    const sourceCard = ctx?.cardId ? cards.find((card) => card.id === ctx.cardId) : null;
+    if (!note) {
+      state.noteContext = null;
+      renderSession();
+      return;
+    }
+    const linked = linkedCardsForNote(note.id);
+    const mediaCard = sourceCard || linked.find((card) => Array.isArray(card.media) && card.media.length);
+    els.sessionEyebrow.textContent = sourceCard ? "Study this concept" : "Class notes";
+    els.sessionTitle.textContent = note.title;
+    els.sessionSubtitle.textContent = sourceCard ? "Read the context, then decide what to do with the original card." : "Use this note to review the topic, then practise the linked cards.";
+    els.sessionIndex.textContent = String(linked.length);
+    els.sessionTotal.textContent = " linked cards";
+    els.resultPanel.classList.add("hidden");
+
+    els.studyPanel.innerHTML = `
+      <article class="study-card note-context-card">
+        <div class="card-topline">
+          <div class="card-title-row">
+            <span class="pill">${escapeHtml(unitTitle(note.unit))}</span>
+            <span class="pill objective-pill">${escapeHtml(note.title)}</span>
+            <span class="pill">Class note</span>
+          </div>
+        </div>
+        ${sourceCard ? `<aside class="source-question"><span class="eyebrow">Original question</span><p>${escapeHtml(sourceCard.question)}</p></aside>` : ""}
+        ${mediaCard ? renderMedia(mediaCard) : ""}
+        <section class="note-section note-summary">
+          <h2>Big idea</h2>
+          <p>${escapeHtml(note.summary)}</p>
+        </section>
+        <section class="note-section">
+          <h3>Key points</h3>
+          <ul>${(note.keyPoints || []).map((point) => `<li>${escapeHtml(point)}</li>`).join("")}</ul>
+        </section>
+        ${(note.commonMistakes || []).length ? `<section class="note-section warning-note"><h3>Common mistakes</h3><ul>${note.commonMistakes.map((point) => `<li>${escapeHtml(point)}</li>`).join("")}</ul></section>` : ""}
+        ${note.example ? `<section class="note-section example-note"><h3>Example</h3><p><strong>Question:</strong> ${escapeHtml(note.example.question)}</p><p><strong>Answer:</strong> ${escapeHtml(note.example.answer)}</p></section>` : ""}
+        <div class="card-actions">
+          ${sourceCard ? `
+            <button class="primary-button" data-note-action="mastered" type="button">I get it now · Mastered</button>
+            <button class="secondary-button" data-note-action="revisit" type="button">Almost · Revisit</button>
+            <button class="danger-button" data-note-action="study" type="button">Still confused · Keep in Study</button>
+            <button class="secondary-button" data-note-action="back-card" type="button">Back to card</button>
+          ` : `
+            <button class="primary-button" data-note-action="practice" type="button">Practise linked cards</button>
+            <button class="secondary-button" data-note-action="hub" type="button">Back to hub</button>
+          `}
+        </div>
+      </article>
+    `;
+    $$('[data-note-action]', els.studyPanel).forEach((button) => {
+      button.addEventListener('click', () => handleNoteAction(button.dataset.noteAction, note, sourceCard));
+    });
+  }
+
+  function handleNoteAction(action, note, sourceCard) {
+    if (action === "hub") {
+      showHub();
+      return;
+    }
+    if (action === "practice") {
+      state.noteContext = null;
+      els.unitFilter.value = note.unit;
+      updateObjectiveOptions();
+      if (els.objectiveFilter) els.objectiveFilter.value = note.id;
+      startSession("practice");
+      return;
+    }
+    if (action === "back-card") {
+      state.noteContext = null;
+      renderSession();
+      return;
+    }
+    if (sourceCard && ["mastered", "revisit", "study"].includes(action)) {
+      state.noteContext = null;
+      setCardStatus(sourceCard, action);
+    }
+  }
+
   function renderSession() {
+    if (state.noteContext) {
+      renderNoteContext();
+      return;
+    }
     const text = modeText[state.mode] || modeText.practice;
     els.sessionEyebrow.textContent = text.eyebrow;
     els.sessionTitle.textContent = text.title;
@@ -506,7 +659,7 @@
 
   function renderStudyPrompt(card) {
     if (state.mode !== "study") return "";
-    const explanation = card.explanation || card.cue || "Read the question, inspect any diagram, reveal the answer, then decide whether this should move to Revisit or Mastered.";
+    const explanation = card.explanation || card.cue || "Read the question, inspect any diagram, then use Study this if you need the class-note explanation before deciding.";
     return `
       <aside class="study-support">
         <strong>Study focus</strong>
@@ -514,7 +667,7 @@
         <ul>
           <li>Say the key idea out loud in your own words.</li>
           <li>Use the diagram or source clue if one is shown.</li>
-          <li>Move it to Revisit if it is nearly secure, or Mastered if it is confident.</li>
+          <li>Use Study this for the class-note context, then move it to Revisit or Mastered.</li>
         </ul>
       </aside>
     `;
@@ -567,7 +720,7 @@
           <div class="state-actions" aria-label="Learning state">
             <button class="primary-button" data-state="mastered" type="button">I know this · Mastered</button>
             <button class="secondary-button" data-state="revisit" type="button">Come back · Revisit</button>
-            <button class="secondary-button" data-state="study" type="button">Need help · Study</button>
+            <button class="secondary-button" data-action="study-context" type="button">Study this</button>
           </div>
         ` : ""}
 
@@ -663,6 +816,12 @@
     if (action === "test-wrong") {
       recordTestAnswer(card, false, "open");
       nextCard();
+      return;
+    }
+    if (action === "study-context") {
+      const note = noteForCard(card);
+      if (note) openNoteContext(note.id, card.id);
+      else setCardStatus(card, "study");
       return;
     }
     if (action === "next") nextCard();
@@ -871,6 +1030,7 @@
     bindGlobalActions();
     renderStats();
     renderDashboard();
+    renderNotesDashboard();
   }
 
   init();

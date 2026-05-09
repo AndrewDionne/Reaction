@@ -184,3 +184,8 @@ Version 1.6.0 changes the app from a test-heavy dashboard into a focused revisio
 ## Source fidelity patch
 
 Version 1.7.0 adds source-style redraws for key visual quiz questions, tightens terminology for voltage/potential difference and gravitational-field-strength wording, adds card-level source-fidelity metadata, and switches PNG study image references to smaller WebP copies for faster loading.
+
+
+## Class notes
+
+Version 1.9.0 adds a class-notes layer. The **Study this** action now opens a context card with the big idea, key points, common mistakes and an example. The main hub also includes **Review Class Notes** for browsing notes by unit or learning objective.
