@@ -8,7 +8,7 @@
   <title>Reaction · Year 9 Science Study</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
   <link rel="manifest" href="manifest.webmanifest" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css?v=1.11.1" />
 </head>
 <body>
   <canvas id="burstCanvas" aria-hidden="true"></canvas>
@@ -48,73 +48,52 @@
         </div>
 
         <div class="journey-grid journey-grid-three">
-          <article class="journey-card status-route">
+          <button class="journey-card status-route route-card-button" data-start-mode="practice" type="button">
             <span class="journey-icon">↻</span>
             <strong>Revision journey</strong>
-            <small>Work through selected cards and sort them as you go.</small>
-            <em><span id="journeyCount">0 cards</span></em>
-            <button class="route-action" data-start-mode="practice" type="button">Start revision</button>
-          </article>
-          <article class="journey-card revisit status-route">
+            <small>Work through selected revision cards and sort them as you go.</small>
+            <em><span id="journeyCount">0 / 0 sorted</span></em>
+            <span class="route-action-text">Start revision</span>
+          </button>
+          <button class="journey-card revisit status-route route-card-button" data-start-mode="revisit" type="button">
             <span class="journey-icon">⟳</span>
             <strong>Revisit</strong>
             <small>Cards you nearly know and want to come back to.</small>
             <em><span id="revisitStat">0</span> cards</em>
-            <button class="route-action" data-start-mode="revisit" type="button">Open queue</button>
-          </article>
-          <article class="journey-card test status-route">
+            <span class="route-action-text">Open queue</span>
+          </button>
+          <button class="journey-card test status-route route-card-button" data-start-mode="test" type="button">
             <span class="journey-icon">✓</span>
             <strong>Mastery check</strong>
-            <small>Test your knowledge using cards you have already mastered.</small>
+            <small>Test only the cards you have already mastered.</small>
             <em><span id="masteredStat">0</span> ready</em>
-            <button class="route-action" data-start-mode="test" type="button">Test knowledge</button>
-          </article>
+            <span class="route-action-text">Test knowledge</span>
+          </button>
         </div>
       </section>
 
-      <section class="control-panel panel utility-filters" aria-hidden="true">
-        <div class="section-heading-row">
-          <div>
-            <p class="eyebrow">Learning objectives</p>
-            <h2>Choose a unit, objective, or card type.</h2>
-          </div>
-          <button id="shuffleButton" class="secondary-button" type="button">Shuffle journey</button>
-        </div>
+      <div class="hidden-controls" aria-hidden="true">
+        <select id="unitFilter"></select>
+        <select id="objectiveFilter"></select>
+        <select id="typeFilter"></select>
+        <select id="levelFilter">
+          <option value="all">All levels</option>
+          <option value="1">Level 1 · recall</option>
+          <option value="2">Level 2 · apply</option>
+          <option value="3">Level 3 · explain</option>
+          <option value="4">Level 4 · reasoning</option>
+          <option value="5">Level 5 · extended</option>
+        </select>
+        <input id="searchBox" type="search" />
+        <button id="shuffleButton" type="button">Shuffle journey</button>
+        <span id="xpStat">0</span>
+        <span id="streakStat">0</span>
+        <span id="hubMasteredStat">0</span>
+        <span id="hubRevisitStat">0</span>
+        <span id="hubStudyStat">0</span>
+      </div>
 
-        <div class="filters-row" id="filtersPanel">
-          <label>Unit
-            <select id="unitFilter"></select>
-          </label>
-          <label>Learning objective
-            <select id="objectiveFilter"></select>
-          </label>
-          <label>Card type
-            <select id="typeFilter"></select>
-          </label>
-          <label>Level
-            <select id="levelFilter">
-              <option value="all">All levels</option>
-              <option value="1">Level 1 · recall</option>
-              <option value="2">Level 2 · apply</option>
-              <option value="3">Level 3 · explain</option>
-              <option value="4">Level 4 · reasoning</option>
-              <option value="5">Level 5 · extended</option>
-            </select>
-          </label>
-          <label>Search
-            <input id="searchBox" type="search" placeholder="DNA, resistance, starch…" />
-          </label>
-        </div>
-
-        <div class="compact-stats" aria-label="Progress summary">
-          <div><strong id="xpStat">0</strong><span>revision points</span></div>
-          <div><strong id="streakStat">0</strong><span>current streak</span></div>
-          <div><strong id="hubMasteredStat">0</strong><span>mastered</span></div>
-          <div><strong id="hubRevisitStat">0</strong><span>revisit</span></div>
-          <div><strong id="hubStudyStat">0</strong><span>study</span></div>
-        </div>
-      </section>
-
+      <section class="dashboard-grid" id="unitDashboard" aria-label="Unit status cards"></section>
 
       <section class="notes-panel panel">
         <div class="section-heading-row">
@@ -127,14 +106,10 @@
         <div class="notes-grid" id="notesDashboard" aria-label="Class notes"></div>
       </section>
 
-
-      <section class="dashboard-grid" id="unitDashboard" aria-label="Unit status cards"></section>
-    </section>
-
     <section id="sessionView" class="session-view hidden">
       <section class="session-header panel">
         <button id="backToHub" class="secondary-button" type="button">← Back to revision hub</button>
-        <div>
+        <div class="session-title-block">
           <p class="eyebrow" id="sessionEyebrow">Focused session</p>
           <h1 id="sessionTitle">Revision journey</h1>
           <p id="sessionSubtitle">Work through the cards and sort each one into the right learning bucket.</p>
@@ -150,8 +125,8 @@
     </section>
   </main>
 
-  <script src="data/year9-content.js"></script>
-  <script src="data/year9-notes.js"></script>
-  <script src="app.js"></script>
+  <script src="data/year9-content.js?v=1.11.1"></script>
+  <script src="data/year9-notes.js?v=1.11.1"></script>
+  <script src="app.js?v=1.11.1"></script>
 </body>
 </html>

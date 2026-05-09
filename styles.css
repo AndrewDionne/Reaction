@@ -1129,3 +1129,208 @@ select:focus, input:focus, textarea:focus {
   .session-count { justify-self: start; }
   .brand-hero { background-position: 62% center; }
 }
+
+
+/* v1.11.1 forced UI cleanup / cache-busted focused journey flow */
+.hidden-controls,
+.control-panel,
+.utility-filters {
+  display: none !important;
+}
+
+.app-shell {
+  width: min(1240px, calc(100% - 2rem));
+  padding-top: 1.4rem;
+}
+
+.brand-hero {
+  min-height: clamp(330px, 42vw, 560px) !important;
+  display: flex !important;
+  align-items: center !important;
+  padding: clamp(2rem, 5vw, 5rem) !important;
+  background:
+    linear-gradient(90deg, rgba(248,252,255,0.96) 0%, rgba(248,252,255,0.76) 34%, rgba(248,252,255,0.20) 66%, rgba(255,255,255,0.02) 100%),
+    url("assets/brand/reaction-brand-beaker-bg.webp") center / cover no-repeat !important;
+  overflow: hidden !important;
+}
+
+.brand-hero::before,
+.brand-hero::after,
+.brand-image-wrap,
+.hero-card,
+.hero-copy,
+.hero-actions {
+  display: none !important;
+}
+
+.brand-copy {
+  position: relative !important;
+  max-width: 60rem !important;
+  z-index: 1 !important;
+}
+
+.brand-copy h1 {
+  font-size: clamp(4.6rem, 11vw, 9.6rem) !important;
+  line-height: 0.84 !important;
+  margin: 0 !important;
+}
+
+.brand-copy .tagline {
+  margin-top: 1rem !important;
+  font-size: clamp(1.45rem, 3vw, 2.25rem) !important;
+}
+
+.journey-panel {
+  margin-top: 1rem !important;
+}
+
+.journey-grid-three {
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+}
+
+.route-card-button {
+  appearance: none !important;
+  width: 100% !important;
+  text-align: left !important;
+  border: 1px solid var(--line) !important;
+  background: rgba(255,255,255,0.76) !important;
+  color: var(--ink) !important;
+  border-radius: 24px !important;
+  padding: 1.15rem !important;
+  box-shadow: none !important;
+  transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease;
+}
+
+.route-card-button:hover,
+.route-card-button:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: 0 18px 38px rgba(31,41,55,0.12) !important;
+  border-color: rgba(37,99,235,0.24) !important;
+  outline: none;
+}
+
+.route-action-text {
+  display: inline-flex;
+  width: fit-content;
+  margin-top: 0.85rem;
+  padding: 0.64rem 0.9rem;
+  border-radius: 999px;
+  color: #fff;
+  font-weight: 900;
+  background: linear-gradient(135deg, var(--brand), var(--brand-2));
+}
+
+.status-route .route-action { display: none !important; }
+
+.dashboard-grid {
+  margin-top: 1rem !important;
+}
+
+.notes-panel {
+  margin-top: 1rem !important;
+}
+
+.unit-card {
+  padding: 1.15rem !important;
+}
+
+.unit-status-row {
+  gap: 0.4rem !important;
+  flex-wrap: wrap !important;
+}
+
+.unit-card h3 {
+  margin-top: 0.75rem !important;
+}
+
+.objective-list {
+  gap: 0.45rem !important;
+}
+
+.objective-chip {
+  padding: 0.72rem 0.82rem !important;
+}
+
+.session-header {
+  display: grid !important;
+  grid-template-columns: auto minmax(0, 1fr) auto !important;
+  align-items: center !important;
+  gap: 1rem !important;
+  padding: clamp(1rem, 2.3vw, 1.5rem) !important;
+}
+
+.session-title-block {
+  min-width: 0;
+}
+
+.session-header .eyebrow,
+.session-header #sessionSubtitle {
+  display: none !important;
+}
+
+.session-header h1 {
+  margin: 0 !important;
+  font-size: clamp(1.85rem, 4.6vw, 3rem) !important;
+  line-height: 1 !important;
+  letter-spacing: -0.055em !important;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.session-count {
+  min-width: 92px !important;
+  padding: 0.8rem 1rem !important;
+}
+
+.card-panel {
+  margin-top: 1rem !important;
+}
+
+.card-topline-clean {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 0.75rem !important;
+  margin-bottom: 1rem !important;
+  padding-bottom: 0.8rem !important;
+  border-bottom: 1px solid var(--line) !important;
+}
+
+.card-title-row {
+  gap: 0.4rem !important;
+  flex-wrap: wrap !important;
+}
+
+.question-text {
+  margin: 1.15rem 0 1rem !important;
+  font-size: clamp(1.65rem, 3.8vw, 2.25rem) !important;
+  line-height: 1.12 !important;
+}
+
+.primary-actions {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(120px, auto)) 1fr !important;
+  align-items: center !important;
+  gap: 0.7rem !important;
+}
+
+.primary-actions .class-notes-button {
+  justify-self: end !important;
+}
+
+.source-note {
+  margin-top: 1rem !important;
+  padding-top: 0.9rem !important;
+  border-top: 1px solid var(--line) !important;
+  color: var(--muted) !important;
+}
+
+@media (max-width: 900px) {
+  .journey-grid-three { grid-template-columns: 1fr !important; }
+  .session-header { grid-template-columns: 1fr auto !important; }
+  .session-header #backToHub { grid-column: 1 / -1; justify-self: start; }
+  .session-header h1 { white-space: normal; }
+  .primary-actions { grid-template-columns: 1fr 1fr !important; }
+  .primary-actions .class-notes-button { justify-self: stretch !important; }
+}

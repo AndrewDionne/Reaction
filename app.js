@@ -281,11 +281,11 @@
 
   function activeFilters() {
     return {
-      unit: els.unitFilter.value || "all",
+      unit: els.unitFilter?.value || "all",
       objective: els.objectiveFilter?.value || "all",
-      type: els.typeFilter.value || "all",
-      level: els.levelFilter.value || "all",
-      search: (els.searchBox.value || "").trim().toLowerCase(),
+      type: els.typeFilter?.value || "all",
+      level: els.levelFilter?.value || "all",
+      search: (els.searchBox?.value || "").trim().toLowerCase(),
     };
   }
 
@@ -334,10 +334,10 @@
   }
 
   function initFilters() {
-    els.unitFilter.innerHTML = `<option value="all">All units</option>` + units.map((unit) => `<option value="${escapeHtml(unit.id)}">${escapeHtml(unit.title)}</option>`).join("");
+    if (els.unitFilter) els.unitFilter.innerHTML = `<option value="all">All units</option>` + units.map((unit) => `<option value="${escapeHtml(unit.id)}">${escapeHtml(unit.title)}</option>`).join("");
     updateObjectiveOptions();
     const types = unique(cards.map((card) => card.type));
-    els.typeFilter.innerHTML = `<option value="all">All card types</option>` + types.map((type) => `<option value="${escapeHtml(type)}">${escapeHtml(type)}</option>`).join("");
+    if (els.typeFilter) els.typeFilter.innerHTML = `<option value="all">All card types</option>` + types.map((type) => `<option value="${escapeHtml(type)}">${escapeHtml(type)}</option>`).join("");
 
     [els.unitFilter, els.objectiveFilter, els.typeFilter, els.levelFilter, els.searchBox].filter(Boolean).forEach((el) => {
       el.addEventListener("input", () => {
@@ -353,7 +353,7 @@
       });
     });
 
-    els.shuffleButton.addEventListener("click", () => {
+    els.shuffleButton?.addEventListener("click", () => {
       state.deck = shuffle(cardsForMode("practice"));
       state.index = 0;
       state.mode = "practice";
@@ -394,16 +394,18 @@
     const revisit = new Set(state.progress.revisitIds || []);
     const study = new Set(state.progress.studyIds || []);
 
+    const selectedCards = baseFilteredCards();
+    const sortedSelected = selectedCards.filter((card) => mastered.has(card.id) || revisit.has(card.id) || study.has(card.id)).length;
     if (els.totalCardCount) els.totalCardCount.textContent = cards.length;
-    els.journeyCount.textContent = `${baseFilteredCards().length} cards`;
-    els.xpStat.textContent = state.progress.xp || 0;
-    els.streakStat.textContent = state.progress.streak || 0;
-    els.masteredStat.textContent = mastered.size;
-    els.hubMasteredStat.textContent = mastered.size;
-    els.revisitStat.textContent = revisit.size;
-    els.hubRevisitStat.textContent = revisit.size;
+    if (els.journeyCount) els.journeyCount.textContent = `${sortedSelected} / ${selectedCards.length} sorted`;
+    if (els.xpStat) els.xpStat.textContent = state.progress.xp || 0;
+    if (els.streakStat) els.streakStat.textContent = state.progress.streak || 0;
+    if (els.masteredStat) els.masteredStat.textContent = mastered.size;
+    if (els.hubMasteredStat) els.hubMasteredStat.textContent = mastered.size;
+    if (els.revisitStat) els.revisitStat.textContent = revisit.size;
+    if (els.hubRevisitStat) els.hubRevisitStat.textContent = revisit.size;
     if (els.studyStat) els.studyStat.textContent = study.size;
-    els.hubStudyStat.textContent = study.size;
+    if (els.hubStudyStat) els.hubStudyStat.textContent = study.size;
     els.soundToggle.textContent = state.sound ? "Sound on" : "Sound off";
     els.soundToggle.setAttribute("aria-pressed", String(state.sound));
   }
@@ -427,9 +429,10 @@
           const objectivePct = objectiveCards.length ? Math.round((objectiveMastered / objectiveCards.length) * 100) : 0;
           return `<button class="objective-chip" data-objective-start="${escapeHtml(objective.id)}" data-unit-start="${escapeHtml(unit.id)}" type="button"><strong>${escapeHtml(objective.title)}</strong><span>${objectiveCards.length} cards · ${objectivePct}% mastered</span></button>`;
         }).join("");
+      const sortedCount = masteredCount + revisitCount + studyCount;
       return `
         <article class="panel unit-card">
-          <div class="card-title-row">
+          <div class="card-title-row unit-status-row">
             <span class="pill good">${masteredCount} mastered</span>
             <span class="pill warn">${revisitCount} revisit</span>
             <span class="pill study">${studyCount} study</span>
@@ -437,7 +440,7 @@
           <h3>${escapeHtml(unit.title)}</h3>
           <p>${escapeHtml(unit.theme)}</p>
           <div class="unit-meta">
-            <span class="pill">${unitCards.length} revision cards</span>
+            <span class="pill">${sortedCount} / ${unitCards.length} sorted</span>
             <span class="pill">${pct}% mastered</span>
           </div>
           <div class="progress-track" aria-label="${pct}% mastered"><div class="progress-fill" style="width:${pct}%"></div></div>
