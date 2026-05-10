@@ -187,8 +187,21 @@
     "9J": "assets/brand/unit-9J-magnet.webp",
   };
 
+  const unitHeroMap = {
+    "9A": "assets/brand/unit-9A-hero.webp",
+    "9B": "assets/brand/unit-9B-hero.webp",
+    "9E": "assets/brand/unit-9E-hero.webp",
+    "9F": "assets/brand/unit-9F-hero.webp",
+    "9I": "assets/brand/unit-9I-hero.webp",
+    "9J": "assets/brand/unit-9J-hero.webp",
+  };
+
   function unitGraphic(unitId) {
     return unitGraphicMap[unitId] || "";
+  }
+
+  function unitHeroGraphic(unitId) {
+    return unitHeroMap[unitId] || unitGraphic(unitId) || "";
   }
 
 
@@ -215,7 +228,7 @@
       els.sessionSubtitle.textContent = subtitle || [resolvedUnit ? unitTitle(resolvedUnit) : "Mixed units", modeName].filter(Boolean).join(" · ");
     }
     if (els.sessionUnitArt) {
-      const graphic = unitGraphic(resolvedUnit);
+      const graphic = unitHeroGraphic(resolvedUnit);
       els.sessionUnitArt.classList.toggle("empty", !graphic);
       els.sessionUnitArt.innerHTML = graphic
         ? `<img src="${escapeHtml(graphic)}" alt="" loading="lazy">`

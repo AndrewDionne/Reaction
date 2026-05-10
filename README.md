@@ -234,3 +234,8 @@ Adds five split, optimized WebP panels from the generated infographic collage an
 ## v1.19.0 Guided Session Flow
 
 This patch renames the mastery route to **Test your knowledge**, changes visible Study labels to **Need notes**, adds a clearer selected revision-set summary, improves multiple-choice feedback before moving to the next card, preserves Class Notes back-navigation, and adds an end-of-session summary with recommended next actions.
+
+
+## v1.20.2 Full-Bleed Session Header
+
+Active revision/test sessions now use full-bleed unit hero artwork in the session header, with the question card kept clean below.
