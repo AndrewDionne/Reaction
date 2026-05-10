@@ -2331,3 +2331,130 @@ body.session-active .app-shell {
     font-size: 1rem !important;
   }
 }
+
+
+/* v1.27.0 SVG base-layer media text support */
+.media-layer-text {
+  display: grid;
+  gap: 0.45rem;
+  padding: 0.8rem 0.95rem 0.95rem;
+  border-top: 1px solid rgba(203, 213, 225, 0.65);
+  background: #fff;
+  color: var(--muted);
+}
+
+.media-layer-title {
+  display: block;
+  color: var(--ink);
+  font-size: 0.98rem;
+  line-height: 1.25;
+}
+
+.media-layer-lead {
+  display: block;
+  font-size: 0.93rem;
+  line-height: 1.45;
+}
+
+.media-layer-points {
+  margin: 0.1rem 0 0;
+  padding-left: 1.1rem;
+  display: grid;
+  gap: 0.25rem;
+  font-size: 0.92rem;
+  line-height: 1.35;
+}
+
+.media-diagram-base img {
+  background: #fff;
+}
+
+.note-media-grid .card-media img {
+  max-height: 440px;
+  object-fit: contain;
+}
+
+.note-source-media .media-layer-text {
+  display: none;
+}
+
+@media (max-width: 720px) {
+  .media-layer-text {
+    padding: 0.7rem 0.8rem 0.85rem;
+  }
+  .media-layer-title {
+    font-size: 0.94rem;
+  }
+  .media-layer-lead,
+  .media-layer-points {
+    font-size: 0.88rem;
+  }
+}
+
+/* v1.28.0: app-layer labels for clean base images */
+.media-visual-wrap {
+  position: relative;
+  background: #fff;
+}
+
+.media-visual-wrap img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.media-marker-layer {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.media-marker {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  min-width: 2.05rem;
+  min-height: 2.05rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.18rem 0.42rem;
+  border-radius: 999px;
+  background: rgba(37, 99, 235, 0.94);
+  color: #fff;
+  border: 2px solid rgba(255, 255, 255, 0.95);
+  box-shadow: 0 8px 18px rgba(15, 23, 42, 0.22);
+  font-weight: 800;
+  font-size: 0.98rem;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.media-marker.soft {
+  background: rgba(15, 23, 42, 0.82);
+}
+
+.media-marker.force-up {
+  background: rgba(37, 99, 235, 0.94);
+}
+
+.media-marker.force-down {
+  background: rgba(220, 38, 38, 0.94);
+}
+
+.media-marker.machine {
+  border-radius: 12px;
+  min-width: 4.5rem;
+}
+
+@media (max-width: 720px) {
+  .media-marker {
+    min-width: 1.65rem;
+    min-height: 1.65rem;
+    font-size: 0.78rem;
+    padding: 0.12rem 0.3rem;
+  }
+
+  .media-marker.machine {
+    min-width: 3.4rem;
+  }
+}

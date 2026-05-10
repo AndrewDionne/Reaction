@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" role="img" aria-labelledby="title desc">
+  <title id="title">Static charge pair options</title>
+  <desc id="desc">Four labelled charge pairs showing positive and negative charges.</desc>
+
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#2563eb" />
+    </marker>
+    <marker id="arrowDark" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#334155" />
+    </marker>
+    <style>
+      .bg{fill:#f8fafc}.panel{fill:white;stroke:#cbd5e1;stroke-width:2}.title{font:700 24px system-ui,Arial;fill:#0f172a}.label{font:700 18px system-ui,Arial;fill:#0f172a}.small{font:600 14px system-ui,Arial;fill:#334155}.tiny{font:600 12px system-ui,Arial;fill:#475569}.line{stroke:#2563eb;stroke-width:3;fill:none;stroke-linecap:round}.dark{stroke:#334155;stroke-width:3;fill:none;stroke-linecap:round}.wire{stroke:#334155;stroke-width:4;fill:none;stroke-linecap:round;stroke-linejoin:round}.option{fill:#e0f2fe;stroke:#0284c7;stroke-width:2}.magN{fill:#ef4444}.magS{fill:#3b82f6}.metal{fill:#e2e8f0;stroke:#64748b;stroke-width:2}.charge{font:700 22px system-ui,Arial;fill:#0f172a}.plus{fill:#dc2626}.minus{fill:#2563eb}
+    </style>
+  </defs>
+
+  <rect class="bg" width="900" height="520" rx="24"/>
+  <text class="title" x="42" y="52">Charge pairs</text>
+  <rect class="panel" x="40" y="80" width="820" height="385" rx="18"/>
+  <g transform="translate(105 145)">
+    <circle class="option" cx="0" cy="0" r="25"/><text class="label" x="0" y="7" text-anchor="middle">A</text>
+    <circle cx="85" cy="0" r="32" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/><text class="charge plus" x="85" y="8" text-anchor="middle">+</text>
+    <circle cx="175" cy="0" r="32" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/><text class="charge plus" x="175" y="8" text-anchor="middle">+</text>
+  </g>
+  <g transform="translate(525 145)">
+    <circle class="option" cx="0" cy="0" r="25"/><text class="label" x="0" y="7" text-anchor="middle">B</text>
+    <circle cx="85" cy="0" r="32" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/><text class="charge minus" x="85" y="8" text-anchor="middle">−</text>
+    <circle cx="175" cy="0" r="32" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/><text class="charge plus" x="175" y="8" text-anchor="middle">+</text>
+  </g>
+  <g transform="translate(105 335)">
+    <circle class="option" cx="0" cy="0" r="25"/><text class="label" x="0" y="7" text-anchor="middle">C</text>
+    <circle cx="85" cy="0" r="32" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/><text class="charge minus" x="85" y="8" text-anchor="middle">−</text>
+    <circle cx="175" cy="0" r="32" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/><text class="charge minus" x="175" y="8" text-anchor="middle">−</text>
+  </g>
+  <g transform="translate(525 335)">
+    <circle class="option" cx="0" cy="0" r="25"/><text class="label" x="0" y="7" text-anchor="middle">D</text>
+    <circle cx="85" cy="0" r="32" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/><text class="charge plus" x="85" y="8" text-anchor="middle">+</text>
+    <circle cx="175" cy="0" r="32" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/><text class="charge minus" x="175" y="8" text-anchor="middle">−</text>
+  </g>
+</svg>

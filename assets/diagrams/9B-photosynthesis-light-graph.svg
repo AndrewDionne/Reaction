@@ -1,20 +1,25 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" role="img" aria-labelledby="title desc">
-  <title id="title">Photosynthesis rate versus light intensity</title>
-  <desc id="desc">A graph that rises as light intensity increases and then levels off to show a plateau.</desc>
-  <rect width="900" height="560" fill="#ffffff"/>
-  <rect x="50" y="40" width="800" height="480" rx="24" fill="#fbfdff" stroke="#c7d3e0" stroke-width="2"/>
-  <text x="90" y="95" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#243447">Rate of photosynthesis vs light intensity</text>
-  <text x="90" y="127" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#43576b">Light increases the rate at first, then another factor becomes limiting.</text>
-  <line x1="130" y1="440" x2="770" y2="440" stroke="#2f3f4f" stroke-width="3"/>
-  <line x1="130" y1="440" x2="130" y2="170" stroke="#2f3f4f" stroke-width="3"/>
-  <text x="450" y="490" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#34495e">Light intensity</text>
-  <text x="60" y="310" transform="rotate(-90 60 310)" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#34495e">Rate of photosynthesis</text>
-  <path d="M150 420 C205 395, 250 350, 300 300 S410 210, 475 210 L700 210" fill="none" stroke="#27ae60" stroke-width="8" stroke-linecap="round"/>
-  <circle cx="300" cy="300" r="6" fill="#27ae60"/>
-  <circle cx="475" cy="210" r="6" fill="#27ae60"/>
-  <text x="305" y="280" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#1f6f45">Rate rises</text>
-  <text x="510" y="195" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#1f6f45">Plateau: another factor limits</text>
-  <line x1="475" y1="210" x2="475" y2="440" stroke="#7f8c8d" stroke-dasharray="7 7" stroke-width="2"/>
-  <text x="485" y="370" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#43576b">CO₂ or temperature</text>
-  <text x="485" y="390" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#43576b">may become limiting</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" role="img">
+<rect width="900" height="560" fill="#ffffff"/>
+<defs>
+<style>
+.t{font-family:Arial,Helvetica,sans-serif;fill:#243447}
+.label{font-family:Arial,Helvetica,sans-serif;font-size:22px;font-weight:700;fill:#243447}
+.small{font-family:Arial,Helvetica,sans-serif;font-size:17px;fill:#43576b}
+.axis{stroke:#2f3f4f;stroke-width:3;fill:none;stroke-linecap:round}
+.grid{stroke:#d7e0ea;stroke-width:2}
+.line{stroke:#2e86de;stroke-width:7;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.wire{stroke:#43576b;stroke-width:4.5;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.tile{fill:#ffffff;stroke:#d7e0ea;stroke-width:2}
+</style>
+</defs>
+<rect x="50" y="40" width="800" height="480" rx="24" fill="#f8fff8" stroke="#cfe3c8" stroke-width="2"/>
+<g transform="translate(120 120)">
+<line class="axis" x1="70" y1="330" x2="710" y2="330"/><line class="axis" x1="70" y1="330" x2="70" y2="55"/>
+<g class="grid"><line x1="70" y1="250" x2="710" y2="250"/><line x1="70" y1="170" x2="710" y2="170"/><line x1="190" y1="55" x2="190" y2="330"/><line x1="330" y1="55" x2="330" y2="330"/><line x1="470" y1="55" x2="470" y2="330"/><line x1="610" y1="55" x2="610" y2="330"/></g>
+<path class="line" d="M90 310 C175 280 260 215 350 150 C430 92 535 88 690 88"/>
+<text class="label" x="390" y="386" text-anchor="middle">light intensity</text>
+<text class="label" x="0" y="200" transform="rotate(-90 0 200)" text-anchor="middle">rate of photosynthesis</text>
+<circle cx="350" cy="150" r="8" fill="#2e86de"/><text class="small" x="368" y="146">rises</text>
+<circle cx="610" cy="88" r="8" fill="#2e86de"/><text class="small" x="628" y="94">levels off</text>
+</g>
 </svg>

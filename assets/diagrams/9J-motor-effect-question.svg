@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" role="img" aria-labelledby="title desc">
+  <title id="title">Motor effect setup</title>
+  <desc id="desc">A current-carrying wire between a north and south magnet with labelled force-arrow options.</desc>
+
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#2563eb" />
+    </marker>
+    <marker id="arrowDark" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#334155" />
+    </marker>
+    <style>
+      .bg{fill:#f8fafc}.panel{fill:white;stroke:#cbd5e1;stroke-width:2}.title{font:700 24px system-ui,Arial;fill:#0f172a}.label{font:700 18px system-ui,Arial;fill:#0f172a}.small{font:600 14px system-ui,Arial;fill:#334155}.tiny{font:600 12px system-ui,Arial;fill:#475569}.line{stroke:#2563eb;stroke-width:3;fill:none;stroke-linecap:round}.dark{stroke:#334155;stroke-width:3;fill:none;stroke-linecap:round}.wire{stroke:#334155;stroke-width:4;fill:none;stroke-linecap:round;stroke-linejoin:round}.option{fill:#e0f2fe;stroke:#0284c7;stroke-width:2}.magN{fill:#ef4444}.magS{fill:#3b82f6}.metal{fill:#e2e8f0;stroke:#64748b;stroke-width:2}.charge{font:700 22px system-ui,Arial;fill:#0f172a}.plus{fill:#dc2626}.minus{fill:#2563eb}
+    </style>
+  </defs>
+
+  <rect class="bg" width="900" height="520" rx="24"/>
+  <text class="title" x="42" y="52">Motor effect setup</text>
+  <rect class="panel" x="40" y="80" width="820" height="385" rx="18"/>
+  <rect class="magN" x="170" y="185" width="130" height="150" rx="18"/>
+  <rect class="magS" x="600" y="185" width="130" height="150" rx="18"/>
+  <text class="label" x="235" y="268" text-anchor="middle" fill="#fff">N</text>
+  <text class="label" x="665" y="268" text-anchor="middle" fill="#fff">S</text>
+  <path class="line" d="M315 260H585" marker-end="url(#arrow)"/>
+  <circle cx="450" cy="260" r="42" fill="#e0f2fe" stroke="#0284c7" stroke-width="3"/>
+  <circle cx="450" cy="260" r="7" fill="#0284c7"/>
+  <text class="tiny" x="450" y="322" text-anchor="middle">current out of page</text>
+  <circle class="option" cx="450" cy="152" r="26"/><text class="label" x="450" y="159" text-anchor="middle">A</text>
+  <path class="dark" d="M450 190v45" marker-end="url(#arrowDark)"/>
+  <circle class="option" cx="450" cy="398" r="26"/><text class="label" x="450" y="405" text-anchor="middle">B</text>
+  <path class="dark" d="M450 360v-45" marker-end="url(#arrowDark)"/>
+  <circle class="option" cx="345" cy="260" r="26"/><text class="label" x="345" y="267" text-anchor="middle">C</text>
+  <path class="dark" d="M380 260h45" marker-end="url(#arrowDark)"/>
+  <circle class="option" cx="555" cy="260" r="26"/><text class="label" x="555" y="267" text-anchor="middle">D</text>
+  <path class="dark" d="M520 260h-45" marker-end="url(#arrowDark)"/>
+</svg>

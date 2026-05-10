@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+<title id="title">Blast furnace question diagram</title>
+<desc id="desc">A blast furnace diagram with four labelled positions A, B, C and D.</desc>
+<rect width="1600" height="1000" fill="#ffffff"/><defs>
+  <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M2 2 L10 6 L2 10 Z" fill="#30465f"/></marker>
+  <marker id="arrowBlue" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M2 2 L10 6 L2 10 Z" fill="#2563eb"/></marker>
+  <marker id="arrowOrange" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M2 2 L10 6 L2 10 Z" fill="#ea580c"/></marker>
+  <marker id="arrowRed" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M2 2 L10 6 L2 10 Z" fill="#dc2626"/></marker>
+  <marker id="arrowGreen" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M2 2 L10 6 L2 10 Z" fill="#15803d"/></marker>
+  <style>
+  .title{font-family:Arial,Helvetica,sans-serif;font-size:52px;font-weight:800;fill:#1f2f46}
+  .sub{font-family:Arial,Helvetica,sans-serif;font-size:28px;fill:#52667a}
+  .label{font-family:Arial,Helvetica,sans-serif;font-size:34px;font-weight:750;fill:#223247}
+  .text{font-family:Arial,Helvetica,sans-serif;font-size:29px;fill:#223247}
+  .small{font-family:Arial,Helvetica,sans-serif;font-size:24px;fill:#516477}
+  .tiny{font-family:Arial,Helvetica,sans-serif;font-size:20px;fill:#516477}
+  .badgeText{font-family:Arial,Helvetica,sans-serif;font-size:34px;font-weight:800;fill:#ffffff}
+  .card{fill:#fbfdff;stroke:#c7d3e0;stroke-width:4}
+  .panelBlue{fill:#eaf5ff;stroke:#78aee3;stroke-width:4}
+  .panelGreen{fill:#e9f7ef;stroke:#69b984;stroke-width:4}
+  .panelAmber{fill:#fff6dc;stroke:#d8b957;stroke-width:4}
+  .panelGrey{fill:#f4f7fa;stroke:#bac6d1;stroke-width:4}
+  .panelRed{fill:#fff0ef;stroke:#d59088;stroke-width:4}
+  .wire{stroke:#30465f;stroke-width:8;fill:none;stroke-linecap:round;stroke-linejoin:round}
+  .line{stroke:#30465f;stroke-width:7;fill:none;stroke-linecap:round;stroke-linejoin:round}
+  .thin{stroke:#516477;stroke-width:4;fill:none;stroke-linecap:round;stroke-linejoin:round}
+  .arrow{stroke:#30465f;stroke-width:7;fill:none;stroke-linecap:round;stroke-linejoin:round;marker-end:url(#arrow)}
+  .arrowBlue{stroke:#2563eb;stroke-width:8;fill:none;stroke-linecap:round;stroke-linejoin:round;marker-end:url(#arrowBlue)}
+  .arrowOrange{stroke:#ea580c;stroke-width:8;fill:none;stroke-linecap:round;stroke-linejoin:round;marker-end:url(#arrowOrange)}
+  .arrowRed{stroke:#dc2626;stroke-width:8;fill:none;stroke-linecap:round;stroke-linejoin:round;marker-end:url(#arrowRed)}
+  .arrowGreen{stroke:#15803d;stroke-width:8;fill:none;stroke-linecap:round;stroke-linejoin:round;marker-end:url(#arrowGreen)}
+</style>
+</defs>
+<rect x="70" y="60" width="1460" height="880" rx="38" class="card"/>
+<text x="130" y="145" class="title">Blast furnace</text>
+<g transform="translate(365 175)">
+  <path d="M370 80 C310 220 300 500 370 740 L660 740 C730 500 720 220 660 80 Z" fill="#f8fafc" stroke="#334155" stroke-width="8"/>
+  <path d="M410 170 C370 300 370 520 420 670 L610 670 C660 520 660 300 620 170 Z" fill="#fee2e2" opacity="0.7"/>
+  <path class="arrow" d="M250 95 H365"/><circle cx="225" cy="95" r="42" fill="#2f6fad"/><text x="225" y="107" text-anchor="middle" class="badgeText">A</text>
+  <path class="arrow" d="M790 95 H675"/><circle cx="815" cy="95" r="42" fill="#2f6fad"/><text x="815" y="107" text-anchor="middle" class="badgeText">B</text>
+  <path class="arrowBlue" d="M120 585 H345"/><circle cx="92" cy="585" r="42" fill="#2f6fad"/><text x="92" y="597" text-anchor="middle" class="badgeText">C</text>
+  <path class="arrowOrange" d="M645 775 H835"/><circle cx="865" cy="775" r="42" fill="#2f6fad"/><text x="865" y="787" text-anchor="middle" class="badgeText">D</text>
+  <rect x="440" y="705" width="150" height="40" rx="16" fill="#f97316" opacity="0.85"/>
+  <path d="M405 295 C470 270 560 330 625 300" class="thin"/>
+  <path d="M392 440 C468 415 560 475 638 445" class="thin"/>
+  <path d="M405 585 C480 555 560 620 622 590" class="thin"/>
+</g>
+</svg>

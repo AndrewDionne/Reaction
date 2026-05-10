@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" role="img" aria-labelledby="title desc">
+  <title id="title">Electromagnet parts labelled A to D</title>
+  <desc id="desc">An electromagnet circuit with a coil, iron core, battery and switch labelled A to D.</desc>
+
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#2563eb" />
+    </marker>
+    <marker id="arrowDark" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#334155" />
+    </marker>
+    <style>
+      .bg{fill:#f8fafc}.panel{fill:white;stroke:#cbd5e1;stroke-width:2}.title{font:700 24px system-ui,Arial;fill:#0f172a}.label{font:700 18px system-ui,Arial;fill:#0f172a}.small{font:600 14px system-ui,Arial;fill:#334155}.tiny{font:600 12px system-ui,Arial;fill:#475569}.line{stroke:#2563eb;stroke-width:3;fill:none;stroke-linecap:round}.dark{stroke:#334155;stroke-width:3;fill:none;stroke-linecap:round}.wire{stroke:#334155;stroke-width:4;fill:none;stroke-linecap:round;stroke-linejoin:round}.option{fill:#e0f2fe;stroke:#0284c7;stroke-width:2}.magN{fill:#ef4444}.magS{fill:#3b82f6}.metal{fill:#e2e8f0;stroke:#64748b;stroke-width:2}.charge{font:700 22px system-ui,Arial;fill:#0f172a}.plus{fill:#dc2626}.minus{fill:#2563eb}
+    </style>
+  </defs>
+
+  <rect class="bg" width="900" height="520" rx="24"/>
+  <text class="title" x="42" y="52">Electromagnet</text>
+  <rect class="panel" x="40" y="80" width="820" height="385" rx="18"/>
+  <rect class="metal" x="350" y="230" width="210" height="55" rx="26"/>
+  <path d="M370 228 c-22 0 -22 60 0 60 c22 0 22 -60 44 -60 c22 0 22 60 44 60 c22 0 22 -60 44 -60 c22 0 22 60 44 60" stroke="#f97316" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <path class="wire" d="M350 260 H220 V360 H650 V260 H560"/>
+  <g transform="translate(220 335)">
+    <line x1="0" y1="0" x2="0" y2="52" stroke="#334155" stroke-width="4"/>
+    <line x1="18" y1="13" x2="18" y2="39" stroke="#334155" stroke-width="4"/>
+  </g>
+  <line x1="650" y1="360" x2="710" y2="325" stroke="#334155" stroke-width="4" stroke-linecap="round"/>
+  <line x1="724" y1="318" x2="760" y2="318" stroke="#334155" stroke-width="4" stroke-linecap="round"/>
+  <circle class="option" cx="470" cy="190" r="26"/><text class="label" x="470" y="197" text-anchor="middle">A</text>
+  <line x1="470" y1="216" x2="470" y2="236" stroke="#0284c7" stroke-width="2"/>
+  <circle class="option" cx="590" cy="260" r="26"/><text class="label" x="590" y="267" text-anchor="middle">B</text>
+  <line x1="564" y1="260" x2="545" y2="260" stroke="#0284c7" stroke-width="2"/>
+  <circle class="option" cx="220" cy="298" r="26"/><text class="label" x="220" y="305" text-anchor="middle">C</text>
+  <line x1="220" y1="324" x2="220" y2="340" stroke="#0284c7" stroke-width="2"/>
+  <circle class="option" cx="752" cy="275" r="26"/><text class="label" x="752" y="282" text-anchor="middle">D</text>
+  <line x1="742" y1="299" x2="724" y2="318" stroke="#0284c7" stroke-width="2"/>
+</svg>

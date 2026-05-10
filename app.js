@@ -89,6 +89,8 @@
     index: 0,
     revealed: false,
     selectedChoice: null,
+    choiceOrderCardId: null,
+    choiceOrder: null,
     test: null,
     session: null,
     noteContext: null,
@@ -109,6 +111,7 @@
       studyIds: [],
       attempts: {},
       testHistory: [],
+      sessionCursors: {},
       sound: true,
       updatedAt: new Date().toISOString(),
     };
@@ -127,6 +130,7 @@
       studyIds: Array.isArray(raw.studyIds) ? raw.studyIds : [],
       attempts: raw.attempts && typeof raw.attempts === "object" ? raw.attempts : {},
       testHistory: Array.isArray(raw.testHistory) ? raw.testHistory : Array.isArray(raw.bossHistory) ? raw.bossHistory : [],
+      sessionCursors: raw.sessionCursors && typeof raw.sessionCursors === "object" ? raw.sessionCursors : {},
       sound: typeof raw.sound === "boolean" ? raw.sound : true,
     };
   }
@@ -143,10 +147,14 @@
     return defaultProgress();
   }
 
-  function saveProgress() {
+  function writeProgressToStorage() {
     state.progress.updatedAt = new Date().toISOString();
     state.progress.sound = state.sound;
     localStorage.setItem(STORAGE_KEY, JSON.stringify(state.progress));
+  }
+
+  function saveProgress() {
+    writeProgressToStorage();
     renderStats();
     renderDashboard();
     renderNotesDashboard();
@@ -298,6 +306,50 @@
     return match ? match.slice(prefix.length) : String(answer || "");
   }
 
+  function parseChoice(choice, index = 0) {
+    const raw = String(choice || "").trim();
+    const match = raw.match(/^([A-Z])\s+(.+)$/);
+    return {
+      originalKey: match ? match[1] : String.fromCharCode(65 + index),
+      text: match ? match[2] : raw,
+    };
+  }
+
+  function resetChoiceOrder() {
+    state.choiceOrderCardId = null;
+    state.choiceOrder = null;
+  }
+
+  function shuffledChoicesForCard(card) {
+    if (state.choiceOrderCardId === card.id && Array.isArray(state.choiceOrder)) return state.choiceOrder;
+    const displayKeys = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    const parsed = (card.choices || []).map(parseChoice);
+    const shuffled = shuffle(parsed).map((choice, index) => ({
+      ...choice,
+      displayKey: displayKeys[index] || String(index + 1),
+    }));
+    state.choiceOrderCardId = card.id;
+    state.choiceOrder = shuffled;
+    return shuffled;
+  }
+
+  function displayedChoiceText(card, answer = card.answer) {
+    const current = state.choiceOrderCardId === card.id && Array.isArray(state.choiceOrder)
+      ? state.choiceOrder.find((choice) => choice.originalKey === answer)
+      : null;
+    if (current) return `${current.displayKey} — ${current.text}`;
+    return `${answer} — ${choiceText(card, answer)}`;
+  }
+
+  function resetCardInteraction() {
+    state.revealed = false;
+    state.selectedChoice = null;
+    state.definitionInput = "";
+    state.definitionCompared = false;
+    state.definitionReview = null;
+    resetChoiceOrder();
+  }
+
   function cardIsDefinition(card) {
     return !cardIsMcq(card) && (String(card?.type || "").toLowerCase() === "vocabulary" || /^define[:\s]/i.test(String(card?.question || "")));
   }
@@ -364,6 +416,62 @@
   function recordSessionStatus(card, status) {
     if (!state.session || !card || state.mode === "test") return;
     state.session.statuses[card.id] = status;
+  }
+
+  function sessionCursorKey(mode = state.mode) {
+    const f = activeFilters();
+    return JSON.stringify({
+      mode,
+      units: [...(state.selectedUnits || [])].sort(),
+      objectives: [...(state.selectedObjectives || [])].sort(),
+      type: f.type || "all",
+      level: f.level || "all",
+      search: f.search || "",
+    });
+  }
+
+  function persistSessionCursor() {
+    if (!state.deck.length || state.noteContext || state.mode === "test") return;
+    const card = state.deck[state.index];
+    if (!card) return;
+    const cursors = state.progress.sessionCursors && typeof state.progress.sessionCursors === "object"
+      ? state.progress.sessionCursors
+      : {};
+    cursors[sessionCursorKey(state.mode)] = {
+      mode: state.mode,
+      cardId: card.id,
+      index: state.index,
+      deckLength: state.deck.length,
+      updatedAt: new Date().toISOString(),
+    };
+
+    const entries = Object.entries(cursors)
+      .sort((a, b) => String(b[1]?.updatedAt || "").localeCompare(String(a[1]?.updatedAt || "")))
+      .slice(0, 30);
+    state.progress.sessionCursors = Object.fromEntries(entries);
+    writeProgressToStorage();
+  }
+
+  function applySessionCursor(mode = state.mode) {
+    if (mode === "test" || !state.deck.length) return;
+    const cursor = state.progress.sessionCursors?.[sessionCursorKey(mode)];
+    if (!cursor) return;
+    const byCardId = state.deck.findIndex((card) => card.id === cursor.cardId);
+    if (byCardId >= 0) {
+      state.index = byCardId;
+      return;
+    }
+    const index = Number(cursor.index);
+    if (Number.isFinite(index)) state.index = Math.max(0, Math.min(state.deck.length - 1, index));
+  }
+
+  function clearSessionCursor(mode = state.mode) {
+    const cursors = state.progress.sessionCursors && typeof state.progress.sessionCursors === "object"
+      ? state.progress.sessionCursors
+      : {};
+    delete cursors[sessionCursorKey(mode)];
+    state.progress.sessionCursors = cursors;
+    writeProgressToStorage();
   }
 
   function sessionStatusCounts() {
@@ -521,6 +629,7 @@
     if (resetIndex || state.index >= state.deck.length) state.index = 0;
     state.revealed = false;
     state.selectedChoice = null;
+    resetChoiceOrder();
   }
 
   function initFilters() {
@@ -555,7 +664,11 @@
     state.test = mode === "test" ? { score: 0, answered: 0, answers: [] } : null;
     state.revealed = false;
     state.selectedChoice = null;
-    if (!options.preserveDeck) rebuildDeck(true);
+    resetChoiceOrder();
+    if (!options.preserveDeck) {
+      rebuildDeck(true);
+      if (options.resume !== false) applySessionCursor(mode);
+    }
     if (mode !== "test") startSessionTracker(mode);
 
     document.body.classList.add("session-active");
@@ -567,6 +680,7 @@
   }
 
   function showHub() {
+    persistSessionCursor();
     document.body.classList.remove("session-active");
     els.sessionView.classList.add("hidden");
     els.hubView.classList.remove("hidden");
@@ -575,6 +689,7 @@
     state.noteContext = null;
     state.revealed = false;
     state.selectedChoice = null;
+    resetChoiceOrder();
     renderStats();
     renderDashboard();
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -695,10 +810,12 @@
   }
 
   function openNoteContext(noteId, cardId = null) {
+    persistSessionCursor();
     state.noteContext = { noteId, cardId };
     state.test = null;
     state.revealed = false;
     state.selectedChoice = null;
+    resetChoiceOrder();
     document.body.classList.add("session-active");
     els.hubView.classList.add("hidden");
     els.sessionView.classList.remove("hidden");
@@ -878,14 +995,43 @@
     return "fidelity derived";
   }
 
+  function renderMediaLayerText(item, showCaptions = true) {
+    if (!showCaptions) return "";
+    const title = item.mediaTitle || item.title || "";
+    const lead = item.mediaLead || item.caption || "";
+    const points = Array.isArray(item.mediaPoints) ? item.mediaPoints.filter(Boolean) : [];
+    if (!title && !lead && !points.length) return "";
+    const pointList = points.length ? `<ul class="media-layer-points">${points.map((point) => `<li>${escapeHtml(point)}</li>`).join("")}</ul>` : "";
+    return `
+      <figcaption class="media-layer-text">
+        ${title ? `<strong class="media-layer-title">${escapeHtml(title)}</strong>` : ""}
+        ${lead ? `<span class="media-layer-lead">${escapeHtml(lead)}</span>` : ""}
+        ${pointList}
+      </figcaption>`;
+  }
+
+  function renderMediaMarkers(item) {
+    const markers = Array.isArray(item.mediaMarkers) ? item.mediaMarkers : [];
+    if (!markers.length) return "";
+    return `<div class="media-marker-layer" aria-hidden="true">${markers.map((marker) => {
+      const x = Number.isFinite(Number(marker.x)) ? Math.max(0, Math.min(100, Number(marker.x))) : 50;
+      const y = Number.isFinite(Number(marker.y)) ? Math.max(0, Math.min(100, Number(marker.y))) : 50;
+      const label = escapeHtml(marker.label || "");
+      const markerClass = marker.variant ? ` ${escapeHtml(marker.variant)}` : "";
+      return `<span class="media-marker${markerClass}" style="left:${x}%;top:${y}%">${label}</span>`;
+    }).join("")}</div>`;
+  }
+
   function renderMediaItems(items, fallbackAlt = "Study image", className = "media-grid", options = {}) {
     if (!Array.isArray(items) || !items.length) return "";
     const { showCaptions = true } = options;
     return `<div class="${className}">${items.map((item) => {
       const src = escapeHtml(item.src || "");
       const alt = escapeHtml(item.alt || fallbackAlt || "Study image");
-      const caption = showCaptions && item.caption ? `<figcaption>${escapeHtml(item.caption)}</figcaption>` : "";
-      return `<figure class="card-media"><img src="${src}" alt="${alt}" loading="lazy">${caption}</figure>`;
+      const presentationClass = item.presentation ? ` ${escapeHtml(item.presentation)}` : "";
+      const layerText = renderMediaLayerText(item, showCaptions);
+      const markers = renderMediaMarkers(item);
+      return `<figure class="card-media${presentationClass}"><div class="media-visual-wrap"><img src="${src}" alt="${alt}" loading="lazy">${markers}</div>${layerText}</figure>`;
     }).join("")}</div>`;
   }
 
@@ -982,25 +1128,22 @@
 
   function renderChoiceFeedback(card) {
     const correct = state.selectedChoice === card.answer;
-    const membership = setMembership(card.id);
-    const heldForRevisit = correct && membership.revisit && !membership.mastered && state.mode !== "revisit";
-    const headline = correct
-      ? (heldForRevisit ? "Correct — but this card stays in Revisit until you review it there." : "Correct — moved to Mastered.")
-      : "Not quite — moved to Revisit.";
+    const headline = correct ? "Correct." : "Not quite — moved to Revisit.";
     return `
-      <div class="choice-feedback ${correct && !heldForRevisit ? "good" : "needs-review"}">
+      <div class="choice-feedback ${correct ? "good" : "needs-review"}">
         <strong>${headline}</strong>
-        <p>The answer is <strong>${escapeHtml(card.answer)} — ${escapeHtml(choiceText(card))}</strong>.</p>
-        ${heldForRevisit ? `<p>You missed this card earlier, so it remains in the Revisit queue. Answer it correctly in Revisit mode to clear it.</p>` : ""}
+        <p>The answer is <strong>${escapeHtml(displayedChoiceText(card))}</strong>.</p>
         ${card.explanation ? `<p>${escapeHtml(card.explanation)}</p>` : ""}
       </div>
     `;
   }
 
   function renderChoices(card, testMode) {
+    const choices = shuffledChoicesForCard(card);
     return `<div class="answer-grid" role="group" aria-label="Answer choices">
-      ${card.choices.map((choice) => {
-        const key = choice.trim().slice(0, 1);
+      ${choices.map((choice) => {
+        const key = choice.originalKey;
+        const shownChoice = `${choice.displayKey} ${choice.text}`;
         let cls = "answer-button";
         if (state.selectedChoice) {
           if (key === card.answer) cls += " correct";
@@ -1008,7 +1151,7 @@
           else cls += " neutral";
         }
         const label = testMode && !state.selectedChoice ? "Choose answer" : "Answer choice";
-        return `<button class="${cls}" data-choice="${escapeHtml(key)}" type="button" aria-label="${label}: ${escapeHtml(choice)}">${escapeHtml(choice)}</button>`;
+        return `<button class="${cls}" data-choice="${escapeHtml(key)}" type="button" aria-label="${label}: ${escapeHtml(shownChoice)}">${escapeHtml(shownChoice)}</button>`;
       }).join("")}
     </div>`;
   }
@@ -1059,7 +1202,7 @@
   }
 
   function renderReveal(card) {
-    const answerLine = cardIsMcq(card) ? `${card.answer} — ${choiceText(card)}` : card.answer;
+    const answerLine = cardIsMcq(card) ? displayedChoiceText(card) : card.answer;
     return `
       <div class="reveal-box">
         <strong>Answer</strong>
@@ -1084,6 +1227,7 @@
           return;
         }
         setCardStatus(card, correct ? "mastered" : "revisit", { advance: false, countAttempt: true });
+        persistSessionCursor();
       });
     });
 
@@ -1158,28 +1302,23 @@
     } else {
       state.index += 1;
     }
-    state.revealed = false;
-    state.selectedChoice = null;
-    state.definitionInput = "";
-    state.definitionCompared = false;
-    state.definitionReview = null;
+    resetCardInteraction();
+    persistSessionCursor();
     renderSession();
   }
 
   function prevCard() {
     if (!state.deck.length) return;
     state.index = (state.index - 1 + state.deck.length) % state.deck.length;
-    state.revealed = false;
-    state.selectedChoice = null;
-    state.definitionInput = "";
-    state.definitionCompared = false;
-    state.definitionReview = null;
+    resetCardInteraction();
+    persistSessionCursor();
     renderSession();
   }
 
   function finishSession() {
     const counts = sessionStatusCounts();
     const total = state.deck.length;
+    clearSessionCursor(state.mode);
     els.studyPanel.innerHTML = "";
     els.resultPanel.classList.remove("hidden");
     updateSessionChrome({

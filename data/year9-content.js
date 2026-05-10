@@ -1,7 +1,7 @@
 window.YEAR9_CONTENT = {
-  "version": "1.20.0",
+  "version": "1.35.1",
   "title": "Year 9 Science End-of-Year Study",
-  "subtitle": "Guided revision with cleaned question diagrams and sticky revisit behaviour for missed MCQ cards",
+  "subtitle": "Guided revision with question-safe diagrams, circuit-symbol practice, magnetic/static/electromagnet visuals, 9F extraction visuals and sticky revisit behaviour for missed MCQ cards",
   "units": [
     {
       "id": "9A",
@@ -126,9 +126,9 @@ window.YEAR9_CONTENT = {
       "tags": [],
       "media": [
         {
-          "src": "assets/diagrams/9A-continuous-variation.svg",
-          "alt": "Chart showing continuous variation with a bell-shaped normal distribution curve.",
-          "caption": "Continuous variation data can be shown as a spread of measurements across a range.",
+          "src": "assets/diagrams/9A-continuous-variation-question.svg",
+          "alt": "Chart with a spread of measurements shown as bars and a smooth bell-shaped curve.",
+          "caption": "Use the diagram to answer the question.",
           "mediaTiming": "question"
         }
       ],
@@ -230,9 +230,9 @@ window.YEAR9_CONTENT = {
       "tags": [],
       "media": [
         {
-          "src": "assets/diagrams/9A-continuous-variation.svg",
-          "alt": "Bell-shaped normal distribution over continuous variation data.",
-          "caption": "The overall bell shape is called a normal distribution.",
+          "src": "assets/diagrams/9A-continuous-variation-question.svg",
+          "alt": "Chart with a spread of measurements shown as bars and a smooth bell-shaped curve.",
+          "caption": "Use the diagram to answer the question.",
           "mediaTiming": "question"
         }
       ],
@@ -406,10 +406,33 @@ window.YEAR9_CONTENT = {
       "tags": [],
       "media": [
         {
-          "src": "assets/diagrams/9A-prey-adaptation-source-style.svg",
-          "alt": "Four animal feature options showing spines, long nose, small ears and whiskers.",
-          "caption": "Spines suggest a prey animal because they help defend against predators.",
-          "mediaTiming": "question"
+          "src": "assets/webp/9A-prey-adaptation-base.webp",
+          "alt": "Four animal illustrations for comparing prey adaptations.",
+          "caption": "Use the diagram to answer the question.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "mediaMarkers": [
+            {
+              "label": "A",
+              "x": 15,
+              "y": 57
+            },
+            {
+              "label": "B",
+              "x": 39,
+              "y": 50
+            },
+            {
+              "label": "C",
+              "x": 61,
+              "y": 57
+            },
+            {
+              "label": "D",
+              "x": 84,
+              "y": 45
+            }
+          ]
         }
       ],
       "sourceFidelity": "source-style-redraw",
@@ -558,10 +581,28 @@ window.YEAR9_CONTENT = {
       "tags": [],
       "media": [
         {
-          "src": "assets/diagrams/9B-photosynthesis-source-style-QRS.svg",
-          "alt": "Source-style plant diagram labelled Q, R and S.",
-          "caption": "Q and R are green tissues and can carry out photosynthesis; S is root tissue.",
-          "mediaTiming": "question"
+          "src": "assets/webp/9B-photosynthesis-plant-base.webp",
+          "alt": "Plant illustration with leaves, stem and roots for identifying where photosynthesis occurs.",
+          "caption": "Use the diagram to answer the question.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "mediaMarkers": [
+            {
+              "label": "Q",
+              "x": 43,
+              "y": 33
+            },
+            {
+              "label": "R",
+              "x": 50,
+              "y": 50
+            },
+            {
+              "label": "S",
+              "x": 50,
+              "y": 76
+            }
+          ]
         }
       ],
       "sourceFidelity": "source-style-redraw",
@@ -614,9 +655,9 @@ window.YEAR9_CONTENT = {
       "tags": [],
       "media": [
         {
-          "src": "assets/diagrams/9B-photosynthesis-light-graph.svg",
-          "alt": "Graph of photosynthesis rate increasing with light intensity and then leveling off.",
-          "caption": "The graph rises, then levels off when another factor becomes limiting.",
+          "src": "assets/diagrams/9B-photosynthesis-light-graph-question.svg",
+          "alt": "Graph showing rate of photosynthesis against light intensity.",
+          "caption": "Use the diagram to answer the question.",
           "mediaTiming": "question"
         }
       ],
@@ -748,9 +789,10 @@ window.YEAR9_CONTENT = {
       "mediaPolicy": "required-for-question",
       "media": [
         {
-          "src": "assets/diagrams/9B-root-hair-source-style.svg",
-          "alt": "Specialised plant cell with a long projection extending into soil.",
-          "caption": "Use the long projection and the soil context to identify the specialised cell."
+          "src": "assets/webp/9B-root-hair-cell-base.webp",
+          "alt": "Root hair cell illustration showing a long projection near soil particles.",
+          "caption": "Use the diagram to answer the question.",
+          "presentation": "media-image-base"
         }
       ],
       "mediaTiming": "question"
@@ -972,9 +1014,9 @@ window.YEAR9_CONTENT = {
       "mediaPolicy": "required-for-question",
       "media": [
         {
-          "src": "assets/diagrams/9B-food-web.svg",
+          "src": "assets/diagrams/9B-food-web-question.svg",
           "alt": "Food web showing rose bush, insects and wrens connected by energy-transfer arrows.",
-          "caption": "Use the food web to predict what happens when insect numbers decrease."
+          "caption": "Use the diagram to answer the question."
         }
       ],
       "mediaTiming": "question"
@@ -1142,9 +1184,9 @@ window.YEAR9_CONTENT = {
       "tags": [],
       "media": [
         {
-          "src": "assets/diagrams/9E-lattice-options-source-style.svg",
-          "alt": "Four particle diagram options A to D; C is a regular lattice.",
-          "caption": "C shows a regular giant lattice: many strong bonds and planes that can crack.",
+          "src": "assets/diagrams/9E-lattice-options-source-style-question.svg",
+          "alt": "Four particle structure options labelled A, B, C and D.",
+          "caption": "Use the diagram to answer the question.",
           "mediaTiming": "question"
         }
       ],
@@ -1246,10 +1288,11 @@ window.YEAR9_CONTENT = {
       "tags": [],
       "media": [
         {
-          "src": "assets/diagrams/9E-vulcanisation-crosslinks-source-style.svg",
-          "alt": "Before and after diagram showing cross-links in rubber.",
-          "caption": "Vulcanisation adds cross-links, making rubber harder and more useful while it remains elastic.",
-          "mediaTiming": "question"
+          "src": "assets/webp/9E-vulcanisation-crosslinks-base.webp",
+          "alt": "Before-and-after polymer diagrams showing uncrosslinked rubber chains and vulcanised chains joined by cross-links.",
+          "caption": "Use the diagram to answer the question.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base"
         }
       ],
       "sourceFidelity": "source-style-redraw",
@@ -2052,9 +2095,24 @@ window.YEAR9_CONTENT = {
       "mediaPolicy": "required-for-question",
       "media": [
         {
-          "src": "assets/diagrams/9I-falling-forces-source-style-XY.svg",
-          "alt": "Falling object diagram with one downward arrow labelled X and one upward arrow labelled Y.",
-          "caption": "Use the arrow directions to match each force label."
+          "src": "assets/webp/9I-falling-forces-base.webp",
+          "alt": "Falling object with one upward and one downward force arrow.",
+          "caption": "Use the diagram to answer the question.",
+          "presentation": "media-image-base",
+          "mediaMarkers": [
+            {
+              "label": "Y",
+              "x": 50,
+              "y": 30,
+              "variant": "force-up"
+            },
+            {
+              "label": "X",
+              "x": 50,
+              "y": 80,
+              "variant": "force-down"
+            }
+          ]
         }
       ],
       "mediaTiming": "question"
@@ -2222,10 +2280,25 @@ window.YEAR9_CONTENT = {
       "tags": [],
       "media": [
         {
-          "src": "assets/diagrams/9I-sankey-efficiency.svg",
-          "alt": "Two Sankey diagrams comparing machine efficiency.",
-          "caption": "Machine Y wastes a smaller share of the input energy.",
-          "mediaTiming": "question"
+          "src": "assets/webp/9I-sankey-efficiency-base.webp",
+          "alt": "Two Sankey-style energy flow diagrams for comparing machine efficiency.",
+          "caption": "Use the diagram to answer the question.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "mediaMarkers": [
+            {
+              "label": "Machine X",
+              "x": 18,
+              "y": 25,
+              "variant": "machine"
+            },
+            {
+              "label": "Machine Y",
+              "x": 18,
+              "y": 65,
+              "variant": "machine"
+            }
+          ]
         }
       ],
       "sourceFidelity": "text-equivalent",
@@ -2326,9 +2399,9 @@ window.YEAR9_CONTENT = {
       "tags": [],
       "media": [
         {
-          "src": "assets/diagrams/9I-distance-time-VWXYZ.svg",
-          "alt": "Distance-time graph with sections V, W, X, Y and Z.",
-          "caption": "Horizontal sections W and Y show that the car has stopped.",
+          "src": "assets/diagrams/9I-distance-time-VWXYZ-question.svg",
+          "alt": "Distance-time graph with sections labelled V, W, X, Y and Z.",
+          "caption": "Use the diagram to answer the question.",
           "mediaTiming": "question"
         }
       ],
@@ -2353,9 +2426,9 @@ window.YEAR9_CONTENT = {
       "tags": [],
       "media": [
         {
-          "src": "assets/diagrams/9I-lever-XYZ-source-style.svg",
-          "alt": "Lever diagram with labels X, Y and Z.",
-          "caption": "Y points to the pivot, which is also called the fulcrum.",
+          "src": "assets/diagrams/9I-lever-XYZ-source-style-question.svg",
+          "alt": "Lever diagram with parts labelled X, Y and Z.",
+          "caption": "Use the diagram to answer the question.",
           "mediaTiming": "question"
         }
       ],
@@ -2385,9 +2458,9 @@ window.YEAR9_CONTENT = {
       "tags": [],
       "media": [
         {
-          "src": "assets/diagrams/9I-rock-lever-options-source-style.svg",
-          "alt": "Four lever options A to D for moving a rock.",
-          "caption": "Option D has the pivot close to the rock and the effort far from the pivot.",
+          "src": "assets/diagrams/9I-rock-lever-options-source-style-question.svg",
+          "alt": "Four lever arrangements labelled A, B, C and D for moving a rock.",
+          "caption": "Use the diagram to answer the question.",
           "mediaTiming": "question"
         }
       ],
@@ -6411,9 +6484,32 @@ window.YEAR9_CONTENT = {
       "mediaPolicy": "required-for-question",
       "media": [
         {
-          "src": "assets/diagrams/9A-triceratops-adaptations-source-style.svg",
-          "alt": "Simplified Triceratops model with blank callout points for adaptations.",
-          "caption": "Use the callout points to identify adaptations that could be labelled on a model."
+          "src": "assets/webp/9A-triceratops-model-base.webp",
+          "alt": "Side-view Triceratops illustration with horns, frill, beak, tail, body and legs visible.",
+          "caption": "Use the diagram to answer the question.",
+          "presentation": "media-image-base",
+          "mediaMarkers": [
+            {
+              "label": "A",
+              "x": 10,
+              "y": 31
+            },
+            {
+              "label": "B",
+              "x": 22,
+              "y": 25
+            },
+            {
+              "label": "C",
+              "x": 9,
+              "y": 44
+            },
+            {
+              "label": "D",
+              "x": 40,
+              "y": 76
+            }
+          ]
         }
       ],
       "mediaTiming": "question"
@@ -6507,9 +6603,32 @@ window.YEAR9_CONTENT = {
       "mediaPolicy": "required-for-question",
       "media": [
         {
-          "src": "assets/diagrams/9A-triceratops-adaptations-source-style.svg",
-          "alt": "Simplified Triceratops model with blank callout points for adaptations.",
-          "caption": "Use the model to explain how each adaptation could have helped the animal survive."
+          "src": "assets/webp/9A-triceratops-model-base.webp",
+          "alt": "Side-view Triceratops illustration with horns, frill, beak, tail, body and legs visible.",
+          "caption": "Use the diagram to answer the question.",
+          "presentation": "media-image-base",
+          "mediaMarkers": [
+            {
+              "label": "A",
+              "x": 10,
+              "y": 31
+            },
+            {
+              "label": "B",
+              "x": 22,
+              "y": 25
+            },
+            {
+              "label": "C",
+              "x": 9,
+              "y": 44
+            },
+            {
+              "label": "D",
+              "x": 40,
+              "y": 76
+            }
+          ]
         }
       ],
       "mediaTiming": "question"
@@ -7769,6 +7888,469 @@ window.YEAR9_CONTENT = {
       "mediaPolicy": "question-media-only-if-required"
     },
     {
+      "unit": "9F",
+      "type": "Assess check",
+      "level": 3,
+      "cue": "",
+      "tags": [
+        "visual",
+        "9F"
+      ],
+      "sourceFidelity": "revision-pack-aligned",
+      "mediaPolicy": "question-media-only-if-required",
+      "id": "y9x-069-9f-use-the-reactivity-series-which-metal-is-most-reactive",
+      "question": "Use the reactivity series diagram. Which metal shown is the most reactive?",
+      "answer": "A",
+      "choices": [
+        "A magnesium",
+        "B iron",
+        "C copper",
+        "D silver"
+      ],
+      "explanation": "The diagram places magnesium highest, so it is the most reactive of the metals shown.",
+      "source": "9F visual coverage - reactivity series comparison",
+      "learningObjective": "9F-reactivity",
+      "learningObjectiveTitle": "Reactivity and displacement",
+      "learningObjectiveDescription": "Reactivity series, displacement reactions and metal reactions with acids.",
+      "noteId": "9F-reactivity",
+      "media": [
+        {
+          "src": "assets/diagrams/9F-reactivity-series-question.svg",
+          "alt": "Question-safe reactivity series ladder showing magnesium, zinc, iron, copper and silver.",
+          "caption": "Use the diagram to answer the question.",
+          "mediaTiming": "question",
+          "presentation": "media-diagram-base"
+        }
+      ]
+    },
+    {
+      "unit": "9F",
+      "type": "Assess check",
+      "level": 3,
+      "cue": "",
+      "tags": [
+        "visual",
+        "9F"
+      ],
+      "sourceFidelity": "revision-pack-aligned",
+      "mediaPolicy": "question-media-only-if-required",
+      "id": "y9x-070-9f-use-the-reactivity-series-which-metal-is-least-reactive",
+      "question": "Use the reactivity series diagram. Which metal shown is the least reactive?",
+      "answer": "D",
+      "choices": [
+        "A magnesium",
+        "B zinc",
+        "C iron",
+        "D silver"
+      ],
+      "explanation": "Silver is lowest on the diagram, so it is the least reactive of the metals shown.",
+      "source": "9F visual coverage - reactivity series comparison",
+      "learningObjective": "9F-reactivity",
+      "learningObjectiveTitle": "Reactivity and displacement",
+      "learningObjectiveDescription": "Reactivity series, displacement reactions and metal reactions with acids.",
+      "noteId": "9F-reactivity",
+      "media": [
+        {
+          "src": "assets/diagrams/9F-reactivity-series-question.svg",
+          "alt": "Question-safe reactivity series ladder showing magnesium, zinc, iron, copper and silver.",
+          "caption": "Use the diagram to answer the question.",
+          "mediaTiming": "question",
+          "presentation": "media-diagram-base"
+        }
+      ]
+    },
+    {
+      "unit": "9F",
+      "type": "Assess check",
+      "level": 3,
+      "cue": "",
+      "tags": [
+        "visual",
+        "9F"
+      ],
+      "sourceFidelity": "revision-pack-aligned",
+      "mediaPolicy": "question-media-only-if-required",
+      "id": "y9x-071-9f-use-the-displacement-test-which-tube-is-most-likely-to-show-a-reaction",
+      "question": "Use the displacement test diagram. Which labelled tube is most likely to show a displacement reaction?",
+      "answer": "A",
+      "choices": [
+        "A Tube A",
+        "B Tube B",
+        "C Tube C",
+        "D None of them"
+      ],
+      "explanation": "Magnesium is more reactive than copper, so magnesium can displace copper from copper sulfate solution.",
+      "source": "9F visual coverage - displacement reaction interpretation",
+      "learningObjective": "9F-reactivity",
+      "learningObjectiveTitle": "Reactivity and displacement",
+      "learningObjectiveDescription": "Reactivity series, displacement reactions and metal reactions with acids.",
+      "noteId": "9F-reactivity",
+      "media": [
+        {
+          "src": "assets/diagrams/9F-displacement-reaction-question.svg",
+          "alt": "Three labelled displacement-test tubes with different metal strips and salt solutions.",
+          "caption": "Use the diagram to answer the question.",
+          "mediaTiming": "question"
+        }
+      ]
+    },
+    {
+      "unit": "9F",
+      "type": "Assess check",
+      "level": 3,
+      "cue": "",
+      "tags": [
+        "visual",
+        "9F"
+      ],
+      "sourceFidelity": "revision-pack-aligned",
+      "mediaPolicy": "question-media-only-if-required",
+      "id": "y9x-072-9f-use-the-extraction-diagram-which-process-is-needed-for-a-metal-above-carbon",
+      "question": "Use the extraction diagram. A metal above carbon usually needs which extraction method?",
+      "answer": "B",
+      "choices": [
+        "A heating with carbon",
+        "B electrolysis",
+        "C filtering",
+        "D crystallisation"
+      ],
+      "explanation": "Metals above carbon are too reactive to be extracted by carbon reduction, so they usually need electrolysis.",
+      "source": "9F visual coverage - extraction method choice",
+      "learningObjective": "9F-extraction",
+      "learningObjectiveTitle": "Metal extraction and reduction",
+      "learningObjectiveDescription": "Mining, ores, reduction, blast furnaces, electrolysis and extraction method choice.",
+      "noteId": "9F-extraction",
+      "media": [
+        {
+          "src": "assets/diagrams/9F-extraction-methods-question.svg",
+          "alt": "Two extraction process diagrams, with electrolysis in Process A and carbon reduction in Process B.",
+          "caption": "Use the diagram to answer the question.",
+          "mediaTiming": "question",
+          "presentation": "media-diagram-base"
+        }
+      ]
+    },
+    {
+      "unit": "9F",
+      "type": "Assess check",
+      "level": 3,
+      "cue": "",
+      "tags": [
+        "visual",
+        "9F"
+      ],
+      "sourceFidelity": "revision-pack-aligned",
+      "mediaPolicy": "question-media-only-if-required",
+      "id": "y9x-073-9f-use-the-extraction-diagram-which-process-can-often-extract-a-metal-below-carbon",
+      "question": "Use the extraction diagram. A metal below carbon can often be extracted by:",
+      "answer": "C",
+      "choices": [
+        "A distillation",
+        "B neutralisation",
+        "C heating its oxide with carbon",
+        "D freezing its ore"
+      ],
+      "explanation": "Carbon can reduce the oxides of some metals below carbon in the reactivity series.",
+      "source": "9F visual coverage - extraction method choice",
+      "learningObjective": "9F-extraction",
+      "learningObjectiveTitle": "Metal extraction and reduction",
+      "learningObjectiveDescription": "Mining, ores, reduction, blast furnaces, electrolysis and extraction method choice.",
+      "noteId": "9F-extraction",
+      "media": [
+        {
+          "src": "assets/diagrams/9F-extraction-methods-question.svg",
+          "alt": "Two extraction process diagrams, with electrolysis in Process A and carbon reduction in Process B.",
+          "caption": "Use the diagram to answer the question.",
+          "mediaTiming": "question",
+          "presentation": "media-diagram-base"
+        }
+      ]
+    },
+    {
+      "unit": "9F",
+      "type": "Assess check",
+      "level": 3,
+      "cue": "",
+      "tags": [
+        "visual",
+        "9F"
+      ],
+      "sourceFidelity": "revision-pack-aligned",
+      "mediaPolicy": "question-media-only-if-required",
+      "id": "y9x-074-9f-use-the-blast-furnace-diagram-which-label-shows-the-hot-air-blast",
+      "question": "Use the blast furnace diagram. Which label shows hot air being blown into the furnace?",
+      "answer": "C",
+      "choices": [
+        "A label A",
+        "B label B",
+        "C label C",
+        "D label D"
+      ],
+      "explanation": "The hot air blast enters low down on the furnace, shown by label C.",
+      "source": "9F visual coverage - blast furnace process",
+      "learningObjective": "9F-extraction",
+      "learningObjectiveTitle": "Metal extraction and reduction",
+      "learningObjectiveDescription": "Mining, ores, reduction, blast furnaces, electrolysis and extraction method choice.",
+      "noteId": "9F-extraction",
+      "media": [
+        {
+          "src": "assets/diagrams/9F-blast-furnace-question.svg",
+          "alt": "Blast furnace illustration with labelled input and output arrows.",
+          "caption": "Use the diagram to answer the question.",
+          "mediaTiming": "question",
+          "presentation": "media-diagram-base"
+        }
+      ]
+    },
+    {
+      "unit": "9F",
+      "type": "Assess check",
+      "level": 3,
+      "cue": "",
+      "tags": [
+        "visual",
+        "9F"
+      ],
+      "sourceFidelity": "revision-pack-aligned",
+      "mediaPolicy": "question-media-only-if-required",
+      "id": "y9x-075-9f-use-the-blast-furnace-diagram-which-label-shows-molten-material-being-tapped-out",
+      "question": "Use the blast furnace diagram. Which label shows molten material being tapped out near the bottom?",
+      "answer": "D",
+      "choices": [
+        "A label A",
+        "B label B",
+        "C label C",
+        "D label D"
+      ],
+      "explanation": "Molten iron and slag are tapped from the bottom region of the furnace; the diagram shows this at label D.",
+      "source": "9F visual coverage - blast furnace process",
+      "learningObjective": "9F-extraction",
+      "learningObjectiveTitle": "Metal extraction and reduction",
+      "learningObjectiveDescription": "Mining, ores, reduction, blast furnaces, electrolysis and extraction method choice.",
+      "noteId": "9F-extraction",
+      "media": [
+        {
+          "src": "assets/diagrams/9F-blast-furnace-question.svg",
+          "alt": "Blast furnace illustration with labelled input and output arrows.",
+          "caption": "Use the diagram to answer the question.",
+          "mediaTiming": "question",
+          "presentation": "media-diagram-base"
+        }
+      ]
+    },
+    {
+      "unit": "9F",
+      "type": "Assess check",
+      "level": 3,
+      "cue": "",
+      "tags": [
+        "visual",
+        "9F"
+      ],
+      "sourceFidelity": "revision-pack-aligned",
+      "mediaPolicy": "question-media-only-if-required",
+      "id": "y9x-076-9f-use-the-process-diagram-which-process-uses-electricity",
+      "question": "Use the extraction process diagram. Which process uses electricity?",
+      "answer": "A",
+      "choices": [
+        "A Process A",
+        "B Process B",
+        "C both processes",
+        "D neither process"
+      ],
+      "explanation": "Process A shows electrodes connected to a power supply, so it represents electrolysis.",
+      "source": "9F visual coverage - electrolysis versus carbon reduction",
+      "learningObjective": "9F-extraction",
+      "learningObjectiveTitle": "Metal extraction and reduction",
+      "learningObjectiveDescription": "Mining, ores, reduction, blast furnaces, electrolysis and extraction method choice.",
+      "noteId": "9F-extraction",
+      "media": [
+        {
+          "src": "assets/diagrams/9F-extraction-methods-question.svg",
+          "alt": "Two extraction process diagrams, with electrolysis in Process A and carbon reduction in Process B.",
+          "caption": "Use the diagram to answer the question.",
+          "mediaTiming": "question",
+          "presentation": "media-diagram-base"
+        }
+      ]
+    },
+    {
+      "unit": "9F",
+      "type": "Assess check",
+      "level": 3,
+      "cue": "",
+      "tags": [
+        "visual",
+        "9F"
+      ],
+      "sourceFidelity": "revision-pack-aligned",
+      "mediaPolicy": "question-media-only-if-required",
+      "id": "y9x-077-9f-use-the-process-diagram-in-carbon-reduction-what-is-removed-from-the-metal-oxide",
+      "question": "Use the extraction process diagram. In carbon reduction, what is removed from the metal oxide?",
+      "answer": "B",
+      "choices": [
+        "A carbon",
+        "B oxygen",
+        "C water",
+        "D electrons only"
+      ],
+      "explanation": "Reduction of a metal oxide means oxygen is removed from the compound.",
+      "source": "9F visual coverage - carbon reduction interpretation",
+      "learningObjective": "9F-extraction",
+      "learningObjectiveTitle": "Metal extraction and reduction",
+      "learningObjectiveDescription": "Mining, ores, reduction, blast furnaces, electrolysis and extraction method choice.",
+      "noteId": "9F-extraction",
+      "media": [
+        {
+          "src": "assets/diagrams/9F-extraction-methods-question.svg",
+          "alt": "Two extraction process diagrams, with electrolysis in Process A and carbon reduction in Process B.",
+          "caption": "Use the diagram to answer the question.",
+          "mediaTiming": "question",
+          "presentation": "media-diagram-base"
+        }
+      ]
+    },
+    {
+      "unit": "9F",
+      "type": "Calculation",
+      "level": 4,
+      "cue": "",
+      "tags": [
+        "visual",
+        "9F"
+      ],
+      "sourceFidelity": "revision-pack-aligned",
+      "mediaPolicy": "question-media-only-if-required",
+      "id": "y9x-078-9f-use-the-mass-gain-diagram-calculate-the-percentage-mass-gain",
+      "question": "Use the mass gain diagram. Magnesium changes from 24 g to 40 g. What is the percentage mass gain?",
+      "answer": "C",
+      "choices": [
+        "A 16.0%",
+        "B 40.0%",
+        "C 66.7%",
+        "D 166.7%"
+      ],
+      "explanation": "The gain is 16 g. Percentage gain = 16 ÷ 24 × 100 = 66.7%.",
+      "source": "9F visual coverage - percentage mass gain calculation",
+      "learningObjective": "9F-changes",
+      "learningObjectiveTitle": "Physical and chemical changes",
+      "learningObjectiveDescription": "Physical changes, chemical reactions, particles, molecules, formulae and gas pressure.",
+      "noteId": "9F-changes",
+      "media": [
+        {
+          "src": "assets/diagrams/9F-percentage-mass-gain-question.svg",
+          "alt": "Mass gain diagram showing magnesium changing from 24 g to magnesium oxide at 40 g.",
+          "caption": "Use the diagram to answer the question.",
+          "mediaTiming": "question"
+        }
+      ]
+    },
+    {
+      "unit": "9F",
+      "type": "Calculation",
+      "level": 4,
+      "cue": "",
+      "tags": [
+        "visual",
+        "9F"
+      ],
+      "sourceFidelity": "revision-pack-aligned",
+      "mediaPolicy": "question-media-only-if-required",
+      "id": "y9x-079-9f-use-the-mass-loss-diagram-calculate-the-percentage-mass-loss",
+      "question": "Use the mass loss diagram. Copper oxide changes from 80 g to 64 g of copper. What is the percentage mass loss?",
+      "answer": "B",
+      "choices": [
+        "A 16%",
+        "B 20%",
+        "C 64%",
+        "D 80%"
+      ],
+      "explanation": "The loss is 16 g. Percentage loss = 16 ÷ 80 × 100 = 20%.",
+      "source": "9F visual coverage - percentage mass loss calculation",
+      "learningObjective": "9F-changes",
+      "learningObjectiveTitle": "Physical and chemical changes",
+      "learningObjectiveDescription": "Physical changes, chemical reactions, particles, molecules, formulae and gas pressure.",
+      "noteId": "9F-changes",
+      "media": [
+        {
+          "src": "assets/diagrams/9F-percentage-mass-loss-question.svg",
+          "alt": "Mass loss diagram showing copper oxide changing from 80 g to copper at 64 g.",
+          "caption": "Use the diagram to answer the question.",
+          "mediaTiming": "question"
+        }
+      ]
+    },
+    {
+      "unit": "9F",
+      "type": "Assess check",
+      "level": 3,
+      "cue": "",
+      "tags": [
+        "visual",
+        "9F"
+      ],
+      "sourceFidelity": "revision-pack-aligned",
+      "mediaPolicy": "question-media-only-if-required",
+      "id": "y9x-080-9f-use-the-rusting-diagram-which-tube-will-rust-fastest",
+      "question": "Use the rusting conditions diagram. Which tube should rust fastest?",
+      "answer": "B",
+      "choices": [
+        "A Tube A",
+        "B Tube B",
+        "C Tube C",
+        "D Tube D"
+      ],
+      "explanation": "Iron rusts fastest when both water and oxygen from air are present; tube B has water and air.",
+      "source": "9F visual coverage - rusting conditions",
+      "learningObjective": "9F-rusting",
+      "learningObjectiveTitle": "Rusting and corrosion protection",
+      "learningObjectiveDescription": "Rusting, coatings, sacrificial protection and preventing corrosion.",
+      "noteId": "9F-rusting",
+      "media": [
+        {
+          "src": "assets/diagrams/9F-rusting-conditions-question.svg",
+          "alt": "Four labelled test tubes showing iron nails in dry air, water plus air, oil-covered water and boiled water.",
+          "caption": "Use the diagram to answer the question.",
+          "mediaTiming": "question"
+        }
+      ]
+    },
+    {
+      "unit": "9F",
+      "type": "Assess check",
+      "level": 3,
+      "cue": "",
+      "tags": [
+        "visual",
+        "9F"
+      ],
+      "sourceFidelity": "revision-pack-aligned",
+      "mediaPolicy": "question-media-only-if-required",
+      "id": "y9x-081-9f-use-the-sacrificial-protection-diagram-which-pair-protects-iron-better",
+      "question": "Use the sacrificial protection diagram. Which pair should protect iron better, and why?",
+      "answer": "A",
+      "choices": [
+        "A Pair A, because zinc is more reactive than iron",
+        "B Pair A, because zinc is less reactive than iron",
+        "C Pair B, because copper is more reactive than iron",
+        "D Pair B, because copper reacts with seawater first"
+      ],
+      "explanation": "A sacrificial metal must be more reactive than iron. Zinc is more reactive than iron, so it corrodes first and helps protect the iron.",
+      "source": "9F visual coverage - sacrificial protection",
+      "learningObjective": "9F-rusting",
+      "learningObjectiveTitle": "Rusting and corrosion protection",
+      "learningObjectiveDescription": "Rusting, coatings, sacrificial protection and preventing corrosion.",
+      "noteId": "9F-rusting",
+      "media": [
+        {
+          "src": "assets/diagrams/9F-sacrificial-protection-question.svg",
+          "alt": "Diagram showing iron connected to zinc in pair A and iron connected to copper in pair B.",
+          "caption": "Use the diagram to answer the question.",
+          "mediaTiming": "question"
+        }
+      ]
+    },
+    {
       "id": "y9x-069-9i-recall-units-for-speed-and-explain-what-speed-means",
       "unit": "9I",
       "type": "Assess check",
@@ -7945,9 +8527,9 @@ window.YEAR9_CONTENT = {
       "mediaPolicy": "required-for-question",
       "media": [
         {
-          "src": "assets/diagrams/9I-distance-time-graph.svg",
-          "alt": "Example distance-time graph with rising and flat sections.",
-          "caption": "Use this graph style to represent moving, stopping and changing speed."
+          "src": "assets/diagrams/9I-distance-time-graph-question.svg",
+          "alt": "Distance-time graph with sections labelled A, B and C.",
+          "caption": "Use the diagram to answer the question."
         }
       ],
       "mediaTiming": "question"
@@ -8371,9 +8953,9 @@ window.YEAR9_CONTENT = {
       "mediaPolicy": "required-for-question",
       "media": [
         {
-          "src": "assets/diagrams/9B-carbon-cycle-source-style.svg",
-          "alt": "Carbon cycle diagram with plants, animals, dead material, fossil fuels and carbon dioxide in air.",
-          "caption": "Use the arrows to label the main carbon-cycle processes."
+          "src": "assets/diagrams/9B-carbon-cycle-source-style-question.svg",
+          "alt": "Carbon cycle diagram with reservoirs and process arrows labelled A to F.",
+          "caption": "Use the diagram to answer the question."
         }
       ],
       "mediaTiming": "question"
@@ -8747,9 +9329,9 @@ window.YEAR9_CONTENT = {
       ],
       "media": [
         {
-          "src": "assets/diagrams/9J-current-voltage-graph.svg",
-          "alt": "Current-voltage graph with one steeper and one shallower line.",
-          "caption": "The shallower line means less current for the same voltage, so the resistance is higher.",
+          "src": "assets/diagrams/9J-current-voltage-graph-question.svg",
+          "alt": "Current-voltage graph with two lines labelled A and B.",
+          "caption": "Use the diagram to answer the question.",
           "mediaTiming": "question"
         }
       ],
@@ -9458,6 +10040,943 @@ window.YEAR9_CONTENT = {
       "learningObjectiveDescription": "Speed calculations, mean speed and interpreting distance-time graphs.",
       "noteId": "9I-speed",
       "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "unit": "9J",
+      "sourceFidelity": "revision-pack-aligned-visual-practice",
+      "learningObjective": "9J-circuits",
+      "learningObjectiveTitle": "Current, voltage and circuits",
+      "learningObjectiveDescription": "Current, voltage/potential difference, series and parallel circuits, meters and components.",
+      "noteId": "9J-circuits",
+      "mediaPolicy": "required-for-question",
+      "tags": [
+        "visual",
+        "diagram",
+        "circuits"
+      ],
+      "id": "y9x-138-9j-match-common-circuit-symbols-to-their-component-names",
+      "type": "Progress check",
+      "question": "Use the circuit symbol grid. Match labels A–H to these components: cell, open switch, closed switch, lamp, resistor, voltmeter, ammeter and motor.",
+      "answer": "A = cell; B = open switch; C = closed switch; D = lamp/bulb; E = resistor; F = voltmeter; G = ammeter; H = motor.",
+      "choices": [],
+      "explanation": "Circuit symbols are simplified drawings used so circuit diagrams are quick and consistent to read.",
+      "source": "9Jc Current Electricity PPT / revision pack circuit-symbol coverage",
+      "level": 3,
+      "cue": "Write the eight matches before revealing the answer.",
+      "media": [
+        {
+          "src": "assets/diagrams/9J-circuit-symbols-question.svg",
+          "alt": "A grid of eight circuit symbols labelled A to H.",
+          "caption": "Use the diagram to answer the question.",
+          "mediaTiming": "question"
+        }
+      ]
+    },
+    {
+      "unit": "9J",
+      "sourceFidelity": "revision-pack-aligned-visual-practice",
+      "learningObjective": "9J-circuits",
+      "learningObjectiveTitle": "Current, voltage and circuits",
+      "learningObjectiveDescription": "Current, voltage/potential difference, series and parallel circuits, meters and components.",
+      "noteId": "9J-circuits",
+      "mediaPolicy": "required-for-question",
+      "tags": [
+        "visual",
+        "diagram",
+        "circuits"
+      ],
+      "id": "y9x-139-9j-which-label-shows-an-open-switch",
+      "type": "Quick quiz",
+      "question": "Use the circuit symbol grid. Which label shows an open switch?",
+      "answer": "B",
+      "choices": [
+        "A Label A",
+        "B Label B",
+        "C Label C",
+        "D Label D"
+      ],
+      "explanation": "An open switch has a visible gap in the circuit, so current cannot flow through it.",
+      "source": "9Jc Current Electricity PPT circuit symbols",
+      "level": 2,
+      "cue": "",
+      "media": [
+        {
+          "src": "assets/diagrams/9J-circuit-symbols-question.svg",
+          "alt": "A grid of eight circuit symbols labelled A to H.",
+          "caption": "Use the diagram to answer the question.",
+          "mediaTiming": "question"
+        }
+      ]
+    },
+    {
+      "unit": "9J",
+      "sourceFidelity": "revision-pack-aligned-visual-practice",
+      "learningObjective": "9J-circuits",
+      "learningObjectiveTitle": "Current, voltage and circuits",
+      "learningObjectiveDescription": "Current, voltage/potential difference, series and parallel circuits, meters and components.",
+      "noteId": "9J-circuits",
+      "mediaPolicy": "required-for-question",
+      "tags": [
+        "visual",
+        "diagram",
+        "circuits"
+      ],
+      "id": "y9x-140-9j-which-label-shows-a-closed-switch",
+      "type": "Quick quiz",
+      "question": "Use the circuit symbol grid. Which label shows a closed switch?",
+      "answer": "B",
+      "choices": [
+        "A Label B",
+        "B Label C",
+        "C Label D",
+        "D Label E"
+      ],
+      "explanation": "A closed switch joins the circuit, so current can flow through it.",
+      "source": "9Jc Current Electricity PPT circuit symbols",
+      "level": 2,
+      "cue": "",
+      "media": [
+        {
+          "src": "assets/diagrams/9J-circuit-symbols-question.svg",
+          "alt": "A grid of eight circuit symbols labelled A to H.",
+          "caption": "Use the diagram to answer the question.",
+          "mediaTiming": "question"
+        }
+      ]
+    },
+    {
+      "unit": "9J",
+      "sourceFidelity": "revision-pack-aligned-visual-practice",
+      "learningObjective": "9J-circuits",
+      "learningObjectiveTitle": "Current, voltage and circuits",
+      "learningObjectiveDescription": "Current, voltage/potential difference, series and parallel circuits, meters and components.",
+      "noteId": "9J-circuits",
+      "mediaPolicy": "required-for-question",
+      "tags": [
+        "visual",
+        "diagram",
+        "circuits"
+      ],
+      "id": "y9x-141-9j-which-label-shows-a-resistor",
+      "type": "Quick quiz",
+      "question": "Use the circuit symbol grid. Which label shows a resistor?",
+      "answer": "C",
+      "choices": [
+        "A Label C",
+        "B Label D",
+        "C Label E",
+        "D Label F"
+      ],
+      "explanation": "A resistor is usually drawn as a zig-zag or rectangular resistance symbol, depending on the symbol convention being used.",
+      "source": "9Jc Current Electricity PPT circuit symbols",
+      "level": 2,
+      "cue": "",
+      "media": [
+        {
+          "src": "assets/diagrams/9J-circuit-symbols-question.svg",
+          "alt": "A grid of eight circuit symbols labelled A to H.",
+          "caption": "Use the diagram to answer the question.",
+          "mediaTiming": "question"
+        }
+      ]
+    },
+    {
+      "unit": "9J",
+      "sourceFidelity": "revision-pack-aligned-visual-practice",
+      "learningObjective": "9J-circuits",
+      "learningObjectiveTitle": "Current, voltage and circuits",
+      "learningObjectiveDescription": "Current, voltage/potential difference, series and parallel circuits, meters and components.",
+      "noteId": "9J-circuits",
+      "mediaPolicy": "required-for-question",
+      "tags": [
+        "visual",
+        "diagram",
+        "circuits"
+      ],
+      "id": "y9x-142-9j-which-label-shows-a-voltmeter",
+      "type": "Quick quiz",
+      "question": "Use the circuit symbol grid. Which label shows a voltmeter?",
+      "answer": "A",
+      "choices": [
+        "A Label F",
+        "B Label G",
+        "C Label H",
+        "D Label A"
+      ],
+      "explanation": "A voltmeter is shown as a circle with V and is connected in parallel across a component.",
+      "source": "9Jc Current Electricity PPT circuit symbols",
+      "level": 2,
+      "cue": "",
+      "media": [
+        {
+          "src": "assets/diagrams/9J-circuit-symbols-question.svg",
+          "alt": "A grid of eight circuit symbols labelled A to H.",
+          "caption": "Use the diagram to answer the question.",
+          "mediaTiming": "question"
+        }
+      ]
+    },
+    {
+      "unit": "9J",
+      "sourceFidelity": "revision-pack-aligned-visual-practice",
+      "learningObjective": "9J-circuits",
+      "learningObjectiveTitle": "Current, voltage and circuits",
+      "learningObjectiveDescription": "Current, voltage/potential difference, series and parallel circuits, meters and components.",
+      "noteId": "9J-circuits",
+      "mediaPolicy": "required-for-question",
+      "tags": [
+        "visual",
+        "diagram",
+        "circuits"
+      ],
+      "id": "y9x-143-9j-which-label-shows-an-ammeter",
+      "type": "Quick quiz",
+      "question": "Use the circuit symbol grid. Which label shows an ammeter?",
+      "answer": "B",
+      "choices": [
+        "A Label F",
+        "B Label G",
+        "C Label H",
+        "D Label A"
+      ],
+      "explanation": "An ammeter is shown as a circle with A and is connected in series with the component or part of the circuit being measured.",
+      "source": "9Jc Current Electricity PPT circuit symbols",
+      "level": 2,
+      "cue": "",
+      "media": [
+        {
+          "src": "assets/diagrams/9J-circuit-symbols-question.svg",
+          "alt": "A grid of eight circuit symbols labelled A to H.",
+          "caption": "Use the diagram to answer the question.",
+          "mediaTiming": "question"
+        }
+      ]
+    },
+    {
+      "unit": "9J",
+      "sourceFidelity": "revision-pack-aligned-visual-practice",
+      "learningObjective": "9J-circuits",
+      "learningObjectiveTitle": "Current, voltage and circuits",
+      "learningObjectiveDescription": "Current, voltage/potential difference, series and parallel circuits, meters and components.",
+      "noteId": "9J-circuits",
+      "mediaPolicy": "required-for-question",
+      "tags": [
+        "visual",
+        "diagram",
+        "circuits"
+      ],
+      "id": "y9x-144-9j-which-label-shows-a-motor",
+      "type": "Quick quiz",
+      "question": "Use the circuit symbol grid. Which label shows a motor?",
+      "answer": "C",
+      "choices": [
+        "A Label F",
+        "B Label G",
+        "C Label H",
+        "D Label B"
+      ],
+      "explanation": "A motor is commonly shown as a circle with M inside it.",
+      "source": "9Jc Current Electricity PPT circuit symbols",
+      "level": 2,
+      "cue": "",
+      "media": [
+        {
+          "src": "assets/diagrams/9J-circuit-symbols-question.svg",
+          "alt": "A grid of eight circuit symbols labelled A to H.",
+          "caption": "Use the diagram to answer the question.",
+          "mediaTiming": "question"
+        }
+      ]
+    },
+    {
+      "unit": "9J",
+      "sourceFidelity": "revision-pack-aligned-visual-practice",
+      "learningObjective": "9J-circuits",
+      "learningObjectiveTitle": "Current, voltage and circuits",
+      "learningObjectiveDescription": "Current, voltage/potential difference, series and parallel circuits, meters and components.",
+      "noteId": "9J-circuits",
+      "mediaPolicy": "required-for-question",
+      "tags": [
+        "visual",
+        "diagram",
+        "circuits"
+      ],
+      "id": "y9x-145-9j-which-circuit-is-parallel",
+      "type": "Quick quiz",
+      "question": "Use the circuit diagrams. Which circuit is parallel?",
+      "answer": "B",
+      "choices": [
+        "A Circuit A",
+        "B Circuit B",
+        "C Both circuits",
+        "D Neither circuit"
+      ],
+      "explanation": "Circuit B is parallel because the current has more than one branch or path.",
+      "source": "9Jc Current Electricity PPT / series and parallel circuits",
+      "level": 2,
+      "cue": "",
+      "media": [
+        {
+          "src": "assets/webp/9J-series-parallel-circuits-symbols-base.webp",
+          "alt": "Two circuit diagrams, with Circuit A on top and Circuit B below.",
+          "caption": "Use the diagram to answer the question.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "mediaMarkers": [
+            {
+              "label": "A",
+              "x": 8,
+              "y": 23
+            },
+            {
+              "label": "B",
+              "x": 8,
+              "y": 73
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit": "9J",
+      "sourceFidelity": "revision-pack-aligned-visual-practice",
+      "learningObjective": "9J-circuits",
+      "learningObjectiveTitle": "Current, voltage and circuits",
+      "learningObjectiveDescription": "Current, voltage/potential difference, series and parallel circuits, meters and components.",
+      "noteId": "9J-circuits",
+      "mediaPolicy": "required-for-question",
+      "tags": [
+        "visual",
+        "diagram",
+        "circuits"
+      ],
+      "id": "y9x-146-9j-in-which-circuit-is-current-the-same-everywhere",
+      "type": "Quick quiz",
+      "question": "Use the circuit diagrams. In which circuit is the current the same everywhere?",
+      "answer": "A",
+      "choices": [
+        "A Circuit A",
+        "B Circuit B",
+        "C Both circuits",
+        "D Neither circuit"
+      ],
+      "explanation": "In a series circuit, current is the same everywhere in the loop. Circuit A has one loop.",
+      "source": "9Jc Current Electricity PPT / series and parallel circuits",
+      "level": 3,
+      "cue": "",
+      "media": [
+        {
+          "src": "assets/webp/9J-series-parallel-circuits-symbols-base.webp",
+          "alt": "Two circuit diagrams, with Circuit A on top and Circuit B below.",
+          "caption": "Use the diagram to answer the question.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "mediaMarkers": [
+            {
+              "label": "A",
+              "x": 8,
+              "y": 23
+            },
+            {
+              "label": "B",
+              "x": 8,
+              "y": 73
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit": "9J",
+      "sourceFidelity": "revision-pack-aligned-visual-practice",
+      "learningObjective": "9J-circuits",
+      "learningObjectiveTitle": "Current, voltage and circuits",
+      "learningObjectiveDescription": "Current, voltage/potential difference, series and parallel circuits, meters and components.",
+      "noteId": "9J-circuits",
+      "mediaPolicy": "required-for-question",
+      "tags": [
+        "visual",
+        "diagram",
+        "circuits"
+      ],
+      "id": "y9x-147-9j-in-which-circuit-does-current-split-between-branches",
+      "type": "Quick quiz",
+      "question": "Use the circuit diagrams. In which circuit does current split between branches?",
+      "answer": "B",
+      "choices": [
+        "A Circuit A",
+        "B Circuit B",
+        "C Both circuits",
+        "D Neither circuit"
+      ],
+      "explanation": "Current splits at a junction in a parallel circuit, then recombines after the branches.",
+      "source": "9Jc Current Electricity PPT / series and parallel circuits",
+      "level": 3,
+      "cue": "",
+      "media": [
+        {
+          "src": "assets/webp/9J-series-parallel-circuits-symbols-base.webp",
+          "alt": "Two circuit diagrams, with Circuit A on top and Circuit B below.",
+          "caption": "Use the diagram to answer the question.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "mediaMarkers": [
+            {
+              "label": "A",
+              "x": 8,
+              "y": 23
+            },
+            {
+              "label": "B",
+              "x": 8,
+              "y": 73
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit": "9J",
+      "sourceFidelity": "revision-pack-aligned-visual-practice",
+      "learningObjective": "9J-circuits",
+      "learningObjectiveTitle": "Current, voltage and circuits",
+      "learningObjectiveDescription": "Current, voltage/potential difference, series and parallel circuits, meters and components.",
+      "noteId": "9J-circuits",
+      "mediaPolicy": "required-for-question",
+      "tags": [
+        "visual",
+        "diagram",
+        "circuits"
+      ],
+      "id": "y9x-148-9j-compare-current-and-voltage-in-the-two-circuits",
+      "type": "Progress check",
+      "question": "Use the circuit diagrams. Compare how current and voltage behave in Circuit A and Circuit B.",
+      "answer": "Circuit A is series: current is the same everywhere and voltage is shared between components. Circuit B is parallel: current splits between branches and each branch has the same voltage as the supply.",
+      "choices": [],
+      "explanation": "Series circuits have one path. Parallel circuits have branches.",
+      "source": "9Jc Current Electricity PPT / series and parallel circuits",
+      "level": 4,
+      "cue": "Use the words series, parallel, current, voltage, same, shared and branches.",
+      "media": [
+        {
+          "src": "assets/webp/9J-series-parallel-circuits-symbols-base.webp",
+          "alt": "Two circuit diagrams, with Circuit A on top and Circuit B below.",
+          "caption": "Use the diagram to answer the question.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "mediaMarkers": [
+            {
+              "label": "A",
+              "x": 8,
+              "y": 23
+            },
+            {
+              "label": "B",
+              "x": 8,
+              "y": 73
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit": "9J",
+      "sourceFidelity": "revision-pack-aligned-visual-practice",
+      "learningObjective": "9J-circuits",
+      "learningObjectiveTitle": "Current, voltage and circuits",
+      "learningObjectiveDescription": "Current, voltage/potential difference, series and parallel circuits, meters and components.",
+      "noteId": "9J-circuits",
+      "mediaPolicy": "required-for-question",
+      "tags": [
+        "visual",
+        "diagram",
+        "circuits"
+      ],
+      "id": "y9x-149-9j-where-should-an-ammeter-go-to-measure-current-through-the-lamp",
+      "type": "Quick quiz",
+      "question": "Use the meter-placement diagram. Where should an ammeter go to measure the current through the lamp?",
+      "answer": "A",
+      "choices": [
+        "A Position X",
+        "B Position Y",
+        "C Across the battery",
+        "D Outside the circuit"
+      ],
+      "explanation": "An ammeter measures current, so it must be connected in series in the circuit path.",
+      "source": "9Jc Current Electricity PPT / meters in circuits",
+      "level": 3,
+      "cue": "",
+      "media": [
+        {
+          "src": "assets/diagrams/9J-meter-placement-question.svg",
+          "alt": "A circuit with two possible meter positions labelled X and Y.",
+          "caption": "Use the diagram to answer the question.",
+          "mediaTiming": "question"
+        }
+      ]
+    },
+    {
+      "unit": "9J",
+      "sourceFidelity": "revision-pack-aligned-visual-practice",
+      "learningObjective": "9J-circuits",
+      "learningObjectiveTitle": "Current, voltage and circuits",
+      "learningObjectiveDescription": "Current, voltage/potential difference, series and parallel circuits, meters and components.",
+      "noteId": "9J-circuits",
+      "mediaPolicy": "required-for-question",
+      "tags": [
+        "visual",
+        "diagram",
+        "circuits"
+      ],
+      "id": "y9x-150-9j-where-should-a-voltmeter-go-to-measure-potential-difference-across-the-lamp",
+      "type": "Quick quiz",
+      "question": "Use the meter-placement diagram. Where should a voltmeter go to measure the potential difference across the lamp?",
+      "answer": "B",
+      "choices": [
+        "A Position X",
+        "B Position Y",
+        "C In place of the cell",
+        "D Outside the circuit"
+      ],
+      "explanation": "A voltmeter measures potential difference between two points, so it is connected in parallel across the component.",
+      "source": "9Jc Current Electricity PPT / meters in circuits",
+      "level": 3,
+      "cue": "",
+      "media": [
+        {
+          "src": "assets/diagrams/9J-meter-placement-question.svg",
+          "alt": "A circuit with two possible meter positions labelled X and Y.",
+          "caption": "Use the diagram to answer the question.",
+          "mediaTiming": "question"
+        }
+      ]
+    },
+    {
+      "id": "y9x-151-9j-use-the-magnet-diagram-which-arrow-shows-the-field-direction-on-the-top-field-line",
+      "unit": "9J",
+      "type": "Quick quiz",
+      "question": "Use the magnet diagram. Which labelled arrow shows the magnetic field direction on the top field line?",
+      "answer": "A",
+      "choices": [
+        "A arrow A",
+        "B arrow B",
+        "C arrow C",
+        "D arrow D"
+      ],
+      "explanation": "Outside a magnet, magnetic field lines go from the north pole towards the south pole. On the top field line, that direction is shown by arrow A.",
+      "source": "9Ja Force-Fields PPT / 9J summary sheet - magnetic field direction visual practice",
+      "level": 2,
+      "cue": "",
+      "tags": [],
+      "sourceFidelity": "source-style-redraw",
+      "learningObjective": "9J-fields",
+      "learningObjectiveTitle": "Force fields, gravity and magnetism",
+      "learningObjectiveDescription": "Magnetic, gravitational and electric fields, weight and gravitational potential energy.",
+      "noteId": "9J-fields",
+      "mediaPolicy": "required-for-question",
+      "media": [
+        {
+          "src": "assets/diagrams/9J-magnetic-field-direction-question.svg",
+          "alt": "Bar magnet with four labelled arrow options around the field pattern.",
+          "caption": "Use the diagram to answer the question.",
+          "mediaTiming": "question"
+        }
+      ],
+      "mediaTiming": "question"
+    },
+    {
+      "id": "y9x-152-9j-use-the-magnet-diagram-where-is-the-magnetic-field-strongest",
+      "unit": "9J",
+      "type": "Quick quiz",
+      "question": "Use the magnet diagram. At which labelled point is the magnetic field strongest?",
+      "answer": "A",
+      "choices": [
+        "A point X",
+        "B point Y",
+        "C point Z",
+        "D all labelled points are equally strong"
+      ],
+      "explanation": "A magnetic field is strongest where the field lines are closest together. In the diagram, point X is closest to the pole and the most crowded field-line region.",
+      "source": "9Ja Force-Fields PPT / 9J summary sheet - magnetic field strength visual practice",
+      "level": 2,
+      "cue": "",
+      "tags": [],
+      "sourceFidelity": "source-style-redraw",
+      "learningObjective": "9J-fields",
+      "learningObjectiveTitle": "Force fields, gravity and magnetism",
+      "learningObjectiveDescription": "Magnetic, gravitational and electric fields, weight and gravitational potential energy.",
+      "noteId": "9J-fields",
+      "mediaPolicy": "required-for-question",
+      "media": [
+        {
+          "src": "assets/diagrams/9J-magnetic-field-strength-question.svg",
+          "alt": "Bar magnet with field lines and labelled points X, Y and Z.",
+          "caption": "Use the diagram to answer the question.",
+          "mediaTiming": "question"
+        }
+      ],
+      "mediaTiming": "question"
+    },
+    {
+      "id": "y9x-153-9j-use-the-charge-pair-diagram-identify-which-pairs-repel-and-which-attract",
+      "unit": "9J",
+      "type": "Progress check",
+      "question": "Use the charge-pair diagram. Identify which labelled pairs repel and which labelled pairs attract.",
+      "answer": "Pairs A and C repel because they show like charges. Pairs B and D attract because they show opposite charges.",
+      "choices": [],
+      "explanation": "Like charges repel; opposite charges attract. A is positive-positive and C is negative-negative, so they repel. B and D are positive-negative pairs, so they attract.",
+      "source": "9Jb Static-Electricity PPT / 9J summary sheet - charge attraction and repulsion visual practice",
+      "level": 3,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "written"
+      ],
+      "sourceFidelity": "source-style-redraw",
+      "learningObjective": "9J-static",
+      "learningObjectiveTitle": "Static electricity and charge",
+      "learningObjectiveDescription": "Charge transfer, attraction, repulsion, dangers and uses of static electricity.",
+      "noteId": "9J-static",
+      "mediaPolicy": "required-for-question",
+      "media": [
+        {
+          "src": "assets/diagrams/9J-static-charge-pairs-question.svg",
+          "alt": "Four labelled pairs of positive and negative charges.",
+          "caption": "Use the diagram to answer the question.",
+          "mediaTiming": "question"
+        }
+      ],
+      "mediaTiming": "question"
+    },
+    {
+      "id": "y9x-154-9j-use-the-charge-transfer-diagram-what-particle-has-moved-and-what-charge-does-the-rod-gain",
+      "unit": "9J",
+      "type": "Progress check",
+      "question": "Use the charge-transfer diagram. What particle has moved, and what overall charge does the rod gain?",
+      "answer": "Electrons have moved onto the rod, so the rod gains an overall negative charge.",
+      "choices": [],
+      "explanation": "Only electrons are transferred during charging by rubbing. If electrons move onto the rod, it has more electrons than protons and becomes negatively charged.",
+      "source": "9Jb Static-Electricity PPT / 9J summary sheet - charging by rubbing visual practice",
+      "level": 3,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "written"
+      ],
+      "sourceFidelity": "source-style-redraw",
+      "learningObjective": "9J-static",
+      "learningObjectiveTitle": "Static electricity and charge",
+      "learningObjectiveDescription": "Charge transfer, attraction, repulsion, dangers and uses of static electricity.",
+      "noteId": "9J-static",
+      "mediaPolicy": "required-for-question",
+      "media": [
+        {
+          "src": "assets/diagrams/9J-charge-transfer-question.svg",
+          "alt": "Cloth and rod diagram showing electron symbols moving towards the rod.",
+          "caption": "Use the diagram to answer the question.",
+          "mediaTiming": "question"
+        }
+      ],
+      "mediaTiming": "question"
+    },
+    {
+      "id": "y9x-155-9j-use-the-electromagnet-diagram-match-labels-a-to-d-to-the-coil-core-cell-and-switch",
+      "unit": "9J",
+      "type": "Progress check",
+      "question": "Use the electromagnet diagram. Match labels A–D to the coil of wire, iron core, cell/battery and switch.",
+      "answer": "A is the coil of wire. B is the iron core. C is the cell or battery. D is the switch.",
+      "choices": [],
+      "explanation": "The coil is the wire wrapped around the core. The core is the piece of iron inside the coil. The cell/battery provides the potential difference and the switch opens or closes the circuit.",
+      "source": "9Je Electromagnets PPT / 9J summary sheet - electromagnet parts visual practice",
+      "level": 3,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "written"
+      ],
+      "sourceFidelity": "source-style-redraw",
+      "learningObjective": "9J-electromagnets",
+      "learningObjectiveTitle": "Electromagnets, relays and motors",
+      "learningObjectiveDescription": "Electromagnets, relays, motor effect and factors affecting magnetic force.",
+      "noteId": "9J-electromagnets",
+      "mediaPolicy": "required-for-question",
+      "media": [
+        {
+          "src": "assets/diagrams/9J-electromagnet-parts-question.svg",
+          "alt": "Electromagnet circuit with labels A to D.",
+          "caption": "Use the diagram to answer the question.",
+          "mediaTiming": "question"
+        }
+      ],
+      "mediaTiming": "question"
+    },
+    {
+      "id": "y9x-156-9j-which-change-would-make-the-electromagnet-in-the-diagram-stronger",
+      "unit": "9J",
+      "type": "Quick quiz",
+      "question": "Which change would make the electromagnet in the diagram stronger?",
+      "answer": "C",
+      "choices": [
+        "A remove the iron core",
+        "B use fewer turns of wire",
+        "C increase the current through the coil",
+        "D open the switch and stop the current"
+      ],
+      "explanation": "An electromagnet is stronger when the current is increased, when there are more turns in the coil, or when an iron core is used.",
+      "source": "9Je Electromagnets PPT / 9J summary sheet - electromagnet strength visual practice",
+      "level": 2,
+      "cue": "",
+      "tags": [],
+      "sourceFidelity": "source-style-redraw",
+      "learningObjective": "9J-electromagnets",
+      "learningObjectiveTitle": "Electromagnets, relays and motors",
+      "learningObjectiveDescription": "Electromagnets, relays, motor effect and factors affecting magnetic force.",
+      "noteId": "9J-electromagnets",
+      "mediaPolicy": "required-for-question",
+      "media": [
+        {
+          "src": "assets/diagrams/9J-electromagnet-parts-question.svg",
+          "alt": "Electromagnet circuit with labels A to D.",
+          "caption": "Use the diagram to answer the question.",
+          "mediaTiming": "question"
+        }
+      ],
+      "mediaTiming": "question"
+    },
+    {
+      "id": "y9x-157-9j-use-the-relay-diagram-match-labels-a-to-d-to-control-circuit-electromagnet-switch-and-load",
+      "unit": "9J",
+      "type": "Progress check",
+      "question": "Use the relay diagram. Match labels A–D to the control circuit, electromagnet, switch contacts and load/lamp.",
+      "answer": "A is the control circuit. B is the electromagnet. C is the switch contacts. D is the load or lamp circuit component.",
+      "choices": [],
+      "explanation": "A relay uses an electromagnet in a low-current control circuit to move switch contacts in a separate circuit, allowing one circuit to control another.",
+      "source": "9Je Electromagnets PPT / 9J summary sheet - relay diagram visual practice",
+      "level": 3,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "written"
+      ],
+      "sourceFidelity": "source-style-redraw",
+      "learningObjective": "9J-electromagnets",
+      "learningObjectiveTitle": "Electromagnets, relays and motors",
+      "learningObjectiveDescription": "Electromagnets, relays, motor effect and factors affecting magnetic force.",
+      "noteId": "9J-electromagnets",
+      "mediaPolicy": "required-for-question",
+      "media": [
+        {
+          "src": "assets/webp/9J-relay-base.webp",
+          "alt": "Relay circuit diagram with a control circuit, electromagnet, switch contacts and lamp circuit.",
+          "caption": "Use the diagram to answer the question.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "mediaMarkers": [
+            {
+              "label": "A",
+              "x": 14,
+              "y": 60
+            },
+            {
+              "label": "B",
+              "x": 44,
+              "y": 59
+            },
+            {
+              "label": "C",
+              "x": 67,
+              "y": 31
+            },
+            {
+              "label": "D",
+              "x": 88,
+              "y": 61
+            }
+          ]
+        }
+      ],
+      "mediaTiming": "question"
+    },
+    {
+      "id": "y9x-158-9j-use-the-relay-diagram-explain-why-a-relay-is-useful",
+      "unit": "9J",
+      "type": "Progress check",
+      "question": "Use the relay diagram. Explain why a relay is useful in an electrical system.",
+      "answer": "A relay allows a small current in one circuit to switch a larger current in another circuit. The electromagnet pulls the switch contacts to complete or break the second circuit.",
+      "choices": [],
+      "explanation": "Relays are useful because the control circuit and the larger output circuit are separate. A small current can safely control a larger current.",
+      "source": "9Je Electromagnets PPT / 9J summary sheet - relay explanation visual practice",
+      "level": 4,
+      "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
+      "tags": [
+        "written"
+      ],
+      "sourceFidelity": "source-style-redraw",
+      "learningObjective": "9J-electromagnets",
+      "learningObjectiveTitle": "Electromagnets, relays and motors",
+      "learningObjectiveDescription": "Electromagnets, relays, motor effect and factors affecting magnetic force.",
+      "noteId": "9J-electromagnets",
+      "mediaPolicy": "required-for-question",
+      "media": [
+        {
+          "src": "assets/webp/9J-relay-base.webp",
+          "alt": "Relay circuit diagram with a control circuit, electromagnet, switch contacts and lamp circuit.",
+          "caption": "Use the diagram to answer the question.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "mediaMarkers": [
+            {
+              "label": "A",
+              "x": 14,
+              "y": 60
+            },
+            {
+              "label": "B",
+              "x": 44,
+              "y": 59
+            },
+            {
+              "label": "C",
+              "x": 67,
+              "y": 31
+            },
+            {
+              "label": "D",
+              "x": 88,
+              "y": 61
+            }
+          ]
+        }
+      ],
+      "mediaTiming": "question"
+    },
+    {
+      "id": "y9x-159-9j-use-the-motor-effect-diagram-which-arrow-shows-the-force-on-the-wire",
+      "unit": "9J",
+      "type": "Quick quiz",
+      "question": "Use the motor-effect diagram. Which labelled arrow shows the force on the current-carrying wire?",
+      "answer": "B",
+      "choices": [
+        "A arrow A",
+        "B arrow B",
+        "C arrow C",
+        "D arrow D"
+      ],
+      "explanation": "With the magnetic field from north to south and current out of the page, the motor-effect force is upward in this setup, shown by arrow B.",
+      "source": "9Je Electromagnets PPT / 9J summary sheet - motor effect visual practice",
+      "level": 4,
+      "cue": "",
+      "tags": [],
+      "sourceFidelity": "source-style-redraw",
+      "learningObjective": "9J-electromagnets",
+      "learningObjectiveTitle": "Electromagnets, relays and motors",
+      "learningObjectiveDescription": "Electromagnets, relays, motor effect and factors affecting magnetic force.",
+      "noteId": "9J-electromagnets",
+      "mediaPolicy": "required-for-question",
+      "media": [
+        {
+          "src": "assets/diagrams/9J-motor-effect-question.svg",
+          "alt": "Current-carrying wire between north and south poles with labelled force-arrow options.",
+          "caption": "Use the diagram to answer the question.",
+          "mediaTiming": "question"
+        }
+      ],
+      "mediaTiming": "question"
+    },
+    {
+      "id": "y9x-160-9j-which-change-would-increase-the-force-in-the-motor-effect-diagram",
+      "unit": "9J",
+      "type": "Quick quiz",
+      "question": "Which change would increase the force in the motor-effect diagram?",
+      "answer": "D",
+      "choices": [
+        "A decrease the current",
+        "B use a weaker magnet",
+        "C remove the magnetic field",
+        "D increase the current or use a stronger magnet"
+      ],
+      "explanation": "The motor-effect force increases when the current is increased or when the magnetic field is made stronger.",
+      "source": "9Je Electromagnets PPT / 9J summary sheet - motor effect force factors visual practice",
+      "level": 2,
+      "cue": "",
+      "tags": [],
+      "sourceFidelity": "source-style-redraw",
+      "learningObjective": "9J-electromagnets",
+      "learningObjectiveTitle": "Electromagnets, relays and motors",
+      "learningObjectiveDescription": "Electromagnets, relays, motor effect and factors affecting magnetic force.",
+      "noteId": "9J-electromagnets",
+      "mediaPolicy": "required-for-question",
+      "media": [
+        {
+          "src": "assets/diagrams/9J-motor-effect-question.svg",
+          "alt": "Current-carrying wire between north and south poles with labelled force-arrow options.",
+          "caption": "Use the diagram to answer the question.",
+          "mediaTiming": "question"
+        }
+      ],
+      "mediaTiming": "question"
+    },
+    {
+      "id": "y9x-161-9j-use-the-static-charge-diagram-which-labelled-pair-shows-two-negative-charges",
+      "unit": "9J",
+      "type": "Quick quiz",
+      "question": "Use the charge-pair diagram. Which labelled pair shows two negative charges?",
+      "answer": "C",
+      "choices": [
+        "A pair A",
+        "B pair B",
+        "C pair C",
+        "D pair D"
+      ],
+      "explanation": "Pair C shows two negative charges. Like negative charges repel each other.",
+      "source": "9Jb Static-Electricity PPT / 9J summary sheet - static charge visual recognition",
+      "level": 1,
+      "cue": "",
+      "tags": [],
+      "sourceFidelity": "source-style-redraw",
+      "learningObjective": "9J-static",
+      "learningObjectiveTitle": "Static electricity and charge",
+      "learningObjectiveDescription": "Charge transfer, attraction, repulsion, dangers and uses of static electricity.",
+      "noteId": "9J-static",
+      "mediaPolicy": "required-for-question",
+      "media": [
+        {
+          "src": "assets/diagrams/9J-static-charge-pairs-question.svg",
+          "alt": "Four labelled pairs of positive and negative charges.",
+          "caption": "Use the diagram to answer the question.",
+          "mediaTiming": "question"
+        }
+      ],
+      "mediaTiming": "question"
+    },
+    {
+      "id": "y9x-162-9j-use-the-electromagnet-diagram-which-labelled-part-is-the-iron-core",
+      "unit": "9J",
+      "type": "Quick quiz",
+      "question": "Use the electromagnet diagram. Which labelled part is the iron core?",
+      "answer": "B",
+      "choices": [
+        "A label A",
+        "B label B",
+        "C label C",
+        "D label D"
+      ],
+      "explanation": "The iron core is the piece of iron inside the coil. In the diagram it is labelled B.",
+      "source": "9Je Electromagnets PPT / 9J summary sheet - electromagnet part recognition",
+      "level": 2,
+      "cue": "",
+      "tags": [],
+      "sourceFidelity": "source-style-redraw",
+      "learningObjective": "9J-electromagnets",
+      "learningObjectiveTitle": "Electromagnets, relays and motors",
+      "learningObjectiveDescription": "Electromagnets, relays, motor effect and factors affecting magnetic force.",
+      "noteId": "9J-electromagnets",
+      "mediaPolicy": "required-for-question",
+      "media": [
+        {
+          "src": "assets/diagrams/9J-electromagnet-parts-question.svg",
+          "alt": "Electromagnet circuit with labels A to D.",
+          "caption": "Use the diagram to answer the question.",
+          "mediaTiming": "question"
+        }
+      ],
+      "mediaTiming": "question"
     }
   ],
   "notes": [

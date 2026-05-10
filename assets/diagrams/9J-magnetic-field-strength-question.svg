@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" role="img" aria-labelledby="title desc">
+  <title id="title">Magnetic field strength near a bar magnet</title>
+  <desc id="desc">A bar magnet with field lines closer together near the poles and labelled points X, Y and Z.</desc>
+
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#2563eb" />
+    </marker>
+    <marker id="arrowDark" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#334155" />
+    </marker>
+    <style>
+      .bg{fill:#f8fafc}.panel{fill:white;stroke:#cbd5e1;stroke-width:2}.title{font:700 24px system-ui,Arial;fill:#0f172a}.label{font:700 18px system-ui,Arial;fill:#0f172a}.small{font:600 14px system-ui,Arial;fill:#334155}.tiny{font:600 12px system-ui,Arial;fill:#475569}.line{stroke:#2563eb;stroke-width:3;fill:none;stroke-linecap:round}.dark{stroke:#334155;stroke-width:3;fill:none;stroke-linecap:round}.wire{stroke:#334155;stroke-width:4;fill:none;stroke-linecap:round;stroke-linejoin:round}.option{fill:#e0f2fe;stroke:#0284c7;stroke-width:2}.magN{fill:#ef4444}.magS{fill:#3b82f6}.metal{fill:#e2e8f0;stroke:#64748b;stroke-width:2}.charge{font:700 22px system-ui,Arial;fill:#0f172a}.plus{fill:#dc2626}.minus{fill:#2563eb}
+    </style>
+  </defs>
+
+  <rect class="bg" width="900" height="520" rx="24"/>
+  <text class="title" x="42" y="52">Magnetic field pattern</text>
+  <rect class="panel" x="40" y="80" width="820" height="385" rx="18"/>
+  <rect x="330" y="220" width="240" height="82" rx="16" fill="#f1f5f9" stroke="#64748b" stroke-width="2"/>
+  <rect class="magN" x="330" y="220" width="120" height="82" rx="16"/>
+  <rect class="magS" x="450" y="220" width="120" height="82" rx="16"/>
+  <text class="label" x="382" y="271" text-anchor="middle" fill="#fff">N</text>
+  <text class="label" x="510" y="271" text-anchor="middle" fill="#fff">S</text>
+  <path class="line" d="M332 215 C200 100 700 100 568 215"/>
+  <path class="line" d="M332 232 C245 150 655 150 568 232"/>
+  <path class="line" d="M332 302 C245 370 655 370 568 302"/>
+  <path class="line" d="M332 318 C200 425 700 425 568 318"/>
+  <path class="line" d="M330 252 C270 240 270 282 330 270"/>
+  <path class="line" d="M570 252 C630 240 630 282 570 270"/>
+  <circle class="option" cx="292" cy="260" r="27"/><text class="label" x="292" y="267" text-anchor="middle">X</text>
+  <circle class="option" cx="450" cy="128" r="27"/><text class="label" x="450" y="135" text-anchor="middle">Y</text>
+  <circle class="option" cx="705" cy="380" r="27"/><text class="label" x="705" y="387" text-anchor="middle">Z</text>
+</svg>

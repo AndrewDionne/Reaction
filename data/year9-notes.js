@@ -1,5 +1,5 @@
 window.YEAR9_NOTES = {
-  "version": "1.19.0",
+  "version": "1.35.3",
   "title": "Year 9 Science Enhanced Class Notes",
   "notes": [
     {
@@ -83,7 +83,28 @@ window.YEAR9_NOTES = {
         {
           "src": "assets/diagrams/9A-dna-genes-chromosomes.svg",
           "alt": "Diagram linking chromosomes, DNA and genes.",
-          "caption": "Use this when the words chromosome, DNA and gene start to blend together."
+          "caption": "Use this when the words chromosome, DNA and gene start to blend together.",
+          "mediaTitle": "DNA, genes and chromosomes",
+          "mediaLead": "Think from large to small: the nucleus contains chromosomes, chromosomes are made of DNA, and genes are short sections of DNA.",
+          "mediaPoints": [
+            "Chromosome = DNA package",
+            "Gene = section of DNA",
+            "DNA carries inherited information"
+          ],
+          "presentation": "media-diagram-base"
+        },
+        {
+          "src": "assets/diagrams/9A-fertilisation-gametes-zygote-chromosomes.svg",
+          "alt": "Diagram showing sperm and egg cells with 23 chromosomes each forming a zygote with 46 chromosomes after fertilisation.",
+          "caption": "Gametes contain half the normal chromosome number. Fertilisation restores the full chromosome number in the zygote.",
+          "mediaTitle": "Gametes and fertilisation",
+          "mediaLead": "Sperm and egg cells have 23 chromosomes each; after fertilisation the zygote has 46.",
+          "mediaPoints": [
+            "gametes = sex cells",
+            "zygote = fertilised egg cell",
+            "23 + 23 gives the normal human body-cell number, 46"
+          ],
+          "presentation": "media-diagram-base"
         }
       ]
     },
@@ -178,6 +199,28 @@ window.YEAR9_NOTES = {
           "src": "assets/webp/9A-natural-selection-giraffes.webp",
           "alt": "Giraffes of different heights feeding from trees.",
           "caption": "Natural selection is easier to remember when you think of variation, competition, survival and reproduction."
+        },
+        {
+          "src": "assets/webp/9A-prey-adaptation-base.webp",
+          "alt": "Animal comparison showing visible features that can be used to discuss prey adaptations.",
+          "presentation": "media-image-base",
+          "mediaTitle": "Visible adaptations",
+          "mediaLead": "Look for features that help an organism survive, such as defence, feeding, movement or sensing.",
+          "mediaPoints": [
+            "Spines and armour can reduce the chance of being eaten.",
+            "Other features may help with sensing, feeding or movement."
+          ]
+        },
+        {
+          "src": "assets/webp/9A-triceratops-model-base.webp",
+          "alt": "Triceratops side-view illustration for identifying visible adaptations.",
+          "presentation": "media-image-base",
+          "mediaTitle": "Adaptations on a model",
+          "mediaLead": "A fossil or model can show body structures, but scientists must be careful when interpreting their function.",
+          "mediaPoints": [
+            "Horns and frills may relate to defence, display or competition.",
+            "Strong legs and body shape can also be adaptation evidence."
+          ]
         }
       ]
     },
@@ -225,7 +268,25 @@ window.YEAR9_NOTES = {
         {
           "src": "assets/diagrams/9B-photosynthesis-light-graph.svg",
           "alt": "Graph showing photosynthesis rate increasing then levelling off as light intensity increases.",
-          "caption": "Photosynthesis increases with light at first, then another factor becomes limiting."
+          "caption": "Photosynthesis increases with light at first, then another factor becomes limiting.",
+          "mediaTitle": "Reading a photosynthesis graph",
+          "mediaLead": "The rate rises while light is limiting, then levels off when another factor limits the reaction.",
+          "mediaPoints": [
+            "Increasing slope = more photosynthesis",
+            "Flat section = a limiting factor has changed"
+          ],
+          "presentation": "media-diagram-base"
+        },
+        {
+          "src": "assets/webp/9B-photosynthesis-plant-base.webp",
+          "alt": "Whole plant illustration showing green leaves, stem and roots.",
+          "presentation": "media-image-base",
+          "mediaTitle": "Where photosynthesis happens",
+          "mediaLead": "Photosynthesis mainly happens in green plant parts that contain chlorophyll, especially leaves.",
+          "mediaPoints": [
+            "Roots absorb water but usually do not photosynthesise.",
+            "Stems can support transport and may photosynthesise if green."
+          ]
         }
       ]
     },
@@ -269,9 +330,31 @@ window.YEAR9_NOTES = {
       "practicePrompt": "Pick one linked revision card for Plant transport and specialised cells and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
       "media": [
         {
-          "src": "assets/webp/9B-plant-transport-root-xylem-phloem.webp",
-          "alt": "Plant transport diagram showing root hair cells, xylem, phloem, leaves, water, mineral ions and glucose movement.",
-          "caption": "Root hair cells absorb water and mineral ions. Xylem carries them up to the leaves; phloem carries glucose and sugars away from the leaves."
+          "src": "assets/webp/9B-plant-transport-process.webp",
+          "alt": "Whole plant diagram showing roots absorbing water and arrows moving water upward and sugars away from leaves.",
+          "caption": "Water and mineral ions move up through xylem; sugars made in leaves are transported away in phloem.",
+          "mediaTitle": "Plant transport tissues",
+          "mediaLead": "Xylem moves water up from roots, while phloem transports sugars from leaves to the rest of the plant.",
+          "mediaPoints": [
+            "Xylem moves water and mineral ions up from roots",
+            "Phloem moves sugars away from leaves to where they are needed"
+          ],
+          "presentation": "media-diagram-base"
+        },
+        {
+          "src": "assets/webp/9B-leaf-vein-bundle.webp",
+          "alt": "Leaf vein and leaf cross-section showing the xylem and phloem bundle inside the leaf.",
+          "caption": "Inside a leaf vein, xylem and phloem sit together in the vascular bundle.",
+          "presentation": "media-image-base",
+          "mediaTitle": "Leaf vein bundle",
+          "mediaLead": "Leaf veins contain the transport tissues that connect the leaf to the rest of the plant."
+        },
+        {
+          "src": "assets/webp/9B-root-hair-cell-base.webp",
+          "alt": "Root hair cell illustration with long projection and nearby soil particles.",
+          "presentation": "media-image-base",
+          "mediaTitle": "Root hair cell",
+          "mediaLead": "The long projection gives a large surface area for absorbing water and mineral ions from soil."
         },
         {
           "src": "assets/webp/9B-stomata-micrograph.webp",
@@ -320,9 +403,30 @@ window.YEAR9_NOTES = {
       "practicePrompt": "Pick one linked revision card for Plant products, seeds and food production and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
       "media": [
         {
-          "src": "assets/webp/9B-food-production-methods.webp",
-          "alt": "Greenhouse and farming methods that increase food production.",
-          "caption": "Yield can be improved by controlling growing conditions and providing the resources plants need."
+          "src": "assets/webp/9B-food-production-methods-4panel.webp",
+          "alt": "Four-panel image showing greenhouse growing, fertiliser use, irrigation and pest control for increasing crop yield.",
+          "caption": "Crop yield can be improved by controlling greenhouse conditions, mineral ions, water supply and pests.",
+          "mediaTitle": "Increasing crop yield",
+          "mediaLead": "Farmers increase yield by controlling resources and reducing threats.",
+          "mediaPoints": [
+            "Greenhouses control temperature, light, water and carbon dioxide",
+            "Fertilisers replace mineral ions",
+            "Irrigation prevents water shortage",
+            "Pest control reduces crop damage and competition"
+          ],
+          "presentation": "media-diagram-base"
+        },
+        {
+          "src": "assets/webp/9B-mineral-deficiency-leaf-symptoms.webp",
+          "alt": "Three plant leaf clusters showing healthy green leaves, yellowing leaves and severe pale yellow leaves from mineral deficiency.",
+          "mediaTitle": "Mineral deficiency symptoms",
+          "mediaLead": "Plants need mineral ions to make healthy tissues.",
+          "mediaPoints": [
+            "Nitrates are needed to make proteins for growth.",
+            "Deficiency can cause poor growth and yellowing leaves.",
+            "This is note support only; question cards should still test the cause."
+          ],
+          "presentation": "media-diagram-base"
         }
       ]
     },
@@ -371,9 +475,16 @@ window.YEAR9_NOTES = {
           "caption": "Carbon moves between air, plants, animals, decomposers and fossil fuels. Photosynthesis removes carbon dioxide; respiration and combustion return it."
         },
         {
-          "src": "assets/diagrams/9B-food-web.svg",
-          "alt": "Food web showing rose bush, insects and wrens.",
-          "caption": "Arrows in a food web show energy transfer, not simply who eats who."
+          "src": "assets/webp/9B-food-web-ecosystem.webp",
+          "alt": "Food web with plants, insects, small animals and predators linked by arrows showing feeding relationships.",
+          "caption": "Arrows in a food web show the direction of energy transfer from food to feeder.",
+          "mediaTitle": "Food-web arrows",
+          "mediaLead": "Food-web arrows show energy transfer from food to feeder.",
+          "mediaPoints": [
+            "Plant material transfers energy to herbivores",
+            "Changes lower in a food web can affect predators higher up"
+          ],
+          "presentation": "media-diagram-base"
         }
       ]
     },
@@ -420,6 +531,14 @@ window.YEAR9_NOTES = {
           "src": "assets/webp/9E-crystal-cooling-comparison.webp",
           "alt": "Comparison of large crystals from slow cooling and small crystals from fast cooling.",
           "caption": "Cooling speed affects crystal size: slow cooling gives larger crystals."
+        },
+        {
+          "src": "assets/webp/9E-brittle-lattice-crack.webp",
+          "alt": "Regular giant lattice before and after a crack forms through the rigid structure.",
+          "caption": "A rigid lattice can be strong yet brittle: once layers shift or a crack starts, the material can fracture.",
+          "presentation": "media-image-base",
+          "mediaTitle": "Why brittle materials crack",
+          "mediaLead": "A regular structure can resist deformation, but it may crack suddenly instead of bending."
         }
       ]
     },
@@ -465,9 +584,16 @@ window.YEAR9_NOTES = {
       "practicePrompt": "Pick one linked revision card for Polymers and polymerisation and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
       "media": [
         {
-          "src": "assets/diagrams/9E-vulcanisation-crosslinks-source-style.svg",
-          "alt": "Polymer chains with cross-links after vulcanisation.",
-          "caption": "Vulcanisation adds cross-links, changing rubber’s properties."
+          "src": "assets/webp/9E-vulcanisation-crosslinks-base.webp",
+          "alt": "Side-by-side polymer-chain diagrams showing uncrosslinked chains and chains joined by cross-links after vulcanisation.",
+          "caption": "Vulcanisation adds cross-links between polymer chains, making rubber tougher and less sticky.",
+          "mediaTitle": "Vulcanisation",
+          "mediaLead": "Cross-links join polymer chains, making rubber tougher and less stretchy in an uncontrolled way.",
+          "mediaPoints": [
+            "Before: chains can slide past each other",
+            "After: cross-links hold chains together"
+          ],
+          "presentation": "media-diagram-base"
         }
       ]
     },
@@ -513,7 +639,14 @@ window.YEAR9_NOTES = {
         {
           "src": "assets/diagrams/9E-polymers-composites.svg",
           "alt": "Polymer chains and composite material diagram.",
-          "caption": "Composites combine a matrix with reinforcement to improve material properties."
+          "caption": "Composites combine a matrix with reinforcement to improve material properties.",
+          "mediaTitle": "Polymers and composites",
+          "mediaLead": "A composite combines materials so the final material has useful properties.",
+          "mediaPoints": [
+            "Matrix holds the material together",
+            "Reinforcement adds strength or stiffness"
+          ],
+          "presentation": "media-diagram-base"
         }
       ]
     },
@@ -557,9 +690,52 @@ window.YEAR9_NOTES = {
       "practicePrompt": "Pick one linked revision card for Environmental impacts and recycling and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
       "media": [
         {
-          "src": "assets/webp/9E-environmental-impacts-recycling.webp",
-          "alt": "Four-panel infographic showing landfill, recycling, acid rain and global warming.",
-          "caption": "Environmental impacts are linked but different: landfill wastes resources, recycling saves resources, acid rain damages ecosystems, and greenhouse gases warm the planet."
+          "src": "assets/webp/9E-landfill-impact-card.webp",
+          "alt": "Landfill site with mixed rubbish and a compactor vehicle, with open space for revision text.",
+          "mediaTitle": "Landfill",
+          "mediaLead": "Some materials take a very long time to break down.",
+          "mediaPoints": [
+            "Non-biodegradable waste can remain for years.",
+            "Landfill uses land and can affect habitats.",
+            "Reducing, reusing and recycling can reduce landfill."
+          ],
+          "presentation": "media-diagram-base"
+        },
+        {
+          "src": "assets/webp/9E-recycling-impact-card.webp",
+          "alt": "Recycling bins for paper, glass, cans and plastics, with a person sorting a plastic bottle.",
+          "mediaTitle": "Recycling",
+          "mediaLead": "Recycling reduces demand for new raw materials.",
+          "mediaPoints": [
+            "Materials must be sorted before recycling.",
+            "Recycling usually saves resources and landfill space.",
+            "Some materials are easier to recycle than others."
+          ],
+          "presentation": "media-diagram-base"
+        },
+        {
+          "src": "assets/webp/9E-acid-rain-impact-card.webp",
+          "alt": "Factory emissions forming rain clouds over damaged plants and weathered stone.",
+          "mediaTitle": "Acid rain",
+          "mediaLead": "Pollution gases can form acidic rainwater.",
+          "mediaPoints": [
+            "Acid rain can damage plants, soils and buildings.",
+            "It is linked to gases released during combustion.",
+            "Use this as a visual cue, not a full chemical equation."
+          ],
+          "presentation": "media-diagram-base"
+        },
+        {
+          "src": "assets/webp/9E-greenhouse-gases-impact-card.webp",
+          "alt": "Earth with sunlight entering the atmosphere and heat arrows being trapped near the planet.",
+          "mediaTitle": "Greenhouse gases",
+          "mediaLead": "Greenhouse gases reduce how much heat escapes to space.",
+          "mediaPoints": [
+            "Sunlight enters through the atmosphere.",
+            "Some heat is trapped and redirected back toward Earth.",
+            "This can contribute to global warming."
+          ],
+          "presentation": "media-diagram-base"
         }
       ]
     },
@@ -606,6 +782,43 @@ window.YEAR9_NOTES = {
           "src": "assets/webp/9F-heating-metal-oxide.webp",
           "alt": "A test tube containing a black powder being heated over a Bunsen burner.",
           "caption": "Heating can be part of a chemical change when substances react and new products form."
+        },
+        {
+          "src": "assets/diagrams/9F-gas-pressure-particles.svg",
+          "alt": "Particle diagram showing gas particles moving in a closed container and colliding with the walls.",
+          "caption": "Gas pressure is caused by particles colliding with the walls of their container.",
+          "mediaTitle": "Gas pressure",
+          "mediaLead": "Heating a gas makes particles move faster, so collisions become more frequent and harder.",
+          "mediaPoints": [
+            "particles move randomly",
+            "collisions with walls cause pressure",
+            "higher temperature can increase pressure in a fixed volume"
+          ],
+          "presentation": "media-diagram-base"
+        },
+        {
+          "src": "assets/diagrams/9F-conservation-of-mass.svg",
+          "alt": "Closed reaction vessel before and after a reaction with the same total mass.",
+          "caption": "In a closed system, total mass stays the same during a reaction.",
+          "mediaTitle": "Conservation of mass",
+          "mediaLead": "Atoms are rearranged in a reaction; they are not lost from a closed container.",
+          "mediaPoints": [
+            "mass before = mass after",
+            "closed systems stop gases escaping"
+          ],
+          "presentation": "media-diagram-base"
+        },
+        {
+          "src": "assets/diagrams/9F-exothermic-endothermic-energy-profile.svg",
+          "alt": "Two energy profile graphs comparing exothermic and endothermic reactions.",
+          "caption": "Exothermic reactions release energy; endothermic reactions take in energy.",
+          "mediaTitle": "Exothermic vs endothermic",
+          "mediaLead": "Energy profile diagrams show whether products end lower or higher than reactants.",
+          "mediaPoints": [
+            "exothermic: energy released",
+            "endothermic: energy taken in"
+          ],
+          "presentation": "media-diagram-base"
         }
       ]
     },
@@ -649,9 +862,24 @@ window.YEAR9_NOTES = {
       "practicePrompt": "Pick one linked revision card for Reactivity and displacement and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
       "media": [
         {
-          "src": "assets/diagrams/9F-displacement-reaction.svg",
-          "alt": "Iron displacing copper from copper sulfate.",
-          "caption": "A more reactive metal can displace a less reactive metal from its compound."
+          "src": "assets/webp/9F-reactivity-series-notes-medium-v2.webp",
+          "alt": "Reactivity series chart showing magnesium, zinc, iron, copper and silver with short reaction-behaviour cues.",
+          "caption": "The reactivity series ranks metals from most reactive to least reactive and helps predict reactions with water, acids and displacement.",
+          "mediaTitle": "Reactivity series",
+          "mediaLead": "Metals higher in the series react more readily and can often displace metals below them.",
+          "presentation": "media-image-base"
+        },
+        {
+          "src": "assets/webp/9F-displacement-reaction-clean-v2.webp",
+          "alt": "Before-and-after beakers showing a metal strip in blue copper sulfate solution and then coated with copper after the reaction.",
+          "caption": "A more reactive metal can displace copper from copper sulfate, leaving a copper coating or deposit.",
+          "mediaTitle": "Displacement reactions",
+          "mediaLead": "A more reactive metal can take the place of a less reactive metal in a compound.",
+          "mediaPoints": [
+            "The more reactive metal goes into solution",
+            "Copper is displaced from copper sulfate and appears as a deposit"
+          ],
+          "presentation": "media-image-base"
         }
       ]
     },
@@ -697,9 +925,20 @@ window.YEAR9_NOTES = {
       "practicePrompt": "Pick one linked revision card for Metal extraction and reduction and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
       "media": [
         {
-          "src": "assets/webp/9F-extraction-carbon-vs-electrolysis.webp",
-          "alt": "Split diagram comparing iron extraction by carbon reduction with aluminium extraction by electrolysis and a reactivity series strip.",
-          "caption": "Metals below carbon, such as iron, can be extracted by carbon reduction. Metals above carbon, such as aluminium, need electrolysis."
+          "src": "assets/diagrams/9F-extraction-methods-note.svg",
+          "alt": "Two-panel comparison showing carbon reduction on the left and electrolysis on the right.",
+          "caption": "Metals below carbon can often be extracted by carbon reduction, while more reactive metals need electrolysis."
+        },
+        {
+          "src": "assets/diagrams/9F-blast-furnace-note.svg",
+          "alt": "Blast furnace illustration showing inputs, hot air and molten outputs.",
+          "presentation": "media-diagram-base",
+          "mediaTitle": "Blast furnace process",
+          "mediaLead": "Iron ore, coke and limestone are added near the top; hot air enters lower down; molten iron is tapped near the bottom.",
+          "mediaPoints": [
+            "Carbon monoxide removes oxygen from iron oxide.",
+            "Limestone helps remove impurities as slag."
+          ]
         }
       ]
     },
@@ -790,8 +1029,27 @@ window.YEAR9_NOTES = {
       "media": [
         {
           "src": "assets/webp/9I-forces-terminal-velocity-sequence.webp",
-          "alt": "Skydiver sequence showing weight, air resistance, terminal velocity and parachute opening.",
-          "caption": "Terminal velocity happens when weight and air resistance are balanced, so speed becomes constant rather than zero."
+          "alt": "Four-stage skydiver sequence showing weight and air resistance arrows before and after the parachute opens.",
+          "caption": "Terminal velocity happens when weight and air resistance are balanced, so speed becomes constant rather than zero.",
+          "mediaTitle": "Terminal velocity",
+          "mediaLead": "A falling object reaches terminal velocity when forces become balanced.",
+          "mediaPoints": [
+            "At first, weight is greater than air resistance, so the skydiver accelerates.",
+            "Air resistance increases as speed increases.",
+            "When the parachute opens, air resistance increases and the skydiver slows to a lower terminal velocity."
+          ],
+          "presentation": "media-diagram-base"
+        },
+        {
+          "src": "assets/webp/9I-falling-forces-parachutist-base.webp",
+          "alt": "Parachutist falling with upward air resistance and downward weight arrows.",
+          "presentation": "media-image-base",
+          "mediaTitle": "Forces on a falling object",
+          "mediaLead": "Weight acts downward. Air resistance acts upward, opposite to the motion through air.",
+          "mediaPoints": [
+            "If weight is bigger than air resistance, the object accelerates downward.",
+            "At terminal velocity, the two forces are balanced."
+          ]
         }
       ]
     },
@@ -835,9 +1093,55 @@ window.YEAR9_NOTES = {
       "practicePrompt": "Pick one linked revision card for Energy, work and simple machines and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
       "media": [
         {
-          "src": "assets/diagrams/9I-sankey-efficiency.svg",
-          "alt": "Sankey diagrams comparing useful and wasted energy.",
-          "caption": "Sankey diagrams show how much input energy becomes useful output and how much is wasted."
+          "src": "assets/webp/9I-sankey-efficiency-base.webp",
+          "alt": "Two Sankey-style energy flow diagrams showing useful and wasted energy.",
+          "caption": "The most efficient machine wastes the smallest proportion of its input energy.",
+          "mediaTitle": "Sankey efficiency",
+          "mediaLead": "The most efficient machine wastes the smallest proportion of input energy.",
+          "mediaPoints": [
+            "Useful output continues forward",
+            "Wasted energy is shown by the downward branch",
+            "Compare proportions, not just total arrow length"
+          ],
+          "presentation": "media-image-base",
+          "mediaMarkers": [
+            {
+              "label": "Machine X",
+              "x": 17,
+              "y": 31,
+              "variant": "machine"
+            },
+            {
+              "label": "Machine Y",
+              "x": 17,
+              "y": 65,
+              "variant": "machine"
+            }
+          ]
+        },
+        {
+          "src": "assets/webp/9I-sankey-lightbulb-efficiency-base.webp",
+          "alt": "Two light bulb Sankey diagrams showing useful and wasted energy transfers.",
+          "presentation": "media-image-base",
+          "mediaTitle": "Useful and wasted energy",
+          "mediaLead": "Sankey diagrams compare how much input energy becomes useful output and how much is wasted.",
+          "mediaPoints": [
+            "A larger useful output arrow means greater efficiency.",
+            "A larger wasted branch means lower efficiency."
+          ]
+        },
+        {
+          "src": "assets/diagrams/9I-work-done-force-distance.svg",
+          "alt": "A box being pushed by a force across a distance, showing the work done equation.",
+          "caption": "Work is done when a force moves an object through a distance.",
+          "mediaTitle": "Work done",
+          "mediaLead": "Work done = force × distance.",
+          "mediaPoints": [
+            "force is measured in newtons",
+            "distance is measured in metres",
+            "work done is measured in joules"
+          ],
+          "presentation": "media-diagram-base"
         }
       ]
     },
@@ -883,7 +1187,14 @@ window.YEAR9_NOTES = {
         {
           "src": "assets/diagrams/9I-distance-time-VWXYZ.svg",
           "alt": "Distance-time graph labelled V, W, X, Y and Z.",
-          "caption": "Flat sections mean stopped; steeper lines mean greater speed."
+          "caption": "Flat sections mean stopped; steeper lines mean greater speed.",
+          "mediaTitle": "Distance–time graphs",
+          "mediaLead": "A flat section means distance is not changing, so the object has stopped.",
+          "mediaPoints": [
+            "Steeper line = faster speed",
+            "Horizontal section = stationary"
+          ],
+          "presentation": "media-diagram-base"
         }
       ]
     },
@@ -927,9 +1238,15 @@ window.YEAR9_NOTES = {
       "practicePrompt": "Pick one linked revision card for Levers, pivots and moments and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
       "media": [
         {
-          "src": "assets/webp/9I-lever-moment-context.webp",
+          "src": "assets/diagrams/9I-lever-moment-context.svg",
           "alt": "Lever diagram lifting a rock showing load, fulcrum, effort, distances from pivot and moment equals force times distance.",
           "caption": "A longer distance from the pivot gives a larger moment for the same force. Moment = force × distance from the pivot."
+        },
+        {
+          "src": "assets/webp/9I-lever-comparison-three-setups.webp",
+          "alt": "Three lever setups comparing different pivot positions with the same load and effort direction.",
+          "caption": "Moving the pivot closer to the load makes the lever easier to use because the effort arm becomes longer.",
+          "presentation": "media-image-base"
         }
       ]
     },
@@ -976,6 +1293,19 @@ window.YEAR9_NOTES = {
           "src": "assets/webp/9J-magnetic-field-pattern.webp",
           "alt": "Iron filings showing the magnetic field pattern around a bar magnet.",
           "caption": "Field lines show the shape and direction of a magnetic field."
+        },
+        {
+          "src": "assets/diagrams/9J-gravitational-field-strength-weight.svg",
+          "alt": "Comparison of weight on Earth and the Moon showing the same mass has different weight in different gravitational fields.",
+          "caption": "Weight depends on gravitational field strength, but mass does not.",
+          "mediaTitle": "Weight and gravitational field strength",
+          "mediaLead": "Weight = mass × gravitational field strength.",
+          "mediaPoints": [
+            "mass is measured in kg",
+            "weight is a force measured in N",
+            "lower gravitational field strength gives smaller weight"
+          ],
+          "presentation": "media-diagram-base"
         }
       ]
     },
@@ -1019,9 +1349,28 @@ window.YEAR9_NOTES = {
       "practicePrompt": "Pick one linked revision card for Static electricity and charge and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
       "media": [
         {
-          "src": "assets/webp/9J-static-electricity-charge-transfer.webp",
-          "alt": "Infographic explaining static electricity by rubbing, electron transfer, negative and positive charge, and attraction or repulsion.",
-          "caption": "Static electricity comes from charge transfer. Electrons move; like charges repel and opposite charges attract."
+          "src": "assets/webp/9J-static-charge-rubbing-transfer-card.webp",
+          "alt": "A blue balloon being rubbed with a cloth, with electron symbols moving from the cloth to the balloon.",
+          "mediaTitle": "Charging by rubbing",
+          "mediaLead": "Rubbing can transfer electrons from one material to another.",
+          "mediaPoints": [
+            "Electrons are negatively charged.",
+            "The object gaining electrons becomes negatively charged.",
+            "The other material is left more positively charged."
+          ],
+          "presentation": "media-diagram-base"
+        },
+        {
+          "src": "assets/webp/9J-static-charge-attraction-repulsion-card.webp",
+          "alt": "Opposite charges moving toward each other and like charges moving away from each other.",
+          "mediaTitle": "Attraction and repulsion",
+          "mediaLead": "Charges affect each other without touching.",
+          "mediaPoints": [
+            "Opposite charges attract.",
+            "Like charges repel.",
+            "The arrows show the direction of the force."
+          ],
+          "presentation": "media-diagram-base"
         }
       ]
     },
@@ -1073,8 +1422,8 @@ window.YEAR9_NOTES = {
           "caption": "Use this chart to connect physical circuit equipment with the symbols used in circuit diagrams."
         },
         {
-          "src": "assets/webp/9J-series-parallel-current-voltage.webp",
-          "alt": "Infographic comparing series and parallel circuits, including current and voltage behaviour.",
+          "src": "assets/diagrams/9J-series-parallel-current-voltage.svg",
+          "alt": "Clean comparison diagram showing current and voltage behaviour in series and parallel circuits.",
           "caption": "Series circuits have the same current everywhere and share voltage. Parallel circuits split current between branches and have the same voltage across each branch."
         }
       ]
@@ -1121,12 +1470,32 @@ window.YEAR9_NOTES = {
         {
           "src": "assets/diagrams/9J-current-voltage-graph.svg",
           "alt": "Current-voltage graph comparing two resistors.",
-          "caption": "A shallower current-voltage line means higher resistance."
+          "caption": "A shallower current-voltage line means higher resistance.",
+          "mediaTitle": "Current–voltage graphs",
+          "mediaLead": "A steeper line means more current for the same voltage, so resistance is lower.",
+          "mediaPoints": [
+            "Steeper line = lower resistance",
+            "Shallower line = higher resistance"
+          ],
+          "presentation": "media-diagram-base"
         },
         {
           "src": "assets/webp/9E-conductors-insulators-materials.webp",
           "alt": "Copper beside insulating materials such as plastic, wood and rubber.",
           "caption": "Copper is a good conductor; plastic, wood and rubber are high-resistance insulators."
+        },
+        {
+          "src": "assets/diagrams/9J-wire-resistance-investigation.svg",
+          "alt": "Circuit investigation showing a test wire connected with an ammeter and voltmeter.",
+          "caption": "Resistance investigations can change the length or thickness of a test wire while measuring current and voltage.",
+          "mediaTitle": "Wire resistance investigation",
+          "mediaLead": "Changing wire length or thickness changes resistance.",
+          "mediaPoints": [
+            "longer wire usually gives higher resistance",
+            "thicker wire usually gives lower resistance",
+            "ammeter in series, voltmeter in parallel"
+          ],
+          "presentation": "media-diagram-base"
         }
       ]
     },
@@ -1171,9 +1540,25 @@ window.YEAR9_NOTES = {
       "practicePrompt": "Pick one linked revision card for Electromagnets, relays and motors and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
       "media": [
         {
-          "src": "assets/webp/9J-electromagnets-relays-motor-effect-sequence.webp",
-          "alt": "Three-panel infographic linking electromagnets, relays and the motor effect.",
-          "caption": "An electromagnet creates a magnetic field from current. Relays use this to switch another circuit, and motors use the force on a current-carrying wire."
+          "src": "assets/webp/9J-electromagnet-relay-motor-overview-base.webp",
+          "alt": "Three-panel overview showing an electromagnet, a relay and a motor-effect setup.",
+          "caption": "Current in a coil makes an electromagnet; relays use electromagnets to switch circuits; the motor effect is a force on a current-carrying wire in a magnetic field.",
+          "mediaTitle": "Electromagnets, relays and motors",
+          "mediaLead": "All three depend on magnetic fields made or used by electric current.",
+          "mediaPoints": [
+            "Electromagnet: current in a coil creates a magnetic field",
+            "Relay: an electromagnet switches another circuit",
+            "Motor effect: a current-carrying wire in a magnetic field feels a force"
+          ],
+          "presentation": "media-image-base"
+        },
+        {
+          "src": "assets/webp/9J-motor-effect-concept-labeled.webp",
+          "alt": "Motor-effect diagram showing a wire between north and south poles with magnetic field, current and force directions.",
+          "caption": "In the motor effect, a current-carrying wire in a magnetic field experiences a force.",
+          "presentation": "media-image-base",
+          "mediaTitle": "Motor effect",
+          "mediaLead": "The force direction depends on the directions of the magnetic field and the current."
         }
       ]
     }

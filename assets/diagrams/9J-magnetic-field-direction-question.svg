@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" role="img" aria-labelledby="title desc">
+  <title id="title">Magnetic field direction options</title>
+  <desc id="desc">A bar magnet with four labelled arrow options showing possible field directions outside the magnet.</desc>
+
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#2563eb" />
+    </marker>
+    <marker id="arrowDark" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#334155" />
+    </marker>
+    <style>
+      .bg{fill:#f8fafc}.panel{fill:white;stroke:#cbd5e1;stroke-width:2}.title{font:700 24px system-ui,Arial;fill:#0f172a}.label{font:700 18px system-ui,Arial;fill:#0f172a}.small{font:600 14px system-ui,Arial;fill:#334155}.tiny{font:600 12px system-ui,Arial;fill:#475569}.line{stroke:#2563eb;stroke-width:3;fill:none;stroke-linecap:round}.dark{stroke:#334155;stroke-width:3;fill:none;stroke-linecap:round}.wire{stroke:#334155;stroke-width:4;fill:none;stroke-linecap:round;stroke-linejoin:round}.option{fill:#e0f2fe;stroke:#0284c7;stroke-width:2}.magN{fill:#ef4444}.magS{fill:#3b82f6}.metal{fill:#e2e8f0;stroke:#64748b;stroke-width:2}.charge{font:700 22px system-ui,Arial;fill:#0f172a}.plus{fill:#dc2626}.minus{fill:#2563eb}
+    </style>
+  </defs>
+
+  <rect class="bg" width="900" height="520" rx="24"/>
+  <text class="title" x="42" y="52">Magnetic field direction</text>
+  <rect class="panel" x="40" y="80" width="820" height="385" rx="18"/>
+  <rect x="330" y="220" width="240" height="82" rx="16" fill="#f1f5f9" stroke="#64748b" stroke-width="2"/>
+  <rect class="magN" x="330" y="220" width="120" height="82" rx="16"/>
+  <path d="M450 220h1v82h-1z" fill="#ffffff" opacity="0.55"/>
+  <rect class="magS" x="450" y="220" width="120" height="82" rx="16"/>
+  <text class="label" x="382" y="271" text-anchor="middle" fill="#fff">N</text>
+  <text class="label" x="510" y="271" text-anchor="middle" fill="#fff">S</text>
+  <path class="line" d="M340 202 C250 130 650 130 560 202"/>
+  <path class="line" d="M340 320 C250 390 650 390 560 320"/>
+  <circle class="option" cx="238" cy="164" r="26"/><text class="label" x="238" y="171" text-anchor="middle">A</text>
+  <path class="dark" d="M282 163h85" marker-end="url(#arrowDark)"/>
+  <circle class="option" cx="662" cy="164" r="26"/><text class="label" x="662" y="171" text-anchor="middle">B</text>
+  <path class="dark" d="M618 163h-85" marker-end="url(#arrowDark)"/>
+  <circle class="option" cx="238" cy="365" r="26"/><text class="label" x="238" y="372" text-anchor="middle">C</text>
+  <path class="dark" d="M282 366h85" marker-end="url(#arrowDark)"/>
+  <circle class="option" cx="662" cy="365" r="26"/><text class="label" x="662" y="372" text-anchor="middle">D</text>
+  <path class="dark" d="M618 366h-85" marker-end="url(#arrowDark)"/>
+</svg>

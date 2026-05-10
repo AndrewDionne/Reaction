@@ -1,20 +1,23 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" role="img" aria-labelledby="title desc">
-<title id="title">Source-style distance-time graph with labelled sections V W X Y Z</title>
-<desc id="desc">A distance-time graph divided into labelled sections V, W, X, Y and Z. W and Y are horizontal stopped sections.</desc>
-<rect width="900" height="560" fill="#fff"/>
-<rect x="50" y="40" width="800" height="480" rx="22" fill="#fbfdff" stroke="#c7d3e0" stroke-width="2"/>
-<text x="92" y="94" font-family="Arial" font-size="30" font-weight="700" fill="#213547">Distance–time graph</text>
-<text x="92" y="126" font-family="Arial" font-size="18" fill="#4d6378">A horizontal section shows that distance is not changing, so the object has stopped.</text>
-<line x1="135" y1="430" x2="760" y2="430" stroke="#2d3b49" stroke-width="3"/>
-<line x1="135" y1="430" x2="135" y2="165" stroke="#2d3b49" stroke-width="3"/>
-<text x="450" y="485" text-anchor="middle" font-family="Arial" font-size="21" fill="#34495e">time</text>
-<text x="70" y="310" transform="rotate(-90 70 310)" text-anchor="middle" font-family="Arial" font-size="21" fill="#34495e">distance</text>
-<g stroke="#d9e2ec" stroke-width="1.5"><line x1="135" y1="365" x2="760" y2="365"/><line x1="135" y1="300" x2="760" y2="300"/><line x1="135" y1="235" x2="760" y2="235"/><line x1="255" y1="165" x2="255" y2="430"/><line x1="375" y1="165" x2="375" y2="430"/><line x1="495" y1="165" x2="495" y2="430"/><line x1="615" y1="165" x2="615" y2="430"/></g>
-<path d="M155 405 L255 315 L375 315 L495 230 L615 230 L730 185" fill="none" stroke="#1f78d1" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
-<g font-family="Arial" font-size="24" font-weight="700" fill="#1f2937" text-anchor="middle">
-<text x="200" y="350">V</text><text x="315" y="300">W</text><text x="435" y="268">X</text><text x="555" y="215">Y</text><text x="675" y="198">Z</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" role="img">
+<rect width="900" height="560" fill="#ffffff"/>
+<defs>
+<style>
+.t{font-family:Arial,Helvetica,sans-serif;fill:#243447}
+.label{font-family:Arial,Helvetica,sans-serif;font-size:22px;font-weight:700;fill:#243447}
+.small{font-family:Arial,Helvetica,sans-serif;font-size:17px;fill:#43576b}
+.axis{stroke:#2f3f4f;stroke-width:3;fill:none;stroke-linecap:round}
+.grid{stroke:#d7e0ea;stroke-width:2}
+.line{stroke:#2e86de;stroke-width:7;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.wire{stroke:#43576b;stroke-width:4.5;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.tile{fill:#ffffff;stroke:#d7e0ea;stroke-width:2}
+</style>
+</defs>
+<rect x="50" y="40" width="800" height="480" rx="24" fill="#fbfdff" stroke="#d8e1ea" stroke-width="2"/>
+<g transform="translate(110 105)">
+<line class="axis" x1="80" y1="360" x2="720" y2="360"/><line class="axis" x1="80" y1="360" x2="80" y2="70"/>
+<g class="grid"><line x1="80" y1="290" x2="720" y2="290"/><line x1="80" y1="220" x2="720" y2="220"/><line x1="80" y1="150" x2="720" y2="150"/><line x1="210" y1="70" x2="210" y2="360"/><line x1="340" y1="70" x2="340" y2="360"/><line x1="470" y1="70" x2="470" y2="360"/><line x1="600" y1="70" x2="600" y2="360"/></g>
+<path class="line" d="M100 335 L210 245 H340 L470 145 H600 L720 95"/>
+<text class="label" x="155" y="270" text-anchor="middle">V</text><text class="label" x="275" y="225" text-anchor="middle">W</text><text class="label" x="405" y="170" text-anchor="middle">X</text><text class="label" x="535" y="125" text-anchor="middle">Y</text><text class="label" x="660" y="105" text-anchor="middle">Z</text>
+<text class="label" x="400" y="420" text-anchor="middle">time</text><text class="label" x="20" y="220" transform="rotate(-90 20 220)" text-anchor="middle">distance</text>
 </g>
-<rect x="560" y="350" width="215" height="70" rx="16" fill="#fff" stroke="#c7d3e0" stroke-width="2"/>
-<text x="578" y="378" font-family="Arial" font-size="17" font-weight="700" fill="#213547">Stopped sections</text>
-<text x="578" y="402" font-family="Arial" font-size="17" fill="#4d6378">Flat sections W and Y show no change in distance.</text>
 </svg>

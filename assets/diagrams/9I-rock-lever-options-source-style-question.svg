@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 430" role="img" aria-labelledby="title desc">
+  <title>Question diagram</title>
+  <desc>Neutral Year 9 science diagram for a live question.</desc>
+  <defs>
+    <style>
+      .bg { fill: #fbfff8; }
+      .panel { fill: #ffffff; stroke: #d6e5d2; stroke-width: 2; }
+      .axis { stroke: #475569; stroke-width: 3; stroke-linecap: round; }
+      .grid { stroke: #e2e8f0; stroke-width: 1.5; }
+      .line { fill: none; stroke: #2563eb; stroke-width: 5; stroke-linecap: round; stroke-linejoin: round; }
+      .green { fill: #86d18d; stroke: #327a3c; stroke-width: 3; }
+      .blue { fill: #bfdbfe; stroke: #2563eb; stroke-width: 3; }
+      .orange { fill: #fed7aa; stroke: #ea580c; stroke-width: 3; }
+      .yellow { fill: #fde68a; stroke: #ca8a04; stroke-width: 3; }
+      .red { fill: #fecaca; stroke: #dc2626; stroke-width: 3; }
+      .grey { fill: #e5e7eb; stroke: #64748b; stroke-width: 3; }
+      .text { font-family: Arial, Helvetica, sans-serif; fill: #0f172a; font-size: 22px; font-weight: 700; }
+      .small { font-family: Arial, Helvetica, sans-serif; fill: #334155; font-size: 17px; font-weight: 600; }
+      .label { font-family: Arial, Helvetica, sans-serif; fill: #111827; font-size: 26px; font-weight: 800; }
+      .muted { fill: #64748b; }
+      .arrow { stroke: #334155; stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; marker-end: url(#arrow); }
+      .thin { stroke-width: 2.5; }
+      .wire { fill: none; stroke: #334155; stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; }
+      .chain { fill: none; stroke: #7c3aed; stroke-width: 4; stroke-linecap: round; }
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#334155" />
+    </marker>
+    <marker id="redArrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#dc2626" />
+    </marker>
+    <marker id="blueArrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#2563eb" />
+    </marker>
+  </defs>
+  <rect width="760" height="430" rx="26" class="bg" />
+  <rect x="24" y="24" width="712" height="382" rx="22" class="panel" />
+
+  <g transform="translate(46 68)">
+    <g transform="translate(0 0)">
+      <text class="label" x="92" y="28">A</text>
+      <ellipse class="grey" cx="38" cy="168" rx="30" ry="24" />
+      <rect fill="#c08457" stroke="#92400e" stroke-width="3" x="46" y="150" width="120" height="16" rx="8" />
+      <polygon class="blue" points="116,166 136,216 96,216" />
+      <circle class="red" cx="170" cy="146" r="18" />
+    </g>
+    <g transform="translate(170 0)">
+      <text class="label" x="92" y="28">B</text>
+      <ellipse class="grey" cx="46" cy="168" rx="30" ry="24" />
+      <rect fill="#c08457" stroke="#92400e" stroke-width="3" x="54" y="150" width="120" height="16" rx="8" />
+      <polygon class="blue" points="78,166 98,216 58,216" />
+      <circle class="red" cx="178" cy="146" r="18" />
+    </g>
+    <g transform="translate(340 0)">
+      <text class="label" x="92" y="28">C</text>
+      <ellipse class="grey" cx="46" cy="168" rx="30" ry="24" />
+      <rect fill="#c08457" stroke="#92400e" stroke-width="3" x="54" y="150" width="120" height="16" rx="8" />
+      <polygon class="blue" points="142,166 162,216 122,216" />
+      <circle class="red" cx="178" cy="146" r="18" />
+    </g>
+    <g transform="translate(510 0)">
+      <text class="label" x="92" y="28">D</text>
+      <ellipse class="grey" cx="42" cy="168" rx="30" ry="24" />
+      <rect fill="#c08457" stroke="#92400e" stroke-width="3" x="50" y="150" width="120" height="16" rx="8" />
+      <polygon class="blue" points="64,166 84,216 44,216" />
+      <circle class="red" cx="176" cy="146" r="18" />
+    </g>
+  </g>
+
+</svg>

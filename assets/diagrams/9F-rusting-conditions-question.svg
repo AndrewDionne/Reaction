@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" role="img" aria-labelledby="title desc">
+<title id="title">Rusting conditions question diagram</title>
+<desc id="desc">A question-safe diagram comparing rusting conditions for iron nails.</desc>
+<rect width="900" height="560" fill="#ffffff"/>
+
+<style>
+  .title{font-family:Arial,Helvetica,sans-serif;font-size:30px;font-weight:700;fill:#243447}
+  .sub{font-family:Arial,Helvetica,sans-serif;font-size:18px;fill:#43576b}
+  .label{font-family:Arial,Helvetica,sans-serif;font-size:22px;font-weight:700;fill:#243447}
+  .text{font-family:Arial,Helvetica,sans-serif;font-size:20px;fill:#243447}
+  .small{font-family:Arial,Helvetica,sans-serif;font-size:16px;fill:#43576b}
+  .letter{font-family:Arial,Helvetica,sans-serif;font-size:24px;font-weight:700;fill:#ffffff}
+  .box{fill:#fbfdff;stroke:#c7d3e0;stroke-width:2}
+  .blue{fill:#e3f2fd;stroke:#7aa7d9;stroke-width:3}
+  .green{fill:#e8f5e9;stroke:#7db77d;stroke-width:3}
+  .amber{fill:#fff5d7;stroke:#d6b656;stroke-width:3}
+  .red{fill:#fde8e8;stroke:#d18c8c;stroke-width:3}
+  .purple{fill:#f0e8ff;stroke:#9b83d9;stroke-width:3}
+  .grey{fill:#f4f6f8;stroke:#aeb9c5;stroke-width:3}
+  .line{stroke:#243447;stroke-width:4;fill:none;stroke-linecap:round;stroke-linejoin:round}
+</style>
+
+
+<rect x="50" y="35" width="800" height="490" rx="24" class="box"/>
+<text x="90" y="88" class="title">Rusting conditions</text>
+<text x="90" y="120" class="sub">Four iron nails are left in different conditions.</text>
+<g transform="translate(90 175)">
+  <g>
+    <circle cx="30" cy="18" r="24" fill="#2f6fad"/><text x="30" y="26" text-anchor="middle" class="letter">A</text>
+    <rect x="0" y="50" width="150" height="190" rx="18" class="blue"/>
+    <line x1="75" y1="75" x2="75" y2="170" stroke="#777" stroke-width="9"/>
+    <text x="75" y="270" text-anchor="middle" class="text">dry air</text>
+  </g>
+  <g transform="translate(190 0)">
+    <circle cx="30" cy="18" r="24" fill="#2f6fad"/><text x="30" y="26" text-anchor="middle" class="letter">B</text>
+    <rect x="0" y="50" width="150" height="190" rx="18" class="green"/>
+    <line x1="75" y1="75" x2="75" y2="170" stroke="#777" stroke-width="9"/>
+    <path d="M20 145 C55 128 95 165 130 145 L130 215 L20 215 Z" fill="#8fd0ff" opacity="0.75"/>
+    <text x="75" y="270" text-anchor="middle" class="text">water + air</text>
+  </g>
+  <g transform="translate(380 0)">
+    <circle cx="30" cy="18" r="24" fill="#2f6fad"/><text x="30" y="26" text-anchor="middle" class="letter">C</text>
+    <rect x="0" y="50" width="150" height="190" rx="18" class="amber"/>
+    <line x1="75" y1="75" x2="75" y2="170" stroke="#777" stroke-width="9"/>
+    <path d="M20 145 C55 128 95 165 130 145 L130 215 L20 215 Z" fill="#8fd0ff" opacity="0.75"/>
+    <rect x="20" y="92" width="110" height="22" fill="#f2c66d" opacity="0.8"/>
+    <text x="75" y="270" text-anchor="middle" class="text">oil layer</text>
+  </g>
+  <g transform="translate(570 0)">
+    <circle cx="30" cy="18" r="24" fill="#2f6fad"/><text x="30" y="26" text-anchor="middle" class="letter">D</text>
+    <rect x="0" y="50" width="150" height="190" rx="18" class="purple"/>
+    <line x1="75" y1="75" x2="75" y2="170" stroke="#777" stroke-width="9"/>
+    <path d="M20 145 C55 128 95 165 130 145 L130 215 L20 215 Z" fill="#8fd0ff" opacity="0.75"/>
+    <text x="75" y="270" text-anchor="middle" class="text">boiled water</text>
+  </g>
+</g>
+
+</svg>

@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 430" role="img" aria-labelledby="title desc">
+  <title>Question diagram</title>
+  <desc>Neutral Year 9 science diagram for a live question.</desc>
+  <defs>
+    <style>
+      .bg { fill: #fbfff8; } .panel { fill:#ffffff; stroke:#d6e5d2; stroke-width:2; } .axis { stroke:#475569; stroke-width:3; stroke-linecap:round; stroke-linejoin:round; fill:none; } .blue { fill:#bfdbfe; stroke:#2563eb; stroke-width:3; } .green { fill:#86d18d; stroke:#327a3c; stroke-width:3; } .yellow { fill:#fde68a; stroke:#ca8a04; stroke-width:3; } .orange { fill:#fed7aa; stroke:#ea580c; stroke-width:3; } .grey { fill:#e5e7eb; stroke:#64748b; stroke-width:3; } .text { font-family:Arial,Helvetica,sans-serif; fill:#0f172a; font-size:22px; font-weight:700; } .small { font-family:Arial,Helvetica,sans-serif; fill:#334155; font-size:17px; font-weight:600; } .label { font-family:Arial,Helvetica,sans-serif; fill:#111827; font-size:26px; font-weight:800; } .arrow { stroke:#334155; stroke-width:4; stroke-linecap:round; stroke-linejoin:round; fill:none; marker-end:url(#arrow); }
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#334155" /></marker>
+    <marker id="redArrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#dc2626" /></marker>
+    <marker id="blueArrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#2563eb" /></marker>
+  </defs>
+  <rect width="760" height="430" rx="26" class="bg" />
+  <rect x="24" y="24" width="712" height="382" rx="22" class="panel" />
+
+  <g transform="translate(70 60)">
+    <rect class="blue" x="215" y="0" width="260" height="58" rx="18" />
+    <text class="text" x="245" y="37">carbon dioxide in air</text>
+    <rect class="green" x="0" y="150" width="140" height="58" rx="18" />
+    <text class="text" x="40" y="188">plants</text>
+    <rect class="yellow" x="255" y="150" width="140" height="58" rx="18" />
+    <text class="text" x="289" y="188">animals</text>
+    <rect class="grey" x="520" y="150" width="140" height="58" rx="18" />
+    <text class="text" x="547" y="188">dead</text>
+    <text class="small" x="540" y="210">material</text>
+    <rect class="orange" x="215" y="292" width="250" height="58" rx="18" />
+    <text class="text" x="265" y="329">fossil fuels</text>
+    <path class="arrow" d="M 270 58 C 218 86, 164 114, 112 146" />
+    <text class="label" x="176" y="106">A</text>
+    <line class="arrow" x1="142" y1="179" x2="244" y2="179" />
+    <text class="label" x="190" y="163">B</text>
+    <line class="arrow" x1="398" y1="179" x2="510" y2="179" />
+    <text class="label" x="452" y="163">C</text>
+    <path class="arrow" d="M 560 213 C 528 250, 492 276, 455 298" />
+    <text class="label" x="512" y="267">D</text>
+    <path class="arrow" d="M 465 318 C 620 300, 645 70, 482 36" />
+    <text class="label" x="620" y="286">E</text>
+    <path class="arrow" d="M 264 150 C 300 112, 320 84, 336 62" />
+    <text class="label" x="280" y="112">F</text>
+  </g>
+
+</svg>

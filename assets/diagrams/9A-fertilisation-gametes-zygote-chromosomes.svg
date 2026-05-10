@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+<title id="title">Fertilisation, gametes and chromosome number</title>
+<desc id="desc">Sperm and egg cells each have 23 chromosomes; fertilisation forms a zygote with 46 chromosomes.</desc>
+<rect width="1600" height="1000" fill="#ffffff"/><defs>
+  <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M2 2 L10 6 L2 10 Z" fill="#30465f"/></marker>
+  <marker id="arrowBlue" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M2 2 L10 6 L2 10 Z" fill="#2563eb"/></marker>
+  <marker id="arrowOrange" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M2 2 L10 6 L2 10 Z" fill="#ea580c"/></marker>
+  <marker id="arrowRed" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M2 2 L10 6 L2 10 Z" fill="#dc2626"/></marker>
+  <marker id="arrowGreen" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M2 2 L10 6 L2 10 Z" fill="#15803d"/></marker>
+  <style>
+  .title{font-family:Arial,Helvetica,sans-serif;font-size:52px;font-weight:800;fill:#1f2f46}
+  .sub{font-family:Arial,Helvetica,sans-serif;font-size:28px;fill:#52667a}
+  .label{font-family:Arial,Helvetica,sans-serif;font-size:34px;font-weight:750;fill:#223247}
+  .text{font-family:Arial,Helvetica,sans-serif;font-size:29px;fill:#223247}
+  .small{font-family:Arial,Helvetica,sans-serif;font-size:24px;fill:#516477}
+  .tiny{font-family:Arial,Helvetica,sans-serif;font-size:20px;fill:#516477}
+  .badgeText{font-family:Arial,Helvetica,sans-serif;font-size:34px;font-weight:800;fill:#ffffff}
+  .card{fill:#fbfdff;stroke:#c7d3e0;stroke-width:4}
+  .panelBlue{fill:#eaf5ff;stroke:#78aee3;stroke-width:4}
+  .panelGreen{fill:#e9f7ef;stroke:#69b984;stroke-width:4}
+  .panelAmber{fill:#fff6dc;stroke:#d8b957;stroke-width:4}
+  .panelGrey{fill:#f4f7fa;stroke:#bac6d1;stroke-width:4}
+  .panelRed{fill:#fff0ef;stroke:#d59088;stroke-width:4}
+  .wire{stroke:#30465f;stroke-width:8;fill:none;stroke-linecap:round;stroke-linejoin:round}
+  .line{stroke:#30465f;stroke-width:7;fill:none;stroke-linecap:round;stroke-linejoin:round}
+  .thin{stroke:#516477;stroke-width:4;fill:none;stroke-linecap:round;stroke-linejoin:round}
+  .arrow{stroke:#30465f;stroke-width:7;fill:none;stroke-linecap:round;stroke-linejoin:round;marker-end:url(#arrow)}
+  .arrowBlue{stroke:#2563eb;stroke-width:8;fill:none;stroke-linecap:round;stroke-linejoin:round;marker-end:url(#arrowBlue)}
+  .arrowOrange{stroke:#ea580c;stroke-width:8;fill:none;stroke-linecap:round;stroke-linejoin:round;marker-end:url(#arrowOrange)}
+  .arrowRed{stroke:#dc2626;stroke-width:8;fill:none;stroke-linecap:round;stroke-linejoin:round;marker-end:url(#arrowRed)}
+  .arrowGreen{stroke:#15803d;stroke-width:8;fill:none;stroke-linecap:round;stroke-linejoin:round;marker-end:url(#arrowGreen)}
+</style>
+</defs>
+<rect x="70" y="60" width="1460" height="880" rx="38" class="card"/>
+<text x="130" y="145" class="title">Gametes and fertilisation</text>
+<g transform="translate(150 270)">
+  <rect x="0" y="0" width="360" height="445" rx="38" class="panelBlue"/>
+  <circle cx="180" cy="185" r="82" fill="#bfdbfe" stroke="#3b82f6" stroke-width="6"/>
+  <path d="M262 185 C350 180 395 140 445 115" class="thin"/>
+  <text x="180" y="335" text-anchor="middle" class="label">sperm cell</text>
+  <text x="180" y="382" text-anchor="middle" class="text">23 chromosomes</text>
+</g>
+<text x="560" y="520" text-anchor="middle" class="title">+</text>
+<g transform="translate(620 270)">
+  <rect x="0" y="0" width="360" height="445" rx="38" class="panelGreen"/>
+  <circle cx="180" cy="185" r="105" fill="#dcfce7" stroke="#22c55e" stroke-width="6"/>
+  <circle cx="180" cy="185" r="38" fill="#bbf7d0" stroke="#16a34a" stroke-width="5"/>
+  <text x="180" y="335" text-anchor="middle" class="label">egg cell</text>
+  <text x="180" y="382" text-anchor="middle" class="text">23 chromosomes</text>
+</g>
+<path class="arrow" d="M1015 492 H1110"/>
+<g transform="translate(1120 270)">
+  <rect x="0" y="0" width="360" height="445" rx="38" class="panelAmber"/>
+  <circle cx="180" cy="185" r="105" fill="#fef3c7" stroke="#f59e0b" stroke-width="6"/>
+  <circle cx="180" cy="185" r="52" fill="#fde68a" stroke="#d97706" stroke-width="5"/>
+  <text x="180" y="335" text-anchor="middle" class="label">zygote</text>
+  <text x="180" y="382" text-anchor="middle" class="text">46 chromosomes</text>
+</g>
+</svg>

@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+<title id="title">Exothermic and endothermic energy profiles</title>
+<desc id="desc">Two energy profile graphs comparing exothermic and endothermic reactions.</desc>
+<rect width="1600" height="1000" fill="#ffffff"/><defs>
+  <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M2 2 L10 6 L2 10 Z" fill="#30465f"/></marker>
+  <marker id="arrowBlue" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M2 2 L10 6 L2 10 Z" fill="#2563eb"/></marker>
+  <marker id="arrowOrange" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M2 2 L10 6 L2 10 Z" fill="#ea580c"/></marker>
+  <marker id="arrowRed" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M2 2 L10 6 L2 10 Z" fill="#dc2626"/></marker>
+  <marker id="arrowGreen" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M2 2 L10 6 L2 10 Z" fill="#15803d"/></marker>
+  <style>
+  .title{font-family:Arial,Helvetica,sans-serif;font-size:52px;font-weight:800;fill:#1f2f46}
+  .sub{font-family:Arial,Helvetica,sans-serif;font-size:28px;fill:#52667a}
+  .label{font-family:Arial,Helvetica,sans-serif;font-size:34px;font-weight:750;fill:#223247}
+  .text{font-family:Arial,Helvetica,sans-serif;font-size:29px;fill:#223247}
+  .small{font-family:Arial,Helvetica,sans-serif;font-size:24px;fill:#516477}
+  .tiny{font-family:Arial,Helvetica,sans-serif;font-size:20px;fill:#516477}
+  .badgeText{font-family:Arial,Helvetica,sans-serif;font-size:34px;font-weight:800;fill:#ffffff}
+  .card{fill:#fbfdff;stroke:#c7d3e0;stroke-width:4}
+  .panelBlue{fill:#eaf5ff;stroke:#78aee3;stroke-width:4}
+  .panelGreen{fill:#e9f7ef;stroke:#69b984;stroke-width:4}
+  .panelAmber{fill:#fff6dc;stroke:#d8b957;stroke-width:4}
+  .panelGrey{fill:#f4f7fa;stroke:#bac6d1;stroke-width:4}
+  .panelRed{fill:#fff0ef;stroke:#d59088;stroke-width:4}
+  .wire{stroke:#30465f;stroke-width:8;fill:none;stroke-linecap:round;stroke-linejoin:round}
+  .line{stroke:#30465f;stroke-width:7;fill:none;stroke-linecap:round;stroke-linejoin:round}
+  .thin{stroke:#516477;stroke-width:4;fill:none;stroke-linecap:round;stroke-linejoin:round}
+  .arrow{stroke:#30465f;stroke-width:7;fill:none;stroke-linecap:round;stroke-linejoin:round;marker-end:url(#arrow)}
+  .arrowBlue{stroke:#2563eb;stroke-width:8;fill:none;stroke-linecap:round;stroke-linejoin:round;marker-end:url(#arrowBlue)}
+  .arrowOrange{stroke:#ea580c;stroke-width:8;fill:none;stroke-linecap:round;stroke-linejoin:round;marker-end:url(#arrowOrange)}
+  .arrowRed{stroke:#dc2626;stroke-width:8;fill:none;stroke-linecap:round;stroke-linejoin:round;marker-end:url(#arrowRed)}
+  .arrowGreen{stroke:#15803d;stroke-width:8;fill:none;stroke-linecap:round;stroke-linejoin:round;marker-end:url(#arrowGreen)}
+</style>
+</defs>
+<rect x="70" y="60" width="1460" height="880" rx="38" class="card"/>
+<text x="130" y="145" class="title">Energy changes in reactions</text>
+<g transform="translate(140 245)">
+  <rect x="0" y="0" width="620" height="600" rx="42" class="panelRed"/>
+  <text x="310" y="65" text-anchor="middle" class="label">Exothermic</text>
+  <path class="thin" d="M120 500 V140 H525"/><text x="80" y="330" class="small" transform="rotate(-90 80 330)">energy</text><text x="300" y="548" text-anchor="middle" class="small">reaction progress</text>
+  <path d="M145 260 C260 260 275 150 370 210 C420 240 430 360 505 360" fill="none" stroke="#dc2626" stroke-width="8" stroke-linecap="round"/>
+  <line x1="155" y1="260" x2="245" y2="260" stroke="#334155" stroke-width="5"/><text x="250" y="248" class="small">reactants</text>
+  <line x1="410" y1="360" x2="500" y2="360" stroke="#334155" stroke-width="5"/><text x="330" y="372" class="small">products</text>
+  <path class="arrowRed" d="M535 260 V355"/>
+</g>
+<g transform="translate(840 245)">
+  <rect x="0" y="0" width="620" height="600" rx="42" class="panelBlue"/>
+  <text x="310" y="65" text-anchor="middle" class="label">Endothermic</text>
+  <path class="thin" d="M120 500 V140 H525"/><text x="80" y="330" class="small" transform="rotate(-90 80 330)">energy</text><text x="300" y="548" text-anchor="middle" class="small">reaction progress</text>
+  <path d="M145 360 C250 360 275 170 365 220 C425 255 435 260 505 260" fill="none" stroke="#2563eb" stroke-width="8" stroke-linecap="round"/>
+  <line x1="155" y1="360" x2="245" y2="360" stroke="#334155" stroke-width="5"/><text x="250" y="372" class="small">reactants</text>
+  <line x1="410" y1="260" x2="500" y2="260" stroke="#334155" stroke-width="5"/><text x="330" y="248" class="small">products</text>
+  <path class="arrowBlue" d="M535 360 V265"/>
+</g>
+</svg>

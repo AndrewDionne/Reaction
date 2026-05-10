@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" role="img" aria-labelledby="title desc">
+<title id="title">Percentage mass loss question diagram</title>
+<desc id="desc">A question-safe mass change diagram for calculating percentage loss.</desc>
+<rect width="900" height="560" fill="#ffffff"/>
+
+<style>
+  .title{font-family:Arial,Helvetica,sans-serif;font-size:30px;font-weight:700;fill:#243447}
+  .sub{font-family:Arial,Helvetica,sans-serif;font-size:18px;fill:#43576b}
+  .label{font-family:Arial,Helvetica,sans-serif;font-size:22px;font-weight:700;fill:#243447}
+  .text{font-family:Arial,Helvetica,sans-serif;font-size:20px;fill:#243447}
+  .small{font-family:Arial,Helvetica,sans-serif;font-size:16px;fill:#43576b}
+  .letter{font-family:Arial,Helvetica,sans-serif;font-size:24px;font-weight:700;fill:#ffffff}
+  .box{fill:#fbfdff;stroke:#c7d3e0;stroke-width:2}
+  .blue{fill:#e3f2fd;stroke:#7aa7d9;stroke-width:3}
+  .green{fill:#e8f5e9;stroke:#7db77d;stroke-width:3}
+  .amber{fill:#fff5d7;stroke:#d6b656;stroke-width:3}
+  .red{fill:#fde8e8;stroke:#d18c8c;stroke-width:3}
+  .purple{fill:#f0e8ff;stroke:#9b83d9;stroke-width:3}
+  .grey{fill:#f4f6f8;stroke:#aeb9c5;stroke-width:3}
+  .line{stroke:#243447;stroke-width:4;fill:none;stroke-linecap:round;stroke-linejoin:round}
+</style>
+
+
+<rect x="50" y="35" width="800" height="490" rx="24" class="box"/>
+<text x="90" y="88" class="title">Percentage mass loss</text>
+<text x="90" y="120" class="sub">Use the starting and final masses to calculate the percentage change.</text>
+<g transform="translate(115 170)">
+  <rect x="0" y="0" width="250" height="210" rx="22" class="amber"/>
+  <text x="125" y="44" text-anchor="middle" class="label">Before heating</text>
+  <rect x="60" y="95" width="130" height="55" rx="10" fill="#4d2c91" stroke="#2d1760" stroke-width="3"/>
+  <text x="125" y="132" text-anchor="middle" fill="#fff" font-family="Arial" font-size="20">copper oxide</text>
+  <text x="125" y="178" text-anchor="middle" class="label">80 g</text>
+</g>
+<text x="450" y="280" text-anchor="middle" font-family="Arial" font-size="56" fill="#243447">→</text>
+<g transform="translate(535 170)">
+  <rect x="0" y="0" width="250" height="210" rx="22" class="green"/>
+  <text x="125" y="44" text-anchor="middle" class="label">After reaction</text>
+  <rect x="70" y="95" width="110" height="55" rx="10" fill="#b87333" stroke="#7a4d21" stroke-width="3"/>
+  <text x="125" y="132" text-anchor="middle" class="text">copper</text>
+  <text x="125" y="178" text-anchor="middle" class="label">64 g</text>
+</g>
+<rect x="180" y="430" width="540" height="55" rx="16" fill="#ffffff" stroke="#c7d3e0" stroke-width="2"/>
+<text x="450" y="465" text-anchor="middle" class="text">percentage change = actual change ÷ original mass × 100</text>
+
+</svg>

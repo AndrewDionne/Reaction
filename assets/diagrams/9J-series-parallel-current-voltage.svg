@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+<title id="title">Series and parallel current and voltage rules</title>
+<desc id="desc">A clearer side-by-side comparison of series and parallel circuits with correct cell symbols and clearer parallel layout.</desc>
+<rect width="1600" height="1000" fill="#ffffff"/>
+<defs>
+  <marker id="arrowBlue" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M2 2 L10 6 L2 10 Z" fill="#2563eb"/></marker>
+<style>
+  .title{font-family:Arial,Helvetica,sans-serif;font-size:52px;font-weight:800;fill:#1f2f46}
+  .sub{font-family:Arial,Helvetica,sans-serif;font-size:28px;fill:#52667a}
+  .label{font-family:Arial,Helvetica,sans-serif;font-size:32px;font-weight:750;fill:#223247}
+  .text{font-family:Arial,Helvetica,sans-serif;font-size:26px;fill:#223247}
+  .small{font-family:Arial,Helvetica,sans-serif;font-size:22px;fill:#516477}
+  .tiny{font-family:Arial,Helvetica,sans-serif;font-size:19px;fill:#516477}
+  .badgeText{font-family:Arial,Helvetica,sans-serif;font-size:30px;font-weight:800;fill:#ffffff}
+  .card{fill:#fbfdff;stroke:#c7d3e0;stroke-width:4}
+  .panelBlue{fill:#eef6ff;stroke:#93c5fd;stroke-width:4}
+  .panelGreen{fill:#eefbf3;stroke:#9bd0a6;stroke-width:4}
+  .panelAmber{fill:#fff8e6;stroke:#e8c96d;stroke-width:4}
+  .panelGrey{fill:#f6f8fb;stroke:#ccd7e2;stroke-width:4}
+  .callout{fill:#ffffff;stroke:#cad6e2;stroke-width:4}
+  .chipBlue{fill:#e0f2fe;stroke:#7dd3fc;stroke-width:3}
+  .chipGreen{fill:#ecfdf5;stroke:#86efac;stroke-width:3}
+  .chipLav{fill:#eef2ff;stroke:#a5b4fc;stroke-width:3}
+  .wire{stroke:#30465f;stroke-width:8;fill:none;stroke-linecap:round;stroke-linejoin:round}
+  .sym{stroke:#30465f;stroke-width:7;fill:none;stroke-linecap:round;stroke-linejoin:round}
+  .thin{stroke:#516477;stroke-width:4;fill:none;stroke-linecap:round;stroke-linejoin:round}
+  .measure{stroke:#64748b;stroke-width:4;fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:10 8}
+
+.arrowBlue{stroke:#2563eb;stroke-width:7;fill:none;stroke-linecap:round;stroke-linejoin:round;marker-end:url(#arrowBlue)}
+</style></defs>
+<rect x="70" y="60" width="1460" height="880" rx="38" class="card"/>
+
+<text x="130" y="140" class="title">Series and parallel circuits</text>
+<text x="130" y="186" class="sub">Use standard circuit symbols and a clearer branch layout.</text>
+<g transform="translate(120 230)">
+  <rect x="0" y="0" width="640" height="620" rx="36" class="panelBlue"/>
+  <text x="320" y="66" text-anchor="middle" class="label">Series circuit</text>
+  <path class="wire" d="M120 165 H540 V420 H120 V165"/>
+  <!-- single cell -->
+  <line class="wire" x1="182" y1="420" x2="182" y2="365"/>
+  <line class="wire" x1="227" y1="420" x2="227" y2="382"/>
+  <!-- lamps -->
+  <path class="wire" d="M120 165 H210"/>
+  <circle cx="270" cy="165" r="38" fill="#fff7cc" stroke="#c79a2d" stroke-width="6"/>
+  <line class="sym" x1="245" y1="140" x2="295" y2="190"/>
+  <line class="sym" x1="295" y1="140" x2="245" y2="190"/>
+  <path class="wire" d="M308 165 H360"/>
+  <circle cx="425" cy="165" r="38" fill="#fff7cc" stroke="#c79a2d" stroke-width="6"/>
+  <line class="sym" x1="400" y1="140" x2="450" y2="190"/>
+  <line class="sym" x1="450" y1="140" x2="400" y2="190"/>
+  <path class="wire" d="M463 165 H540"/>
+  <path d="M145 282 H515" class="arrowBlue"/>
+  <rect x="75" y="480" width="490" height="56" rx="18" class="chipBlue"/>
+  <text x="320" y="516" text-anchor="middle" class="text">Current: the same everywhere</text>
+  <rect x="75" y="548" width="490" height="56" rx="18" class="chipLav"/>
+  <text x="320" y="584" text-anchor="middle" class="text">Voltage: shared between the lamps</text>
+</g>
+<g transform="translate(840 230)">
+  <rect x="0" y="0" width="640" height="620" rx="36" class="panelGreen"/>
+  <text x="320" y="66" text-anchor="middle" class="label">Parallel circuit</text>
+  <!-- clean rectangular outer loop -->
+  <path class="wire" d="M120 150 H520 V430 H120 V150"/>
+  <!-- single cell -->
+  <line class="wire" x1="182" y1="430" x2="182" y2="375"/>
+  <line class="wire" x1="227" y1="430" x2="227" y2="392"/>
+  <!-- branch rails -->
+  <path class="wire" d="M220 220 H430"/>
+  <path class="wire" d="M220 340 H430"/>
+  <path class="wire" d="M220 150 V430"/>
+  <path class="wire" d="M430 150 V430"/>
+  <!-- lamps centered in each branch -->
+  <path class="wire" d="M220 220 H275"/>
+  <circle cx="325" cy="220" r="35" fill="#fff7cc" stroke="#c79a2d" stroke-width="6"/>
+  <line class="sym" x1="302" y1="197" x2="348" y2="243"/>
+  <line class="sym" x1="348" y1="197" x2="302" y2="243"/>
+  <path class="wire" d="M360 220 H430"/>
+  <path class="wire" d="M220 340 H275"/>
+  <circle cx="325" cy="340" r="35" fill="#fff7cc" stroke="#c79a2d" stroke-width="6"/>
+  <line class="sym" x1="302" y1="317" x2="348" y2="363"/>
+  <line class="sym" x1="348" y1="317" x2="302" y2="363"/>
+  <path class="wire" d="M360 340 H430"/>
+  <!-- current arrows -->
+  <path d="M145 285 H205" class="arrowBlue"/>
+  <path d="M220 220 H268" class="arrowBlue"/>
+  <path d="M220 340 H268" class="arrowBlue"/>
+  <rect x="75" y="480" width="490" height="56" rx="18" class="chipBlue"/>
+  <text x="320" y="516" text-anchor="middle" class="text">Current: splits between branches</text>
+  <rect x="75" y="548" width="490" height="56" rx="18" class="chipLav"/>
+  <text x="320" y="584" text-anchor="middle" class="text">Voltage: the same across each branch</text>
+</g>
+
+</svg>

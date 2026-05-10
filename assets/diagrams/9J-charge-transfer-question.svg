@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" role="img" aria-labelledby="title desc">
+  <title id="title">Charge transfer between a cloth and rod</title>
+  <desc id="desc">A cloth and rod with electron symbols moving from the cloth to the rod.</desc>
+
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#2563eb" />
+    </marker>
+    <marker id="arrowDark" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#334155" />
+    </marker>
+    <style>
+      .bg{fill:#f8fafc}.panel{fill:white;stroke:#cbd5e1;stroke-width:2}.title{font:700 24px system-ui,Arial;fill:#0f172a}.label{font:700 18px system-ui,Arial;fill:#0f172a}.small{font:600 14px system-ui,Arial;fill:#334155}.tiny{font:600 12px system-ui,Arial;fill:#475569}.line{stroke:#2563eb;stroke-width:3;fill:none;stroke-linecap:round}.dark{stroke:#334155;stroke-width:3;fill:none;stroke-linecap:round}.wire{stroke:#334155;stroke-width:4;fill:none;stroke-linecap:round;stroke-linejoin:round}.option{fill:#e0f2fe;stroke:#0284c7;stroke-width:2}.magN{fill:#ef4444}.magS{fill:#3b82f6}.metal{fill:#e2e8f0;stroke:#64748b;stroke-width:2}.charge{font:700 22px system-ui,Arial;fill:#0f172a}.plus{fill:#dc2626}.minus{fill:#2563eb}
+    </style>
+  </defs>
+
+  <rect class="bg" width="900" height="520" rx="24"/>
+  <text class="title" x="42" y="52">Rubbing an insulating rod</text>
+  <rect class="panel" x="40" y="80" width="820" height="385" rx="18"/>
+  <rect x="150" y="185" width="190" height="150" rx="24" fill="#fde68a" stroke="#d97706" stroke-width="3"/>
+  <text class="label" x="245" y="362" text-anchor="middle">cloth</text>
+  <rect x="560" y="210" width="210" height="72" rx="36" fill="#c4b5fd" stroke="#7c3aed" stroke-width="3"/>
+  <text class="label" x="665" y="313" text-anchor="middle">rod</text>
+  <g fill="#2563eb" font-family="system-ui,Arial" font-weight="700" font-size="20">
+    <text x="200" y="230">e−</text><text x="265" y="260">e−</text><text x="218" y="300">e−</text>
+    <text x="610" y="253">e−</text><text x="665" y="240">e−</text><text x="715" y="264">e−</text>
+  </g>
+  <path class="line" d="M350 255 C420 220 485 220 548 246" marker-end="url(#arrow)"/>
+  <circle class="option" cx="410" cy="165" r="26"/><text class="label" x="410" y="172" text-anchor="middle">X</text>
+  <circle class="option" cx="500" cy="320" r="26"/><text class="label" x="500" y="327" text-anchor="middle">Y</text>
+</svg>

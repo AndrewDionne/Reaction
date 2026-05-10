@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+<title id="title">Displacement test question diagram</title>
+<desc id="desc">Three labelled displacement-test tubes showing a metal strip in a metal salt solution.</desc>
+<rect width="1600" height="1000" fill="#ffffff"/><defs>
+  <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M2 2 L10 6 L2 10 Z" fill="#30465f"/></marker>
+  <marker id="arrowBlue" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M2 2 L10 6 L2 10 Z" fill="#2563eb"/></marker>
+  <marker id="arrowOrange" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M2 2 L10 6 L2 10 Z" fill="#ea580c"/></marker>
+  <marker id="arrowRed" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M2 2 L10 6 L2 10 Z" fill="#dc2626"/></marker>
+  <marker id="arrowGreen" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M2 2 L10 6 L2 10 Z" fill="#15803d"/></marker>
+  <style>
+  .title{font-family:Arial,Helvetica,sans-serif;font-size:52px;font-weight:800;fill:#1f2f46}
+  .sub{font-family:Arial,Helvetica,sans-serif;font-size:28px;fill:#52667a}
+  .label{font-family:Arial,Helvetica,sans-serif;font-size:34px;font-weight:750;fill:#223247}
+  .text{font-family:Arial,Helvetica,sans-serif;font-size:29px;fill:#223247}
+  .small{font-family:Arial,Helvetica,sans-serif;font-size:24px;fill:#516477}
+  .tiny{font-family:Arial,Helvetica,sans-serif;font-size:20px;fill:#516477}
+  .badgeText{font-family:Arial,Helvetica,sans-serif;font-size:34px;font-weight:800;fill:#ffffff}
+  .card{fill:#fbfdff;stroke:#c7d3e0;stroke-width:4}
+  .panelBlue{fill:#eaf5ff;stroke:#78aee3;stroke-width:4}
+  .panelGreen{fill:#e9f7ef;stroke:#69b984;stroke-width:4}
+  .panelAmber{fill:#fff6dc;stroke:#d8b957;stroke-width:4}
+  .panelGrey{fill:#f4f7fa;stroke:#bac6d1;stroke-width:4}
+  .panelRed{fill:#fff0ef;stroke:#d59088;stroke-width:4}
+  .wire{stroke:#30465f;stroke-width:8;fill:none;stroke-linecap:round;stroke-linejoin:round}
+  .line{stroke:#30465f;stroke-width:7;fill:none;stroke-linecap:round;stroke-linejoin:round}
+  .thin{stroke:#516477;stroke-width:4;fill:none;stroke-linecap:round;stroke-linejoin:round}
+  .arrow{stroke:#30465f;stroke-width:7;fill:none;stroke-linecap:round;stroke-linejoin:round;marker-end:url(#arrow)}
+  .arrowBlue{stroke:#2563eb;stroke-width:8;fill:none;stroke-linecap:round;stroke-linejoin:round;marker-end:url(#arrowBlue)}
+  .arrowOrange{stroke:#ea580c;stroke-width:8;fill:none;stroke-linecap:round;stroke-linejoin:round;marker-end:url(#arrowOrange)}
+  .arrowRed{stroke:#dc2626;stroke-width:8;fill:none;stroke-linecap:round;stroke-linejoin:round;marker-end:url(#arrowRed)}
+  .arrowGreen{stroke:#15803d;stroke-width:8;fill:none;stroke-linecap:round;stroke-linejoin:round;marker-end:url(#arrowGreen)}
+</style>
+</defs>
+<rect x="70" y="60" width="1460" height="880" rx="38" class="card"/>
+<text x="130" y="145" class="title">Displacement test</text>
+<g transform="translate(165 245)">
+  <g>
+    <circle cx="60" cy="50" r="42" fill="#2f6fad"/><text x="60" y="62" text-anchor="middle" class="badgeText">A</text>
+    <rect x="0" y="120" width="330" height="430" rx="32" class="panelBlue"/>
+    <rect x="134" y="60" width="62" height="285" rx="13" fill="#b0bec5" stroke="#607d8b" stroke-width="5"/>
+    <path d="M38 330 C120 300 210 360 292 326 L292 505 L38 505 Z" fill="#8fd0ff" opacity="0.72"/>
+    <text x="165" y="612" text-anchor="middle" class="label">magnesium strip</text>
+    <text x="165" y="654" text-anchor="middle" class="small">in copper sulfate</text>
+  </g>
+  <g transform="translate(465 0)">
+    <circle cx="60" cy="50" r="42" fill="#2f6fad"/><text x="60" y="62" text-anchor="middle" class="badgeText">B</text>
+    <rect x="0" y="120" width="330" height="430" rx="32" class="panelGreen"/>
+    <rect x="134" y="60" width="62" height="285" rx="13" fill="#b87333" stroke="#7a4d21" stroke-width="5"/>
+    <path d="M38 330 C120 300 210 360 292 326 L292 505 L38 505 Z" fill="#8fd0ff" opacity="0.72"/>
+    <text x="165" y="612" text-anchor="middle" class="label">copper strip</text>
+    <text x="165" y="654" text-anchor="middle" class="small">in zinc sulfate</text>
+  </g>
+  <g transform="translate(930 0)">
+    <circle cx="60" cy="50" r="42" fill="#2f6fad"/><text x="60" y="62" text-anchor="middle" class="badgeText">C</text>
+    <rect x="0" y="120" width="330" height="430" rx="32" class="panelAmber"/>
+    <rect x="134" y="60" width="62" height="285" rx="13" fill="#d9d9d9" stroke="#777" stroke-width="5"/>
+    <path d="M38 330 C120 300 210 360 292 326 L292 505 L38 505 Z" fill="#8fd0ff" opacity="0.72"/>
+    <text x="165" y="612" text-anchor="middle" class="label">silver strip</text>
+    <text x="165" y="654" text-anchor="middle" class="small">in iron sulfate</text>
+  </g>
+</g>
+</svg>
