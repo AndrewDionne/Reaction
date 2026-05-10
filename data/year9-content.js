@@ -1,7 +1,7 @@
 window.YEAR9_CONTENT = {
-  "version": "1.19.0",
+  "version": "1.20.0",
   "title": "Year 9 Science End-of-Year Study",
-  "subtitle": "Required visual-question diagrams restored without decorative image clutter",
+  "subtitle": "Guided revision with cleaned question diagrams and sticky revisit behaviour for missed MCQ cards",
   "units": [
     {
       "id": "9A",
@@ -2040,7 +2040,7 @@ window.YEAR9_CONTENT = {
         "D X is friction, Y is air resistance"
       ],
       "explanation": "Weight acts downwards; air resistance acts upwards against motion.",
-      "source": "9I quick quiz 9Ia Q1 - diagram reconstructed",
+      "source": "9I quick quiz 9Ia Q1 - source-style diagram redraw",
       "level": 1,
       "cue": "",
       "tags": [],
@@ -2053,8 +2053,8 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/diagrams/9I-falling-forces-source-style-XY.svg",
-          "alt": "Falling object diagram with a downward arrow labelled X and an upward arrow labelled Y.",
-          "caption": "Use the direction of each arrow to match the correct force label."
+          "alt": "Falling object diagram with one downward arrow labelled X and one upward arrow labelled Y.",
+          "caption": "Use the arrow directions to match each force label."
         }
       ],
       "mediaTiming": "question"

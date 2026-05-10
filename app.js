@@ -50,6 +50,7 @@
     sessionSubtitle: byId("sessionSubtitle"),
     sessionIndex: byId("sessionIndex"),
     sessionTotal: byId("sessionTotal"),
+    sessionUnitArt: byId("sessionUnitArt"),
   };
 
   const modeText = {
@@ -188,6 +189,38 @@
 
   function unitGraphic(unitId) {
     return unitGraphicMap[unitId] || "";
+  }
+
+
+  function singleDeckUnit() {
+    if (!state.deck.length) return "";
+    const deckUnits = unique(state.deck.map((card) => card.unit));
+    return deckUnits.length === 1 ? deckUnits[0] : "";
+  }
+
+  function sessionUnitFor(card = null, explicitUnit = "") {
+    if (explicitUnit) return explicitUnit;
+    if (card?.unit) return card.unit;
+    if (state.selectedUnits?.size === 1) return [...state.selectedUnits][0];
+    return singleDeckUnit();
+  }
+
+  function updateSessionChrome({ card = null, unitId = "", title = "Reaction", subtitle = "", eyebrow = "" } = {}) {
+    const resolvedUnit = sessionUnitFor(card, unitId);
+    const text = modeText[state.mode] || modeText.practice;
+    const modeName = state.noteContext ? "Class Notes" : modeLabel(state.mode);
+    if (els.sessionEyebrow) els.sessionEyebrow.textContent = eyebrow || text.eyebrow || "Focused session";
+    if (els.sessionTitle) els.sessionTitle.textContent = title || "Reaction";
+    if (els.sessionSubtitle) {
+      els.sessionSubtitle.textContent = subtitle || [resolvedUnit ? unitTitle(resolvedUnit) : "Mixed units", modeName].filter(Boolean).join(" · ");
+    }
+    if (els.sessionUnitArt) {
+      const graphic = unitGraphic(resolvedUnit);
+      els.sessionUnitArt.classList.toggle("empty", !graphic);
+      els.sessionUnitArt.innerHTML = graphic
+        ? `<img src="${escapeHtml(graphic)}" alt="" loading="lazy">`
+        : `<span>Mixed units</span>`;
+    }
   }
 
   function modeEntryText(mode = state.selectedMode) {
@@ -331,22 +364,32 @@
   }
 
   function setCardStatus(card, status, options = {}) {
-    const { advance = true, countAttempt = true } = options;
+    const { advance = true, countAttempt = true, clearRevisit = false } = options;
     const mastered = new Set(state.progress.masteredIds || []);
     const revisit = new Set(state.progress.revisitIds || []);
     const study = new Set(state.progress.studyIds || []);
+    const wasInRevisit = revisit.has(card.id);
+
+    // If a card has already been missed, keep it in Revisit until it is answered
+    // correctly from Revisit mode. This prevents a student from going back, guessing
+    // again, and clearing the revision queue without actually revising it.
+    const keepInRevisit = status === "mastered" && wasInRevisit && state.mode !== "revisit" && !clearRevisit;
 
     mastered.delete(card.id);
-    revisit.delete(card.id);
     study.delete(card.id);
+    if (!keepInRevisit) revisit.delete(card.id);
 
-    if (status === "mastered") {
+    if (status === "mastered" && !keepInRevisit) {
       mastered.add(card.id);
       state.progress.xp = (state.progress.xp || 0) + Math.max(5, (card.level || 1) * 5);
       state.progress.streak = (state.progress.streak || 0) + 1;
       state.progress.bestStreak = Math.max(state.progress.bestStreak || 0, state.progress.streak || 0);
       celebrate();
       beep(true);
+    } else if (status === "mastered" && keepInRevisit) {
+      revisit.add(card.id);
+      state.progress.streak = 0;
+      beep(false);
     } else if (status === "revisit") {
       revisit.add(card.id);
       state.progress.streak = 0;
@@ -360,8 +403,8 @@
     state.progress.masteredIds = [...mastered];
     state.progress.revisitIds = [...revisit];
     state.progress.studyIds = [...study];
-    if (countAttempt) recordSeen(card, status === "mastered");
-    recordSessionStatus(card, status);
+    if (countAttempt) recordSeen(card, status === "mastered" && !keepInRevisit);
+    recordSessionStatus(card, keepInRevisit ? "revisit" : status);
     saveProgress();
 
     if (state.mode === "revisit" || state.mode === "study" || state.mode === "test") {
@@ -502,6 +545,7 @@
     if (!options.preserveDeck) rebuildDeck(true);
     if (mode !== "test") startSessionTracker(mode);
 
+    document.body.classList.add("session-active");
     els.hubView.classList.add("hidden");
     els.sessionView.classList.remove("hidden");
     els.resultPanel.classList.add("hidden");
@@ -510,6 +554,7 @@
   }
 
   function showHub() {
+    document.body.classList.remove("session-active");
     els.sessionView.classList.add("hidden");
     els.hubView.classList.remove("hidden");
     state.test = null;
@@ -641,6 +686,7 @@
     state.test = null;
     state.revealed = false;
     state.selectedChoice = null;
+    document.body.classList.add("session-active");
     els.hubView.classList.add("hidden");
     els.sessionView.classList.remove("hidden");
     els.resultPanel.classList.add("hidden");
@@ -690,9 +736,12 @@
     const linked = linkedCardsForNote(note.id);
     const sourceMedia = sourceCard && Array.isArray(sourceCard.media) ? sourceCard.media.filter((item) => !item.mediaTiming || item.mediaTiming === "question") : [];
     const noteMedia = Array.isArray(note.media) ? note.media : [];
-    els.sessionEyebrow.textContent = sourceCard ? "Study this concept" : "Class notes";
-    els.sessionTitle.textContent = note.title;
-    els.sessionSubtitle.textContent = sourceCard ? "Read the context, then decide what to do with the original card." : "Use this note to review the topic, then practise the linked cards.";
+    updateSessionChrome({
+      unitId: note.unit,
+      title: "Reaction",
+      eyebrow: sourceCard ? "Study this concept" : "Class notes",
+      subtitle: `${unitTitle(note.unit)} · ${note.title}`
+    });
     els.sessionIndex.textContent = String(linked.length);
     els.sessionTotal.textContent = " linked cards";
     els.resultPanel.classList.add("hidden");
@@ -772,9 +821,11 @@
       return;
     }
     const text = modeText[state.mode] || modeText.practice;
-    els.sessionEyebrow.textContent = text.eyebrow;
-    els.sessionTitle.textContent = text.title;
-    els.sessionSubtitle.textContent = text.subtitle;
+    updateSessionChrome({
+      title: "Reaction",
+      eyebrow: text.eyebrow,
+      subtitle: [singleDeckUnit() ? unitTitle(singleDeckUnit()) : "Mixed units", modeLabel(state.mode)].filter(Boolean).join(" · ")
+    });
     els.sessionIndex.textContent = state.deck.length ? String(state.index + 1) : "0";
     els.sessionTotal.textContent = `/ ${state.deck.length}`;
 
@@ -814,12 +865,13 @@
     return "fidelity derived";
   }
 
-  function renderMediaItems(items, fallbackAlt = "Study image", className = "media-grid") {
+  function renderMediaItems(items, fallbackAlt = "Study image", className = "media-grid", options = {}) {
     if (!Array.isArray(items) || !items.length) return "";
+    const { showCaptions = true } = options;
     return `<div class="${className}">${items.map((item) => {
       const src = escapeHtml(item.src || "");
       const alt = escapeHtml(item.alt || fallbackAlt || "Study image");
-      const caption = item.caption ? `<figcaption>${escapeHtml(item.caption)}</figcaption>` : "";
+      const caption = showCaptions && item.caption ? `<figcaption>${escapeHtml(item.caption)}</figcaption>` : "";
       return `<figure class="card-media"><img src="${src}" alt="${alt}" loading="lazy">${caption}</figure>`;
     }).join("")}</div>`;
   }
@@ -827,7 +879,9 @@
   function renderMedia(card) {
     if (!Array.isArray(card.media) || !card.media.length) return "";
     const questionMedia = card.media.filter((item) => !item.mediaTiming || item.mediaTiming === "question");
-    return renderMediaItems(questionMedia, card.question || "Diagram");
+    // Question diagrams should support the task without giving away the answer or adding extra noise.
+    // Captions remain available in Class Notes, but are intentionally hidden in the live question card.
+    return renderMediaItems(questionMedia, card.question || "Diagram", "media-grid question-media-grid", { showCaptions: false });
   }
 
   function renderObjectivePanel(card) {
@@ -858,6 +912,12 @@
     const testMode = state.mode === "test";
     const fidelityText = card.sourceFidelity ? fidelityLabel(card.sourceFidelity) : "";
 
+    updateSessionChrome({
+      card,
+      title: "Reaction",
+      eyebrow: modeText[state.mode]?.eyebrow || "Focused session",
+      subtitle: `${unitTitle(card.unit)} · ${modeLabel(state.mode)}`
+    });
     els.sessionIndex.textContent = String(state.index + 1);
     els.sessionTotal.textContent = `/ ${state.deck.length}`;
     els.resultPanel.classList.add("hidden");
@@ -866,15 +926,12 @@
       <article class="study-card">
         <div class="card-topline card-topline-clean">
           <div class="card-title-row">
-            <span class="pill">${escapeHtml(unitTitle(card.unit))}</span>
             ${card.learningObjective ? `<span class="pill objective-pill">${escapeHtml(objectiveTitle(card.learningObjective))}</span>` : ""}
             <span class="pill">Level ${card.level}</span>
-            <span class="pill">${escapeHtml(card.type)}</span>
-            ${membership.mastered ? `<span class="pill good">mastered</span>` : ""}
-            ${membership.revisit ? `<span class="pill warn">revisit</span>` : ""}
-            ${membership.study ? `<span class="pill study">need notes</span>` : ""}
+            ${(!isMcq && membership.mastered) ? `<span class="pill good">mastered</span>` : ""}
+            ${(!isMcq && membership.revisit) ? `<span class="pill warn">revisit</span>` : ""}
+            ${(!isMcq && membership.study) ? `<span class="pill study">need notes</span>` : ""}
           </div>
-          <span class="pill progress-pill">${state.index + 1} / ${state.deck.length}</span>
         </div>
 
         ${renderStudyPrompt(card)}
@@ -890,13 +947,13 @@
           ${isDefinition && !testMode && !state.definitionCompared ? `<button class="primary-button" data-action="compare-definition" type="button">Compare notes</button>` : ""}
           ${!isMcq && testMode && !state.revealed ? `<button class="primary-button" data-action="test-open-submit" type="button">Show mark scheme</button>` : ""}
           ${!isMcq && testMode && state.revealed ? `<button class="primary-button" data-action="test-right" type="button">Mark right</button><button class="danger-button" data-action="test-wrong" type="button">Mark wrong</button>` : ""}
-          ${isMcq && state.selectedChoice ? `<button class="primary-button" data-action="next" type="button">Next card</button>` : ""}
+          ${isMcq && (state.selectedChoice || state.revealed) ? `<button class="primary-button" data-action="next" type="button">Next card</button>` : ""}
           <button class="secondary-button" data-action="prev" type="button">Previous</button>
-          ${!(isMcq && state.selectedChoice) ? `<button class="secondary-button" data-action="next" type="button">Skip</button>` : ""}
+          ${!(isMcq && (state.selectedChoice || state.revealed)) ? `<button class="secondary-button" data-action="next" type="button">Skip</button>` : ""}
           ${!testMode ? `<button class="secondary-button class-notes-button" data-action="study-context" type="button">Class Notes</button>` : ""}
         </div>
 
-        ${!testMode && (!isDefinition || state.definitionCompared) && !(isMcq && state.selectedChoice) ? `
+        ${!testMode && !isMcq && (!isDefinition || state.definitionCompared) ? `
           <div class="state-actions" aria-label="Learning state">
             <button class="primary-button" data-state="mastered" type="button">Good match · Mastered</button>
             <button class="secondary-button" data-state="revisit" type="button">Nearly there · Revisit</button>
@@ -912,10 +969,16 @@
 
   function renderChoiceFeedback(card) {
     const correct = state.selectedChoice === card.answer;
+    const membership = setMembership(card.id);
+    const heldForRevisit = correct && membership.revisit && !membership.mastered && state.mode !== "revisit";
+    const headline = correct
+      ? (heldForRevisit ? "Correct — but this card stays in Revisit until you review it there." : "Correct — moved to Mastered.")
+      : "Not quite — moved to Revisit.";
     return `
-      <div class="choice-feedback ${correct ? "good" : "needs-review"}">
-        <strong>${correct ? "Correct — moved to Mastered." : "Not quite — moved to Revisit."}</strong>
+      <div class="choice-feedback ${correct && !heldForRevisit ? "good" : "needs-review"}">
+        <strong>${headline}</strong>
         <p>The answer is <strong>${escapeHtml(card.answer)} — ${escapeHtml(choiceText(card))}</strong>.</p>
+        ${heldForRevisit ? `<p>You missed this card earlier, so it remains in the Revisit queue. Answer it correctly in Revisit mode to clear it.</p>` : ""}
         ${card.explanation ? `<p>${escapeHtml(card.explanation)}</p>` : ""}
       </div>
     `;
@@ -1106,9 +1169,12 @@
     const total = state.deck.length;
     els.studyPanel.innerHTML = "";
     els.resultPanel.classList.remove("hidden");
-    els.sessionEyebrow.textContent = "Session complete";
-    els.sessionTitle.textContent = "Revision session complete";
-    els.sessionSubtitle.textContent = "Use the summary to choose what to practise next.";
+    updateSessionChrome({
+      unitId: singleDeckUnit(),
+      title: "Reaction",
+      eyebrow: "Session complete",
+      subtitle: "Revision session complete · Use the summary to choose what to practise next."
+    });
     els.sessionIndex.textContent = String(counts.reviewed);
     els.sessionTotal.textContent = `/ ${total}`;
     els.resultPanel.innerHTML = `
@@ -1146,7 +1212,10 @@
     } else {
       state.progress.streak = 0;
       const revisit = new Set(state.progress.revisitIds || []);
+      const mastered = new Set(state.progress.masteredIds || []);
+      mastered.delete(card.id);
       revisit.add(card.id);
+      state.progress.masteredIds = [...mastered];
       state.progress.revisitIds = [...revisit];
     }
     saveProgress();

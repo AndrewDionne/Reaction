@@ -1,23 +1,23 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
   <title id="title">Falling object force diagram with X and Y labels</title>
   <desc id="desc">A falling object has a downward arrow labelled X and an upward arrow labelled Y.</desc>
-  <rect width="900" height="560" fill="#fff"/>
-  <rect x="55" y="40" width="790" height="480" rx="22" fill="#fbfdff" stroke="#d5dde8" stroke-width="2"/>
-  <text x="95" y="95" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" fill="#243447">Forces on a falling object</text>
-  <text x="95" y="126" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#52667a">Use the arrows to decide which force acts in each direction.</text>
-  <g transform="translate(380 155)">
-    <ellipse cx="70" cy="150" rx="58" ry="70" fill="#d9ecff" stroke="#4f82b8" stroke-width="4"/>
-    <path d="M70 229 C58 270, 62 308, 70 342 C80 308, 84 270, 70 229" fill="#eef7ff" stroke="#4f82b8" stroke-width="3"/>
-    <line x1="70" y1="244" x2="70" y2="372" stroke="#2e86de" stroke-width="8" marker-end="url(#arrowBlue)"/>
-    <line x1="70" y1="56" x2="70" y2="-42" stroke="#d64541" stroke-width="8" marker-end="url(#arrowRed)"/>
-    <text x="102" y="330" font-family="Arial, Helvetica, sans-serif" font-size="36" font-weight="700" fill="#2e86de">X</text>
-    <text x="102" y="5" font-family="Arial, Helvetica, sans-serif" font-size="36" font-weight="700" fill="#d64541">Y</text>
+  <rect width="640" height="360" rx="22" fill="#ffffff"/>
+  <rect x="18" y="18" width="604" height="324" rx="22" fill="#fbfdff" stroke="#d5dde8" stroke-width="2"/>
+  <text x="42" y="58" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#243447">Forces on a falling object</text>
+  <text x="42" y="84" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#52667a">Use the arrow directions to match the force labels.</text>
+
+  <g transform="translate(320 190)">
+    <ellipse cx="0" cy="0" rx="44" ry="56" fill="#d9ecff" stroke="#4f82b8" stroke-width="4"/>
+    <path d="M0 62 C-10 92 -7 118 0 142 C8 118 10 92 0 62" fill="#eef7ff" stroke="#4f82b8" stroke-width="3"/>
+    <line x1="0" y1="78" x2="0" y2="150" stroke="#2e86de" stroke-width="8" marker-end="url(#arrowBlue)"/>
+    <line x1="0" y1="-70" x2="0" y2="-145" stroke="#d64541" stroke-width="8" marker-end="url(#arrowRed)"/>
+    <text x="30" y="134" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="700" fill="#2e86de">X</text>
+    <text x="30" y="-112" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="700" fill="#d64541">Y</text>
   </g>
-  <g font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#52667a">
-    <text x="125" y="405">Question: which label matches the downward force and which label matches the upward force?</text>
-  </g>
+
+  <text x="320" y="318" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#52667a">Which label is the downward force? Which label is the upward force?</text>
   <defs>
-    <marker id="arrowBlue" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#2e86de"/></marker>
-    <marker id="arrowRed" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#d64541"/></marker>
+    <marker id="arrowBlue" markerWidth="12" markerHeight="12" refX="6" refY="6" orient="auto"><path d="M0 0 L12 6 L0 12 z" fill="#2e86de"/></marker>
+    <marker id="arrowRed" markerWidth="12" markerHeight="12" refX="6" refY="6" orient="auto"><path d="M0 0 L12 6 L0 12 z" fill="#d64541"/></marker>
   </defs>
 </svg>

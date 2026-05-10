@@ -8,7 +8,7 @@
   <title>Reaction · Year 9 Science Study</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
   <link rel="manifest" href="manifest.webmanifest" />
-  <link rel="stylesheet" href="styles.css?v=1.19.0" />
+  <link rel="stylesheet" href="styles.css?v=1.20.1" />
 </head>
 <body>
   <canvas id="burstCanvas" aria-hidden="true"></canvas>
@@ -102,13 +102,14 @@
     </section>
 
     <section id="sessionView" class="session-view hidden">
-      <section class="session-header panel">
+      <section class="session-header session-hero panel">
         <button id="backToHub" class="secondary-button" type="button">← Back to revision hub</button>
         <div class="session-title-block">
           <p class="eyebrow" id="sessionEyebrow">Focused session</p>
-          <h1 id="sessionTitle">Revision journey</h1>
+          <h1 id="sessionTitle">Reaction</h1>
           <p id="sessionSubtitle">Work through the cards and sort each one into the right learning bucket.</p>
         </div>
+        <div id="sessionUnitArt" class="session-unit-art" aria-hidden="true"></div>
         <div class="session-count">
           <strong id="sessionIndex">0</strong>
           <span id="sessionTotal">/ 0</span>
@@ -120,8 +121,8 @@
     </section>
   </main>
 
-  <script src="data/year9-content.js?v=1.19.0"></script>
-  <script src="data/year9-notes.js?v=1.19.0"></script>
-  <script src="app.js?v=1.19.0"></script>
+  <script src="data/year9-content.js?v=1.20.1"></script>
+  <script src="data/year9-notes.js?v=1.20.1"></script>
+  <script src="app.js?v=1.20.1"></script>
 </body>
 </html>
