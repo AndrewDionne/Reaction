@@ -1,7 +1,7 @@
 window.YEAR9_CONTENT = {
-  "version": "1.35.1",
+  "version": "1.34.0",
   "title": "Year 9 Science End-of-Year Study",
-  "subtitle": "Guided revision with question-safe diagrams, circuit-symbol practice, magnetic/static/electromagnet visuals, 9F extraction visuals and sticky revisit behaviour for missed MCQ cards",
+  "subtitle": "Guided revision with source-traceable question coverage aligned to the Year 9 revision pack, clean media assets and sticky revisit behaviour for missed MCQ cards",
   "units": [
     {
       "id": "9A",
@@ -128,7 +128,7 @@ window.YEAR9_CONTENT = {
         {
           "src": "assets/diagrams/9A-continuous-variation-question.svg",
           "alt": "Chart with a spread of measurements shown as bars and a smooth bell-shaped curve.",
-          "caption": "Use the diagram to answer the question.",
+          "caption": "Use the shape and axes of the chart to answer the question.",
           "mediaTiming": "question"
         }
       ],
@@ -232,7 +232,7 @@ window.YEAR9_CONTENT = {
         {
           "src": "assets/diagrams/9A-continuous-variation-question.svg",
           "alt": "Chart with a spread of measurements shown as bars and a smooth bell-shaped curve.",
-          "caption": "Use the diagram to answer the question.",
+          "caption": "Use the shape and axes of the chart to answer the question.",
           "mediaTiming": "question"
         }
       ],
@@ -408,7 +408,7 @@ window.YEAR9_CONTENT = {
         {
           "src": "assets/webp/9A-prey-adaptation-base.webp",
           "alt": "Four animal illustrations for comparing prey adaptations.",
-          "caption": "Use the diagram to answer the question.",
+          "caption": "Compare the visible animal features.",
           "mediaTiming": "question",
           "presentation": "media-image-base",
           "mediaMarkers": [
@@ -583,7 +583,7 @@ window.YEAR9_CONTENT = {
         {
           "src": "assets/webp/9B-photosynthesis-plant-base.webp",
           "alt": "Plant illustration with leaves, stem and roots for identifying where photosynthesis occurs.",
-          "caption": "Use the diagram to answer the question.",
+          "caption": "Use the labelled plant parts to decide where photosynthesis occurs.",
           "mediaTiming": "question",
           "presentation": "media-image-base",
           "mediaMarkers": [
@@ -657,7 +657,7 @@ window.YEAR9_CONTENT = {
         {
           "src": "assets/diagrams/9B-photosynthesis-light-graph-question.svg",
           "alt": "Graph showing rate of photosynthesis against light intensity.",
-          "caption": "Use the diagram to answer the question.",
+          "caption": "Use the trend shown by the graph.",
           "mediaTiming": "question"
         }
       ],
@@ -791,7 +791,7 @@ window.YEAR9_CONTENT = {
         {
           "src": "assets/webp/9B-root-hair-cell-base.webp",
           "alt": "Root hair cell illustration showing a long projection near soil particles.",
-          "caption": "Use the diagram to answer the question.",
+          "caption": "The long projection increases the surface area for absorbing water from soil.",
           "presentation": "media-image-base"
         }
       ],
@@ -1016,7 +1016,7 @@ window.YEAR9_CONTENT = {
         {
           "src": "assets/diagrams/9B-food-web-question.svg",
           "alt": "Food web showing rose bush, insects and wrens connected by energy-transfer arrows.",
-          "caption": "Use the diagram to answer the question."
+          "caption": "Use the food web to predict the effect of a change."
         }
       ],
       "mediaTiming": "question"
@@ -1186,7 +1186,7 @@ window.YEAR9_CONTENT = {
         {
           "src": "assets/diagrams/9E-lattice-options-source-style-question.svg",
           "alt": "Four particle structure options labelled A, B, C and D.",
-          "caption": "Use the diagram to answer the question.",
+          "caption": "Compare the particle arrangements.",
           "mediaTiming": "question"
         }
       ],
@@ -1290,7 +1290,7 @@ window.YEAR9_CONTENT = {
         {
           "src": "assets/webp/9E-vulcanisation-crosslinks-base.webp",
           "alt": "Before-and-after polymer diagrams showing uncrosslinked rubber chains and vulcanised chains joined by cross-links.",
-          "caption": "Use the diagram to answer the question.",
+          "caption": "Compare the structure before and after vulcanisation.",
           "mediaTiming": "question",
           "presentation": "media-image-base"
         }
@@ -2097,7 +2097,7 @@ window.YEAR9_CONTENT = {
         {
           "src": "assets/webp/9I-falling-forces-base.webp",
           "alt": "Falling object with one upward and one downward force arrow.",
-          "caption": "Use the diagram to answer the question.",
+          "caption": "Match the upward and downward arrows to the force names.",
           "presentation": "media-image-base",
           "mediaMarkers": [
             {
@@ -2282,7 +2282,7 @@ window.YEAR9_CONTENT = {
         {
           "src": "assets/webp/9I-sankey-efficiency-base.webp",
           "alt": "Two Sankey-style energy flow diagrams for comparing machine efficiency.",
-          "caption": "Use the diagram to answer the question.",
+          "caption": "Compare the size of the wasted-energy branch for each machine.",
           "mediaTiming": "question",
           "presentation": "media-image-base",
           "mediaMarkers": [
@@ -2401,7 +2401,7 @@ window.YEAR9_CONTENT = {
         {
           "src": "assets/diagrams/9I-distance-time-VWXYZ-question.svg",
           "alt": "Distance-time graph with sections labelled V, W, X, Y and Z.",
-          "caption": "Use the diagram to answer the question.",
+          "caption": "Use the labelled sections of the distance-time graph.",
           "mediaTiming": "question"
         }
       ],
@@ -2428,7 +2428,7 @@ window.YEAR9_CONTENT = {
         {
           "src": "assets/diagrams/9I-lever-XYZ-source-style-question.svg",
           "alt": "Lever diagram with parts labelled X, Y and Z.",
-          "caption": "Use the diagram to answer the question.",
+          "caption": "Use the labels on the lever diagram.",
           "mediaTiming": "question"
         }
       ],
@@ -2460,7 +2460,7 @@ window.YEAR9_CONTENT = {
         {
           "src": "assets/diagrams/9I-rock-lever-options-source-style-question.svg",
           "alt": "Four lever arrangements labelled A, B, C and D for moving a rock.",
-          "caption": "Use the diagram to answer the question.",
+          "caption": "Compare the lever arrangements.",
           "mediaTiming": "question"
         }
       ],
@@ -6486,7 +6486,7 @@ window.YEAR9_CONTENT = {
         {
           "src": "assets/webp/9A-triceratops-model-base.webp",
           "alt": "Side-view Triceratops illustration with horns, frill, beak, tail, body and legs visible.",
-          "caption": "Use the diagram to answer the question.",
+          "caption": "Use the visible horns, frill, beak, tail, body and legs to identify adaptations.",
           "presentation": "media-image-base",
           "mediaMarkers": [
             {
@@ -6605,7 +6605,7 @@ window.YEAR9_CONTENT = {
         {
           "src": "assets/webp/9A-triceratops-model-base.webp",
           "alt": "Side-view Triceratops illustration with horns, frill, beak, tail, body and legs visible.",
-          "caption": "Use the diagram to answer the question.",
+          "caption": "Use the visible horns, frill, beak, tail, body and legs to identify adaptations.",
           "presentation": "media-image-base",
           "mediaMarkers": [
             {
@@ -7915,11 +7915,11 @@ window.YEAR9_CONTENT = {
       "noteId": "9F-reactivity",
       "media": [
         {
-          "src": "assets/diagrams/9F-reactivity-series-question.svg",
-          "alt": "Question-safe reactivity series ladder showing magnesium, zinc, iron, copper and silver.",
-          "caption": "Use the diagram to answer the question.",
+          "src": "assets/webp/9F-reactivity-series-question-safe-v2.webp",
+          "alt": "Question-safe reactivity order diagram showing magnesium, zinc, iron, copper and silver from most reactive at the top to least reactive at the bottom.",
+          "caption": "Use the order of the metals in the ladder to answer the question.",
           "mediaTiming": "question",
-          "presentation": "media-diagram-base"
+          "presentation": "media-image-base"
         }
       ]
     },
@@ -7951,11 +7951,11 @@ window.YEAR9_CONTENT = {
       "noteId": "9F-reactivity",
       "media": [
         {
-          "src": "assets/diagrams/9F-reactivity-series-question.svg",
-          "alt": "Question-safe reactivity series ladder showing magnesium, zinc, iron, copper and silver.",
-          "caption": "Use the diagram to answer the question.",
+          "src": "assets/webp/9F-reactivity-series-question-safe-v2.webp",
+          "alt": "Question-safe reactivity order diagram showing magnesium, zinc, iron, copper and silver from most reactive at the top to least reactive at the bottom.",
+          "caption": "Use the order of the metals in the ladder to answer the question.",
           "mediaTiming": "question",
-          "presentation": "media-diagram-base"
+          "presentation": "media-image-base"
         }
       ]
     },
@@ -7989,7 +7989,7 @@ window.YEAR9_CONTENT = {
         {
           "src": "assets/diagrams/9F-displacement-reaction-question.svg",
           "alt": "Three labelled displacement-test tubes with different metal strips and salt solutions.",
-          "caption": "Use the diagram to answer the question.",
+          "caption": "Use the metal and solution labels to decide whether displacement can happen.",
           "mediaTiming": "question"
         }
       ]
@@ -8022,11 +8022,23 @@ window.YEAR9_CONTENT = {
       "noteId": "9F-extraction",
       "media": [
         {
-          "src": "assets/diagrams/9F-extraction-methods-question.svg",
+          "src": "assets/webp/9F-extraction-methods-2panel.webp",
           "alt": "Two extraction process diagrams, with electrolysis in Process A and carbon reduction in Process B.",
-          "caption": "Use the diagram to answer the question.",
+          "caption": "Compare Process A and Process B.",
           "mediaTiming": "question",
-          "presentation": "media-diagram-base"
+          "presentation": "media-image-base",
+          "mediaMarkers": [
+            {
+              "label": "A",
+              "x": 25,
+              "y": 7
+            },
+            {
+              "label": "B",
+              "x": 75,
+              "y": 7
+            }
+          ]
         }
       ]
     },
@@ -8058,11 +8070,23 @@ window.YEAR9_CONTENT = {
       "noteId": "9F-extraction",
       "media": [
         {
-          "src": "assets/diagrams/9F-extraction-methods-question.svg",
+          "src": "assets/webp/9F-extraction-methods-2panel.webp",
           "alt": "Two extraction process diagrams, with electrolysis in Process A and carbon reduction in Process B.",
-          "caption": "Use the diagram to answer the question.",
+          "caption": "Compare Process A and Process B.",
           "mediaTiming": "question",
-          "presentation": "media-diagram-base"
+          "presentation": "media-image-base",
+          "mediaMarkers": [
+            {
+              "label": "A",
+              "x": 25,
+              "y": 7
+            },
+            {
+              "label": "B",
+              "x": 75,
+              "y": 7
+            }
+          ]
         }
       ]
     },
@@ -8094,11 +8118,33 @@ window.YEAR9_CONTENT = {
       "noteId": "9F-extraction",
       "media": [
         {
-          "src": "assets/diagrams/9F-blast-furnace-question.svg",
+          "src": "assets/webp/9F-blast-furnace-process-v2.webp",
           "alt": "Blast furnace illustration with labelled input and output arrows.",
-          "caption": "Use the diagram to answer the question.",
+          "caption": "Use the labelled arrows to identify blast furnace inputs and outputs.",
           "mediaTiming": "question",
-          "presentation": "media-diagram-base"
+          "presentation": "media-image-base",
+          "mediaMarkers": [
+            {
+              "label": "A",
+              "x": 32,
+              "y": 9
+            },
+            {
+              "label": "B",
+              "x": 61,
+              "y": 9
+            },
+            {
+              "label": "C",
+              "x": 22,
+              "y": 71
+            },
+            {
+              "label": "D",
+              "x": 77,
+              "y": 84
+            }
+          ]
         }
       ]
     },
@@ -8130,11 +8176,33 @@ window.YEAR9_CONTENT = {
       "noteId": "9F-extraction",
       "media": [
         {
-          "src": "assets/diagrams/9F-blast-furnace-question.svg",
+          "src": "assets/webp/9F-blast-furnace-process-v2.webp",
           "alt": "Blast furnace illustration with labelled input and output arrows.",
-          "caption": "Use the diagram to answer the question.",
+          "caption": "Use the labelled arrows to identify blast furnace inputs and outputs.",
           "mediaTiming": "question",
-          "presentation": "media-diagram-base"
+          "presentation": "media-image-base",
+          "mediaMarkers": [
+            {
+              "label": "A",
+              "x": 32,
+              "y": 9
+            },
+            {
+              "label": "B",
+              "x": 61,
+              "y": 9
+            },
+            {
+              "label": "C",
+              "x": 22,
+              "y": 71
+            },
+            {
+              "label": "D",
+              "x": 77,
+              "y": 84
+            }
+          ]
         }
       ]
     },
@@ -8166,11 +8234,23 @@ window.YEAR9_CONTENT = {
       "noteId": "9F-extraction",
       "media": [
         {
-          "src": "assets/diagrams/9F-extraction-methods-question.svg",
+          "src": "assets/webp/9F-extraction-methods-2panel.webp",
           "alt": "Two extraction process diagrams, with electrolysis in Process A and carbon reduction in Process B.",
-          "caption": "Use the diagram to answer the question.",
+          "caption": "Compare Process A and Process B.",
           "mediaTiming": "question",
-          "presentation": "media-diagram-base"
+          "presentation": "media-image-base",
+          "mediaMarkers": [
+            {
+              "label": "A",
+              "x": 25,
+              "y": 7
+            },
+            {
+              "label": "B",
+              "x": 75,
+              "y": 7
+            }
+          ]
         }
       ]
     },
@@ -8202,11 +8282,23 @@ window.YEAR9_CONTENT = {
       "noteId": "9F-extraction",
       "media": [
         {
-          "src": "assets/diagrams/9F-extraction-methods-question.svg",
+          "src": "assets/webp/9F-extraction-methods-2panel.webp",
           "alt": "Two extraction process diagrams, with electrolysis in Process A and carbon reduction in Process B.",
-          "caption": "Use the diagram to answer the question.",
+          "caption": "Compare Process A and Process B.",
           "mediaTiming": "question",
-          "presentation": "media-diagram-base"
+          "presentation": "media-image-base",
+          "mediaMarkers": [
+            {
+              "label": "A",
+              "x": 25,
+              "y": 7
+            },
+            {
+              "label": "B",
+              "x": 75,
+              "y": 7
+            }
+          ]
         }
       ]
     },
@@ -8240,7 +8332,7 @@ window.YEAR9_CONTENT = {
         {
           "src": "assets/diagrams/9F-percentage-mass-gain-question.svg",
           "alt": "Mass gain diagram showing magnesium changing from 24 g to magnesium oxide at 40 g.",
-          "caption": "Use the diagram to answer the question.",
+          "caption": "Use actual change divided by original mass, then multiply by 100.",
           "mediaTiming": "question"
         }
       ]
@@ -8275,7 +8367,7 @@ window.YEAR9_CONTENT = {
         {
           "src": "assets/diagrams/9F-percentage-mass-loss-question.svg",
           "alt": "Mass loss diagram showing copper oxide changing from 80 g to copper at 64 g.",
-          "caption": "Use the diagram to answer the question.",
+          "caption": "Use actual change divided by original mass, then multiply by 100.",
           "mediaTiming": "question"
         }
       ]
@@ -8310,7 +8402,7 @@ window.YEAR9_CONTENT = {
         {
           "src": "assets/diagrams/9F-rusting-conditions-question.svg",
           "alt": "Four labelled test tubes showing iron nails in dry air, water plus air, oil-covered water and boiled water.",
-          "caption": "Use the diagram to answer the question.",
+          "caption": "Compare the conditions needed for rusting.",
           "mediaTiming": "question"
         }
       ]
@@ -8345,7 +8437,7 @@ window.YEAR9_CONTENT = {
         {
           "src": "assets/diagrams/9F-sacrificial-protection-question.svg",
           "alt": "Diagram showing iron connected to zinc in pair A and iron connected to copper in pair B.",
-          "caption": "Use the diagram to answer the question.",
+          "caption": "Use reactivity to decide which metal can act sacrificially.",
           "mediaTiming": "question"
         }
       ]
@@ -8529,7 +8621,7 @@ window.YEAR9_CONTENT = {
         {
           "src": "assets/diagrams/9I-distance-time-graph-question.svg",
           "alt": "Distance-time graph with sections labelled A, B and C.",
-          "caption": "Use the diagram to answer the question."
+          "caption": "Use the graph shape to represent the journey."
         }
       ],
       "mediaTiming": "question"
@@ -8955,7 +9047,7 @@ window.YEAR9_CONTENT = {
         {
           "src": "assets/diagrams/9B-carbon-cycle-source-style-question.svg",
           "alt": "Carbon cycle diagram with reservoirs and process arrows labelled A to F.",
-          "caption": "Use the diagram to answer the question."
+          "caption": "Use the labelled arrows to identify carbon-cycle processes."
         }
       ],
       "mediaTiming": "question"
@@ -9331,7 +9423,7 @@ window.YEAR9_CONTENT = {
         {
           "src": "assets/diagrams/9J-current-voltage-graph-question.svg",
           "alt": "Current-voltage graph with two lines labelled A and B.",
-          "caption": "Use the diagram to answer the question.",
+          "caption": "Use the slopes of the two current-voltage lines.",
           "mediaTiming": "question"
         }
       ],
@@ -10067,7 +10159,7 @@ window.YEAR9_CONTENT = {
         {
           "src": "assets/diagrams/9J-circuit-symbols-question.svg",
           "alt": "A grid of eight circuit symbols labelled A to H.",
-          "caption": "Use the diagram to answer the question.",
+          "caption": "Use the letter labels to identify the circuit components.",
           "mediaTiming": "question"
         }
       ]
@@ -10103,7 +10195,7 @@ window.YEAR9_CONTENT = {
         {
           "src": "assets/diagrams/9J-circuit-symbols-question.svg",
           "alt": "A grid of eight circuit symbols labelled A to H.",
-          "caption": "Use the diagram to answer the question.",
+          "caption": "Use the letter labels to identify the circuit components.",
           "mediaTiming": "question"
         }
       ]
@@ -10139,7 +10231,7 @@ window.YEAR9_CONTENT = {
         {
           "src": "assets/diagrams/9J-circuit-symbols-question.svg",
           "alt": "A grid of eight circuit symbols labelled A to H.",
-          "caption": "Use the diagram to answer the question.",
+          "caption": "Use the letter labels to identify the circuit components.",
           "mediaTiming": "question"
         }
       ]
@@ -10175,7 +10267,7 @@ window.YEAR9_CONTENT = {
         {
           "src": "assets/diagrams/9J-circuit-symbols-question.svg",
           "alt": "A grid of eight circuit symbols labelled A to H.",
-          "caption": "Use the diagram to answer the question.",
+          "caption": "Use the letter labels to identify the circuit components.",
           "mediaTiming": "question"
         }
       ]
@@ -10211,7 +10303,7 @@ window.YEAR9_CONTENT = {
         {
           "src": "assets/diagrams/9J-circuit-symbols-question.svg",
           "alt": "A grid of eight circuit symbols labelled A to H.",
-          "caption": "Use the diagram to answer the question.",
+          "caption": "Use the letter labels to identify the circuit components.",
           "mediaTiming": "question"
         }
       ]
@@ -10247,7 +10339,7 @@ window.YEAR9_CONTENT = {
         {
           "src": "assets/diagrams/9J-circuit-symbols-question.svg",
           "alt": "A grid of eight circuit symbols labelled A to H.",
-          "caption": "Use the diagram to answer the question.",
+          "caption": "Use the letter labels to identify the circuit components.",
           "mediaTiming": "question"
         }
       ]
@@ -10283,7 +10375,7 @@ window.YEAR9_CONTENT = {
         {
           "src": "assets/diagrams/9J-circuit-symbols-question.svg",
           "alt": "A grid of eight circuit symbols labelled A to H.",
-          "caption": "Use the diagram to answer the question.",
+          "caption": "Use the letter labels to identify the circuit components.",
           "mediaTiming": "question"
         }
       ]
@@ -10319,7 +10411,7 @@ window.YEAR9_CONTENT = {
         {
           "src": "assets/webp/9J-series-parallel-circuits-symbols-base.webp",
           "alt": "Two circuit diagrams, with Circuit A on top and Circuit B below.",
-          "caption": "Use the diagram to answer the question.",
+          "caption": "Compare the number of paths available for current in each circuit.",
           "mediaTiming": "question",
           "presentation": "media-image-base",
           "mediaMarkers": [
@@ -10368,7 +10460,7 @@ window.YEAR9_CONTENT = {
         {
           "src": "assets/webp/9J-series-parallel-circuits-symbols-base.webp",
           "alt": "Two circuit diagrams, with Circuit A on top and Circuit B below.",
-          "caption": "Use the diagram to answer the question.",
+          "caption": "Compare the number of paths available for current in each circuit.",
           "mediaTiming": "question",
           "presentation": "media-image-base",
           "mediaMarkers": [
@@ -10417,7 +10509,7 @@ window.YEAR9_CONTENT = {
         {
           "src": "assets/webp/9J-series-parallel-circuits-symbols-base.webp",
           "alt": "Two circuit diagrams, with Circuit A on top and Circuit B below.",
-          "caption": "Use the diagram to answer the question.",
+          "caption": "Compare the number of paths available for current in each circuit.",
           "mediaTiming": "question",
           "presentation": "media-image-base",
           "mediaMarkers": [
@@ -10461,7 +10553,7 @@ window.YEAR9_CONTENT = {
         {
           "src": "assets/webp/9J-series-parallel-circuits-symbols-base.webp",
           "alt": "Two circuit diagrams, with Circuit A on top and Circuit B below.",
-          "caption": "Use the diagram to answer the question.",
+          "caption": "Compare the number of paths available for current in each circuit.",
           "mediaTiming": "question",
           "presentation": "media-image-base",
           "mediaMarkers": [
@@ -10510,7 +10602,7 @@ window.YEAR9_CONTENT = {
         {
           "src": "assets/diagrams/9J-meter-placement-question.svg",
           "alt": "A circuit with two possible meter positions labelled X and Y.",
-          "caption": "Use the diagram to answer the question.",
+          "caption": "Decide whether the meter should be in the main loop or connected across the lamp.",
           "mediaTiming": "question"
         }
       ]
@@ -10546,7 +10638,7 @@ window.YEAR9_CONTENT = {
         {
           "src": "assets/diagrams/9J-meter-placement-question.svg",
           "alt": "A circuit with two possible meter positions labelled X and Y.",
-          "caption": "Use the diagram to answer the question.",
+          "caption": "Decide whether the meter should be in the main loop or connected across the lamp.",
           "mediaTiming": "question"
         }
       ]
@@ -10578,7 +10670,7 @@ window.YEAR9_CONTENT = {
         {
           "src": "assets/diagrams/9J-magnetic-field-direction-question.svg",
           "alt": "Bar magnet with four labelled arrow options around the field pattern.",
-          "caption": "Use the diagram to answer the question.",
+          "caption": "Use the labelled diagram to answer the question.",
           "mediaTiming": "question"
         }
       ],
@@ -10611,7 +10703,7 @@ window.YEAR9_CONTENT = {
         {
           "src": "assets/diagrams/9J-magnetic-field-strength-question.svg",
           "alt": "Bar magnet with field lines and labelled points X, Y and Z.",
-          "caption": "Use the diagram to answer the question.",
+          "caption": "Use the labelled diagram to answer the question.",
           "mediaTiming": "question"
         }
       ],
@@ -10641,7 +10733,7 @@ window.YEAR9_CONTENT = {
         {
           "src": "assets/diagrams/9J-static-charge-pairs-question.svg",
           "alt": "Four labelled pairs of positive and negative charges.",
-          "caption": "Use the diagram to answer the question.",
+          "caption": "Use the labelled diagram to answer the question.",
           "mediaTiming": "question"
         }
       ],
@@ -10671,7 +10763,7 @@ window.YEAR9_CONTENT = {
         {
           "src": "assets/diagrams/9J-charge-transfer-question.svg",
           "alt": "Cloth and rod diagram showing electron symbols moving towards the rod.",
-          "caption": "Use the diagram to answer the question.",
+          "caption": "Use the labelled diagram to answer the question.",
           "mediaTiming": "question"
         }
       ],
@@ -10701,7 +10793,7 @@ window.YEAR9_CONTENT = {
         {
           "src": "assets/diagrams/9J-electromagnet-parts-question.svg",
           "alt": "Electromagnet circuit with labels A to D.",
-          "caption": "Use the diagram to answer the question.",
+          "caption": "Use the labelled diagram to answer the question.",
           "mediaTiming": "question"
         }
       ],
@@ -10734,7 +10826,7 @@ window.YEAR9_CONTENT = {
         {
           "src": "assets/diagrams/9J-electromagnet-parts-question.svg",
           "alt": "Electromagnet circuit with labels A to D.",
-          "caption": "Use the diagram to answer the question.",
+          "caption": "Use the labelled diagram to answer the question.",
           "mediaTiming": "question"
         }
       ],
@@ -10764,7 +10856,7 @@ window.YEAR9_CONTENT = {
         {
           "src": "assets/webp/9J-relay-base.webp",
           "alt": "Relay circuit diagram with a control circuit, electromagnet, switch contacts and lamp circuit.",
-          "caption": "Use the diagram to answer the question.",
+          "caption": "Use the labelled relay diagram to answer the question.",
           "mediaTiming": "question",
           "presentation": "media-image-base",
           "mediaMarkers": [
@@ -10817,7 +10909,7 @@ window.YEAR9_CONTENT = {
         {
           "src": "assets/webp/9J-relay-base.webp",
           "alt": "Relay circuit diagram with a control circuit, electromagnet, switch contacts and lamp circuit.",
-          "caption": "Use the diagram to answer the question.",
+          "caption": "Use the labelled relay diagram to answer the question.",
           "mediaTiming": "question",
           "presentation": "media-image-base",
           "mediaMarkers": [
@@ -10873,7 +10965,7 @@ window.YEAR9_CONTENT = {
         {
           "src": "assets/diagrams/9J-motor-effect-question.svg",
           "alt": "Current-carrying wire between north and south poles with labelled force-arrow options.",
-          "caption": "Use the diagram to answer the question.",
+          "caption": "Use the labelled diagram to answer the question.",
           "mediaTiming": "question"
         }
       ],
@@ -10906,7 +10998,7 @@ window.YEAR9_CONTENT = {
         {
           "src": "assets/diagrams/9J-motor-effect-question.svg",
           "alt": "Current-carrying wire between north and south poles with labelled force-arrow options.",
-          "caption": "Use the diagram to answer the question.",
+          "caption": "Use the labelled diagram to answer the question.",
           "mediaTiming": "question"
         }
       ],
@@ -10939,7 +11031,7 @@ window.YEAR9_CONTENT = {
         {
           "src": "assets/diagrams/9J-static-charge-pairs-question.svg",
           "alt": "Four labelled pairs of positive and negative charges.",
-          "caption": "Use the diagram to answer the question.",
+          "caption": "Use the labelled diagram to answer the question.",
           "mediaTiming": "question"
         }
       ],
@@ -10972,11 +11064,1966 @@ window.YEAR9_CONTENT = {
         {
           "src": "assets/diagrams/9J-electromagnet-parts-question.svg",
           "alt": "Electromagnet circuit with labels A to D.",
-          "caption": "Use the diagram to answer the question.",
+          "caption": "Use the labelled diagram to answer the question.",
           "mediaTiming": "question"
         }
       ],
       "mediaTiming": "question"
+    },
+    {
+      "id": "y9r-001-9b-what-is-sustainable-development",
+      "unit": "9B",
+      "type": "Assess check",
+      "question": "What is sustainable development?",
+      "answer": "Developing the things we need, without destroying habitats.",
+      "choices": [],
+      "explanation": "Developing the things we need, without destroying habitats.",
+      "source": "9B Summary sheet p2 Farming",
+      "sourceExcerpt": "Developing the things we need, without destroying habitats is called sustainable development.",
+      "level": 1,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-alignment",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9B-farming-yield-impact",
+      "learningObjectiveTitle": "Farming methods: yield, problems and sustainability",
+      "learningObjectiveDescription": "Farming methods, crop yield, habitat impacts, fertilisers, pesticides and sustainability.",
+      "noteId": "9B-farming-yield-impact",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9r-002-9b-why-is-land-cleared-of-hedges-and-trees-in-modern-farming",
+      "unit": "9B",
+      "type": "Assess check",
+      "question": "Why is land cleared of hedges and trees in modern farming?",
+      "answer": "To create more land for crops and make it easier for machinery to move around.",
+      "choices": [],
+      "explanation": "To create more land for crops and make it easier for machinery to move around.",
+      "source": "9B Summary sheet p2 Farming table",
+      "sourceExcerpt": "land is cleared of hedges and trees — to create more land for crops and make it easier for machinery to move around",
+      "level": 2,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-alignment",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9B-farming-yield-impact",
+      "learningObjectiveTitle": "Farming methods: yield, problems and sustainability",
+      "learningObjectiveDescription": "Farming methods, crop yield, habitat impacts, fertilisers, pesticides and sustainability.",
+      "noteId": "9B-farming-yield-impact",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9r-003-9b-what-problem-can-be-caused-by-clearing-hedges-and-trees",
+      "unit": "9B",
+      "type": "Assess check",
+      "question": "What problem can be caused by clearing hedges and trees?",
+      "answer": "Destroys habitats. Lack of roots can cause soil erosion.",
+      "choices": [],
+      "explanation": "Destroys habitats. Lack of roots can cause soil erosion.",
+      "source": "9B Summary sheet p2 Farming table",
+      "sourceExcerpt": "Destroys habitats. Lack of roots can cause soil erosion.",
+      "level": 2,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-alignment",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9B-farming-yield-impact",
+      "learningObjectiveTitle": "Farming methods: yield, problems and sustainability",
+      "learningObjectiveDescription": "Farming methods, crop yield, habitat impacts, fertilisers, pesticides and sustainability.",
+      "noteId": "9B-farming-yield-impact",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9r-004-9b-why-are-pesticides-used-on-crops",
+      "unit": "9B",
+      "type": "Assess check",
+      "question": "Why are pesticides used on crops?",
+      "answer": "To kill pests that compete with or harm the crops.",
+      "choices": [],
+      "explanation": "To kill pests that compete with or harm the crops.",
+      "source": "9B Summary sheet p2 Farming table",
+      "sourceExcerpt": "pesticides (e.g. herbicides, insecticides) are used — to kill pests that compete with or harm the crops",
+      "level": 2,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-alignment",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9B-farming-yield-impact",
+      "learningObjectiveTitle": "Farming methods: yield, problems and sustainability",
+      "learningObjectiveDescription": "Farming methods, crop yield, habitat impacts, fertilisers, pesticides and sustainability.",
+      "noteId": "9B-farming-yield-impact",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9r-005-9b-what-problem-can-pesticides-cause",
+      "unit": "9B",
+      "type": "Assess check",
+      "question": "What problem can pesticides cause?",
+      "answer": "Can kill useful organisms as well as pests. Damages food webs.",
+      "choices": [],
+      "explanation": "Can kill useful organisms as well as pests. Damages food webs.",
+      "source": "9B Summary sheet p2 Farming table",
+      "sourceExcerpt": "Can kill useful organisms as well as pests. Damages food webs.",
+      "level": 2,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-alignment",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9B-farming-yield-impact",
+      "learningObjectiveTitle": "Farming methods: yield, problems and sustainability",
+      "learningObjectiveDescription": "Farming methods, crop yield, habitat impacts, fertilisers, pesticides and sustainability.",
+      "noteId": "9B-farming-yield-impact",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9r-006-9b-why-are-fertilisers-used",
+      "unit": "9B",
+      "type": "Assess check",
+      "question": "Why are fertilisers used?",
+      "answer": "They contain mineral salts that help plants to grow and increase the yield.",
+      "choices": [],
+      "explanation": "They contain mineral salts that help plants to grow and increase the yield.",
+      "source": "9B Summary sheet p2 Farming table",
+      "sourceExcerpt": "fertilisers are used — they contain mineral salts that help plants to grow and increase the yield",
+      "level": 2,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-alignment",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9B-farming-yield-impact",
+      "learningObjectiveTitle": "Farming methods: yield, problems and sustainability",
+      "learningObjectiveDescription": "Farming methods, crop yield, habitat impacts, fertilisers, pesticides and sustainability.",
+      "noteId": "9B-farming-yield-impact",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9r-007-9b-what-problem-can-fertilisers-cause-if-they-wash-into-streams-and-rivers",
+      "unit": "9B",
+      "type": "Assess check",
+      "question": "What problem can fertilisers cause if they wash into streams and rivers?",
+      "answer": "They can cause pollution so that the organisms in the water die.",
+      "choices": [],
+      "explanation": "They can cause pollution so that the organisms in the water die.",
+      "source": "9B Summary sheet p2 Farming table",
+      "sourceExcerpt": "Can wash into streams and rivers and cause pollution so that the organisms in the water die.",
+      "level": 2,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-alignment",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9B-farming-yield-impact",
+      "learningObjectiveTitle": "Farming methods: yield, problems and sustainability",
+      "learningObjectiveDescription": "Farming methods, crop yield, habitat impacts, fertilisers, pesticides and sustainability.",
+      "noteId": "9B-farming-yield-impact",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9r-008-9b-what-is-the-problem-with-planting-huge-areas-of-a-single-variety",
+      "unit": "9B",
+      "type": "Assess check",
+      "question": "What is the problem with planting huge areas of a single variety?",
+      "answer": "The planting of huge areas of a single variety reduces biodiversity.",
+      "choices": [],
+      "explanation": "The planting of huge areas of a single variety reduces biodiversity.",
+      "source": "9B Summary sheet p2 Farming table",
+      "sourceExcerpt": "The planting of huge areas of a single variety reduces biodiversity.",
+      "level": 2,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-alignment",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9B-farming-yield-impact",
+      "learningObjectiveTitle": "Farming methods: yield, problems and sustainability",
+      "learningObjectiveDescription": "Farming methods, crop yield, habitat impacts, fertilisers, pesticides and sustainability.",
+      "noteId": "9B-farming-yield-impact",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9r-009-9b-what-is-cross-breeding",
+      "unit": "9B",
+      "type": "Assess check",
+      "question": "What is cross-breeding?",
+      "answer": "Two different varieties are bred together to try to produce offspring with characteristics from both varieties.",
+      "choices": [],
+      "explanation": "Two different varieties are bred together to try to produce offspring with characteristics from both varieties.",
+      "source": "9B Summary sheet p2 Breeding varieties",
+      "sourceExcerpt": "Sometimes two different varieties are bred together to try to produce offspring with characteristics from both varieties. This is called cross-breeding.",
+      "level": 2,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-alignment",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9B-plant-products",
+      "learningObjectiveTitle": "Plant products, seeds and food production",
+      "learningObjectiveDescription": "Uses of glucose, plant products, selective breeding and crop production.",
+      "noteId": "9B-plant-products",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9r-010-9b-what-happens-to-the-energy-released-from-glucose-in-aerobic-respiration",
+      "unit": "9B",
+      "type": "Assess check",
+      "question": "What happens to the energy released from glucose in aerobic respiration?",
+      "answer": "The energy released from glucose is transferred to molecules of ATP, which store energy for a cell until it is needed.",
+      "choices": [],
+      "explanation": "The energy released from glucose is transferred to molecules of ATP, which store energy for a cell until it is needed.",
+      "source": "9B Summary sheet p2 Aerobic respiration",
+      "sourceExcerpt": "The energy released from glucose is transferred to molecules of ATP, which store energy for a cell until it is needed.",
+      "level": 2,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-alignment",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9B-photosynthesis",
+      "learningObjectiveTitle": "Photosynthesis and respiration",
+      "learningObjectiveDescription": "Photosynthesis, limiting factors, respiration and ATP.",
+      "noteId": "9B-photosynthesis",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9r-011-9b-why-do-plants-need-magnesium-salts",
+      "unit": "9B",
+      "type": "Assess check",
+      "question": "Why do plants need magnesium salts?",
+      "answer": "Magnesium salts are needed to make chlorophyll.",
+      "choices": [],
+      "explanation": "Magnesium salts are needed to make chlorophyll.",
+      "source": "9B Summary sheet p1 Getting water",
+      "sourceExcerpt": "magnesium salts are needed to make chlorophyll.",
+      "level": 1,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-alignment",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9B-plant-transport",
+      "learningObjectiveTitle": "Plant transport and specialised cells",
+      "learningObjectiveDescription": "Roots, xylem, phloem, mineral salts, stomata and specialised plant cells.",
+      "noteId": "9B-plant-transport",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9r-012-9b-where-does-most-photosynthesis-happen-in-leaves",
+      "unit": "9B",
+      "type": "Assess check",
+      "question": "Where does most photosynthesis happen in leaves?",
+      "answer": "Most photosynthesis happens in the palisade cells, which are found near the upper surface of leaves.",
+      "choices": [],
+      "explanation": "Most photosynthesis happens in the palisade cells, which are found near the upper surface of leaves.",
+      "source": "9B Summary sheet p1 Getting light",
+      "sourceExcerpt": "Most photosynthesis happens in the palisade cells, which are found near the upper surface of leaves.",
+      "level": 2,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-alignment",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9B-photosynthesis",
+      "learningObjectiveTitle": "Photosynthesis and respiration",
+      "learningObjectiveDescription": "Photosynthesis, limiting factors, respiration and ATP.",
+      "noteId": "9B-photosynthesis",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9r-013-9e-what-do-exothermic-reactions-do-to-the-surroundings",
+      "unit": "9E",
+      "type": "Assess check",
+      "question": "What do exothermic reactions do to the surroundings?",
+      "answer": "Exothermic reactions transfer energy into the surroundings and so increase the temperature around them.",
+      "choices": [],
+      "explanation": "Exothermic reactions transfer energy into the surroundings and so increase the temperature around them.",
+      "source": "9E Summary sheet p2 Endothermic and exothermic reactions",
+      "sourceExcerpt": "Exothermic reactions transfer energy into the surroundings and so increase the temperature around them.",
+      "level": 2,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-alignment",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9E-energy-thermal-peer-review",
+      "learningObjectiveTitle": "Energy changes, thermal decomposition and peer review",
+      "learningObjectiveDescription": "Endothermic/exothermic reactions, state symbols, thermal decomposition and peer review.",
+      "noteId": "9E-energy-thermal-peer-review",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9r-014-9e-what-do-endothermic-reactions-do-to-the-surroundings",
+      "unit": "9E",
+      "type": "Assess check",
+      "question": "What do endothermic reactions do to the surroundings?",
+      "answer": "Endothermic reactions transfer energy from the surroundings and so decrease the temperature around them.",
+      "choices": [],
+      "explanation": "Endothermic reactions transfer energy from the surroundings and so decrease the temperature around them.",
+      "source": "9E Summary sheet p2 Endothermic and exothermic reactions",
+      "sourceExcerpt": "Endothermic reactions transfer energy from the surroundings and so decrease the temperature around them.",
+      "level": 2,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-alignment",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9E-energy-thermal-peer-review",
+      "learningObjectiveTitle": "Energy changes, thermal decomposition and peer review",
+      "learningObjectiveDescription": "Endothermic/exothermic reactions, state symbols, thermal decomposition and peer review.",
+      "noteId": "9E-energy-thermal-peer-review",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9r-015-9e-give-an-example-of-an-endothermic-reaction-from-the-revision-sheet",
+      "unit": "9E",
+      "type": "Assess check",
+      "question": "Give an example of an endothermic reaction from the revision sheet.",
+      "answer": "Thermal decomposition reactions.",
+      "choices": [],
+      "explanation": "Thermal decomposition reactions.",
+      "source": "9E Summary sheet p2 Endothermic and exothermic reactions",
+      "sourceExcerpt": "Endothermic reactions transfer energy from the surroundings and so decrease the temperature around them, e.g. thermal decomposition reactions.",
+      "level": 2,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-alignment",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9E-energy-thermal-peer-review",
+      "learningObjectiveTitle": "Energy changes, thermal decomposition and peer review",
+      "learningObjectiveDescription": "Endothermic/exothermic reactions, state symbols, thermal decomposition and peer review.",
+      "noteId": "9E-energy-thermal-peer-review",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9r-016-9e-what-do-the-state-symbols-s-l-g-and-aq-mean",
+      "unit": "9E",
+      "type": "Assess check",
+      "question": "What do the state symbols s, l, g and aq mean?",
+      "answer": "s = solid, l = liquid, g = gas, aq = dissolved in water.",
+      "choices": [],
+      "explanation": "s = solid, l = liquid, g = gas, aq = dissolved in water.",
+      "source": "9E Summary sheet p2 Endothermic and exothermic reactions",
+      "sourceExcerpt": "state symbols: s = solid, l = liquid, g = gas, aq = dissolved in water",
+      "level": 2,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-alignment",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9E-energy-thermal-peer-review",
+      "learningObjectiveTitle": "Energy changes, thermal decomposition and peer review",
+      "learningObjectiveDescription": "Endothermic/exothermic reactions, state symbols, thermal decomposition and peer review.",
+      "noteId": "9E-energy-thermal-peer-review",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9r-017-9e-what-is-made-when-calcium-carbonate-thermally-decomposes",
+      "unit": "9E",
+      "type": "Assess check",
+      "question": "What is made when calcium carbonate thermally decomposes?",
+      "answer": "Calcium oxide and carbon dioxide.",
+      "choices": [],
+      "explanation": "Calcium oxide and carbon dioxide.",
+      "source": "9E Summary sheet p2 Thermal decomposition equation",
+      "sourceExcerpt": "calcium carbonate → calcium oxide + carbon dioxide",
+      "level": 2,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-alignment",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9E-energy-thermal-peer-review",
+      "learningObjectiveTitle": "Energy changes, thermal decomposition and peer review",
+      "learningObjectiveDescription": "Endothermic/exothermic reactions, state symbols, thermal decomposition and peer review.",
+      "noteId": "9E-energy-thermal-peer-review",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9r-018-9e-in-peer-review-what-do-scientists-check-in-a-paper",
+      "unit": "9E",
+      "type": "Assess check",
+      "question": "In peer review, what do scientists check in a paper?",
+      "answer": "They check that the paper has valid conclusions, that it is original and that the experiments work.",
+      "choices": [],
+      "explanation": "They check that the paper has valid conclusions, that it is original and that the experiments work.",
+      "source": "9E Summary sheet p2 Peer review",
+      "sourceExcerpt": "The scientists evaluate the paper; they check that the paper has valid conclusions, that it is original and that the experiments work.",
+      "level": 2,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-alignment",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9E-energy-thermal-peer-review",
+      "learningObjectiveTitle": "Energy changes, thermal decomposition and peer review",
+      "learningObjectiveDescription": "Endothermic/exothermic reactions, state symbols, thermal decomposition and peer review.",
+      "noteId": "9E-energy-thermal-peer-review",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9r-019-9e-after-peer-review-what-can-a-paper-be-recommended-for",
+      "unit": "9E",
+      "type": "Assess check",
+      "question": "After peer review, what can a paper be recommended for?",
+      "answer": "Publication, amendment or rejection.",
+      "choices": [],
+      "explanation": "Publication, amendment or rejection.",
+      "source": "9E Summary sheet p2 Peer review",
+      "sourceExcerpt": "Depending on the review, the paper is recommended for publication, amendment or rejection.",
+      "level": 2,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-alignment",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9E-energy-thermal-peer-review",
+      "learningObjectiveTitle": "Energy changes, thermal decomposition and peer review",
+      "learningObjectiveDescription": "Endothermic/exothermic reactions, state symbols, thermal decomposition and peer review.",
+      "noteId": "9E-energy-thermal-peer-review",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9r-020-9e-how-are-metals-recycled-according-to-the-revision-sheet",
+      "unit": "9E",
+      "type": "Assess check",
+      "question": "How are metals recycled, according to the revision sheet?",
+      "answer": "By separating and melting.",
+      "choices": [],
+      "explanation": "By separating and melting.",
+      "source": "9E Summary sheet p2 Recycling materials",
+      "sourceExcerpt": "Metals – by separating and melting.",
+      "level": 1,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-alignment",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9E-recycling-methods",
+      "learningObjectiveTitle": "Recycling methods by material",
+      "learningObjectiveDescription": "Recycling methods, landfill reduction and resource conservation.",
+      "noteId": "9E-recycling-methods",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9r-021-9e-how-is-glass-recycled-according-to-the-revision-sheet",
+      "unit": "9E",
+      "type": "Assess check",
+      "question": "How is glass recycled, according to the revision sheet?",
+      "answer": "By separating colours and melting.",
+      "choices": [],
+      "explanation": "By separating colours and melting.",
+      "source": "9E Summary sheet p2 Recycling materials",
+      "sourceExcerpt": "Glass – by separating colours and melting.",
+      "level": 1,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-alignment",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9E-recycling-methods",
+      "learningObjectiveTitle": "Recycling methods by material",
+      "learningObjectiveDescription": "Recycling methods, landfill reduction and resource conservation.",
+      "noteId": "9E-recycling-methods",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9r-022-9e-how-is-paper-recycled-according-to-the-revision-sheet",
+      "unit": "9E",
+      "type": "Assess check",
+      "question": "How is paper recycled, according to the revision sheet?",
+      "answer": "By removing ink and adding water to make a pulp.",
+      "choices": [],
+      "explanation": "By removing ink and adding water to make a pulp.",
+      "source": "9E Summary sheet p2 Recycling materials",
+      "sourceExcerpt": "Paper – by removing ink and adding water to make a pulp.",
+      "level": 1,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-alignment",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9E-recycling-methods",
+      "learningObjectiveTitle": "Recycling methods by material",
+      "learningObjectiveDescription": "Recycling methods, landfill reduction and resource conservation.",
+      "noteId": "9E-recycling-methods",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9r-023-9e-how-is-concrete-recycled-according-to-the-revision-sheet",
+      "unit": "9E",
+      "type": "Assess check",
+      "question": "How is concrete recycled, according to the revision sheet?",
+      "answer": "By crushing and grading.",
+      "choices": [],
+      "explanation": "By crushing and grading.",
+      "source": "9E Summary sheet p2 Recycling materials",
+      "sourceExcerpt": "Concrete – by crushing and grading.",
+      "level": 1,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-alignment",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9E-recycling-methods",
+      "learningObjectiveTitle": "Recycling methods by material",
+      "learningObjectiveDescription": "Recycling methods, landfill reduction and resource conservation.",
+      "noteId": "9E-recycling-methods",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9r-024-9e-give-two-reasons-why-recycling-materials-to-use-again-is-useful",
+      "unit": "9E",
+      "type": "Assess check",
+      "question": "Give two reasons why recycling materials to use again is useful.",
+      "answer": "It reduces our use of landfill sites and reduces the need to burn fossil fuels. It can also reduce pollution and save raw materials.",
+      "choices": [],
+      "explanation": "It reduces our use of landfill sites and reduces the need to burn fossil fuels. It can also reduce pollution and save raw materials.",
+      "source": "9E Summary sheet p2 Recycling materials",
+      "sourceExcerpt": "Recycling materials to use again … reduces our use of landfill sites; reduces the need to burn fossil fuels; reduces pollution from manufacturing process; saves our resources of raw materials.",
+      "level": 2,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-alignment",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9E-environment",
+      "learningObjectiveTitle": "Environmental impacts and recycling",
+      "learningObjectiveDescription": "Environmental impacts of materials, fossil fuels, pollution and recycling.",
+      "noteId": "9E-environment",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9r-025-9e-what-is-biomagnification",
+      "unit": "9E",
+      "type": "Assess check",
+      "question": "What is biomagnification?",
+      "answer": "As large animals eat lots of smaller animals, toxin levels increase and can reach harmful levels in humans.",
+      "choices": [],
+      "explanation": "As large animals eat lots of smaller animals, toxin levels increase and can reach harmful levels in humans.",
+      "source": "9E Summary sheet p2 Problems with materials",
+      "sourceExcerpt": "As large animals eat lots of smaller animals, toxin levels increase (biomagnification) and can reach harmful levels in humans.",
+      "level": 2,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-alignment",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9E-environment",
+      "learningObjectiveTitle": "Environmental impacts and recycling",
+      "learningObjectiveDescription": "Environmental impacts of materials, fossil fuels, pollution and recycling.",
+      "noteId": "9E-environment",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9r-026-9f-in-reactions-and-physical-changes-what-happens-to-the-number-of-atoms",
+      "unit": "9F",
+      "type": "Assess check",
+      "question": "In reactions and physical changes, what happens to the number of atoms?",
+      "answer": "The number of atoms does not change and so there is no overall change in mass.",
+      "choices": [],
+      "explanation": "The number of atoms does not change and so there is no overall change in mass.",
+      "source": "9F Summary sheet p1 Reactions and equations",
+      "sourceExcerpt": "In both cases, the number of atoms does not change and so there is no overall change in mass.",
+      "level": 2,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-alignment",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9F-changes",
+      "learningObjectiveTitle": "Physical and chemical changes",
+      "learningObjectiveDescription": "Physical changes, chemical reactions, equations, conservation of atoms and gas pressure.",
+      "noteId": "9F-changes",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9r-027-9f-what-do-the-large-numbers-in-an-equation-show",
+      "unit": "9F",
+      "type": "Assess check",
+      "question": "What do the large numbers in an equation show?",
+      "answer": "The large numbers show the number of molecules.",
+      "choices": [],
+      "explanation": "The large numbers show the number of molecules.",
+      "source": "9F Summary sheet p1 Reactions and equations",
+      "sourceExcerpt": "The large numbers show the number of molecules.",
+      "level": 2,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-alignment",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9F-changes",
+      "learningObjectiveTitle": "Physical and chemical changes",
+      "learningObjectiveDescription": "Physical changes, chemical reactions, equations, conservation of atoms and gas pressure.",
+      "noteId": "9F-changes",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9r-028-9f-what-do-the-letters-in-brackets-in-an-equation-show",
+      "unit": "9F",
+      "type": "Assess check",
+      "question": "What do the letters in brackets in an equation show?",
+      "answer": "The letters in brackets are state symbols (g = gas, l = liquid, s = solid, aq = dissolved in water).",
+      "choices": [],
+      "explanation": "The letters in brackets are state symbols (g = gas, l = liquid, s = solid, aq = dissolved in water).",
+      "source": "9F Summary sheet p1 Reactions and equations",
+      "sourceExcerpt": "The letters in brackets are state symbols (g = gas, l = liquid, s = solid, aq = dissolved in water).",
+      "level": 2,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-alignment",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9F-changes",
+      "learningObjectiveTitle": "Physical and chemical changes",
+      "learningObjectiveDescription": "Physical changes, chemical reactions, equations, conservation of atoms and gas pressure.",
+      "noteId": "9F-changes",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9r-029-9f-what-does-an-atom-contain",
+      "unit": "9F",
+      "type": "Assess check",
+      "question": "What does an atom contain?",
+      "answer": "Atoms contain neutrons and protons in a central nucleus and electrons around the outside of the nucleus.",
+      "choices": [],
+      "explanation": "Atoms contain neutrons and protons in a central nucleus and electrons around the outside of the nucleus.",
+      "source": "9F Summary sheet p2 Atomic structure",
+      "sourceExcerpt": "Atoms contain neutrons and protons (in a central nucleus) and electrons around the outside of the nucleus.",
+      "level": 2,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-alignment",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9F-atomic-structure-periodic-table",
+      "learningObjectiveTitle": "Atomic structure and the periodic table",
+      "learningObjectiveDescription": "Subatomic particles, atomic number, mass number, groups, periods and periodic-table trends.",
+      "noteId": "9F-atomic-structure-periodic-table",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9r-030-9f-what-is-the-atomic-number-or-proton-number",
+      "unit": "9F",
+      "type": "Assess check",
+      "question": "What is the atomic number or proton number?",
+      "answer": "The number of protons is the atomic number or proton number.",
+      "choices": [],
+      "explanation": "The number of protons is the atomic number or proton number.",
+      "source": "9F Summary sheet p2 Atomic structure",
+      "sourceExcerpt": "The number of protons is the atomic number or proton number.",
+      "level": 1,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-alignment",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9F-atomic-structure-periodic-table",
+      "learningObjectiveTitle": "Atomic structure and the periodic table",
+      "learningObjectiveDescription": "Subatomic particles, atomic number, mass number, groups, periods and periodic-table trends.",
+      "noteId": "9F-atomic-structure-periodic-table",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9r-031-9f-how-are-elements-arranged-in-the-periodic-table",
+      "unit": "9F",
+      "type": "Assess check",
+      "question": "How are elements arranged in the periodic table?",
+      "answer": "Elements are arranged in order of atomic number in the periodic table.",
+      "choices": [],
+      "explanation": "Elements are arranged in order of atomic number in the periodic table.",
+      "source": "9F Summary sheet p2 Atomic structure",
+      "sourceExcerpt": "Elements are arranged in order of atomic number in the periodic table.",
+      "level": 2,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-alignment",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9F-atomic-structure-periodic-table",
+      "learningObjectiveTitle": "Atomic structure and the periodic table",
+      "learningObjectiveDescription": "Subatomic particles, atomic number, mass number, groups, periods and periodic-table trends.",
+      "noteId": "9F-atomic-structure-periodic-table",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9r-032-9f-what-is-the-mass-number-of-an-atom",
+      "unit": "9F",
+      "type": "Assess check",
+      "question": "What is the mass number of an atom?",
+      "answer": "The number of neutrons and the number of protons in an atom is its mass number.",
+      "choices": [],
+      "explanation": "The number of neutrons and the number of protons in an atom is its mass number.",
+      "source": "9F Summary sheet p2 Atomic structure",
+      "sourceExcerpt": "The number of neutrons and the number of protons in an atom is its mass number.",
+      "level": 2,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-alignment",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9F-atomic-structure-periodic-table",
+      "learningObjectiveTitle": "Atomic structure and the periodic table",
+      "learningObjectiveDescription": "Subatomic particles, atomic number, mass number, groups, periods and periodic-table trends.",
+      "noteId": "9F-atomic-structure-periodic-table",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9r-033-9f-what-are-groups-and-periods-in-the-periodic-table",
+      "unit": "9F",
+      "type": "Assess check",
+      "question": "What are groups and periods in the periodic table?",
+      "answer": "The vertical columns in the periodic table are groups and the rows are periods.",
+      "choices": [],
+      "explanation": "The vertical columns in the periodic table are groups and the rows are periods.",
+      "source": "9F Summary sheet p2 Atomic structure",
+      "sourceExcerpt": "The vertical columns in the periodic table are groups and the rows are periods.",
+      "level": 1,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-alignment",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9F-atomic-structure-periodic-table",
+      "learningObjectiveTitle": "Atomic structure and the periodic table",
+      "learningObjectiveDescription": "Subatomic particles, atomic number, mass number, groups, periods and periodic-table trends.",
+      "noteId": "9F-atomic-structure-periodic-table",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9r-034-9f-what-do-metals-that-react-with-water-produce",
+      "unit": "9F",
+      "type": "Assess check",
+      "question": "What do metals that react with water produce?",
+      "answer": "The metals that react with water produce a metal hydroxide and hydrogen.",
+      "choices": [],
+      "explanation": "The metals that react with water produce a metal hydroxide and hydrogen.",
+      "source": "9F Summary sheet p1 The reactivity series",
+      "sourceExcerpt": "The metals that react with water produce a metal hydroxide and hydrogen.",
+      "level": 2,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-alignment",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9F-reactivity",
+      "learningObjectiveTitle": "Reactivity and displacement",
+      "learningObjectiveDescription": "Reactivity series, metal reactions, displacement and reaction patterns.",
+      "noteId": "9F-reactivity",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9r-035-9f-what-do-metals-that-react-with-dilute-acids-produce",
+      "unit": "9F",
+      "type": "Assess check",
+      "question": "What do metals that react with dilute acids produce?",
+      "answer": "The metals that react with dilute acids produce a salt and hydrogen.",
+      "choices": [],
+      "explanation": "The metals that react with dilute acids produce a salt and hydrogen.",
+      "source": "9F Summary sheet p1 The reactivity series",
+      "sourceExcerpt": "The metals that react with dilute acids produce a salt and hydrogen.",
+      "level": 2,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-alignment",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9F-reactivity",
+      "learningObjectiveTitle": "Reactivity and displacement",
+      "learningObjectiveDescription": "Reactivity series, metal reactions, displacement and reaction patterns.",
+      "noteId": "9F-reactivity",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9r-036-9f-what-is-an-oxidation-reaction-in-the-reactivity-series-section",
+      "unit": "9F",
+      "type": "Assess check",
+      "question": "What is an oxidation reaction in the reactivity-series section?",
+      "answer": "Most metals react with oxygen from the air to form metal oxides. This is an oxidation reaction.",
+      "choices": [],
+      "explanation": "Most metals react with oxygen from the air to form metal oxides. This is an oxidation reaction.",
+      "source": "9F Summary sheet p1 The reactivity series",
+      "sourceExcerpt": "Most metals react with oxygen from the air to form metal oxides. This is an oxidation reaction.",
+      "level": 2,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-alignment",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9F-reactivity",
+      "learningObjectiveTitle": "Reactivity and displacement",
+      "learningObjectiveDescription": "Reactivity series, metal reactions, displacement and reaction patterns.",
+      "noteId": "9F-reactivity",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9r-037-9f-what-is-a-hydrocarbon",
+      "unit": "9F",
+      "type": "Assess check",
+      "question": "What is a hydrocarbon?",
+      "answer": "A hydrocarbon contains hydrogen and carbon only.",
+      "choices": [],
+      "explanation": "A hydrocarbon contains hydrogen and carbon only.",
+      "source": "9F Summary sheet p3 Hydrocarbons",
+      "sourceExcerpt": "These substances contain hydrogen and carbon only.",
+      "level": 1,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-alignment",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9F-combustion-energy-rates",
+      "learningObjectiveTitle": "Hydrocarbons, combustion, energy changes and rate",
+      "learningObjectiveDescription": "Hydrocarbons, combustion, oxygen test, energy changes and reaction-rate factors.",
+      "noteId": "9F-combustion-energy-rates",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9r-038-9f-what-is-the-word-equation-for-complete-combustion-of-a-hydrocarbon",
+      "unit": "9F",
+      "type": "Assess check",
+      "question": "What is the word equation for complete combustion of a hydrocarbon?",
+      "answer": "hydrocarbon + oxygen → carbon dioxide + water",
+      "choices": [],
+      "explanation": "hydrocarbon + oxygen → carbon dioxide + water",
+      "source": "9F Summary sheet p3 Hydrocarbons",
+      "sourceExcerpt": "hydrocarbon + oxygen → carbon dioxide + water",
+      "level": 2,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-alignment",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9F-combustion-energy-rates",
+      "learningObjectiveTitle": "Hydrocarbons, combustion, energy changes and rate",
+      "learningObjectiveDescription": "Hydrocarbons, combustion, oxygen test, energy changes and reaction-rate factors.",
+      "noteId": "9F-combustion-energy-rates",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9r-039-9f-what-is-the-test-for-oxygen",
+      "unit": "9F",
+      "type": "Assess check",
+      "question": "What is the test for oxygen?",
+      "answer": "The test for oxygen is that it relights a glowing splint.",
+      "choices": [],
+      "explanation": "The test for oxygen is that it relights a glowing splint.",
+      "source": "9F Summary sheet p3 Hydrocarbons",
+      "sourceExcerpt": "The test for oxygen is that it relights a glowing splint.",
+      "level": 1,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-alignment",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9F-combustion-energy-rates",
+      "learningObjectiveTitle": "Hydrocarbons, combustion, energy changes and rate",
+      "learningObjectiveDescription": "Hydrocarbons, combustion, oxygen test, energy changes and reaction-rate factors.",
+      "noteId": "9F-combustion-energy-rates",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9r-040-9f-why-is-an-input-of-energy-from-a-flame-or-spark-needed-to-start-combustion",
+      "unit": "9F",
+      "type": "Assess check",
+      "question": "Why is an input of energy from a flame or spark needed to start combustion?",
+      "answer": "It is needed to start the combustion reaction by breaking some bonds in the reactants.",
+      "choices": [],
+      "explanation": "It is needed to start the combustion reaction by breaking some bonds in the reactants.",
+      "source": "9F Summary sheet p3 Hydrocarbons",
+      "sourceExcerpt": "An input of energy from a flame or spark is needed to start the combustion reaction by breaking some bonds in the reactants.",
+      "level": 2,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-alignment",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9F-combustion-energy-rates",
+      "learningObjectiveTitle": "Hydrocarbons, combustion, energy changes and rate",
+      "learningObjectiveDescription": "Hydrocarbons, combustion, oxygen test, energy changes and reaction-rate factors.",
+      "noteId": "9F-combustion-energy-rates",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9r-041-9f-what-increases-the-rate-of-reaction-according-to-the-revision-sheet",
+      "unit": "9F",
+      "type": "Assess check",
+      "question": "What increases the rate of reaction, according to the revision sheet?",
+      "answer": "Increased temperature, increased concentration of a reactant and increased surface area of a reactant.",
+      "choices": [],
+      "explanation": "Increased temperature, increased concentration of a reactant and increased surface area of a reactant.",
+      "source": "9F Summary sheet p3 Rates of reaction",
+      "sourceExcerpt": "The rate is also often increased by increased temperature, increased concentration of a reactant and increased surface area of a reactant.",
+      "level": 2,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-alignment",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9F-combustion-energy-rates",
+      "learningObjectiveTitle": "Hydrocarbons, combustion, energy changes and rate",
+      "learningObjectiveDescription": "Hydrocarbons, combustion, oxygen test, energy changes and reaction-rate factors.",
+      "noteId": "9F-combustion-energy-rates",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9r-042-9f-what-is-a-displacement-reaction",
+      "unit": "9F",
+      "type": "Assess check",
+      "question": "What is a displacement reaction?",
+      "answer": "In a displacement reaction a more reactive metal takes the place of a less reactive metal in a compound.",
+      "choices": [],
+      "explanation": "In a displacement reaction a more reactive metal takes the place of a less reactive metal in a compound.",
+      "source": "9F Summary sheet p3 Displacement reactions",
+      "sourceExcerpt": "In a displacement reaction a more reactive metal takes the place of a less reactive metal in a compound.",
+      "level": 1,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-alignment",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9F-extraction",
+      "learningObjectiveTitle": "Metal extraction and reduction",
+      "learningObjectiveDescription": "Ores, extraction by carbon or electrolysis, oxidation, reduction and redox.",
+      "noteId": "9F-extraction",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9r-043-9f-where-do-most-metals-occur",
+      "unit": "9F",
+      "type": "Assess check",
+      "question": "Where do most metals occur?",
+      "answer": "Most metals occur as compounds called minerals, which are found in rocks called ores in the Earth’s crust.",
+      "choices": [],
+      "explanation": "Most metals occur as compounds called minerals, which are found in rocks called ores in the Earth’s crust.",
+      "source": "9F Summary sheet p3 Extracting metals",
+      "sourceExcerpt": "Most metals occur as compounds called minerals, which are found in rocks called ores (in the Earth’s crust).",
+      "level": 2,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-alignment",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9F-extraction",
+      "learningObjectiveTitle": "Metal extraction and reduction",
+      "learningObjectiveDescription": "Ores, extraction by carbon or electrolysis, oxidation, reduction and redox.",
+      "noteId": "9F-extraction",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9r-044-9f-which-metals-can-be-extracted-from-their-ores-by-heating-with-carbon",
+      "unit": "9F",
+      "type": "Assess check",
+      "question": "Which metals can be extracted from their ores by heating with carbon?",
+      "answer": "Metals from zinc downwards in the reactivity series can be extracted from their ores by heating with carbon.",
+      "choices": [],
+      "explanation": "Metals from zinc downwards in the reactivity series can be extracted from their ores by heating with carbon.",
+      "source": "9F Summary sheet p3 Extracting metals",
+      "sourceExcerpt": "Metals from zinc downwards in the reactivity series can be extracted from their ores by heating with carbon.",
+      "level": 2,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-alignment",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9F-extraction",
+      "learningObjectiveTitle": "Metal extraction and reduction",
+      "learningObjectiveDescription": "Ores, extraction by carbon or electrolysis, oxidation, reduction and redox.",
+      "noteId": "9F-extraction",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9r-045-9f-which-metals-need-electrolysis-to-extract-them-from-their-ores",
+      "unit": "9F",
+      "type": "Assess check",
+      "question": "Which metals need electrolysis to extract them from their ores?",
+      "answer": "Metals above zinc in the reactivity series need electrolysis to extract them from their ores.",
+      "choices": [],
+      "explanation": "Metals above zinc in the reactivity series need electrolysis to extract them from their ores.",
+      "source": "9F Summary sheet p3 Extracting metals",
+      "sourceExcerpt": "Metals above zinc in the reactivity series need electrolysis to extract them from their ores.",
+      "level": 2,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-alignment",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9F-extraction",
+      "learningObjectiveTitle": "Metal extraction and reduction",
+      "learningObjectiveDescription": "Ores, extraction by carbon or electrolysis, oxidation, reduction and redox.",
+      "noteId": "9F-extraction",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9r-046-9f-what-are-oxidation-reduction-and-redox",
+      "unit": "9F",
+      "type": "Assess check",
+      "question": "What are oxidation, reduction and redox?",
+      "answer": "Oxidation is the gain of oxygen. Reduction is the loss of oxygen. A redox reaction is when oxidation and reduction occur at the same time.",
+      "choices": [],
+      "explanation": "Oxidation is the gain of oxygen. Reduction is the loss of oxygen. A redox reaction is when oxidation and reduction occur at the same time.",
+      "source": "9F Summary sheet p3 Extracting metals",
+      "sourceExcerpt": "Oxidation is the gain of oxygen. Reduction is the loss of oxygen. A redox reaction is when oxidation and reduction occur at the same time.",
+      "level": 3,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-alignment",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9F-extraction",
+      "learningObjectiveTitle": "Metal extraction and reduction",
+      "learningObjectiveDescription": "Ores, extraction by carbon or electrolysis, oxidation, reduction and redox.",
+      "noteId": "9F-extraction",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9r-047-9i-what-can-forces-make-objects-do",
+      "unit": "9I",
+      "type": "Assess check",
+      "question": "What can forces make objects do?",
+      "answer": "Forces can make objects speed up, slow down or change direction.",
+      "choices": [],
+      "explanation": "Forces can make objects speed up, slow down or change direction.",
+      "source": "9I Summary sheet p1 Forces and motion",
+      "sourceExcerpt": "Forces can make objects speed up, slow down or change direction.",
+      "level": 1,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-alignment",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9I-forces",
+      "learningObjectiveTitle": "Forces, drag and terminal velocity",
+      "learningObjectiveDescription": "Forces, balanced forces, top speed, drag and terminal velocity.",
+      "noteId": "9I-forces",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9r-048-9i-what-is-true-about-the-forces-on-an-object-moving-at-a-constant-speed",
+      "unit": "9I",
+      "type": "Assess check",
+      "question": "What is true about the forces on an object moving at a constant speed?",
+      "answer": "The forces on an object moving at a constant speed are balanced.",
+      "choices": [],
+      "explanation": "The forces on an object moving at a constant speed are balanced.",
+      "source": "9I Summary sheet p1 Forces and motion",
+      "sourceExcerpt": "The forces on an object moving at a constant speed are balanced.",
+      "level": 1,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-alignment",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9I-forces",
+      "learningObjectiveTitle": "Forces, drag and terminal velocity",
+      "learningObjectiveDescription": "Forces, balanced forces, top speed, drag and terminal velocity.",
+      "noteId": "9I-forces",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9r-049-9i-what-happens-to-air-resistance-as-a-falling-object-gets-faster",
+      "unit": "9I",
+      "type": "Assess check",
+      "question": "What happens to air resistance as a falling object gets faster?",
+      "answer": "As it gets faster the air resistance increases.",
+      "choices": [],
+      "explanation": "As it gets faster the air resistance increases.",
+      "source": "9I Summary sheet p1 Forces and motion",
+      "sourceExcerpt": "As it gets faster the air resistance increases.",
+      "level": 1,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-alignment",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9I-forces",
+      "learningObjectiveTitle": "Forces, drag and terminal velocity",
+      "learningObjectiveDescription": "Forces, balanced forces, top speed, drag and terminal velocity.",
+      "noteId": "9I-forces",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9r-050-9i-what-has-happened-when-a-falling-object-reaches-terminal-velocity",
+      "unit": "9I",
+      "type": "Assess check",
+      "question": "What has happened when a falling object reaches terminal velocity?",
+      "answer": "The air resistance balances the weight, so the object cannot fall any faster.",
+      "choices": [],
+      "explanation": "The air resistance balances the weight, so the object cannot fall any faster.",
+      "source": "9I Summary sheet p1 Forces and motion",
+      "sourceExcerpt": "Eventually the air resistance increases so much that it balances the weight. When this happens the object cannot fall any faster. It has reached its terminal velocity.",
+      "level": 2,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-alignment",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9I-forces",
+      "learningObjectiveTitle": "Forces, drag and terminal velocity",
+      "learningObjectiveDescription": "Forces, balanced forces, top speed, drag and terminal velocity.",
+      "noteId": "9I-forces",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9r-051-9i-how-do-you-convert-a-speed-in-m-s-to-km-h",
+      "unit": "9I",
+      "type": "Assess check",
+      "question": "How do you convert a speed in m/s to km/h?",
+      "answer": "Divide by 1000 then multiply by 3600.",
+      "choices": [],
+      "explanation": "Divide by 1000 then multiply by 3600.",
+      "source": "9I Summary sheet p1 Speed",
+      "sourceExcerpt": "You can convert a speed in m/s to km/h by dividing by 1000 then multiplying by 3600.",
+      "level": 2,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-alignment",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9I-speed",
+      "learningObjectiveTitle": "Speed and distance-time graphs",
+      "learningObjectiveDescription": "Speed, mean speed, unit conversion, relative speed and distance-time graphs.",
+      "noteId": "9I-speed",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9r-052-9i-how-do-you-convert-a-speed-in-km-h-to-m-s",
+      "unit": "9I",
+      "type": "Assess check",
+      "question": "How do you convert a speed in km/h to m/s?",
+      "answer": "Multiply by 1000 then divide by 3600.",
+      "choices": [],
+      "explanation": "Multiply by 1000 then divide by 3600.",
+      "source": "9I Summary sheet p1 Speed",
+      "sourceExcerpt": "To convert a speed in km/h to m/s, multiply by 1000 then divide by 3600.",
+      "level": 2,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-alignment",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9I-speed",
+      "learningObjectiveTitle": "Speed and distance-time graphs",
+      "learningObjectiveDescription": "Speed, mean speed, unit conversion, relative speed and distance-time graphs.",
+      "noteId": "9I-speed",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9r-053-9i-what-is-mean-speed",
+      "unit": "9I",
+      "type": "Assess check",
+      "question": "What is mean speed?",
+      "answer": "The mean (average) speed is the total distance travelled divided by the total time taken.",
+      "choices": [],
+      "explanation": "The mean (average) speed is the total distance travelled divided by the total time taken.",
+      "source": "9I Summary sheet p1 Speed",
+      "sourceExcerpt": "The mean (average) speed is the total distance travelled divided by the total time taken.",
+      "level": 1,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-alignment",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9I-speed",
+      "learningObjectiveTitle": "Speed and distance-time graphs",
+      "learningObjectiveDescription": "Speed, mean speed, unit conversion, relative speed and distance-time graphs.",
+      "noteId": "9I-speed",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9r-054-9i-what-is-the-relative-speed-of-a-car-travelling-at-50-km-h-compared-to-one-t",
+      "unit": "9I",
+      "type": "Assess check",
+      "question": "What is the relative speed of a car travelling at 50 km/h compared to one travelling at 30 km/h?",
+      "answer": "20 km/h.",
+      "choices": [],
+      "explanation": "20 km/h.",
+      "source": "9I Summary sheet p1 Speed",
+      "sourceExcerpt": "A car travelling at 50 km/h overtakes one travelling at 30 km/h. The relative speed of the faster car compared to the slower car is 20 km/h.",
+      "level": 2,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-alignment",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9I-speed",
+      "learningObjectiveTitle": "Speed and distance-time graphs",
+      "learningObjectiveDescription": "Speed, mean speed, unit conversion, relative speed and distance-time graphs.",
+      "noteId": "9I-speed",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9r-055-9i-what-does-a-speed-time-graph-show",
+      "unit": "9I",
+      "type": "Assess check",
+      "question": "What does a speed-time graph show?",
+      "answer": "A speed-time graph shows how fast something is travelling at different times during a journey.",
+      "choices": [],
+      "explanation": "A speed-time graph shows how fast something is travelling at different times during a journey.",
+      "source": "9I Summary sheet p1 Speed-time graphs",
+      "sourceExcerpt": "A speed–time graph shows how fast something is travelling at different times during a journey.",
+      "level": 1,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-alignment",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9I-speed-time-graphs",
+      "learningObjectiveTitle": "Speed-time graphs",
+      "learningObjectiveDescription": "Speed-time graph interpretation, constant speed, acceleration and deceleration.",
+      "noteId": "9I-speed-time-graphs",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9r-056-9i-what-do-horizontal-lines-show-on-a-speed-time-graph",
+      "unit": "9I",
+      "type": "Assess check",
+      "question": "What do horizontal lines show on a speed-time graph?",
+      "answer": "Horizontal lines show a constant speed.",
+      "choices": [],
+      "explanation": "Horizontal lines show a constant speed.",
+      "source": "9I Summary sheet p1 Speed-time graphs",
+      "sourceExcerpt": "Horizontal lines show a constant speed.",
+      "level": 1,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-alignment",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9I-speed-time-graphs",
+      "learningObjectiveTitle": "Speed-time graphs",
+      "learningObjectiveDescription": "Speed-time graph interpretation, constant speed, acceleration and deceleration.",
+      "noteId": "9I-speed-time-graphs",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9r-057-9i-what-do-sloping-lines-show-on-a-speed-time-graph",
+      "unit": "9I",
+      "type": "Assess check",
+      "question": "What do sloping lines show on a speed-time graph?",
+      "answer": "Sloping lines show changes in speed (acceleration or deceleration).",
+      "choices": [],
+      "explanation": "Sloping lines show changes in speed (acceleration or deceleration).",
+      "source": "9I Summary sheet p1 Speed-time graphs",
+      "sourceExcerpt": "Sloping lines show changes in speed (acceleration or deceleration).",
+      "level": 2,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-alignment",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9I-speed-time-graphs",
+      "learningObjectiveTitle": "Speed-time graphs",
+      "learningObjectiveDescription": "Speed-time graph interpretation, constant speed, acceleration and deceleration.",
+      "noteId": "9I-speed-time-graphs",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9r-058-9i-on-a-distance-time-graph-what-does-the-gradient-of-a-line-give",
+      "unit": "9I",
+      "type": "Assess check",
+      "question": "On a distance-time graph, what does the gradient of a line give?",
+      "answer": "The gradient of a line gives the speed that the object is moving.",
+      "choices": [],
+      "explanation": "The gradient of a line gives the speed that the object is moving.",
+      "source": "9I Summary sheet p2 Gradients",
+      "sourceExcerpt": "On a distance–time graph, the gradient of a line gives the speed that the object is moving.",
+      "level": 2,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-alignment",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9I-speed",
+      "learningObjectiveTitle": "Speed and distance-time graphs",
+      "learningObjectiveDescription": "Speed, mean speed, unit conversion, relative speed and distance-time graphs.",
+      "noteId": "9I-speed",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9r-059-9i-what-is-a-pivot-also-known-as",
+      "unit": "9I",
+      "type": "Assess check",
+      "question": "What is a pivot also known as?",
+      "answer": "A pivot is also known as a fulcrum.",
+      "choices": [],
+      "explanation": "A pivot is also known as a fulcrum.",
+      "source": "9I Summary sheet p2 Levers and moments",
+      "sourceExcerpt": "A pivot is also known as a fulcrum.",
+      "level": 1,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-alignment",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9I-moments",
+      "learningObjectiveTitle": "Levers, pivots and moments",
+      "learningObjectiveDescription": "Levers, pivots, moments, equilibrium and simple machines.",
+      "noteId": "9I-moments",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9r-060-9i-what-is-a-turning-force-called",
+      "unit": "9I",
+      "type": "Assess check",
+      "question": "What is a turning force called?",
+      "answer": "A turning force is called a moment.",
+      "choices": [],
+      "explanation": "A turning force is called a moment.",
+      "source": "9I Summary sheet p2 Levers and moments",
+      "sourceExcerpt": "A turning force is called a moment.",
+      "level": 1,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-alignment",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9I-moments",
+      "learningObjectiveTitle": "Levers, pivots and moments",
+      "learningObjectiveDescription": "Levers, pivots, moments, equilibrium and simple machines.",
+      "noteId": "9I-moments",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9r-061-9i-what-is-the-formula-for-moment",
+      "unit": "9I",
+      "type": "Assess check",
+      "question": "What is the formula for moment?",
+      "answer": "moment (in N m) = force (in N) × perpendicular distance from the pivot (m).",
+      "choices": [],
+      "explanation": "moment (in N m) = force (in N) × perpendicular distance from the pivot (m).",
+      "source": "9I Summary sheet p2 Levers and moments",
+      "sourceExcerpt": "moment (in N m) = force (in N) × perpendicular distance from the pivot (m).",
+      "level": 2,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-alignment",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9I-moments",
+      "learningObjectiveTitle": "Levers, pivots and moments",
+      "learningObjectiveDescription": "Levers, pivots, moments, equilibrium and simple machines.",
+      "noteId": "9I-moments",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9r-062-9i-what-is-true-when-an-object-is-balanced",
+      "unit": "9I",
+      "type": "Assess check",
+      "question": "What is true when an object is balanced?",
+      "answer": "The anticlockwise moment is equal to the clockwise moment.",
+      "choices": [],
+      "explanation": "The anticlockwise moment is equal to the clockwise moment.",
+      "source": "9I Summary sheet p3 Levers and moments",
+      "sourceExcerpt": "When an object is balanced, the anticlockwise moment is equal to the clockwise moment.",
+      "level": 2,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-alignment",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9I-moments",
+      "learningObjectiveTitle": "Levers, pivots and moments",
+      "learningObjectiveDescription": "Levers, pivots, moments, equilibrium and simple machines.",
+      "noteId": "9I-moments",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9r-063-9i-what-is-work-done",
+      "unit": "9I",
+      "type": "Assess check",
+      "question": "What is work done?",
+      "answer": "Work is done when a force moves through a distance.",
+      "choices": [],
+      "explanation": "Work is done when a force moves through a distance.",
+      "source": "9I Summary sheet p3 Simple machines",
+      "sourceExcerpt": "Work is done when a force moves through a distance.",
+      "level": 1,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-alignment",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9I-energy-work",
+      "learningObjectiveTitle": "Energy, work and simple machines",
+      "learningObjectiveDescription": "Work done, energy transfer, gravitational potential energy and conservation of energy.",
+      "noteId": "9I-energy-work",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9r-064-9i-what-is-the-formula-for-work-done",
+      "unit": "9I",
+      "type": "Assess check",
+      "question": "What is the formula for work done?",
+      "answer": "work = force × distance moved in the direction of the force.",
+      "choices": [],
+      "explanation": "work = force × distance moved in the direction of the force.",
+      "source": "9I Summary sheet p3 Simple machines",
+      "sourceExcerpt": "work = force × distance moved in the direction of the force.",
+      "level": 2,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-alignment",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9I-energy-work",
+      "learningObjectiveTitle": "Energy, work and simple machines",
+      "learningObjectiveDescription": "Work done, energy transfer, gravitational potential energy and conservation of energy.",
+      "noteId": "9I-energy-work",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9r-065-9j-what-is-a-force-field",
+      "unit": "9J",
+      "type": "Assess check",
+      "question": "What is a force field?",
+      "answer": "A force field is a space where a non-contact force has an effect.",
+      "choices": [],
+      "explanation": "A force field is a space where a non-contact force has an effect.",
+      "source": "9J Summary sheet p1 Force fields",
+      "sourceExcerpt": "A force field is a space where a non-contact force has an effect.",
+      "level": 1,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-alignment",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9J-fields",
+      "learningObjectiveTitle": "Force fields, gravity and magnetism",
+      "learningObjectiveDescription": "Force fields, gravitational fields, weight, electric fields and magnetism.",
+      "noteId": "9J-fields",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9r-066-9j-what-is-the-earths-gravitational-field-strength-according-to-the-revision-s",
+      "unit": "9J",
+      "type": "Assess check",
+      "question": "What is the Earth’s gravitational field strength, according to the revision sheet?",
+      "answer": "The Earth’s gravitational field strength (g) is 10 N/kg.",
+      "choices": [],
+      "explanation": "The Earth’s gravitational field strength (g) is 10 N/kg.",
+      "source": "9J Summary sheet p1 Gravitational fields",
+      "sourceExcerpt": "We say the Earth’s gravitational field strength (g) is 10 N/kg.",
+      "level": 1,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-alignment",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9J-fields",
+      "learningObjectiveTitle": "Force fields, gravity and magnetism",
+      "learningObjectiveDescription": "Force fields, gravitational fields, weight, electric fields and magnetism.",
+      "noteId": "9J-fields",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9r-067-9j-what-formula-is-used-to-calculate-weight",
+      "unit": "9J",
+      "type": "Assess check",
+      "question": "What formula is used to calculate weight?",
+      "answer": "weight (N) = mass (kg) × g (N/kg)",
+      "choices": [],
+      "explanation": "weight (N) = mass (kg) × g (N/kg)",
+      "source": "9J Summary sheet p1 Gravitational fields",
+      "sourceExcerpt": "weight (N) = mass (kg) × g (N/kg)",
+      "level": 2,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-alignment",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9J-fields",
+      "learningObjectiveTitle": "Force fields, gravity and magnetism",
+      "learningObjectiveDescription": "Force fields, gravitational fields, weight, electric fields and magnetism.",
+      "noteId": "9J-fields",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9r-068-9j-in-an-electric-field-diagram-what-do-the-arrows-show",
+      "unit": "9J",
+      "type": "Assess check",
+      "question": "In an electric field diagram, what do the arrows show?",
+      "answer": "The arrows show the direction a positive charge would move.",
+      "choices": [],
+      "explanation": "The arrows show the direction a positive charge would move.",
+      "source": "9J Summary sheet p1 Static electricity",
+      "sourceExcerpt": "The arrows on the diagram show the direction a positive charge would move.",
+      "level": 2,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-alignment",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9J-static",
+      "learningObjectiveTitle": "Static electricity and charge",
+      "learningObjectiveDescription": "Charge, electron transfer, attraction/repulsion and electric fields.",
+      "noteId": "9J-static",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9r-069-9j-what-is-current",
+      "unit": "9J",
+      "type": "Assess check",
+      "question": "What is current?",
+      "answer": "Current is a flow of electrons.",
+      "choices": [],
+      "explanation": "Current is a flow of electrons.",
+      "source": "9J Summary sheet p1 Electric circuits",
+      "sourceExcerpt": "Current is a flow of electrons.",
+      "level": 1,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-alignment",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9J-circuits",
+      "learningObjectiveTitle": "Current, voltage and circuits",
+      "learningObjectiveDescription": "Current, voltage, ammeters, voltmeters, series and parallel circuits.",
+      "noteId": "9J-circuits",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9r-070-9j-how-do-we-measure-current",
+      "unit": "9J",
+      "type": "Assess check",
+      "question": "How do we measure current?",
+      "answer": "We measure current using an ammeter connected in series.",
+      "choices": [],
+      "explanation": "We measure current using an ammeter connected in series.",
+      "source": "9J Summary sheet p1 Electric circuits",
+      "sourceExcerpt": "We measure current using an ammeter connected in series.",
+      "level": 1,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-alignment",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9J-circuits",
+      "learningObjectiveTitle": "Current, voltage and circuits",
+      "learningObjectiveDescription": "Current, voltage, ammeters, voltmeters, series and parallel circuits.",
+      "noteId": "9J-circuits",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9r-071-9j-how-do-we-measure-voltage",
+      "unit": "9J",
+      "type": "Assess check",
+      "question": "How do we measure voltage?",
+      "answer": "We measure the voltage using a voltmeter connected in parallel across a cell or component.",
+      "choices": [],
+      "explanation": "We measure the voltage using a voltmeter connected in parallel across a cell or component.",
+      "source": "9J Summary sheet p1 Electric circuits",
+      "sourceExcerpt": "We measure the voltage using a voltmeter connected in parallel across a cell or component.",
+      "level": 2,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-alignment",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9J-circuits",
+      "learningObjectiveTitle": "Current, voltage and circuits",
+      "learningObjectiveDescription": "Current, voltage, ammeters, voltmeters, series and parallel circuits.",
+      "noteId": "9J-circuits",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9r-072-9j-what-is-resistance",
+      "unit": "9J",
+      "type": "Assess check",
+      "question": "What is resistance?",
+      "answer": "The resistance of a component is a way of saying how easy or difficult it is for an electric current to flow through it.",
+      "choices": [],
+      "explanation": "The resistance of a component is a way of saying how easy or difficult it is for an electric current to flow through it.",
+      "source": "9J Summary sheet p2 Resistance",
+      "sourceExcerpt": "The resistance of a component is a way of saying how easy or difficult it is for an electric current to flow through it.",
+      "level": 1,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-alignment",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9J-resistance",
+      "learningObjectiveTitle": "Resistance and Ohm’s law",
+      "learningObjectiveDescription": "Resistance, current-voltage relationships and resistance calculations.",
+      "noteId": "9J-resistance",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9r-073-9j-if-resistance-stays-the-same-what-happens-when-voltage-is-higher",
+      "unit": "9J",
+      "type": "Assess check",
+      "question": "If resistance stays the same, what happens when voltage is higher?",
+      "answer": "The higher the voltage, the higher the current.",
+      "choices": [],
+      "explanation": "The higher the voltage, the higher the current.",
+      "source": "9J Summary sheet p2 Resistance",
+      "sourceExcerpt": "the higher the voltage, the higher the current (if the resistance stays the same)",
+      "level": 2,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-alignment",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9J-resistance",
+      "learningObjectiveTitle": "Resistance and Ohm’s law",
+      "learningObjectiveDescription": "Resistance, current-voltage relationships and resistance calculations.",
+      "noteId": "9J-resistance",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9r-074-9j-if-voltage-stays-the-same-what-happens-when-resistance-is-higher",
+      "unit": "9J",
+      "type": "Assess check",
+      "question": "If voltage stays the same, what happens when resistance is higher?",
+      "answer": "The higher the resistance, the lower the current.",
+      "choices": [],
+      "explanation": "The higher the resistance, the lower the current.",
+      "source": "9J Summary sheet p2 Resistance",
+      "sourceExcerpt": "the higher the resistance, the lower the current (if the voltage stays the same).",
+      "level": 2,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-alignment",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9J-resistance",
+      "learningObjectiveTitle": "Resistance and Ohm’s law",
+      "learningObjectiveDescription": "Resistance, current-voltage relationships and resistance calculations.",
+      "noteId": "9J-resistance",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9r-075-9j-what-three-things-does-the-resistance-of-a-wire-depend-on",
+      "unit": "9J",
+      "type": "Assess check",
+      "question": "What three things does the resistance of a wire depend on?",
+      "answer": "The material from which it is made, its length and its thickness.",
+      "choices": [],
+      "explanation": "The material from which it is made, its length and its thickness.",
+      "source": "9J Summary sheet p2 Resistance",
+      "sourceExcerpt": "The resistance of a wire depends on: the material from which it is made; its length; its thickness.",
+      "level": 2,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-alignment",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9J-wire-resistance-investigation",
+      "learningObjectiveTitle": "Wire resistance investigation",
+      "learningObjectiveDescription": "How wire material, length and thickness affect resistance.",
+      "noteId": "9J-wire-resistance-investigation",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9r-076-9j-how-does-wire-length-affect-resistance",
+      "unit": "9J",
+      "type": "Assess check",
+      "question": "How does wire length affect resistance?",
+      "answer": "Shorter wires have lower resistances.",
+      "choices": [],
+      "explanation": "Shorter wires have lower resistances.",
+      "source": "9J Summary sheet p2 Resistance",
+      "sourceExcerpt": "its length (shorter wires have lower resistances)",
+      "level": 2,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-alignment",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9J-wire-resistance-investigation",
+      "learningObjectiveTitle": "Wire resistance investigation",
+      "learningObjectiveDescription": "How wire material, length and thickness affect resistance.",
+      "noteId": "9J-wire-resistance-investigation",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9r-077-9j-how-does-wire-thickness-affect-resistance",
+      "unit": "9J",
+      "type": "Assess check",
+      "question": "How does wire thickness affect resistance?",
+      "answer": "Thicker wires have lower resistances.",
+      "choices": [],
+      "explanation": "Thicker wires have lower resistances.",
+      "source": "9J Summary sheet p2 Resistance",
+      "sourceExcerpt": "its thickness (thicker wires have lower resistances).",
+      "level": 2,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-alignment",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9J-wire-resistance-investigation",
+      "learningObjectiveTitle": "Wire resistance investigation",
+      "learningObjectiveDescription": "How wire material, length and thickness affect resistance.",
+      "noteId": "9J-wire-resistance-investigation",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9r-078-9j-what-is-the-formula-for-calculating-resistance-from-voltage-and-current",
+      "unit": "9J",
+      "type": "Assess check",
+      "question": "What is the formula for calculating resistance from voltage and current?",
+      "answer": "resistance = voltage ÷ current",
+      "choices": [],
+      "explanation": "resistance = voltage ÷ current",
+      "source": "9J Summary sheet p2 Calculating resistance",
+      "sourceExcerpt": "resistance = voltage / current",
+      "level": 2,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-alignment",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9J-resistance",
+      "learningObjectiveTitle": "Resistance and Ohm’s law",
+      "learningObjectiveDescription": "Resistance, current-voltage relationships and resistance calculations.",
+      "noteId": "9J-resistance",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9r-079-9j-what-is-an-electromagnet",
+      "unit": "9J",
+      "type": "Assess check",
+      "question": "What is an electromagnet?",
+      "answer": "An electromagnet is a coil of wire with an electric current flowing through it.",
+      "choices": [],
+      "explanation": "An electromagnet is a coil of wire with an electric current flowing through it.",
+      "source": "9J Summary sheet p2 Electromagnets",
+      "sourceExcerpt": "An electromagnet is a coil of wire with an electric current flowing through it.",
+      "level": 1,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-alignment",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9J-electromagnets",
+      "learningObjectiveTitle": "Electromagnets, relays and motors",
+      "learningObjectiveDescription": "Electromagnets, relays, the motor effect and electric motors.",
+      "noteId": "9J-electromagnets",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9r-080-9j-when-is-an-electromagnet-magnetic",
+      "unit": "9J",
+      "type": "Assess check",
+      "question": "When is an electromagnet magnetic?",
+      "answer": "It is only magnetic while the current is flowing.",
+      "choices": [],
+      "explanation": "It is only magnetic while the current is flowing.",
+      "source": "9J Summary sheet p2 Electromagnets",
+      "sourceExcerpt": "It is only magnetic while the current is flowing.",
+      "level": 1,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-alignment",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9J-electromagnets",
+      "learningObjectiveTitle": "Electromagnets, relays and motors",
+      "learningObjectiveDescription": "Electromagnets, relays, the motor effect and electric motors.",
+      "noteId": "9J-electromagnets",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9r-081-9j-give-three-ways-to-make-an-electromagnet-stronger",
+      "unit": "9J",
+      "type": "Assess check",
+      "question": "Give three ways to make an electromagnet stronger.",
+      "answer": "Increase the number of coils of wire, increase the size of the current, and use an iron core.",
+      "choices": [],
+      "explanation": "Increase the number of coils of wire, increase the size of the current, and use an iron core.",
+      "source": "9J Summary sheet p2 Electromagnets",
+      "sourceExcerpt": "You can make an electromagnet stronger by: increasing the number of coils of wire; increasing the size of the current; using an iron core.",
+      "level": 2,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-alignment",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9J-electromagnets",
+      "learningObjectiveTitle": "Electromagnets, relays and motors",
+      "learningObjectiveDescription": "Electromagnets, relays, the motor effect and electric motors.",
+      "noteId": "9J-electromagnets",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9r-082-9j-what-is-the-motor-effect",
+      "unit": "9J",
+      "type": "Assess check",
+      "question": "What is the motor effect?",
+      "answer": "If a wire carrying a current crosses a magnetic field, the wire will experience a force. This is the motor effect.",
+      "choices": [],
+      "explanation": "If a wire carrying a current crosses a magnetic field, the wire will experience a force. This is the motor effect.",
+      "source": "9J Summary sheet p3 Motors",
+      "sourceExcerpt": "If a wire carrying a current crosses a magnetic field, the wire will experience a force. This is the motor effect.",
+      "level": 2,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-alignment",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9J-electromagnets",
+      "learningObjectiveTitle": "Electromagnets, relays and motors",
+      "learningObjectiveDescription": "Electromagnets, relays, the motor effect and electric motors.",
+      "noteId": "9J-electromagnets",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9r-083-9j-what-does-an-electric-motor-consist-of",
+      "unit": "9J",
+      "type": "Assess check",
+      "question": "What does an electric motor consist of?",
+      "answer": "An electric motor consists of a coil of wire in a magnetic field.",
+      "choices": [],
+      "explanation": "An electric motor consists of a coil of wire in a magnetic field.",
+      "source": "9J Summary sheet p3 Motors",
+      "sourceExcerpt": "An electric motor consists of a coil of wire in a magnetic field.",
+      "level": 1,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-alignment",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9J-electromagnets",
+      "learningObjectiveTitle": "Electromagnets, relays and motors",
+      "learningObjectiveDescription": "Electromagnets, relays, the motor effect and electric motors.",
+      "noteId": "9J-electromagnets",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9r-084-9j-what-makes-the-coil-in-an-electric-motor-turn",
+      "unit": "9J",
+      "type": "Assess check",
+      "question": "What makes the coil in an electric motor turn?",
+      "answer": "When there is a current in the coil, there is a force on each side of the coil that makes it turn.",
+      "choices": [],
+      "explanation": "When there is a current in the coil, there is a force on each side of the coil that makes it turn.",
+      "source": "9J Summary sheet p3 Motors",
+      "sourceExcerpt": "When there is a current in the coil, there is a force on each side of the coil that makes it turn.",
+      "level": 2,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-alignment",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9J-electromagnets",
+      "learningObjectiveTitle": "Electromagnets, relays and motors",
+      "learningObjectiveDescription": "Electromagnets, relays, the motor effect and electric motors.",
+      "noteId": "9J-electromagnets",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9r-085-9j-how-can-the-speed-of-the-motor-or-the-force-it-provides-be-increased",
+      "unit": "9J",
+      "type": "Assess check",
+      "question": "How can the speed of the motor, or the force it provides, be increased?",
+      "answer": "By increasing the size of the current, increasing the strength of the magnetic field, or increasing the number of turns of wire on the coil.",
+      "choices": [],
+      "explanation": "By increasing the size of the current, increasing the strength of the magnetic field, or increasing the number of turns of wire on the coil.",
+      "source": "9J Summary sheet p3 Motors",
+      "sourceExcerpt": "The speed of the motor (or the force it provides) can be increased by: increasing the size of the current; increasing the strength of the magnetic field; increasing the number of turns of wire on the coil.",
+      "level": 2,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-alignment",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9J-electromagnets",
+      "learningObjectiveTitle": "Electromagnets, relays and motors",
+      "learningObjectiveDescription": "Electromagnets, relays, the motor effect and electric motors.",
+      "noteId": "9J-electromagnets",
+      "mediaPolicy": "question-media-only-if-required"
     }
   ],
   "notes": [

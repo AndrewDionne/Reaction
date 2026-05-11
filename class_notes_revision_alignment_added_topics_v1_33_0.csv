@@ -1,0 +1,10 @@
+unit,note_id,change_type,revision_pack_alignment_target
+9B,9B-farming-yield-impact,new,"Farming methods: hedges/trees, pesticides, fertilisers, varieties, sustainability"
+9E,9E-energy-thermal-peer-review,new,"Endothermic/exothermic, thermal decomposition, state symbols, peer review"
+9E,9E-recycling-methods,new,Material-specific recycling methods and recycling benefits
+9F,9F-atomic-structure-periodic-table,new,"Atomic structure, atomic number, mass number, groups, periods, trends"
+9F,9F-combustion-energy-rates,new,"Hydrocarbons, combustion, oxygen test, thermal decomposition, energy changes, rates"
+9I,9I-speed-time-graphs,new,Speed-time graph interpretation
+9J,9J-wire-resistance-investigation,new,"Wire resistance factors: material, length, thickness and fair test"
+9B,9B-photosynthesis,tighten,"Symbol equation, palisade cells, respiration and ATP"
+9J,9J-electromagnets,tighten,"Motor effect, coil turning, motor improvement factors"

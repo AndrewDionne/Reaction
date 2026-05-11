@@ -1,5 +1,5 @@
 window.YEAR9_NOTES = {
-  "version": "1.35.3",
+  "version": "1.33.0",
   "title": "Year 9 Science Enhanced Class Notes",
   "notes": [
     {
@@ -91,20 +91,7 @@ window.YEAR9_NOTES = {
             "Gene = section of DNA",
             "DNA carries inherited information"
           ],
-          "presentation": "media-diagram-base"
-        },
-        {
-          "src": "assets/diagrams/9A-fertilisation-gametes-zygote-chromosomes.svg",
-          "alt": "Diagram showing sperm and egg cells with 23 chromosomes each forming a zygote with 46 chromosomes after fertilisation.",
-          "caption": "Gametes contain half the normal chromosome number. Fertilisation restores the full chromosome number in the zygote.",
-          "mediaTitle": "Gametes and fertilisation",
-          "mediaLead": "Sperm and egg cells have 23 chromosomes each; after fertilisation the zygote has 46.",
-          "mediaPoints": [
-            "gametes = sex cells",
-            "zygote = fertilised egg cell",
-            "23 + 23 gives the normal human body-cell number, 46"
-          ],
-          "presentation": "media-diagram-base"
+          "presentation": "media-image-base"
         }
       ]
     },
@@ -236,7 +223,10 @@ window.YEAR9_NOTES = {
         "Chlorophyll absorbs light energy.",
         "Light intensity, carbon dioxide and temperature can be limiting factors.",
         "Green parts of the plant photosynthesise because they contain chloroplasts.",
-        "Respiration releases energy from glucose and happens in plant and animal cells."
+        "Respiration releases energy from glucose and happens in plant and animal cells.",
+        "Symbol equation: 6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂.",
+        "Most photosynthesis happens in palisade cells near the upper surface of leaves.",
+        "Aerobic respiration uses glucose and oxygen to release energy, which is transferred to ATP."
       ],
       "commonMistakes": [
         {
@@ -259,9 +249,9 @@ window.YEAR9_NOTES = {
         "question": "Why does the photosynthesis rate level off at high light intensity?",
         "answer": "Light is no longer the limiting factor. Another factor, such as carbon dioxide or temperature, limits the rate."
       },
-      "explanation": "Photosynthesis is how plants make glucose using light energy. The reactants are carbon dioxide and water. The products are glucose and oxygen. Questions often ask where the reactants come from: carbon dioxide enters through stomata, and water is absorbed by roots then carried in xylem. Light intensity, carbon dioxide and temperature can each become a limiting factor.",
-      "memoryHook": "Photosynthesis equation: carbon dioxide + water → glucose + oxygen, using light.",
-      "selfCheck": "Can you name the two reactants, two products and one limiting factor?",
+      "explanation": "Photosynthesis is how plants make glucose using light energy trapped by chlorophyll. The reactants are carbon dioxide and water. The products are glucose and oxygen. Carbon dioxide diffuses in through stomata, and water is absorbed by roots then carried in xylem. Most photosynthesis happens in palisade cells near the upper surface of leaves because they contain many chloroplasts. Plant cells also respire all the time: glucose + oxygen → carbon dioxide + water, releasing energy that is transferred to ATP.",
+      "memoryHook": "Photosynthesis stores energy in glucose; respiration releases energy from glucose into ATP.",
+      "selfCheck": "Can you write both the word equation and the symbol equation for photosynthesis, and explain why plants still respire?",
       "sentenceStarter": "The rate stops increasing because ___ is no longer the limiting factor; instead ___ limits the rate.",
       "practicePrompt": "Pick one linked revision card for Photosynthesis and respiration and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
       "media": [
@@ -300,7 +290,10 @@ window.YEAR9_NOTES = {
         "Root hair cells have a long projection for a large surface area.",
         "Xylem carries water and mineral ions from roots to leaves.",
         "Phloem carries dissolved sugars around the plant.",
-        "Stomata are pores controlled by guard cells."
+        "Stomata are pores controlled by guard cells.",
+        "Mineral salts dissolve in water; nitrates are needed to make proteins.",
+        "Magnesium salts are needed to make chlorophyll.",
+        "Thin leaves give carbon dioxide a short diffusion distance to photosynthesising cells."
       ],
       "commonMistakes": [
         {
@@ -339,7 +332,7 @@ window.YEAR9_NOTES = {
             "Xylem moves water and mineral ions up from roots",
             "Phloem moves sugars away from leaves to where they are needed"
           ],
-          "presentation": "media-diagram-base"
+          "presentation": "media-image-base"
         },
         {
           "src": "assets/webp/9B-leaf-vein-bundle.webp",
@@ -373,7 +366,9 @@ window.YEAR9_NOTES = {
         "Glucose can be stored as starch.",
         "Cellulose is a polymer used to make plant cell walls.",
         "Nitrate mineral ions are needed to make proteins.",
-        "Crop yield can be increased with fertilisers, irrigation, greenhouses, pest control and selective breeding."
+        "Crop yield can be increased with fertilisers, irrigation, greenhouses, pest control and selective breeding.",
+        "Selective breeding means choosing plants with useful characteristics and breeding from them.",
+        "Cross-breeding means breeding two varieties together to combine useful characteristics."
       ],
       "commonMistakes": [
         {
@@ -415,20 +410,48 @@ window.YEAR9_NOTES = {
             "Pest control reduces crop damage and competition"
           ],
           "presentation": "media-diagram-base"
-        },
-        {
-          "src": "assets/webp/9B-mineral-deficiency-leaf-symptoms.webp",
-          "alt": "Three plant leaf clusters showing healthy green leaves, yellowing leaves and severe pale yellow leaves from mineral deficiency.",
-          "mediaTitle": "Mineral deficiency symptoms",
-          "mediaLead": "Plants need mineral ions to make healthy tissues.",
-          "mediaPoints": [
-            "Nitrates are needed to make proteins for growth.",
-            "Deficiency can cause poor growth and yellowing leaves.",
-            "This is note support only; question cards should still test the cause."
-          ],
-          "presentation": "media-diagram-base"
         }
       ]
+    },
+    {
+      "id": "9B-farming-yield-impact",
+      "unit": "9B",
+      "objective": "9B-farming-yield-impact",
+      "title": "Farming methods: yield, problems and sustainability",
+      "summary": "Modern farming can increase crop yield, but the same methods can damage habitats, reduce biodiversity or pollute water. Sustainable development means meeting human needs without destroying habitats.",
+      "keyPoints": [
+        "Clearing hedges and trees gives more land for crops and helps machinery move, but it destroys habitats and can cause soil erosion.",
+        "Pesticides such as herbicides and insecticides kill organisms that compete with or damage crops, but they can also harm useful organisms and food webs.",
+        "Fertilisers add mineral salts that help plants grow and increase yield, but they can wash into streams and rivers and kill aquatic organisms.",
+        "Choosing high-yield varieties increases the amount of crop produced, but planting huge areas of one variety reduces biodiversity.",
+        "Organic farming uses fewer artificial chemicals; sustainable farming aims to produce food without destroying habitats."
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "Anything that increases crop yield is automatically good for the environment.",
+          "correct": "A method can increase yield but still cause environmental problems.",
+          "why": "For example, fertilisers can increase plant growth but may be washed into rivers and damage aquatic ecosystems."
+        },
+        {
+          "wrong": "Pesticides only affect the pest species.",
+          "correct": "Pesticides can also affect useful organisms and food webs.",
+          "why": "Killing insects may also reduce food for other animals or allow toxins to pass along food chains."
+        },
+        {
+          "wrong": "Sustainable development means stopping all farming.",
+          "correct": "Sustainable development means meeting human needs while protecting habitats and resources for the future.",
+          "why": "The aim is to produce food while reducing damage to ecosystems."
+        }
+      ],
+      "example": {
+        "question": "Give one benefit and one problem of using fertilisers on crops.",
+        "answer": "Benefit: fertilisers provide mineral salts that help plants grow and increase yield. Problem: fertilisers can be washed into water and cause organisms there to die."
+      },
+      "explanation": "Revision questions often ask for both sides of a farming method. State what the method is done for, then state a problem it can cause. Hedges, trees, pesticides, fertilisers and crop varieties are all common examples.",
+      "memoryHook": "For every farming method, ask: “How does it increase yield?” and “What environmental problem could it cause?”",
+      "selfCheck": "Can you give a benefit and a problem for clearing hedges, using pesticides, using fertilisers and planting one high-yield variety?",
+      "sentenceStarter": "This method increases yield because ___, but it can cause problems because ___.",
+      "practicePrompt": "Pick one linked revision card for plant growth or farming and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered."
     },
     {
       "id": "9B-food-webs",
@@ -484,7 +507,7 @@ window.YEAR9_NOTES = {
             "Plant material transfers energy to herbivores",
             "Changes lower in a food web can affect predators higher up"
           ],
-          "presentation": "media-diagram-base"
+          "presentation": "media-image-base"
         }
       ]
     },
@@ -498,7 +521,9 @@ window.YEAR9_NOTES = {
         "Ceramics are useful when heat resistance is needed.",
         "Brittle materials crack or shatter rather than bend.",
         "Slow cooling can allow larger crystals to form.",
-        "A regular giant lattice can have many strong bonds but still be brittle."
+        "A regular giant lattice can have many strong bonds but still be brittle.",
+        "Many strong bonds in a giant lattice help explain high melting points.",
+        "If layers shift or a crack starts, rigid materials can break suddenly instead of bending."
       ],
       "commonMistakes": [
         {
@@ -554,7 +579,9 @@ window.YEAR9_NOTES = {
         "Vulcanisation adds cross-links between polymer chains, making rubber tougher.",
         "Non-biodegradable polymers do not break down easily in the environment.",
         "Endothermic reactions take in energy from the surroundings.",
-        "Cross-linking reduces how easily chains slide past each other."
+        "Cross-linking reduces how easily chains slide past each other.",
+        "Many synthetic polymers are made from chemicals obtained from crude oil.",
+        "Monomers join together to make polymers in polymerisation reactions."
       ],
       "commonMistakes": [
         {
@@ -593,7 +620,7 @@ window.YEAR9_NOTES = {
             "Before: chains can slide past each other",
             "After: cross-links hold chains together"
           ],
-          "presentation": "media-diagram-base"
+          "presentation": "media-image-base"
         }
       ]
     },
@@ -660,7 +687,11 @@ window.YEAR9_NOTES = {
         "Landfill uses land and can cause pollution.",
         "Burning fossil fuels releases gases linked to acid rain and global warming.",
         "Recycling saves raw materials and often saves energy.",
-        "Reducing, reusing and recycling all help reduce waste."
+        "Reducing, reusing and recycling all help reduce waste.",
+        "Sulfur dioxide from fuels can cause acid rain.",
+        "Carbon dioxide is a greenhouse gas linked to global warming.",
+        "Soot and smoke particles can harm health.",
+        "Toxins can build up through food chains by biomagnification."
       ],
       "commonMistakes": [
         {
@@ -683,61 +714,95 @@ window.YEAR9_NOTES = {
         "question": "Why does recycling metals help us use metals further into the future?",
         "answer": "It conserves limited metal ores and reduces the need for mining and extraction."
       },
-      "explanation": "Making and disposing of materials can affect the environment. Burning fossil fuels releases gases linked to acid rain and global warming. Landfill uses land and can cause pollution. Recycling saves raw materials and often reduces energy use compared with making new material from ores or crude oil.",
+      "explanation": "Making and disposing of materials can affect the environment. Sulfur dioxide can cause acid rain. Carbon dioxide contributes to the greenhouse effect and global warming. Soot and smoke particles can harm health. Hazardous waste from factories can release toxins; if small organisms take them in, toxins can build up through food chains by biomagnification. Recycling saves raw materials, reduces landfill and can reduce pollution from manufacturing.",
       "memoryHook": "Reduce harm by using less, recycling more, and choosing materials carefully.",
       "selfCheck": "Can you give one problem with landfill and one advantage of recycling?",
       "sentenceStarter": "Recycling helps because it reduces ___ and saves ___.",
       "practicePrompt": "Pick one linked revision card for Environmental impacts and recycling and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
       "media": [
         {
-          "src": "assets/webp/9E-landfill-impact-card.webp",
-          "alt": "Landfill site with mixed rubbish and a compactor vehicle, with open space for revision text.",
-          "mediaTitle": "Landfill",
-          "mediaLead": "Some materials take a very long time to break down.",
-          "mediaPoints": [
-            "Non-biodegradable waste can remain for years.",
-            "Landfill uses land and can affect habitats.",
-            "Reducing, reusing and recycling can reduce landfill."
-          ],
-          "presentation": "media-diagram-base"
-        },
-        {
-          "src": "assets/webp/9E-recycling-impact-card.webp",
-          "alt": "Recycling bins for paper, glass, cans and plastics, with a person sorting a plastic bottle.",
-          "mediaTitle": "Recycling",
-          "mediaLead": "Recycling reduces demand for new raw materials.",
-          "mediaPoints": [
-            "Materials must be sorted before recycling.",
-            "Recycling usually saves resources and landfill space.",
-            "Some materials are easier to recycle than others."
-          ],
-          "presentation": "media-diagram-base"
-        },
-        {
-          "src": "assets/webp/9E-acid-rain-impact-card.webp",
-          "alt": "Factory emissions forming rain clouds over damaged plants and weathered stone.",
-          "mediaTitle": "Acid rain",
-          "mediaLead": "Pollution gases can form acidic rainwater.",
-          "mediaPoints": [
-            "Acid rain can damage plants, soils and buildings.",
-            "It is linked to gases released during combustion.",
-            "Use this as a visual cue, not a full chemical equation."
-          ],
-          "presentation": "media-diagram-base"
-        },
-        {
-          "src": "assets/webp/9E-greenhouse-gases-impact-card.webp",
-          "alt": "Earth with sunlight entering the atmosphere and heat arrows being trapped near the planet.",
-          "mediaTitle": "Greenhouse gases",
-          "mediaLead": "Greenhouse gases reduce how much heat escapes to space.",
-          "mediaPoints": [
-            "Sunlight enters through the atmosphere.",
-            "Some heat is trapped and redirected back toward Earth.",
-            "This can contribute to global warming."
-          ],
-          "presentation": "media-diagram-base"
+          "src": "assets/webp/9E-environmental-impacts-recycling.webp",
+          "alt": "Four-panel infographic showing landfill, recycling, acid rain and global warming.",
+          "caption": "Environmental impacts are linked but different: landfill wastes resources, recycling saves resources, acid rain damages ecosystems, and greenhouse gases warm the planet."
         }
       ]
+    },
+    {
+      "id": "9E-energy-thermal-peer-review",
+      "unit": "9E",
+      "objective": "9E-energy-thermal-peer-review",
+      "title": "Energy changes, thermal decomposition and peer review",
+      "summary": "Exothermic reactions transfer energy to the surroundings and endothermic reactions take energy from the surroundings. Thermal decomposition breaks a compound down by heating. Scientific papers are checked by peer review before publication.",
+      "keyPoints": [
+        "Exothermic reactions transfer energy to the surroundings, so the temperature of the surroundings increases; combustion is a common example.",
+        "Endothermic reactions take in energy from the surroundings, so the temperature of the surroundings decreases; thermal decomposition is a common example.",
+        "Thermal decomposition means a compound is broken down by heating.",
+        "State symbols show physical state in equations: (s) solid, (l) liquid, (g) gas, (aq) dissolved in water.",
+        "Calcium carbonate thermally decomposes to calcium oxide and carbon dioxide: CaCO₃(s) → CaO(s) + CO₂(g).",
+        "Peer review checks scientific papers for valid conclusions, originality and whether the experiments work."
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "Endothermic means the reaction feels hot.",
+          "correct": "Endothermic reactions take energy from the surroundings, so the surroundings get colder.",
+          "why": "The energy is transferred into the reaction, not out into the surroundings."
+        },
+        {
+          "wrong": "Thermal decomposition is just melting.",
+          "correct": "Thermal decomposition is a chemical reaction where heat breaks a compound into simpler substances.",
+          "why": "Melting changes state; thermal decomposition makes new substances."
+        },
+        {
+          "wrong": "Peer review means students checking each other’s work.",
+          "correct": "In science, peer review means other scientists evaluate a paper before it is published.",
+          "why": "They check the method, evidence and conclusions."
+        }
+      ],
+      "example": {
+        "question": "Is thermal decomposition usually endothermic or exothermic?",
+        "answer": "Endothermic. Energy must be supplied to break the compound down by heating."
+      },
+      "explanation": "The revision pack links energy transfer, thermal decomposition and equations. Use temperature change carefully: exothermic increases the surroundings’ temperature, while endothermic decreases it. State symbols are short labels in equations that show whether each substance is solid, liquid, gas or dissolved in water.",
+      "memoryHook": "Exo = exits to surroundings; endo = enters the reaction.",
+      "selfCheck": "Can you explain the difference between exothermic and endothermic and write what (s), (l), (g) and (aq) mean?",
+      "sentenceStarter": "This reaction is ___ because energy is transferred ___ the surroundings.",
+      "practicePrompt": "Pick one linked revision card for 9E energy changes or equations and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered."
+    },
+    {
+      "id": "9E-recycling-methods",
+      "unit": "9E",
+      "objective": "9E-recycling-methods",
+      "title": "Recycling methods by material",
+      "summary": "Recycling materials saves raw materials, reduces landfill, reduces the need to burn fossil fuels and can reduce pollution from manufacturing.",
+      "keyPoints": [
+        "Metals can be recycled by separating them and melting them.",
+        "Glass can be recycled by separating colours and melting the glass.",
+        "Polymers can be sorted using recycling labels before being processed.",
+        "Paper can be recycled by removing ink and adding water to make a pulp.",
+        "Concrete can be recycled by crushing and grading it.",
+        "Recycling helps conserve ores, wood and other raw materials."
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "All materials are recycled in the same way.",
+          "correct": "Different materials need different recycling methods.",
+          "why": "For example, metals are melted, while paper is made into pulp."
+        },
+        {
+          "wrong": "Recycling only saves space in landfill.",
+          "correct": "Recycling also saves raw materials and can reduce energy use and pollution from making new materials.",
+          "why": "Using recycled material can reduce the need to extract or process new raw materials."
+        }
+      ],
+      "example": {
+        "question": "How is paper recycled?",
+        "answer": "Ink is removed and water is added to make a pulp, which can be made into new paper."
+      },
+      "explanation": "The revision pack expects recycling methods to be linked to the material. A strong answer should name the material and the process, such as separating and melting metals, separating glass colours and melting, or crushing and grading concrete.",
+      "memoryHook": "Metal and glass: separate then melt. Paper: remove ink and make pulp. Concrete: crush and grade.",
+      "selfCheck": "Can you match metal, glass, polymer, paper and concrete to their recycling methods?",
+      "sentenceStarter": "___ is recycled by ___, which helps because ___.",
+      "practicePrompt": "Pick one linked revision card for materials and recycling and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered."
     },
     {
       "id": "9F-changes",
@@ -749,7 +814,10 @@ window.YEAR9_NOTES = {
         "Physical changes include changes of state and dissolving.",
         "Chemical reactions form new substances.",
         "Gas pressure is caused by particles colliding with container walls.",
-        "Heating a gas makes particles move faster, increasing pressure if volume is fixed."
+        "Heating a gas makes particles move faster, increasing pressure if volume is fixed.",
+        "In physical and chemical changes, atoms are not created or destroyed, so overall mass is conserved.",
+        "Equations can be written using words or symbols and can include state symbols.",
+        "Large numbers in front of formulae show the number of molecules or formula units."
       ],
       "commonMistakes": [
         {
@@ -782,45 +850,50 @@ window.YEAR9_NOTES = {
           "src": "assets/webp/9F-heating-metal-oxide.webp",
           "alt": "A test tube containing a black powder being heated over a Bunsen burner.",
           "caption": "Heating can be part of a chemical change when substances react and new products form."
-        },
-        {
-          "src": "assets/diagrams/9F-gas-pressure-particles.svg",
-          "alt": "Particle diagram showing gas particles moving in a closed container and colliding with the walls.",
-          "caption": "Gas pressure is caused by particles colliding with the walls of their container.",
-          "mediaTitle": "Gas pressure",
-          "mediaLead": "Heating a gas makes particles move faster, so collisions become more frequent and harder.",
-          "mediaPoints": [
-            "particles move randomly",
-            "collisions with walls cause pressure",
-            "higher temperature can increase pressure in a fixed volume"
-          ],
-          "presentation": "media-diagram-base"
-        },
-        {
-          "src": "assets/diagrams/9F-conservation-of-mass.svg",
-          "alt": "Closed reaction vessel before and after a reaction with the same total mass.",
-          "caption": "In a closed system, total mass stays the same during a reaction.",
-          "mediaTitle": "Conservation of mass",
-          "mediaLead": "Atoms are rearranged in a reaction; they are not lost from a closed container.",
-          "mediaPoints": [
-            "mass before = mass after",
-            "closed systems stop gases escaping"
-          ],
-          "presentation": "media-diagram-base"
-        },
-        {
-          "src": "assets/diagrams/9F-exothermic-endothermic-energy-profile.svg",
-          "alt": "Two energy profile graphs comparing exothermic and endothermic reactions.",
-          "caption": "Exothermic reactions release energy; endothermic reactions take in energy.",
-          "mediaTitle": "Exothermic vs endothermic",
-          "mediaLead": "Energy profile diagrams show whether products end lower or higher than reactants.",
-          "mediaPoints": [
-            "exothermic: energy released",
-            "endothermic: energy taken in"
-          ],
-          "presentation": "media-diagram-base"
         }
       ]
+    },
+    {
+      "id": "9F-atomic-structure-periodic-table",
+      "unit": "9F",
+      "objective": "9F-atomic-structure-periodic-table",
+      "title": "Atomic structure and the periodic table",
+      "summary": "Atoms contain protons, neutrons and electrons. Elements are arranged in the periodic table by atomic number. Groups are vertical columns and periods are horizontal rows.",
+      "keyPoints": [
+        "Protons and neutrons are found in the central nucleus of an atom.",
+        "Electrons are found around the outside of the nucleus.",
+        "The atomic number, or proton number, is the number of protons in an atom.",
+        "The mass number is the number of protons plus neutrons.",
+        "Elements are arranged in order of atomic number in the periodic table.",
+        "Groups are vertical columns; periods are horizontal rows.",
+        "There are trends in reactivity within groups and across periods."
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "The atomic number is the number of neutrons.",
+          "correct": "The atomic number is the number of protons.",
+          "why": "It is also called the proton number and identifies the element."
+        },
+        {
+          "wrong": "The mass number only counts protons.",
+          "correct": "The mass number counts protons plus neutrons.",
+          "why": "Electrons have a very small mass, so they are not included in the mass number used here."
+        },
+        {
+          "wrong": "Groups are rows across the periodic table.",
+          "correct": "Groups are vertical columns; periods are horizontal rows.",
+          "why": "Elements in the same group often have similar properties and reactivity patterns."
+        }
+      ],
+      "example": {
+        "question": "An atom has 11 protons and 12 neutrons. What are its atomic number and mass number?",
+        "answer": "Atomic number = 11. Mass number = 11 + 12 = 23."
+      },
+      "explanation": "Atomic structure questions often test vocabulary precisely. The nucleus contains protons and neutrons. Electrons are around the outside. The atomic number tells you the number of protons. The mass number tells you the number of protons plus neutrons. The periodic table uses atomic number order, with groups as columns and periods as rows.",
+      "memoryHook": "Atomic number = protons. Mass number = protons + neutrons. Groups go down; periods go across.",
+      "selfCheck": "Can you define proton, neutron, electron, nucleus, atomic number, mass number, group and period?",
+      "sentenceStarter": "The atomic number is ___ because it tells us ___.",
+      "practicePrompt": "Pick one linked revision card for 9F atomic structure or the periodic table and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered."
     },
     {
       "id": "9F-reactivity",
@@ -832,7 +905,10 @@ window.YEAR9_NOTES = {
         "A more reactive metal can displace a less reactive metal from its salt solution.",
         "Metals above hydrogen react with acids to produce hydrogen gas.",
         "The reactivity series helps predict reactions.",
-        "Iron is more reactive than copper, so iron can displace copper."
+        "Iron is more reactive than copper, so iron can displace copper.",
+        "Metals that react with water produce a metal hydroxide and hydrogen.",
+        "Metals that react with dilute acids produce a salt and hydrogen.",
+        "Most metals react with oxygen in air to form metal oxides; this is oxidation."
       ],
       "commonMistakes": [
         {
@@ -895,7 +971,10 @@ window.YEAR9_NOTES = {
         "Carbon can reduce metal oxides below carbon in the reactivity series.",
         "Aluminium is too reactive for carbon extraction and is extracted by electrolysis.",
         "Reduction means removal of oxygen from a compound.",
-        "Carbon is useful in extraction because it reacts with oxygen from the metal oxide."
+        "Carbon is useful in extraction because it reacts with oxygen from the metal oxide.",
+        "Only a few metals, such as silver and gold, occur naturally in the native state.",
+        "Oxidation is gain of oxygen; reduction is loss of oxygen.",
+        "A redox reaction happens when oxidation and reduction occur at the same time."
       ],
       "commonMistakes": [
         {
@@ -925,14 +1004,14 @@ window.YEAR9_NOTES = {
       "practicePrompt": "Pick one linked revision card for Metal extraction and reduction and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
       "media": [
         {
-          "src": "assets/diagrams/9F-extraction-methods-note.svg",
+          "src": "assets/webp/9F-extraction-methods-2panel.webp",
           "alt": "Two-panel comparison showing carbon reduction on the left and electrolysis on the right.",
           "caption": "Metals below carbon can often be extracted by carbon reduction, while more reactive metals need electrolysis."
         },
         {
-          "src": "assets/diagrams/9F-blast-furnace-note.svg",
+          "src": "assets/webp/9F-blast-furnace-process-v2.webp",
           "alt": "Blast furnace illustration showing inputs, hot air and molten outputs.",
-          "presentation": "media-diagram-base",
+          "presentation": "media-image-base",
           "mediaTitle": "Blast furnace process",
           "mediaLead": "Iron ore, coke and limestone are added near the top; hot air enters lower down; molten iron is tapped near the bottom.",
           "mediaPoints": [
@@ -941,6 +1020,48 @@ window.YEAR9_NOTES = {
           ]
         }
       ]
+    },
+    {
+      "id": "9F-combustion-energy-rates",
+      "unit": "9F",
+      "objective": "9F-combustion-energy-rates",
+      "title": "Hydrocarbons, combustion, energy changes and rate",
+      "summary": "Hydrocarbons contain only hydrogen and carbon. Combustion in plenty of air forms carbon dioxide and water. Energy changes and reaction rate are also tested in 9F revision.",
+      "keyPoints": [
+        "Hydrocarbons contain hydrogen and carbon only.",
+        "In a plentiful supply of air: hydrocarbon + oxygen → carbon dioxide + water.",
+        "Oxygen relights a glowing splint.",
+        "A flame or spark provides energy to start combustion by breaking some bonds in the reactants.",
+        "Thermal decomposition breaks down a compound by heat and needs a continued energy supply.",
+        "A reaction can be faster at higher temperature, higher concentration or greater surface area.",
+        "Exothermic reactions transfer energy to the surroundings; endothermic reactions take energy from the surroundings."
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "A hydrocarbon contains any elements from living things.",
+          "correct": "A hydrocarbon contains hydrogen and carbon only.",
+          "why": "The name hydrocarbon comes from hydrogen and carbon."
+        },
+        {
+          "wrong": "Oxygen is tested with a lighted splint going out.",
+          "correct": "Oxygen relights a glowing splint.",
+          "why": "This is the standard oxygen gas test in the revision pack."
+        },
+        {
+          "wrong": "Increasing surface area always decreases reaction rate.",
+          "correct": "Increasing surface area usually increases reaction rate because more particles are exposed for collisions.",
+          "why": "Powders often react faster than large lumps of the same substance."
+        }
+      ],
+      "example": {
+        "question": "What are the products of complete combustion of a hydrocarbon?",
+        "answer": "Carbon dioxide and water."
+      },
+      "explanation": "This note gathers smaller 9F revision-pack ideas that often appear as quick questions: hydrocarbons, combustion products, the oxygen test, thermal decomposition, energy changes and factors that affect reaction rate. Keep answers short and use the exact vocabulary.",
+      "memoryHook": "Hydrocarbon burns in oxygen → carbon dioxide + water. Oxygen relights a glowing splint.",
+      "selfCheck": "Can you name three ways to increase rate of reaction and explain the oxygen gas test?",
+      "sentenceStarter": "The rate increases because ___, so particles collide ___.",
+      "practicePrompt": "Pick one linked revision card for 9F reactions and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered."
     },
     {
       "id": "9F-rusting",
@@ -998,7 +1119,10 @@ window.YEAR9_NOTES = {
         "Weight acts downward due to gravity.",
         "Air resistance acts opposite to motion through air.",
         "Water resistance acts opposite to motion through water.",
-        "Terminal velocity is reached when weight and drag are balanced, so speed is constant."
+        "Terminal velocity is reached when weight and drag are balanced, so speed is constant.",
+        "An object moving at constant speed has balanced forces.",
+        "A vehicle reaches top speed when the engine force is balanced by friction and air resistance.",
+        "As a vehicle gets faster, friction and air resistance increase."
       ],
       "commonMistakes": [
         {
@@ -1029,16 +1153,8 @@ window.YEAR9_NOTES = {
       "media": [
         {
           "src": "assets/webp/9I-forces-terminal-velocity-sequence.webp",
-          "alt": "Four-stage skydiver sequence showing weight and air resistance arrows before and after the parachute opens.",
-          "caption": "Terminal velocity happens when weight and air resistance are balanced, so speed becomes constant rather than zero.",
-          "mediaTitle": "Terminal velocity",
-          "mediaLead": "A falling object reaches terminal velocity when forces become balanced.",
-          "mediaPoints": [
-            "At first, weight is greater than air resistance, so the skydiver accelerates.",
-            "Air resistance increases as speed increases.",
-            "When the parachute opens, air resistance increases and the skydiver slows to a lower terminal velocity."
-          ],
-          "presentation": "media-diagram-base"
+          "alt": "Skydiver sequence showing weight, air resistance, terminal velocity and parachute opening.",
+          "caption": "Terminal velocity happens when weight and air resistance are balanced, so speed becomes constant rather than zero."
         },
         {
           "src": "assets/webp/9I-falling-forces-parachutist-base.webp",
@@ -1129,19 +1245,6 @@ window.YEAR9_NOTES = {
             "A larger useful output arrow means greater efficiency.",
             "A larger wasted branch means lower efficiency."
           ]
-        },
-        {
-          "src": "assets/diagrams/9I-work-done-force-distance.svg",
-          "alt": "A box being pushed by a force across a distance, showing the work done equation.",
-          "caption": "Work is done when a force moves an object through a distance.",
-          "mediaTitle": "Work done",
-          "mediaLead": "Work done = force × distance.",
-          "mediaPoints": [
-            "force is measured in newtons",
-            "distance is measured in metres",
-            "work done is measured in joules"
-          ],
-          "presentation": "media-diagram-base"
         }
       ]
     },
@@ -1155,7 +1258,10 @@ window.YEAR9_NOTES = {
         "Speed = distance ÷ time.",
         "Mean speed uses total distance and total time.",
         "On a distance-time graph, a steeper line means greater speed.",
-        "A horizontal line means the object has stopped."
+        "A horizontal line means the object has stopped.",
+        "To convert m/s to km/h, multiply by 3.6; to convert km/h to m/s, divide by 3.6.",
+        "Relative speed is the difference in speed between two objects moving in the same direction.",
+        "Gradient on a distance-time graph = vertical change ÷ horizontal change."
       ],
       "commonMistakes": [
         {
@@ -1199,6 +1305,47 @@ window.YEAR9_NOTES = {
       ]
     },
     {
+      "id": "9I-speed-time-graphs",
+      "unit": "9I",
+      "objective": "9I-speed-time-graphs",
+      "title": "Speed-time graphs",
+      "summary": "A speed-time graph shows how speed changes during a journey. Horizontal sections show constant speed. Sloping sections show acceleration or deceleration.",
+      "keyPoints": [
+        "A speed-time graph has time on the horizontal axis and speed on the vertical axis.",
+        "A horizontal line means constant speed.",
+        "A line sloping upwards means the object is speeding up, or accelerating.",
+        "A line sloping downwards means the object is slowing down, or decelerating.",
+        "A speed of zero means the object is stationary.",
+        "Do not read a flat speed-time line as stopped unless the speed value is zero."
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "A horizontal line on any graph means stopped.",
+          "correct": "On a speed-time graph, a horizontal line means constant speed; the object is only stopped if the speed is zero.",
+          "why": "This is different from a distance-time graph, where a horizontal line means distance is not changing."
+        },
+        {
+          "wrong": "A sloping line on a speed-time graph means constant speed.",
+          "correct": "A sloping line means the speed is changing.",
+          "why": "If the line slopes upwards, speed increases; if it slopes downwards, speed decreases."
+        },
+        {
+          "wrong": "Distance-time and speed-time graphs use the same vertical axis.",
+          "correct": "Distance-time graphs plot distance vertically; speed-time graphs plot speed vertically.",
+          "why": "Always check the axis labels before interpreting the graph."
+        }
+      ],
+      "example": {
+        "question": "What does a horizontal line at 12 m/s on a speed-time graph show?",
+        "answer": "The object is moving at a constant speed of 12 m/s."
+      },
+      "explanation": "The revision pack separates distance-time and speed-time graphs. For speed-time graphs, focus on the speed value and whether the line is flat or sloping. A flat line above zero means the object is still moving, just at constant speed.",
+      "memoryHook": "Speed-time graph: flat = steady speed; up slope = speeding up; down slope = slowing down.",
+      "selfCheck": "Can you explain the difference between a flat line on a distance-time graph and a flat line on a speed-time graph?",
+      "sentenceStarter": "This section shows ___ because the speed is ___.",
+      "practicePrompt": "Pick one linked revision card for speed graphs and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered."
+    },
+    {
       "id": "9I-moments",
       "unit": "9I",
       "objective": "9I-moments",
@@ -1238,7 +1385,7 @@ window.YEAR9_NOTES = {
       "practicePrompt": "Pick one linked revision card for Levers, pivots and moments and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
       "media": [
         {
-          "src": "assets/diagrams/9I-lever-moment-context.svg",
+          "src": "assets/webp/9I-lever-moment-context.webp",
           "alt": "Lever diagram lifting a rock showing load, fulcrum, effort, distances from pivot and moment equals force times distance.",
           "caption": "A longer distance from the pivot gives a larger moment for the same force. Moment = force × distance from the pivot."
         },
@@ -1260,7 +1407,10 @@ window.YEAR9_NOTES = {
         "Magnetic field lines outside a magnet go from north to south.",
         "Weight is the force caused by gravity.",
         "Weight = mass × gravitational field strength.",
-        "Gravitational potential energy increases when an object is lifted higher."
+        "Gravitational potential energy increases when an object is lifted higher.",
+        "Mass is measured in kilograms; weight is a force measured in newtons.",
+        "On Earth, gravitational field strength is about 10 N/kg.",
+        "Electric-field arrows show the direction a positive charge would move."
       ],
       "commonMistakes": [
         {
@@ -1293,19 +1443,6 @@ window.YEAR9_NOTES = {
           "src": "assets/webp/9J-magnetic-field-pattern.webp",
           "alt": "Iron filings showing the magnetic field pattern around a bar magnet.",
           "caption": "Field lines show the shape and direction of a magnetic field."
-        },
-        {
-          "src": "assets/diagrams/9J-gravitational-field-strength-weight.svg",
-          "alt": "Comparison of weight on Earth and the Moon showing the same mass has different weight in different gravitational fields.",
-          "caption": "Weight depends on gravitational field strength, but mass does not.",
-          "mediaTitle": "Weight and gravitational field strength",
-          "mediaLead": "Weight = mass × gravitational field strength.",
-          "mediaPoints": [
-            "mass is measured in kg",
-            "weight is a force measured in N",
-            "lower gravitational field strength gives smaller weight"
-          ],
-          "presentation": "media-diagram-base"
         }
       ]
     },
@@ -1349,28 +1486,9 @@ window.YEAR9_NOTES = {
       "practicePrompt": "Pick one linked revision card for Static electricity and charge and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
       "media": [
         {
-          "src": "assets/webp/9J-static-charge-rubbing-transfer-card.webp",
-          "alt": "A blue balloon being rubbed with a cloth, with electron symbols moving from the cloth to the balloon.",
-          "mediaTitle": "Charging by rubbing",
-          "mediaLead": "Rubbing can transfer electrons from one material to another.",
-          "mediaPoints": [
-            "Electrons are negatively charged.",
-            "The object gaining electrons becomes negatively charged.",
-            "The other material is left more positively charged."
-          ],
-          "presentation": "media-diagram-base"
-        },
-        {
-          "src": "assets/webp/9J-static-charge-attraction-repulsion-card.webp",
-          "alt": "Opposite charges moving toward each other and like charges moving away from each other.",
-          "mediaTitle": "Attraction and repulsion",
-          "mediaLead": "Charges affect each other without touching.",
-          "mediaPoints": [
-            "Opposite charges attract.",
-            "Like charges repel.",
-            "The arrows show the direction of the force."
-          ],
-          "presentation": "media-diagram-base"
+          "src": "assets/webp/9J-static-electricity-charge-transfer.webp",
+          "alt": "Infographic explaining static electricity by rubbing, electron transfer, negative and positive charge, and attraction or repulsion.",
+          "caption": "Static electricity comes from charge transfer. Electrons move; like charges repel and opposite charges attract."
         }
       ]
     },
@@ -1422,8 +1540,8 @@ window.YEAR9_NOTES = {
           "caption": "Use this chart to connect physical circuit equipment with the symbols used in circuit diagrams."
         },
         {
-          "src": "assets/diagrams/9J-series-parallel-current-voltage.svg",
-          "alt": "Clean comparison diagram showing current and voltage behaviour in series and parallel circuits.",
+          "src": "assets/webp/9J-series-parallel-current-voltage.webp",
+          "alt": "Infographic comparing series and parallel circuits, including current and voltage behaviour.",
           "caption": "Series circuits have the same current everywhere and share voltage. Parallel circuits split current between branches and have the same voltage across each branch."
         }
       ]
@@ -1438,7 +1556,12 @@ window.YEAR9_NOTES = {
         "Resistance = voltage ÷ current.",
         "Resistance is measured in ohms, Ω.",
         "A higher resistance gives a smaller current for the same voltage.",
-        "On a current-voltage graph, the shallower line has higher resistance."
+        "On a current-voltage graph, the shallower line has higher resistance.",
+        "All metals conduct electricity, but some metals are better conductors than others.",
+        "The resistance of a wire depends on its material, length and thickness.",
+        "Shorter wires have lower resistance than longer wires of the same material and thickness.",
+        "Thicker wires have lower resistance than thinner wires of the same material and length.",
+        "In a wire-resistance investigation, change only one factor at a time and keep the others controlled."
       ],
       "commonMistakes": [
         {
@@ -1461,7 +1584,7 @@ window.YEAR9_NOTES = {
         "question": "A resistor has 8 V across it and current 0.02 A. Calculate resistance.",
         "answer": "R = V ÷ I = 8 ÷ 0.02 = 400 Ω."
       },
-      "explanation": "Resistance tells you how difficult it is for current to flow. The equation is resistance = voltage ÷ current, or R = V ÷ I. A steeper current-voltage graph means more current for the same voltage, so resistance is lower. Longer or thinner wires usually have more resistance.",
+      "explanation": "Resistance tells you how difficult it is for current to flow. The equation is resistance = voltage ÷ current, or R = V ÷ I. A steeper current-voltage graph means more current for the same voltage, so resistance is lower. For wires, resistance depends on material, length and thickness: shorter wires and thicker wires have lower resistance if the material stays the same.",
       "memoryHook": "Resistance resists current. R = V ÷ I.",
       "selfCheck": "Calculate the resistance when voltage is 8 V and current is 0.02 A.",
       "sentenceStarter": "The resistance is ___ Ω because R = ___ ÷ ___.",
@@ -1483,21 +1606,49 @@ window.YEAR9_NOTES = {
           "src": "assets/webp/9E-conductors-insulators-materials.webp",
           "alt": "Copper beside insulating materials such as plastic, wood and rubber.",
           "caption": "Copper is a good conductor; plastic, wood and rubber are high-resistance insulators."
-        },
-        {
-          "src": "assets/diagrams/9J-wire-resistance-investigation.svg",
-          "alt": "Circuit investigation showing a test wire connected with an ammeter and voltmeter.",
-          "caption": "Resistance investigations can change the length or thickness of a test wire while measuring current and voltage.",
-          "mediaTitle": "Wire resistance investigation",
-          "mediaLead": "Changing wire length or thickness changes resistance.",
-          "mediaPoints": [
-            "longer wire usually gives higher resistance",
-            "thicker wire usually gives lower resistance",
-            "ammeter in series, voltmeter in parallel"
-          ],
-          "presentation": "media-diagram-base"
         }
       ]
+    },
+    {
+      "id": "9J-wire-resistance-investigation",
+      "unit": "9J",
+      "objective": "9J-wire-resistance-investigation",
+      "title": "Wire resistance investigation",
+      "summary": "The resistance of a wire depends on the material, length and thickness. A fair investigation changes one factor and controls the others.",
+      "keyPoints": [
+        "Material affects resistance because some metals are better conductors than others.",
+        "Longer wires have higher resistance because electrons pass through more material.",
+        "Thicker wires have lower resistance because there is more space for current to flow.",
+        "To test length fairly, keep the wire material and thickness the same.",
+        "Measure voltage with a voltmeter in parallel and current with an ammeter in series, then calculate resistance using R = V ÷ I.",
+        "Repeat readings and look for a pattern: resistance usually increases as wire length increases."
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "A longer wire always has lower resistance because it has more wire for current to use.",
+          "correct": "A longer wire has higher resistance if material and thickness stay the same.",
+          "why": "Electrons have to travel through more material, so the wire resists the current more."
+        },
+        {
+          "wrong": "A thicker wire has higher resistance because it has more metal.",
+          "correct": "A thicker wire has lower resistance if material and length stay the same.",
+          "why": "A thicker wire gives more conducting path for the current."
+        },
+        {
+          "wrong": "A fair test can change material, length and thickness together.",
+          "correct": "A fair test changes one variable and controls the others.",
+          "why": "Otherwise you cannot tell which factor caused the change in resistance."
+        }
+      ],
+      "example": {
+        "question": "How would you test the effect of wire length on resistance fairly?",
+        "answer": "Use the same material and thickness of wire, change only the length, measure voltage and current, then calculate resistance."
+      },
+      "explanation": "The revision pack names three wire-resistance factors: material, length and thickness. In an investigation, make one factor the independent variable and keep the other two controlled. Use voltage and current measurements to calculate resistance.",
+      "memoryHook": "Wire resistance: material, length, thickness. Change one; control the other two.",
+      "selfCheck": "If wire length is the independent variable, what should be kept the same?",
+      "sentenceStarter": "This is a fair test because only ___ changes, while ___ and ___ are kept the same.",
+      "practicePrompt": "Pick one linked revision card for resistance and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered."
     },
     {
       "id": "9J-electromagnets",
@@ -1510,7 +1661,10 @@ window.YEAR9_NOTES = {
         "A larger current makes the magnetic field stronger.",
         "An iron core makes an electromagnet stronger.",
         "A relay uses a small current to switch a larger current.",
-        "The motor effect is the force on a current-carrying wire in a magnetic field."
+        "The motor effect is the force on a current-carrying wire in a magnetic field.",
+        "An electric motor has a coil of wire in a magnetic field.",
+        "When current flows in the coil, forces on the sides of the coil make it turn.",
+        "Motor speed or force can be increased by increasing current, increasing magnetic field strength, or increasing the number of turns on the coil."
       ],
       "commonMistakes": [
         {
@@ -1533,7 +1687,7 @@ window.YEAR9_NOTES = {
         "question": "How can the force on a wire in a magnetic field be increased?",
         "answer": "Increase the current or use a stronger magnetic field."
       },
-      "explanation": "An electromagnet is made when current flows through a coil of wire, often wrapped around an iron core. Its magnetic field can be switched on and off by changing the current. Relays use electromagnets to let a small current switch a larger current. The motor effect is the force on a current-carrying wire in a magnetic field.",
+      "explanation": "An electromagnet is made when current flows through a coil of wire, often wrapped around an iron core. Its magnetic field can be switched on and off by changing the current. Relays use electromagnets to let a small current switch a larger current. The motor effect is the force on a current-carrying wire in a magnetic field. In a motor, a coil of wire in a magnetic field turns because forces act on the sides of the coil. Increasing current, magnetic field strength or the number of turns can increase motor speed or force.",
       "memoryHook": "Coil + current = electromagnet. More turns or more current = stronger field.",
       "selfCheck": "Name two ways to make an electromagnet stronger and explain why relays are useful.",
       "sentenceStarter": "The electromagnet becomes stronger when ___ because ___.",
