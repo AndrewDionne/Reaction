@@ -89,7 +89,6 @@
     index: 0,
     revealed: false,
     selectedChoice: null,
-    choiceOrderCardId: null,
     choiceOrder: null,
     test: null,
     session: null,
@@ -111,7 +110,7 @@
       studyIds: [],
       attempts: {},
       testHistory: [],
-      sessionCursors: {},
+      sessionPositions: {},
       sound: true,
       updatedAt: new Date().toISOString(),
     };
@@ -130,7 +129,7 @@
       studyIds: Array.isArray(raw.studyIds) ? raw.studyIds : [],
       attempts: raw.attempts && typeof raw.attempts === "object" ? raw.attempts : {},
       testHistory: Array.isArray(raw.testHistory) ? raw.testHistory : Array.isArray(raw.bossHistory) ? raw.bossHistory : [],
-      sessionCursors: raw.sessionCursors && typeof raw.sessionCursors === "object" ? raw.sessionCursors : {},
+      sessionPositions: raw.sessionPositions && typeof raw.sessionPositions === "object" ? raw.sessionPositions : {},
       sound: typeof raw.sound === "boolean" ? raw.sound : true,
     };
   }
@@ -147,14 +146,14 @@
     return defaultProgress();
   }
 
-  function writeProgressToStorage() {
+  function writeProgress() {
     state.progress.updatedAt = new Date().toISOString();
     state.progress.sound = state.sound;
     localStorage.setItem(STORAGE_KEY, JSON.stringify(state.progress));
   }
 
   function saveProgress() {
-    writeProgressToStorage();
+    writeProgress();
     renderStats();
     renderDashboard();
     renderNotesDashboard();
@@ -300,54 +299,66 @@
     return Array.isArray(card.choices) && card.choices.length >= 2 && /^[A-Z]$/.test(String(card.answer || ""));
   }
 
-  function choiceText(card, answer = card.answer) {
-    const prefix = `${answer} `;
-    const match = (card.choices || []).find((choice) => choice.startsWith(prefix));
-    return match ? match.slice(prefix.length) : String(answer || "");
+  function displayKey(index) {
+    return String.fromCharCode(65 + index);
   }
 
-  function parseChoice(choice, index = 0) {
+  function normalizeChoice(choice, index = 0) {
     const raw = String(choice || "").trim();
-    const match = raw.match(/^([A-Z])\s+(.+)$/);
+    const match = raw.match(/^([A-Z])(?:[).:-]|\s)+(.+)$/);
     return {
-      originalKey: match ? match[1] : String.fromCharCode(65 + index),
-      text: match ? match[2] : raw,
+      originalKey: match ? match[1] : displayKey(index),
+      text: match ? match[2].trim() : raw,
     };
   }
 
-  function resetChoiceOrder() {
-    state.choiceOrderCardId = null;
-    state.choiceOrder = null;
+  function originalChoiceText(card, answer = card.answer) {
+    const normalized = (card.choices || []).map(normalizeChoice);
+    const match = normalized.find((choice) => choice.originalKey === answer);
+    return match ? match.text : String(answer || "");
   }
 
-  function shuffledChoicesForCard(card) {
-    if (state.choiceOrderCardId === card.id && Array.isArray(state.choiceOrder)) return state.choiceOrder;
-    const displayKeys = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    const parsed = (card.choices || []).map(parseChoice);
-    const shuffled = shuffle(parsed).map((choice, index) => ({
-      ...choice,
-      displayKey: displayKeys[index] || String(index + 1),
-    }));
-    state.choiceOrderCardId = card.id;
-    state.choiceOrder = shuffled;
-    return shuffled;
+  function getDisplayChoices(card) {
+    const normalized = (card.choices || []).map(normalizeChoice);
+    const shouldShuffle = cardIsMcq(card) && normalized.length > 2;
+    if (!state.choiceOrder || state.choiceOrder.cardId !== card.id) {
+      const order = normalized.map((_, index) => index);
+      state.choiceOrder = {
+        cardId: card.id,
+        order: shouldShuffle ? shuffle(order) : order,
+      };
+    }
+    return state.choiceOrder.order.map((sourceIndex, displayIndex) => {
+      const source = normalized[sourceIndex] || { originalKey: displayKey(sourceIndex), text: "" };
+      return {
+        key: displayKey(displayIndex),
+        originalKey: source.originalKey,
+        text: source.text,
+        label: `${displayKey(displayIndex)} ${source.text}`,
+        correct: source.originalKey === card.answer,
+      };
+    });
   }
 
-  function displayedChoiceText(card, answer = card.answer) {
-    const current = state.choiceOrderCardId === card.id && Array.isArray(state.choiceOrder)
-      ? state.choiceOrder.find((choice) => choice.originalKey === answer)
-      : null;
-    if (current) return `${current.displayKey} — ${current.text}`;
-    return `${answer} — ${choiceText(card, answer)}`;
+  function correctDisplayChoice(card) {
+    return getDisplayChoices(card).find((choice) => choice.correct) || { key: card.answer, text: originalChoiceText(card) };
+  }
+
+  function choiceText(card, answer = null) {
+    if (answer) {
+      const displayed = getDisplayChoices(card).find((choice) => choice.key === answer);
+      if (displayed) return displayed.text;
+    }
+    return correctDisplayChoice(card).text;
   }
 
   function resetCardInteraction() {
     state.revealed = false;
     state.selectedChoice = null;
+    state.choiceOrder = null;
     state.definitionInput = "";
     state.definitionCompared = false;
     state.definitionReview = null;
-    resetChoiceOrder();
   }
 
   function cardIsDefinition(card) {
@@ -416,62 +427,6 @@
   function recordSessionStatus(card, status) {
     if (!state.session || !card || state.mode === "test") return;
     state.session.statuses[card.id] = status;
-  }
-
-  function sessionCursorKey(mode = state.mode) {
-    const f = activeFilters();
-    return JSON.stringify({
-      mode,
-      units: [...(state.selectedUnits || [])].sort(),
-      objectives: [...(state.selectedObjectives || [])].sort(),
-      type: f.type || "all",
-      level: f.level || "all",
-      search: f.search || "",
-    });
-  }
-
-  function persistSessionCursor() {
-    if (!state.deck.length || state.noteContext || state.mode === "test") return;
-    const card = state.deck[state.index];
-    if (!card) return;
-    const cursors = state.progress.sessionCursors && typeof state.progress.sessionCursors === "object"
-      ? state.progress.sessionCursors
-      : {};
-    cursors[sessionCursorKey(state.mode)] = {
-      mode: state.mode,
-      cardId: card.id,
-      index: state.index,
-      deckLength: state.deck.length,
-      updatedAt: new Date().toISOString(),
-    };
-
-    const entries = Object.entries(cursors)
-      .sort((a, b) => String(b[1]?.updatedAt || "").localeCompare(String(a[1]?.updatedAt || "")))
-      .slice(0, 30);
-    state.progress.sessionCursors = Object.fromEntries(entries);
-    writeProgressToStorage();
-  }
-
-  function applySessionCursor(mode = state.mode) {
-    if (mode === "test" || !state.deck.length) return;
-    const cursor = state.progress.sessionCursors?.[sessionCursorKey(mode)];
-    if (!cursor) return;
-    const byCardId = state.deck.findIndex((card) => card.id === cursor.cardId);
-    if (byCardId >= 0) {
-      state.index = byCardId;
-      return;
-    }
-    const index = Number(cursor.index);
-    if (Number.isFinite(index)) state.index = Math.max(0, Math.min(state.deck.length - 1, index));
-  }
-
-  function clearSessionCursor(mode = state.mode) {
-    const cursors = state.progress.sessionCursors && typeof state.progress.sessionCursors === "object"
-      ? state.progress.sessionCursors
-      : {};
-    delete cursors[sessionCursorKey(mode)];
-    state.progress.sessionCursors = cursors;
-    writeProgressToStorage();
   }
 
   function sessionStatusCounts() {
@@ -563,6 +518,36 @@
     };
   }
 
+  function sessionPositionKey(mode = state.mode) {
+    const f = activeFilters();
+    const unitsKey = [...(f.units || [])].sort().join(",") || "all";
+    const objectivesKey = [...(f.objectives || [])].sort().join(",") || "all";
+    return [mode, unitsKey, objectivesKey, f.type || "all", f.level || "all", f.search || ""].join("|");
+  }
+
+  function saveSessionPosition() {
+    if (!state.deck.length || state.noteContext || state.mode === "test") return;
+    const card = state.deck[state.index];
+    if (!card) return;
+    const positions = state.progress.sessionPositions && typeof state.progress.sessionPositions === "object" ? state.progress.sessionPositions : {};
+    positions[sessionPositionKey()] = {
+      index: state.index,
+      cardId: card.id,
+      updatedAt: new Date().toISOString(),
+    };
+    state.progress.sessionPositions = positions;
+    writeProgress();
+  }
+
+  function restoreSessionPosition(mode = state.mode) {
+    if (!state.deck.length || mode === "test") return;
+    const saved = state.progress.sessionPositions?.[sessionPositionKey(mode)];
+    if (!saved) return;
+    const byCard = state.deck.findIndex((card) => card.id === saved.cardId);
+    if (byCard >= 0) state.index = byCard;
+    else if (Number.isFinite(Number(saved.index))) state.index = Math.max(0, Math.min(state.deck.length - 1, Number(saved.index)));
+  }
+
   function selectionMatchesCard(card, filters = activeFilters()) {
     const unitsSelected = filters.units && filters.units.size > 0;
     const objectivesSelected = filters.objectives && filters.objectives.size > 0;
@@ -627,9 +612,7 @@
   function rebuildDeck(resetIndex = true) {
     state.deck = cardsForMode();
     if (resetIndex || state.index >= state.deck.length) state.index = 0;
-    state.revealed = false;
-    state.selectedChoice = null;
-    resetChoiceOrder();
+    resetCardInteraction();
   }
 
   function initFilters() {
@@ -662,12 +645,10 @@
     state.mode = mode;
     state.noteContext = null;
     state.test = mode === "test" ? { score: 0, answered: 0, answers: [] } : null;
-    state.revealed = false;
-    state.selectedChoice = null;
-    resetChoiceOrder();
+    resetCardInteraction();
     if (!options.preserveDeck) {
       rebuildDeck(true);
-      if (options.resume !== false) applySessionCursor(mode);
+      restoreSessionPosition(mode);
     }
     if (mode !== "test") startSessionTracker(mode);
 
@@ -680,16 +661,14 @@
   }
 
   function showHub() {
-    persistSessionCursor();
+    saveSessionPosition();
     document.body.classList.remove("session-active");
     els.sessionView.classList.add("hidden");
     els.hubView.classList.remove("hidden");
     state.test = null;
     state.session = null;
     state.noteContext = null;
-    state.revealed = false;
-    state.selectedChoice = null;
-    resetChoiceOrder();
+    resetCardInteraction();
     renderStats();
     renderDashboard();
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -810,12 +789,9 @@
   }
 
   function openNoteContext(noteId, cardId = null) {
-    persistSessionCursor();
     state.noteContext = { noteId, cardId };
     state.test = null;
-    state.revealed = false;
-    state.selectedChoice = null;
-    resetChoiceOrder();
+    resetCardInteraction();
     document.body.classList.add("session-active");
     els.hubView.classList.add("hidden");
     els.sessionView.classList.remove("hidden");
@@ -1127,31 +1103,36 @@
   }
 
   function renderChoiceFeedback(card) {
-    const correct = state.selectedChoice === card.answer;
-    const headline = correct ? "Correct." : "Not quite — moved to Revisit.";
+    const correctChoice = correctDisplayChoice(card);
+    const correct = state.selectedChoice === correctChoice.key;
+    const membership = setMembership(card.id);
+    const heldForRevisit = correct && membership.revisit && !membership.mastered && state.mode !== "revisit";
+    const headline = correct
+      ? "Correct."
+      : "Not quite — moved to Revisit.";
     return `
-      <div class="choice-feedback ${correct ? "good" : "needs-review"}">
+      <div class="choice-feedback ${correct && !heldForRevisit ? "good" : "needs-review"}">
         <strong>${headline}</strong>
-        <p>The answer is <strong>${escapeHtml(displayedChoiceText(card))}</strong>.</p>
+        <p>The answer is <strong>${escapeHtml(correctChoice.key)} — ${escapeHtml(correctChoice.text)}</strong>.</p>
         ${card.explanation ? `<p>${escapeHtml(card.explanation)}</p>` : ""}
       </div>
     `;
   }
 
   function renderChoices(card, testMode) {
-    const choices = shuffledChoicesForCard(card);
+    const displayChoices = getDisplayChoices(card);
+    const correctKey = correctDisplayChoice(card).key;
     return `<div class="answer-grid" role="group" aria-label="Answer choices">
-      ${choices.map((choice) => {
-        const key = choice.originalKey;
-        const shownChoice = `${choice.displayKey} ${choice.text}`;
+      ${displayChoices.map((choice) => {
+        const key = choice.key;
         let cls = "answer-button";
         if (state.selectedChoice) {
-          if (key === card.answer) cls += " correct";
+          if (key === correctKey) cls += " correct";
           else if (key === state.selectedChoice) cls += " wrong";
           else cls += " neutral";
         }
         const label = testMode && !state.selectedChoice ? "Choose answer" : "Answer choice";
-        return `<button class="${cls}" data-choice="${escapeHtml(key)}" type="button" aria-label="${label}: ${escapeHtml(shownChoice)}">${escapeHtml(shownChoice)}</button>`;
+        return `<button class="${cls}" data-choice="${escapeHtml(key)}" type="button" aria-label="${label}: ${escapeHtml(choice.label)}">${escapeHtml(choice.label)}</button>`;
       }).join("")}
     </div>`;
   }
@@ -1202,7 +1183,8 @@
   }
 
   function renderReveal(card) {
-    const answerLine = cardIsMcq(card) ? displayedChoiceText(card) : card.answer;
+    const correctChoice = cardIsMcq(card) ? correctDisplayChoice(card) : null;
+    const answerLine = cardIsMcq(card) ? `${correctChoice.key} — ${correctChoice.text}` : card.answer;
     return `
       <div class="reveal-box">
         <strong>Answer</strong>
@@ -1218,7 +1200,7 @@
         if (state.selectedChoice) return;
         state.selectedChoice = button.dataset.choice;
         state.revealed = true;
-        const correct = state.selectedChoice === card.answer;
+        const correct = state.selectedChoice === correctDisplayChoice(card).key;
         if (state.mode === "test") {
           recordTestAnswer(card, correct, state.selectedChoice);
           if (correct) celebrate();
@@ -1227,7 +1209,6 @@
           return;
         }
         setCardStatus(card, correct ? "mastered" : "revisit", { advance: false, countAttempt: true });
-        persistSessionCursor();
       });
     });
 
@@ -1303,7 +1284,7 @@
       state.index += 1;
     }
     resetCardInteraction();
-    persistSessionCursor();
+    saveSessionPosition();
     renderSession();
   }
 
@@ -1311,14 +1292,13 @@
     if (!state.deck.length) return;
     state.index = (state.index - 1 + state.deck.length) % state.deck.length;
     resetCardInteraction();
-    persistSessionCursor();
+    saveSessionPosition();
     renderSession();
   }
 
   function finishSession() {
     const counts = sessionStatusCounts();
     const total = state.deck.length;
-    clearSessionCursor(state.mode);
     els.studyPanel.innerHTML = "";
     els.resultPanel.classList.remove("hidden");
     updateSessionChrome({
@@ -1379,7 +1359,7 @@
     const percent = total ? Math.round((score / total) * 100) : 0;
     const record = {
       date: new Date().toISOString(),
-      unit: activeFilters().unit,
+      selection: sessionPositionKey("test"),
       score,
       total,
       percent,

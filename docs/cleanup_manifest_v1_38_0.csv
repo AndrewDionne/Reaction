@@ -1,0 +1,67 @@
+path,category,action,reason
+assets/brand/reaction-beaker.png,asset,removed,not referenced by current app/data/css/manifest; superseded or redundant after v1.37 content/media work
+assets/brand/reaction-brand-hero.png,asset,removed,not referenced by current app/data/css/manifest; superseded or redundant after v1.37 content/media work
+assets/diagrams/9A-continuous-variation.svg,asset,removed,not referenced by current app/data/css/manifest; superseded or redundant after v1.37 content/media work
+assets/diagrams/9A-fertilisation-gametes-zygote-chromosomes.svg,asset,removed,not referenced by current app/data/css/manifest; superseded or redundant after v1.37 content/media work
+assets/diagrams/9A-natural-selection.svg,asset,removed,not referenced by current app/data/css/manifest; superseded or redundant after v1.37 content/media work
+assets/diagrams/9E-lattice-options-source-style.svg,asset,removed,not referenced by current app/data/css/manifest; superseded or redundant after v1.37 content/media work
+assets/diagrams/9F-blast-furnace-note.svg,asset,removed,not referenced by current app/data/css/manifest; superseded or redundant after v1.37 content/media work
+assets/diagrams/9F-blast-furnace-question.svg,asset,removed,not referenced by current app/data/css/manifest; superseded or redundant after v1.37 content/media work
+assets/diagrams/9F-conservation-of-mass.svg,asset,removed,not referenced by current app/data/css/manifest; superseded or redundant after v1.37 content/media work
+assets/diagrams/9F-exothermic-endothermic-energy-profile.svg,asset,removed,not referenced by current app/data/css/manifest; superseded or redundant after v1.37 content/media work
+assets/diagrams/9F-extraction-methods-note.svg,asset,removed,not referenced by current app/data/css/manifest; superseded or redundant after v1.37 content/media work
+assets/diagrams/9F-extraction-methods-question.svg,asset,removed,not referenced by current app/data/css/manifest; superseded or redundant after v1.37 content/media work
+assets/diagrams/9F-gas-pressure-particles.svg,asset,removed,not referenced by current app/data/css/manifest; superseded or redundant after v1.37 content/media work
+assets/diagrams/9F-reactivity-series-question.svg,asset,removed,not referenced by current app/data/css/manifest; superseded or redundant after v1.37 content/media work
+assets/diagrams/9I-distance-time-graph.svg,asset,removed,not referenced by current app/data/css/manifest; superseded or redundant after v1.37 content/media work
+assets/diagrams/9I-fulcrum-lever.svg,asset,removed,not referenced by current app/data/css/manifest; superseded or redundant after v1.37 content/media work
+assets/diagrams/9I-lever-moment-context.svg,asset,removed,not referenced by current app/data/css/manifest; superseded or redundant after v1.37 content/media work
+assets/diagrams/9I-moments-balance.svg,asset,removed,not referenced by current app/data/css/manifest; superseded or redundant after v1.37 content/media work
+assets/diagrams/9I-work-done-force-distance.svg,asset,removed,not referenced by current app/data/css/manifest; superseded or redundant after v1.37 content/media work
+assets/diagrams/9J-gravitational-field-strength-weight.svg,asset,removed,not referenced by current app/data/css/manifest; superseded or redundant after v1.37 content/media work
+assets/diagrams/9J-magnetic-field-lines.svg,asset,removed,not referenced by current app/data/css/manifest; superseded or redundant after v1.37 content/media work
+assets/diagrams/9J-series-parallel-current-voltage.svg,asset,removed,not referenced by current app/data/css/manifest; superseded or redundant after v1.37 content/media work
+assets/diagrams/9J-wire-resistance-investigation.svg,asset,removed,not referenced by current app/data/css/manifest; superseded or redundant after v1.37 content/media work
+assets/webp/9A-triceratops-evidence.webp,asset,removed,not referenced by current app/data/css/manifest; superseded or redundant after v1.37 content/media work
+assets/webp/9B-mineral-deficiency-leaf-symptoms.webp,asset,removed,not referenced by current app/data/css/manifest; superseded or redundant after v1.37 content/media work
+assets/webp/9B-root-hair-micrograph.webp,asset,removed,not referenced by current app/data/css/manifest; superseded or redundant after v1.37 content/media work
+assets/webp/9E-acid-rain-impact-card.webp,asset,removed,not referenced by current app/data/css/manifest; superseded or redundant after v1.37 content/media work
+assets/webp/9E-greenhouse-gases-impact-card.webp,asset,removed,not referenced by current app/data/css/manifest; superseded or redundant after v1.37 content/media work
+assets/webp/9E-landfill-impact-card.webp,asset,removed,not referenced by current app/data/css/manifest; superseded or redundant after v1.37 content/media work
+assets/webp/9E-material-textures.webp,asset,removed,not referenced by current app/data/css/manifest; superseded or redundant after v1.37 content/media work
+assets/webp/9E-recycling-impact-card.webp,asset,removed,not referenced by current app/data/css/manifest; superseded or redundant after v1.37 content/media work
+assets/webp/9E-sustainable-living-solutions.webp,asset,removed,not referenced by current app/data/css/manifest; superseded or redundant after v1.37 content/media work
+assets/webp/9F-extraction-apparatus.webp,asset,removed,not referenced by current app/data/css/manifest; superseded or redundant after v1.37 content/media work
+assets/webp/9J-circuit-components-photo.webp,asset,removed,not referenced by current app/data/css/manifest; superseded or redundant after v1.37 content/media work
+assets/webp/9J-series-parallel-circuits-photo.webp,asset,removed,not referenced by current app/data/css/manifest; superseded or redundant after v1.37 content/media work
+assets/webp/9J-static-charge-attraction-repulsion-card.webp,asset,removed,not referenced by current app/data/css/manifest; superseded or redundant after v1.37 content/media work
+assets/webp/9J-static-charge-rubbing-transfer-card.webp,asset,removed,not referenced by current app/data/css/manifest; superseded or redundant after v1.37 content/media work
+assets/webp/9J-static-electricity-demo.webp,asset,removed,not referenced by current app/data/css/manifest; superseded or redundant after v1.37 content/media work
+docs/question_revision_pack_alignment_added_cards_v1_34_0.csv,doc,removed/consolidated,"historical patch note or generated audit CSV consolidated into docs/CHANGELOG.md, docs/MAINTENANCE.md and docs/RELEASE_READINESS.md"
+docs/release_readiness_report_v1_37_0.md,doc,removed/consolidated,"historical patch note or generated audit CSV consolidated into docs/CHANGELOG.md, docs/MAINTENANCE.md and docs/RELEASE_READINESS.md"
+docs/DEFINITION_COMPARE_NOTES_PATCH_v1.14.0.md,doc,removed/consolidated,"historical patch note or generated audit CSV consolidated into docs/CHANGELOG.md, docs/MAINTENANCE.md and docs/RELEASE_READINESS.md"
+docs/question_polish_added_cards_v1_35_0.csv,doc,removed/consolidated,"historical patch note or generated audit CSV consolidated into docs/CHANGELOG.md, docs/MAINTENANCE.md and docs/RELEASE_READINESS.md"
+docs/SVG_PHASE_1_2_APP_LAYER_PATCH_v1.27.0.md,doc,removed/consolidated,"historical patch note or generated audit CSV consolidated into docs/CHANGELOG.md, docs/MAINTENANCE.md and docs/RELEASE_READINESS.md"
+docs/QUESTION_POLISH_PATCH_v1.35.0.md,doc,removed/consolidated,"historical patch note or generated audit CSV consolidated into docs/CHANGELOG.md, docs/MAINTENANCE.md and docs/RELEASE_READINESS.md"
+docs/release_readiness_unit_balance_v1_37_0.csv,doc,removed/consolidated,"historical patch note or generated audit CSV consolidated into docs/CHANGELOG.md, docs/MAINTENANCE.md and docs/RELEASE_READINESS.md"
+docs/answer_leakage_and_difficulty_review_v1_35_0.csv,doc,removed/consolidated,"historical patch note or generated audit CSV consolidated into docs/CHANGELOG.md, docs/MAINTENANCE.md and docs/RELEASE_READINESS.md"
+docs/quality_balance_changes_v1_36_0.csv,doc,removed/consolidated,"historical patch note or generated audit CSV consolidated into docs/CHANGELOG.md, docs/MAINTENANCE.md and docs/RELEASE_READINESS.md"
+docs/COMMON_MISTAKES_CLARITY_PATCH_v1.15.0.md,doc,removed/consolidated,"historical patch note or generated audit CSV consolidated into docs/CHANGELOG.md, docs/MAINTENANCE.md and docs/RELEASE_READINESS.md"
+docs/README.md,doc,removed/consolidated,"historical patch note or generated audit CSV consolidated into docs/CHANGELOG.md, docs/MAINTENANCE.md and docs/RELEASE_READINESS.md"
+docs/class_notes_revision_alignment_added_topics_v1_33_0.csv,doc,removed/consolidated,"historical patch note or generated audit CSV consolidated into docs/CHANGELOG.md, docs/MAINTENANCE.md and docs/RELEASE_READINESS.md"
+docs/release_readiness_findings_v1_37_0.csv,doc,removed/consolidated,"historical patch note or generated audit CSV consolidated into docs/CHANGELOG.md, docs/MAINTENANCE.md and docs/RELEASE_READINESS.md"
+docs/QUESTION_QUALITY_BALANCE_PATCH_v1.36.0.md,doc,removed/consolidated,"historical patch note or generated audit CSV consolidated into docs/CHANGELOG.md, docs/MAINTENANCE.md and docs/RELEASE_READINESS.md"
+docs/revision_coverage_audit_addendum_v1_35_0.md,doc,removed/consolidated,"historical patch note or generated audit CSV consolidated into docs/CHANGELOG.md, docs/MAINTENANCE.md and docs/RELEASE_READINESS.md"
+docs/answer_leakage_review_v1_36_0.csv,doc,removed/consolidated,"historical patch note or generated audit CSV consolidated into docs/CHANGELOG.md, docs/MAINTENANCE.md and docs/RELEASE_READINESS.md"
+docs/webp_folder_inventory_v1_29_0.csv,doc,removed/consolidated,"historical patch note or generated audit CSV consolidated into docs/CHANGELOG.md, docs/MAINTENANCE.md and docs/RELEASE_READINESS.md"
+docs/CLASS_NOTES_ENHANCEMENT_PATCH_v1.10.0.md,doc,removed/consolidated,"historical patch note or generated audit CSV consolidated into docs/CHANGELOG.md, docs/MAINTENANCE.md and docs/RELEASE_READINESS.md"
+docs/release_readiness_answer_leakage_flags_v1_37_0.csv,doc,removed/consolidated,"historical patch note or generated audit CSV consolidated into docs/CHANGELOG.md, docs/MAINTENANCE.md and docs/RELEASE_READINESS.md"
+docs/CLASS_NOTES_PATCH_v1.9.0.md,doc,removed/consolidated,"historical patch note or generated audit CSV consolidated into docs/CHANGELOG.md, docs/MAINTENANCE.md and docs/RELEASE_READINESS.md"
+docs/release_readiness_media_refs_v1_37_0.csv,doc,removed/consolidated,"historical patch note or generated audit CSV consolidated into docs/CHANGELOG.md, docs/MAINTENANCE.md and docs/RELEASE_READINESS.md"
+docs/difficulty_balance_summary_v1_36_0.csv,doc,removed/consolidated,"historical patch note or generated audit CSV consolidated into docs/CHANGELOG.md, docs/MAINTENANCE.md and docs/RELEASE_READINESS.md"
+docs/ASSET_CATALOGUE_MANIFEST_v1_32_0.csv,doc,removed/consolidated,"historical patch note or generated audit CSV consolidated into docs/CHANGELOG.md, docs/MAINTENANCE.md and docs/RELEASE_READINESS.md"
+docs/ASSET_CATALOGUE_README_v1_32_0.md,doc,removed/consolidated,"historical patch note or generated audit CSV consolidated into docs/CHANGELOG.md, docs/MAINTENANCE.md and docs/RELEASE_READINESS.md"
+tools/build_content.py,tool,removed,obsolete generator/archive/cleanup script; current retained validation tools supersede it
+tools/build_content_v1_0_archive.py,tool,removed,obsolete generator/archive/cleanup script; current retained validation tools supersede it
+tools/cleanup_assets.sh,tool,removed,obsolete generator/archive/cleanup script; current retained validation tools supersede it
+tools/cleanup_assets_v1_26_0.sh,tool,removed,obsolete generator/archive/cleanup script; current retained validation tools supersede it

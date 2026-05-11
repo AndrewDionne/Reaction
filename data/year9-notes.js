@@ -1,5 +1,5 @@
 window.YEAR9_NOTES = {
-  "version": "1.33.0",
+  "version": "1.35.0",
   "title": "Year 9 Science Enhanced Class Notes",
   "notes": [
     {
@@ -12,7 +12,10 @@ window.YEAR9_NOTES = {
         "Continuous variation can take any value across a range, such as height or mass.",
         "Discontinuous variation falls into distinct categories, such as blood group.",
         "Inherited variation is caused by genetic information passed from parents.",
-        "Environmental variation is caused by surroundings or experiences, such as diet, sunlight or exercise."
+        "Environmental variation is caused by surroundings or experiences, such as diet, sunlight or exercise.",
+        "Biotic factors are activities of other organisms, such as competition, predation and disease.",
+        "Abiotic factors are non-living physical factors, such as the amount of sunlight.",
+        "All the organisms and physical environmental factors in an area form an ecosystem."
       ],
       "commonMistakes": [
         {
@@ -29,6 +32,16 @@ window.YEAR9_NOTES = {
           "wrong": "A bell-shaped chart shows discontinuous categories.",
           "correct": "A bell-shaped spread usually shows continuous variation and is called a normal distribution.",
           "why": "The values blend across a range, with many individuals near the middle and fewer at the extremes."
+        },
+        {
+          "wrong": "Abiotic means caused by animals or plants.",
+          "correct": "Abiotic factors are non-living physical factors.",
+          "why": "The revision pack separates living or biotic factors from non-living abiotic factors."
+        },
+        {
+          "wrong": "Biotic just means biological vocabulary.",
+          "correct": "Biotic factors are activities of organisms that affect other organisms.",
+          "why": "Examples include competition, predation and disease."
         }
       ],
       "example": {
@@ -51,7 +64,9 @@ window.YEAR9_NOTES = {
         "Most body cells contain chromosomes in the nucleus.",
         "DNA is the long molecule that carries genetic information.",
         "Genes are sections of DNA.",
-        "Sex cells contain half the normal number of chromosomes so that fertilisation restores the full number."
+        "Sex cells contain half the normal number of chromosomes so that fertilisation restores the full number.",
+        "Probabilities can be shown as percentages, decimals or fractions.",
+        "Probability means the likelihood of something happening."
       ],
       "commonMistakes": [
         {
@@ -68,6 +83,11 @@ window.YEAR9_NOTES = {
           "wrong": "All human cells have 46 chromosomes.",
           "correct": "Most human body cells have 46 chromosomes, but sperm and egg cells have 23.",
           "why": "Sex cells have half the usual chromosome number so fertilisation restores the full number."
+        },
+        {
+          "wrong": "A probability answer must always be written as a percentage.",
+          "correct": "Probabilities may be shown as percentages, decimals or fractions.",
+          "why": "The revision pack accepts all three forms."
         }
       ],
       "example": {
@@ -908,7 +928,9 @@ window.YEAR9_NOTES = {
         "Iron is more reactive than copper, so iron can displace copper.",
         "Metals that react with water produce a metal hydroxide and hydrogen.",
         "Metals that react with dilute acids produce a salt and hydrogen.",
-        "Most metals react with oxygen in air to form metal oxides; this is oxidation."
+        "Most metals react with oxygen in air to form metal oxides; this is oxidation.",
+        "A thermite reaction is a highly exothermic displacement reaction between aluminium and iron oxide that produces molten iron.",
+        "In a displacement reaction, a more reactive element takes the place of a less reactive element in a compound."
       ],
       "commonMistakes": [
         {
@@ -925,6 +947,11 @@ window.YEAR9_NOTES = {
           "wrong": "Reactivity with acid is unrelated to the reactivity series.",
           "correct": "A metal’s reaction with acid is evidence for its position in the reactivity series.",
           "why": "More reactive metals tend to react more vigorously with acids, producing hydrogen gas faster."
+        },
+        {
+          "wrong": "In thermite, iron displaces aluminium.",
+          "correct": "Aluminium displaces iron from iron oxide.",
+          "why": "Aluminium is the more reactive metal, so it takes iron’s place in the compound."
         }
       ],
       "example": {
@@ -974,7 +1001,10 @@ window.YEAR9_NOTES = {
         "Carbon is useful in extraction because it reacts with oxygen from the metal oxide.",
         "Only a few metals, such as silver and gold, occur naturally in the native state.",
         "Oxidation is gain of oxygen; reduction is loss of oxygen.",
-        "A redox reaction happens when oxidation and reduction occur at the same time."
+        "A redox reaction happens when oxidation and reduction occur at the same time.",
+        "A redox reaction is a reaction in which one reactant is reduced and another is oxidised.",
+        "If a substance has lost oxygen then it has been reduced.",
+        "A reducing agent removes oxygen from another substance."
       ],
       "commonMistakes": [
         {
@@ -1034,7 +1064,10 @@ window.YEAR9_NOTES = {
         "A flame or spark provides energy to start combustion by breaking some bonds in the reactants.",
         "Thermal decomposition breaks down a compound by heat and needs a continued energy supply.",
         "A reaction can be faster at higher temperature, higher concentration or greater surface area.",
-        "Exothermic reactions transfer energy to the surroundings; endothermic reactions take energy from the surroundings."
+        "Exothermic reactions transfer energy to the surroundings; endothermic reactions take energy from the surroundings.",
+        "Neutralisation is a reaction in which an acid reacts with an alkali or base to produce a salt and water.",
+        "Thermal decomposition reactions break down a compound by heat and require a constant supply of energy to keep them going.",
+        "An oxidising agent provides oxygen to oxidise another substance."
       ],
       "commonMistakes": [
         {
@@ -1051,6 +1084,11 @@ window.YEAR9_NOTES = {
           "wrong": "Increasing surface area always decreases reaction rate.",
           "correct": "Increasing surface area usually increases reaction rate because more particles are exposed for collisions.",
           "why": "Powders often react faster than large lumps of the same substance."
+        },
+        {
+          "wrong": "Thermal decomposition only needs energy at the start.",
+          "correct": "Thermal decomposition needs a constant supply of energy to keep going.",
+          "why": "The revision pack contrasts this with combustion, which needs energy to start."
         }
       ],
       "example": {
@@ -1649,6 +1687,42 @@ window.YEAR9_NOTES = {
       "selfCheck": "If wire length is the independent variable, what should be kept the same?",
       "sentenceStarter": "This is a fair test because only ___ changes, while ___ and ___ are kept the same.",
       "practicePrompt": "Pick one linked revision card for resistance and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered."
+    },
+    {
+      "id": "9J-rounding-numbers",
+      "unit": "9J",
+      "objective": "9J-rounding-numbers",
+      "title": "Rounding numbers and significant figures",
+      "summary": "Rounding is used to give calculation answers in a sensible form. The revision pack names decimal places and significant figures as key 9J calculation vocabulary.",
+      "keyPoints": [
+        "A decimal place is the position of a digit to the right of the decimal point in a number.",
+        "The number of decimal places in a number is the number of digits after the decimal point.",
+        "The first significant figure in a number is the digit with the highest place value.",
+        "The second significant figure has the second highest place value, and so on.",
+        "When rounding to decimal places, count digits after the decimal point.",
+        "When rounding to significant figures, start counting from the first non-zero digit."
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "Decimal places and significant figures mean the same thing.",
+          "correct": "Decimal places count digits after the decimal point; significant figures count important digits from the first non-zero digit.",
+          "why": "For example, 0.0632 has four decimal places, but its first significant figure is 6."
+        },
+        {
+          "wrong": "Zeros before the first non-zero digit are significant figures.",
+          "correct": "Zeros before the first non-zero digit are not significant figures.",
+          "why": "They show place value, not measured precision."
+        }
+      ],
+      "example": {
+        "question": "Round 3.476 to two decimal places.",
+        "answer": "3.48, because the third decimal place is 6 so the second decimal place rounds up."
+      },
+      "explanation": "For decimal places, look at the number of digits after the decimal point. For significant figures, start at the first non-zero digit. In science calculations, a rounded answer is often clearer and better matched to the precision of the data.",
+      "memoryHook": "Decimal places: count after the point. Significant figures: start at the first non-zero digit.",
+      "selfCheck": "How many decimal places and significant figures are in 0.0632?",
+      "sentenceStarter": "To round to ___ significant figures, start counting from ___.",
+      "practicePrompt": "Try one calculation answer and round it once to decimal places and once to significant figures."
     },
     {
       "id": "9J-electromagnets",

@@ -1,7 +1,7 @@
 window.YEAR9_CONTENT = {
-  "version": "1.34.0",
+  "version": "1.37.0",
   "title": "Year 9 Science End-of-Year Study",
-  "subtitle": "Guided revision with source-traceable question coverage aligned to the Year 9 revision pack, clean media assets and sticky revisit behaviour for missed MCQ cards",
+  "subtitle": "Guided revision with release-readiness QA, balanced questions and clean media assets",
   "units": [
     {
       "id": "9A",
@@ -90,16 +90,18 @@ window.YEAR9_CONTENT = {
       "question": "Environmental variation is caused:",
       "answer": "B",
       "choices": [
-        "A when organisms breed",
+        "A by genes only",
         "B by environmental factors",
-        "C by varieties",
-        "D by problems in the brains of some animals"
+        "C by chromosomes copying themselves",
+        "D by inherited alleles from parents"
       ],
       "explanation": "Environmental variation is caused by conditions in the surroundings.",
       "source": "9A quick quiz 9Aa Q3",
       "level": 1,
       "cue": "",
-      "tags": [],
+      "tags": [
+        "quality-balance-v1.36"
+      ],
       "sourceFidelity": "exact-source-text",
       "learningObjective": "9A-variation",
       "learningObjectiveTitle": "Variation and classification",
@@ -114,16 +116,18 @@ window.YEAR9_CONTENT = {
       "question": "What sort of variation is shown when measurements can take any value over a range?",
       "answer": "D",
       "choices": [
-        "A disrespectful",
-        "B dominant",
-        "C discontinuous",
-        "D continuous"
+        "A discrete variation",
+        "B dominant variation",
+        "C discontinuous variation",
+        "D continuous variation"
       ],
       "explanation": "Measurements such as height, length and mass show continuous variation.",
       "source": "9A quick quiz 9Aa Q4 - text reconstruction of chart question",
       "level": 2,
       "cue": "",
-      "tags": [],
+      "tags": [
+        "quality-balance-v1.36"
+      ],
       "media": [
         {
           "src": "assets/diagrams/9A-continuous-variation-question.svg",
@@ -170,16 +174,18 @@ window.YEAR9_CONTENT = {
       "question": "Inherited characteristics in humans are caused by:",
       "answer": "C",
       "choices": [
-        "A blood",
-        "B children learning things from their parents and at school",
+        "A diet and exercise only",
+        "B learning from parents and school",
         "C genetic information",
-        "D the country in which children grow up"
+        "D the country where a person grows up"
       ],
       "explanation": "Inherited characteristics are controlled by genetic information.",
       "source": "9A quick quiz 9Ab Q2",
       "level": 1,
       "cue": "",
-      "tags": [],
+      "tags": [
+        "quality-balance-v1.36"
+      ],
       "sourceFidelity": "exact-source-text",
       "learningObjective": "9A-inheritance",
       "learningObjectiveTitle": "Inheritance, DNA and genes",
@@ -221,13 +227,15 @@ window.YEAR9_CONTENT = {
         "A even distribution",
         "B uneven distribution",
         "C normal distribution",
-        "D norman distribution"
+        "D skewed distribution"
       ],
       "explanation": "Continuous variation often forms a normal distribution.",
       "source": "9A quick quiz 9Ab Q4",
       "level": 2,
       "cue": "",
-      "tags": [],
+      "tags": [
+        "quality-balance-v1.36"
+      ],
       "media": [
         {
           "src": "assets/diagrams/9A-continuous-variation-question.svg",
@@ -322,8 +330,8 @@ window.YEAR9_CONTENT = {
       "question": "The structure of the long molecule found in chromosomes was worked out by:",
       "answer": "C",
       "choices": [
-        "A Holmes and Watson",
-        "B Bonnie and Clyde",
+        "A Darwin and Wallace",
+        "B Mendel and Lamarck",
         "C Watson and Crick",
         "D Adenine and Thymine"
       ],
@@ -331,7 +339,9 @@ window.YEAR9_CONTENT = {
       "source": "9A quick quiz 9Ac Q4",
       "level": 1,
       "cue": "",
-      "tags": [],
+      "tags": [
+        "quality-balance-v1.36"
+      ],
       "sourceFidelity": "exact-source-text",
       "learningObjective": "9A-inheritance",
       "learningObjectiveTitle": "Inheritance, DNA and genes",
@@ -450,15 +460,17 @@ window.YEAR9_CONTENT = {
       "answer": "A",
       "choices": [
         "A gametes",
-        "B single genes",
-        "C money for conservation projects",
-        "D sand"
+        "B fossils",
+        "C fertiliser samples",
+        "D habitat maps"
       ],
       "explanation": "Gene banks can store gametes or seeds to preserve genetic diversity.",
       "source": "9A quick quiz 9Ad Q4",
       "level": 2,
       "cue": "",
-      "tags": [],
+      "tags": [
+        "quality-balance-v1.36"
+      ],
       "sourceFidelity": "exact-source-text",
       "learningObjective": "9A-inheritance",
       "learningObjectiveTitle": "Inheritance, DNA and genes",
@@ -473,16 +485,18 @@ window.YEAR9_CONTENT = {
       "question": "Adult birds of the same species have slightly different beak lengths. With plenty of food and no disease, the cause of the difference is most likely to be:",
       "answer": "D",
       "choices": [
-        "A environmental factors",
-        "B how much the birds use their beaks",
-        "C how much the birds stretch their beaks",
+        "A temperature changes during the day",
+        "B how much food the birds can find",
+        "C disease affecting the birds",
         "D genes"
       ],
       "explanation": "Small inherited differences between individuals are caused by genes.",
       "source": "9A quick quiz 9Ae Q1",
       "level": 2,
       "cue": "",
-      "tags": [],
+      "tags": [
+        "quality-balance-v1.36"
+      ],
       "sourceFidelity": "exact-source-text",
       "learningObjective": "9A-inheritance",
       "learningObjectiveTitle": "Inheritance, DNA and genes",
@@ -521,16 +535,18 @@ window.YEAR9_CONTENT = {
       "question": "Evolution is:",
       "answer": "B",
       "choices": [
-        "A what happens after an organism becomes endangered",
+        "A a change an individual makes during its lifetime",
         "B a gradual change in the characteristics of organisms over time",
-        "C when organisms decide to change their features",
-        "D something that only affected animals such as dinosaurs"
+        "C an adaptation caused because an organism needs it",
+        "D all organisms becoming more complex"
       ],
       "explanation": "Evolution is gradual change in inherited characteristics over generations.",
       "source": "9A quick quiz 9Ae Q3",
       "level": 1,
       "cue": "",
-      "tags": [],
+      "tags": [
+        "quality-balance-v1.36"
+      ],
       "sourceFidelity": "exact-source-text",
       "learningObjective": "9A-inheritance",
       "learningObjectiveTitle": "Inheritance, DNA and genes",
@@ -545,16 +561,18 @@ window.YEAR9_CONTENT = {
       "question": "The theory of evolution that most scientists believe today was put forward by:",
       "answer": "D",
       "choices": [
-        "A Hall and Oates",
-        "B Orville and Wilbur Wright",
-        "C Lamarck and Drinker Cope",
+        "A Lamarck and Mendel",
+        "B Watson and Crick",
+        "C Mendel and Franklin",
         "D Wallace and Darwin"
       ],
       "explanation": "Darwin and Wallace independently developed the idea of natural selection.",
       "source": "9A quick quiz 9Ae Q4",
       "level": 1,
       "cue": "",
-      "tags": [],
+      "tags": [
+        "quality-balance-v1.36"
+      ],
       "sourceFidelity": "exact-source-text",
       "learningObjective": "9A-evolution",
       "learningObjectiveTitle": "Adaptation, natural selection and evolution",
@@ -1204,8 +1222,8 @@ window.YEAR9_CONTENT = {
       "question": "Which of the following is a synthetic polymer?",
       "answer": "D",
       "choices": [
-        "A sand",
-        "B rubber",
+        "A glass",
+        "B wool",
         "C concrete",
         "D PVC"
       ],
@@ -1213,7 +1231,9 @@ window.YEAR9_CONTENT = {
       "source": "9E quick quiz 9Eb Q1",
       "level": 1,
       "cue": "",
-      "tags": [],
+      "tags": [
+        "quality-balance-v1.36"
+      ],
       "sourceFidelity": "exact-source-text",
       "learningObjective": "9E-polymers",
       "learningObjectiveTitle": "Polymers and polymerisation",
@@ -1573,16 +1593,18 @@ window.YEAR9_CONTENT = {
       "question": "The most important reason for recycling glass is that it saves large amounts of:",
       "answer": "C",
       "choices": [
-        "A sand",
+        "A raw materials only",
         "B trees",
         "C energy",
-        "D limestone"
+        "D oxygen"
       ],
       "explanation": "Recycling glass uses less energy than making new glass.",
       "source": "9E quick quiz 9Ee Q4",
       "level": 2,
       "cue": "",
-      "tags": [],
+      "tags": [
+        "quality-balance-v1.36"
+      ],
       "sourceFidelity": "exact-source-text",
       "learningObjective": "9E-environment",
       "learningObjectiveTitle": "Environmental impacts and recycling",
@@ -1743,7 +1765,7 @@ window.YEAR9_CONTENT = {
       "choices": [
         "A electrons and neutrons",
         "B electrons and protons",
-        "C electrons and neutrons",
+        "C neutrons and ions",
         "D protons and neutrons"
       ],
       "explanation": "The nucleus contains protons and neutrons.",
@@ -2982,10 +3004,10 @@ window.YEAR9_CONTENT = {
       "question": "What is the formula for calculating resistance?",
       "answer": "C",
       "choices": [
-        "A resistance = voltage × current",
+        "A resistance = charge / time",
         "B resistance = current / voltage",
         "C resistance = voltage / current",
-        "D ohms = volts × amps"
+        "D resistance = power / voltage"
       ],
       "explanation": "R = V / I.",
       "source": "9J quick quiz 9Jd Q4",
@@ -5429,16 +5451,17 @@ window.YEAR9_CONTENT = {
     {
       "id": "y9-232-9a-define-classification",
       "unit": "9A",
-      "type": "Progress check",
-      "question": "Define classification.",
-      "answer": "Classification is sorting organisms into groups based on similarities and differences.",
+      "type": "Assess check",
+      "question": "Why do scientists classify organisms using similarities and differences?",
+      "answer": "Classification sorts organisms into groups based on similarities and differences, so organisms can be identified and compared more clearly.",
       "choices": [],
-      "explanation": "Classification is sorting organisms into groups based on similarities and differences.",
+      "explanation": "This keeps the revision-pack definition but asks students to use it, rather than only repeat it.",
       "source": "9A revision worksheet",
-      "level": 1,
+      "level": 2,
       "cue": "Try to answer in full sentences before revealing the mark-scheme version.",
       "tags": [
-        "written"
+        "written",
+        "quality-balance-v1.36"
       ],
       "sourceFidelity": "progress-check-derived",
       "learningObjective": "9A-variation",
@@ -5450,16 +5473,17 @@ window.YEAR9_CONTENT = {
     {
       "id": "y9-233-9a-define-species",
       "unit": "9A",
-      "type": "Progress check",
-      "question": "Define species.",
-      "answer": "A species is a group of organisms that can reproduce to produce fertile offspring.",
+      "type": "Apply check",
+      "question": "Two animals can mate, but their offspring are not fertile. Why would scientists not count them as the same species?",
+      "answer": "They would not count them as the same species because members of the same species must reproduce to produce fertile offspring.",
       "choices": [],
-      "explanation": "A species is a group of organisms that can reproduce to produce fertile offspring.",
+      "explanation": "The key revision-pack wording is “reproduce to produce fertile offspring”.",
       "source": "9A revision worksheet",
-      "level": 1,
+      "level": 3,
       "cue": "Try to answer in full sentences before revealing the mark-scheme version.",
       "tags": [
-        "written"
+        "written",
+        "quality-balance-v1.36"
       ],
       "sourceFidelity": "progress-check-derived",
       "learningObjective": "9A-variation",
@@ -8959,17 +8983,18 @@ window.YEAR9_CONTENT = {
     {
       "id": "y9x-092-9b-define-biodiversity",
       "unit": "9B",
-      "type": "Progress check",
-      "question": "Define biodiversity.",
-      "answer": "Biodiversity is the range of different species living in a particular area.",
+      "type": "Apply check",
+      "question": "A pesticide reduces the number of insect species living in a field. What has happened to biodiversity in that area?",
+      "answer": "Biodiversity has decreased because there is a smaller range of different species living in the area.",
       "choices": [],
-      "explanation": "Biodiversity is the range of different species living in a particular area.",
+      "explanation": "Biodiversity is the range or variety of different species in an area.",
       "source": "9B Plant Growth PPT slide 95",
-      "level": 1,
+      "level": 2,
       "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
       "tags": [
         "ppt",
-        "written"
+        "written",
+        "quality-balance-v1.36"
       ],
       "sourceFidelity": "progress-check-derived",
       "learningObjective": "9B-food-webs",
@@ -11096,18 +11121,19 @@ window.YEAR9_CONTENT = {
     {
       "id": "y9r-002-9b-why-is-land-cleared-of-hedges-and-trees-in-modern-farming",
       "unit": "9B",
-      "type": "Assess check",
-      "question": "Why is land cleared of hedges and trees in modern farming?",
-      "answer": "To create more land for crops and make it easier for machinery to move around.",
+      "type": "Apply check",
+      "question": "A farmer clears hedges and trees from a field. Give one benefit for farming and one environmental problem this can cause.",
+      "answer": "Benefit: it creates more land for crops and makes it easier for machinery to move around. Problem: it destroys habitats and can cause soil erosion because there are fewer roots.",
       "choices": [],
-      "explanation": "To create more land for crops and make it easier for machinery to move around.",
+      "explanation": "This combines the revision-pack benefit and problem so students must apply both sides of the farming-methods table.",
       "source": "9B Summary sheet p2 Farming table",
       "sourceExcerpt": "land is cleared of hedges and trees — to create more land for crops and make it easier for machinery to move around",
-      "level": 2,
+      "level": 3,
       "cue": "Use the revision-pack wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
-        "source-traceable"
+        "source-traceable",
+        "quality-balance-v1.36"
       ],
       "sourceFidelity": "exact-source-answer",
       "learningObjective": "9B-farming-yield-impact",
@@ -11126,11 +11152,12 @@ window.YEAR9_CONTENT = {
       "explanation": "Destroys habitats. Lack of roots can cause soil erosion.",
       "source": "9B Summary sheet p2 Farming table",
       "sourceExcerpt": "Destroys habitats. Lack of roots can cause soil erosion.",
-      "level": 2,
+      "level": 3,
       "cue": "Use the revision-pack wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
-        "source-traceable"
+        "source-traceable",
+        "quality-balance-v1.36"
       ],
       "sourceFidelity": "exact-source-answer",
       "learningObjective": "9B-farming-yield-impact",
@@ -11172,11 +11199,12 @@ window.YEAR9_CONTENT = {
       "explanation": "Can kill useful organisms as well as pests. Damages food webs.",
       "source": "9B Summary sheet p2 Farming table",
       "sourceExcerpt": "Can kill useful organisms as well as pests. Damages food webs.",
-      "level": 2,
+      "level": 3,
       "cue": "Use the revision-pack wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
-        "source-traceable"
+        "source-traceable",
+        "quality-balance-v1.36"
       ],
       "sourceFidelity": "exact-source-answer",
       "learningObjective": "9B-farming-yield-impact",
@@ -11211,18 +11239,19 @@ window.YEAR9_CONTENT = {
     {
       "id": "y9r-007-9b-what-problem-can-fertilisers-cause-if-they-wash-into-streams-and-rivers",
       "unit": "9B",
-      "type": "Assess check",
-      "question": "What problem can fertilisers cause if they wash into streams and rivers?",
-      "answer": "They can cause pollution so that the organisms in the water die.",
+      "type": "Apply check",
+      "question": "Fertiliser washes from a field into a stream. What problem can this cause?",
+      "answer": "It can cause pollution so that organisms in the water die.",
       "choices": [],
-      "explanation": "They can cause pollution so that the organisms in the water die.",
+      "explanation": "Fertilisers increase yield on fields, but runoff can damage freshwater ecosystems.",
       "source": "9B Summary sheet p2 Farming table",
       "sourceExcerpt": "Can wash into streams and rivers and cause pollution so that the organisms in the water die.",
-      "level": 2,
+      "level": 3,
       "cue": "Use the revision-pack wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
-        "source-traceable"
+        "source-traceable",
+        "quality-balance-v1.36"
       ],
       "sourceFidelity": "exact-source-answer",
       "learningObjective": "9B-farming-yield-impact",
@@ -11241,11 +11270,12 @@ window.YEAR9_CONTENT = {
       "explanation": "The planting of huge areas of a single variety reduces biodiversity.",
       "source": "9B Summary sheet p2 Farming table",
       "sourceExcerpt": "The planting of huge areas of a single variety reduces biodiversity.",
-      "level": 2,
+      "level": 3,
       "cue": "Use the revision-pack wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
-        "source-traceable"
+        "source-traceable",
+        "quality-balance-v1.36"
       ],
       "sourceFidelity": "exact-source-answer",
       "learningObjective": "9B-farming-yield-impact",
@@ -11287,11 +11317,12 @@ window.YEAR9_CONTENT = {
       "explanation": "The energy released from glucose is transferred to molecules of ATP, which store energy for a cell until it is needed.",
       "source": "9B Summary sheet p2 Aerobic respiration",
       "sourceExcerpt": "The energy released from glucose is transferred to molecules of ATP, which store energy for a cell until it is needed.",
-      "level": 2,
+      "level": 3,
       "cue": "Use the revision-pack wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
-        "source-traceable"
+        "source-traceable",
+        "quality-balance-v1.36"
       ],
       "sourceFidelity": "exact-source-answer",
       "learningObjective": "9B-photosynthesis",
@@ -11333,11 +11364,12 @@ window.YEAR9_CONTENT = {
       "explanation": "Most photosynthesis happens in the palisade cells, which are found near the upper surface of leaves.",
       "source": "9B Summary sheet p1 Getting light",
       "sourceExcerpt": "Most photosynthesis happens in the palisade cells, which are found near the upper surface of leaves.",
-      "level": 2,
+      "level": 3,
       "cue": "Use the revision-pack wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
-        "source-traceable"
+        "source-traceable",
+        "quality-balance-v1.36"
       ],
       "sourceFidelity": "exact-source-answer",
       "learningObjective": "9B-photosynthesis",
@@ -11448,11 +11480,12 @@ window.YEAR9_CONTENT = {
       "explanation": "Calcium oxide and carbon dioxide.",
       "source": "9E Summary sheet p2 Thermal decomposition equation",
       "sourceExcerpt": "calcium carbonate → calcium oxide + carbon dioxide",
-      "level": 2,
+      "level": 3,
       "cue": "Use the revision-pack wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
-        "source-traceable"
+        "source-traceable",
+        "quality-balance-v1.36"
       ],
       "sourceFidelity": "exact-source-answer",
       "learningObjective": "9E-energy-thermal-peer-review",
@@ -11471,11 +11504,12 @@ window.YEAR9_CONTENT = {
       "explanation": "They check that the paper has valid conclusions, that it is original and that the experiments work.",
       "source": "9E Summary sheet p2 Peer review",
       "sourceExcerpt": "The scientists evaluate the paper; they check that the paper has valid conclusions, that it is original and that the experiments work.",
-      "level": 2,
+      "level": 3,
       "cue": "Use the revision-pack wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
-        "source-traceable"
+        "source-traceable",
+        "quality-balance-v1.36"
       ],
       "sourceFidelity": "exact-source-answer",
       "learningObjective": "9E-energy-thermal-peer-review",
@@ -11609,11 +11643,12 @@ window.YEAR9_CONTENT = {
       "explanation": "It reduces our use of landfill sites and reduces the need to burn fossil fuels. It can also reduce pollution and save raw materials.",
       "source": "9E Summary sheet p2 Recycling materials",
       "sourceExcerpt": "Recycling materials to use again … reduces our use of landfill sites; reduces the need to burn fossil fuels; reduces pollution from manufacturing process; saves our resources of raw materials.",
-      "level": 2,
+      "level": 3,
       "cue": "Use the revision-pack wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
-        "source-traceable"
+        "source-traceable",
+        "quality-balance-v1.36"
       ],
       "sourceFidelity": "exact-source-answer",
       "learningObjective": "9E-environment",
@@ -11625,18 +11660,19 @@ window.YEAR9_CONTENT = {
     {
       "id": "y9r-025-9e-what-is-biomagnification",
       "unit": "9E",
-      "type": "Assess check",
-      "question": "What is biomagnification?",
-      "answer": "As large animals eat lots of smaller animals, toxin levels increase and can reach harmful levels in humans.",
+      "type": "Apply check",
+      "question": "A toxin is eaten by small animals, and then many small animals are eaten by a predator. Why can toxin levels become highest in the predator?",
+      "answer": "Because large animals eat lots of smaller animals, toxin levels increase and can reach harmful levels. This is biomagnification.",
       "choices": [],
-      "explanation": "As large animals eat lots of smaller animals, toxin levels increase and can reach harmful levels in humans.",
+      "explanation": "The question keeps the revision-pack meaning but tests it in a food-chain context.",
       "source": "9E Summary sheet p2 Problems with materials",
       "sourceExcerpt": "As large animals eat lots of smaller animals, toxin levels increase (biomagnification) and can reach harmful levels in humans.",
-      "level": 2,
+      "level": 3,
       "cue": "Use the revision-pack wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
-        "source-traceable"
+        "source-traceable",
+        "quality-balance-v1.36"
       ],
       "sourceFidelity": "exact-source-answer",
       "learningObjective": "9E-environment",
@@ -11648,18 +11684,19 @@ window.YEAR9_CONTENT = {
     {
       "id": "y9r-026-9f-in-reactions-and-physical-changes-what-happens-to-the-number-of-atoms",
       "unit": "9F",
-      "type": "Assess check",
-      "question": "In reactions and physical changes, what happens to the number of atoms?",
-      "answer": "The number of atoms does not change and so there is no overall change in mass.",
+      "type": "Explain check",
+      "question": "Why is there no overall change in mass in a reaction or physical change?",
+      "answer": "The number of atoms does not change, so there is no overall change in mass.",
       "choices": [],
-      "explanation": "The number of atoms does not change and so there is no overall change in mass.",
+      "explanation": "Mass is conserved because atoms are rearranged, not created or destroyed.",
       "source": "9F Summary sheet p1 Reactions and equations",
       "sourceExcerpt": "In both cases, the number of atoms does not change and so there is no overall change in mass.",
-      "level": 2,
+      "level": 3,
       "cue": "Use the revision-pack wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
-        "source-traceable"
+        "source-traceable",
+        "quality-balance-v1.36"
       ],
       "sourceFidelity": "exact-source-answer",
       "learningObjective": "9F-changes",
@@ -11977,11 +12014,12 @@ window.YEAR9_CONTENT = {
       "explanation": "It is needed to start the combustion reaction by breaking some bonds in the reactants.",
       "source": "9F Summary sheet p3 Hydrocarbons",
       "sourceExcerpt": "An input of energy from a flame or spark is needed to start the combustion reaction by breaking some bonds in the reactants.",
-      "level": 2,
+      "level": 3,
       "cue": "Use the revision-pack wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
-        "source-traceable"
+        "source-traceable",
+        "quality-balance-v1.36"
       ],
       "sourceFidelity": "exact-source-answer",
       "learningObjective": "9F-combustion-energy-rates",
@@ -11993,18 +12031,19 @@ window.YEAR9_CONTENT = {
     {
       "id": "y9r-041-9f-what-increases-the-rate-of-reaction-according-to-the-revision-sheet",
       "unit": "9F",
-      "type": "Assess check",
-      "question": "What increases the rate of reaction, according to the revision sheet?",
-      "answer": "Increased temperature, increased concentration of a reactant and increased surface area of a reactant.",
+      "type": "Apply check",
+      "question": "A student wants a reaction to happen faster. Give three changes from the revision sheet that could increase the rate.",
+      "answer": "Increase the temperature, increase the concentration of a reactant, and increase the surface area of a solid reactant.",
       "choices": [],
-      "explanation": "Increased temperature, increased concentration of a reactant and increased surface area of a reactant.",
+      "explanation": "This asks for the rate factors as an applied method choice rather than a definition.",
       "source": "9F Summary sheet p3 Rates of reaction",
       "sourceExcerpt": "The rate is also often increased by increased temperature, increased concentration of a reactant and increased surface area of a reactant.",
-      "level": 2,
+      "level": 3,
       "cue": "Use the revision-pack wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
-        "source-traceable"
+        "source-traceable",
+        "quality-balance-v1.36"
       ],
       "sourceFidelity": "exact-source-answer",
       "learningObjective": "9F-combustion-energy-rates",
@@ -12062,18 +12101,19 @@ window.YEAR9_CONTENT = {
     {
       "id": "y9r-044-9f-which-metals-can-be-extracted-from-their-ores-by-heating-with-carbon",
       "unit": "9F",
-      "type": "Assess check",
-      "question": "Which metals can be extracted from their ores by heating with carbon?",
-      "answer": "Metals from zinc downwards in the reactivity series can be extracted from their ores by heating with carbon.",
+      "type": "Apply check",
+      "question": "A metal is zinc or below zinc in the reactivity series. Which extraction method can be used?",
+      "answer": "It can be extracted from its ore by heating with carbon.",
       "choices": [],
-      "explanation": "Metals from zinc downwards in the reactivity series can be extracted from their ores by heating with carbon.",
+      "explanation": "Metals from zinc downwards in the reactivity series can be extracted by heating with carbon.",
       "source": "9F Summary sheet p3 Extracting metals",
       "sourceExcerpt": "Metals from zinc downwards in the reactivity series can be extracted from their ores by heating with carbon.",
-      "level": 2,
+      "level": 3,
       "cue": "Use the revision-pack wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
-        "source-traceable"
+        "source-traceable",
+        "quality-balance-v1.36"
       ],
       "sourceFidelity": "exact-source-answer",
       "learningObjective": "9F-extraction",
@@ -12085,18 +12125,19 @@ window.YEAR9_CONTENT = {
     {
       "id": "y9r-045-9f-which-metals-need-electrolysis-to-extract-them-from-their-ores",
       "unit": "9F",
-      "type": "Assess check",
-      "question": "Which metals need electrolysis to extract them from their ores?",
-      "answer": "Metals above zinc in the reactivity series need electrolysis to extract them from their ores.",
+      "type": "Explain check",
+      "question": "A metal is above zinc in the reactivity series. Why is electrolysis needed to extract it from its ore?",
+      "answer": "It is too reactive to be extracted by heating with carbon, so electrolysis is needed.",
       "choices": [],
-      "explanation": "Metals above zinc in the reactivity series need electrolysis to extract them from their ores.",
+      "explanation": "The revision sheet separates metals above zinc from metals from zinc downwards.",
       "source": "9F Summary sheet p3 Extracting metals",
       "sourceExcerpt": "Metals above zinc in the reactivity series need electrolysis to extract them from their ores.",
-      "level": 2,
+      "level": 3,
       "cue": "Use the revision-pack wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
-        "source-traceable"
+        "source-traceable",
+        "quality-balance-v1.36"
       ],
       "sourceFidelity": "exact-source-answer",
       "learningObjective": "9F-extraction",
@@ -12115,11 +12156,12 @@ window.YEAR9_CONTENT = {
       "explanation": "Oxidation is the gain of oxygen. Reduction is the loss of oxygen. A redox reaction is when oxidation and reduction occur at the same time.",
       "source": "9F Summary sheet p3 Extracting metals",
       "sourceExcerpt": "Oxidation is the gain of oxygen. Reduction is the loss of oxygen. A redox reaction is when oxidation and reduction occur at the same time.",
-      "level": 3,
+      "level": 4,
       "cue": "Use the revision-pack wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
-        "source-traceable"
+        "source-traceable",
+        "quality-balance-v1.36"
       ],
       "sourceFidelity": "exact-source-answer",
       "learningObjective": "9F-extraction",
@@ -12200,18 +12242,19 @@ window.YEAR9_CONTENT = {
     {
       "id": "y9r-050-9i-what-has-happened-when-a-falling-object-reaches-terminal-velocity",
       "unit": "9I",
-      "type": "Assess check",
-      "question": "What has happened when a falling object reaches terminal velocity?",
+      "type": "Apply check",
+      "question": "A falling object is moving at terminal velocity. What has happened to air resistance and weight?",
       "answer": "The air resistance balances the weight, so the object cannot fall any faster.",
       "choices": [],
-      "explanation": "The air resistance balances the weight, so the object cannot fall any faster.",
+      "explanation": "Terminal velocity happens when the forces are balanced.",
       "source": "9I Summary sheet p1 Forces and motion",
       "sourceExcerpt": "Eventually the air resistance increases so much that it balances the weight. When this happens the object cannot fall any faster. It has reached its terminal velocity.",
-      "level": 2,
+      "level": 3,
       "cue": "Use the revision-pack wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
-        "source-traceable"
+        "source-traceable",
+        "quality-balance-v1.36"
       ],
       "sourceFidelity": "exact-source-answer",
       "learningObjective": "9I-forces",
@@ -12230,11 +12273,12 @@ window.YEAR9_CONTENT = {
       "explanation": "Divide by 1000 then multiply by 3600.",
       "source": "9I Summary sheet p1 Speed",
       "sourceExcerpt": "You can convert a speed in m/s to km/h by dividing by 1000 then multiplying by 3600.",
-      "level": 2,
+      "level": 3,
       "cue": "Use the revision-pack wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
-        "source-traceable"
+        "source-traceable",
+        "quality-balance-v1.36"
       ],
       "sourceFidelity": "exact-source-answer",
       "learningObjective": "9I-speed",
@@ -12253,11 +12297,12 @@ window.YEAR9_CONTENT = {
       "explanation": "Multiply by 1000 then divide by 3600.",
       "source": "9I Summary sheet p1 Speed",
       "sourceExcerpt": "To convert a speed in km/h to m/s, multiply by 1000 then divide by 3600.",
-      "level": 2,
+      "level": 3,
       "cue": "Use the revision-pack wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
-        "source-traceable"
+        "source-traceable",
+        "quality-balance-v1.36"
       ],
       "sourceFidelity": "exact-source-answer",
       "learningObjective": "9I-speed",
@@ -12292,18 +12337,19 @@ window.YEAR9_CONTENT = {
     {
       "id": "y9r-054-9i-what-is-the-relative-speed-of-a-car-travelling-at-50-km-h-compared-to-one-t",
       "unit": "9I",
-      "type": "Assess check",
-      "question": "What is the relative speed of a car travelling at 50 km/h compared to one travelling at 30 km/h?",
+      "type": "Calculation",
+      "question": "One car travels at 50 km/h and another travels at 30 km/h in the same direction. What is the relative speed?",
       "answer": "20 km/h.",
       "choices": [],
-      "explanation": "20 km/h.",
+      "explanation": "For objects travelling in the same direction, subtract the speeds.",
       "source": "9I Summary sheet p1 Speed",
       "sourceExcerpt": "A car travelling at 50 km/h overtakes one travelling at 30 km/h. The relative speed of the faster car compared to the slower car is 20 km/h.",
-      "level": 2,
+      "level": 3,
       "cue": "Use the revision-pack wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
-        "source-traceable"
+        "source-traceable",
+        "quality-balance-v1.36"
       ],
       "sourceFidelity": "exact-source-answer",
       "learningObjective": "9I-speed",
@@ -12368,11 +12414,12 @@ window.YEAR9_CONTENT = {
       "explanation": "Sloping lines show changes in speed (acceleration or deceleration).",
       "source": "9I Summary sheet p1 Speed-time graphs",
       "sourceExcerpt": "Sloping lines show changes in speed (acceleration or deceleration).",
-      "level": 2,
+      "level": 3,
       "cue": "Use the revision-pack wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
-        "source-traceable"
+        "source-traceable",
+        "quality-balance-v1.36"
       ],
       "sourceFidelity": "exact-source-answer",
       "learningObjective": "9I-speed-time-graphs",
@@ -12460,11 +12507,12 @@ window.YEAR9_CONTENT = {
       "explanation": "moment (in N m) = force (in N) × perpendicular distance from the pivot (m).",
       "source": "9I Summary sheet p2 Levers and moments",
       "sourceExcerpt": "moment (in N m) = force (in N) × perpendicular distance from the pivot (m).",
-      "level": 2,
+      "level": 3,
       "cue": "Use the revision-pack wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
-        "source-traceable"
+        "source-traceable",
+        "quality-balance-v1.36"
       ],
       "sourceFidelity": "exact-source-answer",
       "learningObjective": "9I-moments",
@@ -12483,11 +12531,12 @@ window.YEAR9_CONTENT = {
       "explanation": "The anticlockwise moment is equal to the clockwise moment.",
       "source": "9I Summary sheet p3 Levers and moments",
       "sourceExcerpt": "When an object is balanced, the anticlockwise moment is equal to the clockwise moment.",
-      "level": 2,
+      "level": 3,
       "cue": "Use the revision-pack wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
-        "source-traceable"
+        "source-traceable",
+        "quality-balance-v1.36"
       ],
       "sourceFidelity": "exact-source-answer",
       "learningObjective": "9I-moments",
@@ -12529,11 +12578,12 @@ window.YEAR9_CONTENT = {
       "explanation": "work = force × distance moved in the direction of the force.",
       "source": "9I Summary sheet p3 Simple machines",
       "sourceExcerpt": "work = force × distance moved in the direction of the force.",
-      "level": 2,
+      "level": 3,
       "cue": "Use the revision-pack wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
-        "source-traceable"
+        "source-traceable",
+        "quality-balance-v1.36"
       ],
       "sourceFidelity": "exact-source-answer",
       "learningObjective": "9I-energy-work",
@@ -12598,11 +12648,12 @@ window.YEAR9_CONTENT = {
       "explanation": "weight (N) = mass (kg) × g (N/kg)",
       "source": "9J Summary sheet p1 Gravitational fields",
       "sourceExcerpt": "weight (N) = mass (kg) × g (N/kg)",
-      "level": 2,
+      "level": 3,
       "cue": "Use the revision-pack wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
-        "source-traceable"
+        "source-traceable",
+        "quality-balance-v1.36"
       ],
       "sourceFidelity": "exact-source-answer",
       "learningObjective": "9J-fields",
@@ -12729,18 +12780,19 @@ window.YEAR9_CONTENT = {
     {
       "id": "y9r-073-9j-if-resistance-stays-the-same-what-happens-when-voltage-is-higher",
       "unit": "9J",
-      "type": "Assess check",
-      "question": "If resistance stays the same, what happens when voltage is higher?",
-      "answer": "The higher the voltage, the higher the current.",
+      "type": "Apply check",
+      "question": "A component has the same resistance, but the voltage across it is increased. What happens to the current?",
+      "answer": "The current increases.",
       "choices": [],
-      "explanation": "The higher the voltage, the higher the current.",
+      "explanation": "If resistance stays the same, a higher voltage gives a higher current.",
       "source": "9J Summary sheet p2 Resistance",
       "sourceExcerpt": "the higher the voltage, the higher the current (if the resistance stays the same)",
-      "level": 2,
+      "level": 3,
       "cue": "Use the revision-pack wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
-        "source-traceable"
+        "source-traceable",
+        "quality-balance-v1.36"
       ],
       "sourceFidelity": "exact-source-answer",
       "learningObjective": "9J-resistance",
@@ -12752,18 +12804,19 @@ window.YEAR9_CONTENT = {
     {
       "id": "y9r-074-9j-if-voltage-stays-the-same-what-happens-when-resistance-is-higher",
       "unit": "9J",
-      "type": "Assess check",
-      "question": "If voltage stays the same, what happens when resistance is higher?",
-      "answer": "The higher the resistance, the lower the current.",
+      "type": "Apply check",
+      "question": "A circuit has the same voltage, but the resistance is increased. What happens to the current?",
+      "answer": "The current decreases.",
       "choices": [],
-      "explanation": "The higher the resistance, the lower the current.",
+      "explanation": "If voltage stays the same, a higher resistance gives a lower current.",
       "source": "9J Summary sheet p2 Resistance",
       "sourceExcerpt": "the higher the resistance, the lower the current (if the voltage stays the same).",
-      "level": 2,
+      "level": 3,
       "cue": "Use the revision-pack wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
-        "source-traceable"
+        "source-traceable",
+        "quality-balance-v1.36"
       ],
       "sourceFidelity": "exact-source-answer",
       "learningObjective": "9J-resistance",
@@ -12782,11 +12835,12 @@ window.YEAR9_CONTENT = {
       "explanation": "The material from which it is made, its length and its thickness.",
       "source": "9J Summary sheet p2 Resistance",
       "sourceExcerpt": "The resistance of a wire depends on: the material from which it is made; its length; its thickness.",
-      "level": 2,
+      "level": 3,
       "cue": "Use the revision-pack wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
-        "source-traceable"
+        "source-traceable",
+        "quality-balance-v1.36"
       ],
       "sourceFidelity": "exact-source-answer",
       "learningObjective": "9J-wire-resistance-investigation",
@@ -12805,11 +12859,12 @@ window.YEAR9_CONTENT = {
       "explanation": "Shorter wires have lower resistances.",
       "source": "9J Summary sheet p2 Resistance",
       "sourceExcerpt": "its length (shorter wires have lower resistances)",
-      "level": 2,
+      "level": 3,
       "cue": "Use the revision-pack wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
-        "source-traceable"
+        "source-traceable",
+        "quality-balance-v1.36"
       ],
       "sourceFidelity": "exact-source-answer",
       "learningObjective": "9J-wire-resistance-investigation",
@@ -12828,11 +12883,12 @@ window.YEAR9_CONTENT = {
       "explanation": "Thicker wires have lower resistances.",
       "source": "9J Summary sheet p2 Resistance",
       "sourceExcerpt": "its thickness (thicker wires have lower resistances).",
-      "level": 2,
+      "level": 3,
       "cue": "Use the revision-pack wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
-        "source-traceable"
+        "source-traceable",
+        "quality-balance-v1.36"
       ],
       "sourceFidelity": "exact-source-answer",
       "learningObjective": "9J-wire-resistance-investigation",
@@ -12851,11 +12907,12 @@ window.YEAR9_CONTENT = {
       "explanation": "resistance = voltage ÷ current",
       "source": "9J Summary sheet p2 Calculating resistance",
       "sourceExcerpt": "resistance = voltage / current",
-      "level": 2,
+      "level": 3,
       "cue": "Use the revision-pack wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
-        "source-traceable"
+        "source-traceable",
+        "quality-balance-v1.36"
       ],
       "sourceFidelity": "exact-source-answer",
       "learningObjective": "9J-resistance",
@@ -12920,11 +12977,12 @@ window.YEAR9_CONTENT = {
       "explanation": "Increase the number of coils of wire, increase the size of the current, and use an iron core.",
       "source": "9J Summary sheet p2 Electromagnets",
       "sourceExcerpt": "You can make an electromagnet stronger by: increasing the number of coils of wire; increasing the size of the current; using an iron core.",
-      "level": 2,
+      "level": 3,
       "cue": "Use the revision-pack wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
-        "source-traceable"
+        "source-traceable",
+        "quality-balance-v1.36"
       ],
       "sourceFidelity": "exact-source-answer",
       "learningObjective": "9J-electromagnets",
@@ -12989,11 +13047,12 @@ window.YEAR9_CONTENT = {
       "explanation": "When there is a current in the coil, there is a force on each side of the coil that makes it turn.",
       "source": "9J Summary sheet p3 Motors",
       "sourceExcerpt": "When there is a current in the coil, there is a force on each side of the coil that makes it turn.",
-      "level": 2,
+      "level": 3,
       "cue": "Use the revision-pack wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
-        "source-traceable"
+        "source-traceable",
+        "quality-balance-v1.36"
       ],
       "sourceFidelity": "exact-source-answer",
       "learningObjective": "9J-electromagnets",
@@ -13012,17 +13071,885 @@ window.YEAR9_CONTENT = {
       "explanation": "By increasing the size of the current, increasing the strength of the magnetic field, or increasing the number of turns of wire on the coil.",
       "source": "9J Summary sheet p3 Motors",
       "sourceExcerpt": "The speed of the motor (or the force it provides) can be increased by: increasing the size of the current; increasing the strength of the magnetic field; increasing the number of turns of wire on the coil.",
-      "level": 2,
+      "level": 3,
       "cue": "Use the revision-pack wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
-        "source-traceable"
+        "source-traceable",
+        "quality-balance-v1.36"
       ],
       "sourceFidelity": "exact-source-answer",
       "learningObjective": "9J-electromagnets",
       "learningObjectiveTitle": "Electromagnets, relays and motors",
       "learningObjectiveDescription": "Electromagnets, relays, the motor effect and electric motors.",
       "noteId": "9J-electromagnets",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9p-001-9a-what-is-an-abiotic-factor",
+      "unit": "9A",
+      "type": "Assess check",
+      "question": "What is an abiotic factor?",
+      "answer": "Something that is abiotic has nothing to do with living organisms.",
+      "choices": [],
+      "explanation": "Something that is abiotic has nothing to do with living organisms, for example temperature or the wind.",
+      "source": "9A Word sheet 9Aa Environmental variation",
+      "sourceExcerpt": "Something that is abiotic has nothing to do with living organisms (e.g. temperature, the wind).",
+      "level": 1,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-polish",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9A-variation",
+      "learningObjectiveTitle": "Variation and classification",
+      "learningObjectiveDescription": "Types of variation, inherited and environmental causes, and classification challenges.",
+      "noteId": "9A-variation",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9p-002-9a-what-is-a-biotic-factor",
+      "unit": "9A",
+      "type": "Assess check",
+      "question": "What is a biotic factor?",
+      "answer": "An activity of an organism that affects another organism.",
+      "choices": [],
+      "explanation": "A biotic factor is an activity of an organism that affects another organism, such as competition or predation.",
+      "source": "9A Word sheet 9Aa Environmental variation",
+      "sourceExcerpt": "An activity of an organism that affects another organism (such as competition or predation).",
+      "level": 1,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-polish",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9A-variation",
+      "learningObjectiveTitle": "Variation and classification",
+      "learningObjectiveDescription": "Types of variation, inherited and environmental causes, and classification challenges.",
+      "noteId": "9A-variation",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9p-003-9a-give-three-examples-of-living-or-biotic-factors-from-the-revision-sheet",
+      "unit": "9A",
+      "type": "Assess check",
+      "question": "Give three examples of living or biotic factors from the revision sheet.",
+      "answer": "Competition, predation and disease.",
+      "choices": [],
+      "explanation": "The revision sheet gives competition, predation and disease as activities of organisms that can affect other organisms.",
+      "source": "9A Summary sheet p1 Environmental variation",
+      "sourceExcerpt": "There are living or biotic factors (the activities of other organisms, such as competition, predation and disease).",
+      "level": 2,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-polish",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9A-variation",
+      "learningObjectiveTitle": "Variation and classification",
+      "learningObjectiveDescription": "Types of variation, inherited and environmental causes, and classification challenges.",
+      "noteId": "9A-variation",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9p-004-9a-what-are-abiotic-factors",
+      "unit": "9A",
+      "type": "Assess check",
+      "question": "What are abiotic factors?",
+      "answer": "Non-living physical factors such as the amount of sunlight.",
+      "choices": [],
+      "explanation": "Abiotic factors are non-living physical factors; the revision sheet gives the amount of sunlight as an example.",
+      "source": "9A Summary sheet p1 Environmental variation",
+      "sourceExcerpt": "There are also abiotic factors, which are non-living physical factors such as the amount of sunlight.",
+      "level": 1,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-polish",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9A-variation",
+      "learningObjectiveTitle": "Variation and classification",
+      "learningObjectiveDescription": "Types of variation, inherited and environmental causes, and classification challenges.",
+      "noteId": "9A-variation",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9p-005-9a-what-forms-an-ecosystem",
+      "unit": "9A",
+      "type": "Assess check",
+      "question": "What forms an ecosystem?",
+      "answer": "All the organisms and physical environmental factors in an area form an ecosystem.",
+      "choices": [],
+      "explanation": "The revision sheet defines an ecosystem as all the organisms and physical environmental factors in an area.",
+      "source": "9A Summary sheet p1 Environmental variation",
+      "sourceExcerpt": "All the organisms and physical environmental factors in an area form an ecosystem.",
+      "level": 2,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-polish",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9A-variation",
+      "learningObjectiveTitle": "Variation and classification",
+      "learningObjectiveDescription": "Types of variation, inherited and environmental causes, and classification challenges.",
+      "noteId": "9A-variation",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9p-006-9a-how-can-probabilities-be-shown-in-inheritance-questions",
+      "unit": "9A",
+      "type": "Assess check",
+      "question": "How can probabilities be shown in inheritance questions?",
+      "answer": "Probabilities are shown as percentages, decimals or fractions.",
+      "choices": [],
+      "explanation": "The revision pack states that probabilities can be shown as percentages, decimals or fractions.",
+      "source": "9A Summary sheet p1 Chromosomes, genes and DNA",
+      "sourceExcerpt": "Probabilities are shown as percentages, decimals or fractions.",
+      "level": 1,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-polish",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9A-inheritance",
+      "learningObjectiveTitle": "Inheritance, DNA and genes",
+      "learningObjectiveDescription": "DNA, genes, chromosomes, gametes, fertilisation and probability.",
+      "noteId": "9A-inheritance",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9p-007-9a-what-does-probability-mean",
+      "unit": "9A",
+      "type": "Assess check",
+      "question": "What does probability mean?",
+      "answer": "The likelihood of something happening.",
+      "choices": [],
+      "explanation": "Probability means the likelihood of something happening.",
+      "source": "9A Word sheet 9Ab Probability",
+      "sourceExcerpt": "probability — The likelihood of something happening.",
+      "level": 1,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-polish",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9A-inheritance",
+      "learningObjectiveTitle": "Inheritance, DNA and genes",
+      "learningObjectiveDescription": "DNA, genes, chromosomes, gametes, fertilisation and probability.",
+      "noteId": "9A-inheritance",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9p-008-9a-write-25-as-a-decimal-and-as-a-fraction",
+      "unit": "9A",
+      "type": "Assess check",
+      "question": "Write 25% as a decimal and as a fraction.",
+      "answer": "0.25 and 1/4.",
+      "choices": [],
+      "explanation": "The revision pack says probabilities may be shown as percentages, decimals or fractions. 25% is equivalent to 0.25 and 1/4.",
+      "source": "9A Summary sheet p1 Chromosomes, genes and DNA",
+      "sourceExcerpt": "Probabilities are shown as percentages, decimals or fractions.",
+      "level": 2,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-polish",
+        "source-traceable"
+      ],
+      "sourceFidelity": "source-traceable-application",
+      "learningObjective": "9A-inheritance",
+      "learningObjectiveTitle": "Inheritance, DNA and genes",
+      "learningObjectiveDescription": "DNA, genes, chromosomes, gametes, fertilisation and probability.",
+      "noteId": "9A-inheritance",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9p-009-9f-what-is-neutralisation",
+      "unit": "9F",
+      "type": "Assess check",
+      "question": "What is neutralisation?",
+      "answer": "A reaction in which an acid reacts with an alkali or a base to produce a salt and water.",
+      "choices": [],
+      "explanation": "Neutralisation is when an acid reacts with an alkali or base, producing a salt and water.",
+      "source": "9F Word sheet 9Fc Energy and reactions",
+      "sourceExcerpt": "neutralisation — A reaction in which an acid reacts with an alkali or a base to produce a salt and water.",
+      "level": 1,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-polish",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9F-combustion-energy-rates",
+      "learningObjectiveTitle": "Hydrocarbons, combustion, energy changes and rate",
+      "learningObjectiveDescription": "Hydrocarbons, combustion, oxygen test, energy changes and rate factors.",
+      "noteId": "9F-combustion-energy-rates",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9p-010-9f-what-is-a-thermite-reaction",
+      "unit": "9F",
+      "type": "Assess check",
+      "question": "What is a thermite reaction?",
+      "answer": "A highly exothermic displacement reaction between aluminium and iron oxide that produces molten iron.",
+      "choices": [],
+      "explanation": "A thermite reaction is a highly exothermic displacement reaction between aluminium and iron oxide. It produces molten iron.",
+      "source": "9F Word sheet 9Fd Displacement",
+      "sourceExcerpt": "thermite reaction — Highly exothermic displacement reaction between aluminium and iron oxide that produces molten iron.",
+      "level": 3,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-polish",
+        "source-traceable",
+        "quality-balance-v1.36"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9F-reactivity",
+      "learningObjectiveTitle": "Reactivity and displacement",
+      "learningObjectiveDescription": "Reactivity series, metal reactions, displacement and oxidation.",
+      "noteId": "9F-reactivity",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9p-011-9f-aluminium-reacts-with-iron-oxide-to-form-aluminium-oxide-and-iron-which-of-these-is-correc",
+      "unit": "9F",
+      "type": "Quick quiz",
+      "question": "Aluminium reacts with iron oxide to form aluminium oxide and iron. Which of these is correct?",
+      "answer": "C",
+      "choices": [
+        "A Iron displaced aluminium oxide.",
+        "B Aluminium oxide displaced iron.",
+        "C Aluminium displaced iron.",
+        "D Iron displaced aluminium."
+      ],
+      "explanation": "Aluminium is more reactive than iron, so aluminium displaces iron from iron oxide.",
+      "source": "9F Quick Quiz 9Fd Q4",
+      "sourceExcerpt": "Aluminium reacts with iron oxide to form aluminium oxide and iron. Which of these is correct? C Aluminium displaced iron.",
+      "level": 4,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-polish",
+        "source-traceable",
+        "quality-balance-v1.36"
+      ],
+      "sourceFidelity": "exact-source-question",
+      "learningObjective": "9F-reactivity",
+      "learningObjectiveTitle": "Reactivity and displacement",
+      "learningObjectiveDescription": "Reactivity series, metal reactions, displacement and oxidation.",
+      "noteId": "9F-reactivity",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9p-012-9f-in-the-thermite-reaction-which-metal-displaces-iron",
+      "unit": "9F",
+      "type": "Assess check",
+      "question": "In the thermite reaction, which metal displaces iron?",
+      "answer": "Aluminium.",
+      "choices": [],
+      "explanation": "Aluminium reacts with iron oxide to form aluminium oxide and iron, so aluminium displaces iron.",
+      "source": "9F Quick Quiz 9Fd Q4",
+      "sourceExcerpt": "Aluminium reacts with iron oxide to form aluminium oxide and iron. C Aluminium displaced iron.",
+      "level": 2,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-polish",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9F-reactivity",
+      "learningObjectiveTitle": "Reactivity and displacement",
+      "learningObjectiveDescription": "Reactivity series, metal reactions, displacement and oxidation.",
+      "noteId": "9F-reactivity",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9p-013-9f-what-is-thermal-decomposition",
+      "unit": "9F",
+      "type": "Assess check",
+      "question": "What is thermal decomposition?",
+      "answer": "Breaking down a compound into simpler substances using heat.",
+      "choices": [],
+      "explanation": "Thermal decomposition means a compound is broken down into simpler substances using heat.",
+      "source": "9E Word sheet 9Ec/9Ed Thermal decomposition",
+      "sourceExcerpt": "thermal decomposition — Breaking down a compound into simpler substances using heat.",
+      "level": 1,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-polish",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9E-energy-thermal-peer-review",
+      "learningObjectiveTitle": "Energy changes, thermal decomposition and peer review",
+      "learningObjectiveDescription": "Endothermic/exothermic changes, state symbols, thermal decomposition and peer review.",
+      "noteId": "9E-energy-thermal-peer-review",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9p-014-9f-what-energy-supply-do-thermal-decomposition-reactions-need-to-keep-going",
+      "unit": "9F",
+      "type": "Assess check",
+      "question": "What energy supply do thermal decomposition reactions need to keep going?",
+      "answer": "A constant supply of energy.",
+      "choices": [],
+      "explanation": "The 9F summary says thermal decomposition reactions require a constant supply of energy to keep them going.",
+      "source": "9F Summary sheet p3 Hydrocarbons",
+      "sourceExcerpt": "Thermal decomposition reactions, in which a compound is broken down by heat, require a constant supply of energy to keep them going.",
+      "level": 2,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-polish",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9F-combustion-energy-rates",
+      "learningObjectiveTitle": "Hydrocarbons, combustion, energy changes and rate",
+      "learningObjectiveDescription": "Hydrocarbons, combustion, oxygen test, energy changes and rate factors.",
+      "noteId": "9F-combustion-energy-rates",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9p-015-9f-what-is-an-oxidising-agent",
+      "unit": "9F",
+      "type": "Assess check",
+      "question": "What is an oxidising agent?",
+      "answer": "A substance that provides oxygen to oxidise another substance.",
+      "choices": [],
+      "explanation": "An oxidising agent provides oxygen so another substance can be oxidised.",
+      "source": "9F Word sheet 9Fc Energy and reactions",
+      "sourceExcerpt": "oxidising agent — A substance that provides oxygen to oxidise another substance.",
+      "level": 2,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-polish",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9F-combustion-energy-rates",
+      "learningObjectiveTitle": "Hydrocarbons, combustion, energy changes and rate",
+      "learningObjectiveDescription": "Hydrocarbons, combustion, oxygen test, energy changes and rate factors.",
+      "noteId": "9F-combustion-energy-rates",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9p-016-9f-what-is-a-reducing-agent",
+      "unit": "9F",
+      "type": "Assess check",
+      "question": "What is a reducing agent?",
+      "answer": "A substance that removes oxygen from another substance.",
+      "choices": [],
+      "explanation": "A reducing agent removes oxygen from another substance.",
+      "source": "9F Word sheet 9Fe Extracting metals",
+      "sourceExcerpt": "reducing agent — A substance that removes oxygen from another substance.",
+      "level": 2,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-polish",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9F-extraction",
+      "learningObjectiveTitle": "Metal extraction and reduction",
+      "learningObjectiveDescription": "Ores, native metals, reduction, oxidation, redox and extraction methods.",
+      "noteId": "9F-extraction",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9p-017-9f-when-has-a-substance-been-reduced",
+      "unit": "9F",
+      "type": "Assess check",
+      "question": "When has a substance been reduced?",
+      "answer": "If a substance has lost oxygen then it has been reduced.",
+      "choices": [],
+      "explanation": "Reduction is loss of oxygen in this revision-pack context.",
+      "source": "9F Word sheet 9Fe Extracting metals",
+      "sourceExcerpt": "reduced — If a substance has lost oxygen then it has been reduced.",
+      "level": 1,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-polish",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9F-extraction",
+      "learningObjectiveTitle": "Metal extraction and reduction",
+      "learningObjectiveDescription": "Ores, native metals, reduction, oxidation, redox and extraction methods.",
+      "noteId": "9F-extraction",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9p-018-9f-what-is-a-redox-reaction",
+      "unit": "9F",
+      "type": "Assess check",
+      "question": "What is a redox reaction?",
+      "answer": "A reaction in which one reactant is reduced and another is oxidised.",
+      "choices": [],
+      "explanation": "In a redox reaction, reduction and oxidation happen together.",
+      "source": "9F Word sheet 9Fe Extracting metals",
+      "sourceExcerpt": "redox reaction — A reaction in which one reactant is reduced and another is oxidised.",
+      "level": 2,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-polish",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9F-extraction",
+      "learningObjectiveTitle": "Metal extraction and reduction",
+      "learningObjectiveDescription": "Ores, native metals, reduction, oxidation, redox and extraction methods.",
+      "noteId": "9F-extraction",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9p-019-9f-what-is-oxidation",
+      "unit": "9F",
+      "type": "Assess check",
+      "question": "What is oxidation?",
+      "answer": "Reaction in which a substance gains oxygen.",
+      "choices": [],
+      "explanation": "In the revision pack, oxidation is defined as a reaction in which a substance gains oxygen.",
+      "source": "9F Word sheet 9Fb Reactivity",
+      "sourceExcerpt": "oxidation — Reaction in which a substance gains oxygen.",
+      "level": 1,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-polish",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9F-reactivity",
+      "learningObjectiveTitle": "Reactivity and displacement",
+      "learningObjectiveDescription": "Reactivity series, metal reactions, displacement and oxidation.",
+      "noteId": "9F-reactivity",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9p-020-9f-what-is-the-percentage-loss-or-gain-formula-from-the-revision-sheet",
+      "unit": "9F",
+      "type": "Assess check",
+      "question": "What is the percentage loss or gain formula from the revision sheet?",
+      "answer": "actual change ÷ original amount × 100.",
+      "choices": [],
+      "explanation": "The revision sheet gives percentage loss or gain as actual change divided by original amount, multiplied by 100.",
+      "source": "9F Summary sheet p3 Percentage loss or gain",
+      "sourceExcerpt": "Percentage loss or gain: actual change / original amount × 100.",
+      "level": 3,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-polish",
+        "source-traceable",
+        "quality-balance-v1.36"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9F-extraction",
+      "learningObjectiveTitle": "Metal extraction and reduction",
+      "learningObjectiveDescription": "Ores, native metals, reduction, oxidation, redox and extraction methods.",
+      "noteId": "9F-extraction",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9p-021-9j-what-is-a-decimal-place",
+      "unit": "9J",
+      "type": "Assess check",
+      "question": "What is a decimal place?",
+      "answer": "The position of a digit to the right of the decimal point in a number.",
+      "choices": [],
+      "explanation": "A decimal place is a digit position to the right of the decimal point.",
+      "source": "9J Word sheet 9Jd WS Rounding numbers",
+      "sourceExcerpt": "decimal place — The position of a digit to the right of the decimal point in a number.",
+      "level": 1,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-polish",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9J-rounding-numbers",
+      "learningObjectiveTitle": "Rounding numbers and significant figures",
+      "learningObjectiveDescription": "Decimal places, significant figures and clean numerical answers in 9J calculations.",
+      "noteId": "9J-rounding-numbers",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9p-022-9j-how-do-you-find-the-number-of-decimal-places-in-a-number",
+      "unit": "9J",
+      "type": "Assess check",
+      "question": "How do you find the number of decimal places in a number?",
+      "answer": "The number of decimal places in a number is the number of digits after the decimal point.",
+      "choices": [],
+      "explanation": "Count how many digits are after the decimal point.",
+      "source": "9J Word sheet 9Jd WS Rounding numbers",
+      "sourceExcerpt": "The number of decimal places in a number is the number of digits after the decimal point.",
+      "level": 1,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-polish",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9J-rounding-numbers",
+      "learningObjectiveTitle": "Rounding numbers and significant figures",
+      "learningObjectiveDescription": "Decimal places, significant figures and clean numerical answers in 9J calculations.",
+      "noteId": "9J-rounding-numbers",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9p-023-9j-what-is-the-first-significant-figure-in-a-number",
+      "unit": "9J",
+      "type": "Assess check",
+      "question": "What is the first significant figure in a number?",
+      "answer": "The digit with the highest place value.",
+      "choices": [],
+      "explanation": "The first significant figure is the digit with the highest place value.",
+      "source": "9J Word sheet 9Jd WS Rounding numbers",
+      "sourceExcerpt": "The first significant figure in a number is the digit with the highest place value.",
+      "level": 1,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-polish",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9J-rounding-numbers",
+      "learningObjectiveTitle": "Rounding numbers and significant figures",
+      "learningObjectiveDescription": "Decimal places, significant figures and clean numerical answers in 9J calculations.",
+      "noteId": "9J-rounding-numbers",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9p-024-9j-what-is-the-second-significant-figure-in-a-number",
+      "unit": "9J",
+      "type": "Assess check",
+      "question": "What is the second significant figure in a number?",
+      "answer": "The digit with the second highest place value.",
+      "choices": [],
+      "explanation": "After the first significant figure, the second significant figure has the second highest place value.",
+      "source": "9J Word sheet 9Jd WS Rounding numbers",
+      "sourceExcerpt": "the second significant figure has the second highest place value and so on.",
+      "level": 1,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-polish",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9J-rounding-numbers",
+      "learningObjectiveTitle": "Rounding numbers and significant figures",
+      "learningObjectiveDescription": "Decimal places, significant figures and clean numerical answers in 9J calculations.",
+      "noteId": "9J-rounding-numbers",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9p-025-9j-in-the-number-3-407-how-many-decimal-places-are-there",
+      "unit": "9J",
+      "type": "Assess check",
+      "question": "In the number 3.407, how many decimal places are there?",
+      "answer": "Three decimal places.",
+      "choices": [],
+      "explanation": "The digits after the decimal point are 4, 0 and 7, so there are three decimal places.",
+      "source": "9J Word sheet 9Jd WS Rounding numbers",
+      "sourceExcerpt": "The number of decimal places in a number is the number of digits after the decimal point.",
+      "level": 2,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-polish",
+        "source-traceable"
+      ],
+      "sourceFidelity": "source-traceable-application",
+      "learningObjective": "9J-rounding-numbers",
+      "learningObjectiveTitle": "Rounding numbers and significant figures",
+      "learningObjectiveDescription": "Decimal places, significant figures and clean numerical answers in 9J calculations.",
+      "noteId": "9J-rounding-numbers",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9p-026-9j-in-the-number-0-0632-what-is-the-first-significant-figure",
+      "unit": "9J",
+      "type": "Assess check",
+      "question": "In the number 0.0632, what is the first significant figure?",
+      "answer": "6.",
+      "choices": [],
+      "explanation": "Zeros before the first non-zero digit only show place value. The first significant figure is 6.",
+      "source": "9J Word sheet 9Jd WS Rounding numbers",
+      "sourceExcerpt": "The first significant figure in a number is the digit with the highest place value.",
+      "level": 2,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-polish",
+        "source-traceable"
+      ],
+      "sourceFidelity": "source-traceable-application",
+      "learningObjective": "9J-rounding-numbers",
+      "learningObjectiveTitle": "Rounding numbers and significant figures",
+      "learningObjectiveDescription": "Decimal places, significant figures and clean numerical answers in 9J calculations.",
+      "noteId": "9J-rounding-numbers",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9p-027-9j-round-42-786-to-one-decimal-place",
+      "unit": "9J",
+      "type": "Assess check",
+      "question": "Round 42.786 to one decimal place.",
+      "answer": "42.8.",
+      "choices": [],
+      "explanation": "One decimal place keeps one digit after the decimal point. The next digit is 8, so 42.7 rounds up to 42.8.",
+      "source": "9J Word sheet 9Jd WS Rounding numbers",
+      "sourceExcerpt": "The number of decimal places in a number is the number of digits after the decimal point.",
+      "level": 2,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-polish",
+        "source-traceable"
+      ],
+      "sourceFidelity": "source-traceable-application",
+      "learningObjective": "9J-rounding-numbers",
+      "learningObjectiveTitle": "Rounding numbers and significant figures",
+      "learningObjectiveDescription": "Decimal places, significant figures and clean numerical answers in 9J calculations.",
+      "noteId": "9J-rounding-numbers",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9p-028-9j-round-42-786-to-two-decimal-places",
+      "unit": "9J",
+      "type": "Assess check",
+      "question": "Round 42.786 to two decimal places.",
+      "answer": "42.79.",
+      "choices": [],
+      "explanation": "Two decimal places keeps two digits after the decimal point. The third decimal place is 6, so 42.78 rounds up to 42.79.",
+      "source": "9J Word sheet 9Jd WS Rounding numbers",
+      "sourceExcerpt": "The number of decimal places in a number is the number of digits after the decimal point.",
+      "level": 2,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-polish",
+        "source-traceable"
+      ],
+      "sourceFidelity": "source-traceable-application",
+      "learningObjective": "9J-rounding-numbers",
+      "learningObjectiveTitle": "Rounding numbers and significant figures",
+      "learningObjectiveDescription": "Decimal places, significant figures and clean numerical answers in 9J calculations.",
+      "noteId": "9J-rounding-numbers",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9p-029-9j-round-0-0632-to-one-significant-figure",
+      "unit": "9J",
+      "type": "Assess check",
+      "question": "Round 0.0632 to one significant figure.",
+      "answer": "0.06.",
+      "choices": [],
+      "explanation": "The first significant figure is 6. The next digit is 3, so it stays as 0.06.",
+      "source": "9J Word sheet 9Jd WS Rounding numbers",
+      "sourceExcerpt": "The first significant figure in a number is the digit with the highest place value.",
+      "level": 3,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-polish",
+        "source-traceable"
+      ],
+      "sourceFidelity": "source-traceable-application",
+      "learningObjective": "9J-rounding-numbers",
+      "learningObjectiveTitle": "Rounding numbers and significant figures",
+      "learningObjectiveDescription": "Decimal places, significant figures and clean numerical answers in 9J calculations.",
+      "noteId": "9J-rounding-numbers",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9p-030-9j-round-0-0632-to-two-significant-figures",
+      "unit": "9J",
+      "type": "Assess check",
+      "question": "Round 0.0632 to two significant figures.",
+      "answer": "0.063.",
+      "choices": [],
+      "explanation": "The first two significant figures are 6 and 3. The next digit is 2, so the answer is 0.063.",
+      "source": "9J Word sheet 9Jd WS Rounding numbers",
+      "sourceExcerpt": "the second significant figure has the second highest place value and so on.",
+      "level": 3,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-polish",
+        "source-traceable"
+      ],
+      "sourceFidelity": "source-traceable-application",
+      "learningObjective": "9J-rounding-numbers",
+      "learningObjectiveTitle": "Rounding numbers and significant figures",
+      "learningObjectiveDescription": "Decimal places, significant figures and clean numerical answers in 9J calculations.",
+      "noteId": "9J-rounding-numbers",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9p-031-9j-what-is-the-difference-between-decimal-places-and-significant-figures",
+      "unit": "9J",
+      "type": "Assess check",
+      "question": "What is the difference between decimal places and significant figures?",
+      "answer": "Decimal places count digits after the decimal point; significant figures start from the digit with the highest place value.",
+      "choices": [],
+      "explanation": "Decimal places count positions after the decimal point. Significant figures count important digits starting with the digit of highest place value.",
+      "source": "9J Word sheet 9Jd WS Rounding numbers",
+      "sourceExcerpt": "decimal place — The position of a digit to the right of the decimal point in a number. significant figure — The first significant figure in a number is the digit with the highest place value.",
+      "level": 3,
+      "cue": "Use the revision-pack wording as closely as possible.",
+      "tags": [
+        "revision-pack-polish",
+        "source-traceable"
+      ],
+      "sourceFidelity": "source-traceable-synthesis",
+      "learningObjective": "9J-rounding-numbers",
+      "learningObjectiveTitle": "Rounding numbers and significant figures",
+      "learningObjectiveDescription": "Decimal places, significant figures and clean numerical answers in 9J calculations.",
+      "noteId": "9J-rounding-numbers",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9qb-001-9b-farming-benefit-problem-compare",
+      "unit": "9B",
+      "type": "Challenge check",
+      "question": "A farmer uses fertilisers and pesticides to increase crop yield. Explain one benefit and one possible problem for each method.",
+      "answer": "Fertilisers contain mineral salts that help plants grow and increase yield, but if they wash into streams and rivers they can cause pollution so organisms die. Pesticides kill pests that compete with or harm crops, but they can kill useful organisms and damage food webs.",
+      "choices": [],
+      "explanation": "This combines the revision-pack farming benefits and problems and requires comparison rather than recall.",
+      "source": "9B revision pack farming methods / sustainability notes",
+      "sourceExcerpt": "Fertilisers contain mineral salts that help plants to grow and increase the yield. Pesticides kill pests. Problems include pollution and damage to food webs.",
+      "level": 4,
+      "cue": "Give both sides: benefit and problem.",
+      "tags": [
+        "quality-balance-v1.36",
+        "application",
+        "revision-pack-aligned"
+      ],
+      "sourceFidelity": "source-traceable-synthesis",
+      "learningObjective": "9B-farming-yield-impact",
+      "learningObjectiveTitle": "Farming yield, benefits and environmental problems",
+      "learningObjectiveDescription": "Sustainable development, fertilisers, pesticides and farming trade-offs.",
+      "noteId": "9B-farming-yield-impact",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9qb-002-9e-thermal-decomposition-state-symbols",
+      "unit": "9E",
+      "type": "Challenge check",
+      "question": "Calcium carbonate thermally decomposes. Name the two products and give the state symbol meaning for gas.",
+      "answer": "The products are calcium oxide and carbon dioxide. The state symbol g means gas.",
+      "choices": [],
+      "explanation": "This links thermal decomposition products with state-symbol vocabulary from the revision pack.",
+      "source": "9E revision pack thermal decomposition / state symbols",
+      "sourceExcerpt": "Calcium carbonate thermally decomposes to calcium oxide and carbon dioxide. State symbols: g = gas.",
+      "level": 4,
+      "cue": "Break the question into product names and state-symbol meaning.",
+      "tags": [
+        "quality-balance-v1.36",
+        "application",
+        "revision-pack-aligned"
+      ],
+      "sourceFidelity": "source-traceable-synthesis",
+      "learningObjective": "9E-energy-thermal-peer-review",
+      "learningObjectiveTitle": "Energy changes, thermal decomposition and peer review",
+      "learningObjectiveDescription": "Endothermic and exothermic reactions, thermal decomposition, state symbols and peer review.",
+      "noteId": "9E-energy-thermal-peer-review",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9qb-003-9f-redox-thermite-application",
+      "unit": "9F",
+      "type": "Challenge check",
+      "question": "In the thermite reaction, aluminium reacts with iron oxide to form aluminium oxide and iron. Which substance is reduced, and why?",
+      "answer": "Iron oxide is reduced because it loses oxygen to form iron.",
+      "choices": [],
+      "explanation": "Reduction is loss of oxygen. In thermite, aluminium removes oxygen from iron oxide.",
+      "source": "9F revision pack thermite / oxidation, reduction and redox",
+      "sourceExcerpt": "Reduction is the loss of oxygen. Thermite is a displacement reaction between aluminium and iron oxide.",
+      "level": 5,
+      "cue": "Use the oxygen definition of reduction.",
+      "tags": [
+        "quality-balance-v1.36",
+        "application",
+        "redox",
+        "revision-pack-aligned"
+      ],
+      "sourceFidelity": "source-traceable-synthesis",
+      "learningObjective": "9F-combustion-energy-rates",
+      "learningObjectiveTitle": "Combustion, energy and rates",
+      "learningObjectiveDescription": "Combustion, bond breaking, oxygen test, rates of reaction and redox/thermite links.",
+      "noteId": "9F-combustion-energy-rates",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9qb-004-9i-moments-balanced-application",
+      "unit": "9I",
+      "type": "Challenge calculation",
+      "question": "A 20 N force acts 0.5 m from a pivot. What moment does it produce, and what equal opposite moment is needed for balance?",
+      "answer": "The moment is 10 N m. For balance, an equal 10 N m moment is needed in the opposite direction.",
+      "choices": [],
+      "explanation": "moment = force × perpendicular distance from the pivot. 20 × 0.5 = 10 N m.",
+      "source": "9I revision pack moments / balanced moments",
+      "sourceExcerpt": "moment = force × perpendicular distance from the pivot. When balanced, anticlockwise moment equals clockwise moment.",
+      "level": 4,
+      "cue": "Calculate the moment, then apply the balance rule.",
+      "tags": [
+        "quality-balance-v1.36",
+        "calculation",
+        "revision-pack-aligned"
+      ],
+      "sourceFidelity": "source-traceable-synthesis",
+      "learningObjective": "9I-moments",
+      "learningObjectiveTitle": "Levers, pivots and moments",
+      "learningObjectiveDescription": "Moment calculations, balanced moments, levers and pivots.",
+      "noteId": "9I-moments",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9qb-005-9j-wire-resistance-investigation-variables",
+      "unit": "9J",
+      "type": "Challenge check",
+      "question": "In a wire-resistance investigation, which variables should be controlled if you are testing how length affects resistance?",
+      "answer": "The material and thickness of the wire should be controlled, while the length is changed.",
+      "choices": [],
+      "explanation": "Wire resistance depends on material, length and thickness. To test length fairly, keep material and thickness the same.",
+      "source": "9J revision pack wire resistance investigation",
+      "sourceExcerpt": "The resistance of a wire depends on the material from which it is made, its length and its thickness.",
+      "level": 4,
+      "cue": "Identify the independent variable and the control variables.",
+      "tags": [
+        "quality-balance-v1.36",
+        "investigation",
+        "revision-pack-aligned"
+      ],
+      "sourceFidelity": "source-traceable-synthesis",
+      "learningObjective": "9J-resistance",
+      "learningObjectiveTitle": "Resistance and Ohm’s law",
+      "learningObjectiveDescription": "Resistance, current-voltage graphs, high-resistance materials and calculations.",
+      "noteId": "9J-resistance",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9qb-006-9j-significant-figures-application",
+      "unit": "9J",
+      "type": "Challenge calculation",
+      "question": "A calculated value is 0.0632 A. Write it to one significant figure and to two significant figures.",
+      "answer": "To one significant figure it is 0.06 A. To two significant figures it is 0.063 A.",
+      "choices": [],
+      "explanation": "The first significant figure is 6. The second significant figure is 3.",
+      "source": "9J Word sheet 9Jd WS Rounding numbers",
+      "sourceExcerpt": "The first significant figure in a number is the digit with the highest place value.",
+      "level": 4,
+      "cue": "Ignore leading zeros before finding the first significant figure.",
+      "tags": [
+        "quality-balance-v1.36",
+        "calculation",
+        "rounding",
+        "revision-pack-aligned"
+      ],
+      "sourceFidelity": "source-traceable-synthesis",
+      "learningObjective": "9J-rounding-numbers",
+      "learningObjectiveTitle": "Rounding numbers and significant figures",
+      "learningObjectiveDescription": "Decimal places, significant figures and clean numerical answers in 9J calculations.",
+      "noteId": "9J-rounding-numbers",
       "mediaPolicy": "question-media-only-if-required"
     }
   ],
@@ -13178,10 +14105,58 @@ window.YEAR9_CONTENT = {
       "description": "Resistance, current-voltage graphs, high-resistance materials and calculations."
     },
     {
+      "id": "9J-rounding-numbers",
+      "unit": "9J",
+      "title": "Rounding numbers and significant figures",
+      "description": "Decimal places, significant figures and clean numerical answers in 9J calculations."
+    },
+    {
       "id": "9J-electromagnets",
       "unit": "9J",
       "title": "Electromagnets, relays and motors",
       "description": "Electromagnets, relays, motor effect and factors affecting magnetic force."
+    },
+    {
+      "id": "9B-farming-yield-impact",
+      "unit": "9B",
+      "title": "Farming yield, benefits and environmental problems",
+      "description": "Revision-pack wording for sustainable development, hedgerows, pesticides, fertilisers, crop varieties and farming trade-offs."
+    },
+    {
+      "id": "9E-energy-thermal-peer-review",
+      "unit": "9E",
+      "title": "Energy changes, thermal decomposition and peer review",
+      "description": "Endothermic and exothermic reactions, state symbols, thermal decomposition and peer-review decisions."
+    },
+    {
+      "id": "9E-recycling-methods",
+      "unit": "9E",
+      "title": "Recycling methods by material",
+      "description": "How metals, glass, paper and concrete are recycled according to the revision pack."
+    },
+    {
+      "id": "9F-atomic-structure-periodic-table",
+      "unit": "9F",
+      "title": "Atomic structure and the periodic table",
+      "description": "Atoms, protons, neutrons, electrons, atomic number, mass number, groups and periods."
+    },
+    {
+      "id": "9F-combustion-energy-rates",
+      "unit": "9F",
+      "title": "Combustion, energy, rates and redox",
+      "description": "Hydrocarbons, combustion, oxygen test, rate changes, neutralisation, thermite and oxidation/reduction."
+    },
+    {
+      "id": "9I-speed-time-graphs",
+      "unit": "9I",
+      "title": "Speed-time graphs and motion calculations",
+      "description": "Speed-time graph interpretation, horizontal and sloping lines, relative speed and unit conversion."
+    },
+    {
+      "id": "9J-wire-resistance-investigation",
+      "unit": "9J",
+      "title": "Wire resistance investigations",
+      "description": "How wire length, thickness and material affect resistance and how to control variables."
     }
   ]
 };
