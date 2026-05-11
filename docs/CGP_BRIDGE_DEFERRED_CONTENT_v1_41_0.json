@@ -1,0 +1,1526 @@
+{
+  "version": "1.41.0",
+  "reason": "Deferred because these CGP bridge topics were not clearly included in the uploaded Year 9 revision study pack and may not be on the final exam.",
+  "deferredTopics": [
+    "Anaerobic respiration",
+    "Breathing and gas exchange",
+    "Wave properties"
+  ],
+  "cards": [
+    {
+      "id": "y9cgp-016-I-waves-define-amplitude",
+      "unit": "9I",
+      "type": "Vocabulary",
+      "question": "Define: amplitude",
+      "answer": "Amplitude is the maximum displacement of a point on a wave from its rest position.",
+      "choices": [],
+      "explanation": "Amplitude shows how far the wave moves from the middle/rest position.",
+      "source": "CGP KS3 Science syllabus map Year 9 Topic 6 Wave properties; Oak waves lessons",
+      "sourceExcerpt": "",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/waves/lessons"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-WAVES"
+      ],
+      "level": 1,
+      "cue": "Try to answer in full sentences before revealing the answer.",
+      "tags": [
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "new-cgp-bridge-derived",
+      "learningObjective": "9I-waves",
+      "learningObjectiveTitle": "Wave properties",
+      "learningObjectiveDescription": "Amplitude, wavelength, frequency, wave speed, transverse waves, longitudinal waves and sound.",
+      "noteId": "9I-waves",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-017-I-waves-define-wavelength",
+      "unit": "9I",
+      "type": "Vocabulary",
+      "question": "Define: wavelength",
+      "answer": "Wavelength is the distance from one point on a wave to the same point on the next wave, such as crest to crest.",
+      "choices": [],
+      "explanation": "Crest-to-crest or trough-to-trough are common ways to measure wavelength.",
+      "source": "CGP KS3 Science syllabus map Year 9 Topic 6 Wave properties; Oak waves lessons",
+      "sourceExcerpt": "",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/waves/lessons"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-WAVES"
+      ],
+      "level": 1,
+      "cue": "Try to answer in full sentences before revealing the answer.",
+      "tags": [
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "new-cgp-bridge-derived",
+      "learningObjective": "9I-waves",
+      "learningObjectiveTitle": "Wave properties",
+      "learningObjectiveDescription": "Amplitude, wavelength, frequency, wave speed, transverse waves, longitudinal waves and sound.",
+      "noteId": "9I-waves",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-018-I-waves-define-frequency",
+      "unit": "9I",
+      "type": "Vocabulary",
+      "question": "Define: frequency",
+      "answer": "Frequency is the number of complete waves passing a point each second, measured in hertz (Hz).",
+      "choices": [],
+      "explanation": "1 Hz means one complete wave per second.",
+      "source": "CGP KS3 Science syllabus map Year 9 Topic 6 Wave properties; Oak waves lessons",
+      "sourceExcerpt": "",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/waves/lessons"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-WAVES"
+      ],
+      "level": 1,
+      "cue": "Try to answer in full sentences before revealing the answer.",
+      "tags": [
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "new-cgp-bridge-derived",
+      "learningObjective": "9I-waves",
+      "learningObjectiveTitle": "Wave properties",
+      "learningObjectiveDescription": "Amplitude, wavelength, frequency, wave speed, transverse waves, longitudinal waves and sound.",
+      "noteId": "9I-waves",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-019-I-waves-which-unit-is-used-for-frequency",
+      "unit": "9I",
+      "type": "Quick quiz",
+      "question": "Which unit is used for frequency?",
+      "answer": "A",
+      "choices": [
+        "A hertz, Hz",
+        "B metres, m",
+        "C newtons, N",
+        "D pascals, Pa"
+      ],
+      "explanation": "Frequency is measured in hertz, Hz.",
+      "source": "CGP KS3 Science syllabus map Year 9 Topic 6 Wave properties; Oak waves lessons",
+      "sourceExcerpt": "",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/waves/lessons"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-WAVES"
+      ],
+      "level": 1,
+      "cue": "",
+      "tags": [
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "new-cgp-bridge-derived",
+      "learningObjective": "9I-waves",
+      "learningObjectiveTitle": "Wave properties",
+      "learningObjectiveDescription": "Amplitude, wavelength, frequency, wave speed, transverse waves, longitudinal waves and sound.",
+      "noteId": "9I-waves",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-020-I-waves-which-equation-links-wave-speed-frequency-and-wavelength",
+      "unit": "9I",
+      "type": "Quick quiz",
+      "question": "Which equation links wave speed, frequency and wavelength?",
+      "answer": "C",
+      "choices": [
+        "A wave speed = frequency ÷ wavelength",
+        "B wave speed = wavelength ÷ frequency",
+        "C wave speed = frequency × wavelength",
+        "D wave speed = amplitude × frequency"
+      ],
+      "explanation": "Wave speed = frequency × wavelength.",
+      "source": "CGP KS3 Science syllabus map Year 9 Topic 6 Wave properties; Oak waves lessons",
+      "sourceExcerpt": "",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/waves/lessons"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-WAVES"
+      ],
+      "level": 2,
+      "cue": "",
+      "tags": [
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "new-cgp-bridge-derived",
+      "learningObjective": "9I-waves",
+      "learningObjectiveTitle": "Wave properties",
+      "learningObjectiveDescription": "Amplitude, wavelength, frequency, wave speed, transverse waves, longitudinal waves and sound.",
+      "noteId": "9I-waves",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-021-I-waves-a-wave-has-frequency-5-hz-and-wavelength-2-m-calculate-its-s",
+      "unit": "9I",
+      "type": "Calculation",
+      "question": "A wave has frequency 5 Hz and wavelength 2 m. Calculate its speed.",
+      "answer": "10 m/s",
+      "choices": [],
+      "explanation": "Wave speed = frequency × wavelength = 5 × 2 = 10 m/s.",
+      "source": "CGP KS3 Science syllabus map Year 9 Topic 6 Wave properties; Oak waves lessons",
+      "sourceExcerpt": "",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/waves/lessons"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-WAVES"
+      ],
+      "level": 2,
+      "cue": "Use wave speed = frequency × wavelength.",
+      "tags": [
+        "calculation",
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "new-cgp-bridge-derived",
+      "learningObjective": "9I-waves",
+      "learningObjectiveTitle": "Wave properties",
+      "learningObjectiveDescription": "Amplitude, wavelength, frequency, wave speed, transverse waves, longitudinal waves and sound.",
+      "noteId": "9I-waves",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-022-I-waves-a-wave-travels-at-12-m-s-and-has-wavelength-3-m-calculate-it",
+      "unit": "9I",
+      "type": "Calculation",
+      "question": "A wave travels at 12 m/s and has wavelength 3 m. Calculate its frequency.",
+      "answer": "4 Hz",
+      "choices": [],
+      "explanation": "Frequency = wave speed ÷ wavelength = 12 ÷ 3 = 4 Hz.",
+      "source": "CGP KS3 Science syllabus map Year 9 Topic 6 Wave properties; Oak waves lessons",
+      "sourceExcerpt": "",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/waves/lessons"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-WAVES"
+      ],
+      "level": 3,
+      "cue": "Rearrange the wave-speed equation.",
+      "tags": [
+        "calculation",
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "new-cgp-bridge-derived",
+      "learningObjective": "9I-waves",
+      "learningObjectiveTitle": "Wave properties",
+      "learningObjectiveDescription": "Amplitude, wavelength, frequency, wave speed, transverse waves, longitudinal waves and sound.",
+      "noteId": "9I-waves",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-023-I-waves-describe-a-transverse-wave",
+      "unit": "9I",
+      "type": "Progress check",
+      "question": "Describe a transverse wave.",
+      "answer": "In a transverse wave, the vibration is at right angles to the direction of energy transfer.",
+      "choices": [],
+      "explanation": "Water waves are a common KS3 example of transverse waves.",
+      "source": "CGP KS3 Science syllabus map Year 9 Topic 6 Wave properties; Oak waves lessons",
+      "sourceExcerpt": "",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/waves/lessons"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-WAVES"
+      ],
+      "level": 2,
+      "cue": "Try to answer in full sentences before revealing the answer.",
+      "tags": [
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "new-cgp-bridge-derived",
+      "learningObjective": "9I-waves",
+      "learningObjectiveTitle": "Wave properties",
+      "learningObjectiveDescription": "Amplitude, wavelength, frequency, wave speed, transverse waves, longitudinal waves and sound.",
+      "noteId": "9I-waves",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-024-I-waves-describe-a-longitudinal-wave",
+      "unit": "9I",
+      "type": "Progress check",
+      "question": "Describe a longitudinal wave.",
+      "answer": "In a longitudinal wave, the vibration is parallel to the direction of energy transfer.",
+      "choices": [],
+      "explanation": "Sound waves are longitudinal waves.",
+      "source": "CGP KS3 Science syllabus map Year 9 Topic 6 Wave properties; Oak waves lessons",
+      "sourceExcerpt": "",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/waves/lessons"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-WAVES"
+      ],
+      "level": 2,
+      "cue": "Try to answer in full sentences before revealing the answer.",
+      "tags": [
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "new-cgp-bridge-derived",
+      "learningObjective": "9I-waves",
+      "learningObjectiveTitle": "Wave properties",
+      "learningObjectiveDescription": "Amplitude, wavelength, frequency, wave speed, transverse waves, longitudinal waves and sound.",
+      "noteId": "9I-waves",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-025-I-waves-sound-is-best-described-as-which-type-of-wave",
+      "unit": "9I",
+      "type": "Quick quiz",
+      "question": "Sound is best described as which type of wave?",
+      "answer": "B",
+      "choices": [
+        "A transverse wave in a vacuum",
+        "B longitudinal wave through a medium",
+        "C electrical wave only",
+        "D pressureless wave through empty space"
+      ],
+      "explanation": "Sound is a longitudinal wave and needs a medium to travel through.",
+      "source": "CGP KS3 Science syllabus map Year 9 Topic 6 Wave properties; Oak waves lessons",
+      "sourceExcerpt": "",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/waves/lessons"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-WAVES"
+      ],
+      "level": 2,
+      "cue": "",
+      "tags": [
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "new-cgp-bridge-derived",
+      "learningObjective": "9I-waves",
+      "learningObjectiveTitle": "Wave properties",
+      "learningObjectiveDescription": "Amplitude, wavelength, frequency, wave speed, transverse waves, longitudinal waves and sound.",
+      "noteId": "9I-waves",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-026-I-waves-what-happens-to-the-particles-as-a-sound-wave-travels-throug",
+      "unit": "9I",
+      "type": "Progress check",
+      "question": "What happens to the particles as a sound wave travels through air?",
+      "answer": "The particles vibrate back and forth parallel to the direction the sound wave travels; the particles do not travel all the way with the sound.",
+      "choices": [],
+      "explanation": "The energy travels through the material, while particles vibrate around fixed positions.",
+      "source": "CGP KS3 Science syllabus map Year 9 Topic 6 Wave properties; Oak waves lessons",
+      "sourceExcerpt": "",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/waves/lessons"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-WAVES"
+      ],
+      "level": 3,
+      "cue": "Try to answer in full sentences before revealing the answer.",
+      "tags": [
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "new-cgp-bridge-derived",
+      "learningObjective": "9I-waves",
+      "learningObjectiveTitle": "Wave properties",
+      "learningObjectiveDescription": "Amplitude, wavelength, frequency, wave speed, transverse waves, longitudinal waves and sound.",
+      "noteId": "9I-waves",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-027-I-waves-explain-why-sound-usually-travels-faster-in-solids-than-in-g",
+      "unit": "9I",
+      "type": "Progress check",
+      "question": "Explain why sound usually travels faster in solids than in gases.",
+      "answer": "Particles in solids are closer together and strongly linked, so vibrations are passed on more quickly.",
+      "choices": [],
+      "explanation": "This uses a particle model explanation for sound speed.",
+      "source": "CGP KS3 Science syllabus map Year 9 Topic 6 Wave properties; Oak waves lessons",
+      "sourceExcerpt": "",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/waves/lessons"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-WAVES"
+      ],
+      "level": 3,
+      "cue": "Try to answer in full sentences before revealing the answer.",
+      "tags": [
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "new-cgp-bridge-derived",
+      "learningObjective": "9I-waves",
+      "learningObjectiveTitle": "Wave properties",
+      "learningObjectiveDescription": "Amplitude, wavelength, frequency, wave speed, transverse waves, longitudinal waves and sound.",
+      "noteId": "9I-waves",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-028-I-waves-how-could-an-echo-method-be-used-to-estimate-the-speed-of-so",
+      "unit": "9I",
+      "type": "Apply check",
+      "question": "How could an echo method be used to estimate the speed of sound?",
+      "answer": "Make a sharp sound near a wall, time how long it takes to hear the echo, then use distance travelled divided by time. The sound travels to the wall and back.",
+      "choices": [],
+      "explanation": "The distance is twice the distance from the sound source to the wall.",
+      "source": "CGP KS3 Science syllabus map Year 9 Topic 6 Wave properties; Oak waves lessons",
+      "sourceExcerpt": "",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/waves/lessons"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-WAVES"
+      ],
+      "level": 3,
+      "cue": "Try to answer in full sentences before revealing the answer.",
+      "tags": [
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "new-cgp-bridge-derived",
+      "learningObjective": "9I-waves",
+      "learningObjectiveTitle": "Wave properties",
+      "learningObjectiveDescription": "Amplitude, wavelength, frequency, wave speed, transverse waves, longitudinal waves and sound.",
+      "noteId": "9I-waves",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-029-I-waves-a-louder-sound-usually-has-a-larger",
+      "unit": "9I",
+      "type": "Quick quiz",
+      "question": "A louder sound usually has a larger:",
+      "answer": "D",
+      "choices": [
+        "A wavelength only",
+        "B frequency only",
+        "C wave speed in air",
+        "D amplitude"
+      ],
+      "explanation": "Amplitude is linked to loudness.",
+      "source": "CGP KS3 Science syllabus map Year 9 Topic 6 Wave properties; Oak waves lessons",
+      "sourceExcerpt": "",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/waves/lessons"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-WAVES"
+      ],
+      "level": 1,
+      "cue": "",
+      "tags": [
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "new-cgp-bridge-derived",
+      "learningObjective": "9I-waves",
+      "learningObjectiveTitle": "Wave properties",
+      "learningObjectiveDescription": "Amplitude, wavelength, frequency, wave speed, transverse waves, longitudinal waves and sound.",
+      "noteId": "9I-waves",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-030-I-waves-a-higher-pitched-sound-usually-has-a-higher",
+      "unit": "9I",
+      "type": "Quick quiz",
+      "question": "A higher-pitched sound usually has a higher:",
+      "answer": "A",
+      "choices": [
+        "A frequency",
+        "B pressure",
+        "C mass",
+        "D area"
+      ],
+      "explanation": "Pitch is linked to frequency.",
+      "source": "CGP KS3 Science syllabus map Year 9 Topic 6 Wave properties; Oak waves lessons",
+      "sourceExcerpt": "",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/waves/lessons"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-WAVES"
+      ],
+      "level": 1,
+      "cue": "",
+      "tags": [
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "new-cgp-bridge-derived",
+      "learningObjective": "9I-waves",
+      "learningObjectiveTitle": "Wave properties",
+      "learningObjectiveDescription": "Amplitude, wavelength, frequency, wave speed, transverse waves, longitudinal waves and sound.",
+      "noteId": "9I-waves",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-031-I-waves-a-water-wave-moves-across-a-tank-explain-why-this-does-not-m",
+      "unit": "9I",
+      "type": "Challenge check",
+      "question": "A water wave moves across a tank. Explain why this does not mean the water itself is carried all the way across the tank.",
+      "answer": "The water particles mainly oscillate up and down while energy is transferred across the tank by the wave.",
+      "choices": [],
+      "explanation": "This distinguishes particle movement from energy transfer.",
+      "source": "CGP KS3 Science syllabus map Year 9 Topic 6 Wave properties; Oak waves lessons",
+      "sourceExcerpt": "",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/waves/lessons"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-WAVES"
+      ],
+      "level": 3,
+      "cue": "Try to answer in full sentences before revealing the answer.",
+      "tags": [
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "new-cgp-bridge-derived",
+      "learningObjective": "9I-waves",
+      "learningObjectiveTitle": "Wave properties",
+      "learningObjectiveDescription": "Amplitude, wavelength, frequency, wave speed, transverse waves, longitudinal waves and sound.",
+      "noteId": "9I-waves",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-032-B-breathing-gas-exchange-define-breathing",
+      "unit": "9B",
+      "type": "Vocabulary",
+      "question": "Define: breathing",
+      "answer": "Breathing is the movement of air into and out of the lungs.",
+      "choices": [],
+      "explanation": "Breathing is a physical movement of air, not the same as cellular respiration.",
+      "source": "CGP KS3 Science syllabus map Year 9 Topic 13 Breathing; Oak breathing and gas exchange lesson",
+      "sourceExcerpt": "",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/breathing-and-respiration/lessons/breathing-respiration-and-gas-exchange"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-BREATHING"
+      ],
+      "level": 1,
+      "cue": "Try to answer in full sentences before revealing the answer.",
+      "tags": [
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "new-cgp-bridge-derived",
+      "learningObjective": "9B-breathing-gas-exchange",
+      "learningObjectiveTitle": "Breathing and gas exchange",
+      "learningObjectiveDescription": "Breathing, ventilation, lung structure, alveoli, diffusion and the difference between breathing and respiration.",
+      "noteId": "9B-breathing-gas-exchange",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-033-B-breathing-gas-exchange-define-gas-exchange",
+      "unit": "9B",
+      "type": "Vocabulary",
+      "question": "Define: gas exchange",
+      "answer": "Gas exchange is the movement of oxygen into the blood and carbon dioxide out of the blood at the lungs.",
+      "choices": [],
+      "explanation": "At the alveoli, oxygen and carbon dioxide diffuse in opposite directions.",
+      "source": "CGP KS3 Science syllabus map Year 9 Topic 13 Breathing; Oak breathing and gas exchange lesson",
+      "sourceExcerpt": "",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/breathing-and-respiration/lessons/breathing-respiration-and-gas-exchange"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-BREATHING"
+      ],
+      "level": 1,
+      "cue": "Try to answer in full sentences before revealing the answer.",
+      "tags": [
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "new-cgp-bridge-derived",
+      "learningObjective": "9B-breathing-gas-exchange",
+      "learningObjectiveTitle": "Breathing and gas exchange",
+      "learningObjectiveDescription": "Breathing, ventilation, lung structure, alveoli, diffusion and the difference between breathing and respiration.",
+      "noteId": "9B-breathing-gas-exchange",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-034-B-breathing-gas-exchange-where-does-gas-exchange-happen-in-the-human-lungs",
+      "unit": "9B",
+      "type": "Quick quiz",
+      "question": "Where does gas exchange happen in the human lungs?",
+      "answer": "C",
+      "choices": [
+        "A trachea",
+        "B diaphragm",
+        "C alveoli",
+        "D ribs"
+      ],
+      "explanation": "Alveoli are the tiny air sacs where gas exchange happens.",
+      "source": "CGP KS3 Science syllabus map Year 9 Topic 13 Breathing; Oak breathing and gas exchange lesson",
+      "sourceExcerpt": "",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/breathing-and-respiration/lessons/breathing-respiration-and-gas-exchange"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-BREATHING"
+      ],
+      "level": 1,
+      "cue": "",
+      "tags": [
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "new-cgp-bridge-derived",
+      "learningObjective": "9B-breathing-gas-exchange",
+      "learningObjectiveTitle": "Breathing and gas exchange",
+      "learningObjectiveDescription": "Breathing, ventilation, lung structure, alveoli, diffusion and the difference between breathing and respiration.",
+      "noteId": "9B-breathing-gas-exchange",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-035-B-breathing-gas-exchange-describe-the-difference-between-breathing-and-cellular-respi",
+      "unit": "9B",
+      "type": "Progress check",
+      "question": "Describe the difference between breathing and cellular respiration.",
+      "answer": "Breathing moves air into and out of the lungs. Cellular respiration is a chemical process in cells that releases energy from glucose.",
+      "choices": [],
+      "explanation": "Do not use breathing and respiration as if they mean the same thing.",
+      "source": "CGP KS3 Science syllabus map Year 9 Topic 13 Breathing; Oak breathing and gas exchange lesson",
+      "sourceExcerpt": "",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/breathing-and-respiration/lessons/breathing-respiration-and-gas-exchange"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-BREATHING"
+      ],
+      "level": 2,
+      "cue": "Try to answer in full sentences before revealing the answer.",
+      "tags": [
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "new-cgp-bridge-derived",
+      "learningObjective": "9B-breathing-gas-exchange",
+      "learningObjectiveTitle": "Breathing and gas exchange",
+      "learningObjectiveDescription": "Breathing, ventilation, lung structure, alveoli, diffusion and the difference between breathing and respiration.",
+      "noteId": "9B-breathing-gas-exchange",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-036-B-breathing-gas-exchange-what-gas-moves-from-the-air-in-the-alveoli-into-the-blood",
+      "unit": "9B",
+      "type": "Progress check",
+      "question": "What gas moves from the air in the alveoli into the blood?",
+      "answer": "Oxygen diffuses from the air in the alveoli into the blood.",
+      "choices": [],
+      "explanation": "The blood carries oxygen to cells for respiration.",
+      "source": "CGP KS3 Science syllabus map Year 9 Topic 13 Breathing; Oak breathing and gas exchange lesson",
+      "sourceExcerpt": "",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/breathing-and-respiration/lessons/breathing-respiration-and-gas-exchange"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-BREATHING"
+      ],
+      "level": 1,
+      "cue": "Try to answer in full sentences before revealing the answer.",
+      "tags": [
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "new-cgp-bridge-derived",
+      "learningObjective": "9B-breathing-gas-exchange",
+      "learningObjectiveTitle": "Breathing and gas exchange",
+      "learningObjectiveDescription": "Breathing, ventilation, lung structure, alveoli, diffusion and the difference between breathing and respiration.",
+      "noteId": "9B-breathing-gas-exchange",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-037-B-breathing-gas-exchange-what-gas-moves-from-the-blood-into-the-alveoli",
+      "unit": "9B",
+      "type": "Progress check",
+      "question": "What gas moves from the blood into the alveoli?",
+      "answer": "Carbon dioxide diffuses from the blood into the alveoli so it can be breathed out.",
+      "choices": [],
+      "explanation": "Carbon dioxide is a waste product of respiration.",
+      "source": "CGP KS3 Science syllabus map Year 9 Topic 13 Breathing; Oak breathing and gas exchange lesson",
+      "sourceExcerpt": "",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/breathing-and-respiration/lessons/breathing-respiration-and-gas-exchange"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-BREATHING"
+      ],
+      "level": 1,
+      "cue": "Try to answer in full sentences before revealing the answer.",
+      "tags": [
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "new-cgp-bridge-derived",
+      "learningObjective": "9B-breathing-gas-exchange",
+      "learningObjectiveTitle": "Breathing and gas exchange",
+      "learningObjectiveDescription": "Breathing, ventilation, lung structure, alveoli, diffusion and the difference between breathing and respiration.",
+      "noteId": "9B-breathing-gas-exchange",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-038-B-breathing-gas-exchange-why-are-alveoli-useful-for-gas-exchange",
+      "unit": "9B",
+      "type": "Apply check",
+      "question": "Why are alveoli useful for gas exchange?",
+      "answer": "Alveoli give the lungs a large surface area and have thin walls, so gases can diffuse quickly between air and blood.",
+      "choices": [],
+      "explanation": "Good answers mention large surface area, thin walls and diffusion.",
+      "source": "CGP KS3 Science syllabus map Year 9 Topic 13 Breathing; Oak breathing and gas exchange lesson",
+      "sourceExcerpt": "",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/breathing-and-respiration/lessons/breathing-respiration-and-gas-exchange"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-BREATHING"
+      ],
+      "level": 3,
+      "cue": "Try to answer in full sentences before revealing the answer.",
+      "tags": [
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "new-cgp-bridge-derived",
+      "learningObjective": "9B-breathing-gas-exchange",
+      "learningObjectiveTitle": "Breathing and gas exchange",
+      "learningObjectiveDescription": "Breathing, ventilation, lung structure, alveoli, diffusion and the difference between breathing and respiration.",
+      "noteId": "9B-breathing-gas-exchange",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-039-B-breathing-gas-exchange-which-structure-contracts-and-flattens-during-breathing-in",
+      "unit": "9B",
+      "type": "Quick quiz",
+      "question": "Which structure contracts and flattens during breathing in?",
+      "answer": "B",
+      "choices": [
+        "A trachea",
+        "B diaphragm",
+        "C alveolus",
+        "D red blood cell"
+      ],
+      "explanation": "The diaphragm contracts and flattens, increasing chest volume.",
+      "source": "CGP KS3 Science syllabus map Year 9 Topic 13 Breathing; Oak breathing and gas exchange lesson",
+      "sourceExcerpt": "",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/breathing-and-respiration/lessons/breathing-respiration-and-gas-exchange"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-BREATHING"
+      ],
+      "level": 2,
+      "cue": "",
+      "tags": [
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "new-cgp-bridge-derived",
+      "learningObjective": "9B-breathing-gas-exchange",
+      "learningObjectiveTitle": "Breathing and gas exchange",
+      "learningObjectiveDescription": "Breathing, ventilation, lung structure, alveoli, diffusion and the difference between breathing and respiration.",
+      "noteId": "9B-breathing-gas-exchange",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-040-B-breathing-gas-exchange-describe-what-happens-to-the-chest-volume-during-breathing-i",
+      "unit": "9B",
+      "type": "Progress check",
+      "question": "Describe what happens to the chest volume during breathing in.",
+      "answer": "The chest volume increases, pressure inside the lungs falls, and air moves into the lungs.",
+      "choices": [],
+      "explanation": "Air moves from higher pressure outside to lower pressure inside the lungs.",
+      "source": "CGP KS3 Science syllabus map Year 9 Topic 13 Breathing; Oak breathing and gas exchange lesson",
+      "sourceExcerpt": "",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/breathing-and-respiration/lessons/breathing-respiration-and-gas-exchange"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-BREATHING"
+      ],
+      "level": 3,
+      "cue": "Try to answer in full sentences before revealing the answer.",
+      "tags": [
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "new-cgp-bridge-derived",
+      "learningObjective": "9B-breathing-gas-exchange",
+      "learningObjectiveTitle": "Breathing and gas exchange",
+      "learningObjectiveDescription": "Breathing, ventilation, lung structure, alveoli, diffusion and the difference between breathing and respiration.",
+      "noteId": "9B-breathing-gas-exchange",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-041-B-breathing-gas-exchange-describe-what-happens-to-the-chest-volume-during-breathing-o",
+      "unit": "9B",
+      "type": "Progress check",
+      "question": "Describe what happens to the chest volume during breathing out.",
+      "answer": "The chest volume decreases, pressure inside the lungs rises, and air moves out of the lungs.",
+      "choices": [],
+      "explanation": "Air moves out when pressure inside the lungs becomes higher than outside.",
+      "source": "CGP KS3 Science syllabus map Year 9 Topic 13 Breathing; Oak breathing and gas exchange lesson",
+      "sourceExcerpt": "",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/breathing-and-respiration/lessons/breathing-respiration-and-gas-exchange"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-BREATHING"
+      ],
+      "level": 3,
+      "cue": "Try to answer in full sentences before revealing the answer.",
+      "tags": [
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "new-cgp-bridge-derived",
+      "learningObjective": "9B-breathing-gas-exchange",
+      "learningObjectiveTitle": "Breathing and gas exchange",
+      "learningObjectiveDescription": "Breathing, ventilation, lung structure, alveoli, diffusion and the difference between breathing and respiration.",
+      "noteId": "9B-breathing-gas-exchange",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-042-B-breathing-gas-exchange-which-statement-is-correct",
+      "unit": "9B",
+      "type": "Quick quiz",
+      "question": "Which statement is correct?",
+      "answer": "D",
+      "choices": [
+        "A Oxygen diffuses from blood into alveoli.",
+        "B Carbon dioxide is needed by cells for respiration.",
+        "C Alveoli have thick walls to slow diffusion.",
+        "D Oxygen diffuses from alveoli into blood."
+      ],
+      "explanation": "Oxygen moves from the air spaces in the alveoli into the blood.",
+      "source": "CGP KS3 Science syllabus map Year 9 Topic 13 Breathing; Oak breathing and gas exchange lesson",
+      "sourceExcerpt": "",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/breathing-and-respiration/lessons/breathing-respiration-and-gas-exchange"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-BREATHING"
+      ],
+      "level": 2,
+      "cue": "",
+      "tags": [
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "new-cgp-bridge-derived",
+      "learningObjective": "9B-breathing-gas-exchange",
+      "learningObjectiveTitle": "Breathing and gas exchange",
+      "learningObjectiveDescription": "Breathing, ventilation, lung structure, alveoli, diffusion and the difference between breathing and respiration.",
+      "noteId": "9B-breathing-gas-exchange",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-043-B-breathing-gas-exchange-why-do-cells-need-oxygen-from-the-air",
+      "unit": "9B",
+      "type": "Progress check",
+      "question": "Why do cells need oxygen from the air?",
+      "answer": "Cells need oxygen for aerobic respiration, which releases energy for life processes.",
+      "choices": [],
+      "explanation": "This links breathing to cellular respiration.",
+      "source": "CGP KS3 Science syllabus map Year 9 Topic 13 Breathing; Oak breathing and gas exchange lesson",
+      "sourceExcerpt": "",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/breathing-and-respiration/lessons/breathing-respiration-and-gas-exchange"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-BREATHING"
+      ],
+      "level": 2,
+      "cue": "Try to answer in full sentences before revealing the answer.",
+      "tags": [
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "new-cgp-bridge-derived",
+      "learningObjective": "9B-breathing-gas-exchange",
+      "learningObjectiveTitle": "Breathing and gas exchange",
+      "learningObjectiveDescription": "Breathing, ventilation, lung structure, alveoli, diffusion and the difference between breathing and respiration.",
+      "noteId": "9B-breathing-gas-exchange",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-044-B-breathing-gas-exchange-explain-why-carbon-dioxide-must-be-removed-from-the-body",
+      "unit": "9B",
+      "type": "Apply check",
+      "question": "Explain why carbon dioxide must be removed from the body.",
+      "answer": "Carbon dioxide is a waste product of respiration. It diffuses into the lungs and is removed when we breathe out.",
+      "choices": [],
+      "explanation": "A strong answer links respiration, diffusion and breathing out.",
+      "source": "CGP KS3 Science syllabus map Year 9 Topic 13 Breathing; Oak breathing and gas exchange lesson",
+      "sourceExcerpt": "",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/breathing-and-respiration/lessons/breathing-respiration-and-gas-exchange"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-BREATHING"
+      ],
+      "level": 3,
+      "cue": "Try to answer in full sentences before revealing the answer.",
+      "tags": [
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "new-cgp-bridge-derived",
+      "learningObjective": "9B-breathing-gas-exchange",
+      "learningObjectiveTitle": "Breathing and gas exchange",
+      "learningObjectiveDescription": "Breathing, ventilation, lung structure, alveoli, diffusion and the difference between breathing and respiration.",
+      "noteId": "9B-breathing-gas-exchange",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-045-B-breathing-gas-exchange-explain-why-exercise-increases-breathing-rate",
+      "unit": "9B",
+      "type": "Challenge check",
+      "question": "Explain why exercise increases breathing rate.",
+      "answer": "Muscle cells respire faster during exercise, so they need more oxygen and produce more carbon dioxide. Faster breathing brings in oxygen and removes carbon dioxide more quickly.",
+      "choices": [],
+      "explanation": "This links breathing rate to demand from respiring muscle cells.",
+      "source": "CGP KS3 Science syllabus map Year 9 Topic 13 Breathing; Oak breathing and gas exchange lesson",
+      "sourceExcerpt": "",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/breathing-and-respiration/lessons/breathing-respiration-and-gas-exchange"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-BREATHING"
+      ],
+      "level": 4,
+      "cue": "Try to answer in full sentences before revealing the answer.",
+      "tags": [
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "new-cgp-bridge-derived",
+      "learningObjective": "9B-breathing-gas-exchange",
+      "learningObjectiveTitle": "Breathing and gas exchange",
+      "learningObjectiveDescription": "Breathing, ventilation, lung structure, alveoli, diffusion and the difference between breathing and respiration.",
+      "noteId": "9B-breathing-gas-exchange",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-086-B-anaerobic-respiration-define-anaerobic-respiration",
+      "unit": "9B",
+      "type": "Vocabulary",
+      "question": "Define: anaerobic respiration",
+      "answer": "Anaerobic respiration is respiration that releases energy without using oxygen.",
+      "choices": [],
+      "explanation": "Anaerobic means without oxygen.",
+      "source": "9B photosynthesis/respiration revision content; CGP KS3 Year 9 Topic 14 Respiration; Oak anaerobic respiration lesson",
+      "sourceExcerpt": "",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/breathing-and-respiration/lessons/anaerobic-cellular-respiration-and-fermentation-in-microorganisms",
+        "local:data/year9-content.js and data/year9-notes.js"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-ANAEROBIC",
+        "LOCAL-REVISION"
+      ],
+      "level": 1,
+      "cue": "Try to answer in full sentences before revealing the answer.",
+      "tags": [
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "new-cgp-bridge-derived",
+      "learningObjective": "9B-anaerobic-respiration",
+      "learningObjectiveTitle": "Anaerobic respiration",
+      "learningObjectiveDescription": "Aerobic and anaerobic respiration, lactic acid, fermentation, ethanol and useful microorganism products.",
+      "noteId": "9B-anaerobic-respiration",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-087-B-anaerobic-respiration-write-the-word-summary-for-aerobic-respiration",
+      "unit": "9B",
+      "type": "Progress check",
+      "question": "Write the word summary for aerobic respiration.",
+      "answer": "glucose + oxygen -> carbon dioxide + water",
+      "choices": [],
+      "explanation": "This matches the existing respiration summary used in the app.",
+      "source": "9B quick quiz 9Ba Q2; CGP KS3 Year 9 Topic 14 Respiration; Oak anaerobic respiration lesson",
+      "sourceExcerpt": "glucose + oxygen -> carbon dioxide + water",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/breathing-and-respiration/lessons/anaerobic-cellular-respiration-and-fermentation-in-microorganisms",
+        "local:data/year9-content.js and data/year9-notes.js"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-ANAEROBIC",
+        "LOCAL-REVISION"
+      ],
+      "level": 1,
+      "cue": "Try to answer in full sentences before revealing the answer.",
+      "tags": [
+        "revision-pack-alignment",
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-text",
+      "learningObjective": "9B-anaerobic-respiration",
+      "learningObjectiveTitle": "Anaerobic respiration",
+      "learningObjectiveDescription": "Aerobic and anaerobic respiration, lactic acid, fermentation, ethanol and useful microorganism products.",
+      "noteId": "9B-anaerobic-respiration",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-088-B-anaerobic-respiration-write-the-word-summary-for-anaerobic-respiration-in-human-mu",
+      "unit": "9B",
+      "type": "Progress check",
+      "question": "Write the word summary for anaerobic respiration in human muscles.",
+      "answer": "glucose -> lactic acid",
+      "choices": [],
+      "explanation": "In humans, anaerobic respiration in muscles produces lactic acid.",
+      "source": "9B photosynthesis/respiration revision content; CGP KS3 Year 9 Topic 14 Respiration; Oak anaerobic respiration lesson",
+      "sourceExcerpt": "",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/breathing-and-respiration/lessons/anaerobic-cellular-respiration-and-fermentation-in-microorganisms",
+        "local:data/year9-content.js and data/year9-notes.js"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-ANAEROBIC",
+        "LOCAL-REVISION"
+      ],
+      "level": 2,
+      "cue": "Try to answer in full sentences before revealing the answer.",
+      "tags": [
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "new-cgp-bridge-derived",
+      "learningObjective": "9B-anaerobic-respiration",
+      "learningObjectiveTitle": "Anaerobic respiration",
+      "learningObjectiveDescription": "Aerobic and anaerobic respiration, lactic acid, fermentation, ethanol and useful microorganism products.",
+      "noteId": "9B-anaerobic-respiration",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-089-B-anaerobic-respiration-write-the-word-summary-for-anaerobic-respiration-in-yeast",
+      "unit": "9B",
+      "type": "Progress check",
+      "question": "Write the word summary for anaerobic respiration in yeast.",
+      "answer": "glucose -> ethanol + carbon dioxide",
+      "choices": [],
+      "explanation": "Anaerobic respiration in microorganisms such as yeast is also called fermentation.",
+      "source": "9B photosynthesis/respiration revision content; CGP KS3 Year 9 Topic 14 Respiration; Oak anaerobic respiration lesson",
+      "sourceExcerpt": "",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/breathing-and-respiration/lessons/anaerobic-cellular-respiration-and-fermentation-in-microorganisms",
+        "local:data/year9-content.js and data/year9-notes.js"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-ANAEROBIC",
+        "LOCAL-REVISION"
+      ],
+      "level": 2,
+      "cue": "Try to answer in full sentences before revealing the answer.",
+      "tags": [
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "new-cgp-bridge-derived",
+      "learningObjective": "9B-anaerobic-respiration",
+      "learningObjectiveTitle": "Anaerobic respiration",
+      "learningObjectiveDescription": "Aerobic and anaerobic respiration, lactic acid, fermentation, ethanol and useful microorganism products.",
+      "noteId": "9B-anaerobic-respiration",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-090-B-anaerobic-respiration-which-process-does-not-require-oxygen",
+      "unit": "9B",
+      "type": "Quick quiz",
+      "question": "Which process does not require oxygen?",
+      "answer": "C",
+      "choices": [
+        "A photosynthesis only",
+        "B aerobic respiration",
+        "C anaerobic respiration",
+        "D diffusion"
+      ],
+      "explanation": "Anaerobic respiration releases energy without oxygen.",
+      "source": "9B photosynthesis/respiration revision content; CGP KS3 Year 9 Topic 14 Respiration; Oak anaerobic respiration lesson",
+      "sourceExcerpt": "",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/breathing-and-respiration/lessons/anaerobic-cellular-respiration-and-fermentation-in-microorganisms",
+        "local:data/year9-content.js and data/year9-notes.js"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-ANAEROBIC",
+        "LOCAL-REVISION"
+      ],
+      "level": 1,
+      "cue": "",
+      "tags": [
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "new-cgp-bridge-derived",
+      "learningObjective": "9B-anaerobic-respiration",
+      "learningObjectiveTitle": "Anaerobic respiration",
+      "learningObjectiveDescription": "Aerobic and anaerobic respiration, lactic acid, fermentation, ethanol and useful microorganism products.",
+      "noteId": "9B-anaerobic-respiration",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-091-B-anaerobic-respiration-when-might-muscle-cells-use-anaerobic-respiration",
+      "unit": "9B",
+      "type": "Progress check",
+      "question": "When might muscle cells use anaerobic respiration?",
+      "answer": "Muscle cells use anaerobic respiration during hard exercise when oxygen cannot be supplied fast enough.",
+      "choices": [],
+      "explanation": "Anaerobic respiration helps release energy quickly but is less efficient.",
+      "source": "9B photosynthesis/respiration revision content; CGP KS3 Year 9 Topic 14 Respiration; Oak anaerobic respiration lesson",
+      "sourceExcerpt": "",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/breathing-and-respiration/lessons/anaerobic-cellular-respiration-and-fermentation-in-microorganisms",
+        "local:data/year9-content.js and data/year9-notes.js"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-ANAEROBIC",
+        "LOCAL-REVISION"
+      ],
+      "level": 2,
+      "cue": "Try to answer in full sentences before revealing the answer.",
+      "tags": [
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "new-cgp-bridge-derived",
+      "learningObjective": "9B-anaerobic-respiration",
+      "learningObjectiveTitle": "Anaerobic respiration",
+      "learningObjectiveDescription": "Aerobic and anaerobic respiration, lactic acid, fermentation, ethanol and useful microorganism products.",
+      "noteId": "9B-anaerobic-respiration",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-092-B-anaerobic-respiration-why-can-lactic-acid-build-up-during-vigorous-exercise",
+      "unit": "9B",
+      "type": "Apply check",
+      "question": "Why can lactic acid build up during vigorous exercise?",
+      "answer": "During vigorous exercise, muscles need energy faster than oxygen can be delivered, so anaerobic respiration produces lactic acid.",
+      "choices": [],
+      "explanation": "This links exercise intensity, oxygen supply and lactic acid production.",
+      "source": "9B photosynthesis/respiration revision content; CGP KS3 Year 9 Topic 14 Respiration; Oak anaerobic respiration lesson",
+      "sourceExcerpt": "",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/breathing-and-respiration/lessons/anaerobic-cellular-respiration-and-fermentation-in-microorganisms",
+        "local:data/year9-content.js and data/year9-notes.js"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-ANAEROBIC",
+        "LOCAL-REVISION"
+      ],
+      "level": 3,
+      "cue": "Try to answer in full sentences before revealing the answer.",
+      "tags": [
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "new-cgp-bridge-derived",
+      "learningObjective": "9B-anaerobic-respiration",
+      "learningObjectiveTitle": "Anaerobic respiration",
+      "learningObjectiveDescription": "Aerobic and anaerobic respiration, lactic acid, fermentation, ethanol and useful microorganism products.",
+      "noteId": "9B-anaerobic-respiration",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-093-B-anaerobic-respiration-what-is-fermentation",
+      "unit": "9B",
+      "type": "Progress check",
+      "question": "What is fermentation?",
+      "answer": "Fermentation is anaerobic respiration in microorganisms such as yeast.",
+      "choices": [],
+      "explanation": "Yeast fermentation produces ethanol and carbon dioxide.",
+      "source": "9B photosynthesis/respiration revision content; CGP KS3 Year 9 Topic 14 Respiration; Oak anaerobic respiration lesson",
+      "sourceExcerpt": "",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/breathing-and-respiration/lessons/anaerobic-cellular-respiration-and-fermentation-in-microorganisms",
+        "local:data/year9-content.js and data/year9-notes.js"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-ANAEROBIC",
+        "LOCAL-REVISION"
+      ],
+      "level": 2,
+      "cue": "Try to answer in full sentences before revealing the answer.",
+      "tags": [
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "new-cgp-bridge-derived",
+      "learningObjective": "9B-anaerobic-respiration",
+      "learningObjectiveTitle": "Anaerobic respiration",
+      "learningObjectiveDescription": "Aerobic and anaerobic respiration, lactic acid, fermentation, ethanol and useful microorganism products.",
+      "noteId": "9B-anaerobic-respiration",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-094-B-anaerobic-respiration-how-is-fermentation-useful-in-bread-making",
+      "unit": "9B",
+      "type": "Apply check",
+      "question": "How is fermentation useful in bread making?",
+      "answer": "Yeast ferments sugar and produces carbon dioxide, which makes the dough rise.",
+      "choices": [],
+      "explanation": "The carbon dioxide forms bubbles in the dough.",
+      "source": "9B photosynthesis/respiration revision content; CGP KS3 Year 9 Topic 14 Respiration; Oak anaerobic respiration lesson",
+      "sourceExcerpt": "",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/breathing-and-respiration/lessons/anaerobic-cellular-respiration-and-fermentation-in-microorganisms",
+        "local:data/year9-content.js and data/year9-notes.js"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-ANAEROBIC",
+        "LOCAL-REVISION"
+      ],
+      "level": 2,
+      "cue": "Try to answer in full sentences before revealing the answer.",
+      "tags": [
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "new-cgp-bridge-derived",
+      "learningObjective": "9B-anaerobic-respiration",
+      "learningObjectiveTitle": "Anaerobic respiration",
+      "learningObjectiveDescription": "Aerobic and anaerobic respiration, lactic acid, fermentation, ethanol and useful microorganism products.",
+      "noteId": "9B-anaerobic-respiration",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-095-B-anaerobic-respiration-compare-aerobic-and-anaerobic-respiration",
+      "unit": "9B",
+      "type": "Challenge check",
+      "question": "Compare aerobic and anaerobic respiration.",
+      "answer": "Aerobic respiration uses oxygen and releases more energy from glucose. Anaerobic respiration does not use oxygen and releases less energy; in humans it produces lactic acid.",
+      "choices": [],
+      "explanation": "A good comparison includes oxygen, energy released and products.",
+      "source": "9B photosynthesis/respiration revision content; CGP KS3 Year 9 Topic 14 Respiration; Oak anaerobic respiration lesson",
+      "sourceExcerpt": "",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/breathing-and-respiration/lessons/anaerobic-cellular-respiration-and-fermentation-in-microorganisms",
+        "local:data/year9-content.js and data/year9-notes.js"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-ANAEROBIC",
+        "LOCAL-REVISION"
+      ],
+      "level": 4,
+      "cue": "Try to answer in full sentences before revealing the answer.",
+      "tags": [
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "new-cgp-bridge-derived",
+      "learningObjective": "9B-anaerobic-respiration",
+      "learningObjectiveTitle": "Anaerobic respiration",
+      "learningObjectiveDescription": "Aerobic and anaerobic respiration, lactic acid, fermentation, ethanol and useful microorganism products.",
+      "noteId": "9B-anaerobic-respiration",
+      "mediaPolicy": "question-media-only-if-required"
+    }
+  ],
+  "notes": [
+    {
+      "id": "9I-waves",
+      "unit": "9I",
+      "objective": "9I-waves",
+      "title": "Wave properties",
+      "summary": "Waves transfer energy. Key wave properties include amplitude, wavelength, frequency and wave speed.",
+      "keyPoints": [
+        "Amplitude is the maximum displacement from the rest position.",
+        "Wavelength is the distance between matching points on neighbouring waves.",
+        "Frequency is the number of complete waves each second, measured in hertz.",
+        "Wave speed = frequency × wavelength.",
+        "Transverse waves vibrate at right angles to the energy transfer direction.",
+        "Longitudinal waves vibrate parallel to the energy transfer direction.",
+        "Sound is a longitudinal wave and needs a material medium."
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "The particles travel all the way with the wave.",
+          "correct": "Particles vibrate around positions while energy is transferred.",
+          "why": "This is especially important for water and sound waves."
+        },
+        {
+          "wrong": "Sound is a transverse wave.",
+          "correct": "Sound is longitudinal.",
+          "why": "Air particles vibrate back and forth parallel to the wave direction."
+        },
+        {
+          "wrong": "Louder always means faster.",
+          "correct": "Louder usually means larger amplitude.",
+          "why": "Wave speed depends on the medium, not loudness."
+        }
+      ],
+      "example": {
+        "question": "A wave has f = 4 Hz and λ = 3 m. Calculate speed.",
+        "answer": "v = fλ = 4 × 3 = 12 m/s."
+      },
+      "explanation": "For wave calculations, identify the two known quantities, write the wave-speed equation, then substitute values with units. For explanations, say what vibrates and which way energy is transferred.",
+      "memoryHook": "v = fλ: speed is frequency times wavelength.",
+      "selfCheck": "Can you define amplitude, wavelength and frequency without looking?",
+      "sentenceStarter": "This is a ___ wave because the vibration is ___.",
+      "practicePrompt": "Do one vocabulary card, one wave-speed calculation and one transverse/longitudinal comparison."
+    },
+    {
+      "id": "9B-breathing-gas-exchange",
+      "unit": "9B",
+      "objective": "9B-breathing-gas-exchange",
+      "title": "Breathing and gas exchange",
+      "summary": "Breathing moves air in and out of the lungs. Gas exchange moves oxygen into the blood and carbon dioxide out of the blood at the alveoli.",
+      "keyPoints": [
+        "Breathing is ventilation: moving air into and out of the lungs.",
+        "Respiration is a chemical process in cells that releases energy from glucose.",
+        "Oxygen diffuses from alveoli into the blood.",
+        "Carbon dioxide diffuses from the blood into the alveoli.",
+        "Alveoli have thin walls and a large surface area for fast diffusion.",
+        "Breathing rate increases during exercise to supply oxygen and remove carbon dioxide faster."
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "Breathing and respiration mean the same thing.",
+          "correct": "Breathing moves air; respiration releases energy in cells.",
+          "why": "They are linked but not identical."
+        },
+        {
+          "wrong": "Carbon dioxide is breathed in for respiration.",
+          "correct": "Oxygen is needed for aerobic respiration; carbon dioxide is a waste product.",
+          "why": "Carbon dioxide is removed at the lungs."
+        },
+        {
+          "wrong": "Alveoli have thick walls for protection.",
+          "correct": "Alveoli have thin walls for short diffusion distance.",
+          "why": "Thin walls speed up gas exchange."
+        }
+      ],
+      "example": {
+        "question": "What moves where at the alveoli?",
+        "answer": "Oxygen moves into the blood; carbon dioxide moves into the alveoli."
+      },
+      "explanation": "Strong gas-exchange answers use the words oxygen, carbon dioxide, alveoli, blood and diffusion. Strong breathing-mechanics answers use volume and pressure.",
+      "memoryHook": "Breathing moves air; respiration releases energy.",
+      "selfCheck": "Can you explain why exercise increases breathing rate?",
+      "sentenceStarter": "Oxygen diffuses from ___ to ___ because ___.",
+      "practicePrompt": "Answer one card on breathing mechanics and one on alveoli adaptations."
+    },
+    {
+      "id": "9B-anaerobic-respiration",
+      "unit": "9B",
+      "objective": "9B-anaerobic-respiration",
+      "title": "Anaerobic respiration",
+      "summary": "Anaerobic respiration releases energy without oxygen. In humans it produces lactic acid; in yeast it produces ethanol and carbon dioxide.",
+      "keyPoints": [
+        "Aerobic respiration: glucose + oxygen -> carbon dioxide + water.",
+        "Anaerobic respiration happens without oxygen.",
+        "In human muscles: glucose -> lactic acid.",
+        "In yeast: glucose -> ethanol + carbon dioxide.",
+        "Fermentation is anaerobic respiration in microorganisms.",
+        "Anaerobic respiration releases less energy than aerobic respiration.",
+        "During vigorous exercise, muscles may use anaerobic respiration when oxygen supply is not enough."
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "Anaerobic respiration uses oxygen.",
+          "correct": "Anaerobic respiration happens without oxygen.",
+          "why": "Anaerobic literally means without oxygen."
+        },
+        {
+          "wrong": "Anaerobic respiration in humans makes carbon dioxide and ethanol.",
+          "correct": "In humans it produces lactic acid.",
+          "why": "Yeast fermentation produces ethanol and carbon dioxide."
+        },
+        {
+          "wrong": "Anaerobic respiration releases more energy than aerobic respiration.",
+          "correct": "Aerobic respiration releases more energy from glucose.",
+          "why": "Oxygen allows more complete breakdown of glucose."
+        }
+      ],
+      "example": {
+        "question": "What is the yeast fermentation word summary?",
+        "answer": "glucose -> ethanol + carbon dioxide."
+      },
+      "explanation": "Be clear which organism is being discussed. Human anaerobic respiration and yeast fermentation have different products.",
+      "memoryHook": "Human hard exercise: lactic acid. Yeast fermentation: ethanol + CO₂.",
+      "selfCheck": "Can you compare aerobic and anaerobic respiration in oxygen use, products and energy released?",
+      "sentenceStarter": "Anaerobic respiration happens when ___.",
+      "practicePrompt": "Answer one human respiration card and one yeast fermentation card."
+    }
+  ]
+}

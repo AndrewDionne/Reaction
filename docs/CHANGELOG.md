@@ -1,5 +1,10 @@
 # Changelog — consolidated
 
+## v1.41.0 — Deferred non-study-pack CGP bridge topics
+- Removed waves, breathing / gas exchange, and anaerobic respiration from the active study/test pool because they are not clearly included in the uploaded Year 9 revision study pack.
+- Preserved the deferred cards and notes in docs for later restoration if confirmed as examinable.
+- Kept pressure, heating/cooling, periodic table, climate and chemical energy bridge coverage active.
+
 ## v1.37.0 — Release-readiness QA
 - Removed unnecessary Revisit micro-note.
 - Added answer shuffling and resume-position support.

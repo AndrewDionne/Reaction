@@ -1,6 +1,6 @@
 window.YEAR9_NOTES = {
-  "version": "1.35.0",
-  "title": "Year 9 Science Enhanced Class Notes",
+  "version": "1.41.0",
+  "title": "Year 9 Science Enhanced Class Notes with Deferred CGP Bridge Topics",
   "notes": [
     {
       "id": "9A-variation",
@@ -1789,6 +1789,215 @@ window.YEAR9_NOTES = {
           "mediaLead": "The force direction depends on the directions of the magnetic field and the current."
         }
       ]
+    },
+    {
+      "id": "9I-pressure",
+      "unit": "9I",
+      "objective": "9I-pressure",
+      "title": "Pressure in fluids",
+      "summary": "Pressure is the effect of a force acting over an area. In fluids, pressure can act in all directions and usually changes with depth or height.",
+      "keyPoints": [
+        "Pressure = force ÷ area, measured in pascals (Pa).",
+        "For the same force, a smaller area gives a larger pressure.",
+        "Liquid pressure increases with depth because more liquid is above pushing down.",
+        "Atmospheric pressure decreases with height because less air is above pushing down.",
+        "Upthrust is an upward force caused by pressure in a fluid.",
+        "An object floats when upthrust balances weight."
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "Pressure only depends on force.",
+          "correct": "Pressure depends on force and area.",
+          "why": "The same force over a smaller area produces a larger pressure."
+        },
+        {
+          "wrong": "Pressure at the bottom of a liquid depends mainly on container width.",
+          "correct": "At the same depth in the same liquid, pressure is the same.",
+          "why": "Depth is the key KS3 factor, not just the container width."
+        },
+        {
+          "wrong": "A metal ship cannot float because metal is dense.",
+          "correct": "A hollow ship can float because its shape displaces enough water for upthrust to balance weight.",
+          "why": "Floating depends on the whole object and displaced water."
+        }
+      ],
+      "example": {
+        "question": "Calculate pressure from a 100 N force over 0.25 m².",
+        "answer": "Pressure = 100 ÷ 0.25 = 400 Pa."
+      },
+      "explanation": "Pressure questions often ask for a cause-and-effect chain: change the area or depth, then explain what happens to pressure and force. For fluids, connect depth to pressure and pressure difference to upthrust.",
+      "memoryHook": "Pressure spreads force over area: smaller area, bigger pressure.",
+      "selfCheck": "Can you explain snowshoes, dams and floating ships using pressure and upthrust?",
+      "sentenceStarter": "The pressure is greater because ___. This means ___.",
+      "practicePrompt": "Try one calculation and one explain question from Pressure in fluids before moving on."
+    },
+    {
+      "id": "9E-heating-cooling",
+      "unit": "9E",
+      "objective": "9E-heating-cooling",
+      "title": "Heating and cooling",
+      "summary": "Heating transfers energy to a substance; cooling transfers energy from a substance to its surroundings. Particle motion explains many heating and cooling changes.",
+      "keyPoints": [
+        "Heating a solid makes its particles vibrate more quickly.",
+        "Cooling means energy is transferred to the surroundings; energy is not destroyed.",
+        "Melting, boiling and evaporation are endothermic changes of state.",
+        "Freezing and condensing are exothermic changes of state.",
+        "Thermal conductors transfer thermal energy quickly.",
+        "Thermal insulators transfer thermal energy slowly.",
+        "A cooling curve shows temperature change over time."
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "Cold moves into an object.",
+          "correct": "Thermal energy transfers from warmer places to cooler places.",
+          "why": "There is no separate “cold energy”."
+        },
+        {
+          "wrong": "Insulation makes heat.",
+          "correct": "Insulation reduces the rate of thermal energy transfer.",
+          "why": "It helps keep something warm by slowing energy loss."
+        },
+        {
+          "wrong": "Energy disappears when something cools.",
+          "correct": "Energy is transferred to the surroundings.",
+          "why": "Energy is conserved."
+        }
+      ],
+      "example": {
+        "question": "Why does a hot drink cool fastest at first?",
+        "answer": "The temperature difference between the drink and surroundings is greatest at first."
+      },
+      "explanation": "Use particle language for conduction and temperature change. Use energy-transfer language for changes of state and cooling curves.",
+      "memoryHook": "Hot to cold: energy transfers from warmer to cooler surroundings.",
+      "selfCheck": "Can you sort melting, boiling, evaporation, freezing and condensing into endothermic or exothermic?",
+      "sentenceStarter": "Energy is transferred from ___ to ___, so ___.",
+      "practicePrompt": "Answer one particle explanation and one cooling-curve question."
+    },
+    {
+      "id": "9F-periodic-table-bridge",
+      "unit": "9F",
+      "objective": "9F-periodic-table-bridge",
+      "title": "Periodic table bridge",
+      "summary": "The periodic table arranges elements in order of proton number. Groups and periods help scientists see patterns in properties and reactivity.",
+      "keyPoints": [
+        "Arrangement of elements in order of proton number.",
+        "Atoms contain neutrons and protons in a central nucleus and electrons around the outside of the nucleus.",
+        "The number of protons is the atomic number or proton number.",
+        "The number of neutrons and the number of protons in an atom is its mass number.",
+        "The vertical columns in the periodic table are groups and the rows are periods.",
+        "Elements in the same group often have similar chemical properties.",
+        "Metals are usually on the left and middle; non-metals are usually on the right."
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "Elements in the same period have the most similar properties.",
+          "correct": "Elements in the same group usually have similar chemical properties.",
+          "why": "Groups are vertical columns."
+        },
+        {
+          "wrong": "Mass number means number of electrons.",
+          "correct": "Mass number is protons plus neutrons.",
+          "why": "Electrons have very small mass compared with protons and neutrons."
+        },
+        {
+          "wrong": "Groups are rows.",
+          "correct": "Groups are vertical columns and periods are rows.",
+          "why": "This is exact revision-pack wording."
+        }
+      ],
+      "example": {
+        "question": "What are groups and periods?",
+        "answer": "The vertical columns in the periodic table are groups and the rows are periods."
+      },
+      "explanation": "This bridge topic reuses the revision-pack atomic-structure wording, then adds CGP-style group and trend practice.",
+      "memoryHook": "Group = goes down. Period = goes across.",
+      "selfCheck": "Can you identify atomic number, mass number, group and period from a periodic-table entry?",
+      "sentenceStarter": "Elements in the same group ___.",
+      "practicePrompt": "Use the exact revision-pack wording for groups, periods and atomic number."
+    },
+    {
+      "id": "9E-climate-bridge",
+      "unit": "9E",
+      "objective": "9E-climate-bridge",
+      "title": "Climate and greenhouse gases",
+      "summary": "Greenhouse gases help trap heat in the atmosphere. Human activities can add extra greenhouse gases, strengthening the greenhouse effect and contributing to global warming.",
+      "keyPoints": [
+        "A greenhouse gas is a gas that helps trap heat in the atmosphere, such as carbon dioxide.",
+        "The natural greenhouse effect helps keep Earth warm enough for life.",
+        "Burning fossil fuels releases carbon dioxide.",
+        "Global warming means an increase in Earth’s average surface temperature.",
+        "Climate change is about long-term patterns, not one hot or cold day.",
+        "Evidence includes long-term temperature data, ice cores and tree rings.",
+        "Reducing fossil fuel use can reduce carbon dioxide emissions."
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "The greenhouse effect is always bad.",
+          "correct": "The natural greenhouse effect is needed; extra greenhouse gases can strengthen it too much.",
+          "why": "The problem is the enhanced greenhouse effect."
+        },
+        {
+          "wrong": "One hot day proves global warming.",
+          "correct": "Climate change is judged using long-term patterns and many measurements.",
+          "why": "Weather is short-term; climate is long-term."
+        },
+        {
+          "wrong": "Only carbon dioxide matters.",
+          "correct": "Carbon dioxide is important, but other greenhouse gases also matter.",
+          "why": "Methane is another greenhouse gas."
+        }
+      ],
+      "example": {
+        "question": "How does burning fossil fuels link to climate?",
+        "answer": "It releases carbon dioxide, a greenhouse gas, which can strengthen the greenhouse effect."
+      },
+      "explanation": "Climate answers should separate weather from climate and link human activities to emissions, greenhouse gases, the greenhouse effect and global temperature.",
+      "memoryHook": "Fuels → CO₂ → stronger greenhouse effect → warming risk.",
+      "selfCheck": "Can you name two sources of evidence for global warming?",
+      "sentenceStarter": "Burning fossil fuels increases ___, which ___.",
+      "practicePrompt": "Answer one evidence card and one cause-effect climate card."
+    },
+    {
+      "id": "9F-chemical-energy-bridge",
+      "unit": "9F",
+      "objective": "9F-chemical-energy-bridge",
+      "title": "Chemical energy bridge",
+      "summary": "Exothermic reactions transfer energy to the surroundings and usually increase temperature. Endothermic reactions take in energy from the surroundings and usually decrease temperature.",
+      "keyPoints": [
+        "A reaction that transfers energy to the surroundings is exothermic.",
+        "A reaction that takes in energy from the surroundings is endothermic.",
+        "Exothermic reactions transfer energy into the surroundings and so increase the temperature around them.",
+        "Endothermic reactions transfer energy from the surroundings and so decrease the temperature around them.",
+        "Thermal decomposition reactions are endothermic examples from the revision sheet.",
+        "Combustion is usually exothermic.",
+        "Temperature-change evidence can classify a reaction."
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "Endothermic means a reaction makes cold energy.",
+          "correct": "Endothermic means energy is transferred from the surroundings to the reaction.",
+          "why": "The surroundings cool because they lose energy."
+        },
+        {
+          "wrong": "Temperature changes prove nothing in reactions.",
+          "correct": "Temperature changes are evidence of energy transfer.",
+          "why": "The direction of change helps identify exothermic or endothermic reactions."
+        },
+        {
+          "wrong": "Thermal decomposition is exothermic because it is heated.",
+          "correct": "Thermal decomposition is endothermic in the revision sheet.",
+          "why": "Energy is taken in to break down the compound."
+        }
+      ],
+      "example": {
+        "question": "A reaction changes from 20°C to 28°C. Classify it.",
+        "answer": "Exothermic: the surroundings/reaction mixture got warmer."
+      },
+      "explanation": "This bridge topic tightens existing 9E/9F revision-pack wording and adds direct temperature interpretation practice.",
+      "memoryHook": "Exo exits energy; Endo enters energy.",
+      "selfCheck": "Can you explain temperature rising or falling using surroundings?",
+      "sentenceStarter": "The reaction is ___ because the temperature ___.",
+      "practicePrompt": "Use the exact revision-pack wording for exothermic/endothermic definitions."
     }
   ],
   "mediaPolicy": "question cards use only required source-style media; conceptual images live in class notes.",

@@ -1,7 +1,7 @@
 window.YEAR9_CONTENT = {
-  "version": "1.37.0",
+  "version": "1.41.0",
   "title": "Year 9 Science End-of-Year Study",
-  "subtitle": "Guided revision with release-readiness QA, balanced questions and clean media assets",
+  "subtitle": "Guided revision aligned to the school study pack, with selected CGP KS3 bridge coverage deferred when not in the exam pack",
   "units": [
     {
       "id": "9A",
@@ -11,22 +11,22 @@ window.YEAR9_CONTENT = {
     {
       "id": "9B",
       "title": "9B Plant growth",
-      "theme": "Photosynthesis, plant adaptations, plant products, crops and food webs"
+      "theme": "Photosynthesis, plant adaptations, plant products, food production and revision-pack respiration links"
     },
     {
       "id": "9E",
       "title": "9E Making materials",
-      "theme": "Ceramics, polymers, composites, environmental impacts and recycling"
+      "theme": "Ceramics, polymers, composites, heating/cooling, climate impacts and recycling"
     },
     {
       "id": "9F",
       "title": "9F Reactivity and extraction",
-      "theme": "Chemical reactions, reactivity, energy changes, displacement and extracting metals"
+      "theme": "Chemical reactions, periodic table, reactivity, energy changes and extracting metals"
     },
     {
       "id": "9I",
       "title": "9I Forces and motion",
-      "theme": "Forces, energy, speed, levers, moments, simple machines and work done"
+      "theme": "Forces, pressure, energy, speed, levers, moments and work done"
     },
     {
       "id": "9J",
@@ -13950,6 +13950,2338 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Rounding numbers and significant figures",
       "learningObjectiveDescription": "Decimal places, significant figures and clean numerical answers in 9J calculations.",
       "noteId": "9J-rounding-numbers",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-001-I-pressure-define-pressure",
+      "unit": "9I",
+      "type": "Vocabulary",
+      "question": "Define: pressure",
+      "answer": "Pressure is the effect of a force acting over an area.",
+      "choices": [],
+      "explanation": "Pressure depends on both force and the area over which the force acts.",
+      "source": "CGP KS3 Science syllabus map Year 9 Topic 1 Pressure; Oak pressure/floating lessons",
+      "sourceExcerpt": "Pressure = force over area.",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/hidden-forces/lessons/pressure-at-different-depths-and-heights",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/hidden-forces/lessons/floating-mass-and-shape"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-PRESSURE",
+        "OAK-FLOATING"
+      ],
+      "level": 1,
+      "cue": "Use the words force and area.",
+      "tags": [
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "new-cgp-bridge-derived",
+      "learningObjective": "9I-pressure",
+      "learningObjectiveTitle": "Pressure in fluids",
+      "learningObjectiveDescription": "Pressure as force over area, pressure changes with depth and height, upthrust, floating and sinking.",
+      "noteId": "9I-pressure",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-002-I-pressure-define-upthrust",
+      "unit": "9I",
+      "type": "Vocabulary",
+      "question": "Define: upthrust",
+      "answer": "Upthrust is an upward force caused by pressure in a fluid.",
+      "choices": [],
+      "explanation": "In liquids and gases, pressure can create an upward force on an object.",
+      "source": "CGP KS3 Science syllabus map Year 9 Topic 1 Pressure; Oak pressure/floating lessons",
+      "sourceExcerpt": "Upthrust is a force acting upwards due to pressure.",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/hidden-forces/lessons/pressure-at-different-depths-and-heights",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/hidden-forces/lessons/floating-mass-and-shape"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-PRESSURE",
+        "OAK-FLOATING"
+      ],
+      "level": 1,
+      "cue": "Try to answer in full sentences before revealing the answer.",
+      "tags": [
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "new-cgp-bridge-derived",
+      "learningObjective": "9I-pressure",
+      "learningObjectiveTitle": "Pressure in fluids",
+      "learningObjectiveDescription": "Pressure as force over area, pressure changes with depth and height, upthrust, floating and sinking.",
+      "noteId": "9I-pressure",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-003-I-pressure-which-equation-links-pressure-force-and-area",
+      "unit": "9I",
+      "type": "Quick quiz",
+      "question": "Which equation links pressure, force and area?",
+      "answer": "B",
+      "choices": [
+        "A pressure = area ÷ force",
+        "B pressure = force ÷ area",
+        "C pressure = force × area",
+        "D pressure = mass ÷ volume"
+      ],
+      "explanation": "Pressure is force divided by area.",
+      "source": "CGP KS3 Science syllabus map Year 9 Topic 1 Pressure; Oak pressure/floating lessons",
+      "sourceExcerpt": "Pressure = force ÷ area.",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/hidden-forces/lessons/pressure-at-different-depths-and-heights",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/hidden-forces/lessons/floating-mass-and-shape"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-PRESSURE",
+        "OAK-FLOATING"
+      ],
+      "level": 1,
+      "cue": "",
+      "tags": [
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "new-cgp-bridge-derived",
+      "learningObjective": "9I-pressure",
+      "learningObjectiveTitle": "Pressure in fluids",
+      "learningObjectiveDescription": "Pressure as force over area, pressure changes with depth and height, upthrust, floating and sinking.",
+      "noteId": "9I-pressure",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-004-I-pressure-calculate-the-pressure-when-a-120-n-force-acts-on-an-area-of",
+      "unit": "9I",
+      "type": "Calculation",
+      "question": "Calculate the pressure when a 120 N force acts on an area of 0.50 m².",
+      "answer": "240 Pa",
+      "choices": [],
+      "explanation": "Pressure = force ÷ area = 120 ÷ 0.50 = 240 Pa.",
+      "source": "CGP KS3 Science syllabus map Year 9 Topic 1 Pressure; Oak pressure/floating lessons",
+      "sourceExcerpt": "",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/hidden-forces/lessons/pressure-at-different-depths-and-heights",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/hidden-forces/lessons/floating-mass-and-shape"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-PRESSURE",
+        "OAK-FLOATING"
+      ],
+      "level": 2,
+      "cue": "Write the equation first, then substitute values.",
+      "tags": [
+        "calculation",
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "new-cgp-bridge-derived",
+      "learningObjective": "9I-pressure",
+      "learningObjectiveTitle": "Pressure in fluids",
+      "learningObjectiveDescription": "Pressure as force over area, pressure changes with depth and height, upthrust, floating and sinking.",
+      "noteId": "9I-pressure",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-005-I-pressure-a-force-of-60-n-produces-a-pressure-of-300-pa-calculate-the-",
+      "unit": "9I",
+      "type": "Calculation",
+      "question": "A force of 60 N produces a pressure of 300 Pa. Calculate the area.",
+      "answer": "0.20 m²",
+      "choices": [],
+      "explanation": "Area = force ÷ pressure = 60 ÷ 300 = 0.20 m².",
+      "source": "CGP KS3 Science syllabus map Year 9 Topic 1 Pressure; Oak pressure/floating lessons",
+      "sourceExcerpt": "",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/hidden-forces/lessons/pressure-at-different-depths-and-heights",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/hidden-forces/lessons/floating-mass-and-shape"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-PRESSURE",
+        "OAK-FLOATING"
+      ],
+      "level": 3,
+      "cue": "Rearrange pressure = force ÷ area.",
+      "tags": [
+        "calculation",
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "new-cgp-bridge-derived",
+      "learningObjective": "9I-pressure",
+      "learningObjectiveTitle": "Pressure in fluids",
+      "learningObjectiveDescription": "Pressure as force over area, pressure changes with depth and height, upthrust, floating and sinking.",
+      "noteId": "9I-pressure",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-006-I-pressure-describe-how-liquid-pressure-changes-with-depth",
+      "unit": "9I",
+      "type": "Progress check",
+      "question": "Describe how liquid pressure changes with depth.",
+      "answer": "Liquid pressure increases with depth because there is more liquid above pushing down.",
+      "choices": [],
+      "explanation": "Deeper water has more water above it, so the pressure is greater.",
+      "source": "CGP KS3 Science syllabus map Year 9 Topic 1 Pressure; Oak pressure/floating lessons",
+      "sourceExcerpt": "Pressure in liquid increases with depth.",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/hidden-forces/lessons/pressure-at-different-depths-and-heights",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/hidden-forces/lessons/floating-mass-and-shape"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-PRESSURE",
+        "OAK-FLOATING"
+      ],
+      "level": 2,
+      "cue": "Try to answer in full sentences before revealing the answer.",
+      "tags": [
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "new-cgp-bridge-derived",
+      "learningObjective": "9I-pressure",
+      "learningObjectiveTitle": "Pressure in fluids",
+      "learningObjectiveDescription": "Pressure as force over area, pressure changes with depth and height, upthrust, floating and sinking.",
+      "noteId": "9I-pressure",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-007-I-pressure-why-does-a-dam-wall-need-to-be-stronger-near-the-bottom",
+      "unit": "9I",
+      "type": "Apply check",
+      "question": "Why does a dam wall need to be stronger near the bottom?",
+      "answer": "The pressure is greater at greater depth, so the bottom of the dam must resist a larger force from the water.",
+      "choices": [],
+      "explanation": "A good answer links depth to pressure, then pressure to force on the dam.",
+      "source": "CGP KS3 Science syllabus map Year 9 Topic 1 Pressure; Oak pressure/floating lessons",
+      "sourceExcerpt": "",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/hidden-forces/lessons/pressure-at-different-depths-and-heights",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/hidden-forces/lessons/floating-mass-and-shape"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-PRESSURE",
+        "OAK-FLOATING"
+      ],
+      "level": 3,
+      "cue": "Try to answer in full sentences before revealing the answer.",
+      "tags": [
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "new-cgp-bridge-derived",
+      "learningObjective": "9I-pressure",
+      "learningObjectiveTitle": "Pressure in fluids",
+      "learningObjectiveDescription": "Pressure as force over area, pressure changes with depth and height, upthrust, floating and sinking.",
+      "noteId": "9I-pressure",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-008-I-pressure-a-drawing-shows-arrows-from-water-pushing-sideways-on-a-deep",
+      "unit": "9I",
+      "type": "Quick quiz",
+      "question": "A drawing shows arrows from water pushing sideways on a deep wall. Which arrows should usually be longest?",
+      "answer": "D",
+      "choices": [
+        "A all arrows must be the same length",
+        "B the arrows near the top",
+        "C the arrows in the middle only",
+        "D the arrows near the bottom"
+      ],
+      "explanation": "Water pressure increases with depth, so force arrows are larger lower down.",
+      "source": "CGP KS3 Science syllabus map Year 9 Topic 1 Pressure; Oak pressure/floating lessons",
+      "sourceExcerpt": "",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/hidden-forces/lessons/pressure-at-different-depths-and-heights",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/hidden-forces/lessons/floating-mass-and-shape"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-PRESSURE",
+        "OAK-FLOATING"
+      ],
+      "level": 2,
+      "cue": "",
+      "tags": [
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "new-cgp-bridge-derived",
+      "learningObjective": "9I-pressure",
+      "learningObjectiveTitle": "Pressure in fluids",
+      "learningObjectiveDescription": "Pressure as force over area, pressure changes with depth and height, upthrust, floating and sinking.",
+      "noteId": "9I-pressure",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-009-I-pressure-describe-how-atmospheric-pressure-changes-with-height",
+      "unit": "9I",
+      "type": "Progress check",
+      "question": "Describe how atmospheric pressure changes with height.",
+      "answer": "Atmospheric pressure decreases with height because there is less air above pushing down.",
+      "choices": [],
+      "explanation": "At higher altitude there is less air above you, so the pressure is lower.",
+      "source": "CGP KS3 Science syllabus map Year 9 Topic 1 Pressure; Oak pressure/floating lessons",
+      "sourceExcerpt": "",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/hidden-forces/lessons/pressure-at-different-depths-and-heights",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/hidden-forces/lessons/floating-mass-and-shape"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-PRESSURE",
+        "OAK-FLOATING"
+      ],
+      "level": 2,
+      "cue": "Try to answer in full sentences before revealing the answer.",
+      "tags": [
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "new-cgp-bridge-derived",
+      "learningObjective": "9I-pressure",
+      "learningObjectiveTitle": "Pressure in fluids",
+      "learningObjectiveDescription": "Pressure as force over area, pressure changes with depth and height, upthrust, floating and sinking.",
+      "noteId": "9I-pressure",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-010-I-pressure-why-can-a-large-ship-float-even-though-it-is-made-from-dense",
+      "unit": "9I",
+      "type": "Apply check",
+      "question": "Why can a large ship float even though it is made from dense metal?",
+      "answer": "Its hollow shape displaces a large volume of water, so the upthrust can balance the ship’s weight.",
+      "choices": [],
+      "explanation": "Floating depends on the whole object and the water it displaces, not just the material alone.",
+      "source": "CGP KS3 Science syllabus map Year 9 Topic 1 Pressure; Oak pressure/floating lessons",
+      "sourceExcerpt": "",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/hidden-forces/lessons/pressure-at-different-depths-and-heights",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/hidden-forces/lessons/floating-mass-and-shape"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-PRESSURE",
+        "OAK-FLOATING"
+      ],
+      "level": 3,
+      "cue": "Try to answer in full sentences before revealing the answer.",
+      "tags": [
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "new-cgp-bridge-derived",
+      "learningObjective": "9I-pressure",
+      "learningObjectiveTitle": "Pressure in fluids",
+      "learningObjectiveDescription": "Pressure as force over area, pressure changes with depth and height, upthrust, floating and sinking.",
+      "noteId": "9I-pressure",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-011-I-pressure-what-does-it-mean-if-an-object-floats",
+      "unit": "9I",
+      "type": "Progress check",
+      "question": "What does it mean if an object floats?",
+      "answer": "The upthrust on the object balances its weight, so there is no resultant vertical force.",
+      "choices": [],
+      "explanation": "When forces are balanced, the object does not accelerate up or down.",
+      "source": "CGP KS3 Science syllabus map Year 9 Topic 1 Pressure; Oak pressure/floating lessons",
+      "sourceExcerpt": "",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/hidden-forces/lessons/pressure-at-different-depths-and-heights",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/hidden-forces/lessons/floating-mass-and-shape"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-PRESSURE",
+        "OAK-FLOATING"
+      ],
+      "level": 2,
+      "cue": "Try to answer in full sentences before revealing the answer.",
+      "tags": [
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "new-cgp-bridge-derived",
+      "learningObjective": "9I-pressure",
+      "learningObjectiveTitle": "Pressure in fluids",
+      "learningObjectiveDescription": "Pressure as force over area, pressure changes with depth and height, upthrust, floating and sinking.",
+      "noteId": "9I-pressure",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-012-I-pressure-which-change-would-increase-the-pressure-made-by-the-same-fo",
+      "unit": "9I",
+      "type": "Quick quiz",
+      "question": "Which change would increase the pressure made by the same force?",
+      "answer": "C",
+      "choices": [
+        "A spreading the force over a larger area",
+        "B reducing the force and keeping area the same",
+        "C spreading the force over a smaller area",
+        "D making the surface smoother"
+      ],
+      "explanation": "For the same force, a smaller area gives a larger pressure.",
+      "source": "CGP KS3 Science syllabus map Year 9 Topic 1 Pressure; Oak pressure/floating lessons",
+      "sourceExcerpt": "",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/hidden-forces/lessons/pressure-at-different-depths-and-heights",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/hidden-forces/lessons/floating-mass-and-shape"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-PRESSURE",
+        "OAK-FLOATING"
+      ],
+      "level": 2,
+      "cue": "",
+      "tags": [
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "new-cgp-bridge-derived",
+      "learningObjective": "9I-pressure",
+      "learningObjectiveTitle": "Pressure in fluids",
+      "learningObjectiveDescription": "Pressure as force over area, pressure changes with depth and height, upthrust, floating and sinking.",
+      "noteId": "9I-pressure",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-013-I-pressure-why-do-snowshoes-help-a-person-walk-on-soft-snow",
+      "unit": "9I",
+      "type": "Apply check",
+      "question": "Why do snowshoes help a person walk on soft snow?",
+      "answer": "Snowshoes spread the person’s weight over a larger area, so the pressure on the snow is lower.",
+      "choices": [],
+      "explanation": "Lower pressure makes the person less likely to sink into the snow.",
+      "source": "CGP KS3 Science syllabus map Year 9 Topic 1 Pressure; Oak pressure/floating lessons",
+      "sourceExcerpt": "",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/hidden-forces/lessons/pressure-at-different-depths-and-heights",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/hidden-forces/lessons/floating-mass-and-shape"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-PRESSURE",
+        "OAK-FLOATING"
+      ],
+      "level": 2,
+      "cue": "Try to answer in full sentences before revealing the answer.",
+      "tags": [
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "new-cgp-bridge-derived",
+      "learningObjective": "9I-pressure",
+      "learningObjectiveTitle": "Pressure in fluids",
+      "learningObjectiveDescription": "Pressure as force over area, pressure changes with depth and height, upthrust, floating and sinking.",
+      "noteId": "9I-pressure",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-014-I-pressure-a-block-underwater-has-equal-sized-top-and-bottom-faces-expl",
+      "unit": "9I",
+      "type": "Challenge check",
+      "question": "A block underwater has equal-sized top and bottom faces. Explain why water can produce an upward resultant force on it.",
+      "answer": "The bottom face is deeper, so the pressure on the bottom is greater than the pressure on the top. This produces a larger upward force than downward force, giving upthrust.",
+      "choices": [],
+      "explanation": "This is the key pressure-difference explanation for upthrust.",
+      "source": "CGP KS3 Science syllabus map Year 9 Topic 1 Pressure; Oak pressure/floating lessons",
+      "sourceExcerpt": "",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/hidden-forces/lessons/pressure-at-different-depths-and-heights",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/hidden-forces/lessons/floating-mass-and-shape"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-PRESSURE",
+        "OAK-FLOATING"
+      ],
+      "level": 4,
+      "cue": "Try to answer in full sentences before revealing the answer.",
+      "tags": [
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "new-cgp-bridge-derived",
+      "learningObjective": "9I-pressure",
+      "learningObjectiveTitle": "Pressure in fluids",
+      "learningObjectiveDescription": "Pressure as force over area, pressure changes with depth and height, upthrust, floating and sinking.",
+      "noteId": "9I-pressure",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-015-I-pressure-correct-the-misconception-liquid-pressure-at-the-bottom-depe",
+      "unit": "9I",
+      "type": "Progress check",
+      "question": "Correct the misconception: “Liquid pressure at the bottom depends mainly on container width.”",
+      "answer": "At the same depth in the same liquid, pressure is the same. Pressure depends mainly on depth and the liquid, not just container width.",
+      "choices": [],
+      "explanation": "A wider container may contain more water, but pressure at a depth is not decided by width alone.",
+      "source": "CGP KS3 Science syllabus map Year 9 Topic 1 Pressure; Oak pressure/floating lessons",
+      "sourceExcerpt": "",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/hidden-forces/lessons/pressure-at-different-depths-and-heights",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/hidden-forces/lessons/floating-mass-and-shape"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-PRESSURE",
+        "OAK-FLOATING"
+      ],
+      "level": 3,
+      "cue": "Try to answer in full sentences before revealing the answer.",
+      "tags": [
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "new-cgp-bridge-derived",
+      "learningObjective": "9I-pressure",
+      "learningObjectiveTitle": "Pressure in fluids",
+      "learningObjectiveDescription": "Pressure as force over area, pressure changes with depth and height, upthrust, floating and sinking.",
+      "noteId": "9I-pressure",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-046-E-heating-cooling-define-thermal-conductor",
+      "unit": "9E",
+      "type": "Vocabulary",
+      "question": "Define: thermal conductor",
+      "answer": "A thermal conductor is a material that transfers thermal energy quickly.",
+      "choices": [],
+      "explanation": "Metals are usually good thermal conductors.",
+      "source": "CGP KS3 Science syllabus map Year 9 Topic 5 Heating and cooling; Oak heating/cooling lessons",
+      "sourceExcerpt": "",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/heating-and-cooling/lessons"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-HEATING"
+      ],
+      "level": 1,
+      "cue": "Try to answer in full sentences before revealing the answer.",
+      "tags": [
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "new-cgp-bridge-derived",
+      "learningObjective": "9E-heating-cooling",
+      "learningObjectiveTitle": "Heating and cooling",
+      "learningObjectiveDescription": "Energy transfer during heating and cooling, changes of state, conductors, insulators and cooling curves.",
+      "noteId": "9E-heating-cooling",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-047-E-heating-cooling-define-thermal-insulator",
+      "unit": "9E",
+      "type": "Vocabulary",
+      "question": "Define: thermal insulator",
+      "answer": "A thermal insulator is a material that transfers thermal energy slowly.",
+      "choices": [],
+      "explanation": "Insulators reduce the rate of energy transfer.",
+      "source": "CGP KS3 Science syllabus map Year 9 Topic 5 Heating and cooling; Oak heating/cooling lessons",
+      "sourceExcerpt": "",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/heating-and-cooling/lessons"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-HEATING"
+      ],
+      "level": 1,
+      "cue": "Try to answer in full sentences before revealing the answer.",
+      "tags": [
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "new-cgp-bridge-derived",
+      "learningObjective": "9E-heating-cooling",
+      "learningObjectiveTitle": "Heating and cooling",
+      "learningObjectiveDescription": "Energy transfer during heating and cooling, changes of state, conductors, insulators and cooling curves.",
+      "noteId": "9E-heating-cooling",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-048-E-heating-cooling-what-happens-to-particles-in-a-solid-when-it-is-heated",
+      "unit": "9E",
+      "type": "Progress check",
+      "question": "What happens to particles in a solid when it is heated?",
+      "answer": "The particles vibrate more quickly because energy is transferred to them.",
+      "choices": [],
+      "explanation": "Heating increases the energy in the particles’ motion.",
+      "source": "CGP KS3 Science syllabus map Year 9 Topic 5 Heating and cooling; Oak heating/cooling lessons",
+      "sourceExcerpt": "",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/heating-and-cooling/lessons"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-HEATING"
+      ],
+      "level": 2,
+      "cue": "Try to answer in full sentences before revealing the answer.",
+      "tags": [
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "new-cgp-bridge-derived",
+      "learningObjective": "9E-heating-cooling",
+      "learningObjectiveTitle": "Heating and cooling",
+      "learningObjectiveDescription": "Energy transfer during heating and cooling, changes of state, conductors, insulators and cooling curves.",
+      "noteId": "9E-heating-cooling",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-049-E-heating-cooling-what-happens-to-particles-in-a-hot-object-as-it-cools",
+      "unit": "9E",
+      "type": "Progress check",
+      "question": "What happens to particles in a hot object as it cools?",
+      "answer": "The particles move or vibrate less quickly as energy is transferred to the surroundings.",
+      "choices": [],
+      "explanation": "Energy is not destroyed; it spreads to the surroundings.",
+      "source": "CGP KS3 Science syllabus map Year 9 Topic 5 Heating and cooling; Oak heating/cooling lessons",
+      "sourceExcerpt": "",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/heating-and-cooling/lessons"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-HEATING"
+      ],
+      "level": 2,
+      "cue": "Try to answer in full sentences before revealing the answer.",
+      "tags": [
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "new-cgp-bridge-derived",
+      "learningObjective": "9E-heating-cooling",
+      "learningObjectiveTitle": "Heating and cooling",
+      "learningObjectiveDescription": "Energy transfer during heating and cooling, changes of state, conductors, insulators and cooling curves.",
+      "noteId": "9E-heating-cooling",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-050-E-heating-cooling-which-changes-of-state-are-endothermic",
+      "unit": "9E",
+      "type": "Quick quiz",
+      "question": "Which changes of state are endothermic?",
+      "answer": "A",
+      "choices": [
+        "A melting, boiling and evaporation",
+        "B freezing and condensing",
+        "C freezing and melting only",
+        "D condensing and boiling only"
+      ],
+      "explanation": "Melting, boiling and evaporation take in energy from the surroundings.",
+      "source": "CGP KS3 Science syllabus map Year 9 Topic 5 Heating and cooling; Oak heating/cooling lessons",
+      "sourceExcerpt": "",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/heating-and-cooling/lessons"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-HEATING"
+      ],
+      "level": 2,
+      "cue": "",
+      "tags": [
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "new-cgp-bridge-derived",
+      "learningObjective": "9E-heating-cooling",
+      "learningObjectiveTitle": "Heating and cooling",
+      "learningObjectiveDescription": "Energy transfer during heating and cooling, changes of state, conductors, insulators and cooling curves.",
+      "noteId": "9E-heating-cooling",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-051-E-heating-cooling-which-changes-of-state-are-exothermic",
+      "unit": "9E",
+      "type": "Quick quiz",
+      "question": "Which changes of state are exothermic?",
+      "answer": "C",
+      "choices": [
+        "A boiling and evaporation",
+        "B melting and evaporation",
+        "C freezing and condensing",
+        "D melting and boiling"
+      ],
+      "explanation": "Freezing and condensing transfer energy out to the surroundings.",
+      "source": "CGP KS3 Science syllabus map Year 9 Topic 5 Heating and cooling; Oak heating/cooling lessons",
+      "sourceExcerpt": "",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/heating-and-cooling/lessons"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-HEATING"
+      ],
+      "level": 2,
+      "cue": "",
+      "tags": [
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "new-cgp-bridge-derived",
+      "learningObjective": "9E-heating-cooling",
+      "learningObjectiveTitle": "Heating and cooling",
+      "learningObjectiveDescription": "Energy transfer during heating and cooling, changes of state, conductors, insulators and cooling curves.",
+      "noteId": "9E-heating-cooling",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-052-E-heating-cooling-describe-conduction-using-particles",
+      "unit": "9E",
+      "type": "Progress check",
+      "question": "Describe conduction using particles.",
+      "answer": "In conduction, vibrating particles pass energy to neighbouring particles through bonds or collisions.",
+      "choices": [],
+      "explanation": "Conduction is strong in many solids because particles are close together.",
+      "source": "CGP KS3 Science syllabus map Year 9 Topic 5 Heating and cooling; Oak heating/cooling lessons",
+      "sourceExcerpt": "",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/heating-and-cooling/lessons"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-HEATING"
+      ],
+      "level": 3,
+      "cue": "Try to answer in full sentences before revealing the answer.",
+      "tags": [
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "new-cgp-bridge-derived",
+      "learningObjective": "9E-heating-cooling",
+      "learningObjectiveTitle": "Heating and cooling",
+      "learningObjectiveDescription": "Energy transfer during heating and cooling, changes of state, conductors, insulators and cooling curves.",
+      "noteId": "9E-heating-cooling",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-053-E-heating-cooling-why-does-a-metal-spoon-in-hot-soup-become-hot-quickly",
+      "unit": "9E",
+      "type": "Apply check",
+      "question": "Why does a metal spoon in hot soup become hot quickly?",
+      "answer": "Metal is a good thermal conductor, so energy is transferred quickly through the spoon by conduction.",
+      "choices": [],
+      "explanation": "This links material property to energy transfer.",
+      "source": "CGP KS3 Science syllabus map Year 9 Topic 5 Heating and cooling; Oak heating/cooling lessons",
+      "sourceExcerpt": "",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/heating-and-cooling/lessons"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-HEATING"
+      ],
+      "level": 2,
+      "cue": "Try to answer in full sentences before revealing the answer.",
+      "tags": [
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "new-cgp-bridge-derived",
+      "learningObjective": "9E-heating-cooling",
+      "learningObjectiveTitle": "Heating and cooling",
+      "learningObjectiveDescription": "Energy transfer during heating and cooling, changes of state, conductors, insulators and cooling curves.",
+      "noteId": "9E-heating-cooling",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-054-E-heating-cooling-why-does-a-plastic-handle-help-protect-your-hand-from-a-hot-",
+      "unit": "9E",
+      "type": "Apply check",
+      "question": "Why does a plastic handle help protect your hand from a hot pan?",
+      "answer": "Plastic is a thermal insulator, so it transfers thermal energy slowly from the hot pan to your hand.",
+      "choices": [],
+      "explanation": "The handle reduces the rate of energy transfer.",
+      "source": "CGP KS3 Science syllabus map Year 9 Topic 5 Heating and cooling; Oak heating/cooling lessons",
+      "sourceExcerpt": "",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/heating-and-cooling/lessons"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-HEATING"
+      ],
+      "level": 2,
+      "cue": "Try to answer in full sentences before revealing the answer.",
+      "tags": [
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "new-cgp-bridge-derived",
+      "learningObjective": "9E-heating-cooling",
+      "learningObjectiveTitle": "Heating and cooling",
+      "learningObjectiveDescription": "Energy transfer during heating and cooling, changes of state, conductors, insulators and cooling curves.",
+      "noteId": "9E-heating-cooling",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-055-E-heating-cooling-what-does-a-cooling-curve-show",
+      "unit": "9E",
+      "type": "Progress check",
+      "question": "What does a cooling curve show?",
+      "answer": "A cooling curve shows how the temperature of an object changes with time as it cools.",
+      "choices": [],
+      "explanation": "A steeper section means a faster cooling rate.",
+      "source": "CGP KS3 Science syllabus map Year 9 Topic 5 Heating and cooling; Oak heating/cooling lessons",
+      "sourceExcerpt": "",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/heating-and-cooling/lessons"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-HEATING"
+      ],
+      "level": 1,
+      "cue": "Try to answer in full sentences before revealing the answer.",
+      "tags": [
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "new-cgp-bridge-derived",
+      "learningObjective": "9E-heating-cooling",
+      "learningObjectiveTitle": "Heating and cooling",
+      "learningObjectiveDescription": "Energy transfer during heating and cooling, changes of state, conductors, insulators and cooling curves.",
+      "noteId": "9E-heating-cooling",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-056-E-heating-cooling-why-does-a-very-hot-drink-cool-faster-at-first-than-later",
+      "unit": "9E",
+      "type": "Apply check",
+      "question": "Why does a very hot drink cool faster at first than later?",
+      "answer": "At first the temperature difference between the drink and surroundings is larger, so energy is transferred faster.",
+      "choices": [],
+      "explanation": "As the drink gets closer to room temperature, the cooling rate decreases.",
+      "source": "CGP KS3 Science syllabus map Year 9 Topic 5 Heating and cooling; Oak heating/cooling lessons",
+      "sourceExcerpt": "",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/heating-and-cooling/lessons"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-HEATING"
+      ],
+      "level": 3,
+      "cue": "Try to answer in full sentences before revealing the answer.",
+      "tags": [
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "new-cgp-bridge-derived",
+      "learningObjective": "9E-heating-cooling",
+      "learningObjectiveTitle": "Heating and cooling",
+      "learningObjectiveDescription": "Energy transfer during heating and cooling, changes of state, conductors, insulators and cooling curves.",
+      "noteId": "9E-heating-cooling",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-057-E-heating-cooling-correct-the-misconception-energy-disappears-when-an-object-c",
+      "unit": "9E",
+      "type": "Progress check",
+      "question": "Correct the misconception: “Energy disappears when an object cools.”",
+      "answer": "Energy is transferred from the hot object to the surroundings; it is not destroyed.",
+      "choices": [],
+      "explanation": "This uses conservation of energy.",
+      "source": "CGP KS3 Science syllabus map Year 9 Topic 5 Heating and cooling; Oak heating/cooling lessons",
+      "sourceExcerpt": "",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/heating-and-cooling/lessons"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-HEATING"
+      ],
+      "level": 2,
+      "cue": "Try to answer in full sentences before revealing the answer.",
+      "tags": [
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "new-cgp-bridge-derived",
+      "learningObjective": "9E-heating-cooling",
+      "learningObjectiveTitle": "Heating and cooling",
+      "learningObjectiveDescription": "Energy transfer during heating and cooling, changes of state, conductors, insulators and cooling curves.",
+      "noteId": "9E-heating-cooling",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-058-E-heating-cooling-which-material-would-usually-be-best-for-reducing-heat-loss-",
+      "unit": "9E",
+      "type": "Quick quiz",
+      "question": "Which material would usually be best for reducing heat loss from a mug?",
+      "answer": "D",
+      "choices": [
+        "A copper",
+        "B aluminium",
+        "C iron",
+        "D foam"
+      ],
+      "explanation": "Foam contains trapped air and is a good thermal insulator.",
+      "source": "CGP KS3 Science syllabus map Year 9 Topic 5 Heating and cooling; Oak heating/cooling lessons",
+      "sourceExcerpt": "",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/heating-and-cooling/lessons"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-HEATING"
+      ],
+      "level": 2,
+      "cue": "",
+      "tags": [
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "new-cgp-bridge-derived",
+      "learningObjective": "9E-heating-cooling",
+      "learningObjectiveTitle": "Heating and cooling",
+      "learningObjectiveDescription": "Energy transfer during heating and cooling, changes of state, conductors, insulators and cooling curves.",
+      "noteId": "9E-heating-cooling",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-059-E-heating-cooling-explain-why-insulation-does-not-make-heat-it-helps-keep-some",
+      "unit": "9E",
+      "type": "Challenge check",
+      "question": "Explain why insulation does not “make heat”; it helps keep something warm.",
+      "answer": "Insulation slows thermal energy transfer from the warm object to colder surroundings. It reduces energy loss but does not create energy.",
+      "choices": [],
+      "explanation": "This addresses a common insulation misconception.",
+      "source": "CGP KS3 Science syllabus map Year 9 Topic 5 Heating and cooling; Oak heating/cooling lessons",
+      "sourceExcerpt": "",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/heating-and-cooling/lessons"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-HEATING"
+      ],
+      "level": 3,
+      "cue": "Try to answer in full sentences before revealing the answer.",
+      "tags": [
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "new-cgp-bridge-derived",
+      "learningObjective": "9E-heating-cooling",
+      "learningObjectiveTitle": "Heating and cooling",
+      "learningObjectiveDescription": "Energy transfer during heating and cooling, changes of state, conductors, insulators and cooling curves.",
+      "noteId": "9E-heating-cooling",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-060-F-periodic-table-bridge-define-periodic-table",
+      "unit": "9F",
+      "type": "Vocabulary",
+      "question": "Define: periodic table",
+      "answer": "Arrangement of elements in order of proton number.",
+      "choices": [],
+      "explanation": "This uses the existing revision-pack definition.",
+      "source": "9F Summary sheet p2 Atomic structure; CGP KS3 Year 9 Topic 7 Periodic table; Oak periodic table lessons",
+      "sourceExcerpt": "Arrangement of elements in order of proton number.",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/patterns-in-the-periodic-table/lessons",
+        "local:data/year9-content.js and data/year9-notes.js"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-PERIODIC",
+        "LOCAL-REVISION"
+      ],
+      "level": 1,
+      "cue": "Try to answer in full sentences before revealing the answer.",
+      "tags": [
+        "revision-pack-alignment",
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-text",
+      "learningObjective": "9F-periodic-table-bridge",
+      "learningObjectiveTitle": "Periodic table bridge",
+      "learningObjectiveDescription": "Atomic structure, proton number, groups, periods, metals, non-metals and group trends.",
+      "noteId": "9F-periodic-table-bridge",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-061-F-periodic-table-bridge-what-does-an-atom-contain",
+      "unit": "9F",
+      "type": "Progress check",
+      "question": "What does an atom contain?",
+      "answer": "Atoms contain neutrons and protons in a central nucleus and electrons around the outside of the nucleus.",
+      "choices": [],
+      "explanation": "This uses the existing revision-pack wording.",
+      "source": "9F Summary sheet p2 Atomic structure; CGP KS3 Year 9 Topic 7 Periodic table; Oak periodic table lessons",
+      "sourceExcerpt": "Atoms contain neutrons and protons in a central nucleus and electrons around the outside of the nucleus.",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/patterns-in-the-periodic-table/lessons",
+        "local:data/year9-content.js and data/year9-notes.js"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-PERIODIC",
+        "LOCAL-REVISION"
+      ],
+      "level": 2,
+      "cue": "Try to answer in full sentences before revealing the answer.",
+      "tags": [
+        "revision-pack-alignment",
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9F-periodic-table-bridge",
+      "learningObjectiveTitle": "Periodic table bridge",
+      "learningObjectiveDescription": "Atomic structure, proton number, groups, periods, metals, non-metals and group trends.",
+      "noteId": "9F-periodic-table-bridge",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-062-F-periodic-table-bridge-what-is-the-atomic-number-or-proton-number",
+      "unit": "9F",
+      "type": "Progress check",
+      "question": "What is the atomic number or proton number?",
+      "answer": "The number of protons is the atomic number or proton number.",
+      "choices": [],
+      "explanation": "This uses the existing revision-pack wording.",
+      "source": "9F Summary sheet p2 Atomic structure; CGP KS3 Year 9 Topic 7 Periodic table; Oak periodic table lessons",
+      "sourceExcerpt": "The number of protons is the atomic number or proton number.",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/patterns-in-the-periodic-table/lessons",
+        "local:data/year9-content.js and data/year9-notes.js"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-PERIODIC",
+        "LOCAL-REVISION"
+      ],
+      "level": 1,
+      "cue": "Try to answer in full sentences before revealing the answer.",
+      "tags": [
+        "revision-pack-alignment",
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9F-periodic-table-bridge",
+      "learningObjectiveTitle": "Periodic table bridge",
+      "learningObjectiveDescription": "Atomic structure, proton number, groups, periods, metals, non-metals and group trends.",
+      "noteId": "9F-periodic-table-bridge",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-063-F-periodic-table-bridge-what-is-the-mass-number-of-an-atom",
+      "unit": "9F",
+      "type": "Progress check",
+      "question": "What is the mass number of an atom?",
+      "answer": "The number of neutrons and the number of protons in an atom is its mass number.",
+      "choices": [],
+      "explanation": "This uses the existing revision-pack wording.",
+      "source": "9F Summary sheet p2 Atomic structure; CGP KS3 Year 9 Topic 7 Periodic table; Oak periodic table lessons",
+      "sourceExcerpt": "The number of neutrons and the number of protons in an atom is its mass number.",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/patterns-in-the-periodic-table/lessons",
+        "local:data/year9-content.js and data/year9-notes.js"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-PERIODIC",
+        "LOCAL-REVISION"
+      ],
+      "level": 2,
+      "cue": "Try to answer in full sentences before revealing the answer.",
+      "tags": [
+        "revision-pack-alignment",
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9F-periodic-table-bridge",
+      "learningObjectiveTitle": "Periodic table bridge",
+      "learningObjectiveDescription": "Atomic structure, proton number, groups, periods, metals, non-metals and group trends.",
+      "noteId": "9F-periodic-table-bridge",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-064-F-periodic-table-bridge-what-are-groups-and-periods-in-the-periodic-table",
+      "unit": "9F",
+      "type": "Progress check",
+      "question": "What are groups and periods in the periodic table?",
+      "answer": "The vertical columns in the periodic table are groups and the rows are periods.",
+      "choices": [],
+      "explanation": "This uses the existing revision-pack wording.",
+      "source": "9F Summary sheet p2 Atomic structure; CGP KS3 Year 9 Topic 7 Periodic table; Oak periodic table lessons",
+      "sourceExcerpt": "The vertical columns in the periodic table are groups and the rows are periods.",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/patterns-in-the-periodic-table/lessons",
+        "local:data/year9-content.js and data/year9-notes.js"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-PERIODIC",
+        "LOCAL-REVISION"
+      ],
+      "level": 1,
+      "cue": "Try to answer in full sentences before revealing the answer.",
+      "tags": [
+        "revision-pack-alignment",
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9F-periodic-table-bridge",
+      "learningObjectiveTitle": "Periodic table bridge",
+      "learningObjectiveDescription": "Atomic structure, proton number, groups, periods, metals, non-metals and group trends.",
+      "noteId": "9F-periodic-table-bridge",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-065-F-periodic-table-bridge-elements-in-the-same-group-usually-have",
+      "unit": "9F",
+      "type": "Quick quiz",
+      "question": "Elements in the same group usually have:",
+      "answer": "B",
+      "choices": [
+        "A the same atomic number",
+        "B similar chemical properties",
+        "C the same mass number",
+        "D completely unrelated properties"
+      ],
+      "explanation": "Elements in the same group have similar chemical properties.",
+      "source": "9F Summary sheet p2 Atomic structure; CGP KS3 Year 9 Topic 7 Periodic table; Oak periodic table lessons",
+      "sourceExcerpt": "",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/patterns-in-the-periodic-table/lessons",
+        "local:data/year9-content.js and data/year9-notes.js"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-PERIODIC",
+        "LOCAL-REVISION"
+      ],
+      "level": 2,
+      "cue": "",
+      "tags": [
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "new-cgp-bridge-derived",
+      "learningObjective": "9F-periodic-table-bridge",
+      "learningObjectiveTitle": "Periodic table bridge",
+      "learningObjectiveDescription": "Atomic structure, proton number, groups, periods, metals, non-metals and group trends.",
+      "noteId": "9F-periodic-table-bridge",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-066-F-periodic-table-bridge-across-a-period-elements-are-arranged-mainly-by-increasing",
+      "unit": "9F",
+      "type": "Quick quiz",
+      "question": "Across a period, elements are arranged mainly by increasing:",
+      "answer": "C",
+      "choices": [
+        "A alphabetical order",
+        "B density only",
+        "C atomic number",
+        "D colour"
+      ],
+      "explanation": "The periodic table is arranged by increasing atomic number.",
+      "source": "9F Summary sheet p2 Atomic structure; CGP KS3 Year 9 Topic 7 Periodic table; Oak periodic table lessons",
+      "sourceExcerpt": "",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/patterns-in-the-periodic-table/lessons",
+        "local:data/year9-content.js and data/year9-notes.js"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-PERIODIC",
+        "LOCAL-REVISION"
+      ],
+      "level": 1,
+      "cue": "",
+      "tags": [
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "new-cgp-bridge-derived",
+      "learningObjective": "9F-periodic-table-bridge",
+      "learningObjectiveTitle": "Periodic table bridge",
+      "learningObjectiveDescription": "Atomic structure, proton number, groups, periods, metals, non-metals and group trends.",
+      "noteId": "9F-periodic-table-bridge",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-067-F-periodic-table-bridge-where-are-metals-usually-found-in-the-periodic-table",
+      "unit": "9F",
+      "type": "Progress check",
+      "question": "Where are metals usually found in the periodic table?",
+      "answer": "Metals are usually found on the left and in the middle of the periodic table.",
+      "choices": [],
+      "explanation": "Non-metals are usually found on the right.",
+      "source": "9F Summary sheet p2 Atomic structure; CGP KS3 Year 9 Topic 7 Periodic table; Oak periodic table lessons",
+      "sourceExcerpt": "",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/patterns-in-the-periodic-table/lessons",
+        "local:data/year9-content.js and data/year9-notes.js"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-PERIODIC",
+        "LOCAL-REVISION"
+      ],
+      "level": 1,
+      "cue": "Try to answer in full sentences before revealing the answer.",
+      "tags": [
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "new-cgp-bridge-derived",
+      "learningObjective": "9F-periodic-table-bridge",
+      "learningObjectiveTitle": "Periodic table bridge",
+      "learningObjectiveDescription": "Atomic structure, proton number, groups, periods, metals, non-metals and group trends.",
+      "noteId": "9F-periodic-table-bridge",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-068-F-periodic-table-bridge-give-two-general-properties-of-metals",
+      "unit": "9F",
+      "type": "Progress check",
+      "question": "Give two general properties of metals.",
+      "answer": "Metals are usually good electrical conductors and thermal conductors. Many are also shiny and malleable.",
+      "choices": [],
+      "explanation": "Do not make the rule absolute: there are exceptions and property ranges.",
+      "source": "9F Summary sheet p2 Atomic structure; CGP KS3 Year 9 Topic 7 Periodic table; Oak periodic table lessons",
+      "sourceExcerpt": "",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/patterns-in-the-periodic-table/lessons",
+        "local:data/year9-content.js and data/year9-notes.js"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-PERIODIC",
+        "LOCAL-REVISION"
+      ],
+      "level": 2,
+      "cue": "Try to answer in full sentences before revealing the answer.",
+      "tags": [
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "new-cgp-bridge-derived",
+      "learningObjective": "9F-periodic-table-bridge",
+      "learningObjectiveTitle": "Periodic table bridge",
+      "learningObjectiveDescription": "Atomic structure, proton number, groups, periods, metals, non-metals and group trends.",
+      "noteId": "9F-periodic-table-bridge",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-069-F-periodic-table-bridge-give-two-general-properties-of-non-metals",
+      "unit": "9F",
+      "type": "Progress check",
+      "question": "Give two general properties of non-metals.",
+      "answer": "Non-metals are usually poor conductors and are often dull or brittle when solid.",
+      "choices": [],
+      "explanation": "Graphite is a useful exception because it conducts electricity.",
+      "source": "9F Summary sheet p2 Atomic structure; CGP KS3 Year 9 Topic 7 Periodic table; Oak periodic table lessons",
+      "sourceExcerpt": "",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/patterns-in-the-periodic-table/lessons",
+        "local:data/year9-content.js and data/year9-notes.js"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-PERIODIC",
+        "LOCAL-REVISION"
+      ],
+      "level": 2,
+      "cue": "Try to answer in full sentences before revealing the answer.",
+      "tags": [
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "new-cgp-bridge-derived",
+      "learningObjective": "9F-periodic-table-bridge",
+      "learningObjectiveTitle": "Periodic table bridge",
+      "learningObjectiveDescription": "Atomic structure, proton number, groups, periods, metals, non-metals and group trends.",
+      "noteId": "9F-periodic-table-bridge",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-070-F-periodic-table-bridge-which-group-contains-the-alkali-metals",
+      "unit": "9F",
+      "type": "Quick quiz",
+      "question": "Which group contains the alkali metals?",
+      "answer": "A",
+      "choices": [
+        "A Group 1",
+        "B Group 2",
+        "C Group 7",
+        "D Group 0"
+      ],
+      "explanation": "Group 1 elements are called the alkali metals.",
+      "source": "9F Summary sheet p2 Atomic structure; CGP KS3 Year 9 Topic 7 Periodic table; Oak periodic table lessons",
+      "sourceExcerpt": "",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/patterns-in-the-periodic-table/lessons",
+        "local:data/year9-content.js and data/year9-notes.js"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-PERIODIC",
+        "LOCAL-REVISION"
+      ],
+      "level": 2,
+      "cue": "",
+      "tags": [
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "new-cgp-bridge-derived",
+      "learningObjective": "9F-periodic-table-bridge",
+      "learningObjectiveTitle": "Periodic table bridge",
+      "learningObjectiveDescription": "Atomic structure, proton number, groups, periods, metals, non-metals and group trends.",
+      "noteId": "9F-periodic-table-bridge",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-071-F-periodic-table-bridge-describe-the-reactivity-trend-down-group-1",
+      "unit": "9F",
+      "type": "Progress check",
+      "question": "Describe the reactivity trend down Group 1.",
+      "answer": "Group 1 metals become more reactive down the group.",
+      "choices": [],
+      "explanation": "This is a common KS3 periodic table pattern.",
+      "source": "9F Summary sheet p2 Atomic structure; CGP KS3 Year 9 Topic 7 Periodic table; Oak periodic table lessons",
+      "sourceExcerpt": "",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/patterns-in-the-periodic-table/lessons",
+        "local:data/year9-content.js and data/year9-notes.js"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-PERIODIC",
+        "LOCAL-REVISION"
+      ],
+      "level": 2,
+      "cue": "Try to answer in full sentences before revealing the answer.",
+      "tags": [
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "new-cgp-bridge-derived",
+      "learningObjective": "9F-periodic-table-bridge",
+      "learningObjectiveTitle": "Periodic table bridge",
+      "learningObjectiveDescription": "Atomic structure, proton number, groups, periods, metals, non-metals and group trends.",
+      "noteId": "9F-periodic-table-bridge",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-072-F-periodic-table-bridge-which-group-contains-the-halogens",
+      "unit": "9F",
+      "type": "Quick quiz",
+      "question": "Which group contains the halogens?",
+      "answer": "C",
+      "choices": [
+        "A Group 0",
+        "B Group 1",
+        "C Group 7",
+        "D transition metals"
+      ],
+      "explanation": "Group 7 contains the halogens.",
+      "source": "9F Summary sheet p2 Atomic structure; CGP KS3 Year 9 Topic 7 Periodic table; Oak periodic table lessons",
+      "sourceExcerpt": "",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/patterns-in-the-periodic-table/lessons",
+        "local:data/year9-content.js and data/year9-notes.js"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-PERIODIC",
+        "LOCAL-REVISION"
+      ],
+      "level": 2,
+      "cue": "",
+      "tags": [
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "new-cgp-bridge-derived",
+      "learningObjective": "9F-periodic-table-bridge",
+      "learningObjectiveTitle": "Periodic table bridge",
+      "learningObjectiveDescription": "Atomic structure, proton number, groups, periods, metals, non-metals and group trends.",
+      "noteId": "9F-periodic-table-bridge",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-073-F-periodic-table-bridge-describe-the-reactivity-trend-down-group-7",
+      "unit": "9F",
+      "type": "Progress check",
+      "question": "Describe the reactivity trend down Group 7.",
+      "answer": "Group 7 non-metals become less reactive down the group.",
+      "choices": [],
+      "explanation": "This trend is the opposite of the Group 1 reactivity trend.",
+      "source": "9F Summary sheet p2 Atomic structure; CGP KS3 Year 9 Topic 7 Periodic table; Oak periodic table lessons",
+      "sourceExcerpt": "",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/patterns-in-the-periodic-table/lessons",
+        "local:data/year9-content.js and data/year9-notes.js"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-PERIODIC",
+        "LOCAL-REVISION"
+      ],
+      "level": 3,
+      "cue": "Try to answer in full sentences before revealing the answer.",
+      "tags": [
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "new-cgp-bridge-derived",
+      "learningObjective": "9F-periodic-table-bridge",
+      "learningObjectiveTitle": "Periodic table bridge",
+      "learningObjectiveDescription": "Atomic structure, proton number, groups, periods, metals, non-metals and group trends.",
+      "noteId": "9F-periodic-table-bridge",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-074-E-climate-bridge-define-greenhouse-gas",
+      "unit": "9E",
+      "type": "Vocabulary",
+      "question": "Define: greenhouse gas",
+      "answer": "A gas that helps trap heat in the atmosphere, such as carbon dioxide.",
+      "choices": [],
+      "explanation": "This uses the existing revision-pack definition.",
+      "source": "9E environmental impacts/greenhouse gas revision content; CGP KS3 Year 9 Topic 11 Climate; Oak climate lessons",
+      "sourceExcerpt": "A gas that helps trap heat in the atmosphere, such as carbon dioxide.",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/climate-change-and-greenhouse-gases/lessons",
+        "local:data/year9-content.js and data/year9-notes.js"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-CLIMATE",
+        "LOCAL-REVISION"
+      ],
+      "level": 1,
+      "cue": "Try to answer in full sentences before revealing the answer.",
+      "tags": [
+        "revision-pack-alignment",
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-text",
+      "learningObjective": "9E-climate-bridge",
+      "learningObjectiveTitle": "Climate and greenhouse gases",
+      "learningObjectiveDescription": "Greenhouse gases, greenhouse effect, global warming evidence, human activities and reduction strategies.",
+      "noteId": "9E-climate-bridge",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-075-E-climate-bridge-define-global-warming",
+      "unit": "9E",
+      "type": "Vocabulary",
+      "question": "Define: global warming",
+      "answer": "Global warming is an increase in Earth’s average surface temperature.",
+      "choices": [],
+      "explanation": "Global warming is one part of climate change.",
+      "source": "9E environmental impacts/greenhouse gas revision content; CGP KS3 Year 9 Topic 11 Climate; Oak climate lessons",
+      "sourceExcerpt": "",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/climate-change-and-greenhouse-gases/lessons",
+        "local:data/year9-content.js and data/year9-notes.js"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-CLIMATE",
+        "LOCAL-REVISION"
+      ],
+      "level": 1,
+      "cue": "Try to answer in full sentences before revealing the answer.",
+      "tags": [
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "new-cgp-bridge-derived",
+      "learningObjective": "9E-climate-bridge",
+      "learningObjectiveTitle": "Climate and greenhouse gases",
+      "learningObjectiveDescription": "Greenhouse gases, greenhouse effect, global warming evidence, human activities and reduction strategies.",
+      "noteId": "9E-climate-bridge",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-076-E-climate-bridge-what-causes-the-natural-greenhouse-effect",
+      "unit": "9E",
+      "type": "Progress check",
+      "question": "What causes the natural greenhouse effect?",
+      "answer": "Greenhouse gases in Earth’s atmosphere absorb and re-emit thermal radiation, keeping Earth warmer than it would otherwise be.",
+      "choices": [],
+      "explanation": "The natural greenhouse effect helps make Earth suitable for life.",
+      "source": "9E environmental impacts/greenhouse gas revision content; CGP KS3 Year 9 Topic 11 Climate; Oak climate lessons",
+      "sourceExcerpt": "",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/climate-change-and-greenhouse-gases/lessons",
+        "local:data/year9-content.js and data/year9-notes.js"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-CLIMATE",
+        "LOCAL-REVISION"
+      ],
+      "level": 2,
+      "cue": "Try to answer in full sentences before revealing the answer.",
+      "tags": [
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "new-cgp-bridge-derived",
+      "learningObjective": "9E-climate-bridge",
+      "learningObjectiveTitle": "Climate and greenhouse gases",
+      "learningObjectiveDescription": "Greenhouse gases, greenhouse effect, global warming evidence, human activities and reduction strategies.",
+      "noteId": "9E-climate-bridge",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-077-E-climate-bridge-why-can-extra-greenhouse-gases-increase-global-temperature",
+      "unit": "9E",
+      "type": "Apply check",
+      "question": "Why can extra greenhouse gases increase global temperature?",
+      "answer": "Extra greenhouse gases strengthen the greenhouse effect, so more thermal energy is retained in the atmosphere and average temperature rises.",
+      "choices": [],
+      "explanation": "A strong answer links gas concentration, greenhouse effect and temperature.",
+      "source": "9E environmental impacts/greenhouse gas revision content; CGP KS3 Year 9 Topic 11 Climate; Oak climate lessons",
+      "sourceExcerpt": "",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/climate-change-and-greenhouse-gases/lessons",
+        "local:data/year9-content.js and data/year9-notes.js"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-CLIMATE",
+        "LOCAL-REVISION"
+      ],
+      "level": 3,
+      "cue": "Try to answer in full sentences before revealing the answer.",
+      "tags": [
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "new-cgp-bridge-derived",
+      "learningObjective": "9E-climate-bridge",
+      "learningObjectiveTitle": "Climate and greenhouse gases",
+      "learningObjectiveDescription": "Greenhouse gases, greenhouse effect, global warming evidence, human activities and reduction strategies.",
+      "noteId": "9E-climate-bridge",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-078-E-climate-bridge-which-gas-is-commonly-released-by-burning-fossil-fuels",
+      "unit": "9E",
+      "type": "Quick quiz",
+      "question": "Which gas is commonly released by burning fossil fuels?",
+      "answer": "B",
+      "choices": [
+        "A oxygen",
+        "B carbon dioxide",
+        "C helium",
+        "D neon"
+      ],
+      "explanation": "Burning fossil fuels releases carbon dioxide.",
+      "source": "9E environmental impacts/greenhouse gas revision content; CGP KS3 Year 9 Topic 11 Climate; Oak climate lessons",
+      "sourceExcerpt": "",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/climate-change-and-greenhouse-gases/lessons",
+        "local:data/year9-content.js and data/year9-notes.js"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-CLIMATE",
+        "LOCAL-REVISION"
+      ],
+      "level": 1,
+      "cue": "",
+      "tags": [
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "new-cgp-bridge-derived",
+      "learningObjective": "9E-climate-bridge",
+      "learningObjectiveTitle": "Climate and greenhouse gases",
+      "learningObjectiveDescription": "Greenhouse gases, greenhouse effect, global warming evidence, human activities and reduction strategies.",
+      "noteId": "9E-climate-bridge",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-079-E-climate-bridge-give-two-examples-of-evidence-used-for-global-warming",
+      "unit": "9E",
+      "type": "Progress check",
+      "question": "Give two examples of evidence used for global warming.",
+      "answer": "Examples include temperature measurements, ice-core data, tree-ring data, glacier changes and sea-level measurements.",
+      "choices": [],
+      "explanation": "Scientists compare many types of evidence, not just one observation.",
+      "source": "9E environmental impacts/greenhouse gas revision content; CGP KS3 Year 9 Topic 11 Climate; Oak climate lessons",
+      "sourceExcerpt": "",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/climate-change-and-greenhouse-gases/lessons",
+        "local:data/year9-content.js and data/year9-notes.js"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-CLIMATE",
+        "LOCAL-REVISION"
+      ],
+      "level": 3,
+      "cue": "Try to answer in full sentences before revealing the answer.",
+      "tags": [
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "new-cgp-bridge-derived",
+      "learningObjective": "9E-climate-bridge",
+      "learningObjectiveTitle": "Climate and greenhouse gases",
+      "learningObjectiveDescription": "Greenhouse gases, greenhouse effect, global warming evidence, human activities and reduction strategies.",
+      "noteId": "9E-climate-bridge",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-080-E-climate-bridge-how-can-cutting-fossil-fuel-use-help-reduce-global-warming",
+      "unit": "9E",
+      "type": "Progress check",
+      "question": "How can cutting fossil fuel use help reduce global warming?",
+      "answer": "Cutting fossil fuel use reduces carbon dioxide emissions, which can slow the increase in greenhouse gases.",
+      "choices": [],
+      "explanation": "This matches the existing materials topic link to fossil fuels and carbon dioxide.",
+      "source": "9E environmental impacts/greenhouse gas revision content; CGP KS3 Year 9 Topic 11 Climate; Oak climate lessons",
+      "sourceExcerpt": "",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/climate-change-and-greenhouse-gases/lessons",
+        "local:data/year9-content.js and data/year9-notes.js"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-CLIMATE",
+        "LOCAL-REVISION"
+      ],
+      "level": 2,
+      "cue": "Try to answer in full sentences before revealing the answer.",
+      "tags": [
+        "revision-pack-alignment",
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "new-cgp-bridge-derived",
+      "learningObjective": "9E-climate-bridge",
+      "learningObjectiveTitle": "Climate and greenhouse gases",
+      "learningObjectiveDescription": "Greenhouse gases, greenhouse effect, global warming evidence, human activities and reduction strategies.",
+      "noteId": "9E-climate-bridge",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-081-E-climate-bridge-explain-one-environmental-problem-caused-by-making-materials",
+      "unit": "9E",
+      "type": "Apply check",
+      "question": "Explain one environmental problem caused by making materials.",
+      "answer": "Making materials can burn fossil fuels, releasing carbon dioxide; some processes also release toxins or sulfur dioxide.",
+      "choices": [],
+      "explanation": "This uses existing revision-pack wording and extends it to climate impact.",
+      "source": "9E environmental impacts/greenhouse gas revision content; CGP KS3 Year 9 Topic 11 Climate; Oak climate lessons",
+      "sourceExcerpt": "Making materials can burn fossil fuels, releasing carbon dioxide; some processes also release toxins or sulfur dioxide.",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/climate-change-and-greenhouse-gases/lessons",
+        "local:data/year9-content.js and data/year9-notes.js"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-CLIMATE",
+        "LOCAL-REVISION"
+      ],
+      "level": 3,
+      "cue": "Try to answer in full sentences before revealing the answer.",
+      "tags": [
+        "revision-pack-alignment",
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9E-climate-bridge",
+      "learningObjectiveTitle": "Climate and greenhouse gases",
+      "learningObjectiveDescription": "Greenhouse gases, greenhouse effect, global warming evidence, human activities and reduction strategies.",
+      "noteId": "9E-climate-bridge",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-082-E-climate-bridge-which-action-would-most-directly-reduce-carbon-dioxide-emiss",
+      "unit": "9E",
+      "type": "Quick quiz",
+      "question": "Which action would most directly reduce carbon dioxide emissions from energy use?",
+      "answer": "D",
+      "choices": [
+        "A using more single-use plastic",
+        "B burning more coal",
+        "C driving more petrol cars",
+        "D using more renewable energy"
+      ],
+      "explanation": "Renewable energy can reduce the amount of fossil fuel burned.",
+      "source": "9E environmental impacts/greenhouse gas revision content; CGP KS3 Year 9 Topic 11 Climate; Oak climate lessons",
+      "sourceExcerpt": "",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/climate-change-and-greenhouse-gases/lessons",
+        "local:data/year9-content.js and data/year9-notes.js"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-CLIMATE",
+        "LOCAL-REVISION"
+      ],
+      "level": 2,
+      "cue": "",
+      "tags": [
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "new-cgp-bridge-derived",
+      "learningObjective": "9E-climate-bridge",
+      "learningObjectiveTitle": "Climate and greenhouse gases",
+      "learningObjectiveDescription": "Greenhouse gases, greenhouse effect, global warming evidence, human activities and reduction strategies.",
+      "noteId": "9E-climate-bridge",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-083-E-climate-bridge-why-is-climate-change-more-than-just-one-hot-day",
+      "unit": "9E",
+      "type": "Progress check",
+      "question": "Why is climate change more than just “one hot day”?",
+      "answer": "Climate change means long-term changes in average conditions and patterns, not a single weather event.",
+      "choices": [],
+      "explanation": "Weather is short term; climate describes longer-term patterns.",
+      "source": "9E environmental impacts/greenhouse gas revision content; CGP KS3 Year 9 Topic 11 Climate; Oak climate lessons",
+      "sourceExcerpt": "",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/climate-change-and-greenhouse-gases/lessons",
+        "local:data/year9-content.js and data/year9-notes.js"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-CLIMATE",
+        "LOCAL-REVISION"
+      ],
+      "level": 2,
+      "cue": "Try to answer in full sentences before revealing the answer.",
+      "tags": [
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "new-cgp-bridge-derived",
+      "learningObjective": "9E-climate-bridge",
+      "learningObjectiveTitle": "Climate and greenhouse gases",
+      "learningObjectiveDescription": "Greenhouse gases, greenhouse effect, global warming evidence, human activities and reduction strategies.",
+      "noteId": "9E-climate-bridge",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-084-E-climate-bridge-why-do-scientists-compare-modern-temperatures-with-long-term",
+      "unit": "9E",
+      "type": "Apply check",
+      "question": "Why do scientists compare modern temperatures with long-term averages?",
+      "answer": "Long-term averages help show whether recent temperatures are unusual compared with normal variation.",
+      "choices": [],
+      "explanation": "This is why climate evidence uses many measurements over time.",
+      "source": "9E environmental impacts/greenhouse gas revision content; CGP KS3 Year 9 Topic 11 Climate; Oak climate lessons",
+      "sourceExcerpt": "",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/climate-change-and-greenhouse-gases/lessons",
+        "local:data/year9-content.js and data/year9-notes.js"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-CLIMATE",
+        "LOCAL-REVISION"
+      ],
+      "level": 3,
+      "cue": "Try to answer in full sentences before revealing the answer.",
+      "tags": [
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "new-cgp-bridge-derived",
+      "learningObjective": "9E-climate-bridge",
+      "learningObjectiveTitle": "Climate and greenhouse gases",
+      "learningObjectiveDescription": "Greenhouse gases, greenhouse effect, global warming evidence, human activities and reduction strategies.",
+      "noteId": "9E-climate-bridge",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-085-E-climate-bridge-explain-why-a-correlation-between-greenhouse-gas-emissions-a",
+      "unit": "9E",
+      "type": "Challenge check",
+      "question": "Explain why a correlation between greenhouse gas emissions and temperature is important but not the only evidence needed.",
+      "answer": "A correlation shows the two have changed together, but scientists also need mechanisms and other evidence to explain why increased greenhouse gases cause warming.",
+      "choices": [],
+      "explanation": "This pushes students beyond “graph goes up” into evidence and explanation.",
+      "source": "9E environmental impacts/greenhouse gas revision content; CGP KS3 Year 9 Topic 11 Climate; Oak climate lessons",
+      "sourceExcerpt": "",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/climate-change-and-greenhouse-gases/lessons",
+        "local:data/year9-content.js and data/year9-notes.js"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-CLIMATE",
+        "LOCAL-REVISION"
+      ],
+      "level": 4,
+      "cue": "Try to answer in full sentences before revealing the answer.",
+      "tags": [
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "new-cgp-bridge-derived",
+      "learningObjective": "9E-climate-bridge",
+      "learningObjectiveTitle": "Climate and greenhouse gases",
+      "learningObjectiveDescription": "Greenhouse gases, greenhouse effect, global warming evidence, human activities and reduction strategies.",
+      "noteId": "9E-climate-bridge",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-096-F-chemical-energy-bridge-define-exothermic-reaction",
+      "unit": "9F",
+      "type": "Vocabulary",
+      "question": "Define: exothermic reaction",
+      "answer": "A reaction that transfers energy to the surroundings.",
+      "choices": [],
+      "explanation": "This uses the existing revision-pack definition.",
+      "source": "9E/9F Summary sheet exothermic and endothermic reactions; CGP KS3 Year 9 Topic 10 Chemical energy; Oak chemical energy lesson",
+      "sourceExcerpt": "A reaction that transfers energy to the surroundings.",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/fuels-and-energetics/lessons/exothermic-and-endothermic-chemical-reactions",
+        "local:data/year9-content.js and data/year9-notes.js"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-CHEM-ENERGY",
+        "LOCAL-REVISION"
+      ],
+      "level": 1,
+      "cue": "Try to answer in full sentences before revealing the answer.",
+      "tags": [
+        "revision-pack-alignment",
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-text",
+      "learningObjective": "9F-chemical-energy-bridge",
+      "learningObjectiveTitle": "Chemical energy bridge",
+      "learningObjectiveDescription": "Exothermic and endothermic reactions, temperature changes, surroundings and reaction examples.",
+      "noteId": "9F-chemical-energy-bridge",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-097-F-chemical-energy-bridge-define-endothermic-reaction",
+      "unit": "9F",
+      "type": "Vocabulary",
+      "question": "Define: endothermic reaction",
+      "answer": "A reaction that takes in energy from the surroundings.",
+      "choices": [],
+      "explanation": "This uses the existing revision-pack definition.",
+      "source": "9E/9F Summary sheet exothermic and endothermic reactions; CGP KS3 Year 9 Topic 10 Chemical energy; Oak chemical energy lesson",
+      "sourceExcerpt": "A reaction that takes in energy from the surroundings.",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/fuels-and-energetics/lessons/exothermic-and-endothermic-chemical-reactions",
+        "local:data/year9-content.js and data/year9-notes.js"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-CHEM-ENERGY",
+        "LOCAL-REVISION"
+      ],
+      "level": 1,
+      "cue": "Try to answer in full sentences before revealing the answer.",
+      "tags": [
+        "revision-pack-alignment",
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-text",
+      "learningObjective": "9F-chemical-energy-bridge",
+      "learningObjectiveTitle": "Chemical energy bridge",
+      "learningObjectiveDescription": "Exothermic and endothermic reactions, temperature changes, surroundings and reaction examples.",
+      "noteId": "9F-chemical-energy-bridge",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-098-F-chemical-energy-bridge-what-do-exothermic-reactions-do-to-the-surroundings",
+      "unit": "9F",
+      "type": "Progress check",
+      "question": "What do exothermic reactions do to the surroundings?",
+      "answer": "Exothermic reactions transfer energy into the surroundings and so increase the temperature around them.",
+      "choices": [],
+      "explanation": "This uses the existing revision-pack wording.",
+      "source": "9E/9F Summary sheet exothermic and endothermic reactions; CGP KS3 Year 9 Topic 10 Chemical energy; Oak chemical energy lesson",
+      "sourceExcerpt": "Exothermic reactions transfer energy into the surroundings and so increase the temperature around them.",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/fuels-and-energetics/lessons/exothermic-and-endothermic-chemical-reactions",
+        "local:data/year9-content.js and data/year9-notes.js"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-CHEM-ENERGY",
+        "LOCAL-REVISION"
+      ],
+      "level": 2,
+      "cue": "Try to answer in full sentences before revealing the answer.",
+      "tags": [
+        "revision-pack-alignment",
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9F-chemical-energy-bridge",
+      "learningObjectiveTitle": "Chemical energy bridge",
+      "learningObjectiveDescription": "Exothermic and endothermic reactions, temperature changes, surroundings and reaction examples.",
+      "noteId": "9F-chemical-energy-bridge",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-099-F-chemical-energy-bridge-what-do-endothermic-reactions-do-to-the-surroundings",
+      "unit": "9F",
+      "type": "Progress check",
+      "question": "What do endothermic reactions do to the surroundings?",
+      "answer": "Endothermic reactions transfer energy from the surroundings and so decrease the temperature around them.",
+      "choices": [],
+      "explanation": "This uses the existing revision-pack wording.",
+      "source": "9E/9F Summary sheet exothermic and endothermic reactions; CGP KS3 Year 9 Topic 10 Chemical energy; Oak chemical energy lesson",
+      "sourceExcerpt": "Endothermic reactions transfer energy from the surroundings and so decrease the temperature around them.",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/fuels-and-energetics/lessons/exothermic-and-endothermic-chemical-reactions",
+        "local:data/year9-content.js and data/year9-notes.js"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-CHEM-ENERGY",
+        "LOCAL-REVISION"
+      ],
+      "level": 2,
+      "cue": "Try to answer in full sentences before revealing the answer.",
+      "tags": [
+        "revision-pack-alignment",
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9F-chemical-energy-bridge",
+      "learningObjectiveTitle": "Chemical energy bridge",
+      "learningObjectiveDescription": "Exothermic and endothermic reactions, temperature changes, surroundings and reaction examples.",
+      "noteId": "9F-chemical-energy-bridge",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-100-F-chemical-energy-bridge-a-reaction-mixture-starts-at-20-c-and-ends-at-28-c-what-type",
+      "unit": "9F",
+      "type": "Quick quiz",
+      "question": "A reaction mixture starts at 20°C and ends at 28°C. What type of reaction is it?",
+      "answer": "A",
+      "choices": [
+        "A exothermic",
+        "B endothermic",
+        "C neutral only",
+        "D not a chemical reaction"
+      ],
+      "explanation": "The temperature increased, so energy was transferred to the surroundings.",
+      "source": "9E/9F Summary sheet exothermic and endothermic reactions; CGP KS3 Year 9 Topic 10 Chemical energy; Oak chemical energy lesson",
+      "sourceExcerpt": "",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/fuels-and-energetics/lessons/exothermic-and-endothermic-chemical-reactions",
+        "local:data/year9-content.js and data/year9-notes.js"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-CHEM-ENERGY",
+        "LOCAL-REVISION"
+      ],
+      "level": 2,
+      "cue": "",
+      "tags": [
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "new-cgp-bridge-derived",
+      "learningObjective": "9F-chemical-energy-bridge",
+      "learningObjectiveTitle": "Chemical energy bridge",
+      "learningObjectiveDescription": "Exothermic and endothermic reactions, temperature changes, surroundings and reaction examples.",
+      "noteId": "9F-chemical-energy-bridge",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-101-F-chemical-energy-bridge-a-reaction-mixture-starts-at-22-c-and-falls-to-16-c-what-typ",
+      "unit": "9F",
+      "type": "Quick quiz",
+      "question": "A reaction mixture starts at 22°C and falls to 16°C. What type of reaction is it?",
+      "answer": "B",
+      "choices": [
+        "A exothermic",
+        "B endothermic",
+        "C combustion",
+        "D oxidation only"
+      ],
+      "explanation": "The temperature decreased, so energy was taken in from the surroundings.",
+      "source": "9E/9F Summary sheet exothermic and endothermic reactions; CGP KS3 Year 9 Topic 10 Chemical energy; Oak chemical energy lesson",
+      "sourceExcerpt": "",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/fuels-and-energetics/lessons/exothermic-and-endothermic-chemical-reactions",
+        "local:data/year9-content.js and data/year9-notes.js"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-CHEM-ENERGY",
+        "LOCAL-REVISION"
+      ],
+      "level": 2,
+      "cue": "",
+      "tags": [
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "new-cgp-bridge-derived",
+      "learningObjective": "9F-chemical-energy-bridge",
+      "learningObjectiveTitle": "Chemical energy bridge",
+      "learningObjectiveDescription": "Exothermic and endothermic reactions, temperature changes, surroundings and reaction examples.",
+      "noteId": "9F-chemical-energy-bridge",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-102-F-chemical-energy-bridge-why-should-temperature-be-measured-before-and-after-a-reacti",
+      "unit": "9F",
+      "type": "Apply check",
+      "question": "Why should temperature be measured before and after a reaction?",
+      "answer": "The temperature change shows whether the reaction transferred energy to the surroundings or took energy from the surroundings.",
+      "choices": [],
+      "explanation": "Temperature evidence helps classify reactions as exothermic or endothermic.",
+      "source": "9E/9F Summary sheet exothermic and endothermic reactions; CGP KS3 Year 9 Topic 10 Chemical energy; Oak chemical energy lesson",
+      "sourceExcerpt": "",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/fuels-and-energetics/lessons/exothermic-and-endothermic-chemical-reactions",
+        "local:data/year9-content.js and data/year9-notes.js"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-CHEM-ENERGY",
+        "LOCAL-REVISION"
+      ],
+      "level": 3,
+      "cue": "Try to answer in full sentences before revealing the answer.",
+      "tags": [
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "new-cgp-bridge-derived",
+      "learningObjective": "9F-chemical-energy-bridge",
+      "learningObjectiveTitle": "Chemical energy bridge",
+      "learningObjectiveDescription": "Exothermic and endothermic reactions, temperature changes, surroundings and reaction examples.",
+      "noteId": "9F-chemical-energy-bridge",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-103-F-chemical-energy-bridge-give-one-example-of-an-endothermic-reaction-from-the-revisio",
+      "unit": "9F",
+      "type": "Progress check",
+      "question": "Give one example of an endothermic reaction from the revision sheet.",
+      "answer": "Thermal decomposition reactions.",
+      "choices": [],
+      "explanation": "This uses the existing revision-pack example.",
+      "source": "9E/9F Summary sheet exothermic and endothermic reactions; CGP KS3 Year 9 Topic 10 Chemical energy; Oak chemical energy lesson",
+      "sourceExcerpt": "Thermal decomposition reactions.",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/fuels-and-energetics/lessons/exothermic-and-endothermic-chemical-reactions",
+        "local:data/year9-content.js and data/year9-notes.js"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-CHEM-ENERGY",
+        "LOCAL-REVISION"
+      ],
+      "level": 1,
+      "cue": "Try to answer in full sentences before revealing the answer.",
+      "tags": [
+        "revision-pack-alignment",
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "exact-source-answer",
+      "learningObjective": "9F-chemical-energy-bridge",
+      "learningObjectiveTitle": "Chemical energy bridge",
+      "learningObjectiveDescription": "Exothermic and endothermic reactions, temperature changes, surroundings and reaction examples.",
+      "noteId": "9F-chemical-energy-bridge",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-104-F-chemical-energy-bridge-why-is-combustion-usually-described-as-exothermic",
+      "unit": "9F",
+      "type": "Apply check",
+      "question": "Why is combustion usually described as exothermic?",
+      "answer": "Combustion transfers energy to the surroundings, usually heating the surroundings and often producing light.",
+      "choices": [],
+      "explanation": "Combustion releases energy from the reactants to the surroundings.",
+      "source": "9E/9F Summary sheet exothermic and endothermic reactions; CGP KS3 Year 9 Topic 10 Chemical energy; Oak chemical energy lesson",
+      "sourceExcerpt": "",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/fuels-and-energetics/lessons/exothermic-and-endothermic-chemical-reactions",
+        "local:data/year9-content.js and data/year9-notes.js"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-CHEM-ENERGY",
+        "LOCAL-REVISION"
+      ],
+      "level": 2,
+      "cue": "Try to answer in full sentences before revealing the answer.",
+      "tags": [
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "new-cgp-bridge-derived",
+      "learningObjective": "9F-chemical-energy-bridge",
+      "learningObjectiveTitle": "Chemical energy bridge",
+      "learningObjectiveDescription": "Exothermic and endothermic reactions, temperature changes, surroundings and reaction examples.",
+      "noteId": "9F-chemical-energy-bridge",
+      "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9cgp-105-F-chemical-energy-bridge-correct-the-misconception-a-cold-reaction-makes-cold-energy",
+      "unit": "9F",
+      "type": "Challenge check",
+      "question": "Correct the misconception: “A cold reaction makes cold energy.”",
+      "answer": "There is no cold energy. In an endothermic reaction, energy is transferred from the surroundings to the reaction, so the surroundings get colder.",
+      "choices": [],
+      "explanation": "This addresses the surroundings/environment misconception.",
+      "source": "9E/9F Summary sheet exothermic and endothermic reactions; CGP KS3 Year 9 Topic 10 Chemical energy; Oak chemical energy lesson",
+      "sourceExcerpt": "",
+      "sourceUrls": [
+        "https://www.cgpbooks.co.uk/getmedia/5945ae31-1aa7-42af-8227-05682471a5a5/CGP-KS3-Science-Spec",
+        "https://filestore.aqa.org.uk/resources/science/specifications/AQA-SCIENCE-KS3-SYLLABUS.PDF",
+        "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/fuels-and-energetics/lessons/exothermic-and-endothermic-chemical-reactions",
+        "local:data/year9-content.js and data/year9-notes.js"
+      ],
+      "sourceRegistryIds": [
+        "CGP-KS3-MAP",
+        "AQA-KS3-SYLLABUS",
+        "OAK-CHEM-ENERGY",
+        "LOCAL-REVISION"
+      ],
+      "level": 3,
+      "cue": "Try to answer in full sentences before revealing the answer.",
+      "tags": [
+        "cgp-bridge-v1.40",
+        "source-traceable"
+      ],
+      "sourceFidelity": "new-cgp-bridge-derived",
+      "learningObjective": "9F-chemical-energy-bridge",
+      "learningObjectiveTitle": "Chemical energy bridge",
+      "learningObjectiveDescription": "Exothermic and endothermic reactions, temperature changes, surroundings and reaction examples.",
+      "noteId": "9F-chemical-energy-bridge",
       "mediaPolicy": "question-media-only-if-required"
     }
   ],

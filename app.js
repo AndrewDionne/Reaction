@@ -72,6 +72,12 @@
       subtitle: "These are cards marked Still confused after using a class-note context card.",
       empty: "No Need Notes cards match these filters yet. Open Class Notes from a card, then choose Still confused to add one here.",
     },
+    written: {
+      eyebrow: "Written exam practice",
+      title: "End-of-year written exam builder",
+      subtitle: "Practise state, identify, describe and explain answers with balanced Biology, Chemistry and Physics marks.",
+      empty: "No written exam questions are available for this selection.",
+    },
     test: {
       eyebrow: "Focused check",
       title: "Test your knowledge",
@@ -91,6 +97,7 @@
     selectedChoice: null,
     choiceOrder: null,
     test: null,
+    written: null,
     session: null,
     noteContext: null,
     definitionInput: "",
@@ -99,6 +106,316 @@
     sound: true,
     progress: loadProgress(),
   };
+
+
+  const WRITTEN_EXAM_BANK = [
+    {
+      id: "we-bio-state-photosynthesis-equation",
+      domain: "biology",
+      unit: "9B",
+      commandWord: "state",
+      marks: 1,
+      question: "State the word equation for photosynthesis.",
+      answerFrame: "Write one short sentence or equation only.",
+      modelAnswer: "carbon dioxide + water → glucose + oxygen",
+      markScheme: ["1 mark for carbon dioxide + water → glucose + oxygen."],
+      keywords: ["carbon dioxide", "water", "glucose", "oxygen"],
+      commonMistakes: ["Do not write respiration instead of photosynthesis.", "Do not miss out glucose."],
+      answerStructure: ["State the exact equation.", "No explanation is needed."]
+    },
+    {
+      id: "we-bio-identify-root-hair-adaptation",
+      domain: "biology",
+      unit: "9B",
+      commandWord: "identify",
+      marks: 2,
+      question: "Identify two adaptations of root hair cells for absorbing water and mineral ions.",
+      answerFrame: "Use two bullet points.",
+      modelAnswer: "Root hair cells have a large surface area and a thin cell wall.",
+      markScheme: ["1 mark for large surface area.", "1 mark for thin cell wall / short diffusion distance."],
+      keywords: ["large surface area", "thin cell wall", "short diffusion distance"],
+      commonMistakes: ["Do not explain photosynthesis here.", "Do not give adaptations of leaves instead of roots."],
+      answerStructure: ["Bullet point 1: first adaptation.", "Bullet point 2: second adaptation."]
+    },
+    {
+      id: "we-bio-describe-food-web-pesticide",
+      domain: "biology",
+      unit: "9B",
+      commandWord: "describe",
+      marks: 3,
+      question: "Describe what may happen in a food web if pesticides reduce the number of insects.",
+      answerFrame: "Write 2–3 short linked sentences. Describe what changes.",
+      modelAnswer: "The number of insects decreases. Animals that eat insects have less food, so their population may decrease. Predators higher in the food web may also be affected.",
+      markScheme: ["1 mark for insects decreasing.", "1 mark for insect-eaters having less food / decreasing.", "1 mark for knock-on effect on predators higher in the food web."],
+      keywords: ["insects decrease", "less food", "population decreases", "predators"],
+      commonMistakes: ["Do not only say pesticides are bad.", "Use food-web language: food, population, predator, prey."],
+      answerStructure: ["Sentence 1: what changes first.", "Sentence 2: what happens to the organism that feeds on it.", "Sentence 3: wider food-web effect."]
+    },
+    {
+      id: "we-bio-explain-magnesium",
+      domain: "biology",
+      unit: "9B",
+      commandWord: "explain",
+      marks: 3,
+      question: "Explain why plants need magnesium ions.",
+      answerFrame: "Use because / so / therefore.",
+      modelAnswer: "Plants need magnesium ions to make chlorophyll. Chlorophyll absorbs light for photosynthesis. Without enough magnesium, the plant cannot photosynthesise as well, so growth is reduced.",
+      markScheme: ["1 mark for magnesium being needed to make chlorophyll.", "1 mark for chlorophyll absorbing light / being needed for photosynthesis.", "1 mark for reduced photosynthesis or growth if magnesium is lacking."],
+      keywords: ["magnesium ions", "chlorophyll", "light", "photosynthesis", "growth"],
+      commonMistakes: ["Do not say magnesium is the food.", "Link magnesium to chlorophyll, not directly to glucose."],
+      answerStructure: ["Science fact.", "Because link.", "Result linked back to the plant."]
+    },
+    {
+      id: "we-bio-describe-natural-selection",
+      domain: "biology",
+      unit: "9A",
+      commandWord: "describe",
+      marks: 4,
+      question: "Describe how natural selection can lead to evolution.",
+      answerFrame: "Use short steps in order.",
+      modelAnswer: "There is variation in a population. Some organisms have characteristics that make them better adapted to the environment. They are more likely to survive and reproduce. Their useful alleles are passed on, so the population changes over generations.",
+      markScheme: ["1 mark for variation.", "1 mark for better adapted individuals being more likely to survive.", "1 mark for reproduction / passing on alleles.", "1 mark for change over generations."],
+      keywords: ["variation", "adapted", "survive", "reproduce", "alleles", "generations"],
+      commonMistakes: ["Do not say individuals choose to evolve.", "Evolution happens over generations, not during one animal's life."],
+      answerStructure: ["Variation.", "Selection pressure.", "Survival and reproduction.", "Inheritance over generations."]
+    },
+    {
+      id: "we-bio-explain-farming-sustainability",
+      domain: "biology",
+      unit: "9B",
+      commandWord: "explain",
+      marks: 2,
+      question: "Explain one problem caused by using fertilisers to increase crop yield.",
+      answerFrame: "One cause + one effect.",
+      modelAnswer: "Fertilisers can run off fields into rivers. This can cause rapid growth of algae and reduce oxygen for aquatic animals.",
+      markScheme: ["1 mark for fertiliser runoff / entering water.", "1 mark for algal growth / reduced oxygen / harm to aquatic animals."],
+      keywords: ["fertiliser", "runoff", "algae", "oxygen", "aquatic animals"],
+      commonMistakes: ["Do not describe pesticides instead.", "Include a problem, not only the benefit of bigger yield."],
+      answerStructure: ["Cause.", "Effect."]
+    },
+
+    {
+      id: "we-chem-state-neutralisation",
+      domain: "chemistry",
+      unit: "9F",
+      commandWord: "state",
+      marks: 1,
+      question: "State the products of neutralisation.",
+      answerFrame: "Write the products only.",
+      modelAnswer: "A salt and water.",
+      markScheme: ["1 mark for salt and water."],
+      keywords: ["salt", "water"],
+      commonMistakes: ["Do not write carbon dioxide unless the reaction involves a carbonate."],
+      answerStructure: ["State the two products."]
+    },
+    {
+      id: "we-chem-identify-state-symbols",
+      domain: "chemistry",
+      unit: "9E",
+      commandWord: "identify",
+      marks: 2,
+      question: "Identify the meaning of the state symbols (s) and (aq).",
+      answerFrame: "Use two bullet points.",
+      modelAnswer: "(s) means solid. (aq) means aqueous, dissolved in water.",
+      markScheme: ["1 mark for (s) = solid.", "1 mark for (aq) = aqueous / dissolved in water."],
+      keywords: ["solid", "aqueous", "dissolved in water"],
+      commonMistakes: ["Aqueous does not mean liquid; it means dissolved in water."],
+      answerStructure: ["Bullet 1: (s).", "Bullet 2: (aq)."]
+    },
+    {
+      id: "we-chem-describe-displacement",
+      domain: "chemistry",
+      unit: "9F",
+      commandWord: "describe",
+      marks: 3,
+      question: "Describe what happens when a more reactive metal is placed in a solution containing a less reactive metal compound.",
+      answerFrame: "Say what changes places and what is seen.",
+      modelAnswer: "The more reactive metal displaces the less reactive metal from its compound. The more reactive metal goes into solution. The less reactive metal is formed as a solid deposit.",
+      markScheme: ["1 mark for the more reactive metal displacing the less reactive metal.", "1 mark for the more reactive metal going into solution / forming a compound.", "1 mark for the less reactive metal being deposited / formed."],
+      keywords: ["more reactive", "displaces", "less reactive", "solution", "deposit"],
+      commonMistakes: ["Do not say the less reactive metal displaces the more reactive metal.", "Use the word displaces."],
+      answerStructure: ["What displaces what.", "What happens to the more reactive metal.", "What is observed."]
+    },
+    {
+      id: "we-chem-explain-aluminium-electrolysis",
+      domain: "chemistry",
+      unit: "9F",
+      commandWord: "explain",
+      marks: 3,
+      question: "Explain why aluminium is extracted by electrolysis rather than by heating aluminium oxide with carbon.",
+      answerFrame: "Use the reactivity series and because / so.",
+      modelAnswer: "Aluminium is more reactive than carbon. Carbon cannot reduce aluminium oxide. Therefore aluminium must be extracted by electrolysis.",
+      markScheme: ["1 mark for aluminium being more reactive than carbon.", "1 mark for carbon not being able to reduce aluminium oxide / displace aluminium.", "1 mark for electrolysis being required."],
+      keywords: ["aluminium", "more reactive than carbon", "carbon", "reduce", "electrolysis"],
+      commonMistakes: ["Do not say aluminium is less reactive than carbon.", "Do not say carbon reduction works for all metals."],
+      answerStructure: ["Reactivity fact.", "Because link.", "Therefore extraction method."]
+    },
+    {
+      id: "we-chem-explain-thermite-redox",
+      domain: "chemistry",
+      unit: "9F",
+      commandWord: "explain",
+      marks: 4,
+      question: "In the thermite reaction, aluminium reacts with iron oxide to make aluminium oxide and iron. Explain why this is a redox reaction.",
+      answerFrame: "Mention oxidation and reduction.",
+      modelAnswer: "Aluminium gains oxygen to form aluminium oxide, so aluminium is oxidised. Iron oxide loses oxygen to form iron, so iron oxide is reduced. Oxidation and reduction happen in the same reaction, so it is redox.",
+      markScheme: ["1 mark for aluminium gaining oxygen.", "1 mark for aluminium being oxidised.", "1 mark for iron oxide losing oxygen / being reduced.", "1 mark for oxidation and reduction both happening."],
+      keywords: ["aluminium", "gains oxygen", "oxidised", "iron oxide", "loses oxygen", "reduced", "redox"],
+      commonMistakes: ["Do not just say it burns.", "Redox needs both oxidation and reduction."],
+      answerStructure: ["Oxidation statement.", "Reduction statement.", "Conclusion: redox."]
+    },
+    {
+      id: "we-chem-describe-recycling-aluminium",
+      domain: "chemistry",
+      unit: "9E",
+      commandWord: "explain",
+      marks: 2,
+      question: "Explain why recycling aluminium saves energy compared with extracting aluminium from its ore.",
+      answerFrame: "One reason + one consequence.",
+      modelAnswer: "Extracting aluminium from ore needs electrolysis, which uses a lot of energy. Recycling aluminium uses less energy because the metal has already been extracted.",
+      markScheme: ["1 mark for extraction needing electrolysis / lots of energy.", "1 mark for recycling using less energy because aluminium is already metal."],
+      keywords: ["aluminium", "electrolysis", "energy", "recycling", "already extracted"],
+      commonMistakes: ["Do not say recycling makes aluminium disappear.", "Compare recycling with extraction."],
+      answerStructure: ["Why extraction uses energy.", "Why recycling uses less."]
+    },
+
+    {
+      id: "we-phys-state-resultant-force",
+      domain: "physics",
+      unit: "9I",
+      commandWord: "state",
+      marks: 1,
+      question: "State what is meant by the resultant force on an object.",
+      answerFrame: "One short sentence.",
+      modelAnswer: "The resultant force is the overall force on an object.",
+      markScheme: ["1 mark for overall force / sum of all forces."],
+      keywords: ["resultant force", "overall force", "sum"],
+      commonMistakes: ["Do not list only one force if several forces act."],
+      answerStructure: ["Term is definition."]
+    },
+    {
+      id: "we-phys-identify-circuit-meters",
+      domain: "physics",
+      unit: "9J",
+      commandWord: "identify",
+      marks: 2,
+      question: "Identify how an ammeter and a voltmeter are connected in a circuit.",
+      answerFrame: "Use two bullet points.",
+      modelAnswer: "An ammeter is connected in series. A voltmeter is connected in parallel across a component.",
+      markScheme: ["1 mark for ammeter in series.", "1 mark for voltmeter in parallel / across a component."],
+      keywords: ["ammeter", "series", "voltmeter", "parallel", "across"],
+      commonMistakes: ["Do not connect the ammeter in parallel.", "Do not connect the voltmeter in series."],
+      answerStructure: ["Bullet 1: ammeter.", "Bullet 2: voltmeter."]
+    },
+    {
+      id: "we-phys-describe-speed-time",
+      domain: "physics",
+      unit: "9I",
+      commandWord: "describe",
+      marks: 3,
+      question: "A speed-time graph shows speed increasing from 0 m/s to 12 m/s in the first 4 s, then staying at 12 m/s from 4 s to 10 s. Describe the motion.",
+      answerFrame: "Use graph language and values.",
+      modelAnswer: "The object accelerates from 0 m/s to 12 m/s during the first 4 s. From 4 s to 10 s the speed is constant at 12 m/s. This means the object is moving at steady speed after 4 s.",
+      markScheme: ["1 mark for accelerating in the first 4 s.", "1 mark for using values 0 to 12 m/s or 4 s.", "1 mark for constant speed from 4 s to 10 s."],
+      keywords: ["accelerates", "0 m/s", "12 m/s", "4 s", "constant speed"],
+      commonMistakes: ["Do not say the object is stationary when the line is horizontal on a speed-time graph.", "Use the y-axis values."],
+      answerStructure: ["Describe first section.", "Use values.", "Describe second section."]
+    },
+    {
+      id: "we-phys-explain-terminal-velocity",
+      domain: "physics",
+      unit: "9I",
+      commandWord: "explain",
+      marks: 4,
+      question: "Explain why a falling object reaches terminal velocity.",
+      answerFrame: "Use forces and because / so.",
+      modelAnswer: "At first weight is greater than air resistance, so the object accelerates. As speed increases, air resistance increases. Eventually air resistance equals weight, so the resultant force is zero. The object then falls at constant speed called terminal velocity.",
+      markScheme: ["1 mark for weight initially being greater than air resistance.", "1 mark for air resistance increasing as speed increases.", "1 mark for air resistance equalling weight / resultant force zero.", "1 mark for constant speed / terminal velocity."],
+      keywords: ["weight", "air resistance", "speed increases", "resultant force", "zero", "constant speed", "terminal velocity"],
+      commonMistakes: ["Do not say forces disappear.", "At terminal velocity the forces are balanced, not absent."],
+      answerStructure: ["Start forces.", "Change with speed.", "Balanced forces.", "Result."]
+    },
+    {
+      id: "we-phys-calculate-moment",
+      domain: "physics",
+      unit: "9I",
+      commandWord: "calculate",
+      marks: 2,
+      question: "A force of 20 N acts 0.40 m from a pivot. Calculate the moment.",
+      answerFrame: "Write formula, substitution and answer with units.",
+      modelAnswer: "moment = force × distance = 20 × 0.40 = 8 N m",
+      markScheme: ["1 mark for using moment = force × distance.", "1 mark for 8 N m."],
+      keywords: ["moment", "force", "distance", "8 N m"],
+      commonMistakes: ["Do not forget the unit N m.", "Use distance from the pivot."],
+      answerStructure: ["Formula.", "Substitution.", "Answer with unit."]
+    },
+    {
+      id: "we-phys-explain-wire-resistance",
+      domain: "physics",
+      unit: "9J",
+      commandWord: "explain",
+      marks: 3,
+      question: "Explain how increasing the length of a wire affects its resistance.",
+      answerFrame: "Use particles/collisions language.",
+      modelAnswer: "Increasing the length of the wire increases its resistance. Electrons have to travel further through the metal. They collide with ions more often, so it is harder for current to flow.",
+      markScheme: ["1 mark for resistance increasing.", "1 mark for electrons travelling further.", "1 mark for more collisions / harder for current to flow."],
+      keywords: ["length", "resistance increases", "electrons", "collide", "ions", "current"],
+      commonMistakes: ["Do not say a longer wire has less resistance.", "Explain the mechanism, not just the trend."],
+      answerStructure: ["Trend.", "Reason.", "Effect on current."]
+    }
+  ];
+
+  const WRITTEN_SIZE_OPTIONS = {
+    15: { label: "Quick written test", marksPerDomain: 5 },
+    30: { label: "Standard written test", marksPerDomain: 10 },
+    45: { label: "Full written practice", marksPerDomain: 15 },
+  };
+
+  const WRITTEN_EXAM_BLUEPRINTS = {
+    15: {
+      biology: ["we-bio-state-photosynthesis-equation", "we-bio-identify-root-hair-adaptation", "we-bio-explain-farming-sustainability"],
+      chemistry: ["we-chem-state-neutralisation", "we-chem-identify-state-symbols", "we-chem-describe-recycling-aluminium"],
+      physics: ["we-phys-state-resultant-force", "we-phys-identify-circuit-meters", "we-phys-calculate-moment"]
+    },
+    30: {
+      biology: ["we-bio-identify-root-hair-adaptation", "we-bio-describe-food-web-pesticide", "we-bio-explain-magnesium", "we-bio-explain-farming-sustainability"],
+      chemistry: ["we-chem-identify-state-symbols", "we-chem-describe-displacement", "we-chem-explain-aluminium-electrolysis", "we-chem-describe-recycling-aluminium"],
+      physics: ["we-phys-identify-circuit-meters", "we-phys-describe-speed-time", "we-phys-calculate-moment", "we-phys-explain-wire-resistance"]
+    },
+    45: {
+      biology: ["we-bio-state-photosynthesis-equation", "we-bio-identify-root-hair-adaptation", "we-bio-describe-food-web-pesticide", "we-bio-explain-magnesium", "we-bio-describe-natural-selection", "we-bio-explain-farming-sustainability"],
+      chemistry: ["we-chem-state-neutralisation", "we-chem-identify-state-symbols", "we-chem-describe-displacement", "we-chem-explain-aluminium-electrolysis", "we-chem-explain-thermite-redox", "we-chem-describe-recycling-aluminium"],
+      physics: ["we-phys-state-resultant-force", "we-phys-identify-circuit-meters", "we-phys-describe-speed-time", "we-phys-explain-terminal-velocity", "we-phys-calculate-moment", "we-phys-explain-wire-resistance"]
+    }
+  };
+
+  function domainLabel(domain) {
+    if (domain === "biology") return "Biology";
+    if (domain === "chemistry") return "Chemistry";
+    if (domain === "physics") return "Physics";
+    return domain || "Science";
+  }
+
+  function commandHint(commandWord) {
+    const hints = {
+      state: "State: give the exact fact or term. Do not explain unless asked.",
+      identify: "Identify: name the correct item, feature or method.",
+      describe: "Describe: say what happens or what the graph/diagram shows. Use values if given.",
+      explain: "Explain: give the science reason using because, so or therefore.",
+      calculate: "Calculate: write the formula, substitute values and include units.",
+      graph: "Graph: read or plot the data, then describe the trend using values."
+    };
+    return hints[commandWord] || "Write a clear science answer.";
+  }
+
+  function buildWrittenExam(totalMarks = 30) {
+    const requested = [15, 30, 45].includes(Number(totalMarks)) ? Number(totalMarks) : 30;
+    const blueprint = WRITTEN_EXAM_BLUEPRINTS[requested] || WRITTEN_EXAM_BLUEPRINTS[30];
+    const byId = new Map(WRITTEN_EXAM_BANK.map((item) => [item.id, item]));
+    return ["biology", "chemistry", "physics"].flatMap((domain) => {
+      return (blueprint[domain] || []).map((id) => byId.get(id)).filter(Boolean);
+    });
+  }
 
   function defaultProgress() {
     return {
@@ -110,6 +427,8 @@
       studyIds: [],
       attempts: {},
       testHistory: [],
+      writtenExamHistory: [],
+      writtenExamMarks: 30,
       sessionPositions: {},
       sound: true,
       updatedAt: new Date().toISOString(),
@@ -129,6 +448,8 @@
       studyIds: Array.isArray(raw.studyIds) ? raw.studyIds : [],
       attempts: raw.attempts && typeof raw.attempts === "object" ? raw.attempts : {},
       testHistory: Array.isArray(raw.testHistory) ? raw.testHistory : Array.isArray(raw.bossHistory) ? raw.bossHistory : [],
+      writtenExamHistory: Array.isArray(raw.writtenExamHistory) ? raw.writtenExamHistory : [],
+      writtenExamMarks: [15, 30, 45].includes(Number(raw.writtenExamMarks)) ? Number(raw.writtenExamMarks) : 30,
       sessionPositions: raw.sessionPositions && typeof raw.sessionPositions === "object" ? raw.sessionPositions : {},
       sound: typeof raw.sound === "boolean" ? raw.sound : true,
     };
@@ -246,16 +567,19 @@
   function modeEntryText(mode = state.selectedMode) {
     if (mode === "revisit") return "Revisit your studies";
     if (mode === "test") return "Test your knowledge";
+    if (mode === "written") return "Build written exam";
     return "Start revision";
   }
 
   function modeReadyCount(mode = state.selectedMode) {
+    if (mode === "written") return WRITTEN_EXAM_BANK.length;
     return cardsForMode(mode).length;
   }
 
   function modeLabel(mode = state.selectedMode) {
     if (mode === "revisit") return "Revisit";
     if (mode === "test") return "Test your knowledge";
+    if (mode === "written") return "Written exam";
     return "Revision journey";
   }
 
@@ -606,10 +930,12 @@
     if (mode === "revisit") return base.filter((card) => revisit.has(card.id));
     if (mode === "study") return base.filter((card) => study.has(card.id));
     if (mode === "test") return base.filter((card) => mastered.has(card.id));
+    if (mode === "written") return WRITTEN_EXAM_BANK;
     return base;
   }
 
   function rebuildDeck(resetIndex = true) {
+    if (state.mode === "written") return;
     state.deck = cardsForMode();
     if (resetIndex || state.index >= state.deck.length) state.index = 0;
     resetCardInteraction();
@@ -645,12 +971,23 @@
     state.mode = mode;
     state.noteContext = null;
     state.test = mode === "test" ? { score: 0, answered: 0, answers: [] } : null;
-    resetCardInteraction();
-    if (!options.preserveDeck) {
-      rebuildDeck(true);
-      restoreSessionPosition(mode);
+    state.written = null;
+    if (mode === "written") {
+      const totalMarks = [15, 30, 45].includes(Number(options.totalMarks)) ? Number(options.totalMarks) : (state.progress.writtenExamMarks || 30);
+      state.progress.writtenExamMarks = totalMarks;
+      state.written = { totalMarks, answers: {}, marksAwarded: {}, submitted: {} };
+      state.deck = buildWrittenExam(totalMarks);
+      state.index = 0;
+      resetCardInteraction();
+      writeProgress();
+    } else {
+      resetCardInteraction();
+      if (!options.preserveDeck) {
+        rebuildDeck(true);
+        restoreSessionPosition(mode);
+      }
+      if (mode !== "test") startSessionTracker(mode);
     }
-    if (mode !== "test") startSessionTracker(mode);
 
     document.body.classList.add("session-active");
     els.hubView.classList.add("hidden");
@@ -666,6 +1003,7 @@
     els.sessionView.classList.add("hidden");
     els.hubView.classList.remove("hidden");
     state.test = null;
+    state.written = null;
     state.session = null;
     state.noteContext = null;
     resetCardInteraction();
@@ -693,17 +1031,29 @@
     if (els.studyStat) els.studyStat.textContent = study.size;
     if (els.hubStudyStat) els.hubStudyStat.textContent = study.size;
     if (els.routeEntryButton) {
-      els.routeEntryButton.textContent = `${modeEntryText()} (${ready})`;
-      els.routeEntryButton.disabled = ready === 0;
+      if (state.selectedMode === "written") {
+        const marks = state.progress.writtenExamMarks || 30;
+        els.routeEntryButton.textContent = `${modeEntryText()} (${marks} marks)`;
+        els.routeEntryButton.disabled = false;
+      } else {
+        els.routeEntryButton.textContent = `${modeEntryText()} (${ready})`;
+        els.routeEntryButton.disabled = ready === 0;
+      }
     }
     if (els.selectionSummary) {
       const unitCount = state.selectedUnits.size;
       const objectiveCount = state.selectedObjectives.size;
-      if (!unitCount && !objectiveCount) els.selectionSummary.textContent = `Selected revision set: all units · ${ready} card${ready === 1 ? "" : "s"}`;
+      if (state.selectedMode === "written") {
+        const marks = state.progress.writtenExamMarks || 30;
+        const perDomain = marks / 3;
+        els.selectionSummary.textContent = `Written exam builder: ${marks} marks · ${perDomain} marks each for Biology, Chemistry and Physics`;
+      } else if (!unitCount && !objectiveCount) els.selectionSummary.textContent = `Selected revision set: all units · ${ready} card${ready === 1 ? "" : "s"}`;
       else els.selectionSummary.textContent = `Selected revision set: ${unitCount || "all"} unit${unitCount === 1 ? "" : "s"} · ${objectiveCount} sub-unit${objectiveCount === 1 ? "" : "s"} · ${ready} card${ready === 1 ? "" : "s"}`;
     }
     if (els.selectionDetail) {
-      els.selectionDetail.textContent = `Mode: ${modeLabel()}. Select more units or sub-units below, then use the main button to begin.`;
+      els.selectionDetail.textContent = state.selectedMode === "written"
+        ? "Practise state/identify, describe, explain and calculation answers. Use the mark scheme to self-mark after each response."
+        : `Mode: ${modeLabel()}. Select more units or sub-units below, then use the main button to begin.`;
     }
     $$('[data-mode-select]').forEach((button) => {
       const active = button.dataset.modeSelect === state.selectedMode;
@@ -1039,7 +1389,180 @@
     `;
   }
 
+
+  function writtenCurrentAnswer(question) {
+    return state.written?.answers?.[question.id] || "";
+  }
+
+  function writtenCurrentMark(question) {
+    const value = state.written?.marksAwarded?.[question.id];
+    return Number.isFinite(Number(value)) ? Number(value) : null;
+  }
+
+  function renderWrittenCard() {
+    const question = state.deck[state.index];
+    if (!question) return;
+    const submitted = Boolean(state.written?.submitted?.[question.id]);
+    const typed = writtenCurrentAnswer(question);
+    const awarded = writtenCurrentMark(question);
+    updateSessionChrome({
+      title: "Written Exam Mode",
+      eyebrow: modeText.written.eyebrow,
+      subtitle: `${domainLabel(question.domain)} · ${unitTitle(question.unit)} · ${question.marks} mark${question.marks === 1 ? "" : "s"}`
+    });
+    els.sessionIndex.textContent = String(state.index + 1);
+    els.sessionTotal.textContent = `/ ${state.deck.length}`;
+    els.resultPanel.classList.add("hidden");
+
+    els.studyPanel.innerHTML = `
+      <article class="study-card written-card">
+        <div class="written-question-meta">
+          <span class="pill">${escapeHtml(domainLabel(question.domain))}</span>
+          <span class="pill">${escapeHtml(unitTitle(question.unit))}</span>
+          <span class="pill command-word">${escapeHtml(question.commandWord)}</span>
+          <span class="pill">${question.marks} mark${question.marks === 1 ? "" : "s"}</span>
+        </div>
+        <p class="question-text">${escapeHtml(question.question)}</p>
+        <aside class="written-answer-guide">
+          <strong>Answer format</strong>
+          <p>${escapeHtml(commandHint(question.commandWord))}</p>
+          <p><strong>Use:</strong> ${escapeHtml(question.answerFrame || "Short sentences with science key words.")}</p>
+          ${(question.answerStructure || []).length ? `<ul>${question.answerStructure.map((step) => `<li>${escapeHtml(step)}</li>`).join("")}</ul>` : ""}
+        </aside>
+        <label for="writtenAnswer" class="written-answer-label">Your written answer</label>
+        <textarea id="writtenAnswer" class="open-answer written-answer-box" placeholder="Write your answer here. Use short sentences or bullet points where useful.">${escapeHtml(typed)}</textarea>
+
+        ${submitted ? renderWrittenMarkScheme(question, awarded) : ""}
+
+        <div class="card-actions primary-actions">
+          ${!submitted ? `<button class="primary-button" data-written-action="submit" type="button">Show mark scheme</button>` : `<button class="primary-button" data-written-action="next" type="button">Next question</button>`}
+          <button class="secondary-button" data-written-action="prev" type="button">Previous</button>
+          ${submitted ? `<button class="secondary-button" data-written-action="finish" type="button">Finish exam</button>` : ""}
+        </div>
+      </article>
+    `;
+
+    const answerBox = byId("writtenAnswer");
+    answerBox?.addEventListener("input", () => {
+      state.written.answers[question.id] = answerBox.value;
+    });
+
+    $$('[data-written-action]', els.studyPanel).forEach((button) => {
+      button.addEventListener("click", () => handleWrittenAction(button.dataset.writtenAction, question));
+    });
+
+    $$('[data-written-mark]', els.studyPanel).forEach((button) => {
+      button.addEventListener("click", () => {
+        state.written.marksAwarded[question.id] = Number(button.dataset.writtenMark);
+        renderWrittenCard();
+      });
+    });
+  }
+
+  function renderWrittenMarkScheme(question, awarded) {
+    const markButtons = Array.from({ length: question.marks + 1 }, (_, mark) => {
+      const active = awarded === mark ? " active" : "";
+      return `<button class="written-mark-button${active}" data-written-mark="${mark}" type="button">${mark}</button>`;
+    }).join("");
+    return `
+      <section class="written-mark-scheme">
+        <h3>Mark scheme</h3>
+        <div class="written-model-answer">
+          <strong>Model answer</strong>
+          <p>${escapeHtml(question.modelAnswer)}</p>
+        </div>
+        <div class="written-checklist">
+          <strong>Credit checklist</strong>
+          <ul>${(question.markScheme || []).map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul>
+        </div>
+        <div class="written-keywords">
+          <strong>Key words/actions</strong>
+          <p>${(question.keywords || []).map((word) => `<span>${escapeHtml(word)}</span>`).join("")}</p>
+        </div>
+        <div class="written-common-mistakes">
+          <strong>Common mistakes</strong>
+          <ul>${(question.commonMistakes || []).map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul>
+        </div>
+        <div class="written-self-mark">
+          <strong>Self-mark</strong>
+          <p>Select the mark your answer deserves.</p>
+          <div class="written-mark-buttons">${markButtons}</div>
+        </div>
+      </section>
+    `;
+  }
+
+  function handleWrittenAction(action, question) {
+    if (action === "submit") {
+      state.written.answers[question.id] = byId("writtenAnswer")?.value || "";
+      state.written.submitted[question.id] = true;
+      renderWrittenCard();
+      return;
+    }
+    if (action === "next") {
+      if (state.index >= state.deck.length - 1) finishWrittenExam();
+      else {
+        state.index += 1;
+        renderWrittenCard();
+      }
+      return;
+    }
+    if (action === "prev") {
+      if (state.index > 0) {
+        state.index -= 1;
+        renderWrittenCard();
+      }
+      return;
+    }
+    if (action === "finish") finishWrittenExam();
+  }
+
+  function finishWrittenExam() {
+    const total = state.deck.reduce((sum, question) => sum + Number(question.marks || 0), 0);
+    const awarded = state.deck.reduce((sum, question) => sum + Number(state.written?.marksAwarded?.[question.id] || 0), 0);
+    const byDomain = ["biology", "chemistry", "physics"].map((domain) => {
+      const questions = state.deck.filter((question) => question.domain === domain);
+      return {
+        domain,
+        total: questions.reduce((sum, question) => sum + Number(question.marks || 0), 0),
+        awarded: questions.reduce((sum, question) => sum + Number(state.written?.marksAwarded?.[question.id] || 0), 0)
+      };
+    });
+    const percent = total ? Math.round((awarded / total) * 100) : 0;
+    const record = {
+      date: new Date().toISOString(),
+      mode: "written",
+      totalMarks: state.written?.totalMarks || total,
+      awarded,
+      total,
+      percent,
+    };
+    state.progress.writtenExamHistory = [...(state.progress.writtenExamHistory || []), record].slice(-20);
+    saveProgress();
+
+    els.studyPanel.innerHTML = "";
+    els.resultPanel.classList.remove("hidden");
+    els.resultPanel.innerHTML = `
+      <h2>Written exam complete</h2>
+      <p>You self-marked <strong>${awarded}/${total}</strong> (${percent}%).</p>
+      <div class="written-domain-summary">
+        ${byDomain.map((item) => `<div><strong>${escapeHtml(domainLabel(item.domain))}</strong><span>${item.awarded}/${item.total}</span></div>`).join("")}
+      </div>
+      <p>Next step: redo the lowest-scoring science section and focus on the command words that lost marks.</p>
+      <div class="card-actions">
+        <button class="primary-button" data-result-action="written-again" type="button">Build another written exam</button>
+        <button class="secondary-button" data-result-action="hub" type="button">Back to revision hub</button>
+      </div>
+    `;
+    $('[data-result-action="hub"]', els.resultPanel)?.addEventListener("click", showHub);
+    $('[data-result-action="written-again"]', els.resultPanel)?.addEventListener("click", () => startSession("written", { totalMarks: state.progress.writtenExamMarks || 30 }));
+  }
+
   function renderCard() {
+    if (state.mode === "written") {
+      renderWrittenCard();
+      return;
+    }
     const card = state.deck[state.index];
     const isMcq = cardIsMcq(card);
     const isDefinition = cardIsDefinition(card);
@@ -1490,7 +2013,20 @@
       });
     });
 
-    els.routeEntryButton?.addEventListener('click', () => startSession(state.selectedMode || 'practice'));
+    els.routeEntryButton?.addEventListener('click', () => {
+      if ((state.selectedMode || 'practice') === 'written') startSession('written', { totalMarks: state.progress.writtenExamMarks || 30 });
+      else startSession(state.selectedMode || 'practice');
+    });
+
+    $$('[data-written-size]').forEach((button) => {
+      button.addEventListener('click', () => {
+        const marks = Number(button.dataset.writtenSize || 30);
+        state.progress.writtenExamMarks = marks;
+        saveProgress();
+        state.selectedMode = 'written';
+        startSession('written', { totalMarks: marks });
+      });
+    });
 
     els.backToHub.addEventListener("click", showHub);
     els.homeLink.addEventListener("click", (event) => {

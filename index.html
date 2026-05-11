@@ -8,7 +8,7 @@
   <title>Reaction · Year 9 Science Study</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
   <link rel="manifest" href="manifest.webmanifest" />
-  <link rel="stylesheet" href="styles.css?v=1.20.2" />
+  <link rel="stylesheet" href="styles.css?v=1.39.0" />
 </head>
 <body>
   <canvas id="burstCanvas" aria-hidden="true"></canvas>
@@ -48,7 +48,7 @@
           <p class="journey-hint">Choose one mode, then select one or more units or sub-units below.</p>
         </div>
 
-        <div class="journey-grid journey-grid-three" role="radiogroup" aria-label="Learning mode">
+        <div class="journey-grid journey-grid-four" role="radiogroup" aria-label="Learning mode">
           <button class="journey-card status-route route-card-button active" data-mode-select="practice" type="button" role="radio" aria-checked="true">
             <span class="journey-icon">↻</span>
             <strong>Revision journey</strong>
@@ -67,6 +67,12 @@
             <small>Check the cards you have already marked Mastered.</small>
             <em><span id="masteredStat">0</span> ready</em>
           </button>
+          <button class="journey-card written status-route route-card-button" data-mode-select="written" type="button" role="radio" aria-checked="false">
+            <span class="journey-icon">✍</span>
+            <strong>Written exam mode</strong>
+            <small>Build a balanced Biology, Chemistry and Physics written paper.</small>
+            <em>15 · 30 · 45 marks</em>
+          </button>
         </div>
         <div class="journey-entry-row">
           <div>
@@ -74,6 +80,17 @@
             <span id="selectionDetail">Use the unit cards below to narrow the journey.</span>
           </div>
           <button id="routeEntryButton" class="primary-button route-entry-button" type="button">Start revision</button>
+        </div>
+        <div class="written-builder-panel" aria-label="Written exam builder options">
+          <div>
+            <strong>Written exam builder</strong>
+            <span>Balanced 1/3 Biology, 1/3 Chemistry and 1/3 Physics. Practise state, identify, describe, explain and calculation answers.</span>
+          </div>
+          <div class="written-builder-actions">
+            <button class="secondary-button" data-written-size="15" type="button">Quick · 15 marks</button>
+            <button class="secondary-button" data-written-size="30" type="button">Standard · 30 marks</button>
+            <button class="secondary-button" data-written-size="45" type="button">Full · 45 marks</button>
+          </div>
         </div>
       </section>
 
@@ -121,8 +138,8 @@
     </section>
   </main>
 
-  <script src="data/year9-content.js?v=1.20.2"></script>
-  <script src="data/year9-notes.js?v=1.20.2"></script>
-  <script src="app.js?v=1.20.2"></script>
+  <script src="data/year9-content.js?v=1.39.0"></script>
+  <script src="data/year9-notes.js?v=1.39.0"></script>
+  <script src="app.js?v=1.39.0"></script>
 </body>
 </html>

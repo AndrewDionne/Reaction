@@ -1,0 +1,19 @@
+domain,unit,command_word,marks,id,question
+biology,9B,state,1,we-bio-state-photosynthesis-equation,State the word equation for photosynthesis.
+biology,9B,identify,2,we-bio-identify-root-hair-adaptation,Identify two adaptations of root hair cells for absorbing water and mineral ions.
+biology,9B,describe,3,we-bio-describe-food-web-pesticide,Describe what may happen in a food web if pesticides reduce the number of insects.
+biology,9B,explain,3,we-bio-explain-magnesium,Explain why plants need magnesium ions.
+biology,9A,describe,4,we-bio-describe-natural-selection,Describe how natural selection can lead to evolution.
+biology,9B,explain,2,we-bio-explain-farming-sustainability,Explain one problem caused by using fertilisers to increase crop yield.
+chemistry,9F,state,1,we-chem-state-neutralisation,State the products of neutralisation.
+chemistry,9E,identify,2,we-chem-identify-state-symbols,Identify the meaning of the state symbols (s) and (aq).
+chemistry,9F,describe,3,we-chem-describe-displacement,Describe what happens when a more reactive metal is placed in a solution containing a less reactive metal compound.
+chemistry,9F,explain,3,we-chem-explain-aluminium-electrolysis,Explain why aluminium is extracted by electrolysis rather than by heating aluminium oxide with carbon.
+chemistry,9F,explain,4,we-chem-explain-thermite-redox,"In the thermite reaction, aluminium reacts with iron oxide to make aluminium oxide and iron. Explain why this is a redox reaction."
+chemistry,9E,explain,2,we-chem-describe-recycling-aluminium,Explain why recycling aluminium saves energy compared with extracting aluminium from its ore.
+physics,9I,state,1,we-phys-state-resultant-force,State what is meant by the resultant force on an object.
+physics,9J,identify,2,we-phys-identify-circuit-meters,Identify how an ammeter and a voltmeter are connected in a circuit.
+physics,9I,describe,3,we-phys-describe-speed-time,"A speed-time graph shows speed increasing from 0 m/s to 12 m/s in the first 4 s, then staying at 12 m/s from 4 s to 10 s. Describe the motion."
+physics,9I,explain,4,we-phys-explain-terminal-velocity,Explain why a falling object reaches terminal velocity.
+physics,9I,calculate,2,we-phys-calculate-moment,A force of 20 N acts 0.40 m from a pivot. Calculate the moment.
+physics,9J,explain,3,we-phys-explain-wire-resistance,Explain how increasing the length of a wire affects its resistance.
