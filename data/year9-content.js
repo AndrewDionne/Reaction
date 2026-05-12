@@ -1,7 +1,7 @@
 window.YEAR9_CONTENT = {
-  "version": "1.51.0",
+  "version": "1.53.0",
   "title": "Year 9 Science End-of-Year Study",
-  "subtitle": "Guided revision aligned to the school study pack, with source-safe diagram, graph and calculation visuals integrated where they support exam-style prompts",
+  "subtitle": "Guided revision aligned to the school study pack, with unit overviews and source-safe diagram, graph, calculation and infographic visuals integrated where they support exam-style prompts",
   "units": [
     {
       "id": "9A",
@@ -1741,21 +1741,22 @@ window.YEAR9_CONTENT = {
       "source": "9F quick quiz 9Fa Q2",
       "level": 1,
       "cue": "",
-      "tags": [],
+      "tags": [
+        "r6-media-support"
+      ],
       "sourceFidelity": "exact-source-text",
       "learningObjective": "9F-changes",
       "learningObjectiveTitle": "Physical and chemical changes",
       "learningObjectiveDescription": "Physical changes, chemical reactions, particles, molecules, formulae and gas pressure.",
       "noteId": "9F-changes",
-      "mediaPolicy": "question-media-only-if-required",
+      "mediaPolicy": "supports-question",
       "media": [
         {
-          "src": "assets/webp/9E-gas-pressure-brownian-motion-blank-v3.webp",
-          "alt": "Question-safe particle diagrams for gas pressure.",
-          "caption": "",
+          "src": "assets/webp/9F-gas-pressure-particle-collisions-question-v153.webp",
+          "alt": "Question-safe gas pressure particle collision diagram.",
+          "caption": "Use the diagram to support your answer.",
           "mediaTiming": "question",
-          "presentation": "media-image-base",
-          "questionAssetV147": true
+          "presentation": "media-image-base"
         }
       ]
     },
@@ -4635,22 +4636,22 @@ window.YEAR9_CONTENT = {
       "level": 1,
       "cue": "Say the definition in your own words first.",
       "tags": [
-        "vocabulary"
+        "vocabulary",
+        "r6-media-support"
       ],
       "sourceFidelity": "exact-source-text",
       "learningObjective": "9F-changes",
       "learningObjectiveTitle": "Physical and chemical changes",
       "learningObjectiveDescription": "Physical changes, chemical reactions, particles, molecules, formulae and gas pressure.",
       "noteId": "9F-changes",
-      "mediaPolicy": "question-media-only-if-required",
+      "mediaPolicy": "supports-question",
       "media": [
         {
-          "src": "assets/webp/9E-gas-pressure-brownian-motion-blank-v3.webp",
-          "alt": "Question-safe particle diagrams for gas pressure.",
-          "caption": "",
+          "src": "assets/webp/9F-gas-pressure-particle-collisions-question-v153.webp",
+          "alt": "Question-safe gas pressure particle collision diagram.",
+          "caption": "Use the diagram to support your answer.",
           "mediaTiming": "question",
-          "presentation": "media-image-base",
-          "questionAssetV147": true
+          "presentation": "media-image-base"
         }
       ]
     },
@@ -5907,22 +5908,22 @@ window.YEAR9_CONTENT = {
       "level": 3,
       "cue": "Try to answer in full sentences before revealing the mark-scheme version.",
       "tags": [
-        "written"
+        "written",
+        "r6-media-support"
       ],
       "sourceFidelity": "progress-check-derived",
       "learningObjective": "9A-inheritance",
       "learningObjectiveTitle": "Inheritance, DNA and genes",
       "learningObjectiveDescription": "Cells, nuclei, chromosomes, DNA, genes and preserving genetic information.",
       "noteId": "9A-inheritance",
-      "mediaPolicy": "question-media-only-if-required",
+      "mediaPolicy": "supports-question",
       "media": [
         {
-          "src": "assets/webp/9A-dna-chromosome-gene-hierarchy-blank-v2.webp",
-          "alt": "Question-safe cell to DNA hierarchy with blank label boxes.",
-          "caption": "Use the zoom sequence to describe how cell, nucleus, chromosome, DNA and gene are linked.",
+          "src": "assets/webp/9A-dna-hierarchy-question-v153.webp",
+          "alt": "Question-safe DNA, chromosome and gene hierarchy diagram.",
+          "caption": "Use the diagram to support your answer.",
           "mediaTiming": "question",
-          "presentation": "media-image-base",
-          "questionAssetV148": true
+          "presentation": "media-image-base"
         }
       ]
     },
@@ -6064,14 +6065,24 @@ window.YEAR9_CONTENT = {
       "level": 3,
       "cue": "Try to answer in full sentences before revealing the mark-scheme version.",
       "tags": [
-        "written"
+        "written",
+        "r6-media-support"
       ],
       "sourceFidelity": "progress-check-derived",
       "learningObjective": "9B-plant-transport",
       "learningObjectiveTitle": "Plant transport and specialised cells",
       "learningObjectiveDescription": "Root hair cells, stomata, guard cells, xylem, phloem and plant structure.",
       "noteId": "9B-plant-transport",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "supports-question",
+      "media": [
+        {
+          "src": "assets/webp/9B-plant-transport-overview-question-v153.webp",
+          "alt": "Question-safe plant transport overview diagram.",
+          "caption": "Use the diagram to support your answer.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base"
+        }
+      ]
     },
     {
       "id": "y9-244-9b-explain-the-structure-of-xylem-vessels",
@@ -7103,22 +7114,22 @@ window.YEAR9_CONTENT = {
       "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
       "tags": [
         "assess",
-        "written"
+        "written",
+        "r6-media-support"
       ],
       "sourceFidelity": "success-criterion-derived",
       "learningObjective": "9A-inheritance",
       "learningObjectiveTitle": "Inheritance, DNA and genes",
       "learningObjectiveDescription": "Cells, nuclei, chromosomes, DNA, genes and preserving genetic information.",
       "noteId": "9A-inheritance",
-      "mediaPolicy": "question-media-only-if-required",
+      "mediaPolicy": "supports-question",
       "media": [
         {
-          "src": "assets/webp/9A-dna-chromosome-gene-hierarchy-blank-v2.webp",
-          "alt": "Question-safe cell to DNA hierarchy with blank label boxes.",
-          "caption": "Use the zoom sequence to describe how cell, nucleus, chromosome, DNA and gene are linked.",
+          "src": "assets/webp/9A-dna-hierarchy-question-v153.webp",
+          "alt": "Question-safe cell, nucleus, chromosome, DNA and gene hierarchy diagram.",
+          "caption": "Use the diagram to support your answer.",
           "mediaTiming": "question",
-          "presentation": "media-image-base",
-          "questionAssetV148": true
+          "presentation": "media-image-base"
         }
       ]
     },
@@ -7333,14 +7344,24 @@ window.YEAR9_CONTENT = {
       "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
       "tags": [
         "assess",
-        "written"
+        "written",
+        "r6-media-support"
       ],
       "sourceFidelity": "success-criterion-derived",
       "learningObjective": "9B-plant-transport",
       "learningObjectiveTitle": "Plant transport and specialised cells",
       "learningObjectiveDescription": "Root hair cells, stomata, guard cells, xylem, phloem and plant structure.",
       "noteId": "9B-plant-transport",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "supports-question",
+      "media": [
+        {
+          "src": "assets/webp/9B-plant-transport-overview-question-v153.webp",
+          "alt": "Question-safe plant transport overview diagram.",
+          "caption": "Use the diagram to support your answer.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base"
+        }
+      ]
     },
     {
       "id": "y9x-023-9b-explain-why-insecticides-and-fungicides-are-used-on-crop-plants",
@@ -10207,14 +10228,16 @@ window.YEAR9_CONTENT = {
       "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
       "tags": [
         "ppt",
-        "written"
+        "written",
+        "r6-media-support"
       ],
       "media": [
         {
-          "src": "assets/webp/9J-current-voltage-resistors-ab-blank-v2.webp",
-          "alt": "Blank current-voltage graph showing two straight lines labelled A and B.",
-          "caption": "Use the slopes of the two current-voltage lines.",
-          "mediaTiming": "question"
+          "src": "assets/webp/9J-current-voltage-graph-comparison-question-v153.webp",
+          "alt": "Question-safe current-voltage graph comparison diagram.",
+          "caption": "Use the diagram to support your answer.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base"
         }
       ],
       "sourceFidelity": "progress-check-derived",
@@ -10222,7 +10245,7 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Resistance and Ohm’s law",
       "learningObjectiveDescription": "Resistance, current-voltage graphs, high-resistance materials and calculations.",
       "noteId": "9J-resistance",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "supports-question"
     },
     {
       "id": "y9x-113-9j-plan-an-investigation-into-how-wire-thickness-affects-resistance",
@@ -11079,7 +11102,7 @@ window.YEAR9_CONTENT = {
     },
     {
       "unit": "9J",
-      "sourceFidelity": "source-style-redraw",
+      "sourceFidelity": "revision-pack-aligned-visual-practice",
       "learningObjective": "9J-circuits",
       "learningObjectiveTitle": "Current, voltage and circuits",
       "learningObjectiveDescription": "Current, voltage/potential difference, series and parallel circuits, meters and components.",
@@ -11108,8 +11131,8 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9J-circuit-symbols-grid-question-v149.webp",
-          "alt": "Question-safe circuit symbol grid labelled A to H.",
-          "caption": "Use the labelled circuit symbols.",
+          "alt": "Question-safe circuit/meter placement diagram.",
+          "caption": "Use the diagram to answer the question.",
           "mediaTiming": "question",
           "presentation": "media-image-base"
         }
@@ -11117,7 +11140,7 @@ window.YEAR9_CONTENT = {
     },
     {
       "unit": "9J",
-      "sourceFidelity": "source-style-redraw",
+      "sourceFidelity": "revision-pack-aligned-visual-practice",
       "learningObjective": "9J-circuits",
       "learningObjectiveTitle": "Current, voltage and circuits",
       "learningObjectiveDescription": "Current, voltage/potential difference, series and parallel circuits, meters and components.",
@@ -11146,8 +11169,8 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9J-circuit-symbols-grid-question-v149.webp",
-          "alt": "Question-safe circuit symbol grid labelled A to H.",
-          "caption": "Use the labelled circuit symbols.",
+          "alt": "Question-safe circuit/meter placement diagram.",
+          "caption": "Use the diagram to answer the question.",
           "mediaTiming": "question",
           "presentation": "media-image-base"
         }
@@ -11155,7 +11178,7 @@ window.YEAR9_CONTENT = {
     },
     {
       "unit": "9J",
-      "sourceFidelity": "source-style-redraw",
+      "sourceFidelity": "revision-pack-aligned-visual-practice",
       "learningObjective": "9J-circuits",
       "learningObjectiveTitle": "Current, voltage and circuits",
       "learningObjectiveDescription": "Current, voltage/potential difference, series and parallel circuits, meters and components.",
@@ -11184,8 +11207,8 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9J-circuit-symbols-grid-question-v149.webp",
-          "alt": "Question-safe circuit symbol grid labelled A to H.",
-          "caption": "Use the labelled circuit symbols.",
+          "alt": "Question-safe circuit/meter placement diagram.",
+          "caption": "Use the diagram to answer the question.",
           "mediaTiming": "question",
           "presentation": "media-image-base"
         }
@@ -11420,7 +11443,7 @@ window.YEAR9_CONTENT = {
     },
     {
       "unit": "9J",
-      "sourceFidelity": "source-style-redraw",
+      "sourceFidelity": "revision-pack-aligned-visual-practice",
       "learningObjective": "9J-circuits",
       "learningObjectiveTitle": "Current, voltage and circuits",
       "learningObjectiveDescription": "Current, voltage/potential difference, series and parallel circuits, meters and components.",
@@ -11449,8 +11472,8 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9J-meter-placement-xy-question-v149.webp",
-          "alt": "Circuit diagram with positions X, Y and Z for meter placement around a lamp.",
-          "caption": "Use X, Y and Z to decide where meters should be connected.",
+          "alt": "Question-safe circuit/meter placement diagram.",
+          "caption": "Use the diagram to answer the question.",
           "mediaTiming": "question",
           "presentation": "media-image-base"
         }
@@ -11458,7 +11481,7 @@ window.YEAR9_CONTENT = {
     },
     {
       "unit": "9J",
-      "sourceFidelity": "source-style-redraw",
+      "sourceFidelity": "revision-pack-aligned-visual-practice",
       "learningObjective": "9J-circuits",
       "learningObjectiveTitle": "Current, voltage and circuits",
       "learningObjectiveDescription": "Current, voltage/potential difference, series and parallel circuits, meters and components.",
@@ -11487,8 +11510,8 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9J-meter-placement-xy-question-v149.webp",
-          "alt": "Circuit diagram with positions X, Y and Z for meter placement around a lamp.",
-          "caption": "Use X, Y and Z to decide where meters should be connected.",
+          "alt": "Question-safe circuit/meter placement diagram.",
+          "caption": "Use the diagram to answer the question.",
           "mediaTiming": "question",
           "presentation": "media-image-base"
         }
@@ -12824,14 +12847,24 @@ window.YEAR9_CONTENT = {
       "cue": "Use the revision-pack wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
-        "source-traceable"
+        "source-traceable",
+        "r6-media-support"
       ],
       "sourceFidelity": "exact-source-answer",
       "learningObjective": "9F-reactivity",
       "learningObjectiveTitle": "Reactivity and displacement",
       "learningObjectiveDescription": "Reactivity series, metal reactions, displacement and reaction patterns.",
       "noteId": "9F-reactivity",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "supports-question",
+      "media": [
+        {
+          "src": "assets/webp/9F-metal-reaction-products-question-v153.webp",
+          "alt": "Question-safe reactive metal product map.",
+          "caption": "Use the diagram to support your answer.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base"
+        }
+      ]
     },
     {
       "id": "y9r-035-9f-what-do-metals-that-react-with-dilute-acids-produce",
@@ -13657,14 +13690,24 @@ window.YEAR9_CONTENT = {
       "cue": "Use the revision-pack wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
-        "source-traceable"
+        "source-traceable",
+        "r6-media-support"
       ],
       "sourceFidelity": "exact-source-answer",
       "learningObjective": "9J-fields",
       "learningObjectiveTitle": "Force fields, gravity and magnetism",
       "learningObjectiveDescription": "Force fields, gravitational fields, weight, electric fields and magnetism.",
       "noteId": "9J-fields",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "supports-question",
+      "media": [
+        {
+          "src": "assets/webp/9J-force-field-comparison-question-v153.webp",
+          "alt": "Question-safe force-field comparison diagram.",
+          "caption": "Use the diagram to support your answer.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base"
+        }
+      ]
     },
     {
       "id": "y9r-066-9j-what-is-the-earths-gravitational-field-strength-according-to-the-revision-s",
@@ -13727,14 +13770,24 @@ window.YEAR9_CONTENT = {
       "cue": "Use the revision-pack wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
-        "source-traceable"
+        "source-traceable",
+        "r6-media-support"
       ],
       "sourceFidelity": "exact-source-answer",
       "learningObjective": "9J-static",
       "learningObjectiveTitle": "Static electricity and charge",
       "learningObjectiveDescription": "Charge, electron transfer, attraction/repulsion and electric fields.",
       "noteId": "9J-static",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "supports-question",
+      "media": [
+        {
+          "src": "assets/webp/9J-force-field-comparison-question-v153.webp",
+          "alt": "Question-safe force-field comparison diagram.",
+          "caption": "Use the diagram to support your answer.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base"
+        }
+      ]
     },
     {
       "id": "y9r-069-9j-what-is-current",
@@ -17854,16 +17907,15 @@ window.YEAR9_CONTENT = {
       "answer": "Initial volume = 35 cm³. Final volume = 60 cm³. Volume of object = 25 cm³. Density = 125 ÷ 25 = 5 g/cm³.",
       "choices": [],
       "explanation": "For an irregular object, volume is found by water displacement. The water rises by 25 cm³, so density = mass ÷ volume = 125 g ÷ 25 cm³ = 5 g/cm³.",
-      "source": "Diagram and calculation asset integration v1.49.0",
+      "source": "Visual integration v1.52.0",
       "level": 3,
-      "cue": "Find volume from final volume minus initial volume, then use density = mass ÷ volume.",
+      "cue": "Use the source diagram.",
       "tags": [
         "diagram-calculation-v1.49",
         "density",
-        "water-displacement",
-        "written-practice"
+        "water-displacement"
       ],
-      "sourceFidelity": "derived",
+      "sourceFidelity": "source-style-redraw",
       "learningObjective": "9I-pressure",
       "learningObjectiveTitle": "Pressure, density and floating",
       "learningObjectiveDescription": "Pressure calculations, contact area, liquid pressure, upthrust, floating and density calculations.",
@@ -17873,7 +17925,7 @@ window.YEAR9_CONTENT = {
         {
           "src": "assets/webp/9I-density-water-displacement-question-v149.webp",
           "alt": "Two measuring cylinders showing initial and final water volume after an object is added, with object mass 125 g.",
-          "caption": "Use the change in water level to find the object's volume.",
+          "caption": "Use the diagram to answer the question.",
           "mediaTiming": "question",
           "presentation": "media-image-base"
         }
@@ -17887,15 +17939,15 @@ window.YEAR9_CONTENT = {
       "answer": "Volume = length × width × height = 10 × 4 × 5 = 200 cm³. Density = 800 ÷ 200 = 4 g/cm³.",
       "choices": [],
       "explanation": "For a regular solid, first calculate volume from the dimensions, then divide mass by volume.",
-      "source": "Diagram and calculation asset integration v1.49.0",
+      "source": "Visual integration v1.52.0",
       "level": 3,
-      "cue": "For a cuboid, volume = length × width × height.",
+      "cue": "Use the source diagram.",
       "tags": [
         "diagram-calculation-v1.49",
         "density",
         "regular-solid"
       ],
-      "sourceFidelity": "derived",
+      "sourceFidelity": "source-style-redraw",
       "learningObjective": "9I-pressure",
       "learningObjectiveTitle": "Pressure, density and floating",
       "learningObjectiveDescription": "Pressure calculations, contact area, liquid pressure, upthrust, floating and density calculations.",
@@ -17905,7 +17957,7 @@ window.YEAR9_CONTENT = {
         {
           "src": "assets/webp/9I-density-cuboid-question-v149.webp",
           "alt": "Cuboid with length 10 cm, width 4 cm, height 5 cm and mass 800 g.",
-          "caption": "Use the dimensions to find volume before calculating density.",
+          "caption": "Use the diagram to answer the question.",
           "mediaTiming": "question",
           "presentation": "media-image-base"
         }
@@ -17919,15 +17971,15 @@ window.YEAR9_CONTENT = {
       "answer": "Pressure = force ÷ area = 180 N ÷ 30 cm² = 6 N/cm².",
       "choices": [],
       "explanation": "Pressure depends on both force and contact area. Divide the force by the area in the units given.",
-      "source": "Diagram and calculation asset integration v1.49.0",
+      "source": "Visual integration v1.52.0",
       "level": 2,
-      "cue": "Use pressure = force ÷ area.",
+      "cue": "Use the source diagram.",
       "tags": [
         "diagram-calculation-v1.49",
         "pressure",
         "solid-pressure"
       ],
-      "sourceFidelity": "derived",
+      "sourceFidelity": "source-style-redraw",
       "learningObjective": "9I-pressure",
       "learningObjectiveTitle": "Pressure, density and floating",
       "learningObjectiveDescription": "Pressure calculations, contact area, liquid pressure, upthrust, floating and density calculations.",
@@ -17937,7 +17989,7 @@ window.YEAR9_CONTENT = {
         {
           "src": "assets/webp/9I-pressure-solid-block-question-v149.webp",
           "alt": "Block with downward force 180 N and contact area 30 cm squared.",
-          "caption": "Use the values from the diagram.",
+          "caption": "Use the diagram to answer the question.",
           "mediaTiming": "question",
           "presentation": "media-image-base"
         }
@@ -17956,15 +18008,15 @@ window.YEAR9_CONTENT = {
         "D Shoe B, because pressure increases when area increases"
       ],
       "explanation": "Both shoes have the same 300 N force, but shoe A has a much smaller contact area. Smaller area gives greater pressure.",
-      "source": "Diagram and calculation asset integration v1.49.0",
+      "source": "Visual integration v1.52.0",
       "level": 2,
-      "cue": "Compare the contact areas, not only the force.",
+      "cue": "Use the source diagram.",
       "tags": [
         "diagram-calculation-v1.49",
         "pressure",
         "contact-area"
       ],
-      "sourceFidelity": "derived",
+      "sourceFidelity": "source-style-redraw",
       "learningObjective": "9I-pressure",
       "learningObjectiveTitle": "Pressure, density and floating",
       "learningObjectiveDescription": "Pressure calculations, contact area, liquid pressure, upthrust, floating and density calculations.",
@@ -17974,7 +18026,7 @@ window.YEAR9_CONTENT = {
         {
           "src": "assets/webp/9I-pressure-shoe-contact-area-question-v149.webp",
           "alt": "Two shoes with the same downward force but different contact areas labelled A and B.",
-          "caption": "Compare force and contact area.",
+          "caption": "Use the diagram to answer the question.",
           "mediaTiming": "question",
           "presentation": "media-image-base"
         }
@@ -17988,15 +18040,15 @@ window.YEAR9_CONTENT = {
       "answer": "Left moment = 240 N × 2 m = 480 N m. For balance, right moment = 480 N m. Distance = 480 ÷ 160 = 3 m.",
       "choices": [],
       "explanation": "A balanced lever has equal clockwise and anticlockwise moments. Use force × distance on the known side, then divide by the force on the unknown side.",
-      "source": "Diagram and calculation asset integration v1.49.0",
+      "source": "Visual integration v1.52.0",
       "level": 3,
-      "cue": "For balance: clockwise moment = anticlockwise moment.",
+      "cue": "Use the source diagram.",
       "tags": [
         "diagram-calculation-v1.49",
         "moments",
         "balanced-lever"
       ],
-      "sourceFidelity": "derived",
+      "sourceFidelity": "source-style-redraw",
       "learningObjective": "9I-moments",
       "learningObjectiveTitle": "Levers, pivots and moments",
       "learningObjectiveDescription": "Levers, pivots/fulcrums, moment calculations and mechanical advantage.",
@@ -18006,7 +18058,7 @@ window.YEAR9_CONTENT = {
         {
           "src": "assets/webp/9I-moment-balanced-missing-distance-question-v149.webp",
           "alt": "Lever balanced on a pivot with 240 N at 2 m on one side and 160 N at an unknown distance on the other side.",
-          "caption": "Use equal moments for balance.",
+          "caption": "Use the diagram to answer the question.",
           "mediaTiming": "question",
           "presentation": "media-image-base"
         }
@@ -18025,15 +18077,15 @@ window.YEAR9_CONTENT = {
         "D 7 to 10 min"
       ],
       "explanation": "On a distance-time graph, a horizontal section means the distance is not changing, so the object is stopped.",
-      "source": "Diagram and calculation asset integration v1.49.0",
+      "source": "Visual integration v1.52.0",
       "level": 2,
-      "cue": "Look for the horizontal part of the graph.",
+      "cue": "Use the source diagram.",
       "tags": [
         "diagram-calculation-v1.49",
         "distance-time-graph",
         "graph-reading"
       ],
-      "sourceFidelity": "derived",
+      "sourceFidelity": "source-style-redraw",
       "learningObjective": "9I-speed",
       "learningObjectiveTitle": "Speed and distance-time graphs",
       "learningObjectiveDescription": "Speed calculations, mean speed and interpreting distance-time graphs.",
@@ -18043,7 +18095,7 @@ window.YEAR9_CONTENT = {
         {
           "src": "assets/webp/9I-distance-time-journey-question-v149.webp",
           "alt": "Distance-time graph titled journey to the park and back.",
-          "caption": "Use graph shape to identify motion.",
+          "caption": "Use the diagram to answer the question.",
           "mediaTiming": "question",
           "presentation": "media-image-base"
         }
@@ -18062,15 +18114,15 @@ window.YEAR9_CONTENT = {
         "D They have the same resistance because both lines are straight"
       ],
       "explanation": "For the same potential difference, the component with the lower current has the greater resistance. Line B has lower current than line A.",
-      "source": "Diagram and calculation asset integration v1.49.0",
+      "source": "Visual integration v1.52.0",
       "level": 3,
-      "cue": "Use resistance = voltage ÷ current and compare the lines at the same voltage.",
+      "cue": "Use the source diagram.",
       "tags": [
         "diagram-calculation-v1.49",
         "current-voltage-graph",
         "resistance"
       ],
-      "sourceFidelity": "derived",
+      "sourceFidelity": "source-style-redraw",
       "learningObjective": "9J-resistance",
       "learningObjectiveTitle": "Resistance and Ohm’s law",
       "learningObjectiveDescription": "Resistance, current-voltage graphs, high-resistance materials and calculations.",
@@ -18080,7 +18132,814 @@ window.YEAR9_CONTENT = {
         {
           "src": "assets/webp/9J-current-voltage-graph-question-v149.webp",
           "alt": "Current against potential difference graph with lines A and B.",
-          "caption": "Compare current at the same potential difference.",
+          "caption": "Use the diagram to answer the question.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base"
+        }
+      ]
+    },
+    {
+      "id": "y9r4-001-9e-peer-review-flowchart-outcome",
+      "unit": "9E",
+      "type": "Quick quiz",
+      "question": "Use the peer-review flowchart. What are the possible final outcomes after expert review?",
+      "answer": "C",
+      "choices": [
+        "A Accepted only",
+        "B Published or deleted",
+        "C Accepted, revised or rejected",
+        "D Copied, memorised or ignored"
+      ],
+      "explanation": "The flowchart shows that expert review can lead to a paper being accepted, revised or rejected.",
+      "source": "Visual integration v1.52.0",
+      "level": 2,
+      "cue": "Use the source diagram.",
+      "tags": [
+        "r4-image-integration",
+        "peer-review",
+        "flowchart"
+      ],
+      "sourceFidelity": "source-style-redraw",
+      "learningObjective": "9E-energy-thermal-peer-review",
+      "learningObjectiveTitle": "Energy changes, thermal decomposition and peer review",
+      "learningObjectiveDescription": "Endothermic/exothermic changes, thermal decomposition, state symbols and peer review.",
+      "noteId": "9E-energy-thermal-peer-review",
+      "mediaPolicy": "required-for-question",
+      "media": [
+        {
+          "src": "assets/webp/9E-peer-review-process-question-v151.webp",
+          "alt": "Question-safe peer-review process flowchart.",
+          "caption": "Use the diagram to answer the question.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base"
+        }
+      ]
+    },
+    {
+      "id": "y9r4-002-9b-farming-table-hedgerows",
+      "unit": "9B",
+      "type": "Quick quiz",
+      "question": "Use the farming-methods table. Which method increases field size but can cause habitat loss and reduced biodiversity?",
+      "answer": "A",
+      "choices": [
+        "A Removing hedgerows",
+        "B Using pesticides",
+        "C Using fertilisers",
+        "D Selective breeding"
+      ],
+      "explanation": "Removing hedgerows can make larger fields for machines, but removes habitats and can reduce biodiversity.",
+      "source": "Visual integration v1.52.0",
+      "level": 2,
+      "cue": "Use the source diagram.",
+      "tags": [
+        "r4-image-integration",
+        "farming-yield",
+        "biodiversity"
+      ],
+      "sourceFidelity": "source-style-redraw",
+      "learningObjective": "9B-farming-yield-impact",
+      "learningObjectiveTitle": "Farming methods: yield, problems and sustainability",
+      "learningObjectiveDescription": "Modern farming methods, yield, biodiversity and sustainable-development trade-offs.",
+      "noteId": "9B-farming-yield-impact",
+      "mediaPolicy": "required-for-question",
+      "media": [
+        {
+          "src": "assets/webp/9B-farming-yield-methods-question-v151.webp",
+          "alt": "Question-safe farming methods table.",
+          "caption": "Use the diagram to answer the question.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base"
+        }
+      ]
+    },
+    {
+      "id": "y9r4-003-9b-glucose-use-proteins",
+      "unit": "9B",
+      "type": "Quick quiz",
+      "question": "Use the glucose-use diagram. Which labelled box represents glucose being used to make proteins with mineral ions?",
+      "answer": "E",
+      "choices": [
+        "A Box A",
+        "B Box B",
+        "C Box C",
+        "D Box D",
+        "E Box E"
+      ],
+      "explanation": "Proteins are made using glucose together with mineral ions such as nitrates. In this diagram, that is box E.",
+      "source": "Visual integration v1.52.0",
+      "level": 2,
+      "cue": "Use the source diagram.",
+      "tags": [
+        "r4-image-integration",
+        "glucose-uses",
+        "plant-products"
+      ],
+      "sourceFidelity": "source-style-redraw",
+      "learningObjective": "9B-plant-products",
+      "learningObjectiveTitle": "Plant products, seeds and food production",
+      "learningObjectiveDescription": "Glucose uses, starch, cellulose, oils, minerals, seeds and food production.",
+      "noteId": "9B-plant-products",
+      "mediaPolicy": "required-for-question",
+      "media": [
+        {
+          "src": "assets/webp/9B-glucose-uses-question-v151.webp",
+          "alt": "Question-safe flow map from glucose to labelled boxes A to E.",
+          "caption": "Use the diagram to answer the question.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base"
+        }
+      ]
+    },
+    {
+      "id": "y9r4-004-9e-exothermic-endothermic-compare",
+      "unit": "9E",
+      "type": "Quick quiz",
+      "question": "Use the two reaction diagrams. Which diagram shows an exothermic reaction?",
+      "answer": "A",
+      "choices": [
+        "A The left diagram with energy arrows moving out and a warmer thermometer",
+        "B The right diagram with energy arrows moving in and a cooler thermometer",
+        "C Both diagrams show exothermic reactions",
+        "D Neither diagram shows an energy transfer"
+      ],
+      "explanation": "Exothermic reactions transfer energy to the surroundings, so the surroundings get warmer. The left diagram shows energy moving out and a higher temperature.",
+      "source": "Visual integration v1.52.0",
+      "level": 2,
+      "cue": "Use the source diagram.",
+      "tags": [
+        "r4-image-integration",
+        "exothermic",
+        "endothermic"
+      ],
+      "sourceFidelity": "source-style-redraw",
+      "learningObjective": "9E-energy-thermal-peer-review",
+      "learningObjectiveTitle": "Energy changes, thermal decomposition and peer review",
+      "learningObjectiveDescription": "Endothermic/exothermic changes, thermal decomposition, state symbols and peer review.",
+      "noteId": "9E-energy-thermal-peer-review",
+      "mediaPolicy": "required-for-question",
+      "media": [
+        {
+          "src": "assets/webp/9E-exothermic-endothermic-question-v151.webp",
+          "alt": "Two reaction containers showing energy transfer arrows and thermometers.",
+          "caption": "Use the diagram to answer the question.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base"
+        }
+      ]
+    },
+    {
+      "id": "y9r4-005-9a-biodiversity-preservation-methods",
+      "unit": "9A",
+      "type": "Quick quiz",
+      "question": "Use the biodiversity diagram. Which option gives two methods used to preserve biodiversity?",
+      "answer": "D",
+      "choices": [
+        "A Pollution and hunting",
+        "B Climate change and invasive species",
+        "C Habitat destruction and pollution",
+        "D Nature reserves and breeding programmes"
+      ],
+      "explanation": "Nature reserves and breeding programmes are conservation methods used to help preserve biodiversity.",
+      "source": "Visual integration v1.52.0",
+      "level": 2,
+      "cue": "Use the source diagram.",
+      "tags": [
+        "r4-image-integration",
+        "biodiversity",
+        "conservation"
+      ],
+      "sourceFidelity": "source-style-redraw",
+      "learningObjective": "9A-biodiversity",
+      "learningObjectiveTitle": "Biodiversity, conservation and extinction",
+      "learningObjectiveDescription": "Biodiversity, endangered species, extinction causes and conservation methods.",
+      "noteId": "9A-biodiversity",
+      "mediaPolicy": "required-for-question",
+      "media": [
+        {
+          "src": "assets/webp/9A-biodiversity-extinction-conservation-question-v151.webp",
+          "alt": "Question-safe biodiversity diagram showing causes and conservation methods.",
+          "caption": "Use the diagram to answer the question.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base"
+        }
+      ]
+    },
+    {
+      "id": "y9r5-001-9b-photosynthesis-temperature-rate",
+      "unit": "9B",
+      "type": "Quick quiz",
+      "question": "Use the limiting-factor graphs. Which graph shows the rate falling after a high value of the factor?",
+      "answer": "C",
+      "choices": [
+        "A Light intensity",
+        "B Carbon dioxide concentration",
+        "C Temperature",
+        "D All three graphs"
+      ],
+      "explanation": "The temperature graph rises to a peak and then falls at high temperature.",
+      "source": "Visual integration v1.52.0",
+      "level": 3,
+      "cue": "Use the source diagram.",
+      "tags": [
+        "r5-image-integration",
+        "photosynthesis",
+        "limiting-factors",
+        "graph-reading"
+      ],
+      "sourceFidelity": "source-style-redraw",
+      "learningObjective": "9B-photosynthesis",
+      "learningObjectiveTitle": "Photosynthesis and respiration",
+      "learningObjectiveDescription": "Photosynthesis inputs/products, chlorophyll, limiting factors and respiration contrast.",
+      "noteId": "9B-photosynthesis",
+      "mediaPolicy": "required-for-question",
+      "media": [
+        {
+          "src": "assets/webp/9B-photosynthesis-limiting-factors-question-v152.webp",
+          "alt": "Question-safe graphs for light intensity, carbon dioxide concentration and temperature.",
+          "caption": "Use the diagram to answer the question.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base"
+        }
+      ]
+    },
+    {
+      "id": "y9r5-002-9i-speed-time-constant-speed",
+      "unit": "9I",
+      "type": "Quick quiz",
+      "question": "Use the speed-time graph. Which section shows constant speed?",
+      "answer": "B",
+      "choices": [
+        "A Section A",
+        "B Section B",
+        "C Section C",
+        "D Section D"
+      ],
+      "explanation": "A horizontal line above zero on a speed-time graph shows constant speed.",
+      "source": "Visual integration v1.52.0",
+      "level": 2,
+      "cue": "Use the source diagram.",
+      "tags": [
+        "r5-image-integration",
+        "speed-time-graph"
+      ],
+      "sourceFidelity": "source-style-redraw",
+      "learningObjective": "9I-speed-time-graphs",
+      "learningObjectiveTitle": "Speed-time graphs",
+      "learningObjectiveDescription": "Speed-time graph interpretation, acceleration, deceleration and constant speed.",
+      "noteId": "9I-speed-time-graphs",
+      "mediaPolicy": "required-for-question",
+      "media": [
+        {
+          "src": "assets/webp/9I-speed-time-graph-question-v152.webp",
+          "alt": "Question-safe speed-time graph labelled A to D.",
+          "caption": "Use the diagram to answer the question.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base"
+        }
+      ]
+    },
+    {
+      "id": "y9r5-003-9j-wire-resistance-independent-variable",
+      "unit": "9J",
+      "type": "Quick quiz",
+      "question": "Use the wire-resistance setup. What is the independent variable in this investigation?",
+      "answer": "A",
+      "choices": [
+        "A Length of resistance wire",
+        "B Material of the wire",
+        "C Thickness of the wire",
+        "D Temperature of the wire"
+      ],
+      "explanation": "The investigation changes the length of the resistance wire and measures the effect on resistance.",
+      "source": "Visual integration v1.52.0",
+      "level": 3,
+      "cue": "Use the source diagram.",
+      "tags": [
+        "r5-image-integration",
+        "wire-resistance",
+        "practical"
+      ],
+      "sourceFidelity": "source-style-redraw",
+      "learningObjective": "9J-wire-resistance-investigation",
+      "learningObjectiveTitle": "Wire resistance investigation",
+      "learningObjectiveDescription": "Wire length, thickness, material and control variables.",
+      "noteId": "9J-wire-resistance-investigation",
+      "mediaPolicy": "required-for-question",
+      "media": [
+        {
+          "src": "assets/webp/9J-wire-resistance-investigation-question-v152.webp",
+          "alt": "Question-safe wire resistance investigation apparatus.",
+          "caption": "Use the diagram to answer the question.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base"
+        }
+      ]
+    },
+    {
+      "id": "y9r5-004-9f-extraction-electrolysis-region",
+      "unit": "9F",
+      "type": "Quick quiz",
+      "question": "Use the extraction decision tree. Which method is used for the most reactive metals shown above carbon?",
+      "answer": "B",
+      "choices": [
+        "A Native metal collection",
+        "B Electrolysis",
+        "C Reduction with carbon",
+        "D Filtration"
+      ],
+      "explanation": "Metals above carbon in the reactivity series are too reactive to be extracted using carbon and need electrolysis.",
+      "source": "Visual integration v1.52.0",
+      "level": 3,
+      "cue": "Use the source diagram.",
+      "tags": [
+        "r5-image-integration",
+        "reactivity-series",
+        "extraction"
+      ],
+      "sourceFidelity": "source-style-redraw",
+      "learningObjective": "9F-extraction",
+      "learningObjectiveTitle": "Metal extraction and reduction",
+      "learningObjectiveDescription": "Ores, native metals, carbon reduction, electrolysis and extraction method choice.",
+      "noteId": "9F-extraction",
+      "mediaPolicy": "required-for-question",
+      "media": [
+        {
+          "src": "assets/webp/9F-reactivity-extraction-decision-question-v152.webp",
+          "alt": "Question-safe reactivity series and extraction method decision tree.",
+          "caption": "Use the diagram to answer the question.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base"
+        }
+      ]
+    },
+    {
+      "id": "y9r5-005-9a-natural-selection-next-generation",
+      "unit": "9A",
+      "type": "Quick quiz",
+      "question": "Use the natural-selection sequence. Which panel shows the next generation after selection has acted?",
+      "answer": "D",
+      "choices": [
+        "A Panel A",
+        "B Panel B",
+        "C Panel C",
+        "D Panel D"
+      ],
+      "explanation": "The final panel shows the next generation, where the better-adapted form is more common.",
+      "source": "Visual integration v1.52.0",
+      "level": 3,
+      "cue": "Use the source diagram.",
+      "tags": [
+        "r5-image-integration",
+        "natural-selection"
+      ],
+      "sourceFidelity": "source-style-redraw",
+      "learningObjective": "9A-evolution",
+      "learningObjectiveTitle": "Adaptation, natural selection and evolution",
+      "learningObjectiveDescription": "Adaptations, selection pressures, survival, reproduction, inheritance and evolution over generations.",
+      "noteId": "9A-evolution",
+      "mediaPolicy": "required-for-question",
+      "media": [
+        {
+          "src": "assets/webp/9A-natural-selection-sequence-question-v152.webp",
+          "alt": "Question-safe natural-selection sequence labelled A to D.",
+          "caption": "Use the diagram to answer the question.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base"
+        }
+      ]
+    },
+    {
+      "id": "y9r5-006-9e-recycling-concrete",
+      "unit": "9E",
+      "type": "Quick quiz",
+      "question": "Use the recycling methods grid. Which material is recycled by crushing and reusing as aggregate?",
+      "answer": "E",
+      "choices": [
+        "A Metals",
+        "B Glass",
+        "C Paper",
+        "D Polymers / plastics",
+        "E Concrete"
+      ],
+      "explanation": "Concrete can be broken up, crushed and reused as aggregate.",
+      "source": "Visual integration v1.52.0",
+      "level": 2,
+      "cue": "Use the source diagram.",
+      "tags": [
+        "r5-image-integration",
+        "recycling"
+      ],
+      "sourceFidelity": "source-style-redraw",
+      "learningObjective": "9E-recycling-methods",
+      "learningObjectiveTitle": "Recycling methods by material",
+      "learningObjectiveDescription": "Metals, glass, polymers, paper and concrete recycling processes.",
+      "noteId": "9E-recycling-methods",
+      "mediaPolicy": "required-for-question",
+      "media": [
+        {
+          "src": "assets/webp/9E-recycling-methods-grid-question-v152.webp",
+          "alt": "Question-safe recycling methods grid.",
+          "caption": "Use the diagram to answer the question.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base"
+        }
+      ]
+    },
+    {
+      "id": "y9r5-007-9f-displacement-copper-deposit",
+      "unit": "9F",
+      "type": "Quick quiz",
+      "question": "Use the before-and-after displacement diagram. What solid forms on the magnesium strip?",
+      "answer": "C",
+      "choices": [
+        "A Magnesium oxide",
+        "B Copper sulfate",
+        "C Copper",
+        "D Carbon dioxide"
+      ],
+      "explanation": "Magnesium is more reactive than copper, so it displaces copper from copper sulfate and copper metal forms on the strip.",
+      "source": "Visual integration v1.52.0",
+      "level": 3,
+      "cue": "Use the source diagram.",
+      "tags": [
+        "r5-image-integration",
+        "displacement"
+      ],
+      "sourceFidelity": "source-style-redraw",
+      "learningObjective": "9F-reactivity",
+      "learningObjectiveTitle": "Reactivity and displacement",
+      "learningObjectiveDescription": "Reactivity series, water/acid reactions and displacement reactions.",
+      "noteId": "9F-reactivity",
+      "mediaPolicy": "required-for-question",
+      "media": [
+        {
+          "src": "assets/webp/9F-displacement-magnesium-copper-question-v152.webp",
+          "alt": "Question-safe before-and-after magnesium and copper sulfate displacement diagram.",
+          "caption": "Use the diagram to answer the question.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base"
+        }
+      ]
+    },
+    {
+      "id": "y9r5-008-9i-terminal-velocity-balanced-forces",
+      "unit": "9I",
+      "type": "Quick quiz",
+      "question": "Use the falling-object sequence. Which stage shows balanced forces?",
+      "answer": "C",
+      "choices": [
+        "A Stage A",
+        "B Stage B",
+        "C Stage C",
+        "D None of the stages"
+      ],
+      "explanation": "Balanced forces are shown when the upward air resistance arrow and downward weight arrow are the same size.",
+      "source": "Visual integration v1.52.0",
+      "level": 3,
+      "cue": "Use the source diagram.",
+      "tags": [
+        "r5-image-integration",
+        "terminal-velocity"
+      ],
+      "sourceFidelity": "source-style-redraw",
+      "learningObjective": "9I-forces",
+      "learningObjectiveTitle": "Forces, drag and terminal velocity",
+      "learningObjectiveDescription": "Balanced forces, air/water resistance, top speed and terminal velocity.",
+      "noteId": "9I-forces",
+      "mediaPolicy": "required-for-question",
+      "media": [
+        {
+          "src": "assets/webp/9I-terminal-velocity-force-chain-question-v152.webp",
+          "alt": "Question-safe falling-object sequence with force arrows labelled A to C.",
+          "caption": "Use the diagram to answer the question.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base"
+        }
+      ]
+    },
+    {
+      "id": "y9r5-009-9j-static-balloon-negative",
+      "unit": "9J",
+      "type": "Quick quiz",
+      "question": "Use the charge-transfer diagram. Which object has gained electrons after rubbing?",
+      "answer": "A",
+      "choices": [
+        "A The balloon",
+        "B The wool cloth",
+        "C Both objects equally",
+        "D Neither object"
+      ],
+      "explanation": "The after-rubbing panel shows the balloon with more negative charges, meaning it has gained electrons.",
+      "source": "Visual integration v1.52.0",
+      "level": 2,
+      "cue": "Use the source diagram.",
+      "tags": [
+        "r5-image-integration",
+        "static-electricity"
+      ],
+      "sourceFidelity": "source-style-redraw",
+      "learningObjective": "9J-static",
+      "learningObjectiveTitle": "Static electricity and charge",
+      "learningObjectiveDescription": "Electron transfer, positive/negative charge, attraction, repulsion and electric fields.",
+      "noteId": "9J-static",
+      "mediaPolicy": "required-for-question",
+      "media": [
+        {
+          "src": "assets/webp/9J-static-charge-transfer-question-v152.webp",
+          "alt": "Question-safe balloon and wool cloth electron-transfer sequence.",
+          "caption": "Use the diagram to answer the question.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base"
+        }
+      ]
+    },
+    {
+      "id": "y9r5-010-9j-electromagnet-component",
+      "unit": "9J",
+      "type": "Quick quiz",
+      "question": "Use the electromagnet setup. Which part allows the electromagnet to be switched on and off?",
+      "answer": "B",
+      "choices": [
+        "A Iron core",
+        "B Switch",
+        "C Paper clips",
+        "D Coil only"
+      ],
+      "explanation": "The switch opens or closes the circuit, so the current and magnetic field can be switched on and off.",
+      "source": "Visual integration v1.52.0",
+      "level": 2,
+      "cue": "Use the source diagram.",
+      "tags": [
+        "r5-image-integration",
+        "electromagnet"
+      ],
+      "sourceFidelity": "source-style-redraw",
+      "learningObjective": "9J-electromagnets",
+      "learningObjectiveTitle": "Electromagnets, relays and motors",
+      "learningObjectiveDescription": "Electromagnet strength, relay behaviour, motor effect and motor improvements.",
+      "noteId": "9J-electromagnets",
+      "mediaPolicy": "required-for-question",
+      "media": [
+        {
+          "src": "assets/webp/9J-electromagnet-setup-question-v152.webp",
+          "alt": "Question-safe electromagnet setup with power supply, switch, coil and iron core.",
+          "caption": "Use the diagram to answer the question.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base"
+        }
+      ]
+    },
+    {
+      "id": "y9r5-011-9j-motor-effect-wire-force",
+      "unit": "9J",
+      "type": "Quick quiz",
+      "question": "Use the motor-effect diagram. What causes the coil to rotate?",
+      "answer": "A",
+      "choices": [
+        "A Forces on the current-carrying sides of the coil in a magnetic field",
+        "B Gravity pulling the magnets together",
+        "C Heat from the battery",
+        "D The axle pushing the magnets apart"
+      ],
+      "explanation": "A current-carrying wire in a magnetic field experiences a force; opposite forces on the coil sides make it rotate.",
+      "source": "Visual integration v1.52.0",
+      "level": 4,
+      "cue": "Use the source diagram.",
+      "tags": [
+        "r5-image-integration",
+        "motor-effect"
+      ],
+      "sourceFidelity": "source-style-redraw",
+      "learningObjective": "9J-electromagnets",
+      "learningObjectiveTitle": "Electromagnets, relays and motors",
+      "learningObjectiveDescription": "Electromagnet strength, relay behaviour, motor effect and motor improvements.",
+      "noteId": "9J-electromagnets",
+      "mediaPolicy": "required-for-question",
+      "media": [
+        {
+          "src": "assets/webp/9J-motor-effect-dc-motor-question-v152.webp",
+          "alt": "Question-safe labelled simple DC motor and motor-effect diagram.",
+          "caption": "Use the diagram to answer the question.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base"
+        }
+      ]
+    },
+    {
+      "id": "y9r6-001-9f-gas-pressure-volume",
+      "unit": "9F",
+      "type": "Quick quiz",
+      "question": "Use the gas pressure diagram. In the volume panel, which container would have the higher gas pressure if temperature and particle number stayed the same?",
+      "answer": "B",
+      "choices": [
+        "A The larger-volume container",
+        "B The smaller-volume container",
+        "C Both containers have no pressure",
+        "D Pressure depends only on the colour of the particles"
+      ],
+      "explanation": "When volume is smaller, the same number of gas particles collide with the container walls more often, so pressure is higher.",
+      "source": "Reaction images r6 integration v1.53.0",
+      "level": 3,
+      "cue": "Think about how often particles hit the walls.",
+      "tags": [
+        "r6-image-integration",
+        "gas-pressure",
+        "particle-model"
+      ],
+      "sourceFidelity": "source-style-redraw",
+      "learningObjective": "9F-changes",
+      "learningObjectiveTitle": "Physical and chemical changes",
+      "learningObjectiveDescription": "Chemical and physical changes, particle ideas, gas pressure, formulae and conservation of atoms.",
+      "noteId": "9F-changes",
+      "mediaPolicy": "required-for-question",
+      "media": [
+        {
+          "src": "assets/webp/9F-gas-pressure-particle-collisions-question-v153.webp",
+          "alt": "Question-safe gas pressure diagram with panels for temperature, volume and number of particles.",
+          "caption": "Use the diagram to answer the question.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base"
+        }
+      ]
+    },
+    {
+      "id": "y9r6-002-9f-metal-reaction-products-hydrogen",
+      "unit": "9F",
+      "type": "Quick quiz",
+      "question": "Use the reactive-metal products map. Which product label represents hydrogen gas?",
+      "answer": "C",
+      "choices": [
+        "A A",
+        "B B",
+        "C C",
+        "D D"
+      ],
+      "explanation": "Hydrogen is produced when many reactive metals react with water and when metals react with dilute acids. The shared product label is C.",
+      "source": "Reaction images r6 integration v1.53.0",
+      "level": 2,
+      "cue": "Look for the product that appears in both the water and acid reactions.",
+      "tags": [
+        "r6-image-integration",
+        "reactive-metals",
+        "hydrogen"
+      ],
+      "sourceFidelity": "source-style-redraw",
+      "learningObjective": "9F-reactivity",
+      "learningObjectiveTitle": "Reactivity and displacement",
+      "learningObjectiveDescription": "Reactivity series, metal reactions with oxygen/water/acids and displacement reactions.",
+      "noteId": "9F-reactivity",
+      "mediaPolicy": "required-for-question",
+      "media": [
+        {
+          "src": "assets/webp/9F-metal-reaction-products-question-v153.webp",
+          "alt": "Question-safe reactive metal products map with blank product labels A, B, C and D.",
+          "caption": "Use the diagram to answer the question.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base"
+        }
+      ]
+    },
+    {
+      "id": "y9r6-003-9b-plant-transport-xylem",
+      "unit": "9B",
+      "type": "Quick quiz",
+      "question": "Use the plant transport diagram. Which label shows the xylem pathway carrying water and mineral ions up the stem?",
+      "answer": "C",
+      "choices": [
+        "A A",
+        "B B",
+        "C C",
+        "D D"
+      ],
+      "explanation": "The xylem carries water and mineral ions from the roots up through the stem to the leaves. In the diagram, the upward blue pathway is labelled C.",
+      "source": "Reaction images r6 integration v1.53.0",
+      "level": 2,
+      "cue": "Find the pathway with upward arrows from the roots to the leaves.",
+      "tags": [
+        "r6-image-integration",
+        "plant-transport",
+        "xylem"
+      ],
+      "sourceFidelity": "source-style-redraw",
+      "learningObjective": "9B-plant-transport",
+      "learningObjectiveTitle": "Plant transport and specialised cells",
+      "learningObjectiveDescription": "Root hair cells, xylem, phloem, stomata and specialised plant cells.",
+      "noteId": "9B-plant-transport",
+      "mediaPolicy": "required-for-question",
+      "media": [
+        {
+          "src": "assets/webp/9B-plant-transport-overview-question-v153.webp",
+          "alt": "Question-safe whole-plant transport diagram with labels A to F, blue and red transport arrows, and root and leaf callouts.",
+          "caption": "Use the diagram to answer the question.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base"
+        }
+      ]
+    },
+    {
+      "id": "y9r6-004-9j-current-voltage-resistance-calculate",
+      "unit": "9J",
+      "type": "Calculation",
+      "question": "Use the current-voltage graph. Calculate the resistance of line B at 6 V.",
+      "answer": "At 6 V, line B has a current of 1.5 A. Resistance = potential difference ÷ current = 6 ÷ 1.5 = 4 Ω.",
+      "choices": [],
+      "explanation": "Read the current from line B at 6 V, then use resistance = potential difference ÷ current.",
+      "source": "Reaction images r6 integration v1.53.0",
+      "level": 3,
+      "cue": "Use R = V ÷ I. Read current from the graph first.",
+      "tags": [
+        "r6-image-integration",
+        "current-voltage-graph",
+        "resistance-calculation"
+      ],
+      "sourceFidelity": "source-style-redraw",
+      "learningObjective": "9J-resistance",
+      "learningObjectiveTitle": "Resistance and Ohm’s law",
+      "learningObjectiveDescription": "Resistance, current-voltage graphs, high-resistance materials and calculations.",
+      "noteId": "9J-resistance",
+      "mediaPolicy": "required-for-question",
+      "media": [
+        {
+          "src": "assets/webp/9J-current-voltage-graph-comparison-question-v153.webp",
+          "alt": "Question-safe current-voltage graph with lines A and B.",
+          "caption": "Use the diagram to answer the question.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base"
+        }
+      ]
+    },
+    {
+      "id": "y9r6-005-9a-dna-gene-section",
+      "unit": "9A",
+      "type": "Quick quiz",
+      "question": "Use the DNA hierarchy diagram. Which label shows a gene as a short section of DNA?",
+      "answer": "E",
+      "choices": [
+        "A A",
+        "B B",
+        "C C",
+        "D D",
+        "E E",
+        "F F"
+      ],
+      "explanation": "A gene is a short section of DNA. The highlighted section of the DNA molecule is labelled E.",
+      "source": "Reaction images r6 integration v1.53.0",
+      "level": 2,
+      "cue": "Find the small highlighted part of the DNA molecule.",
+      "tags": [
+        "r6-image-integration",
+        "dna",
+        "gene",
+        "chromosome"
+      ],
+      "sourceFidelity": "source-style-redraw",
+      "learningObjective": "9A-inheritance",
+      "learningObjectiveTitle": "Inheritance, DNA and genes",
+      "learningObjectiveDescription": "DNA, chromosomes, genes, gametes, fertilisation and inheritance.",
+      "noteId": "9A-inheritance",
+      "mediaPolicy": "required-for-question",
+      "media": [
+        {
+          "src": "assets/webp/9A-dna-hierarchy-question-v153.webp",
+          "alt": "Question-safe hierarchy diagram from a person to a cell, nucleus, chromosome, DNA, gene section and characteristic, labelled A to F.",
+          "caption": "Use the diagram to answer the question.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base"
+        }
+      ]
+    },
+    {
+      "id": "y9r6-006-9j-force-field-electric",
+      "unit": "9J",
+      "type": "Quick quiz",
+      "question": "Use the force-field comparison diagram. Which labelled panel shows an electric field?",
+      "answer": "C",
+      "choices": [
+        "A A",
+        "B B",
+        "C C",
+        "D None of the panels"
+      ],
+      "explanation": "The electric field is shown by field arrows between positive and negative charges. In the diagram, that is panel C.",
+      "source": "Reaction images r6 integration v1.53.0",
+      "level": 2,
+      "cue": "Look for plus and minus charges with field arrows between them.",
+      "tags": [
+        "r6-image-integration",
+        "force-fields",
+        "electric-field"
+      ],
+      "sourceFidelity": "source-style-redraw",
+      "learningObjective": "9J-fields",
+      "learningObjectiveTitle": "Force fields, gravity and magnetism",
+      "learningObjectiveDescription": "Non-contact force fields, gravity, magnetism, weight and gravitational potential energy.",
+      "noteId": "9J-fields",
+      "mediaPolicy": "required-for-question",
+      "media": [
+        {
+          "src": "assets/webp/9J-force-field-comparison-question-v153.webp",
+          "alt": "Question-safe comparison diagram with three labelled field panels A, B and C.",
+          "caption": "Use the diagram to answer the question.",
           "mediaTiming": "question",
           "presentation": "media-image-base"
         }

@@ -1,18 +1,20 @@
-## v1.51.0 - Written exam builder enhancement
 
-- Randomised written exam generation within the 15/30/45 mark blueprints while preserving a 1/3 Biology, 1/3 Chemistry and 1/3 Physics balance.
-- Hid answer formats behind a learner-controlled hint button beside the written answer box.
-- Moved mark schemes out of the question-taking card and into a post-submit Mark Test screen.
-- Added 1-5 difficulty bubbles to written exam questions.
-- Added browser print/save-as-PDF support for blank test papers and answer-key/self-mark copies.
+## v1.53.0 - Reaction images r6 integration
+
+- Integrated 12 useful r6 images as WebP app assets.
+- Added class-note and question-safe visuals for gas pressure, reactive metal products, plant transport, DNA hierarchy, current-voltage graphs and force fields.
+- Added 6 new image-driven question cards.
+- Added r6 media support to selected existing cards and written exam prompts.
+- Updated unit overview visual coverage statuses and reduced the remaining infographic backlog to optional polish.
 
 
-## v1.50.0 - Unit overview pages
+## v1.52.0 - Reaction images r5 integration
 
-- Added unit overview pages for 9A, 9B, 9E, 9F, 9I and 9J.
-- Added a Unit overview button to each unit card.
-- Added unit-level revision-pack must-know summaries, sub-unit route maps, formula/equation lists, written-answer moves and visual coverage notes.
-- Added a prioritized infographic backlog for closing remaining diagram, graph and calculation coverage gaps.
+- Integrated 21 useful r5 image assets as WebP files.
+- Added class-note and question-safe visuals for photosynthesis limiting factors, speed-time graphs, wire resistance, extraction methods, natural selection, recycling, displacement, terminal velocity, static electricity, electromagnets and motor effect.
+- Added 11 new image-driven cards and media support for selected existing cards.
+- Updated unit overview visual coverage statuses and reduced the infographic backlog to a small final set.
+- Skipped only superseded or technically weaker duplicate images.
 
 # Changelog — consolidated
 

@@ -1,276 +1,183 @@
 window.YEAR9_NOTES = {
-  "version": "1.51.0",
-  "title": "Year 9 Science Class Notes with unit overviews and diagram, graph and calculation visual support",
+  "version": "1.53.0",
+  "title": "Year 9 Science Class Notes with unit overviews and completed infographic coverage",
   "unitOverviews": [
     {
       "id": "9A-overview",
       "unit": "9A",
       "title": "9A Genetics and evolution — unit overview",
-      "summary": "This unit links variation, inheritance and evolution. Students need to distinguish inherited and environmental variation, describe the DNA/chromosome/gene hierarchy, and explain how adaptation and natural selection can lead to evolution and extinction risk.",
+      "summary": "Variation, inheritance, biodiversity and natural selection are linked: organisms vary, some traits help survival, and populations can change over generations.",
       "revisionPackFocus": [
-        "A species is a group of organisms able to reproduce to give offspring that are also able to reproduce.",
-        "Variation can be environmental, inherited, or caused by both genes and environment.",
-        "DNA contains genetic information; chromosomes contain DNA; genes are sections of DNA.",
-        "Gametes have one copy of each chromosome type; fertilisation forms a zygote with chromosomes from both gametes.",
-        "Adaptations help organisms survive in their habitat.",
-        "Natural selection over many generations can cause evolution.",
-        "Biodiversity can be preserved by nature reserves, breeding programmes, hunting bans and gene banks."
+        "Variation can be inherited, environmental or both.",
+        "DNA, chromosomes and genes carry inherited information.",
+        "Adaptations help organisms survive in habitats.",
+        "Natural selection over generations can lead to evolution.",
+        "Biodiversity can be protected by conservation methods."
       ],
       "subUnitRoute": [
         {
           "title": "Variation and classification",
-          "focus": "species, environmental variation, inherited variation, continuous/discontinuous variation and classification problems"
+          "focus": "species and variation types"
         },
         {
           "title": "Inheritance, DNA and genes",
-          "focus": "nucleus, chromosomes, DNA, genes, gametes, fertilisation and probability language"
+          "focus": "chromosomes, DNA, genes and gametes"
         },
         {
-          "title": "Biodiversity, conservation and extinction",
-          "focus": "endangerment causes, extinction, biodiversity value and conservation methods"
+          "title": "Biodiversity and extinction",
+          "focus": "causes of endangerment and conservation"
         },
         {
-          "title": "Adaptation, natural selection and evolution",
-          "focus": "adaptations, selection pressures, survival, reproduction, inheritance and evolution over generations"
+          "title": "Natural selection",
+          "focus": "variation, selection pressure and inherited change"
         }
       ],
       "examAnswerMoves": [
-        "For “describe natural selection”, write the chain in order: variation → selection pressure → survival → reproduction → inherited change over generations.",
-        "For “explain extinction”, name the environmental change and link it to survival or reproduction.",
-        "For “identify variation type”, decide whether the example is controlled by genes, environment or both."
+        "For natural selection, write variation → selection pressure → survival/reproduction → inherited change."
       ],
       "formulae": [],
       "visualCoverage": [
         {
-          "title": "Continuous/discontinuous variation graphs",
-          "status": "covered",
-          "detail": "Existing class-note and question visuals support normal distribution and category-bar style questions."
-        },
-        {
-          "title": "DNA/chromosome/gene hierarchy",
-          "status": "covered",
-          "detail": "Existing class notes support cell/nucleus/chromosome/DNA/gene relationships."
-        },
-        {
           "title": "Natural selection sequence",
-          "status": "partial",
-          "detail": "Current visuals help the idea, but a clean four-step question-safe sequence would improve written-answer practice."
+          "status": "covered",
+          "detail": "r152 adds class-note and question-safe sequence visuals."
         },
         {
-          "title": "Endangered species/conservation map",
-          "status": "gap",
-          "detail": "Useful for describe/explain questions on causes of extinction and preserving biodiversity."
+          "title": "Biodiversity conservation map",
+          "status": "covered",
+          "detail": "r151 adds class-note and question-safe visuals."
+        },
+        {
+          "title": "DNA hierarchy",
+          "status": "covered",
+          "detail": "r153 adds DNA/gene/chromosome hierarchy visuals for class notes and question practice."
         }
       ],
-      "infographicBacklog": [
-        {
-          "priority": "high",
-          "title": "Natural selection answer-chain infographic",
-          "purpose": "One class-note visual and one blank question visual showing variation, selection pressure, survival/reproduction and inherited change across generations."
-        },
-        {
-          "priority": "medium",
-          "title": "Biodiversity preservation decision map",
-          "purpose": "Connects ecosystem change, endangerment/extinction, interdependence, conservation methods and gene banks."
-        },
-        {
-          "priority": "medium",
-          "title": "DNA to characteristic hierarchy",
-          "purpose": "A precise phone-readable hierarchy from cell → nucleus → chromosome → DNA → gene → characteristic."
-        }
-      ]
+      "infographicBacklog": []
     },
     {
       "id": "9B-overview",
       "unit": "9B",
       "title": "9B Plant growth — unit overview",
-      "summary": "This unit is about how plants make and move substances, how plant structure supports photosynthesis, and how farming choices increase yield but can reduce biodiversity or damage habitats.",
+      "summary": "Plants make glucose by photosynthesis, transport materials through tissues and farming methods can increase yield but may reduce biodiversity.",
       "revisionPackFocus": [
-        "Photosynthesis is summarised by carbon dioxide + water → glucose + oxygen, using light energy and chlorophyll.",
-        "Water is absorbed by roots and travels through xylem vessels to leaves.",
-        "Carbon dioxide diffuses into leaves through stomata.",
-        "Palisade cells contain chloroplasts with chlorophyll, which absorbs light energy.",
-        "Plants respire all the time, but photosynthesis only happens when there is light.",
-        "Glucose is used for respiration, starch storage and making cellulose, lipids and proteins.",
-        "Modern farming can increase yield but may destroy habitats, damage food webs or reduce biodiversity.",
-        "Selective breeding and cross-breeding are used to produce plant varieties with useful characteristics."
+        "Photosynthesis: carbon dioxide + water → glucose + oxygen.",
+        "Chlorophyll absorbs light energy.",
+        "Water enters through roots and moves through xylem.",
+        "Glucose is used for respiration, starch, cellulose, lipids and proteins.",
+        "Farming methods increase yield but can harm habitats."
       ],
       "subUnitRoute": [
         {
-          "title": "Photosynthesis and respiration",
-          "focus": "word/symbol equations, reactants, products, chlorophyll, limiting factors and respiration contrast"
+          "title": "Photosynthesis",
+          "focus": "equation, chlorophyll and limiting factors"
         },
         {
-          "title": "Plant transport and specialised cells",
-          "focus": "root hair cells, xylem, phloem, stomata, guard cells, palisade cells and leaf adaptations"
+          "title": "Plant transport",
+          "focus": "root hairs, xylem, phloem and stomata"
         },
         {
-          "title": "Plant products, seeds and food production",
-          "focus": "glucose uses, starch, cellulose, oils, minerals, yield and plant products"
+          "title": "Glucose uses",
+          "focus": "respiration, starch, cellulose, lipids and proteins"
         },
         {
-          "title": "Food webs, biodiversity and ecosystems",
-          "focus": "food-web effects, pesticides, biodiversity and sampling-style ecosystem reasoning"
-        },
-        {
-          "title": "Farming yield, benefits and environmental problems",
-          "focus": "hedgerows, pesticides, fertilisers, crop varieties, sustainable development and trade-offs"
+          "title": "Farming impacts",
+          "focus": "yield benefits and biodiversity problems"
         }
       ],
       "examAnswerMoves": [
-        "For “state photosynthesis equation”, write the exact word equation only.",
-        "For “explain magnesium deficiency”, link magnesium → chlorophyll → light absorption/photosynthesis → growth.",
-        "For farming impact questions, give one benefit and one linked environmental problem."
+        "For limiting-factor graphs, describe the trend and explain plateau or high-temperature fall."
       ],
       "formulae": [
-        "photosynthesis: carbon dioxide + water → glucose + oxygen",
-        "aerobic respiration: glucose + oxygen → carbon dioxide + water (+ energy)"
+        "carbon dioxide + water → glucose + oxygen"
       ],
       "visualCoverage": [
         {
-          "title": "Photosynthesis equation and limiting factors",
-          "status": "partial",
-          "detail": "Equation coverage exists; more graph variants would improve light-intensity and limiting-factor questions."
+          "title": "Photosynthesis limiting-factor graphs",
+          "status": "covered",
+          "detail": "r152 adds class-note and question-safe graph sets."
         },
         {
-          "title": "Leaf/root transport anatomy",
+          "title": "Glucose-use flow map",
           "status": "covered",
-          "detail": "Existing notes cover root hair cells, xylem/phloem, stomata and leaf adaptations."
+          "detail": "r151 adds glucose-use visuals."
         },
         {
           "title": "Farming impact table",
-          "status": "partial",
-          "detail": "The source table is important; a clean app infographic would make trade-off questions easier to practise."
+          "status": "covered",
+          "detail": "r151 adds benefit/problem table visuals."
         },
         {
-          "title": "Food-web/pesticide reasoning",
-          "status": "partial",
-          "detail": "Food-web visuals exist, but pesticide/farming knock-on effects could be more directly mapped."
+          "title": "Plant transport overview",
+          "status": "covered",
+          "detail": "r153 adds a whole-plant transport overview with root, stem, xylem, phloem and stomata callouts."
         }
       ],
-      "infographicBacklog": [
-        {
-          "priority": "high",
-          "title": "Photosynthesis limiting-factor graph set",
-          "purpose": "Class-note and question-safe graphs for light intensity, carbon dioxide and temperature effects."
-        },
-        {
-          "priority": "high",
-          "title": "Farming impact trade-off table",
-          "purpose": "Shows action, why it is done, and problem caused for hedgerows, pesticides, fertilisers and crop varieties."
-        },
-        {
-          "priority": "medium",
-          "title": "Plant transport overview",
-          "purpose": "One diagram linking roots/root hairs, xylem, leaves/stomata and phloem movement of sugars."
-        },
-        {
-          "priority": "medium",
-          "title": "Glucose-use flow map",
-          "purpose": "Flow diagram from glucose to respiration, starch storage, cellulose, lipids and proteins."
-        }
-      ]
+      "infographicBacklog": []
     },
     {
       "id": "9E-overview",
       "unit": "9E",
       "title": "9E Making materials — unit overview",
-      "summary": "This unit combines material properties, environmental impact, recycling, energy changes and scientific checking. Students need to compare ceramics, polymers and composites, explain pollution problems, and describe recycling and peer review clearly.",
+      "summary": "Materials topics include polymers, composites, recycling, environmental impacts, energy changes and peer review.",
       "revisionPackFocus": [
-        "Burning fossil fuels provides energy for making materials but is linked to acid rain, carbon dioxide increases, greenhouse effect, soot and health damage.",
-        "Toxic substances can enter food chains and increase in concentration in large animals and humans.",
-        "Non-biodegradable polymer waste causes pollution and dangers to animals for years.",
-        "Recycling reduces landfill use, fossil-fuel use, manufacturing pollution and demand for raw materials.",
-        "Metals, glass, polymers, paper and concrete are recycled by different methods.",
-        "Exothermic reactions transfer energy into the surroundings; endothermic reactions transfer energy from the surroundings.",
-        "State symbols include s, l, g and aq.",
-        "Peer review checks whether conclusions are valid, original and supported by working experiments."
+        "Recycling reduces landfill and demand for raw materials.",
+        "Different materials need different recycling methods.",
+        "Exothermic reactions transfer energy to surroundings.",
+        "Endothermic reactions take energy from surroundings.",
+        "Peer review checks scientific work before publication."
       ],
       "subUnitRoute": [
         {
-          "title": "Ceramics, crystals and materials properties",
-          "focus": "ceramics, glass, clay, crystals, brittleness and melting point"
+          "title": "Material families",
+          "focus": "ceramics, polymers and composites"
         },
         {
-          "title": "Polymers and polymerisation",
-          "focus": "natural/synthetic polymers, polymerisation, vulcanisation and biodegradability"
+          "title": "Environmental impacts",
+          "focus": "pollution, bioaccumulation and landfill"
         },
         {
-          "title": "Composites and material choice",
-          "focus": "composite materials, concrete, reinforced concrete and glass-reinforced plastic"
+          "title": "Recycling methods",
+          "focus": "metals, glass, paper, polymers and concrete"
         },
         {
-          "title": "Environmental impacts and recycling",
-          "focus": "fossil fuels, acid rain, greenhouse effect, soot, toxins, landfill and recycling benefits"
-        },
-        {
-          "title": "Recycling methods by material",
-          "focus": "metals, glass, polymers, paper and concrete recycling processes"
-        },
-        {
-          "title": "Energy changes, thermal decomposition and peer review",
-          "focus": "endo/exothermic changes, state symbols, thermal decomposition and peer review"
-        },
-        {
-          "title": "Heating and cooling",
-          "focus": "particle movement, changes of state, gas pressure, diffusion and Brownian motion"
-        },
-        {
-          "title": "Climate and greenhouse gases",
-          "focus": "greenhouse gases, greenhouse effect, evidence and emission reduction"
+          "title": "Energy changes and peer review",
+          "focus": "endo/exothermic and scientific checking"
         }
       ],
       "examAnswerMoves": [
-        "For environmental-impact questions, name the pollutant/problem and then describe the effect.",
-        "For recycling questions, state both the method and the benefit.",
-        "For energy-change questions, always say where energy is transferred: to surroundings or from surroundings."
+        "For environmental impact questions, name the pollutant/problem and describe its effect."
       ],
       "formulae": [
-        "calcium carbonate → calcium oxide + carbon dioxide",
-        "state symbols: (s) solid, (l) liquid, (g) gas, (aq) dissolved in water"
+        "state symbols: (s), (l), (g), (aq)"
       ],
       "visualCoverage": [
         {
-          "title": "Bioaccumulation/biomagnification in food chains",
+          "title": "Recycling methods grid",
           "status": "covered",
-          "detail": "Recent image work supports toxin concentration build-up, including human endpoint variants."
-        },
-        {
-          "title": "Recycling methods by material",
-          "status": "partial",
-          "detail": "Content is present but would benefit from a clean source-table style visual."
-        },
-        {
-          "title": "Endothermic/exothermic energy transfer",
-          "status": "partial",
-          "detail": "Existing notes cover the definitions; energy profile or thermometer visuals would strengthen written explanations."
+          "detail": "r152 adds class-note and question-safe grid."
         },
         {
           "title": "Peer-review flowchart",
-          "status": "gap",
-          "detail": "A simple editor → reviewer → amend/reject/publish flow is needed for exact revision-pack alignment."
+          "status": "covered",
+          "detail": "r151 adds peer-review visuals."
+        },
+        {
+          "title": "Endothermic/exothermic diagrams",
+          "status": "covered",
+          "detail": "r151 adds energy-transfer comparison visuals."
+        },
+        {
+          "title": "Material families comparison",
+          "status": "partial",
+          "detail": "A concise comparison infographic would still help."
         }
       ],
       "infographicBacklog": [
         {
-          "priority": "high",
-          "title": "Recycling methods grid",
-          "purpose": "One row each for metals, glass, polymers, paper and concrete, showing method and resource/pollution benefit."
-        },
-        {
-          "priority": "high",
-          "title": "Peer-review process flowchart",
-          "purpose": "Scientific paper → journal editor → expert reviewers → valid/original/experiments check → publish/amend/reject."
-        },
-        {
           "priority": "medium",
           "title": "Material families comparison",
-          "purpose": "Compare ceramics, polymers and composites by structure/properties/uses."
-        },
-        {
-          "priority": "medium",
-          "title": "Endothermic vs exothermic transfer diagram",
-          "purpose": "Thermometer/energy-arrow visual showing surroundings warming or cooling."
+          "purpose": "Compare ceramics, polymers and composites by properties and uses."
         }
       ]
     },
@@ -278,325 +185,192 @@ window.YEAR9_NOTES = {
       "id": "9F-overview",
       "unit": "9F",
       "title": "9F Reactivity and extraction — unit overview",
-      "summary": "This unit is the main chemistry reaction map: chemical changes and equations, reactivity series, displacement, energy changes, rates, atomic structure, periodic table patterns and extraction of metals.",
+      "summary": "This unit maps chemical change, atomic structure, reactivity, displacement, combustion, redox and metal extraction.",
       "revisionPackFocus": [
-        "Chemical reactions make new substances; physical changes do not. In both, the number of atoms does not change and there is no overall change in mass.",
-        "Equations can use words or symbols, with small numbers for atoms in molecules and large numbers for number of molecules.",
-        "Gas pressure is caused by particles hitting container walls.",
-        "The reactivity series lists metals from most reactive to least reactive.",
-        "Metals reacting with water make metal hydroxide and hydrogen; metals reacting with dilute acids make a salt and hydrogen.",
-        "Atoms contain protons and neutrons in the nucleus, with electrons around the outside.",
-        "Groups are vertical columns and periods are rows in the periodic table.",
+        "The reactivity series orders metals.",
         "A more reactive metal can displace a less reactive metal from a compound.",
-        "Metals below zinc can be extracted by heating with carbon; metals above zinc need electrolysis.",
+        "Metals above carbon need electrolysis.",
+        "Metals below carbon can often be extracted by carbon reduction.",
         "Oxidation is gain of oxygen and reduction is loss of oxygen."
       ],
       "subUnitRoute": [
         {
-          "title": "Physical and chemical changes",
-          "focus": "chemical reactions, physical changes, particles, molecules, formulae and gas pressure"
-        },
-        {
-          "title": "Atomic structure and the periodic table",
-          "focus": "protons, neutrons, electrons, atomic number, mass number, groups and periods"
+          "title": "Chemical changes",
+          "focus": "new substances and equations"
         },
         {
           "title": "Reactivity and displacement",
-          "focus": "reactivity series, water/acid reactions and displacement reactions"
+          "focus": "series and displacement predictions"
         },
         {
-          "title": "Combustion, energy, rates and redox",
-          "focus": "hydrocarbons, combustion, oxygen test, rates, thermite, oxidation and reduction"
+          "title": "Extraction",
+          "focus": "carbon reduction vs electrolysis"
         },
         {
-          "title": "Metal extraction and reduction",
-          "focus": "ores, native metals, carbon reduction, electrolysis and extraction method choice"
-        },
-        {
-          "title": "Rusting and corrosion protection",
-          "focus": "rusting, coatings and sacrificial protection"
-        },
-        {
-          "title": "Periodic table bridge",
-          "focus": "element/compound/formulae and periodic-table patterns"
-        },
-        {
-          "title": "Chemical energy bridge",
-          "focus": "exothermic/endothermic changes, combustion, rates and catalysts"
+          "title": "Combustion/redox",
+          "focus": "energy, oxygen and redox language"
         }
       ],
       "examAnswerMoves": [
-        "For displacement questions, compare reactivity first, then state what is displaced.",
-        "For extraction questions, use the reactivity series to choose carbon reduction or electrolysis.",
-        "For redox questions, identify oxidation and reduction separately.",
-        "For percentage questions, show actual change ÷ original amount × 100."
+        "For extraction, compare metal position with carbon before choosing method."
       ],
       "formulae": [
-        "hydrocarbon + oxygen → carbon dioxide + water",
-        "metal + water → metal hydroxide + hydrogen",
         "metal + acid → salt + hydrogen",
-        "percentage loss or gain = actual change ÷ original amount × 100"
+        "hydrocarbon + oxygen → carbon dioxide + water"
       ],
       "visualCoverage": [
         {
           "title": "Reactivity/extraction decision tree",
-          "status": "partial",
-          "detail": "Extraction visuals exist, but the reactivity-series decision logic should be made more explicit."
-        },
-        {
-          "title": "Atomic structure and periodic table",
           "status": "covered",
-          "detail": "Existing class notes support nucleus/electron and group/period recall."
+          "detail": "r152 adds class-note and question-safe decision tree."
         },
         {
-          "title": "Displacement before/after",
-          "status": "partial",
-          "detail": "Useful question-safe before/after visuals would improve written describe/explain practice."
+          "title": "Displacement sequence",
+          "status": "covered",
+          "detail": "r152 adds magnesium/copper sulfate sequence."
         },
         {
           "title": "Gas pressure particle panels",
-          "status": "gap",
-          "detail": "The summary-sheet table is important and not yet visualised as a clean phone-readable infographic."
+          "status": "covered",
+          "detail": "r153 adds class-note and question-safe gas pressure panels for temperature, volume and number of particles."
+        },
+        {
+          "title": "Metal reaction products map",
+          "status": "partial",
+          "detail": "Still useful for water/acid/oxygen products."
         }
       ],
-      "infographicBacklog": [
-        {
-          "priority": "high",
-          "title": "Reactivity series to extraction method decision tree",
-          "purpose": "Native metals; carbon extraction for zinc downwards; electrolysis for metals above zinc; include reduction language."
-        },
-        {
-          "priority": "high",
-          "title": "Metal reaction products map",
-          "purpose": "Metal + oxygen/water/acid product map with exact product families."
-        },
-        {
-          "priority": "medium",
-          "title": "Gas pressure variable panels",
-          "purpose": "Temperature, particle number and volume changes, each linked to collision frequency/force."
-        },
-        {
-          "priority": "medium",
-          "title": "Displacement reaction sequence",
-          "purpose": "More reactive metal enters compound; less reactive metal is displaced/deposited."
-        }
-      ]
+      "infographicBacklog": []
     },
     {
       "id": "9I-overview",
       "unit": "9I",
       "title": "9I Forces and motion — unit overview",
-      "summary": "This unit is calculation-heavy. Students need to calculate speed, gradient, moments, work, pressure and density, and also describe balanced forces, terminal velocity, simple machines and graph motion.",
+      "summary": "This unit is calculation and graph heavy: speed, graphs, moments, work, pressure, density and terminal velocity.",
       "revisionPackFocus": [
-        "Forces can make objects speed up, slow down or change direction.",
-        "An object moving at constant speed has balanced forces.",
-        "As a falling object speeds up, air resistance increases until it balances weight; this is terminal velocity.",
-        "Speed is distance divided by time, and mean speed is total distance divided by total time.",
-        "On a distance–time graph, the steeper the line, the faster the motion.",
-        "On a speed–time graph, horizontal lines show constant speed and sloping lines show changes in speed.",
-        "The gradient of a distance–time graph gives speed.",
-        "A moment is a turning force: moment = force × perpendicular distance from the pivot.",
-        "When an object is balanced, anticlockwise moment equals clockwise moment.",
-        "Work done equals force × distance moved in the direction of the force."
+        "Speed = distance ÷ time.",
+        "On distance-time graphs, steeper means faster.",
+        "On speed-time graphs, horizontal means constant speed.",
+        "Moment = force × perpendicular distance from pivot.",
+        "Terminal velocity happens when air resistance balances weight."
       ],
       "subUnitRoute": [
         {
-          "title": "Forces, drag and terminal velocity",
-          "focus": "balanced forces, air/water resistance, top speed and terminal velocity"
+          "title": "Forces and terminal velocity",
+          "focus": "balanced forces and drag"
         },
         {
-          "title": "Speed and distance-time graphs",
-          "focus": "speed formula, mean speed, relative speed and distance-time graph interpretation"
+          "title": "Speed and graphs",
+          "focus": "distance-time and speed-time graphs"
         },
         {
-          "title": "Speed-time graphs and motion calculations",
-          "focus": "constant speed, acceleration/deceleration, graph comparison and unit conversion"
+          "title": "Moments and machines",
+          "focus": "turning forces, work and simple machines"
         },
         {
-          "title": "Levers, pivots and moments",
-          "focus": "moments, pivots/fulcrums, equilibrium and mechanical advantage"
-        },
-        {
-          "title": "Energy, work and simple machines",
-          "focus": "work done, ramps, pulleys, force multiplication and energy conservation"
-        },
-        {
-          "title": "Pressure, density and floating",
-          "focus": "pressure, contact area, liquid pressure, density, upthrust and floating"
+          "title": "Pressure and density",
+          "focus": "calculations and floating"
         }
       ],
       "examAnswerMoves": [
-        "For calculations, write formula → substitution → answer with units.",
-        "For graph questions, quote the section of graph and say what it means physically.",
-        "For moment questions, name clockwise and anticlockwise moments and compare them.",
-        "For terminal velocity, describe weight, increasing air resistance and balanced forces."
+        "For calculations, write formula → substitution → answer with units."
       ],
       "formulae": [
         "speed = distance ÷ time",
-        "gradient = vertical change ÷ horizontal change",
-        "moment = force × perpendicular distance from pivot",
-        "work done = force × distance moved in direction of force",
+        "moment = force × distance",
         "pressure = force ÷ area",
         "density = mass ÷ volume"
       ],
       "visualCoverage": [
         {
-          "title": "Distance-time and speed-time graphs",
-          "status": "partial",
-          "detail": "Core graph visuals exist; more exam-style variants and blank question versions are still high value."
+          "title": "Speed-time graph family",
+          "status": "covered",
+          "detail": "r152 adds class-note and question-safe graph visuals."
         },
         {
-          "title": "Moments/seesaw calculations",
+          "title": "Distance-time graph",
           "status": "covered",
-          "detail": "Recent diagram assets support balanced and missing-distance moment questions."
+          "detail": "r149 adds a journey graph question asset."
+        },
+        {
+          "title": "Terminal velocity force-chain",
+          "status": "covered",
+          "detail": "r152 adds class-note and question-safe sequence visuals."
         },
         {
           "title": "Density/pressure calculations",
           "status": "covered",
-          "detail": "Recent diagram assets support water displacement, cuboid density and contact-area pressure questions."
-        },
-        {
-          "title": "Terminal velocity force sequence",
-          "status": "gap",
-          "detail": "A clear three-stage falling-object diagram would improve describe/explain answers."
+          "detail": "r149 adds calculation diagrams."
         }
       ],
-      "infographicBacklog": [
-        {
-          "priority": "high",
-          "title": "Distance-time graph family",
-          "purpose": "Class-note and blank versions showing stationary sections, different speeds and gradient calculation."
-        },
-        {
-          "priority": "high",
-          "title": "Speed-time graph family",
-          "purpose": "Constant speed, acceleration and deceleration panels, plus relative-speed/unit conversion prompts."
-        },
-        {
-          "priority": "medium",
-          "title": "Terminal velocity force-chain infographic",
-          "purpose": "Start falling: weight bigger; speed increases: drag increases; terminal velocity: weight = drag."
-        },
-        {
-          "priority": "medium",
-          "title": "Formula triangle and method card set",
-          "purpose": "Speed, density, pressure, moment and work done calculation scaffolds without embedding the app question."
-        }
-      ]
+      "infographicBacklog": []
     },
     {
       "id": "9J-overview",
       "unit": "9J",
       "title": "9J Force fields and electromagnets — unit overview",
-      "summary": "This unit combines fields, static electricity, circuits, resistance and electromagnets. Students need to interpret field/circuit diagrams, place meters correctly, calculate resistance and weight, and describe how electromagnets and motors work.",
+      "summary": "This unit combines fields, static electricity, circuits, resistance, electromagnets and the motor effect.",
       "revisionPackFocus": [
-        "A force field is a space where a non-contact force has an effect.",
-        "Gravitational field strength on Earth is about 10 N/kg, and weight = mass × g.",
-        "Static electricity is caused when electrons are transferred between insulating materials.",
-        "Opposite charges attract and like charges repel.",
-        "Current is a flow of electrons and is measured using an ammeter in series.",
-        "Voltage is a measure of energy provided by a cell or transferred by a component and is measured using a voltmeter in parallel.",
-        "Resistance describes how easy or difficult it is for current to flow.",
-        "Voltage, current and resistance are related by voltage = current × resistance.",
-        "Wire resistance depends on material, length and thickness.",
-        "An electromagnet is a coil of wire with current flowing; it can be made stronger by more coils, larger current or an iron core.",
-        "The motor effect occurs when a current-carrying wire crosses a magnetic field and experiences a force."
+        "Static electricity is caused by electron transfer.",
+        "Current is measured with an ammeter in series.",
+        "Potential difference is measured with a voltmeter in parallel.",
+        "Resistance = voltage ÷ current.",
+        "Electromagnets are stronger with more turns, larger current or an iron core.",
+        "The motor effect is a force on a current-carrying wire in a magnetic field."
       ],
       "subUnitRoute": [
         {
-          "title": "Force fields, gravity and magnetism",
-          "focus": "field types, gravity, weight and gravitational potential energy"
+          "title": "Static and fields",
+          "focus": "electron transfer and non-contact forces"
         },
         {
-          "title": "Static electricity and charge",
-          "focus": "electron transfer, positive/negative charge, attraction, repulsion and electric fields"
+          "title": "Circuits and resistance",
+          "focus": "symbols, meters and resistance"
         },
         {
-          "title": "Current, voltage and circuits",
-          "focus": "series/parallel circuits, switches, meters, current and voltage"
+          "title": "Wire resistance practical",
+          "focus": "variables and controls"
         },
         {
-          "title": "Resistance and Ohm’s law",
-          "focus": "resistance, current-voltage graphs, conductors and calculations"
-        },
-        {
-          "title": "Wire resistance investigations",
-          "focus": "wire length, thickness, material and control variables"
-        },
-        {
-          "title": "Electromagnets, relays and motors",
-          "focus": "electromagnet strength, relay behaviour, motor effect and motor improvements"
-        },
-        {
-          "title": "Rounding numbers and significant figures",
-          "focus": "decimal places, significant figures and answer presentation"
+          "title": "Electromagnets and motor effect",
+          "focus": "strength factors and force on wire"
         }
       ],
       "examAnswerMoves": [
-        "For circuit-identify questions, say both the component and how it should be connected.",
-        "For resistance calculations, write V = I × R and rearrange only if needed.",
-        "For static-electricity explanations, mention electron transfer and resulting charge.",
-        "For electromagnet questions, link the change to magnetic field strength or force."
+        "For static electricity, mention electron transfer and resulting charge."
       ],
       "formulae": [
-        "weight = mass × gravitational field strength",
-        "voltage = current × resistance",
-        "resistance = voltage ÷ current"
+        "V = I × R",
+        "weight = mass × gravitational field strength"
       ],
       "visualCoverage": [
         {
-          "title": "Circuit symbols and meter placement",
+          "title": "Static charge transfer",
           "status": "covered",
-          "detail": "Recent circuit-cleanup work gives better symbol/meter question coverage."
-        },
-        {
-          "title": "Current-voltage / resistance graphs",
-          "status": "partial",
-          "detail": "One graph asset exists; more variants would help compare resistance from gradient/steepness."
+          "detail": "r152 adds balloon/wool class-note and question-safe visuals."
         },
         {
           "title": "Wire resistance investigation",
-          "status": "partial",
-          "detail": "Existing coverage should be supported by a clean setup diagram with variables and controls."
+          "status": "covered",
+          "detail": "r152 adds corrected class-note and question-safe setup visuals."
         },
         {
-          "title": "Field diagrams and static electricity",
-          "status": "partial",
-          "detail": "Basic coverage exists, but field-line comparison and charge-transfer sequence would help identify questions."
+          "title": "Electromagnet/motor effect pair",
+          "status": "covered",
+          "detail": "r152 adds class-note and question-safe visuals."
         },
         {
-          "title": "Electromagnet/motor effect",
-          "status": "partial",
-          "detail": "Class-note coverage exists; a question-safe motor-effect force diagram would improve visual identify/explain questions."
+          "title": "Current-voltage graphs",
+          "status": "covered",
+          "detail": "r153 adds a current-voltage comparison graph set for resistance interpretation and calculation."
+        },
+        {
+          "title": "Force-field comparison",
+          "status": "covered",
+          "detail": "r153 adds class-note and question-safe comparison panels for gravitational, magnetic and electric fields."
         }
       ],
-      "infographicBacklog": [
-        {
-          "priority": "high",
-          "title": "Circuit symbols and meter-placement master sheet",
-          "purpose": "Cell, open/closed switch, bulb, resistor, ammeter and voltmeter, with ammeter in series and voltmeter in parallel."
-        },
-        {
-          "priority": "high",
-          "title": "Wire resistance investigation diagram",
-          "purpose": "Show variable wire length/thickness/material, controlled voltage and meter positions."
-        },
-        {
-          "priority": "medium",
-          "title": "Current-voltage graph comparison set",
-          "purpose": "Compare two components/wires and infer which has greater resistance."
-        },
-        {
-          "priority": "medium",
-          "title": "Static charge transfer sequence",
-          "purpose": "Before/after electron transfer with attraction/repulsion outcomes."
-        },
-        {
-          "priority": "medium",
-          "title": "Electromagnet and motor-effect pair",
-          "purpose": "Coil + core strength factors and current-carrying wire crossing magnetic field."
-        }
-      ]
+      "infographicBacklog": []
     }
   ],
   "notes": [
@@ -713,6 +487,19 @@ window.YEAR9_NOTES = {
       "practicePrompt": "Pick one linked revision card for Inheritance, DNA and genes and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
       "media": [
         {
+          "src": "assets/webp/9A-dna-inheritance-hierarchy-notes-v153.webp",
+          "alt": "Class-note visual linking parent genes, a child’s DNA, chromosomes, nucleus, cell and inherited characteristic.",
+          "caption": "Use this to review DNA, genes, chromosomes and inherited characteristics.",
+          "mediaTitle": "DNA, genes and inherited characteristics",
+          "mediaLead": "Genes are sections of DNA and can affect inherited characteristics.",
+          "mediaPoints": [
+            "Genes are sections of DNA",
+            "Chromosomes are made of DNA",
+            "The nucleus contains chromosomes"
+          ],
+          "presentation": "media-image-base"
+        },
+        {
           "src": "assets/webp/9A-dna-chromosome-gene-hierarchy-notes-v2.webp",
           "alt": "Annotated hierarchy showing cell, nucleus, chromosome, DNA and gene.",
           "caption": "Chromosomes are found in the nucleus; DNA makes up chromosomes; genes are sections of DNA.",
@@ -766,6 +553,19 @@ window.YEAR9_NOTES = {
       "practicePrompt": "Pick one linked revision card for Biodiversity, conservation and extinction and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
       "media": [
         {
+          "src": "assets/webp/9A-biodiversity-extinction-conservation-notes-v151.webp",
+          "alt": "Class-note map showing causes of endangerment and ways to preserve biodiversity.",
+          "caption": "Biodiversity falls when species or habitats are lost.",
+          "mediaTitle": "Extinction causes and biodiversity preservation",
+          "mediaLead": "Biodiversity falls when species or habitats are lost.",
+          "mediaPoints": [
+            "Habitat destruction, climate change, pollution, hunting and invasive species can increase extinction risk",
+            "Nature reserves, breeding programmes, hunting bans and gene banks help preserve biodiversity",
+            "Species can become extinct if they can no longer survive and reproduce"
+          ],
+          "presentation": "media-image-base"
+        },
+        {
           "src": "assets/webp/9A-seed-bank-conservation.webp",
           "alt": "Seed bank storage room with seed samples.",
           "caption": "Gene banks and seed banks preserve biodiversity by storing useful genetic material."
@@ -813,6 +613,20 @@ window.YEAR9_NOTES = {
       "sentenceStarter": "Individuals with ___ were more likely to survive because ___, so they reproduced and passed on ___.",
       "practicePrompt": "Pick one linked revision card for Adaptation, natural selection and evolution and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
       "media": [
+        {
+          "src": "assets/webp/9A-natural-selection-sequence-notes-v152.webp",
+          "alt": "Class-note natural selection sequence.",
+          "caption": "Variation and selection over generations can change a population.",
+          "mediaTitle": "Natural selection sequence",
+          "mediaLead": "Variation and selection over generations can change a population.",
+          "mediaPoints": [
+            "Individuals show variation",
+            "Some variations give a survival advantage",
+            "Survivors reproduce and pass useful characteristics to offspring",
+            "Over generations the useful characteristic becomes more common"
+          ],
+          "presentation": "media-image-base"
+        },
         {
           "src": "assets/webp/9A-natural-selection-giraffes.webp",
           "alt": "Giraffes of different heights feeding from trees.",
@@ -887,6 +701,19 @@ window.YEAR9_NOTES = {
       "practicePrompt": "Pick one linked revision card for Photosynthesis and respiration and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
       "media": [
         {
+          "src": "assets/webp/9B-photosynthesis-limiting-factors-notes-v152.webp",
+          "alt": "Class-note graph set for photosynthesis limiting factors.",
+          "caption": "Light intensity, carbon dioxide and temperature can limit the rate of photosynthesis.",
+          "mediaTitle": "Photosynthesis limiting-factor graphs",
+          "mediaLead": "Light intensity, carbon dioxide and temperature can limit the rate of photosynthesis.",
+          "mediaPoints": [
+            "Light and carbon dioxide graphs rise and then level off",
+            "Temperature rises to an optimum and then falls",
+            "A plateau means another factor is limiting"
+          ],
+          "presentation": "media-image-base"
+        },
+        {
           "src": "assets/webp/9B-photosynthesis-plant-base.webp",
           "alt": "Whole plant illustration showing green leaves, stem and roots.",
           "presentation": "media-image-base",
@@ -925,7 +752,8 @@ window.YEAR9_NOTES = {
         "Stomata are pores controlled by guard cells.",
         "Mineral salts dissolve in water; nitrates are needed to make proteins.",
         "Magnesium salts are needed to make chlorophyll.",
-        "Thin leaves give carbon dioxide a short diffusion distance to photosynthesising cells."
+        "Thin leaves give carbon dioxide a short diffusion distance to photosynthesising cells.",
+        "Carbon dioxide enters leaves through stomata; oxygen can leave through stomata."
       ],
       "commonMistakes": [
         {
@@ -954,6 +782,19 @@ window.YEAR9_NOTES = {
       "sentenceStarter": "Water enters through ___, then travels through ___ to reach ___.",
       "practicePrompt": "Pick one linked revision card for Plant transport and specialised cells and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
       "media": [
+        {
+          "src": "assets/webp/9B-plant-transport-overview-notes-v153.webp",
+          "alt": "Class-note overview diagram showing roots, xylem, phloem, stomata and whole-plant transport arrows.",
+          "caption": "Use this to connect root absorption, xylem transport, phloem transport and gas exchange.",
+          "mediaTitle": "Whole-plant transport systems",
+          "mediaLead": "Plants move water, minerals and sugars using specialised tissues.",
+          "mediaPoints": [
+            "Root hair cells absorb water and minerals",
+            "Xylem carries water and minerals upward",
+            "Phloem carries sugars made by photosynthesis"
+          ],
+          "presentation": "media-image-base"
+        },
         {
           "src": "assets/webp/9B-plant-transport-process.webp",
           "alt": "Whole plant diagram showing roots absorbing water and arrows moving water upward and sugars away from leaves.",
@@ -1029,6 +870,19 @@ window.YEAR9_NOTES = {
       "sentenceStarter": "Farmers can increase yield by ___ because this gives the plant more ___.",
       "practicePrompt": "Pick one linked revision card for Plant products, seeds and food production and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
       "media": [
+        {
+          "src": "assets/webp/9B-glucose-uses-notes-v151.webp",
+          "alt": "Class-note flow diagram showing glucose uses.",
+          "caption": "Glucose made by photosynthesis is used in several ways.",
+          "mediaTitle": "Uses of glucose in plants",
+          "mediaLead": "Glucose made by photosynthesis is used in several ways.",
+          "mediaPoints": [
+            "Glucose is used in respiration",
+            "Glucose is stored as starch",
+            "Glucose can be used to make cellulose, lipids and proteins"
+          ],
+          "presentation": "media-image-base"
+        },
         {
           "src": "assets/webp/9B-food-production-methods-4panel.webp",
           "alt": "Four-panel image showing greenhouse growing, fertiliser use, irrigation and pest control for increasing crop yield.",
@@ -1112,6 +966,19 @@ window.YEAR9_NOTES = {
       "sentenceStarter": "This method increases yield because ___, but it can cause problems because ___.",
       "practicePrompt": "Pick one linked revision card for plant growth or farming and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
       "media": [
+        {
+          "src": "assets/webp/9B-farming-yield-methods-notes-v151.webp",
+          "alt": "Class-note table explaining farming methods.",
+          "caption": "Farming methods can increase yield but may reduce biodiversity.",
+          "mediaTitle": "Farming methods: benefits and drawbacks",
+          "mediaLead": "Farming methods can increase yield but may reduce biodiversity.",
+          "mediaPoints": [
+            "Removing hedgerows creates larger fields but removes habitats",
+            "Pesticides reduce crop damage but may harm food webs",
+            "Fertilisers increase mineral supply but can pollute water"
+          ],
+          "presentation": "media-image-base"
+        },
         {
           "src": "assets/webp/9B-farming-yield-sustainability-notes.webp",
           "alt": "Annotated split image showing farming methods that increase yield and environmental impacts.",
@@ -1477,7 +1344,35 @@ window.YEAR9_NOTES = {
       "memoryHook": "Exo = exits to surroundings; endo = enters the reaction.",
       "selfCheck": "Can you explain the difference between exothermic and endothermic and write what (s), (l), (g) and (aq) mean?",
       "sentenceStarter": "This reaction is ___ because energy is transferred ___ the surroundings.",
-      "practicePrompt": "Pick one linked revision card for 9E energy changes or equations and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered."
+      "practicePrompt": "Pick one linked revision card for 9E energy changes or equations and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
+      "media": [
+        {
+          "src": "assets/webp/9E-exothermic-endothermic-notes-v151.webp",
+          "alt": "Class-note comparison of exothermic and endothermic reactions.",
+          "caption": "Track whether energy moves to the surroundings or from the surroundings.",
+          "mediaTitle": "Exothermic and endothermic reactions",
+          "mediaLead": "Track whether energy moves to the surroundings or from the surroundings.",
+          "mediaPoints": [
+            "Exothermic transfers energy to surroundings",
+            "Endothermic transfers energy from surroundings",
+            "Surroundings get warmer in exothermic reactions and cooler in endothermic reactions"
+          ],
+          "presentation": "media-image-base"
+        },
+        {
+          "src": "assets/webp/9E-peer-review-process-notes-v151.webp",
+          "alt": "Class-note flowchart showing peer review.",
+          "caption": "Scientific papers are checked by other experts before publication.",
+          "mediaTitle": "Peer-review process",
+          "mediaLead": "Scientific papers are checked by other experts before publication.",
+          "mediaPoints": [
+            "Reviewers check methods, evidence, originality and conclusions",
+            "Peer review can lead to accepted, revised or rejected",
+            "It improves reliability and quality"
+          ],
+          "presentation": "media-image-base"
+        }
+      ]
     },
     {
       "id": "9E-recycling-methods",
@@ -1516,6 +1411,19 @@ window.YEAR9_NOTES = {
       "practicePrompt": "Pick one linked revision card for materials and recycling and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
       "media": [
         {
+          "src": "assets/webp/9E-recycling-methods-grid-notes-v152.webp",
+          "alt": "Class-note grid of recycling methods for different materials.",
+          "caption": "Different materials are recycled in different ways.",
+          "mediaTitle": "Recycling different materials",
+          "mediaLead": "Different materials are recycled in different ways.",
+          "mediaPoints": [
+            "Recycling reduces landfill",
+            "Recycling can reduce demand for raw materials",
+            "Metals, glass, paper, polymers and concrete have different recycling routes"
+          ],
+          "presentation": "media-image-base"
+        },
+        {
           "src": "assets/webp/9E-recycling-methods-notes.webp",
           "alt": "Annotated recycling image showing glass, metals, paper and plastics recycling methods.",
           "caption": "Different materials need different recycling processes.",
@@ -1544,7 +1452,8 @@ window.YEAR9_NOTES = {
         "Heating a gas makes particles move faster, increasing pressure if volume is fixed.",
         "In physical and chemical changes, atoms are not created or destroyed, so overall mass is conserved.",
         "Equations can be written using words or symbols and can include state symbols.",
-        "Large numbers in front of formulae show the number of molecules or formula units."
+        "Large numbers in front of formulae show the number of molecules or formula units.",
+        "Smaller gas volume and more gas particles can increase pressure because wall collisions become more frequent."
       ],
       "commonMistakes": [
         {
@@ -1573,6 +1482,19 @@ window.YEAR9_NOTES = {
       "sentenceStarter": "This is a chemical change because ___.",
       "practicePrompt": "Pick one linked revision card for Physical and chemical changes and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
       "media": [
+        {
+          "src": "assets/webp/9F-gas-pressure-particle-collisions-notes-v153.webp",
+          "alt": "Class-note infographic showing how gas pressure changes with temperature, volume and number of particles.",
+          "caption": "Use this to explain gas pressure using particle collisions with container walls.",
+          "mediaTitle": "Gas pressure and particle collisions",
+          "mediaLead": "Gas pressure depends on particle collisions with the walls of the container.",
+          "mediaPoints": [
+            "Higher temperature makes particles move faster",
+            "Smaller volume causes more frequent wall collisions",
+            "More particles cause more wall collisions"
+          ],
+          "presentation": "media-image-base"
+        },
         {
           "src": "assets/webp/9F-heating-metal-oxide.webp",
           "alt": "A test tube containing a black powder being heated over a Bunsen burner.",
@@ -1717,7 +1639,8 @@ window.YEAR9_NOTES = {
         "Metals that react with dilute acids produce a salt and hydrogen.",
         "Most metals react with oxygen in air to form metal oxides; this is oxidation.",
         "A thermite reaction is a highly exothermic displacement reaction between aluminium and iron oxide that produces molten iron.",
-        "In a displacement reaction, a more reactive element takes the place of a less reactive element in a compound."
+        "In a displacement reaction, a more reactive element takes the place of a less reactive element in a compound.",
+        "Metals react with oxygen to form metal oxides."
       ],
       "commonMistakes": [
         {
@@ -1751,6 +1674,32 @@ window.YEAR9_NOTES = {
       "sentenceStarter": "___ is more reactive than ___, so it displaces ___ from its compound.",
       "practicePrompt": "Pick one linked revision card for Reactivity and displacement and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
       "media": [
+        {
+          "src": "assets/webp/9F-metal-reaction-products-notes-v153.webp",
+          "alt": "Class-note map showing products when reactive metals react with oxygen, water and dilute acids.",
+          "caption": "Use this to remember product patterns for reactive metals.",
+          "mediaTitle": "Reactive metal product map",
+          "mediaLead": "Reactive metals form predictable products with oxygen, water and dilute acids.",
+          "mediaPoints": [
+            "metal + oxygen → metal oxide",
+            "metal + water → metal hydroxide + hydrogen",
+            "metal + acid → salt + hydrogen"
+          ],
+          "presentation": "media-image-base"
+        },
+        {
+          "src": "assets/webp/9F-displacement-magnesium-copper-notes-v152.webp",
+          "alt": "Class-note magnesium and copper sulfate displacement reaction.",
+          "caption": "A more reactive metal can displace a less reactive metal from a compound.",
+          "mediaTitle": "Displacement reactions",
+          "mediaLead": "A more reactive metal can displace a less reactive metal from a compound.",
+          "mediaPoints": [
+            "Magnesium is more reactive than copper",
+            "Magnesium displaces copper from copper sulfate",
+            "Copper forms as a solid deposit"
+          ],
+          "presentation": "media-image-base"
+        },
         {
           "src": "assets/webp/9F-reactivity-series-notes-medium-v2.webp",
           "alt": "Reactivity series chart showing magnesium, zinc, iron, copper and silver with short reaction-behaviour cues.",
@@ -1820,6 +1769,19 @@ window.YEAR9_NOTES = {
       "sentenceStarter": "Aluminium is extracted by electrolysis because ___.",
       "practicePrompt": "Pick one linked revision card for Metal extraction and reduction and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
       "media": [
+        {
+          "src": "assets/webp/9F-reactivity-extraction-decision-notes-v152.webp",
+          "alt": "Class-note reactivity series and metal extraction decision tree.",
+          "caption": "Use the reactivity series and carbon reference line to choose an extraction method.",
+          "mediaTitle": "Reactivity series and extraction",
+          "mediaLead": "Use the reactivity series and carbon reference line to choose an extraction method.",
+          "mediaPoints": [
+            "Metals above carbon need electrolysis",
+            "Metals below carbon can often be reduced using carbon",
+            "Very unreactive metals may be found native"
+          ],
+          "presentation": "media-image-base"
+        },
         {
           "src": "assets/webp/9F-blast-furnace-process-v2.webp",
           "alt": "Blast furnace illustration showing inputs, hot air and molten outputs.",
@@ -2033,6 +1995,20 @@ window.YEAR9_NOTES = {
       "practicePrompt": "Pick one linked revision card for Forces, drag and terminal velocity and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
       "media": [
         {
+          "src": "assets/webp/9I-terminal-velocity-force-chain-notes-v152.webp",
+          "alt": "Class-note terminal velocity force-chain.",
+          "caption": "A falling object reaches terminal velocity when air resistance balances weight.",
+          "mediaTitle": "Terminal velocity",
+          "mediaLead": "A falling object reaches terminal velocity when air resistance balances weight.",
+          "mediaPoints": [
+            "Weight acts downward",
+            "Air resistance acts upward",
+            "Air resistance increases as speed increases",
+            "Balanced forces mean constant speed"
+          ],
+          "presentation": "media-image-base"
+        },
+        {
           "src": "assets/webp/9I-forces-terminal-velocity-sequence.webp",
           "alt": "Skydiver sequence showing weight, air resistance, terminal velocity and parachute opening.",
           "caption": "Terminal velocity happens when weight and air resistance are balanced, so speed becomes constant rather than zero."
@@ -2161,8 +2137,8 @@ window.YEAR9_NOTES = {
         },
         {
           "src": "assets/webp/science-graph-reading-notes-v149.webp",
-          "alt": "Class-note visual explaining how to read axes, values, trends and graph types.",
-          "caption": "Use this to read axes, values and trends before answering graph questions.",
+          "alt": "Class-note visual explaining graph reading.",
+          "caption": "Read the title, axes, scale and units before describing a trend.",
           "mediaTitle": "Graph-reading source diagrams",
           "mediaLead": "Read the title, axes, scale and units before describing a trend.",
           "mediaPoints": [
@@ -2215,6 +2191,20 @@ window.YEAR9_NOTES = {
       "sentenceStarter": "This section shows ___ because the speed is ___.",
       "practicePrompt": "Pick one linked revision card for speed graphs and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
       "media": [
+        {
+          "src": "assets/webp/9I-speed-time-graph-notes-v152.webp",
+          "alt": "Class-note speed-time graph with motion notes.",
+          "caption": "Speed-time graphs show how speed changes over time.",
+          "mediaTitle": "Speed-time graph sections",
+          "mediaLead": "Speed-time graphs show how speed changes over time.",
+          "mediaPoints": [
+            "Upward sloping line = acceleration",
+            "Horizontal line above zero = constant speed",
+            "Downward sloping line = deceleration",
+            "Line on x-axis = stationary"
+          ],
+          "presentation": "media-image-base"
+        },
         {
           "src": "assets/webp/9I-speed-time-graph-notes.webp",
           "alt": "Annotated speed-time graph showing acceleration, constant speed and deceleration.",
@@ -2311,8 +2301,8 @@ window.YEAR9_NOTES = {
         },
         {
           "src": "assets/webp/9I-moment-calculations-notes-v149.webp",
-          "alt": "Class-note visual explaining moment equals force times distance and the balanced moments condition.",
-          "caption": "Use this for balanced lever calculations.",
+          "alt": "Class-note visual explaining moment calculations.",
+          "caption": "For balance, clockwise moment equals anticlockwise moment.",
           "mediaTitle": "Moment calculations",
           "mediaLead": "For balance, clockwise moment equals anticlockwise moment.",
           "mediaPoints": [
@@ -2337,7 +2327,8 @@ window.YEAR9_NOTES = {
         "Gravitational potential energy increases when an object is lifted higher.",
         "Mass is measured in kilograms; weight is a force measured in newtons.",
         "On Earth, gravitational field strength is about 10 N/kg.",
-        "Electric-field arrows show the direction a positive charge would move."
+        "Electric-field arrows show the direction a positive charge would move.",
+        "Field arrows show the direction of force on the object used to define the field."
       ],
       "commonMistakes": [
         {
@@ -2366,6 +2357,19 @@ window.YEAR9_NOTES = {
       "sentenceStarter": "The person’s mass is the same, but their weight is different because ___.",
       "practicePrompt": "Pick one linked revision card for Force fields, gravity and magnetism and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
       "media": [
+        {
+          "src": "assets/webp/9J-force-field-comparison-notes-v153.webp",
+          "alt": "Class-note comparison of gravitational, magnetic and electric fields with field-line diagrams.",
+          "caption": "Use this to compare force fields and field-line directions.",
+          "mediaTitle": "Gravitational, magnetic and electric fields",
+          "mediaLead": "A force field is a region where a non-contact force acts.",
+          "mediaPoints": [
+            "Gravitational fields act on masses",
+            "Magnetic fields act on magnets and magnetic materials",
+            "Electric fields act on charged objects"
+          ],
+          "presentation": "media-image-base"
+        },
         {
           "src": "assets/webp/9J-magnetic-field-bar-magnet-notes-v3.webp",
           "alt": "Annotated bar magnet showing magnetic field lines from north to south and strongest field near the poles.",
@@ -2421,6 +2425,20 @@ window.YEAR9_NOTES = {
       "sentenceStarter": "The rod becomes negatively charged because electrons ___.",
       "practicePrompt": "Pick one linked revision card for Static electricity and charge and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
       "media": [
+        {
+          "src": "assets/webp/9J-static-charge-transfer-notes-v152.webp",
+          "alt": "Class-note balloon and wool electron transfer diagram.",
+          "caption": "Static charge is caused by electrons moving between insulating materials.",
+          "mediaTitle": "Static electricity and electron transfer",
+          "mediaLead": "Static charge is caused by electrons moving between insulating materials.",
+          "mediaPoints": [
+            "Electrons are negatively charged",
+            "Only electrons move between the objects",
+            "The object that gains electrons becomes negative",
+            "Like charges repel and opposite charges attract"
+          ],
+          "presentation": "media-image-base"
+        },
         {
           "src": "assets/webp/9J-static-electricity-charge-transfer-notes-v3.webp",
           "alt": "Annotated static electricity diagram showing charge transfer during rubbing and attraction of paper.",
@@ -2542,8 +2560,8 @@ window.YEAR9_NOTES = {
         },
         {
           "src": "assets/webp/9J-circuit-symbols-notes-v149.webp",
-          "alt": "Class-note visual showing circuit symbols for cell, battery, switches, lamp, resistor, ammeter and voltmeter plus meter connection notes.",
-          "caption": "Use this to match real components with symbols and remember meter placement.",
+          "alt": "Class-note visual showing circuit symbols and meter placement.",
+          "caption": "Ammeter in series; voltmeter in parallel across the component.",
           "mediaTitle": "Circuit symbols and meter placement",
           "mediaLead": "Ammeter in series; voltmeter in parallel across the component.",
           "mediaPoints": [
@@ -2599,6 +2617,19 @@ window.YEAR9_NOTES = {
       "sentenceStarter": "The resistance is ___ Ω because R = ___ ÷ ___.",
       "practicePrompt": "Pick one linked revision card for Resistance and Ohm’s law and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
       "media": [
+        {
+          "src": "assets/webp/9J-current-voltage-graph-comparison-notes-v153.webp",
+          "alt": "Class-note current-voltage graph comparing two lines and explaining how resistance is inferred.",
+          "caption": "Use this to compare resistance from current-voltage graphs.",
+          "mediaTitle": "Current-voltage graphs and resistance",
+          "mediaLead": "At the same potential difference, the lower current shows the higher resistance.",
+          "mediaPoints": [
+            "Resistance = potential difference ÷ current",
+            "A shallower line means higher resistance",
+            "A straight line through the origin shows constant resistance"
+          ],
+          "presentation": "media-image-base"
+        },
         {
           "src": "assets/webp/9E-conductors-insulators-materials.webp",
           "alt": "Copper beside insulating materials such as plastic, wood and rubber.",
@@ -2661,6 +2692,20 @@ window.YEAR9_NOTES = {
       "practicePrompt": "Pick one linked revision card for resistance and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
       "media": [
         {
+          "src": "assets/webp/9J-wire-resistance-investigation-notes-v152.webp",
+          "alt": "Class-note wire resistance investigation setup.",
+          "caption": "Change the wire length and measure current and potential difference.",
+          "mediaTitle": "Wire resistance investigation",
+          "mediaLead": "Change the wire length and measure current and potential difference.",
+          "mediaPoints": [
+            "Ammeter in series",
+            "Voltmeter in parallel across the test length",
+            "Keep material, thickness and temperature the same",
+            "Longer wire usually has greater resistance"
+          ],
+          "presentation": "media-image-base"
+        },
+        {
           "src": "assets/webp/9J-wire-resistance-investigation-notes.webp",
           "alt": "Annotated wire resistance investigation showing ammeter, voltmeter, test wire and fair-test controls.",
           "caption": "This supports method-writing questions about measuring wire resistance.",
@@ -2714,8 +2759,8 @@ window.YEAR9_NOTES = {
       "media": [
         {
           "src": "assets/webp/science-formula-rearrangement-notes-v149.webp",
-          "alt": "Class-note visual showing speed, density and pressure formula triangles and rearranged equations.",
-          "caption": "Use this as calculation support before rounding or writing significant figures.",
+          "alt": "Class-note visual showing formula triangles and rearranged equations.",
+          "caption": "Write the formula, rearrange if needed, substitute values, then round sensibly.",
           "mediaTitle": "Formula triangles and rearranging equations",
           "mediaLead": "Write the formula, rearrange if needed, substitute values, then round sensibly.",
           "mediaPoints": [
@@ -2784,6 +2829,19 @@ window.YEAR9_NOTES = {
       "sentenceStarter": "The electromagnet becomes stronger when ___ because ___.",
       "practicePrompt": "Pick one linked revision card for Electromagnets, relays and motors and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
       "media": [
+        {
+          "src": "assets/webp/9J-electromagnet-motor-effect-notes-v152.webp",
+          "alt": "Class-note visual for electromagnets and motor effect.",
+          "caption": "A current can make a magnetic field and a current-carrying wire in a field can experience a force.",
+          "mediaTitle": "Electromagnets and the motor effect",
+          "mediaLead": "A current can make a magnetic field and a current-carrying wire in a field can experience a force.",
+          "mediaPoints": [
+            "More turns, larger current and an iron core make an electromagnet stronger",
+            "Electromagnets can be switched on and off",
+            "The motor effect produces a force on a current-carrying wire"
+          ],
+          "presentation": "media-image-base"
+        },
         {
           "src": "assets/webp/9J-electromagnet-strength-variables-notes-v3.webp",
           "alt": "Annotated electromagnet showing how iron core, current and turns affect strength.",
@@ -2888,8 +2946,8 @@ window.YEAR9_NOTES = {
         },
         {
           "src": "assets/webp/9I-density-calculations-notes-v149.webp",
-          "alt": "Class-note visual explaining density equals mass divided by volume, volume of a cuboid, and water displacement for irregular objects.",
-          "caption": "Use this for density calculations from dimensions or water displacement.",
+          "alt": "Class-note visual explaining density calculations and water displacement.",
+          "caption": "Find volume first, then divide mass by volume.",
           "mediaTitle": "Density calculations",
           "mediaLead": "Find volume first, then divide mass by volume.",
           "mediaPoints": [
@@ -2901,10 +2959,10 @@ window.YEAR9_NOTES = {
         },
         {
           "src": "assets/webp/9I-pressure-calculations-solids-notes-v149.webp",
-          "alt": "Class-note visual explaining pressure equals force divided by area and the effect of contact area.",
-          "caption": "Use this for pressure calculations in solids and contact-area explanations.",
+          "alt": "Class-note visual explaining pressure in solids.",
+          "caption": "Pressure increases when force increases or area decreases.",
           "mediaTitle": "Pressure calculations in solids",
-          "mediaLead": "Pressure increases when force increases or contact area decreases.",
+          "mediaLead": "Pressure increases when force increases or area decreases.",
           "mediaPoints": [
             "Pressure = force ÷ area",
             "Same force over smaller area gives larger pressure",

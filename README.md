@@ -6,8 +6,8 @@ This cleaned repo snapshot reflects the post-release-readiness state after the c
 
 ## Current content status
 
-- Content version: **1.51.0**
-- Notes version: **1.51.0**
+- Content version: **1.37.0**
+- Notes version: **1.35.0**
 - Question cards: **579**
 - Class notes: **33**
 - Learning objectives: **33**
