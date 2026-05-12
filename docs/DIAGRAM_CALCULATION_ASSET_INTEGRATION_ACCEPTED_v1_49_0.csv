@@ -1,0 +1,16 @@
+asset,asset_type,target_area,integration
+9I-density-water-displacement-question-v149.webp,Question asset,9I pressure/density,Water displacement density calculation card
+9I-density-cuboid-question-v149.webp,Question asset,9I pressure/density,Regular solid volume + density calculation card
+9I-pressure-solid-block-question-v149.webp,Question asset,9I pressure,Solid pressure calculation card
+9I-pressure-shoe-contact-area-question-v149.webp,Question asset,9I pressure,Contact area pressure comparison MCQ
+9I-moment-balanced-missing-distance-question-v149.webp,Question asset,9I moments,Balanced moment missing-distance calculation card and written exam question
+9I-distance-time-journey-question-v149.webp,Question asset,9I speed/graphs,Distance-time graph stopped-section MCQ
+9J-current-voltage-graph-question-v149.webp,Question asset,9J resistance,Current-voltage graph resistance comparison MCQ
+9J-circuit-symbols-grid-question-v149.webp,Question asset,9J circuits,Circuit symbol identify cards; also answer-key fix
+9J-meter-placement-xy-question-v149.webp,Question asset,9J circuits,Meter placement identify cards and written exam media
+9J-circuit-symbols-notes-v149.webp,Class-note visual,9J circuits,Circuit symbols and meter placement note support
+science-formula-rearrangement-notes-v149.webp,Class-note visual,9J rounding/calculations,Formula triangle and rearrangement note support
+9I-pressure-calculations-solids-notes-v149.webp,Class-note visual,9I pressure,Pressure calculation note support
+9I-moment-calculations-notes-v149.webp,Class-note visual,9I moments,Moment calculation note support
+science-graph-reading-notes-v149.webp,Class-note visual,9I speed/graphs,Graph-reading note support
+9I-density-calculations-notes-v149.webp,Class-note visual,9I pressure/density,Density calculation note support

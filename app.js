@@ -305,7 +305,13 @@
       markScheme: ["1 mark for ammeter in series.", "1 mark for voltmeter in parallel / across a component."],
       keywords: ["ammeter", "series", "voltmeter", "parallel", "across"],
       commonMistakes: ["Do not connect the ammeter in parallel.", "Do not connect the voltmeter in series."],
-      answerStructure: ["Bullet 1: ammeter.", "Bullet 2: voltmeter."]
+      answerStructure: ["Bullet 1: ammeter.", "Bullet 2: voltmeter."],
+      media: [{
+        src: "assets/webp/9J-meter-placement-xy-question-v149.webp",
+        alt: "Circuit diagram with positions X, Y and Z around a lamp for meter placement.",
+        mediaTiming: "question",
+        presentation: "media-image-base"
+      }]
     },
     {
       id: "we-phys-describe-speed-time",
@@ -319,7 +325,13 @@
       markScheme: ["1 mark for accelerating in the first 4 s.", "1 mark for using values 0 to 12 m/s or 4 s.", "1 mark for constant speed from 4 s to 10 s."],
       keywords: ["accelerates", "0 m/s", "12 m/s", "4 s", "constant speed"],
       commonMistakes: ["Do not say the object is stationary when the line is horizontal on a speed-time graph.", "Use the y-axis values."],
-      answerStructure: ["Describe first section.", "Use values.", "Describe second section."]
+      answerStructure: ["Describe first section.", "Use values.", "Describe second section."],
+      media: [{
+        src: "assets/webp/9I-speed-time-graph-blank.webp",
+        alt: "Speed-time graph for describing acceleration and constant speed.",
+        mediaTiming: "question",
+        presentation: "media-image-base"
+      }]
     },
     {
       id: "we-phys-explain-terminal-velocity",
@@ -341,13 +353,19 @@
       unit: "9I",
       commandWord: "calculate",
       marks: 2,
-      question: "A force of 20 N acts 0.40 m from a pivot. Calculate the moment.",
-      answerFrame: "Write formula, substitution and answer with units.",
-      modelAnswer: "moment = force × distance = 20 × 0.40 = 8 N m",
-      markScheme: ["1 mark for using moment = force × distance.", "1 mark for 8 N m."],
-      keywords: ["moment", "force", "distance", "8 N m"],
-      commonMistakes: ["Do not forget the unit N m.", "Use distance from the pivot."],
-      answerStructure: ["Formula.", "Substitution.", "Answer with unit."]
+      question: "Use the balanced lever diagram. Calculate the missing distance on the right-hand side.",
+      answerFrame: "Write the moment equation, substitute values and answer with units.",
+      modelAnswer: "Left moment = 240 × 2 = 480 N m. For balance, right moment = 480 N m. Distance = 480 ÷ 160 = 3 m.",
+      markScheme: ["1 mark for using equal clockwise and anticlockwise moments / force × distance.", "1 mark for 3 m."],
+      keywords: ["moment", "force", "distance", "480 N m", "3 m"],
+      commonMistakes: ["Do not forget that balanced means equal moments.", "Use the distance from the pivot, not the total length of the lever."],
+      answerStructure: ["Find the known moment.", "Set the opposite moment equal for balance.", "Divide by the force to find distance."],
+      media: [{
+        src: "assets/webp/9I-moment-balanced-missing-distance-question-v149.webp",
+        alt: "Balanced lever with 240 N at 2 m on one side and 160 N at an unknown distance on the other side.",
+        mediaTiming: "question",
+        presentation: "media-image-base"
+      }]
     },
     {
       id: "we-phys-explain-wire-resistance",
@@ -1423,6 +1441,7 @@
           <span class="pill">${question.marks} mark${question.marks === 1 ? "" : "s"}</span>
         </div>
         <p class="question-text">${escapeHtml(question.question)}</p>
+        ${Array.isArray(question.media) && question.media.length ? renderMediaItems(question.media.filter((item) => !item.mediaTiming || item.mediaTiming === "question"), question.question || "Question diagram", "media-grid question-media-grid", { showCaptions: false }) : ""}
         <aside class="written-answer-guide">
           <strong>Answer format</strong>
           <p>${escapeHtml(commandHint(question.commandWord))}</p>

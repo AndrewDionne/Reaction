@@ -1,5 +1,51 @@
 # Changelog — consolidated
 
+## v1.48.0 — Full QA pass for image batches 1 and 2
+- Ran a combined QA pass across the v1.46 and v1.47 image integrations.
+- Fixed mis-mapped image assets where several v1.46 filenames did not match the visual content, especially in magnetism/static electricity/motor effect and moments/electromagnet images.
+- Added corrected semantic aliases for the mis-mapped images and rewired class-note media to the correct visuals.
+- Added 51 additional conservative question-safe media references using blank images from the last two image batches.
+- Increased active cards with media from 153 to 203.
+- Preserved remaining SVG source-style diagrams where exact labels, arrows, or answer-key structure are still required.
+
+## v1.47.0 — R2 image audit and integration
+- Audited the uploaded `Images for reaction R2.zip` archive for class-note and question use.
+- Accepted 26 of 33 source images and converted them to 1600 × 1000 WEBP assets.
+- Integrated cleaner class-note visuals for bioaccumulation, quadrats, seed dispersal, formulae, elements/compounds/mixtures, particle changes of state, gas pressure, Brownian motion, diffusion, pH/acid/alkali, neutralisation, chromatography/distillation, metal extraction, and balancing equations.
+- Added 17 conservative question-safe media references using blank images only where they supported the prompt without revealing the answer.
+- Skipped duplicate or over-dense alternates, including the second bioaccumulation human-body variant and duplicate balancing/changing-state variants.
+
+## v1.46.0 — New image archive audit and integration
+- Audited the uploaded `images for reaction.zip` archive for class-note and question use.
+- Converted 64 accepted PNG images to 1600 × 1000 WEBP assets.
+- Replaced the remaining SVG-based class-note visuals for DNA/gene hierarchy and polymers/composites, and upgraded multiple active class-note visuals.
+- Wired selected question-safe blank images into active question cards where labels and answer keys could be preserved or safely retargeted.
+- Retargeted the circuit-symbol grid questions to the new A–H grid: cell, battery, open switch, closed switch, lamp, resistor, ammeter and voltmeter.
+- Retargeted the meter-placement questions to the new X/Y/Z candidate-position diagram.
+- Left remaining source-style SVG question diagrams in place where the new images did not preserve the exact labels or would risk answer-key drift.
+
+## v1.45.0 — Question-safe image asset integration
+- Integrated blank/question-safe WEBP assets into selected question cards where the image supports interpretation or written-answer reasoning.
+- Preserved annotated images for class notes only.
+- Retained source-style SVGs where cards depend on specific labels or where a blank replacement would leak the answer.
+
+## v1.44.0 — Focused image QA pass
+- Verified accepted image integration from the current repo snapshot.
+- Confirmed no missing media references in notes or card content.
+- Added focused image QA documentation and media-reference reports.
+- Kept question-card media rewiring out of scope to avoid answer-leakage changes without a dedicated pass.
+
+## v1.43.0 — Accepted image asset integration
+- Converted accepted archive PNG assets to 1600 × 1000 WEBP files under `assets/webp/`.
+- Replaced weak class-note concept SVGs with high-quality image-first class-note visuals.
+- Preserved blank/question-safe counterparts for future question-card integration.
+- Added archive source register, review matrix copy, superseded visual register, and integration notes.
+
+## v1.42.0 — SVG note-graphics expansion
+- Added a new round of clean SVG study visuals using the existing Phase 1/2 diagram approach: diagram-first SVG assets plus app-rendered teaching text.
+- Covered high-value notes for variation, seed lifecycle, farming trade-offs, recycling, peer review, pressure, heating/cooling, periodic table, greenhouse effect, chemical energy, combustion/rate, speed-time graphs, meter placement, wire resistance investigations, and significant figures.
+- Integrated the new SVGs into class notes only, avoiding unnecessary question-card answer leakage.
+
 ## v1.41.0 — Deferred non-study-pack CGP bridge topics
 - Removed waves, breathing / gas exchange, and anaerobic respiration from the active study/test pool because they are not clearly included in the uploaded Year 9 revision study pack.
 - Preserved the deferred cards and notes in docs for later restoration if confirmed as examinable.

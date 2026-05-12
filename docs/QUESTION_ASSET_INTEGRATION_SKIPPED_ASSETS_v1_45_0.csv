@@ -1,0 +1,5 @@
+card_id,asset,reason
+y9x-112-9j-explain-how-a-current-voltage-graph-shows-which-resistor-has-the-higher-resistan,assets/webp/9J-current-voltage-graphs-blank.webp,not used: asset shows generic device curves; existing question needs labelled resistor A/B lines
+y9x-138 through y9x-144 circuit-symbol label cards,assets/webp/9J-circuit-symbols-matching-blank.webp,not used: current cards rely on A–H labels that are only in existing source-style SVG
+y9x-149 and y9x-150 meter-position quiz cards,assets/webp/9J-meter-placement-blank.webp,not used: blank asset shows the correct ammeter/voltmeter placement and would leak the answer
+science calculation cards,assets/webp/science-calculation-diagram-blank.webp,not used: too generic for current formula questions; should be handled by a dedicated calculation-mode design

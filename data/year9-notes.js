@@ -1,6 +1,6 @@
 window.YEAR9_NOTES = {
-  "version": "1.41.0",
-  "title": "Year 9 Science Enhanced Class Notes with Deferred CGP Bridge Topics",
+  "version": "1.49.0",
+  "title": "Year 9 Science Class Notes with diagram, graph and calculation visual support",
   "notes": [
     {
       "id": "9A-variation",
@@ -52,7 +52,21 @@ window.YEAR9_NOTES = {
       "memoryHook": "Ask: “Can I measure it on a scale?” If yes, it is often continuous. Ask: “Does it fall into named groups?” If yes, it is often discontinuous.",
       "selfCheck": "Can you classify height, blood group, a suntan and eye colour as inherited, environmental, continuous or discontinuous?",
       "sentenceStarter": "This is an example of ___ variation because ___.",
-      "practicePrompt": "Pick one linked revision card for Variation and classification and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered."
+      "practicePrompt": "Pick one linked revision card for Variation and classification and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
+      "media": [
+        {
+          "src": "assets/webp/9A-continuous-discontinuous-variation-notes-v2.webp",
+          "alt": "Annotated comparison of continuous variation as a histogram and discontinuous variation as a bar chart.",
+          "caption": "Continuous variation shows a range of values; discontinuous variation has separate categories.",
+          "mediaTitle": "Continuous vs discontinuous variation",
+          "mediaLead": "Use the graph type to support the wording: range of values versus separate categories.",
+          "mediaPoints": [
+            "Continuous variation often uses a histogram",
+            "Discontinuous variation often uses a bar chart",
+            "Height is continuous; blood group is discontinuous"
+          ]
+        }
+      ]
     },
     {
       "id": "9A-inheritance",
@@ -101,17 +115,16 @@ window.YEAR9_NOTES = {
       "practicePrompt": "Pick one linked revision card for Inheritance, DNA and genes and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
       "media": [
         {
-          "src": "assets/diagrams/9A-dna-genes-chromosomes.svg",
-          "alt": "Diagram linking chromosomes, DNA and genes.",
-          "caption": "Use this when the words chromosome, DNA and gene start to blend together.",
-          "mediaTitle": "DNA, genes and chromosomes",
-          "mediaLead": "Think from large to small: the nucleus contains chromosomes, chromosomes are made of DNA, and genes are short sections of DNA.",
+          "src": "assets/webp/9A-dna-chromosome-gene-hierarchy-notes-v2.webp",
+          "alt": "Annotated hierarchy showing cell, nucleus, chromosome, DNA and gene.",
+          "caption": "Chromosomes are found in the nucleus; DNA makes up chromosomes; genes are sections of DNA.",
+          "mediaTitle": "DNA, chromosomes and genes",
+          "mediaLead": "This replaces the old SVG with a clearer hierarchy from cell to gene.",
           "mediaPoints": [
-            "Chromosome = DNA package",
-            "Gene = section of DNA",
-            "DNA carries inherited information"
-          ],
-          "presentation": "media-image-base"
+            "Chromosomes are found in the nucleus",
+            "DNA makes up chromosomes",
+            "Genes are sections of DNA"
+          ]
         }
       ]
     },
@@ -276,18 +289,6 @@ window.YEAR9_NOTES = {
       "practicePrompt": "Pick one linked revision card for Photosynthesis and respiration and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
       "media": [
         {
-          "src": "assets/diagrams/9B-photosynthesis-light-graph.svg",
-          "alt": "Graph showing photosynthesis rate increasing then levelling off as light intensity increases.",
-          "caption": "Photosynthesis increases with light at first, then another factor becomes limiting.",
-          "mediaTitle": "Reading a photosynthesis graph",
-          "mediaLead": "The rate rises while light is limiting, then levels off when another factor limits the reaction.",
-          "mediaPoints": [
-            "Increasing slope = more photosynthesis",
-            "Flat section = a limiting factor has changed"
-          ],
-          "presentation": "media-diagram-base"
-        },
-        {
           "src": "assets/webp/9B-photosynthesis-plant-base.webp",
           "alt": "Whole plant illustration showing green leaves, stem and roots.",
           "presentation": "media-image-base",
@@ -297,6 +298,19 @@ window.YEAR9_NOTES = {
             "Roots absorb water but usually do not photosynthesise.",
             "Stems can support transport and may photosynthesise if green."
           ]
+        },
+        {
+          "src": "assets/webp/9B-photosynthesis-light-graph-notes.webp",
+          "alt": "Annotated photosynthesis graph showing how rate changes as light intensity increases.",
+          "caption": "The graph supports light-intensity questions: rate increases at first, then levels off when another factor becomes limiting.",
+          "mediaTitle": "Photosynthesis light-intensity graph",
+          "mediaLead": "The rate rises as light intensity increases, then levels off when light is no longer the limiting factor.",
+          "mediaPoints": [
+            "Rising section = light is limiting",
+            "Plateau = another factor is limiting",
+            "Check axes before interpreting the graph"
+          ],
+          "presentation": "media-diagram-base"
         }
       ]
     },
@@ -430,6 +444,33 @@ window.YEAR9_NOTES = {
             "Pest control reduces crop damage and competition"
           ],
           "presentation": "media-diagram-base"
+        },
+        {
+          "src": "assets/webp/9B-seed-lifecycle-notes.webp",
+          "alt": "Annotated seed lifecycle showing pollination, fertilisation, seed formation, dispersal and germination.",
+          "caption": "Use this for the sequence from flower to seed to new plant.",
+          "mediaTitle": "Seed lifecycle",
+          "mediaLead": "Pollination and fertilisation lead to seed formation; dispersal spreads seeds; germination produces a young plant.",
+          "mediaPoints": [
+            "Pollination transfers pollen",
+            "Fertilisation leads to seed formation",
+            "Germination produces a young plant"
+          ],
+          "presentation": "media-image-base"
+        },
+        {
+          "src": "assets/webp/9B-seed-dispersal-mechanisms-notes-v3.webp",
+          "alt": "Annotated seed dispersal mechanisms including wind, water, animals and explosive dispersal.",
+          "caption": "Seeds are dispersed away from the parent plant to reduce competition.",
+          "presentation": "media-image-base",
+          "sourceTag": "r2-image-v1.47",
+          "mediaTitle": "Seed dispersal mechanisms",
+          "mediaLead": "Different seed structures help seeds travel away from the parent plant.",
+          "mediaPoints": [
+            "Dispersal reduces competition",
+            "Seeds can be spread by wind, water or animals",
+            "Some seed pods burst open"
+          ]
         }
       ]
     },
@@ -471,7 +512,23 @@ window.YEAR9_NOTES = {
       "memoryHook": "For every farming method, ask: “How does it increase yield?” and “What environmental problem could it cause?”",
       "selfCheck": "Can you give a benefit and a problem for clearing hedges, using pesticides, using fertilisers and planting one high-yield variety?",
       "sentenceStarter": "This method increases yield because ___, but it can cause problems because ___.",
-      "practicePrompt": "Pick one linked revision card for plant growth or farming and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered."
+      "practicePrompt": "Pick one linked revision card for plant growth or farming and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
+      "media": [
+        {
+          "src": "assets/webp/9B-farming-yield-sustainability-notes.webp",
+          "alt": "Annotated split image showing farming methods that increase yield and environmental impacts.",
+          "caption": "A good answer often gives one yield benefit and one environmental drawback.",
+          "mediaTitle": "Farming yield and sustainability",
+          "mediaLead": "Methods can increase crop yield but may also damage habitats, reduce biodiversity or pollute water.",
+          "mediaPoints": [
+            "Fertilisers provide mineral ions",
+            "Irrigation prevents water shortage",
+            "Pesticides reduce crop damage",
+            "Sustainable development balances needs and habitats"
+          ],
+          "presentation": "media-image-base"
+        }
+      ]
     },
     {
       "id": "9B-food-webs",
@@ -513,21 +570,57 @@ window.YEAR9_NOTES = {
       "practicePrompt": "Pick one linked revision card for Food webs, biodiversity and ecosystems and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
       "media": [
         {
-          "src": "assets/webp/9B-carbon-cycle-context.webp",
-          "alt": "Carbon cycle diagram showing carbon dioxide in air, plants, animals, respiration, decomposers, fossil fuels and combustion.",
-          "caption": "Carbon moves between air, plants, animals, decomposers and fossil fuels. Photosynthesis removes carbon dioxide; respiration and combustion return it."
+          "src": "assets/webp/9B-carbon-cycle-source-style-notes-v2.webp",
+          "alt": "Annotated carbon cycle showing photosynthesis, respiration, decomposition, combustion and fossil fuels.",
+          "caption": "Carbon is recycled through living things and the environment.",
+          "mediaTitle": "Carbon cycle",
+          "mediaLead": "Use the arrows to connect photosynthesis, respiration, combustion and decomposition.",
+          "mediaPoints": [
+            "Photosynthesis removes carbon dioxide",
+            "Respiration and combustion release carbon dioxide",
+            "Decomposers release carbon dioxide"
+          ]
         },
         {
-          "src": "assets/webp/9B-food-web-ecosystem.webp",
-          "alt": "Food web with plants, insects, small animals and predators linked by arrows showing feeding relationships.",
-          "caption": "Arrows in a food web show the direction of energy transfer from food to feeder.",
-          "mediaTitle": "Food-web arrows",
-          "mediaLead": "Food-web arrows show energy transfer from food to feeder.",
+          "src": "assets/webp/9B-food-web-population-changes-notes-v2.webp",
+          "alt": "Annotated food web showing producers, consumers, predators, prey and population-change effects.",
+          "caption": "Food webs contain linked food chains; changing one population can affect others.",
+          "mediaTitle": "Food web and population changes",
+          "mediaLead": "Use arrows from food to consumer and follow the knock-on effect through the web.",
           "mediaPoints": [
-            "Plant material transfers energy to herbivores",
-            "Changes lower in a food web can affect predators higher up"
-          ],
-          "presentation": "media-image-base"
+            "A producer makes its own food",
+            "A predator eats prey",
+            "Changing one population can affect others"
+          ]
+        },
+        {
+          "src": "assets/webp/9B-bioaccumulation-food-chain-notes-v3.webp",
+          "alt": "Annotated aquatic food chain showing toxin concentration increasing up the food chain.",
+          "caption": "Bioaccumulation: toxin concentration increases up a food chain.",
+          "presentation": "media-image-base",
+          "sourceTag": "r2-image-v1.47",
+          "mediaTitle": "Bioaccumulation in a food chain",
+          "mediaLead": "Use this when explaining why top predators can be most affected by pollutants.",
+          "mediaPoints": [
+            "Toxins can pass along a food chain",
+            "Top predators can have the highest toxin concentration",
+            "Pollutants include pesticides and heavy metals"
+          ]
+        },
+        {
+          "src": "assets/webp/9B-quadrat-ecosystem-sampling-notes-v3.webp",
+          "alt": "Annotated quadrat sampling method in a meadow.",
+          "caption": "Quadrats estimate populations without counting every organism.",
+          "presentation": "media-image-base",
+          "sourceTag": "r2-image-v1.47",
+          "mediaTitle": "Quadrat sampling",
+          "mediaLead": "A quadrat is used to sample a known area, then results are scaled to estimate the total population.",
+          "mediaPoints": [
+            "Place quadrats randomly",
+            "Count organisms inside the quadrat",
+            "Repeat and calculate a mean",
+            "Estimate total population = average per quadrat × total area"
+          ]
         }
       ]
     },
@@ -684,16 +777,16 @@ window.YEAR9_NOTES = {
       "practicePrompt": "Pick one linked revision card for Composites and material choice and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
       "media": [
         {
-          "src": "assets/diagrams/9E-polymers-composites.svg",
-          "alt": "Polymer chains and composite material diagram.",
-          "caption": "Composites combine a matrix with reinforcement to improve material properties.",
+          "src": "assets/webp/9E-polymers-monomers-composites-notes-v2.webp",
+          "alt": "Annotated materials diagram showing monomers, a polymer chain and a fibre composite.",
+          "caption": "Polymers are long chains made from repeating monomers; composites combine useful properties from different materials.",
           "mediaTitle": "Polymers and composites",
-          "mediaLead": "A composite combines materials so the final material has useful properties.",
+          "mediaLead": "Use this visual to separate polymer chains from composite reinforcement.",
           "mediaPoints": [
-            "Matrix holds the material together",
-            "Reinforcement adds strength or stiffness"
-          ],
-          "presentation": "media-diagram-base"
+            "Monomers are small molecules",
+            "Polymers are long chains",
+            "Composites contain two or more materials"
+          ]
         }
       ]
     },
@@ -822,7 +915,23 @@ window.YEAR9_NOTES = {
       "memoryHook": "Metal and glass: separate then melt. Paper: remove ink and make pulp. Concrete: crush and grade.",
       "selfCheck": "Can you match metal, glass, polymer, paper and concrete to their recycling methods?",
       "sentenceStarter": "___ is recycled by ___, which helps because ___.",
-      "practicePrompt": "Pick one linked revision card for materials and recycling and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered."
+      "practicePrompt": "Pick one linked revision card for materials and recycling and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
+      "media": [
+        {
+          "src": "assets/webp/9E-recycling-methods-notes.webp",
+          "alt": "Annotated recycling image showing glass, metals, paper and plastics recycling methods.",
+          "caption": "Different materials need different recycling processes.",
+          "mediaTitle": "Recycling methods by material",
+          "mediaLead": "Match the material to the recycling process rather than giving one vague method for everything.",
+          "mediaPoints": [
+            "Glass is crushed and melted",
+            "Metals are sorted, melted and reformed",
+            "Paper is pulped and cleaned",
+            "Plastics are sorted by type before remelting"
+          ],
+          "presentation": "media-image-base"
+        }
+      ]
     },
     {
       "id": "9F-changes",
@@ -870,6 +979,86 @@ window.YEAR9_NOTES = {
           "src": "assets/webp/9F-heating-metal-oxide.webp",
           "alt": "A test tube containing a black powder being heated over a Bunsen burner.",
           "caption": "Heating can be part of a chemical change when substances react and new products form."
+        },
+        {
+          "src": "assets/webp/9F-physical-change-chemical-reaction-notes-v2.webp",
+          "alt": "Annotated split image comparing physical changes with chemical reactions.",
+          "caption": "A physical change does not make a new substance; a chemical reaction makes new substances.",
+          "mediaTitle": "Physical change vs chemical reaction",
+          "mediaLead": "Use signs of reaction such as gas, colour change, temperature change and precipitate.",
+          "mediaPoints": [
+            "Physical changes are often reversible",
+            "Chemical reactions make new substances",
+            "Mass is conserved"
+          ]
+        },
+        {
+          "src": "assets/webp/9F-thermal-decomposition-gas-tests-notes-v2.webp",
+          "alt": "Annotated lab setup showing thermal decomposition and gas tests for carbon dioxide and oxygen.",
+          "caption": "Thermal decomposition means a compound breaks down when heated.",
+          "mediaTitle": "Thermal decomposition and gas tests",
+          "mediaLead": "This supports carbonate decomposition and common gas-test questions.",
+          "mediaPoints": [
+            "Metal carbonates form metal oxide and carbon dioxide",
+            "Carbon dioxide turns limewater cloudy",
+            "Oxygen relights a glowing splint"
+          ]
+        },
+        {
+          "src": "assets/webp/9F-balancing-equations-notes-v3.webp",
+          "alt": "Annotated balancing equations scaffold using magnesium and oxygen.",
+          "caption": "Balanced equations have the same number of each atom on both sides.",
+          "presentation": "media-image-base",
+          "sourceTag": "r2-image-v1.47",
+          "mediaTitle": "Balancing equations",
+          "mediaLead": "Change coefficients, not formulae, when balancing an equation.",
+          "mediaPoints": [
+            "Count atoms on both sides",
+            "Only change numbers in front",
+            "Do not change a compound formula"
+          ]
+        },
+        {
+          "src": "assets/webp/9F-neutralisation-reactions-notes-v3.webp",
+          "alt": "Annotated neutralisation lab setup with pH scale and acid/base reaction products.",
+          "caption": "Neutralisation moves pH towards 7 and forms salts.",
+          "presentation": "media-image-base",
+          "sourceTag": "r2-image-v1.47",
+          "mediaTitle": "Neutralisation reactions",
+          "mediaLead": "Acids react with bases, metal oxides, metal hydroxides and metal carbonates.",
+          "mediaPoints": [
+            "Acid + metal oxide → salt + water",
+            "Acid + metal hydroxide → salt + water",
+            "Acid + metal carbonate → salt + carbon dioxide + water"
+          ]
+        },
+        {
+          "src": "assets/webp/9F-acids-alkalis-ph-scale-notes-v3.webp",
+          "alt": "Annotated pH scale with acids, neutral substances and alkalis.",
+          "caption": "The pH scale shows how acidic or alkaline a substance is.",
+          "presentation": "media-image-base",
+          "sourceTag": "r2-image-v1.47",
+          "mediaTitle": "Acids, alkalis and pH",
+          "mediaLead": "Universal indicator changes colour depending on pH.",
+          "mediaPoints": [
+            "Acids have pH less than 7",
+            "Neutral substances have pH 7",
+            "Alkalis have pH greater than 7"
+          ]
+        },
+        {
+          "src": "assets/webp/9F-chromatography-distillation-notes-v3.webp",
+          "alt": "Annotated chromatography and simple distillation lab methods.",
+          "caption": "Separation methods can separate mixtures without making new substances.",
+          "presentation": "media-image-base",
+          "sourceTag": "r2-image-v1.47",
+          "mediaTitle": "Chromatography and distillation",
+          "mediaLead": "Chromatography separates soluble dyes; distillation separates substances with different boiling points.",
+          "mediaPoints": [
+            "The solvent moves up chromatography paper",
+            "Different dyes move different distances",
+            "Distillation evaporates then condenses a liquid"
+          ]
         }
       ]
     },
@@ -1034,11 +1223,6 @@ window.YEAR9_NOTES = {
       "practicePrompt": "Pick one linked revision card for Metal extraction and reduction and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
       "media": [
         {
-          "src": "assets/webp/9F-extraction-methods-2panel.webp",
-          "alt": "Two-panel comparison showing carbon reduction on the left and electrolysis on the right.",
-          "caption": "Metals below carbon can often be extracted by carbon reduction, while more reactive metals need electrolysis."
-        },
-        {
           "src": "assets/webp/9F-blast-furnace-process-v2.webp",
           "alt": "Blast furnace illustration showing inputs, hot air and molten outputs.",
           "presentation": "media-image-base",
@@ -1047,6 +1231,20 @@ window.YEAR9_NOTES = {
           "mediaPoints": [
             "Carbon monoxide removes oxygen from iron oxide.",
             "Limestone helps remove impurities as slag."
+          ]
+        },
+        {
+          "src": "assets/webp/9F-metal-extraction-methods-notes-v3.webp",
+          "alt": "Annotated comparison of carbon reduction and electrolysis for metal extraction.",
+          "caption": "Reactivity determines how a metal is extracted from its ore.",
+          "presentation": "media-image-base",
+          "sourceTag": "r2-image-v1.47",
+          "mediaTitle": "Metal extraction methods",
+          "mediaLead": "Metals less reactive than carbon can often be extracted by carbon reduction; more reactive metals need electrolysis.",
+          "mediaPoints": [
+            "Carbon removes oxygen from metal oxides",
+            "Metals above carbon need electrolysis",
+            "Gold and silver can be found as pure metals"
           ]
         }
       ]
@@ -1099,7 +1297,35 @@ window.YEAR9_NOTES = {
       "memoryHook": "Hydrocarbon burns in oxygen → carbon dioxide + water. Oxygen relights a glowing splint.",
       "selfCheck": "Can you name three ways to increase rate of reaction and explain the oxygen gas test?",
       "sentenceStarter": "The rate increases because ___, so particles collide ___.",
-      "practicePrompt": "Pick one linked revision card for 9F reactions and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered."
+      "practicePrompt": "Pick one linked revision card for 9F reactions and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
+      "media": [
+        {
+          "src": "assets/webp/9F-combustion-fire-triangle-notes.webp",
+          "alt": "Annotated combustion image showing fuel, heat and oxygen in the fire triangle.",
+          "caption": "Combustion needs fuel, heat and oxygen; removing one stops combustion.",
+          "mediaTitle": "Combustion and the fire triangle",
+          "mediaLead": "Use the fire triangle to explain how combustion starts, continues and can be stopped.",
+          "mediaPoints": [
+            "Combustion needs fuel, heat and oxygen",
+            "Complete combustion produces carbon dioxide and water",
+            "Incomplete combustion can produce carbon monoxide and soot"
+          ],
+          "presentation": "media-image-base"
+        },
+        {
+          "src": "assets/webp/9F-collision-theory-blank.webp",
+          "alt": "Particle collision image comparing a slower reaction and a faster reaction.",
+          "caption": "Use this visual with the written note text: faster reactions have more successful collisions each second.",
+          "mediaTitle": "Collision theory for reaction rate",
+          "mediaLead": "The blank particle visual avoids overcrowding but still supports collision-based explanations.",
+          "mediaPoints": [
+            "Higher temperature increases particle energy",
+            "Larger surface area exposes more particles",
+            "Higher concentration gives more collisions"
+          ],
+          "presentation": "media-image-base"
+        }
+      ]
     },
     {
       "id": "9F-rusting",
@@ -1141,9 +1367,28 @@ window.YEAR9_NOTES = {
       "practicePrompt": "Pick one linked revision card for Rusting and corrosion protection and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
       "media": [
         {
-          "src": "assets/webp/9F-rusting-protection.webp",
-          "alt": "Rusting compared with sacrificial protection.",
-          "caption": "Rusting needs water and oxygen; coatings or sacrificial metals can protect iron and steel."
+          "src": "assets/webp/9F-rusting-conditions-prevention-notes-v2.webp",
+          "alt": "Annotated rusting investigation and rust prevention methods.",
+          "caption": "Rusting needs oxygen and water; coatings and sacrificial metals can protect iron.",
+          "mediaTitle": "Rusting conditions and prevention",
+          "mediaLead": "Use this visual to distinguish the conditions for rusting from the methods used to stop it.",
+          "mediaPoints": [
+            "Rusting needs oxygen and water",
+            "Paint or oil forms a barrier",
+            "Galvanising coats iron with zinc"
+          ]
+        },
+        {
+          "src": "assets/webp/9F-sacrificial-protection-iron-notes-v2.webp",
+          "alt": "Annotated ship-hull example showing sacrificial protection of iron.",
+          "caption": "A more reactive metal corrodes instead of the iron.",
+          "mediaTitle": "Sacrificial protection",
+          "mediaLead": "The iron is protected while the sacrificial metal remains.",
+          "mediaPoints": [
+            "Zinc or magnesium can protect iron",
+            "The more reactive metal corrodes first",
+            "This is sacrificial protection"
+          ]
         }
       ]
     },
@@ -1247,42 +1492,17 @@ window.YEAR9_NOTES = {
       "practicePrompt": "Pick one linked revision card for Energy, work and simple machines and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
       "media": [
         {
-          "src": "assets/webp/9I-sankey-efficiency-base.webp",
-          "alt": "Two Sankey-style energy flow diagrams showing useful and wasted energy.",
-          "caption": "The most efficient machine wastes the smallest proportion of its input energy.",
-          "mediaTitle": "Sankey efficiency",
-          "mediaLead": "The most efficient machine wastes the smallest proportion of input energy.",
+          "src": "assets/webp/9I-sankey-efficiency-notes.webp",
+          "alt": "Annotated Sankey diagram showing useful energy, wasted energy and efficiency.",
+          "caption": "Sankey diagrams show where energy is transferred and how much is useful or wasted.",
+          "mediaTitle": "Sankey diagrams and efficiency",
+          "mediaLead": "The thicker the arrow, the more energy it represents.",
           "mediaPoints": [
-            "Useful output continues forward",
-            "Wasted energy is shown by the downward branch",
-            "Compare proportions, not just total arrow length"
+            "Useful energy goes to the intended output",
+            "Wasted energy is transferred to less useful stores or surroundings",
+            "Efficiency compares useful output with total input"
           ],
-          "presentation": "media-image-base",
-          "mediaMarkers": [
-            {
-              "label": "Machine X",
-              "x": 17,
-              "y": 31,
-              "variant": "machine"
-            },
-            {
-              "label": "Machine Y",
-              "x": 17,
-              "y": 65,
-              "variant": "machine"
-            }
-          ]
-        },
-        {
-          "src": "assets/webp/9I-sankey-lightbulb-efficiency-base.webp",
-          "alt": "Two light bulb Sankey diagrams showing useful and wasted energy transfers.",
-          "presentation": "media-image-base",
-          "mediaTitle": "Useful and wasted energy",
-          "mediaLead": "Sankey diagrams compare how much input energy becomes useful output and how much is wasted.",
-          "mediaPoints": [
-            "A larger useful output arrow means greater efficiency.",
-            "A larger wasted branch means lower efficiency."
-          ]
+          "presentation": "media-diagram-base"
         }
       ]
     },
@@ -1329,16 +1549,30 @@ window.YEAR9_NOTES = {
       "practicePrompt": "Pick one linked revision card for Speed and distance-time graphs and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
       "media": [
         {
-          "src": "assets/diagrams/9I-distance-time-VWXYZ.svg",
-          "alt": "Distance-time graph labelled V, W, X, Y and Z.",
-          "caption": "Flat sections mean stopped; steeper lines mean greater speed.",
-          "mediaTitle": "Distance–time graphs",
-          "mediaLead": "A flat section means distance is not changing, so the object has stopped.",
+          "src": "assets/webp/9I-distance-time-graph-notes.webp",
+          "alt": "Annotated distance-time graph showing stopped, slow and fast sections.",
+          "caption": "Use the slope of a distance-time graph to describe motion.",
+          "mediaTitle": "Distance-time graphs",
+          "mediaLead": "A horizontal line means stopped; a steeper line means greater speed.",
           "mediaPoints": [
+            "Horizontal line = stopped",
             "Steeper line = faster speed",
-            "Horizontal section = stationary"
+            "Always check the axes"
           ],
           "presentation": "media-diagram-base"
+        },
+        {
+          "src": "assets/webp/science-graph-reading-notes-v149.webp",
+          "alt": "Class-note visual explaining how to read axes, values, trends and graph types.",
+          "caption": "Use this to read axes, values and trends before answering graph questions.",
+          "mediaTitle": "Graph-reading source diagrams",
+          "mediaLead": "Read the title, axes, scale and units before describing a trend.",
+          "mediaPoints": [
+            "Read x-axis and y-axis labels with units",
+            "Use plotted values in descriptions",
+            "A steeper line shows a faster rate of change"
+          ],
+          "presentation": "media-image-base"
         }
       ]
     },
@@ -1381,7 +1615,23 @@ window.YEAR9_NOTES = {
       "memoryHook": "Speed-time graph: flat = steady speed; up slope = speeding up; down slope = slowing down.",
       "selfCheck": "Can you explain the difference between a flat line on a distance-time graph and a flat line on a speed-time graph?",
       "sentenceStarter": "This section shows ___ because the speed is ___.",
-      "practicePrompt": "Pick one linked revision card for speed graphs and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered."
+      "practicePrompt": "Pick one linked revision card for speed graphs and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
+      "media": [
+        {
+          "src": "assets/webp/9I-speed-time-graph-notes.webp",
+          "alt": "Annotated speed-time graph showing acceleration, constant speed and deceleration.",
+          "caption": "Use line shape and speed value together when interpreting a speed-time graph.",
+          "mediaTitle": "Speed-time graphs",
+          "mediaLead": "A flat speed-time line means constant speed, not necessarily stopped.",
+          "mediaPoints": [
+            "Upward slope = accelerating",
+            "Flat line = constant speed",
+            "Downward slope = decelerating",
+            "Zero speed = stationary"
+          ],
+          "presentation": "media-diagram-base"
+        }
+      ]
     },
     {
       "id": "9I-moments",
@@ -1423,14 +1673,55 @@ window.YEAR9_NOTES = {
       "practicePrompt": "Pick one linked revision card for Levers, pivots and moments and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
       "media": [
         {
+          "src": "assets/webp/9I-lever-pivot-moment-notes-v2.webp",
+          "alt": "Annotated lever diagram showing force, distance, pivot and moment.",
+          "caption": "A moment is the turning effect of a force around a pivot.",
+          "mediaTitle": "Lever, pivot and moment",
+          "mediaLead": "Moment = force × perpendicular distance from the pivot.",
+          "mediaPoints": [
+            "A larger force gives a larger moment",
+            "A larger distance gives a larger moment",
+            "Moments are measured in Nm"
+          ]
+        },
+        {
           "src": "assets/webp/9I-lever-moment-context.webp",
-          "alt": "Lever diagram lifting a rock showing load, fulcrum, effort, distances from pivot and moment equals force times distance.",
-          "caption": "A longer distance from the pivot gives a larger moment for the same force. Moment = force × distance from the pivot."
+          "alt": "Lever and rock context showing pivot, load, effort force and distances.",
+          "caption": "A larger distance from the pivot gives a larger moment.",
+          "presentation": "media-image-base",
+          "sourceTag": "v1.48-qa-corrected",
+          "mediaTitle": "Lever moment context",
+          "mediaLead": "Use this visual to connect the formula with a real lever.",
+          "mediaPoints": [
+            "Moment = force × distance",
+            "The distance is from the pivot",
+            "A longer lever can reduce the force needed"
+          ]
         },
         {
           "src": "assets/webp/9I-lever-comparison-three-setups.webp",
-          "alt": "Three lever setups comparing different pivot positions with the same load and effort direction.",
-          "caption": "Moving the pivot closer to the load makes the lever easier to use because the effort arm becomes longer.",
+          "alt": "Three lever setups with the pivot in different places.",
+          "caption": "Changing pivot position changes how easy the load is to lift.",
+          "presentation": "media-image-base",
+          "sourceTag": "v1.48-qa-corrected",
+          "mediaTitle": "Comparing lever setups",
+          "mediaLead": "The easiest setup usually puts the effort far from the pivot and the load close to the pivot.",
+          "mediaPoints": [
+            "Pivot position changes the turning effect",
+            "A longer effort arm increases the moment"
+          ]
+        },
+        {
+          "src": "assets/webp/9I-moment-calculations-notes-v149.webp",
+          "alt": "Class-note visual explaining moment equals force times distance and the balanced moments condition.",
+          "caption": "Use this for balanced lever calculations.",
+          "mediaTitle": "Moment calculations",
+          "mediaLead": "For balance, clockwise moment equals anticlockwise moment.",
+          "mediaPoints": [
+            "Moment = force × distance",
+            "Distance is measured from the pivot",
+            "Balanced objects have equal opposite moments"
+          ],
           "presentation": "media-image-base"
         }
       ]
@@ -1478,9 +1769,18 @@ window.YEAR9_NOTES = {
       "practicePrompt": "Pick one linked revision card for Force fields, gravity and magnetism and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
       "media": [
         {
-          "src": "assets/webp/9J-magnetic-field-pattern.webp",
-          "alt": "Iron filings showing the magnetic field pattern around a bar magnet.",
-          "caption": "Field lines show the shape and direction of a magnetic field."
+          "src": "assets/webp/9J-magnetic-field-bar-magnet-notes-v3.webp",
+          "alt": "Annotated bar magnet showing magnetic field lines from north to south and strongest field near the poles.",
+          "caption": "Magnetic field lines show field shape and direction; the field is strongest near the poles.",
+          "presentation": "media-image-base",
+          "sourceTag": "v1.48-qa-corrected",
+          "mediaTitle": "Magnetic field around a bar magnet",
+          "mediaLead": "Use the spacing and arrows of field lines to describe magnetic fields accurately.",
+          "mediaPoints": [
+            "Field lines go from north to south outside the magnet",
+            "Closest field lines show strongest field",
+            "A compass points along the field direction"
+          ]
         }
       ]
     },
@@ -1524,9 +1824,33 @@ window.YEAR9_NOTES = {
       "practicePrompt": "Pick one linked revision card for Static electricity and charge and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
       "media": [
         {
-          "src": "assets/webp/9J-static-electricity-charge-transfer.webp",
-          "alt": "Infographic explaining static electricity by rubbing, electron transfer, negative and positive charge, and attraction or repulsion.",
-          "caption": "Static electricity comes from charge transfer. Electrons move; like charges repel and opposite charges attract."
+          "src": "assets/webp/9J-static-electricity-charge-transfer-notes-v3.webp",
+          "alt": "Annotated static electricity diagram showing charge transfer during rubbing and attraction of paper.",
+          "caption": "Static charge builds up when electrons are transferred.",
+          "presentation": "media-image-base",
+          "sourceTag": "v1.48-qa-corrected",
+          "mediaTitle": "Static electricity and charge transfer",
+          "mediaLead": "Electrons move during rubbing; objects become charged when they gain or lose electrons.",
+          "mediaPoints": [
+            "Electrons are negatively charged",
+            "Gaining electrons makes an object negative",
+            "Losing electrons makes an object positive",
+            "Opposite charges attract"
+          ]
+        },
+        {
+          "src": "assets/webp/9J-static-electricity-hair-attraction-notes-v3.webp",
+          "alt": "Annotated static electricity diagram showing a balloon rubbed with cloth attracting hair.",
+          "caption": "A charged object can attract neutral objects by causing charge separation.",
+          "presentation": "media-image-base",
+          "sourceTag": "v1.48-qa-corrected",
+          "mediaTitle": "Static attraction",
+          "mediaLead": "This supports explain questions about why hair or paper is attracted to a charged object.",
+          "mediaPoints": [
+            "Opposite charges attract",
+            "Like charges repel",
+            "A rubbed insulator can hold static charge"
+          ]
         }
       ]
     },
@@ -1581,6 +1905,55 @@ window.YEAR9_NOTES = {
           "src": "assets/webp/9J-series-parallel-current-voltage.webp",
           "alt": "Infographic comparing series and parallel circuits, including current and voltage behaviour.",
           "caption": "Series circuits have the same current everywhere and share voltage. Parallel circuits split current between branches and have the same voltage across each branch."
+        },
+        {
+          "src": "assets/webp/9J-circuit-symbols-grid-notes-v2.webp",
+          "alt": "Annotated grid of standard circuit symbols including cell, battery, switches, lamp, resistor, ammeter and voltmeter.",
+          "caption": "Use this chart to connect component names with standard circuit symbols.",
+          "mediaTitle": "Circuit symbols A–H",
+          "mediaLead": "This version uses the correct X-in-circle lamp symbol and standard meter symbols.",
+          "mediaPoints": [
+            "Cell: one long line and one short line",
+            "Battery: two or more cells",
+            "Ammeter in series; voltmeter in parallel"
+          ]
+        },
+        {
+          "src": "assets/webp/9J-meter-placement-candidates-notes-v2.webp",
+          "alt": "Annotated circuit showing candidate positions for an ammeter and voltmeter.",
+          "caption": "Ammeter in series; voltmeter in parallel across the component.",
+          "mediaTitle": "Meter placement",
+          "mediaLead": "Use the measurement being taken to decide where the meter goes.",
+          "mediaPoints": [
+            "Ammeter measures current",
+            "Voltmeter measures potential difference",
+            "Current flows through an ammeter"
+          ]
+        },
+        {
+          "src": "assets/webp/9J-potential-difference-series-parallel-notes-v2.webp",
+          "alt": "Annotated comparison of potential difference in series and parallel circuits.",
+          "caption": "In series, potential difference is shared; in parallel, each branch has the supply potential difference.",
+          "mediaTitle": "Potential difference in circuits",
+          "mediaLead": "Voltmeters are connected in parallel to compare two points in a circuit.",
+          "mediaPoints": [
+            "Potential difference is measured in volts",
+            "A voltmeter is connected in parallel",
+            "Parallel branches have the same supply p.d."
+          ]
+        },
+        {
+          "src": "assets/webp/9J-circuit-symbols-notes-v149.webp",
+          "alt": "Class-note visual showing circuit symbols for cell, battery, switches, lamp, resistor, ammeter and voltmeter plus meter connection notes.",
+          "caption": "Use this to match real components with symbols and remember meter placement.",
+          "mediaTitle": "Circuit symbols and meter placement",
+          "mediaLead": "Ammeter in series; voltmeter in parallel across the component.",
+          "mediaPoints": [
+            "Lamp is a circle with an X",
+            "Resistor is a rectangle",
+            "Ammeter is in series; voltmeter is in parallel"
+          ],
+          "presentation": "media-image-base"
         }
       ]
     },
@@ -1629,21 +2002,22 @@ window.YEAR9_NOTES = {
       "practicePrompt": "Pick one linked revision card for Resistance and Ohm’s law and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
       "media": [
         {
-          "src": "assets/diagrams/9J-current-voltage-graph.svg",
-          "alt": "Current-voltage graph comparing two resistors.",
-          "caption": "A shallower current-voltage line means higher resistance.",
-          "mediaTitle": "Current–voltage graphs",
-          "mediaLead": "A steeper line means more current for the same voltage, so resistance is lower.",
-          "mediaPoints": [
-            "Steeper line = lower resistance",
-            "Shallower line = higher resistance"
-          ],
-          "presentation": "media-diagram-base"
-        },
-        {
           "src": "assets/webp/9E-conductors-insulators-materials.webp",
           "alt": "Copper beside insulating materials such as plastic, wood and rubber.",
           "caption": "Copper is a good conductor; plastic, wood and rubber are high-resistance insulators."
+        },
+        {
+          "src": "assets/webp/9J-current-voltage-graphs-notes.webp",
+          "alt": "Annotated current-voltage graphs for an ohmic resistor, filament lamp and diode.",
+          "caption": "Different components have different current-voltage graph shapes.",
+          "mediaTitle": "Current-voltage graphs",
+          "mediaLead": "For a resistor graph, the shallower line has the higher resistance.",
+          "mediaPoints": [
+            "Ohmic resistor: straight line through origin",
+            "Filament lamp: curve as resistance changes",
+            "Diode: current mainly flows one way"
+          ],
+          "presentation": "media-diagram-base"
         }
       ]
     },
@@ -1686,7 +2060,23 @@ window.YEAR9_NOTES = {
       "memoryHook": "Wire resistance: material, length, thickness. Change one; control the other two.",
       "selfCheck": "If wire length is the independent variable, what should be kept the same?",
       "sentenceStarter": "This is a fair test because only ___ changes, while ___ and ___ are kept the same.",
-      "practicePrompt": "Pick one linked revision card for resistance and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered."
+      "practicePrompt": "Pick one linked revision card for resistance and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
+      "media": [
+        {
+          "src": "assets/webp/9J-wire-resistance-investigation-notes.webp",
+          "alt": "Annotated wire resistance investigation showing ammeter, voltmeter, test wire and fair-test controls.",
+          "caption": "This supports method-writing questions about measuring wire resistance.",
+          "mediaTitle": "Wire resistance investigation",
+          "mediaLead": "Change one factor at a time and calculate resistance from voltage and current.",
+          "mediaPoints": [
+            "Resistance depends on material, length and thickness",
+            "Ammeter in series",
+            "Voltmeter in parallel",
+            "Calculate resistance using R = V ÷ I"
+          ],
+          "presentation": "media-diagram-base"
+        }
+      ]
     },
     {
       "id": "9J-rounding-numbers",
@@ -1722,7 +2112,36 @@ window.YEAR9_NOTES = {
       "memoryHook": "Decimal places: count after the point. Significant figures: start at the first non-zero digit.",
       "selfCheck": "How many decimal places and significant figures are in 0.0632?",
       "sentenceStarter": "To round to ___ significant figures, start counting from ___.",
-      "practicePrompt": "Try one calculation answer and round it once to decimal places and once to significant figures."
+      "practicePrompt": "Try one calculation answer and round it once to decimal places and once to significant figures.",
+      "media": [
+        {
+          "src": "assets/webp/science-formula-rearrangement-notes-v149.webp",
+          "alt": "Class-note visual showing speed, density and pressure formula triangles and rearranged equations.",
+          "caption": "Use this as calculation support before rounding or writing significant figures.",
+          "mediaTitle": "Formula triangles and rearranging equations",
+          "mediaLead": "Write the formula, rearrange if needed, substitute values, then round sensibly.",
+          "mediaPoints": [
+            "Speed = distance ÷ time",
+            "Density = mass ÷ volume",
+            "Pressure = force ÷ area"
+          ],
+          "presentation": "media-image-base"
+        },
+        {
+          "src": "assets/webp/science-formula-rearrange-guide-notes.webp",
+          "alt": "Formula rearranging guide showing how to use equation triangles and calculation structure.",
+          "caption": "Use this as calculation support alongside significant figures and rounding.",
+          "mediaTitle": "Formula and calculation support",
+          "mediaLead": "Write the equation, substitute values with units, calculate, then round sensibly.",
+          "mediaPoints": [
+            "Use the correct equation",
+            "Substitute values carefully",
+            "Include units",
+            "Round to a sensible number of figures"
+          ],
+          "presentation": "media-diagram-base"
+        }
+      ]
     },
     {
       "id": "9J-electromagnets",
@@ -1768,25 +2187,47 @@ window.YEAR9_NOTES = {
       "practicePrompt": "Pick one linked revision card for Electromagnets, relays and motors and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
       "media": [
         {
-          "src": "assets/webp/9J-electromagnet-relay-motor-overview-base.webp",
-          "alt": "Three-panel overview showing an electromagnet, a relay and a motor-effect setup.",
-          "caption": "Current in a coil makes an electromagnet; relays use electromagnets to switch circuits; the motor effect is a force on a current-carrying wire in a magnetic field.",
-          "mediaTitle": "Electromagnets, relays and motors",
-          "mediaLead": "All three depend on magnetic fields made or used by electric current.",
+          "src": "assets/webp/9J-electromagnet-strength-variables-notes-v3.webp",
+          "alt": "Annotated electromagnet showing how iron core, current and turns affect strength.",
+          "caption": "More turns, a larger current and an iron core make an electromagnet stronger.",
+          "presentation": "media-image-base",
+          "sourceTag": "v1.48-qa-corrected",
+          "mediaTitle": "Electromagnet strength variables",
+          "mediaLead": "This is the main investigation image for electromagnet strength questions.",
           "mediaPoints": [
-            "Electromagnet: current in a coil creates a magnetic field",
-            "Relay: an electromagnet switches another circuit",
-            "Motor effect: a current-carrying wire in a magnetic field feels a force"
-          ],
-          "presentation": "media-image-base"
+            "More turns on the coil make it stronger",
+            "A larger current makes it stronger",
+            "An iron core makes it stronger",
+            "The electromagnet can be switched off"
+          ]
         },
         {
-          "src": "assets/webp/9J-motor-effect-concept-labeled.webp",
-          "alt": "Motor-effect diagram showing a wire between north and south poles with magnetic field, current and force directions.",
-          "caption": "In the motor effect, a current-carrying wire in a magnetic field experiences a force.",
+          "src": "assets/webp/9J-electromagnet-relay-motor-overview-base.webp",
+          "alt": "Overview image showing an electromagnet, relay and motor-effect setup.",
+          "caption": "Electromagnets use current in a coil to make a magnetic field.",
           "presentation": "media-image-base",
-          "mediaTitle": "Motor effect",
-          "mediaLead": "The force direction depends on the directions of the magnetic field and the current."
+          "sourceTag": "v1.48-qa-corrected",
+          "mediaTitle": "Electromagnets, relays and motors",
+          "mediaLead": "Use this overview to distinguish the main electromagnetism applications.",
+          "mediaPoints": [
+            "A current in a coil produces a magnetic field",
+            "An iron core can strengthen an electromagnet",
+            "Relays use electromagnets as switches"
+          ]
+        },
+        {
+          "src": "assets/webp/9J-motor-effect-simple-motor-notes-v3.webp",
+          "alt": "Annotated motor effect and simple electric motor diagram.",
+          "caption": "A current-carrying wire in a magnetic field can experience a force.",
+          "presentation": "media-image-base",
+          "sourceTag": "v1.48-qa-corrected",
+          "mediaTitle": "Motor effect and simple motor",
+          "mediaLead": "Opposite forces on the coil make it rotate.",
+          "mediaPoints": [
+            "A current-carrying wire in a magnetic field can experience a force",
+            "Opposite sides of the coil experience opposite forces",
+            "A motor transfers electrical energy to kinetic energy"
+          ]
         }
       ]
     },
@@ -1794,15 +2235,17 @@ window.YEAR9_NOTES = {
       "id": "9I-pressure",
       "unit": "9I",
       "objective": "9I-pressure",
-      "title": "Pressure in fluids",
-      "summary": "Pressure is the effect of a force acting over an area. In fluids, pressure can act in all directions and usually changes with depth or height.",
+      "title": "Pressure, density and floating",
+      "summary": "Pressure is the effect of a force acting over an area. Density compares mass with volume. In fluids, pressure changes with depth and upthrust can support floating objects.",
       "keyPoints": [
         "Pressure = force ÷ area, measured in pascals (Pa).",
         "For the same force, a smaller area gives a larger pressure.",
         "Liquid pressure increases with depth because more liquid is above pushing down.",
         "Atmospheric pressure decreases with height because less air is above pushing down.",
         "Upthrust is an upward force caused by pressure in a fluid.",
-        "An object floats when upthrust balances weight."
+        "An object floats when upthrust balances weight.",
+        "Density = mass ÷ volume, often measured in g/cm³ or kg/m³.",
+        "For an irregular object, volume can be found from the increase in water level during displacement."
       ],
       "commonMistakes": [
         {
@@ -1829,7 +2272,49 @@ window.YEAR9_NOTES = {
       "memoryHook": "Pressure spreads force over area: smaller area, bigger pressure.",
       "selfCheck": "Can you explain snowshoes, dams and floating ships using pressure and upthrust?",
       "sentenceStarter": "The pressure is greater because ___. This means ___.",
-      "practicePrompt": "Try one calculation and one explain question from Pressure in fluids before moving on."
+      "practicePrompt": "Try one calculation and one explain question from Pressure in fluids before moving on.",
+      "media": [
+        {
+          "src": "assets/webp/9I-pressure-fluids-notes.webp",
+          "alt": "Annotated pressure in fluids image showing force over area, liquid pressure increasing with depth and upthrust.",
+          "caption": "This replaces the weak SVG with a stronger class-note concept visual.",
+          "mediaTitle": "Pressure in fluids",
+          "mediaLead": "Pressure depends on force and area. In liquids, pressure increases with depth. Upthrust acts upwards in a fluid.",
+          "mediaPoints": [
+            "Pressure = force ÷ area",
+            "For the same force, smaller area gives greater pressure",
+            "Liquid pressure increases with depth",
+            "Floating happens when upthrust balances weight"
+          ],
+          "presentation": "media-image-base"
+        },
+        {
+          "src": "assets/webp/9I-density-calculations-notes-v149.webp",
+          "alt": "Class-note visual explaining density equals mass divided by volume, volume of a cuboid, and water displacement for irregular objects.",
+          "caption": "Use this for density calculations from dimensions or water displacement.",
+          "mediaTitle": "Density calculations",
+          "mediaLead": "Find volume first, then divide mass by volume.",
+          "mediaPoints": [
+            "Density = mass ÷ volume",
+            "Regular solid volume comes from dimensions",
+            "Irregular solid volume comes from water displacement"
+          ],
+          "presentation": "media-image-base"
+        },
+        {
+          "src": "assets/webp/9I-pressure-calculations-solids-notes-v149.webp",
+          "alt": "Class-note visual explaining pressure equals force divided by area and the effect of contact area.",
+          "caption": "Use this for pressure calculations in solids and contact-area explanations.",
+          "mediaTitle": "Pressure calculations in solids",
+          "mediaLead": "Pressure increases when force increases or contact area decreases.",
+          "mediaPoints": [
+            "Pressure = force ÷ area",
+            "Same force over smaller area gives larger pressure",
+            "Sharp objects create high pressure because area is small"
+          ],
+          "presentation": "media-image-base"
+        }
+      ]
     },
     {
       "id": "9E-heating-cooling",
@@ -1871,7 +2356,103 @@ window.YEAR9_NOTES = {
       "memoryHook": "Hot to cold: energy transfers from warmer to cooler surroundings.",
       "selfCheck": "Can you sort melting, boiling, evaporation, freezing and condensing into endothermic or exothermic?",
       "sentenceStarter": "Energy is transferred from ___ to ___, so ___.",
-      "practicePrompt": "Answer one particle explanation and one cooling-curve question."
+      "practicePrompt": "Answer one particle explanation and one cooling-curve question.",
+      "media": [
+        {
+          "src": "assets/webp/9E-heating-cooling-notes.webp",
+          "alt": "Annotated heating and cooling image showing a beaker, thermometer, particle models and changes of state.",
+          "caption": "This links energy transfer, particles and changes of state.",
+          "mediaTitle": "Heating and cooling",
+          "mediaLead": "Heating transfers energy to a substance; cooling transfers energy from a substance to the surroundings.",
+          "mediaPoints": [
+            "Melting and boiling are endothermic",
+            "Freezing and condensing are exothermic",
+            "Particles are closest in solids and furthest apart in gases"
+          ],
+          "presentation": "media-image-base"
+        },
+        {
+          "src": "assets/webp/9E-thermal-conductors-insulators-notes.webp",
+          "alt": "Annotated thermal conductors and insulators image comparing fast and slow thermal energy transfer.",
+          "caption": "Use this to distinguish conductors and insulators in heating questions.",
+          "mediaTitle": "Thermal conductors and insulators",
+          "mediaLead": "Thermal conductors transfer thermal energy quickly; thermal insulators transfer thermal energy slowly.",
+          "mediaPoints": [
+            "Metals are often good thermal conductors",
+            "Insulators reduce the rate of energy transfer"
+          ],
+          "presentation": "media-image-base"
+        },
+        {
+          "src": "assets/webp/9E-particle-model-states-notes-v2.webp",
+          "alt": "Annotated particle model showing solids, liquids and gases.",
+          "caption": "The particle arrangement and movement explain properties of solids, liquids and gases.",
+          "mediaTitle": "Particle model of states",
+          "mediaLead": "Heating makes particles move faster and can lead to changes of state.",
+          "mediaPoints": [
+            "Solids vibrate in fixed positions",
+            "Liquids flow past each other",
+            "Gases move quickly in random directions"
+          ]
+        },
+        {
+          "src": "assets/webp/9E-changes-of-state-particle-model-notes-v3.webp",
+          "alt": "Annotated particle model showing solid, liquid, gas and changes of state.",
+          "caption": "Changes of state can be explained using particle arrangement and movement.",
+          "presentation": "media-image-base",
+          "sourceTag": "r2-image-v1.47",
+          "mediaTitle": "Changes of state",
+          "mediaLead": "This image links particle arrangements with the names of state changes.",
+          "mediaPoints": [
+            "Melting: solid to liquid",
+            "Freezing: liquid to solid",
+            "Condensing: gas to liquid",
+            "Mass is conserved during a state change"
+          ]
+        },
+        {
+          "src": "assets/webp/9E-gas-pressure-brownian-motion-notes-v3.webp",
+          "alt": "Annotated gas pressure particle model showing collisions, reduced volume and higher temperature.",
+          "caption": "Gas pressure is caused by particles colliding with surfaces.",
+          "presentation": "media-image-base",
+          "sourceTag": "r2-image-v1.47",
+          "mediaTitle": "Gas pressure",
+          "mediaLead": "More frequent or harder collisions increase the force on the walls of a container.",
+          "mediaPoints": [
+            "Gas particles move randomly",
+            "Reducing volume increases pressure",
+            "Increasing temperature makes particles move faster"
+          ]
+        },
+        {
+          "src": "assets/webp/9E-brownian-motion-notes-v3.webp",
+          "alt": "Annotated Brownian motion diagram showing larger particles knocked by smaller moving particles.",
+          "caption": "Brownian motion is evidence that tiny particles are moving randomly.",
+          "presentation": "media-image-base",
+          "sourceTag": "r2-image-v1.47",
+          "mediaTitle": "Brownian motion",
+          "mediaLead": "Small fast-moving particles collide with a larger visible particle and make it move randomly.",
+          "mediaPoints": [
+            "Particles move randomly",
+            "Collisions happen from many directions",
+            "Smoke or pollen particles can show Brownian motion"
+          ]
+        },
+        {
+          "src": "assets/webp/9E-diffusion-liquids-gases-notes-v3.webp",
+          "alt": "Annotated diffusion sequence showing particles spreading from high to low concentration.",
+          "caption": "Diffusion spreads particles from high concentration to low concentration.",
+          "presentation": "media-image-base",
+          "sourceTag": "r2-image-v1.47",
+          "mediaTitle": "Diffusion",
+          "mediaLead": "Particles move randomly until they become evenly spread.",
+          "mediaPoints": [
+            "Diffusion happens in liquids and gases",
+            "Higher temperature makes diffusion faster",
+            "Stirring can speed diffusion in liquids"
+          ]
+        }
+      ]
     },
     {
       "id": "9F-periodic-table-bridge",
@@ -1913,7 +2494,76 @@ window.YEAR9_NOTES = {
       "memoryHook": "Group = goes down. Period = goes across.",
       "selfCheck": "Can you identify atomic number, mass number, group and period from a periodic-table entry?",
       "sentenceStarter": "Elements in the same group ___.",
-      "practicePrompt": "Use the exact revision-pack wording for groups, periods and atomic number."
+      "practicePrompt": "Use the exact revision-pack wording for groups, periods and atomic number.",
+      "media": [
+        {
+          "src": "assets/webp/9F-periodic-table-navigator-notes.webp",
+          "alt": "Annotated simplified periodic table showing groups, periods, metals and non-metals.",
+          "caption": "This supports periodic-table structure questions.",
+          "mediaTitle": "Periodic table navigator",
+          "mediaLead": "The periodic table shows elements in order of atomic number. Groups are vertical columns and periods are rows.",
+          "mediaPoints": [
+            "Groups are vertical columns",
+            "Periods are rows",
+            "Metals are usually on the left and middle",
+            "Non-metals are usually on the right"
+          ],
+          "presentation": "media-diagram-base"
+        },
+        {
+          "src": "assets/webp/9F-group1-alkali-metals-notes-v2.webp",
+          "alt": "Annotated visual for Group 1 alkali metals.",
+          "caption": "Reactivity increases down group 1 and melting point decreases down group 1.",
+          "mediaTitle": "Group 1 alkali metals",
+          "mediaLead": "Use the vertical group to describe trends down the periodic table.",
+          "mediaPoints": [
+            "Group 1 elements are alkali metals",
+            "They react with water to form metal hydroxide and hydrogen",
+            "Only small samples are used in demonstrations"
+          ]
+        },
+        {
+          "src": "assets/webp/9F-group7-halogens-notes-v2.webp",
+          "alt": "Annotated visual for Group 7 halogens.",
+          "caption": "Reactivity decreases down group 7 and melting/boiling points increase down group 7.",
+          "mediaTitle": "Group 7 halogens",
+          "mediaLead": "Use the vertical group to describe trends down the periodic table.",
+          "mediaPoints": [
+            "Group 7 elements are halogens",
+            "Halogens are non-metals",
+            "A more reactive halogen displaces a less reactive halogen"
+          ]
+        },
+        {
+          "src": "assets/webp/9F-chemical-formulae-counting-atoms-notes-v2.webp",
+          "alt": "Annotated guide to chemical formulae and counting atoms.",
+          "caption": "Formulae show which atoms are present and how many.",
+          "presentation": "media-image-base",
+          "sourceTag": "r2-image-v1.47",
+          "mediaTitle": "Chemical formulae",
+          "mediaLead": "Use subscripts and coefficients carefully when counting atoms.",
+          "mediaPoints": [
+            "First element letter is capital",
+            "Second letter is lower case",
+            "A subscript shows atom count",
+            "A number in front multiplies the whole formula"
+          ]
+        },
+        {
+          "src": "assets/webp/9F-elements-compounds-mixtures-notes-v3.webp",
+          "alt": "Annotated particle diagrams for elements, compounds and mixtures.",
+          "caption": "Particle diagrams help identify elements, compounds and mixtures.",
+          "presentation": "media-image-base",
+          "sourceTag": "r2-image-v1.47",
+          "mediaTitle": "Elements, compounds and mixtures",
+          "mediaLead": "Look for the type of atom and whether particles are chemically joined.",
+          "mediaPoints": [
+            "Element = one type of atom",
+            "Compound = different elements chemically joined",
+            "Mixture = substances not chemically joined"
+          ]
+        }
+      ]
     },
     {
       "id": "9E-climate-bridge",
@@ -1955,7 +2605,23 @@ window.YEAR9_NOTES = {
       "memoryHook": "Fuels → CO₂ → stronger greenhouse effect → warming risk.",
       "selfCheck": "Can you name two sources of evidence for global warming?",
       "sentenceStarter": "Burning fossil fuels increases ___, which ___.",
-      "practicePrompt": "Answer one evidence card and one cause-effect climate card."
+      "practicePrompt": "Answer one evidence card and one cause-effect climate card.",
+      "media": [
+        {
+          "src": "assets/webp/9E-greenhouse-effect-notes.webp",
+          "alt": "Annotated greenhouse effect image showing sunlight entering, Earth warming, heat leaving and greenhouse gases trapping some heat.",
+          "caption": "This image-first visual replaces the weak greenhouse SVG.",
+          "mediaTitle": "The greenhouse effect",
+          "mediaLead": "Greenhouse gases help trap heat in the atmosphere; extra greenhouse gases can strengthen the effect.",
+          "mediaPoints": [
+            "Sunlight enters Earth’s atmosphere",
+            "Earth absorbs energy and warms up",
+            "Greenhouse gases trap some outgoing heat",
+            "More greenhouse gases can contribute to global warming"
+          ],
+          "presentation": "media-image-base"
+        }
+      ]
     },
     {
       "id": "9F-chemical-energy-bridge",
@@ -1997,7 +2663,22 @@ window.YEAR9_NOTES = {
       "memoryHook": "Exo exits energy; Endo enters energy.",
       "selfCheck": "Can you explain temperature rising or falling using surroundings?",
       "sentenceStarter": "The reaction is ___ because the temperature ___.",
-      "practicePrompt": "Use the exact revision-pack wording for exothermic/endothermic definitions."
+      "practicePrompt": "Use the exact revision-pack wording for exothermic/endothermic definitions.",
+      "media": [
+        {
+          "src": "assets/webp/9F-exothermic-endothermic-notes.webp",
+          "alt": "Annotated split image comparing exothermic and endothermic reactions.",
+          "caption": "This supports energy-transfer wording for chemical reactions.",
+          "mediaTitle": "Exothermic vs endothermic",
+          "mediaLead": "Exothermic reactions transfer energy to the surroundings; endothermic reactions take in energy from the surroundings.",
+          "mediaPoints": [
+            "Exothermic: surroundings get warmer",
+            "Endothermic: surroundings get cooler",
+            "Temperature change is evidence of energy transfer"
+          ],
+          "presentation": "media-image-base"
+        }
+      ]
     }
   ],
   "mediaPolicy": "question cards use only required source-style media; conceptual images live in class notes.",

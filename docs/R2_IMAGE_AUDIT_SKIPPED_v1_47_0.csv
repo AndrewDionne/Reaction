@@ -1,0 +1,8 @@
+source_index,decision,rationale
+1,skip,Balancing equation practice scaffold: not a clean class-note/blank pair; could leak or confuse question use.
+5,skip,Gas pressure notes alternate: useful but superseded by clearer R2 gas-pressure/Brownian notes image.
+6,skip,Brownian motion alternate: title-only style; superseded by focused Brownian notes image.
+15,skip,Changes-of-state alternate: too dense compared with the cleaner particle-model version.
+16,skip,State particle panel alternate: superseded by the richer blank changes-of-state diagram.
+19,skip,Balancing equations duplicate/alternate; accepted image 11 is clearer.
+28,skip,Bioaccumulation human-body alternate: more visually busy and potentially distracting; accepted cleaner heron/top-predator version instead.

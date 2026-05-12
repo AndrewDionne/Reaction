@@ -1,0 +1,8 @@
+source_asset_group,reason
+Density comparison blocks A/B/C,"Potentially useful, but no active source-style question yet; keep for a future density-comparison MCQ."
+Object/liquid density beaker,"Useful for floating/sinking concept, but current question bank already has floating/upthrust cards and the prompt would need careful wording to avoid density-over-simplification."
+Pressure reverse-calculation variants,Held back because pressure question coverage now has one direct calculation plus one area-comparison question; avoid too many near-duplicate calculations.
+Several lever option sheets,Held back because existing source-style lever option cards already exist; one balanced-moment calculation was integrated.
+Generic plant height / snack-energy / water tank graphs,"Good graph-reading practice, but not as tightly aligned as the distance-time and current-voltage graph assets."
+Worksheet-style formula/calculation pages,Skipped as question assets because they include multiple complete questions inside the graphic. The app should own the question text outside the image.
+Circuit option sheets with answer choices embedded,"Mostly skipped except the clean symbol grid and meter-placement diagram, to avoid answer leakage or duplicate question framing."

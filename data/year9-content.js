@@ -1,7 +1,7 @@
 window.YEAR9_CONTENT = {
-  "version": "1.41.0",
+  "version": "1.49.0",
   "title": "Year 9 Science End-of-Year Study",
-  "subtitle": "Guided revision aligned to the school study pack, with selected CGP KS3 bridge coverage deferred when not in the exam pack",
+  "subtitle": "Guided revision aligned to the school study pack, with source-safe diagram, graph and calculation visuals integrated where they support exam-style prompts",
   "units": [
     {
       "id": "9A",
@@ -130,9 +130,9 @@ window.YEAR9_CONTENT = {
       ],
       "media": [
         {
-          "src": "assets/diagrams/9A-continuous-variation-question.svg",
-          "alt": "Chart with a spread of measurements shown as bars and a smooth bell-shaped curve.",
-          "caption": "Use the shape and axes of the chart to answer the question.",
+          "src": "assets/webp/9A-continuous-discontinuous-variation-blank-v2.webp",
+          "alt": "Blank comparison image showing continuous variation as a distribution and discontinuous variation as category bars.",
+          "caption": "Use the graph shapes to answer the question.",
           "mediaTiming": "question"
         }
       ],
@@ -238,9 +238,9 @@ window.YEAR9_CONTENT = {
       ],
       "media": [
         {
-          "src": "assets/diagrams/9A-continuous-variation-question.svg",
-          "alt": "Chart with a spread of measurements shown as bars and a smooth bell-shaped curve.",
-          "caption": "Use the shape and axes of the chart to answer the question.",
+          "src": "assets/webp/9A-continuous-discontinuous-variation-blank-v2.webp",
+          "alt": "Blank comparison image showing continuous variation as a distribution and discontinuous variation as category bars.",
+          "caption": "Use the graph shapes to answer the question.",
           "mediaTiming": "question"
         }
       ],
@@ -670,13 +670,17 @@ window.YEAR9_CONTENT = {
       "source": "9B quick quiz 9Ba Q3 - text reconstruction of graph question",
       "level": 2,
       "cue": "",
-      "tags": [],
+      "tags": [
+        "question-media-v1.45"
+      ],
       "media": [
         {
-          "src": "assets/diagrams/9B-photosynthesis-light-graph-question.svg",
-          "alt": "Graph showing rate of photosynthesis against light intensity.",
-          "caption": "Use the trend shown by the graph.",
-          "mediaTiming": "question"
+          "src": "assets/webp/9B-photosynthesis-light-graph-blank.webp",
+          "alt": "Photosynthesis rate graph against light intensity.",
+          "caption": "",
+          "mediaTiming": "question",
+          "presentation": "media-diagram-base",
+          "questionAssetV145": true
         }
       ],
       "sourceFidelity": "text-equivalent",
@@ -684,7 +688,7 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Photosynthesis and respiration",
       "learningObjectiveDescription": "Reactants, products, chlorophyll, limiting factors and photosynthesis rate.",
       "noteId": "9B-photosynthesis",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-safe-blank-asset"
     },
     {
       "id": "y9-024-9b-which-sentence-best-describes-what-chlorophyll-does",
@@ -1085,7 +1089,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Photosynthesis and respiration",
       "learningObjectiveDescription": "Reactants, products, chlorophyll, limiting factors and photosynthesis rate.",
       "noteId": "9B-photosynthesis",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "media": [
+        {
+          "src": "assets/webp/9B-carbon-cycle-source-style-blank-v2.webp",
+          "alt": "Question-safe carbon cycle diagram without explanatory notes.",
+          "caption": "Use the arrows and organisms to reason about carbon cycling.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV148": true
+        }
+      ]
     },
     {
       "id": "y9-040-9b-plants-are-important-in-keeping-the-amount-of-carbon-in-balance-becaus",
@@ -1109,7 +1123,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Photosynthesis and respiration",
       "learningObjectiveDescription": "Reactants, products, chlorophyll, limiting factors and photosynthesis rate.",
       "noteId": "9B-photosynthesis",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "media": [
+        {
+          "src": "assets/webp/9B-carbon-cycle-source-style-blank-v2.webp",
+          "alt": "Question-safe carbon cycle diagram without explanatory notes.",
+          "caption": "Use the arrows and organisms to reason about carbon cycling.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV148": true
+        }
+      ]
     },
     {
       "id": "y9-041-9e-which-of-the-following-is-a-ceramic-material",
@@ -1263,7 +1287,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Polymers and polymerisation",
       "learningObjectiveDescription": "Natural and synthetic polymers, polymerisation, vulcanisation and biodegradability.",
       "noteId": "9E-polymers",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "media": [
+        {
+          "src": "assets/webp/9E-polymers-monomers-composites-blank-v2.webp",
+          "alt": "Question-safe structure visual showing monomers, polymer chain and composite material with blank labels.",
+          "caption": "Use the structure sequence to explain monomers, polymers and composites.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV148": true
+        }
+      ]
     },
     {
       "id": "y9-047-9e-some-polymerisation-reactions-are-endothermic-what-does-this-mean",
@@ -1281,13 +1315,25 @@ window.YEAR9_CONTENT = {
       "source": "9E quick quiz 9Eb Q3",
       "level": 2,
       "cue": "",
-      "tags": [],
+      "tags": [
+        "question-media-v1.45"
+      ],
       "sourceFidelity": "exact-source-text",
       "learningObjective": "9E-polymers",
       "learningObjectiveTitle": "Polymers and polymerisation",
       "learningObjectiveDescription": "Natural and synthetic polymers, polymerisation, vulcanisation and biodegradability.",
       "noteId": "9E-polymers",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-safe-blank-asset",
+      "media": [
+        {
+          "src": "assets/webp/9F-exothermic-endothermic-blank.webp",
+          "alt": "Question-safe split reaction image showing warming and cooling contexts without explanatory labels.",
+          "caption": "",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV145": true
+        }
+      ]
     },
     {
       "id": "y9-048-9e-vulcanisation-adds-cross-links-in-rubber-how-does-this-change-natural-",
@@ -1488,7 +1534,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Ceramics, crystals and materials properties",
       "learningObjectiveDescription": "Ceramics, glass, clay, crystal formation, melting point and brittleness.",
       "noteId": "9E-ceramics",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "media": [
+        {
+          "src": "assets/webp/9B-bioaccumulation-food-chain-blank-v3.webp",
+          "alt": "Question-safe aquatic food chain with toxin dots increasing up the food chain.",
+          "caption": "",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV147": true
+        }
+      ]
     },
     {
       "id": "y9-056-9e-which-would-help-reduce-the-possibility-of-global-warming",
@@ -1554,13 +1610,25 @@ window.YEAR9_CONTENT = {
       "source": "9E quick quiz 9Ee Q2",
       "level": 2,
       "cue": "",
-      "tags": [],
+      "tags": [
+        "question-media-v1.45"
+      ],
       "sourceFidelity": "exact-source-text",
       "learningObjective": "9E-environment",
       "learningObjectiveTitle": "Environmental impacts and recycling",
       "learningObjectiveDescription": "Landfill, recycling, fossil fuels, acid rain, greenhouse effect and reducing impacts.",
       "noteId": "9E-environment",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-safe-blank-asset",
+      "media": [
+        {
+          "src": "assets/webp/9E-recycling-methods-blank.webp",
+          "alt": "Question-safe recycling image showing several material recycling processes without explanatory labels.",
+          "caption": "",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV145": true
+        }
+      ]
     },
     {
       "id": "y9-059-9e-which-material-is-recycled-by-crushing-and-grading-to-make-aggregate-f",
@@ -1603,14 +1671,25 @@ window.YEAR9_CONTENT = {
       "level": 2,
       "cue": "",
       "tags": [
-        "quality-balance-v1.36"
+        "quality-balance-v1.36",
+        "question-media-v1.45"
       ],
       "sourceFidelity": "exact-source-text",
       "learningObjective": "9E-environment",
       "learningObjectiveTitle": "Environmental impacts and recycling",
       "learningObjectiveDescription": "Landfill, recycling, fossil fuels, acid rain, greenhouse effect and reducing impacts.",
       "noteId": "9E-environment",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-safe-blank-asset",
+      "media": [
+        {
+          "src": "assets/webp/9E-recycling-methods-blank.webp",
+          "alt": "Question-safe recycling image showing several material recycling processes without explanatory labels.",
+          "caption": "",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV145": true
+        }
+      ]
     },
     {
       "id": "y9-061-9f-which-of-these-describes-a-physical-change",
@@ -1634,7 +1713,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Physical and chemical changes",
       "learningObjectiveDescription": "Physical changes, chemical reactions, particles, molecules, formulae and gas pressure.",
       "noteId": "9F-changes",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "media": [
+        {
+          "src": "assets/webp/9F-physical-change-chemical-reaction-blank-v2.webp",
+          "alt": "Question-safe comparison image showing physical changes and chemical reaction evidence without labels.",
+          "caption": "Compare the two sides to decide whether a new substance is formed.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV148": true
+        }
+      ]
     },
     {
       "id": "y9-062-9f-gas-pressure-is-caused-by-gas-particles",
@@ -1658,7 +1747,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Physical and chemical changes",
       "learningObjectiveDescription": "Physical changes, chemical reactions, particles, molecules, formulae and gas pressure.",
       "noteId": "9F-changes",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "media": [
+        {
+          "src": "assets/webp/9E-gas-pressure-brownian-motion-blank-v3.webp",
+          "alt": "Question-safe particle diagrams for gas pressure.",
+          "caption": "",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV147": true
+        }
+      ]
     },
     {
       "id": "y9-063-9f-the-pressure-of-a-gas-increases-as-temperature-increases-because",
@@ -1682,7 +1781,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Metal extraction and reduction",
       "learningObjectiveDescription": "Mining, ores, reduction, blast furnaces, electrolysis and extraction method choice.",
       "noteId": "9F-extraction",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "media": [
+        {
+          "src": "assets/webp/9E-gas-pressure-brownian-motion-blank-v3.webp",
+          "alt": "Question-safe particle diagrams for gas pressure and temperature.",
+          "caption": "",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV147": true
+        }
+      ]
     },
     {
       "id": "y9-064-9f-in-h2-what-tells-you-that-a-hydrogen-molecule-contains-2-atoms",
@@ -1706,7 +1815,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Physical and chemical changes",
       "learningObjectiveDescription": "Physical changes, chemical reactions, particles, molecules, formulae and gas pressure.",
       "noteId": "9F-changes",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "media": [
+        {
+          "src": "assets/webp/9F-chemical-formulae-counting-atoms-blank-v2.webp",
+          "alt": "Question-safe chemical formula cards without worked atom-count notes.",
+          "caption": "",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV147": true
+        }
+      ]
     },
     {
       "id": "y9-065-9f-which-salt-is-formed-when-magnesium-reacts-with-dilute-nitric-acid",
@@ -1730,7 +1849,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Reactivity and displacement",
       "learningObjectiveDescription": "Reactivity series, displacement reactions and metal reactions with acids.",
       "noteId": "9F-reactivity",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "media": [
+        {
+          "src": "assets/webp/9F-acids-alkalis-ph-scale-blank-v3.webp",
+          "alt": "Question-safe pH scale with example substances and no explanatory notes.",
+          "caption": "Use the pH scale to reason about acids, neutral substances and alkalis.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV148": true
+        }
+      ]
     },
     {
       "id": "y9-066-9f-magnesium-reacts-slowly-with-cold-water-calcium-more-quickly-potassium",
@@ -1796,13 +1925,25 @@ window.YEAR9_CONTENT = {
       "source": "9F quick quiz 9Fb Q4",
       "level": 1,
       "cue": "",
-      "tags": [],
+      "tags": [
+        "question-media-v1.45"
+      ],
       "sourceFidelity": "exact-source-text",
       "learningObjective": "9F-changes",
       "learningObjectiveTitle": "Physical and chemical changes",
       "learningObjectiveDescription": "Physical changes, chemical reactions, particles, molecules, formulae and gas pressure.",
       "noteId": "9F-changes",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-safe-blank-asset",
+      "media": [
+        {
+          "src": "assets/webp/9F-periodic-table-navigator-blank.webp",
+          "alt": "Question-safe periodic table image without explanatory labels.",
+          "caption": "",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV145": true
+        }
+      ]
     },
     {
       "id": "y9-069-9f-the-test-for-oxygen-is-that-it",
@@ -1844,13 +1985,25 @@ window.YEAR9_CONTENT = {
       "source": "9F quick quiz 9Fc Q2",
       "level": 1,
       "cue": "",
-      "tags": [],
+      "tags": [
+        "question-media-v1.45"
+      ],
       "sourceFidelity": "exact-source-text",
       "learningObjective": "9F-extraction",
       "learningObjectiveTitle": "Metal extraction and reduction",
       "learningObjectiveDescription": "Mining, ores, reduction, blast furnaces, electrolysis and extraction method choice.",
       "noteId": "9F-extraction",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-safe-blank-asset",
+      "media": [
+        {
+          "src": "assets/webp/9F-combustion-fire-triangle-blank.webp",
+          "alt": "Question-safe combustion image showing a flame and fire-triangle icons without explanatory labels.",
+          "caption": "",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV145": true
+        }
+      ]
     },
     {
       "id": "y9-071-9f-which-reaction-needs-an-input-of-energy-to-start-it",
@@ -1892,13 +2045,25 @@ window.YEAR9_CONTENT = {
       "source": "9F quick quiz 9Fc Q4",
       "level": 1,
       "cue": "",
-      "tags": [],
+      "tags": [
+        "question-media-v1.45"
+      ],
       "sourceFidelity": "exact-source-text",
       "learningObjective": "9F-changes",
       "learningObjectiveTitle": "Physical and chemical changes",
       "learningObjectiveDescription": "Physical changes, chemical reactions, particles, molecules, formulae and gas pressure.",
       "noteId": "9F-changes",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-safe-blank-asset",
+      "media": [
+        {
+          "src": "assets/webp/9F-exothermic-endothermic-blank.webp",
+          "alt": "Question-safe split reaction image showing warming and cooling contexts without explanatory labels.",
+          "caption": "",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV145": true
+        }
+      ]
     },
     {
       "id": "y9-073-9f-which-of-these-is-a-displacement-reaction",
@@ -2018,7 +2183,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Metal extraction and reduction",
       "learningObjectiveDescription": "Mining, ores, reduction, blast furnaces, electrolysis and extraction method choice.",
       "noteId": "9F-extraction",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "media": [
+        {
+          "src": "assets/webp/9F-metal-extraction-methods-blank-v3.webp",
+          "alt": "Question-safe comparison of metal extraction methods.",
+          "caption": "",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV147": true
+        }
+      ]
     },
     {
       "id": "y9-078-9f-which-metal-was-first-extracted-most-recently-in-history",
@@ -2090,7 +2265,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Metal extraction and reduction",
       "learningObjectiveDescription": "Mining, ores, reduction, blast furnaces, electrolysis and extraction method choice.",
       "noteId": "9F-extraction",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "media": [
+        {
+          "src": "assets/webp/9F-metal-extraction-methods-blank-v3.webp",
+          "alt": "Question-safe comparison of metal extraction methods.",
+          "caption": "",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV147": true
+        }
+      ]
     },
     {
       "id": "y9-081-9i-for-a-falling-object-which-labels-best-match-the-forces-weight-downwar",
@@ -2275,13 +2460,25 @@ window.YEAR9_CONTENT = {
       "source": "9I quick quiz 9Ib Q3",
       "level": 1,
       "cue": "",
-      "tags": [],
+      "tags": [
+        "question-media-v1.45"
+      ],
       "sourceFidelity": "exact-source-text",
       "learningObjective": "9I-energy-work",
       "learningObjectiveTitle": "Energy, work and simple machines",
       "learningObjectiveDescription": "Work done, machines, ramps, friction and energy transfer.",
       "noteId": "9I-energy-work",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-safe-blank-asset",
+      "media": [
+        {
+          "src": "assets/webp/9I-sankey-efficiency-blank.webp",
+          "alt": "Question-safe Sankey-style energy transfer diagram without explanatory labels.",
+          "caption": "",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV145": true
+        }
+      ]
     },
     {
       "id": "y9-088-9i-which-machine-is-more-efficient-in-a-sankey-diagram",
@@ -2779,7 +2976,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Static electricity and charge",
       "learningObjectiveDescription": "Charge transfer, attraction, repulsion, dangers and uses of static electricity.",
       "noteId": "9J-static",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "media": [
+        {
+          "src": "assets/webp/9J-static-electricity-charge-transfer-blank-v3.webp",
+          "alt": "Question-safe static electricity charge-transfer diagram.",
+          "caption": "Use the diagram to reason about electron transfer and charge.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV148": true
+        }
+      ]
     },
     {
       "id": "y9-107-9j-why-can-we-not-detect-static-charge-if-we-rub-a-metal-rod",
@@ -2803,7 +3010,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Static electricity and charge",
       "learningObjectiveDescription": "Charge transfer, attraction, repulsion, dangers and uses of static electricity.",
       "noteId": "9J-static",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "media": [
+        {
+          "src": "assets/webp/9J-static-electricity-charge-transfer-blank-v3.webp",
+          "alt": "Question-safe static electricity charge-transfer diagram.",
+          "caption": "Use the diagram to reason about electron transfer and charge.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV148": true
+        }
+      ]
     },
     {
       "id": "y9-108-9j-an-electric-field-is-the-space-around-a-charged-object-where-it",
@@ -3043,7 +3260,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Electromagnets, relays and motors",
       "learningObjectiveDescription": "Electromagnets, relays, motor effect and factors affecting magnetic force.",
       "noteId": "9J-electromagnets",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "media": [
+        {
+          "src": "assets/webp/9J-electromagnet-strength-variables-blank-v3.webp",
+          "alt": "Question-safe electromagnet image showing comparison setups without explanatory notes.",
+          "caption": "Use the setups to identify changes that affect electromagnet strength.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV148": true
+        }
+      ]
     },
     {
       "id": "y9-118-9j-why-are-relays-useful",
@@ -3091,7 +3318,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Current, voltage and circuits",
       "learningObjectiveDescription": "Current, voltage/potential difference, series and parallel circuits, meters and components.",
       "noteId": "9J-circuits",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "media": [
+        {
+          "src": "assets/webp/9J-motor-effect-simple-motor-blank-v3.webp",
+          "alt": "Question-safe motor effect and simple motor diagram without explanatory notes.",
+          "caption": "Use current, field and force arrows to reason about the motor effect.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV148": true
+        }
+      ]
     },
     {
       "id": "y9-120-9j-which-list-shows-the-parts-of-an-electric-motor",
@@ -3115,7 +3352,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Electromagnets, relays and motors",
       "learningObjectiveDescription": "Electromagnets, relays, motor effect and factors affecting magnetic force.",
       "noteId": "9J-electromagnets",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "media": [
+        {
+          "src": "assets/webp/9J-motor-effect-simple-motor-blank-v3.webp",
+          "alt": "Question-safe motor effect and simple motor diagram without explanatory notes.",
+          "caption": "Use current, field and force arrows to reason about the motor effect.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV148": true
+        }
+      ]
     },
     {
       "id": "y9-121-9a-define-species",
@@ -4186,7 +4433,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Ceramics, crystals and materials properties",
       "learningObjectiveDescription": "Ceramics, glass, clay, crystal formation, melting point and brittleness.",
       "noteId": "9E-ceramics",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "media": [
+        {
+          "src": "assets/webp/9F-thermal-decomposition-gas-tests-blank-v2.webp",
+          "alt": "Question-safe thermal decomposition and gas test setup.",
+          "caption": "",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV147": true
+        }
+      ]
     },
     {
       "id": "y9-172-9e-define-greenhouse-gas",
@@ -4333,7 +4590,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Physical and chemical changes",
       "learningObjectiveDescription": "Physical changes, chemical reactions, particles, molecules, formulae and gas pressure.",
       "noteId": "9F-changes",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "media": [
+        {
+          "src": "assets/webp/9F-physical-change-chemical-reaction-blank-v2.webp",
+          "alt": "Question-safe comparison image showing physical changes and chemical reaction evidence without labels.",
+          "caption": "Compare the two sides to decide whether a new substance is formed.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV148": true
+        }
+      ]
     },
     {
       "id": "y9-179-9f-define-chemical-reaction",
@@ -4375,7 +4642,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Physical and chemical changes",
       "learningObjectiveDescription": "Physical changes, chemical reactions, particles, molecules, formulae and gas pressure.",
       "noteId": "9F-changes",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "media": [
+        {
+          "src": "assets/webp/9E-gas-pressure-brownian-motion-blank-v3.webp",
+          "alt": "Question-safe particle diagrams for gas pressure.",
+          "caption": "",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV147": true
+        }
+      ]
     },
     {
       "id": "y9-181-9f-define-reactivity",
@@ -4410,6 +4687,7 @@ window.YEAR9_CONTENT = {
       "level": 1,
       "cue": "Say the definition in your own words first.",
       "tags": [
+        "question-media-v1.45",
         "vocabulary"
       ],
       "sourceFidelity": "exact-source-text",
@@ -4417,7 +4695,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Physical and chemical changes",
       "learningObjectiveDescription": "Physical changes, chemical reactions, particles, molecules, formulae and gas pressure.",
       "noteId": "9F-changes",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-safe-blank-asset",
+      "media": [
+        {
+          "src": "assets/webp/9F-periodic-table-navigator-blank.webp",
+          "alt": "Question-safe periodic table image without explanatory labels.",
+          "caption": "",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV145": true
+        }
+      ]
     },
     {
       "id": "y9-183-9f-define-proton",
@@ -4515,6 +4803,7 @@ window.YEAR9_CONTENT = {
       "level": 1,
       "cue": "Say the definition in your own words first.",
       "tags": [
+        "question-media-v1.45",
         "vocabulary"
       ],
       "sourceFidelity": "exact-source-text",
@@ -4522,7 +4811,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Physical and chemical changes",
       "learningObjectiveDescription": "Physical changes, chemical reactions, particles, molecules, formulae and gas pressure.",
       "noteId": "9F-changes",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-safe-blank-asset",
+      "media": [
+        {
+          "src": "assets/webp/9F-combustion-fire-triangle-blank.webp",
+          "alt": "Question-safe combustion image showing a flame and fire-triangle icons without explanatory labels.",
+          "caption": "",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV145": true
+        }
+      ]
     },
     {
       "id": "y9-188-9f-define-hydrocarbon",
@@ -4830,6 +5129,7 @@ window.YEAR9_CONTENT = {
       "level": 1,
       "cue": "Say the definition in your own words first.",
       "tags": [
+        "question-media-v1.45",
         "vocabulary"
       ],
       "sourceFidelity": "exact-source-text",
@@ -4837,7 +5137,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Energy, work and simple machines",
       "learningObjectiveDescription": "Work done, machines, ramps, friction and energy transfer.",
       "noteId": "9I-energy-work",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-safe-blank-asset",
+      "media": [
+        {
+          "src": "assets/webp/9I-sankey-efficiency-blank.webp",
+          "alt": "Question-safe Sankey-style energy transfer diagram without explanatory labels.",
+          "caption": "",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV145": true
+        }
+      ]
     },
     {
       "id": "y9-203-9i-define-speed",
@@ -4893,6 +5203,7 @@ window.YEAR9_CONTENT = {
       "level": 1,
       "cue": "Say the definition in your own words first.",
       "tags": [
+        "question-media-v1.45",
         "vocabulary"
       ],
       "sourceFidelity": "exact-source-text",
@@ -4900,7 +5211,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Speed and distance-time graphs",
       "learningObjectiveDescription": "Speed calculations, mean speed and interpreting distance-time graphs.",
       "noteId": "9I-speed",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-safe-blank-asset",
+      "media": [
+        {
+          "src": "assets/webp/9I-distance-time-graph-blank.webp",
+          "alt": "Distance-time graph without explanatory notes.",
+          "caption": "",
+          "mediaTiming": "question",
+          "presentation": "media-diagram-base",
+          "questionAssetV145": true
+        }
+      ]
     },
     {
       "id": "y9-206-9i-define-lever",
@@ -5047,7 +5368,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Force fields, gravity and magnetism",
       "learningObjectiveDescription": "Magnetic, gravitational and electric fields, weight and gravitational potential energy.",
       "noteId": "9J-fields",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "media": [
+        {
+          "src": "assets/webp/9J-magnetic-field-bar-magnet-blank-v3.webp",
+          "alt": "Question-safe bar magnet field-line diagram.",
+          "caption": "Use the field lines to describe magnetic field shape and strength.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV148": true
+        }
+      ]
     },
     {
       "id": "y9-213-9j-define-gravitational-field",
@@ -5194,7 +5525,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Static electricity and charge",
       "learningObjectiveDescription": "Charge transfer, attraction, repulsion, dangers and uses of static electricity.",
       "noteId": "9J-static",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "media": [
+        {
+          "src": "assets/webp/9J-static-electricity-charge-transfer-blank-v3.webp",
+          "alt": "Question-safe static electricity charge-transfer diagram.",
+          "caption": "Use the diagram to reason about electron transfer and charge.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV148": true
+        }
+      ]
     },
     {
       "id": "y9-220-9j-define-electric-current",
@@ -5341,7 +5682,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Electromagnets, relays and motors",
       "learningObjectiveDescription": "Electromagnets, relays, motor effect and factors affecting magnetic force.",
       "noteId": "9J-electromagnets",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "media": [
+        {
+          "src": "assets/webp/9J-electromagnet-strength-variables-blank-v3.webp",
+          "alt": "Question-safe electromagnet image showing comparison setups without explanatory notes.",
+          "caption": "Use the setups to identify changes that affect electromagnet strength.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV148": true
+        }
+      ]
     },
     {
       "id": "y9-227-9j-define-relay",
@@ -5383,7 +5734,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Electromagnets, relays and motors",
       "learningObjectiveDescription": "Electromagnets, relays, motor effect and factors affecting magnetic force.",
       "noteId": "9J-electromagnets",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "media": [
+        {
+          "src": "assets/webp/9J-motor-effect-simple-motor-blank-v3.webp",
+          "alt": "Question-safe motor effect and simple motor diagram without explanatory notes.",
+          "caption": "Use current, field and force arrows to reason about the motor effect.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV148": true
+        }
+      ]
     },
     {
       "id": "y9-229-9a-describe-what-environmental-variation-is",
@@ -5553,7 +5914,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Inheritance, DNA and genes",
       "learningObjectiveDescription": "Cells, nuclei, chromosomes, DNA, genes and preserving genetic information.",
       "noteId": "9A-inheritance",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "media": [
+        {
+          "src": "assets/webp/9A-dna-chromosome-gene-hierarchy-blank-v2.webp",
+          "alt": "Question-safe cell to DNA hierarchy with blank label boxes.",
+          "caption": "Use the zoom sequence to describe how cell, nucleus, chromosome, DNA and gene are linked.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV148": true
+        }
+      ]
     },
     {
       "id": "y9-237-9a-state-three-ways-we-can-preserve-biodiversity",
@@ -5798,6 +6169,7 @@ window.YEAR9_CONTENT = {
       "level": 3,
       "cue": "Try to answer in full sentences before revealing the mark-scheme version.",
       "tags": [
+        "question-media-v1.45",
         "written"
       ],
       "sourceFidelity": "progress-check-derived",
@@ -5805,7 +6177,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Plant products, seeds and food production",
       "learningObjectiveDescription": "Glucose, starch, cellulose, oils, minerals, crop yield and farming methods.",
       "noteId": "9B-plant-products",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-safe-blank-asset",
+      "media": [
+        {
+          "src": "assets/webp/9B-seed-lifecycle-blank.webp",
+          "alt": "Question-safe seed lifecycle image without stage labels.",
+          "caption": "",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV145": true
+        }
+      ]
     },
     {
       "id": "y9-249-9e-design-poster-prompt-list-what-a-year-9-poster-on-ceramics-polymers-an",
@@ -5868,7 +6250,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Composites and material choice",
       "learningObjectiveDescription": "Composite materials, concrete, reinforced concrete and glass-reinforced plastic.",
       "noteId": "9E-composites",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "media": [
+        {
+          "src": "assets/webp/9E-polymers-monomers-composites-blank-v2.webp",
+          "alt": "Question-safe structure visual showing monomers, polymer chain and composite material with blank labels.",
+          "caption": "Use the structure sequence to explain monomers, polymers and composites.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV148": true
+        }
+      ]
     },
     {
       "id": "y9-252-9e-explain-one-environmental-problem-caused-by-making-materials",
@@ -5973,7 +6365,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Rusting and corrosion protection",
       "learningObjectiveDescription": "Rusting, coatings, sacrificial protection and preventing corrosion.",
       "noteId": "9F-rusting",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "media": [
+        {
+          "src": "assets/webp/9F-rusting-conditions-prevention-blank-v2.webp",
+          "alt": "Question-safe rusting conditions and prevention image with labelled samples but no explanatory notes.",
+          "caption": "Use the samples to reason about oxygen, water and protection methods.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV148": true
+        }
+      ]
     },
     {
       "id": "y9-257-9i-describe-how-to-raise-a-large-upright-stone-using-levers-moments-and-r",
@@ -6120,7 +6522,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Electromagnets, relays and motors",
       "learningObjectiveDescription": "Electromagnets, relays, motor effect and factors affecting magnetic force.",
       "noteId": "9J-electromagnets",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "media": [
+        {
+          "src": "assets/webp/9J-electromagnet-strength-variables-blank-v3.webp",
+          "alt": "Question-safe electromagnet image showing comparison setups without explanatory notes.",
+          "caption": "Use the setups to identify changes that affect electromagnet strength.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV148": true
+        }
+      ]
     },
     {
       "id": "y9-264-9j-explain-how-a-relay-works",
@@ -6162,7 +6574,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Static electricity and charge",
       "learningObjectiveDescription": "Charge transfer, attraction, repulsion, dangers and uses of static electricity.",
       "noteId": "9J-static",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "media": [
+        {
+          "src": "assets/webp/9J-potential-difference-series-parallel-blank-v2.webp",
+          "alt": "Question-safe series and parallel circuit diagrams with voltmeters.",
+          "caption": "Use the circuits to compare potential difference in series and parallel.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV148": true
+        }
+      ]
     },
     {
       "id": "y9-266-9j-explain-why-plastic-handles-are-safe-on-electrical-wires",
@@ -6197,6 +6619,7 @@ window.YEAR9_CONTENT = {
       "level": 4,
       "cue": "Try to answer in full sentences before revealing the mark-scheme version.",
       "tags": [
+        "question-media-v1.45",
         "written"
       ],
       "sourceFidelity": "progress-check-derived",
@@ -6204,7 +6627,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Resistance and Ohm’s law",
       "learningObjectiveDescription": "Resistance, current-voltage graphs, high-resistance materials and calculations.",
       "noteId": "9J-resistance",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-safe-blank-asset",
+      "media": [
+        {
+          "src": "assets/webp/9J-wire-resistance-investigation-blank.webp",
+          "alt": "Question-safe wire resistance investigation setup without explanatory notes.",
+          "caption": "",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV145": true
+        }
+      ]
     },
     {
       "id": "y9-268-9j-calculate-weight-mass-34-kg-and-gravitational-field-strength-6-8-n-kg",
@@ -6677,7 +7110,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Inheritance, DNA and genes",
       "learningObjectiveDescription": "Cells, nuclei, chromosomes, DNA, genes and preserving genetic information.",
       "noteId": "9A-inheritance",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "media": [
+        {
+          "src": "assets/webp/9A-dna-chromosome-gene-hierarchy-blank-v2.webp",
+          "alt": "Question-safe cell to DNA hierarchy with blank label boxes.",
+          "caption": "Use the zoom sequence to describe how cell, nucleus, chromosome, DNA and gene are linked.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV148": true
+        }
+      ]
     },
     {
       "id": "y9x-013-9a-describe-how-variation-in-adaptations-affects-survival-within-a-species",
@@ -6963,7 +7406,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Plant products, seeds and food production",
       "learningObjectiveDescription": "Glucose, starch, cellulose, oils, minerals, crop yield and farming methods.",
       "noteId": "9B-plant-products",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "media": [
+        {
+          "src": "assets/webp/9B-farming-yield-sustainability-blank.webp",
+          "alt": "Question-safe split farming scene showing crop yield methods and environmental impacts without explanatory notes.",
+          "caption": "Use the scene to connect benefits and environmental problems.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV148": true
+        }
+      ]
     },
     {
       "id": "y9x-026-9b-use-word-equations-for-photosynthesis-and-aerobic-respiration",
@@ -7073,7 +7526,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Plant products, seeds and food production",
       "learningObjectiveDescription": "Glucose, starch, cellulose, oils, minerals, crop yield and farming methods.",
       "noteId": "9B-plant-products",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "media": [
+        {
+          "src": "assets/webp/9B-carbon-cycle-source-style-blank-v2.webp",
+          "alt": "Question-safe carbon cycle diagram without explanatory notes.",
+          "caption": "Use the arrows and organisms to reason about carbon cycling.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV148": true
+        }
+      ]
     },
     {
       "id": "y9x-031-9b-explain-problems-caused-by-fertilisers-including-effects-on-fish-in-lakes",
@@ -7132,6 +7595,7 @@ window.YEAR9_CONTENT = {
       "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
       "tags": [
         "assess",
+        "question-media-v1.45",
         "written"
       ],
       "sourceFidelity": "success-criterion-derived",
@@ -7139,7 +7603,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Photosynthesis and respiration",
       "learningObjectiveDescription": "Reactants, products, chlorophyll, limiting factors and photosynthesis rate.",
       "noteId": "9B-photosynthesis",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-safe-blank-asset",
+      "media": [
+        {
+          "src": "assets/webp/9B-photosynthesis-light-graph-blank.webp",
+          "alt": "Photosynthesis rate graph against light intensity.",
+          "caption": "",
+          "mediaTiming": "question",
+          "presentation": "media-diagram-base",
+          "questionAssetV145": true
+        }
+      ]
     },
     {
       "id": "y9x-034-9e-name-common-conductors-and-insulators",
@@ -7154,6 +7628,7 @@ window.YEAR9_CONTENT = {
       "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
       "tags": [
         "assess",
+        "question-media-v1.45",
         "written"
       ],
       "sourceFidelity": "success-criterion-derived",
@@ -7161,7 +7636,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Polymers and polymerisation",
       "learningObjectiveDescription": "Natural and synthetic polymers, polymerisation, vulcanisation and biodegradability.",
       "noteId": "9E-polymers",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-safe-blank-asset",
+      "media": [
+        {
+          "src": "assets/webp/9E-thermal-conductors-insulators-blank.webp",
+          "alt": "Question-safe image comparing thermal transfer through different materials without explanatory labels.",
+          "caption": "",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV145": true
+        }
+      ]
     },
     {
       "id": "y9x-035-9e-explain-what-a-landfill-site-is-and-why-it-can-cause-problems",
@@ -7293,7 +7778,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Composites and material choice",
       "learningObjectiveDescription": "Composite materials, concrete, reinforced concrete and glass-reinforced plastic.",
       "noteId": "9E-composites",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "media": [
+        {
+          "src": "assets/webp/9E-polymers-monomers-composites-blank-v2.webp",
+          "alt": "Question-safe structure visual showing monomers, polymer chain and composite material with blank labels.",
+          "caption": "Use the structure sequence to explain monomers, polymers and composites.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV148": true
+        }
+      ]
     },
     {
       "id": "y9x-041-9e-describe-problems-caused-by-disposal-of-artificial-polymers",
@@ -7330,6 +7825,7 @@ window.YEAR9_CONTENT = {
       "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
       "tags": [
         "assess",
+        "question-media-v1.45",
         "written"
       ],
       "sourceFidelity": "success-criterion-derived",
@@ -7337,7 +7833,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Environmental impacts and recycling",
       "learningObjectiveDescription": "Landfill, recycling, fossil fuels, acid rain, greenhouse effect and reducing impacts.",
       "noteId": "9E-environment",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-safe-blank-asset",
+      "media": [
+        {
+          "src": "assets/webp/9E-greenhouse-effect-blank.webp",
+          "alt": "Earth and atmosphere image showing sunlight and outgoing heat arrows without explanatory labels.",
+          "caption": "",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV145": true
+        }
+      ]
     },
     {
       "id": "y9x-043-9e-link-uses-of-ceramics-polymers-and-composites-to-their-properties",
@@ -7359,7 +7865,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Polymers and polymerisation",
       "learningObjectiveDescription": "Natural and synthetic polymers, polymerisation, vulcanisation and biodegradability.",
       "noteId": "9E-polymers",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "media": [
+        {
+          "src": "assets/webp/9E-polymers-monomers-composites-blank-v2.webp",
+          "alt": "Question-safe structure visual showing monomers, polymer chain and composite material with blank labels.",
+          "caption": "Use the structure sequence to explain monomers, polymers and composites.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV148": true
+        }
+      ]
     },
     {
       "id": "y9x-044-9e-describe-how-polymers-are-formed-from-monomers",
@@ -7381,7 +7897,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Polymers and polymerisation",
       "learningObjectiveDescription": "Natural and synthetic polymers, polymerisation, vulcanisation and biodegradability.",
       "noteId": "9E-polymers",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "media": [
+        {
+          "src": "assets/webp/9E-polymers-monomers-composites-blank-v2.webp",
+          "alt": "Question-safe structure visual showing monomers, polymer chain and composite material with blank labels.",
+          "caption": "Use the structure sequence to explain monomers, polymers and composites.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV148": true
+        }
+      ]
     },
     {
       "id": "y9x-045-9e-identify-thermal-decomposition-reactions",
@@ -7403,7 +7929,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Ceramics, crystals and materials properties",
       "learningObjectiveDescription": "Ceramics, glass, clay, crystal formation, melting point and brittleness.",
       "noteId": "9E-ceramics",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "media": [
+        {
+          "src": "assets/webp/9F-thermal-decomposition-gas-tests-blank-v2.webp",
+          "alt": "Question-safe thermal decomposition and gas test setup.",
+          "caption": "",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV147": true
+        }
+      ]
     },
     {
       "id": "y9x-046-9e-explain-advantages-of-recycling-with-specific-examples",
@@ -7418,6 +7954,7 @@ window.YEAR9_CONTENT = {
       "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
       "tags": [
         "assess",
+        "question-media-v1.45",
         "written"
       ],
       "sourceFidelity": "success-criterion-derived",
@@ -7425,7 +7962,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Environmental impacts and recycling",
       "learningObjectiveDescription": "Landfill, recycling, fossil fuels, acid rain, greenhouse effect and reducing impacts.",
       "noteId": "9E-environment",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-safe-blank-asset",
+      "media": [
+        {
+          "src": "assets/webp/9E-recycling-methods-blank.webp",
+          "alt": "Question-safe recycling image showing several material recycling processes without explanatory labels.",
+          "caption": "",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV145": true
+        }
+      ]
     },
     {
       "id": "y9x-047-9e-justify-using-a-ceramic-polymer-or-composite-for-a-particular-use",
@@ -7506,6 +8053,7 @@ window.YEAR9_CONTENT = {
       "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
       "tags": [
         "assess",
+        "question-media-v1.45",
         "written"
       ],
       "sourceFidelity": "success-criterion-derived",
@@ -7513,7 +8061,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Ceramics, crystals and materials properties",
       "learningObjectiveDescription": "Ceramics, glass, clay, crystal formation, melting point and brittleness.",
       "noteId": "9E-ceramics",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-safe-blank-asset",
+      "media": [
+        {
+          "src": "assets/webp/9F-exothermic-endothermic-blank.webp",
+          "alt": "Question-safe split reaction image showing warming and cooling contexts without explanatory labels.",
+          "caption": "",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV145": true
+        }
+      ]
     },
     {
       "id": "y9x-051-9e-explain-biomagnification-of-toxins-through-food-chains",
@@ -7535,7 +8093,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Ceramics, crystals and materials properties",
       "learningObjectiveDescription": "Ceramics, glass, clay, crystal formation, melting point and brittleness.",
       "noteId": "9E-ceramics",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "media": [
+        {
+          "src": "assets/webp/9B-bioaccumulation-food-chain-blank-v3.webp",
+          "alt": "Question-safe aquatic food chain with toxin dots increasing up the food chain.",
+          "caption": "",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV147": true
+        }
+      ]
     },
     {
       "id": "y9x-052-9e-suggest-ways-to-reduce-global-warming-and-acid-rain-impacts",
@@ -7550,6 +8118,7 @@ window.YEAR9_CONTENT = {
       "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
       "tags": [
         "assess",
+        "question-media-v1.45",
         "written"
       ],
       "sourceFidelity": "success-criterion-derived",
@@ -7557,7 +8126,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Environmental impacts and recycling",
       "learningObjectiveDescription": "Landfill, recycling, fossil fuels, acid rain, greenhouse effect and reducing impacts.",
       "noteId": "9E-environment",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-safe-blank-asset",
+      "media": [
+        {
+          "src": "assets/webp/9E-greenhouse-effect-blank.webp",
+          "alt": "Earth and atmosphere image showing sunlight and outgoing heat arrows without explanatory labels.",
+          "caption": "",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV145": true
+        }
+      ]
     },
     {
       "id": "y9x-053-9f-describe-what-causes-rusting",
@@ -7579,7 +8158,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Rusting and corrosion protection",
       "learningObjectiveDescription": "Rusting, coatings, sacrificial protection and preventing corrosion.",
       "noteId": "9F-rusting",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "media": [
+        {
+          "src": "assets/webp/9F-rusting-conditions-prevention-blank-v2.webp",
+          "alt": "Question-safe rusting conditions and prevention image with labelled samples but no explanatory notes.",
+          "caption": "Use the samples to reason about oxygen, water and protection methods.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV148": true
+        }
+      ]
     },
     {
       "id": "y9x-054-9f-describe-one-simple-method-of-preventing-rusting",
@@ -7601,7 +8190,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Rusting and corrosion protection",
       "learningObjectiveDescription": "Rusting, coatings, sacrificial protection and preventing corrosion.",
       "noteId": "9F-rusting",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "media": [
+        {
+          "src": "assets/webp/9F-rusting-conditions-prevention-blank-v2.webp",
+          "alt": "Question-safe rusting conditions and prevention image with labelled samples but no explanatory notes.",
+          "caption": "Use the samples to reason about oxygen, water and protection methods.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV148": true
+        }
+      ]
     },
     {
       "id": "y9x-055-9f-explain-why-rusting-is-a-problem",
@@ -7623,7 +8222,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Rusting and corrosion protection",
       "learningObjectiveDescription": "Rusting, coatings, sacrificial protection and preventing corrosion.",
       "noteId": "9F-rusting",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "media": [
+        {
+          "src": "assets/webp/9F-rusting-conditions-prevention-blank-v2.webp",
+          "alt": "Question-safe rusting conditions and prevention image with labelled samples but no explanatory notes.",
+          "caption": "Use the samples to reason about oxygen, water and protection methods.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV148": true
+        }
+      ]
     },
     {
       "id": "y9x-056-9f-use-scientific-words-to-explain-how-iron-rusts",
@@ -7645,7 +8254,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Rusting and corrosion protection",
       "learningObjectiveDescription": "Rusting, coatings, sacrificial protection and preventing corrosion.",
       "noteId": "9F-rusting",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "media": [
+        {
+          "src": "assets/webp/9F-rusting-conditions-prevention-blank-v2.webp",
+          "alt": "Question-safe rusting conditions and prevention image with labelled samples but no explanatory notes.",
+          "caption": "Use the samples to reason about oxygen, water and protection methods.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV148": true
+        }
+      ]
     },
     {
       "id": "y9x-057-9f-explain-why-iron-or-steel-is-used-for-a-purpose-because-of-its-properties",
@@ -7755,7 +8374,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Metal extraction and reduction",
       "learningObjectiveDescription": "Mining, ores, reduction, blast furnaces, electrolysis and extraction method choice.",
       "noteId": "9F-extraction",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "media": [
+        {
+          "src": "assets/webp/9F-metal-extraction-methods-blank-v3.webp",
+          "alt": "Question-safe comparison of metal extraction methods.",
+          "caption": "",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV147": true
+        }
+      ]
     },
     {
       "id": "y9x-062-9f-explain-why-energy-needs-and-cost-matter-when-selecting-extraction-methods",
@@ -7799,7 +8428,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Rusting and corrosion protection",
       "learningObjectiveDescription": "Rusting, coatings, sacrificial protection and preventing corrosion.",
       "noteId": "9F-rusting",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "media": [
+        {
+          "src": "assets/webp/9F-sacrificial-protection-iron-blank-v2.webp",
+          "alt": "Question-safe sacrificial protection image showing metal attached to an iron structure.",
+          "caption": "Use reactivity to explain which metal corrodes instead of iron.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV148": true
+        }
+      ]
     },
     {
       "id": "y9x-064-9f-explain-how-sacrificial-protection-prevents-rusting-and-link-this-to-the-reactiv",
@@ -7821,7 +8460,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Rusting and corrosion protection",
       "learningObjectiveDescription": "Rusting, coatings, sacrificial protection and preventing corrosion.",
       "noteId": "9F-rusting",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "media": [
+        {
+          "src": "assets/webp/9F-sacrificial-protection-iron-blank-v2.webp",
+          "alt": "Question-safe sacrificial protection image showing metal attached to an iron structure.",
+          "caption": "Use reactivity to explain which metal corrodes instead of iron.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV148": true
+        }
+      ]
     },
     {
       "id": "y9x-065-9f-explain-why-certain-metals-are-used-for-sacrificial-protection",
@@ -7843,7 +8492,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Rusting and corrosion protection",
       "learningObjectiveDescription": "Rusting, coatings, sacrificial protection and preventing corrosion.",
       "noteId": "9F-rusting",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "media": [
+        {
+          "src": "assets/webp/9F-sacrificial-protection-iron-blank-v2.webp",
+          "alt": "Question-safe sacrificial protection image showing metal attached to an iron structure.",
+          "caption": "Use reactivity to explain which metal corrodes instead of iron.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV148": true
+        }
+      ]
     },
     {
       "id": "y9x-066-9f-explain-other-reactions-taking-place-in-a-blast-furnace",
@@ -8861,6 +9520,7 @@ window.YEAR9_CONTENT = {
       "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
       "tags": [
         "ppt",
+        "question-media-v1.45",
         "written"
       ],
       "sourceFidelity": "progress-check-derived",
@@ -8868,7 +9528,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Plant products, seeds and food production",
       "learningObjectiveDescription": "Glucose, starch, cellulose, oils, minerals, crop yield and farming methods.",
       "noteId": "9B-plant-products",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-safe-blank-asset",
+      "media": [
+        {
+          "src": "assets/webp/9B-seed-lifecycle-blank.webp",
+          "alt": "Question-safe seed lifecycle image without stage labels.",
+          "caption": "",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV145": true
+        }
+      ]
     },
     {
       "id": "y9x-087-9b-list-three-substances-found-in-seeds-and-explain-their-functions",
@@ -8883,6 +9553,7 @@ window.YEAR9_CONTENT = {
       "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
       "tags": [
         "ppt",
+        "question-media-v1.45",
         "written"
       ],
       "sourceFidelity": "progress-check-derived",
@@ -8890,7 +9561,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Plant products, seeds and food production",
       "learningObjectiveDescription": "Glucose, starch, cellulose, oils, minerals, crop yield and farming methods.",
       "noteId": "9B-plant-products",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-safe-blank-asset",
+      "media": [
+        {
+          "src": "assets/webp/9B-seed-lifecycle-blank.webp",
+          "alt": "Question-safe seed lifecycle image without stage labels.",
+          "caption": "",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV145": true
+        }
+      ]
     },
     {
       "id": "y9x-088-9b-describe-why-plants-are-cross-bred",
@@ -9023,7 +9704,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Food webs, biodiversity and ecosystems",
       "learningObjectiveDescription": "Food webs, pesticides, biodiversity, sampling and effects of farming.",
       "noteId": "9B-food-webs",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "media": [
+        {
+          "src": "assets/webp/9B-quadrat-ecosystem-sampling-blank-v3.webp",
+          "alt": "Question-safe quadrat sampling image in a meadow.",
+          "caption": "",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV147": true
+        }
+      ]
     },
     {
       "id": "y9x-094-9b-explain-why-relying-on-one-crop-variety-can-be-risky",
@@ -9070,9 +9761,10 @@ window.YEAR9_CONTENT = {
       "mediaPolicy": "required-for-question",
       "media": [
         {
-          "src": "assets/diagrams/9B-carbon-cycle-source-style-question.svg",
-          "alt": "Carbon cycle diagram with reservoirs and process arrows labelled A to F.",
-          "caption": "Use the labelled arrows to identify carbon-cycle processes."
+          "src": "assets/webp/9B-carbon-cycle-source-style-blank-v2.webp",
+          "alt": "Blank carbon-cycle diagram with lettered arrows between atmosphere, plants, animals, decomposers and fossil fuels.",
+          "caption": "Use the lettered arrows to identify carbon-cycle processes.",
+          "mediaTiming": "question"
         }
       ],
       "mediaTiming": "question"
@@ -9097,7 +9789,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Plant products, seeds and food production",
       "learningObjectiveDescription": "Glucose, starch, cellulose, oils, minerals, crop yield and farming methods.",
       "noteId": "9B-plant-products",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "media": [
+        {
+          "src": "assets/webp/9B-carbon-cycle-source-style-blank-v2.webp",
+          "alt": "Question-safe carbon cycle diagram without explanatory notes.",
+          "caption": "Use the arrows and organisms to reason about carbon cycling.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV148": true
+        }
+      ]
     },
     {
       "id": "y9x-097-9b-give-advantages-and-disadvantages-of-clearing-land-for-farming",
@@ -9112,6 +9814,7 @@ window.YEAR9_CONTENT = {
       "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
       "tags": [
         "ppt",
+        "question-media-v1.45",
         "written"
       ],
       "sourceFidelity": "progress-check-derived",
@@ -9119,7 +9822,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Plant products, seeds and food production",
       "learningObjectiveDescription": "Glucose, starch, cellulose, oils, minerals, crop yield and farming methods.",
       "noteId": "9B-plant-products",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-safe-blank-asset",
+      "media": [
+        {
+          "src": "assets/webp/9B-farming-yield-sustainability-blank.webp",
+          "alt": "Question-safe farming image contrasting crop production and environmental impact without explanatory labels.",
+          "caption": "",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV145": true
+        }
+      ]
     },
     {
       "id": "y9x-098-9b-give-advantages-and-disadvantages-of-insecticides-and-herbicides",
@@ -9134,6 +9847,7 @@ window.YEAR9_CONTENT = {
       "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
       "tags": [
         "ppt",
+        "question-media-v1.45",
         "written"
       ],
       "sourceFidelity": "progress-check-derived",
@@ -9141,7 +9855,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Plant products, seeds and food production",
       "learningObjectiveDescription": "Glucose, starch, cellulose, oils, minerals, crop yield and farming methods.",
       "noteId": "9B-plant-products",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-safe-blank-asset",
+      "media": [
+        {
+          "src": "assets/webp/9B-farming-yield-sustainability-blank.webp",
+          "alt": "Question-safe farming image contrasting crop production and environmental impact without explanatory labels.",
+          "caption": "",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV145": true
+        }
+      ]
     },
     {
       "id": "y9x-099-9b-give-advantages-and-disadvantages-of-fertilisers",
@@ -9156,6 +9880,7 @@ window.YEAR9_CONTENT = {
       "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
       "tags": [
         "ppt",
+        "question-media-v1.45",
         "written"
       ],
       "sourceFidelity": "progress-check-derived",
@@ -9163,7 +9888,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Plant products, seeds and food production",
       "learningObjectiveDescription": "Glucose, starch, cellulose, oils, minerals, crop yield and farming methods.",
       "noteId": "9B-plant-products",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-safe-blank-asset",
+      "media": [
+        {
+          "src": "assets/webp/9B-farming-yield-sustainability-blank.webp",
+          "alt": "Question-safe farming image contrasting crop production and environmental impact without explanatory labels.",
+          "caption": "",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV145": true
+        }
+      ]
     },
     {
       "id": "y9x-100-9b-explain-why-changing-from-wheat-to-rapeseed-after-many-years-may-reduce-yield",
@@ -9251,7 +9986,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Static electricity and charge",
       "learningObjectiveDescription": "Charge transfer, attraction, repulsion, dangers and uses of static electricity.",
       "noteId": "9J-static",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "media": [
+        {
+          "src": "assets/webp/9J-static-electricity-charge-transfer-blank-v3.webp",
+          "alt": "Question-safe static electricity charge-transfer diagram.",
+          "caption": "Use the diagram to reason about electron transfer and charge.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV148": true
+        }
+      ]
     },
     {
       "id": "y9x-104-9j-explain-why-a-rubbed-polythene-rod-has-an-overall-negative-charge",
@@ -9273,7 +10018,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Static electricity and charge",
       "learningObjectiveDescription": "Charge transfer, attraction, repulsion, dangers and uses of static electricity.",
       "noteId": "9J-static",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "media": [
+        {
+          "src": "assets/webp/9J-static-electricity-charge-transfer-blank-v3.webp",
+          "alt": "Question-safe static electricity charge-transfer diagram.",
+          "caption": "Use the diagram to reason about electron transfer and charge.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV148": true
+        }
+      ]
     },
     {
       "id": "y9x-105-9j-describe-how-charged-objects-attract-or-repel-each-other",
@@ -9295,7 +10050,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Static electricity and charge",
       "learningObjectiveDescription": "Charge transfer, attraction, repulsion, dangers and uses of static electricity.",
       "noteId": "9J-static",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "media": [
+        {
+          "src": "assets/webp/9J-static-electricity-charge-transfer-blank-v3.webp",
+          "alt": "Question-safe static electricity charge-transfer diagram.",
+          "caption": "Use the diagram to reason about electron transfer and charge.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV148": true
+        }
+      ]
     },
     {
       "id": "y9x-106-9j-describe-a-fair-investigation-of-forces-between-charged-rods",
@@ -9446,8 +10211,8 @@ window.YEAR9_CONTENT = {
       ],
       "media": [
         {
-          "src": "assets/diagrams/9J-current-voltage-graph-question.svg",
-          "alt": "Current-voltage graph with two lines labelled A and B.",
+          "src": "assets/webp/9J-current-voltage-resistors-ab-blank-v2.webp",
+          "alt": "Blank current-voltage graph showing two straight lines labelled A and B.",
           "caption": "Use the slopes of the two current-voltage lines.",
           "mediaTiming": "question"
         }
@@ -9472,6 +10237,7 @@ window.YEAR9_CONTENT = {
       "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
       "tags": [
         "ppt",
+        "question-media-v1.45",
         "written"
       ],
       "sourceFidelity": "progress-check-derived",
@@ -9479,7 +10245,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Resistance and Ohm’s law",
       "learningObjectiveDescription": "Resistance, current-voltage graphs, high-resistance materials and calculations.",
       "noteId": "9J-resistance",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-safe-blank-asset",
+      "media": [
+        {
+          "src": "assets/webp/9J-wire-resistance-investigation-blank.webp",
+          "alt": "Question-safe wire resistance investigation setup without explanatory notes.",
+          "caption": "",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV145": true
+        }
+      ]
     },
     {
       "id": "y9x-114-9j-explain-why-copper-is-commonly-used-for-wires-in-circuits",
@@ -9523,7 +10299,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Current, voltage and circuits",
       "learningObjectiveDescription": "Current, voltage/potential difference, series and parallel circuits, meters and components.",
       "noteId": "9J-circuits",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "media": [
+        {
+          "src": "assets/webp/9J-potential-difference-series-parallel-blank-v2.webp",
+          "alt": "Question-safe series and parallel circuit diagrams with voltmeters.",
+          "caption": "Use the circuits to compare potential difference in series and parallel.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV148": true
+        }
+      ]
     },
     {
       "id": "y9x-116-9j-describe-how-voltage-behaves-in-series-and-parallel-circuits",
@@ -9545,7 +10331,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Current, voltage and circuits",
       "learningObjectiveDescription": "Current, voltage/potential difference, series and parallel circuits, meters and components.",
       "noteId": "9J-circuits",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "media": [
+        {
+          "src": "assets/webp/9J-potential-difference-series-parallel-blank-v2.webp",
+          "alt": "Question-safe series and parallel circuit diagrams with voltmeters.",
+          "caption": "Use the circuits to compare potential difference in series and parallel.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV148": true
+        }
+      ]
     },
     {
       "id": "y9x-117-9j-explain-the-difference-between-an-electromagnet-and-a-bar-magnet",
@@ -9567,7 +10363,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Electromagnets, relays and motors",
       "learningObjectiveDescription": "Electromagnets, relays, motor effect and factors affecting magnetic force.",
       "noteId": "9J-electromagnets",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "media": [
+        {
+          "src": "assets/webp/9J-magnetic-field-bar-magnet-blank-v3.webp",
+          "alt": "Question-safe bar magnet field-line diagram.",
+          "caption": "Use the field lines to describe magnetic field shape and strength.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV148": true
+        }
+      ]
     },
     {
       "id": "y9x-118-9j-predict-how-changing-current-magnetic-field-strength-or-current-direction-affect",
@@ -9589,7 +10395,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Electromagnets, relays and motors",
       "learningObjectiveDescription": "Electromagnets, relays, motor effect and factors affecting magnetic force.",
       "noteId": "9J-electromagnets",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "media": [
+        {
+          "src": "assets/webp/9J-motor-effect-simple-motor-blank-v3.webp",
+          "alt": "Question-safe motor effect and simple motor diagram without explanatory notes.",
+          "caption": "Use current, field and force arrows to reason about the motor effect.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV148": true
+        }
+      ]
     },
     {
       "id": "y9x-119-9j-gamora-has-mass-54-kg-calculate-her-weight-on-earth-where-g-10-n-kg",
@@ -10173,8 +10989,8 @@ window.YEAR9_CONTENT = {
       ],
       "id": "y9x-138-9j-match-common-circuit-symbols-to-their-component-names",
       "type": "Progress check",
-      "question": "Use the circuit symbol grid. Match labels A–H to these components: cell, open switch, closed switch, lamp, resistor, voltmeter, ammeter and motor.",
-      "answer": "A = cell; B = open switch; C = closed switch; D = lamp/bulb; E = resistor; F = voltmeter; G = ammeter; H = motor.",
+      "question": "Use the circuit symbol grid. Match labels A–H to these components: cell, battery, open switch, closed switch, lamp, resistor, ammeter and voltmeter.",
+      "answer": "A = cell; B = battery; C = open switch; D = closed switch; E = lamp/bulb; F = resistor; G = ammeter; H = voltmeter.",
       "choices": [],
       "explanation": "Circuit symbols are simplified drawings used so circuit diagrams are quick and consistent to read.",
       "source": "9Jc Current Electricity PPT / revision pack circuit-symbol coverage",
@@ -10182,8 +10998,8 @@ window.YEAR9_CONTENT = {
       "cue": "Write the eight matches before revealing the answer.",
       "media": [
         {
-          "src": "assets/diagrams/9J-circuit-symbols-question.svg",
-          "alt": "A grid of eight circuit symbols labelled A to H.",
+          "src": "assets/webp/9J-circuit-symbols-grid-blank-v2.webp",
+          "alt": "Question-safe grid of eight circuit symbols labelled A to H.",
           "caption": "Use the letter labels to identify the circuit components.",
           "mediaTiming": "question"
         }
@@ -10205,7 +11021,7 @@ window.YEAR9_CONTENT = {
       "id": "y9x-139-9j-which-label-shows-an-open-switch",
       "type": "Quick quiz",
       "question": "Use the circuit symbol grid. Which label shows an open switch?",
-      "answer": "B",
+      "answer": "C",
       "choices": [
         "A Label A",
         "B Label B",
@@ -10218,8 +11034,8 @@ window.YEAR9_CONTENT = {
       "cue": "",
       "media": [
         {
-          "src": "assets/diagrams/9J-circuit-symbols-question.svg",
-          "alt": "A grid of eight circuit symbols labelled A to H.",
+          "src": "assets/webp/9J-circuit-symbols-grid-blank-v2.webp",
+          "alt": "Question-safe grid of eight circuit symbols labelled A to H.",
           "caption": "Use the letter labels to identify the circuit components.",
           "mediaTiming": "question"
         }
@@ -10241,7 +11057,7 @@ window.YEAR9_CONTENT = {
       "id": "y9x-140-9j-which-label-shows-a-closed-switch",
       "type": "Quick quiz",
       "question": "Use the circuit symbol grid. Which label shows a closed switch?",
-      "answer": "B",
+      "answer": "D",
       "choices": [
         "A Label B",
         "B Label C",
@@ -10254,8 +11070,8 @@ window.YEAR9_CONTENT = {
       "cue": "",
       "media": [
         {
-          "src": "assets/diagrams/9J-circuit-symbols-question.svg",
-          "alt": "A grid of eight circuit symbols labelled A to H.",
+          "src": "assets/webp/9J-circuit-symbols-grid-blank-v2.webp",
+          "alt": "Question-safe grid of eight circuit symbols labelled A to H.",
           "caption": "Use the letter labels to identify the circuit components.",
           "mediaTiming": "question"
         }
@@ -10263,7 +11079,7 @@ window.YEAR9_CONTENT = {
     },
     {
       "unit": "9J",
-      "sourceFidelity": "revision-pack-aligned-visual-practice",
+      "sourceFidelity": "source-style-redraw",
       "learningObjective": "9J-circuits",
       "learningObjectiveTitle": "Current, voltage and circuits",
       "learningObjectiveDescription": "Current, voltage/potential difference, series and parallel circuits, meters and components.",
@@ -10272,12 +11088,13 @@ window.YEAR9_CONTENT = {
       "tags": [
         "visual",
         "diagram",
-        "circuits"
+        "circuits",
+        "visual-answer-key-fix-v1.49"
       ],
       "id": "y9x-141-9j-which-label-shows-a-resistor",
       "type": "Quick quiz",
       "question": "Use the circuit symbol grid. Which label shows a resistor?",
-      "answer": "C",
+      "answer": "D",
       "choices": [
         "A Label C",
         "B Label D",
@@ -10290,16 +11107,17 @@ window.YEAR9_CONTENT = {
       "cue": "",
       "media": [
         {
-          "src": "assets/diagrams/9J-circuit-symbols-question.svg",
-          "alt": "A grid of eight circuit symbols labelled A to H.",
-          "caption": "Use the letter labels to identify the circuit components.",
-          "mediaTiming": "question"
+          "src": "assets/webp/9J-circuit-symbols-grid-question-v149.webp",
+          "alt": "Question-safe circuit symbol grid labelled A to H.",
+          "caption": "Use the labelled circuit symbols.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base"
         }
       ]
     },
     {
       "unit": "9J",
-      "sourceFidelity": "revision-pack-aligned-visual-practice",
+      "sourceFidelity": "source-style-redraw",
       "learningObjective": "9J-circuits",
       "learningObjectiveTitle": "Current, voltage and circuits",
       "learningObjectiveDescription": "Current, voltage/potential difference, series and parallel circuits, meters and components.",
@@ -10308,12 +11126,13 @@ window.YEAR9_CONTENT = {
       "tags": [
         "visual",
         "diagram",
-        "circuits"
+        "circuits",
+        "visual-answer-key-fix-v1.49"
       ],
       "id": "y9x-142-9j-which-label-shows-a-voltmeter",
       "type": "Quick quiz",
       "question": "Use the circuit symbol grid. Which label shows a voltmeter?",
-      "answer": "A",
+      "answer": "C",
       "choices": [
         "A Label F",
         "B Label G",
@@ -10326,16 +11145,17 @@ window.YEAR9_CONTENT = {
       "cue": "",
       "media": [
         {
-          "src": "assets/diagrams/9J-circuit-symbols-question.svg",
-          "alt": "A grid of eight circuit symbols labelled A to H.",
-          "caption": "Use the letter labels to identify the circuit components.",
-          "mediaTiming": "question"
+          "src": "assets/webp/9J-circuit-symbols-grid-question-v149.webp",
+          "alt": "Question-safe circuit symbol grid labelled A to H.",
+          "caption": "Use the labelled circuit symbols.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base"
         }
       ]
     },
     {
       "unit": "9J",
-      "sourceFidelity": "revision-pack-aligned-visual-practice",
+      "sourceFidelity": "source-style-redraw",
       "learningObjective": "9J-circuits",
       "learningObjectiveTitle": "Current, voltage and circuits",
       "learningObjectiveDescription": "Current, voltage/potential difference, series and parallel circuits, meters and components.",
@@ -10344,7 +11164,8 @@ window.YEAR9_CONTENT = {
       "tags": [
         "visual",
         "diagram",
-        "circuits"
+        "circuits",
+        "visual-answer-key-fix-v1.49"
       ],
       "id": "y9x-143-9j-which-label-shows-an-ammeter",
       "type": "Quick quiz",
@@ -10362,10 +11183,11 @@ window.YEAR9_CONTENT = {
       "cue": "",
       "media": [
         {
-          "src": "assets/diagrams/9J-circuit-symbols-question.svg",
-          "alt": "A grid of eight circuit symbols labelled A to H.",
-          "caption": "Use the letter labels to identify the circuit components.",
-          "mediaTiming": "question"
+          "src": "assets/webp/9J-circuit-symbols-grid-question-v149.webp",
+          "alt": "Question-safe circuit symbol grid labelled A to H.",
+          "caption": "Use the labelled circuit symbols.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base"
         }
       ]
     },
@@ -10384,22 +11206,22 @@ window.YEAR9_CONTENT = {
       ],
       "id": "y9x-144-9j-which-label-shows-a-motor",
       "type": "Quick quiz",
-      "question": "Use the circuit symbol grid. Which label shows a motor?",
-      "answer": "C",
+      "question": "Use the circuit symbol grid. Which label shows a battery?",
+      "answer": "B",
       "choices": [
         "A Label F",
         "B Label G",
         "C Label H",
         "D Label B"
       ],
-      "explanation": "A motor is commonly shown as a circle with M inside it.",
+      "explanation": "A battery is made from two or more cells in series.",
       "source": "9Jc Current Electricity PPT circuit symbols",
       "level": 2,
       "cue": "",
       "media": [
         {
-          "src": "assets/diagrams/9J-circuit-symbols-question.svg",
-          "alt": "A grid of eight circuit symbols labelled A to H.",
+          "src": "assets/webp/9J-circuit-symbols-grid-blank-v2.webp",
+          "alt": "Question-safe grid of eight circuit symbols labelled A to H.",
           "caption": "Use the letter labels to identify the circuit components.",
           "mediaTiming": "question"
         }
@@ -10598,7 +11420,7 @@ window.YEAR9_CONTENT = {
     },
     {
       "unit": "9J",
-      "sourceFidelity": "revision-pack-aligned-visual-practice",
+      "sourceFidelity": "source-style-redraw",
       "learningObjective": "9J-circuits",
       "learningObjectiveTitle": "Current, voltage and circuits",
       "learningObjectiveDescription": "Current, voltage/potential difference, series and parallel circuits, meters and components.",
@@ -10607,11 +11429,12 @@ window.YEAR9_CONTENT = {
       "tags": [
         "visual",
         "diagram",
-        "circuits"
+        "circuits",
+        "visual-answer-key-fix-v1.49"
       ],
       "id": "y9x-149-9j-where-should-an-ammeter-go-to-measure-current-through-the-lamp",
       "type": "Quick quiz",
-      "question": "Use the meter-placement diagram. Where should an ammeter go to measure the current through the lamp?",
+      "question": "Use the meter-placement diagram. Which position should an ammeter use to measure the current through the lamp?",
       "answer": "A",
       "choices": [
         "A Position X",
@@ -10619,22 +11442,23 @@ window.YEAR9_CONTENT = {
         "C Across the battery",
         "D Outside the circuit"
       ],
-      "explanation": "An ammeter measures current, so it must be connected in series in the circuit path.",
+      "explanation": "An ammeter must be connected in series so the current through the lamp also passes through the ammeter.",
       "source": "9Jc Current Electricity PPT / meters in circuits",
       "level": 3,
       "cue": "",
       "media": [
         {
-          "src": "assets/diagrams/9J-meter-placement-question.svg",
-          "alt": "A circuit with two possible meter positions labelled X and Y.",
-          "caption": "Decide whether the meter should be in the main loop or connected across the lamp.",
-          "mediaTiming": "question"
+          "src": "assets/webp/9J-meter-placement-xy-question-v149.webp",
+          "alt": "Circuit diagram with positions X, Y and Z for meter placement around a lamp.",
+          "caption": "Use X, Y and Z to decide where meters should be connected.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base"
         }
       ]
     },
     {
       "unit": "9J",
-      "sourceFidelity": "revision-pack-aligned-visual-practice",
+      "sourceFidelity": "source-style-redraw",
       "learningObjective": "9J-circuits",
       "learningObjectiveTitle": "Current, voltage and circuits",
       "learningObjectiveDescription": "Current, voltage/potential difference, series and parallel circuits, meters and components.",
@@ -10643,11 +11467,12 @@ window.YEAR9_CONTENT = {
       "tags": [
         "visual",
         "diagram",
-        "circuits"
+        "circuits",
+        "visual-answer-key-fix-v1.49"
       ],
       "id": "y9x-150-9j-where-should-a-voltmeter-go-to-measure-potential-difference-across-the-lamp",
       "type": "Quick quiz",
-      "question": "Use the meter-placement diagram. Where should a voltmeter go to measure the potential difference across the lamp?",
+      "question": "Use the meter-placement diagram. Which position should a voltmeter use to measure the potential difference across the lamp?",
       "answer": "B",
       "choices": [
         "A Position X",
@@ -10655,16 +11480,17 @@ window.YEAR9_CONTENT = {
         "C In place of the cell",
         "D Outside the circuit"
       ],
-      "explanation": "A voltmeter measures potential difference between two points, so it is connected in parallel across the component.",
+      "explanation": "A voltmeter is connected in parallel across the component, so it must connect across the lamp.",
       "source": "9Jc Current Electricity PPT / meters in circuits",
       "level": 3,
       "cue": "",
       "media": [
         {
-          "src": "assets/diagrams/9J-meter-placement-question.svg",
-          "alt": "A circuit with two possible meter positions labelled X and Y.",
-          "caption": "Decide whether the meter should be in the main loop or connected across the lamp.",
-          "mediaTiming": "question"
+          "src": "assets/webp/9J-meter-placement-xy-question-v149.webp",
+          "alt": "Circuit diagram with positions X, Y and Z for meter placement around a lamp.",
+          "caption": "Use X, Y and Z to decide where meters should be connected.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base"
         }
       ]
     },
@@ -11131,16 +11957,27 @@ window.YEAR9_CONTENT = {
       "level": 3,
       "cue": "Use the revision-pack wording as closely as possible.",
       "tags": [
+        "quality-balance-v1.36",
+        "question-media-v1.45",
         "revision-pack-alignment",
-        "source-traceable",
-        "quality-balance-v1.36"
+        "source-traceable"
       ],
       "sourceFidelity": "exact-source-answer",
       "learningObjective": "9B-farming-yield-impact",
       "learningObjectiveTitle": "Farming methods: yield, problems and sustainability",
       "learningObjectiveDescription": "Farming methods, crop yield, habitat impacts, fertilisers, pesticides and sustainability.",
       "noteId": "9B-farming-yield-impact",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-safe-blank-asset",
+      "media": [
+        {
+          "src": "assets/webp/9B-farming-yield-sustainability-blank.webp",
+          "alt": "Question-safe farming image contrasting crop production and environmental impact without explanatory labels.",
+          "caption": "",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV145": true
+        }
+      ]
     },
     {
       "id": "y9r-003-9b-what-problem-can-be-caused-by-clearing-hedges-and-trees",
@@ -11211,7 +12048,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Farming methods: yield, problems and sustainability",
       "learningObjectiveDescription": "Farming methods, crop yield, habitat impacts, fertilisers, pesticides and sustainability.",
       "noteId": "9B-farming-yield-impact",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "media": [
+        {
+          "src": "assets/webp/9B-farming-yield-sustainability-blank.webp",
+          "alt": "Question-safe split farming scene showing crop yield methods and environmental impacts without explanatory notes.",
+          "caption": "Use the scene to connect benefits and environmental problems.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV148": true
+        }
+      ]
     },
     {
       "id": "y9r-006-9b-why-are-fertilisers-used",
@@ -11249,16 +12096,27 @@ window.YEAR9_CONTENT = {
       "level": 3,
       "cue": "Use the revision-pack wording as closely as possible.",
       "tags": [
+        "quality-balance-v1.36",
+        "question-media-v1.45",
         "revision-pack-alignment",
-        "source-traceable",
-        "quality-balance-v1.36"
+        "source-traceable"
       ],
       "sourceFidelity": "exact-source-answer",
       "learningObjective": "9B-farming-yield-impact",
       "learningObjectiveTitle": "Farming methods: yield, problems and sustainability",
       "learningObjectiveDescription": "Farming methods, crop yield, habitat impacts, fertilisers, pesticides and sustainability.",
       "noteId": "9B-farming-yield-impact",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-safe-blank-asset",
+      "media": [
+        {
+          "src": "assets/webp/9B-farming-yield-sustainability-blank.webp",
+          "alt": "Question-safe farming image contrasting crop production and environmental impact without explanatory labels.",
+          "caption": "",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV145": true
+        }
+      ]
     },
     {
       "id": "y9r-008-9b-what-is-the-problem-with-planting-huge-areas-of-a-single-variety",
@@ -11391,6 +12249,7 @@ window.YEAR9_CONTENT = {
       "level": 2,
       "cue": "Use the revision-pack wording as closely as possible.",
       "tags": [
+        "question-media-v1.45",
         "revision-pack-alignment",
         "source-traceable"
       ],
@@ -11399,7 +12258,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Energy changes, thermal decomposition and peer review",
       "learningObjectiveDescription": "Endothermic/exothermic reactions, state symbols, thermal decomposition and peer review.",
       "noteId": "9E-energy-thermal-peer-review",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-safe-blank-asset",
+      "media": [
+        {
+          "src": "assets/webp/9F-exothermic-endothermic-blank.webp",
+          "alt": "Question-safe split reaction image showing warming and cooling contexts without explanatory labels.",
+          "caption": "",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV145": true
+        }
+      ]
     },
     {
       "id": "y9r-014-9e-what-do-endothermic-reactions-do-to-the-surroundings",
@@ -11414,6 +12283,7 @@ window.YEAR9_CONTENT = {
       "level": 2,
       "cue": "Use the revision-pack wording as closely as possible.",
       "tags": [
+        "question-media-v1.45",
         "revision-pack-alignment",
         "source-traceable"
       ],
@@ -11422,7 +12292,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Energy changes, thermal decomposition and peer review",
       "learningObjectiveDescription": "Endothermic/exothermic reactions, state symbols, thermal decomposition and peer review.",
       "noteId": "9E-energy-thermal-peer-review",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-safe-blank-asset",
+      "media": [
+        {
+          "src": "assets/webp/9F-exothermic-endothermic-blank.webp",
+          "alt": "Question-safe split reaction image showing warming and cooling contexts without explanatory labels.",
+          "caption": "",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV145": true
+        }
+      ]
     },
     {
       "id": "y9r-015-9e-give-an-example-of-an-endothermic-reaction-from-the-revision-sheet",
@@ -11554,6 +12434,7 @@ window.YEAR9_CONTENT = {
       "level": 1,
       "cue": "Use the revision-pack wording as closely as possible.",
       "tags": [
+        "question-media-v1.45",
         "revision-pack-alignment",
         "source-traceable"
       ],
@@ -11562,7 +12443,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Recycling methods by material",
       "learningObjectiveDescription": "Recycling methods, landfill reduction and resource conservation.",
       "noteId": "9E-recycling-methods",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-safe-blank-asset",
+      "media": [
+        {
+          "src": "assets/webp/9E-recycling-methods-blank.webp",
+          "alt": "Question-safe recycling image showing several material recycling processes without explanatory labels.",
+          "caption": "",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV145": true
+        }
+      ]
     },
     {
       "id": "y9r-021-9e-how-is-glass-recycled-according-to-the-revision-sheet",
@@ -11577,6 +12468,7 @@ window.YEAR9_CONTENT = {
       "level": 1,
       "cue": "Use the revision-pack wording as closely as possible.",
       "tags": [
+        "question-media-v1.45",
         "revision-pack-alignment",
         "source-traceable"
       ],
@@ -11585,7 +12477,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Recycling methods by material",
       "learningObjectiveDescription": "Recycling methods, landfill reduction and resource conservation.",
       "noteId": "9E-recycling-methods",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-safe-blank-asset",
+      "media": [
+        {
+          "src": "assets/webp/9E-recycling-methods-blank.webp",
+          "alt": "Question-safe recycling image showing several material recycling processes without explanatory labels.",
+          "caption": "",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV145": true
+        }
+      ]
     },
     {
       "id": "y9r-022-9e-how-is-paper-recycled-according-to-the-revision-sheet",
@@ -11600,6 +12502,7 @@ window.YEAR9_CONTENT = {
       "level": 1,
       "cue": "Use the revision-pack wording as closely as possible.",
       "tags": [
+        "question-media-v1.45",
         "revision-pack-alignment",
         "source-traceable"
       ],
@@ -11608,7 +12511,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Recycling methods by material",
       "learningObjectiveDescription": "Recycling methods, landfill reduction and resource conservation.",
       "noteId": "9E-recycling-methods",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-safe-blank-asset",
+      "media": [
+        {
+          "src": "assets/webp/9E-recycling-methods-blank.webp",
+          "alt": "Question-safe recycling image showing several material recycling processes without explanatory labels.",
+          "caption": "",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV145": true
+        }
+      ]
     },
     {
       "id": "y9r-023-9e-how-is-concrete-recycled-according-to-the-revision-sheet",
@@ -11646,16 +12559,27 @@ window.YEAR9_CONTENT = {
       "level": 3,
       "cue": "Use the revision-pack wording as closely as possible.",
       "tags": [
+        "quality-balance-v1.36",
+        "question-media-v1.45",
         "revision-pack-alignment",
-        "source-traceable",
-        "quality-balance-v1.36"
+        "source-traceable"
       ],
       "sourceFidelity": "exact-source-answer",
       "learningObjective": "9E-environment",
       "learningObjectiveTitle": "Environmental impacts and recycling",
       "learningObjectiveDescription": "Environmental impacts of materials, fossil fuels, pollution and recycling.",
       "noteId": "9E-environment",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-safe-blank-asset",
+      "media": [
+        {
+          "src": "assets/webp/9E-recycling-methods-blank.webp",
+          "alt": "Question-safe recycling image showing several material recycling processes without explanatory labels.",
+          "caption": "",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV145": true
+        }
+      ]
     },
     {
       "id": "y9r-025-9e-what-is-biomagnification",
@@ -11679,7 +12603,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Environmental impacts and recycling",
       "learningObjectiveDescription": "Environmental impacts of materials, fossil fuels, pollution and recycling.",
       "noteId": "9E-environment",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "media": [
+        {
+          "src": "assets/webp/9B-bioaccumulation-food-chain-blank-v3.webp",
+          "alt": "Question-safe aquatic food chain with toxin dots increasing up the food chain.",
+          "caption": "",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV147": true
+        }
+      ]
     },
     {
       "id": "y9r-026-9f-in-reactions-and-physical-changes-what-happens-to-the-number-of-atoms",
@@ -11703,7 +12637,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Physical and chemical changes",
       "learningObjectiveDescription": "Physical changes, chemical reactions, equations, conservation of atoms and gas pressure.",
       "noteId": "9F-changes",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "media": [
+        {
+          "src": "assets/webp/9F-physical-change-chemical-reaction-blank-v2.webp",
+          "alt": "Question-safe comparison image showing physical changes and chemical reaction evidence without labels.",
+          "caption": "Compare the two sides to decide whether a new substance is formed.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV148": true
+        }
+      ]
     },
     {
       "id": "y9r-027-9f-what-do-the-large-numbers-in-an-equation-show",
@@ -11910,7 +12854,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Reactivity and displacement",
       "learningObjectiveDescription": "Reactivity series, metal reactions, displacement and reaction patterns.",
       "noteId": "9F-reactivity",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "media": [
+        {
+          "src": "assets/webp/9F-acids-alkalis-ph-scale-blank-v3.webp",
+          "alt": "Question-safe pH scale with example substances and no explanatory notes.",
+          "caption": "Use the pH scale to reason about acids, neutral substances and alkalis.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV148": true
+        }
+      ]
     },
     {
       "id": "y9r-036-9f-what-is-an-oxidation-reaction-in-the-reactivity-series-section",
@@ -11971,6 +12925,7 @@ window.YEAR9_CONTENT = {
       "level": 2,
       "cue": "Use the revision-pack wording as closely as possible.",
       "tags": [
+        "question-media-v1.45",
         "revision-pack-alignment",
         "source-traceable"
       ],
@@ -11979,7 +12934,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Hydrocarbons, combustion, energy changes and rate",
       "learningObjectiveDescription": "Hydrocarbons, combustion, oxygen test, energy changes and reaction-rate factors.",
       "noteId": "9F-combustion-energy-rates",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-safe-blank-asset",
+      "media": [
+        {
+          "src": "assets/webp/9F-combustion-fire-triangle-blank.webp",
+          "alt": "Question-safe combustion image showing a flame and fire-triangle icons without explanatory labels.",
+          "caption": "",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV145": true
+        }
+      ]
     },
     {
       "id": "y9r-039-9f-what-is-the-test-for-oxygen",
@@ -12017,16 +12982,27 @@ window.YEAR9_CONTENT = {
       "level": 3,
       "cue": "Use the revision-pack wording as closely as possible.",
       "tags": [
+        "quality-balance-v1.36",
+        "question-media-v1.45",
         "revision-pack-alignment",
-        "source-traceable",
-        "quality-balance-v1.36"
+        "source-traceable"
       ],
       "sourceFidelity": "exact-source-answer",
       "learningObjective": "9F-combustion-energy-rates",
       "learningObjectiveTitle": "Hydrocarbons, combustion, energy changes and rate",
       "learningObjectiveDescription": "Hydrocarbons, combustion, oxygen test, energy changes and reaction-rate factors.",
       "noteId": "9F-combustion-energy-rates",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-safe-blank-asset",
+      "media": [
+        {
+          "src": "assets/webp/9F-combustion-fire-triangle-blank.webp",
+          "alt": "Question-safe combustion image showing a flame and fire-triangle icons without explanatory labels.",
+          "caption": "",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV145": true
+        }
+      ]
     },
     {
       "id": "y9r-041-9f-what-increases-the-rate-of-reaction-according-to-the-revision-sheet",
@@ -12041,16 +13017,27 @@ window.YEAR9_CONTENT = {
       "level": 3,
       "cue": "Use the revision-pack wording as closely as possible.",
       "tags": [
+        "quality-balance-v1.36",
+        "question-media-v1.45",
         "revision-pack-alignment",
-        "source-traceable",
-        "quality-balance-v1.36"
+        "source-traceable"
       ],
       "sourceFidelity": "exact-source-answer",
       "learningObjective": "9F-combustion-energy-rates",
       "learningObjectiveTitle": "Hydrocarbons, combustion, energy changes and rate",
       "learningObjectiveDescription": "Hydrocarbons, combustion, oxygen test, energy changes and reaction-rate factors.",
       "noteId": "9F-combustion-energy-rates",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-safe-blank-asset",
+      "media": [
+        {
+          "src": "assets/webp/9F-collision-theory-blank.webp",
+          "alt": "Question-safe particle collision image comparing lower and higher particle activity without explanatory labels.",
+          "caption": "",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV145": true
+        }
+      ]
     },
     {
       "id": "y9r-042-9f-what-is-a-displacement-reaction",
@@ -12120,7 +13107,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Metal extraction and reduction",
       "learningObjectiveDescription": "Ores, extraction by carbon or electrolysis, oxidation, reduction and redox.",
       "noteId": "9F-extraction",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "media": [
+        {
+          "src": "assets/webp/9F-metal-extraction-methods-blank-v3.webp",
+          "alt": "Question-safe comparison of metal extraction methods.",
+          "caption": "",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV147": true
+        }
+      ]
     },
     {
       "id": "y9r-045-9f-which-metals-need-electrolysis-to-extract-them-from-their-ores",
@@ -12144,7 +13141,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Metal extraction and reduction",
       "learningObjectiveDescription": "Ores, extraction by carbon or electrolysis, oxidation, reduction and redox.",
       "noteId": "9F-extraction",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "media": [
+        {
+          "src": "assets/webp/9F-metal-extraction-methods-blank-v3.webp",
+          "alt": "Question-safe comparison of metal extraction methods.",
+          "caption": "",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV147": true
+        }
+      ]
     },
     {
       "id": "y9r-046-9f-what-are-oxidation-reduction-and-redox",
@@ -12371,6 +13378,7 @@ window.YEAR9_CONTENT = {
       "level": 1,
       "cue": "Use the revision-pack wording as closely as possible.",
       "tags": [
+        "question-media-v1.45",
         "revision-pack-alignment",
         "source-traceable"
       ],
@@ -12379,7 +13387,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Speed-time graphs",
       "learningObjectiveDescription": "Speed-time graph interpretation, constant speed, acceleration and deceleration.",
       "noteId": "9I-speed-time-graphs",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-safe-blank-asset",
+      "media": [
+        {
+          "src": "assets/webp/9I-speed-time-graph-blank.webp",
+          "alt": "Speed-time graph without explanatory labels.",
+          "caption": "",
+          "mediaTiming": "question",
+          "presentation": "media-diagram-base",
+          "questionAssetV145": true
+        }
+      ]
     },
     {
       "id": "y9r-056-9i-what-do-horizontal-lines-show-on-a-speed-time-graph",
@@ -12394,6 +13412,7 @@ window.YEAR9_CONTENT = {
       "level": 1,
       "cue": "Use the revision-pack wording as closely as possible.",
       "tags": [
+        "question-media-v1.45",
         "revision-pack-alignment",
         "source-traceable"
       ],
@@ -12402,7 +13421,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Speed-time graphs",
       "learningObjectiveDescription": "Speed-time graph interpretation, constant speed, acceleration and deceleration.",
       "noteId": "9I-speed-time-graphs",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-safe-blank-asset",
+      "media": [
+        {
+          "src": "assets/webp/9I-speed-time-graph-blank.webp",
+          "alt": "Speed-time graph without explanatory labels.",
+          "caption": "",
+          "mediaTiming": "question",
+          "presentation": "media-diagram-base",
+          "questionAssetV145": true
+        }
+      ]
     },
     {
       "id": "y9r-057-9i-what-do-sloping-lines-show-on-a-speed-time-graph",
@@ -12417,16 +13446,27 @@ window.YEAR9_CONTENT = {
       "level": 3,
       "cue": "Use the revision-pack wording as closely as possible.",
       "tags": [
+        "quality-balance-v1.36",
+        "question-media-v1.45",
         "revision-pack-alignment",
-        "source-traceable",
-        "quality-balance-v1.36"
+        "source-traceable"
       ],
       "sourceFidelity": "exact-source-answer",
       "learningObjective": "9I-speed-time-graphs",
       "learningObjectiveTitle": "Speed-time graphs",
       "learningObjectiveDescription": "Speed-time graph interpretation, constant speed, acceleration and deceleration.",
       "noteId": "9I-speed-time-graphs",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-safe-blank-asset",
+      "media": [
+        {
+          "src": "assets/webp/9I-speed-time-graph-blank.webp",
+          "alt": "Speed-time graph without explanatory labels.",
+          "caption": "",
+          "mediaTiming": "question",
+          "presentation": "media-diagram-base",
+          "questionAssetV145": true
+        }
+      ]
     },
     {
       "id": "y9r-058-9i-on-a-distance-time-graph-what-does-the-gradient-of-a-line-give",
@@ -12441,6 +13481,7 @@ window.YEAR9_CONTENT = {
       "level": 2,
       "cue": "Use the revision-pack wording as closely as possible.",
       "tags": [
+        "question-media-v1.45",
         "revision-pack-alignment",
         "source-traceable"
       ],
@@ -12449,7 +13490,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Speed and distance-time graphs",
       "learningObjectiveDescription": "Speed, mean speed, unit conversion, relative speed and distance-time graphs.",
       "noteId": "9I-speed",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-safe-blank-asset",
+      "media": [
+        {
+          "src": "assets/webp/9I-distance-time-graph-blank.webp",
+          "alt": "Distance-time graph without explanatory notes.",
+          "caption": "",
+          "mediaTiming": "question",
+          "presentation": "media-diagram-base",
+          "questionAssetV145": true
+        }
+      ]
     },
     {
       "id": "y9r-059-9i-what-is-a-pivot-also-known-as",
@@ -12942,7 +13993,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Electromagnets, relays and motors",
       "learningObjectiveDescription": "Electromagnets, relays, the motor effect and electric motors.",
       "noteId": "9J-electromagnets",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "media": [
+        {
+          "src": "assets/webp/9J-electromagnet-strength-variables-blank-v3.webp",
+          "alt": "Question-safe electromagnet image showing comparison setups without explanatory notes.",
+          "caption": "Use the setups to identify changes that affect electromagnet strength.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV148": true
+        }
+      ]
     },
     {
       "id": "y9r-080-9j-when-is-an-electromagnet-magnetic",
@@ -12965,7 +14026,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Electromagnets, relays and motors",
       "learningObjectiveDescription": "Electromagnets, relays, the motor effect and electric motors.",
       "noteId": "9J-electromagnets",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "media": [
+        {
+          "src": "assets/webp/9J-electromagnet-strength-variables-blank-v3.webp",
+          "alt": "Question-safe electromagnet image showing comparison setups without explanatory notes.",
+          "caption": "Use the setups to identify changes that affect electromagnet strength.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV148": true
+        }
+      ]
     },
     {
       "id": "y9r-081-9j-give-three-ways-to-make-an-electromagnet-stronger",
@@ -12989,7 +14060,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Electromagnets, relays and motors",
       "learningObjectiveDescription": "Electromagnets, relays, the motor effect and electric motors.",
       "noteId": "9J-electromagnets",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "media": [
+        {
+          "src": "assets/webp/9J-electromagnet-strength-variables-blank-v3.webp",
+          "alt": "Question-safe electromagnet image showing comparison setups without explanatory notes.",
+          "caption": "Use the setups to identify changes that affect electromagnet strength.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV148": true
+        }
+      ]
     },
     {
       "id": "y9r-082-9j-what-is-the-motor-effect",
@@ -13012,7 +14093,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Electromagnets, relays and motors",
       "learningObjectiveDescription": "Electromagnets, relays, the motor effect and electric motors.",
       "noteId": "9J-electromagnets",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "media": [
+        {
+          "src": "assets/webp/9J-motor-effect-simple-motor-blank-v3.webp",
+          "alt": "Question-safe motor effect and simple motor diagram without explanatory notes.",
+          "caption": "Use current, field and force arrows to reason about the motor effect.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV148": true
+        }
+      ]
     },
     {
       "id": "y9r-083-9j-what-does-an-electric-motor-consist-of",
@@ -13035,7 +14126,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Electromagnets, relays and motors",
       "learningObjectiveDescription": "Electromagnets, relays, the motor effect and electric motors.",
       "noteId": "9J-electromagnets",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "media": [
+        {
+          "src": "assets/webp/9J-motor-effect-simple-motor-blank-v3.webp",
+          "alt": "Question-safe motor effect and simple motor diagram without explanatory notes.",
+          "caption": "Use current, field and force arrows to reason about the motor effect.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV148": true
+        }
+      ]
     },
     {
       "id": "y9r-084-9j-what-makes-the-coil-in-an-electric-motor-turn",
@@ -13059,7 +14160,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Electromagnets, relays and motors",
       "learningObjectiveDescription": "Electromagnets, relays, the motor effect and electric motors.",
       "noteId": "9J-electromagnets",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "media": [
+        {
+          "src": "assets/webp/9J-motor-effect-simple-motor-blank-v3.webp",
+          "alt": "Question-safe motor effect and simple motor diagram without explanatory notes.",
+          "caption": "Use current, field and force arrows to reason about the motor effect.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV148": true
+        }
+      ]
     },
     {
       "id": "y9r-085-9j-how-can-the-speed-of-the-motor-or-the-force-it-provides-be-increased",
@@ -13083,7 +14194,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Electromagnets, relays and motors",
       "learningObjectiveDescription": "Electromagnets, relays, the motor effect and electric motors.",
       "noteId": "9J-electromagnets",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "media": [
+        {
+          "src": "assets/webp/9J-motor-effect-simple-motor-blank-v3.webp",
+          "alt": "Question-safe motor effect and simple motor diagram without explanatory notes.",
+          "caption": "Use current, field and force arrows to reason about the motor effect.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV148": true
+        }
+      ]
     },
     {
       "id": "y9p-001-9a-what-is-an-abiotic-factor",
@@ -13290,7 +14411,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Hydrocarbons, combustion, energy changes and rate",
       "learningObjectiveDescription": "Hydrocarbons, combustion, oxygen test, energy changes and rate factors.",
       "noteId": "9F-combustion-energy-rates",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "media": [
+        {
+          "src": "assets/webp/9F-neutralisation-reactions-blank-v3.webp",
+          "alt": "Question-safe neutralisation lab setup and pH scale.",
+          "caption": "",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV147": true
+        }
+      ]
     },
     {
       "id": "y9p-010-9f-what-is-a-thermite-reaction",
@@ -13819,8 +14950,9 @@ window.YEAR9_CONTENT = {
       "level": 4,
       "cue": "Give both sides: benefit and problem.",
       "tags": [
-        "quality-balance-v1.36",
         "application",
+        "quality-balance-v1.36",
+        "question-media-v1.45",
         "revision-pack-aligned"
       ],
       "sourceFidelity": "source-traceable-synthesis",
@@ -13828,7 +14960,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Farming yield, benefits and environmental problems",
       "learningObjectiveDescription": "Sustainable development, fertilisers, pesticides and farming trade-offs.",
       "noteId": "9B-farming-yield-impact",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-safe-blank-asset",
+      "media": [
+        {
+          "src": "assets/webp/9B-farming-yield-sustainability-blank.webp",
+          "alt": "Question-safe farming image contrasting crop production and environmental impact without explanatory labels.",
+          "caption": "",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV145": true
+        }
+      ]
     },
     {
       "id": "y9qb-002-9e-thermal-decomposition-state-symbols",
@@ -13916,8 +15058,9 @@ window.YEAR9_CONTENT = {
       "level": 4,
       "cue": "Identify the independent variable and the control variables.",
       "tags": [
-        "quality-balance-v1.36",
         "investigation",
+        "quality-balance-v1.36",
+        "question-media-v1.45",
         "revision-pack-aligned"
       ],
       "sourceFidelity": "source-traceable-synthesis",
@@ -13925,7 +15068,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Resistance and Ohm’s law",
       "learningObjectiveDescription": "Resistance, current-voltage graphs, high-resistance materials and calculations.",
       "noteId": "9J-resistance",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-safe-blank-asset",
+      "media": [
+        {
+          "src": "assets/webp/9J-wire-resistance-investigation-blank.webp",
+          "alt": "Question-safe wire resistance investigation setup without explanatory notes.",
+          "caption": "",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV145": true
+        }
+      ]
     },
     {
       "id": "y9qb-006-9j-significant-figures-application",
@@ -14160,6 +15313,7 @@ window.YEAR9_CONTENT = {
       "cue": "Try to answer in full sentences before revealing the answer.",
       "tags": [
         "cgp-bridge-v1.40",
+        "question-media-v1.45",
         "source-traceable"
       ],
       "sourceFidelity": "new-cgp-bridge-derived",
@@ -14167,7 +15321,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Pressure in fluids",
       "learningObjectiveDescription": "Pressure as force over area, pressure changes with depth and height, upthrust, floating and sinking.",
       "noteId": "9I-pressure",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-safe-blank-asset",
+      "media": [
+        {
+          "src": "assets/webp/9I-liquid-pressure-depth-blank.webp",
+          "alt": "Question-safe water tank image showing jets from different depths without explanatory labels.",
+          "caption": "",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV145": true
+        }
+      ]
     },
     {
       "id": "y9cgp-007-I-pressure-why-does-a-dam-wall-need-to-be-stronger-near-the-bottom",
@@ -14195,6 +15359,7 @@ window.YEAR9_CONTENT = {
       "cue": "Try to answer in full sentences before revealing the answer.",
       "tags": [
         "cgp-bridge-v1.40",
+        "question-media-v1.45",
         "source-traceable"
       ],
       "sourceFidelity": "new-cgp-bridge-derived",
@@ -14202,7 +15367,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Pressure in fluids",
       "learningObjectiveDescription": "Pressure as force over area, pressure changes with depth and height, upthrust, floating and sinking.",
       "noteId": "9I-pressure",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-safe-blank-asset",
+      "media": [
+        {
+          "src": "assets/webp/9I-liquid-pressure-depth-blank.webp",
+          "alt": "Question-safe water tank image showing jets from different depths without explanatory labels.",
+          "caption": "",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV145": true
+        }
+      ]
     },
     {
       "id": "y9cgp-008-I-pressure-a-drawing-shows-arrows-from-water-pushing-sideways-on-a-deep",
@@ -14235,6 +15410,7 @@ window.YEAR9_CONTENT = {
       "cue": "",
       "tags": [
         "cgp-bridge-v1.40",
+        "question-media-v1.45",
         "source-traceable"
       ],
       "sourceFidelity": "new-cgp-bridge-derived",
@@ -14242,7 +15418,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Pressure in fluids",
       "learningObjectiveDescription": "Pressure as force over area, pressure changes with depth and height, upthrust, floating and sinking.",
       "noteId": "9I-pressure",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-safe-blank-asset",
+      "media": [
+        {
+          "src": "assets/webp/9I-liquid-pressure-depth-blank.webp",
+          "alt": "Question-safe water tank image showing jets from different depths without explanatory labels.",
+          "caption": "",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV145": true
+        }
+      ]
     },
     {
       "id": "y9cgp-009-I-pressure-describe-how-atmospheric-pressure-changes-with-height",
@@ -14305,6 +15491,7 @@ window.YEAR9_CONTENT = {
       "cue": "Try to answer in full sentences before revealing the answer.",
       "tags": [
         "cgp-bridge-v1.40",
+        "question-media-v1.45",
         "source-traceable"
       ],
       "sourceFidelity": "new-cgp-bridge-derived",
@@ -14312,7 +15499,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Pressure in fluids",
       "learningObjectiveDescription": "Pressure as force over area, pressure changes with depth and height, upthrust, floating and sinking.",
       "noteId": "9I-pressure",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-safe-blank-asset",
+      "media": [
+        {
+          "src": "assets/webp/9I-pressure-fluids-blank.webp",
+          "alt": "Question-safe pressure image showing force over area, liquid pressure and floating forces without explanatory labels.",
+          "caption": "",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV145": true
+        }
+      ]
     },
     {
       "id": "y9cgp-011-I-pressure-what-does-it-mean-if-an-object-floats",
@@ -14340,6 +15537,7 @@ window.YEAR9_CONTENT = {
       "cue": "Try to answer in full sentences before revealing the answer.",
       "tags": [
         "cgp-bridge-v1.40",
+        "question-media-v1.45",
         "source-traceable"
       ],
       "sourceFidelity": "new-cgp-bridge-derived",
@@ -14347,7 +15545,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Pressure in fluids",
       "learningObjectiveDescription": "Pressure as force over area, pressure changes with depth and height, upthrust, floating and sinking.",
       "noteId": "9I-pressure",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-safe-blank-asset",
+      "media": [
+        {
+          "src": "assets/webp/9I-pressure-fluids-blank.webp",
+          "alt": "Question-safe pressure image showing force over area, liquid pressure and floating forces without explanatory labels.",
+          "caption": "",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV145": true
+        }
+      ]
     },
     {
       "id": "y9cgp-012-I-pressure-which-change-would-increase-the-pressure-made-by-the-same-fo",
@@ -14415,6 +15623,7 @@ window.YEAR9_CONTENT = {
       "cue": "Try to answer in full sentences before revealing the answer.",
       "tags": [
         "cgp-bridge-v1.40",
+        "question-media-v1.45",
         "source-traceable"
       ],
       "sourceFidelity": "new-cgp-bridge-derived",
@@ -14422,7 +15631,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Pressure in fluids",
       "learningObjectiveDescription": "Pressure as force over area, pressure changes with depth and height, upthrust, floating and sinking.",
       "noteId": "9I-pressure",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-safe-blank-asset",
+      "media": [
+        {
+          "src": "assets/webp/9I-pressure-fluids-blank.webp",
+          "alt": "Question-safe pressure image showing force over area, liquid pressure and floating forces without explanatory labels.",
+          "caption": "",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV145": true
+        }
+      ]
     },
     {
       "id": "y9cgp-014-I-pressure-a-block-underwater-has-equal-sized-top-and-bottom-faces-expl",
@@ -14450,6 +15669,7 @@ window.YEAR9_CONTENT = {
       "cue": "Try to answer in full sentences before revealing the answer.",
       "tags": [
         "cgp-bridge-v1.40",
+        "question-media-v1.45",
         "source-traceable"
       ],
       "sourceFidelity": "new-cgp-bridge-derived",
@@ -14457,7 +15677,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Pressure in fluids",
       "learningObjectiveDescription": "Pressure as force over area, pressure changes with depth and height, upthrust, floating and sinking.",
       "noteId": "9I-pressure",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-safe-blank-asset",
+      "media": [
+        {
+          "src": "assets/webp/9I-pressure-fluids-blank.webp",
+          "alt": "Question-safe pressure image showing force over area, liquid pressure and floating forces without explanatory labels.",
+          "caption": "",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV145": true
+        }
+      ]
     },
     {
       "id": "y9cgp-015-I-pressure-correct-the-misconception-liquid-pressure-at-the-bottom-depe",
@@ -14485,6 +15715,7 @@ window.YEAR9_CONTENT = {
       "cue": "Try to answer in full sentences before revealing the answer.",
       "tags": [
         "cgp-bridge-v1.40",
+        "question-media-v1.45",
         "source-traceable"
       ],
       "sourceFidelity": "new-cgp-bridge-derived",
@@ -14492,7 +15723,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Pressure in fluids",
       "learningObjectiveDescription": "Pressure as force over area, pressure changes with depth and height, upthrust, floating and sinking.",
       "noteId": "9I-pressure",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-safe-blank-asset",
+      "media": [
+        {
+          "src": "assets/webp/9I-liquid-pressure-depth-blank.webp",
+          "alt": "Question-safe water tank image showing jets from different depths without explanatory labels.",
+          "caption": "",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV145": true
+        }
+      ]
     },
     {
       "id": "y9cgp-046-E-heating-cooling-define-thermal-conductor",
@@ -14518,6 +15759,7 @@ window.YEAR9_CONTENT = {
       "cue": "Try to answer in full sentences before revealing the answer.",
       "tags": [
         "cgp-bridge-v1.40",
+        "question-media-v1.45",
         "source-traceable"
       ],
       "sourceFidelity": "new-cgp-bridge-derived",
@@ -14525,7 +15767,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Heating and cooling",
       "learningObjectiveDescription": "Energy transfer during heating and cooling, changes of state, conductors, insulators and cooling curves.",
       "noteId": "9E-heating-cooling",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-safe-blank-asset",
+      "media": [
+        {
+          "src": "assets/webp/9E-thermal-conductors-insulators-blank.webp",
+          "alt": "Question-safe image comparing thermal transfer through different materials without explanatory labels.",
+          "caption": "",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV145": true
+        }
+      ]
     },
     {
       "id": "y9cgp-047-E-heating-cooling-define-thermal-insulator",
@@ -14551,6 +15803,7 @@ window.YEAR9_CONTENT = {
       "cue": "Try to answer in full sentences before revealing the answer.",
       "tags": [
         "cgp-bridge-v1.40",
+        "question-media-v1.45",
         "source-traceable"
       ],
       "sourceFidelity": "new-cgp-bridge-derived",
@@ -14558,7 +15811,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Heating and cooling",
       "learningObjectiveDescription": "Energy transfer during heating and cooling, changes of state, conductors, insulators and cooling curves.",
       "noteId": "9E-heating-cooling",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-safe-blank-asset",
+      "media": [
+        {
+          "src": "assets/webp/9E-thermal-conductors-insulators-blank.webp",
+          "alt": "Question-safe image comparing thermal transfer through different materials without explanatory labels.",
+          "caption": "",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV145": true
+        }
+      ]
     },
     {
       "id": "y9cgp-048-E-heating-cooling-what-happens-to-particles-in-a-solid-when-it-is-heated",
@@ -14584,6 +15847,7 @@ window.YEAR9_CONTENT = {
       "cue": "Try to answer in full sentences before revealing the answer.",
       "tags": [
         "cgp-bridge-v1.40",
+        "question-media-v1.45",
         "source-traceable"
       ],
       "sourceFidelity": "new-cgp-bridge-derived",
@@ -14591,7 +15855,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Heating and cooling",
       "learningObjectiveDescription": "Energy transfer during heating and cooling, changes of state, conductors, insulators and cooling curves.",
       "noteId": "9E-heating-cooling",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-safe-blank-asset",
+      "media": [
+        {
+          "src": "assets/webp/9E-heating-cooling-blank.webp",
+          "alt": "Question-safe heating and cooling image showing a beaker, thermometer and particle panels without explanatory labels.",
+          "caption": "",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV145": true
+        }
+      ]
     },
     {
       "id": "y9cgp-049-E-heating-cooling-what-happens-to-particles-in-a-hot-object-as-it-cools",
@@ -14617,6 +15891,7 @@ window.YEAR9_CONTENT = {
       "cue": "Try to answer in full sentences before revealing the answer.",
       "tags": [
         "cgp-bridge-v1.40",
+        "question-media-v1.45",
         "source-traceable"
       ],
       "sourceFidelity": "new-cgp-bridge-derived",
@@ -14624,7 +15899,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Heating and cooling",
       "learningObjectiveDescription": "Energy transfer during heating and cooling, changes of state, conductors, insulators and cooling curves.",
       "noteId": "9E-heating-cooling",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-safe-blank-asset",
+      "media": [
+        {
+          "src": "assets/webp/9E-heating-cooling-blank.webp",
+          "alt": "Question-safe heating and cooling image showing a beaker, thermometer and particle panels without explanatory labels.",
+          "caption": "",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV145": true
+        }
+      ]
     },
     {
       "id": "y9cgp-050-E-heating-cooling-which-changes-of-state-are-endothermic",
@@ -14655,6 +15940,7 @@ window.YEAR9_CONTENT = {
       "cue": "",
       "tags": [
         "cgp-bridge-v1.40",
+        "question-media-v1.45",
         "source-traceable"
       ],
       "sourceFidelity": "new-cgp-bridge-derived",
@@ -14662,7 +15948,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Heating and cooling",
       "learningObjectiveDescription": "Energy transfer during heating and cooling, changes of state, conductors, insulators and cooling curves.",
       "noteId": "9E-heating-cooling",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-safe-blank-asset",
+      "media": [
+        {
+          "src": "assets/webp/9E-heating-cooling-blank.webp",
+          "alt": "Question-safe heating and cooling image showing a beaker, thermometer and particle panels without explanatory labels.",
+          "caption": "",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV145": true
+        }
+      ]
     },
     {
       "id": "y9cgp-051-E-heating-cooling-which-changes-of-state-are-exothermic",
@@ -14693,6 +15989,7 @@ window.YEAR9_CONTENT = {
       "cue": "",
       "tags": [
         "cgp-bridge-v1.40",
+        "question-media-v1.45",
         "source-traceable"
       ],
       "sourceFidelity": "new-cgp-bridge-derived",
@@ -14700,7 +15997,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Heating and cooling",
       "learningObjectiveDescription": "Energy transfer during heating and cooling, changes of state, conductors, insulators and cooling curves.",
       "noteId": "9E-heating-cooling",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-safe-blank-asset",
+      "media": [
+        {
+          "src": "assets/webp/9E-heating-cooling-blank.webp",
+          "alt": "Question-safe heating and cooling image showing a beaker, thermometer and particle panels without explanatory labels.",
+          "caption": "",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV145": true
+        }
+      ]
     },
     {
       "id": "y9cgp-052-E-heating-cooling-describe-conduction-using-particles",
@@ -14759,6 +16066,7 @@ window.YEAR9_CONTENT = {
       "cue": "Try to answer in full sentences before revealing the answer.",
       "tags": [
         "cgp-bridge-v1.40",
+        "question-media-v1.45",
         "source-traceable"
       ],
       "sourceFidelity": "new-cgp-bridge-derived",
@@ -14766,7 +16074,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Heating and cooling",
       "learningObjectiveDescription": "Energy transfer during heating and cooling, changes of state, conductors, insulators and cooling curves.",
       "noteId": "9E-heating-cooling",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-safe-blank-asset",
+      "media": [
+        {
+          "src": "assets/webp/9E-thermal-conductors-insulators-blank.webp",
+          "alt": "Question-safe image comparing thermal transfer through different materials without explanatory labels.",
+          "caption": "",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV145": true
+        }
+      ]
     },
     {
       "id": "y9cgp-054-E-heating-cooling-why-does-a-plastic-handle-help-protect-your-hand-from-a-hot-",
@@ -14792,6 +16110,7 @@ window.YEAR9_CONTENT = {
       "cue": "Try to answer in full sentences before revealing the answer.",
       "tags": [
         "cgp-bridge-v1.40",
+        "question-media-v1.45",
         "source-traceable"
       ],
       "sourceFidelity": "new-cgp-bridge-derived",
@@ -14799,7 +16118,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Heating and cooling",
       "learningObjectiveDescription": "Energy transfer during heating and cooling, changes of state, conductors, insulators and cooling curves.",
       "noteId": "9E-heating-cooling",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-safe-blank-asset",
+      "media": [
+        {
+          "src": "assets/webp/9E-thermal-conductors-insulators-blank.webp",
+          "alt": "Question-safe image comparing thermal transfer through different materials without explanatory labels.",
+          "caption": "",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV145": true
+        }
+      ]
     },
     {
       "id": "y9cgp-055-E-heating-cooling-what-does-a-cooling-curve-show",
@@ -14825,6 +16154,7 @@ window.YEAR9_CONTENT = {
       "cue": "Try to answer in full sentences before revealing the answer.",
       "tags": [
         "cgp-bridge-v1.40",
+        "question-media-v1.45",
         "source-traceable"
       ],
       "sourceFidelity": "new-cgp-bridge-derived",
@@ -14832,7 +16162,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Heating and cooling",
       "learningObjectiveDescription": "Energy transfer during heating and cooling, changes of state, conductors, insulators and cooling curves.",
       "noteId": "9E-heating-cooling",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-safe-blank-asset",
+      "media": [
+        {
+          "src": "assets/webp/9E-heating-cooling-blank.webp",
+          "alt": "Question-safe heating and cooling image showing a beaker, thermometer and particle panels without explanatory labels.",
+          "caption": "",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV145": true
+        }
+      ]
     },
     {
       "id": "y9cgp-056-E-heating-cooling-why-does-a-very-hot-drink-cool-faster-at-first-than-later",
@@ -14858,6 +16198,7 @@ window.YEAR9_CONTENT = {
       "cue": "Try to answer in full sentences before revealing the answer.",
       "tags": [
         "cgp-bridge-v1.40",
+        "question-media-v1.45",
         "source-traceable"
       ],
       "sourceFidelity": "new-cgp-bridge-derived",
@@ -14865,7 +16206,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Heating and cooling",
       "learningObjectiveDescription": "Energy transfer during heating and cooling, changes of state, conductors, insulators and cooling curves.",
       "noteId": "9E-heating-cooling",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-safe-blank-asset",
+      "media": [
+        {
+          "src": "assets/webp/9E-heating-cooling-blank.webp",
+          "alt": "Question-safe heating and cooling image showing a beaker, thermometer and particle panels without explanatory labels.",
+          "caption": "",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV145": true
+        }
+      ]
     },
     {
       "id": "y9cgp-057-E-heating-cooling-correct-the-misconception-energy-disappears-when-an-object-c",
@@ -14891,6 +16242,7 @@ window.YEAR9_CONTENT = {
       "cue": "Try to answer in full sentences before revealing the answer.",
       "tags": [
         "cgp-bridge-v1.40",
+        "question-media-v1.45",
         "source-traceable"
       ],
       "sourceFidelity": "new-cgp-bridge-derived",
@@ -14898,7 +16250,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Heating and cooling",
       "learningObjectiveDescription": "Energy transfer during heating and cooling, changes of state, conductors, insulators and cooling curves.",
       "noteId": "9E-heating-cooling",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-safe-blank-asset",
+      "media": [
+        {
+          "src": "assets/webp/9E-heating-cooling-blank.webp",
+          "alt": "Question-safe heating and cooling image showing a beaker, thermometer and particle panels without explanatory labels.",
+          "caption": "",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV145": true
+        }
+      ]
     },
     {
       "id": "y9cgp-058-E-heating-cooling-which-material-would-usually-be-best-for-reducing-heat-loss-",
@@ -14929,6 +16291,7 @@ window.YEAR9_CONTENT = {
       "cue": "",
       "tags": [
         "cgp-bridge-v1.40",
+        "question-media-v1.45",
         "source-traceable"
       ],
       "sourceFidelity": "new-cgp-bridge-derived",
@@ -14936,7 +16299,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Heating and cooling",
       "learningObjectiveDescription": "Energy transfer during heating and cooling, changes of state, conductors, insulators and cooling curves.",
       "noteId": "9E-heating-cooling",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-safe-blank-asset",
+      "media": [
+        {
+          "src": "assets/webp/9E-thermal-conductors-insulators-blank.webp",
+          "alt": "Question-safe image comparing thermal transfer through different materials without explanatory labels.",
+          "caption": "",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV145": true
+        }
+      ]
     },
     {
       "id": "y9cgp-059-E-heating-cooling-explain-why-insulation-does-not-make-heat-it-helps-keep-some",
@@ -14962,6 +16335,7 @@ window.YEAR9_CONTENT = {
       "cue": "Try to answer in full sentences before revealing the answer.",
       "tags": [
         "cgp-bridge-v1.40",
+        "question-media-v1.45",
         "source-traceable"
       ],
       "sourceFidelity": "new-cgp-bridge-derived",
@@ -14969,7 +16343,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Heating and cooling",
       "learningObjectiveDescription": "Energy transfer during heating and cooling, changes of state, conductors, insulators and cooling curves.",
       "noteId": "9E-heating-cooling",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-safe-blank-asset",
+      "media": [
+        {
+          "src": "assets/webp/9E-thermal-conductors-insulators-blank.webp",
+          "alt": "Question-safe image comparing thermal transfer through different materials without explanatory labels.",
+          "caption": "",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV145": true
+        }
+      ]
     },
     {
       "id": "y9cgp-060-F-periodic-table-bridge-define-periodic-table",
@@ -14996,8 +16380,9 @@ window.YEAR9_CONTENT = {
       "level": 1,
       "cue": "Try to answer in full sentences before revealing the answer.",
       "tags": [
-        "revision-pack-alignment",
         "cgp-bridge-v1.40",
+        "question-media-v1.45",
+        "revision-pack-alignment",
         "source-traceable"
       ],
       "sourceFidelity": "exact-source-text",
@@ -15005,7 +16390,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Periodic table bridge",
       "learningObjectiveDescription": "Atomic structure, proton number, groups, periods, metals, non-metals and group trends.",
       "noteId": "9F-periodic-table-bridge",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-safe-blank-asset",
+      "media": [
+        {
+          "src": "assets/webp/9F-periodic-table-navigator-blank.webp",
+          "alt": "Question-safe periodic table image without explanatory labels.",
+          "caption": "",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV145": true
+        }
+      ]
     },
     {
       "id": "y9cgp-061-F-periodic-table-bridge-what-does-an-atom-contain",
@@ -15140,8 +16535,9 @@ window.YEAR9_CONTENT = {
       "level": 1,
       "cue": "Try to answer in full sentences before revealing the answer.",
       "tags": [
-        "revision-pack-alignment",
         "cgp-bridge-v1.40",
+        "question-media-v1.45",
+        "revision-pack-alignment",
         "source-traceable"
       ],
       "sourceFidelity": "exact-source-answer",
@@ -15149,7 +16545,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Periodic table bridge",
       "learningObjectiveDescription": "Atomic structure, proton number, groups, periods, metals, non-metals and group trends.",
       "noteId": "9F-periodic-table-bridge",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-safe-blank-asset",
+      "media": [
+        {
+          "src": "assets/webp/9F-periodic-table-navigator-blank.webp",
+          "alt": "Question-safe periodic table image without explanatory labels.",
+          "caption": "",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV145": true
+        }
+      ]
     },
     {
       "id": "y9cgp-065-F-periodic-table-bridge-elements-in-the-same-group-usually-have",
@@ -15182,6 +16588,7 @@ window.YEAR9_CONTENT = {
       "cue": "",
       "tags": [
         "cgp-bridge-v1.40",
+        "question-media-v1.45",
         "source-traceable"
       ],
       "sourceFidelity": "new-cgp-bridge-derived",
@@ -15189,7 +16596,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Periodic table bridge",
       "learningObjectiveDescription": "Atomic structure, proton number, groups, periods, metals, non-metals and group trends.",
       "noteId": "9F-periodic-table-bridge",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-safe-blank-asset",
+      "media": [
+        {
+          "src": "assets/webp/9F-periodic-table-navigator-blank.webp",
+          "alt": "Question-safe periodic table image without explanatory labels.",
+          "caption": "",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV145": true
+        }
+      ]
     },
     {
       "id": "y9cgp-066-F-periodic-table-bridge-across-a-period-elements-are-arranged-mainly-by-increasing",
@@ -15222,6 +16639,7 @@ window.YEAR9_CONTENT = {
       "cue": "",
       "tags": [
         "cgp-bridge-v1.40",
+        "question-media-v1.45",
         "source-traceable"
       ],
       "sourceFidelity": "new-cgp-bridge-derived",
@@ -15229,7 +16647,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Periodic table bridge",
       "learningObjectiveDescription": "Atomic structure, proton number, groups, periods, metals, non-metals and group trends.",
       "noteId": "9F-periodic-table-bridge",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-safe-blank-asset",
+      "media": [
+        {
+          "src": "assets/webp/9F-periodic-table-navigator-blank.webp",
+          "alt": "Question-safe periodic table image without explanatory labels.",
+          "caption": "",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV145": true
+        }
+      ]
     },
     {
       "id": "y9cgp-067-F-periodic-table-bridge-where-are-metals-usually-found-in-the-periodic-table",
@@ -15257,6 +16685,7 @@ window.YEAR9_CONTENT = {
       "cue": "Try to answer in full sentences before revealing the answer.",
       "tags": [
         "cgp-bridge-v1.40",
+        "question-media-v1.45",
         "source-traceable"
       ],
       "sourceFidelity": "new-cgp-bridge-derived",
@@ -15264,7 +16693,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Periodic table bridge",
       "learningObjectiveDescription": "Atomic structure, proton number, groups, periods, metals, non-metals and group trends.",
       "noteId": "9F-periodic-table-bridge",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-safe-blank-asset",
+      "media": [
+        {
+          "src": "assets/webp/9F-periodic-table-navigator-blank.webp",
+          "alt": "Question-safe periodic table image without explanatory labels.",
+          "caption": "",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV145": true
+        }
+      ]
     },
     {
       "id": "y9cgp-068-F-periodic-table-bridge-give-two-general-properties-of-metals",
@@ -15367,6 +16806,7 @@ window.YEAR9_CONTENT = {
       "cue": "",
       "tags": [
         "cgp-bridge-v1.40",
+        "question-media-v1.45",
         "source-traceable"
       ],
       "sourceFidelity": "new-cgp-bridge-derived",
@@ -15374,7 +16814,18 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Periodic table bridge",
       "learningObjectiveDescription": "Atomic structure, proton number, groups, periods, metals, non-metals and group trends.",
       "noteId": "9F-periodic-table-bridge",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-safe-blank-asset",
+      "media": [
+        {
+          "src": "assets/webp/9F-periodic-table-navigator-blank.webp",
+          "alt": "Question-safe periodic table image without explanatory labels.",
+          "caption": "",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV145": true,
+          "qaRevertedV148": true
+        }
+      ]
     },
     {
       "id": "y9cgp-071-F-periodic-table-bridge-describe-the-reactivity-trend-down-group-1",
@@ -15442,6 +16893,7 @@ window.YEAR9_CONTENT = {
       "cue": "",
       "tags": [
         "cgp-bridge-v1.40",
+        "question-media-v1.45",
         "source-traceable"
       ],
       "sourceFidelity": "new-cgp-bridge-derived",
@@ -15449,7 +16901,18 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Periodic table bridge",
       "learningObjectiveDescription": "Atomic structure, proton number, groups, periods, metals, non-metals and group trends.",
       "noteId": "9F-periodic-table-bridge",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-safe-blank-asset",
+      "media": [
+        {
+          "src": "assets/webp/9F-periodic-table-navigator-blank.webp",
+          "alt": "Question-safe periodic table image without explanatory labels.",
+          "caption": "",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV145": true,
+          "qaRevertedV148": true
+        }
+      ]
     },
     {
       "id": "y9cgp-073-F-periodic-table-bridge-describe-the-reactivity-trend-down-group-7",
@@ -15583,6 +17046,7 @@ window.YEAR9_CONTENT = {
       "cue": "Try to answer in full sentences before revealing the answer.",
       "tags": [
         "cgp-bridge-v1.40",
+        "question-media-v1.45",
         "source-traceable"
       ],
       "sourceFidelity": "new-cgp-bridge-derived",
@@ -15590,7 +17054,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Climate and greenhouse gases",
       "learningObjectiveDescription": "Greenhouse gases, greenhouse effect, global warming evidence, human activities and reduction strategies.",
       "noteId": "9E-climate-bridge",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-safe-blank-asset",
+      "media": [
+        {
+          "src": "assets/webp/9E-greenhouse-effect-blank.webp",
+          "alt": "Earth and atmosphere image showing sunlight and outgoing heat arrows without explanatory labels.",
+          "caption": "",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV145": true
+        }
+      ]
     },
     {
       "id": "y9cgp-077-E-climate-bridge-why-can-extra-greenhouse-gases-increase-global-temperature",
@@ -15618,6 +17092,7 @@ window.YEAR9_CONTENT = {
       "cue": "Try to answer in full sentences before revealing the answer.",
       "tags": [
         "cgp-bridge-v1.40",
+        "question-media-v1.45",
         "source-traceable"
       ],
       "sourceFidelity": "new-cgp-bridge-derived",
@@ -15625,7 +17100,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Climate and greenhouse gases",
       "learningObjectiveDescription": "Greenhouse gases, greenhouse effect, global warming evidence, human activities and reduction strategies.",
       "noteId": "9E-climate-bridge",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-safe-blank-asset",
+      "media": [
+        {
+          "src": "assets/webp/9E-greenhouse-effect-blank.webp",
+          "alt": "Earth and atmosphere image showing sunlight and outgoing heat arrows without explanatory labels.",
+          "caption": "",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV145": true
+        }
+      ]
     },
     {
       "id": "y9cgp-078-E-climate-bridge-which-gas-is-commonly-released-by-burning-fossil-fuels",
@@ -15910,6 +17395,7 @@ window.YEAR9_CONTENT = {
       "cue": "Try to answer in full sentences before revealing the answer.",
       "tags": [
         "cgp-bridge-v1.40",
+        "question-media-v1.45",
         "source-traceable"
       ],
       "sourceFidelity": "new-cgp-bridge-derived",
@@ -15917,7 +17403,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Climate and greenhouse gases",
       "learningObjectiveDescription": "Greenhouse gases, greenhouse effect, global warming evidence, human activities and reduction strategies.",
       "noteId": "9E-climate-bridge",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-safe-blank-asset",
+      "media": [
+        {
+          "src": "assets/webp/9E-greenhouse-effect-blank.webp",
+          "alt": "Earth and atmosphere image showing sunlight and outgoing heat arrows without explanatory labels.",
+          "caption": "",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV145": true
+        }
+      ]
     },
     {
       "id": "y9cgp-096-F-chemical-energy-bridge-define-exothermic-reaction",
@@ -15944,8 +17440,9 @@ window.YEAR9_CONTENT = {
       "level": 1,
       "cue": "Try to answer in full sentences before revealing the answer.",
       "tags": [
-        "revision-pack-alignment",
         "cgp-bridge-v1.40",
+        "question-media-v1.45",
+        "revision-pack-alignment",
         "source-traceable"
       ],
       "sourceFidelity": "exact-source-text",
@@ -15953,7 +17450,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Chemical energy bridge",
       "learningObjectiveDescription": "Exothermic and endothermic reactions, temperature changes, surroundings and reaction examples.",
       "noteId": "9F-chemical-energy-bridge",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-safe-blank-asset",
+      "media": [
+        {
+          "src": "assets/webp/9F-exothermic-endothermic-blank.webp",
+          "alt": "Question-safe split reaction image showing warming and cooling contexts without explanatory labels.",
+          "caption": "",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV145": true
+        }
+      ]
     },
     {
       "id": "y9cgp-097-F-chemical-energy-bridge-define-endothermic-reaction",
@@ -15980,8 +17487,9 @@ window.YEAR9_CONTENT = {
       "level": 1,
       "cue": "Try to answer in full sentences before revealing the answer.",
       "tags": [
-        "revision-pack-alignment",
         "cgp-bridge-v1.40",
+        "question-media-v1.45",
+        "revision-pack-alignment",
         "source-traceable"
       ],
       "sourceFidelity": "exact-source-text",
@@ -15989,7 +17497,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Chemical energy bridge",
       "learningObjectiveDescription": "Exothermic and endothermic reactions, temperature changes, surroundings and reaction examples.",
       "noteId": "9F-chemical-energy-bridge",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-safe-blank-asset",
+      "media": [
+        {
+          "src": "assets/webp/9F-exothermic-endothermic-blank.webp",
+          "alt": "Question-safe split reaction image showing warming and cooling contexts without explanatory labels.",
+          "caption": "",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV145": true
+        }
+      ]
     },
     {
       "id": "y9cgp-098-F-chemical-energy-bridge-what-do-exothermic-reactions-do-to-the-surroundings",
@@ -16016,8 +17534,9 @@ window.YEAR9_CONTENT = {
       "level": 2,
       "cue": "Try to answer in full sentences before revealing the answer.",
       "tags": [
-        "revision-pack-alignment",
         "cgp-bridge-v1.40",
+        "question-media-v1.45",
+        "revision-pack-alignment",
         "source-traceable"
       ],
       "sourceFidelity": "exact-source-answer",
@@ -16025,7 +17544,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Chemical energy bridge",
       "learningObjectiveDescription": "Exothermic and endothermic reactions, temperature changes, surroundings and reaction examples.",
       "noteId": "9F-chemical-energy-bridge",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-safe-blank-asset",
+      "media": [
+        {
+          "src": "assets/webp/9F-exothermic-endothermic-blank.webp",
+          "alt": "Question-safe split reaction image showing warming and cooling contexts without explanatory labels.",
+          "caption": "",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV145": true
+        }
+      ]
     },
     {
       "id": "y9cgp-099-F-chemical-energy-bridge-what-do-endothermic-reactions-do-to-the-surroundings",
@@ -16052,8 +17581,9 @@ window.YEAR9_CONTENT = {
       "level": 2,
       "cue": "Try to answer in full sentences before revealing the answer.",
       "tags": [
-        "revision-pack-alignment",
         "cgp-bridge-v1.40",
+        "question-media-v1.45",
+        "revision-pack-alignment",
         "source-traceable"
       ],
       "sourceFidelity": "exact-source-answer",
@@ -16061,7 +17591,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Chemical energy bridge",
       "learningObjectiveDescription": "Exothermic and endothermic reactions, temperature changes, surroundings and reaction examples.",
       "noteId": "9F-chemical-energy-bridge",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-safe-blank-asset",
+      "media": [
+        {
+          "src": "assets/webp/9F-exothermic-endothermic-blank.webp",
+          "alt": "Question-safe split reaction image showing warming and cooling contexts without explanatory labels.",
+          "caption": "",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV145": true
+        }
+      ]
     },
     {
       "id": "y9cgp-100-F-chemical-energy-bridge-a-reaction-mixture-starts-at-20-c-and-ends-at-28-c-what-type",
@@ -16169,6 +17709,7 @@ window.YEAR9_CONTENT = {
       "cue": "Try to answer in full sentences before revealing the answer.",
       "tags": [
         "cgp-bridge-v1.40",
+        "question-media-v1.45",
         "source-traceable"
       ],
       "sourceFidelity": "new-cgp-bridge-derived",
@@ -16176,7 +17717,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Chemical energy bridge",
       "learningObjectiveDescription": "Exothermic and endothermic reactions, temperature changes, surroundings and reaction examples.",
       "noteId": "9F-chemical-energy-bridge",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-safe-blank-asset",
+      "media": [
+        {
+          "src": "assets/webp/9F-exothermic-endothermic-blank.webp",
+          "alt": "Question-safe split reaction image showing warming and cooling contexts without explanatory labels.",
+          "caption": "",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV145": true
+        }
+      ]
     },
     {
       "id": "y9cgp-103-F-chemical-energy-bridge-give-one-example-of-an-endothermic-reaction-from-the-revisio",
@@ -16240,6 +17791,7 @@ window.YEAR9_CONTENT = {
       "cue": "Try to answer in full sentences before revealing the answer.",
       "tags": [
         "cgp-bridge-v1.40",
+        "question-media-v1.45",
         "source-traceable"
       ],
       "sourceFidelity": "new-cgp-bridge-derived",
@@ -16247,7 +17799,17 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Chemical energy bridge",
       "learningObjectiveDescription": "Exothermic and endothermic reactions, temperature changes, surroundings and reaction examples.",
       "noteId": "9F-chemical-energy-bridge",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-safe-blank-asset",
+      "media": [
+        {
+          "src": "assets/webp/9F-combustion-fire-triangle-blank.webp",
+          "alt": "Question-safe combustion image showing a flame and fire-triangle icons without explanatory labels.",
+          "caption": "",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "questionAssetV145": true
+        }
+      ]
     },
     {
       "id": "y9cgp-105-F-chemical-energy-bridge-correct-the-misconception-a-cold-reaction-makes-cold-energy",
@@ -16283,6 +17845,246 @@ window.YEAR9_CONTENT = {
       "learningObjectiveDescription": "Exothermic and endothermic reactions, temperature changes, surroundings and reaction examples.",
       "noteId": "9F-chemical-energy-bridge",
       "mediaPolicy": "question-media-only-if-required"
+    },
+    {
+      "id": "y9img-001-9i-density-water-displacement-calculate-density",
+      "unit": "9I",
+      "type": "Calculation",
+      "question": "Use the measuring cylinders. Calculate the density of the object. Give your answer in g/cm³.",
+      "answer": "Initial volume = 35 cm³. Final volume = 60 cm³. Volume of object = 25 cm³. Density = 125 ÷ 25 = 5 g/cm³.",
+      "choices": [],
+      "explanation": "For an irregular object, volume is found by water displacement. The water rises by 25 cm³, so density = mass ÷ volume = 125 g ÷ 25 cm³ = 5 g/cm³.",
+      "source": "Diagram and calculation asset integration v1.49.0",
+      "level": 3,
+      "cue": "Find volume from final volume minus initial volume, then use density = mass ÷ volume.",
+      "tags": [
+        "diagram-calculation-v1.49",
+        "density",
+        "water-displacement",
+        "written-practice"
+      ],
+      "sourceFidelity": "derived",
+      "learningObjective": "9I-pressure",
+      "learningObjectiveTitle": "Pressure, density and floating",
+      "learningObjectiveDescription": "Pressure calculations, contact area, liquid pressure, upthrust, floating and density calculations.",
+      "noteId": "9I-pressure",
+      "mediaPolicy": "required-for-question",
+      "media": [
+        {
+          "src": "assets/webp/9I-density-water-displacement-question-v149.webp",
+          "alt": "Two measuring cylinders showing initial and final water volume after an object is added, with object mass 125 g.",
+          "caption": "Use the change in water level to find the object's volume.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base"
+        }
+      ]
+    },
+    {
+      "id": "y9img-002-9i-density-cuboid-calculate-density",
+      "unit": "9I",
+      "type": "Calculation",
+      "question": "Use the cuboid diagram. Calculate the density of the object in g/cm³.",
+      "answer": "Volume = length × width × height = 10 × 4 × 5 = 200 cm³. Density = 800 ÷ 200 = 4 g/cm³.",
+      "choices": [],
+      "explanation": "For a regular solid, first calculate volume from the dimensions, then divide mass by volume.",
+      "source": "Diagram and calculation asset integration v1.49.0",
+      "level": 3,
+      "cue": "For a cuboid, volume = length × width × height.",
+      "tags": [
+        "diagram-calculation-v1.49",
+        "density",
+        "regular-solid"
+      ],
+      "sourceFidelity": "derived",
+      "learningObjective": "9I-pressure",
+      "learningObjectiveTitle": "Pressure, density and floating",
+      "learningObjectiveDescription": "Pressure calculations, contact area, liquid pressure, upthrust, floating and density calculations.",
+      "noteId": "9I-pressure",
+      "mediaPolicy": "required-for-question",
+      "media": [
+        {
+          "src": "assets/webp/9I-density-cuboid-question-v149.webp",
+          "alt": "Cuboid with length 10 cm, width 4 cm, height 5 cm and mass 800 g.",
+          "caption": "Use the dimensions to find volume before calculating density.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base"
+        }
+      ]
+    },
+    {
+      "id": "y9img-003-9i-pressure-solid-block-calculate-pressure",
+      "unit": "9I",
+      "type": "Calculation",
+      "question": "Use the block diagram. Calculate the pressure on the surface in N/cm².",
+      "answer": "Pressure = force ÷ area = 180 N ÷ 30 cm² = 6 N/cm².",
+      "choices": [],
+      "explanation": "Pressure depends on both force and contact area. Divide the force by the area in the units given.",
+      "source": "Diagram and calculation asset integration v1.49.0",
+      "level": 2,
+      "cue": "Use pressure = force ÷ area.",
+      "tags": [
+        "diagram-calculation-v1.49",
+        "pressure",
+        "solid-pressure"
+      ],
+      "sourceFidelity": "derived",
+      "learningObjective": "9I-pressure",
+      "learningObjectiveTitle": "Pressure, density and floating",
+      "learningObjectiveDescription": "Pressure calculations, contact area, liquid pressure, upthrust, floating and density calculations.",
+      "noteId": "9I-pressure",
+      "mediaPolicy": "required-for-question",
+      "media": [
+        {
+          "src": "assets/webp/9I-pressure-solid-block-question-v149.webp",
+          "alt": "Block with downward force 180 N and contact area 30 cm squared.",
+          "caption": "Use the values from the diagram.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base"
+        }
+      ]
+    },
+    {
+      "id": "y9img-004-9i-pressure-shoe-contact-area-compare",
+      "unit": "9I",
+      "type": "Quick quiz",
+      "question": "Use the shoe diagrams. Which shoe produces the greater pressure on the ground, and why?",
+      "answer": "A",
+      "choices": [
+        "A Shoe A, because the same force acts over a smaller contact area",
+        "B Shoe A, because the force is larger",
+        "C Shoe B, because the contact area is larger",
+        "D Shoe B, because pressure increases when area increases"
+      ],
+      "explanation": "Both shoes have the same 300 N force, but shoe A has a much smaller contact area. Smaller area gives greater pressure.",
+      "source": "Diagram and calculation asset integration v1.49.0",
+      "level": 2,
+      "cue": "Compare the contact areas, not only the force.",
+      "tags": [
+        "diagram-calculation-v1.49",
+        "pressure",
+        "contact-area"
+      ],
+      "sourceFidelity": "derived",
+      "learningObjective": "9I-pressure",
+      "learningObjectiveTitle": "Pressure, density and floating",
+      "learningObjectiveDescription": "Pressure calculations, contact area, liquid pressure, upthrust, floating and density calculations.",
+      "noteId": "9I-pressure",
+      "mediaPolicy": "required-for-question",
+      "media": [
+        {
+          "src": "assets/webp/9I-pressure-shoe-contact-area-question-v149.webp",
+          "alt": "Two shoes with the same downward force but different contact areas labelled A and B.",
+          "caption": "Compare force and contact area.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base"
+        }
+      ]
+    },
+    {
+      "id": "y9img-005-9i-moment-balanced-missing-distance",
+      "unit": "9I",
+      "type": "Calculation",
+      "question": "Use the balanced lever diagram. Calculate the missing distance on the right-hand side.",
+      "answer": "Left moment = 240 N × 2 m = 480 N m. For balance, right moment = 480 N m. Distance = 480 ÷ 160 = 3 m.",
+      "choices": [],
+      "explanation": "A balanced lever has equal clockwise and anticlockwise moments. Use force × distance on the known side, then divide by the force on the unknown side.",
+      "source": "Diagram and calculation asset integration v1.49.0",
+      "level": 3,
+      "cue": "For balance: clockwise moment = anticlockwise moment.",
+      "tags": [
+        "diagram-calculation-v1.49",
+        "moments",
+        "balanced-lever"
+      ],
+      "sourceFidelity": "derived",
+      "learningObjective": "9I-moments",
+      "learningObjectiveTitle": "Levers, pivots and moments",
+      "learningObjectiveDescription": "Levers, pivots/fulcrums, moment calculations and mechanical advantage.",
+      "noteId": "9I-moments",
+      "mediaPolicy": "required-for-question",
+      "media": [
+        {
+          "src": "assets/webp/9I-moment-balanced-missing-distance-question-v149.webp",
+          "alt": "Lever balanced on a pivot with 240 N at 2 m on one side and 160 N at an unknown distance on the other side.",
+          "caption": "Use equal moments for balance.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base"
+        }
+      ]
+    },
+    {
+      "id": "y9img-006-9i-distance-time-journey-stopped-section",
+      "unit": "9I",
+      "type": "Quick quiz",
+      "question": "Use the distance-time graph. During which time interval was the object stopped?",
+      "answer": "B",
+      "choices": [
+        "A 0 to 3 min",
+        "B 3 to 5 min",
+        "C 5 to 7 min",
+        "D 7 to 10 min"
+      ],
+      "explanation": "On a distance-time graph, a horizontal section means the distance is not changing, so the object is stopped.",
+      "source": "Diagram and calculation asset integration v1.49.0",
+      "level": 2,
+      "cue": "Look for the horizontal part of the graph.",
+      "tags": [
+        "diagram-calculation-v1.49",
+        "distance-time-graph",
+        "graph-reading"
+      ],
+      "sourceFidelity": "derived",
+      "learningObjective": "9I-speed",
+      "learningObjectiveTitle": "Speed and distance-time graphs",
+      "learningObjectiveDescription": "Speed calculations, mean speed and interpreting distance-time graphs.",
+      "noteId": "9I-speed",
+      "mediaPolicy": "required-for-question",
+      "media": [
+        {
+          "src": "assets/webp/9I-distance-time-journey-question-v149.webp",
+          "alt": "Distance-time graph titled journey to the park and back.",
+          "caption": "Use graph shape to identify motion.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base"
+        }
+      ]
+    },
+    {
+      "id": "y9img-007-9j-current-voltage-greater-resistance",
+      "unit": "9J",
+      "type": "Quick quiz",
+      "question": "Use the current-voltage graph. Which line shows the greater resistance?",
+      "answer": "B",
+      "choices": [
+        "A Line A, because it has a larger current at the same potential difference",
+        "B Line B, because it has a smaller current at the same potential difference",
+        "C Line A, because it is steeper",
+        "D They have the same resistance because both lines are straight"
+      ],
+      "explanation": "For the same potential difference, the component with the lower current has the greater resistance. Line B has lower current than line A.",
+      "source": "Diagram and calculation asset integration v1.49.0",
+      "level": 3,
+      "cue": "Use resistance = voltage ÷ current and compare the lines at the same voltage.",
+      "tags": [
+        "diagram-calculation-v1.49",
+        "current-voltage-graph",
+        "resistance"
+      ],
+      "sourceFidelity": "derived",
+      "learningObjective": "9J-resistance",
+      "learningObjectiveTitle": "Resistance and Ohm’s law",
+      "learningObjectiveDescription": "Resistance, current-voltage graphs, high-resistance materials and calculations.",
+      "noteId": "9J-resistance",
+      "mediaPolicy": "required-for-question",
+      "media": [
+        {
+          "src": "assets/webp/9J-current-voltage-graph-question-v149.webp",
+          "alt": "Current against potential difference graph with lines A and B.",
+          "caption": "Compare current at the same potential difference.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base"
+        }
+      ]
     }
   ],
   "notes": [
@@ -16292,18 +18094,6 @@ window.YEAR9_CONTENT = {
     "v1.1.0 adds one-card-per-assess-yourself coverage plus missing PowerPoint progress checks and expanded calculation practice."
   ],
   "learningObjectives": [
-    {
-      "id": "9A-variation",
-      "unit": "9A",
-      "title": "Variation and classification",
-      "description": "Types of variation, inherited and environmental causes, and classification challenges."
-    },
-    {
-      "id": "9A-inheritance",
-      "unit": "9A",
-      "title": "Inheritance, DNA and genes",
-      "description": "Cells, nuclei, chromosomes, DNA, genes and preserving genetic information."
-    },
     {
       "id": "9A-biodiversity",
       "unit": "9A",
@@ -16317,136 +18107,16 @@ window.YEAR9_CONTENT = {
       "description": "Adaptations, evidence from fossils, natural selection and evolution over time."
     },
     {
-      "id": "9B-photosynthesis",
-      "unit": "9B",
-      "title": "Photosynthesis and respiration",
-      "description": "Reactants, products, chlorophyll, limiting factors and photosynthesis rate."
+      "id": "9A-inheritance",
+      "unit": "9A",
+      "title": "Inheritance, DNA and genes",
+      "description": "Cells, nuclei, chromosomes, DNA, genes and preserving genetic information."
     },
     {
-      "id": "9B-plant-transport",
-      "unit": "9B",
-      "title": "Plant transport and specialised cells",
-      "description": "Root hair cells, stomata, guard cells, xylem, phloem and plant structure."
-    },
-    {
-      "id": "9B-plant-products",
-      "unit": "9B",
-      "title": "Plant products, seeds and food production",
-      "description": "Glucose, starch, cellulose, oils, minerals, crop yield and farming methods."
-    },
-    {
-      "id": "9B-food-webs",
-      "unit": "9B",
-      "title": "Food webs, biodiversity and ecosystems",
-      "description": "Food webs, pesticides, biodiversity, sampling and effects of farming."
-    },
-    {
-      "id": "9E-ceramics",
-      "unit": "9E",
-      "title": "Ceramics, crystals and materials properties",
-      "description": "Ceramics, glass, clay, crystal formation, melting point and brittleness."
-    },
-    {
-      "id": "9E-polymers",
-      "unit": "9E",
-      "title": "Polymers and polymerisation",
-      "description": "Natural and synthetic polymers, polymerisation, vulcanisation and biodegradability."
-    },
-    {
-      "id": "9E-composites",
-      "unit": "9E",
-      "title": "Composites and material choice",
-      "description": "Composite materials, concrete, reinforced concrete and glass-reinforced plastic."
-    },
-    {
-      "id": "9E-environment",
-      "unit": "9E",
-      "title": "Environmental impacts and recycling",
-      "description": "Landfill, recycling, fossil fuels, acid rain, greenhouse effect and reducing impacts."
-    },
-    {
-      "id": "9F-changes",
-      "unit": "9F",
-      "title": "Physical and chemical changes",
-      "description": "Physical changes, chemical reactions, particles, molecules, formulae and gas pressure."
-    },
-    {
-      "id": "9F-reactivity",
-      "unit": "9F",
-      "title": "Reactivity and displacement",
-      "description": "Reactivity series, displacement reactions and metal reactions with acids."
-    },
-    {
-      "id": "9F-extraction",
-      "unit": "9F",
-      "title": "Metal extraction and reduction",
-      "description": "Mining, ores, reduction, blast furnaces, electrolysis and extraction method choice."
-    },
-    {
-      "id": "9F-rusting",
-      "unit": "9F",
-      "title": "Rusting and corrosion protection",
-      "description": "Rusting, coatings, sacrificial protection and preventing corrosion."
-    },
-    {
-      "id": "9I-forces",
-      "unit": "9I",
-      "title": "Forces, drag and terminal velocity",
-      "description": "Balanced forces, air/water resistance, top speed and terminal velocity."
-    },
-    {
-      "id": "9I-energy-work",
-      "unit": "9I",
-      "title": "Energy, work and simple machines",
-      "description": "Work done, machines, ramps, friction and energy transfer."
-    },
-    {
-      "id": "9I-speed",
-      "unit": "9I",
-      "title": "Speed and distance-time graphs",
-      "description": "Speed calculations, mean speed and interpreting distance-time graphs."
-    },
-    {
-      "id": "9I-moments",
-      "unit": "9I",
-      "title": "Levers, pivots and moments",
-      "description": "Levers, pivots/fulcrums, moment calculations and mechanical advantage."
-    },
-    {
-      "id": "9J-fields",
-      "unit": "9J",
-      "title": "Force fields, gravity and magnetism",
-      "description": "Magnetic, gravitational and electric fields, weight and gravitational potential energy."
-    },
-    {
-      "id": "9J-static",
-      "unit": "9J",
-      "title": "Static electricity and charge",
-      "description": "Charge transfer, attraction, repulsion, dangers and uses of static electricity."
-    },
-    {
-      "id": "9J-circuits",
-      "unit": "9J",
-      "title": "Current, voltage and circuits",
-      "description": "Current, voltage/potential difference, series and parallel circuits, meters and components."
-    },
-    {
-      "id": "9J-resistance",
-      "unit": "9J",
-      "title": "Resistance and Ohm’s law",
-      "description": "Resistance, current-voltage graphs, high-resistance materials and calculations."
-    },
-    {
-      "id": "9J-rounding-numbers",
-      "unit": "9J",
-      "title": "Rounding numbers and significant figures",
-      "description": "Decimal places, significant figures and clean numerical answers in 9J calculations."
-    },
-    {
-      "id": "9J-electromagnets",
-      "unit": "9J",
-      "title": "Electromagnets, relays and motors",
-      "description": "Electromagnets, relays, motor effect and factors affecting magnetic force."
+      "id": "9A-variation",
+      "unit": "9A",
+      "title": "Variation and classification",
+      "description": "Types of variation, inherited and environmental causes, and classification challenges."
     },
     {
       "id": "9B-farming-yield-impact",
@@ -16455,10 +18125,70 @@ window.YEAR9_CONTENT = {
       "description": "Revision-pack wording for sustainable development, hedgerows, pesticides, fertilisers, crop varieties and farming trade-offs."
     },
     {
+      "id": "9B-food-webs",
+      "unit": "9B",
+      "title": "Food webs, biodiversity and ecosystems",
+      "description": "Food webs, pesticides, biodiversity, sampling and effects of farming."
+    },
+    {
+      "id": "9B-photosynthesis",
+      "unit": "9B",
+      "title": "Photosynthesis and respiration",
+      "description": "Reactants, products, chlorophyll, limiting factors and photosynthesis rate."
+    },
+    {
+      "id": "9B-plant-products",
+      "unit": "9B",
+      "title": "Plant products, seeds and food production",
+      "description": "Glucose, starch, cellulose, oils, minerals, crop yield and farming methods."
+    },
+    {
+      "id": "9B-plant-transport",
+      "unit": "9B",
+      "title": "Plant transport and specialised cells",
+      "description": "Root hair cells, stomata, guard cells, xylem, phloem and plant structure."
+    },
+    {
+      "id": "9E-ceramics",
+      "unit": "9E",
+      "title": "Ceramics, crystals and materials properties",
+      "description": "Ceramics, glass, clay, crystal formation, melting point and brittleness."
+    },
+    {
+      "id": "9E-climate-bridge",
+      "unit": "9E",
+      "title": "Climate and greenhouse gases",
+      "description": "Greenhouse gases, climate impacts, environmental evidence and reducing emissions."
+    },
+    {
+      "id": "9E-composites",
+      "unit": "9E",
+      "title": "Composites and material choice",
+      "description": "Composite materials, concrete, reinforced concrete and glass-reinforced plastic."
+    },
+    {
       "id": "9E-energy-thermal-peer-review",
       "unit": "9E",
       "title": "Energy changes, thermal decomposition and peer review",
       "description": "Endothermic and exothermic reactions, state symbols, thermal decomposition and peer-review decisions."
+    },
+    {
+      "id": "9E-environment",
+      "unit": "9E",
+      "title": "Environmental impacts and recycling",
+      "description": "Landfill, recycling, fossil fuels, acid rain, greenhouse effect and reducing impacts."
+    },
+    {
+      "id": "9E-heating-cooling",
+      "unit": "9E",
+      "title": "Heating and cooling",
+      "description": "Heating, cooling, changes of state, particle movement, gas pressure, diffusion and Brownian motion."
+    },
+    {
+      "id": "9E-polymers",
+      "unit": "9E",
+      "title": "Polymers and polymerisation",
+      "description": "Natural and synthetic polymers, polymerisation, vulcanisation and biodegradability."
     },
     {
       "id": "9E-recycling-methods",
@@ -16473,16 +18203,118 @@ window.YEAR9_CONTENT = {
       "description": "Atoms, protons, neutrons, electrons, atomic number, mass number, groups and periods."
     },
     {
+      "id": "9F-changes",
+      "unit": "9F",
+      "title": "Physical and chemical changes",
+      "description": "Physical changes, chemical reactions, particles, molecules, formulae and gas pressure."
+    },
+    {
+      "id": "9F-chemical-energy-bridge",
+      "unit": "9F",
+      "title": "Chemical energy bridge",
+      "description": "Exothermic and endothermic changes, combustion, rates, catalysts and reaction energy."
+    },
+    {
       "id": "9F-combustion-energy-rates",
       "unit": "9F",
       "title": "Combustion, energy, rates and redox",
       "description": "Hydrocarbons, combustion, oxygen test, rate changes, neutralisation, thermite and oxidation/reduction."
     },
     {
+      "id": "9F-extraction",
+      "unit": "9F",
+      "title": "Metal extraction and reduction",
+      "description": "Mining, ores, reduction, blast furnaces, electrolysis and extraction method choice."
+    },
+    {
+      "id": "9F-periodic-table-bridge",
+      "unit": "9F",
+      "title": "Periodic table bridge",
+      "description": "Atoms, elements, compounds, formulae, groups, periods and periodic-table patterns."
+    },
+    {
+      "id": "9F-reactivity",
+      "unit": "9F",
+      "title": "Reactivity and displacement",
+      "description": "Reactivity series, displacement reactions and metal reactions with acids."
+    },
+    {
+      "id": "9F-rusting",
+      "unit": "9F",
+      "title": "Rusting and corrosion protection",
+      "description": "Rusting, coatings, sacrificial protection and preventing corrosion."
+    },
+    {
+      "id": "9I-energy-work",
+      "unit": "9I",
+      "title": "Energy, work and simple machines",
+      "description": "Work done, machines, ramps, friction and energy transfer."
+    },
+    {
+      "id": "9I-forces",
+      "unit": "9I",
+      "title": "Forces, drag and terminal velocity",
+      "description": "Balanced forces, air/water resistance, top speed and terminal velocity."
+    },
+    {
+      "id": "9I-moments",
+      "unit": "9I",
+      "title": "Levers, pivots and moments",
+      "description": "Levers, pivots/fulcrums, moment calculations and mechanical advantage."
+    },
+    {
+      "id": "9I-pressure",
+      "unit": "9I",
+      "title": "Pressure, density and floating",
+      "description": "Pressure calculations, contact area, liquid pressure, upthrust, floating and density calculations."
+    },
+    {
+      "id": "9I-speed",
+      "unit": "9I",
+      "title": "Speed and distance-time graphs",
+      "description": "Speed calculations, mean speed and interpreting distance-time graphs."
+    },
+    {
       "id": "9I-speed-time-graphs",
       "unit": "9I",
       "title": "Speed-time graphs and motion calculations",
       "description": "Speed-time graph interpretation, horizontal and sloping lines, relative speed and unit conversion."
+    },
+    {
+      "id": "9J-circuits",
+      "unit": "9J",
+      "title": "Current, voltage and circuits",
+      "description": "Current, voltage/potential difference, series and parallel circuits, meters and components."
+    },
+    {
+      "id": "9J-electromagnets",
+      "unit": "9J",
+      "title": "Electromagnets, relays and motors",
+      "description": "Electromagnets, relays, motor effect and factors affecting magnetic force."
+    },
+    {
+      "id": "9J-fields",
+      "unit": "9J",
+      "title": "Force fields, gravity and magnetism",
+      "description": "Magnetic, gravitational and electric fields, weight and gravitational potential energy."
+    },
+    {
+      "id": "9J-resistance",
+      "unit": "9J",
+      "title": "Resistance and Ohm’s law",
+      "description": "Resistance, current-voltage graphs, high-resistance materials and calculations."
+    },
+    {
+      "id": "9J-rounding-numbers",
+      "unit": "9J",
+      "title": "Rounding numbers and significant figures",
+      "description": "Decimal places, significant figures and clean numerical answers in 9J calculations."
+    },
+    {
+      "id": "9J-static",
+      "unit": "9J",
+      "title": "Static electricity and charge",
+      "description": "Charge transfer, attraction, repulsion, dangers and uses of static electricity."
     },
     {
       "id": "9J-wire-resistance-investigation",
