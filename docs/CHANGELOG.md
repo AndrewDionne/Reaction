@@ -1,3 +1,19 @@
+## v1.51.0 - Written exam builder enhancement
+
+- Randomised written exam generation within the 15/30/45 mark blueprints while preserving a 1/3 Biology, 1/3 Chemistry and 1/3 Physics balance.
+- Hid answer formats behind a learner-controlled hint button beside the written answer box.
+- Moved mark schemes out of the question-taking card and into a post-submit Mark Test screen.
+- Added 1-5 difficulty bubbles to written exam questions.
+- Added browser print/save-as-PDF support for blank test papers and answer-key/self-mark copies.
+
+
+## v1.50.0 - Unit overview pages
+
+- Added unit overview pages for 9A, 9B, 9E, 9F, 9I and 9J.
+- Added a Unit overview button to each unit card.
+- Added unit-level revision-pack must-know summaries, sub-unit route maps, formula/equation lists, written-answer moves and visual coverage notes.
+- Added a prioritized infographic backlog for closing remaining diagram, graph and calculation coverage gaps.
+
 # Changelog — consolidated
 
 ## v1.48.0 — Full QA pass for image batches 1 and 2

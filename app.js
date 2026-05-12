@@ -6,6 +6,7 @@
   const learningObjectives = Array.isArray(content.learningObjectives) ? content.learningObjectives : [];
   const notesBundle = window.YEAR9_NOTES || { notes: [] };
   const classNotes = Array.isArray(notesBundle.notes) ? notesBundle.notes : [];
+  const unitOverviews = Array.isArray(notesBundle.unitOverviews) ? notesBundle.unitOverviews : [];
   const STORAGE_KEY = "reaction-y9-progress-v2";
   const LEGACY_STORAGE_KEY = "year9-science-study-progress-v1";
 
@@ -389,24 +390,6 @@
     45: { label: "Full written practice", marksPerDomain: 15 },
   };
 
-  const WRITTEN_EXAM_BLUEPRINTS = {
-    15: {
-      biology: ["we-bio-state-photosynthesis-equation", "we-bio-identify-root-hair-adaptation", "we-bio-explain-farming-sustainability"],
-      chemistry: ["we-chem-state-neutralisation", "we-chem-identify-state-symbols", "we-chem-describe-recycling-aluminium"],
-      physics: ["we-phys-state-resultant-force", "we-phys-identify-circuit-meters", "we-phys-calculate-moment"]
-    },
-    30: {
-      biology: ["we-bio-identify-root-hair-adaptation", "we-bio-describe-food-web-pesticide", "we-bio-explain-magnesium", "we-bio-explain-farming-sustainability"],
-      chemistry: ["we-chem-identify-state-symbols", "we-chem-describe-displacement", "we-chem-explain-aluminium-electrolysis", "we-chem-describe-recycling-aluminium"],
-      physics: ["we-phys-identify-circuit-meters", "we-phys-describe-speed-time", "we-phys-calculate-moment", "we-phys-explain-wire-resistance"]
-    },
-    45: {
-      biology: ["we-bio-state-photosynthesis-equation", "we-bio-identify-root-hair-adaptation", "we-bio-describe-food-web-pesticide", "we-bio-explain-magnesium", "we-bio-describe-natural-selection", "we-bio-explain-farming-sustainability"],
-      chemistry: ["we-chem-state-neutralisation", "we-chem-identify-state-symbols", "we-chem-describe-displacement", "we-chem-explain-aluminium-electrolysis", "we-chem-explain-thermite-redox", "we-chem-describe-recycling-aluminium"],
-      physics: ["we-phys-state-resultant-force", "we-phys-identify-circuit-meters", "we-phys-describe-speed-time", "we-phys-explain-terminal-velocity", "we-phys-calculate-moment", "we-phys-explain-wire-resistance"]
-    }
-  };
-
   function domainLabel(domain) {
     if (domain === "biology") return "Biology";
     if (domain === "chemistry") return "Chemistry";
@@ -417,22 +400,97 @@
   function commandHint(commandWord) {
     const hints = {
       state: "State: give the exact fact or term. Do not explain unless asked.",
-      identify: "Identify: name the correct item, feature or method.",
+      identify: "Identify: name the correct item, feature, value, component or graph section.",
       describe: "Describe: say what happens or what the graph/diagram shows. Use values if given.",
-      explain: "Explain: give the science reason using because, so or therefore.",
-      calculate: "Calculate: write the formula, substitute values and include units.",
+      explain: "Explain: make a point, then use because / so / therefore to give the science reason.",
+      calculate: "Calculate: write the formula, substitute values, show the answer and include units.",
+      compare: "Compare: use both items in the sentence and state a clear similarity or difference.",
       graph: "Graph: read or plot the data, then describe the trend using values."
     };
     return hints[commandWord] || "Write a clear science answer.";
   }
 
+  function writtenDifficulty(question) {
+    const explicit = Number(question?.difficulty);
+    if (Number.isFinite(explicit)) return Math.max(1, Math.min(5, Math.round(explicit)));
+    const marks = Number(question?.marks || 1);
+    const commandBase = {
+      state: 1,
+      identify: 2,
+      describe: 3,
+      compare: 3,
+      calculate: 3,
+      graph: 3,
+      explain: 4,
+    };
+    let value = commandBase[question?.commandWord] || Math.max(1, Math.ceil(marks));
+    if (marks >= 4) value = Math.max(value, 4);
+    if (marks >= 4 && question?.commandWord === "explain") value = 5;
+    return Math.max(1, Math.min(5, value));
+  }
+
+  function writtenQuestionMarks(question) {
+    const marks = Number(question?.marks || 0);
+    return Number.isFinite(marks) ? marks : 0;
+  }
+
+  function writtenBlueprintScore(combo) {
+    const commandTypes = new Set(combo.map((question) => question.commandWord).filter(Boolean));
+    const units = new Set(combo.map((question) => question.unit).filter(Boolean));
+    const difficultySpread = new Set(combo.map((question) => writtenDifficulty(question))).size;
+    const hasHigherDemand = combo.some((question) => ["describe", "explain", "calculate", "compare", "graph"].includes(question.commandWord));
+    const hasLowDemand = combo.some((question) => ["state", "identify"].includes(question.commandWord));
+    return commandTypes.size * 3 + units.size + difficultySpread + (hasHigherDemand ? 2 : 0) + (hasLowDemand ? 1 : 0);
+  }
+
+  function writtenCombinationsForTarget(pool, targetMarks) {
+    const combos = [];
+    const sortedPool = [...pool].sort((a, b) => String(a.id).localeCompare(String(b.id)));
+    function walk(start, total, chosen) {
+      if (total === targetMarks) {
+        combos.push([...chosen]);
+        return;
+      }
+      if (total > targetMarks) return;
+      for (let index = start; index < sortedPool.length; index += 1) {
+        const question = sortedPool[index];
+        chosen.push(question);
+        walk(index + 1, total + writtenQuestionMarks(question), chosen);
+        chosen.pop();
+      }
+    }
+    walk(0, 0, []);
+    return combos;
+  }
+
+  function chooseWrittenDomainQuestions(domain, targetMarks) {
+    const pool = WRITTEN_EXAM_BANK.filter((question) => question.domain === domain);
+    const exactCombos = writtenCombinationsForTarget(pool, targetMarks);
+    if (exactCombos.length) {
+      const scored = exactCombos.map((combo) => ({ combo, score: writtenBlueprintScore(combo) }));
+      const bestScore = Math.max(...scored.map((item) => item.score));
+      const strongCombos = scored.filter((item) => item.score >= bestScore - 1).map((item) => item.combo);
+      return shuffle(strongCombos[Math.floor(Math.random() * strongCombos.length)] || exactCombos[0]);
+    }
+
+    const shuffled = shuffle(pool);
+    const chosen = [];
+    let total = 0;
+    shuffled.forEach((question) => {
+      const marks = writtenQuestionMarks(question);
+      if (total + marks <= targetMarks) {
+        chosen.push(question);
+        total += marks;
+      }
+    });
+    return chosen;
+  }
+
   function buildWrittenExam(totalMarks = 30) {
     const requested = [15, 30, 45].includes(Number(totalMarks)) ? Number(totalMarks) : 30;
-    const blueprint = WRITTEN_EXAM_BLUEPRINTS[requested] || WRITTEN_EXAM_BLUEPRINTS[30];
-    const byId = new Map(WRITTEN_EXAM_BANK.map((item) => [item.id, item]));
-    return ["biology", "chemistry", "physics"].flatMap((domain) => {
-      return (blueprint[domain] || []).map((id) => byId.get(id)).filter(Boolean);
-    });
+    const marksPerDomain = WRITTEN_SIZE_OPTIONS[requested]?.marksPerDomain || 10;
+    const sections = ["biology", "chemistry", "physics"].flatMap((domain) => chooseWrittenDomainQuestions(domain, marksPerDomain));
+    return shuffle(sections).map((question, index) => ({ ...question, examOrder: index + 1 }));
   }
 
   function defaultProgress() {
@@ -567,7 +625,7 @@
   function updateSessionChrome({ card = null, unitId = "", title = "Reaction", subtitle = "", eyebrow = "" } = {}) {
     const resolvedUnit = sessionUnitFor(card, unitId);
     const text = modeText[state.mode] || modeText.practice;
-    const modeName = state.noteContext ? "Class Notes" : modeLabel(state.mode);
+    const modeName = state.noteContext?.overviewUnitId ? "Unit overview" : state.noteContext ? "Class Notes" : modeLabel(state.mode);
     if (els.sessionEyebrow) els.sessionEyebrow.textContent = eyebrow || text.eyebrow || "Focused session";
     if (els.sessionTitle) els.sessionTitle.textContent = title || "Reaction";
     if (els.sessionSubtitle) {
@@ -611,6 +669,10 @@
 
   function noteMeta(noteId) {
     return classNotes.find((note) => note.id === noteId) || null;
+  }
+
+  function unitOverviewMeta(unitId) {
+    return unitOverviews.find((overview) => overview.unit === unitId || overview.id === unitId) || null;
   }
 
   function noteForCard(card) {
@@ -993,7 +1055,7 @@
     if (mode === "written") {
       const totalMarks = [15, 30, 45].includes(Number(options.totalMarks)) ? Number(options.totalMarks) : (state.progress.writtenExamMarks || 30);
       state.progress.writtenExamMarks = totalMarks;
-      state.written = { totalMarks, answers: {}, marksAwarded: {}, submitted: {} };
+      state.written = { totalMarks, answers: {}, marksAwarded: {}, formatHints: {}, examSubmitted: false, builtAt: new Date().toISOString() };
       state.deck = buildWrittenExam(totalMarks);
       state.index = 0;
       resetCardInteraction();
@@ -1070,7 +1132,7 @@
     }
     if (els.selectionDetail) {
       els.selectionDetail.textContent = state.selectedMode === "written"
-        ? "Practise state/identify, describe, explain and calculation answers. Use the mark scheme to self-mark after each response."
+        ? "Practise state/identify, describe, explain and calculation answers. Submit the paper before seeing the mark scheme, then use the mark-test screen to self-mark."
         : `Mode: ${modeLabel()}. Select more units or sub-units below, then use the main button to begin.`;
     }
     $$('[data-mode-select]').forEach((button) => {
@@ -1131,6 +1193,7 @@
                 <span>Full unit option · ${unitCards.length} revision cards</span>
               </button>
             </div>
+            ${unitOverviewMeta(unit.id) ? `<div class="unit-overview-row"><button class="unit-overview-button" data-unit-overview="${escapeHtml(unit.id)}" type="button">📚 Unit overview</button></div>` : ""}
             ${objectiveRows}
           </div>
         </article>
@@ -1149,11 +1212,145 @@
         openNoteContext(button.dataset.noteOpen);
       });
     });
+    $$('[data-unit-overview]', els.unitDashboard).forEach((button) => {
+      button.addEventListener('click', (event) => {
+        event.stopPropagation();
+        openUnitOverviewContext(button.dataset.unitOverview);
+      });
+    });
   }
 
 
   function renderNotesDashboard() {
     return;
+  }
+
+  function openUnitOverviewContext(unitId) {
+    state.noteContext = { overviewUnitId: unitId };
+    state.test = null;
+    resetCardInteraction();
+    document.body.classList.add("session-active");
+    els.hubView.classList.add("hidden");
+    els.sessionView.classList.remove("hidden");
+    els.resultPanel.classList.add("hidden");
+    renderSession();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+
+  function renderPlainList(items = []) {
+    if (!Array.isArray(items) || !items.length) return "";
+    return `<ul>${items.map((item) => `<li>${escapeHtml(String(item))}</li>`).join("")}</ul>`;
+  }
+
+  function renderOverviewRoute(items = []) {
+    if (!Array.isArray(items) || !items.length) return "";
+    return `<div class="overview-route-grid">${items.map((item) => `
+      <article class="overview-route-card">
+        <strong>${escapeHtml(item.title || "Sub-unit")}</strong>
+        <p>${escapeHtml(item.focus || "")}</p>
+      </article>
+    `).join("")}</div>`;
+  }
+
+  function renderOverviewStatus(items = []) {
+    if (!Array.isArray(items) || !items.length) return "";
+    return `<div class="overview-status-grid">${items.map((item) => `
+      <article class="overview-status-card status-${escapeHtml(item.status || "partial")}">
+        <span class="overview-status-pill">${escapeHtml(item.status || "check")}</span>
+        <strong>${escapeHtml(item.title || "Visual coverage")}</strong>
+        <p>${escapeHtml(item.detail || "")}</p>
+      </article>
+    `).join("")}</div>`;
+  }
+
+  function renderInfographicBacklog(items = []) {
+    if (!Array.isArray(items) || !items.length) return "";
+    return `<div class="overview-backlog-list">${items.map((item) => `
+      <article class="overview-backlog-card priority-${escapeHtml(item.priority || "medium")}">
+        <span>${escapeHtml((item.priority || "medium").toUpperCase())}</span>
+        <div>
+          <strong>${escapeHtml(item.title || "Infographic")}</strong>
+          <p>${escapeHtml(item.purpose || "")}</p>
+        </div>
+      </article>
+    `).join("")}</div>`;
+  }
+
+  function renderUnitOverviewContext() {
+    const ctx = state.noteContext;
+    const overview = unitOverviewMeta(ctx?.overviewUnitId);
+    if (!overview) {
+      state.noteContext = null;
+      renderSession();
+      return;
+    }
+    const unitCards = cards.filter((card) => card.unit === overview.unit);
+    const unitObjectives = learningObjectives.filter((objective) => objective.unit === overview.unit);
+    const noteCount = classNotes.filter((note) => note.unit === overview.unit).length;
+    updateSessionChrome({
+      unitId: overview.unit,
+      title: "Reaction",
+      eyebrow: "Unit overview",
+      subtitle: `${unitTitle(overview.unit)} · Revision-pack map`
+    });
+    els.sessionIndex.textContent = String(unitCards.length);
+    els.sessionTotal.textContent = " cards";
+    els.resultPanel.classList.add("hidden");
+    els.studyPanel.innerHTML = `
+      <article class="study-card note-context-card unit-overview-card">
+        <div class="card-topline">
+          <div class="card-title-row">
+            <span class="pill">${escapeHtml(unitTitle(overview.unit))}</span>
+            <span class="pill objective-pill">Unit overview</span>
+            <span class="pill">${unitObjectives.length} sub-units</span>
+            <span class="pill">${noteCount} note pages</span>
+          </div>
+        </div>
+        <section class="note-section note-summary">
+          <h2>${escapeHtml(overview.title || `${unitTitle(overview.unit)} overview`)}</h2>
+          <p>${escapeHtml(overview.summary || "")}</p>
+        </section>
+        <section class="note-section">
+          <h3>Revision-pack must know</h3>
+          ${renderPlainList(overview.revisionPackFocus)}
+        </section>
+        ${Array.isArray(overview.formulae) && overview.formulae.length ? `<section class="note-section formula-note"><h3>Formulae / equations</h3>${renderPlainList(overview.formulae)}</section>` : ""}
+        <section class="note-section">
+          <h3>How the sub-unit pages fit</h3>
+          ${renderOverviewRoute(overview.subUnitRoute)}
+        </section>
+        <section class="note-section">
+          <h3>Diagram, graph and calculation coverage</h3>
+          ${renderOverviewStatus(overview.visualCoverage)}
+        </section>
+        <section class="note-section practice-note">
+          <h3>Infographics to develop next</h3>
+          ${renderInfographicBacklog(overview.infographicBacklog)}
+        </section>
+        <section class="note-section sentence-note">
+          <h3>Written-answer moves</h3>
+          ${renderPlainList(overview.examAnswerMoves)}
+        </section>
+        <div class="card-actions">
+          <button class="primary-button" data-overview-action="practice-unit" type="button">Practise this full unit</button>
+          <button class="secondary-button" data-overview-action="hub" type="button">Back to hub</button>
+        </div>
+      </article>
+    `;
+    $$('[data-overview-action]', els.studyPanel).forEach((button) => {
+      button.addEventListener('click', () => handleUnitOverviewAction(button.dataset.overviewAction, overview));
+    });
+  }
+
+  function handleUnitOverviewAction(action, overview) {
+    if (action === "practice-unit") {
+      state.noteContext = null;
+      state.selectedUnits = new Set([overview.unit]);
+      state.selectedObjectives = new Set();
+      startSession("practice");
+      return;
+    }
+    showHub();
   }
 
   function openNoteContext(noteId, cardId = null) {
@@ -1290,6 +1487,10 @@
   }
 
   function renderSession() {
+    if (state.noteContext?.overviewUnitId) {
+      renderUnitOverviewContext();
+      return;
+    }
     if (state.noteContext) {
       renderNoteContext();
       return;
@@ -1417,12 +1618,34 @@
     return Number.isFinite(Number(value)) ? Number(value) : null;
   }
 
-  function renderWrittenCard() {
-    const question = state.deck[state.index];
-    if (!question) return;
-    const submitted = Boolean(state.written?.submitted?.[question.id]);
+  function persistWrittenAnswer(question) {
+    const answerBox = byId("writtenAnswer");
+    if (answerBox && state.written?.answers) state.written.answers[question.id] = answerBox.value;
+  }
+
+  function renderWrittenDifficultyBubble(question) {
+    const difficulty = writtenDifficulty(question);
+    return `<span class="difficulty-bubble difficulty-${difficulty}" title="Difficulty ${difficulty} out of 5" aria-label="Difficulty ${difficulty} out of 5">${difficulty}</span>`;
+  }
+
+  function renderWrittenAnswerFormat(question) {
+    return `
+      <aside class="written-answer-guide" id="writtenAnswerFormat">
+        <strong>Answer format</strong>
+        <p>${escapeHtml(commandHint(question.commandWord))}</p>
+        <p><strong>Use:</strong> ${escapeHtml(question.answerFrame || "Short sentences with science key words.")}</p>
+        ${(question.answerStructure || []).length ? `<ul>${question.answerStructure.map((step) => `<li>${escapeHtml(step)}</li>`).join("")}</ul>` : ""}
+      </aside>
+    `;
+  }
+
+  function renderWrittenQuestionCard(question) {
     const typed = writtenCurrentAnswer(question);
-    const awarded = writtenCurrentMark(question);
+    const formatOpen = Boolean(state.written?.formatHints?.[question.id]);
+    const isLast = state.index >= state.deck.length - 1;
+    const answeredCount = state.deck.filter((item) => String(state.written?.answers?.[item.id] || "").trim()).length;
+    const totalMarks = state.deck.reduce((sum, item) => sum + writtenQuestionMarks(item), 0);
+
     updateSessionChrome({
       title: "Written Exam Mode",
       eyebrow: modeText.written.eyebrow,
@@ -1434,29 +1657,30 @@
 
     els.studyPanel.innerHTML = `
       <article class="study-card written-card">
+        <div class="written-phase-banner">
+          <strong>Test phase</strong>
+          <span>Mark scheme hidden · ${answeredCount}/${state.deck.length} answered · ${totalMarks} marks total</span>
+        </div>
         <div class="written-question-meta">
           <span class="pill">${escapeHtml(domainLabel(question.domain))}</span>
           <span class="pill">${escapeHtml(unitTitle(question.unit))}</span>
           <span class="pill command-word">${escapeHtml(question.commandWord)}</span>
           <span class="pill">${question.marks} mark${question.marks === 1 ? "" : "s"}</span>
+          ${renderWrittenDifficultyBubble(question)}
         </div>
         <p class="question-text">${escapeHtml(question.question)}</p>
         ${Array.isArray(question.media) && question.media.length ? renderMediaItems(question.media.filter((item) => !item.mediaTiming || item.mediaTiming === "question"), question.question || "Question diagram", "media-grid question-media-grid", { showCaptions: false }) : ""}
-        <aside class="written-answer-guide">
-          <strong>Answer format</strong>
-          <p>${escapeHtml(commandHint(question.commandWord))}</p>
-          <p><strong>Use:</strong> ${escapeHtml(question.answerFrame || "Short sentences with science key words.")}</p>
-          ${(question.answerStructure || []).length ? `<ul>${question.answerStructure.map((step) => `<li>${escapeHtml(step)}</li>`).join("")}</ul>` : ""}
-        </aside>
-        <label for="writtenAnswer" class="written-answer-label">Your written answer</label>
+        <div class="written-answer-heading">
+          <label for="writtenAnswer" class="written-answer-label">Your written answer</label>
+          <button class="tertiary-button written-format-button" data-written-action="toggle-format" type="button" aria-expanded="${formatOpen ? "true" : "false"}" aria-controls="writtenAnswerFormat">Answer format</button>
+        </div>
+        ${formatOpen ? renderWrittenAnswerFormat(question) : ""}
         <textarea id="writtenAnswer" class="open-answer written-answer-box" placeholder="Write your answer here. Use short sentences or bullet points where useful.">${escapeHtml(typed)}</textarea>
 
-        ${submitted ? renderWrittenMarkScheme(question, awarded) : ""}
-
         <div class="card-actions primary-actions">
-          ${!submitted ? `<button class="primary-button" data-written-action="submit" type="button">Show mark scheme</button>` : `<button class="primary-button" data-written-action="next" type="button">Next question</button>`}
+          ${!isLast ? `<button class="primary-button" data-written-action="next" type="button">Next question</button>` : `<button class="primary-button" data-written-action="submit-test" type="button">Submit test and mark</button>`}
           <button class="secondary-button" data-written-action="prev" type="button">Previous</button>
-          ${submitted ? `<button class="secondary-button" data-written-action="finish" type="button">Finish exam</button>` : ""}
+          <button class="secondary-button" data-written-action="print-blank" type="button">Save / print PDF</button>
         </div>
       </article>
     `;
@@ -1469,6 +1693,56 @@
     $$('[data-written-action]', els.studyPanel).forEach((button) => {
       button.addEventListener("click", () => handleWrittenAction(button.dataset.writtenAction, question));
     });
+  }
+
+  function renderWrittenMarkingCard(question) {
+    const typed = writtenCurrentAnswer(question);
+    const awarded = writtenCurrentMark(question);
+    const markedCount = state.deck.filter((item) => Number.isFinite(Number(state.written?.marksAwarded?.[item.id]))).length;
+    const total = state.deck.reduce((sum, item) => sum + writtenQuestionMarks(item), 0);
+    const awardedTotal = state.deck.reduce((sum, item) => sum + Number(state.written?.marksAwarded?.[item.id] || 0), 0);
+    const isLast = state.index >= state.deck.length - 1;
+
+    updateSessionChrome({
+      title: "Mark Test",
+      eyebrow: "Written exam self-marking",
+      subtitle: `${markedCount}/${state.deck.length} questions marked · ${awardedTotal}/${total} marks awarded so far`
+    });
+    els.sessionIndex.textContent = String(state.index + 1);
+    els.sessionTotal.textContent = `/ ${state.deck.length}`;
+    els.resultPanel.classList.add("hidden");
+
+    els.studyPanel.innerHTML = `
+      <article class="study-card written-card written-marking-card">
+        <div class="written-phase-banner marking">
+          <strong>Mark test phase</strong>
+          <span>Compare your answer to the mark scheme, then award 0–${question.marks} marks.</span>
+        </div>
+        <div class="written-question-meta">
+          <span class="pill">${escapeHtml(domainLabel(question.domain))}</span>
+          <span class="pill">${escapeHtml(unitTitle(question.unit))}</span>
+          <span class="pill command-word">${escapeHtml(question.commandWord)}</span>
+          <span class="pill">${question.marks} mark${question.marks === 1 ? "" : "s"}</span>
+          ${renderWrittenDifficultyBubble(question)}
+        </div>
+        <p class="question-text">${escapeHtml(question.question)}</p>
+        ${Array.isArray(question.media) && question.media.length ? renderMediaItems(question.media.filter((item) => !item.mediaTiming || item.mediaTiming === "question"), question.question || "Question diagram", "media-grid question-media-grid", { showCaptions: false }) : ""}
+        <section class="written-user-answer-panel">
+          <strong>Your written answer</strong>
+          <div class="written-user-answer">${escapeHtml(typed || "No answer entered.")}</div>
+        </section>
+        ${renderWrittenMarkScheme(question, awarded)}
+        <div class="card-actions primary-actions">
+          ${!isLast ? `<button class="primary-button" data-written-action="next" type="button">Next mark scheme</button>` : `<button class="primary-button" data-written-action="finish" type="button">Finish and score test</button>`}
+          <button class="secondary-button" data-written-action="prev" type="button">Previous</button>
+          <button class="secondary-button" data-written-action="print-key" type="button">Save PDF + answer key</button>
+        </div>
+      </article>
+    `;
+
+    $$('[data-written-action]', els.studyPanel).forEach((button) => {
+      button.addEventListener("click", () => handleWrittenAction(button.dataset.writtenAction, question));
+    });
 
     $$('[data-written-mark]', els.studyPanel).forEach((button) => {
       button.addEventListener("click", () => {
@@ -1476,6 +1750,13 @@
         renderWrittenCard();
       });
     });
+  }
+
+  function renderWrittenCard() {
+    const question = state.deck[state.index];
+    if (!question) return;
+    if (state.written?.examSubmitted) renderWrittenMarkingCard(question);
+    else renderWrittenQuestionCard(question);
   }
 
   function renderWrittenMarkScheme(question, awarded) {
@@ -1512,21 +1793,44 @@
   }
 
   function handleWrittenAction(action, question) {
-    if (action === "submit") {
-      state.written.answers[question.id] = byId("writtenAnswer")?.value || "";
-      state.written.submitted[question.id] = true;
+    if (!state.written) return;
+    if (action === "toggle-format") {
+      persistWrittenAnswer(question);
+      state.written.formatHints = state.written.formatHints || {};
+      state.written.formatHints[question.id] = !state.written.formatHints[question.id];
+      renderWrittenCard();
+      return;
+    }
+    if (action === "print-blank") {
+      persistWrittenAnswer(question);
+      openWrittenPdfView(false);
+      return;
+    }
+    if (action === "print-key") {
+      openWrittenPdfView(true);
+      return;
+    }
+    if (action === "submit-test") {
+      persistWrittenAnswer(question);
+      const unanswered = state.deck.filter((item) => !String(state.written.answers?.[item.id] || "").trim()).length;
+      if (unanswered && !window.confirm(`${unanswered} question${unanswered === 1 ? " is" : "s are"} unanswered. Submit and mark the test anyway?`)) return;
+      state.written.examSubmitted = true;
+      state.index = 0;
       renderWrittenCard();
       return;
     }
     if (action === "next") {
-      if (state.index >= state.deck.length - 1) finishWrittenExam();
-      else {
+      if (!state.written.examSubmitted) persistWrittenAnswer(question);
+      if (state.index >= state.deck.length - 1) {
+        if (state.written.examSubmitted) finishWrittenExam();
+      } else {
         state.index += 1;
         renderWrittenCard();
       }
       return;
     }
     if (action === "prev") {
+      if (!state.written.examSubmitted) persistWrittenAnswer(question);
       if (state.index > 0) {
         state.index -= 1;
         renderWrittenCard();
@@ -1536,7 +1840,94 @@
     if (action === "finish") finishWrittenExam();
   }
 
+  function writtenPrintableMedia(question) {
+    const media = Array.isArray(question.media) ? question.media.filter((item) => !item.mediaTiming || item.mediaTiming === "question") : [];
+    if (!media.length) return "";
+    return `<div class="print-media">${media.map((item) => `<img src="${escapeHtml(item.src || "")}" alt="${escapeHtml(item.alt || "Question diagram")}">`).join("")}</div>`;
+  }
+
+  function openWrittenPdfView(includeAnswers = false) {
+    if (!state.deck.length) return;
+    const total = state.deck.reduce((sum, question) => sum + writtenQuestionMarks(question), 0);
+    const title = `Reaction Year 9 written exam - ${total} marks`;
+    const baseHref = document.baseURI || window.location.href;
+    const date = new Date().toLocaleDateString();
+    const questionHtml = state.deck.map((question, index) => {
+      const answer = state.written?.answers?.[question.id] || "";
+      const awarded = writtenCurrentMark(question);
+      return `
+        <section class="print-question">
+          <div class="print-meta">
+            <span>Q${index + 1}</span>
+            <span>${escapeHtml(domainLabel(question.domain))}</span>
+            <span>${escapeHtml(unitTitle(question.unit))}</span>
+            <span>${escapeHtml(question.commandWord)}</span>
+            <span>${question.marks} mark${question.marks === 1 ? "" : "s"}</span>
+            <span>Difficulty ${writtenDifficulty(question)}/5</span>
+          </div>
+          <h2>${escapeHtml(question.question)}</h2>
+          ${writtenPrintableMedia(question)}
+          ${includeAnswers ? `
+            <div class="print-answer-block">
+              <strong>Student answer</strong>
+              <p>${escapeHtml(answer || "No answer entered.")}</p>
+              <strong>Model answer</strong>
+              <p>${escapeHtml(question.modelAnswer)}</p>
+              <strong>Credit checklist</strong>
+              <ul>${(question.markScheme || []).map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul>
+              <p><strong>Self-mark:</strong> ${Number.isFinite(Number(awarded)) ? `${awarded}/${question.marks}` : `__/ ${question.marks}`}</p>
+            </div>` : `
+            <div class="print-lines" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>`}
+        </section>
+      `;
+    }).join("");
+    const printWindow = window.open("", "_blank");
+    if (!printWindow) {
+      alert("The browser blocked the PDF/print window. Allow pop-ups for this site, then try again.");
+      return;
+    }
+    printWindow.document.write(`<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base href="${escapeHtml(baseHref)}">
+  <title>${escapeHtml(title)}</title>
+  <style>
+    body { font-family: Arial, Helvetica, sans-serif; margin: 28px; color: #111827; }
+    header { border-bottom: 2px solid #111827; margin-bottom: 18px; padding-bottom: 12px; }
+    h1 { margin: 0 0 6px; font-size: 24px; }
+    h2 { font-size: 17px; line-height: 1.35; margin: 12px 0; }
+    .print-subtitle { color: #475569; font-size: 13px; }
+    .print-question { break-inside: avoid; page-break-inside: avoid; border-bottom: 1px solid #cbd5e1; padding: 16px 0 20px; }
+    .print-meta { display: flex; flex-wrap: wrap; gap: 6px; }
+    .print-meta span { border: 1px solid #cbd5e1; border-radius: 999px; padding: 3px 8px; font-size: 11px; font-weight: 700; }
+    .print-media { margin: 10px 0; }
+    .print-media img { max-width: 100%; max-height: 360px; border: 1px solid #cbd5e1; border-radius: 10px; }
+    .print-lines span { display: block; height: 28px; border-bottom: 1px solid #94a3b8; }
+    .print-answer-block { background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 10px; padding: 10px 12px; }
+    .print-answer-block p { white-space: pre-wrap; }
+    @page { margin: 16mm; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>${escapeHtml(title)}</h1>
+    <div class="print-subtitle">${includeAnswers ? "Answer key and self-mark copy" : "Question paper"} · ${escapeHtml(date)} · Save as PDF from the print dialog.</div>
+  </header>
+  ${questionHtml}
+  <script>window.addEventListener('load', function () { setTimeout(function () { window.print(); }, 250); });<\/script>
+</body>
+</html>`);
+    printWindow.document.close();
+  }
+
   function finishWrittenExam() {
+    if (!state.written?.examSubmitted) {
+      state.written.examSubmitted = true;
+      state.index = 0;
+      renderWrittenCard();
+      return;
+    }
     const total = state.deck.reduce((sum, question) => sum + Number(question.marks || 0), 0);
     const awarded = state.deck.reduce((sum, question) => sum + Number(state.written?.marksAwarded?.[question.id] || 0), 0);
     const byDomain = ["biology", "chemistry", "physics"].map((domain) => {
@@ -1555,6 +1946,7 @@
       awarded,
       total,
       percent,
+      questionIds: state.deck.map((question) => question.id),
     };
     state.progress.writtenExamHistory = [...(state.progress.writtenExamHistory || []), record].slice(-20);
     saveProgress();
@@ -1570,11 +1962,15 @@
       <p>Next step: redo the lowest-scoring science section and focus on the command words that lost marks.</p>
       <div class="card-actions">
         <button class="primary-button" data-result-action="written-again" type="button">Build another written exam</button>
+        <button class="secondary-button" data-result-action="print-key" type="button">Save PDF + answer key</button>
+        <button class="secondary-button" data-result-action="print-blank" type="button">Save blank test PDF</button>
         <button class="secondary-button" data-result-action="hub" type="button">Back to revision hub</button>
       </div>
     `;
     $('[data-result-action="hub"]', els.resultPanel)?.addEventListener("click", showHub);
     $('[data-result-action="written-again"]', els.resultPanel)?.addEventListener("click", () => startSession("written", { totalMarks: state.progress.writtenExamMarks || 30 }));
+    $('[data-result-action="print-key"]', els.resultPanel)?.addEventListener("click", () => openWrittenPdfView(true));
+    $('[data-result-action="print-blank"]', els.resultPanel)?.addEventListener("click", () => openWrittenPdfView(false));
   }
 
   function renderCard() {
