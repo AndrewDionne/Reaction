@@ -1,3 +1,11 @@
+
+## v1.69.6 - Question QC identifiers
+
+- Added short `qid` values to all 675 question cards using `UNIT-TYPE-NUMBER` format, such as `9A-MCQ-01` and `9A-WE-01`.
+- Displayed question identifiers in normal card sessions, written exam sessions and the content review/export page.
+- Added `docs/QUESTION_IDENTIFIER_MAP_v1_69_6.csv` for reviewer lookup.
+- Added `tools/validate_question_ids.py` to check uniqueness, format and numbering continuity.
+
 # Changelog
 
 ## v1.69.1 — Student-facing unit overview rewrite

@@ -1,0 +1,676 @@
+qid,legacy_id,unit,qid_type,card_type,level,question,source
+9A-MCQ-01,y9-001-9a-variation-is,9A,MCQ,Quick quiz,1,Variation is:,9A quick quiz 9Aa Q1
+9A-MCQ-02,y9-002-9a-of-the-following-which-is-the-best-example-of-an-environmental-variati,9A,MCQ,Quick quiz,1,"Of the following, which is the best example of an environmental variation?",9A quick quiz 9Aa Q2
+9A-MCQ-03,y9-003-9a-environmental-variation-is-caused,9A,MCQ,Quick quiz,1,Environmental variation is caused:,9A quick quiz 9Aa Q3
+9A-MCQ-04,y9-004-9a-what-sort-of-variation-is-shown-when-measurements-can-take-any-value-o,9A,MCQ,Quick quiz,2,What sort of variation is shown when measurements can take any value over a range?,9A quick quiz 9Aa Q4 - text reconstruction of chart question
+9A-MCQ-05,y9-005-9a-of-the-following-which-is-the-best-example-of-an-inherited-variation,9A,MCQ,Quick quiz,1,"Of the following, which is the best example of an inherited variation?",9A quick quiz 9Ab Q1
+9A-MCQ-06,y9-006-9a-inherited-characteristics-in-humans-are-caused-by,9A,MCQ,Quick quiz,1,Inherited characteristics in humans are caused by:,9A quick quiz 9Ab Q2
+9A-MCQ-07,y9-007-9a-genetic-information-can-be-found-in-a-sperm-cell-in-the,9A,MCQ,Quick quiz,1,Genetic information can be found in a sperm cell in the:,9A quick quiz 9Ab Q3
+9A-MCQ-08,y9-008-9a-the-overall-bell-shape-on-a-continuous-variation-chart-is-called,9A,MCQ,Quick quiz,2,The overall bell shape on a continuous variation chart is called:,9A quick quiz 9Ab Q4
+9A-MCQ-09,y9-009-9a-each-chromosome-contains-one-molecule-of-a-certain-substance-what-is-t,9A,MCQ,Quick quiz,1,Each chromosome contains one molecule of a certain substance. What is this substance?,9A quick quiz 9Ac Q1
+9A-MCQ-10,y9-010-9a-the-total-number-of-chromosomes-in-a-human-liver-cell-is-46-so-the-num,9A,MCQ,Quick quiz,2,The total number of chromosomes in a human liver cell is 46. So the number of chromosomes in a human egg cell is:,9A quick quiz 9Ac Q2
+9A-MCQ-11,y9-011-9a-a-gene-is,9A,MCQ,Quick quiz,1,A gene is:,9A quick quiz 9Ac Q3
+9A-MCQ-12,y9-012-9a-the-structure-of-the-long-molecule-found-in-chromosomes-was-worked-out,9A,MCQ,Quick quiz,1,The structure of the long molecule found in chromosomes was worked out by:,9A quick quiz 9Ac Q4
+9A-MCQ-13,y9-013-9a-which-of-these-is-least-likely-to-cause-the-endangerment-of-a-species,9A,MCQ,Quick quiz,2,Which of these is least likely to cause the endangerment of a species?,9A quick quiz 9Ad Q1
+9A-MCQ-14,y9-014-9a-which-of-these-is-least-likely-to-be-used-for-conservation,9A,MCQ,Quick quiz,2,Which of these is least likely to be used for conservation?,9A quick quiz 9Ad Q2
+9A-MCQ-15,y9-015-9a-which-feature-of-an-animal-suggests-that-it-is-prey-for-larger-animals,9A,MCQ,Quick quiz,2,"Using the feature options, which feature suggests that an animal is prey for larger animals?",9A quick quiz 9Ad Q3 - source-style visual support added
+9A-MCQ-16,y9-016-9a-which-of-these-would-you-expect-to-find-in-a-gene-bank,9A,MCQ,Quick quiz,2,Which of these would you expect to find in a gene bank?,9A quick quiz 9Ad Q4
+9A-MCQ-17,y9-017-9a-adult-birds-of-the-same-species-have-slightly-different-beak-lengths-w,9A,MCQ,Quick quiz,2,"Adult birds of the same species have slightly different beak lengths. With plenty of food and no disease, the cause of the difference is most likely to be:",9A quick quiz 9Ae Q1
+9A-MCQ-18,y9-018-9a-if-there-is-plenty-of-food-what-will-happen-to-the-number-of-longer-be,9A,MCQ,Quick quiz,3,"If there is plenty of food, what will happen to the number of longer-beaked birds compared with shorter-beaked birds?",9A quick quiz 9Ae Q2
+9A-MCQ-19,y9-019-9a-evolution-is,9A,MCQ,Quick quiz,1,Evolution is:,9A quick quiz 9Ae Q3
+9A-MCQ-20,y9-020-9a-the-theory-of-evolution-that-most-scientists-believe-today-was-put-for,9A,MCQ,Quick quiz,1,The theory of evolution that most scientists believe today was put forward by:,9A quick quiz 9Ae Q4
+9B-MCQ-01,y9-021-9b-where-does-photosynthesis-occur-in-a-plant,9B,MCQ,Quick quiz,1,"Using the labelled plant diagram, where does photosynthesis occur?",9B quick quiz 9Ba Q1 - source-style diagram redraw
+9B-MCQ-02,y9-022-9b-in-the-summary-of-aerobic-respiration-glucose-oxygen-carbon-dioxide-x-,9B,MCQ,Quick quiz,1,"In the summary of aerobic respiration, glucose + oxygen -> carbon dioxide + X, what is X?",9B quick quiz 9Ba Q2
+9B-MCQ-03,y9-023-9b-what-does-a-photosynthesis-rate-graph-usually-show-as-light-intensity-,9B,MCQ,Quick quiz,2,What does a photosynthesis-rate graph usually show as light intensity increases?,9B quick quiz 9Ba Q3 - text reconstruction of graph question
+9B-MCQ-04,y9-024-9b-which-sentence-best-describes-what-chlorophyll-does,9B,MCQ,Quick quiz,1,Which sentence best describes what chlorophyll does?,9B quick quiz 9Ba Q4
+9B-MCQ-05,y9-025-9b-leaves-are-often-wide-so-that-they,9B,MCQ,Quick quiz,1,Leaves are often wide so that they:,9B quick quiz 9Bb Q1
+9B-MCQ-06,y9-026-9b-roots-are-adapted-to-their-function-by,9B,MCQ,Quick quiz,1,Roots are adapted to their function by:,9B quick quiz 9Bb Q2
+9B-MCQ-07,y9-027-9b-if-plants-do-not-get-enough-water-they-start-to,9B,MCQ,Quick quiz,1,If plants do not get enough water they start to:,9B quick quiz 9Bb Q3
+9B-MCQ-08,y9-028-9b-the-specialised-cell-with-a-long-projection-for-absorbing-water-from-s,9B,MCQ,Quick quiz,1,The specialised cell with a long projection for absorbing water from soil is a:,9B quick quiz 9Bb Q4 - text reconstruction of drawing question
+9B-MCQ-09,y9-029-9b-the-substance-used-to-test-for-starch-is,9B,MCQ,Quick quiz,1,The substance used to test for starch is:,9B quick quiz 9Bc Q1
+9B-MCQ-10,y9-030-9b-in-which-part-of-a-plant-would-you-expect-to-find-the-most-starch,9B,MCQ,Quick quiz,2,In which part of a plant would you expect to find the most starch?,9B quick quiz 9Bc Q2
+9B-MCQ-11,y9-031-9b-glucose-is-used-to-make-a-polymer-found-in-cell-walls-this-polymer-is-,9B,MCQ,Quick quiz,1,Glucose is used to make a polymer found in cell walls. This polymer is called:,9B quick quiz 9Bc Q3
+9B-MCQ-12,y9-032-9b-plants-use-nitrate-mineral-salts-to-make,9B,MCQ,Quick quiz,1,Plants use nitrate mineral salts to make:,9B quick quiz 9Bc Q4
+9B-MCQ-13,y9-033-9b-plants-are-cross-bred-in-order-to,9B,MCQ,Quick quiz,2,Plants are cross-bred in order to:,9B quick quiz 9Bd Q1
+9B-MCQ-14,y9-034-9b-selective-breeding-is,9B,MCQ,Quick quiz,2,Selective breeding is:,9B quick quiz 9Bd Q2
+9B-MCQ-15,y9-035-9b-plants-cannot-survive-long-without-soil-nutrients-containing,9B,MCQ,Quick quiz,1,Plants cannot survive long without soil nutrients containing:,9B quick quiz 9Bd Q3
+9B-MCQ-16,y9-036-9b-herbicides-are,9B,MCQ,Quick quiz,1,Herbicides are:,9B quick quiz 9Bd Q4
+9B-MCQ-17,y9-037-9b-if-insecticide-is-sprayed-in-a-food-web-with-insects-eaten-by-wrens-wh,9B,MCQ,Quick quiz,3,"If insecticide is sprayed in a food web with insects eaten by wrens, what is a likely effect?",9B quick quiz 9Be Q1 - text reconstruction of food-web question
+9B-MCQ-18,y9-038-9b-an-increase-in-which-organism-could-control-aphids,9B,MCQ,Quick quiz,2,An increase in which organism could control aphids?,9B quick quiz 9Be Q2
+9B-MCQ-19,y9-039-9b-the-carbon-cycle,9B,MCQ,Quick quiz,1,The carbon cycle:,9B quick quiz 9Be Q3
+9B-MCQ-20,y9-040-9b-plants-are-important-in-keeping-the-amount-of-carbon-in-balance-becaus,9B,MCQ,Quick quiz,2,Plants are important in keeping the amount of carbon in balance because:,9B quick quiz 9Be Q4
+9E-MCQ-01,y9-041-9e-which-of-the-following-is-a-ceramic-material,9E,MCQ,Quick quiz,1,Which of the following is a ceramic material?,9E quick quiz 9Ea Q1
+9E-MCQ-02,y9-042-9e-pottery-and-china-are-suitable-for-making-tea-pots-because-they-are,9E,MCQ,Quick quiz,1,Pottery and china are suitable for making tea pots because they are:,9E quick quiz 9Ea Q2
+9E-MCQ-03,y9-043-9e-which-statement-about-the-formation-of-solid-crystals-is-correct,9E,MCQ,Quick quiz,2,Which statement about the formation of solid crystals is correct?,9E quick quiz 9Ea Q3
+9E-MCQ-04,y9-044-9e-a-substance-with-a-high-melting-point-but-brittle-structure-is-best-re,9E,MCQ,Quick quiz,3,Which particle diagram best represents a substance with a high melting point but brittle structure?,9E quick quiz 9Ea Q4 - source-style diagram redraw
+9E-MCQ-05,y9-045-9e-which-of-the-following-is-a-synthetic-polymer,9E,MCQ,Quick quiz,1,Which of the following is a synthetic polymer?,9E quick quiz 9Eb Q1
+9E-MCQ-06,y9-046-9e-a-polymer-is-formed-when,9E,MCQ,Quick quiz,1,A polymer is formed when:,9E quick quiz 9Eb Q2
+9E-MCQ-07,y9-047-9e-some-polymerisation-reactions-are-endothermic-what-does-this-mean,9E,MCQ,Quick quiz,2,Some polymerisation reactions are endothermic. What does this mean?,9E quick quiz 9Eb Q3
+9E-MCQ-08,y9-048-9e-vulcanisation-adds-cross-links-in-rubber-how-does-this-change-natural-,9E,MCQ,Quick quiz,2,Vulcanisation adds cross-links in rubber. How does this change natural rubber?,9E quick quiz 9Eb Q4 - source-style cross-link diagram added
+9E-MCQ-09,y9-049-9e-which-of-the-following-is-a-composite-material,9E,MCQ,Quick quiz,1,Which of the following is a composite material?,9E quick quiz 9Ec Q1
+9E-MCQ-10,y9-050-9e-why-is-concrete-described-as-a-composite-material,9E,MCQ,Quick quiz,1,Why is concrete described as a composite material?,9E quick quiz 9Ec Q2
+9E-MCQ-11,y9-051-9e-glass-reinforced-plastic-is-used-for-building-boats-because-it-is,9E,MCQ,Quick quiz,2,Glass reinforced plastic is used for building boats because it is:,9E quick quiz 9Ec Q3
+9E-MCQ-12,y9-052-9e-what-happens-during-the-decomposition-of-calcium-carbonate-to-make-cal,9E,MCQ,Quick quiz,2,What happens during the decomposition of calcium carbonate to make calcium oxide?,9E quick quiz 9Ec Q4
+9E-MCQ-13,y9-053-9e-which-substance-is-thought-to-be-one-of-the-main-greenhouse-gases,9E,MCQ,Quick quiz,1,Which substance is thought to be one of the main greenhouse gases?,9E quick quiz 9Ed Q1
+9E-MCQ-14,y9-054-9e-what-is-a-non-biodegradable-polymer,9E,MCQ,Quick quiz,1,What is a non-biodegradable polymer?,9E quick quiz 9Ed Q2
+9E-MCQ-15,y9-055-9e-why-can-low-toxin-levels-released-into-the-sea-cause-serious-problems-,9E,MCQ,Quick quiz,3,Why can low toxin levels released into the sea cause serious problems to humans?,9E quick quiz 9Ed Q3
+9E-MCQ-16,y9-056-9e-which-would-help-reduce-the-possibility-of-global-warming,9E,MCQ,Quick quiz,2,Which would help reduce the possibility of global warming?,9E quick quiz 9Ed Q4
+9E-MCQ-17,y9-057-9e-how-are-landfill-sites-used-to-deal-with-waste-materials,9E,MCQ,Quick quiz,1,How are landfill sites used to deal with waste materials?,9E quick quiz 9Ee Q1
+9E-MCQ-18,y9-058-9e-recycling-a-metal-helps-us-use-that-metal-further-into-the-future-beca,9E,MCQ,Quick quiz,2,Recycling a metal helps us use that metal further into the future because:,9E quick quiz 9Ee Q2
+9E-MCQ-19,y9-059-9e-which-material-is-recycled-by-crushing-and-grading-to-make-aggregate-f,9E,MCQ,Quick quiz,1,Which material is recycled by crushing and grading to make aggregate for foundations?,9E quick quiz 9Ee Q3
+9E-MCQ-20,y9-060-9e-the-most-important-reason-for-recycling-glass-is-that-it-saves-large-a,9E,MCQ,Quick quiz,2,The most important reason for recycling glass is that it saves large amounts of:,9E quick quiz 9Ee Q4
+9F-MCQ-01,y9-061-9f-which-of-these-describes-a-physical-change,9F,MCQ,Quick quiz,1,Which of these describes a physical change?,9F quick quiz 9Fa Q1
+9F-MCQ-02,y9-062-9f-gas-pressure-is-caused-by-gas-particles,9F,MCQ,Quick quiz,1,Gas pressure is caused by gas particles:,9F quick quiz 9Fa Q2
+9F-MCQ-03,y9-063-9f-the-pressure-of-a-gas-increases-as-temperature-increases-because,9F,MCQ,Quick quiz,1,The pressure of a gas increases as temperature increases because:,9F quick quiz 9Fa Q3
+9F-MCQ-04,y9-064-9f-in-h2-what-tells-you-that-a-hydrogen-molecule-contains-2-atoms,9F,MCQ,Quick quiz,1,"In H2, what tells you that a hydrogen molecule contains 2 atoms?",9F quick quiz 9Fa Q4
+9F-MCQ-05,y9-065-9f-which-salt-is-formed-when-magnesium-reacts-with-dilute-nitric-acid,9F,MCQ,Quick quiz,1,Which salt is formed when magnesium reacts with dilute nitric acid?,9F quick quiz 9Fb Q1
+9F-MCQ-06,y9-066-9f-magnesium-reacts-slowly-with-cold-water-calcium-more-quickly-potassium,9F,MCQ,Quick quiz,1,"Magnesium reacts slowly with cold water, calcium more quickly, potassium catches fire. The order of reactivity, most reactive first, is:",9F quick quiz 9Fb Q2
+9F-MCQ-07,y9-067-9f-the-two-subatomic-particles-found-in-the-nucleus-are,9F,MCQ,Quick quiz,1,The two subatomic particles found in the nucleus are:,9F quick quiz 9Fb Q3
+9F-MCQ-08,y9-068-9f-in-the-periodic-table-elements-are-listed-in-order-of,9F,MCQ,Quick quiz,1,"In the periodic table, elements are listed in order of:",9F quick quiz 9Fb Q4
+9F-MCQ-09,y9-069-9f-the-test-for-oxygen-is-that-it,9F,MCQ,Quick quiz,1,The test for oxygen is that it:,9F quick quiz 9Fc Q1
+9F-MCQ-10,y9-070-9f-which-products-form-when-a-hydrocarbon-burns-in-plenty-of-air,9F,MCQ,Quick quiz,1,Which products form when a hydrocarbon burns in plenty of air?,9F quick quiz 9Fc Q2
+9F-MCQ-11,y9-071-9f-which-reaction-needs-an-input-of-energy-to-start-it,9F,MCQ,Quick quiz,2,Which reaction needs an input of energy to start it?,9F quick quiz 9Fc Q3
+9F-MCQ-12,y9-072-9f-an-exothermic-reaction-is-one-in-which,9F,MCQ,Quick quiz,1,An exothermic reaction is one in which:,9F quick quiz 9Fc Q4
+9F-MCQ-13,y9-073-9f-which-of-these-is-a-displacement-reaction,9F,MCQ,Quick quiz,2,Which of these is a displacement reaction?,9F quick quiz 9Fd Q1
+9F-MCQ-14,y9-074-9f-what-is-seen-when-magnesium-reacts-fully-with-copper-sulfate-solution,9F,MCQ,Quick quiz,3,What is seen when magnesium reacts fully with copper sulfate solution?,9F quick quiz 9Fd Q2
+9F-MCQ-15,y9-075-9f-given-z-displaces-x-y-displaces-x-and-y-displaces-z-what-is-the-reacti,9F,MCQ,Quick quiz,3,"Given Z displaces X, Y displaces X, and Y displaces Z, what is the reactivity order, most reactive first?",9F quick quiz 9Fd Q3
+9F-MCQ-16,y9-076-9f-aluminium-reacts-with-iron-oxide-to-form-aluminium-oxide-and-iron-whic,9F,MCQ,Quick quiz,2,Aluminium reacts with iron oxide to form aluminium oxide and iron. Which is correct?,9F quick quiz 9Fd Q4
+9F-MCQ-17,y9-077-9f-metals-are-usually-extracted-from,9F,MCQ,Quick quiz,1,Metals are usually extracted from:,9F quick quiz 9Fe Q1
+9F-MCQ-18,y9-078-9f-which-metal-was-first-extracted-most-recently-in-history,9F,MCQ,Quick quiz,2,Which metal was first extracted most recently in history?,9F quick quiz 9Fe Q2
+9F-MCQ-19,y9-079-9f-what-is-reduced-in-zinc-oxide-carbon-zinc-carbon-dioxide,9F,MCQ,Quick quiz,2,What is reduced in: zinc oxide + carbon -> zinc + carbon dioxide?,9F quick quiz 9Fe Q3
+9F-MCQ-20,y9-080-9f-which-metal-can-only-be-extracted-using-electrolysis,9F,MCQ,Quick quiz,2,Which metal can only be extracted using electrolysis?,9F quick quiz 9Fe Q4
+9I-MCQ-01,y9-081-9i-for-a-falling-object-which-labels-best-match-the-forces-weight-downwar,9I,MCQ,Quick quiz,1,"For a falling object, which labels best match the forces: weight downward and air resistance upward?",9I quick quiz 9Ia Q1 - source-style diagram redraw
+9I-MCQ-02,y9-082-9i-balanced-forces,9I,MCQ,Quick quiz,1,Balanced forces:,9I quick quiz 9Ia Q2
+9I-MCQ-03,y9-083-9i-a-boat-has-a-forwards-force-of-500-n-and-water-resistance-of-400-n-whi,9I,MCQ,Quick quiz,2,A boat has a forwards force of 500 N and water resistance of 400 N. Which statement is true?,9I quick quiz 9Ia Q3
+9I-MCQ-04,y9-084-9i-all-vehicles-have-a-top-speed-this-is-when,9I,MCQ,Quick quiz,2,All vehicles have a top speed. This is when:,9I quick quiz 9Ia Q4
+9I-MCQ-05,y9-085-9i-which-of-these-is-not-a-way-in-which-energy-is-stored,9I,MCQ,Quick quiz,1,Which of these is not a way in which energy is stored?,9I quick quiz 9Ib Q1
+9I-MCQ-06,y9-086-9i-which-of-these-is-a-way-in-which-energy-can-be-transferred,9I,MCQ,Quick quiz,1,Which of these is a way in which energy can be transferred?,9I quick quiz 9Ib Q2
+9I-MCQ-07,y9-087-9i-in-which-ways-is-energy-most-often-transferred-as-wasted-energy,9I,MCQ,Quick quiz,1,In which ways is energy most often transferred as wasted energy?,9I quick quiz 9Ib Q3
+9I-MCQ-08,y9-088-9i-which-machine-is-more-efficient-in-a-sankey-diagram,9I,MCQ,Quick quiz,3,Which machine is more efficient in a Sankey diagram?,9I quick quiz 9Ib Q4 - diagram reconstructed
+9I-MCQ-09,y9-089-9i-the-speed-of-a-car-is-a-measure-of-how,9I,MCQ,Quick quiz,1,The speed of a car is a measure of how:,9I quick quiz 9Ic Q1
+9I-MCQ-10,y9-090-9i-a-bus-travelled-20-km-in-2-hours-its-speed-was,9I,MCQ,Quick quiz,2,A bus travelled 20 km in 2 hours. Its speed was:,9I quick quiz 9Ic Q2
+9I-MCQ-11,y9-091-9i-the-mean-speed-of-something-is,9I,MCQ,Quick quiz,1,The mean speed of something is:,9I quick quiz 9Ic Q3
+9I-MCQ-12,y9-092-9i-on-a-distance-time-graph-which-section-shows-where-a-car-has-stopped,9I,MCQ,Quick quiz,2,"On the distance–time graph, which labelled section shows where the car has stopped?",9I quick quiz 9Ic Q4 - source-style graph redraw
+9I-WE-01,y9-093-9i-for-a-lever-the-pivot-is-also-called-the,9I,WE,Quick quiz,1,"In the labelled lever diagram, what is label Y also called?",9I quick quiz 9Id Q1 - source-style diagram redraw
+9I-MCQ-13,y9-094-9i-which-lever-makes-it-easiest-to-move-a-heavy-rock,9I,MCQ,Quick quiz,3,Which lever arrangement would make it easiest to move the heavy rock?,9I quick quiz 9Id Q2 - source-style diagram redraw
+9I-MCQ-14,y9-095-9i-you-open-a-paint-can-with-a-screwdriver-you-apply-10-n-at-0-2-m-from-t,9I,MCQ,Quick quiz,2,You open a paint can with a screwdriver. You apply 10 N at 0.2 m from the pivot. What is the moment?,9I quick quiz 9Id Q3
+9I-MCQ-15,y9-096-9i-a-seesaw-is-balanced-boy-300-n-m-girl-450-n-2-m-what-is-the-distance-f,9I,MCQ,Quick quiz,3,A seesaw is balanced. Boy: 300 N × ? m. Girl: 450 N × 2 m. What is the distance from pivot to boy?,9I quick quiz 9Id Q4
+9I-MCQ-16,y9-097-9i-which-of-these-is-not-a-simple-machine,9I,MCQ,Quick quiz,1,Which of these is not a simple machine?,9I quick quiz 9Ie Q1
+9I-MCQ-17,y9-098-9i-which-statement-is-true,9I,MCQ,Quick quiz,2,Which statement is true?,9I quick quiz 9Ie Q2
+9I-MCQ-18,y9-099-9i-a-pulley-lets-you-lift-100-n-using-50-n-how-is-energy-conserved,9I,MCQ,Quick quiz,3,A pulley lets you lift 100 N using 50 N. How is energy conserved?,9I quick quiz 9Ie Q3
+9I-MCQ-19,y9-100-9i-a-girl-pushes-a-wheelbarrow-2-m-with-a-force-of-30-n-how-much-work-did,9I,MCQ,Quick quiz,2,A girl pushes a wheelbarrow 2 m with a force of 30 N. How much work did she do?,9I quick quiz 9Ie Q4
+9J-MCQ-01,y9-101-9j-the-direction-of-a-magnetic-field-is-from,9J,MCQ,Quick quiz,1,The direction of a magnetic field is from:,9J quick quiz 9Ja Q1
+9J-MCQ-02,y9-102-9j-an-object-s-weight,9J,MCQ,Quick quiz,1,An object’s weight:,9J quick quiz 9Ja Q2
+9J-MCQ-03,y9-103-9j-gravity-is-less-on-the-moon-than-on-earth-because,9J,MCQ,Quick quiz,2,Gravitational field strength is less on the Moon than on Earth because:,9J quick quiz 9Ja Q3
+9J-MCQ-04,y9-104-9j-which-object-has-the-greatest-store-of-gravitational-potential-energy,9J,MCQ,Quick quiz,2,Which object has the greatest store of gravitational potential energy?,9J quick quiz 9Ja Q4
+9J-MCQ-05,y9-105-9j-which-statement-about-atoms-is-not-true,9J,MCQ,Quick quiz,1,Which statement about atoms is not true?,9J quick quiz 9Jb Q1
+9J-MCQ-06,y9-106-9j-an-object-has-a-negative-charge-which-statement-is-correct,9J,MCQ,Quick quiz,1,An object has a negative charge. Which statement is correct?,9J quick quiz 9Jb Q2
+9J-MCQ-07,y9-107-9j-why-can-we-not-detect-static-charge-if-we-rub-a-metal-rod,9J,MCQ,Quick quiz,2,Why can we not detect static charge if we rub a metal rod?,9J quick quiz 9Jb Q3
+9J-MCQ-08,y9-108-9j-an-electric-field-is-the-space-around-a-charged-object-where-it,9J,MCQ,Quick quiz,1,An electric field is the space around a charged object where it:,9J quick quiz 9Jb Q4
+9J-MCQ-09,y9-109-9j-which-is-the-best-description-of-electric-current,9J,MCQ,Quick quiz,1,Which is the best description of electric current?,9J quick quiz 9Jc Q1
+9J-MCQ-10,y9-110-9j-voltage-is,9J,MCQ,Quick quiz,1,"Voltage, also called potential difference, is:",9J quick quiz 9Jc Q2
+9J-MCQ-11,y9-111-9j-which-statement-is-not-true-for-a-series-circuit,9J,MCQ,Quick quiz,2,Which statement is not true for a series circuit?,9J quick quiz 9Jc Q3
+9J-MCQ-12,y9-112-9j-which-statement-is-true-for-a-parallel-circuit,9J,MCQ,Quick quiz,2,Which statement is true for a parallel circuit?,9J quick quiz 9Jc Q4
+9J-MCQ-13,y9-113-9j-which-statement-is-correct,9J,MCQ,Quick quiz,1,Which statement is correct?,9J quick quiz 9Jd Q1
+9J-MCQ-14,y9-114-9j-which-copper-wire-has-the-highest-resistance,9J,MCQ,Quick quiz,2,Which copper wire has the highest resistance?,9J quick quiz 9Jd Q2
+9J-MCQ-15,y9-115-9j-the-units-for-measuring-resistance-are,9J,MCQ,Quick quiz,1,The units for measuring resistance are:,9J quick quiz 9Jd Q3
+9J-MCQ-16,y9-116-9j-what-is-the-formula-for-calculating-resistance,9J,MCQ,Quick quiz,2,What is the formula for calculating resistance?,9J quick quiz 9Jd Q4
+9J-MCQ-17,y9-117-9j-which-change-will-make-an-electromagnet-stronger,9J,MCQ,Quick quiz,1,Which change will make an electromagnet stronger?,9J quick quiz 9Je Q1
+9J-MCQ-18,y9-118-9j-why-are-relays-useful,9J,MCQ,Quick quiz,2,Why are relays useful?,9J quick quiz 9Je Q2
+9J-MCQ-19,y9-119-9j-a-wire-carrying-a-current-in-a-magnetic-field-experiences-a-force-how-,9J,MCQ,Quick quiz,2,A wire carrying a current in a magnetic field experiences a force. How can the force be made stronger?,9J quick quiz 9Je Q3
+9J-MCQ-20,y9-120-9j-which-list-shows-the-parts-of-an-electric-motor,9J,MCQ,Quick quiz,2,Which list shows the parts of an electric motor?,9J quick quiz 9Je Q4
+9A-VOC-01,y9-121-9a-define-species,9A,VOC,Vocabulary,1,Explain: species,9A word sheet / summary sheet
+9A-VOC-02,y9-122-9a-define-genus,9A,VOC,Vocabulary,1,Explain: genus,9A word sheet / summary sheet
+9A-VOC-03,y9-123-9a-define-variation,9A,VOC,Vocabulary,1,Explain: variation,9A word sheet / summary sheet
+9A-VOC-04,y9-124-9a-define-characteristic,9A,VOC,Vocabulary,1,Explain: characteristic,9A word sheet / summary sheet
+9A-VOC-05,y9-125-9a-define-classification,9A,VOC,Vocabulary,1,Explain: classification,9A word sheet / summary sheet
+9A-VOC-06,y9-126-9a-define-environmental-variation,9A,VOC,Vocabulary,1,Explain: environmental variation,9A word sheet / summary sheet
+9A-VOC-07,y9-127-9a-define-inherited-variation,9A,VOC,Vocabulary,1,Explain: inherited variation,9A word sheet / summary sheet
+9A-VOC-08,y9-128-9a-define-continuous-variation,9A,VOC,Vocabulary,1,Explain: continuous variation,9A word sheet / summary sheet
+9A-VOC-09,y9-129-9a-define-discontinuous-variation,9A,VOC,Vocabulary,1,Explain: discontinuous variation,9A word sheet / summary sheet
+9A-VOC-10,y9-130-9a-define-gamete,9A,VOC,Vocabulary,1,Explain: gamete,9A word sheet / summary sheet
+9A-VOC-11,y9-131-9a-define-fertilisation,9A,VOC,Vocabulary,1,Explain: fertilisation,9A word sheet / summary sheet
+9A-VOC-12,y9-132-9a-define-zygote,9A,VOC,Vocabulary,1,Explain: zygote,9A word sheet / summary sheet
+9A-VOC-13,y9-133-9a-define-gene,9A,VOC,Vocabulary,1,Explain: gene,9A word sheet / summary sheet
+9A-VOC-14,y9-134-9a-define-chromosome,9A,VOC,Vocabulary,1,Explain: chromosome,9A word sheet / summary sheet
+9A-VOC-15,y9-135-9a-define-dna,9A,VOC,Vocabulary,1,Explain: DNA,9A word sheet / summary sheet
+9A-VOC-16,y9-136-9a-define-normal-distribution,9A,VOC,Vocabulary,1,Explain: normal distribution,9A word sheet / summary sheet
+9A-VOC-17,y9-137-9a-define-adaptation,9A,VOC,Vocabulary,1,Explain: adaptation,9A word sheet / summary sheet
+9A-VOC-18,y9-138-9a-define-biodiversity,9A,VOC,Vocabulary,1,Explain: biodiversity,9A word sheet / summary sheet
+9A-VOC-19,y9-139-9a-define-conservation,9A,VOC,Vocabulary,1,Explain: conservation,9A word sheet / summary sheet
+9A-VOC-20,y9-140-9a-define-natural-selection,9A,VOC,Vocabulary,1,Explain: natural selection,9A word sheet / summary sheet
+9A-VOC-21,y9-141-9a-define-evolution,9A,VOC,Vocabulary,1,Explain: evolution,9A word sheet / summary sheet
+9B-VOC-01,y9-142-9b-define-photosynthesis,9B,VOC,Vocabulary,2,Explain: photosynthesis,9B word sheet / summary sheet
+9B-VOC-02,y9-143-9b-define-chlorophyll,9B,VOC,Vocabulary,1,Explain: chlorophyll,9B word sheet / summary sheet
+9B-VOC-03,y9-144-9b-define-limiting-factor,9B,VOC,Vocabulary,1,Explain: limiting factor,9B word sheet / summary sheet
+9B-VOC-04,y9-145-9b-define-aerobic-respiration,9B,VOC,Vocabulary,1,Explain: aerobic respiration,9B word sheet / summary sheet
+9B-VOC-05,y9-146-9b-define-phloem,9B,VOC,Vocabulary,1,Explain: phloem,9B word sheet / summary sheet
+9B-VOC-06,y9-147-9b-define-xylem,9B,VOC,Vocabulary,1,Explain: xylem,9B word sheet / summary sheet
+9B-VOC-07,y9-148-9b-define-root-hair-cell,9B,VOC,Vocabulary,1,Explain: root hair cell,9B word sheet / summary sheet
+9B-VOC-08,y9-149-9b-define-stomata,9B,VOC,Vocabulary,1,Explain: stomata,9B word sheet / summary sheet
+9B-VOC-09,y9-150-9b-define-guard-cells,9B,VOC,Vocabulary,1,Explain: guard cells,9B word sheet / summary sheet
+9B-VOC-10,y9-151-9b-define-starch,9B,VOC,Vocabulary,1,Explain: starch,9B word sheet / summary sheet
+9B-VOC-11,y9-152-9b-define-iodine-test,9B,VOC,Vocabulary,1,Explain: iodine test,9B word sheet / summary sheet
+9B-VOC-12,y9-153-9b-define-cellulose,9B,VOC,Vocabulary,1,Explain: cellulose,9B word sheet / summary sheet
+9B-VOC-13,y9-154-9b-define-nitrate,9B,VOC,Vocabulary,1,Explain: nitrate,9B word sheet / summary sheet
+9B-VOC-14,y9-155-9b-define-selective-breeding,9B,VOC,Vocabulary,1,Explain: selective breeding,9B word sheet / summary sheet
+9B-VOC-15,y9-156-9b-define-herbicide,9B,VOC,Vocabulary,1,Explain: herbicide,9B word sheet / summary sheet
+9B-VOC-16,y9-157-9b-define-insecticide,9B,VOC,Vocabulary,1,Explain: insecticide,9B word sheet / summary sheet
+9B-VOC-17,y9-158-9b-define-biological-control,9B,VOC,Vocabulary,1,Explain: biological control,9B word sheet / summary sheet
+9B-VOC-18,y9-159-9b-define-carbon-cycle,9B,VOC,Vocabulary,1,Explain: carbon cycle,9B word sheet / summary sheet
+9E-VOC-01,y9-160-9e-define-ceramic,9E,VOC,Vocabulary,1,Explain: ceramic,9E word sheet / summary sheet
+9E-VOC-02,y9-161-9e-define-brittle,9E,VOC,Vocabulary,1,Explain: brittle,9E word sheet / summary sheet
+9E-VOC-03,y9-162-9e-define-bond,9E,VOC,Vocabulary,1,Explain: bond,9E word sheet / summary sheet
+9E-VOC-04,y9-163-9e-define-lattice,9E,VOC,Vocabulary,1,Explain: lattice,9E word sheet / summary sheet
+9E-VOC-05,y9-164-9e-define-polymer,9E,VOC,Vocabulary,1,Explain: polymer,9E word sheet / summary sheet
+9E-VOC-06,y9-165-9e-define-monomer,9E,VOC,Vocabulary,1,Explain: monomer,9E word sheet / summary sheet
+9E-VOC-07,y9-166-9e-define-synthetic-polymer,9E,VOC,Vocabulary,1,Explain: synthetic polymer,9E word sheet / summary sheet
+9E-VOC-08,y9-167-9e-define-vulcanisation,9E,VOC,Vocabulary,1,Explain: vulcanisation,9E word sheet / summary sheet
+9E-VOC-09,y9-168-9e-define-composite,9E,VOC,Vocabulary,1,Explain: composite,9E word sheet / summary sheet
+9E-VOC-10,y9-169-9e-define-concrete,9E,VOC,Vocabulary,1,Explain: concrete,9E word sheet / summary sheet
+9E-VOC-11,y9-170-9e-define-glass-reinforced-plastic,9E,VOC,Vocabulary,1,Explain: glass reinforced plastic,9E word sheet / summary sheet
+9E-VOC-12,y9-171-9e-define-thermal-decomposition,9E,VOC,Vocabulary,1,Explain: thermal decomposition,9E word sheet / summary sheet
+9E-VOC-13,y9-172-9e-define-greenhouse-gas,9E,VOC,Vocabulary,1,Explain: greenhouse gas,9E word sheet / summary sheet
+9E-VOC-14,y9-173-9e-define-biomagnification,9E,VOC,Vocabulary,1,Explain: biomagnification,9E word sheet / summary sheet
+9E-VOC-15,y9-174-9e-define-biodegradable,9E,VOC,Vocabulary,1,Explain: biodegradable,9E word sheet / summary sheet
+9E-VOC-16,y9-175-9e-define-non-biodegradable,9E,VOC,Vocabulary,1,Explain: non-biodegradable,9E word sheet / summary sheet
+9E-VOC-17,y9-176-9e-define-landfill,9E,VOC,Vocabulary,1,Explain: landfill,9E word sheet / summary sheet
+9E-VOC-18,y9-177-9e-define-recycling,9E,VOC,Vocabulary,1,Explain: recycling,9E word sheet / summary sheet
+9F-VOC-01,y9-178-9f-define-physical-change,9F,VOC,Vocabulary,1,Explain: physical change,9F word sheet / summary sheet
+9F-VOC-02,y9-179-9f-define-chemical-reaction,9F,VOC,Vocabulary,1,Explain: chemical reaction,9F word sheet / summary sheet
+9F-VOC-03,y9-180-9f-define-gas-pressure,9F,VOC,Vocabulary,1,Explain: gas pressure,9F word sheet / summary sheet
+9F-VOC-04,y9-181-9f-define-reactivity,9F,VOC,Vocabulary,1,Explain: reactivity,9F word sheet / summary sheet
+9F-VOC-05,y9-182-9f-define-periodic-table,9F,VOC,Vocabulary,1,Explain: periodic table,9F word sheet / summary sheet
+9F-VOC-06,y9-183-9f-define-proton,9F,VOC,Vocabulary,1,Explain: proton,9F word sheet / summary sheet
+9F-VOC-07,y9-184-9f-define-neutron,9F,VOC,Vocabulary,1,Explain: neutron,9F word sheet / summary sheet
+9F-VOC-08,y9-185-9f-define-electron,9F,VOC,Vocabulary,1,Explain: electron,9F word sheet / summary sheet
+9F-VOC-09,y9-186-9f-define-salt,9F,VOC,Vocabulary,1,Explain: salt,9F word sheet / summary sheet
+9F-VOC-10,y9-187-9f-define-combustion,9F,VOC,Vocabulary,1,Explain: combustion,9F word sheet / summary sheet
+9F-VOC-11,y9-188-9f-define-hydrocarbon,9F,VOC,Vocabulary,1,Explain: hydrocarbon,9F word sheet / summary sheet
+9F-VOC-12,y9-189-9f-define-exothermic-reaction,9F,VOC,Vocabulary,1,Explain: exothermic reaction,9F word sheet / summary sheet
+9F-VOC-13,y9-190-9f-define-endothermic-reaction,9F,VOC,Vocabulary,1,Explain: endothermic reaction,9F word sheet / summary sheet
+9F-VOC-14,y9-191-9f-define-displacement-reaction,9F,VOC,Vocabulary,1,Explain: displacement reaction,9F word sheet / summary sheet
+9F-VOC-15,y9-192-9f-define-oxidation,9F,VOC,Vocabulary,1,Explain: oxidation,9F word sheet / summary sheet
+9F-VOC-16,y9-193-9f-define-reduction,9F,VOC,Vocabulary,1,Explain: reduction,9F word sheet / summary sheet
+9F-VOC-17,y9-194-9f-define-ore,9F,VOC,Vocabulary,1,Explain: ore,9F word sheet / summary sheet
+9F-VOC-18,y9-195-9f-define-electrolysis,9F,VOC,Vocabulary,1,Explain: electrolysis,9F word sheet / summary sheet
+9I-VOC-01,y9-196-9i-define-balanced-forces,9I,VOC,Vocabulary,1,Explain: balanced forces,9I word sheet / summary sheet
+9I-VOC-02,y9-197-9i-define-resultant-force,9I,VOC,Vocabulary,1,Explain: resultant force,9I word sheet / summary sheet
+9I-VOC-03,y9-198-9i-define-air-resistance,9I,VOC,Vocabulary,1,Explain: air resistance,9I word sheet / summary sheet
+9I-VOC-04,y9-199-9i-define-terminal-velocity,9I,VOC,Vocabulary,1,Explain: terminal velocity,9I word sheet / summary sheet
+9I-VOC-05,y9-200-9i-define-energy-store,9I,VOC,Vocabulary,1,Explain: energy store,9I word sheet / summary sheet
+9I-VOC-06,y9-201-9i-define-energy-transfer,9I,VOC,Vocabulary,1,Explain: energy transfer,9I word sheet / summary sheet
+9I-VOC-07,y9-202-9i-define-efficiency,9I,VOC,Vocabulary,1,Explain: efficiency,9I word sheet / summary sheet
+9I-VOC-08,y9-203-9i-define-speed,9I,VOC,Vocabulary,1,Explain: speed,9I word sheet / summary sheet
+9I-VOC-09,y9-204-9i-define-mean-speed,9I,VOC,Vocabulary,1,Explain: mean speed,9I word sheet / summary sheet
+9I-VOC-10,y9-205-9i-define-distance-time-graph,9I,VOC,Vocabulary,1,Explain: distance-time graph,9I word sheet / summary sheet
+9I-VOC-11,y9-206-9i-define-lever,9I,VOC,Vocabulary,1,Explain: lever,9I word sheet / summary sheet
+9I-VOC-12,y9-207-9i-define-pivot,9I,VOC,Vocabulary,1,Explain: pivot,9I word sheet / summary sheet
+9I-VOC-13,y9-208-9i-define-moment,9I,VOC,Vocabulary,1,Explain: moment,9I word sheet / summary sheet
+9I-VOC-14,y9-209-9i-define-simple-machine,9I,VOC,Vocabulary,2,Explain: simple machine,9I word sheet / summary sheet
+9I-VOC-15,y9-210-9i-define-work-done,9I,VOC,Vocabulary,1,Explain: work done,9I word sheet / summary sheet
+9J-VOC-01,y9-211-9j-define-force-field,9J,VOC,Vocabulary,1,Explain: force field,9J word sheet / summary sheet
+9J-VOC-02,y9-212-9j-define-magnetic-field,9J,VOC,Vocabulary,1,Explain: magnetic field,9J word sheet / summary sheet
+9J-VOC-03,y9-213-9j-define-gravitational-field,9J,VOC,Vocabulary,1,Explain: gravitational field,9J word sheet / summary sheet
+9J-VOC-04,y9-214-9j-define-gravitational-field-strength,9J,VOC,Vocabulary,1,Explain: gravitational field strength,9J word sheet / summary sheet
+9J-VOC-05,y9-215-9j-define-weight,9J,VOC,Vocabulary,1,Explain: weight,9J word sheet / summary sheet
+9J-VOC-06,y9-216-9j-define-mass,9J,VOC,Vocabulary,1,Explain: mass,9J word sheet / summary sheet
+9J-VOC-07,y9-217-9j-define-gravitational-potential-energy,9J,VOC,Vocabulary,1,Explain: gravitational potential energy,9J word sheet / summary sheet
+9J-VOC-08,y9-218-9j-define-electric-field,9J,VOC,Vocabulary,1,Explain: electric field,9J word sheet / summary sheet
+9J-VOC-09,y9-219-9j-define-static-electricity,9J,VOC,Vocabulary,1,Explain: static electricity,9J word sheet / summary sheet
+9J-VOC-10,y9-220-9j-define-electric-current,9J,VOC,Vocabulary,1,Explain: electric current,9J word sheet / summary sheet
+9J-VOC-11,y9-221-9j-define-series-circuit,9J,VOC,Vocabulary,1,Explain: series circuit,9J word sheet / summary sheet
+9J-VOC-12,y9-222-9j-define-parallel-circuit,9J,VOC,Vocabulary,1,Explain: parallel circuit,9J word sheet / summary sheet
+9J-VOC-13,y9-223-9j-define-voltage,9J,VOC,Vocabulary,1,Explain: voltage / potential difference,9J word sheet / summary sheet
+9J-VOC-14,y9-224-9j-define-resistance,9J,VOC,Vocabulary,1,Explain: resistance,9J word sheet / summary sheet
+9J-VOC-15,y9-225-9j-define-ohm,9J,VOC,Vocabulary,1,Explain: ohm,9J word sheet / summary sheet
+9J-VOC-16,y9-226-9j-define-electromagnet,9J,VOC,Vocabulary,1,Explain: electromagnet,9J word sheet / summary sheet
+9J-VOC-17,y9-227-9j-define-relay,9J,VOC,Vocabulary,2,Explain: relay,9J word sheet / summary sheet
+9J-VOC-18,y9-228-9j-define-motor-effect,9J,VOC,Vocabulary,1,Explain: motor effect,9J word sheet / summary sheet
+9A-WE-01,y9-229-9a-describe-what-environmental-variation-is,9A,WE,Progress check,2,Describe what environmental variation is.,9A revision worksheet
+9A-WE-02,y9-230-9a-give-three-examples-of-environmental-variation-in-plants,9A,WE,Progress check,2,Give three examples of environmental variation in plants.,9A revision worksheet
+9A-WE-03,y9-231-9a-give-three-examples-of-environmental-variation-in-humans,9A,WE,Progress check,2,Give three examples of environmental variation in humans.,9A revision worksheet
+9A-WE-04,y9-232-9a-define-classification,9A,WE,Assess check,2,Why do scientists classify organisms using similarities and differences?,9A revision worksheet
+9A-WE-05,y9-233-9a-define-species,9A,WE,Apply check,3,"Two animals can mate, but their offspring are not fertile. Why would scientists not count them as the same species?",9A revision worksheet
+9A-WE-06,y9-234-9a-explain-how-environmental-variation-can-cause-problems-with-classifica,9A,WE,Progress check,3,Explain how environmental variation can cause problems with classification.,9A revision worksheet
+9A-WE-07,y9-235-9a-describe-what-happens-during-fertilisation-and-what-is-formed,9A,WE,Progress check,2,Describe what happens during fertilisation and what is formed.,9A revision worksheet
+9A-WE-08,y9-236-9a-describe-how-chromosomes-dna-and-genes-are-linked-together,9A,WE,Progress check,3,"Describe how chromosomes, DNA and genes are linked together.",9A revision worksheet
+9A-WE-09,y9-237-9a-state-three-ways-we-can-preserve-biodiversity,9A,WE,Progress check,2,State three ways we can preserve biodiversity.,9A revision worksheet
+9A-WE-10,y9-238-9a-describe-natural-selection,9A,WE,Progress check,4,Describe natural selection.,9A revision worksheet
+9B-WE-01,y9-239-9b-state-where-a-plant-gets-the-reactants-it-needs-for-photosynthesis,9B,WE,Progress check,2,State where a plant gets the reactants it needs for photosynthesis.,9B Plant Growth PPT progress check slide 14
+9B-WE-02,y9-240-9b-describe-what-happens-to-the-products-of-photosynthesis,9B,WE,Progress check,3,Describe what happens to the products of photosynthesis.,9B Plant Growth PPT progress check slide 14
+9B-WE-03,y9-241-9b-describe-what-a-limiting-factor-is,9B,WE,Progress check,2,Describe what a limiting factor is.,9B Plant Growth PPT progress check slide 14
+9B-WE-04,y9-242-9b-suggest-when-photosynthesis-might-occur-in-plants,9B,WE,Progress check,2,Suggest when photosynthesis might occur in plants.,9B Plant Growth PPT progress check slide 14
+9B-WE-05,y9-243-9b-describe-the-route-water-takes-from-soil-to-a-leaf,9B,WE,Progress check,3,Describe the route water takes from soil to a leaf.,9B Plant Growth PPT progress check slide 43
+9B-WE-06,y9-244-9b-explain-the-structure-of-xylem-vessels,9B,WE,Progress check,3,Explain the structure of xylem vessels.,9B Plant Growth PPT progress check slide 43
+9B-WE-07,y9-245-9b-state-the-cells-that-control-gas-exchange-in-leaves,9B,WE,Progress check,2,State the cells that control gas exchange in leaves.,9B Plant Growth PPT progress check slide 48
+9B-WE-08,y9-246-9b-suggest-why-stomata-shut-at-night,9B,WE,Progress check,3,Suggest why stomata shut at night.,9B Plant Growth PPT progress check slide 48
+9B-WE-09,y9-247-9b-draw-or-describe-the-relationship-between-glucose-and-starch,9B,WE,Progress check,3,Draw or describe the relationship between glucose and starch.,9B Plant Growth PPT progress check slide 62
+9B-WE-10,y9-248-9b-suggest-why-seeds-need-starch,9B,WE,Progress check,3,Suggest why seeds need starch.,9B Plant Growth PPT progress check slide 62
+9E-WE-01,y9-249-9e-design-poster-prompt-list-what-a-year-9-poster-on-ceramics-polymers-an,9E,WE,Progress check,5,"Design-poster prompt: list what a Year 9 poster on ceramics, polymers and composites should include.",9E assess yourself
+9E-WE-02,y9-250-9e-explain-how-properties-of-ceramics-link-to-bonding-and-structure,9E,WE,Progress check,4,Explain how properties of ceramics link to bonding and structure.,9E assess yourself
+9E-WE-03,y9-251-9e-explain-why-composites-often-have-better-properties-than-their-separat,9E,WE,Progress check,3,Explain why composites often have better properties than their separate materials.,9E assess yourself
+9E-WE-04,y9-252-9e-explain-one-environmental-problem-caused-by-making-materials,9E,WE,Progress check,3,Explain one environmental problem caused by making materials.,9E summary sheet / assess yourself
+9F-WE-01,y9-253-9f-prepare-a-talk-what-should-be-included-on-extracting-iron-and-preventi,9F,WE,Progress check,5,Prepare a talk: what should be included on extracting iron and preventing rusting?,9F assess yourself
+9F-WE-02,y9-253a-9f-describe-how-iron-is-extracted-from-iron-ore,9F,WE,Progress check,4,Describe how iron is extracted from iron ore.,9F assess yourself - split from extraction/rusting talk prompt
+9F-WE-03,y9-253b-9f-explain-two-ways-rusting-can-be-prevented,9F,WE,Progress check,4,Explain two ways rusting can be prevented.,9F assess yourself - split from extraction/rusting talk prompt
+9F-WE-04,y9-254-9f-why-is-a-metal-oxide-reduced-when-carbon-extracts-a-metal,9F,WE,Progress check,3,Why is a metal oxide reduced when carbon extracts a metal?,9F summary sheet / assess yourself
+9F-WE-05,y9-255-9f-explain-why-aluminium-is-extracted-by-electrolysis-rather-than-carbon-,9F,WE,Progress check,3,Explain why aluminium is extracted by electrolysis rather than carbon reduction.,9F quick quiz / summary sheet
+9F-WE-06,y9-256-9f-explain-why-rusting-is-a-problem-and-name-two-prevention-methods,9F,WE,Progress check,3,Explain why rusting is a problem and name two prevention methods.,9F assess yourself
+9I-WE-02,y9-257-9i-describe-how-to-raise-a-large-upright-stone-using-levers-moments-and-r,9I,WE,Progress check,5,"Describe how to raise a large upright stone using levers, moments and ramps.",9I assess yourself
+9I-WE-03,y9-258-9i-explain-why-a-shallow-ramp-needs-less-force-but-more-distance,9I,WE,Progress check,3,Explain why a shallow ramp needs less force but more distance.,9I assess yourself / simple machines
+9I-CALC-01,y9-259-9i-calculate-the-weight-of-a-54-kg-person-on-earth-where-g-10-n-kg,9I,CALC,Progress check,2,Calculate the weight of a 54 kg person on Earth where g = 10 N/kg.,9Ja Force Fields PPT Guardians calculation
+9I-CALC-02,y9-260-9i-a-96-kg-person-is-on-a-planet-where-g-14-n-kg-calculate-weight,9I,CALC,Progress check,3,A 96 kg person is on a planet where g = 14 N/kg. Calculate weight.,9Ja Force Fields PPT Guardians calculation
+9I-CALC-03,y9-261-9i-a-person-weighs-1220-n-on-earth-where-g-10-n-kg-calculate-mass,9I,CALC,Progress check,3,A person weighs 1220 N on Earth where g = 10 N/kg. Calculate mass.,9Ja Force Fields PPT Guardians calculation
+9J-WE-01,y9-262-9j-describe-what-an-electromagnet-is-and-how-its-magnetic-field-is-shaped,9J,WE,Progress check,2,Describe what an electromagnet is and how its magnetic field is shaped.,9Je Electromagnets PPT
+9J-WE-02,y9-263-9j-how-can-the-strength-of-an-electromagnet-be-increased,9J,WE,Progress check,2,How can the strength of an electromagnet be increased?,9Je Electromagnets PPT
+9J-WE-03,y9-264-9j-explain-how-a-relay-works,9J,WE,Progress check,4,Explain how a relay works.,9Je Electromagnets PPT / word sheet
+9J-WE-04,y9-265-9j-describe-the-difference-between-current-and-voltage,9J,WE,Progress check,2,Describe the difference between current and voltage / potential difference.,9Jc Current Electricity PPT
+9J-WE-05,y9-266-9j-explain-why-plastic-handles-are-safe-on-electrical-wires,9J,WE,Progress check,3,Explain why plastic handles are safe on electrical wires.,9Jd Resistance PPT progress check
+9J-WE-06,y9-267-9j-describe-how-to-test-whether-resistance-depends-on-wire-length,9J,WE,Progress check,4,Describe how to test whether resistance depends on wire length.,9Jd Resistance PPT exam-style question
+9J-CALC-01,y9-268-9j-calculate-weight-mass-34-kg-and-gravitational-field-strength-6-8-n-kg,9J,CALC,Calculation,3,Calculate weight: mass = 34 kg and gravitational field strength = 6.8 N/kg.,9Ja Force Fields PPT Guardians calculation
+9J-CALC-02,y9-269-9j-a-person-has-weight-686-n-and-mass-56-kg-calculate-gravitational-field,9J,CALC,Calculation,4,A person has weight 686 N and mass 56 kg. Calculate gravitational field strength.,9Ja Force Fields PPT Guardians calculation
+9J-CALC-03,y9-270-9j-a-component-has-voltage-10-v-and-current-0-5-a-calculate-resistance,9J,CALC,Calculation,2,A component has voltage 10 V and current 0.5 A. Calculate resistance.,9Jd Resistance PPT modelled answer
+9J-CALC-04,y9-271-9j-a-resistor-has-voltage-6-v-and-current-0-2-a-calculate-resistance,9J,CALC,Calculation,2,A resistor has voltage 6 V and current 0.2 A. Calculate resistance.,9Jd Resistance formula practice
+9I-CALC-04,y9-272-9i-a-cyclist-travels-12-km-in-0-5-h-calculate-mean-speed,9I,CALC,Calculation,2,A cyclist travels 12 km in 0.5 h. Calculate mean speed.,9I speed summary / quick quiz style
+9I-CALC-05,y9-273-9i-a-force-of-40-n-moves-a-box-3-m-calculate-work-done,9I,CALC,Calculation,2,A force of 40 N moves a box 3 m. Calculate work done.,9I simple machines / work done
+9I-CALC-06,y9-274-9i-a-5-n-force-acts-0-4-m-from-a-pivot-calculate-the-moment,9I,CALC,Calculation,2,A 5 N force acts 0.4 m from a pivot. Calculate the moment.,9I moments quick quiz style
+9A-WE-11,y9x-001-9a-state-what-variation-is,9A,WE,Assess check,1,State what variation is.,9A assess-yourself success criterion 01
+9A-WE-12,y9x-002-9a-outline-why-dinosaurs-became-extinct,9A,WE,Assess check,2,Outline why dinosaurs became extinct.,9A assess-yourself success criterion 02
+9A-WE-13,y9x-003-9a-use-evidence-to-explain-how-scientists-can-infer-something-about-triceratops-suc,9A,WE,Assess check,3,"Use evidence to explain how scientists can infer something about Triceratops, such as whether it was prey.",9A assess-yourself success criterion 03
+9A-WE-14,y9x-004-9a-identify-examples-of-environmental-variation,9A,WE,Assess check,1,Identify examples of environmental variation.,9A assess-yourself success criterion 04
+9A-WE-15,y9x-005-9a-identify-examples-of-inherited-variation,9A,WE,Assess check,1,Identify examples of inherited variation.,9A assess-yourself success criterion 05
+9A-WE-16,y9x-006-9a-explain-how-changes-in-an-ecosystem-can-cause-extinction,9A,WE,Assess check,3,Explain how changes in an ecosystem can cause extinction.,9A assess-yourself success criterion 06
+9A-WE-17,y9x-007-9a-identify-adaptations-of-triceratops-that-could-be-labelled-on-a-model,9A,WE,Assess check,2,Identify adaptations of Triceratops that could be labelled on a model.,9A assess-yourself success criterion 07
+9A-WE-18,y9x-008-9a-explain-how-environmental-variation-is-caused,9A,WE,Assess check,2,Explain how environmental variation is caused.,9A assess-yourself success criterion 08
+9A-WE-19,y9x-009-9a-outline-how-some-variation-is-inherited-from-parents,9A,WE,Assess check,2,Outline how some variation is inherited from parents.,9A assess-yourself success criterion 09
+9A-WE-20,y9x-010-9a-explain-how-triceratops-adaptations-helped-survival,9A,WE,Assess check,3,Explain how Triceratops adaptations helped survival.,9A assess-yourself success criterion 10
+9A-WE-21,y9x-011-9a-identify-and-explain-triceratops-adaptations-beyond-the-obvious-labels,9A,WE,Assess check,3,Identify and explain Triceratops adaptations beyond the obvious labels.,9A assess-yourself success criterion 11
+9A-WE-22,y9x-012-9a-describe-the-relationship-between-cells-nuclei-chromosomes-genes-dna-and-genetic,9A,WE,Assess check,3,"Describe the relationship between cells, nuclei, chromosomes, genes, DNA and genetic information.",9A assess-yourself success criterion 12
+9A-WE-23,y9x-013-9a-describe-how-variation-in-adaptations-affects-survival-within-a-species,9A,WE,Assess check,3,Describe how variation in adaptations affects survival within a species.,9A assess-yourself success criterion 13
+9A-WE-24,y9x-014-9a-state-what-evolution-is,9A,WE,Assess check,1,State what evolution is.,9A assess-yourself success criterion 14
+9A-WE-25,y9x-015-9a-explain-how-natural-selection-works,9A,WE,Assess check,4,Explain how natural selection works.,9A assess-yourself success criterion 15
+9B-WE-11,y9x-016-9b-name-some-common-crop-plants,9B,WE,Assess check,1,Name some common crop plants.,9B assess-yourself success criterion 01
+9B-WE-12,y9x-017-9b-explain-why-it-is-important-to-look-after-crop-plants,9B,WE,Assess check,2,Explain why it is important to look after crop plants.,9B assess-yourself success criterion 02
+9B-WE-13,y9x-018-9b-state-that-plants-make-their-own-food,9B,WE,Assess check,1,State that plants make their own food.,9B assess-yourself success criterion 03
+9B-WE-14,y9x-019-9b-recall-the-resources-plants-need-to-grow-well,9B,WE,Assess check,1,Recall the resources plants need to grow well.,9B assess-yourself success criterion 04
+9B-WE-15,y9x-020-9b-list-chemical-substances-farmers-may-apply-to-crops,9B,WE,Assess check,1,List chemical substances farmers may apply to crops.,9B assess-yourself success criterion 05
+9B-WE-16,y9x-021-9b-describe-photosynthesis-in-terms-of-reactants-products-and-energy-source,9B,WE,Assess check,2,"Describe photosynthesis in terms of reactants, products and energy source.",9B assess-yourself success criterion 06
+9B-WE-17,y9x-022-9b-explain-how-leaves-roots-and-stems-help-photosynthesis,9B,WE,Assess check,3,"Explain how leaves, roots and stems help photosynthesis.",9B assess-yourself success criterion 07
+9B-WE-18,y9x-023-9b-explain-why-insecticides-and-fungicides-are-used-on-crop-plants,9B,WE,Assess check,2,Explain why insecticides and fungicides are used on crop plants.,9B assess-yourself success criterion 08
+9B-WE-19,y9x-024-9b-explain-why-herbicides-or-weedkillers-are-used-on-crop-plants,9B,WE,Assess check,2,Explain why herbicides or weedkillers are used on crop plants.,9B assess-yourself success criterion 09
+9B-WE-20,y9x-025-9b-explain-how-fertilisers-help-crop-plants-grow-well,9B,WE,Assess check,2,Explain how fertilisers help crop plants grow well.,9B assess-yourself success criterion 10
+9B-WE-21,y9x-026-9b-use-word-equations-for-photosynthesis-and-aerobic-respiration,9B,WE,Assess check,2,Use word equations for photosynthesis and aerobic respiration.,9B assess-yourself success criterion 11
+9B-WE-22,y9x-027-9b-explain-what-happens-when-plants-lack-water-or-mineral-salts,9B,WE,Assess check,3,Explain what happens when plants lack water or mineral salts.,9B assess-yourself success criterion 12
+9B-WE-23,y9x-028-9b-describe-substances-made-in-plants-and-their-uses,9B,WE,Assess check,3,Describe substances made in plants and their uses.,9B assess-yourself success criterion 13
+9B-WE-24,y9x-029-9b-explain-that-chlorophyll-traps-energy-transferred-by-light,9B,WE,Assess check,2,Explain that chlorophyll traps energy transferred by light.,9B assess-yourself success criterion 14
+9B-WE-25,y9x-030-9b-explain-how-farming-can-change-the-carbon-cycle,9B,WE,Assess check,4,Explain how farming can change the carbon cycle.,9B assess-yourself success criterion 15
+9B-WE-26,y9x-031-9b-explain-problems-caused-by-fertilisers-including-effects-on-fish-in-lakes,9B,WE,Assess check,4,"Explain problems caused by fertilisers, including effects on fish in lakes.",9B assess-yourself success criterion 16
+9B-WE-27,y9x-032-9b-explain-problems-caused-by-pesticides-including-persistent-insecticides,9B,WE,Assess check,4,"Explain problems caused by pesticides, including persistent insecticides.",9B assess-yourself success criterion 17
+9B-WE-28,y9x-033-9b-describe-how-limiting-factors-stop-photosynthesis-rate-increasing,9B,WE,Assess check,3,Describe how limiting factors stop photosynthesis rate increasing.,9B assess-yourself success criterion 18
+9E-WE-05,y9x-034-9e-name-common-conductors-and-insulators,9E,WE,Assess check,1,Name common conductors and insulators.,9E assess-yourself success criterion 01
+9E-WE-06,y9x-035-9e-explain-what-a-landfill-site-is-and-why-it-can-cause-problems,9E,WE,Assess check,2,Explain what a landfill site is and why it can cause problems.,9E assess-yourself success criterion 02
+9E-WE-07,y9x-036-9e-name-examples-of-ceramic-polymer-and-composite-materials,9E,WE,Assess check,1,"Name examples of ceramic, polymer and composite materials.",9E assess-yourself success criterion 03
+9E-WE-08,y9x-037-9e-name-the-main-source-of-raw-materials-for-making-polymers,9E,WE,Assess check,1,Name the main source of raw materials for making polymers.,9E assess-yourself success criterion 04
+9E-WE-09,y9x-038-9e-describe-the-difference-between-biodegradable-and-non-biodegradable-polymers,9E,WE,Assess check,2,Describe the difference between biodegradable and non-biodegradable polymers.,9E assess-yourself success criterion 05
+9E-WE-10,y9x-039-9e-describe-pollution-problems-caused-by-burning-fossil-fuels,9E,WE,Assess check,3,Describe pollution problems caused by burning fossil fuels.,9E assess-yourself success criterion 06
+9E-WE-11,y9x-040-9e-describe-what-a-composite-material-is,9E,WE,Assess check,2,Describe what a composite material is.,9E assess-yourself success criterion 07
+9E-WE-12,y9x-041-9e-describe-problems-caused-by-disposal-of-artificial-polymers,9E,WE,Assess check,3,Describe problems caused by disposal of artificial polymers.,9E assess-yourself success criterion 08
+9E-WE-13,y9x-042-9e-explain-the-causes-and-problems-of-acid-rain-and-the-greenhouse-effect,9E,WE,Assess check,4,Explain the causes and problems of acid rain and the greenhouse effect.,9E assess-yourself success criterion 09
+9E-WE-14,y9x-043-9e-link-uses-of-ceramics-polymers-and-composites-to-their-properties,9E,WE,Assess check,3,"Link uses of ceramics, polymers and composites to their properties.",9E assess-yourself success criterion 10
+9E-WE-15,y9x-044-9e-describe-how-polymers-are-formed-from-monomers,9E,WE,Assess check,2,Describe how polymers are formed from monomers.,9E assess-yourself success criterion 11
+9E-WE-16,y9x-045-9e-identify-thermal-decomposition-reactions,9E,WE,Assess check,2,Identify thermal decomposition reactions.,9E assess-yourself success criterion 12
+9E-WE-17,y9x-046-9e-explain-advantages-of-recycling-with-specific-examples,9E,WE,Assess check,3,Explain advantages of recycling with specific examples.,9E assess-yourself success criterion 13
+9E-WE-18,y9x-047-9e-justify-using-a-ceramic-polymer-or-composite-for-a-particular-use,9E,WE,Assess check,4,"Justify using a ceramic, polymer or composite for a particular use.",9E assess-yourself success criterion 14
+9E-WE-19,y9x-048-9e-explain-how-crystal-size-depends-on-cooling-speed,9E,WE,Assess check,3,Explain how crystal size depends on cooling speed.,9E assess-yourself success criterion 15
+9E-WE-20,y9x-049-9e-explain-how-properties-of-a-material-depend-on-bonding-and-structure,9E,WE,Assess check,4,Explain how properties of a material depend on bonding and structure.,9E assess-yourself success criterion 16
+9E-WE-21,y9x-050-9e-classify-exothermic-and-endothermic-reactions-by-temperature-change-and-energy-t,9E,WE,Assess check,3,Classify exothermic and endothermic reactions by temperature change and energy transfer.,9E assess-yourself success criterion 17
+9E-WE-22,y9x-051-9e-explain-biomagnification-of-toxins-through-food-chains,9E,WE,Assess check,4,Explain biomagnification of toxins through food chains.,9E assess-yourself success criterion 18
+9E-WE-23,y9x-052-9e-suggest-ways-to-reduce-global-warming-and-acid-rain-impacts,9E,WE,Assess check,3,Suggest ways to reduce global warming and acid rain impacts.,9E assess-yourself success criterion 19
+9F-WE-07,y9x-053-9f-describe-what-causes-rusting,9F,WE,Assess check,2,Describe what causes rusting.,9F assess-yourself success criterion 01
+9F-WE-08,y9x-054-9f-describe-one-simple-method-of-preventing-rusting,9F,WE,Assess check,1,Describe one simple method of preventing rusting.,9F assess-yourself success criterion 02
+9F-WE-09,y9x-055-9f-explain-why-rusting-is-a-problem,9F,WE,Assess check,2,Explain why rusting is a problem.,9F assess-yourself success criterion 03
+9F-WE-10,y9x-056-9f-use-scientific-words-to-explain-how-iron-rusts,9F,WE,Assess check,3,Use scientific words to explain how iron rusts.,9F assess-yourself success criterion 04
+9F-WE-11,y9x-057-9f-explain-why-iron-or-steel-is-used-for-a-purpose-because-of-its-properties,9F,WE,Assess check,2,Explain why iron or steel is used for a purpose because of its properties.,9F assess-yourself success criterion 05
+9F-WE-12,y9x-058-9f-describe-how-iron-ore-is-obtained-from-mining,9F,WE,Assess check,2,Describe how iron ore is obtained from mining.,9F assess-yourself success criterion 06
+9F-WE-13,y9x-059-9f-use-word-equations-to-describe-reactions,9F,WE,Assess check,2,Use word equations to describe reactions.,9F assess-yourself success criterion 07
+9F-WE-14,y9x-060-9f-describe-the-reactivity-series-and-the-position-of-iron,9F,WE,Assess check,2,Describe the reactivity series and the position of iron.,9F assess-yourself success criterion 08
+9F-WE-15,y9x-061-9f-explain-how-metal-reactivity-determines-extraction-method,9F,WE,Assess check,3,Explain how metal reactivity determines extraction method.,9F assess-yourself success criterion 09
+9F-WE-16,y9x-062-9f-explain-why-energy-needs-and-cost-matter-when-selecting-extraction-methods,9F,WE,Assess check,3,Explain why energy needs and cost matter when selecting extraction methods.,9F assess-yourself success criterion 10
+9F-WE-17,y9x-063-9f-describe-sacrificial-protection-for-preventing-rusting,9F,WE,Assess check,3,Describe sacrificial protection for preventing rusting.,9F assess-yourself success criterion 11
+9F-WE-18,y9x-064-9f-explain-how-sacrificial-protection-prevents-rusting-and-link-this-to-the-reactiv,9F,WE,Assess check,4,Explain how sacrificial protection prevents rusting and link this to the reactivity series.,9F assess-yourself success criterion 12
+9F-WE-19,y9x-065-9f-explain-why-certain-metals-are-used-for-sacrificial-protection,9F,WE,Assess check,3,Explain why certain metals are used for sacrificial protection.,9F assess-yourself success criterion 13
+9F-WE-20,y9x-066-9f-explain-other-reactions-taking-place-in-a-blast-furnace,9F,WE,Assess check,4,Explain other reactions taking place in a blast furnace.,9F assess-yourself success criterion 14
+9F-WE-21,y9x-067-9f-use-balanced-equations-to-represent-reactions,9F,WE,Assess check,4,Use balanced equations to represent reactions.,9F assess-yourself success criterion 15
+9F-WE-22,y9x-068-9f-describe-the-formation-of-stainless-steel,9F,WE,Assess check,3,Describe the formation of stainless steel.,9F assess-yourself success criterion 16
+9F-MCQ-21,y9x-069-9f-use-the-reactivity-series-which-metal-is-most-reactive,9F,MCQ,Assess check,3,Use the reactivity series diagram. Which metal shown is the most reactive?,9F visual coverage - reactivity series comparison
+9F-MCQ-22,y9x-070-9f-use-the-reactivity-series-which-metal-is-least-reactive,9F,MCQ,Assess check,3,Use the reactivity series diagram. Which metal shown is the least reactive?,9F visual coverage - reactivity series comparison
+9F-MCQ-23,y9x-071-9f-use-the-displacement-test-which-tube-is-most-likely-to-show-a-reaction,9F,MCQ,Assess check,3,Use the displacement test diagram. Which labelled tube is most likely to show a displacement reaction?,9F visual coverage - displacement reaction interpretation
+9F-MCQ-24,y9x-072-9f-use-the-extraction-diagram-which-process-is-needed-for-a-metal-above-carbon,9F,MCQ,Assess check,3,Use the extraction diagram. A metal above carbon usually needs which extraction method?,9F visual coverage - extraction method choice
+9F-MCQ-25,y9x-073-9f-use-the-extraction-diagram-which-process-can-often-extract-a-metal-below-carbon,9F,MCQ,Assess check,3,Use the extraction diagram. A metal below carbon can often be extracted by:,9F visual coverage - extraction method choice
+9F-MCQ-26,y9x-074-9f-use-the-blast-furnace-diagram-which-label-shows-the-hot-air-blast,9F,MCQ,Assess check,3,Use the blast furnace diagram. Which label shows hot air being blown into the furnace?,9F visual coverage - blast furnace process
+9F-MCQ-27,y9x-075-9f-use-the-blast-furnace-diagram-which-label-shows-molten-material-being-tapped-out,9F,MCQ,Assess check,3,Use the blast furnace diagram. Which label shows molten iron being tapped out near the bottom?,9F visual coverage - blast furnace process
+9F-MCQ-28,y9x-076-9f-use-the-process-diagram-which-process-uses-electricity,9F,MCQ,Assess check,3,Use the extraction process diagram. Which process uses electricity?,9F visual coverage - electrolysis versus carbon reduction
+9F-MCQ-29,y9x-077-9f-use-the-process-diagram-in-carbon-reduction-what-is-removed-from-the-metal-oxide,9F,MCQ,Assess check,3,"Use the extraction process diagram. In carbon reduction, what is removed from the metal oxide?",9F visual coverage - carbon reduction interpretation
+9F-MCQ-30,y9x-078-9f-use-the-mass-gain-diagram-calculate-the-percentage-mass-gain,9F,MCQ,Calculation,4,Use the mass gain diagram. Magnesium changes from 24 g to 40 g. What is the percentage mass gain?,9F visual coverage - percentage mass gain calculation
+9F-MCQ-31,y9x-079-9f-use-the-mass-loss-diagram-calculate-the-percentage-mass-loss,9F,MCQ,Calculation,4,Use the mass loss diagram. Copper oxide changes from 80 g to 64 g of copper. What is the percentage mass loss?,9F visual coverage - percentage mass loss calculation
+9F-MCQ-32,y9x-080-9f-use-the-rusting-diagram-which-tube-will-rust-fastest,9F,MCQ,Assess check,3,Use the rusting conditions diagram. Which tube should rust fastest?,9F visual coverage - rusting conditions
+9F-MCQ-33,y9x-081-9f-use-the-sacrificial-protection-diagram-which-pair-protects-iron-better,9F,MCQ,Assess check,3,"Use the sacrificial protection diagram. Which pair should protect iron better, and why?",9F visual coverage - sacrificial protection
+9I-WE-04,y9x-069-9i-recall-units-for-speed-and-explain-what-speed-means,9I,WE,Assess check,1,Recall units for speed and explain what speed means.,9I assess-yourself success criterion 01
+9I-WE-05,y9x-070-9i-explain-how-distance-and-time-affect-speed,9I,WE,Assess check,2,Explain how distance and time affect speed.,9I assess-yourself success criterion 02
+9I-CALC-07,y9x-071-9i-use-the-formula-relating-speed-distance-and-time,9I,CALC,Assess check,2,"Use the formula relating speed, distance and time.",9I assess-yourself success criterion 03
+9I-WE-06,y9x-072-9i-describe-levers-ramps-and-pulleys-and-how-they-help-move-loads,9I,WE,Assess check,2,"Describe levers, ramps and pulleys and how they help move loads.",9I assess-yourself success criterion 04
+9I-WE-07,y9x-073-9i-explain-how-levers-ramps-or-pulleys-could-raise-or-lift-stones,9I,WE,Assess check,3,"Explain how levers, ramps or pulleys could raise or lift stones.",9I assess-yourself success criterion 05
+9I-WE-08,y9x-074-9i-state-what-a-moment-is-and-when-something-balances,9I,WE,Assess check,2,State what a moment is and when something balances.,9I assess-yourself success criterion 06
+9I-WE-09,y9x-075-9i-explain-why-simple-machines-do-not-mean-less-energy-is-needed,9I,WE,Assess check,3,Explain why simple machines do not mean less energy is needed.,9I assess-yourself success criterion 07
+9I-WE-10,y9x-076-9i-represent-part-of-a-journey-on-a-distance-time-graph,9I,WE,Assess check,3,Represent part of a journey on a distance-time graph.,9I assess-yourself success criterion 08
+9I-CALC-08,y9x-077-9i-use-the-formula-for-moment-force-and-perpendicular-distance,9I,CALC,Assess check,2,"Use the formula for moment, force and perpendicular distance.",9I assess-yourself success criterion 09
+9I-WE-11,y9x-078-9i-explain-the-effect-of-friction-on-force-needed-to-move-a-load,9I,WE,Assess check,2,Explain the effect of friction on force needed to move a load.,9I assess-yourself success criterion 10
+9I-WE-12,y9x-079-9i-explain-why-friction-usually-means-more-energy-is-needed-with-a-simple-machine,9I,WE,Assess check,3,Explain why friction usually means more energy is needed with a simple machine.,9I assess-yourself success criterion 11
+9I-WE-13,y9x-080-9i-explain-how-ramp-angle-affects-friction-and-required-force-using-force-component,9I,WE,Assess check,4,Explain how ramp angle affects friction and required force using force components.,9I assess-yourself success criterion 12
+9B-WE-29,y9x-081-9b-describe-what-gas-exchange-is-and-why-it-needs-to-occur-in-plants,9B,WE,Progress check,3,Describe what gas exchange is and why it needs to occur in plants.,9B Plant Growth PPT slide 48 progress check
+9B-WE-30,y9x-082-9b-describe-how-a-leaf-is-adapted-so-palisade-cells-get-the-resources-they-need,9B,WE,Progress check,3,Describe how a leaf is adapted so palisade cells get the resources they need.,9B Plant Growth PPT slide 48 progress check
+9B-WE-31,y9x-083-9b-describe-why-starch-in-chloroplasts-is-broken-down,9B,WE,Progress check,3,Describe why starch in chloroplasts is broken down.,9B Plant Growth PPT slide 62 progress check
+9B-WE-32,y9x-084-9b-suggest-when-starch-is-broken-down-in-chloroplasts-and-explain-why,9B,WE,Progress check,3,Suggest when starch is broken down in chloroplasts and explain why.,9B Plant Growth PPT slide 62 progress check
+9B-WE-33,y9x-085-9b-explain-why-plants-do-not-grow-well-if-the-soil-lacks-nitrates,9B,WE,Progress check,3,Explain why plants do not grow well if the soil lacks nitrates.,9B Plant Growth PPT slide 65 extending
+9B-WE-34,y9x-086-9b-put-the-main-stages-of-germination-into-a-logical-order,9B,WE,Progress check,3,Put the main stages of germination into a logical order.,9B Plant Growth PPT slide 67
+9B-WE-35,y9x-087-9b-list-three-substances-found-in-seeds-and-explain-their-functions,9B,WE,Progress check,3,List three substances found in seeds and explain their functions.,9B Plant Growth PPT slide 67 extending
+9B-WE-36,y9x-088-9b-describe-why-plants-are-cross-bred,9B,WE,Progress check,2,Describe why plants are cross-bred.,9B Plant Growth PPT slide 73 objective
+9B-WE-37,y9x-089-9b-recall-the-main-mineral-nutrients-plants-need,9B,WE,Progress check,2,Recall the main mineral nutrients plants need.,9B Plant Growth PPT slide 73 objective
+9B-WE-38,y9x-090-9b-explain-how-food-production-for-humans-can-be-increased,9B,WE,Progress check,3,Explain how food production for humans can be increased.,9B Plant Growth PPT slide 73 objective
+9B-WE-39,y9x-091-9b-explain-why-phosphates-and-potassium-are-important-nutrients-for-plants,9B,WE,Progress check,3,Explain why phosphates and potassium are important nutrients for plants.,9B Plant Growth PPT slide 73 objective
+9B-WE-40,y9x-092-9b-define-biodiversity,9B,WE,Apply check,2,A pesticide reduces the number of insect species living in a field. What has happened to biodiversity in that area?,9B Plant Growth PPT slide 95
+9B-WE-41,y9x-093-9b-describe-how-sampling-can-estimate-biodiversity-in-a-field,9B,WE,Progress check,3,Describe how sampling can estimate biodiversity in a field.,9B Plant Growth PPT slides 97-98
+9B-WE-42,y9x-094-9b-explain-why-relying-on-one-crop-variety-can-be-risky,9B,WE,Progress check,3,Explain why relying on one crop variety can be risky.,9B Plant Growth PPT slide 99 extending
+9B-WE-43,y9x-095-9b-label-the-main-processes-in-the-carbon-cycle,9B,WE,Progress check,3,Label the main processes in the carbon cycle.,9B Plant Growth PPT slide 103
+9B-WE-44,y9x-096-9b-explain-how-farming-affects-the-carbon-cycle,9B,WE,Progress check,4,Explain how farming affects the carbon cycle.,9B Plant Growth PPT slide 103 extending
+9B-WE-45,y9x-097-9b-give-advantages-and-disadvantages-of-clearing-land-for-farming,9B,WE,Progress check,3,Give advantages and disadvantages of clearing land for farming.,9B Plant Growth PPT slide 105
+9B-WE-46,y9x-098-9b-give-advantages-and-disadvantages-of-insecticides-and-herbicides,9B,WE,Progress check,3,Give advantages and disadvantages of insecticides and herbicides.,9B Plant Growth PPT slide 105
+9B-WE-47,y9x-099-9b-give-advantages-and-disadvantages-of-fertilisers,9B,WE,Progress check,3,Give advantages and disadvantages of fertilisers.,9B Plant Growth PPT slide 105
+9B-WE-48,y9x-100-9b-explain-why-changing-from-wheat-to-rapeseed-after-many-years-may-reduce-yield,9B,WE,Progress check,4,Explain why changing from wheat to rapeseed after many years may reduce yield.,9B Plant Growth PPT slide 105 extending
+9J-WE-07,y9x-101-9j-state-where-electrons-are-found-in-an-atom,9J,WE,Progress check,1,State where electrons are found in an atom.,9Jb Static Electricity PPT slide 9 progress check
+9J-WE-08,y9x-102-9j-describe-the-dangers-of-static-electricity,9J,WE,Progress check,2,Describe the dangers of static electricity.,9Jb Static Electricity PPT slide 9 progress check
+9J-WE-09,y9x-103-9j-explain-why-only-negative-charges-transfer-onto-an-insulating-material,9J,WE,Progress check,3,Explain why only negative charges transfer onto an insulating material.,9Jb Static Electricity PPT slide 9 progress check
+9J-WE-10,y9x-104-9j-explain-why-a-rubbed-polythene-rod-has-an-overall-negative-charge,9J,WE,Progress check,3,Explain why a rubbed polythene rod has an overall negative charge.,9Jb Static Electricity PPT slide 9 progress check
+9J-WE-11,y9x-105-9j-describe-how-charged-objects-attract-or-repel-each-other,9J,WE,Progress check,2,Describe how charged objects attract or repel each other.,9Jb Static Electricity PPT slides 8 and 10
+9J-WE-12,y9x-106-9j-describe-a-fair-investigation-of-forces-between-charged-rods,9J,WE,Progress check,3,Describe a fair investigation of forces between charged rods.,9Jb Static Electricity PPT slide 12
+9J-WE-13,y9x-107-9j-state-three-materials-that-have-high-resistance,9J,WE,Progress check,1,State three materials that have high resistance.,9Jd Resistance PPT slide 9 progress check
+9J-WE-14,y9x-108-9j-describe-what-resistance-is,9J,WE,Progress check,1,Describe what resistance is.,9Jd Resistance PPT slide 9 progress check
+9J-WE-15,y9x-109-9j-describe-how-to-increase-resistance-in-a-circuit,9J,WE,Progress check,2,Describe how to increase resistance in a circuit.,9Jd Resistance PPT slide 9 progress check
+9J-WE-16,y9x-110-9j-state-the-units-for-voltage-current-and-resistance,9J,WE,Progress check,1,"State the units for voltage / potential difference, current and resistance.",9Jd Resistance PPT slide 10
+9J-WE-17,y9x-111-9j-explain-which-wire-has-higher-resistance-a-long-thin-wire-or-a-short-thick-wire-,9J,WE,Progress check,3,Explain which wire has higher resistance: a long thin wire or a short thick wire of the same material.,9Jd Resistance PPT slide 8
+9J-WE-18,y9x-112-9j-explain-how-a-current-voltage-graph-shows-which-resistor-has-the-higher-resistan,9J,WE,Progress check,3,Explain how a current–voltage graph shows which resistor has the higher resistance.,9Jd Resistance PPT slide 16
+9J-WE-19,y9x-113-9j-plan-an-investigation-into-how-wire-thickness-affects-resistance,9J,WE,Progress check,4,Plan an investigation into how wire thickness affects resistance.,9Jd Resistance PPT objective
+9J-WE-20,y9x-114-9j-explain-why-copper-is-commonly-used-for-wires-in-circuits,9J,WE,Progress check,2,Explain why copper is commonly used for wires in circuits.,9Jc Current Electricity PPT slide 3 extending
+9J-WE-21,y9x-115-9j-describe-how-current-behaves-in-series-and-parallel-circuits,9J,WE,Progress check,3,Describe how current behaves in series and parallel circuits.,9Jc Current Electricity PPT slide 10
+9J-WE-22,y9x-116-9j-describe-how-voltage-behaves-in-series-and-parallel-circuits,9J,WE,Progress check,3,Describe how voltage / potential difference behaves in series and parallel circuits.,9Jc Current Electricity PPT slide 13
+9J-WE-23,y9x-117-9j-explain-the-difference-between-an-electromagnet-and-a-bar-magnet,9J,WE,Progress check,2,Explain the difference between an electromagnet and a bar magnet.,9Je Electromagnets PPT slide 3 extending
+9J-WE-24,y9x-118-9j-predict-how-changing-current-magnetic-field-strength-or-current-direction-affect,9J,WE,Progress check,4,"Predict how changing current, magnetic field strength or current direction affects a motor.",9Je Electromagnets PPT slide 8
+9J-CALC-05,y9x-119-9j-gamora-has-mass-54-kg-calculate-her-weight-on-earth-where-g-10-n-kg,9J,CALC,Calculation,2,"Gamora has mass 54 kg. Calculate her weight on Earth, where g = 10 N/kg.",9Ja Force Fields PPT slide 17
+9J-CALC-06,y9x-120-9j-gamora-has-mass-54-kg-on-a-planet-where-g-5-n-kg-calculate-her-weight,9J,CALC,Calculation,2,Gamora has mass 54 kg on a planet where g = 5 N/kg. Calculate her weight.,9Ja Force Fields PPT slide 17
+9J-CALC-07,y9x-121-9j-star-lord-has-mass-96-kg-calculate-his-weight-on-earth-where-g-10-n-kg,9J,CALC,Calculation,2,"Star Lord has mass 96 kg. Calculate his weight on Earth, where g = 10 N/kg.",9Ja Force Fields PPT slide 18
+9J-CALC-08,y9x-122-9j-star-lord-has-mass-96-kg-on-a-planet-where-g-14-n-kg-calculate-his-weight,9J,CALC,Calculation,3,Star Lord has mass 96 kg on a planet where g = 14 N/kg. Calculate his weight.,9Ja Force Fields PPT slide 18
+9J-CALC-09,y9x-123-9j-drax-weighs-1220-n-on-earth-where-g-10-n-kg-calculate-his-mass,9J,CALC,Calculation,2,Drax weighs 1220 N on Earth where g = 10 N/kg. Calculate his mass.,9Ja Force Fields PPT slide 19
+9J-CALC-10,y9x-124-9j-drax-has-mass-122-kg-on-a-planet-where-g-7-5-n-kg-calculate-his-weight,9J,CALC,Calculation,3,Drax has mass 122 kg on a planet where g = 7.5 N/kg. Calculate his weight.,9Ja Force Fields PPT slide 19
+9J-CALC-11,y9x-125-9j-rocket-weighs-470-n-on-earth-where-g-10-n-kg-calculate-his-mass,9J,CALC,Calculation,2,Rocket weighs 470 N on Earth where g = 10 N/kg. Calculate his mass.,9Ja Force Fields PPT slide 20
+9J-CALC-12,y9x-126-9j-rocket-has-mass-47-kg-on-a-planet-where-g-22-8-n-kg-calculate-his-weight,9J,CALC,Calculation,3,Rocket has mass 47 kg on a planet where g = 22.8 N/kg. Calculate his weight.,9Ja Force Fields PPT slide 20
+9J-CALC-13,y9x-127-9j-mantis-has-mass-56-kg-calculate-her-weight-on-earth-where-g-10-n-kg,9J,CALC,Calculation,2,Mantis has mass 56 kg. Calculate her weight on Earth where g = 10 N/kg.,9Ja Force Fields PPT slide 21
+9J-CALC-14,y9x-128-9j-mantis-has-mass-56-kg-and-weight-686-n-on-a-planet-calculate-g,9J,CALC,Calculation,4,Mantis has mass 56 kg and weight 686 N on a planet. Calculate g.,9Ja Force Fields PPT slide 21
+9J-CALC-15,y9x-129-9j-groot-has-mass-34-kg-on-a-planet-where-g-6-8-n-kg-calculate-his-weight,9J,CALC,Calculation,3,Groot has mass 34 kg on a planet where g = 6.8 N/kg. Calculate his weight.,9Ja Force Fields PPT slide 22
+9J-CALC-16,y9x-130-9j-groot-has-mass-34-kg-and-weight-724-2-n-on-a-planet-calculate-g,9J,CALC,Calculation,4,Groot has mass 34 kg and weight 724.2 N on a planet. Calculate g.,9Ja Force Fields PPT slide 22
+9J-CALC-17,y9x-131-9j-oberon-has-about-1-3-times-the-mass-of-rhea-but-a-similar-diameter-which-moon-ha,9J,CALC,Calculation,4,Oberon has about 1.3 times the mass of Rhea but a similar diameter. Which moon has greater surface gravity?,9Ja Force Fields PPT slide 23 practice question
+9J-CALC-18,y9x-132-9j-calculate-resistance-voltage-12-v-current-2-a,9J,CALC,Calculation,2,"Calculate resistance: voltage = 12 V, current = 2 A.",9Jd Resistance formula practice
+9J-CALC-19,y9x-133-9j-calculate-resistance-voltage-9-v-current-0-3-a,9J,CALC,Calculation,2,"Calculate resistance: voltage = 9 V, current = 0.3 A.",9Jd Resistance formula practice
+9J-CALC-20,y9x-134-9j-calculate-resistance-voltage-8-v-current-0-02-a,9J,CALC,Calculation,3,"Calculate resistance: voltage = 8 V, current = 0.02 A.",9Jd Resistance PPT table-style practice
+9J-CALC-21,y9x-135-9j-calculate-current-voltage-6-v-resistance-30,9J,CALC,Calculation,3,"Calculate current: voltage = 6 V, resistance = 30 Ω.",9Jd Resistance formula practice
+9J-CALC-22,y9x-136-9j-calculate-voltage-current-0-5-a-resistance-20,9J,CALC,Calculation,2,"Calculate voltage: current = 0.5 A, resistance = 20 Ω.",9Jd Resistance PPT modelled answer extension
+9J-CALC-23,y9x-137-9j-calculate-voltage-current-0-02-a-resistance-5200,9J,CALC,Calculation,4,"Calculate voltage: current = 0.02 A, resistance = 5200 Ω.",9Jd Resistance PPT table-style practice
+9I-CALC-09,y9x-138-9i-a-stone-is-moved-65-km-in-65-h-calculate-the-mean-speed,9I,CALC,Calculation,2,A stone is moved 65 km in 65 h. Calculate the mean speed.,9I assess-yourself journey context
+9I-CALC-10,y9x-139-9i-a-river-section-is-40-km-and-the-stones-move-at-3-km-h-calculate-the-time-taken,9I,CALC,Calculation,3,A river section is 40 km and the stones move at 3 km/h. Calculate the time taken.,9I assess-yourself journey context
+9I-CALC-11,y9x-140-9i-a-final-overland-section-is-5-km-at-1-km-h-calculate-the-time-taken,9I,CALC,Calculation,2,A final overland section is 5 km at 1 km/h. Calculate the time taken.,9I assess-yourself journey context
+9I-CALC-12,y9x-141-9i-a-force-of-200-n-acts-0-5-m-from-a-pivot-calculate-the-moment,9I,CALC,Calculation,2,A force of 200 N acts 0.5 m from a pivot. Calculate the moment.,9I moments practice
+9I-CALC-13,y9x-142-9i-a-moment-of-120-n-m-is-needed-using-a-lever-2-m-from-the-pivot-calculate-the-for,9I,CALC,Calculation,3,A moment of 120 N m is needed using a lever 2 m from the pivot. Calculate the force.,9I moments practice
+9I-CALC-14,y9x-143-9i-a-300-n-force-moves-a-load-4-m-calculate-the-work-done,9I,CALC,Calculation,2,A 300 N force moves a load 4 m. Calculate the work done.,9I work-done practice
+9I-CALC-15,y9x-144-9i-a-ramp-requires-1500-j-of-work-over-5-m-calculate-the-average-force,9I,CALC,Calculation,3,A ramp requires 1500 J of work over 5 m. Calculate the average force.,9I ramps/work-done practice
+9I-CALC-16,y9x-145-9i-a-cyclist-travels-at-6-m-s-for-20-s-calculate-the-distance-travelled,9I,CALC,Calculation,2,A cyclist travels at 6 m/s for 20 s. Calculate the distance travelled.,9I speed practice
+9J-WE-25,y9x-138-9j-match-common-circuit-symbols-to-their-component-names,9J,WE,Progress check,3,"Use the circuit symbol grid. Match labels A–H to these components: cell, battery, open switch, closed switch, lamp, resistor, ammeter and voltmeter.",9Jc Current Electricity PPT / revision pack circuit-symbol coverage
+9J-MCQ-21,y9x-139-9j-which-label-shows-an-open-switch,9J,MCQ,Quick quiz,2,Use the circuit symbol grid. Which label shows an open switch?,9Jc Current Electricity PPT circuit symbols
+9J-MCQ-22,y9x-140-9j-which-label-shows-a-closed-switch,9J,MCQ,Quick quiz,2,Use the circuit symbol grid. Which label shows a closed switch?,9Jc Current Electricity PPT circuit symbols
+9J-MCQ-23,y9x-141-9j-which-label-shows-a-resistor,9J,MCQ,Quick quiz,2,Use the circuit symbol grid. Which label shows a resistor?,9Jc Current Electricity PPT circuit symbols
+9J-MCQ-24,y9x-142-9j-which-label-shows-a-voltmeter,9J,MCQ,Quick quiz,2,Use the circuit symbol grid. Which label shows a voltmeter?,9Jc Current Electricity PPT circuit symbols
+9J-MCQ-25,y9x-143-9j-which-label-shows-an-ammeter,9J,MCQ,Quick quiz,2,Use the circuit symbol grid. Which label shows an ammeter?,9Jc Current Electricity PPT circuit symbols
+9J-MCQ-26,y9x-144-9j-which-label-shows-a-motor,9J,MCQ,Quick quiz,2,Use the circuit symbol grid. Which label shows a battery?,9Jc Current Electricity PPT circuit symbols
+9J-MCQ-27,y9x-145-9j-which-circuit-is-parallel,9J,MCQ,Quick quiz,2,Use the circuit diagrams. Which circuit is parallel?,9Jc Current Electricity PPT / series and parallel circuits
+9J-MCQ-28,y9x-146-9j-in-which-circuit-is-current-the-same-everywhere,9J,MCQ,Quick quiz,3,Use the circuit diagrams. In which circuit is the current the same everywhere?,9Jc Current Electricity PPT / series and parallel circuits
+9J-MCQ-29,y9x-147-9j-in-which-circuit-does-current-split-between-branches,9J,MCQ,Quick quiz,3,Use the circuit diagrams. In which circuit does current split between branches?,9Jc Current Electricity PPT / series and parallel circuits
+9J-WE-26,y9x-148-9j-compare-current-and-voltage-in-the-two-circuits,9J,WE,Progress check,4,Use the circuit diagrams. Compare how current and voltage behave in Circuit A and Circuit B.,9Jc Current Electricity PPT / series and parallel circuits
+9J-MCQ-30,y9x-149-9j-where-should-an-ammeter-go-to-measure-current-through-the-lamp,9J,MCQ,Quick quiz,3,Use the meter-placement diagram. Which position should an ammeter use to measure the current through the lamp?,9Jc Current Electricity PPT / meters in circuits
+9J-MCQ-31,y9x-150-9j-where-should-a-voltmeter-go-to-measure-potential-difference-across-the-lamp,9J,MCQ,Quick quiz,3,Use the meter-placement diagram. Which position should a voltmeter use to measure the potential difference across the lamp?,9Jc Current Electricity PPT / meters in circuits
+9J-MCQ-32,y9x-151-9j-use-the-magnet-diagram-which-arrow-shows-the-field-direction-on-the-top-field-line,9J,MCQ,Quick quiz,2,Use the magnet diagram. Which labelled arrow shows the magnetic field direction on the top field line?,9Ja Force-Fields PPT / 9J summary sheet - magnetic field direction visual practice
+9J-MCQ-33,y9x-152-9j-use-the-magnet-diagram-where-is-the-magnetic-field-strongest,9J,MCQ,Quick quiz,2,Use the magnet diagram. At which labelled point is the magnetic field strongest?,9Ja Force-Fields PPT / 9J summary sheet - magnetic field strength visual practice
+9J-WE-27,y9x-153-9j-use-the-charge-pair-diagram-identify-which-pairs-repel-and-which-attract,9J,WE,Progress check,3,Use the charge-pair diagram. Identify which labelled pairs repel and which labelled pairs attract.,9Jb Static-Electricity PPT / 9J summary sheet - charge attraction and repulsion visual practice
+9J-WE-28,y9x-154-9j-use-the-charge-transfer-diagram-what-particle-has-moved-and-what-charge-does-the-rod-gain,9J,WE,Progress check,3,"Use the charge-transfer diagram. What particle has moved, and what overall charge does the rod gain?",9Jb Static-Electricity PPT / 9J summary sheet - charging by rubbing visual practice
+9J-WE-29,y9x-155-9j-use-the-electromagnet-diagram-match-labels-a-to-d-to-the-coil-core-cell-and-switch,9J,WE,Progress check,3,"Use the electromagnet diagram. Match labels A–D to the coil of wire, iron core, cell/battery and switch.",9Je Electromagnets PPT / 9J summary sheet - electromagnet parts visual practice
+9J-MCQ-34,y9x-156-9j-which-change-would-make-the-electromagnet-in-the-diagram-stronger,9J,MCQ,Quick quiz,2,Which change would make the electromagnet in the diagram stronger?,9Je Electromagnets PPT / 9J summary sheet - electromagnet strength visual practice
+9J-WE-30,y9x-157-9j-use-the-relay-diagram-match-labels-a-to-d-to-control-circuit-electromagnet-switch-and-load,9J,WE,Progress check,3,"Use the relay diagram. Match labels A–D to the control circuit, electromagnet, switch contacts and load/lamp.",9Je Electromagnets PPT / 9J summary sheet - relay diagram visual practice
+9J-WE-31,y9x-158-9j-use-the-relay-diagram-explain-why-a-relay-is-useful,9J,WE,Progress check,4,Use the relay diagram. Explain why a relay is useful in an electrical system.,9Je Electromagnets PPT / 9J summary sheet - relay explanation visual practice
+9J-MCQ-35,y9x-159-9j-use-the-motor-effect-diagram-which-arrow-shows-the-force-on-the-wire,9J,MCQ,Quick quiz,4,Use the motor-effect diagram. Which labelled arrow shows the force on the current-carrying wire?,9Je Electromagnets PPT / 9J summary sheet - motor effect visual practice
+9J-MCQ-36,y9x-160-9j-which-change-would-increase-the-force-in-the-motor-effect-diagram,9J,MCQ,Quick quiz,2,Which change would increase the force in the motor-effect diagram?,9Je Electromagnets PPT / 9J summary sheet - motor effect force factors visual practice
+9J-MCQ-37,y9x-161-9j-use-the-static-charge-diagram-which-labelled-pair-shows-two-negative-charges,9J,MCQ,Quick quiz,1,Use the charge-pair diagram. Which labelled pair shows two negative charges?,9Jb Static-Electricity PPT / 9J summary sheet - static charge visual recognition
+9J-MCQ-38,y9x-162-9j-use-the-electromagnet-diagram-which-labelled-part-is-the-iron-core,9J,MCQ,Quick quiz,2,Use the electromagnet diagram. Which labelled part is the iron core?,9Je Electromagnets PPT / 9J summary sheet - electromagnet part recognition
+9B-WE-49,y9r-001-9b-what-is-sustainable development,9B,WE,Assess check,1,What is sustainable development?,9B Summary sheet p2 Farming
+9B-WE-50,y9r-002-9b-why-is-land-cleared-of-hedges-and-trees-in-modern-farming,9B,WE,Apply check,3,A farmer clears hedges and trees from a field. Give one benefit for farming and one environmental problem this can cause.,9B Summary sheet p2 Farming table
+9B-WE-51,y9r-003-9b-what-problem-can-be-caused-by-clearing-hedges-and-trees,9B,WE,Assess check,3,What problem can be caused by clearing hedges and trees?,9B Summary sheet p2 Farming table
+9B-WE-52,y9r-004-9b-why-are-pesticides-used-on-crops,9B,WE,Assess check,2,Why are pesticides used on crops?,9B Summary sheet p2 Farming table
+9B-WE-53,y9r-005-9b-what-problem-can-pesticides-cause,9B,WE,Assess check,3,What problem can pesticides cause?,9B Summary sheet p2 Farming table
+9B-WE-54,y9r-006-9b-why-are-fertilisers-used,9B,WE,Assess check,2,Why are fertilisers used?,9B Summary sheet p2 Farming table
+9B-WE-55,y9r-007-9b-what-problem-can-fertilisers-cause-if-they-wash-into-streams-and-rivers,9B,WE,Apply check,3,Fertiliser washes from a field into a stream. What problem can this cause?,9B Summary sheet p2 Farming table
+9B-WE-56,y9r-008-9b-what-is-the-problem-with-planting-huge-areas-of-a-single-variety,9B,WE,Assess check,3,What is the problem with planting huge areas of a single variety?,9B Summary sheet p2 Farming table
+9B-WE-57,y9r-009-9b-what-is-cross-breeding,9B,WE,Assess check,2,What is cross-breeding?,9B Summary sheet p2 Breeding varieties
+9B-WE-58,y9r-010-9b-what-happens-to-the-energy-released-from-glucose-in-aerobic-respiration,9B,WE,Assess check,3,What happens to the energy released from glucose in aerobic respiration?,9B Summary sheet p2 Aerobic respiration
+9B-WE-59,y9r-011-9b-why-do-plants-need-magnesium-salts,9B,WE,Assess check,1,Why do plants need magnesium salts?,9B Summary sheet p1 Getting water
+9B-WE-60,y9r-012-9b-where-does-most-photosynthesis-happen-in-leaves,9B,WE,Assess check,3,Where does most photosynthesis happen in leaves?,9B Summary sheet p1 Getting light
+9E-WE-24,y9r-013-9e-what-do-exothermic-reactions-do-to-the-surroundings,9E,WE,Assess check,2,What do exothermic reactions do to the surroundings?,9E Summary sheet p2 Endothermic and exothermic reactions
+9E-WE-25,y9r-014-9e-what-do-endothermic-reactions-do-to-the-surroundings,9E,WE,Assess check,2,What do endothermic reactions do to the surroundings?,9E Summary sheet p2 Endothermic and exothermic reactions
+9E-WE-26,y9r-015-9e-give-an-example-of-an-endothermic-reaction-from-the-revision-sheet,9E,WE,Assess check,2,Give an example of an endothermic reaction from the revision sheet.,9E Summary sheet p2 Endothermic and exothermic reactions
+9E-WE-27,y9r-016-9e-what-do-the-state-symbols-s-l-g-and-aq-mean,9E,WE,Assess check,2,"What do the state symbols s, l, g and aq mean?",9E Summary sheet p2 Endothermic and exothermic reactions
+9E-WE-28,y9r-017-9e-what-is-made-when-calcium-carbonate-thermally-decomposes,9E,WE,Assess check,3,What is made when calcium carbonate thermally decomposes?,9E Summary sheet p2 Thermal decomposition equation
+9E-WE-29,y9r-018-9e-in-peer-review-what-do-scientists-check-in-a-paper,9E,WE,Assess check,3,"In peer review, what do scientists check in a paper?",9E Summary sheet p2 Peer review
+9E-WE-30,y9r-019-9e-after-peer-review-what-can-a-paper-be-recommended-for,9E,WE,Assess check,2,"After peer review, what can a paper be recommended for?",9E Summary sheet p2 Peer review
+9E-WE-31,y9r-020-9e-how-are-metals-recycled-according-to-the-revision-sheet,9E,WE,Assess check,1,"How are metals recycled, according to the revision sheet?",9E Summary sheet p2 Recycling materials
+9E-WE-32,y9r-021-9e-how-is-glass-recycled-according-to-the-revision-sheet,9E,WE,Assess check,1,"How is glass recycled, according to the revision sheet?",9E Summary sheet p2 Recycling materials
+9E-WE-33,y9r-022-9e-how-is-paper-recycled-according-to-the-revision-sheet,9E,WE,Assess check,1,"How is paper recycled, according to the revision sheet?",9E Summary sheet p2 Recycling materials
+9E-WE-34,y9r-023-9e-how-is-concrete-recycled-according-to-the-revision-sheet,9E,WE,Assess check,1,"How is concrete recycled, according to the revision sheet?",9E Summary sheet p2 Recycling materials
+9E-WE-35,y9r-024-9e-give-two-reasons-why-recycling-materials-to-use-again-is-useful,9E,WE,Assess check,3,Give two reasons why recycling materials to use again is useful.,9E Summary sheet p2 Recycling materials
+9E-WE-36,y9r-025-9e-what-is-biomagnification,9E,WE,Apply check,3,"A toxin is eaten by small animals, and then many small animals are eaten by a predator. Why can toxin levels become highest in the predator?",9E Summary sheet p2 Problems with materials
+9F-WE-23,y9r-026-9f-in-reactions-and-physical-changes-what-happens-to-the-number-of-atoms,9F,WE,Explain check,3,Why is there no overall change in mass in a reaction or physical change?,9F Summary sheet p1 Reactions and equations
+9F-WE-24,y9r-027-9f-what-do-the-large-numbers-in-an-equation-show,9F,WE,Assess check,2,What do the large numbers in an equation show?,9F Summary sheet p1 Reactions and equations
+9F-WE-25,y9r-028-9f-what-do-the-letters-in-brackets-in-an-equation-show,9F,WE,Assess check,2,What do the letters in brackets in an equation show?,9F Summary sheet p1 Reactions and equations
+9F-WE-26,y9r-029-9f-what-does-an-atom-contain,9F,WE,Assess check,2,What does an atom contain?,9F Summary sheet p2 Atomic structure
+9F-WE-27,y9r-030-9f-what-is-the-atomic-number-or-proton-number,9F,WE,Assess check,1,What is the atomic number or proton number?,9F Summary sheet p2 Atomic structure
+9F-WE-28,y9r-031-9f-how-are-elements-arranged-in-the-periodic-table,9F,WE,Assess check,2,How are elements arranged in the periodic table?,9F Summary sheet p2 Atomic structure
+9F-WE-29,y9r-032-9f-what-is-the-mass-number-of-an-atom,9F,WE,Assess check,2,What is the mass number of an atom?,9F Summary sheet p2 Atomic structure
+9F-WE-30,y9r-033-9f-what-are-groups-and-periods-in-the-periodic-table,9F,WE,Assess check,1,What are groups and periods in the periodic table?,9F Summary sheet p2 Atomic structure
+9F-WE-31,y9r-034-9f-what-do-metals-that-react-with-water-produce,9F,WE,Assess check,2,What do metals that react with water produce?,9F Summary sheet p1 The reactivity series
+9F-WE-32,y9r-035-9f-what-do-metals-that-react-with-dilute-acids-produce,9F,WE,Assess check,2,What do metals that react with dilute acids produce?,9F Summary sheet p1 The reactivity series
+9F-WE-33,y9r-036-9f-what-is-an-oxidation-reaction-in-the-reactivity-series-section,9F,WE,Assess check,2,What is an oxidation reaction in the reactivity-series section?,9F Summary sheet p1 The reactivity series
+9F-WE-34,y9r-037-9f-what-is-a-hydrocarbon,9F,WE,Assess check,1,What is a hydrocarbon?,9F Summary sheet p3 Hydrocarbons
+9F-WE-35,y9r-038-9f-what-is-the-word-equation-for-complete-combustion-of-a-hydrocarbon,9F,WE,Assess check,2,What is the word equation for complete combustion of a hydrocarbon?,9F Summary sheet p3 Hydrocarbons
+9F-WE-36,y9r-039-9f-what-is-the-test-for-oxygen,9F,WE,Assess check,1,What is the test for oxygen?,9F Summary sheet p3 Hydrocarbons
+9F-WE-37,y9r-040-9f-why-is-an-input-of-energy-from-a-flame-or-spark-needed-to-start-combustion,9F,WE,Assess check,3,Why is an input of energy from a flame or spark needed to start combustion?,9F Summary sheet p3 Hydrocarbons
+9F-WE-38,y9r-041-9f-what-increases-the-rate-of-reaction-according-to-the-revision-sheet,9F,WE,Apply check,3,A student wants a reaction to happen faster. Give three changes from the revision sheet that could increase the rate.,9F Summary sheet p3 Rates of reaction
+9F-WE-39,y9r-042-9f-what-is-a-displacement-reaction,9F,WE,Assess check,1,What is a displacement reaction?,9F Summary sheet p3 Displacement reactions
+9F-WE-40,y9r-043-9f-where-do-most-metals-occur,9F,WE,Assess check,2,Where do most metals occur?,9F Summary sheet p3 Extracting metals
+9F-WE-41,y9r-044-9f-which-metals-can-be-extracted-from-their-ores-by-heating-with-carbon,9F,WE,Apply check,3,A metal is zinc or below zinc in the reactivity series. Which extraction method can be used?,9F Summary sheet p3 Extracting metals
+9F-WE-42,y9r-045-9f-which-metals-need-electrolysis-to-extract-them-from-their-ores,9F,WE,Explain check,3,A metal is above zinc in the reactivity series. Why is electrolysis needed to extract it from its ore?,9F Summary sheet p3 Extracting metals
+9F-WE-43,y9r-046-9f-what-are-oxidation-reduction-and-redox,9F,WE,Assess check,4,"What are oxidation, reduction and redox?",9F Summary sheet p3 Extracting metals
+9I-WE-14,y9r-047-9i-what-can-forces-make-objects-do,9I,WE,Assess check,1,What can forces make objects do?,9I Summary sheet p1 Forces and motion
+9I-WE-15,y9r-048-9i-what-is-true-about-the-forces-on-an-object-moving-at-a-constant-speed,9I,WE,Assess check,1,What is true about the forces on an object moving at a constant speed?,9I Summary sheet p1 Forces and motion
+9I-WE-16,y9r-049-9i-what-happens-to-air-resistance-as-a-falling-object-gets-faster,9I,WE,Assess check,1,What happens to air resistance as a falling object gets faster?,9I Summary sheet p1 Forces and motion
+9I-WE-17,y9r-050-9i-what-has-happened-when-a-falling-object-reaches-terminal-velocity,9I,WE,Apply check,3,A falling object is moving at terminal velocity. What has happened to air resistance and weight?,9I Summary sheet p1 Forces and motion
+9I-WE-18,y9r-051-9i-how-do-you-convert-a-speed-in-m-s-to-km-h,9I,WE,Assess check,3,How do you convert a speed in m/s to km/h?,9I Summary sheet p1 Speed
+9I-WE-19,y9r-052-9i-how-do-you-convert-a-speed-in-km-h-to-m-s,9I,WE,Assess check,3,How do you convert a speed in km/h to m/s?,9I Summary sheet p1 Speed
+9I-WE-20,y9r-053-9i-what-is-mean-speed,9I,WE,Assess check,1,What is mean speed?,9I Summary sheet p1 Speed
+9I-CALC-17,y9r-054-9i-what-is-the-relative-speed-of-a-car-travelling-at-50-km-h-compared-to-one-t,9I,CALC,Calculation,3,One car travels at 50 km/h and another travels at 30 km/h in the same direction. What is the relative speed?,9I Summary sheet p1 Speed
+9I-WE-21,y9r-055-9i-what-does-a-speed-time-graph-show,9I,WE,Assess check,1,What does a speed-time graph show?,9I Summary sheet p1 Speed-time graphs
+9I-WE-22,y9r-056-9i-what-do-horizontal-lines-show-on-a-speed-time-graph,9I,WE,Assess check,1,What do horizontal lines show on a speed-time graph?,9I Summary sheet p1 Speed-time graphs
+9I-WE-23,y9r-057-9i-what-do-sloping-lines-show-on-a-speed-time-graph,9I,WE,Assess check,3,What do sloping lines show on a speed-time graph?,9I Summary sheet p1 Speed-time graphs
+9I-WE-24,y9r-058-9i-on-a-distance-time-graph-what-does-the-gradient-of-a-line-give,9I,WE,Assess check,2,"On a distance-time graph, what does the gradient of a line give?",9I Summary sheet p2 Gradients
+9I-WE-25,y9r-059-9i-what-is-a-pivot-also-known-as,9I,WE,Assess check,1,What is a pivot also known as?,9I Summary sheet p2 Levers and moments
+9I-WE-26,y9r-060-9i-what-is-a-turning-force-called,9I,WE,Assess check,1,What is a turning force called?,9I Summary sheet p2 Levers and moments
+9I-WE-27,y9r-061-9i-what-is-the-formula-for-moment,9I,WE,Assess check,3,What is the formula for moment?,9I Summary sheet p2 Levers and moments
+9I-WE-28,y9r-062-9i-what-is-true-when-an-object-is-balanced,9I,WE,Assess check,3,What is true when an object is balanced?,9I Summary sheet p3 Levers and moments
+9I-WE-29,y9r-063-9i-what-is-work-done,9I,WE,Assess check,1,What is work done?,9I Summary sheet p3 Simple machines
+9I-WE-30,y9r-064-9i-what-is-the-formula-for-work-done,9I,WE,Assess check,3,What is the formula for work done?,9I Summary sheet p3 Simple machines
+9J-WE-32,y9r-065-9j-what-is-a-force-field,9J,WE,Assess check,1,What is a force field?,9J Summary sheet p1 Force fields
+9J-WE-33,y9r-066-9j-what-is-the-earths-gravitational-field-strength-according-to-the-revision-s,9J,WE,Assess check,1,"What is the Earth’s gravitational field strength, according to the revision sheet?",9J Summary sheet p1 Gravitational fields
+9J-CALC-24,y9r-067-9j-what-formula-is-used-to-calculate-weight,9J,CALC,Assess check,3,What formula is used to calculate weight?,9J Summary sheet p1 Gravitational fields
+9J-WE-34,y9r-068-9j-in-an-electric-field-diagram-what-do-the-arrows-show,9J,WE,Assess check,2,"In an electric field diagram, what do the arrows show?",9J Summary sheet p1 Static electricity
+9J-WE-35,y9r-069-9j-what-is-current,9J,WE,Assess check,1,What is current?,9J Summary sheet p1 Electric circuits
+9J-WE-36,y9r-070-9j-how-do-we-measure-current,9J,WE,Assess check,1,How do we measure current?,9J Summary sheet p1 Electric circuits
+9J-WE-37,y9r-071-9j-how-do-we-measure-voltage,9J,WE,Assess check,2,How do we measure voltage?,9J Summary sheet p1 Electric circuits
+9J-WE-38,y9r-072-9j-what-is-resistance,9J,WE,Assess check,1,What is resistance?,9J Summary sheet p2 Resistance
+9J-WE-39,y9r-073-9j-if-resistance-stays-the-same-what-happens-when-voltage-is-higher,9J,WE,Apply check,3,"A component has the same resistance, but the voltage across it is increased. What happens to the current?",9J Summary sheet p2 Resistance
+9J-WE-40,y9r-074-9j-if-voltage-stays-the-same-what-happens-when-resistance-is-higher,9J,WE,Apply check,3,"A circuit has the same voltage, but the resistance is increased. What happens to the current?",9J Summary sheet p2 Resistance
+9J-WE-41,y9r-075-9j-what-three-things-does-the-resistance-of-a-wire-depend-on,9J,WE,Assess check,3,What three things does the resistance of a wire depend on?,9J Summary sheet p2 Resistance
+9J-WE-42,y9r-076-9j-how-does-wire-length-affect-resistance,9J,WE,Assess check,3,How does wire length affect resistance?,9J Summary sheet p2 Resistance
+9J-WE-43,y9r-077-9j-how-does-wire-thickness-affect-resistance,9J,WE,Assess check,3,How does wire thickness affect resistance?,9J Summary sheet p2 Resistance
+9J-WE-44,y9r-078-9j-what-is-the-formula-for-calculating-resistance-from-voltage-and-current,9J,WE,Assess check,3,What is the formula for calculating resistance from voltage and current?,9J Summary sheet p2 Calculating resistance
+9J-WE-45,y9r-079-9j-what-is-an-electromagnet,9J,WE,Assess check,1,What is an electromagnet?,9J Summary sheet p2 Electromagnets
+9J-WE-46,y9r-080-9j-when-is-an-electromagnet-magnetic,9J,WE,Assess check,1,When is an electromagnet magnetic?,9J Summary sheet p2 Electromagnets
+9J-WE-47,y9r-081-9j-give-three-ways-to-make-an-electromagnet-stronger,9J,WE,Assess check,3,Give three ways to make an electromagnet stronger.,9J Summary sheet p2 Electromagnets
+9J-WE-48,y9r-082-9j-what-is-the-motor-effect,9J,WE,Assess check,2,What is the motor effect?,9J Summary sheet p3 Motors
+9J-WE-49,y9r-083-9j-what-does-an-electric-motor-consist-of,9J,WE,Assess check,1,What does an electric motor consist of?,9J Summary sheet p3 Motors
+9J-WE-50,y9r-084-9j-what-makes-the-coil-in-an-electric-motor-turn,9J,WE,Assess check,3,What makes the coil in an electric motor turn?,9J Summary sheet p3 Motors
+9J-WE-51,y9r-085-9j-how-can-the-speed-of-the-motor-or-the-force-it-provides-be-increased,9J,WE,Assess check,3,"How can the speed of the motor, or the force it provides, be increased?",9J Summary sheet p3 Motors
+9A-WE-26,y9p-001-9a-what-is-an-abiotic-factor,9A,WE,Assess check,1,What is an abiotic factor?,9A Word sheet 9Aa Environmental variation
+9A-WE-27,y9p-002-9a-what-is-a-biotic-factor,9A,WE,Assess check,1,What is a biotic factor?,9A Word sheet 9Aa Environmental variation
+9A-WE-28,y9p-003-9a-give-three-examples-of-living-or-biotic-factors-from-the-revision-sheet,9A,WE,Assess check,2,Give three examples of living or biotic factors from the revision sheet.,9A Summary sheet p1 Environmental variation
+9A-WE-29,y9p-004-9a-what-are-abiotic-factors,9A,WE,Assess check,1,What are abiotic factors?,9A Summary sheet p1 Environmental variation
+9A-WE-30,y9p-005-9a-what-forms-an-ecosystem,9A,WE,Assess check,2,What forms an ecosystem?,9A Summary sheet p1 Environmental variation
+9A-WE-31,y9p-006-9a-how-can-probabilities-be-shown-in-inheritance-questions,9A,WE,Assess check,1,How can probabilities be shown in inheritance questions?,"9A Summary sheet p1 Chromosomes, genes and DNA"
+9A-WE-32,y9p-007-9a-what-does-probability-mean,9A,WE,Assess check,1,What does probability mean?,9A Word sheet 9Ab Probability
+9A-WE-33,y9p-008-9a-write-25-as-a-decimal-and-as-a-fraction,9A,WE,Assess check,2,Write 25% as a decimal and as a fraction.,"9A Summary sheet p1 Chromosomes, genes and DNA"
+9F-WE-44,y9p-009-9f-what-is-neutralisation,9F,WE,Assess check,1,What is neutralisation?,9F Word sheet 9Fc Energy and reactions
+9F-WE-45,y9p-010-9f-what-is-a-thermite-reaction,9F,WE,Assess check,3,What is a thermite reaction?,9F Word sheet 9Fd Displacement
+9F-MCQ-34,y9p-011-9f-aluminium-reacts-with-iron-oxide-to-form-aluminium-oxide-and-iron-which-of-these-is-correc,9F,MCQ,Quick quiz,4,Aluminium reacts with iron oxide to form aluminium oxide and iron. Which of these is correct?,9F Quick Quiz 9Fd Q4
+9F-WE-46,y9p-012-9f-in-the-thermite-reaction-which-metal-displaces-iron,9F,WE,Assess check,2,"In the thermite reaction, which metal displaces iron?",9F Quick Quiz 9Fd Q4
+9F-WE-47,y9p-013-9f-what-is-thermal-decomposition,9F,WE,Assess check,1,What is thermal decomposition?,9E Word sheet 9Ec/9Ed Thermal decomposition
+9F-WE-48,y9p-014-9f-what-energy-supply-do-thermal-decomposition-reactions-need-to-keep-going,9F,WE,Assess check,2,What energy supply do thermal decomposition reactions need to keep going?,9F Summary sheet p3 Hydrocarbons
+9F-WE-49,y9p-015-9f-what-is-an-oxidising-agent,9F,WE,Assess check,2,What is an oxidising agent?,9F Word sheet 9Fc Energy and reactions
+9F-WE-50,y9p-016-9f-what-is-a-reducing-agent,9F,WE,Assess check,2,What is a reducing agent?,9F Word sheet 9Fe Extracting metals
+9F-WE-51,y9p-017-9f-when-has-a-substance-been-reduced,9F,WE,Assess check,1,When has a substance been reduced?,9F Word sheet 9Fe Extracting metals
+9F-WE-52,y9p-018-9f-what-is-a-redox-reaction,9F,WE,Assess check,2,What is a redox reaction?,9F Word sheet 9Fe Extracting metals
+9F-WE-53,y9p-019-9f-what-is-oxidation,9F,WE,Assess check,1,What is oxidation?,9F Word sheet 9Fb Reactivity
+9F-WE-54,y9p-020-9f-what-is-the-percentage-loss-or-gain-formula-from-the-revision-sheet,9F,WE,Assess check,3,What is the percentage loss or gain formula from the revision sheet?,9F Summary sheet p3 Percentage loss or gain
+9J-WE-52,y9p-021-9j-what-is-a-decimal-place,9J,WE,Assess check,1,What is a decimal place?,9J Word sheet 9Jd WS Rounding numbers
+9J-WE-53,y9p-022-9j-how-do-you-find-the-number-of-decimal-places-in-a-number,9J,WE,Assess check,1,How do you find the number of decimal places in a number?,9J Word sheet 9Jd WS Rounding numbers
+9J-WE-54,y9p-023-9j-what-is-the-first-significant-figure-in-a-number,9J,WE,Assess check,1,What is the first significant figure in a number?,9J Word sheet 9Jd WS Rounding numbers
+9J-WE-55,y9p-024-9j-what-is-the-second-significant-figure-in-a-number,9J,WE,Assess check,1,What is the second significant figure in a number?,9J Word sheet 9Jd WS Rounding numbers
+9J-CALC-25,y9p-025-9j-in-the-number-3-407-how-many-decimal-places-are-there,9J,CALC,Assess check,2,"In the number 3.407, how many decimal places are there?",9J Word sheet 9Jd WS Rounding numbers
+9J-WE-56,y9p-026-9j-in-the-number-0-0632-what-is-the-first-significant-figure,9J,WE,Assess check,2,"In the number 0.0632, what is the first significant figure?",9J Word sheet 9Jd WS Rounding numbers
+9J-CALC-26,y9p-027-9j-round-42-786-to-one-decimal-place,9J,CALC,Assess check,2,Round 42.786 to one decimal place.,9J Word sheet 9Jd WS Rounding numbers
+9J-CALC-27,y9p-028-9j-round-42-786-to-two-decimal-places,9J,CALC,Assess check,2,Round 42.786 to two decimal places.,9J Word sheet 9Jd WS Rounding numbers
+9J-CALC-28,y9p-029-9j-round-0-0632-to-one-significant-figure,9J,CALC,Assess check,3,Round 0.0632 to one significant figure.,9J Word sheet 9Jd WS Rounding numbers
+9J-CALC-29,y9p-030-9j-round-0-0632-to-two-significant-figures,9J,CALC,Assess check,3,Round 0.0632 to two significant figures.,9J Word sheet 9Jd WS Rounding numbers
+9J-WE-57,y9p-031-9j-what-is-the-difference-between-decimal-places-and-significant-figures,9J,WE,Assess check,3,What is the difference between decimal places and significant figures?,9J Word sheet 9Jd WS Rounding numbers
+9B-WE-61,y9qb-001-9b-farming-benefit-problem-compare,9B,WE,Challenge check,4,A farmer uses fertilisers and pesticides to increase crop yield. Explain one benefit and one possible problem for each method.,9B revision pack farming methods / sustainability notes
+9E-WE-37,y9qb-002-9e-thermal-decomposition-state-symbols,9E,WE,Challenge check,4,Calcium carbonate thermally decomposes. Name the two products and give the state symbol meaning for gas.,9E revision pack thermal decomposition / state symbols
+9F-WE-55,y9qb-003-9f-redox-thermite-application,9F,WE,Challenge check,5,"In the thermite reaction, aluminium reacts with iron oxide to form aluminium oxide and iron. Which substance is reduced, and why?","9F revision pack thermite / oxidation, reduction and redox"
+9I-CALC-18,y9qb-004-9i-moments-balanced-application,9I,CALC,Challenge calculation,4,"A 20 N force acts 0.5 m from a pivot. What moment does it produce, and what equal opposite moment is needed for balance?",9I revision pack moments / balanced moments
+9J-WE-58,y9qb-005-9j-wire-resistance-investigation-variables,9J,WE,Challenge check,4,"In a wire-resistance investigation, which variables should be controlled if you are testing how length affects resistance?",9J revision pack wire resistance investigation
+9J-CALC-30,y9qb-006-9j-significant-figures-application,9J,CALC,Challenge calculation,4,A calculated value is 0.0632 A. Write it to one significant figure and to two significant figures.,9J Word sheet 9Jd WS Rounding numbers
+9I-VOC-16,y9cgp-001-I-pressure-define-pressure,9I,VOC,Vocabulary,1,Explain: pressure,CGP KS3 Science syllabus map Year 9 Topic 1 Pressure; Oak pressure/floating lessons
+9I-VOC-17,y9cgp-002-I-pressure-define-upthrust,9I,VOC,Vocabulary,1,Explain: upthrust,CGP KS3 Science syllabus map Year 9 Topic 1 Pressure; Oak pressure/floating lessons
+9I-MCQ-20,y9cgp-003-I-pressure-which-equation-links-pressure-force-and-area,9I,MCQ,Quick quiz,1,"Which equation links pressure, force and area?",CGP KS3 Science syllabus map Year 9 Topic 1 Pressure; Oak pressure/floating lessons
+9I-CALC-19,y9cgp-004-I-pressure-calculate-the-pressure-when-a-120-n-force-acts-on-an-area-of,9I,CALC,Calculation,2,Calculate the pressure when a 120 N force acts on an area of 0.50 m².,CGP KS3 Science syllabus map Year 9 Topic 1 Pressure; Oak pressure/floating lessons
+9I-CALC-20,y9cgp-005-I-pressure-a-force-of-60-n-produces-a-pressure-of-300-pa-calculate-the-,9I,CALC,Calculation,3,A force of 60 N produces a pressure of 300 Pa. Calculate the area.,CGP KS3 Science syllabus map Year 9 Topic 1 Pressure; Oak pressure/floating lessons
+9I-WE-31,y9cgp-006-I-pressure-describe-how-liquid-pressure-changes-with-depth,9I,WE,Progress check,2,Describe how liquid pressure changes with depth.,CGP KS3 Science syllabus map Year 9 Topic 1 Pressure; Oak pressure/floating lessons
+9I-WE-32,y9cgp-007-I-pressure-why-does-a-dam-wall-need-to-be-stronger-near-the-bottom,9I,WE,Apply check,3,Why does a dam wall need to be stronger near the bottom?,CGP KS3 Science syllabus map Year 9 Topic 1 Pressure; Oak pressure/floating lessons
+9I-MCQ-21,y9cgp-008-I-pressure-a-drawing-shows-arrows-from-water-pushing-sideways-on-a-deep,9I,MCQ,Quick quiz,2,A drawing shows arrows from water pushing sideways on a deep wall. Which arrows should usually be longest?,CGP KS3 Science syllabus map Year 9 Topic 1 Pressure; Oak pressure/floating lessons
+9I-WE-33,y9cgp-009-I-pressure-describe-how-atmospheric-pressure-changes-with-height,9I,WE,Progress check,2,Describe how atmospheric pressure changes with height.,CGP KS3 Science syllabus map Year 9 Topic 1 Pressure; Oak pressure/floating lessons
+9I-WE-34,y9cgp-010-I-pressure-why-can-a-large-ship-float-even-though-it-is-made-from-dense,9I,WE,Apply check,3,Why can a large ship float even though it is made from dense metal?,CGP KS3 Science syllabus map Year 9 Topic 1 Pressure; Oak pressure/floating lessons
+9I-WE-35,y9cgp-011-I-pressure-what-does-it-mean-if-an-object-floats,9I,WE,Progress check,2,What does it mean if an object floats?,CGP KS3 Science syllabus map Year 9 Topic 1 Pressure; Oak pressure/floating lessons
+9I-MCQ-22,y9cgp-012-I-pressure-which-change-would-increase-the-pressure-made-by-the-same-fo,9I,MCQ,Quick quiz,2,Which change would increase the pressure made by the same force?,CGP KS3 Science syllabus map Year 9 Topic 1 Pressure; Oak pressure/floating lessons
+9I-WE-36,y9cgp-013-I-pressure-why-do-snowshoes-help-a-person-walk-on-soft-snow,9I,WE,Apply check,2,Why do snowshoes help a person walk on soft snow?,CGP KS3 Science syllabus map Year 9 Topic 1 Pressure; Oak pressure/floating lessons
+9I-WE-37,y9cgp-014-I-pressure-a-block-underwater-has-equal-sized-top-and-bottom-faces-expl,9I,WE,Challenge check,4,A block underwater has equal-sized top and bottom faces. Explain why water can produce an upward resultant force on it.,CGP KS3 Science syllabus map Year 9 Topic 1 Pressure; Oak pressure/floating lessons
+9I-WE-38,y9cgp-015-I-pressure-correct-the-misconception-liquid-pressure-at-the-bottom-depe,9I,WE,Progress check,3,Correct the misconception: “Liquid pressure at the bottom depends mainly on container width.”,CGP KS3 Science syllabus map Year 9 Topic 1 Pressure; Oak pressure/floating lessons
+9E-VOC-19,y9cgp-046-E-heating-cooling-define-thermal-conductor,9E,VOC,Vocabulary,1,Explain: thermal conductor,CGP KS3 Science syllabus map Year 9 Topic 5 Heating and cooling; Oak heating/cooling lessons
+9E-VOC-20,y9cgp-047-E-heating-cooling-define-thermal-insulator,9E,VOC,Vocabulary,1,Explain: thermal insulator,CGP KS3 Science syllabus map Year 9 Topic 5 Heating and cooling; Oak heating/cooling lessons
+9E-WE-38,y9cgp-048-E-heating-cooling-what-happens-to-particles-in-a-solid-when-it-is-heated,9E,WE,Progress check,2,What happens to particles in a solid when it is heated?,CGP KS3 Science syllabus map Year 9 Topic 5 Heating and cooling; Oak heating/cooling lessons
+9E-WE-39,y9cgp-049-E-heating-cooling-what-happens-to-particles-in-a-hot-object-as-it-cools,9E,WE,Progress check,2,What happens to particles in a hot object as it cools?,CGP KS3 Science syllabus map Year 9 Topic 5 Heating and cooling; Oak heating/cooling lessons
+9E-MCQ-21,y9cgp-050-E-heating-cooling-which-changes-of-state-are-endothermic,9E,MCQ,Quick quiz,2,Which changes of state are endothermic?,CGP KS3 Science syllabus map Year 9 Topic 5 Heating and cooling; Oak heating/cooling lessons
+9E-MCQ-22,y9cgp-051-E-heating-cooling-which-changes-of-state-are-exothermic,9E,MCQ,Quick quiz,2,Which changes of state are exothermic?,CGP KS3 Science syllabus map Year 9 Topic 5 Heating and cooling; Oak heating/cooling lessons
+9E-WE-40,y9cgp-052-E-heating-cooling-describe-conduction-using-particles,9E,WE,Progress check,3,Describe conduction using particles.,CGP KS3 Science syllabus map Year 9 Topic 5 Heating and cooling; Oak heating/cooling lessons
+9E-WE-41,y9cgp-053-E-heating-cooling-why-does-a-metal-spoon-in-hot-soup-become-hot-quickly,9E,WE,Apply check,2,Why does a metal spoon in hot soup become hot quickly?,CGP KS3 Science syllabus map Year 9 Topic 5 Heating and cooling; Oak heating/cooling lessons
+9E-WE-42,y9cgp-054-E-heating-cooling-why-does-a-plastic-handle-help-protect-your-hand-from-a-hot-,9E,WE,Apply check,2,Why does a plastic handle help protect your hand from a hot pan?,CGP KS3 Science syllabus map Year 9 Topic 5 Heating and cooling; Oak heating/cooling lessons
+9E-WE-43,y9cgp-055-E-heating-cooling-what-does-a-cooling-curve-show,9E,WE,Progress check,1,What does a cooling curve show?,CGP KS3 Science syllabus map Year 9 Topic 5 Heating and cooling; Oak heating/cooling lessons
+9E-WE-44,y9cgp-056-E-heating-cooling-why-does-a-very-hot-drink-cool-faster-at-first-than-later,9E,WE,Apply check,3,Why does a very hot drink cool faster at first than later?,CGP KS3 Science syllabus map Year 9 Topic 5 Heating and cooling; Oak heating/cooling lessons
+9E-WE-45,y9cgp-057-E-heating-cooling-correct-the-misconception-energy-disappears-when-an-object-c,9E,WE,Progress check,2,Correct the misconception: “Energy disappears when an object cools.”,CGP KS3 Science syllabus map Year 9 Topic 5 Heating and cooling; Oak heating/cooling lessons
+9E-MCQ-23,y9cgp-058-E-heating-cooling-which-material-would-usually-be-best-for-reducing-heat-loss-,9E,MCQ,Quick quiz,2,Which material would usually be best for reducing heat loss from a mug?,CGP KS3 Science syllabus map Year 9 Topic 5 Heating and cooling; Oak heating/cooling lessons
+9E-WE-46,y9cgp-059-E-heating-cooling-explain-why-insulation-does-not-make-heat-it-helps-keep-some,9E,WE,Challenge check,3,Explain why insulation does not “make heat”; it helps keep something warm.,CGP KS3 Science syllabus map Year 9 Topic 5 Heating and cooling; Oak heating/cooling lessons
+9F-VOC-19,y9cgp-060-F-periodic-table-bridge-define-periodic-table,9F,VOC,Vocabulary,1,Explain: periodic table,9F Summary sheet p2 Atomic structure; CGP KS3 Year 9 Topic 7 Periodic table; Oak periodic table lessons
+9F-WE-56,y9cgp-061-F-periodic-table-bridge-what-does-an-atom-contain,9F,WE,Progress check,2,What does an atom contain?,9F Summary sheet p2 Atomic structure; CGP KS3 Year 9 Topic 7 Periodic table; Oak periodic table lessons
+9F-WE-57,y9cgp-062-F-periodic-table-bridge-what-is-the-atomic-number-or-proton-number,9F,WE,Progress check,1,What is the atomic number or proton number?,9F Summary sheet p2 Atomic structure; CGP KS3 Year 9 Topic 7 Periodic table; Oak periodic table lessons
+9F-WE-58,y9cgp-063-F-periodic-table-bridge-what-is-the-mass-number-of-an-atom,9F,WE,Progress check,2,What is the mass number of an atom?,9F Summary sheet p2 Atomic structure; CGP KS3 Year 9 Topic 7 Periodic table; Oak periodic table lessons
+9F-WE-59,y9cgp-064-F-periodic-table-bridge-what-are-groups-and-periods-in-the-periodic-table,9F,WE,Progress check,1,What are groups and periods in the periodic table?,9F Summary sheet p2 Atomic structure; CGP KS3 Year 9 Topic 7 Periodic table; Oak periodic table lessons
+9F-MCQ-35,y9cgp-065-F-periodic-table-bridge-elements-in-the-same-group-usually-have,9F,MCQ,Quick quiz,2,Elements in the same group usually have:,9F Summary sheet p2 Atomic structure; CGP KS3 Year 9 Topic 7 Periodic table; Oak periodic table lessons
+9F-MCQ-36,y9cgp-066-F-periodic-table-bridge-across-a-period-elements-are-arranged-mainly-by-increasing,9F,MCQ,Quick quiz,1,"Across a period, elements are arranged mainly by increasing:",9F Summary sheet p2 Atomic structure; CGP KS3 Year 9 Topic 7 Periodic table; Oak periodic table lessons
+9F-WE-60,y9cgp-067-F-periodic-table-bridge-where-are-metals-usually-found-in-the-periodic-table,9F,WE,Progress check,1,Where are metals usually found in the periodic table?,9F Summary sheet p2 Atomic structure; CGP KS3 Year 9 Topic 7 Periodic table; Oak periodic table lessons
+9F-WE-61,y9cgp-068-F-periodic-table-bridge-give-two-general-properties-of-metals,9F,WE,Progress check,2,Give two general properties of metals.,9F Summary sheet p2 Atomic structure; CGP KS3 Year 9 Topic 7 Periodic table; Oak periodic table lessons
+9F-WE-62,y9cgp-069-F-periodic-table-bridge-give-two-general-properties-of-non-metals,9F,WE,Progress check,2,Give two general properties of non-metals.,9F Summary sheet p2 Atomic structure; CGP KS3 Year 9 Topic 7 Periodic table; Oak periodic table lessons
+9F-MCQ-37,y9cgp-070-F-periodic-table-bridge-which-group-contains-the-alkali-metals,9F,MCQ,Quick quiz,2,Which group contains the alkali metals?,9F Summary sheet p2 Atomic structure; CGP KS3 Year 9 Topic 7 Periodic table; Oak periodic table lessons
+9F-WE-63,y9cgp-071-F-periodic-table-bridge-describe-the-reactivity-trend-down-group-1,9F,WE,Progress check,2,Describe the reactivity trend down Group 1.,9F Summary sheet p2 Atomic structure; CGP KS3 Year 9 Topic 7 Periodic table; Oak periodic table lessons
+9F-MCQ-38,y9cgp-072-F-periodic-table-bridge-which-group-contains-the-halogens,9F,MCQ,Quick quiz,2,Which group contains the halogens?,9F Summary sheet p2 Atomic structure; CGP KS3 Year 9 Topic 7 Periodic table; Oak periodic table lessons
+9F-WE-64,y9cgp-073-F-periodic-table-bridge-describe-the-reactivity-trend-down-group-7,9F,WE,Progress check,3,Describe the reactivity trend down Group 7.,9F Summary sheet p2 Atomic structure; CGP KS3 Year 9 Topic 7 Periodic table; Oak periodic table lessons
+9E-VOC-21,y9cgp-074-E-climate-bridge-define-greenhouse-gas,9E,VOC,Vocabulary,1,Explain: greenhouse gas,9E environmental impacts/greenhouse gas revision content; CGP KS3 Year 9 Topic 11 Climate; Oak climate lessons
+9E-VOC-22,y9cgp-075-E-climate-bridge-define-global-warming,9E,VOC,Vocabulary,1,Explain: global warming,9E environmental impacts/greenhouse gas revision content; CGP KS3 Year 9 Topic 11 Climate; Oak climate lessons
+9E-WE-47,y9cgp-076-E-climate-bridge-what-causes-the-natural-greenhouse-effect,9E,WE,Progress check,2,What causes the natural greenhouse effect?,9E environmental impacts/greenhouse gas revision content; CGP KS3 Year 9 Topic 11 Climate; Oak climate lessons
+9E-WE-48,y9cgp-077-E-climate-bridge-why-can-extra-greenhouse-gases-increase-global-temperature,9E,WE,Apply check,3,Why can extra greenhouse gases increase global temperature?,9E environmental impacts/greenhouse gas revision content; CGP KS3 Year 9 Topic 11 Climate; Oak climate lessons
+9E-MCQ-24,y9cgp-078-E-climate-bridge-which-gas-is-commonly-released-by-burning-fossil-fuels,9E,MCQ,Quick quiz,1,Which gas is commonly released by burning fossil fuels?,9E environmental impacts/greenhouse gas revision content; CGP KS3 Year 9 Topic 11 Climate; Oak climate lessons
+9E-WE-49,y9cgp-079-E-climate-bridge-give-two-examples-of-evidence-used-for-global-warming,9E,WE,Progress check,3,Give two examples of evidence used for global warming.,9E environmental impacts/greenhouse gas revision content; CGP KS3 Year 9 Topic 11 Climate; Oak climate lessons
+9E-WE-50,y9cgp-080-E-climate-bridge-how-can-cutting-fossil-fuel-use-help-reduce-global-warming,9E,WE,Progress check,2,How can cutting fossil fuel use help reduce global warming?,9E environmental impacts/greenhouse gas revision content; CGP KS3 Year 9 Topic 11 Climate; Oak climate lessons
+9E-WE-51,y9cgp-081-E-climate-bridge-explain-one-environmental-problem-caused-by-making-materials,9E,WE,Apply check,3,Explain one environmental problem caused by making materials.,9E environmental impacts/greenhouse gas revision content; CGP KS3 Year 9 Topic 11 Climate; Oak climate lessons
+9E-MCQ-25,y9cgp-082-E-climate-bridge-which-action-would-most-directly-reduce-carbon-dioxide-emiss,9E,MCQ,Quick quiz,2,Which action would most directly reduce carbon dioxide emissions from energy use?,9E environmental impacts/greenhouse gas revision content; CGP KS3 Year 9 Topic 11 Climate; Oak climate lessons
+9E-WE-52,y9cgp-083-E-climate-bridge-why-is-climate-change-more-than-just-one-hot-day,9E,WE,Progress check,2,Why is climate change more than just “one hot day”?,9E environmental impacts/greenhouse gas revision content; CGP KS3 Year 9 Topic 11 Climate; Oak climate lessons
+9E-WE-53,y9cgp-084-E-climate-bridge-why-do-scientists-compare-modern-temperatures-with-long-term,9E,WE,Apply check,3,Why do scientists compare modern temperatures with long-term averages?,9E environmental impacts/greenhouse gas revision content; CGP KS3 Year 9 Topic 11 Climate; Oak climate lessons
+9E-WE-54,y9cgp-085-E-climate-bridge-explain-why-a-correlation-between-greenhouse-gas-emissions-a,9E,WE,Challenge check,4,Explain why a correlation between greenhouse gas emissions and temperature is important but not the only evidence needed.,9E environmental impacts/greenhouse gas revision content; CGP KS3 Year 9 Topic 11 Climate; Oak climate lessons
+9F-VOC-20,y9cgp-096-F-chemical-energy-bridge-define-exothermic-reaction,9F,VOC,Vocabulary,1,Explain: exothermic reaction,9E/9F Summary sheet exothermic and endothermic reactions; CGP KS3 Year 9 Topic 10 Chemical energy; Oak chemical energy lesson
+9F-VOC-21,y9cgp-097-F-chemical-energy-bridge-define-endothermic-reaction,9F,VOC,Vocabulary,1,Explain: endothermic reaction,9E/9F Summary sheet exothermic and endothermic reactions; CGP KS3 Year 9 Topic 10 Chemical energy; Oak chemical energy lesson
+9F-WE-65,y9cgp-098-F-chemical-energy-bridge-what-do-exothermic-reactions-do-to-the-surroundings,9F,WE,Progress check,2,What do exothermic reactions do to the surroundings?,9E/9F Summary sheet exothermic and endothermic reactions; CGP KS3 Year 9 Topic 10 Chemical energy; Oak chemical energy lesson
+9F-WE-66,y9cgp-099-F-chemical-energy-bridge-what-do-endothermic-reactions-do-to-the-surroundings,9F,WE,Progress check,2,What do endothermic reactions do to the surroundings?,9E/9F Summary sheet exothermic and endothermic reactions; CGP KS3 Year 9 Topic 10 Chemical energy; Oak chemical energy lesson
+9F-MCQ-39,y9cgp-100-F-chemical-energy-bridge-a-reaction-mixture-starts-at-20-c-and-ends-at-28-c-what-type,9F,MCQ,Quick quiz,2,A reaction mixture starts at 20°C and ends at 28°C. What type of reaction is it?,9E/9F Summary sheet exothermic and endothermic reactions; CGP KS3 Year 9 Topic 10 Chemical energy; Oak chemical energy lesson
+9F-MCQ-40,y9cgp-101-F-chemical-energy-bridge-a-reaction-mixture-starts-at-22-c-and-falls-to-16-c-what-typ,9F,MCQ,Quick quiz,2,A reaction mixture starts at 22°C and falls to 16°C. What type of reaction is it?,9E/9F Summary sheet exothermic and endothermic reactions; CGP KS3 Year 9 Topic 10 Chemical energy; Oak chemical energy lesson
+9F-WE-67,y9cgp-102-F-chemical-energy-bridge-why-should-temperature-be-measured-before-and-after-a-reacti,9F,WE,Apply check,3,Why should temperature be measured before and after a reaction?,9E/9F Summary sheet exothermic and endothermic reactions; CGP KS3 Year 9 Topic 10 Chemical energy; Oak chemical energy lesson
+9F-WE-68,y9cgp-103-F-chemical-energy-bridge-give-one-example-of-an-endothermic-reaction-from-the-revisio,9F,WE,Progress check,1,Give one example of an endothermic reaction from the revision sheet.,9E/9F Summary sheet exothermic and endothermic reactions; CGP KS3 Year 9 Topic 10 Chemical energy; Oak chemical energy lesson
+9F-WE-69,y9cgp-104-F-chemical-energy-bridge-why-is-combustion-usually-described-as-exothermic,9F,WE,Apply check,2,Why is combustion usually described as exothermic?,9E/9F Summary sheet exothermic and endothermic reactions; CGP KS3 Year 9 Topic 10 Chemical energy; Oak chemical energy lesson
+9F-WE-70,y9cgp-105-F-chemical-energy-bridge-correct-the-misconception-a-cold-reaction-makes-cold-energy,9F,WE,Challenge check,3,Correct the misconception: “A cold reaction makes cold energy.”,9E/9F Summary sheet exothermic and endothermic reactions; CGP KS3 Year 9 Topic 10 Chemical energy; Oak chemical energy lesson
+9I-CALC-21,y9img-001-9i-density-water-displacement-calculate-density,9I,CALC,Calculation,3,Use the measuring cylinders. Calculate the density of the object. Give your answer in g/cm³.,Visual integration v1.52.0
+9I-CALC-22,y9img-002-9i-density-cuboid-calculate-density,9I,CALC,Calculation,3,Use the cuboid diagram. Calculate the density of the object in g/cm³.,Visual integration v1.52.0
+9I-CALC-23,y9img-003-9i-pressure-solid-block-calculate-pressure,9I,CALC,Calculation,2,Use the block diagram. Calculate the pressure on the surface in N/cm².,Visual integration v1.52.0
+9I-MCQ-23,y9img-004-9i-pressure-shoe-contact-area-compare,9I,MCQ,Quick quiz,2,"Use the shoe diagrams. Which shoe produces the greater pressure on the ground, and why?",Visual integration v1.52.0
+9I-CALC-24,y9img-005-9i-moment-balanced-missing-distance,9I,CALC,Calculation,3,Use the balanced lever diagram. Calculate the missing distance on the right-hand side.,Visual integration v1.52.0
+9I-MCQ-24,y9img-006-9i-distance-time-journey-stopped-section,9I,MCQ,Quick quiz,2,Use the distance-time graph. During which time interval was the object stopped?,Visual integration v1.52.0
+9J-MCQ-39,y9img-007-9j-current-voltage-greater-resistance,9J,MCQ,Quick quiz,3,Use the current-voltage graph. Which line shows the greater resistance?,Visual integration v1.52.0
+9E-MCQ-26,y9r4-001-9e-peer-review-flowchart-outcome,9E,MCQ,Quick quiz,2,Use the peer-review flowchart. What are the possible final outcomes after expert review?,Visual integration v1.52.0
+9B-MCQ-21,y9r4-002-9b-farming-table-hedgerows,9B,MCQ,Quick quiz,2,Use the farming-methods table. Which method increases field size but can cause habitat loss and reduced biodiversity?,Visual integration v1.52.0
+9B-MCQ-22,y9r4-003-9b-glucose-use-proteins,9B,MCQ,Quick quiz,2,Use the glucose-use diagram. Which labelled box represents glucose being used to make proteins with mineral ions?,Visual integration v1.52.0
+9E-MCQ-27,y9r4-004-9e-exothermic-endothermic-compare,9E,MCQ,Quick quiz,2,Use the two reaction diagrams. Which diagram shows an exothermic reaction?,Visual integration v1.52.0
+9A-MCQ-21,y9r4-005-9a-biodiversity-preservation-methods,9A,MCQ,Quick quiz,2,Use the biodiversity diagram. Which option gives two methods used to preserve biodiversity?,Visual integration v1.52.0
+9B-MCQ-23,y9r5-001-9b-photosynthesis-temperature-rate,9B,MCQ,Quick quiz,3,Use the limiting-factor graphs. Which graph shows the rate falling after a high value of the factor?,Visual integration v1.52.0
+9I-MCQ-25,y9r5-002-9i-speed-time-constant-speed,9I,MCQ,Quick quiz,2,Use the speed-time graph. Which section shows constant speed?,Visual integration v1.52.0
+9J-MCQ-40,y9r5-003-9j-wire-resistance-independent-variable,9J,MCQ,Quick quiz,3,Use the wire-resistance setup. What is the independent variable in this investigation?,Visual integration v1.52.0
+9F-MCQ-41,y9r5-004-9f-extraction-electrolysis-region,9F,MCQ,Quick quiz,3,Use the extraction decision tree. Which method is used for the most reactive metals shown above carbon?,Visual integration v1.52.0
+9A-MCQ-22,y9r5-005-9a-natural-selection-next-generation,9A,MCQ,Quick quiz,3,Use the natural-selection sequence. Which panel shows the next generation after selection has acted?,Visual integration v1.52.0
+9E-MCQ-28,y9r5-006-9e-recycling-concrete,9E,MCQ,Quick quiz,2,Use the recycling methods grid. Which material is recycled by crushing and reusing as aggregate?,Visual integration v1.52.0
+9F-MCQ-42,y9r5-007-9f-displacement-copper-deposit,9F,MCQ,Quick quiz,3,Use the before-and-after displacement diagram. What solid forms on the magnesium strip?,Visual integration v1.52.0
+9I-MCQ-26,y9r5-008-9i-terminal-velocity-balanced-forces,9I,MCQ,Quick quiz,3,Use the falling-object sequence. Which stage shows balanced forces?,Visual integration v1.52.0
+9J-MCQ-41,y9r5-009-9j-static-balloon-negative,9J,MCQ,Quick quiz,2,Use the charge-transfer diagram. Which object has gained electrons after rubbing?,Visual integration v1.52.0
+9J-MCQ-42,y9r5-010-9j-electromagnet-component,9J,MCQ,Quick quiz,2,Use the electromagnet setup. Which part allows the electromagnet to be switched on and off?,Visual integration v1.52.0
+9J-MCQ-43,y9r5-011-9j-motor-effect-wire-force,9J,MCQ,Quick quiz,4,Use the motor-effect diagram. What causes the coil to rotate?,Visual integration v1.52.0
+9F-MCQ-43,y9r6-001-9f-gas-pressure-volume,9F,MCQ,Quick quiz,3,"Use the gas pressure diagram. In the volume panel, which container would have the higher gas pressure if temperature and particle number stayed the same?",Reaction images r6 integration v1.53.0
+9F-MCQ-44,y9r6-002-9f-metal-reaction-products-hydrogen,9F,MCQ,Quick quiz,2,Use the reactive-metal products map. Which product label represents hydrogen gas?,Reaction images r6 integration v1.53.0
+9B-MCQ-24,y9r6-003-9b-plant-transport-xylem,9B,MCQ,Quick quiz,2,Use the plant transport diagram. Which label shows the xylem pathway carrying water and mineral ions up the stem?,Reaction images r6 integration v1.53.0
+9J-CALC-31,y9r6-004-9j-current-voltage-resistance-calculate,9J,CALC,Calculation,3,Use the current-voltage graph. Calculate the resistance of line B at 6 V.,Reaction images r6 integration v1.53.0
+9A-MCQ-23,y9r6-005-9a-dna-gene-section,9A,MCQ,Quick quiz,2,Use the DNA hierarchy diagram. Which label shows a gene as a short section of DNA?,Reaction images r6 integration v1.53.0
+9J-MCQ-44,y9r6-006-9j-force-field-electric,9J,MCQ,Quick quiz,2,Use the force-field comparison diagram. Which labelled panel shows an electric field?,Reaction images r6 integration v1.53.0

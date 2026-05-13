@@ -1,0 +1,709 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Year 9 Science Content Review Export</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    :root {
+      --review-ink: #111827;
+      --review-muted: #475569;
+      --review-line: #d7dee8;
+      --review-panel: #ffffff;
+      --review-soft: #f8fafc;
+      --review-accent: #2563eb;
+      --review-note: #f4f0ff;
+      --review-answer: #eefbf3;
+    }
+
+    body.review-body {
+      background: #eef3f8;
+      color: var(--review-ink);
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    .review-shell {
+      width: min(1180px, calc(100% - 32px));
+      margin: 28px auto 64px;
+    }
+
+    .review-header,
+    .review-toolbar,
+    .review-section,
+    .review-card,
+    .review-note,
+    .review-overview {
+      border: 1px solid var(--review-line);
+      border-radius: 22px;
+      background: var(--review-panel);
+      box-shadow: 0 10px 35px rgba(15, 23, 42, 0.05);
+    }
+
+    .review-header {
+      padding: 28px;
+      margin-bottom: 16px;
+    }
+
+    .review-header h1 {
+      margin: 0 0 10px;
+      font-size: clamp(1.8rem, 3vw, 2.6rem);
+      line-height: 1.05;
+    }
+
+    .review-header p {
+      max-width: 920px;
+      margin: 0;
+      color: var(--review-muted);
+      font-size: 1.05rem;
+      line-height: 1.55;
+    }
+
+    .review-toolbar {
+      position: sticky;
+      top: 12px;
+      z-index: 10;
+      padding: 16px;
+      margin-bottom: 24px;
+      display: grid;
+      grid-template-columns: repeat(5, minmax(150px, 1fr));
+      gap: 12px;
+      align-items: end;
+    }
+
+    .review-control {
+      display: grid;
+      gap: 6px;
+    }
+
+    .review-control label {
+      font-weight: 800;
+      font-size: 0.8rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: #334155;
+    }
+
+    .review-control select,
+    .review-control input {
+      border: 1px solid var(--review-line);
+      border-radius: 14px;
+      padding: 10px 12px;
+      font: inherit;
+      background: #fff;
+      color: var(--review-ink);
+    }
+
+    .review-print-button {
+      border: 0;
+      border-radius: 999px;
+      padding: 12px 16px;
+      font-weight: 900;
+      color: #fff;
+      background: linear-gradient(135deg, #5b3ee4, #0891b2);
+      cursor: pointer;
+    }
+
+    .review-counts {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 18px;
+    }
+
+    .review-counts span,
+    .review-pill {
+      display: inline-flex;
+      align-items: center;
+      border-radius: 999px;
+      padding: 6px 10px;
+      background: #eaf1fb;
+      color: #24364f;
+      font-weight: 800;
+      font-size: 0.82rem;
+    }
+
+    .question-id-pill {
+      background: #111827;
+      color: #ffffff;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+      letter-spacing: 0.02em;
+    }
+
+    .review-section {
+      padding: 22px;
+      margin: 20px 0;
+    }
+
+    .review-section > h2 {
+      margin: 0 0 14px;
+      font-size: 1.55rem;
+    }
+
+    .review-grid {
+      display: grid;
+      gap: 18px;
+    }
+
+    .review-card,
+    .review-note,
+    .review-overview {
+      padding: 22px;
+      overflow: hidden;
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+
+    .review-card h3,
+    .review-note h3,
+    .review-overview h3 {
+      margin: 0 0 10px;
+      font-size: 1.35rem;
+      line-height: 1.2;
+    }
+
+    .review-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 14px;
+    }
+
+    .review-question {
+      font-size: 1.25rem;
+      line-height: 1.45;
+      font-weight: 850;
+      margin: 14px 0;
+    }
+
+    .review-card .answer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 10px;
+      margin-top: 14px;
+    }
+
+    .review-card .answer-button {
+      text-align: left;
+      cursor: default;
+    }
+
+    .review-open-answer {
+      border: 1px dashed #bdc7d7;
+      border-radius: 16px;
+      min-height: 92px;
+      padding: 14px;
+      color: #64748b;
+      background: #fbfdff;
+      margin-top: 14px;
+    }
+
+    .review-answer {
+      margin-top: 14px;
+      border: 1px solid #bfe7cb;
+      border-radius: 16px;
+      background: var(--review-answer);
+      padding: 12px 14px;
+    }
+
+    .review-answer summary {
+      cursor: pointer;
+      font-weight: 900;
+    }
+
+    .review-answer div {
+      margin-top: 10px;
+      color: #14452a;
+      line-height: 1.5;
+    }
+
+    .review-answer p {
+      margin: 8px 0 0;
+    }
+
+    .review-note-section {
+      border-top: 1px solid var(--review-line);
+      margin-top: 18px;
+      padding-top: 18px;
+    }
+
+    .review-note-section h4 {
+      margin: 0 0 8px;
+      font-size: 1.05rem;
+    }
+
+    .review-note-section p,
+    .review-note-section li,
+    .review-overview p,
+    .review-overview li {
+      color: #334155;
+      line-height: 1.55;
+    }
+
+    .review-note-section ul,
+    .review-overview ul {
+      margin-top: 8px;
+      padding-left: 22px;
+    }
+
+    .review-media-grid,
+    .review-overview-media,
+    .review-note-media,
+    .review-question-media {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 14px;
+      margin: 16px 0;
+    }
+
+    .review-question-media .card-media,
+    .review-note-media .card-media,
+    .review-overview-media .card-media {
+      margin: 0;
+      border: 1px solid var(--review-line);
+      border-radius: 18px;
+      overflow: hidden;
+      background: #fff;
+    }
+
+    .review-question-media .media-visual-wrap,
+    .review-note-media .media-visual-wrap,
+    .review-overview-media .media-visual-wrap {
+      background: #fff;
+    }
+
+    .review-question-media img,
+    .review-note-media img,
+    .review-overview-media img {
+      display: block;
+      width: 100%;
+      height: auto;
+      max-height: none;
+      object-fit: contain;
+    }
+
+    .review-question-media .media-layer-text,
+    .review-note-media .media-layer-text,
+    .review-overview-media .media-layer-text {
+      position: static;
+      display: block;
+      padding: 12px 14px;
+      background: #f8fafc;
+      color: #24364f;
+    }
+
+    .review-route-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 12px;
+      margin-top: 12px;
+    }
+
+    .review-route-card {
+      border: 1px solid var(--review-line);
+      border-radius: 16px;
+      padding: 14px;
+      background: var(--review-soft);
+    }
+
+    .review-empty {
+      padding: 18px;
+      border: 1px dashed var(--review-line);
+      border-radius: 18px;
+      color: var(--review-muted);
+      background: var(--review-soft);
+    }
+
+    .review-hidden {
+      display: none !important;
+    }
+
+    .review-no-print {
+      color: var(--review-muted);
+      font-size: 0.95rem;
+      margin-top: 8px;
+    }
+
+    @media (max-width: 900px) {
+      .review-toolbar {
+        position: static;
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media print {
+      body.review-body {
+        background: #fff;
+      }
+      .review-shell {
+        width: auto;
+        margin: 0;
+      }
+      .review-toolbar,
+      .review-no-print {
+        display: none !important;
+      }
+      .review-header,
+      .review-section,
+      .review-card,
+      .review-note,
+      .review-overview {
+        box-shadow: none;
+        border-color: #cbd5e1;
+      }
+      .review-section {
+        page-break-before: auto;
+      }
+      .review-answer {
+        display: block;
+      }
+      .review-answer summary {
+        list-style: none;
+      }
+      .review-answer summary::-webkit-details-marker {
+        display: none;
+      }
+      .review-question-media img,
+      .review-note-media img,
+      .review-overview-media img {
+        max-height: 610px;
+      }
+      @page {
+        size: A4 portrait;
+        margin: 12mm;
+      }
+    }
+  </style>
+</head>
+<body class="review-body">
+  <main class="review-shell">
+    <header class="review-header">
+      <h1>Year 9 Science Content Review Export</h1>
+      <p>This page renders the same Year 9 unit overview, class-note and question-card content used by the app. It is intended for content QA, image-readability checks and PDF printing.</p>
+      <p class="review-no-print">Use the filters, then choose <strong>Print / Save PDF</strong>. For image readability checks, print one unit at a time so diagrams stay large.</p>
+      <div class="review-counts" id="reviewCounts"></div>
+    </header>
+
+    <section class="review-toolbar" aria-label="Review export controls">
+      <div class="review-control">
+        <label for="reviewMode">Show</label>
+        <select id="reviewMode">
+          <option value="overviews" selected>Unit overviews</option>
+          <option value="all">Everything</option>
+          <option value="notes">Class notes</option>
+          <option value="questions">Question cards</option>
+          <option value="images">Image-only review</option>
+        </select>
+      </div>
+      <div class="review-control">
+        <label for="reviewUnit">Unit</label>
+        <select id="reviewUnit">
+          <option value="all">All units</option>
+        </select>
+      </div>
+      <div class="review-control">
+        <label for="reviewMedia">Media</label>
+        <select id="reviewMedia">
+          <option value="all">All cards</option>
+          <option value="media">With images only</option>
+          <option value="no-media">Without images only</option>
+        </select>
+      </div>
+      <div class="review-control">
+        <label for="reviewSearch">Search</label>
+        <input id="reviewSearch" type="search" placeholder="keyword, objective, source">
+      </div>
+      <button class="review-print-button" type="button" id="reviewPrint">Print / Save PDF</button>
+    </section>
+
+    <section class="review-section" data-review-section="overviews">
+      <h2>Unit overviews</h2>
+      <div class="review-grid" id="overviewReview"></div>
+    </section>
+
+    <section class="review-section" data-review-section="notes">
+      <h2>Class notes</h2>
+      <div class="review-grid" id="notesReview"></div>
+    </section>
+
+    <section class="review-section" data-review-section="questions">
+      <h2>Question cards</h2>
+      <div class="review-grid" id="questionsReview"></div>
+    </section>
+
+    <section class="review-section" data-review-section="images">
+      <h2>Image-only review</h2>
+      <div class="review-grid" id="imageReview"></div>
+    </section>
+  </main>
+
+  <script src="data/year9-content.js"></script>
+  <script src="data/year9-notes.js"></script>
+  <script>
+    (() => {
+      const content = window.YEAR9_CONTENT || {};
+      const notesBundle = window.YEAR9_NOTES || {};
+      const units = Array.isArray(content.units) ? content.units : [];
+      const cards = Array.isArray(content.cards) ? content.cards : [];
+      const notes = Array.isArray(notesBundle.notes) ? notesBundle.notes : [];
+      const overviews = Array.isArray(notesBundle.unitOverviews) ? notesBundle.unitOverviews : [];
+
+      const els = {
+        mode: document.getElementById('reviewMode'),
+        unit: document.getElementById('reviewUnit'),
+        media: document.getElementById('reviewMedia'),
+        search: document.getElementById('reviewSearch'),
+        counts: document.getElementById('reviewCounts'),
+        overviews: document.getElementById('overviewReview'),
+        notes: document.getElementById('notesReview'),
+        questions: document.getElementById('questionsReview'),
+        images: document.getElementById('imageReview'),
+        print: document.getElementById('reviewPrint')
+      };
+
+      const unitTitle = (unitId) => units.find((u) => u.id === unitId)?.title || unitId || 'Year 9 Science';
+      const objectiveTitle = (id) => notes.find((n) => n.objective === id || n.id === id)?.title || id || 'Learning objective';
+      const escapeHtml = (value) => String(value ?? '').replace(/[&<>"']/g, (ch) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
+      const textBlob = (value) => JSON.stringify(value || {}).toLowerCase();
+      const hasMedia = (item) => Array.isArray(item.media) && item.media.length > 0;
+      const asArray = (value) => Array.isArray(value) ? value : (value ? [value] : []);
+
+      function normalizeChoice(choice, index = 0) {
+        const raw = String(choice || '').trim();
+        const match = raw.match(/^([A-Z])(?:[).:-]|\s)+(.+)$/);
+        return {
+          key: match ? match[1] : String.fromCharCode(65 + index),
+          text: match ? match[2].trim() : raw,
+          label: match ? `${match[1]} ${match[2].trim()}` : `${String.fromCharCode(65 + index)} ${raw}`
+        };
+      }
+
+      function originalChoiceText(card, answer = card.answer) {
+        const match = (card.choices || []).map(normalizeChoice).find((choice) => choice.key === answer);
+        return match ? match.text : String(answer || '');
+      }
+
+      function cardIsMcq(card) {
+        return Array.isArray(card.choices) && card.choices.length >= 2 && /^[A-Z]$/.test(String(card.answer || ''));
+      }
+
+      function renderList(items) {
+        const list = asArray(items).filter(Boolean);
+        if (!list.length) return '';
+        return `<ul>${list.map((item) => `<li>${escapeHtml(item)}</li>`).join('')}</ul>`;
+      }
+
+      function renderMediaMarkers(item) {
+        const markers = Array.isArray(item.mediaMarkers) ? item.mediaMarkers : [];
+        if (!markers.length) return '';
+        return `<div class="media-marker-layer" aria-hidden="true">${markers.map((marker) => {
+          const x = Number.isFinite(Number(marker.x)) ? Math.max(0, Math.min(100, Number(marker.x))) : 50;
+          const y = Number.isFinite(Number(marker.y)) ? Math.max(0, Math.min(100, Number(marker.y))) : 50;
+          const label = escapeHtml(marker.label || '');
+          const markerClass = marker.variant ? ` ${escapeHtml(marker.variant)}` : '';
+          return `<span class="media-marker${markerClass}" style="left:${x}%;top:${y}%">${label}</span>`;
+        }).join('')}</div>`;
+      }
+
+      function renderMediaLayerText(item, showCaptions = true) {
+        if (!showCaptions) return '';
+        const title = item.mediaTitle || item.title || '';
+        const lead = item.mediaLead || item.caption || '';
+        const points = Array.isArray(item.mediaPoints) ? item.mediaPoints.filter(Boolean) : [];
+        if (!title && !lead && !points.length) return '';
+        return `<figcaption class="media-layer-text">
+          ${title ? `<strong class="media-layer-title">${escapeHtml(title)}</strong>` : ''}
+          ${lead ? `<span class="media-layer-lead">${escapeHtml(lead)}</span>` : ''}
+          ${points.length ? `<ul class="media-layer-points">${points.map((point) => `<li>${escapeHtml(point)}</li>`).join('')}</ul>` : ''}
+        </figcaption>`;
+      }
+
+      function renderMediaItems(items, className, showCaptions = true) {
+        const mediaItems = asArray(items).filter((item) => item && item.src);
+        if (!mediaItems.length) return '';
+        return `<div class="${className}">${mediaItems.map((item) => {
+          const presentationClass = item.presentation ? ` ${escapeHtml(item.presentation)}` : '';
+          return `<figure class="card-media${presentationClass}">
+            <div class="media-visual-wrap"><img src="${escapeHtml(item.src)}" alt="${escapeHtml(item.alt || item.caption || 'Study image')}">${renderMediaMarkers(item)}</div>
+            ${renderMediaLayerText(item, showCaptions)}
+          </figure>`;
+        }).join('')}</div>`;
+      }
+
+      function renderOverview(overview) {
+        return `<article class="review-overview" data-unit="${escapeHtml(overview.unit)}" data-search="${escapeHtml(textBlob(overview))}">
+          <div class="review-meta"><span class="review-pill">${escapeHtml(unitTitle(overview.unit))}</span><span class="review-pill">Unit overview</span></div>
+          <h3>${escapeHtml(overview.title || `${unitTitle(overview.unit)} overview`)}</h3>
+          <p>${escapeHtml(overview.summary || '')}</p>
+          ${renderMediaItems(overview.leadMedia, 'review-overview-media', true)}
+          <div class="review-note-section"><h4>By the end of this unit, you should be able to...</h4>${renderList(overview.revisionPackFocus)}</div>
+          ${Array.isArray(overview.formulae) && overview.formulae.length ? `<div class="review-note-section"><h4>Key formulae and equations</h4>${renderList(overview.formulae)}</div>` : ''}
+          <div class="review-note-section"><h4>Sub-units and must-know points</h4><div class="review-route-grid">${asArray(overview.subUnitRoute).map((item) => `<article class="review-route-card"><strong>${escapeHtml(item.title || 'Sub-unit')}</strong><p>${escapeHtml(item.focus || '')}</p>${renderList(item.mustKnow)}</article>`).join('')}</div></div>
+          ${Array.isArray(overview.visualTiles) && overview.visualTiles.length ? `<div class="review-note-section"><h4>Useful visuals</h4>${renderMediaItems(overview.visualTiles, 'review-overview-media', true)}</div>` : ''}
+          ${Array.isArray(overview.examAnswerMoves) && overview.examAnswerMoves.length ? `<div class="review-note-section"><h4>How to write better answers</h4>${renderList(overview.examAnswerMoves)}</div>` : ''}
+        </article>`;
+      }
+
+      function renderMistakes(mistakes) {
+        const list = asArray(mistakes);
+        if (!list.length) return '';
+        return `<div class="review-note-section"><h4>Common mistakes</h4>${list.map((item) => {
+          if (typeof item === 'string') return `<p>${escapeHtml(item)}</p>`;
+          return `<p><strong>Common mistake:</strong> ${escapeHtml(item.wrong || '')}<br><strong>Actually:</strong> ${escapeHtml(item.correct || '')}${item.why ? `<br><strong>Why:</strong> ${escapeHtml(item.why)}` : ''}</p>`;
+        }).join('')}</div>`;
+      }
+
+      function renderNote(note) {
+        return `<article class="review-note" data-unit="${escapeHtml(note.unit)}" data-search="${escapeHtml(textBlob(note))}" data-has-media="${hasMedia(note) ? 'yes' : 'no'}">
+          <div class="review-meta"><span class="review-pill">${escapeHtml(unitTitle(note.unit))}</span><span class="review-pill">Class note</span></div>
+          <h3>${escapeHtml(note.title || 'Class note')}</h3>
+          ${renderMediaItems(note.media, 'review-note-media', true)}
+          <div class="review-note-section"><h4>Big idea</h4><p>${escapeHtml(note.summary || '')}</p></div>
+          ${note.explanation ? `<div class="review-note-section"><h4>Deeper explanation</h4><p>${escapeHtml(note.explanation)}</p></div>` : ''}
+          <div class="review-note-section"><h4>Key points</h4>${renderList(note.keyPoints)}</div>
+          ${note.memoryHook ? `<div class="review-note-section"><h4>Memory hook</h4><p>${escapeHtml(note.memoryHook)}</p></div>` : ''}
+          ${renderMistakes(note.commonMistakes)}
+          ${note.example ? `<div class="review-note-section"><h4>Worked / model example</h4><p><strong>Question:</strong> ${escapeHtml(note.example.question || '')}</p><p><strong>Answer:</strong> ${escapeHtml(note.example.answer || '')}</p></div>` : ''}
+          ${note.selfCheck ? `<div class="review-note-section"><h4>Quick self-check</h4><p>${escapeHtml(note.selfCheck)}</p></div>` : ''}
+          ${note.sentenceStarter ? `<div class="review-note-section"><h4>Useful answer sentence</h4><p>${escapeHtml(note.sentenceStarter)}</p></div>` : ''}
+        </article>`;
+      }
+
+      function renderChoices(card) {
+        if (!cardIsMcq(card)) return `<div class="review-open-answer">Written answer space</div>`;
+        const choices = (card.choices || []).map(normalizeChoice);
+        return `<div class="answer-grid">${choices.map((choice) => `<button class="answer-button" type="button">${escapeHtml(choice.label)}</button>`).join('')}</div>`;
+      }
+
+      function renderCard(card) {
+        const answer = cardIsMcq(card) ? `${escapeHtml(card.answer || '')} - ${escapeHtml(originalChoiceText(card))}` : escapeHtml(card.answer || '');
+        return `<article class="review-card" data-unit="${escapeHtml(card.unit)}" data-search="${escapeHtml(textBlob(card))}" data-has-media="${hasMedia(card) ? 'yes' : 'no'}">
+          <div class="review-meta">
+            ${card.qid ? `<span class="review-pill question-id-pill">${escapeHtml(card.qid)}</span>` : ''}
+            <span class="review-pill">${escapeHtml(unitTitle(card.unit))}</span>
+            ${card.learningObjective ? `<span class="review-pill">${escapeHtml(objectiveTitle(card.learningObjective))}</span>` : ''}
+            ${card.type ? `<span class="review-pill">${escapeHtml(card.type)}</span>` : ''}
+            ${card.level ? `<span class="review-pill">Level ${escapeHtml(card.level)}</span>` : ''}
+          </div>
+          <p class="review-question">${escapeHtml(card.question || '')}</p>
+          ${renderMediaItems(asArray(card.media).filter((item) => !item.mediaTiming || item.mediaTiming === 'question'), 'review-question-media', false)}
+          ${card.cue ? `<p class="explanation"><strong>Cue:</strong> ${escapeHtml(card.cue)}</p>` : ''}
+          ${card.qid ? `<p class="explanation"><strong>QC ID:</strong> ${escapeHtml(card.qid)}</p>` : ''}
+          ${renderChoices(card)}
+          <details class="review-answer" open>
+            <summary>Reviewer answer / mark scheme</summary>
+            <div>${answer || 'No answer text stored.'}${card.explanation ? `<p>${escapeHtml(card.explanation)}</p>` : ''}${card.source ? `<p><strong>Source:</strong> ${escapeHtml(card.source)}</p>` : ''}</div>
+          </details>
+        </article>`;
+      }
+
+      function collectImages() {
+        const rows = [];
+        const add = (sourceType, unit, title, mediaItems) => {
+          asArray(mediaItems).forEach((item) => {
+            if (!item || !item.src) return;
+            rows.push({ sourceType, unit, title, item, search: `${sourceType} ${unit} ${title} ${item.src} ${item.alt || ''} ${item.caption || ''}`.toLowerCase() });
+          });
+        };
+        overviews.forEach((overview) => {
+          add('Unit overview lead', overview.unit, overview.title, overview.leadMedia);
+          add('Unit overview tile', overview.unit, overview.title, overview.visualTiles);
+        });
+        notes.forEach((note) => add('Class note', note.unit, note.title, note.media));
+        cards.forEach((card) => add('Question card', card.unit, card.question, card.media));
+        return rows;
+      }
+
+      function renderImageRow(row) {
+        return `<article class="review-card" data-unit="${escapeHtml(row.unit)}" data-search="${escapeHtml(row.search)}" data-has-media="yes">
+          <div class="review-meta"><span class="review-pill">${escapeHtml(unitTitle(row.unit))}</span><span class="review-pill">${escapeHtml(row.sourceType)}</span></div>
+          <h3>${escapeHtml(row.title || 'Image')}</h3>
+          <p><code>${escapeHtml(row.item.src)}</code></p>
+          ${renderMediaItems([row.item], 'review-question-media', true)}
+        </article>`;
+      }
+
+      function populateUnitOptions() {
+        units.forEach((unit) => {
+          const opt = document.createElement('option');
+          opt.value = unit.id;
+          opt.textContent = unit.title;
+          els.unit.appendChild(opt);
+        });
+      }
+
+      function contentModeItems(mode) {
+        if (mode === 'overviews') return ['overviews'];
+        if (mode === 'notes') return ['notes'];
+        if (mode === 'questions') return ['questions'];
+        if (mode === 'images') return ['images'];
+        return ['overviews', 'notes', 'questions'];
+      }
+
+      function renderSelectedContent() {
+        const mode = els.mode.value;
+        const sections = new Set(contentModeItems(mode));
+        els.overviews.innerHTML = sections.has('overviews') ? (overviews.map(renderOverview).join('') || '<div class="review-empty">No unit overviews found.</div>') : '';
+        els.notes.innerHTML = sections.has('notes') ? (notes.map(renderNote).join('') || '<div class="review-empty">No class notes found.</div>') : '';
+        els.questions.innerHTML = sections.has('questions') ? (cards.map(renderCard).join('') || '<div class="review-empty">No question cards found.</div>') : '';
+        els.images.innerHTML = sections.has('images') ? (collectImages().map(renderImageRow).join('') || '<div class="review-empty">No images found.</div>') : '';
+        applyFilters();
+      }
+
+      function applyFilters() {
+        const mode = els.mode.value;
+        const unit = els.unit.value;
+        const media = els.media.value;
+        const search = els.search.value.trim().toLowerCase();
+
+        const activeSections = new Set(contentModeItems(mode));
+        document.querySelectorAll('[data-review-section]').forEach((section) => {
+          const sectionMode = section.dataset.reviewSection;
+          section.classList.toggle('review-hidden', !activeSections.has(sectionMode));
+        });
+
+        let visibleCards = 0;
+        let visibleNotes = 0;
+        let visibleImages = 0;
+        let visibleOverviews = 0;
+
+        document.querySelectorAll('[data-unit]').forEach((item) => {
+          const itemUnit = item.dataset.unit || '';
+          const itemSearch = item.dataset.search || '';
+          const itemHasMedia = item.dataset.hasMedia || 'yes';
+          const unitMatch = unit === 'all' || itemUnit === unit;
+          const searchMatch = !search || itemSearch.includes(search);
+          const mediaMatch = media === 'all' || (media === 'media' && itemHasMedia === 'yes') || (media === 'no-media' && itemHasMedia === 'no');
+          const show = unitMatch && searchMatch && mediaMatch;
+          item.classList.toggle('review-hidden', !show);
+          if (show) {
+            if (item.classList.contains('review-card')) visibleCards += 1;
+            if (item.classList.contains('review-note')) visibleNotes += 1;
+            if (item.classList.contains('review-overview')) visibleOverviews += 1;
+          }
+        });
+
+        if (mode === 'images') {
+          visibleImages = document.querySelectorAll('#imageReview [data-unit]:not(.review-hidden)').length;
+        }
+
+        els.counts.innerHTML = [
+          `${overviews.length} unit overviews`,
+          `${notes.length} class notes`,
+          `${cards.length} question cards`,
+          `${cards.filter(hasMedia).length} question cards with images`,
+          `${collectImages().length} total image references`
+        ].map((label) => `<span>${escapeHtml(label)}</span>`).join('');
+      }
+
+      populateUnitOptions();
+      renderSelectedContent();
+      els.mode.addEventListener('change', renderSelectedContent);
+      [els.unit, els.media].forEach((el) => el.addEventListener('change', applyFilters));
+      els.search.addEventListener('input', applyFilters);
+      els.print.addEventListener('click', () => window.print());
+    })();
+  </script>
+</body>
+</html>
