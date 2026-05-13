@@ -19,8 +19,6 @@ from typing import Any
 ROOT = Path(__file__).resolve().parents[1]
 DOCS = ROOT / "docs"
 DOCS.mkdir(exist_ok=True)
-VERSION = "1.64.0"
-
 CONTENT_FILE = ROOT / "data" / "year9-content.js"
 NOTES_FILE = ROOT / "data" / "year9-notes.js"
 APP_FILE = ROOT / "app.js"
@@ -71,6 +69,8 @@ def write_csv(path: Path, rows: list[dict[str, Any]], fieldnames: list[str]) -> 
 def main() -> int:
     content = read_assignment(CONTENT_FILE, "YEAR9_CONTENT")
     notes_bundle = read_assignment(NOTES_FILE, "YEAR9_NOTES")
+    report_version = str(content.get("version") or "current")
+    version_slug = report_version.replace(".", "_")
     cards = content.get("cards", []) if isinstance(content.get("cards"), list) else []
     notes = notes_bundle.get("notes", []) if isinstance(notes_bundle.get("notes"), list) else []
     units = content.get("units", []) if isinstance(content.get("units"), list) else []
@@ -179,15 +179,15 @@ def main() -> int:
         finding("pass" if ok else "fail", "app-flow", name, "pass" if ok else "fail")
 
     # Write detailed outputs.
-    write_csv(DOCS / f"release_readiness_findings_v{VERSION.replace('.', '_')}.csv", findings, ["severity", "area", "check", "result", "detail"])
-    write_csv(DOCS / f"release_readiness_unit_balance_v{VERSION.replace('.', '_')}.csv", balance_rows, ["unit", "cards", "level_1", "level_2", "level_3", "visual_cards", "open_answer_cards", "types"])
-    write_csv(DOCS / f"release_readiness_media_refs_v{VERSION.replace('.', '_')}.csv", media_rows, ["path", "exists", "used_by_count", "sample_used_by"])
-    write_csv(DOCS / f"release_readiness_answer_leakage_flags_v{VERSION.replace('.', '_')}.csv", leakage_flags, ["card_id", "issue", "answer"])
+    write_csv(DOCS / f"release_readiness_findings_v{version_slug}.csv", findings, ["severity", "area", "check", "result", "detail"])
+    write_csv(DOCS / f"release_readiness_unit_balance_v{version_slug}.csv", balance_rows, ["unit", "cards", "level_1", "level_2", "level_3", "visual_cards", "open_answer_cards", "types"])
+    write_csv(DOCS / f"release_readiness_media_refs_v{version_slug}.csv", media_rows, ["path", "exists", "used_by_count", "sample_used_by"])
+    write_csv(DOCS / f"release_readiness_answer_leakage_flags_v{version_slug}.csv", leakage_flags, ["card_id", "issue", "answer"])
 
     fail_count = sum(1 for row in findings if row["severity"] == "fail")
     warn_count = sum(1 for row in findings if row["severity"] == "warn")
     pass_count = sum(1 for row in findings if row["severity"] == "pass")
-    report = f"""# v{VERSION} readiness QA report
+    report = f"""# v{report_version} readiness QA report
 
 ## Summary
 
@@ -223,16 +223,16 @@ The app is ready for a student trial when all `fail` checks remain at zero. Warn
     report += f"""
 ## Files generated
 
-- `docs/release_readiness_findings_v{VERSION.replace('.', '_')}.csv`
-- `docs/release_readiness_unit_balance_v{VERSION.replace('.', '_')}.csv`
-- `docs/release_readiness_media_refs_v{VERSION.replace('.', '_')}.csv`
-- `docs/release_readiness_answer_leakage_flags_v{VERSION.replace('.', '_')}.csv`
+- `docs/release_readiness_findings_v{version_slug}.csv`
+- `docs/release_readiness_unit_balance_v{version_slug}.csv`
+- `docs/release_readiness_media_refs_v{version_slug}.csv`
+- `docs/release_readiness_answer_leakage_flags_v{version_slug}.csv`
 
 ## Recommendation
 
 Proceed to student trial when all fail checks remain at zero. The next pass should be based on actual student usage.
 """
-    (DOCS / f"release_readiness_report_v{VERSION.replace('.', '_')}.md").write_text(report, encoding="utf-8")
+    (DOCS / f"release_readiness_report_v{version_slug}.md").write_text(report, encoding="utf-8")
 
     print(report)
     return 1 if fail_count else 0

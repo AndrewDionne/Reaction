@@ -1,5 +1,5 @@
 window.YEAR9_NOTES = {
-  "version": "1.59.0",
+  "version": "1.67.0",
   "title": "Year 9 Science Class Notes and Visual Unit Overviews",
   "unitOverviews": [
     {
@@ -61,12 +61,20 @@ window.YEAR9_NOTES = {
       ],
       "infographicBacklog": [],
       "leadMedia": {
-        "src": "assets/webp/9A-natural-selection-sequence-notes-v152.webp",
-        "alt": "Annotated sequence showing variation, selection pressure, survival and inherited change over generations.",
-        "mediaTitle": "Natural selection sequence",
-        "mediaLead": "Use this to practise explain answers: variation → selection pressure → survival and reproduction → inherited change."
+        "src": "assets/webp/9A-adaptation-environmental-change-extinction-notes-r167.webp",
+        "alt": "Annotated four-panel sequence showing environmental change, survival and extinction risk.",
+        "mediaTitle": "Adaptation and extinction sequence",
+        "mediaLead": "Use this to explain how environmental change affects survival and extinction risk.",
+        "r7Integrated": true
       },
       "visualTiles": [
+        {
+          "src": "assets/webp/9A-ecosystem-components-interdependence-notes-r167.webp",
+          "alt": "Annotated ecosystem scene showing living and non-living factors.",
+          "mediaTitle": "Ecosystem components",
+          "mediaLead": "An ecosystem includes a community of organisms and the non-living environment.",
+          "r7Integrated": true
+        },
         {
           "src": "assets/webp/9A-continuous-discontinuous-variation-notes-v2.webp",
           "alt": "Annotated comparison of continuous and discontinuous variation using graph types.",
@@ -84,6 +92,13 @@ window.YEAR9_NOTES = {
           "alt": "Annotated biodiversity and extinction map showing causes of endangerment and conservation actions.",
           "mediaTitle": "Biodiversity and conservation",
           "mediaLead": "Link causes of extinction to methods used to protect biodiversity."
+        },
+        {
+          "src": "assets/webp/9A-conservation-biodiversity-methods-notes-r167.webp",
+          "alt": "Annotated conservation methods map.",
+          "mediaTitle": "Conservation methods",
+          "mediaLead": "Protected habitats, seed banks and captive breeding can help protect biodiversity.",
+          "r7Integrated": true
         }
       ]
     },
@@ -335,16 +350,24 @@ window.YEAR9_NOTES = {
       },
       "visualTiles": [
         {
+          "src": "assets/webp/9F-reactivity-extraction-decision-notes-r167.webp",
+          "alt": "Annotated reactivity and extraction decision map.",
+          "mediaTitle": "Extraction decision map",
+          "mediaLead": "Use reactivity relative to carbon to choose electrolysis or carbon reduction.",
+          "r7Integrated": true
+        },
+        {
+          "src": "assets/webp/9F-blast-furnace-process-notes-r167.webp",
+          "alt": "Annotated blast furnace cross-section.",
+          "mediaTitle": "Blast furnace process",
+          "mediaLead": "Inputs, hot air, molten iron and slag are shown in one process diagram.",
+          "r7Integrated": true
+        },
+        {
           "src": "assets/webp/9F-displacement-magnesium-copper-notes-v152.webp",
           "alt": "Annotated displacement sequence showing magnesium reacting with copper sulfate solution.",
           "mediaTitle": "Displacement reactions",
           "mediaLead": "A more reactive metal can displace a less reactive metal from its compound."
-        },
-        {
-          "src": "assets/webp/9F-metal-reaction-products-notes-v153.webp",
-          "alt": "Annotated map of products formed when metals react with oxygen, water or dilute acids.",
-          "mediaTitle": "Metal reaction products",
-          "mediaLead": "Use this for state questions about metal + oxygen, metal + water and metal + acid."
         },
         {
           "src": "assets/webp/9F-rusting-conditions-prevention-notes-v2.webp",
@@ -353,10 +376,18 @@ window.YEAR9_NOTES = {
           "mediaLead": "Rusting needs oxygen and water; prevention methods keep one or both away from iron."
         },
         {
-          "src": "assets/webp/9F-blast-furnace-process-v2.webp",
-          "alt": "Blast furnace process diagram showing raw materials and main stages in iron extraction.",
-          "mediaTitle": "Blast furnace process",
-          "mediaLead": "Use this to describe how iron is extracted from iron ore in stages."
+          "src": "assets/webp/9F-rusting-conditions-prevention-notes-r167.webp",
+          "alt": "Annotated rusting conditions and prevention comparison.",
+          "mediaTitle": "Rusting conditions and prevention",
+          "mediaLead": "Rusting needs oxygen and water; prevention methods block or replace the reaction.",
+          "r7Integrated": true
+        },
+        {
+          "src": "assets/webp/9F-metal-reaction-products-notes-r167.webp",
+          "alt": "Annotated products of metal reactions with water and dilute acids.",
+          "mediaTitle": "Metal reaction products",
+          "mediaLead": "Metal + water and metal + acid both produce hydrogen, with different other products.",
+          "r7Integrated": true
         }
       ]
     },
@@ -436,6 +467,20 @@ window.YEAR9_NOTES = {
       },
       "visualTiles": [
         {
+          "src": "assets/webp/9I-liquid-pressure-depth-notes-r167.webp",
+          "alt": "Annotated liquid pressure and depth comparison.",
+          "mediaTitle": "Liquid pressure and depth",
+          "mediaLead": "Pressure increases with depth and is not mainly about container width.",
+          "r7Integrated": true
+        },
+        {
+          "src": "assets/webp/9I-moments-levers-perpendicular-distance-notes-r167.webp",
+          "alt": "Annotated moments and levers visual.",
+          "mediaTitle": "Moments and levers",
+          "mediaLead": "Pivot, force and perpendicular distance control the size of a moment.",
+          "r7Integrated": true
+        },
+        {
           "src": "assets/webp/9I-distance-time-graph-notes.webp",
           "alt": "Annotated distance-time graph showing stationary, slow and fast sections.",
           "mediaTitle": "Distance-time graphs",
@@ -458,6 +503,13 @@ window.YEAR9_NOTES = {
           "alt": "Annotated density calculation diagram using mass and volume.",
           "mediaTitle": "Density calculations",
           "mediaLead": "Use density = mass ÷ volume and keep the units consistent."
+        },
+        {
+          "src": "assets/webp/9I-terminal-velocity-force-sequence-notes-r167.webp",
+          "alt": "Annotated terminal velocity force sequence.",
+          "mediaTitle": "Terminal velocity sequence",
+          "mediaLead": "Compare weight and air resistance as a falling object speeds up.",
+          "r7Integrated": true
         }
       ]
     },
@@ -553,12 +605,6 @@ window.YEAR9_NOTES = {
           "mediaLead": "Use this for identify questions on cells, lamps, switches, ammeters and voltmeters."
         },
         {
-          "src": "assets/webp/9J-wire-resistance-investigation-notes-v152.webp",
-          "alt": "Annotated wire resistance investigation setup showing variables and measuring equipment.",
-          "mediaTitle": "Wire resistance investigation",
-          "mediaLead": "Describe the method using independent, dependent and control variables."
-        },
-        {
           "src": "assets/webp/9J-current-voltage-graph-comparison-notes-v153.webp",
           "alt": "Annotated current-voltage graph comparing components with different resistance.",
           "mediaTitle": "Current-voltage graphs",
@@ -569,6 +615,20 @@ window.YEAR9_NOTES = {
           "alt": "Annotated simple motor effect diagram showing a coil between magnets and the direction of force.",
           "mediaTitle": "Simple motor effect",
           "mediaLead": "Use the v3 motor diagram for force on a current-carrying wire without confusing the axis of rotation."
+        },
+        {
+          "src": "assets/webp/9J-wire-resistance-investigation-notes-r167.webp",
+          "alt": "Annotated wire resistance investigation setup.",
+          "mediaTitle": "Wire resistance investigation",
+          "mediaLead": "Plan fair tests by changing one wire property and controlling the others.",
+          "r7Integrated": true
+        },
+        {
+          "src": "assets/webp/9J-electric-fields-direction-notes-r167.webp",
+          "alt": "Annotated electric field diagrams showing field arrows.",
+          "mediaTitle": "Electric fields",
+          "mediaLead": "Use arrows to identify field direction around positive and negative charges.",
+          "r7Integrated": true
         }
       ]
     }
@@ -753,17 +813,32 @@ window.YEAR9_NOTES = {
       "practicePrompt": "Pick one linked revision card for Biodiversity, conservation and extinction and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
       "media": [
         {
-          "src": "assets/webp/9A-biodiversity-extinction-conservation-notes-v151.webp",
-          "alt": "Class-note map showing causes of endangerment and ways to preserve biodiversity.",
-          "caption": "Biodiversity falls when species or habitats are lost.",
-          "mediaTitle": "Extinction causes and biodiversity preservation",
-          "mediaLead": "Biodiversity falls when species or habitats are lost.",
+          "src": "assets/webp/9A-ecosystem-components-interdependence-notes-r167.webp",
+          "alt": "Annotated ecosystem scene showing living organisms and non-living environmental factors.",
+          "mediaTiming": "notes",
+          "presentation": "media-image-base",
+          "mediaTitle": "Ecosystem components and interdependence",
+          "mediaLead": "An ecosystem includes living organisms and the non-living environment they depend on.",
           "mediaPoints": [
-            "Habitat destruction, climate change, pollution, hunting and invasive species can increase extinction risk",
-            "Nature reserves, breeding programmes, hunting bans and gene banks help preserve biodiversity",
-            "Species can become extinct if they can no longer survive and reproduce"
+            "Living organisms form a community",
+            "Non-living factors include light, water, soil and temperature",
+            "A change in one part can affect other parts"
           ],
-          "presentation": "media-image-base"
+          "r7Integrated": true
+        },
+        {
+          "src": "assets/webp/9A-conservation-biodiversity-methods-notes-r167.webp",
+          "alt": "Annotated conservation methods image showing protected habitat, seed bank storage, captive breeding and release.",
+          "mediaTiming": "notes",
+          "presentation": "media-image-base",
+          "mediaTitle": "Conservation and biodiversity protection",
+          "mediaLead": "Biodiversity can be protected by conserving habitats and preserving species or genetic material.",
+          "mediaPoints": [
+            "Protected habitats reduce habitat loss",
+            "Seed banks preserve plant diversity",
+            "Captive breeding can increase endangered populations"
+          ],
+          "r7Integrated": true
         },
         {
           "src": "assets/webp/9A-seed-bank-conservation.webp",
@@ -814,18 +889,18 @@ window.YEAR9_NOTES = {
       "practicePrompt": "Pick one linked revision card for Adaptation, natural selection and evolution and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
       "media": [
         {
-          "src": "assets/webp/9A-natural-selection-sequence-notes-v152.webp",
-          "alt": "Class-note natural selection sequence.",
-          "caption": "Variation and selection over generations can change a population.",
-          "mediaTitle": "Natural selection sequence",
-          "mediaLead": "Variation and selection over generations can change a population.",
+          "src": "assets/webp/9A-adaptation-environmental-change-extinction-notes-r167.webp",
+          "alt": "Annotated four-panel sequence showing environmental change, survival differences and extinction risk.",
+          "mediaTiming": "notes",
+          "presentation": "media-image-base",
+          "mediaTitle": "Adaptation, environmental change and extinction",
+          "mediaLead": "Environmental change can favour better-adapted organisms and reduce poorly adapted populations.",
           "mediaPoints": [
-            "Individuals show variation",
-            "Some variations give a survival advantage",
-            "Survivors reproduce and pass useful characteristics to offspring",
-            "Over generations the useful characteristic becomes more common"
+            "Adaptations help survival",
+            "Environmental change can create selection pressure",
+            "If a species cannot adapt, it may become extinct"
           ],
-          "presentation": "media-image-base"
+          "r7Integrated": true
         },
         {
           "src": "assets/webp/9A-natural-selection-giraffes.webp",
@@ -1875,6 +1950,20 @@ window.YEAR9_NOTES = {
       "practicePrompt": "Pick one linked revision card for Reactivity and displacement and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
       "media": [
         {
+          "src": "assets/webp/9F-metal-reaction-products-notes-r167.webp",
+          "alt": "Annotated reaction map showing products of metal reactions with water and dilute acids.",
+          "mediaTiming": "notes",
+          "presentation": "media-image-base",
+          "mediaTitle": "Products of metal reactions",
+          "mediaLead": "Metal reactions with water and acids produce hydrogen, but the other product depends on the reactant.",
+          "mediaPoints": [
+            "Metal + water produces metal hydroxide + hydrogen",
+            "Metal + dilute acid produces salt + hydrogen",
+            "More reactive metals react more vigorously"
+          ],
+          "r7Integrated": true
+        },
+        {
           "src": "assets/webp/9F-metal-reaction-products-notes-v153.webp",
           "alt": "Class-note map showing products when reactive metals react with oxygen, water and dilute acids.",
           "caption": "Use this to remember product patterns for reactive metals.",
@@ -1970,28 +2059,32 @@ window.YEAR9_NOTES = {
       "practicePrompt": "Pick one linked revision card for Metal extraction and reduction and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
       "media": [
         {
-          "src": "assets/webp/9F-reactivity-extraction-decision-notes-v152.webp",
-          "alt": "Class-note reactivity series and metal extraction decision tree.",
-          "caption": "Use the reactivity series and carbon reference line to choose an extraction method.",
-          "mediaTitle": "Reactivity series and extraction",
-          "mediaLead": "Use the reactivity series and carbon reference line to choose an extraction method.",
+          "src": "assets/webp/9F-reactivity-extraction-decision-notes-r167.webp",
+          "alt": "Annotated decision map linking metal reactivity to electrolysis or carbon reduction extraction methods.",
+          "mediaTiming": "notes",
+          "presentation": "media-image-base",
+          "mediaTitle": "Reactivity and extraction methods",
+          "mediaLead": "A metal’s position relative to carbon helps decide whether electrolysis or carbon reduction is used.",
           "mediaPoints": [
-            "Metals above carbon need electrolysis",
-            "Metals below carbon can often be reduced using carbon",
-            "Very unreactive metals may be found native"
+            "Metals above carbon usually need electrolysis",
+            "Metals below carbon can often be extracted with carbon",
+            "More reactive metals are harder and often more expensive to extract"
           ],
-          "presentation": "media-image-base"
+          "r7Integrated": true
         },
         {
-          "src": "assets/webp/9F-blast-furnace-process-v2.webp",
-          "alt": "Blast furnace illustration showing inputs, hot air and molten outputs.",
+          "src": "assets/webp/9F-blast-furnace-process-notes-r167.webp",
+          "alt": "Annotated blast furnace cross-section showing iron ore, coke, limestone, hot air, molten iron and slag.",
+          "mediaTiming": "notes",
           "presentation": "media-image-base",
           "mediaTitle": "Blast furnace process",
-          "mediaLead": "Iron ore, coke and limestone are added near the top; hot air enters lower down; molten iron is tapped near the bottom.",
+          "mediaLead": "Iron ore, coke and limestone are added to the furnace; hot air helps carbon remove oxygen from iron oxide.",
           "mediaPoints": [
-            "Carbon monoxide removes oxygen from iron oxide.",
-            "Limestone helps remove impurities as slag."
-          ]
+            "Coke helps remove oxygen from iron oxide",
+            "Molten iron collects near the bottom",
+            "Slag forms from impurities and limestone"
+          ],
+          "r7Integrated": true
         },
         {
           "src": "assets/webp/9F-metal-extraction-methods-notes-v3.webp",
@@ -2127,16 +2220,18 @@ window.YEAR9_NOTES = {
       "practicePrompt": "Pick one linked revision card for Rusting and corrosion protection and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
       "media": [
         {
-          "src": "assets/webp/9F-rusting-conditions-prevention-notes-v2.webp",
-          "alt": "Annotated rusting investigation and rust prevention methods.",
-          "caption": "Rusting needs oxygen and water; coatings and sacrificial metals can protect iron.",
+          "src": "assets/webp/9F-rusting-conditions-prevention-notes-r167.webp",
+          "alt": "Annotated rusting investigation and prevention comparison.",
+          "mediaTiming": "notes",
+          "presentation": "media-image-base",
           "mediaTitle": "Rusting conditions and prevention",
-          "mediaLead": "Use this visual to distinguish the conditions for rusting from the methods used to stop it.",
+          "mediaLead": "Rusting needs oxygen and water; prevention methods stop one or both from reaching iron.",
           "mediaPoints": [
-            "Rusting needs oxygen and water",
-            "Paint or oil forms a barrier",
-            "Galvanising coats iron with zinc"
-          ]
+            "No oxygen or no water means no rusting",
+            "Paint and oil act as barriers",
+            "Galvanising and sacrificial protection use a more reactive metal"
+          ],
+          "r7Integrated": true
         },
         {
           "src": "assets/webp/9F-sacrificial-protection-iron-notes-v2.webp",
@@ -2195,18 +2290,18 @@ window.YEAR9_NOTES = {
       "practicePrompt": "Pick one linked revision card for Forces, drag and terminal velocity and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
       "media": [
         {
-          "src": "assets/webp/9I-terminal-velocity-force-chain-notes-v152.webp",
-          "alt": "Class-note terminal velocity force-chain.",
-          "caption": "A falling object reaches terminal velocity when air resistance balances weight.",
-          "mediaTitle": "Terminal velocity",
-          "mediaLead": "A falling object reaches terminal velocity when air resistance balances weight.",
+          "src": "assets/webp/9I-terminal-velocity-force-sequence-notes-r167.webp",
+          "alt": "Annotated falling-object sequence showing changing weight and air resistance arrows.",
+          "mediaTiming": "notes",
+          "presentation": "media-image-base",
+          "mediaTitle": "Terminal velocity force sequence",
+          "mediaLead": "As a falling object speeds up, air resistance increases until it balances weight.",
           "mediaPoints": [
             "Weight acts downward",
             "Air resistance acts upward",
-            "Air resistance increases as speed increases",
-            "Balanced forces mean constant speed"
+            "At terminal velocity, the forces are balanced"
           ],
-          "presentation": "media-image-base"
+          "r7Integrated": true
         },
         {
           "src": "assets/webp/9I-forces-terminal-velocity-sequence.webp",
@@ -2461,16 +2556,18 @@ window.YEAR9_NOTES = {
       "practicePrompt": "Pick one linked revision card for Levers, pivots and moments and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
       "media": [
         {
-          "src": "assets/webp/9I-lever-pivot-moment-notes-v2.webp",
-          "alt": "Annotated lever diagram showing force, distance, pivot and moment.",
-          "caption": "A moment is the turning effect of a force around a pivot.",
-          "mediaTitle": "Lever, pivot and moment",
+          "src": "assets/webp/9I-moments-levers-perpendicular-distance-notes-r167.webp",
+          "alt": "Annotated moments and levers image showing pivot, force and perpendicular distance.",
+          "mediaTiming": "notes",
+          "presentation": "media-image-base",
+          "mediaTitle": "Moments and levers",
           "mediaLead": "Moment = force × perpendicular distance from the pivot.",
           "mediaPoints": [
-            "A larger force gives a larger moment",
-            "A larger distance gives a larger moment",
-            "Moments are measured in Nm"
-          ]
+            "A moment is the turning effect of a force",
+            "The distance must be perpendicular to the force",
+            "A larger distance gives a larger moment"
+          ],
+          "r7Integrated": true
         },
         {
           "src": "assets/webp/9I-lever-moment-context.webp",
@@ -2558,17 +2655,18 @@ window.YEAR9_NOTES = {
       "practicePrompt": "Pick one linked revision card for Force fields, gravity and magnetism and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
       "media": [
         {
-          "src": "assets/webp/9J-force-field-comparison-notes-v153.webp",
-          "alt": "Class-note comparison of gravitational, magnetic and electric fields with field-line diagrams.",
-          "caption": "Use this to compare force fields and field-line directions.",
-          "mediaTitle": "Gravitational, magnetic and electric fields",
-          "mediaLead": "A force field is a region where a non-contact force acts.",
+          "src": "assets/webp/9J-electric-fields-direction-notes-r167.webp",
+          "alt": "Annotated electric field diagrams showing field directions around positive and negative charges.",
+          "mediaTiming": "notes",
+          "presentation": "media-image-base",
+          "mediaTitle": "Electric fields and field direction",
+          "mediaLead": "Electric field arrows show the direction of the force on a positive test charge.",
           "mediaPoints": [
-            "Gravitational fields act on masses",
-            "Magnetic fields act on magnets and magnetic materials",
-            "Electric fields act on charged objects"
+            "Field lines go away from positive charge",
+            "Field lines go towards negative charge",
+            "Arrows show field direction"
           ],
-          "presentation": "media-image-base"
+          "r7Integrated": true
         },
         {
           "src": "assets/webp/9J-magnetic-field-bar-magnet-notes-v3.webp",
@@ -2892,18 +2990,18 @@ window.YEAR9_NOTES = {
       "practicePrompt": "Pick one linked revision card for resistance and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
       "media": [
         {
-          "src": "assets/webp/9J-wire-resistance-investigation-notes-v152.webp",
-          "alt": "Class-note wire resistance investigation setup.",
-          "caption": "Change the wire length and measure current and potential difference.",
+          "src": "assets/webp/9J-wire-resistance-investigation-notes-r167.webp",
+          "alt": "Annotated wire resistance investigation circuit with ammeter, voltmeter, test wire and fair-test variables.",
+          "mediaTiming": "notes",
+          "presentation": "media-image-base",
           "mediaTitle": "Wire resistance investigation",
-          "mediaLead": "Change the wire length and measure current and potential difference.",
+          "mediaLead": "Change one wire property at a time, measure current and voltage, then compare resistance.",
           "mediaPoints": [
-            "Ammeter in series",
-            "Voltmeter in parallel across the test length",
-            "Keep material, thickness and temperature the same",
-            "Longer wire usually has greater resistance"
+            "Keep material and length controlled where needed",
+            "Use ammeter in series and voltmeter across the wire",
+            "Repeat and compare results"
           ],
-          "presentation": "media-image-base"
+          "r7Integrated": true
         },
         {
           "src": "assets/webp/9J-wire-resistance-investigation-notes.webp",
@@ -3131,18 +3229,18 @@ window.YEAR9_NOTES = {
       "practicePrompt": "Try one calculation and one explain question from Pressure in fluids before moving on.",
       "media": [
         {
-          "src": "assets/webp/9I-pressure-fluids-notes.webp",
-          "alt": "Annotated pressure in fluids image showing force over area, liquid pressure increasing with depth and upthrust.",
-          "caption": "This replaces the weak SVG with a stronger class-note concept visual.",
-          "mediaTitle": "Pressure in fluids",
-          "mediaLead": "Pressure depends on force and area. In liquids, pressure increases with depth. Upthrust acts upwards in a fluid.",
+          "src": "assets/webp/9I-liquid-pressure-depth-notes-r167.webp",
+          "alt": "Annotated liquid pressure image comparing pressure at different depths and at equal depth in different containers.",
+          "mediaTiming": "notes",
+          "presentation": "media-image-base",
+          "mediaTitle": "Liquid pressure and depth",
+          "mediaLead": "Liquid pressure increases with depth and is the same at the same depth in the same liquid.",
           "mediaPoints": [
-            "Pressure = force ÷ area",
-            "For the same force, smaller area gives greater pressure",
-            "Liquid pressure increases with depth",
-            "Floating happens when upthrust balances weight"
+            "Deeper holes produce stronger jets",
+            "Depth matters more than container width",
+            "Pressure acts in all directions"
           ],
-          "presentation": "media-image-base"
+          "r7Integrated": true
         },
         {
           "src": "assets/webp/9I-density-calculations-notes-v149.webp",

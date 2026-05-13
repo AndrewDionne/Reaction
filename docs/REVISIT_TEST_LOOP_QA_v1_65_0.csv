@@ -1,9 +1,0 @@
-check,result
-revisit-test mode text present,pass
-revisit-test route card present,pass
-revisit test uses revisitIds filter,pass
-written low-mark callout has no explanatory paragraph,pass
-unit progress label present,pass
-objective progress bar present,pass
-test mode helper includes revisit-test,pass
-revisit test correct answers clear revisit,pass

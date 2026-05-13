@@ -1,5 +1,5 @@
 window.YEAR9_CONTENT = {
-  "version": "1.64.0",
+  "version": "1.68.0",
   "title": "Year 9 Science End-of-Year Study",
   "subtitle": "Guided revision for the Year 9 science units, with class notes, visual summaries and written exam practice.",
   "units": [
@@ -6880,15 +6880,15 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Rusting and corrosion protection",
       "learningObjectiveDescription": "Rusting, coatings, sacrificial protection and preventing corrosion.",
       "noteId": "9F-rusting",
-      "mediaPolicy": "question-media-only-if-required",
+      "mediaPolicy": "required-for-question",
       "media": [
         {
-          "src": "assets/webp/9F-rusting-conditions-prevention-blank-v2.webp",
-          "alt": "Unlabelled rusting conditions and prevention image with labelled samples but no explanatory notes.",
-          "caption": "Use the samples to reason about oxygen, water and protection methods.",
+          "src": "assets/webp/9F-rusting-conditions-prevention-question-r167.webp",
+          "alt": "Question-safe rusting comparison showing iron nail setups and rust prevention methods without explanatory answer notes.",
+          "caption": "Use the comparison to support your rusting answer.",
           "mediaTiming": "question",
           "presentation": "media-image-base",
-          "questionAssetV148": true
+          "r7Integrated": true
         }
       ],
       "examEligible": true,
@@ -6926,7 +6926,7 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Levers, pivots and moments",
       "learningObjectiveDescription": "Levers, pivots/fulcrums, moment calculations and mechanical advantage.",
       "noteId": "9I-moments",
-      "mediaPolicy": "question-media-only-if-required",
+      "mediaPolicy": "required-for-question",
       "examEligible": true,
       "examCommand": "describe",
       "examMarks": 2,
@@ -6941,7 +6941,17 @@ window.YEAR9_CONTENT = {
         "Use values, labels or context from the question where useful."
       ],
       "examCommandReviewed": "v1.61.0",
-      "examPruningReviewed": "v1.62.0"
+      "examPruningReviewed": "v1.62.0",
+      "media": [
+        {
+          "src": "assets/webp/9I-moments-levers-perpendicular-distance-question-r167.webp",
+          "alt": "Question-safe moments and lever image showing force arrows, pivots and perpendicular distances.",
+          "caption": "Use the lever diagrams to think about pivot, force and distance.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "r7Integrated": true
+        }
+      ]
     },
     {
       "id": "y9-258-9i-explain-why-a-shallow-ramp-needs-less-force-but-more-distance",
@@ -7311,15 +7321,15 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Resistance and Ohm’s law",
       "learningObjectiveDescription": "Resistance, current-voltage graphs, high-resistance materials and calculations.",
       "noteId": "9J-resistance",
-      "mediaPolicy": "question-safe-blank-asset",
+      "mediaPolicy": "required-for-question",
       "media": [
         {
-          "src": "assets/webp/9J-wire-resistance-investigation-blank.webp",
-          "alt": "Unlabelled wire resistance investigation setup without explanatory notes.",
-          "caption": "",
+          "src": "assets/webp/9J-wire-resistance-investigation-question-r167.webp",
+          "alt": "Question-safe wire resistance investigation setup with circuit, test wire and comparison wires.",
+          "caption": "Use the setup to plan or describe the resistance investigation.",
           "mediaTiming": "question",
           "presentation": "media-image-base",
-          "questionAssetV145": true
+          "r7Integrated": true
         }
       ],
       "examEligible": true,
@@ -7807,7 +7817,7 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Biodiversity, conservation and extinction",
       "learningObjectiveDescription": "Endangered species, biodiversity, conservation, gene banks and extinction pressures.",
       "noteId": "9A-biodiversity",
-      "mediaPolicy": "question-media-only-if-required",
+      "mediaPolicy": "required-for-question",
       "examEligible": true,
       "examCommand": "explain",
       "examMarks": 3,
@@ -7822,7 +7832,17 @@ window.YEAR9_CONTENT = {
         "Add the result, consequence or application."
       ],
       "examCommandReviewed": "v1.61.0",
-      "examPruningReviewed": "v1.62.0"
+      "examPruningReviewed": "v1.62.0",
+      "media": [
+        {
+          "src": "assets/webp/9A-adaptation-environmental-change-extinction-question-r167.webp",
+          "alt": "Question-safe four-panel sequence showing a population before and after environmental change.",
+          "caption": "Use the sequence to connect environmental change with survival and population change.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "r7Integrated": true
+        }
+      ]
     },
     {
       "id": "y9x-007-9a-identify-adaptations-of-triceratops-that-could-be-labelled-on-a-model",
@@ -9800,15 +9820,15 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Rusting and corrosion protection",
       "learningObjectiveDescription": "Rusting, coatings, sacrificial protection and preventing corrosion.",
       "noteId": "9F-rusting",
-      "mediaPolicy": "question-media-only-if-required",
+      "mediaPolicy": "required-for-question",
       "media": [
         {
-          "src": "assets/webp/9F-rusting-conditions-prevention-blank-v2.webp",
-          "alt": "Unlabelled rusting conditions and prevention image with labelled samples but no explanatory notes.",
-          "caption": "Use the samples to reason about oxygen, water and protection methods.",
+          "src": "assets/webp/9F-rusting-conditions-prevention-question-r167.webp",
+          "alt": "Question-safe rusting comparison showing iron nail setups and rust prevention methods without explanatory answer notes.",
+          "caption": "Use the comparison to support your rusting answer.",
           "mediaTiming": "question",
           "presentation": "media-image-base",
-          "questionAssetV148": true
+          "r7Integrated": true
         }
       ],
       "examEligible": true,
@@ -9847,15 +9867,15 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Rusting and corrosion protection",
       "learningObjectiveDescription": "Rusting, coatings, sacrificial protection and preventing corrosion.",
       "noteId": "9F-rusting",
-      "mediaPolicy": "question-media-only-if-required",
+      "mediaPolicy": "required-for-question",
       "media": [
         {
-          "src": "assets/webp/9F-rusting-conditions-prevention-blank-v2.webp",
-          "alt": "Unlabelled rusting conditions and prevention image with labelled samples but no explanatory notes.",
-          "caption": "Use the samples to reason about oxygen, water and protection methods.",
+          "src": "assets/webp/9F-rusting-conditions-prevention-question-r167.webp",
+          "alt": "Question-safe rusting comparison showing iron nail setups and rust prevention methods without explanatory answer notes.",
+          "caption": "Use the comparison to support your rusting answer.",
           "mediaTiming": "question",
           "presentation": "media-image-base",
-          "questionAssetV148": true
+          "r7Integrated": true
         }
       ],
       "examEligible": true,
@@ -9894,15 +9914,15 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Rusting and corrosion protection",
       "learningObjectiveDescription": "Rusting, coatings, sacrificial protection and preventing corrosion.",
       "noteId": "9F-rusting",
-      "mediaPolicy": "question-media-only-if-required",
+      "mediaPolicy": "required-for-question",
       "media": [
         {
-          "src": "assets/webp/9F-rusting-conditions-prevention-blank-v2.webp",
-          "alt": "Unlabelled rusting conditions and prevention image with labelled samples but no explanatory notes.",
-          "caption": "Use the samples to reason about oxygen, water and protection methods.",
+          "src": "assets/webp/9F-rusting-conditions-prevention-question-r167.webp",
+          "alt": "Question-safe rusting comparison showing iron nail setups and rust prevention methods without explanatory answer notes.",
+          "caption": "Use the comparison to support your rusting answer.",
           "mediaTiming": "question",
           "presentation": "media-image-base",
-          "questionAssetV148": true
+          "r7Integrated": true
         }
       ],
       "examEligible": true,
@@ -9941,15 +9961,15 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Rusting and corrosion protection",
       "learningObjectiveDescription": "Rusting, coatings, sacrificial protection and preventing corrosion.",
       "noteId": "9F-rusting",
-      "mediaPolicy": "question-media-only-if-required",
+      "mediaPolicy": "required-for-question",
       "media": [
         {
-          "src": "assets/webp/9F-rusting-conditions-prevention-blank-v2.webp",
-          "alt": "Unlabelled rusting conditions and prevention image with labelled samples but no explanatory notes.",
-          "caption": "Use the samples to reason about oxygen, water and protection methods.",
+          "src": "assets/webp/9F-rusting-conditions-prevention-question-r167.webp",
+          "alt": "Question-safe rusting comparison showing iron nail setups and rust prevention methods without explanatory answer notes.",
+          "caption": "Use the comparison to support your rusting answer.",
           "mediaTiming": "question",
           "presentation": "media-image-base",
-          "questionAssetV148": true
+          "r7Integrated": true
         }
       ],
       "examEligible": true,
@@ -10691,33 +10711,11 @@ window.YEAR9_CONTENT = {
       "noteId": "9F-extraction",
       "media": [
         {
-          "src": "assets/webp/9F-blast-furnace-process-v2.webp",
-          "alt": "Blast furnace illustration with labelled input and output arrows.",
-          "caption": "Use the labelled arrows to identify blast furnace inputs and outputs.",
+          "src": "assets/webp/9F-blast-furnace-question-r168.webp",
+          "alt": "Question-safe blast furnace diagram with labels A to E and no answer text.",
+          "caption": "Use the labelled diagram to identify blast furnace inputs and outputs.",
           "mediaTiming": "question",
-          "presentation": "media-image-base",
-          "mediaMarkers": [
-            {
-              "label": "A",
-              "x": 32,
-              "y": 9
-            },
-            {
-              "label": "B",
-              "x": 61,
-              "y": 9
-            },
-            {
-              "label": "C",
-              "x": 22,
-              "y": 71
-            },
-            {
-              "label": "D",
-              "x": 77,
-              "y": 84
-            }
-          ]
+          "presentation": "media-image-base"
         }
       ]
     },
@@ -10733,15 +10731,16 @@ window.YEAR9_CONTENT = {
       "sourceFidelity": "revision-pack-aligned",
       "mediaPolicy": "question-media-only-if-required",
       "id": "y9x-075-9f-use-the-blast-furnace-diagram-which-label-shows-molten-material-being-tapped-out",
-      "question": "Use the blast furnace diagram. Which label shows molten material being tapped out near the bottom?",
-      "answer": "D",
+      "question": "Use the blast furnace diagram. Which label shows molten iron being tapped out near the bottom?",
+      "answer": "E",
       "choices": [
         "A label A",
         "B label B",
         "C label C",
-        "D label D"
+        "D label D",
+        "E label E"
       ],
-      "explanation": "Molten iron and slag are tapped from the bottom region of the furnace; the diagram shows this at label D.",
+      "explanation": "Molten iron is tapped from the lower outlet near the bottom of the furnace, shown by label E.",
       "source": "9F visual coverage - blast furnace process",
       "learningObjective": "9F-extraction",
       "learningObjectiveTitle": "Metal extraction and reduction",
@@ -10749,33 +10748,11 @@ window.YEAR9_CONTENT = {
       "noteId": "9F-extraction",
       "media": [
         {
-          "src": "assets/webp/9F-blast-furnace-process-v2.webp",
-          "alt": "Blast furnace illustration with labelled input and output arrows.",
-          "caption": "Use the labelled arrows to identify blast furnace inputs and outputs.",
+          "src": "assets/webp/9F-blast-furnace-question-r168.webp",
+          "alt": "Question-safe blast furnace diagram with labels A to E and no answer text.",
+          "caption": "Use the labelled diagram to identify blast furnace inputs and outputs.",
           "mediaTiming": "question",
-          "presentation": "media-image-base",
-          "mediaMarkers": [
-            {
-              "label": "A",
-              "x": 32,
-              "y": 9
-            },
-            {
-              "label": "B",
-              "x": 61,
-              "y": 9
-            },
-            {
-              "label": "C",
-              "x": 22,
-              "y": 71
-            },
-            {
-              "label": "D",
-              "x": 77,
-              "y": 84
-            }
-          ]
+          "presentation": "media-image-base"
         }
       ]
     },
@@ -11148,7 +11125,7 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Levers, pivots and moments",
       "learningObjectiveDescription": "Levers, pivots/fulcrums, moment calculations and mechanical advantage.",
       "noteId": "9I-moments",
-      "mediaPolicy": "question-media-only-if-required",
+      "mediaPolicy": "required-for-question",
       "examEligible": true,
       "examCommand": "describe",
       "examMarks": 2,
@@ -11163,7 +11140,17 @@ window.YEAR9_CONTENT = {
         "Use values, labels or context from the question where useful."
       ],
       "examCommandReviewed": "v1.61.0",
-      "examPruningReviewed": "v1.62.0"
+      "examPruningReviewed": "v1.62.0",
+      "media": [
+        {
+          "src": "assets/webp/9I-moments-levers-perpendicular-distance-question-r167.webp",
+          "alt": "Question-safe moments and lever image showing force arrows, pivots and perpendicular distances.",
+          "caption": "Use the lever diagrams to think about pivot, force and distance.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "r7Integrated": true
+        }
+      ]
     },
     {
       "id": "y9x-073-9i-explain-how-levers-ramps-or-pulleys-could-raise-or-lift-stones",
@@ -11185,7 +11172,7 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Levers, pivots and moments",
       "learningObjectiveDescription": "Levers, pivots/fulcrums, moment calculations and mechanical advantage.",
       "noteId": "9I-moments",
-      "mediaPolicy": "question-media-only-if-required",
+      "mediaPolicy": "required-for-question",
       "examEligible": true,
       "examCommand": "explain",
       "examMarks": 3,
@@ -11200,7 +11187,17 @@ window.YEAR9_CONTENT = {
         "Add the result, consequence or application."
       ],
       "examCommandReviewed": "v1.61.0",
-      "examPruningReviewed": "v1.62.0"
+      "examPruningReviewed": "v1.62.0",
+      "media": [
+        {
+          "src": "assets/webp/9I-moments-levers-perpendicular-distance-question-r167.webp",
+          "alt": "Question-safe moments and lever image showing force arrows, pivots and perpendicular distances.",
+          "caption": "Use the lever diagrams to think about pivot, force and distance.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "r7Integrated": true
+        }
+      ]
     },
     {
       "id": "y9x-074-9i-state-what-a-moment-is-and-when-something-balances",
@@ -12829,15 +12826,15 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Resistance and Ohm’s law",
       "learningObjectiveDescription": "Resistance, current-voltage graphs, high-resistance materials and calculations.",
       "noteId": "9J-resistance",
-      "mediaPolicy": "question-safe-blank-asset",
+      "mediaPolicy": "required-for-question",
       "media": [
         {
-          "src": "assets/webp/9J-wire-resistance-investigation-blank.webp",
-          "alt": "Unlabelled wire resistance investigation setup without explanatory notes.",
-          "caption": "",
+          "src": "assets/webp/9J-wire-resistance-investigation-question-r167.webp",
+          "alt": "Question-safe wire resistance investigation setup with circuit, test wire and comparison wires.",
+          "caption": "Use the setup to plan or describe the resistance investigation.",
           "mediaTiming": "question",
           "presentation": "media-image-base",
-          "questionAssetV145": true
+          "r7Integrated": true
         }
       ],
       "examEligible": true,
@@ -16592,9 +16589,9 @@ window.YEAR9_CONTENT = {
       "mediaPolicy": "supports-question",
       "media": [
         {
-          "src": "assets/webp/9F-metal-reaction-products-question-v153.webp",
-          "alt": "Unlabelled reactive metal product map.",
-          "caption": "Use the diagram to support your answer.",
+          "src": "assets/webp/9F-metal-reaction-products-question-r168.webp",
+          "alt": "Question-safe comparison of metal reactions with water and dilute acid, using neutral product labels only.",
+          "caption": "Use the two reactions to support your answer.",
           "mediaTiming": "question",
           "presentation": "media-image-base"
         }
@@ -16638,15 +16635,14 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Reactivity and displacement",
       "learningObjectiveDescription": "Reactivity series, metal reactions, displacement and reaction patterns.",
       "noteId": "9F-reactivity",
-      "mediaPolicy": "question-media-only-if-required",
+      "mediaPolicy": "supports-question",
       "media": [
         {
-          "src": "assets/webp/9F-acids-alkalis-ph-scale-blank-v3.webp",
-          "alt": "Unlabelled pH scale with example substances and no explanatory notes.",
-          "caption": "Use the pH scale to reason about acids, neutral substances and alkalis.",
+          "src": "assets/webp/9F-metal-reaction-products-question-r168.webp",
+          "alt": "Question-safe comparison of metal reactions with water and dilute acid, using neutral product labels only.",
+          "caption": "Use the two reactions to support your answer.",
           "mediaTiming": "question",
-          "presentation": "media-image-base",
-          "questionAssetV148": true
+          "presentation": "media-image-base"
         }
       ],
       "examEligible": true,
@@ -17252,7 +17248,7 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Forces, drag and terminal velocity",
       "learningObjectiveDescription": "Forces, balanced forces, top speed, drag and terminal velocity.",
       "noteId": "9I-forces",
-      "mediaPolicy": "question-media-only-if-required",
+      "mediaPolicy": "required-for-question",
       "examEligible": true,
       "examCommand": "describe",
       "examMarks": 2,
@@ -17267,7 +17263,17 @@ window.YEAR9_CONTENT = {
         "Use values, labels or context from the question where useful."
       ],
       "examCommandReviewed": "v1.61.0",
-      "examPruningReviewed": "v1.62.0"
+      "examPruningReviewed": "v1.62.0",
+      "media": [
+        {
+          "src": "assets/webp/9I-terminal-velocity-force-sequence-question-r167.webp",
+          "alt": "Question-safe falling-object sequence with weight and air resistance arrows of changing sizes.",
+          "caption": "Use the force arrows to compare weight and air resistance.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "r7Integrated": true
+        }
+      ]
     },
     {
       "id": "y9r-050-9i-what-has-happened-when-a-falling-object-reaches-terminal-velocity",
@@ -17293,7 +17299,7 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Forces, drag and terminal velocity",
       "learningObjectiveDescription": "Forces, balanced forces, top speed, drag and terminal velocity.",
       "noteId": "9I-forces",
-      "mediaPolicy": "question-media-only-if-required",
+      "mediaPolicy": "required-for-question",
       "examEligible": true,
       "examCommand": "explain",
       "examMarks": 2,
@@ -17308,7 +17314,17 @@ window.YEAR9_CONTENT = {
         "Add the result, consequence or application."
       ],
       "examCommandReviewed": "v1.61.0",
-      "examPruningReviewed": "v1.62.0"
+      "examPruningReviewed": "v1.62.0",
+      "media": [
+        {
+          "src": "assets/webp/9I-terminal-velocity-force-sequence-question-r167.webp",
+          "alt": "Question-safe falling-object sequence with weight and air resistance arrows of changing sizes.",
+          "caption": "Use the force arrows to compare weight and air resistance.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "r7Integrated": true
+        }
+      ]
     },
     {
       "id": "y9r-051-9i-how-do-you-convert-a-speed-in-m-s-to-km-h",
@@ -17805,7 +17821,7 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Levers, pivots and moments",
       "learningObjectiveDescription": "Levers, pivots, moments, equilibrium and simple machines.",
       "noteId": "9I-moments",
-      "mediaPolicy": "question-media-only-if-required",
+      "mediaPolicy": "required-for-question",
       "examEligible": true,
       "examCommand": "state",
       "examMarks": 1,
@@ -17820,7 +17836,17 @@ window.YEAR9_CONTENT = {
         "Do not add a long explanation unless the question asks for it."
       ],
       "examCommandReviewed": "v1.61.0",
-      "examPruningReviewed": "v1.62.0"
+      "examPruningReviewed": "v1.62.0",
+      "media": [
+        {
+          "src": "assets/webp/9I-moments-levers-perpendicular-distance-question-r167.webp",
+          "alt": "Question-safe moments and lever image showing force arrows, pivots and perpendicular distances.",
+          "caption": "Use the lever diagrams to think about pivot, force and distance.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "r7Integrated": true
+        }
+      ]
     },
     {
       "id": "y9r-063-9i-what-is-work-done",
@@ -18054,14 +18080,15 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Static electricity and charge",
       "learningObjectiveDescription": "Charge, electron transfer, attraction/repulsion and electric fields.",
       "noteId": "9J-static",
-      "mediaPolicy": "supports-question",
+      "mediaPolicy": "required-for-question",
       "media": [
         {
-          "src": "assets/webp/9J-force-field-comparison-question-v153.webp",
-          "alt": "Unlabelled force-field comparison diagram.",
-          "caption": "Use the diagram to support your answer.",
+          "src": "assets/webp/9J-electric-fields-direction-question-r167.webp",
+          "alt": "Question-safe electric field diagrams showing field arrows around positive and negative charges.",
+          "caption": "Use the arrows to decide what field direction means.",
           "mediaTiming": "question",
-          "presentation": "media-image-base"
+          "presentation": "media-image-base",
+          "r7Integrated": true
         }
       ],
       "examEligible": true,
@@ -18342,7 +18369,7 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Wire resistance investigation",
       "learningObjectiveDescription": "How wire material, length and thickness affect resistance.",
       "noteId": "9J-wire-resistance-investigation",
-      "mediaPolicy": "question-media-only-if-required",
+      "mediaPolicy": "required-for-question",
       "examEligible": true,
       "examCommand": "state",
       "examMarks": 3,
@@ -18357,7 +18384,17 @@ window.YEAR9_CONTENT = {
         "Do not add a long explanation unless the question asks for it."
       ],
       "examCommandReviewed": "v1.61.0",
-      "examPruningReviewed": "v1.62.0"
+      "examPruningReviewed": "v1.62.0",
+      "media": [
+        {
+          "src": "assets/webp/9J-wire-resistance-investigation-question-r167.webp",
+          "alt": "Question-safe wire resistance investigation setup with circuit, test wire and comparison wires.",
+          "caption": "Use the setup to plan or describe the resistance investigation.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "r7Integrated": true
+        }
+      ]
     },
     {
       "id": "y9r-076-9j-how-does-wire-length-affect-resistance",
@@ -18381,7 +18418,7 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Wire resistance investigation",
       "learningObjectiveDescription": "How wire material, length and thickness affect resistance.",
       "noteId": "9J-wire-resistance-investigation",
-      "mediaPolicy": "question-media-only-if-required",
+      "mediaPolicy": "required-for-question",
       "examEligible": true,
       "examCommand": "explain",
       "examMarks": 3,
@@ -18396,7 +18433,17 @@ window.YEAR9_CONTENT = {
         "Add the result, consequence or application."
       ],
       "examCommandReviewed": "v1.61.0",
-      "examPruningReviewed": "v1.62.0"
+      "examPruningReviewed": "v1.62.0",
+      "media": [
+        {
+          "src": "assets/webp/9J-wire-resistance-investigation-question-r167.webp",
+          "alt": "Question-safe wire resistance investigation setup with circuit, test wire and comparison wires.",
+          "caption": "Use the setup to plan or describe the resistance investigation.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "r7Integrated": true
+        }
+      ]
     },
     {
       "id": "y9r-077-9j-how-does-wire-thickness-affect-resistance",
@@ -18420,7 +18467,7 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Wire resistance investigation",
       "learningObjectiveDescription": "How wire material, length and thickness affect resistance.",
       "noteId": "9J-wire-resistance-investigation",
-      "mediaPolicy": "question-media-only-if-required",
+      "mediaPolicy": "required-for-question",
       "examEligible": true,
       "examCommand": "explain",
       "examMarks": 3,
@@ -18435,7 +18482,17 @@ window.YEAR9_CONTENT = {
         "Add the result, consequence or application."
       ],
       "examCommandReviewed": "v1.61.0",
-      "examPruningReviewed": "v1.62.0"
+      "examPruningReviewed": "v1.62.0",
+      "media": [
+        {
+          "src": "assets/webp/9J-wire-resistance-investigation-question-r167.webp",
+          "alt": "Question-safe wire resistance investigation setup with circuit, test wire and comparison wires.",
+          "caption": "Use the setup to plan or describe the resistance investigation.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "r7Integrated": true
+        }
+      ]
     },
     {
       "id": "y9r-078-9j-what-is-the-formula-for-calculating-resistance-from-voltage-and-current",
@@ -19006,7 +19063,7 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Variation and classification",
       "learningObjectiveDescription": "Types of variation, inherited and environmental causes, and classification challenges.",
       "noteId": "9A-variation",
-      "mediaPolicy": "question-media-only-if-required",
+      "mediaPolicy": "required-for-question",
       "examEligible": true,
       "examCommand": "state",
       "examMarks": 2,
@@ -19021,7 +19078,17 @@ window.YEAR9_CONTENT = {
         "Do not add a long explanation unless the question asks for it."
       ],
       "examCommandReviewed": "v1.61.0",
-      "examPruningReviewed": "v1.62.0"
+      "examPruningReviewed": "v1.62.0",
+      "media": [
+        {
+          "src": "assets/webp/9A-ecosystem-components-interdependence-question-r167.webp",
+          "alt": "Question-safe ecosystem scene showing organisms, habitat features and non-living factors without explanatory notes.",
+          "caption": "Use the scene to think about living and non-living parts of an ecosystem.",
+          "mediaTiming": "question",
+          "presentation": "media-image-base",
+          "r7Integrated": true
+        }
+      ]
     },
     {
       "id": "y9p-006-9a-how-can-probabilities-be-shown-in-inheritance-questions",
@@ -20566,15 +20633,15 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Pressure in fluids",
       "learningObjectiveDescription": "Pressure as force over area, pressure changes with depth and height, upthrust, floating and sinking.",
       "noteId": "9I-pressure",
-      "mediaPolicy": "question-safe-blank-asset",
+      "mediaPolicy": "required-for-question",
       "media": [
         {
-          "src": "assets/webp/9I-liquid-pressure-depth-blank.webp",
-          "alt": "Unlabelled water tank image showing jets from different depths without explanatory labels.",
-          "caption": "",
+          "src": "assets/webp/9I-liquid-pressure-depth-question-r167.webp",
+          "alt": "Question-safe liquid pressure diagram comparing water jets at different depths and containers at the same depth.",
+          "caption": "Use the water jets and depth marks to compare liquid pressure.",
           "mediaTiming": "question",
           "presentation": "media-image-base",
-          "questionAssetV145": true
+          "r7Integrated": true
         }
       ],
       "examEligible": true,
@@ -20627,15 +20694,15 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Pressure in fluids",
       "learningObjectiveDescription": "Pressure as force over area, pressure changes with depth and height, upthrust, floating and sinking.",
       "noteId": "9I-pressure",
-      "mediaPolicy": "question-safe-blank-asset",
+      "mediaPolicy": "required-for-question",
       "media": [
         {
-          "src": "assets/webp/9I-liquid-pressure-depth-blank.webp",
-          "alt": "Unlabelled water tank image showing jets from different depths without explanatory labels.",
-          "caption": "",
+          "src": "assets/webp/9I-liquid-pressure-depth-question-r167.webp",
+          "alt": "Question-safe liquid pressure diagram comparing water jets at different depths and containers at the same depth.",
+          "caption": "Use the water jets and depth marks to compare liquid pressure.",
           "mediaTiming": "question",
           "presentation": "media-image-base",
-          "questionAssetV145": true
+          "r7Integrated": true
         }
       ],
       "examEligible": true,
@@ -21077,15 +21144,15 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Pressure in fluids",
       "learningObjectiveDescription": "Pressure as force over area, pressure changes with depth and height, upthrust, floating and sinking.",
       "noteId": "9I-pressure",
-      "mediaPolicy": "question-safe-blank-asset",
+      "mediaPolicy": "required-for-question",
       "media": [
         {
-          "src": "assets/webp/9I-liquid-pressure-depth-blank.webp",
-          "alt": "Unlabelled water tank image showing jets from different depths without explanatory labels.",
-          "caption": "",
+          "src": "assets/webp/9I-liquid-pressure-depth-question-r167.webp",
+          "alt": "Question-safe liquid pressure diagram comparing water jets at different depths and containers at the same depth.",
+          "caption": "Use the water jets and depth marks to compare liquid pressure.",
           "mediaTiming": "question",
           "presentation": "media-image-base",
-          "questionAssetV145": true
+          "r7Integrated": true
         }
       ],
       "examEligible": true,
@@ -24206,11 +24273,12 @@ window.YEAR9_CONTENT = {
       "mediaPolicy": "required-for-question",
       "media": [
         {
-          "src": "assets/webp/9A-biodiversity-extinction-conservation-question-v151.webp",
-          "alt": "Unlabelled biodiversity diagram showing causes and conservation methods.",
-          "caption": "Use the diagram to answer the question.",
+          "src": "assets/webp/9A-conservation-biodiversity-methods-question-r167.webp",
+          "alt": "Question-safe conservation methods image showing habitat protection, seed storage, captive breeding and release contexts.",
+          "caption": "Use the panels to identify conservation methods.",
           "mediaTiming": "question",
-          "presentation": "media-image-base"
+          "presentation": "media-image-base",
+          "r7Integrated": true
         }
       ]
     },

@@ -1,0 +1,7 @@
+unit,cards,level_1,level_2,level_3,visual_cards,open_answer_cards,types
+9A,77,41,23,11,12,54,Apply check:1; Assess check:24; Progress check:8; Quick quiz:23; Vocabulary:21
+9B,103,36,27,34,28,79,Apply check:3; Assess check:28; Challenge check:1; Progress check:29; Quick quiz:24; Vocabulary:18
+9E,104,41,33,22,45,76,Apply check:7; Assess check:31; Challenge check:3; Progress check:13; Quick quiz:28; Vocabulary:22
+9F,135,48,41,35,62,91,Apply check:4; Assess check:55; Calculation:2; Challenge check:2; Explain check:2; Progress check:18; Quick quiz:31; Vocabulary:21
+9I,105,36,35,30,35,79,Apply check:4; Assess check:28; Calculation:18; Challenge calculation:1; Challenge check:1; Progress check:9; Quick quiz:27; Vocabulary:17
+9J,151,44,52,40,66,107,Apply check:2; Assess check:30; Calculation:24; Challenge calculation:1; Challenge check:1; Progress check:31; Quick quiz:44; Vocabulary:18

@@ -1,74 +1,53 @@
-# Reaction — Year 9 Science Study App
+# Reaction docs
 
-A static, GitHub Pages-ready Year 9 science revision app covering units **9A, 9B, 9E, 9F, 9I and 9J**.
+This folder keeps only the current maintainer documentation and current audit inventories for the Year 9 **Reaction** science app.
 
-The student app focuses on class notes, visual revision tiles, quick practice cards, revisit practice, test mode and balanced written exam practice.
+## Current app status
 
-## Current content status
-
-- Content version: **1.64.0**
-- Notes version: **1.60.0**
+- Content version: **1.68.0**
+- Notes version: **1.67.0**
 - Question cards: **675**
 - Class notes: **38**
 - Unit overview pages: **6**
 - Written exam prompts: **284**
-- Referenced media assets: checked by `tools/release_readiness_audit.py`
+- Referenced media assets: **207**
+- Asset files: **304**
 
-## Card count by unit
+## Current files
 
-| Unit | Cards |
-|---|---:|
-| 9A | 77 |
-| 9B | 103 |
-| 9E | 104 |
-| 9F | 135 |
-| 9I | 105 |
-| 9J | 151 |
+| File | Purpose |
+|---|---|
+| `README.md` | Docs index and current status. |
+| `CHANGELOG.md` | Consolidated project history. |
+| `MAINTENANCE.md` | Validation and maintenance workflow. |
+| `RELEASE_READINESS.md` | Current release-readiness summary. |
+| `ASSET_MANIFEST_CURRENT.csv` | Current asset inventory and reference status. |
+| `UNIT_CONTENT_STATUS_CURRENT.csv` | Current unit/card/written-prompt counts. |
+| `WRITTEN_EXAM_BANK_CURRENT.csv` | Current written-exam prompt inventory. |
+| `VISUAL_ASSET_STATUS.md` | Consolidated visual asset status after the R7/R8 image work. |
+| `WRITTEN_TEST_MODES_STATUS.md` | Consolidated written/end-of-unit/revisit test status. |
+| `DOCS_CLEANUP_v1_69_0.md` | This cleanup patch report. |
+| `DOCS_ARCHIVE_MANIFEST_v1_69_0.csv` | Manifest of old docs consolidated or removed from root docs. |
 
-## App features
+## Unit summary
 
-- Revision journey for selected units or sub-units
-- Revisit list for cards that need another attempt
-- Test your knowledge mode
-- Balanced written exam mode with structured sections, answer-format help and self-marking
-- Unit overview pages with lead visuals and revision tiles
-- Class Notes linked to learning objectives
-- Local browser progress storage
-- Static deployment; no backend, API key or build step required
+| Unit | Cards | Notes | Visual cards | Written prompts | Written visuals |
+|---|---:|---:|---:|---:|---:|
+| 9A | 77 | 4 | 12 | 25 | 8 |
+| 9B | 103 | 5 | 28 | 48 | 25 |
+| 9E | 104 | 8 | 45 | 51 | 32 |
+| 9F | 135 | 8 | 62 | 50 | 24 |
+| 9I | 105 | 6 | 35 | 52 | 29 |
+| 9J | 151 | 7 | 66 | 58 | 35 |
 
-## Run locally
+## Validation
 
-```bash
-python3 -m http.server 8080
-```
-
-Open:
-
-```text
-http://localhost:8080
-```
-
-## Main files
-
-```text
-index.html
-app.js
-styles.css
-data/year9-content.js
-data/year9-notes.js
-assets/
-tools/
-docs/
-```
-
-## Useful checks
+Run from repo root:
 
 ```bash
 node --check app.js
+node --check data/year9-content.js
+node --check data/year9-notes.js
 python3 tools/validate_content.py
 python3 tools/release_readiness_audit.py
 ```
-
-## Source/licence note
-
-The study content was built to align closely with the supplied Year 9 revision materials. Keep the repo private or within the permitted classroom/institution context unless the reconstructed source-pack wording is replaced with original wording.
