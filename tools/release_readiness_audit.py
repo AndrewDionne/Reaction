@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Static release-readiness audit for the Year 9 Reaction app.
+"""Static readiness audit for the Year 9 Reaction app.
 
 Run from the repository root:
     python3 tools/release_readiness_audit.py
@@ -19,7 +19,7 @@ from typing import Any
 ROOT = Path(__file__).resolve().parents[1]
 DOCS = ROOT / "docs"
 DOCS.mkdir(exist_ok=True)
-VERSION = "1.37.0"
+VERSION = "1.64.0"
 
 CONTENT_FILE = ROOT / "data" / "year9-content.js"
 NOTES_FILE = ROOT / "data" / "year9-notes.js"
@@ -187,7 +187,7 @@ def main() -> int:
     fail_count = sum(1 for row in findings if row["severity"] == "fail")
     warn_count = sum(1 for row in findings if row["severity"] == "warn")
     pass_count = sum(1 for row in findings if row["severity"] == "pass")
-    report = f"""# v{VERSION} release-readiness QA report
+    report = f"""# v{VERSION} readiness QA report
 
 ## Summary
 
@@ -200,11 +200,11 @@ def main() -> int:
 - Missing referenced media: **{len(missing_media)}**
 - Findings: **{pass_count} pass**, **{warn_count} warn**, **{fail_count} fail**
 
-## Release-readiness judgement
+## Readiness judgement
 
-The app is ready for a student trial if all `fail` checks remain at zero. Warnings are content-quality follow-up items rather than blockers.
+The app is ready for a student trial when all `fail` checks remain at zero. Warnings are content-quality follow-up items rather than blockers.
 
-## App-flow regression guards
+## App-flow checks
 
 - Resume-session support: {'pass' if flow_checks[0][1] else 'fail'}
 - Multiple-choice shuffle support: {'pass' if flow_checks[1][1] else 'fail'}
@@ -220,17 +220,17 @@ The app is ready for a student trial if all `fail` checks remain at zero. Warnin
 """
     for row in balance_rows:
         report += f"| {row['unit']} | {row['cards']} | {row['level_1']} | {row['level_2']} | {row['level_3']} | {row['visual_cards']} | {row['open_answer_cards']} |\n"
-    report += """
+    report += f"""
 ## Files generated
 
-- `docs/release_readiness_findings_v1_37_0.csv`
-- `docs/release_readiness_unit_balance_v1_37_0.csv`
-- `docs/release_readiness_media_refs_v1_37_0.csv`
-- `docs/release_readiness_answer_leakage_flags_v1_37_0.csv`
+- `docs/release_readiness_findings_v{VERSION.replace('.', '_')}.csv`
+- `docs/release_readiness_unit_balance_v{VERSION.replace('.', '_')}.csv`
+- `docs/release_readiness_media_refs_v{VERSION.replace('.', '_')}.csv`
+- `docs/release_readiness_answer_leakage_flags_v{VERSION.replace('.', '_')}.csv`
 
 ## Recommendation
 
-Proceed to student trial after applying this patch. The next pass should be based on actual student usage, not further broad content expansion.
+Proceed to student trial when all fail checks remain at zero. The next pass should be based on actual student usage.
 """
     (DOCS / f"release_readiness_report_v{VERSION.replace('.', '_')}.md").write_text(report, encoding="utf-8")
 

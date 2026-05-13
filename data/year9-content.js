@@ -1,7 +1,7 @@
 window.YEAR9_CONTENT = {
-  "version": "1.53.0",
+  "version": "1.64.0",
   "title": "Year 9 Science End-of-Year Study",
-  "subtitle": "Guided revision aligned to the school study pack, with unit overviews and source-safe diagram, graph, calculation and infographic visuals integrated where they support exam-style prompts",
+  "subtitle": "Guided revision for the Year 9 science units, with class notes, visual summaries and written exam practice.",
   "units": [
     {
       "id": "9A",
@@ -11,7 +11,7 @@ window.YEAR9_CONTENT = {
     {
       "id": "9B",
       "title": "9B Plant growth",
-      "theme": "Photosynthesis, plant adaptations, plant products, food production and revision-pack respiration links"
+      "theme": "Photosynthesis, plant adaptations, plant products, food production and respiration links"
     },
     {
       "id": "9E",
@@ -1093,7 +1093,7 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9B-carbon-cycle-source-style-blank-v2.webp",
-          "alt": "Question-safe carbon cycle diagram without explanatory notes.",
+          "alt": "Unlabelled carbon cycle diagram without explanatory notes.",
           "caption": "Use the arrows and organisms to reason about carbon cycling.",
           "mediaTiming": "question",
           "presentation": "media-image-base",
@@ -1127,7 +1127,7 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9B-carbon-cycle-source-style-blank-v2.webp",
-          "alt": "Question-safe carbon cycle diagram without explanatory notes.",
+          "alt": "Unlabelled carbon cycle diagram without explanatory notes.",
           "caption": "Use the arrows and organisms to reason about carbon cycling.",
           "mediaTiming": "question",
           "presentation": "media-image-base",
@@ -1291,7 +1291,7 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9E-polymers-monomers-composites-blank-v2.webp",
-          "alt": "Question-safe structure visual showing monomers, polymer chain and composite material with blank labels.",
+          "alt": "Unlabelled structure visual showing monomers, polymer chain and composite material with blank labels.",
           "caption": "Use the structure sequence to explain monomers, polymers and composites.",
           "mediaTiming": "question",
           "presentation": "media-image-base",
@@ -1327,7 +1327,7 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9F-exothermic-endothermic-blank.webp",
-          "alt": "Question-safe split reaction image showing warming and cooling contexts without explanatory labels.",
+          "alt": "Unlabelled split reaction image showing warming and cooling contexts without explanatory labels.",
           "caption": "",
           "mediaTiming": "question",
           "presentation": "media-image-base",
@@ -1538,7 +1538,7 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9B-bioaccumulation-food-chain-blank-v3.webp",
-          "alt": "Question-safe aquatic food chain with toxin dots increasing up the food chain.",
+          "alt": "Unlabelled aquatic food chain with toxin dots increasing up the food chain.",
           "caption": "",
           "mediaTiming": "question",
           "presentation": "media-image-base",
@@ -1622,7 +1622,7 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9E-recycling-methods-blank.webp",
-          "alt": "Question-safe recycling image showing several material recycling processes without explanatory labels.",
+          "alt": "Unlabelled recycling image showing several material recycling processes without explanatory labels.",
           "caption": "",
           "mediaTiming": "question",
           "presentation": "media-image-base",
@@ -1683,7 +1683,7 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9E-recycling-methods-blank.webp",
-          "alt": "Question-safe recycling image showing several material recycling processes without explanatory labels.",
+          "alt": "Unlabelled recycling image showing several material recycling processes without explanatory labels.",
           "caption": "",
           "mediaTiming": "question",
           "presentation": "media-image-base",
@@ -1717,7 +1717,7 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9F-physical-change-chemical-reaction-blank-v2.webp",
-          "alt": "Question-safe comparison image showing physical changes and chemical reaction evidence without labels.",
+          "alt": "Unlabelled comparison image showing physical changes and chemical reaction evidence without labels.",
           "caption": "Compare the two sides to decide whether a new substance is formed.",
           "mediaTiming": "question",
           "presentation": "media-image-base",
@@ -1753,7 +1753,7 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9F-gas-pressure-particle-collisions-question-v153.webp",
-          "alt": "Question-safe gas pressure particle collision diagram.",
+          "alt": "Unlabelled gas pressure particle collision diagram.",
           "caption": "Use the diagram to support your answer.",
           "mediaTiming": "question",
           "presentation": "media-image-base"
@@ -1786,7 +1786,7 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9E-gas-pressure-brownian-motion-blank-v3.webp",
-          "alt": "Question-safe particle diagrams for gas pressure and temperature.",
+          "alt": "Unlabelled particle diagrams for gas pressure and temperature.",
           "caption": "",
           "mediaTiming": "question",
           "presentation": "media-image-base",
@@ -1820,7 +1820,7 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9F-chemical-formulae-counting-atoms-blank-v2.webp",
-          "alt": "Question-safe chemical formula cards without worked atom-count notes.",
+          "alt": "Unlabelled chemical formula cards without worked atom-count notes.",
           "caption": "",
           "mediaTiming": "question",
           "presentation": "media-image-base",
@@ -1854,7 +1854,7 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9F-acids-alkalis-ph-scale-blank-v3.webp",
-          "alt": "Question-safe pH scale with example substances and no explanatory notes.",
+          "alt": "Unlabelled pH scale with example substances and no explanatory notes.",
           "caption": "Use the pH scale to reason about acids, neutral substances and alkalis.",
           "mediaTiming": "question",
           "presentation": "media-image-base",
@@ -1938,7 +1938,7 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9F-periodic-table-navigator-blank.webp",
-          "alt": "Question-safe periodic table image without explanatory labels.",
+          "alt": "Unlabelled periodic table image without explanatory labels.",
           "caption": "",
           "mediaTiming": "question",
           "presentation": "media-image-base",
@@ -1998,7 +1998,7 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9F-combustion-fire-triangle-blank.webp",
-          "alt": "Question-safe combustion image showing a flame and fire-triangle icons without explanatory labels.",
+          "alt": "Unlabelled combustion image showing a flame and fire-triangle icons without explanatory labels.",
           "caption": "",
           "mediaTiming": "question",
           "presentation": "media-image-base",
@@ -2058,7 +2058,7 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9F-exothermic-endothermic-blank.webp",
-          "alt": "Question-safe split reaction image showing warming and cooling contexts without explanatory labels.",
+          "alt": "Unlabelled split reaction image showing warming and cooling contexts without explanatory labels.",
           "caption": "",
           "mediaTiming": "question",
           "presentation": "media-image-base",
@@ -2188,7 +2188,7 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9F-metal-extraction-methods-blank-v3.webp",
-          "alt": "Question-safe comparison of metal extraction methods.",
+          "alt": "Unlabelled comparison of metal extraction methods.",
           "caption": "",
           "mediaTiming": "question",
           "presentation": "media-image-base",
@@ -2270,7 +2270,7 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9F-metal-extraction-methods-blank-v3.webp",
-          "alt": "Question-safe comparison of metal extraction methods.",
+          "alt": "Unlabelled comparison of metal extraction methods.",
           "caption": "",
           "mediaTiming": "question",
           "presentation": "media-image-base",
@@ -2473,7 +2473,7 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9I-sankey-efficiency-blank.webp",
-          "alt": "Question-safe Sankey-style energy transfer diagram without explanatory labels.",
+          "alt": "Unlabelled Sankey-style energy transfer diagram without explanatory labels.",
           "caption": "",
           "mediaTiming": "question",
           "presentation": "media-image-base",
@@ -2612,7 +2612,7 @@ window.YEAR9_CONTENT = {
         "C X",
         "D Z"
       ],
-      "explanation": "A horizontal section shows time passing with no change in distance. In this source-style redraw, W is a stopped section.",
+      "explanation": "A horizontal section shows time passing with no change in distance. In this diagram, W is a stopped section.",
       "source": "9I quick quiz 9Ic Q4 - source-style graph redraw",
       "level": 2,
       "cue": "",
@@ -2657,7 +2657,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Levers, pivots and moments",
       "learningObjectiveDescription": "Levers, pivots/fulcrums, moment calculations and mechanical advantage.",
       "noteId": "9I-moments",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "identify",
+      "examMarks": 1,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "source-style-redraw",
+      "answerFormatHint": "Use the labels, diagram or question clue to name the correct item(s). Keep the answer concise.",
+      "examFormatKind": "label-or-feature",
+      "answerFormatSteps": [
+        "Look carefully at the label, diagram or clue.",
+        "Name the correct item(s), part(s) or feature(s).",
+        "Use letters/names clearly if the diagram uses labels."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9-094-9i-which-lever-makes-it-easiest-to-move-a-heavy-rock",
@@ -2981,7 +2996,7 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9J-static-electricity-charge-transfer-blank-v3.webp",
-          "alt": "Question-safe static electricity charge-transfer diagram.",
+          "alt": "Unlabelled static electricity charge-transfer diagram.",
           "caption": "Use the diagram to reason about electron transfer and charge.",
           "mediaTiming": "question",
           "presentation": "media-image-base",
@@ -3015,7 +3030,7 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9J-static-electricity-charge-transfer-blank-v3.webp",
-          "alt": "Question-safe static electricity charge-transfer diagram.",
+          "alt": "Unlabelled static electricity charge-transfer diagram.",
           "caption": "Use the diagram to reason about electron transfer and charge.",
           "mediaTiming": "question",
           "presentation": "media-image-base",
@@ -3265,7 +3280,7 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9J-electromagnet-strength-variables-blank-v3.webp",
-          "alt": "Question-safe electromagnet image showing comparison setups without explanatory notes.",
+          "alt": "Unlabelled electromagnet image showing comparison setups without explanatory notes.",
           "caption": "Use the setups to identify changes that affect electromagnet strength.",
           "mediaTiming": "question",
           "presentation": "media-image-base",
@@ -3323,7 +3338,7 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9J-motor-effect-simple-motor-blank-v3.webp",
-          "alt": "Question-safe motor effect and simple motor diagram without explanatory notes.",
+          "alt": "Unlabelled motor effect and simple motor diagram without explanatory notes.",
           "caption": "Use current, field and force arrows to reason about the motor effect.",
           "mediaTiming": "question",
           "presentation": "media-image-base",
@@ -3357,7 +3372,7 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9J-motor-effect-simple-motor-blank-v3.webp",
-          "alt": "Question-safe motor effect and simple motor diagram without explanatory notes.",
+          "alt": "Unlabelled motor effect and simple motor diagram without explanatory notes.",
           "caption": "Use current, field and force arrows to reason about the motor effect.",
           "mediaTiming": "question",
           "presentation": "media-image-base",
@@ -4438,7 +4453,7 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9F-thermal-decomposition-gas-tests-blank-v2.webp",
-          "alt": "Question-safe thermal decomposition and gas test setup.",
+          "alt": "Unlabelled thermal decomposition and gas test setup.",
           "caption": "",
           "mediaTiming": "question",
           "presentation": "media-image-base",
@@ -4595,7 +4610,7 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9F-physical-change-chemical-reaction-blank-v2.webp",
-          "alt": "Question-safe comparison image showing physical changes and chemical reaction evidence without labels.",
+          "alt": "Unlabelled comparison image showing physical changes and chemical reaction evidence without labels.",
           "caption": "Compare the two sides to decide whether a new substance is formed.",
           "mediaTiming": "question",
           "presentation": "media-image-base",
@@ -4648,7 +4663,7 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9F-gas-pressure-particle-collisions-question-v153.webp",
-          "alt": "Question-safe gas pressure particle collision diagram.",
+          "alt": "Unlabelled gas pressure particle collision diagram.",
           "caption": "Use the diagram to support your answer.",
           "mediaTiming": "question",
           "presentation": "media-image-base"
@@ -4700,7 +4715,7 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9F-periodic-table-navigator-blank.webp",
-          "alt": "Question-safe periodic table image without explanatory labels.",
+          "alt": "Unlabelled periodic table image without explanatory labels.",
           "caption": "",
           "mediaTiming": "question",
           "presentation": "media-image-base",
@@ -4816,7 +4831,7 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9F-combustion-fire-triangle-blank.webp",
-          "alt": "Question-safe combustion image showing a flame and fire-triangle icons without explanatory labels.",
+          "alt": "Unlabelled combustion image showing a flame and fire-triangle icons without explanatory labels.",
           "caption": "",
           "mediaTiming": "question",
           "presentation": "media-image-base",
@@ -5142,7 +5157,7 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9I-sankey-efficiency-blank.webp",
-          "alt": "Question-safe Sankey-style energy transfer diagram without explanatory labels.",
+          "alt": "Unlabelled Sankey-style energy transfer diagram without explanatory labels.",
           "caption": "",
           "mediaTiming": "question",
           "presentation": "media-image-base",
@@ -5373,7 +5388,7 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9J-magnetic-field-bar-magnet-blank-v3.webp",
-          "alt": "Question-safe bar magnet field-line diagram.",
+          "alt": "Unlabelled bar magnet field-line diagram.",
           "caption": "Use the field lines to describe magnetic field shape and strength.",
           "mediaTiming": "question",
           "presentation": "media-image-base",
@@ -5530,7 +5545,7 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9J-static-electricity-charge-transfer-blank-v3.webp",
-          "alt": "Question-safe static electricity charge-transfer diagram.",
+          "alt": "Unlabelled static electricity charge-transfer diagram.",
           "caption": "Use the diagram to reason about electron transfer and charge.",
           "mediaTiming": "question",
           "presentation": "media-image-base",
@@ -5687,7 +5702,7 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9J-electromagnet-strength-variables-blank-v3.webp",
-          "alt": "Question-safe electromagnet image showing comparison setups without explanatory notes.",
+          "alt": "Unlabelled electromagnet image showing comparison setups without explanatory notes.",
           "caption": "Use the setups to identify changes that affect electromagnet strength.",
           "mediaTiming": "question",
           "presentation": "media-image-base",
@@ -5739,7 +5754,7 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9J-motor-effect-simple-motor-blank-v3.webp",
-          "alt": "Question-safe motor effect and simple motor diagram without explanatory notes.",
+          "alt": "Unlabelled motor effect and simple motor diagram without explanatory notes.",
           "caption": "Use current, field and force arrows to reason about the motor effect.",
           "mediaTiming": "question",
           "presentation": "media-image-base",
@@ -5766,7 +5781,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Variation and classification",
       "learningObjectiveDescription": "Types of variation, inherited and environmental causes, and classification challenges.",
       "noteId": "9A-variation",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "describe",
+      "examMarks": 2,
+      "examDomain": "biology",
+      "examPool": "written-main",
+      "examSourceQuality": "progress-check-derived",
+      "answerFormatHint": "Say what happens, what changes, or what is shown. Use short linked points and include values or labels if given.",
+      "examFormatKind": "linked-description",
+      "answerFormatSteps": [
+        "Give one clear feature, step or change.",
+        "Add another linked feature, step or comparison.",
+        "Use values, labels or context from the question where useful."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9-230-9a-give-three-examples-of-environmental-variation-in-plants",
@@ -5787,7 +5817,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Variation and classification",
       "learningObjectiveDescription": "Types of variation, inherited and environmental causes, and classification challenges.",
       "noteId": "9A-variation",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "state",
+      "examMarks": 1,
+      "examDomain": "biology",
+      "examPool": "written-recall",
+      "examSourceQuality": "progress-check-derived",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examRetiredFromWritten": "v1.62.0",
+      "examRetiredReason": "low_value_recall_overlap",
+      "examRetainedCoverageAnchor": "y9p-005-9a-what-forms-an-ecosystem"
     },
     {
       "id": "y9-231-9a-give-three-examples-of-environmental-variation-in-humans",
@@ -5808,7 +5855,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Variation and classification",
       "learningObjectiveDescription": "Types of variation, inherited and environmental causes, and classification challenges.",
       "noteId": "9A-variation",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "state",
+      "examMarks": 1,
+      "examDomain": "biology",
+      "examPool": "written-recall",
+      "examSourceQuality": "progress-check-derived",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examRetiredFromWritten": "v1.62.0",
+      "examRetiredReason": "low_value_recall_overlap",
+      "examRetainedCoverageAnchor": "y9p-005-9a-what-forms-an-ecosystem"
     },
     {
       "id": "y9-232-9a-define-classification",
@@ -5817,7 +5881,7 @@ window.YEAR9_CONTENT = {
       "question": "Why do scientists classify organisms using similarities and differences?",
       "answer": "Classification sorts organisms into groups based on similarities and differences, so organisms can be identified and compared more clearly.",
       "choices": [],
-      "explanation": "This keeps the revision-pack definition but asks students to use it, rather than only repeat it.",
+      "explanation": "This keeps the key definition but asks students to use it, rather than only repeat it.",
       "source": "9A revision worksheet",
       "level": 2,
       "cue": "Try to answer in full sentences before revealing the mark-scheme version.",
@@ -5830,7 +5894,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Variation and classification",
       "learningObjectiveDescription": "Types of variation, inherited and environmental causes, and classification challenges.",
       "noteId": "9A-variation",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "biology",
+      "examPool": "written-main",
+      "examSourceQuality": "progress-check-derived",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9-233-9a-define-species",
@@ -5839,7 +5918,7 @@ window.YEAR9_CONTENT = {
       "question": "Two animals can mate, but their offspring are not fertile. Why would scientists not count them as the same species?",
       "answer": "They would not count them as the same species because members of the same species must reproduce to produce fertile offspring.",
       "choices": [],
-      "explanation": "The key revision-pack wording is “reproduce to produce fertile offspring”.",
+      "explanation": "The key key science wording is “reproduce to produce fertile offspring”.",
       "source": "9A revision worksheet",
       "level": 3,
       "cue": "Try to answer in full sentences before revealing the mark-scheme version.",
@@ -5852,7 +5931,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Variation and classification",
       "learningObjectiveDescription": "Types of variation, inherited and environmental causes, and classification challenges.",
       "noteId": "9A-variation",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "biology",
+      "examPool": "written-main",
+      "examSourceQuality": "progress-check-derived",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9-234-9a-explain-how-environmental-variation-can-cause-problems-with-classifica",
@@ -5873,7 +5967,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Variation and classification",
       "learningObjectiveDescription": "Types of variation, inherited and environmental causes, and classification challenges.",
       "noteId": "9A-variation",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "biology",
+      "examPool": "written-main",
+      "examSourceQuality": "progress-check-derived",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9-235-9a-describe-what-happens-during-fertilisation-and-what-is-formed",
@@ -5894,7 +6003,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Variation and classification",
       "learningObjectiveDescription": "Types of variation, inherited and environmental causes, and classification challenges.",
       "noteId": "9A-variation",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "describe",
+      "examMarks": 2,
+      "examDomain": "biology",
+      "examPool": "written-main",
+      "examSourceQuality": "progress-check-derived",
+      "answerFormatHint": "Say what happens, what changes, or what is shown. Use short linked points and include values or labels if given.",
+      "examFormatKind": "linked-description",
+      "answerFormatSteps": [
+        "Give one clear feature, step or change.",
+        "Add another linked feature, step or comparison.",
+        "Use values, labels or context from the question where useful."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9-236-9a-describe-how-chromosomes-dna-and-genes-are-linked-together",
@@ -5920,12 +6044,27 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9A-dna-hierarchy-question-v153.webp",
-          "alt": "Question-safe DNA, chromosome and gene hierarchy diagram.",
+          "alt": "Unlabelled DNA, chromosome and gene hierarchy diagram.",
           "caption": "Use the diagram to support your answer.",
           "mediaTiming": "question",
           "presentation": "media-image-base"
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "describe",
+      "examMarks": 2,
+      "examDomain": "biology",
+      "examPool": "written-main",
+      "examSourceQuality": "progress-check-derived",
+      "answerFormatHint": "Say what happens, what changes, or what is shown. Use short linked points and include values or labels if given.",
+      "examFormatKind": "linked-description",
+      "answerFormatSteps": [
+        "Give one clear feature, step or change.",
+        "Add another linked feature, step or comparison.",
+        "Use values, labels or context from the question where useful."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9-237-9a-state-three-ways-we-can-preserve-biodiversity",
@@ -5946,7 +6085,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Inheritance, DNA and genes",
       "learningObjectiveDescription": "Cells, nuclei, chromosomes, DNA, genes and preserving genetic information.",
       "noteId": "9A-inheritance",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "state",
+      "examMarks": 1,
+      "examDomain": "biology",
+      "examPool": "written-recall",
+      "examSourceQuality": "progress-check-derived",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9-238-9a-describe-natural-selection",
@@ -5967,7 +6121,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Inheritance, DNA and genes",
       "learningObjectiveDescription": "Cells, nuclei, chromosomes, DNA, genes and preserving genetic information.",
       "noteId": "9A-inheritance",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "describe",
+      "examMarks": 2,
+      "examDomain": "biology",
+      "examPool": "written-main",
+      "examSourceQuality": "progress-check-derived",
+      "answerFormatHint": "Say what happens, what changes, or what is shown. Use short linked points and include values or labels if given.",
+      "examFormatKind": "linked-description",
+      "answerFormatSteps": [
+        "Give one clear feature, step or change.",
+        "Add another linked feature, step or comparison.",
+        "Use values, labels or context from the question where useful."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examRetiredFromWritten": "v1.62.0",
+      "examRetiredReason": "micro_prompt_overlap",
+      "examRetainedCoverageAnchor": "y9-236-9a-describe-how-chromosomes-dna-and-genes-are-linked-together"
     },
     {
       "id": "y9-239-9b-state-where-a-plant-gets-the-reactants-it-needs-for-photosynthesis",
@@ -5988,7 +6159,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Plant transport and specialised cells",
       "learningObjectiveDescription": "Root hair cells, stomata, guard cells, xylem, phloem and plant structure.",
       "noteId": "9B-plant-transport",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "state",
+      "examMarks": 1,
+      "examDomain": "biology",
+      "examPool": "written-recall",
+      "examSourceQuality": "progress-check-derived",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9-240-9b-describe-what-happens-to-the-products-of-photosynthesis",
@@ -6009,7 +6195,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Plant transport and specialised cells",
       "learningObjectiveDescription": "Root hair cells, stomata, guard cells, xylem, phloem and plant structure.",
       "noteId": "9B-plant-transport",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "describe",
+      "examMarks": 2,
+      "examDomain": "biology",
+      "examPool": "written-main",
+      "examSourceQuality": "progress-check-derived",
+      "answerFormatHint": "Say what happens, what changes, or what is shown. Use short linked points and include values or labels if given.",
+      "examFormatKind": "linked-description",
+      "answerFormatSteps": [
+        "Give one clear feature, step or change.",
+        "Add another linked feature, step or comparison.",
+        "Use values, labels or context from the question where useful."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9-241-9b-describe-what-a-limiting-factor-is",
@@ -6030,7 +6231,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Photosynthesis and respiration",
       "learningObjectiveDescription": "Reactants, products, chlorophyll, limiting factors and photosynthesis rate.",
       "noteId": "9B-photosynthesis",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "describe",
+      "examMarks": 2,
+      "examDomain": "biology",
+      "examPool": "written-main",
+      "examSourceQuality": "progress-check-derived",
+      "answerFormatHint": "Say what happens, what changes, or what is shown. Use short linked points and include values or labels if given.",
+      "examFormatKind": "linked-description",
+      "answerFormatSteps": [
+        "Give one clear feature, step or change.",
+        "Add another linked feature, step or comparison.",
+        "Use values, labels or context from the question where useful."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examRetiredFromWritten": "v1.62.0",
+      "examRetiredReason": "micro_prompt_overlap",
+      "examRetainedCoverageAnchor": "y9x-033-9b-describe-how-limiting-factors-stop-photosynthesis-rate-increasing"
     },
     {
       "id": "y9-242-9b-suggest-when-photosynthesis-might-occur-in-plants",
@@ -6044,14 +6262,31 @@ window.YEAR9_CONTENT = {
       "level": 2,
       "cue": "Try to answer in full sentences before revealing the mark-scheme version.",
       "tags": [
-        "written"
+        "written",
+        "written-polish-v1.56",
+        "source-question-restored-v1.60"
       ],
       "sourceFidelity": "progress-check-derived",
       "learningObjective": "9B-photosynthesis",
       "learningObjectiveTitle": "Photosynthesis and respiration",
       "learningObjectiveDescription": "Reactants, products, chlorophyll, limiting factors and photosynthesis rate.",
       "noteId": "9B-photosynthesis",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "state",
+      "examMarks": 2,
+      "examDomain": "biology",
+      "examPool": "written-main",
+      "examSourceQuality": "progress-check-derived",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9-243-9b-describe-the-route-water-takes-from-soil-to-a-leaf",
@@ -6077,12 +6312,27 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9B-plant-transport-overview-question-v153.webp",
-          "alt": "Question-safe plant transport overview diagram.",
+          "alt": "Unlabelled plant transport overview diagram.",
           "caption": "Use the diagram to support your answer.",
           "mediaTiming": "question",
           "presentation": "media-image-base"
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "describe",
+      "examMarks": 2,
+      "examDomain": "biology",
+      "examPool": "written-main",
+      "examSourceQuality": "progress-check-derived",
+      "answerFormatHint": "Say what happens, what changes, or what is shown. Use short linked points and include values or labels if given.",
+      "examFormatKind": "linked-description",
+      "answerFormatSteps": [
+        "Give one clear feature, step or change.",
+        "Add another linked feature, step or comparison.",
+        "Use values, labels or context from the question where useful."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9-244-9b-explain-the-structure-of-xylem-vessels",
@@ -6103,7 +6353,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Plant transport and specialised cells",
       "learningObjectiveDescription": "Root hair cells, stomata, guard cells, xylem, phloem and plant structure.",
       "noteId": "9B-plant-transport",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "biology",
+      "examPool": "written-main",
+      "examSourceQuality": "progress-check-derived",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examRetiredFromWritten": "v1.62.0",
+      "examRetiredReason": "micro_prompt_overlap",
+      "examRetainedCoverageAnchor": "y9x-022-9b-explain-how-leaves-roots-and-stems-help-photosynthesis"
     },
     {
       "id": "y9-245-9b-state-the-cells-that-control-gas-exchange-in-leaves",
@@ -6124,7 +6391,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Plant transport and specialised cells",
       "learningObjectiveDescription": "Root hair cells, stomata, guard cells, xylem, phloem and plant structure.",
       "noteId": "9B-plant-transport",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "state",
+      "examMarks": 1,
+      "examDomain": "biology",
+      "examPool": "written-recall",
+      "examSourceQuality": "progress-check-derived",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examRetiredFromWritten": "v1.62.0",
+      "examRetiredReason": "low_value_recall_overlap",
+      "examRetainedCoverageAnchor": "y9-239-9b-state-where-a-plant-gets-the-reactants-it-needs-for-photosynthesis"
     },
     {
       "id": "y9-246-9b-suggest-why-stomata-shut-at-night",
@@ -6145,7 +6429,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Plant transport and specialised cells",
       "learningObjectiveDescription": "Root hair cells, stomata, guard cells, xylem, phloem and plant structure.",
       "noteId": "9B-plant-transport",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "biology",
+      "examPool": "written-main",
+      "examSourceQuality": "progress-check-derived",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examRetiredFromWritten": "v1.62.0",
+      "examRetiredReason": "micro_prompt_overlap",
+      "examRetainedCoverageAnchor": "y9x-022-9b-explain-how-leaves-roots-and-stems-help-photosynthesis"
     },
     {
       "id": "y9-247-9b-draw-or-describe-the-relationship-between-glucose-and-starch",
@@ -6166,7 +6467,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Plant products, seeds and food production",
       "learningObjectiveDescription": "Glucose, starch, cellulose, oils, minerals, crop yield and farming methods.",
       "noteId": "9B-plant-products",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "describe",
+      "examMarks": 2,
+      "examDomain": "biology",
+      "examPool": "written-main",
+      "examSourceQuality": "progress-check-derived",
+      "answerFormatHint": "Say what happens, what changes, or what is shown. Use short linked points and include values or labels if given.",
+      "examFormatKind": "linked-description",
+      "answerFormatSteps": [
+        "Give one clear feature, step or change.",
+        "Add another linked feature, step or comparison.",
+        "Use values, labels or context from the question where useful."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examRetiredFromWritten": "v1.62.0",
+      "examRetiredReason": "objective_pool_trim",
+      "examRetainedCoverageAnchor": "y9x-086-9b-put-the-main-stages-of-germination-into-a-logical-order"
     },
     {
       "id": "y9-248-9b-suggest-why-seeds-need-starch",
@@ -6192,13 +6510,28 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9B-seed-lifecycle-blank.webp",
-          "alt": "Question-safe seed lifecycle image without stage labels.",
+          "alt": "Unlabelled seed lifecycle image without stage labels.",
           "caption": "",
           "mediaTiming": "question",
           "presentation": "media-image-base",
           "questionAssetV145": true
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "biology",
+      "examPool": "written-main",
+      "examSourceQuality": "progress-check-derived",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9-249-9e-design-poster-prompt-list-what-a-year-9-poster-on-ceramics-polymers-an",
@@ -6219,7 +6552,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Environmental impacts and recycling",
       "learningObjectiveDescription": "Landfill, recycling, fossil fuels, acid rain, greenhouse effect and reducing impacts.",
       "noteId": "9E-environment",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "state",
+      "examMarks": 1,
+      "examDomain": "chemistry",
+      "examPool": "written-recall",
+      "examSourceQuality": "progress-check-derived",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9-250-9e-explain-how-properties-of-ceramics-link-to-bonding-and-structure",
@@ -6240,7 +6588,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Ceramics, crystals and materials properties",
       "learningObjectiveDescription": "Ceramics, glass, clay, crystal formation, melting point and brittleness.",
       "noteId": "9E-ceramics",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "chemistry",
+      "examPool": "written-main",
+      "examSourceQuality": "progress-check-derived",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9-251-9e-explain-why-composites-often-have-better-properties-than-their-separat",
@@ -6265,13 +6628,28 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9E-polymers-monomers-composites-blank-v2.webp",
-          "alt": "Question-safe structure visual showing monomers, polymer chain and composite material with blank labels.",
+          "alt": "Unlabelled structure visual showing monomers, polymer chain and composite material with blank labels.",
           "caption": "Use the structure sequence to explain monomers, polymers and composites.",
           "mediaTiming": "question",
           "presentation": "media-image-base",
           "questionAssetV148": true
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "chemistry",
+      "examPool": "written-main",
+      "examSourceQuality": "progress-check-derived",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9-252-9e-explain-one-environmental-problem-caused-by-making-materials",
@@ -6292,7 +6670,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Environmental impacts and recycling",
       "learningObjectiveDescription": "Landfill, recycling, fossil fuels, acid rain, greenhouse effect and reducing impacts.",
       "noteId": "9E-environment",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "chemistry",
+      "examPool": "written-main",
+      "examSourceQuality": "progress-check-derived",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9-253-9f-prepare-a-talk-what-should-be-included-on-extracting-iron-and-preventi",
@@ -6306,14 +6699,95 @@ window.YEAR9_CONTENT = {
       "level": 5,
       "cue": "Try to answer in full sentences before revealing the mark-scheme version.",
       "tags": [
-        "written"
+        "written",
+        "written-split-v1.56",
+        "source-question-restored-v1.60"
       ],
       "sourceFidelity": "progress-check-derived",
       "learningObjective": "9F-rusting",
       "learningObjectiveTitle": "Rusting and corrosion protection",
       "learningObjectiveDescription": "Rusting, coatings, sacrificial protection and preventing corrosion.",
       "noteId": "9F-rusting",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "describe",
+      "examMarks": 5,
+      "examDomain": "chemistry",
+      "examPool": "written-main",
+      "examSourceQuality": "progress-check-derived",
+      "answerFormatHint": "Say what happens, what changes, or what is shown. Use short linked points and include values or labels if given.",
+      "examFormatKind": "linked-description",
+      "answerFormatSteps": [
+        "Give one clear feature, step or change.",
+        "Add another linked feature, step or comparison.",
+        "Use values, labels or context from the question where useful."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examRetiredFromWritten": "v1.62.0",
+      "examRetiredReason": "project_style_prompt",
+      "examRetainedCoverageAnchor": "y9x-063-9f-describe-sacrificial-protection-for-preventing-rusting"
+    },
+    {
+      "id": "y9-253a-9f-describe-how-iron-is-extracted-from-iron-ore",
+      "unit": "9F",
+      "type": "Progress check",
+      "question": "Describe how iron is extracted from iron ore.",
+      "answer": "Iron ore is mined and heated in a blast furnace. Carbon is used to remove oxygen from iron oxide, producing iron.",
+      "choices": [],
+      "explanation": "Iron ore is mined and heated in a blast furnace. Carbon is used to remove oxygen from iron oxide, producing iron.",
+      "source": "9F assess yourself - split from extraction/rusting talk prompt",
+      "level": 4,
+      "cue": "Try to answer in full sentences before revealing the mark-scheme version.",
+      "tags": [
+        "written",
+        "written-split-v1.56",
+        "written-polish-v1.56",
+        "retired-split-prompt-v1.60"
+      ],
+      "sourceFidelity": "progress-check-derived",
+      "learningObjective": "9F-extraction",
+      "learningObjectiveTitle": "Extracting metals",
+      "learningObjectiveDescription": "Ores, extraction by carbon, electrolysis, displacement and sustainability of extraction.",
+      "noteId": "9F-extraction",
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "describe",
+      "examMarks": 3,
+      "examDomain": "chemistry",
+      "examPool": "retired-split-prompt",
+      "examSourceQuality": "progress-check-derived",
+      "answerFormatHint": "Use short linked sentences. Say what happens, what is shown, or what changes."
+    },
+    {
+      "id": "y9-253b-9f-explain-two-ways-rusting-can-be-prevented",
+      "unit": "9F",
+      "type": "Progress check",
+      "question": "Explain two ways rusting can be prevented.",
+      "answer": "Rusting can be prevented by coating the metal so air and water cannot reach it, or by sacrificial protection using a more reactive metal.",
+      "choices": [],
+      "explanation": "Rusting can be prevented by coating the metal so air and water cannot reach it, or by sacrificial protection using a more reactive metal.",
+      "source": "9F assess yourself - split from extraction/rusting talk prompt",
+      "level": 4,
+      "cue": "Try to answer in full sentences before revealing the mark-scheme version.",
+      "tags": [
+        "written",
+        "written-split-v1.56",
+        "written-polish-v1.56",
+        "retired-split-prompt-v1.60"
+      ],
+      "sourceFidelity": "progress-check-derived",
+      "learningObjective": "9F-rusting",
+      "learningObjectiveTitle": "Rusting and corrosion protection",
+      "learningObjectiveDescription": "Rusting, coatings, sacrificial protection and preventing corrosion.",
+      "noteId": "9F-rusting",
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "chemistry",
+      "examPool": "retired-split-prompt",
+      "examSourceQuality": "progress-check-derived",
+      "answerFormatHint": "Use point → because → result. Link the cause to the science effect."
     },
     {
       "id": "y9-254-9f-why-is-a-metal-oxide-reduced-when-carbon-extracts-a-metal",
@@ -6334,7 +6808,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Metal extraction and reduction",
       "learningObjectiveDescription": "Mining, ores, reduction, blast furnaces, electrolysis and extraction method choice.",
       "noteId": "9F-extraction",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "chemistry",
+      "examPool": "written-main",
+      "examSourceQuality": "progress-check-derived",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9-255-9f-explain-why-aluminium-is-extracted-by-electrolysis-rather-than-carbon-",
@@ -6355,7 +6844,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Metal extraction and reduction",
       "learningObjectiveDescription": "Mining, ores, reduction, blast furnaces, electrolysis and extraction method choice.",
       "noteId": "9F-extraction",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "chemistry",
+      "examPool": "written-main",
+      "examSourceQuality": "progress-check-derived",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9-256-9f-explain-why-rusting-is-a-problem-and-name-two-prevention-methods",
@@ -6380,13 +6884,28 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9F-rusting-conditions-prevention-blank-v2.webp",
-          "alt": "Question-safe rusting conditions and prevention image with labelled samples but no explanatory notes.",
+          "alt": "Unlabelled rusting conditions and prevention image with labelled samples but no explanatory notes.",
           "caption": "Use the samples to reason about oxygen, water and protection methods.",
           "mediaTiming": "question",
           "presentation": "media-image-base",
           "questionAssetV148": true
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "chemistry",
+      "examPool": "written-main",
+      "examSourceQuality": "progress-check-derived",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9-257-9i-describe-how-to-raise-a-large-upright-stone-using-levers-moments-and-r",
@@ -6407,7 +6926,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Levers, pivots and moments",
       "learningObjectiveDescription": "Levers, pivots/fulcrums, moment calculations and mechanical advantage.",
       "noteId": "9I-moments",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "describe",
+      "examMarks": 2,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "progress-check-derived",
+      "answerFormatHint": "Say what happens, what changes, or what is shown. Use short linked points and include values or labels if given.",
+      "examFormatKind": "linked-description",
+      "answerFormatSteps": [
+        "Give one clear feature, step or change.",
+        "Add another linked feature, step or comparison.",
+        "Use values, labels or context from the question where useful."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9-258-9i-explain-why-a-shallow-ramp-needs-less-force-but-more-distance",
@@ -6428,7 +6962,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Energy, work and simple machines",
       "learningObjectiveDescription": "Work done, machines, ramps, friction and energy transfer.",
       "noteId": "9I-energy-work",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "progress-check-derived",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9-259-9i-calculate-the-weight-of-a-54-kg-person-on-earth-where-g-10-n-kg",
@@ -6449,7 +6998,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Forces, drag and terminal velocity",
       "learningObjectiveDescription": "Balanced forces, air/water resistance, top speed and terminal velocity.",
       "noteId": "9I-forces",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "calculate",
+      "examMarks": 2,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "progress-check-derived",
+      "answerFormatHint": "Write the formula or method, substitute values, then give the answer with a unit or required rounding.",
+      "examFormatKind": "calculation-method",
+      "answerFormatSteps": [
+        "Write the equation or method.",
+        "Substitute the values and show working.",
+        "Give the final answer with the correct unit or rounding."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9-260-9i-a-96-kg-person-is-on-a-planet-where-g-14-n-kg-calculate-weight",
@@ -6470,7 +7034,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Forces, drag and terminal velocity",
       "learningObjectiveDescription": "Balanced forces, air/water resistance, top speed and terminal velocity.",
       "noteId": "9I-forces",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "calculate",
+      "examMarks": 2,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "progress-check-derived",
+      "answerFormatHint": "Write the formula or method, substitute values, then give the answer with a unit or required rounding.",
+      "examFormatKind": "calculation-method",
+      "answerFormatSteps": [
+        "Write the equation or method.",
+        "Substitute the values and show working.",
+        "Give the final answer with the correct unit or rounding."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9-261-9i-a-person-weighs-1220-n-on-earth-where-g-10-n-kg-calculate-mass",
@@ -6491,7 +7070,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Forces, drag and terminal velocity",
       "learningObjectiveDescription": "Balanced forces, air/water resistance, top speed and terminal velocity.",
       "noteId": "9I-forces",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "calculate",
+      "examMarks": 2,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "progress-check-derived",
+      "answerFormatHint": "Write the formula or method, substitute values, then give the answer with a unit or required rounding.",
+      "examFormatKind": "calculation-method",
+      "answerFormatSteps": [
+        "Write the equation or method.",
+        "Substitute the values and show working.",
+        "Give the final answer with the correct unit or rounding."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9-262-9j-describe-what-an-electromagnet-is-and-how-its-magnetic-field-is-shaped",
@@ -6512,7 +7106,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Electromagnets, relays and motors",
       "learningObjectiveDescription": "Electromagnets, relays, motor effect and factors affecting magnetic force.",
       "noteId": "9J-electromagnets",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "describe",
+      "examMarks": 2,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "progress-check-derived",
+      "answerFormatHint": "Say what happens, what changes, or what is shown. Use short linked points and include values or labels if given.",
+      "examFormatKind": "linked-description",
+      "answerFormatSteps": [
+        "Give one clear feature, step or change.",
+        "Add another linked feature, step or comparison.",
+        "Use values, labels or context from the question where useful."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examRetiredFromWritten": "v1.62.0",
+      "examRetiredReason": "objective_pool_trim",
+      "examRetainedCoverageAnchor": "y9x-118-9j-predict-how-changing-current-magnetic-field-strength-or-current-direction-affect"
     },
     {
       "id": "y9-263-9j-how-can-the-strength-of-an-electromagnet-be-increased",
@@ -6537,13 +7148,28 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9J-electromagnet-strength-variables-blank-v3.webp",
-          "alt": "Question-safe electromagnet image showing comparison setups without explanatory notes.",
+          "alt": "Unlabelled electromagnet image showing comparison setups without explanatory notes.",
           "caption": "Use the setups to identify changes that affect electromagnet strength.",
           "mediaTiming": "question",
           "presentation": "media-image-base",
           "questionAssetV148": true
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "progress-check-derived",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9-264-9j-explain-how-a-relay-works",
@@ -6564,7 +7190,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Electromagnets, relays and motors",
       "learningObjectiveDescription": "Electromagnets, relays, motor effect and factors affecting magnetic force.",
       "noteId": "9J-electromagnets",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "progress-check-derived",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examRetiredFromWritten": "v1.62.0",
+      "examRetiredReason": "micro_prompt_overlap",
+      "examRetainedCoverageAnchor": "y9x-158-9j-use-the-relay-diagram-explain-why-a-relay-is-useful"
     },
     {
       "id": "y9-265-9j-describe-the-difference-between-current-and-voltage",
@@ -6589,13 +7232,28 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9J-potential-difference-series-parallel-blank-v2.webp",
-          "alt": "Question-safe series and parallel circuit diagrams with voltmeters.",
+          "alt": "Unlabelled series and parallel circuit diagrams with voltmeters.",
           "caption": "Use the circuits to compare potential difference in series and parallel.",
           "mediaTiming": "question",
           "presentation": "media-image-base",
           "questionAssetV148": true
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "describe",
+      "examMarks": 2,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "progress-check-derived",
+      "answerFormatHint": "Say what happens, what changes, or what is shown. Use short linked points and include values or labels if given.",
+      "examFormatKind": "linked-description",
+      "answerFormatSteps": [
+        "Give one clear feature, step or change.",
+        "Add another linked feature, step or comparison.",
+        "Use values, labels or context from the question where useful."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9-266-9j-explain-why-plastic-handles-are-safe-on-electrical-wires",
@@ -6616,7 +7274,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Resistance and Ohm’s law",
       "learningObjectiveDescription": "Resistance, current-voltage graphs, high-resistance materials and calculations.",
       "noteId": "9J-resistance",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "progress-check-derived",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9-267-9j-describe-how-to-test-whether-resistance-depends-on-wire-length",
@@ -6642,13 +7315,28 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9J-wire-resistance-investigation-blank.webp",
-          "alt": "Question-safe wire resistance investigation setup without explanatory notes.",
+          "alt": "Unlabelled wire resistance investigation setup without explanatory notes.",
           "caption": "",
           "mediaTiming": "question",
           "presentation": "media-image-base",
           "questionAssetV145": true
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "describe",
+      "examMarks": 2,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "progress-check-derived",
+      "answerFormatHint": "Say what happens, what changes, or what is shown. Use short linked points and include values or labels if given.",
+      "examFormatKind": "linked-description",
+      "answerFormatSteps": [
+        "Give one clear feature, step or change.",
+        "Add another linked feature, step or comparison.",
+        "Use values, labels or context from the question where useful."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9-268-9j-calculate-weight-mass-34-kg-and-gravitational-field-strength-6-8-n-kg",
@@ -6669,7 +7357,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Force fields, gravity and magnetism",
       "learningObjectiveDescription": "Magnetic, gravitational and electric fields, weight and gravitational potential energy.",
       "noteId": "9J-fields",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "calculate",
+      "examMarks": 2,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "calculation-practice-derived",
+      "answerFormatHint": "Write the formula or method, substitute values, then give the answer with a unit or required rounding.",
+      "examFormatKind": "calculation-method",
+      "answerFormatSteps": [
+        "Write the equation or method.",
+        "Substitute the values and show working.",
+        "Give the final answer with the correct unit or rounding."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0",
+      "examRetiredFromWrittenExam": "v1.64.0",
+      "examRetiredReason": "Calculation duplicate; retained the source-style Groot weight calculation using the same values."
     },
     {
       "id": "y9-269-9j-a-person-has-weight-686-n-and-mass-56-kg-calculate-gravitational-field",
@@ -6690,7 +7395,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Force fields, gravity and magnetism",
       "learningObjectiveDescription": "Magnetic, gravitational and electric fields, weight and gravitational potential energy.",
       "noteId": "9J-fields",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "calculate",
+      "examMarks": 2,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "calculation-practice-derived",
+      "answerFormatHint": "Write the formula or method, substitute values, then give the answer with a unit or required rounding.",
+      "examFormatKind": "calculation-method",
+      "answerFormatSteps": [
+        "Write the equation or method.",
+        "Substitute the values and show working.",
+        "Give the final answer with the correct unit or rounding."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0",
+      "examRetiredFromWrittenExam": "v1.64.0",
+      "examRetiredReason": "Calculation duplicate; retained the source-style Mantis gravitational-field-strength calculation using the same values."
     },
     {
       "id": "y9-270-9j-a-component-has-voltage-10-v-and-current-0-5-a-calculate-resistance",
@@ -6711,7 +7433,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Resistance and Ohm’s law",
       "learningObjectiveDescription": "Resistance, current-voltage graphs, high-resistance materials and calculations.",
       "noteId": "9J-resistance",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "calculate",
+      "examMarks": 2,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "calculation-practice-derived",
+      "answerFormatHint": "Write the formula or method, substitute values, then give the answer with a unit or required rounding.",
+      "examFormatKind": "calculation-method",
+      "answerFormatSteps": [
+        "Write the equation or method.",
+        "Substitute the values and show working.",
+        "Give the final answer with the correct unit or rounding."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examRetiredFromWritten": "v1.62.0",
+      "examRetiredReason": "surplus_calculation_variant",
+      "examRetainedCoverageAnchor": "y9r6-004-9j-current-voltage-resistance-calculate"
     },
     {
       "id": "y9-271-9j-a-resistor-has-voltage-6-v-and-current-0-2-a-calculate-resistance",
@@ -6732,7 +7471,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Resistance and Ohm’s law",
       "learningObjectiveDescription": "Resistance, current-voltage graphs, high-resistance materials and calculations.",
       "noteId": "9J-resistance",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "calculate",
+      "examMarks": 2,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "calculation-practice-derived",
+      "answerFormatHint": "Write the formula or method, substitute values, then give the answer with a unit or required rounding.",
+      "examFormatKind": "calculation-method",
+      "answerFormatSteps": [
+        "Write the equation or method.",
+        "Substitute the values and show working.",
+        "Give the final answer with the correct unit or rounding."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examRetiredFromWritten": "v1.62.0",
+      "examRetiredReason": "surplus_calculation_variant",
+      "examRetainedCoverageAnchor": "y9r6-004-9j-current-voltage-resistance-calculate"
     },
     {
       "id": "y9-272-9i-a-cyclist-travels-12-km-in-0-5-h-calculate-mean-speed",
@@ -6753,7 +7509,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Speed and distance-time graphs",
       "learningObjectiveDescription": "Speed calculations, mean speed and interpreting distance-time graphs.",
       "noteId": "9I-speed",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "calculate",
+      "examMarks": 2,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "calculation-practice-derived",
+      "answerFormatHint": "Write the formula or method, substitute values, then give the answer with a unit or required rounding.",
+      "examFormatKind": "calculation-method",
+      "answerFormatSteps": [
+        "Write the equation or method.",
+        "Substitute the values and show working.",
+        "Give the final answer with the correct unit or rounding."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examRetiredFromWritten": "v1.62.0",
+      "examRetiredReason": "surplus_calculation_variant",
+      "examRetainedCoverageAnchor": "y9r-054-9i-what-is-the-relative-speed-of-a-car-travelling-at-50-km-h-compared-to-one-t"
     },
     {
       "id": "y9-273-9i-a-force-of-40-n-moves-a-box-3-m-calculate-work-done",
@@ -6774,7 +7547,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Energy, work and simple machines",
       "learningObjectiveDescription": "Work done, machines, ramps, friction and energy transfer.",
       "noteId": "9I-energy-work",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "calculate",
+      "examMarks": 2,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "calculation-practice-derived",
+      "answerFormatHint": "Write the formula or method, substitute values, then give the answer with a unit or required rounding.",
+      "examFormatKind": "calculation-method",
+      "answerFormatSteps": [
+        "Write the equation or method.",
+        "Substitute the values and show working.",
+        "Give the final answer with the correct unit or rounding."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9-274-9i-a-5-n-force-acts-0-4-m-from-a-pivot-calculate-the-moment",
@@ -6795,7 +7583,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Levers, pivots and moments",
       "learningObjectiveDescription": "Levers, pivots/fulcrums, moment calculations and mechanical advantage.",
       "noteId": "9I-moments",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "calculate",
+      "examMarks": 2,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "calculation-practice-derived",
+      "answerFormatHint": "Write the formula or method, substitute values, then give the answer with a unit or required rounding.",
+      "examFormatKind": "calculation-method",
+      "answerFormatSteps": [
+        "Write the equation or method.",
+        "Substitute the values and show working.",
+        "Give the final answer with the correct unit or rounding."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-001-9a-state-what-variation-is",
@@ -6817,7 +7620,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Variation and classification",
       "learningObjectiveDescription": "Types of variation, inherited and environmental causes, and classification challenges.",
       "noteId": "9A-variation",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "state",
+      "examMarks": 1,
+      "examDomain": "biology",
+      "examPool": "written-recall",
+      "examSourceQuality": "success-criterion-derived",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examRetiredFromWritten": "v1.62.0",
+      "examRetiredReason": "low_value_recall_overlap",
+      "examRetainedCoverageAnchor": "y9p-005-9a-what-forms-an-ecosystem"
     },
     {
       "id": "y9x-002-9a-outline-why-dinosaurs-became-extinct",
@@ -6839,7 +7659,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Variation and classification",
       "learningObjectiveDescription": "Types of variation, inherited and environmental causes, and classification challenges.",
       "noteId": "9A-variation",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "biology",
+      "examPool": "written-main",
+      "examSourceQuality": "success-criterion-derived",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-003-9a-use-evidence-to-explain-how-scientists-can-infer-something-about-triceratops-suc",
@@ -6861,7 +7696,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Adaptation, natural selection and evolution",
       "learningObjectiveDescription": "Adaptations, evidence from fossils, natural selection and evolution over time.",
       "noteId": "9A-evolution",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "biology",
+      "examPool": "written-main",
+      "examSourceQuality": "success-criterion-derived",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-004-9a-identify-examples-of-environmental-variation",
@@ -6883,7 +7733,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Variation and classification",
       "learningObjectiveDescription": "Types of variation, inherited and environmental causes, and classification challenges.",
       "noteId": "9A-variation",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "identify",
+      "examMarks": 1,
+      "examDomain": "biology",
+      "examPool": "written-main",
+      "examSourceQuality": "success-criterion-derived",
+      "answerFormatHint": "Use the labels, diagram or question clue to name the correct item(s). Keep the answer concise.",
+      "examFormatKind": "label-or-feature",
+      "answerFormatSteps": [
+        "Look carefully at the label, diagram or clue.",
+        "Name the correct item(s), part(s) or feature(s).",
+        "Use letters/names clearly if the diagram uses labels."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-005-9a-identify-examples-of-inherited-variation",
@@ -6905,7 +7770,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Inheritance, DNA and genes",
       "learningObjectiveDescription": "Cells, nuclei, chromosomes, DNA, genes and preserving genetic information.",
       "noteId": "9A-inheritance",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "identify",
+      "examMarks": 1,
+      "examDomain": "biology",
+      "examPool": "written-main",
+      "examSourceQuality": "success-criterion-derived",
+      "answerFormatHint": "Use the labels, diagram or question clue to name the correct item(s). Keep the answer concise.",
+      "examFormatKind": "label-or-feature",
+      "answerFormatSteps": [
+        "Look carefully at the label, diagram or clue.",
+        "Name the correct item(s), part(s) or feature(s).",
+        "Use letters/names clearly if the diagram uses labels."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-006-9a-explain-how-changes-in-an-ecosystem-can-cause-extinction",
@@ -6927,7 +7807,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Biodiversity, conservation and extinction",
       "learningObjectiveDescription": "Endangered species, biodiversity, conservation, gene banks and extinction pressures.",
       "noteId": "9A-biodiversity",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "biology",
+      "examPool": "written-main",
+      "examSourceQuality": "success-criterion-derived",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-007-9a-identify-adaptations-of-triceratops-that-could-be-labelled-on-a-model",
@@ -6980,7 +7875,22 @@ window.YEAR9_CONTENT = {
           ]
         }
       ],
-      "mediaTiming": "question"
+      "mediaTiming": "question",
+      "examEligible": true,
+      "examCommand": "identify",
+      "examMarks": 1,
+      "examDomain": "biology",
+      "examPool": "written-main",
+      "examSourceQuality": "success-criterion-derived",
+      "answerFormatHint": "Use the labels, diagram or question clue to name the correct item(s). Keep the answer concise.",
+      "examFormatKind": "label-or-feature",
+      "answerFormatSteps": [
+        "Look carefully at the label, diagram or clue.",
+        "Name the correct item(s), part(s) or feature(s).",
+        "Use letters/names clearly if the diagram uses labels."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-008-9a-explain-how-environmental-variation-is-caused",
@@ -7002,7 +7912,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Variation and classification",
       "learningObjectiveDescription": "Types of variation, inherited and environmental causes, and classification challenges.",
       "noteId": "9A-variation",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "biology",
+      "examPool": "written-main",
+      "examSourceQuality": "success-criterion-derived",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-009-9a-outline-how-some-variation-is-inherited-from-parents",
@@ -7024,7 +7949,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Inheritance, DNA and genes",
       "learningObjectiveDescription": "Cells, nuclei, chromosomes, DNA, genes and preserving genetic information.",
       "noteId": "9A-inheritance",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "describe",
+      "examMarks": 2,
+      "examDomain": "biology",
+      "examPool": "written-main",
+      "examSourceQuality": "success-criterion-derived",
+      "answerFormatHint": "Say what happens, what changes, or what is shown. Use short linked points and include values or labels if given.",
+      "examFormatKind": "linked-description",
+      "answerFormatSteps": [
+        "Give one clear feature, step or change.",
+        "Add another linked feature, step or comparison.",
+        "Use values, labels or context from the question where useful."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-010-9a-explain-how-triceratops-adaptations-helped-survival",
@@ -7046,7 +7986,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Adaptation, natural selection and evolution",
       "learningObjectiveDescription": "Adaptations, evidence from fossils, natural selection and evolution over time.",
       "noteId": "9A-evolution",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "biology",
+      "examPool": "written-main",
+      "examSourceQuality": "success-criterion-derived",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-011-9a-identify-and-explain-triceratops-adaptations-beyond-the-obvious-labels",
@@ -7099,7 +8054,22 @@ window.YEAR9_CONTENT = {
           ]
         }
       ],
-      "mediaTiming": "question"
+      "mediaTiming": "question",
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "biology",
+      "examPool": "written-main",
+      "examSourceQuality": "success-criterion-derived",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-012-9a-describe-the-relationship-between-cells-nuclei-chromosomes-genes-dna-and-genetic",
@@ -7126,12 +8096,27 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9A-dna-hierarchy-question-v153.webp",
-          "alt": "Question-safe cell, nucleus, chromosome, DNA and gene hierarchy diagram.",
+          "alt": "Unlabelled cell, nucleus, chromosome, DNA and gene hierarchy diagram.",
           "caption": "Use the diagram to support your answer.",
           "mediaTiming": "question",
           "presentation": "media-image-base"
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "describe",
+      "examMarks": 2,
+      "examDomain": "biology",
+      "examPool": "written-main",
+      "examSourceQuality": "success-criterion-derived",
+      "answerFormatHint": "Say what happens, what changes, or what is shown. Use short linked points and include values or labels if given.",
+      "examFormatKind": "linked-description",
+      "answerFormatSteps": [
+        "Give one clear feature, step or change.",
+        "Add another linked feature, step or comparison.",
+        "Use values, labels or context from the question where useful."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-013-9a-describe-how-variation-in-adaptations-affects-survival-within-a-species",
@@ -7153,7 +8138,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Inheritance, DNA and genes",
       "learningObjectiveDescription": "Cells, nuclei, chromosomes, DNA, genes and preserving genetic information.",
       "noteId": "9A-inheritance",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "describe",
+      "examMarks": 2,
+      "examDomain": "biology",
+      "examPool": "written-main",
+      "examSourceQuality": "success-criterion-derived",
+      "answerFormatHint": "Say what happens, what changes, or what is shown. Use short linked points and include values or labels if given.",
+      "examFormatKind": "linked-description",
+      "answerFormatSteps": [
+        "Give one clear feature, step or change.",
+        "Add another linked feature, step or comparison.",
+        "Use values, labels or context from the question where useful."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-014-9a-state-what-evolution-is",
@@ -7175,7 +8175,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Inheritance, DNA and genes",
       "learningObjectiveDescription": "Cells, nuclei, chromosomes, DNA, genes and preserving genetic information.",
       "noteId": "9A-inheritance",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "state",
+      "examMarks": 1,
+      "examDomain": "biology",
+      "examPool": "written-recall",
+      "examSourceQuality": "success-criterion-derived",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examRetiredFromWritten": "v1.62.0",
+      "examRetiredReason": "low_value_recall_overlap",
+      "examRetainedCoverageAnchor": "y9-237-9a-state-three-ways-we-can-preserve-biodiversity"
     },
     {
       "id": "y9x-015-9a-explain-how-natural-selection-works",
@@ -7197,7 +8214,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Inheritance, DNA and genes",
       "learningObjectiveDescription": "Cells, nuclei, chromosomes, DNA, genes and preserving genetic information.",
       "noteId": "9A-inheritance",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "biology",
+      "examPool": "written-main",
+      "examSourceQuality": "success-criterion-derived",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-016-9b-name-some-common-crop-plants",
@@ -7219,7 +8251,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Plant products, seeds and food production",
       "learningObjectiveDescription": "Glucose, starch, cellulose, oils, minerals, crop yield and farming methods.",
       "noteId": "9B-plant-products",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "state",
+      "examMarks": 1,
+      "examDomain": "biology",
+      "examPool": "written-recall",
+      "examSourceQuality": "success-criterion-derived",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examRetiredFromWritten": "v1.62.0",
+      "examRetiredReason": "low_value_recall_overlap",
+      "examRetainedCoverageAnchor": "y9x-097-9b-give-advantages-and-disadvantages-of-clearing-land-for-farming"
     },
     {
       "id": "y9x-017-9b-explain-why-it-is-important-to-look-after-crop-plants",
@@ -7241,7 +8290,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Plant products, seeds and food production",
       "learningObjectiveDescription": "Glucose, starch, cellulose, oils, minerals, crop yield and farming methods.",
       "noteId": "9B-plant-products",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "biology",
+      "examPool": "written-main",
+      "examSourceQuality": "success-criterion-derived",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examRetiredFromWritten": "v1.62.0",
+      "examRetiredReason": "objective_pool_trim",
+      "examRetainedCoverageAnchor": "y9x-030-9b-explain-how-farming-can-change-the-carbon-cycle"
     },
     {
       "id": "y9x-018-9b-state-that-plants-make-their-own-food",
@@ -7263,7 +8329,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Photosynthesis and respiration",
       "learningObjectiveDescription": "Reactants, products, chlorophyll, limiting factors and photosynthesis rate.",
       "noteId": "9B-photosynthesis",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "state",
+      "examMarks": 1,
+      "examDomain": "biology",
+      "examPool": "written-recall",
+      "examSourceQuality": "success-criterion-derived",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examRetiredFromWritten": "v1.62.0",
+      "examRetiredReason": "low_value_recall_overlap",
+      "examRetainedCoverageAnchor": "y9-242-9b-suggest-when-photosynthesis-might-occur-in-plants"
     },
     {
       "id": "y9x-019-9b-recall-the-resources-plants-need-to-grow-well",
@@ -7285,7 +8368,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Plant products, seeds and food production",
       "learningObjectiveDescription": "Glucose, starch, cellulose, oils, minerals, crop yield and farming methods.",
       "noteId": "9B-plant-products",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "state",
+      "examMarks": 1,
+      "examDomain": "biology",
+      "examPool": "written-recall",
+      "examSourceQuality": "success-criterion-derived",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examRetiredFromWritten": "v1.62.0",
+      "examRetiredReason": "low_value_recall_overlap",
+      "examRetainedCoverageAnchor": "y9x-097-9b-give-advantages-and-disadvantages-of-clearing-land-for-farming"
     },
     {
       "id": "y9x-020-9b-list-chemical-substances-farmers-may-apply-to-crops",
@@ -7307,7 +8407,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Plant products, seeds and food production",
       "learningObjectiveDescription": "Glucose, starch, cellulose, oils, minerals, crop yield and farming methods.",
       "noteId": "9B-plant-products",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "state",
+      "examMarks": 1,
+      "examDomain": "biology",
+      "examPool": "written-recall",
+      "examSourceQuality": "success-criterion-derived",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examRetiredFromWritten": "v1.62.0",
+      "examRetiredReason": "low_value_recall_overlap",
+      "examRetainedCoverageAnchor": "y9x-097-9b-give-advantages-and-disadvantages-of-clearing-land-for-farming"
     },
     {
       "id": "y9x-021-9b-describe-photosynthesis-in-terms-of-reactants-products-and-energy-source",
@@ -7329,7 +8446,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Photosynthesis and respiration",
       "learningObjectiveDescription": "Reactants, products, chlorophyll, limiting factors and photosynthesis rate.",
       "noteId": "9B-photosynthesis",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "describe",
+      "examMarks": 2,
+      "examDomain": "biology",
+      "examPool": "written-main",
+      "examSourceQuality": "success-criterion-derived",
+      "answerFormatHint": "Say what happens, what changes, or what is shown. Use short linked points and include values or labels if given.",
+      "examFormatKind": "linked-description",
+      "answerFormatSteps": [
+        "Give one clear feature, step or change.",
+        "Add another linked feature, step or comparison.",
+        "Use values, labels or context from the question where useful."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-022-9b-explain-how-leaves-roots-and-stems-help-photosynthesis",
@@ -7356,12 +8488,27 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9B-plant-transport-overview-question-v153.webp",
-          "alt": "Question-safe plant transport overview diagram.",
+          "alt": "Unlabelled plant transport overview diagram.",
           "caption": "Use the diagram to support your answer.",
           "mediaTiming": "question",
           "presentation": "media-image-base"
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "biology",
+      "examPool": "written-main",
+      "examSourceQuality": "success-criterion-derived",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-023-9b-explain-why-insecticides-and-fungicides-are-used-on-crop-plants",
@@ -7383,7 +8530,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Plant products, seeds and food production",
       "learningObjectiveDescription": "Glucose, starch, cellulose, oils, minerals, crop yield and farming methods.",
       "noteId": "9B-plant-products",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "biology",
+      "examPool": "written-main",
+      "examSourceQuality": "success-criterion-derived",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examRetiredFromWritten": "v1.62.0",
+      "examRetiredReason": "objective_pool_trim",
+      "examRetainedCoverageAnchor": "y9x-030-9b-explain-how-farming-can-change-the-carbon-cycle"
     },
     {
       "id": "y9x-024-9b-explain-why-herbicides-or-weedkillers-are-used-on-crop-plants",
@@ -7405,7 +8569,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Plant products, seeds and food production",
       "learningObjectiveDescription": "Glucose, starch, cellulose, oils, minerals, crop yield and farming methods.",
       "noteId": "9B-plant-products",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "biology",
+      "examPool": "written-main",
+      "examSourceQuality": "success-criterion-derived",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examRetiredFromWritten": "v1.62.0",
+      "examRetiredReason": "objective_pool_trim",
+      "examRetainedCoverageAnchor": "y9x-030-9b-explain-how-farming-can-change-the-carbon-cycle"
     },
     {
       "id": "y9x-025-9b-explain-how-fertilisers-help-crop-plants-grow-well",
@@ -7431,13 +8612,28 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9B-farming-yield-sustainability-blank.webp",
-          "alt": "Question-safe split farming scene showing crop yield methods and environmental impacts without explanatory notes.",
+          "alt": "Unlabelled split farming scene showing crop yield methods and environmental impacts without explanatory notes.",
           "caption": "Use the scene to connect benefits and environmental problems.",
           "mediaTiming": "question",
           "presentation": "media-image-base",
           "questionAssetV148": true
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "biology",
+      "examPool": "written-main",
+      "examSourceQuality": "success-criterion-derived",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-026-9b-use-word-equations-for-photosynthesis-and-aerobic-respiration",
@@ -7452,14 +8648,33 @@ window.YEAR9_CONTENT = {
       "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
       "tags": [
         "assess",
-        "written"
+        "written",
+        "written-polish-v1.56",
+        "source-question-restored-v1.60"
       ],
       "sourceFidelity": "success-criterion-derived",
       "learningObjective": "9B-photosynthesis",
       "learningObjectiveTitle": "Photosynthesis and respiration",
       "learningObjectiveDescription": "Reactants, products, chlorophyll, limiting factors and photosynthesis rate.",
       "noteId": "9B-photosynthesis",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "state",
+      "examMarks": 2,
+      "examDomain": "biology",
+      "examPool": "written-main",
+      "examSourceQuality": "success-criterion-derived",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examRetiredFromWritten": "v1.62.0",
+      "examRetiredReason": "objective_pool_trim",
+      "examRetainedCoverageAnchor": "y9-242-9b-suggest-when-photosynthesis-might-occur-in-plants"
     },
     {
       "id": "y9x-027-9b-explain-what-happens-when-plants-lack-water-or-mineral-salts",
@@ -7481,7 +8696,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Plant transport and specialised cells",
       "learningObjectiveDescription": "Root hair cells, stomata, guard cells, xylem, phloem and plant structure.",
       "noteId": "9B-plant-transport",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "biology",
+      "examPool": "written-main",
+      "examSourceQuality": "success-criterion-derived",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-028-9b-describe-substances-made-in-plants-and-their-uses",
@@ -7503,7 +8733,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Plant products, seeds and food production",
       "learningObjectiveDescription": "Glucose, starch, cellulose, oils, minerals, crop yield and farming methods.",
       "noteId": "9B-plant-products",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "describe",
+      "examMarks": 2,
+      "examDomain": "biology",
+      "examPool": "written-main",
+      "examSourceQuality": "success-criterion-derived",
+      "answerFormatHint": "Say what happens, what changes, or what is shown. Use short linked points and include values or labels if given.",
+      "examFormatKind": "linked-description",
+      "answerFormatSteps": [
+        "Give one clear feature, step or change.",
+        "Add another linked feature, step or comparison.",
+        "Use values, labels or context from the question where useful."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examRetiredFromWritten": "v1.62.0",
+      "examRetiredReason": "objective_pool_trim",
+      "examRetainedCoverageAnchor": "y9x-086-9b-put-the-main-stages-of-germination-into-a-logical-order"
     },
     {
       "id": "y9x-029-9b-explain-that-chlorophyll-traps-energy-transferred-by-light",
@@ -7525,7 +8772,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Photosynthesis and respiration",
       "learningObjectiveDescription": "Reactants, products, chlorophyll, limiting factors and photosynthesis rate.",
       "noteId": "9B-photosynthesis",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "biology",
+      "examPool": "written-main",
+      "examSourceQuality": "success-criterion-derived",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-030-9b-explain-how-farming-can-change-the-carbon-cycle",
@@ -7551,13 +8813,28 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9B-carbon-cycle-source-style-blank-v2.webp",
-          "alt": "Question-safe carbon cycle diagram without explanatory notes.",
+          "alt": "Unlabelled carbon cycle diagram without explanatory notes.",
           "caption": "Use the arrows and organisms to reason about carbon cycling.",
           "mediaTiming": "question",
           "presentation": "media-image-base",
           "questionAssetV148": true
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "biology",
+      "examPool": "written-main",
+      "examSourceQuality": "success-criterion-derived",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-031-9b-explain-problems-caused-by-fertilisers-including-effects-on-fish-in-lakes",
@@ -7579,7 +8856,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Plant products, seeds and food production",
       "learningObjectiveDescription": "Glucose, starch, cellulose, oils, minerals, crop yield and farming methods.",
       "noteId": "9B-plant-products",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "biology",
+      "examPool": "written-main",
+      "examSourceQuality": "success-criterion-derived",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-032-9b-explain-problems-caused-by-pesticides-including-persistent-insecticides",
@@ -7601,7 +8893,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Food webs, biodiversity and ecosystems",
       "learningObjectiveDescription": "Food webs, pesticides, biodiversity, sampling and effects of farming.",
       "noteId": "9B-food-webs",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "biology",
+      "examPool": "written-main",
+      "examSourceQuality": "success-criterion-derived",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-033-9b-describe-how-limiting-factors-stop-photosynthesis-rate-increasing",
@@ -7634,7 +8941,22 @@ window.YEAR9_CONTENT = {
           "presentation": "media-diagram-base",
           "questionAssetV145": true
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "describe",
+      "examMarks": 2,
+      "examDomain": "biology",
+      "examPool": "written-main",
+      "examSourceQuality": "success-criterion-derived",
+      "answerFormatHint": "Say what happens, what changes, or what is shown. Use short linked points and include values or labels if given.",
+      "examFormatKind": "linked-description",
+      "answerFormatSteps": [
+        "Give one clear feature, step or change.",
+        "Add another linked feature, step or comparison.",
+        "Use values, labels or context from the question where useful."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-034-9e-name-common-conductors-and-insulators",
@@ -7661,13 +8983,28 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9E-thermal-conductors-insulators-blank.webp",
-          "alt": "Question-safe image comparing thermal transfer through different materials without explanatory labels.",
+          "alt": "Unlabelled image comparing thermal transfer through different materials without explanatory labels.",
           "caption": "",
           "mediaTiming": "question",
           "presentation": "media-image-base",
           "questionAssetV145": true
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "state",
+      "examMarks": 1,
+      "examDomain": "chemistry",
+      "examPool": "written-recall",
+      "examSourceQuality": "success-criterion-derived",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-035-9e-explain-what-a-landfill-site-is-and-why-it-can-cause-problems",
@@ -7689,7 +9026,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Environmental impacts and recycling",
       "learningObjectiveDescription": "Landfill, recycling, fossil fuels, acid rain, greenhouse effect and reducing impacts.",
       "noteId": "9E-environment",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "chemistry",
+      "examPool": "written-main",
+      "examSourceQuality": "success-criterion-derived",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examRetiredFromWritten": "v1.62.0",
+      "examRetiredReason": "objective_pool_trim",
+      "examRetainedCoverageAnchor": "y9r-024-9e-give-two-reasons-why-recycling-materials-to-use-again-is-useful"
     },
     {
       "id": "y9x-036-9e-name-examples-of-ceramic-polymer-and-composite-materials",
@@ -7711,7 +9065,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Polymers and polymerisation",
       "learningObjectiveDescription": "Natural and synthetic polymers, polymerisation, vulcanisation and biodegradability.",
       "noteId": "9E-polymers",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "state",
+      "examMarks": 1,
+      "examDomain": "chemistry",
+      "examPool": "written-recall",
+      "examSourceQuality": "success-criterion-derived",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-037-9e-name-the-main-source-of-raw-materials-for-making-polymers",
@@ -7733,7 +9102,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Polymers and polymerisation",
       "learningObjectiveDescription": "Natural and synthetic polymers, polymerisation, vulcanisation and biodegradability.",
       "noteId": "9E-polymers",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "state",
+      "examMarks": 1,
+      "examDomain": "chemistry",
+      "examPool": "written-recall",
+      "examSourceQuality": "success-criterion-derived",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examRetiredFromWritten": "v1.62.0",
+      "examRetiredReason": "low_value_recall_overlap",
+      "examRetainedCoverageAnchor": "y9x-034-9e-name-common-conductors-and-insulators"
     },
     {
       "id": "y9x-038-9e-describe-the-difference-between-biodegradable-and-non-biodegradable-polymers",
@@ -7755,7 +9141,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Polymers and polymerisation",
       "learningObjectiveDescription": "Natural and synthetic polymers, polymerisation, vulcanisation and biodegradability.",
       "noteId": "9E-polymers",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "describe",
+      "examMarks": 2,
+      "examDomain": "chemistry",
+      "examPool": "written-main",
+      "examSourceQuality": "success-criterion-derived",
+      "answerFormatHint": "Say what happens, what changes, or what is shown. Use short linked points and include values or labels if given.",
+      "examFormatKind": "linked-description",
+      "answerFormatSteps": [
+        "Give one clear feature, step or change.",
+        "Add another linked feature, step or comparison.",
+        "Use values, labels or context from the question where useful."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-039-9e-describe-pollution-problems-caused-by-burning-fossil-fuels",
@@ -7777,7 +9178,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Environmental impacts and recycling",
       "learningObjectiveDescription": "Landfill, recycling, fossil fuels, acid rain, greenhouse effect and reducing impacts.",
       "noteId": "9E-environment",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "describe",
+      "examMarks": 2,
+      "examDomain": "chemistry",
+      "examPool": "written-main",
+      "examSourceQuality": "success-criterion-derived",
+      "answerFormatHint": "Say what happens, what changes, or what is shown. Use short linked points and include values or labels if given.",
+      "examFormatKind": "linked-description",
+      "answerFormatSteps": [
+        "Give one clear feature, step or change.",
+        "Add another linked feature, step or comparison.",
+        "Use values, labels or context from the question where useful."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-040-9e-describe-what-a-composite-material-is",
@@ -7803,13 +9219,28 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9E-polymers-monomers-composites-blank-v2.webp",
-          "alt": "Question-safe structure visual showing monomers, polymer chain and composite material with blank labels.",
+          "alt": "Unlabelled structure visual showing monomers, polymer chain and composite material with blank labels.",
           "caption": "Use the structure sequence to explain monomers, polymers and composites.",
           "mediaTiming": "question",
           "presentation": "media-image-base",
           "questionAssetV148": true
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "describe",
+      "examMarks": 2,
+      "examDomain": "chemistry",
+      "examPool": "written-main",
+      "examSourceQuality": "success-criterion-derived",
+      "answerFormatHint": "Say what happens, what changes, or what is shown. Use short linked points and include values or labels if given.",
+      "examFormatKind": "linked-description",
+      "answerFormatSteps": [
+        "Give one clear feature, step or change.",
+        "Add another linked feature, step or comparison.",
+        "Use values, labels or context from the question where useful."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-041-9e-describe-problems-caused-by-disposal-of-artificial-polymers",
@@ -7831,7 +9262,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Environmental impacts and recycling",
       "learningObjectiveDescription": "Landfill, recycling, fossil fuels, acid rain, greenhouse effect and reducing impacts.",
       "noteId": "9E-environment",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "describe",
+      "examMarks": 2,
+      "examDomain": "chemistry",
+      "examPool": "written-main",
+      "examSourceQuality": "success-criterion-derived",
+      "answerFormatHint": "Say what happens, what changes, or what is shown. Use short linked points and include values or labels if given.",
+      "examFormatKind": "linked-description",
+      "answerFormatSteps": [
+        "Give one clear feature, step or change.",
+        "Add another linked feature, step or comparison.",
+        "Use values, labels or context from the question where useful."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examRetiredFromWritten": "v1.62.0",
+      "examRetiredReason": "objective_pool_trim",
+      "examRetainedCoverageAnchor": "y9x-039-9e-describe-pollution-problems-caused-by-burning-fossil-fuels"
     },
     {
       "id": "y9x-042-9e-explain-the-causes-and-problems-of-acid-rain-and-the-greenhouse-effect",
@@ -7864,7 +9312,22 @@ window.YEAR9_CONTENT = {
           "presentation": "media-image-base",
           "questionAssetV145": true
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "chemistry",
+      "examPool": "written-main",
+      "examSourceQuality": "success-criterion-derived",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-043-9e-link-uses-of-ceramics-polymers-and-composites-to-their-properties",
@@ -7879,7 +9342,9 @@ window.YEAR9_CONTENT = {
       "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
       "tags": [
         "assess",
-        "written"
+        "written",
+        "written-polish-v1.56",
+        "source-question-restored-v1.60"
       ],
       "sourceFidelity": "success-criterion-derived",
       "learningObjective": "9E-polymers",
@@ -7890,13 +9355,28 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9E-polymers-monomers-composites-blank-v2.webp",
-          "alt": "Question-safe structure visual showing monomers, polymer chain and composite material with blank labels.",
+          "alt": "Unlabelled structure visual showing monomers, polymer chain and composite material with blank labels.",
           "caption": "Use the structure sequence to explain monomers, polymers and composites.",
           "mediaTiming": "question",
           "presentation": "media-image-base",
           "questionAssetV148": true
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "describe",
+      "examMarks": 3,
+      "examDomain": "chemistry",
+      "examPool": "written-main",
+      "examSourceQuality": "success-criterion-derived",
+      "answerFormatHint": "Say what happens, what changes, or what is shown. Use short linked points and include values or labels if given.",
+      "examFormatKind": "linked-description",
+      "answerFormatSteps": [
+        "Give one clear feature, step or change.",
+        "Add another linked feature, step or comparison.",
+        "Use values, labels or context from the question where useful."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-044-9e-describe-how-polymers-are-formed-from-monomers",
@@ -7922,13 +9402,28 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9E-polymers-monomers-composites-blank-v2.webp",
-          "alt": "Question-safe structure visual showing monomers, polymer chain and composite material with blank labels.",
+          "alt": "Unlabelled structure visual showing monomers, polymer chain and composite material with blank labels.",
           "caption": "Use the structure sequence to explain monomers, polymers and composites.",
           "mediaTiming": "question",
           "presentation": "media-image-base",
           "questionAssetV148": true
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "describe",
+      "examMarks": 2,
+      "examDomain": "chemistry",
+      "examPool": "written-main",
+      "examSourceQuality": "success-criterion-derived",
+      "answerFormatHint": "Say what happens, what changes, or what is shown. Use short linked points and include values or labels if given.",
+      "examFormatKind": "linked-description",
+      "answerFormatSteps": [
+        "Give one clear feature, step or change.",
+        "Add another linked feature, step or comparison.",
+        "Use values, labels or context from the question where useful."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-045-9e-identify-thermal-decomposition-reactions",
@@ -7954,13 +9449,28 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9F-thermal-decomposition-gas-tests-blank-v2.webp",
-          "alt": "Question-safe thermal decomposition and gas test setup.",
+          "alt": "Unlabelled thermal decomposition and gas test setup.",
           "caption": "",
           "mediaTiming": "question",
           "presentation": "media-image-base",
           "questionAssetV147": true
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "identify",
+      "examMarks": 1,
+      "examDomain": "chemistry",
+      "examPool": "written-main",
+      "examSourceQuality": "success-criterion-derived",
+      "answerFormatHint": "Use the labels, diagram or question clue to name the correct item(s). Keep the answer concise.",
+      "examFormatKind": "label-or-feature",
+      "answerFormatSteps": [
+        "Look carefully at the label, diagram or clue.",
+        "Name the correct item(s), part(s) or feature(s).",
+        "Use letters/names clearly if the diagram uses labels."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-046-9e-explain-advantages-of-recycling-with-specific-examples",
@@ -7987,13 +9497,28 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9E-recycling-methods-blank.webp",
-          "alt": "Question-safe recycling image showing several material recycling processes without explanatory labels.",
+          "alt": "Unlabelled recycling image showing several material recycling processes without explanatory labels.",
           "caption": "",
           "mediaTiming": "question",
           "presentation": "media-image-base",
           "questionAssetV145": true
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "chemistry",
+      "examPool": "written-main",
+      "examSourceQuality": "success-criterion-derived",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-047-9e-justify-using-a-ceramic-polymer-or-composite-for-a-particular-use",
@@ -8008,14 +9533,31 @@ window.YEAR9_CONTENT = {
       "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
       "tags": [
         "assess",
-        "written"
+        "written",
+        "written-polish-v1.56",
+        "source-question-restored-v1.60"
       ],
       "sourceFidelity": "success-criterion-derived",
       "learningObjective": "9E-polymers",
       "learningObjectiveTitle": "Polymers and polymerisation",
       "learningObjectiveDescription": "Natural and synthetic polymers, polymerisation, vulcanisation and biodegradability.",
       "noteId": "9E-polymers",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 2,
+      "examDomain": "chemistry",
+      "examPool": "written-main",
+      "examSourceQuality": "success-criterion-derived",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-048-9e-explain-how-crystal-size-depends-on-cooling-speed",
@@ -8037,7 +9579,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Ceramics, crystals and materials properties",
       "learningObjectiveDescription": "Ceramics, glass, clay, crystal formation, melting point and brittleness.",
       "noteId": "9E-ceramics",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "chemistry",
+      "examPool": "written-main",
+      "examSourceQuality": "success-criterion-derived",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-049-9e-explain-how-properties-of-a-material-depend-on-bonding-and-structure",
@@ -8059,7 +9616,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Ceramics, crystals and materials properties",
       "learningObjectiveDescription": "Ceramics, glass, clay, crystal formation, melting point and brittleness.",
       "noteId": "9E-ceramics",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "chemistry",
+      "examPool": "written-main",
+      "examSourceQuality": "success-criterion-derived",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-050-9e-classify-exothermic-and-endothermic-reactions-by-temperature-change-and-energy-t",
@@ -8075,7 +9647,9 @@ window.YEAR9_CONTENT = {
       "tags": [
         "assess",
         "question-media-v1.45",
-        "written"
+        "written",
+        "written-polish-v1.56",
+        "source-question-restored-v1.60"
       ],
       "sourceFidelity": "success-criterion-derived",
       "learningObjective": "9E-ceramics",
@@ -8086,13 +9660,28 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9F-exothermic-endothermic-blank.webp",
-          "alt": "Question-safe split reaction image showing warming and cooling contexts without explanatory labels.",
+          "alt": "Unlabelled split reaction image showing warming and cooling contexts without explanatory labels.",
           "caption": "",
           "mediaTiming": "question",
           "presentation": "media-image-base",
           "questionAssetV145": true
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "identify",
+      "examMarks": 2,
+      "examDomain": "chemistry",
+      "examPool": "written-main",
+      "examSourceQuality": "success-criterion-derived",
+      "answerFormatHint": "Use the labels, diagram or question clue to name the correct item(s). Keep the answer concise.",
+      "examFormatKind": "label-or-feature",
+      "answerFormatSteps": [
+        "Look carefully at the label, diagram or clue.",
+        "Name the correct item(s), part(s) or feature(s).",
+        "Use letters/names clearly if the diagram uses labels."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-051-9e-explain-biomagnification-of-toxins-through-food-chains",
@@ -8118,13 +9707,28 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9B-bioaccumulation-food-chain-blank-v3.webp",
-          "alt": "Question-safe aquatic food chain with toxin dots increasing up the food chain.",
+          "alt": "Unlabelled aquatic food chain with toxin dots increasing up the food chain.",
           "caption": "",
           "mediaTiming": "question",
           "presentation": "media-image-base",
           "questionAssetV147": true
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "chemistry",
+      "examPool": "written-main",
+      "examSourceQuality": "success-criterion-derived",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-052-9e-suggest-ways-to-reduce-global-warming-and-acid-rain-impacts",
@@ -8140,7 +9744,9 @@ window.YEAR9_CONTENT = {
       "tags": [
         "assess",
         "question-media-v1.45",
-        "written"
+        "written",
+        "written-polish-v1.56",
+        "source-question-restored-v1.60"
       ],
       "sourceFidelity": "success-criterion-derived",
       "learningObjective": "9E-environment",
@@ -8157,7 +9763,22 @@ window.YEAR9_CONTENT = {
           "presentation": "media-image-base",
           "questionAssetV145": true
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "chemistry",
+      "examPool": "written-main",
+      "examSourceQuality": "success-criterion-derived",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-053-9f-describe-what-causes-rusting",
@@ -8183,13 +9804,28 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9F-rusting-conditions-prevention-blank-v2.webp",
-          "alt": "Question-safe rusting conditions and prevention image with labelled samples but no explanatory notes.",
+          "alt": "Unlabelled rusting conditions and prevention image with labelled samples but no explanatory notes.",
           "caption": "Use the samples to reason about oxygen, water and protection methods.",
           "mediaTiming": "question",
           "presentation": "media-image-base",
           "questionAssetV148": true
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "describe",
+      "examMarks": 2,
+      "examDomain": "chemistry",
+      "examPool": "written-main",
+      "examSourceQuality": "success-criterion-derived",
+      "answerFormatHint": "Say what happens, what changes, or what is shown. Use short linked points and include values or labels if given.",
+      "examFormatKind": "linked-description",
+      "answerFormatSteps": [
+        "Give one clear feature, step or change.",
+        "Add another linked feature, step or comparison.",
+        "Use values, labels or context from the question where useful."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-054-9f-describe-one-simple-method-of-preventing-rusting",
@@ -8215,13 +9851,28 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9F-rusting-conditions-prevention-blank-v2.webp",
-          "alt": "Question-safe rusting conditions and prevention image with labelled samples but no explanatory notes.",
+          "alt": "Unlabelled rusting conditions and prevention image with labelled samples but no explanatory notes.",
           "caption": "Use the samples to reason about oxygen, water and protection methods.",
           "mediaTiming": "question",
           "presentation": "media-image-base",
           "questionAssetV148": true
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "describe",
+      "examMarks": 2,
+      "examDomain": "chemistry",
+      "examPool": "written-main",
+      "examSourceQuality": "success-criterion-derived",
+      "answerFormatHint": "Say what happens, what changes, or what is shown. Use short linked points and include values or labels if given.",
+      "examFormatKind": "linked-description",
+      "answerFormatSteps": [
+        "Give one clear feature, step or change.",
+        "Add another linked feature, step or comparison.",
+        "Use values, labels or context from the question where useful."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-055-9f-explain-why-rusting-is-a-problem",
@@ -8247,13 +9898,28 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9F-rusting-conditions-prevention-blank-v2.webp",
-          "alt": "Question-safe rusting conditions and prevention image with labelled samples but no explanatory notes.",
+          "alt": "Unlabelled rusting conditions and prevention image with labelled samples but no explanatory notes.",
           "caption": "Use the samples to reason about oxygen, water and protection methods.",
           "mediaTiming": "question",
           "presentation": "media-image-base",
           "questionAssetV148": true
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "chemistry",
+      "examPool": "written-main",
+      "examSourceQuality": "success-criterion-derived",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-056-9f-use-scientific-words-to-explain-how-iron-rusts",
@@ -8279,13 +9945,28 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9F-rusting-conditions-prevention-blank-v2.webp",
-          "alt": "Question-safe rusting conditions and prevention image with labelled samples but no explanatory notes.",
+          "alt": "Unlabelled rusting conditions and prevention image with labelled samples but no explanatory notes.",
           "caption": "Use the samples to reason about oxygen, water and protection methods.",
           "mediaTiming": "question",
           "presentation": "media-image-base",
           "questionAssetV148": true
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "chemistry",
+      "examPool": "written-main",
+      "examSourceQuality": "success-criterion-derived",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-057-9f-explain-why-iron-or-steel-is-used-for-a-purpose-because-of-its-properties",
@@ -8307,7 +9988,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Metal extraction and reduction",
       "learningObjectiveDescription": "Mining, ores, reduction, blast furnaces, electrolysis and extraction method choice.",
       "noteId": "9F-extraction",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "chemistry",
+      "examPool": "written-main",
+      "examSourceQuality": "success-criterion-derived",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-058-9f-describe-how-iron-ore-is-obtained-from-mining",
@@ -8329,7 +10025,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Metal extraction and reduction",
       "learningObjectiveDescription": "Mining, ores, reduction, blast furnaces, electrolysis and extraction method choice.",
       "noteId": "9F-extraction",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "describe",
+      "examMarks": 2,
+      "examDomain": "chemistry",
+      "examPool": "written-main",
+      "examSourceQuality": "success-criterion-derived",
+      "answerFormatHint": "Say what happens, what changes, or what is shown. Use short linked points and include values or labels if given.",
+      "examFormatKind": "linked-description",
+      "answerFormatSteps": [
+        "Give one clear feature, step or change.",
+        "Add another linked feature, step or comparison.",
+        "Use values, labels or context from the question where useful."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-059-9f-use-word-equations-to-describe-reactions",
@@ -8351,7 +10062,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Metal extraction and reduction",
       "learningObjectiveDescription": "Mining, ores, reduction, blast furnaces, electrolysis and extraction method choice.",
       "noteId": "9F-extraction",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "describe",
+      "examMarks": 2,
+      "examDomain": "chemistry",
+      "examPool": "written-main",
+      "examSourceQuality": "success-criterion-derived",
+      "answerFormatHint": "Say what happens, what changes, or what is shown. Use short linked points and include values or labels if given.",
+      "examFormatKind": "linked-description",
+      "answerFormatSteps": [
+        "Give one clear feature, step or change.",
+        "Add another linked feature, step or comparison.",
+        "Use values, labels or context from the question where useful."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examRetiredFromWritten": "v1.62.0",
+      "examRetiredReason": "micro_prompt_overlap",
+      "examRetainedCoverageAnchor": "y9x-058-9f-describe-how-iron-ore-is-obtained-from-mining"
     },
     {
       "id": "y9x-060-9f-describe-the-reactivity-series-and-the-position-of-iron",
@@ -8373,7 +10101,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Metal extraction and reduction",
       "learningObjectiveDescription": "Mining, ores, reduction, blast furnaces, electrolysis and extraction method choice.",
       "noteId": "9F-extraction",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "describe",
+      "examMarks": 2,
+      "examDomain": "chemistry",
+      "examPool": "written-main",
+      "examSourceQuality": "success-criterion-derived",
+      "answerFormatHint": "Say what happens, what changes, or what is shown. Use short linked points and include values or labels if given.",
+      "examFormatKind": "linked-description",
+      "answerFormatSteps": [
+        "Give one clear feature, step or change.",
+        "Add another linked feature, step or comparison.",
+        "Use values, labels or context from the question where useful."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examRetiredFromWritten": "v1.62.0",
+      "examRetiredReason": "objective_pool_trim",
+      "examRetainedCoverageAnchor": "y9x-058-9f-describe-how-iron-ore-is-obtained-from-mining"
     },
     {
       "id": "y9x-061-9f-explain-how-metal-reactivity-determines-extraction-method",
@@ -8399,13 +10144,28 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9F-metal-extraction-methods-blank-v3.webp",
-          "alt": "Question-safe comparison of metal extraction methods.",
+          "alt": "Unlabelled comparison of metal extraction methods.",
           "caption": "",
           "mediaTiming": "question",
           "presentation": "media-image-base",
           "questionAssetV147": true
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "chemistry",
+      "examPool": "written-main",
+      "examSourceQuality": "success-criterion-derived",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-062-9f-explain-why-energy-needs-and-cost-matter-when-selecting-extraction-methods",
@@ -8427,7 +10187,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Metal extraction and reduction",
       "learningObjectiveDescription": "Mining, ores, reduction, blast furnaces, electrolysis and extraction method choice.",
       "noteId": "9F-extraction",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "chemistry",
+      "examPool": "written-main",
+      "examSourceQuality": "success-criterion-derived",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-063-9f-describe-sacrificial-protection-for-preventing-rusting",
@@ -8453,13 +10228,28 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9F-sacrificial-protection-iron-blank-v2.webp",
-          "alt": "Question-safe sacrificial protection image showing metal attached to an iron structure.",
+          "alt": "Unlabelled sacrificial protection image showing metal attached to an iron structure.",
           "caption": "Use reactivity to explain which metal corrodes instead of iron.",
           "mediaTiming": "question",
           "presentation": "media-image-base",
           "questionAssetV148": true
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "describe",
+      "examMarks": 2,
+      "examDomain": "chemistry",
+      "examPool": "written-main",
+      "examSourceQuality": "success-criterion-derived",
+      "answerFormatHint": "Say what happens, what changes, or what is shown. Use short linked points and include values or labels if given.",
+      "examFormatKind": "linked-description",
+      "answerFormatSteps": [
+        "Give one clear feature, step or change.",
+        "Add another linked feature, step or comparison.",
+        "Use values, labels or context from the question where useful."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-064-9f-explain-how-sacrificial-protection-prevents-rusting-and-link-this-to-the-reactiv",
@@ -8485,13 +10275,28 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9F-sacrificial-protection-iron-blank-v2.webp",
-          "alt": "Question-safe sacrificial protection image showing metal attached to an iron structure.",
+          "alt": "Unlabelled sacrificial protection image showing metal attached to an iron structure.",
           "caption": "Use reactivity to explain which metal corrodes instead of iron.",
           "mediaTiming": "question",
           "presentation": "media-image-base",
           "questionAssetV148": true
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "chemistry",
+      "examPool": "written-main",
+      "examSourceQuality": "success-criterion-derived",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-065-9f-explain-why-certain-metals-are-used-for-sacrificial-protection",
@@ -8517,13 +10322,28 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9F-sacrificial-protection-iron-blank-v2.webp",
-          "alt": "Question-safe sacrificial protection image showing metal attached to an iron structure.",
+          "alt": "Unlabelled sacrificial protection image showing metal attached to an iron structure.",
           "caption": "Use reactivity to explain which metal corrodes instead of iron.",
           "mediaTiming": "question",
           "presentation": "media-image-base",
           "questionAssetV148": true
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "chemistry",
+      "examPool": "written-main",
+      "examSourceQuality": "success-criterion-derived",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-066-9f-explain-other-reactions-taking-place-in-a-blast-furnace",
@@ -8545,7 +10365,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Metal extraction and reduction",
       "learningObjectiveDescription": "Mining, ores, reduction, blast furnaces, electrolysis and extraction method choice.",
       "noteId": "9F-extraction",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "chemistry",
+      "examPool": "written-main",
+      "examSourceQuality": "success-criterion-derived",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-067-9f-use-balanced-equations-to-represent-reactions",
@@ -8560,14 +10395,31 @@ window.YEAR9_CONTENT = {
       "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
       "tags": [
         "assess",
-        "written"
+        "written",
+        "written-polish-v1.56",
+        "source-question-restored-v1.60"
       ],
       "sourceFidelity": "success-criterion-derived",
       "learningObjective": "9F-changes",
       "learningObjectiveTitle": "Physical and chemical changes",
       "learningObjectiveDescription": "Physical changes, chemical reactions, particles, molecules, formulae and gas pressure.",
       "noteId": "9F-changes",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 2,
+      "examDomain": "chemistry",
+      "examPool": "written-main",
+      "examSourceQuality": "success-criterion-derived",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-068-9f-describe-the-formation-of-stainless-steel",
@@ -8589,7 +10441,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Rusting and corrosion protection",
       "learningObjectiveDescription": "Rusting, coatings, sacrificial protection and preventing corrosion.",
       "noteId": "9F-rusting",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "describe",
+      "examMarks": 2,
+      "examDomain": "chemistry",
+      "examPool": "written-main",
+      "examSourceQuality": "success-criterion-derived",
+      "answerFormatHint": "Say what happens, what changes, or what is shown. Use short linked points and include values or labels if given.",
+      "examFormatKind": "linked-description",
+      "answerFormatSteps": [
+        "Give one clear feature, step or change.",
+        "Add another linked feature, step or comparison.",
+        "Use values, labels or context from the question where useful."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examRetiredFromWritten": "v1.62.0",
+      "examRetiredReason": "micro_prompt_overlap",
+      "examRetainedCoverageAnchor": "y9x-063-9f-describe-sacrificial-protection-for-preventing-rusting"
     },
     {
       "unit": "9F",
@@ -8620,7 +10489,7 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9F-reactivity-series-question-safe-v2.webp",
-          "alt": "Question-safe reactivity order diagram showing magnesium, zinc, iron, copper and silver from most reactive at the top to least reactive at the bottom.",
+          "alt": "Unlabelled reactivity order diagram showing magnesium, zinc, iron, copper and silver from most reactive at the top to least reactive at the bottom.",
           "caption": "Use the order of the metals in the ladder to answer the question.",
           "mediaTiming": "question",
           "presentation": "media-image-base"
@@ -8656,7 +10525,7 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9F-reactivity-series-question-safe-v2.webp",
-          "alt": "Question-safe reactivity order diagram showing magnesium, zinc, iron, copper and silver from most reactive at the top to least reactive at the bottom.",
+          "alt": "Unlabelled reactivity order diagram showing magnesium, zinc, iron, copper and silver from most reactive at the top to least reactive at the bottom.",
           "caption": "Use the order of the metals in the ladder to answer the question.",
           "mediaTiming": "question",
           "presentation": "media-image-base"
@@ -9166,7 +11035,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Speed and distance-time graphs",
       "learningObjectiveDescription": "Speed calculations, mean speed and interpreting distance-time graphs.",
       "noteId": "9I-speed",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "success-criterion-derived",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-070-9i-explain-how-distance-and-time-affect-speed",
@@ -9188,7 +11072,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Speed and distance-time graphs",
       "learningObjectiveDescription": "Speed calculations, mean speed and interpreting distance-time graphs.",
       "noteId": "9I-speed",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "success-criterion-derived",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-071-9i-use-the-formula-relating-speed-distance-and-time",
@@ -9210,7 +11109,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Speed and distance-time graphs",
       "learningObjectiveDescription": "Speed calculations, mean speed and interpreting distance-time graphs.",
       "noteId": "9I-speed",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "calculate",
+      "examMarks": 2,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "success-criterion-derived",
+      "answerFormatHint": "Write the formula or method, substitute values, then give the answer with a unit or required rounding.",
+      "examFormatKind": "calculation-method",
+      "answerFormatSteps": [
+        "Write the equation or method.",
+        "Substitute the values and show working.",
+        "Give the final answer with the correct unit or rounding."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0",
+      "examRetiredFromWrittenExam": "v1.64.0",
+      "examRetiredReason": "Formula-only prompt; retained concrete speed, distance and time calculation/application prompts."
     },
     {
       "id": "y9x-072-9i-describe-levers-ramps-and-pulleys-and-how-they-help-move-loads",
@@ -9232,7 +11148,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Levers, pivots and moments",
       "learningObjectiveDescription": "Levers, pivots/fulcrums, moment calculations and mechanical advantage.",
       "noteId": "9I-moments",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "describe",
+      "examMarks": 2,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "success-criterion-derived",
+      "answerFormatHint": "Say what happens, what changes, or what is shown. Use short linked points and include values or labels if given.",
+      "examFormatKind": "linked-description",
+      "answerFormatSteps": [
+        "Give one clear feature, step or change.",
+        "Add another linked feature, step or comparison.",
+        "Use values, labels or context from the question where useful."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-073-9i-explain-how-levers-ramps-or-pulleys-could-raise-or-lift-stones",
@@ -9254,7 +11185,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Levers, pivots and moments",
       "learningObjectiveDescription": "Levers, pivots/fulcrums, moment calculations and mechanical advantage.",
       "noteId": "9I-moments",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "success-criterion-derived",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-074-9i-state-what-a-moment-is-and-when-something-balances",
@@ -9276,7 +11222,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Levers, pivots and moments",
       "learningObjectiveDescription": "Levers, pivots/fulcrums, moment calculations and mechanical advantage.",
       "noteId": "9I-moments",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "state",
+      "examMarks": 1,
+      "examDomain": "physics",
+      "examPool": "written-recall",
+      "examSourceQuality": "success-criterion-derived",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examRetiredFromWritten": "v1.62.0",
+      "examRetiredReason": "low_value_recall_overlap",
+      "examRetainedCoverageAnchor": "y9r-062-9i-what-is-true-when-an-object-is-balanced"
     },
     {
       "id": "y9x-075-9i-explain-why-simple-machines-do-not-mean-less-energy-is-needed",
@@ -9298,7 +11261,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Energy, work and simple machines",
       "learningObjectiveDescription": "Work done, machines, ramps, friction and energy transfer.",
       "noteId": "9I-energy-work",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "success-criterion-derived",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-076-9i-represent-part-of-a-journey-on-a-distance-time-graph",
@@ -9328,7 +11306,22 @@ window.YEAR9_CONTENT = {
           "caption": "Use the graph shape to represent the journey."
         }
       ],
-      "mediaTiming": "question"
+      "mediaTiming": "question",
+      "examEligible": true,
+      "examCommand": "graph",
+      "examMarks": 3,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "success-criterion-derived",
+      "answerFormatHint": "Read the axes and scale first. Use values where useful, then describe or draw the trend/relationship.",
+      "examFormatKind": "graph-data",
+      "answerFormatSteps": [
+        "Check the x-axis, y-axis and scale.",
+        "Use values, gradients or line shape where useful.",
+        "Describe the trend or draw/plot the requested relationship."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-077-9i-use-the-formula-for-moment-force-and-perpendicular-distance",
@@ -9350,7 +11343,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Levers, pivots and moments",
       "learningObjectiveDescription": "Levers, pivots/fulcrums, moment calculations and mechanical advantage.",
       "noteId": "9I-moments",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "calculate",
+      "examMarks": 2,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "success-criterion-derived",
+      "answerFormatHint": "Write the formula or method, substitute values, then give the answer with a unit or required rounding.",
+      "examFormatKind": "calculation-method",
+      "answerFormatSteps": [
+        "Write the equation or method.",
+        "Substitute the values and show working.",
+        "Give the final answer with the correct unit or rounding."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0",
+      "examRetiredFromWrittenExam": "v1.64.0",
+      "examRetiredReason": "Formula-only prompt; retained concrete moment calculation/application prompts."
     },
     {
       "id": "y9x-078-9i-explain-the-effect-of-friction-on-force-needed-to-move-a-load",
@@ -9372,7 +11382,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Energy, work and simple machines",
       "learningObjectiveDescription": "Work done, machines, ramps, friction and energy transfer.",
       "noteId": "9I-energy-work",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "success-criterion-derived",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-079-9i-explain-why-friction-usually-means-more-energy-is-needed-with-a-simple-machine",
@@ -9394,7 +11419,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Energy, work and simple machines",
       "learningObjectiveDescription": "Work done, machines, ramps, friction and energy transfer.",
       "noteId": "9I-energy-work",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "success-criterion-derived",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-080-9i-explain-how-ramp-angle-affects-friction-and-required-force-using-force-component",
@@ -9416,7 +11456,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Energy, work and simple machines",
       "learningObjectiveDescription": "Work done, machines, ramps, friction and energy transfer.",
       "noteId": "9I-energy-work",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "success-criterion-derived",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-081-9b-describe-what-gas-exchange-is-and-why-it-needs-to-occur-in-plants",
@@ -9438,7 +11493,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Plant transport and specialised cells",
       "learningObjectiveDescription": "Root hair cells, stomata, guard cells, xylem, phloem and plant structure.",
       "noteId": "9B-plant-transport",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "biology",
+      "examPool": "written-main",
+      "examSourceQuality": "progress-check-derived",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-082-9b-describe-how-a-leaf-is-adapted-so-palisade-cells-get-the-resources-they-need",
@@ -9460,7 +11530,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Plant transport and specialised cells",
       "learningObjectiveDescription": "Root hair cells, stomata, guard cells, xylem, phloem and plant structure.",
       "noteId": "9B-plant-transport",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "describe",
+      "examMarks": 2,
+      "examDomain": "biology",
+      "examPool": "written-main",
+      "examSourceQuality": "progress-check-derived",
+      "answerFormatHint": "Say what happens, what changes, or what is shown. Use short linked points and include values or labels if given.",
+      "examFormatKind": "linked-description",
+      "answerFormatSteps": [
+        "Give one clear feature, step or change.",
+        "Add another linked feature, step or comparison.",
+        "Use values, labels or context from the question where useful."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-083-9b-describe-why-starch-in-chloroplasts-is-broken-down",
@@ -9482,7 +11567,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Plant transport and specialised cells",
       "learningObjectiveDescription": "Root hair cells, stomata, guard cells, xylem, phloem and plant structure.",
       "noteId": "9B-plant-transport",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "biology",
+      "examPool": "written-main",
+      "examSourceQuality": "progress-check-derived",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-084-9b-suggest-when-starch-is-broken-down-in-chloroplasts-and-explain-why",
@@ -9504,7 +11604,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Plant products, seeds and food production",
       "learningObjectiveDescription": "Glucose, starch, cellulose, oils, minerals, crop yield and farming methods.",
       "noteId": "9B-plant-products",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "biology",
+      "examPool": "written-main",
+      "examSourceQuality": "progress-check-derived",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-085-9b-explain-why-plants-do-not-grow-well-if-the-soil-lacks-nitrates",
@@ -9526,7 +11641,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Plant products, seeds and food production",
       "learningObjectiveDescription": "Glucose, starch, cellulose, oils, minerals, crop yield and farming methods.",
       "noteId": "9B-plant-products",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "biology",
+      "examPool": "written-main",
+      "examSourceQuality": "progress-check-derived",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-086-9b-put-the-main-stages-of-germination-into-a-logical-order",
@@ -9542,7 +11672,9 @@ window.YEAR9_CONTENT = {
       "tags": [
         "ppt",
         "question-media-v1.45",
-        "written"
+        "written",
+        "written-polish-v1.56",
+        "source-question-restored-v1.60"
       ],
       "sourceFidelity": "progress-check-derived",
       "learningObjective": "9B-plant-products",
@@ -9553,13 +11685,28 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9B-seed-lifecycle-blank.webp",
-          "alt": "Question-safe seed lifecycle image without stage labels.",
+          "alt": "Unlabelled seed lifecycle image without stage labels.",
           "caption": "",
           "mediaTiming": "question",
           "presentation": "media-image-base",
           "questionAssetV145": true
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "describe",
+      "examMarks": 3,
+      "examDomain": "biology",
+      "examPool": "written-main",
+      "examSourceQuality": "progress-check-derived",
+      "answerFormatHint": "Say what happens, what changes, or what is shown. Use short linked points and include values or labels if given.",
+      "examFormatKind": "linked-description",
+      "answerFormatSteps": [
+        "Give one clear feature, step or change.",
+        "Add another linked feature, step or comparison.",
+        "Use values, labels or context from the question where useful."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-087-9b-list-three-substances-found-in-seeds-and-explain-their-functions",
@@ -9586,13 +11733,28 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9B-seed-lifecycle-blank.webp",
-          "alt": "Question-safe seed lifecycle image without stage labels.",
+          "alt": "Unlabelled seed lifecycle image without stage labels.",
           "caption": "",
           "mediaTiming": "question",
           "presentation": "media-image-base",
           "questionAssetV145": true
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "biology",
+      "examPool": "written-main",
+      "examSourceQuality": "progress-check-derived",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-088-9b-describe-why-plants-are-cross-bred",
@@ -9614,7 +11776,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Plant products, seeds and food production",
       "learningObjectiveDescription": "Glucose, starch, cellulose, oils, minerals, crop yield and farming methods.",
       "noteId": "9B-plant-products",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "biology",
+      "examPool": "written-main",
+      "examSourceQuality": "progress-check-derived",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examRetiredFromWritten": "v1.62.0",
+      "examRetiredReason": "micro_prompt_overlap",
+      "examRetainedCoverageAnchor": "y9x-030-9b-explain-how-farming-can-change-the-carbon-cycle"
     },
     {
       "id": "y9x-089-9b-recall-the-main-mineral-nutrients-plants-need",
@@ -9636,7 +11815,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Plant products, seeds and food production",
       "learningObjectiveDescription": "Glucose, starch, cellulose, oils, minerals, crop yield and farming methods.",
       "noteId": "9B-plant-products",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "state",
+      "examMarks": 1,
+      "examDomain": "biology",
+      "examPool": "written-recall",
+      "examSourceQuality": "progress-check-derived",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examRetiredFromWritten": "v1.62.0",
+      "examRetiredReason": "low_value_recall_overlap",
+      "examRetainedCoverageAnchor": "y9x-097-9b-give-advantages-and-disadvantages-of-clearing-land-for-farming"
     },
     {
       "id": "y9x-090-9b-explain-how-food-production-for-humans-can-be-increased",
@@ -9658,7 +11854,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Plant products, seeds and food production",
       "learningObjectiveDescription": "Glucose, starch, cellulose, oils, minerals, crop yield and farming methods.",
       "noteId": "9B-plant-products",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "biology",
+      "examPool": "written-main",
+      "examSourceQuality": "progress-check-derived",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examRetiredFromWritten": "v1.62.0",
+      "examRetiredReason": "objective_pool_trim",
+      "examRetainedCoverageAnchor": "y9x-030-9b-explain-how-farming-can-change-the-carbon-cycle"
     },
     {
       "id": "y9x-091-9b-explain-why-phosphates-and-potassium-are-important-nutrients-for-plants",
@@ -9680,7 +11893,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Photosynthesis and respiration",
       "learningObjectiveDescription": "Reactants, products, chlorophyll, limiting factors and photosynthesis rate.",
       "noteId": "9B-photosynthesis",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "biology",
+      "examPool": "written-main",
+      "examSourceQuality": "progress-check-derived",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-092-9b-define-biodiversity",
@@ -9696,14 +11924,31 @@ window.YEAR9_CONTENT = {
       "tags": [
         "ppt",
         "written",
-        "quality-balance-v1.36"
+        "quality-balance-v1.36",
+        "written-polish-v1.56",
+        "source-question-restored-v1.60"
       ],
       "sourceFidelity": "progress-check-derived",
       "learningObjective": "9B-food-webs",
       "learningObjectiveTitle": "Food webs, biodiversity and ecosystems",
       "learningObjectiveDescription": "Food webs, pesticides, biodiversity, sampling and effects of farming.",
       "noteId": "9B-food-webs",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 2,
+      "examDomain": "biology",
+      "examPool": "written-main",
+      "examSourceQuality": "progress-check-derived",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-093-9b-describe-how-sampling-can-estimate-biodiversity-in-a-field",
@@ -9729,13 +11974,28 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9B-quadrat-ecosystem-sampling-blank-v3.webp",
-          "alt": "Question-safe quadrat sampling image in a meadow.",
+          "alt": "Unlabelled quadrat sampling image in a meadow.",
           "caption": "",
           "mediaTiming": "question",
           "presentation": "media-image-base",
           "questionAssetV147": true
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "describe",
+      "examMarks": 2,
+      "examDomain": "biology",
+      "examPool": "written-main",
+      "examSourceQuality": "progress-check-derived",
+      "answerFormatHint": "Say what happens, what changes, or what is shown. Use short linked points and include values or labels if given.",
+      "examFormatKind": "linked-description",
+      "answerFormatSteps": [
+        "Give one clear feature, step or change.",
+        "Add another linked feature, step or comparison.",
+        "Use values, labels or context from the question where useful."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-094-9b-explain-why-relying-on-one-crop-variety-can-be-risky",
@@ -9757,7 +12017,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Plant products, seeds and food production",
       "learningObjectiveDescription": "Glucose, starch, cellulose, oils, minerals, crop yield and farming methods.",
       "noteId": "9B-plant-products",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "biology",
+      "examPool": "written-main",
+      "examSourceQuality": "progress-check-derived",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examRetiredFromWritten": "v1.62.0",
+      "examRetiredReason": "objective_pool_trim",
+      "examRetainedCoverageAnchor": "y9x-030-9b-explain-how-farming-can-change-the-carbon-cycle"
     },
     {
       "id": "y9x-095-9b-label-the-main-processes-in-the-carbon-cycle",
@@ -9788,7 +12065,22 @@ window.YEAR9_CONTENT = {
           "mediaTiming": "question"
         }
       ],
-      "mediaTiming": "question"
+      "mediaTiming": "question",
+      "examEligible": true,
+      "examCommand": "identify",
+      "examMarks": 1,
+      "examDomain": "biology",
+      "examPool": "written-main",
+      "examSourceQuality": "progress-check-derived",
+      "answerFormatHint": "Use the labels, diagram or question clue to name the correct item(s). Keep the answer concise.",
+      "examFormatKind": "label-or-feature",
+      "answerFormatSteps": [
+        "Look carefully at the label, diagram or clue.",
+        "Name the correct item(s), part(s) or feature(s).",
+        "Use letters/names clearly if the diagram uses labels."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-096-9b-explain-how-farming-affects-the-carbon-cycle",
@@ -9814,13 +12106,28 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9B-carbon-cycle-source-style-blank-v2.webp",
-          "alt": "Question-safe carbon cycle diagram without explanatory notes.",
+          "alt": "Unlabelled carbon cycle diagram without explanatory notes.",
           "caption": "Use the arrows and organisms to reason about carbon cycling.",
           "mediaTiming": "question",
           "presentation": "media-image-base",
           "questionAssetV148": true
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "biology",
+      "examPool": "written-main",
+      "examSourceQuality": "progress-check-derived",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-097-9b-give-advantages-and-disadvantages-of-clearing-land-for-farming",
@@ -9847,13 +12154,28 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9B-farming-yield-sustainability-blank.webp",
-          "alt": "Question-safe farming image contrasting crop production and environmental impact without explanatory labels.",
+          "alt": "Unlabelled farming image contrasting crop production and environmental impact without explanatory labels.",
           "caption": "",
           "mediaTiming": "question",
           "presentation": "media-image-base",
           "questionAssetV145": true
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "state",
+      "examMarks": 1,
+      "examDomain": "biology",
+      "examPool": "written-recall",
+      "examSourceQuality": "progress-check-derived",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-098-9b-give-advantages-and-disadvantages-of-insecticides-and-herbicides",
@@ -9880,13 +12202,28 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9B-farming-yield-sustainability-blank.webp",
-          "alt": "Question-safe farming image contrasting crop production and environmental impact without explanatory labels.",
+          "alt": "Unlabelled farming image contrasting crop production and environmental impact without explanatory labels.",
           "caption": "",
           "mediaTiming": "question",
           "presentation": "media-image-base",
           "questionAssetV145": true
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "state",
+      "examMarks": 1,
+      "examDomain": "biology",
+      "examPool": "written-recall",
+      "examSourceQuality": "progress-check-derived",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-099-9b-give-advantages-and-disadvantages-of-fertilisers",
@@ -9913,13 +12250,28 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9B-farming-yield-sustainability-blank.webp",
-          "alt": "Question-safe farming image contrasting crop production and environmental impact without explanatory labels.",
+          "alt": "Unlabelled farming image contrasting crop production and environmental impact without explanatory labels.",
           "caption": "",
           "mediaTiming": "question",
           "presentation": "media-image-base",
           "questionAssetV145": true
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "state",
+      "examMarks": 1,
+      "examDomain": "biology",
+      "examPool": "written-recall",
+      "examSourceQuality": "progress-check-derived",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-100-9b-explain-why-changing-from-wheat-to-rapeseed-after-many-years-may-reduce-yield",
@@ -9941,7 +12293,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Plant products, seeds and food production",
       "learningObjectiveDescription": "Glucose, starch, cellulose, oils, minerals, crop yield and farming methods.",
       "noteId": "9B-plant-products",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "biology",
+      "examPool": "written-main",
+      "examSourceQuality": "progress-check-derived",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examRetiredFromWritten": "v1.62.0",
+      "examRetiredReason": "objective_pool_trim",
+      "examRetainedCoverageAnchor": "y9x-030-9b-explain-how-farming-can-change-the-carbon-cycle"
     },
     {
       "id": "y9x-101-9j-state-where-electrons-are-found-in-an-atom",
@@ -9963,7 +12332,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Static electricity and charge",
       "learningObjectiveDescription": "Charge transfer, attraction, repulsion, dangers and uses of static electricity.",
       "noteId": "9J-static",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "state",
+      "examMarks": 1,
+      "examDomain": "physics",
+      "examPool": "written-recall",
+      "examSourceQuality": "progress-check-derived",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-102-9j-describe-the-dangers-of-static-electricity",
@@ -9985,7 +12369,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Static electricity and charge",
       "learningObjectiveDescription": "Charge transfer, attraction, repulsion, dangers and uses of static electricity.",
       "noteId": "9J-static",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "describe",
+      "examMarks": 2,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "progress-check-derived",
+      "answerFormatHint": "Say what happens, what changes, or what is shown. Use short linked points and include values or labels if given.",
+      "examFormatKind": "linked-description",
+      "answerFormatSteps": [
+        "Give one clear feature, step or change.",
+        "Add another linked feature, step or comparison.",
+        "Use values, labels or context from the question where useful."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examRetiredFromWritten": "v1.62.0",
+      "examRetiredReason": "micro_prompt_overlap",
+      "examRetainedCoverageAnchor": "y9-265-9j-describe-the-difference-between-current-and-voltage"
     },
     {
       "id": "y9x-103-9j-explain-why-only-negative-charges-transfer-onto-an-insulating-material",
@@ -10011,13 +12412,28 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9J-static-electricity-charge-transfer-blank-v3.webp",
-          "alt": "Question-safe static electricity charge-transfer diagram.",
+          "alt": "Unlabelled static electricity charge-transfer diagram.",
           "caption": "Use the diagram to reason about electron transfer and charge.",
           "mediaTiming": "question",
           "presentation": "media-image-base",
           "questionAssetV148": true
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "progress-check-derived",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-104-9j-explain-why-a-rubbed-polythene-rod-has-an-overall-negative-charge",
@@ -10043,13 +12459,28 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9J-static-electricity-charge-transfer-blank-v3.webp",
-          "alt": "Question-safe static electricity charge-transfer diagram.",
+          "alt": "Unlabelled static electricity charge-transfer diagram.",
           "caption": "Use the diagram to reason about electron transfer and charge.",
           "mediaTiming": "question",
           "presentation": "media-image-base",
           "questionAssetV148": true
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "progress-check-derived",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-105-9j-describe-how-charged-objects-attract-or-repel-each-other",
@@ -10075,13 +12506,28 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9J-static-electricity-charge-transfer-blank-v3.webp",
-          "alt": "Question-safe static electricity charge-transfer diagram.",
+          "alt": "Unlabelled static electricity charge-transfer diagram.",
           "caption": "Use the diagram to reason about electron transfer and charge.",
           "mediaTiming": "question",
           "presentation": "media-image-base",
           "questionAssetV148": true
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "describe",
+      "examMarks": 2,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "progress-check-derived",
+      "answerFormatHint": "Say what happens, what changes, or what is shown. Use short linked points and include values or labels if given.",
+      "examFormatKind": "linked-description",
+      "answerFormatSteps": [
+        "Give one clear feature, step or change.",
+        "Add another linked feature, step or comparison.",
+        "Use values, labels or context from the question where useful."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-106-9j-describe-a-fair-investigation-of-forces-between-charged-rods",
@@ -10103,7 +12549,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Static electricity and charge",
       "learningObjectiveDescription": "Charge transfer, attraction, repulsion, dangers and uses of static electricity.",
       "noteId": "9J-static",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "describe",
+      "examMarks": 2,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "progress-check-derived",
+      "answerFormatHint": "Say what happens, what changes, or what is shown. Use short linked points and include values or labels if given.",
+      "examFormatKind": "linked-description",
+      "answerFormatSteps": [
+        "Give one clear feature, step or change.",
+        "Add another linked feature, step or comparison.",
+        "Use values, labels or context from the question where useful."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examRetiredFromWritten": "v1.62.0",
+      "examRetiredReason": "objective_pool_trim",
+      "examRetainedCoverageAnchor": "y9-265-9j-describe-the-difference-between-current-and-voltage"
     },
     {
       "id": "y9x-107-9j-state-three-materials-that-have-high-resistance",
@@ -10125,7 +12588,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Resistance and Ohm’s law",
       "learningObjectiveDescription": "Resistance, current-voltage graphs, high-resistance materials and calculations.",
       "noteId": "9J-resistance",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "state",
+      "examMarks": 1,
+      "examDomain": "physics",
+      "examPool": "written-recall",
+      "examSourceQuality": "progress-check-derived",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examRetiredFromWritten": "v1.62.0",
+      "examRetiredReason": "low_value_recall_overlap",
+      "examRetainedCoverageAnchor": "y9r-078-9j-what-is-the-formula-for-calculating-resistance-from-voltage-and-current"
     },
     {
       "id": "y9x-108-9j-describe-what-resistance-is",
@@ -10147,7 +12627,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Resistance and Ohm’s law",
       "learningObjectiveDescription": "Resistance, current-voltage graphs, high-resistance materials and calculations.",
       "noteId": "9J-resistance",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "describe",
+      "examMarks": 2,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "progress-check-derived",
+      "answerFormatHint": "Say what happens, what changes, or what is shown. Use short linked points and include values or labels if given.",
+      "examFormatKind": "linked-description",
+      "answerFormatSteps": [
+        "Give one clear feature, step or change.",
+        "Add another linked feature, step or comparison.",
+        "Use values, labels or context from the question where useful."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examRetiredFromWritten": "v1.62.0",
+      "examRetiredReason": "micro_prompt_overlap",
+      "examRetainedCoverageAnchor": "y9x-113-9j-plan-an-investigation-into-how-wire-thickness-affects-resistance"
     },
     {
       "id": "y9x-109-9j-describe-how-to-increase-resistance-in-a-circuit",
@@ -10169,7 +12666,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Resistance and Ohm’s law",
       "learningObjectiveDescription": "Resistance, current-voltage graphs, high-resistance materials and calculations.",
       "noteId": "9J-resistance",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "describe",
+      "examMarks": 2,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "progress-check-derived",
+      "answerFormatHint": "Say what happens, what changes, or what is shown. Use short linked points and include values or labels if given.",
+      "examFormatKind": "linked-description",
+      "answerFormatSteps": [
+        "Give one clear feature, step or change.",
+        "Add another linked feature, step or comparison.",
+        "Use values, labels or context from the question where useful."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-110-9j-state-the-units-for-voltage-current-and-resistance",
@@ -10191,7 +12703,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Resistance and Ohm’s law",
       "learningObjectiveDescription": "Resistance, current-voltage graphs, high-resistance materials and calculations.",
       "noteId": "9J-resistance",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "state",
+      "examMarks": 1,
+      "examDomain": "physics",
+      "examPool": "written-recall",
+      "examSourceQuality": "progress-check-derived",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examRetiredFromWritten": "v1.62.0",
+      "examRetiredReason": "low_value_recall_overlap",
+      "examRetainedCoverageAnchor": "y9r-078-9j-what-is-the-formula-for-calculating-resistance-from-voltage-and-current"
     },
     {
       "id": "y9x-111-9j-explain-which-wire-has-higher-resistance-a-long-thin-wire-or-a-short-thick-wire-",
@@ -10213,7 +12742,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Resistance and Ohm’s law",
       "learningObjectiveDescription": "Resistance, current-voltage graphs, high-resistance materials and calculations.",
       "noteId": "9J-resistance",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "progress-check-derived",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-112-9j-explain-how-a-current-voltage-graph-shows-which-resistor-has-the-higher-resistan",
@@ -10234,7 +12778,7 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9J-current-voltage-graph-comparison-question-v153.webp",
-          "alt": "Question-safe current-voltage graph comparison diagram.",
+          "alt": "Unlabelled current-voltage graph comparison diagram.",
           "caption": "Use the diagram to support your answer.",
           "mediaTiming": "question",
           "presentation": "media-image-base"
@@ -10245,7 +12789,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Resistance and Ohm’s law",
       "learningObjectiveDescription": "Resistance, current-voltage graphs, high-resistance materials and calculations.",
       "noteId": "9J-resistance",
-      "mediaPolicy": "supports-question"
+      "mediaPolicy": "supports-question",
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "progress-check-derived",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-113-9j-plan-an-investigation-into-how-wire-thickness-affects-resistance",
@@ -10261,7 +12820,9 @@ window.YEAR9_CONTENT = {
       "tags": [
         "ppt",
         "question-media-v1.45",
-        "written"
+        "written",
+        "written-polish-v1.56",
+        "source-question-restored-v1.60"
       ],
       "sourceFidelity": "progress-check-derived",
       "learningObjective": "9J-resistance",
@@ -10272,13 +12833,28 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9J-wire-resistance-investigation-blank.webp",
-          "alt": "Question-safe wire resistance investigation setup without explanatory notes.",
+          "alt": "Unlabelled wire resistance investigation setup without explanatory notes.",
           "caption": "",
           "mediaTiming": "question",
           "presentation": "media-image-base",
           "questionAssetV145": true
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "describe",
+      "examMarks": 4,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "progress-check-derived",
+      "answerFormatHint": "Say what happens, what changes, or what is shown. Use short linked points and include values or labels if given.",
+      "examFormatKind": "linked-description",
+      "answerFormatSteps": [
+        "Give one clear feature, step or change.",
+        "Add another linked feature, step or comparison.",
+        "Use values, labels or context from the question where useful."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-114-9j-explain-why-copper-is-commonly-used-for-wires-in-circuits",
@@ -10300,7 +12876,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Resistance and Ohm’s law",
       "learningObjectiveDescription": "Resistance, current-voltage graphs, high-resistance materials and calculations.",
       "noteId": "9J-resistance",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "progress-check-derived",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-115-9j-describe-how-current-behaves-in-series-and-parallel-circuits",
@@ -10326,13 +12917,28 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9J-potential-difference-series-parallel-blank-v2.webp",
-          "alt": "Question-safe series and parallel circuit diagrams with voltmeters.",
+          "alt": "Unlabelled series and parallel circuit diagrams with voltmeters.",
           "caption": "Use the circuits to compare potential difference in series and parallel.",
           "mediaTiming": "question",
           "presentation": "media-image-base",
           "questionAssetV148": true
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "describe",
+      "examMarks": 2,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "progress-check-derived",
+      "answerFormatHint": "Say what happens, what changes, or what is shown. Use short linked points and include values or labels if given.",
+      "examFormatKind": "linked-description",
+      "answerFormatSteps": [
+        "Give one clear feature, step or change.",
+        "Add another linked feature, step or comparison.",
+        "Use values, labels or context from the question where useful."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-116-9j-describe-how-voltage-behaves-in-series-and-parallel-circuits",
@@ -10358,13 +12964,28 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9J-potential-difference-series-parallel-blank-v2.webp",
-          "alt": "Question-safe series and parallel circuit diagrams with voltmeters.",
+          "alt": "Unlabelled series and parallel circuit diagrams with voltmeters.",
           "caption": "Use the circuits to compare potential difference in series and parallel.",
           "mediaTiming": "question",
           "presentation": "media-image-base",
           "questionAssetV148": true
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "describe",
+      "examMarks": 2,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "progress-check-derived",
+      "answerFormatHint": "Say what happens, what changes, or what is shown. Use short linked points and include values or labels if given.",
+      "examFormatKind": "linked-description",
+      "answerFormatSteps": [
+        "Give one clear feature, step or change.",
+        "Add another linked feature, step or comparison.",
+        "Use values, labels or context from the question where useful."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-117-9j-explain-the-difference-between-an-electromagnet-and-a-bar-magnet",
@@ -10390,13 +13011,28 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9J-magnetic-field-bar-magnet-blank-v3.webp",
-          "alt": "Question-safe bar magnet field-line diagram.",
+          "alt": "Unlabelled bar magnet field-line diagram.",
           "caption": "Use the field lines to describe magnetic field shape and strength.",
           "mediaTiming": "question",
           "presentation": "media-image-base",
           "questionAssetV148": true
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "progress-check-derived",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-118-9j-predict-how-changing-current-magnetic-field-strength-or-current-direction-affect",
@@ -10411,7 +13047,9 @@ window.YEAR9_CONTENT = {
       "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
       "tags": [
         "ppt",
-        "written"
+        "written",
+        "written-polish-v1.56",
+        "source-question-restored-v1.60"
       ],
       "sourceFidelity": "progress-check-derived",
       "learningObjective": "9J-electromagnets",
@@ -10422,13 +13060,28 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9J-motor-effect-simple-motor-blank-v3.webp",
-          "alt": "Question-safe motor effect and simple motor diagram without explanatory notes.",
+          "alt": "Unlabelled motor effect and simple motor diagram without explanatory notes.",
           "caption": "Use current, field and force arrows to reason about the motor effect.",
           "mediaTiming": "question",
           "presentation": "media-image-base",
           "questionAssetV148": true
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "describe",
+      "examMarks": 3,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "progress-check-derived",
+      "answerFormatHint": "Say what happens, what changes, or what is shown. Use short linked points and include values or labels if given.",
+      "examFormatKind": "linked-description",
+      "answerFormatSteps": [
+        "Give one clear feature, step or change.",
+        "Add another linked feature, step or comparison.",
+        "Use values, labels or context from the question where useful."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-119-9j-gamora-has-mass-54-kg-calculate-her-weight-on-earth-where-g-10-n-kg",
@@ -10449,7 +13102,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Force fields, gravity and magnetism",
       "learningObjectiveDescription": "Magnetic, gravitational and electric fields, weight and gravitational potential energy.",
       "noteId": "9J-fields",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "calculate",
+      "examMarks": 2,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "calculation-practice-derived",
+      "answerFormatHint": "Write the formula or method, substitute values, then give the answer with a unit or required rounding.",
+      "examFormatKind": "calculation-method",
+      "answerFormatSteps": [
+        "Write the equation or method.",
+        "Substitute the values and show working.",
+        "Give the final answer with the correct unit or rounding."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examRetiredFromWritten": "v1.62.0",
+      "examRetiredReason": "surplus_calculation_variant",
+      "examRetainedCoverageAnchor": "y9r-067-9j-what-formula-is-used-to-calculate-weight"
     },
     {
       "id": "y9x-120-9j-gamora-has-mass-54-kg-on-a-planet-where-g-5-n-kg-calculate-her-weight",
@@ -10470,7 +13140,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Force fields, gravity and magnetism",
       "learningObjectiveDescription": "Magnetic, gravitational and electric fields, weight and gravitational potential energy.",
       "noteId": "9J-fields",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "calculate",
+      "examMarks": 2,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "calculation-practice-derived",
+      "answerFormatHint": "Write the formula or method, substitute values, then give the answer with a unit or required rounding.",
+      "examFormatKind": "calculation-method",
+      "answerFormatSteps": [
+        "Write the equation or method.",
+        "Substitute the values and show working.",
+        "Give the final answer with the correct unit or rounding."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examRetiredFromWritten": "v1.62.0",
+      "examRetiredReason": "surplus_calculation_variant",
+      "examRetainedCoverageAnchor": "y9r-067-9j-what-formula-is-used-to-calculate-weight"
     },
     {
       "id": "y9x-121-9j-star-lord-has-mass-96-kg-calculate-his-weight-on-earth-where-g-10-n-kg",
@@ -10491,7 +13178,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Force fields, gravity and magnetism",
       "learningObjectiveDescription": "Magnetic, gravitational and electric fields, weight and gravitational potential energy.",
       "noteId": "9J-fields",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "calculate",
+      "examMarks": 2,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "calculation-practice-derived",
+      "answerFormatHint": "Write the formula or method, substitute values, then give the answer with a unit or required rounding.",
+      "examFormatKind": "calculation-method",
+      "answerFormatSteps": [
+        "Write the equation or method.",
+        "Substitute the values and show working.",
+        "Give the final answer with the correct unit or rounding."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examRetiredFromWritten": "v1.62.0",
+      "examRetiredReason": "surplus_calculation_variant",
+      "examRetainedCoverageAnchor": "y9r-067-9j-what-formula-is-used-to-calculate-weight"
     },
     {
       "id": "y9x-122-9j-star-lord-has-mass-96-kg-on-a-planet-where-g-14-n-kg-calculate-his-weight",
@@ -10512,7 +13216,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Force fields, gravity and magnetism",
       "learningObjectiveDescription": "Magnetic, gravitational and electric fields, weight and gravitational potential energy.",
       "noteId": "9J-fields",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "calculate",
+      "examMarks": 2,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "calculation-practice-derived",
+      "answerFormatHint": "Write the formula or method, substitute values, then give the answer with a unit or required rounding.",
+      "examFormatKind": "calculation-method",
+      "answerFormatSteps": [
+        "Write the equation or method.",
+        "Substitute the values and show working.",
+        "Give the final answer with the correct unit or rounding."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0",
+      "examRetiredFromWrittenExam": "v1.64.0",
+      "examRetiredReason": "Surplus weight-calculation variant; retained equivalent weight calculations in 9I/9J."
     },
     {
       "id": "y9x-123-9j-drax-weighs-1220-n-on-earth-where-g-10-n-kg-calculate-his-mass",
@@ -10533,7 +13254,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Force fields, gravity and magnetism",
       "learningObjectiveDescription": "Magnetic, gravitational and electric fields, weight and gravitational potential energy.",
       "noteId": "9J-fields",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "calculate",
+      "examMarks": 2,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "calculation-practice-derived",
+      "answerFormatHint": "Write the formula or method, substitute values, then give the answer with a unit or required rounding.",
+      "examFormatKind": "calculation-method",
+      "answerFormatSteps": [
+        "Write the equation or method.",
+        "Substitute the values and show working.",
+        "Give the final answer with the correct unit or rounding."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examRetiredFromWritten": "v1.62.0",
+      "examRetiredReason": "surplus_calculation_variant",
+      "examRetainedCoverageAnchor": "y9r-067-9j-what-formula-is-used-to-calculate-weight"
     },
     {
       "id": "y9x-124-9j-drax-has-mass-122-kg-on-a-planet-where-g-7-5-n-kg-calculate-his-weight",
@@ -10554,7 +13292,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Force fields, gravity and magnetism",
       "learningObjectiveDescription": "Magnetic, gravitational and electric fields, weight and gravitational potential energy.",
       "noteId": "9J-fields",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "calculate",
+      "examMarks": 2,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "calculation-practice-derived",
+      "answerFormatHint": "Write the formula or method, substitute values, then give the answer with a unit or required rounding.",
+      "examFormatKind": "calculation-method",
+      "answerFormatSteps": [
+        "Write the equation or method.",
+        "Substitute the values and show working.",
+        "Give the final answer with the correct unit or rounding."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-125-9j-rocket-weighs-470-n-on-earth-where-g-10-n-kg-calculate-his-mass",
@@ -10575,7 +13328,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Force fields, gravity and magnetism",
       "learningObjectiveDescription": "Magnetic, gravitational and electric fields, weight and gravitational potential energy.",
       "noteId": "9J-fields",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "calculate",
+      "examMarks": 2,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "calculation-practice-derived",
+      "answerFormatHint": "Write the formula or method, substitute values, then give the answer with a unit or required rounding.",
+      "examFormatKind": "calculation-method",
+      "answerFormatSteps": [
+        "Write the equation or method.",
+        "Substitute the values and show working.",
+        "Give the final answer with the correct unit or rounding."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examRetiredFromWritten": "v1.62.0",
+      "examRetiredReason": "surplus_calculation_variant",
+      "examRetainedCoverageAnchor": "y9r-067-9j-what-formula-is-used-to-calculate-weight"
     },
     {
       "id": "y9x-126-9j-rocket-has-mass-47-kg-on-a-planet-where-g-22-8-n-kg-calculate-his-weight",
@@ -10596,7 +13366,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Force fields, gravity and magnetism",
       "learningObjectiveDescription": "Magnetic, gravitational and electric fields, weight and gravitational potential energy.",
       "noteId": "9J-fields",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "calculate",
+      "examMarks": 2,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "calculation-practice-derived",
+      "answerFormatHint": "Write the formula or method, substitute values, then give the answer with a unit or required rounding.",
+      "examFormatKind": "calculation-method",
+      "answerFormatSteps": [
+        "Write the equation or method.",
+        "Substitute the values and show working.",
+        "Give the final answer with the correct unit or rounding."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-127-9j-mantis-has-mass-56-kg-calculate-her-weight-on-earth-where-g-10-n-kg",
@@ -10617,7 +13402,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Force fields, gravity and magnetism",
       "learningObjectiveDescription": "Magnetic, gravitational and electric fields, weight and gravitational potential energy.",
       "noteId": "9J-fields",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "calculate",
+      "examMarks": 2,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "calculation-practice-derived",
+      "answerFormatHint": "Write the formula or method, substitute values, then give the answer with a unit or required rounding.",
+      "examFormatKind": "calculation-method",
+      "answerFormatSteps": [
+        "Write the equation or method.",
+        "Substitute the values and show working.",
+        "Give the final answer with the correct unit or rounding."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examRetiredFromWritten": "v1.62.0",
+      "examRetiredReason": "surplus_calculation_variant",
+      "examRetainedCoverageAnchor": "y9r-067-9j-what-formula-is-used-to-calculate-weight"
     },
     {
       "id": "y9x-128-9j-mantis-has-mass-56-kg-and-weight-686-n-on-a-planet-calculate-g",
@@ -10638,7 +13440,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Force fields, gravity and magnetism",
       "learningObjectiveDescription": "Magnetic, gravitational and electric fields, weight and gravitational potential energy.",
       "noteId": "9J-fields",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "calculate",
+      "examMarks": 2,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "calculation-practice-derived",
+      "answerFormatHint": "Write the formula or method, substitute values, then give the answer with a unit or required rounding.",
+      "examFormatKind": "calculation-method",
+      "answerFormatSteps": [
+        "Write the equation or method.",
+        "Substitute the values and show working.",
+        "Give the final answer with the correct unit or rounding."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-129-9j-groot-has-mass-34-kg-on-a-planet-where-g-6-8-n-kg-calculate-his-weight",
@@ -10659,7 +13476,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Force fields, gravity and magnetism",
       "learningObjectiveDescription": "Magnetic, gravitational and electric fields, weight and gravitational potential energy.",
       "noteId": "9J-fields",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "calculate",
+      "examMarks": 2,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "calculation-practice-derived",
+      "answerFormatHint": "Write the formula or method, substitute values, then give the answer with a unit or required rounding.",
+      "examFormatKind": "calculation-method",
+      "answerFormatSteps": [
+        "Write the equation or method.",
+        "Substitute the values and show working.",
+        "Give the final answer with the correct unit or rounding."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-130-9j-groot-has-mass-34-kg-and-weight-724-2-n-on-a-planet-calculate-g",
@@ -10680,7 +13512,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Force fields, gravity and magnetism",
       "learningObjectiveDescription": "Magnetic, gravitational and electric fields, weight and gravitational potential energy.",
       "noteId": "9J-fields",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "calculate",
+      "examMarks": 2,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "calculation-practice-derived",
+      "answerFormatHint": "Write the formula or method, substitute values, then give the answer with a unit or required rounding.",
+      "examFormatKind": "calculation-method",
+      "answerFormatSteps": [
+        "Write the equation or method.",
+        "Substitute the values and show working.",
+        "Give the final answer with the correct unit or rounding."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examRetiredFromWritten": "v1.62.0",
+      "examRetiredReason": "surplus_calculation_variant",
+      "examRetainedCoverageAnchor": "y9r-067-9j-what-formula-is-used-to-calculate-weight"
     },
     {
       "id": "y9x-131-9j-oberon-has-about-1-3-times-the-mass-of-rhea-but-a-similar-diameter-which-moon-ha",
@@ -10701,7 +13550,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Force fields, gravity and magnetism",
       "learningObjectiveDescription": "Magnetic, gravitational and electric fields, weight and gravitational potential energy.",
       "noteId": "9J-fields",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "identify",
+      "examMarks": 2,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "calculation-practice-derived",
+      "answerFormatHint": "Use the labels, diagram or question clue to name the correct item(s). Keep the answer concise.",
+      "examFormatKind": "label-or-feature",
+      "answerFormatSteps": [
+        "Look carefully at the label, diagram or clue.",
+        "Name the correct item(s), part(s) or feature(s).",
+        "Use letters/names clearly if the diagram uses labels."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-132-9j-calculate-resistance-voltage-12-v-current-2-a",
@@ -10722,7 +13586,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Resistance and Ohm’s law",
       "learningObjectiveDescription": "Resistance, current-voltage graphs, high-resistance materials and calculations.",
       "noteId": "9J-resistance",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "calculate",
+      "examMarks": 2,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "calculation-practice-derived",
+      "answerFormatHint": "Write the formula or method, substitute values, then give the answer with a unit or required rounding.",
+      "examFormatKind": "calculation-method",
+      "answerFormatSteps": [
+        "Write the equation or method.",
+        "Substitute the values and show working.",
+        "Give the final answer with the correct unit or rounding."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examRetiredFromWritten": "v1.62.0",
+      "examRetiredReason": "surplus_calculation_variant",
+      "examRetainedCoverageAnchor": "y9r6-004-9j-current-voltage-resistance-calculate"
     },
     {
       "id": "y9x-133-9j-calculate-resistance-voltage-9-v-current-0-3-a",
@@ -10743,7 +13624,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Resistance and Ohm’s law",
       "learningObjectiveDescription": "Resistance, current-voltage graphs, high-resistance materials and calculations.",
       "noteId": "9J-resistance",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "calculate",
+      "examMarks": 2,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "calculation-practice-derived",
+      "answerFormatHint": "Write the formula or method, substitute values, then give the answer with a unit or required rounding.",
+      "examFormatKind": "calculation-method",
+      "answerFormatSteps": [
+        "Write the equation or method.",
+        "Substitute the values and show working.",
+        "Give the final answer with the correct unit or rounding."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examRetiredFromWritten": "v1.62.0",
+      "examRetiredReason": "duplicate_or_near_duplicate",
+      "examRetainedCoverageAnchor": "y9r6-004-9j-current-voltage-resistance-calculate"
     },
     {
       "id": "y9x-134-9j-calculate-resistance-voltage-8-v-current-0-02-a",
@@ -10764,7 +13662,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Resistance and Ohm’s law",
       "learningObjectiveDescription": "Resistance, current-voltage graphs, high-resistance materials and calculations.",
       "noteId": "9J-resistance",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "calculate",
+      "examMarks": 2,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "calculation-practice-derived",
+      "answerFormatHint": "Write the formula or method, substitute values, then give the answer with a unit or required rounding.",
+      "examFormatKind": "calculation-method",
+      "answerFormatSteps": [
+        "Write the equation or method.",
+        "Substitute the values and show working.",
+        "Give the final answer with the correct unit or rounding."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examRetiredFromWritten": "v1.62.0",
+      "examRetiredReason": "surplus_calculation_variant",
+      "examRetainedCoverageAnchor": "y9r6-004-9j-current-voltage-resistance-calculate"
     },
     {
       "id": "y9x-135-9j-calculate-current-voltage-6-v-resistance-30",
@@ -10785,7 +13700,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Resistance and Ohm’s law",
       "learningObjectiveDescription": "Resistance, current-voltage graphs, high-resistance materials and calculations.",
       "noteId": "9J-resistance",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "calculate",
+      "examMarks": 2,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "calculation-practice-derived",
+      "answerFormatHint": "Write the formula or method, substitute values, then give the answer with a unit or required rounding.",
+      "examFormatKind": "calculation-method",
+      "answerFormatSteps": [
+        "Write the equation or method.",
+        "Substitute the values and show working.",
+        "Give the final answer with the correct unit or rounding."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examRetiredFromWritten": "v1.62.0",
+      "examRetiredReason": "surplus_calculation_variant",
+      "examRetainedCoverageAnchor": "y9r6-004-9j-current-voltage-resistance-calculate"
     },
     {
       "id": "y9x-136-9j-calculate-voltage-current-0-5-a-resistance-20",
@@ -10806,7 +13738,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Resistance and Ohm’s law",
       "learningObjectiveDescription": "Resistance, current-voltage graphs, high-resistance materials and calculations.",
       "noteId": "9J-resistance",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "calculate",
+      "examMarks": 2,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "calculation-practice-derived",
+      "answerFormatHint": "Write the formula or method, substitute values, then give the answer with a unit or required rounding.",
+      "examFormatKind": "calculation-method",
+      "answerFormatSteps": [
+        "Write the equation or method.",
+        "Substitute the values and show working.",
+        "Give the final answer with the correct unit or rounding."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examRetiredFromWritten": "v1.62.0",
+      "examRetiredReason": "surplus_calculation_variant",
+      "examRetainedCoverageAnchor": "y9r6-004-9j-current-voltage-resistance-calculate"
     },
     {
       "id": "y9x-137-9j-calculate-voltage-current-0-02-a-resistance-5200",
@@ -10827,7 +13776,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Resistance and Ohm’s law",
       "learningObjectiveDescription": "Resistance, current-voltage graphs, high-resistance materials and calculations.",
       "noteId": "9J-resistance",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "calculate",
+      "examMarks": 2,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "calculation-practice-derived",
+      "answerFormatHint": "Write the formula or method, substitute values, then give the answer with a unit or required rounding.",
+      "examFormatKind": "calculation-method",
+      "answerFormatSteps": [
+        "Write the equation or method.",
+        "Substitute the values and show working.",
+        "Give the final answer with the correct unit or rounding."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examRetiredFromWritten": "v1.62.0",
+      "examRetiredReason": "surplus_calculation_variant",
+      "examRetainedCoverageAnchor": "y9r6-004-9j-current-voltage-resistance-calculate"
     },
     {
       "id": "y9x-138-9i-a-stone-is-moved-65-km-in-65-h-calculate-the-mean-speed",
@@ -10848,7 +13814,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Speed and distance-time graphs",
       "learningObjectiveDescription": "Speed calculations, mean speed and interpreting distance-time graphs.",
       "noteId": "9I-speed",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "calculate",
+      "examMarks": 2,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "calculation-practice-derived",
+      "answerFormatHint": "Write the formula or method, substitute values, then give the answer with a unit or required rounding.",
+      "examFormatKind": "calculation-method",
+      "answerFormatSteps": [
+        "Write the equation or method.",
+        "Substitute the values and show working.",
+        "Give the final answer with the correct unit or rounding."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examRetiredFromWritten": "v1.62.0",
+      "examRetiredReason": "surplus_calculation_variant",
+      "examRetainedCoverageAnchor": "y9r-054-9i-what-is-the-relative-speed-of-a-car-travelling-at-50-km-h-compared-to-one-t"
     },
     {
       "id": "y9x-139-9i-a-river-section-is-40-km-and-the-stones-move-at-3-km-h-calculate-the-time-taken",
@@ -10869,7 +13852,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Speed and distance-time graphs",
       "learningObjectiveDescription": "Speed calculations, mean speed and interpreting distance-time graphs.",
       "noteId": "9I-speed",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "calculate",
+      "examMarks": 2,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "calculation-practice-derived",
+      "answerFormatHint": "Write the formula or method, substitute values, then give the answer with a unit or required rounding.",
+      "examFormatKind": "calculation-method",
+      "answerFormatSteps": [
+        "Write the equation or method.",
+        "Substitute the values and show working.",
+        "Give the final answer with the correct unit or rounding."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-140-9i-a-final-overland-section-is-5-km-at-1-km-h-calculate-the-time-taken",
@@ -10890,7 +13888,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Speed and distance-time graphs",
       "learningObjectiveDescription": "Speed calculations, mean speed and interpreting distance-time graphs.",
       "noteId": "9I-speed",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "calculate",
+      "examMarks": 2,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "calculation-practice-derived",
+      "answerFormatHint": "Write the formula or method, substitute values, then give the answer with a unit or required rounding.",
+      "examFormatKind": "calculation-method",
+      "answerFormatSteps": [
+        "Write the equation or method.",
+        "Substitute the values and show working.",
+        "Give the final answer with the correct unit or rounding."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examRetiredFromWritten": "v1.62.0",
+      "examRetiredReason": "surplus_calculation_variant",
+      "examRetainedCoverageAnchor": "y9r-054-9i-what-is-the-relative-speed-of-a-car-travelling-at-50-km-h-compared-to-one-t"
     },
     {
       "id": "y9x-141-9i-a-force-of-200-n-acts-0-5-m-from-a-pivot-calculate-the-moment",
@@ -10911,7 +13926,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Levers, pivots and moments",
       "learningObjectiveDescription": "Levers, pivots/fulcrums, moment calculations and mechanical advantage.",
       "noteId": "9I-moments",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "calculate",
+      "examMarks": 2,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "calculation-practice-derived",
+      "answerFormatHint": "Write the formula or method, substitute values, then give the answer with a unit or required rounding.",
+      "examFormatKind": "calculation-method",
+      "answerFormatSteps": [
+        "Write the equation or method.",
+        "Substitute the values and show working.",
+        "Give the final answer with the correct unit or rounding."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examRetiredFromWritten": "v1.62.0",
+      "examRetiredReason": "surplus_calculation_variant",
+      "examRetainedCoverageAnchor": "y9img-005-9i-moment-balanced-missing-distance"
     },
     {
       "id": "y9x-142-9i-a-moment-of-120-n-m-is-needed-using-a-lever-2-m-from-the-pivot-calculate-the-for",
@@ -10932,7 +13964,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Levers, pivots and moments",
       "learningObjectiveDescription": "Levers, pivots/fulcrums, moment calculations and mechanical advantage.",
       "noteId": "9I-moments",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "calculate",
+      "examMarks": 2,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "calculation-practice-derived",
+      "answerFormatHint": "Write the formula or method, substitute values, then give the answer with a unit or required rounding.",
+      "examFormatKind": "calculation-method",
+      "answerFormatSteps": [
+        "Write the equation or method.",
+        "Substitute the values and show working.",
+        "Give the final answer with the correct unit or rounding."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-143-9i-a-300-n-force-moves-a-load-4-m-calculate-the-work-done",
@@ -10953,7 +14000,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Energy, work and simple machines",
       "learningObjectiveDescription": "Work done, machines, ramps, friction and energy transfer.",
       "noteId": "9I-energy-work",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "calculate",
+      "examMarks": 2,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "calculation-practice-derived",
+      "answerFormatHint": "Write the formula or method, substitute values, then give the answer with a unit or required rounding.",
+      "examFormatKind": "calculation-method",
+      "answerFormatSteps": [
+        "Write the equation or method.",
+        "Substitute the values and show working.",
+        "Give the final answer with the correct unit or rounding."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examRetiredFromWritten": "v1.62.0",
+      "examRetiredReason": "surplus_calculation_variant",
+      "examRetainedCoverageAnchor": "y9x-144-9i-a-ramp-requires-1500-j-of-work-over-5-m-calculate-the-average-force"
     },
     {
       "id": "y9x-144-9i-a-ramp-requires-1500-j-of-work-over-5-m-calculate-the-average-force",
@@ -10974,7 +14038,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Energy, work and simple machines",
       "learningObjectiveDescription": "Work done, machines, ramps, friction and energy transfer.",
       "noteId": "9I-energy-work",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "calculate",
+      "examMarks": 2,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "calculation-practice-derived",
+      "answerFormatHint": "Write the formula or method, substitute values, then give the answer with a unit or required rounding.",
+      "examFormatKind": "calculation-method",
+      "answerFormatSteps": [
+        "Write the equation or method.",
+        "Substitute the values and show working.",
+        "Give the final answer with the correct unit or rounding."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-145-9i-a-cyclist-travels-at-6-m-s-for-20-s-calculate-the-distance-travelled",
@@ -10995,7 +14074,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Speed and distance-time graphs",
       "learningObjectiveDescription": "Speed calculations, mean speed and interpreting distance-time graphs.",
       "noteId": "9I-speed",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "calculate",
+      "examMarks": 2,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "calculation-practice-derived",
+      "answerFormatHint": "Write the formula or method, substitute values, then give the answer with a unit or required rounding.",
+      "examFormatKind": "calculation-method",
+      "answerFormatSteps": [
+        "Write the equation or method.",
+        "Substitute the values and show working.",
+        "Give the final answer with the correct unit or rounding."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examRetiredFromWritten": "v1.62.0",
+      "examRetiredReason": "surplus_calculation_variant",
+      "examRetainedCoverageAnchor": "y9r-054-9i-what-is-the-relative-speed-of-a-car-travelling-at-50-km-h-compared-to-one-t"
     },
     {
       "unit": "9J",
@@ -11008,7 +14104,9 @@ window.YEAR9_CONTENT = {
       "tags": [
         "visual",
         "diagram",
-        "circuits"
+        "circuits",
+        "written-polish-v1.56",
+        "source-question-restored-v1.60"
       ],
       "id": "y9x-138-9j-match-common-circuit-symbols-to-their-component-names",
       "type": "Progress check",
@@ -11022,11 +14120,26 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9J-circuit-symbols-grid-blank-v2.webp",
-          "alt": "Question-safe grid of eight circuit symbols labelled A to H.",
+          "alt": "Unlabelled grid of eight circuit symbols labelled A to H.",
           "caption": "Use the letter labels to identify the circuit components.",
           "mediaTiming": "question"
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "identify",
+      "examMarks": 4,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "revision-pack-aligned-visual-practice",
+      "answerFormatHint": "Use the labels, diagram or question clue to name the correct item(s). Keep the answer concise.",
+      "examFormatKind": "label-or-feature",
+      "answerFormatSteps": [
+        "Look carefully at the label, diagram or clue.",
+        "Name the correct item(s), part(s) or feature(s).",
+        "Use letters/names clearly if the diagram uses labels."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "unit": "9J",
@@ -11058,7 +14171,7 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9J-circuit-symbols-grid-blank-v2.webp",
-          "alt": "Question-safe grid of eight circuit symbols labelled A to H.",
+          "alt": "Unlabelled grid of eight circuit symbols labelled A to H.",
           "caption": "Use the letter labels to identify the circuit components.",
           "mediaTiming": "question"
         }
@@ -11094,7 +14207,7 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9J-circuit-symbols-grid-blank-v2.webp",
-          "alt": "Question-safe grid of eight circuit symbols labelled A to H.",
+          "alt": "Unlabelled grid of eight circuit symbols labelled A to H.",
           "caption": "Use the letter labels to identify the circuit components.",
           "mediaTiming": "question"
         }
@@ -11131,7 +14244,7 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9J-circuit-symbols-grid-question-v149.webp",
-          "alt": "Question-safe circuit/meter placement diagram.",
+          "alt": "Unlabelled circuit/meter placement diagram.",
           "caption": "Use the diagram to answer the question.",
           "mediaTiming": "question",
           "presentation": "media-image-base"
@@ -11169,7 +14282,7 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9J-circuit-symbols-grid-question-v149.webp",
-          "alt": "Question-safe circuit/meter placement diagram.",
+          "alt": "Unlabelled circuit/meter placement diagram.",
           "caption": "Use the diagram to answer the question.",
           "mediaTiming": "question",
           "presentation": "media-image-base"
@@ -11207,7 +14320,7 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9J-circuit-symbols-grid-question-v149.webp",
-          "alt": "Question-safe circuit/meter placement diagram.",
+          "alt": "Unlabelled circuit/meter placement diagram.",
           "caption": "Use the diagram to answer the question.",
           "mediaTiming": "question",
           "presentation": "media-image-base"
@@ -11244,7 +14357,7 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9J-circuit-symbols-grid-blank-v2.webp",
-          "alt": "Question-safe grid of eight circuit symbols labelled A to H.",
+          "alt": "Unlabelled grid of eight circuit symbols labelled A to H.",
           "caption": "Use the letter labels to identify the circuit components.",
           "mediaTiming": "question"
         }
@@ -11408,7 +14521,9 @@ window.YEAR9_CONTENT = {
       "tags": [
         "visual",
         "diagram",
-        "circuits"
+        "circuits",
+        "written-polish-v1.56",
+        "source-question-restored-v1.60"
       ],
       "id": "y9x-148-9j-compare-current-and-voltage-in-the-two-circuits",
       "type": "Progress check",
@@ -11439,7 +14554,22 @@ window.YEAR9_CONTENT = {
             }
           ]
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "describe",
+      "examMarks": 4,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "revision-pack-aligned-visual-practice",
+      "answerFormatHint": "Say what happens, what changes, or what is shown. Use short linked points and include values or labels if given.",
+      "examFormatKind": "linked-description",
+      "answerFormatSteps": [
+        "Give one clear feature, step or change.",
+        "Add another linked feature, step or comparison.",
+        "Use values, labels or context from the question where useful."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "unit": "9J",
@@ -11472,7 +14602,7 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9J-meter-placement-xy-question-v149.webp",
-          "alt": "Question-safe circuit/meter placement diagram.",
+          "alt": "Unlabelled circuit/meter placement diagram.",
           "caption": "Use the diagram to answer the question.",
           "mediaTiming": "question",
           "presentation": "media-image-base"
@@ -11510,7 +14640,7 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9J-meter-placement-xy-question-v149.webp",
-          "alt": "Question-safe circuit/meter placement diagram.",
+          "alt": "Unlabelled circuit/meter placement diagram.",
           "caption": "Use the diagram to answer the question.",
           "mediaTiming": "question",
           "presentation": "media-image-base"
@@ -11611,7 +14741,22 @@ window.YEAR9_CONTENT = {
           "mediaTiming": "question"
         }
       ],
-      "mediaTiming": "question"
+      "mediaTiming": "question",
+      "examEligible": true,
+      "examCommand": "identify",
+      "examMarks": 1,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "source-style-redraw",
+      "answerFormatHint": "Use the labels, diagram or question clue to name the correct item(s). Keep the answer concise.",
+      "examFormatKind": "label-or-feature",
+      "answerFormatSteps": [
+        "Look carefully at the label, diagram or clue.",
+        "Name the correct item(s), part(s) or feature(s).",
+        "Use letters/names clearly if the diagram uses labels."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-154-9j-use-the-charge-transfer-diagram-what-particle-has-moved-and-what-charge-does-the-rod-gain",
@@ -11625,7 +14770,9 @@ window.YEAR9_CONTENT = {
       "level": 3,
       "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
       "tags": [
-        "written"
+        "written",
+        "written-polish-v1.56",
+        "source-question-restored-v1.60"
       ],
       "sourceFidelity": "source-style-redraw",
       "learningObjective": "9J-static",
@@ -11641,7 +14788,22 @@ window.YEAR9_CONTENT = {
           "mediaTiming": "question"
         }
       ],
-      "mediaTiming": "question"
+      "mediaTiming": "question",
+      "examEligible": true,
+      "examCommand": "identify",
+      "examMarks": 2,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "source-style-redraw",
+      "answerFormatHint": "Use the labels, diagram or question clue to name the correct item(s). Keep the answer concise.",
+      "examFormatKind": "label-or-feature",
+      "answerFormatSteps": [
+        "Look carefully at the label, diagram or clue.",
+        "Name the correct item(s), part(s) or feature(s).",
+        "Use letters/names clearly if the diagram uses labels."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-155-9j-use-the-electromagnet-diagram-match-labels-a-to-d-to-the-coil-core-cell-and-switch",
@@ -11655,7 +14817,9 @@ window.YEAR9_CONTENT = {
       "level": 3,
       "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
       "tags": [
-        "written"
+        "written",
+        "written-polish-v1.56",
+        "source-question-restored-v1.60"
       ],
       "sourceFidelity": "source-style-redraw",
       "learningObjective": "9J-electromagnets",
@@ -11671,7 +14835,22 @@ window.YEAR9_CONTENT = {
           "mediaTiming": "question"
         }
       ],
-      "mediaTiming": "question"
+      "mediaTiming": "question",
+      "examEligible": true,
+      "examCommand": "identify",
+      "examMarks": 4,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "source-style-redraw",
+      "answerFormatHint": "Use the labels, diagram or question clue to name the correct item(s). Keep the answer concise.",
+      "examFormatKind": "label-or-feature",
+      "answerFormatSteps": [
+        "Look carefully at the label, diagram or clue.",
+        "Name the correct item(s), part(s) or feature(s).",
+        "Use letters/names clearly if the diagram uses labels."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-156-9j-which-change-would-make-the-electromagnet-in-the-diagram-stronger",
@@ -11718,7 +14897,9 @@ window.YEAR9_CONTENT = {
       "level": 3,
       "cue": "Answer in complete sentences, then compare with the mark-scheme answer.",
       "tags": [
-        "written"
+        "written",
+        "written-polish-v1.56",
+        "source-question-restored-v1.60"
       ],
       "sourceFidelity": "source-style-redraw",
       "learningObjective": "9J-electromagnets",
@@ -11757,7 +14938,22 @@ window.YEAR9_CONTENT = {
           ]
         }
       ],
-      "mediaTiming": "question"
+      "mediaTiming": "question",
+      "examEligible": true,
+      "examCommand": "identify",
+      "examMarks": 4,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "source-style-redraw",
+      "answerFormatHint": "Use the labels, diagram or question clue to name the correct item(s). Keep the answer concise.",
+      "examFormatKind": "label-or-feature",
+      "answerFormatSteps": [
+        "Look carefully at the label, diagram or clue.",
+        "Name the correct item(s), part(s) or feature(s).",
+        "Use letters/names clearly if the diagram uses labels."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-158-9j-use-the-relay-diagram-explain-why-a-relay-is-useful",
@@ -11810,7 +15006,22 @@ window.YEAR9_CONTENT = {
           ]
         }
       ],
-      "mediaTiming": "question"
+      "mediaTiming": "question",
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "source-style-redraw",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9x-159-9j-use-the-motor-effect-diagram-which-arrow-shows-the-force-on-the-wire",
@@ -11945,7 +15156,7 @@ window.YEAR9_CONTENT = {
       "mediaTiming": "question"
     },
     {
-      "id": "y9r-001-9b-what-is-sustainable-development",
+      "id": "y9r-001-9b-what-is-sustainable development",
       "unit": "9B",
       "type": "Assess check",
       "question": "What is sustainable development?",
@@ -11955,7 +15166,7 @@ window.YEAR9_CONTENT = {
       "source": "9B Summary sheet p2 Farming",
       "sourceExcerpt": "Developing the things we need, without destroying habitats is called sustainable development.",
       "level": 1,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
         "source-traceable"
@@ -11965,7 +15176,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Farming methods: yield, problems and sustainability",
       "learningObjectiveDescription": "Farming methods, crop yield, habitat impacts, fertilisers, pesticides and sustainability.",
       "noteId": "9B-farming-yield-impact",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "state",
+      "examMarks": 1,
+      "examDomain": "biology",
+      "examPool": "written-recall",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examRetiredFromWritten": "v1.62.0",
+      "examRetiredReason": "low_value_recall_overlap",
+      "examRetainedCoverageAnchor": "y9r-003-9b-what-problem-can-be-caused-by-clearing-hedges-and-trees"
     },
     {
       "id": "y9r-002-9b-why-is-land-cleared-of-hedges-and-trees-in-modern-farming",
@@ -11974,11 +15202,11 @@ window.YEAR9_CONTENT = {
       "question": "A farmer clears hedges and trees from a field. Give one benefit for farming and one environmental problem this can cause.",
       "answer": "Benefit: it creates more land for crops and makes it easier for machinery to move around. Problem: it destroys habitats and can cause soil erosion because there are fewer roots.",
       "choices": [],
-      "explanation": "This combines the revision-pack benefit and problem so students must apply both sides of the farming-methods table.",
+      "explanation": "This combines the revision benefit and problem so students must apply both sides of the farming-methods table.",
       "source": "9B Summary sheet p2 Farming table",
       "sourceExcerpt": "land is cleared of hedges and trees — to create more land for crops and make it easier for machinery to move around",
       "level": 3,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "quality-balance-v1.36",
         "question-media-v1.45",
@@ -11994,13 +15222,28 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9B-farming-yield-sustainability-blank.webp",
-          "alt": "Question-safe farming image contrasting crop production and environmental impact without explanatory labels.",
+          "alt": "Unlabelled farming image contrasting crop production and environmental impact without explanatory labels.",
           "caption": "",
           "mediaTiming": "question",
           "presentation": "media-image-base",
           "questionAssetV145": true
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "state",
+      "examMarks": 1,
+      "examDomain": "biology",
+      "examPool": "written-recall",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9r-003-9b-what-problem-can-be-caused-by-clearing-hedges-and-trees",
@@ -12013,18 +15256,35 @@ window.YEAR9_CONTENT = {
       "source": "9B Summary sheet p2 Farming table",
       "sourceExcerpt": "Destroys habitats. Lack of roots can cause soil erosion.",
       "level": 3,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
         "source-traceable",
-        "quality-balance-v1.36"
+        "quality-balance-v1.36",
+        "written-polish-v1.56",
+        "source-question-restored-v1.60"
       ],
       "sourceFidelity": "exact-source-answer",
       "learningObjective": "9B-farming-yield-impact",
       "learningObjectiveTitle": "Farming methods: yield, problems and sustainability",
       "learningObjectiveDescription": "Farming methods, crop yield, habitat impacts, fertilisers, pesticides and sustainability.",
       "noteId": "9B-farming-yield-impact",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "state",
+      "examMarks": 2,
+      "examDomain": "biology",
+      "examPool": "written-main",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9r-004-9b-why-are-pesticides-used-on-crops",
@@ -12037,7 +15297,7 @@ window.YEAR9_CONTENT = {
       "source": "9B Summary sheet p2 Farming table",
       "sourceExcerpt": "pesticides (e.g. herbicides, insecticides) are used — to kill pests that compete with or harm the crops",
       "level": 2,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
         "source-traceable"
@@ -12047,7 +15307,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Farming methods: yield, problems and sustainability",
       "learningObjectiveDescription": "Farming methods, crop yield, habitat impacts, fertilisers, pesticides and sustainability.",
       "noteId": "9B-farming-yield-impact",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "biology",
+      "examPool": "written-main",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9r-005-9b-what-problem-can-pesticides-cause",
@@ -12060,11 +15335,13 @@ window.YEAR9_CONTENT = {
       "source": "9B Summary sheet p2 Farming table",
       "sourceExcerpt": "Can kill useful organisms as well as pests. Damages food webs.",
       "level": 3,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
         "source-traceable",
-        "quality-balance-v1.36"
+        "quality-balance-v1.36",
+        "written-polish-v1.56",
+        "source-question-restored-v1.60"
       ],
       "sourceFidelity": "exact-source-answer",
       "learningObjective": "9B-farming-yield-impact",
@@ -12075,13 +15352,28 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9B-farming-yield-sustainability-blank.webp",
-          "alt": "Question-safe split farming scene showing crop yield methods and environmental impacts without explanatory notes.",
+          "alt": "Unlabelled split farming scene showing crop yield methods and environmental impacts without explanatory notes.",
           "caption": "Use the scene to connect benefits and environmental problems.",
           "mediaTiming": "question",
           "presentation": "media-image-base",
           "questionAssetV148": true
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "state",
+      "examMarks": 2,
+      "examDomain": "biology",
+      "examPool": "written-main",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9r-006-9b-why-are-fertilisers-used",
@@ -12094,7 +15386,7 @@ window.YEAR9_CONTENT = {
       "source": "9B Summary sheet p2 Farming table",
       "sourceExcerpt": "fertilisers are used — they contain mineral salts that help plants to grow and increase the yield",
       "level": 2,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
         "source-traceable"
@@ -12104,7 +15396,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Farming methods: yield, problems and sustainability",
       "learningObjectiveDescription": "Farming methods, crop yield, habitat impacts, fertilisers, pesticides and sustainability.",
       "noteId": "9B-farming-yield-impact",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "biology",
+      "examPool": "written-main",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9r-007-9b-what-problem-can-fertilisers-cause-if-they-wash-into-streams-and-rivers",
@@ -12117,12 +15424,14 @@ window.YEAR9_CONTENT = {
       "source": "9B Summary sheet p2 Farming table",
       "sourceExcerpt": "Can wash into streams and rivers and cause pollution so that the organisms in the water die.",
       "level": 3,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "quality-balance-v1.36",
         "question-media-v1.45",
         "revision-pack-alignment",
-        "source-traceable"
+        "source-traceable",
+        "written-polish-v1.56",
+        "source-question-restored-v1.60"
       ],
       "sourceFidelity": "exact-source-answer",
       "learningObjective": "9B-farming-yield-impact",
@@ -12133,13 +15442,28 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9B-farming-yield-sustainability-blank.webp",
-          "alt": "Question-safe farming image contrasting crop production and environmental impact without explanatory labels.",
+          "alt": "Unlabelled farming image contrasting crop production and environmental impact without explanatory labels.",
           "caption": "",
           "mediaTiming": "question",
           "presentation": "media-image-base",
           "questionAssetV145": true
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 2,
+      "examDomain": "biology",
+      "examPool": "written-main",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9r-008-9b-what-is-the-problem-with-planting-huge-areas-of-a-single-variety",
@@ -12152,7 +15476,7 @@ window.YEAR9_CONTENT = {
       "source": "9B Summary sheet p2 Farming table",
       "sourceExcerpt": "The planting of huge areas of a single variety reduces biodiversity.",
       "level": 3,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
         "source-traceable",
@@ -12163,7 +15487,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Farming methods: yield, problems and sustainability",
       "learningObjectiveDescription": "Farming methods, crop yield, habitat impacts, fertilisers, pesticides and sustainability.",
       "noteId": "9B-farming-yield-impact",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "state",
+      "examMarks": 1,
+      "examDomain": "biology",
+      "examPool": "written-recall",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9r-009-9b-what-is-cross-breeding",
@@ -12176,7 +15515,7 @@ window.YEAR9_CONTENT = {
       "source": "9B Summary sheet p2 Breeding varieties",
       "sourceExcerpt": "Sometimes two different varieties are bred together to try to produce offspring with characteristics from both varieties. This is called cross-breeding.",
       "level": 2,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
         "source-traceable"
@@ -12186,7 +15525,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Plant products, seeds and food production",
       "learningObjectiveDescription": "Uses of glucose, plant products, selective breeding and crop production.",
       "noteId": "9B-plant-products",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "state",
+      "examMarks": 1,
+      "examDomain": "biology",
+      "examPool": "written-recall",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examRetiredFromWritten": "v1.62.0",
+      "examRetiredReason": "low_value_recall_overlap",
+      "examRetainedCoverageAnchor": "y9x-097-9b-give-advantages-and-disadvantages-of-clearing-land-for-farming"
     },
     {
       "id": "y9r-010-9b-what-happens-to-the-energy-released-from-glucose-in-aerobic-respiration",
@@ -12199,7 +15555,7 @@ window.YEAR9_CONTENT = {
       "source": "9B Summary sheet p2 Aerobic respiration",
       "sourceExcerpt": "The energy released from glucose is transferred to molecules of ATP, which store energy for a cell until it is needed.",
       "level": 3,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
         "source-traceable",
@@ -12210,7 +15566,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Photosynthesis and respiration",
       "learningObjectiveDescription": "Photosynthesis, limiting factors, respiration and ATP.",
       "noteId": "9B-photosynthesis",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "describe",
+      "examMarks": 2,
+      "examDomain": "biology",
+      "examPool": "written-main",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Say what happens, what changes, or what is shown. Use short linked points and include values or labels if given.",
+      "examFormatKind": "linked-description",
+      "answerFormatSteps": [
+        "Give one clear feature, step or change.",
+        "Add another linked feature, step or comparison.",
+        "Use values, labels or context from the question where useful."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9r-011-9b-why-do-plants-need-magnesium-salts",
@@ -12223,7 +15594,7 @@ window.YEAR9_CONTENT = {
       "source": "9B Summary sheet p1 Getting water",
       "sourceExcerpt": "magnesium salts are needed to make chlorophyll.",
       "level": 1,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
         "source-traceable"
@@ -12233,7 +15604,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Plant transport and specialised cells",
       "learningObjectiveDescription": "Roots, xylem, phloem, mineral salts, stomata and specialised plant cells.",
       "noteId": "9B-plant-transport",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "biology",
+      "examPool": "written-main",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examRetiredFromWritten": "v1.62.0",
+      "examRetiredReason": "micro_prompt_overlap",
+      "examRetainedCoverageAnchor": "y9x-022-9b-explain-how-leaves-roots-and-stems-help-photosynthesis"
     },
     {
       "id": "y9r-012-9b-where-does-most-photosynthesis-happen-in-leaves",
@@ -12246,18 +15634,35 @@ window.YEAR9_CONTENT = {
       "source": "9B Summary sheet p1 Getting light",
       "sourceExcerpt": "Most photosynthesis happens in the palisade cells, which are found near the upper surface of leaves.",
       "level": 3,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
         "source-traceable",
-        "quality-balance-v1.36"
+        "quality-balance-v1.36",
+        "written-polish-v1.56",
+        "source-question-restored-v1.60"
       ],
       "sourceFidelity": "exact-source-answer",
       "learningObjective": "9B-photosynthesis",
       "learningObjectiveTitle": "Photosynthesis and respiration",
       "learningObjectiveDescription": "Photosynthesis, limiting factors, respiration and ATP.",
       "noteId": "9B-photosynthesis",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "identify",
+      "examMarks": 2,
+      "examDomain": "biology",
+      "examPool": "written-main",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Use the labels, diagram or question clue to name the correct item(s). Keep the answer concise.",
+      "examFormatKind": "label-or-feature",
+      "answerFormatSteps": [
+        "Look carefully at the label, diagram or clue.",
+        "Name the correct item(s), part(s) or feature(s).",
+        "Use letters/names clearly if the diagram uses labels."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9r-013-9e-what-do-exothermic-reactions-do-to-the-surroundings",
@@ -12270,11 +15675,13 @@ window.YEAR9_CONTENT = {
       "source": "9E Summary sheet p2 Endothermic and exothermic reactions",
       "sourceExcerpt": "Exothermic reactions transfer energy into the surroundings and so increase the temperature around them.",
       "level": 2,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "question-media-v1.45",
         "revision-pack-alignment",
-        "source-traceable"
+        "source-traceable",
+        "written-polish-v1.56",
+        "source-question-restored-v1.60"
       ],
       "sourceFidelity": "exact-source-answer",
       "learningObjective": "9E-energy-thermal-peer-review",
@@ -12285,13 +15692,28 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9F-exothermic-endothermic-blank.webp",
-          "alt": "Question-safe split reaction image showing warming and cooling contexts without explanatory labels.",
+          "alt": "Unlabelled split reaction image showing warming and cooling contexts without explanatory labels.",
           "caption": "",
           "mediaTiming": "question",
           "presentation": "media-image-base",
           "questionAssetV145": true
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "state",
+      "examMarks": 2,
+      "examDomain": "chemistry",
+      "examPool": "written-main",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9r-014-9e-what-do-endothermic-reactions-do-to-the-surroundings",
@@ -12304,11 +15726,13 @@ window.YEAR9_CONTENT = {
       "source": "9E Summary sheet p2 Endothermic and exothermic reactions",
       "sourceExcerpt": "Endothermic reactions transfer energy from the surroundings and so decrease the temperature around them.",
       "level": 2,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "question-media-v1.45",
         "revision-pack-alignment",
-        "source-traceable"
+        "source-traceable",
+        "written-polish-v1.56",
+        "source-question-restored-v1.60"
       ],
       "sourceFidelity": "exact-source-answer",
       "learningObjective": "9E-energy-thermal-peer-review",
@@ -12319,13 +15743,28 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9F-exothermic-endothermic-blank.webp",
-          "alt": "Question-safe split reaction image showing warming and cooling contexts without explanatory labels.",
+          "alt": "Unlabelled split reaction image showing warming and cooling contexts without explanatory labels.",
           "caption": "",
           "mediaTiming": "question",
           "presentation": "media-image-base",
           "questionAssetV145": true
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "state",
+      "examMarks": 2,
+      "examDomain": "chemistry",
+      "examPool": "written-main",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9r-015-9e-give-an-example-of-an-endothermic-reaction-from-the-revision-sheet",
@@ -12338,7 +15777,7 @@ window.YEAR9_CONTENT = {
       "source": "9E Summary sheet p2 Endothermic and exothermic reactions",
       "sourceExcerpt": "Endothermic reactions transfer energy from the surroundings and so decrease the temperature around them, e.g. thermal decomposition reactions.",
       "level": 2,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
         "source-traceable"
@@ -12348,7 +15787,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Energy changes, thermal decomposition and peer review",
       "learningObjectiveDescription": "Endothermic/exothermic reactions, state symbols, thermal decomposition and peer review.",
       "noteId": "9E-energy-thermal-peer-review",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "state",
+      "examMarks": 1,
+      "examDomain": "chemistry",
+      "examPool": "written-recall",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9r-016-9e-what-do-the-state-symbols-s-l-g-and-aq-mean",
@@ -12361,7 +15815,7 @@ window.YEAR9_CONTENT = {
       "source": "9E Summary sheet p2 Endothermic and exothermic reactions",
       "sourceExcerpt": "state symbols: s = solid, l = liquid, g = gas, aq = dissolved in water",
       "level": 2,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
         "source-traceable"
@@ -12371,7 +15825,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Energy changes, thermal decomposition and peer review",
       "learningObjectiveDescription": "Endothermic/exothermic reactions, state symbols, thermal decomposition and peer review.",
       "noteId": "9E-energy-thermal-peer-review",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "state",
+      "examMarks": 1,
+      "examDomain": "chemistry",
+      "examPool": "written-recall",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9r-017-9e-what-is-made-when-calcium-carbonate-thermally-decomposes",
@@ -12384,7 +15853,7 @@ window.YEAR9_CONTENT = {
       "source": "9E Summary sheet p2 Thermal decomposition equation",
       "sourceExcerpt": "calcium carbonate → calcium oxide + carbon dioxide",
       "level": 3,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
         "source-traceable",
@@ -12395,7 +15864,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Energy changes, thermal decomposition and peer review",
       "learningObjectiveDescription": "Endothermic/exothermic reactions, state symbols, thermal decomposition and peer review.",
       "noteId": "9E-energy-thermal-peer-review",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "state",
+      "examMarks": 1,
+      "examDomain": "chemistry",
+      "examPool": "written-recall",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9r-018-9e-in-peer-review-what-do-scientists-check-in-a-paper",
@@ -12408,18 +15892,35 @@ window.YEAR9_CONTENT = {
       "source": "9E Summary sheet p2 Peer review",
       "sourceExcerpt": "The scientists evaluate the paper; they check that the paper has valid conclusions, that it is original and that the experiments work.",
       "level": 3,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
         "source-traceable",
-        "quality-balance-v1.36"
+        "quality-balance-v1.36",
+        "written-polish-v1.56",
+        "source-question-restored-v1.60"
       ],
       "sourceFidelity": "exact-source-answer",
       "learningObjective": "9E-energy-thermal-peer-review",
       "learningObjectiveTitle": "Energy changes, thermal decomposition and peer review",
       "learningObjectiveDescription": "Endothermic/exothermic reactions, state symbols, thermal decomposition and peer review.",
       "noteId": "9E-energy-thermal-peer-review",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "state",
+      "examMarks": 3,
+      "examDomain": "chemistry",
+      "examPool": "written-main",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9r-019-9e-after-peer-review-what-can-a-paper-be-recommended-for",
@@ -12432,17 +15933,34 @@ window.YEAR9_CONTENT = {
       "source": "9E Summary sheet p2 Peer review",
       "sourceExcerpt": "Depending on the review, the paper is recommended for publication, amendment or rejection.",
       "level": 2,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
-        "source-traceable"
+        "source-traceable",
+        "written-polish-v1.56",
+        "source-question-restored-v1.60"
       ],
       "sourceFidelity": "exact-source-answer",
       "learningObjective": "9E-energy-thermal-peer-review",
       "learningObjectiveTitle": "Energy changes, thermal decomposition and peer review",
       "learningObjectiveDescription": "Endothermic/exothermic reactions, state symbols, thermal decomposition and peer review.",
       "noteId": "9E-energy-thermal-peer-review",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "state",
+      "examMarks": 3,
+      "examDomain": "chemistry",
+      "examPool": "written-main",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9r-020-9e-how-are-metals-recycled-according-to-the-revision-sheet",
@@ -12455,7 +15973,7 @@ window.YEAR9_CONTENT = {
       "source": "9E Summary sheet p2 Recycling materials",
       "sourceExcerpt": "Metals – by separating and melting.",
       "level": 1,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "question-media-v1.45",
         "revision-pack-alignment",
@@ -12470,13 +15988,28 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9E-recycling-methods-blank.webp",
-          "alt": "Question-safe recycling image showing several material recycling processes without explanatory labels.",
+          "alt": "Unlabelled recycling image showing several material recycling processes without explanatory labels.",
           "caption": "",
           "mediaTiming": "question",
           "presentation": "media-image-base",
           "questionAssetV145": true
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "describe",
+      "examMarks": 2,
+      "examDomain": "chemistry",
+      "examPool": "written-main",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Say what happens, what changes, or what is shown. Use short linked points and include values or labels if given.",
+      "examFormatKind": "linked-description",
+      "answerFormatSteps": [
+        "Give one clear feature, step or change.",
+        "Add another linked feature, step or comparison.",
+        "Use values, labels or context from the question where useful."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9r-021-9e-how-is-glass-recycled-according-to-the-revision-sheet",
@@ -12489,7 +16022,7 @@ window.YEAR9_CONTENT = {
       "source": "9E Summary sheet p2 Recycling materials",
       "sourceExcerpt": "Glass – by separating colours and melting.",
       "level": 1,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "question-media-v1.45",
         "revision-pack-alignment",
@@ -12504,13 +16037,28 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9E-recycling-methods-blank.webp",
-          "alt": "Question-safe recycling image showing several material recycling processes without explanatory labels.",
+          "alt": "Unlabelled recycling image showing several material recycling processes without explanatory labels.",
           "caption": "",
           "mediaTiming": "question",
           "presentation": "media-image-base",
           "questionAssetV145": true
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "describe",
+      "examMarks": 2,
+      "examDomain": "chemistry",
+      "examPool": "written-main",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Say what happens, what changes, or what is shown. Use short linked points and include values or labels if given.",
+      "examFormatKind": "linked-description",
+      "answerFormatSteps": [
+        "Give one clear feature, step or change.",
+        "Add another linked feature, step or comparison.",
+        "Use values, labels or context from the question where useful."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9r-022-9e-how-is-paper-recycled-according-to-the-revision-sheet",
@@ -12523,7 +16071,7 @@ window.YEAR9_CONTENT = {
       "source": "9E Summary sheet p2 Recycling materials",
       "sourceExcerpt": "Paper – by removing ink and adding water to make a pulp.",
       "level": 1,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "question-media-v1.45",
         "revision-pack-alignment",
@@ -12538,13 +16086,28 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9E-recycling-methods-blank.webp",
-          "alt": "Question-safe recycling image showing several material recycling processes without explanatory labels.",
+          "alt": "Unlabelled recycling image showing several material recycling processes without explanatory labels.",
           "caption": "",
           "mediaTiming": "question",
           "presentation": "media-image-base",
           "questionAssetV145": true
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "describe",
+      "examMarks": 2,
+      "examDomain": "chemistry",
+      "examPool": "written-main",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Say what happens, what changes, or what is shown. Use short linked points and include values or labels if given.",
+      "examFormatKind": "linked-description",
+      "answerFormatSteps": [
+        "Give one clear feature, step or change.",
+        "Add another linked feature, step or comparison.",
+        "Use values, labels or context from the question where useful."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9r-023-9e-how-is-concrete-recycled-according-to-the-revision-sheet",
@@ -12557,7 +16120,7 @@ window.YEAR9_CONTENT = {
       "source": "9E Summary sheet p2 Recycling materials",
       "sourceExcerpt": "Concrete – by crushing and grading.",
       "level": 1,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
         "source-traceable"
@@ -12567,7 +16130,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Recycling methods by material",
       "learningObjectiveDescription": "Recycling methods, landfill reduction and resource conservation.",
       "noteId": "9E-recycling-methods",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "describe",
+      "examMarks": 2,
+      "examDomain": "chemistry",
+      "examPool": "written-main",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Say what happens, what changes, or what is shown. Use short linked points and include values or labels if given.",
+      "examFormatKind": "linked-description",
+      "answerFormatSteps": [
+        "Give one clear feature, step or change.",
+        "Add another linked feature, step or comparison.",
+        "Use values, labels or context from the question where useful."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9r-024-9e-give-two-reasons-why-recycling-materials-to-use-again-is-useful",
@@ -12580,7 +16158,7 @@ window.YEAR9_CONTENT = {
       "source": "9E Summary sheet p2 Recycling materials",
       "sourceExcerpt": "Recycling materials to use again … reduces our use of landfill sites; reduces the need to burn fossil fuels; reduces pollution from manufacturing process; saves our resources of raw materials.",
       "level": 3,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "quality-balance-v1.36",
         "question-media-v1.45",
@@ -12596,13 +16174,28 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9E-recycling-methods-blank.webp",
-          "alt": "Question-safe recycling image showing several material recycling processes without explanatory labels.",
+          "alt": "Unlabelled recycling image showing several material recycling processes without explanatory labels.",
           "caption": "",
           "mediaTiming": "question",
           "presentation": "media-image-base",
           "questionAssetV145": true
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "chemistry",
+      "examPool": "written-main",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9r-025-9e-what-is-biomagnification",
@@ -12611,11 +16204,11 @@ window.YEAR9_CONTENT = {
       "question": "A toxin is eaten by small animals, and then many small animals are eaten by a predator. Why can toxin levels become highest in the predator?",
       "answer": "Because large animals eat lots of smaller animals, toxin levels increase and can reach harmful levels. This is biomagnification.",
       "choices": [],
-      "explanation": "The question keeps the revision-pack meaning but tests it in a food-chain context.",
+      "explanation": "The question keeps the key meaning but tests it in a food-chain context.",
       "source": "9E Summary sheet p2 Problems with materials",
       "sourceExcerpt": "As large animals eat lots of smaller animals, toxin levels increase (biomagnification) and can reach harmful levels in humans.",
       "level": 3,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
         "source-traceable",
@@ -12630,13 +16223,28 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9B-bioaccumulation-food-chain-blank-v3.webp",
-          "alt": "Question-safe aquatic food chain with toxin dots increasing up the food chain.",
+          "alt": "Unlabelled aquatic food chain with toxin dots increasing up the food chain.",
           "caption": "",
           "mediaTiming": "question",
           "presentation": "media-image-base",
           "questionAssetV147": true
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "chemistry",
+      "examPool": "written-main",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9r-026-9f-in-reactions-and-physical-changes-what-happens-to-the-number-of-atoms",
@@ -12649,7 +16257,7 @@ window.YEAR9_CONTENT = {
       "source": "9F Summary sheet p1 Reactions and equations",
       "sourceExcerpt": "In both cases, the number of atoms does not change and so there is no overall change in mass.",
       "level": 3,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
         "source-traceable",
@@ -12664,13 +16272,28 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9F-physical-change-chemical-reaction-blank-v2.webp",
-          "alt": "Question-safe comparison image showing physical changes and chemical reaction evidence without labels.",
+          "alt": "Unlabelled comparison image showing physical changes and chemical reaction evidence without labels.",
           "caption": "Compare the two sides to decide whether a new substance is formed.",
           "mediaTiming": "question",
           "presentation": "media-image-base",
           "questionAssetV148": true
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "chemistry",
+      "examPool": "written-main",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9r-027-9f-what-do-the-large-numbers-in-an-equation-show",
@@ -12683,17 +16306,34 @@ window.YEAR9_CONTENT = {
       "source": "9F Summary sheet p1 Reactions and equations",
       "sourceExcerpt": "The large numbers show the number of molecules.",
       "level": 2,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
-        "source-traceable"
+        "source-traceable",
+        "written-polish-v1.56",
+        "source-question-restored-v1.60"
       ],
       "sourceFidelity": "exact-source-answer",
       "learningObjective": "9F-changes",
       "learningObjectiveTitle": "Physical and chemical changes",
       "learningObjectiveDescription": "Physical changes, chemical reactions, equations, conservation of atoms and gas pressure.",
       "noteId": "9F-changes",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "identify",
+      "examMarks": 1,
+      "examDomain": "chemistry",
+      "examPool": "written-main",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Use the labels, diagram or question clue to name the correct item(s). Keep the answer concise.",
+      "examFormatKind": "label-or-feature",
+      "answerFormatSteps": [
+        "Look carefully at the label, diagram or clue.",
+        "Name the correct item(s), part(s) or feature(s).",
+        "Use letters/names clearly if the diagram uses labels."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9r-028-9f-what-do-the-letters-in-brackets-in-an-equation-show",
@@ -12706,17 +16346,34 @@ window.YEAR9_CONTENT = {
       "source": "9F Summary sheet p1 Reactions and equations",
       "sourceExcerpt": "The letters in brackets are state symbols (g = gas, l = liquid, s = solid, aq = dissolved in water).",
       "level": 2,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
-        "source-traceable"
+        "source-traceable",
+        "written-polish-v1.56",
+        "source-question-restored-v1.60"
       ],
       "sourceFidelity": "exact-source-answer",
       "learningObjective": "9F-changes",
       "learningObjectiveTitle": "Physical and chemical changes",
       "learningObjectiveDescription": "Physical changes, chemical reactions, equations, conservation of atoms and gas pressure.",
       "noteId": "9F-changes",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "identify",
+      "examMarks": 2,
+      "examDomain": "chemistry",
+      "examPool": "written-main",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Use the labels, diagram or question clue to name the correct item(s). Keep the answer concise.",
+      "examFormatKind": "label-or-feature",
+      "answerFormatSteps": [
+        "Look carefully at the label, diagram or clue.",
+        "Name the correct item(s), part(s) or feature(s).",
+        "Use letters/names clearly if the diagram uses labels."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9r-029-9f-what-does-an-atom-contain",
@@ -12729,7 +16386,7 @@ window.YEAR9_CONTENT = {
       "source": "9F Summary sheet p2 Atomic structure",
       "sourceExcerpt": "Atoms contain neutrons and protons (in a central nucleus) and electrons around the outside of the nucleus.",
       "level": 2,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
         "source-traceable"
@@ -12739,7 +16396,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Atomic structure and the periodic table",
       "learningObjectiveDescription": "Subatomic particles, atomic number, mass number, groups, periods and periodic-table trends.",
       "noteId": "9F-atomic-structure-periodic-table",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "state",
+      "examMarks": 1,
+      "examDomain": "chemistry",
+      "examPool": "written-recall",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9r-030-9f-what-is-the-atomic-number-or-proton-number",
@@ -12752,7 +16424,7 @@ window.YEAR9_CONTENT = {
       "source": "9F Summary sheet p2 Atomic structure",
       "sourceExcerpt": "The number of protons is the atomic number or proton number.",
       "level": 1,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
         "source-traceable"
@@ -12762,7 +16434,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Atomic structure and the periodic table",
       "learningObjectiveDescription": "Subatomic particles, atomic number, mass number, groups, periods and periodic-table trends.",
       "noteId": "9F-atomic-structure-periodic-table",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "state",
+      "examMarks": 1,
+      "examDomain": "chemistry",
+      "examPool": "written-recall",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9r-031-9f-how-are-elements-arranged-in-the-periodic-table",
@@ -12775,7 +16462,7 @@ window.YEAR9_CONTENT = {
       "source": "9F Summary sheet p2 Atomic structure",
       "sourceExcerpt": "Elements are arranged in order of atomic number in the periodic table.",
       "level": 2,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
         "source-traceable"
@@ -12785,7 +16472,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Atomic structure and the periodic table",
       "learningObjectiveDescription": "Subatomic particles, atomic number, mass number, groups, periods and periodic-table trends.",
       "noteId": "9F-atomic-structure-periodic-table",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "describe",
+      "examMarks": 2,
+      "examDomain": "chemistry",
+      "examPool": "written-main",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Say what happens, what changes, or what is shown. Use short linked points and include values or labels if given.",
+      "examFormatKind": "linked-description",
+      "answerFormatSteps": [
+        "Give one clear feature, step or change.",
+        "Add another linked feature, step or comparison.",
+        "Use values, labels or context from the question where useful."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9r-032-9f-what-is-the-mass-number-of-an-atom",
@@ -12798,7 +16500,7 @@ window.YEAR9_CONTENT = {
       "source": "9F Summary sheet p2 Atomic structure",
       "sourceExcerpt": "The number of neutrons and the number of protons in an atom is its mass number.",
       "level": 2,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
         "source-traceable"
@@ -12808,7 +16510,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Atomic structure and the periodic table",
       "learningObjectiveDescription": "Subatomic particles, atomic number, mass number, groups, periods and periodic-table trends.",
       "noteId": "9F-atomic-structure-periodic-table",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "state",
+      "examMarks": 1,
+      "examDomain": "chemistry",
+      "examPool": "written-recall",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9r-033-9f-what-are-groups-and-periods-in-the-periodic-table",
@@ -12821,7 +16538,7 @@ window.YEAR9_CONTENT = {
       "source": "9F Summary sheet p2 Atomic structure",
       "sourceExcerpt": "The vertical columns in the periodic table are groups and the rows are periods.",
       "level": 1,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
         "source-traceable"
@@ -12831,7 +16548,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Atomic structure and the periodic table",
       "learningObjectiveDescription": "Subatomic particles, atomic number, mass number, groups, periods and periodic-table trends.",
       "noteId": "9F-atomic-structure-periodic-table",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "state",
+      "examMarks": 1,
+      "examDomain": "chemistry",
+      "examPool": "written-recall",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9r-034-9f-what-do-metals-that-react-with-water-produce",
@@ -12844,11 +16576,13 @@ window.YEAR9_CONTENT = {
       "source": "9F Summary sheet p1 The reactivity series",
       "sourceExcerpt": "The metals that react with water produce a metal hydroxide and hydrogen.",
       "level": 2,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
         "source-traceable",
-        "r6-media-support"
+        "r6-media-support",
+        "written-polish-v1.56",
+        "source-question-restored-v1.60"
       ],
       "sourceFidelity": "exact-source-answer",
       "learningObjective": "9F-reactivity",
@@ -12859,12 +16593,27 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9F-metal-reaction-products-question-v153.webp",
-          "alt": "Question-safe reactive metal product map.",
+          "alt": "Unlabelled reactive metal product map.",
           "caption": "Use the diagram to support your answer.",
           "mediaTiming": "question",
           "presentation": "media-image-base"
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "state",
+      "examMarks": 2,
+      "examDomain": "chemistry",
+      "examPool": "written-main",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9r-035-9f-what-do-metals-that-react-with-dilute-acids-produce",
@@ -12877,10 +16626,12 @@ window.YEAR9_CONTENT = {
       "source": "9F Summary sheet p1 The reactivity series",
       "sourceExcerpt": "The metals that react with dilute acids produce a salt and hydrogen.",
       "level": 2,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
-        "source-traceable"
+        "source-traceable",
+        "written-polish-v1.56",
+        "source-question-restored-v1.60"
       ],
       "sourceFidelity": "exact-source-answer",
       "learningObjective": "9F-reactivity",
@@ -12891,13 +16642,28 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9F-acids-alkalis-ph-scale-blank-v3.webp",
-          "alt": "Question-safe pH scale with example substances and no explanatory notes.",
+          "alt": "Unlabelled pH scale with example substances and no explanatory notes.",
           "caption": "Use the pH scale to reason about acids, neutral substances and alkalis.",
           "mediaTiming": "question",
           "presentation": "media-image-base",
           "questionAssetV148": true
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "state",
+      "examMarks": 2,
+      "examDomain": "chemistry",
+      "examPool": "written-main",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9r-036-9f-what-is-an-oxidation-reaction-in-the-reactivity-series-section",
@@ -12910,7 +16676,7 @@ window.YEAR9_CONTENT = {
       "source": "9F Summary sheet p1 The reactivity series",
       "sourceExcerpt": "Most metals react with oxygen from the air to form metal oxides. This is an oxidation reaction.",
       "level": 2,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
         "source-traceable"
@@ -12920,7 +16686,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Reactivity and displacement",
       "learningObjectiveDescription": "Reactivity series, metal reactions, displacement and reaction patterns.",
       "noteId": "9F-reactivity",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "state",
+      "examMarks": 1,
+      "examDomain": "chemistry",
+      "examPool": "written-recall",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9r-037-9f-what-is-a-hydrocarbon",
@@ -12933,7 +16714,7 @@ window.YEAR9_CONTENT = {
       "source": "9F Summary sheet p3 Hydrocarbons",
       "sourceExcerpt": "These substances contain hydrogen and carbon only.",
       "level": 1,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
         "source-traceable"
@@ -12943,7 +16724,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Hydrocarbons, combustion, energy changes and rate",
       "learningObjectiveDescription": "Hydrocarbons, combustion, oxygen test, energy changes and reaction-rate factors.",
       "noteId": "9F-combustion-energy-rates",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "state",
+      "examMarks": 1,
+      "examDomain": "chemistry",
+      "examPool": "written-recall",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0",
+      "examRetiredFromWrittenExam": "v1.64.0",
+      "examRetiredReason": "Low-value recall survivor; retained combustion equation and reaction-rate prompts."
     },
     {
       "id": "y9r-038-9f-what-is-the-word-equation-for-complete-combustion-of-a-hydrocarbon",
@@ -12956,7 +16754,7 @@ window.YEAR9_CONTENT = {
       "source": "9F Summary sheet p3 Hydrocarbons",
       "sourceExcerpt": "hydrocarbon + oxygen → carbon dioxide + water",
       "level": 2,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "question-media-v1.45",
         "revision-pack-alignment",
@@ -12971,13 +16769,28 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9F-combustion-fire-triangle-blank.webp",
-          "alt": "Question-safe combustion image showing a flame and fire-triangle icons without explanatory labels.",
+          "alt": "Unlabelled combustion image showing a flame and fire-triangle icons without explanatory labels.",
           "caption": "",
           "mediaTiming": "question",
           "presentation": "media-image-base",
           "questionAssetV145": true
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "state",
+      "examMarks": 1,
+      "examDomain": "chemistry",
+      "examPool": "written-recall",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9r-039-9f-what-is-the-test-for-oxygen",
@@ -12990,7 +16803,7 @@ window.YEAR9_CONTENT = {
       "source": "9F Summary sheet p3 Hydrocarbons",
       "sourceExcerpt": "The test for oxygen is that it relights a glowing splint.",
       "level": 1,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
         "source-traceable"
@@ -13000,7 +16813,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Hydrocarbons, combustion, energy changes and rate",
       "learningObjectiveDescription": "Hydrocarbons, combustion, oxygen test, energy changes and reaction-rate factors.",
       "noteId": "9F-combustion-energy-rates",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "state",
+      "examMarks": 1,
+      "examDomain": "chemistry",
+      "examPool": "written-recall",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0",
+      "examRetiredFromWrittenExam": "v1.64.0",
+      "examRetiredReason": "Low-value recall survivor after pruning; retained broader combustion/rate/energy prompts."
     },
     {
       "id": "y9r-040-9f-why-is-an-input-of-energy-from-a-flame-or-spark-needed-to-start-combustion",
@@ -13013,7 +16843,7 @@ window.YEAR9_CONTENT = {
       "source": "9F Summary sheet p3 Hydrocarbons",
       "sourceExcerpt": "An input of energy from a flame or spark is needed to start the combustion reaction by breaking some bonds in the reactants.",
       "level": 3,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "quality-balance-v1.36",
         "question-media-v1.45",
@@ -13029,13 +16859,28 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9F-combustion-fire-triangle-blank.webp",
-          "alt": "Question-safe combustion image showing a flame and fire-triangle icons without explanatory labels.",
+          "alt": "Unlabelled combustion image showing a flame and fire-triangle icons without explanatory labels.",
           "caption": "",
           "mediaTiming": "question",
           "presentation": "media-image-base",
           "questionAssetV145": true
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "chemistry",
+      "examPool": "written-main",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9r-041-9f-what-increases-the-rate-of-reaction-according-to-the-revision-sheet",
@@ -13048,7 +16893,7 @@ window.YEAR9_CONTENT = {
       "source": "9F Summary sheet p3 Rates of reaction",
       "sourceExcerpt": "The rate is also often increased by increased temperature, increased concentration of a reactant and increased surface area of a reactant.",
       "level": 3,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "quality-balance-v1.36",
         "question-media-v1.45",
@@ -13064,13 +16909,28 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9F-collision-theory-blank.webp",
-          "alt": "Question-safe particle collision image comparing lower and higher particle activity without explanatory labels.",
+          "alt": "Unlabelled particle collision image comparing lower and higher particle activity without explanatory labels.",
           "caption": "",
           "mediaTiming": "question",
           "presentation": "media-image-base",
           "questionAssetV145": true
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "state",
+      "examMarks": 1,
+      "examDomain": "chemistry",
+      "examPool": "written-recall",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9r-042-9f-what-is-a-displacement-reaction",
@@ -13083,7 +16943,7 @@ window.YEAR9_CONTENT = {
       "source": "9F Summary sheet p3 Displacement reactions",
       "sourceExcerpt": "In a displacement reaction a more reactive metal takes the place of a less reactive metal in a compound.",
       "level": 1,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
         "source-traceable"
@@ -13093,7 +16953,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Metal extraction and reduction",
       "learningObjectiveDescription": "Ores, extraction by carbon or electrolysis, oxidation, reduction and redox.",
       "noteId": "9F-extraction",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "state",
+      "examMarks": 1,
+      "examDomain": "chemistry",
+      "examPool": "written-recall",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examRetiredFromWritten": "v1.62.0",
+      "examRetiredReason": "low_value_recall_overlap",
+      "examRetainedCoverageAnchor": "y9r-043-9f-where-do-most-metals-occur"
     },
     {
       "id": "y9r-043-9f-where-do-most-metals-occur",
@@ -13106,17 +16983,34 @@ window.YEAR9_CONTENT = {
       "source": "9F Summary sheet p3 Extracting metals",
       "sourceExcerpt": "Most metals occur as compounds called minerals, which are found in rocks called ores (in the Earth’s crust).",
       "level": 2,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
-        "source-traceable"
+        "source-traceable",
+        "written-polish-v1.56",
+        "source-question-restored-v1.60"
       ],
       "sourceFidelity": "exact-source-answer",
       "learningObjective": "9F-extraction",
       "learningObjectiveTitle": "Metal extraction and reduction",
       "learningObjectiveDescription": "Ores, extraction by carbon or electrolysis, oxidation, reduction and redox.",
       "noteId": "9F-extraction",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "state",
+      "examMarks": 2,
+      "examDomain": "chemistry",
+      "examPool": "written-main",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9r-044-9f-which-metals-can-be-extracted-from-their-ores-by-heating-with-carbon",
@@ -13129,7 +17023,7 @@ window.YEAR9_CONTENT = {
       "source": "9F Summary sheet p3 Extracting metals",
       "sourceExcerpt": "Metals from zinc downwards in the reactivity series can be extracted from their ores by heating with carbon.",
       "level": 3,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
         "source-traceable",
@@ -13144,13 +17038,28 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9F-metal-extraction-methods-blank-v3.webp",
-          "alt": "Question-safe comparison of metal extraction methods.",
+          "alt": "Unlabelled comparison of metal extraction methods.",
           "caption": "",
           "mediaTiming": "question",
           "presentation": "media-image-base",
           "questionAssetV147": true
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "identify",
+      "examMarks": 1,
+      "examDomain": "chemistry",
+      "examPool": "written-main",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Use the labels, diagram or question clue to name the correct item(s). Keep the answer concise.",
+      "examFormatKind": "label-or-feature",
+      "answerFormatSteps": [
+        "Look carefully at the label, diagram or clue.",
+        "Name the correct item(s), part(s) or feature(s).",
+        "Use letters/names clearly if the diagram uses labels."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9r-045-9f-which-metals-need-electrolysis-to-extract-them-from-their-ores",
@@ -13163,7 +17072,7 @@ window.YEAR9_CONTENT = {
       "source": "9F Summary sheet p3 Extracting metals",
       "sourceExcerpt": "Metals above zinc in the reactivity series need electrolysis to extract them from their ores.",
       "level": 3,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
         "source-traceable",
@@ -13178,13 +17087,28 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9F-metal-extraction-methods-blank-v3.webp",
-          "alt": "Question-safe comparison of metal extraction methods.",
+          "alt": "Unlabelled comparison of metal extraction methods.",
           "caption": "",
           "mediaTiming": "question",
           "presentation": "media-image-base",
           "questionAssetV147": true
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "chemistry",
+      "examPool": "written-main",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9r-046-9f-what-are-oxidation-reduction-and-redox",
@@ -13197,7 +17121,7 @@ window.YEAR9_CONTENT = {
       "source": "9F Summary sheet p3 Extracting metals",
       "sourceExcerpt": "Oxidation is the gain of oxygen. Reduction is the loss of oxygen. A redox reaction is when oxidation and reduction occur at the same time.",
       "level": 4,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
         "source-traceable",
@@ -13208,7 +17132,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Metal extraction and reduction",
       "learningObjectiveDescription": "Ores, extraction by carbon or electrolysis, oxidation, reduction and redox.",
       "noteId": "9F-extraction",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "state",
+      "examMarks": 1,
+      "examDomain": "chemistry",
+      "examPool": "written-recall",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examRetiredFromWritten": "v1.62.0",
+      "examRetiredReason": "low_value_recall_overlap",
+      "examRetainedCoverageAnchor": "y9r-043-9f-where-do-most-metals-occur"
     },
     {
       "id": "y9r-047-9i-what-can-forces-make-objects-do",
@@ -13221,17 +17162,34 @@ window.YEAR9_CONTENT = {
       "source": "9I Summary sheet p1 Forces and motion",
       "sourceExcerpt": "Forces can make objects speed up, slow down or change direction.",
       "level": 1,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
-        "source-traceable"
+        "source-traceable",
+        "written-polish-v1.56",
+        "source-question-restored-v1.60"
       ],
       "sourceFidelity": "exact-source-answer",
       "learningObjective": "9I-forces",
       "learningObjectiveTitle": "Forces, drag and terminal velocity",
       "learningObjectiveDescription": "Forces, balanced forces, top speed, drag and terminal velocity.",
       "noteId": "9I-forces",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "state",
+      "examMarks": 3,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9r-048-9i-what-is-true-about-the-forces-on-an-object-moving-at-a-constant-speed",
@@ -13244,7 +17202,7 @@ window.YEAR9_CONTENT = {
       "source": "9I Summary sheet p1 Forces and motion",
       "sourceExcerpt": "The forces on an object moving at a constant speed are balanced.",
       "level": 1,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
         "source-traceable"
@@ -13254,7 +17212,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Forces, drag and terminal velocity",
       "learningObjectiveDescription": "Forces, balanced forces, top speed, drag and terminal velocity.",
       "noteId": "9I-forces",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "state",
+      "examMarks": 1,
+      "examDomain": "physics",
+      "examPool": "written-recall",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examRetiredFromWritten": "v1.62.0",
+      "examRetiredReason": "low_value_recall_overlap",
+      "examRetainedCoverageAnchor": "y9r-047-9i-what-can-forces-make-objects-do"
     },
     {
       "id": "y9r-049-9i-what-happens-to-air-resistance-as-a-falling-object-gets-faster",
@@ -13267,7 +17242,7 @@ window.YEAR9_CONTENT = {
       "source": "9I Summary sheet p1 Forces and motion",
       "sourceExcerpt": "As it gets faster the air resistance increases.",
       "level": 1,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
         "source-traceable"
@@ -13277,7 +17252,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Forces, drag and terminal velocity",
       "learningObjectiveDescription": "Forces, balanced forces, top speed, drag and terminal velocity.",
       "noteId": "9I-forces",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "describe",
+      "examMarks": 2,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Say what happens, what changes, or what is shown. Use short linked points and include values or labels if given.",
+      "examFormatKind": "linked-description",
+      "answerFormatSteps": [
+        "Give one clear feature, step or change.",
+        "Add another linked feature, step or comparison.",
+        "Use values, labels or context from the question where useful."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9r-050-9i-what-has-happened-when-a-falling-object-reaches-terminal-velocity",
@@ -13290,18 +17280,35 @@ window.YEAR9_CONTENT = {
       "source": "9I Summary sheet p1 Forces and motion",
       "sourceExcerpt": "Eventually the air resistance increases so much that it balances the weight. When this happens the object cannot fall any faster. It has reached its terminal velocity.",
       "level": 3,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
         "source-traceable",
-        "quality-balance-v1.36"
+        "quality-balance-v1.36",
+        "written-polish-v1.56",
+        "source-question-restored-v1.60"
       ],
       "sourceFidelity": "exact-source-answer",
       "learningObjective": "9I-forces",
       "learningObjectiveTitle": "Forces, drag and terminal velocity",
       "learningObjectiveDescription": "Forces, balanced forces, top speed, drag and terminal velocity.",
       "noteId": "9I-forces",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 2,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9r-051-9i-how-do-you-convert-a-speed-in-m-s-to-km-h",
@@ -13314,7 +17321,7 @@ window.YEAR9_CONTENT = {
       "source": "9I Summary sheet p1 Speed",
       "sourceExcerpt": "You can convert a speed in m/s to km/h by dividing by 1000 then multiplying by 3600.",
       "level": 3,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
         "source-traceable",
@@ -13325,7 +17332,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Speed and distance-time graphs",
       "learningObjectiveDescription": "Speed, mean speed, unit conversion, relative speed and distance-time graphs.",
       "noteId": "9I-speed",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9r-052-9i-how-do-you-convert-a-speed-in-km-h-to-m-s",
@@ -13338,7 +17360,7 @@ window.YEAR9_CONTENT = {
       "source": "9I Summary sheet p1 Speed",
       "sourceExcerpt": "To convert a speed in km/h to m/s, multiply by 1000 then divide by 3600.",
       "level": 3,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
         "source-traceable",
@@ -13349,7 +17371,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Speed and distance-time graphs",
       "learningObjectiveDescription": "Speed, mean speed, unit conversion, relative speed and distance-time graphs.",
       "noteId": "9I-speed",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9r-053-9i-what-is-mean-speed",
@@ -13362,7 +17399,7 @@ window.YEAR9_CONTENT = {
       "source": "9I Summary sheet p1 Speed",
       "sourceExcerpt": "The mean (average) speed is the total distance travelled divided by the total time taken.",
       "level": 1,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
         "source-traceable"
@@ -13372,7 +17409,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Speed and distance-time graphs",
       "learningObjectiveDescription": "Speed, mean speed, unit conversion, relative speed and distance-time graphs.",
       "noteId": "9I-speed",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "state",
+      "examMarks": 1,
+      "examDomain": "physics",
+      "examPool": "written-recall",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9r-054-9i-what-is-the-relative-speed-of-a-car-travelling-at-50-km-h-compared-to-one-t",
@@ -13385,7 +17437,7 @@ window.YEAR9_CONTENT = {
       "source": "9I Summary sheet p1 Speed",
       "sourceExcerpt": "A car travelling at 50 km/h overtakes one travelling at 30 km/h. The relative speed of the faster car compared to the slower car is 20 km/h.",
       "level": 3,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
         "source-traceable",
@@ -13396,7 +17448,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Speed and distance-time graphs",
       "learningObjectiveDescription": "Speed, mean speed, unit conversion, relative speed and distance-time graphs.",
       "noteId": "9I-speed",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "calculate",
+      "examMarks": 2,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Write the formula or method, substitute values, then give the answer with a unit or required rounding.",
+      "examFormatKind": "calculation-method",
+      "answerFormatSteps": [
+        "Write the equation or method.",
+        "Substitute the values and show working.",
+        "Give the final answer with the correct unit or rounding."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9r-055-9i-what-does-a-speed-time-graph-show",
@@ -13409,7 +17476,7 @@ window.YEAR9_CONTENT = {
       "source": "9I Summary sheet p1 Speed-time graphs",
       "sourceExcerpt": "A speed–time graph shows how fast something is travelling at different times during a journey.",
       "level": 1,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "question-media-v1.45",
         "revision-pack-alignment",
@@ -13430,7 +17497,22 @@ window.YEAR9_CONTENT = {
           "presentation": "media-diagram-base",
           "questionAssetV145": true
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "graph",
+      "examMarks": 3,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Read the axes and scale first. Use values where useful, then describe or draw the trend/relationship.",
+      "examFormatKind": "graph-data",
+      "answerFormatSteps": [
+        "Check the x-axis, y-axis and scale.",
+        "Use values, gradients or line shape where useful.",
+        "Describe the trend or draw/plot the requested relationship."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9r-056-9i-what-do-horizontal-lines-show-on-a-speed-time-graph",
@@ -13443,7 +17525,7 @@ window.YEAR9_CONTENT = {
       "source": "9I Summary sheet p1 Speed-time graphs",
       "sourceExcerpt": "Horizontal lines show a constant speed.",
       "level": 1,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "question-media-v1.45",
         "revision-pack-alignment",
@@ -13464,7 +17546,22 @@ window.YEAR9_CONTENT = {
           "presentation": "media-diagram-base",
           "questionAssetV145": true
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "graph",
+      "examMarks": 3,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Read the axes and scale first. Use values where useful, then describe or draw the trend/relationship.",
+      "examFormatKind": "graph-data",
+      "answerFormatSteps": [
+        "Check the x-axis, y-axis and scale.",
+        "Use values, gradients or line shape where useful.",
+        "Describe the trend or draw/plot the requested relationship."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9r-057-9i-what-do-sloping-lines-show-on-a-speed-time-graph",
@@ -13477,7 +17574,7 @@ window.YEAR9_CONTENT = {
       "source": "9I Summary sheet p1 Speed-time graphs",
       "sourceExcerpt": "Sloping lines show changes in speed (acceleration or deceleration).",
       "level": 3,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "quality-balance-v1.36",
         "question-media-v1.45",
@@ -13499,7 +17596,22 @@ window.YEAR9_CONTENT = {
           "presentation": "media-diagram-base",
           "questionAssetV145": true
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "graph",
+      "examMarks": 3,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Read the axes and scale first. Use values where useful, then describe or draw the trend/relationship.",
+      "examFormatKind": "graph-data",
+      "answerFormatSteps": [
+        "Check the x-axis, y-axis and scale.",
+        "Use values, gradients or line shape where useful.",
+        "Describe the trend or draw/plot the requested relationship."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9r-058-9i-on-a-distance-time-graph-what-does-the-gradient-of-a-line-give",
@@ -13512,7 +17624,7 @@ window.YEAR9_CONTENT = {
       "source": "9I Summary sheet p2 Gradients",
       "sourceExcerpt": "On a distance–time graph, the gradient of a line gives the speed that the object is moving.",
       "level": 2,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "question-media-v1.45",
         "revision-pack-alignment",
@@ -13533,7 +17645,22 @@ window.YEAR9_CONTENT = {
           "presentation": "media-diagram-base",
           "questionAssetV145": true
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "graph",
+      "examMarks": 3,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Read the axes and scale first. Use values where useful, then describe or draw the trend/relationship.",
+      "examFormatKind": "graph-data",
+      "answerFormatSteps": [
+        "Check the x-axis, y-axis and scale.",
+        "Use values, gradients or line shape where useful.",
+        "Describe the trend or draw/plot the requested relationship."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9r-059-9i-what-is-a-pivot-also-known-as",
@@ -13546,7 +17673,7 @@ window.YEAR9_CONTENT = {
       "source": "9I Summary sheet p2 Levers and moments",
       "sourceExcerpt": "A pivot is also known as a fulcrum.",
       "level": 1,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
         "source-traceable"
@@ -13556,7 +17683,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Levers, pivots and moments",
       "learningObjectiveDescription": "Levers, pivots, moments, equilibrium and simple machines.",
       "noteId": "9I-moments",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "state",
+      "examMarks": 1,
+      "examDomain": "physics",
+      "examPool": "written-recall",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examRetiredFromWritten": "v1.62.0",
+      "examRetiredReason": "low_value_recall_overlap",
+      "examRetainedCoverageAnchor": "y9r-062-9i-what-is-true-when-an-object-is-balanced"
     },
     {
       "id": "y9r-060-9i-what-is-a-turning-force-called",
@@ -13569,7 +17713,7 @@ window.YEAR9_CONTENT = {
       "source": "9I Summary sheet p2 Levers and moments",
       "sourceExcerpt": "A turning force is called a moment.",
       "level": 1,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
         "source-traceable"
@@ -13579,7 +17723,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Levers, pivots and moments",
       "learningObjectiveDescription": "Levers, pivots, moments, equilibrium and simple machines.",
       "noteId": "9I-moments",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "state",
+      "examMarks": 1,
+      "examDomain": "physics",
+      "examPool": "written-recall",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examRetiredFromWritten": "v1.62.0",
+      "examRetiredReason": "low_value_recall_overlap",
+      "examRetainedCoverageAnchor": "y9r-062-9i-what-is-true-when-an-object-is-balanced"
     },
     {
       "id": "y9r-061-9i-what-is-the-formula-for-moment",
@@ -13592,7 +17753,7 @@ window.YEAR9_CONTENT = {
       "source": "9I Summary sheet p2 Levers and moments",
       "sourceExcerpt": "moment (in N m) = force (in N) × perpendicular distance from the pivot (m).",
       "level": 3,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
         "source-traceable",
@@ -13603,7 +17764,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Levers, pivots and moments",
       "learningObjectiveDescription": "Levers, pivots, moments, equilibrium and simple machines.",
       "noteId": "9I-moments",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "state",
+      "examMarks": 1,
+      "examDomain": "physics",
+      "examPool": "written-recall",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examRetiredFromWritten": "v1.62.0",
+      "examRetiredReason": "low_value_recall_overlap",
+      "examRetainedCoverageAnchor": "y9r-062-9i-what-is-true-when-an-object-is-balanced"
     },
     {
       "id": "y9r-062-9i-what-is-true-when-an-object-is-balanced",
@@ -13616,7 +17794,7 @@ window.YEAR9_CONTENT = {
       "source": "9I Summary sheet p3 Levers and moments",
       "sourceExcerpt": "When an object is balanced, the anticlockwise moment is equal to the clockwise moment.",
       "level": 3,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
         "source-traceable",
@@ -13627,7 +17805,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Levers, pivots and moments",
       "learningObjectiveDescription": "Levers, pivots, moments, equilibrium and simple machines.",
       "noteId": "9I-moments",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "state",
+      "examMarks": 1,
+      "examDomain": "physics",
+      "examPool": "written-recall",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9r-063-9i-what-is-work-done",
@@ -13640,7 +17833,7 @@ window.YEAR9_CONTENT = {
       "source": "9I Summary sheet p3 Simple machines",
       "sourceExcerpt": "Work is done when a force moves through a distance.",
       "level": 1,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
         "source-traceable"
@@ -13650,7 +17843,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Energy, work and simple machines",
       "learningObjectiveDescription": "Work done, energy transfer, gravitational potential energy and conservation of energy.",
       "noteId": "9I-energy-work",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "state",
+      "examMarks": 1,
+      "examDomain": "physics",
+      "examPool": "written-recall",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examRetiredFromWritten": "v1.62.0",
+      "examRetiredReason": "low_value_recall_overlap",
+      "examRetainedCoverageAnchor": "y9r-064-9i-what-is-the-formula-for-work-done"
     },
     {
       "id": "y9r-064-9i-what-is-the-formula-for-work-done",
@@ -13663,7 +17873,7 @@ window.YEAR9_CONTENT = {
       "source": "9I Summary sheet p3 Simple machines",
       "sourceExcerpt": "work = force × distance moved in the direction of the force.",
       "level": 3,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
         "source-traceable",
@@ -13674,7 +17884,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Energy, work and simple machines",
       "learningObjectiveDescription": "Work done, energy transfer, gravitational potential energy and conservation of energy.",
       "noteId": "9I-energy-work",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "state",
+      "examMarks": 1,
+      "examDomain": "physics",
+      "examPool": "written-recall",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9r-065-9j-what-is-a-force-field",
@@ -13687,7 +17912,7 @@ window.YEAR9_CONTENT = {
       "source": "9J Summary sheet p1 Force fields",
       "sourceExcerpt": "A force field is a space where a non-contact force has an effect.",
       "level": 1,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
         "source-traceable",
@@ -13702,12 +17927,27 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9J-force-field-comparison-question-v153.webp",
-          "alt": "Question-safe force-field comparison diagram.",
+          "alt": "Unlabelled force-field comparison diagram.",
           "caption": "Use the diagram to support your answer.",
           "mediaTiming": "question",
           "presentation": "media-image-base"
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "state",
+      "examMarks": 1,
+      "examDomain": "physics",
+      "examPool": "written-recall",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9r-066-9j-what-is-the-earths-gravitational-field-strength-according-to-the-revision-s",
@@ -13720,7 +17960,7 @@ window.YEAR9_CONTENT = {
       "source": "9J Summary sheet p1 Gravitational fields",
       "sourceExcerpt": "We say the Earth’s gravitational field strength (g) is 10 N/kg.",
       "level": 1,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
         "source-traceable"
@@ -13730,7 +17970,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Force fields, gravity and magnetism",
       "learningObjectiveDescription": "Force fields, gravitational fields, weight, electric fields and magnetism.",
       "noteId": "9J-fields",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "state",
+      "examMarks": 1,
+      "examDomain": "physics",
+      "examPool": "written-recall",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examRetiredFromWritten": "v1.62.0",
+      "examRetiredReason": "low_value_recall_overlap",
+      "examRetainedCoverageAnchor": "y9r-065-9j-what-is-a-force-field"
     },
     {
       "id": "y9r-067-9j-what-formula-is-used-to-calculate-weight",
@@ -13743,7 +18000,7 @@ window.YEAR9_CONTENT = {
       "source": "9J Summary sheet p1 Gravitational fields",
       "sourceExcerpt": "weight (N) = mass (kg) × g (N/kg)",
       "level": 3,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
         "source-traceable",
@@ -13754,7 +18011,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Force fields, gravity and magnetism",
       "learningObjectiveDescription": "Force fields, gravitational fields, weight, electric fields and magnetism.",
       "noteId": "9J-fields",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "calculate",
+      "examMarks": 2,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Write the formula or method, substitute values, then give the answer with a unit or required rounding.",
+      "examFormatKind": "calculation-method",
+      "answerFormatSteps": [
+        "Write the equation or method.",
+        "Substitute the values and show working.",
+        "Give the final answer with the correct unit or rounding."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0",
+      "examRetiredFromWrittenExam": "v1.64.0",
+      "examRetiredReason": "Formula-only recall item; retained multiple actual weight calculation prompts."
     },
     {
       "id": "y9r-068-9j-in-an-electric-field-diagram-what-do-the-arrows-show",
@@ -13767,11 +18041,13 @@ window.YEAR9_CONTENT = {
       "source": "9J Summary sheet p1 Static electricity",
       "sourceExcerpt": "The arrows on the diagram show the direction a positive charge would move.",
       "level": 2,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
         "source-traceable",
-        "r6-media-support"
+        "r6-media-support",
+        "written-polish-v1.56",
+        "source-question-restored-v1.60"
       ],
       "sourceFidelity": "exact-source-answer",
       "learningObjective": "9J-static",
@@ -13782,12 +18058,27 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9J-force-field-comparison-question-v153.webp",
-          "alt": "Question-safe force-field comparison diagram.",
+          "alt": "Unlabelled force-field comparison diagram.",
           "caption": "Use the diagram to support your answer.",
           "mediaTiming": "question",
           "presentation": "media-image-base"
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "identify",
+      "examMarks": 1,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Use the labels, diagram or question clue to name the correct item(s). Keep the answer concise.",
+      "examFormatKind": "label-or-feature",
+      "answerFormatSteps": [
+        "Look carefully at the label, diagram or clue.",
+        "Name the correct item(s), part(s) or feature(s).",
+        "Use letters/names clearly if the diagram uses labels."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9r-069-9j-what-is-current",
@@ -13800,7 +18091,7 @@ window.YEAR9_CONTENT = {
       "source": "9J Summary sheet p1 Electric circuits",
       "sourceExcerpt": "Current is a flow of electrons.",
       "level": 1,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
         "source-traceable"
@@ -13810,7 +18101,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Current, voltage and circuits",
       "learningObjectiveDescription": "Current, voltage, ammeters, voltmeters, series and parallel circuits.",
       "noteId": "9J-circuits",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "state",
+      "examMarks": 1,
+      "examDomain": "physics",
+      "examPool": "written-recall",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9r-070-9j-how-do-we-measure-current",
@@ -13823,7 +18129,7 @@ window.YEAR9_CONTENT = {
       "source": "9J Summary sheet p1 Electric circuits",
       "sourceExcerpt": "We measure current using an ammeter connected in series.",
       "level": 1,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
         "source-traceable"
@@ -13833,7 +18139,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Current, voltage and circuits",
       "learningObjectiveDescription": "Current, voltage, ammeters, voltmeters, series and parallel circuits.",
       "noteId": "9J-circuits",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9r-071-9j-how-do-we-measure-voltage",
@@ -13846,7 +18167,7 @@ window.YEAR9_CONTENT = {
       "source": "9J Summary sheet p1 Electric circuits",
       "sourceExcerpt": "We measure the voltage using a voltmeter connected in parallel across a cell or component.",
       "level": 2,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
         "source-traceable"
@@ -13856,7 +18177,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Current, voltage and circuits",
       "learningObjectiveDescription": "Current, voltage, ammeters, voltmeters, series and parallel circuits.",
       "noteId": "9J-circuits",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examRetiredFromWritten": "v1.62.0",
+      "examRetiredReason": "micro_prompt_overlap",
+      "examRetainedCoverageAnchor": "y9r-070-9j-how-do-we-measure-current"
     },
     {
       "id": "y9r-072-9j-what-is-resistance",
@@ -13869,7 +18207,7 @@ window.YEAR9_CONTENT = {
       "source": "9J Summary sheet p2 Resistance",
       "sourceExcerpt": "The resistance of a component is a way of saying how easy or difficult it is for an electric current to flow through it.",
       "level": 1,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
         "source-traceable"
@@ -13879,7 +18217,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Resistance and Ohm’s law",
       "learningObjectiveDescription": "Resistance, current-voltage relationships and resistance calculations.",
       "noteId": "9J-resistance",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "state",
+      "examMarks": 1,
+      "examDomain": "physics",
+      "examPool": "written-recall",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examRetiredFromWritten": "v1.62.0",
+      "examRetiredReason": "low_value_recall_overlap",
+      "examRetainedCoverageAnchor": "y9r-078-9j-what-is-the-formula-for-calculating-resistance-from-voltage-and-current"
     },
     {
       "id": "y9r-073-9j-if-resistance-stays-the-same-what-happens-when-voltage-is-higher",
@@ -13892,18 +18247,35 @@ window.YEAR9_CONTENT = {
       "source": "9J Summary sheet p2 Resistance",
       "sourceExcerpt": "the higher the voltage, the higher the current (if the resistance stays the same)",
       "level": 3,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
         "source-traceable",
-        "quality-balance-v1.36"
+        "quality-balance-v1.36",
+        "written-polish-v1.56",
+        "source-question-restored-v1.60"
       ],
       "sourceFidelity": "exact-source-answer",
       "learningObjective": "9J-resistance",
       "learningObjectiveTitle": "Resistance and Ohm’s law",
       "learningObjectiveDescription": "Resistance, current-voltage relationships and resistance calculations.",
       "noteId": "9J-resistance",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 2,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9r-074-9j-if-voltage-stays-the-same-what-happens-when-resistance-is-higher",
@@ -13916,18 +18288,35 @@ window.YEAR9_CONTENT = {
       "source": "9J Summary sheet p2 Resistance",
       "sourceExcerpt": "the higher the resistance, the lower the current (if the voltage stays the same).",
       "level": 3,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
         "source-traceable",
-        "quality-balance-v1.36"
+        "quality-balance-v1.36",
+        "written-polish-v1.56",
+        "source-question-restored-v1.60"
       ],
       "sourceFidelity": "exact-source-answer",
       "learningObjective": "9J-resistance",
       "learningObjectiveTitle": "Resistance and Ohm’s law",
       "learningObjectiveDescription": "Resistance, current-voltage relationships and resistance calculations.",
       "noteId": "9J-resistance",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 2,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9r-075-9j-what-three-things-does-the-resistance-of-a-wire-depend-on",
@@ -13940,18 +18329,35 @@ window.YEAR9_CONTENT = {
       "source": "9J Summary sheet p2 Resistance",
       "sourceExcerpt": "The resistance of a wire depends on: the material from which it is made; its length; its thickness.",
       "level": 3,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
         "source-traceable",
-        "quality-balance-v1.36"
+        "quality-balance-v1.36",
+        "written-polish-v1.56",
+        "source-question-restored-v1.60"
       ],
       "sourceFidelity": "exact-source-answer",
       "learningObjective": "9J-wire-resistance-investigation",
       "learningObjectiveTitle": "Wire resistance investigation",
       "learningObjectiveDescription": "How wire material, length and thickness affect resistance.",
       "noteId": "9J-wire-resistance-investigation",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "state",
+      "examMarks": 3,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9r-076-9j-how-does-wire-length-affect-resistance",
@@ -13964,7 +18370,7 @@ window.YEAR9_CONTENT = {
       "source": "9J Summary sheet p2 Resistance",
       "sourceExcerpt": "its length (shorter wires have lower resistances)",
       "level": 3,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
         "source-traceable",
@@ -13975,7 +18381,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Wire resistance investigation",
       "learningObjectiveDescription": "How wire material, length and thickness affect resistance.",
       "noteId": "9J-wire-resistance-investigation",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9r-077-9j-how-does-wire-thickness-affect-resistance",
@@ -13988,7 +18409,7 @@ window.YEAR9_CONTENT = {
       "source": "9J Summary sheet p2 Resistance",
       "sourceExcerpt": "its thickness (thicker wires have lower resistances).",
       "level": 3,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
         "source-traceable",
@@ -13999,7 +18420,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Wire resistance investigation",
       "learningObjectiveDescription": "How wire material, length and thickness affect resistance.",
       "noteId": "9J-wire-resistance-investigation",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9r-078-9j-what-is-the-formula-for-calculating-resistance-from-voltage-and-current",
@@ -14012,7 +18448,7 @@ window.YEAR9_CONTENT = {
       "source": "9J Summary sheet p2 Calculating resistance",
       "sourceExcerpt": "resistance = voltage / current",
       "level": 3,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
         "source-traceable",
@@ -14023,7 +18459,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Resistance and Ohm’s law",
       "learningObjectiveDescription": "Resistance, current-voltage relationships and resistance calculations.",
       "noteId": "9J-resistance",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "state",
+      "examMarks": 1,
+      "examDomain": "physics",
+      "examPool": "written-recall",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9r-079-9j-what-is-an-electromagnet",
@@ -14036,7 +18487,7 @@ window.YEAR9_CONTENT = {
       "source": "9J Summary sheet p2 Electromagnets",
       "sourceExcerpt": "An electromagnet is a coil of wire with an electric current flowing through it.",
       "level": 1,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
         "source-traceable"
@@ -14050,13 +18501,30 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9J-electromagnet-strength-variables-blank-v3.webp",
-          "alt": "Question-safe electromagnet image showing comparison setups without explanatory notes.",
+          "alt": "Unlabelled electromagnet image showing comparison setups without explanatory notes.",
           "caption": "Use the setups to identify changes that affect electromagnet strength.",
           "mediaTiming": "question",
           "presentation": "media-image-base",
           "questionAssetV148": true
         }
-      ]
+      ],
+      "examEligible": false,
+      "examCommand": "state",
+      "examMarks": 1,
+      "examDomain": "physics",
+      "examPool": "written-recall",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examRetiredFromWritten": "v1.62.0",
+      "examRetiredReason": "low_value_recall_overlap",
+      "examRetainedCoverageAnchor": "y9r-080-9j-when-is-an-electromagnet-magnetic"
     },
     {
       "id": "y9r-080-9j-when-is-an-electromagnet-magnetic",
@@ -14069,10 +18537,12 @@ window.YEAR9_CONTENT = {
       "source": "9J Summary sheet p2 Electromagnets",
       "sourceExcerpt": "It is only magnetic while the current is flowing.",
       "level": 1,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
-        "source-traceable"
+        "source-traceable",
+        "written-polish-v1.56",
+        "source-question-restored-v1.60"
       ],
       "sourceFidelity": "exact-source-answer",
       "learningObjective": "9J-electromagnets",
@@ -14083,13 +18553,28 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9J-electromagnet-strength-variables-blank-v3.webp",
-          "alt": "Question-safe electromagnet image showing comparison setups without explanatory notes.",
+          "alt": "Unlabelled electromagnet image showing comparison setups without explanatory notes.",
           "caption": "Use the setups to identify changes that affect electromagnet strength.",
           "mediaTiming": "question",
           "presentation": "media-image-base",
           "questionAssetV148": true
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "state",
+      "examMarks": 1,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9r-081-9j-give-three-ways-to-make-an-electromagnet-stronger",
@@ -14102,7 +18587,7 @@ window.YEAR9_CONTENT = {
       "source": "9J Summary sheet p2 Electromagnets",
       "sourceExcerpt": "You can make an electromagnet stronger by: increasing the number of coils of wire; increasing the size of the current; using an iron core.",
       "level": 3,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
         "source-traceable",
@@ -14117,13 +18602,28 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9J-electromagnet-strength-variables-blank-v3.webp",
-          "alt": "Question-safe electromagnet image showing comparison setups without explanatory notes.",
+          "alt": "Unlabelled electromagnet image showing comparison setups without explanatory notes.",
           "caption": "Use the setups to identify changes that affect electromagnet strength.",
           "mediaTiming": "question",
           "presentation": "media-image-base",
           "questionAssetV148": true
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "state",
+      "examMarks": 1,
+      "examDomain": "physics",
+      "examPool": "written-recall",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9r-082-9j-what-is-the-motor-effect",
@@ -14136,7 +18636,7 @@ window.YEAR9_CONTENT = {
       "source": "9J Summary sheet p3 Motors",
       "sourceExcerpt": "If a wire carrying a current crosses a magnetic field, the wire will experience a force. This is the motor effect.",
       "level": 2,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
         "source-traceable"
@@ -14150,13 +18650,30 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9J-motor-effect-simple-motor-blank-v3.webp",
-          "alt": "Question-safe motor effect and simple motor diagram without explanatory notes.",
+          "alt": "Unlabelled motor effect and simple motor diagram without explanatory notes.",
           "caption": "Use current, field and force arrows to reason about the motor effect.",
           "mediaTiming": "question",
           "presentation": "media-image-base",
           "questionAssetV148": true
         }
-      ]
+      ],
+      "examEligible": false,
+      "examCommand": "state",
+      "examMarks": 1,
+      "examDomain": "physics",
+      "examPool": "written-recall",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examRetiredFromWritten": "v1.62.0",
+      "examRetiredReason": "low_value_recall_overlap",
+      "examRetainedCoverageAnchor": "y9r-080-9j-when-is-an-electromagnet-magnetic"
     },
     {
       "id": "y9r-083-9j-what-does-an-electric-motor-consist-of",
@@ -14169,7 +18686,7 @@ window.YEAR9_CONTENT = {
       "source": "9J Summary sheet p3 Motors",
       "sourceExcerpt": "An electric motor consists of a coil of wire in a magnetic field.",
       "level": 1,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
         "source-traceable"
@@ -14183,13 +18700,30 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9J-motor-effect-simple-motor-blank-v3.webp",
-          "alt": "Question-safe motor effect and simple motor diagram without explanatory notes.",
+          "alt": "Unlabelled motor effect and simple motor diagram without explanatory notes.",
           "caption": "Use current, field and force arrows to reason about the motor effect.",
           "mediaTiming": "question",
           "presentation": "media-image-base",
           "questionAssetV148": true
         }
-      ]
+      ],
+      "examEligible": false,
+      "examCommand": "state",
+      "examMarks": 1,
+      "examDomain": "physics",
+      "examPool": "written-recall",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examRetiredFromWritten": "v1.62.0",
+      "examRetiredReason": "low_value_recall_overlap",
+      "examRetainedCoverageAnchor": "y9r-080-9j-when-is-an-electromagnet-magnetic"
     },
     {
       "id": "y9r-084-9j-what-makes-the-coil-in-an-electric-motor-turn",
@@ -14202,11 +18736,13 @@ window.YEAR9_CONTENT = {
       "source": "9J Summary sheet p3 Motors",
       "sourceExcerpt": "When there is a current in the coil, there is a force on each side of the coil that makes it turn.",
       "level": 3,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
         "source-traceable",
-        "quality-balance-v1.36"
+        "quality-balance-v1.36",
+        "written-polish-v1.56",
+        "source-question-restored-v1.60"
       ],
       "sourceFidelity": "exact-source-answer",
       "learningObjective": "9J-electromagnets",
@@ -14217,13 +18753,28 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9J-motor-effect-simple-motor-blank-v3.webp",
-          "alt": "Question-safe motor effect and simple motor diagram without explanatory notes.",
+          "alt": "Unlabelled motor effect and simple motor diagram without explanatory notes.",
           "caption": "Use current, field and force arrows to reason about the motor effect.",
           "mediaTiming": "question",
           "presentation": "media-image-base",
           "questionAssetV148": true
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 2,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9r-085-9j-how-can-the-speed-of-the-motor-or-the-force-it-provides-be-increased",
@@ -14236,7 +18787,7 @@ window.YEAR9_CONTENT = {
       "source": "9J Summary sheet p3 Motors",
       "sourceExcerpt": "The speed of the motor (or the force it provides) can be increased by: increasing the size of the current; increasing the strength of the magnetic field; increasing the number of turns of wire on the coil.",
       "level": 3,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "revision-pack-alignment",
         "source-traceable",
@@ -14251,13 +18802,28 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9J-motor-effect-simple-motor-blank-v3.webp",
-          "alt": "Question-safe motor effect and simple motor diagram without explanatory notes.",
+          "alt": "Unlabelled motor effect and simple motor diagram without explanatory notes.",
           "caption": "Use current, field and force arrows to reason about the motor effect.",
           "mediaTiming": "question",
           "presentation": "media-image-base",
           "questionAssetV148": true
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9p-001-9a-what-is-an-abiotic-factor",
@@ -14270,7 +18836,7 @@ window.YEAR9_CONTENT = {
       "source": "9A Word sheet 9Aa Environmental variation",
       "sourceExcerpt": "Something that is abiotic has nothing to do with living organisms (e.g. temperature, the wind).",
       "level": 1,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "revision-pack-polish",
         "source-traceable"
@@ -14280,7 +18846,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Variation and classification",
       "learningObjectiveDescription": "Types of variation, inherited and environmental causes, and classification challenges.",
       "noteId": "9A-variation",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "state",
+      "examMarks": 1,
+      "examDomain": "biology",
+      "examPool": "written-recall",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examRetiredFromWritten": "v1.62.0",
+      "examRetiredReason": "low_value_recall_overlap",
+      "examRetainedCoverageAnchor": "y9p-005-9a-what-forms-an-ecosystem"
     },
     {
       "id": "y9p-002-9a-what-is-a-biotic-factor",
@@ -14293,7 +18876,7 @@ window.YEAR9_CONTENT = {
       "source": "9A Word sheet 9Aa Environmental variation",
       "sourceExcerpt": "An activity of an organism that affects another organism (such as competition or predation).",
       "level": 1,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "revision-pack-polish",
         "source-traceable"
@@ -14303,7 +18886,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Variation and classification",
       "learningObjectiveDescription": "Types of variation, inherited and environmental causes, and classification challenges.",
       "noteId": "9A-variation",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "state",
+      "examMarks": 1,
+      "examDomain": "biology",
+      "examPool": "written-recall",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examRetiredFromWritten": "v1.62.0",
+      "examRetiredReason": "low_value_recall_overlap",
+      "examRetainedCoverageAnchor": "y9p-005-9a-what-forms-an-ecosystem"
     },
     {
       "id": "y9p-003-9a-give-three-examples-of-living-or-biotic-factors-from-the-revision-sheet",
@@ -14316,7 +18916,7 @@ window.YEAR9_CONTENT = {
       "source": "9A Summary sheet p1 Environmental variation",
       "sourceExcerpt": "There are living or biotic factors (the activities of other organisms, such as competition, predation and disease).",
       "level": 2,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "revision-pack-polish",
         "source-traceable"
@@ -14326,7 +18926,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Variation and classification",
       "learningObjectiveDescription": "Types of variation, inherited and environmental causes, and classification challenges.",
       "noteId": "9A-variation",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "state",
+      "examMarks": 1,
+      "examDomain": "biology",
+      "examPool": "written-recall",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9p-004-9a-what-are-abiotic-factors",
@@ -14339,7 +18954,7 @@ window.YEAR9_CONTENT = {
       "source": "9A Summary sheet p1 Environmental variation",
       "sourceExcerpt": "There are also abiotic factors, which are non-living physical factors such as the amount of sunlight.",
       "level": 1,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "revision-pack-polish",
         "source-traceable"
@@ -14349,7 +18964,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Variation and classification",
       "learningObjectiveDescription": "Types of variation, inherited and environmental causes, and classification challenges.",
       "noteId": "9A-variation",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "state",
+      "examMarks": 1,
+      "examDomain": "biology",
+      "examPool": "written-recall",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examRetiredFromWritten": "v1.62.0",
+      "examRetiredReason": "low_value_recall_overlap",
+      "examRetainedCoverageAnchor": "y9p-005-9a-what-forms-an-ecosystem"
     },
     {
       "id": "y9p-005-9a-what-forms-an-ecosystem",
@@ -14362,17 +18994,34 @@ window.YEAR9_CONTENT = {
       "source": "9A Summary sheet p1 Environmental variation",
       "sourceExcerpt": "All the organisms and physical environmental factors in an area form an ecosystem.",
       "level": 2,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "revision-pack-polish",
-        "source-traceable"
+        "source-traceable",
+        "written-polish-v1.56",
+        "source-question-restored-v1.60"
       ],
       "sourceFidelity": "exact-source-answer",
       "learningObjective": "9A-variation",
       "learningObjectiveTitle": "Variation and classification",
       "learningObjectiveDescription": "Types of variation, inherited and environmental causes, and classification challenges.",
       "noteId": "9A-variation",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "state",
+      "examMarks": 2,
+      "examDomain": "biology",
+      "examPool": "written-main",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9p-006-9a-how-can-probabilities-be-shown-in-inheritance-questions",
@@ -14385,7 +19034,7 @@ window.YEAR9_CONTENT = {
       "source": "9A Summary sheet p1 Chromosomes, genes and DNA",
       "sourceExcerpt": "Probabilities are shown as percentages, decimals or fractions.",
       "level": 1,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "revision-pack-polish",
         "source-traceable"
@@ -14395,7 +19044,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Inheritance, DNA and genes",
       "learningObjectiveDescription": "DNA, genes, chromosomes, gametes, fertilisation and probability.",
       "noteId": "9A-inheritance",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "biology",
+      "examPool": "written-main",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9p-007-9a-what-does-probability-mean",
@@ -14408,7 +19072,7 @@ window.YEAR9_CONTENT = {
       "source": "9A Word sheet 9Ab Probability",
       "sourceExcerpt": "probability — The likelihood of something happening.",
       "level": 1,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "revision-pack-polish",
         "source-traceable"
@@ -14418,7 +19082,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Inheritance, DNA and genes",
       "learningObjectiveDescription": "DNA, genes, chromosomes, gametes, fertilisation and probability.",
       "noteId": "9A-inheritance",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "state",
+      "examMarks": 1,
+      "examDomain": "biology",
+      "examPool": "written-recall",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examRetiredFromWritten": "v1.62.0",
+      "examRetiredReason": "low_value_recall_overlap",
+      "examRetainedCoverageAnchor": "y9-237-9a-state-three-ways-we-can-preserve-biodiversity"
     },
     {
       "id": "y9p-008-9a-write-25-as-a-decimal-and-as-a-fraction",
@@ -14431,7 +19112,7 @@ window.YEAR9_CONTENT = {
       "source": "9A Summary sheet p1 Chromosomes, genes and DNA",
       "sourceExcerpt": "Probabilities are shown as percentages, decimals or fractions.",
       "level": 2,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "revision-pack-polish",
         "source-traceable"
@@ -14441,7 +19122,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Inheritance, DNA and genes",
       "learningObjectiveDescription": "DNA, genes, chromosomes, gametes, fertilisation and probability.",
       "noteId": "9A-inheritance",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "state",
+      "examMarks": 1,
+      "examDomain": "biology",
+      "examPool": "written-recall",
+      "examSourceQuality": "source-traceable-application",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examRetiredFromWritten": "v1.62.0",
+      "examRetiredReason": "low_value_recall_overlap",
+      "examRetainedCoverageAnchor": "y9-237-9a-state-three-ways-we-can-preserve-biodiversity"
     },
     {
       "id": "y9p-009-9f-what-is-neutralisation",
@@ -14454,7 +19152,7 @@ window.YEAR9_CONTENT = {
       "source": "9F Word sheet 9Fc Energy and reactions",
       "sourceExcerpt": "neutralisation — A reaction in which an acid reacts with an alkali or a base to produce a salt and water.",
       "level": 1,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "revision-pack-polish",
         "source-traceable"
@@ -14468,13 +19166,30 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9F-neutralisation-reactions-blank-v3.webp",
-          "alt": "Question-safe neutralisation lab setup and pH scale.",
+          "alt": "Unlabelled neutralisation lab setup and pH scale.",
           "caption": "",
           "mediaTiming": "question",
           "presentation": "media-image-base",
           "questionAssetV147": true
         }
-      ]
+      ],
+      "examEligible": false,
+      "examCommand": "state",
+      "examMarks": 1,
+      "examDomain": "chemistry",
+      "examPool": "written-recall",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0",
+      "examRetiredFromWrittenExam": "v1.64.0",
+      "examRetiredReason": "Low-priority bridge recall survivor; retained stronger acid/base and reaction-energy coverage elsewhere."
     },
     {
       "id": "y9p-010-9f-what-is-a-thermite-reaction",
@@ -14487,7 +19202,7 @@ window.YEAR9_CONTENT = {
       "source": "9F Word sheet 9Fd Displacement",
       "sourceExcerpt": "thermite reaction — Highly exothermic displacement reaction between aluminium and iron oxide that produces molten iron.",
       "level": 3,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "revision-pack-polish",
         "source-traceable",
@@ -14498,7 +19213,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Reactivity and displacement",
       "learningObjectiveDescription": "Reactivity series, metal reactions, displacement and oxidation.",
       "noteId": "9F-reactivity",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "state",
+      "examMarks": 1,
+      "examDomain": "chemistry",
+      "examPool": "written-recall",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9p-011-9f-aluminium-reacts-with-iron-oxide-to-form-aluminium-oxide-and-iron-which-of-these-is-correc",
@@ -14516,7 +19246,7 @@ window.YEAR9_CONTENT = {
       "source": "9F Quick Quiz 9Fd Q4",
       "sourceExcerpt": "Aluminium reacts with iron oxide to form aluminium oxide and iron. Which of these is correct? C Aluminium displaced iron.",
       "level": 4,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "revision-pack-polish",
         "source-traceable",
@@ -14540,7 +19270,7 @@ window.YEAR9_CONTENT = {
       "source": "9F Quick Quiz 9Fd Q4",
       "sourceExcerpt": "Aluminium reacts with iron oxide to form aluminium oxide and iron. C Aluminium displaced iron.",
       "level": 2,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "revision-pack-polish",
         "source-traceable"
@@ -14550,7 +19280,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Reactivity and displacement",
       "learningObjectiveDescription": "Reactivity series, metal reactions, displacement and oxidation.",
       "noteId": "9F-reactivity",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "identify",
+      "examMarks": 1,
+      "examDomain": "chemistry",
+      "examPool": "written-main",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Use the labels, diagram or question clue to name the correct item(s). Keep the answer concise.",
+      "examFormatKind": "label-or-feature",
+      "answerFormatSteps": [
+        "Look carefully at the label, diagram or clue.",
+        "Name the correct item(s), part(s) or feature(s).",
+        "Use letters/names clearly if the diagram uses labels."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9p-013-9f-what-is-thermal-decomposition",
@@ -14563,7 +19308,7 @@ window.YEAR9_CONTENT = {
       "source": "9E Word sheet 9Ec/9Ed Thermal decomposition",
       "sourceExcerpt": "thermal decomposition — Breaking down a compound into simpler substances using heat.",
       "level": 1,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "revision-pack-polish",
         "source-traceable"
@@ -14573,7 +19318,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Energy changes, thermal decomposition and peer review",
       "learningObjectiveDescription": "Endothermic/exothermic changes, state symbols, thermal decomposition and peer review.",
       "noteId": "9E-energy-thermal-peer-review",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "state",
+      "examMarks": 1,
+      "examDomain": "chemistry",
+      "examPool": "written-recall",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examRetiredFromWritten": "v1.62.0",
+      "examRetiredReason": "low_value_recall_overlap",
+      "examRetainedCoverageAnchor": "y9r-018-9e-in-peer-review-what-do-scientists-check-in-a-paper"
     },
     {
       "id": "y9p-014-9f-what-energy-supply-do-thermal-decomposition-reactions-need-to-keep-going",
@@ -14586,17 +19348,34 @@ window.YEAR9_CONTENT = {
       "source": "9F Summary sheet p3 Hydrocarbons",
       "sourceExcerpt": "Thermal decomposition reactions, in which a compound is broken down by heat, require a constant supply of energy to keep them going.",
       "level": 2,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "revision-pack-polish",
-        "source-traceable"
+        "source-traceable",
+        "written-polish-v1.56",
+        "source-question-restored-v1.60"
       ],
       "sourceFidelity": "exact-source-answer",
       "learningObjective": "9F-combustion-energy-rates",
       "learningObjectiveTitle": "Hydrocarbons, combustion, energy changes and rate",
       "learningObjectiveDescription": "Hydrocarbons, combustion, oxygen test, energy changes and rate factors.",
       "noteId": "9F-combustion-energy-rates",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "state",
+      "examMarks": 1,
+      "examDomain": "chemistry",
+      "examPool": "written-main",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9p-015-9f-what-is-an-oxidising-agent",
@@ -14609,7 +19388,7 @@ window.YEAR9_CONTENT = {
       "source": "9F Word sheet 9Fc Energy and reactions",
       "sourceExcerpt": "oxidising agent — A substance that provides oxygen to oxidise another substance.",
       "level": 2,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "revision-pack-polish",
         "source-traceable"
@@ -14619,7 +19398,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Hydrocarbons, combustion, energy changes and rate",
       "learningObjectiveDescription": "Hydrocarbons, combustion, oxygen test, energy changes and rate factors.",
       "noteId": "9F-combustion-energy-rates",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "state",
+      "examMarks": 1,
+      "examDomain": "chemistry",
+      "examPool": "written-recall",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examRetiredFromWritten": "v1.62.0",
+      "examRetiredReason": "low_value_recall_overlap",
+      "examRetainedCoverageAnchor": "y9p-014-9f-what-energy-supply-do-thermal-decomposition-reactions-need-to-keep-going"
     },
     {
       "id": "y9p-016-9f-what-is-a-reducing-agent",
@@ -14632,7 +19428,7 @@ window.YEAR9_CONTENT = {
       "source": "9F Word sheet 9Fe Extracting metals",
       "sourceExcerpt": "reducing agent — A substance that removes oxygen from another substance.",
       "level": 2,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "revision-pack-polish",
         "source-traceable"
@@ -14642,7 +19438,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Metal extraction and reduction",
       "learningObjectiveDescription": "Ores, native metals, reduction, oxidation, redox and extraction methods.",
       "noteId": "9F-extraction",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "state",
+      "examMarks": 1,
+      "examDomain": "chemistry",
+      "examPool": "written-recall",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examRetiredFromWritten": "v1.62.0",
+      "examRetiredReason": "low_value_recall_overlap",
+      "examRetainedCoverageAnchor": "y9r-043-9f-where-do-most-metals-occur"
     },
     {
       "id": "y9p-017-9f-when-has-a-substance-been-reduced",
@@ -14651,21 +19464,40 @@ window.YEAR9_CONTENT = {
       "question": "When has a substance been reduced?",
       "answer": "If a substance has lost oxygen then it has been reduced.",
       "choices": [],
-      "explanation": "Reduction is loss of oxygen in this revision-pack context.",
+      "explanation": "Reduction is loss of oxygen in this this topic.",
       "source": "9F Word sheet 9Fe Extracting metals",
       "sourceExcerpt": "reduced — If a substance has lost oxygen then it has been reduced.",
       "level": 1,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "revision-pack-polish",
-        "source-traceable"
+        "source-traceable",
+        "written-polish-v1.56",
+        "source-question-restored-v1.60"
       ],
       "sourceFidelity": "exact-source-answer",
       "learningObjective": "9F-extraction",
       "learningObjectiveTitle": "Metal extraction and reduction",
       "learningObjectiveDescription": "Ores, native metals, reduction, oxidation, redox and extraction methods.",
       "noteId": "9F-extraction",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "state",
+      "examMarks": 1,
+      "examDomain": "chemistry",
+      "examPool": "written-main",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examRetiredFromWritten": "v1.62.0",
+      "examRetiredReason": "micro_prompt_overlap",
+      "examRetainedCoverageAnchor": "y9r-043-9f-where-do-most-metals-occur"
     },
     {
       "id": "y9p-018-9f-what-is-a-redox-reaction",
@@ -14678,7 +19510,7 @@ window.YEAR9_CONTENT = {
       "source": "9F Word sheet 9Fe Extracting metals",
       "sourceExcerpt": "redox reaction — A reaction in which one reactant is reduced and another is oxidised.",
       "level": 2,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "revision-pack-polish",
         "source-traceable"
@@ -14688,7 +19520,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Metal extraction and reduction",
       "learningObjectiveDescription": "Ores, native metals, reduction, oxidation, redox and extraction methods.",
       "noteId": "9F-extraction",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "state",
+      "examMarks": 1,
+      "examDomain": "chemistry",
+      "examPool": "written-recall",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examRetiredFromWritten": "v1.62.0",
+      "examRetiredReason": "low_value_recall_overlap",
+      "examRetainedCoverageAnchor": "y9r-043-9f-where-do-most-metals-occur"
     },
     {
       "id": "y9p-019-9f-what-is-oxidation",
@@ -14701,7 +19550,7 @@ window.YEAR9_CONTENT = {
       "source": "9F Word sheet 9Fb Reactivity",
       "sourceExcerpt": "oxidation — Reaction in which a substance gains oxygen.",
       "level": 1,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "revision-pack-polish",
         "source-traceable"
@@ -14711,7 +19560,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Reactivity and displacement",
       "learningObjectiveDescription": "Reactivity series, metal reactions, displacement and oxidation.",
       "noteId": "9F-reactivity",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "state",
+      "examMarks": 1,
+      "examDomain": "chemistry",
+      "examPool": "written-recall",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0",
+      "examRetiredFromWrittenExam": "v1.64.0",
+      "examRetiredReason": "Surplus one-mark oxidation recall; retained more useful oxidation/reactivity prompts."
     },
     {
       "id": "y9p-020-9f-what-is-the-percentage-loss-or-gain-formula-from-the-revision-sheet",
@@ -14724,7 +19590,7 @@ window.YEAR9_CONTENT = {
       "source": "9F Summary sheet p3 Percentage loss or gain",
       "sourceExcerpt": "Percentage loss or gain: actual change / original amount × 100.",
       "level": 3,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "revision-pack-polish",
         "source-traceable",
@@ -14735,7 +19601,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Metal extraction and reduction",
       "learningObjectiveDescription": "Ores, native metals, reduction, oxidation, redox and extraction methods.",
       "noteId": "9F-extraction",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "state",
+      "examMarks": 1,
+      "examDomain": "chemistry",
+      "examPool": "written-recall",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examRetiredFromWritten": "v1.62.0",
+      "examRetiredReason": "low_value_recall_overlap",
+      "examRetainedCoverageAnchor": "y9r-043-9f-where-do-most-metals-occur"
     },
     {
       "id": "y9p-021-9j-what-is-a-decimal-place",
@@ -14748,7 +19631,7 @@ window.YEAR9_CONTENT = {
       "source": "9J Word sheet 9Jd WS Rounding numbers",
       "sourceExcerpt": "decimal place — The position of a digit to the right of the decimal point in a number.",
       "level": 1,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "revision-pack-polish",
         "source-traceable"
@@ -14758,7 +19641,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Rounding numbers and significant figures",
       "learningObjectiveDescription": "Decimal places, significant figures and clean numerical answers in 9J calculations.",
       "noteId": "9J-rounding-numbers",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "state",
+      "examMarks": 1,
+      "examDomain": "physics",
+      "examPool": "written-recall",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examRetiredFromWritten": "v1.62.0",
+      "examRetiredReason": "low_value_recall_overlap",
+      "examRetainedCoverageAnchor": "y9p-023-9j-what-is-the-first-significant-figure-in-a-number"
     },
     {
       "id": "y9p-022-9j-how-do-you-find-the-number-of-decimal-places-in-a-number",
@@ -14771,7 +19671,7 @@ window.YEAR9_CONTENT = {
       "source": "9J Word sheet 9Jd WS Rounding numbers",
       "sourceExcerpt": "The number of decimal places in a number is the number of digits after the decimal point.",
       "level": 1,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "revision-pack-polish",
         "source-traceable"
@@ -14781,7 +19681,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Rounding numbers and significant figures",
       "learningObjectiveDescription": "Decimal places, significant figures and clean numerical answers in 9J calculations.",
       "noteId": "9J-rounding-numbers",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9p-023-9j-what-is-the-first-significant-figure-in-a-number",
@@ -14794,7 +19709,7 @@ window.YEAR9_CONTENT = {
       "source": "9J Word sheet 9Jd WS Rounding numbers",
       "sourceExcerpt": "The first significant figure in a number is the digit with the highest place value.",
       "level": 1,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "revision-pack-polish",
         "source-traceable"
@@ -14804,7 +19719,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Rounding numbers and significant figures",
       "learningObjectiveDescription": "Decimal places, significant figures and clean numerical answers in 9J calculations.",
       "noteId": "9J-rounding-numbers",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "state",
+      "examMarks": 1,
+      "examDomain": "physics",
+      "examPool": "written-recall",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9p-024-9j-what-is-the-second-significant-figure-in-a-number",
@@ -14817,7 +19747,7 @@ window.YEAR9_CONTENT = {
       "source": "9J Word sheet 9Jd WS Rounding numbers",
       "sourceExcerpt": "the second significant figure has the second highest place value and so on.",
       "level": 1,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "revision-pack-polish",
         "source-traceable"
@@ -14827,7 +19757,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Rounding numbers and significant figures",
       "learningObjectiveDescription": "Decimal places, significant figures and clean numerical answers in 9J calculations.",
       "noteId": "9J-rounding-numbers",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "state",
+      "examMarks": 1,
+      "examDomain": "physics",
+      "examPool": "written-recall",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examRetiredFromWritten": "v1.62.0",
+      "examRetiredReason": "low_value_recall_overlap",
+      "examRetainedCoverageAnchor": "y9p-023-9j-what-is-the-first-significant-figure-in-a-number"
     },
     {
       "id": "y9p-025-9j-in-the-number-3-407-how-many-decimal-places-are-there",
@@ -14840,17 +19787,34 @@ window.YEAR9_CONTENT = {
       "source": "9J Word sheet 9Jd WS Rounding numbers",
       "sourceExcerpt": "The number of decimal places in a number is the number of digits after the decimal point.",
       "level": 2,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "revision-pack-polish",
-        "source-traceable"
+        "source-traceable",
+        "written-polish-v1.56",
+        "source-question-restored-v1.60"
       ],
       "sourceFidelity": "source-traceable-application",
       "learningObjective": "9J-rounding-numbers",
       "learningObjectiveTitle": "Rounding numbers and significant figures",
       "learningObjectiveDescription": "Decimal places, significant figures and clean numerical answers in 9J calculations.",
       "noteId": "9J-rounding-numbers",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "calculate",
+      "examMarks": 1,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "source-traceable-application",
+      "answerFormatHint": "Write the formula or method, substitute values, then give the answer with a unit or required rounding.",
+      "examFormatKind": "calculation-method",
+      "answerFormatSteps": [
+        "Write the equation or method.",
+        "Substitute the values and show working.",
+        "Give the final answer with the correct unit or rounding."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9p-026-9j-in-the-number-0-0632-what-is-the-first-significant-figure",
@@ -14863,17 +19827,34 @@ window.YEAR9_CONTENT = {
       "source": "9J Word sheet 9Jd WS Rounding numbers",
       "sourceExcerpt": "The first significant figure in a number is the digit with the highest place value.",
       "level": 2,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "revision-pack-polish",
-        "source-traceable"
+        "source-traceable",
+        "written-polish-v1.56",
+        "source-question-restored-v1.60"
       ],
       "sourceFidelity": "source-traceable-application",
       "learningObjective": "9J-rounding-numbers",
       "learningObjectiveTitle": "Rounding numbers and significant figures",
       "learningObjectiveDescription": "Decimal places, significant figures and clean numerical answers in 9J calculations.",
       "noteId": "9J-rounding-numbers",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "identify",
+      "examMarks": 1,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "source-traceable-application",
+      "answerFormatHint": "Use the labels, diagram or question clue to name the correct item(s). Keep the answer concise.",
+      "examFormatKind": "label-or-feature",
+      "answerFormatSteps": [
+        "Look carefully at the label, diagram or clue.",
+        "Name the correct item(s), part(s) or feature(s).",
+        "Use letters/names clearly if the diagram uses labels."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9p-027-9j-round-42-786-to-one-decimal-place",
@@ -14886,17 +19867,34 @@ window.YEAR9_CONTENT = {
       "source": "9J Word sheet 9Jd WS Rounding numbers",
       "sourceExcerpt": "The number of decimal places in a number is the number of digits after the decimal point.",
       "level": 2,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "revision-pack-polish",
-        "source-traceable"
+        "source-traceable",
+        "written-polish-v1.56",
+        "source-question-restored-v1.60"
       ],
       "sourceFidelity": "source-traceable-application",
       "learningObjective": "9J-rounding-numbers",
       "learningObjectiveTitle": "Rounding numbers and significant figures",
       "learningObjectiveDescription": "Decimal places, significant figures and clean numerical answers in 9J calculations.",
       "noteId": "9J-rounding-numbers",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "calculate",
+      "examMarks": 1,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "source-traceable-application",
+      "answerFormatHint": "Write the formula or method, substitute values, then give the answer with a unit or required rounding.",
+      "examFormatKind": "calculation-method",
+      "answerFormatSteps": [
+        "Write the equation or method.",
+        "Substitute the values and show working.",
+        "Give the final answer with the correct unit or rounding."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9p-028-9j-round-42-786-to-two-decimal-places",
@@ -14909,17 +19907,34 @@ window.YEAR9_CONTENT = {
       "source": "9J Word sheet 9Jd WS Rounding numbers",
       "sourceExcerpt": "The number of decimal places in a number is the number of digits after the decimal point.",
       "level": 2,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "revision-pack-polish",
-        "source-traceable"
+        "source-traceable",
+        "written-polish-v1.56",
+        "source-question-restored-v1.60"
       ],
       "sourceFidelity": "source-traceable-application",
       "learningObjective": "9J-rounding-numbers",
       "learningObjectiveTitle": "Rounding numbers and significant figures",
       "learningObjectiveDescription": "Decimal places, significant figures and clean numerical answers in 9J calculations.",
       "noteId": "9J-rounding-numbers",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "calculate",
+      "examMarks": 1,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "source-traceable-application",
+      "answerFormatHint": "Write the formula or method, substitute values, then give the answer with a unit or required rounding.",
+      "examFormatKind": "calculation-method",
+      "answerFormatSteps": [
+        "Write the equation or method.",
+        "Substitute the values and show working.",
+        "Give the final answer with the correct unit or rounding."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9p-029-9j-round-0-0632-to-one-significant-figure",
@@ -14932,17 +19947,34 @@ window.YEAR9_CONTENT = {
       "source": "9J Word sheet 9Jd WS Rounding numbers",
       "sourceExcerpt": "The first significant figure in a number is the digit with the highest place value.",
       "level": 3,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "revision-pack-polish",
-        "source-traceable"
+        "source-traceable",
+        "written-polish-v1.56",
+        "source-question-restored-v1.60"
       ],
       "sourceFidelity": "source-traceable-application",
       "learningObjective": "9J-rounding-numbers",
       "learningObjectiveTitle": "Rounding numbers and significant figures",
       "learningObjectiveDescription": "Decimal places, significant figures and clean numerical answers in 9J calculations.",
       "noteId": "9J-rounding-numbers",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "calculate",
+      "examMarks": 1,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "source-traceable-application",
+      "answerFormatHint": "Write the formula or method, substitute values, then give the answer with a unit or required rounding.",
+      "examFormatKind": "calculation-method",
+      "answerFormatSteps": [
+        "Write the equation or method.",
+        "Substitute the values and show working.",
+        "Give the final answer with the correct unit or rounding."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9p-030-9j-round-0-0632-to-two-significant-figures",
@@ -14955,17 +19987,34 @@ window.YEAR9_CONTENT = {
       "source": "9J Word sheet 9Jd WS Rounding numbers",
       "sourceExcerpt": "the second significant figure has the second highest place value and so on.",
       "level": 3,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "revision-pack-polish",
-        "source-traceable"
+        "source-traceable",
+        "written-polish-v1.56",
+        "source-question-restored-v1.60"
       ],
       "sourceFidelity": "source-traceable-application",
       "learningObjective": "9J-rounding-numbers",
       "learningObjectiveTitle": "Rounding numbers and significant figures",
       "learningObjectiveDescription": "Decimal places, significant figures and clean numerical answers in 9J calculations.",
       "noteId": "9J-rounding-numbers",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "calculate",
+      "examMarks": 1,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "source-traceable-application",
+      "answerFormatHint": "Write the formula or method, substitute values, then give the answer with a unit or required rounding.",
+      "examFormatKind": "calculation-method",
+      "answerFormatSteps": [
+        "Write the equation or method.",
+        "Substitute the values and show working.",
+        "Give the final answer with the correct unit or rounding."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9p-031-9j-what-is-the-difference-between-decimal-places-and-significant-figures",
@@ -14978,7 +20027,7 @@ window.YEAR9_CONTENT = {
       "source": "9J Word sheet 9Jd WS Rounding numbers",
       "sourceExcerpt": "decimal place — The position of a digit to the right of the decimal point in a number. significant figure — The first significant figure in a number is the digit with the highest place value.",
       "level": 3,
-      "cue": "Use the revision-pack wording as closely as possible.",
+      "cue": "Use the key science wording as closely as possible.",
       "tags": [
         "revision-pack-polish",
         "source-traceable"
@@ -14988,7 +20037,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Rounding numbers and significant figures",
       "learningObjectiveDescription": "Decimal places, significant figures and clean numerical answers in 9J calculations.",
       "noteId": "9J-rounding-numbers",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "state",
+      "examMarks": 1,
+      "examDomain": "physics",
+      "examPool": "written-recall",
+      "examSourceQuality": "source-traceable-synthesis",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examRetiredFromWritten": "v1.62.0",
+      "examRetiredReason": "low_value_recall_overlap",
+      "examRetainedCoverageAnchor": "y9p-023-9j-what-is-the-first-significant-figure-in-a-number"
     },
     {
       "id": "y9qb-001-9b-farming-benefit-problem-compare",
@@ -14997,7 +20063,7 @@ window.YEAR9_CONTENT = {
       "question": "A farmer uses fertilisers and pesticides to increase crop yield. Explain one benefit and one possible problem for each method.",
       "answer": "Fertilisers contain mineral salts that help plants grow and increase yield, but if they wash into streams and rivers they can cause pollution so organisms die. Pesticides kill pests that compete with or harm crops, but they can kill useful organisms and damage food webs.",
       "choices": [],
-      "explanation": "This combines the revision-pack farming benefits and problems and requires comparison rather than recall.",
+      "explanation": "This combines the farming benefits and problems and requires comparison rather than recall.",
       "source": "9B revision pack farming methods / sustainability notes",
       "sourceExcerpt": "Fertilisers contain mineral salts that help plants to grow and increase the yield. Pesticides kill pests. Problems include pollution and damage to food webs.",
       "level": 4,
@@ -15017,13 +20083,28 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9B-farming-yield-sustainability-blank.webp",
-          "alt": "Question-safe farming image contrasting crop production and environmental impact without explanatory labels.",
+          "alt": "Unlabelled farming image contrasting crop production and environmental impact without explanatory labels.",
           "caption": "",
           "mediaTiming": "question",
           "presentation": "media-image-base",
           "questionAssetV145": true
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "biology",
+      "examPool": "written-main",
+      "examSourceQuality": "source-traceable-synthesis",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9qb-002-9e-thermal-decomposition-state-symbols",
@@ -15047,7 +20128,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Energy changes, thermal decomposition and peer review",
       "learningObjectiveDescription": "Endothermic and exothermic reactions, thermal decomposition, state symbols and peer review.",
       "noteId": "9E-energy-thermal-peer-review",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "state",
+      "examMarks": 1,
+      "examDomain": "chemistry",
+      "examPool": "written-recall",
+      "examSourceQuality": "source-traceable-synthesis",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9qb-003-9f-redox-thermite-application",
@@ -15072,7 +20168,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Combustion, energy and rates",
       "learningObjectiveDescription": "Combustion, bond breaking, oxygen test, rates of reaction and redox/thermite links.",
       "noteId": "9F-combustion-energy-rates",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "chemistry",
+      "examPool": "written-main",
+      "examSourceQuality": "source-traceable-synthesis",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9qb-004-9i-moments-balanced-application",
@@ -15096,7 +20207,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Levers, pivots and moments",
       "learningObjectiveDescription": "Moment calculations, balanced moments, levers and pivots.",
       "noteId": "9I-moments",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "calculate",
+      "examMarks": 2,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "source-traceable-synthesis",
+      "answerFormatHint": "Write the formula or method, substitute values, then give the answer with a unit or required rounding.",
+      "examFormatKind": "calculation-method",
+      "answerFormatSteps": [
+        "Write the equation or method.",
+        "Substitute the values and show working.",
+        "Give the final answer with the correct unit or rounding."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9qb-005-9j-wire-resistance-investigation-variables",
@@ -15125,13 +20251,28 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9J-wire-resistance-investigation-blank.webp",
-          "alt": "Question-safe wire resistance investigation setup without explanatory notes.",
+          "alt": "Unlabelled wire resistance investigation setup without explanatory notes.",
           "caption": "",
           "mediaTiming": "question",
           "presentation": "media-image-base",
           "questionAssetV145": true
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "identify",
+      "examMarks": 1,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "source-traceable-synthesis",
+      "answerFormatHint": "Use the labels, diagram or question clue to name the correct item(s). Keep the answer concise.",
+      "examFormatKind": "label-or-feature",
+      "answerFormatSteps": [
+        "Look carefully at the label, diagram or clue.",
+        "Name the correct item(s), part(s) or feature(s).",
+        "Use letters/names clearly if the diagram uses labels."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9qb-006-9j-significant-figures-application",
@@ -15156,7 +20297,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Rounding numbers and significant figures",
       "learningObjectiveDescription": "Decimal places, significant figures and clean numerical answers in 9J calculations.",
       "noteId": "9J-rounding-numbers",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "calculate",
+      "examMarks": 1,
+      "examDomain": "physics",
+      "examPool": "written-recall",
+      "examSourceQuality": "source-traceable-synthesis",
+      "answerFormatHint": "Write the formula or method, substitute values, then give the answer with a unit or required rounding.",
+      "examFormatKind": "calculation-method",
+      "answerFormatSteps": [
+        "Write the equation or method.",
+        "Substitute the values and show working.",
+        "Give the final answer with the correct unit or rounding."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examRetiredFromWritten": "v1.62.0",
+      "examRetiredReason": "surplus_calculation_variant",
+      "examRetainedCoverageAnchor": "y9p-030-9j-round-0-0632-to-two-significant-figures"
     },
     {
       "id": "y9cgp-001-I-pressure-define-pressure",
@@ -15302,7 +20460,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Pressure in fluids",
       "learningObjectiveDescription": "Pressure as force over area, pressure changes with depth and height, upthrust, floating and sinking.",
       "noteId": "9I-pressure",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "calculate",
+      "examMarks": 2,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "new-cgp-bridge-derived",
+      "answerFormatHint": "Write the formula or method, substitute values, then give the answer with a unit or required rounding.",
+      "examFormatKind": "calculation-method",
+      "answerFormatSteps": [
+        "Write the equation or method.",
+        "Substitute the values and show working.",
+        "Give the final answer with the correct unit or rounding."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examRetiredFromWritten": "v1.62.0",
+      "examRetiredReason": "surplus_calculation_variant",
+      "examRetainedCoverageAnchor": "y9img-001-9i-density-water-displacement-calculate-density"
     },
     {
       "id": "y9cgp-005-I-pressure-a-force-of-60-n-produces-a-pressure-of-300-pa-calculate-the-",
@@ -15338,7 +20513,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Pressure in fluids",
       "learningObjectiveDescription": "Pressure as force over area, pressure changes with depth and height, upthrust, floating and sinking.",
       "noteId": "9I-pressure",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "calculate",
+      "examMarks": 2,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "new-cgp-bridge-derived",
+      "answerFormatHint": "Write the formula or method, substitute values, then give the answer with a unit or required rounding.",
+      "examFormatKind": "calculation-method",
+      "answerFormatSteps": [
+        "Write the equation or method.",
+        "Substitute the values and show working.",
+        "Give the final answer with the correct unit or rounding."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examRetiredFromWritten": "v1.62.0",
+      "examRetiredReason": "surplus_calculation_variant",
+      "examRetainedCoverageAnchor": "y9img-001-9i-density-water-displacement-calculate-density"
     },
     {
       "id": "y9cgp-006-I-pressure-describe-how-liquid-pressure-changes-with-depth",
@@ -15378,13 +20570,28 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9I-liquid-pressure-depth-blank.webp",
-          "alt": "Question-safe water tank image showing jets from different depths without explanatory labels.",
+          "alt": "Unlabelled water tank image showing jets from different depths without explanatory labels.",
           "caption": "",
           "mediaTiming": "question",
           "presentation": "media-image-base",
           "questionAssetV145": true
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "describe",
+      "examMarks": 2,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "new-cgp-bridge-derived",
+      "answerFormatHint": "Say what happens, what changes, or what is shown. Use short linked points and include values or labels if given.",
+      "examFormatKind": "linked-description",
+      "answerFormatSteps": [
+        "Give one clear feature, step or change.",
+        "Add another linked feature, step or comparison.",
+        "Use values, labels or context from the question where useful."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9cgp-007-I-pressure-why-does-a-dam-wall-need-to-be-stronger-near-the-bottom",
@@ -15424,13 +20631,28 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9I-liquid-pressure-depth-blank.webp",
-          "alt": "Question-safe water tank image showing jets from different depths without explanatory labels.",
+          "alt": "Unlabelled water tank image showing jets from different depths without explanatory labels.",
           "caption": "",
           "mediaTiming": "question",
           "presentation": "media-image-base",
           "questionAssetV145": true
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "new-cgp-bridge-derived",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9cgp-008-I-pressure-a-drawing-shows-arrows-from-water-pushing-sideways-on-a-deep",
@@ -15475,7 +20697,7 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9I-liquid-pressure-depth-blank.webp",
-          "alt": "Question-safe water tank image showing jets from different depths without explanatory labels.",
+          "alt": "Unlabelled water tank image showing jets from different depths without explanatory labels.",
           "caption": "",
           "mediaTiming": "question",
           "presentation": "media-image-base",
@@ -15516,7 +20738,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Pressure in fluids",
       "learningObjectiveDescription": "Pressure as force over area, pressure changes with depth and height, upthrust, floating and sinking.",
       "noteId": "9I-pressure",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "describe",
+      "examMarks": 2,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "new-cgp-bridge-derived",
+      "answerFormatHint": "Say what happens, what changes, or what is shown. Use short linked points and include values or labels if given.",
+      "examFormatKind": "linked-description",
+      "answerFormatSteps": [
+        "Give one clear feature, step or change.",
+        "Add another linked feature, step or comparison.",
+        "Use values, labels or context from the question where useful."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examRetiredFromWritten": "v1.62.0",
+      "examRetiredReason": "objective_pool_trim",
+      "examRetainedCoverageAnchor": "y9cgp-006-I-pressure-describe-how-liquid-pressure-changes-with-depth"
     },
     {
       "id": "y9cgp-010-I-pressure-why-can-a-large-ship-float-even-though-it-is-made-from-dense",
@@ -15556,13 +20795,28 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9I-pressure-fluids-blank.webp",
-          "alt": "Question-safe pressure image showing force over area, liquid pressure and floating forces without explanatory labels.",
+          "alt": "Unlabelled pressure image showing force over area, liquid pressure and floating forces without explanatory labels.",
           "caption": "",
           "mediaTiming": "question",
           "presentation": "media-image-base",
           "questionAssetV145": true
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "new-cgp-bridge-derived",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9cgp-011-I-pressure-what-does-it-mean-if-an-object-floats",
@@ -15602,13 +20856,28 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9I-pressure-fluids-blank.webp",
-          "alt": "Question-safe pressure image showing force over area, liquid pressure and floating forces without explanatory labels.",
+          "alt": "Unlabelled pressure image showing force over area, liquid pressure and floating forces without explanatory labels.",
           "caption": "",
           "mediaTiming": "question",
           "presentation": "media-image-base",
           "questionAssetV145": true
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "state",
+      "examMarks": 1,
+      "examDomain": "physics",
+      "examPool": "written-recall",
+      "examSourceQuality": "new-cgp-bridge-derived",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9cgp-012-I-pressure-which-change-would-increase-the-pressure-made-by-the-same-fo",
@@ -15688,13 +20957,28 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9I-pressure-fluids-blank.webp",
-          "alt": "Question-safe pressure image showing force over area, liquid pressure and floating forces without explanatory labels.",
+          "alt": "Unlabelled pressure image showing force over area, liquid pressure and floating forces without explanatory labels.",
           "caption": "",
           "mediaTiming": "question",
           "presentation": "media-image-base",
           "questionAssetV145": true
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "new-cgp-bridge-derived",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9cgp-014-I-pressure-a-block-underwater-has-equal-sized-top-and-bottom-faces-expl",
@@ -15734,13 +21018,28 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9I-pressure-fluids-blank.webp",
-          "alt": "Question-safe pressure image showing force over area, liquid pressure and floating forces without explanatory labels.",
+          "alt": "Unlabelled pressure image showing force over area, liquid pressure and floating forces without explanatory labels.",
           "caption": "",
           "mediaTiming": "question",
           "presentation": "media-image-base",
           "questionAssetV145": true
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "new-cgp-bridge-derived",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9cgp-015-I-pressure-correct-the-misconception-liquid-pressure-at-the-bottom-depe",
@@ -15769,7 +21068,9 @@ window.YEAR9_CONTENT = {
       "tags": [
         "cgp-bridge-v1.40",
         "question-media-v1.45",
-        "source-traceable"
+        "source-traceable",
+        "written-polish-v1.56",
+        "source-question-restored-v1.60"
       ],
       "sourceFidelity": "new-cgp-bridge-derived",
       "learningObjective": "9I-pressure",
@@ -15780,13 +21081,28 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9I-liquid-pressure-depth-blank.webp",
-          "alt": "Question-safe water tank image showing jets from different depths without explanatory labels.",
+          "alt": "Unlabelled water tank image showing jets from different depths without explanatory labels.",
           "caption": "",
           "mediaTiming": "question",
           "presentation": "media-image-base",
           "questionAssetV145": true
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 2,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "new-cgp-bridge-derived",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9cgp-046-E-heating-cooling-define-thermal-conductor",
@@ -15824,7 +21140,7 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9E-thermal-conductors-insulators-blank.webp",
-          "alt": "Question-safe image comparing thermal transfer through different materials without explanatory labels.",
+          "alt": "Unlabelled image comparing thermal transfer through different materials without explanatory labels.",
           "caption": "",
           "mediaTiming": "question",
           "presentation": "media-image-base",
@@ -15868,7 +21184,7 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9E-thermal-conductors-insulators-blank.webp",
-          "alt": "Question-safe image comparing thermal transfer through different materials without explanatory labels.",
+          "alt": "Unlabelled image comparing thermal transfer through different materials without explanatory labels.",
           "caption": "",
           "mediaTiming": "question",
           "presentation": "media-image-base",
@@ -15912,13 +21228,28 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9E-heating-cooling-blank.webp",
-          "alt": "Question-safe heating and cooling image showing a beaker, thermometer and particle panels without explanatory labels.",
+          "alt": "Unlabelled heating and cooling image showing a beaker, thermometer and particle panels without explanatory labels.",
           "caption": "",
           "mediaTiming": "question",
           "presentation": "media-image-base",
           "questionAssetV145": true
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "describe",
+      "examMarks": 2,
+      "examDomain": "chemistry",
+      "examPool": "written-main",
+      "examSourceQuality": "new-cgp-bridge-derived",
+      "answerFormatHint": "Say what happens, what changes, or what is shown. Use short linked points and include values or labels if given.",
+      "examFormatKind": "linked-description",
+      "answerFormatSteps": [
+        "Give one clear feature, step or change.",
+        "Add another linked feature, step or comparison.",
+        "Use values, labels or context from the question where useful."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9cgp-049-E-heating-cooling-what-happens-to-particles-in-a-hot-object-as-it-cools",
@@ -15956,13 +21287,28 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9E-heating-cooling-blank.webp",
-          "alt": "Question-safe heating and cooling image showing a beaker, thermometer and particle panels without explanatory labels.",
+          "alt": "Unlabelled heating and cooling image showing a beaker, thermometer and particle panels without explanatory labels.",
           "caption": "",
           "mediaTiming": "question",
           "presentation": "media-image-base",
           "questionAssetV145": true
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "describe",
+      "examMarks": 2,
+      "examDomain": "chemistry",
+      "examPool": "written-main",
+      "examSourceQuality": "new-cgp-bridge-derived",
+      "answerFormatHint": "Say what happens, what changes, or what is shown. Use short linked points and include values or labels if given.",
+      "examFormatKind": "linked-description",
+      "answerFormatSteps": [
+        "Give one clear feature, step or change.",
+        "Add another linked feature, step or comparison.",
+        "Use values, labels or context from the question where useful."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9cgp-050-E-heating-cooling-which-changes-of-state-are-endothermic",
@@ -16005,7 +21351,7 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9E-heating-cooling-blank.webp",
-          "alt": "Question-safe heating and cooling image showing a beaker, thermometer and particle panels without explanatory labels.",
+          "alt": "Unlabelled heating and cooling image showing a beaker, thermometer and particle panels without explanatory labels.",
           "caption": "",
           "mediaTiming": "question",
           "presentation": "media-image-base",
@@ -16054,7 +21400,7 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9E-heating-cooling-blank.webp",
-          "alt": "Question-safe heating and cooling image showing a beaker, thermometer and particle panels without explanatory labels.",
+          "alt": "Unlabelled heating and cooling image showing a beaker, thermometer and particle panels without explanatory labels.",
           "caption": "",
           "mediaTiming": "question",
           "presentation": "media-image-base",
@@ -16093,7 +21439,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Heating and cooling",
       "learningObjectiveDescription": "Energy transfer during heating and cooling, changes of state, conductors, insulators and cooling curves.",
       "noteId": "9E-heating-cooling",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "describe",
+      "examMarks": 2,
+      "examDomain": "chemistry",
+      "examPool": "written-main",
+      "examSourceQuality": "new-cgp-bridge-derived",
+      "answerFormatHint": "Say what happens, what changes, or what is shown. Use short linked points and include values or labels if given.",
+      "examFormatKind": "linked-description",
+      "answerFormatSteps": [
+        "Give one clear feature, step or change.",
+        "Add another linked feature, step or comparison.",
+        "Use values, labels or context from the question where useful."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examRetiredFromWritten": "v1.62.0",
+      "examRetiredReason": "micro_prompt_overlap",
+      "examRetainedCoverageAnchor": "y9cgp-048-E-heating-cooling-what-happens-to-particles-in-a-solid-when-it-is-heated"
     },
     {
       "id": "y9cgp-053-E-heating-cooling-why-does-a-metal-spoon-in-hot-soup-become-hot-quickly",
@@ -16131,13 +21494,28 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9E-thermal-conductors-insulators-blank.webp",
-          "alt": "Question-safe image comparing thermal transfer through different materials without explanatory labels.",
+          "alt": "Unlabelled image comparing thermal transfer through different materials without explanatory labels.",
           "caption": "",
           "mediaTiming": "question",
           "presentation": "media-image-base",
           "questionAssetV145": true
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "chemistry",
+      "examPool": "written-main",
+      "examSourceQuality": "new-cgp-bridge-derived",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9cgp-054-E-heating-cooling-why-does-a-plastic-handle-help-protect-your-hand-from-a-hot-",
@@ -16175,13 +21553,28 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9E-thermal-conductors-insulators-blank.webp",
-          "alt": "Question-safe image comparing thermal transfer through different materials without explanatory labels.",
+          "alt": "Unlabelled image comparing thermal transfer through different materials without explanatory labels.",
           "caption": "",
           "mediaTiming": "question",
           "presentation": "media-image-base",
           "questionAssetV145": true
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "chemistry",
+      "examPool": "written-main",
+      "examSourceQuality": "new-cgp-bridge-derived",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9cgp-055-E-heating-cooling-what-does-a-cooling-curve-show",
@@ -16219,13 +21612,28 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9E-heating-cooling-blank.webp",
-          "alt": "Question-safe heating and cooling image showing a beaker, thermometer and particle panels without explanatory labels.",
+          "alt": "Unlabelled heating and cooling image showing a beaker, thermometer and particle panels without explanatory labels.",
           "caption": "",
           "mediaTiming": "question",
           "presentation": "media-image-base",
           "questionAssetV145": true
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "state",
+      "examMarks": 1,
+      "examDomain": "chemistry",
+      "examPool": "written-recall",
+      "examSourceQuality": "new-cgp-bridge-derived",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9cgp-056-E-heating-cooling-why-does-a-very-hot-drink-cool-faster-at-first-than-later",
@@ -16263,13 +21671,28 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9E-heating-cooling-blank.webp",
-          "alt": "Question-safe heating and cooling image showing a beaker, thermometer and particle panels without explanatory labels.",
+          "alt": "Unlabelled heating and cooling image showing a beaker, thermometer and particle panels without explanatory labels.",
           "caption": "",
           "mediaTiming": "question",
           "presentation": "media-image-base",
           "questionAssetV145": true
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "chemistry",
+      "examPool": "written-main",
+      "examSourceQuality": "new-cgp-bridge-derived",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9cgp-057-E-heating-cooling-correct-the-misconception-energy-disappears-when-an-object-c",
@@ -16296,7 +21719,9 @@ window.YEAR9_CONTENT = {
       "tags": [
         "cgp-bridge-v1.40",
         "question-media-v1.45",
-        "source-traceable"
+        "source-traceable",
+        "written-polish-v1.56",
+        "source-question-restored-v1.60"
       ],
       "sourceFidelity": "new-cgp-bridge-derived",
       "learningObjective": "9E-heating-cooling",
@@ -16307,13 +21732,28 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9E-heating-cooling-blank.webp",
-          "alt": "Question-safe heating and cooling image showing a beaker, thermometer and particle panels without explanatory labels.",
+          "alt": "Unlabelled heating and cooling image showing a beaker, thermometer and particle panels without explanatory labels.",
           "caption": "",
           "mediaTiming": "question",
           "presentation": "media-image-base",
           "questionAssetV145": true
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 2,
+      "examDomain": "chemistry",
+      "examPool": "written-main",
+      "examSourceQuality": "new-cgp-bridge-derived",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9cgp-058-E-heating-cooling-which-material-would-usually-be-best-for-reducing-heat-loss-",
@@ -16356,7 +21796,7 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9E-thermal-conductors-insulators-blank.webp",
-          "alt": "Question-safe image comparing thermal transfer through different materials without explanatory labels.",
+          "alt": "Unlabelled image comparing thermal transfer through different materials without explanatory labels.",
           "caption": "",
           "mediaTiming": "question",
           "presentation": "media-image-base",
@@ -16400,13 +21840,28 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9E-thermal-conductors-insulators-blank.webp",
-          "alt": "Question-safe image comparing thermal transfer through different materials without explanatory labels.",
+          "alt": "Unlabelled image comparing thermal transfer through different materials without explanatory labels.",
           "caption": "",
           "mediaTiming": "question",
           "presentation": "media-image-base",
           "questionAssetV145": true
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "chemistry",
+      "examPool": "written-main",
+      "examSourceQuality": "new-cgp-bridge-derived",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9cgp-060-F-periodic-table-bridge-define-periodic-table",
@@ -16415,7 +21870,7 @@ window.YEAR9_CONTENT = {
       "question": "Define: periodic table",
       "answer": "Arrangement of elements in order of proton number.",
       "choices": [],
-      "explanation": "This uses the existing revision-pack definition.",
+      "explanation": "This uses the existing key definition.",
       "source": "9F Summary sheet p2 Atomic structure; CGP KS3 Year 9 Topic 7 Periodic table; Oak periodic table lessons",
       "sourceExcerpt": "Arrangement of elements in order of proton number.",
       "sourceUrls": [
@@ -16447,7 +21902,7 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9F-periodic-table-navigator-blank.webp",
-          "alt": "Question-safe periodic table image without explanatory labels.",
+          "alt": "Unlabelled periodic table image without explanatory labels.",
           "caption": "",
           "mediaTiming": "question",
           "presentation": "media-image-base",
@@ -16462,7 +21917,7 @@ window.YEAR9_CONTENT = {
       "question": "What does an atom contain?",
       "answer": "Atoms contain neutrons and protons in a central nucleus and electrons around the outside of the nucleus.",
       "choices": [],
-      "explanation": "This uses the existing revision-pack wording.",
+      "explanation": "This uses the existing key science wording.",
       "source": "9F Summary sheet p2 Atomic structure; CGP KS3 Year 9 Topic 7 Periodic table; Oak periodic table lessons",
       "sourceExcerpt": "Atoms contain neutrons and protons in a central nucleus and electrons around the outside of the nucleus.",
       "sourceUrls": [
@@ -16489,7 +21944,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Periodic table bridge",
       "learningObjectiveDescription": "Atomic structure, proton number, groups, periods, metals, non-metals and group trends.",
       "noteId": "9F-periodic-table-bridge",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "state",
+      "examMarks": 1,
+      "examDomain": "chemistry",
+      "examPool": "written-recall",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0",
+      "examRetiredFromWrittenExam": "v1.64.0",
+      "examRetiredReason": "Duplicate atomic-structure recall question; retained the primary 9F source version."
     },
     {
       "id": "y9cgp-062-F-periodic-table-bridge-what-is-the-atomic-number-or-proton-number",
@@ -16498,7 +21970,7 @@ window.YEAR9_CONTENT = {
       "question": "What is the atomic number or proton number?",
       "answer": "The number of protons is the atomic number or proton number.",
       "choices": [],
-      "explanation": "This uses the existing revision-pack wording.",
+      "explanation": "This uses the existing key science wording.",
       "source": "9F Summary sheet p2 Atomic structure; CGP KS3 Year 9 Topic 7 Periodic table; Oak periodic table lessons",
       "sourceExcerpt": "The number of protons is the atomic number or proton number.",
       "sourceUrls": [
@@ -16525,7 +21997,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Periodic table bridge",
       "learningObjectiveDescription": "Atomic structure, proton number, groups, periods, metals, non-metals and group trends.",
       "noteId": "9F-periodic-table-bridge",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "state",
+      "examMarks": 1,
+      "examDomain": "chemistry",
+      "examPool": "written-recall",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0",
+      "examRetiredFromWrittenExam": "v1.64.0",
+      "examRetiredReason": "Duplicate atomic-number recall question; retained the primary 9F source version."
     },
     {
       "id": "y9cgp-063-F-periodic-table-bridge-what-is-the-mass-number-of-an-atom",
@@ -16534,7 +22023,7 @@ window.YEAR9_CONTENT = {
       "question": "What is the mass number of an atom?",
       "answer": "The number of neutrons and the number of protons in an atom is its mass number.",
       "choices": [],
-      "explanation": "This uses the existing revision-pack wording.",
+      "explanation": "This uses the existing key science wording.",
       "source": "9F Summary sheet p2 Atomic structure; CGP KS3 Year 9 Topic 7 Periodic table; Oak periodic table lessons",
       "sourceExcerpt": "The number of neutrons and the number of protons in an atom is its mass number.",
       "sourceUrls": [
@@ -16561,7 +22050,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Periodic table bridge",
       "learningObjectiveDescription": "Atomic structure, proton number, groups, periods, metals, non-metals and group trends.",
       "noteId": "9F-periodic-table-bridge",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "state",
+      "examMarks": 1,
+      "examDomain": "chemistry",
+      "examPool": "written-recall",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0",
+      "examRetiredFromWrittenExam": "v1.64.0",
+      "examRetiredReason": "Duplicate mass-number recall question; retained the primary 9F source version."
     },
     {
       "id": "y9cgp-064-F-periodic-table-bridge-what-are-groups-and-periods-in-the-periodic-table",
@@ -16570,7 +22076,7 @@ window.YEAR9_CONTENT = {
       "question": "What are groups and periods in the periodic table?",
       "answer": "The vertical columns in the periodic table are groups and the rows are periods.",
       "choices": [],
-      "explanation": "This uses the existing revision-pack wording.",
+      "explanation": "This uses the existing key science wording.",
       "source": "9F Summary sheet p2 Atomic structure; CGP KS3 Year 9 Topic 7 Periodic table; Oak periodic table lessons",
       "sourceExcerpt": "The vertical columns in the periodic table are groups and the rows are periods.",
       "sourceUrls": [
@@ -16602,13 +22108,30 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9F-periodic-table-navigator-blank.webp",
-          "alt": "Question-safe periodic table image without explanatory labels.",
+          "alt": "Unlabelled periodic table image without explanatory labels.",
           "caption": "",
           "mediaTiming": "question",
           "presentation": "media-image-base",
           "questionAssetV145": true
         }
-      ]
+      ],
+      "examEligible": false,
+      "examCommand": "state",
+      "examMarks": 1,
+      "examDomain": "chemistry",
+      "examPool": "written-recall",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0",
+      "examRetiredFromWrittenExam": "v1.64.0",
+      "examRetiredReason": "Duplicate periodic-table rows/columns recall question; retained the primary 9F source version."
     },
     {
       "id": "y9cgp-065-F-periodic-table-bridge-elements-in-the-same-group-usually-have",
@@ -16653,7 +22176,7 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9F-periodic-table-navigator-blank.webp",
-          "alt": "Question-safe periodic table image without explanatory labels.",
+          "alt": "Unlabelled periodic table image without explanatory labels.",
           "caption": "",
           "mediaTiming": "question",
           "presentation": "media-image-base",
@@ -16704,7 +22227,7 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9F-periodic-table-navigator-blank.webp",
-          "alt": "Question-safe periodic table image without explanatory labels.",
+          "alt": "Unlabelled periodic table image without explanatory labels.",
           "caption": "",
           "mediaTiming": "question",
           "presentation": "media-image-base",
@@ -16739,7 +22262,9 @@ window.YEAR9_CONTENT = {
       "tags": [
         "cgp-bridge-v1.40",
         "question-media-v1.45",
-        "source-traceable"
+        "source-traceable",
+        "written-polish-v1.56",
+        "source-question-restored-v1.60"
       ],
       "sourceFidelity": "new-cgp-bridge-derived",
       "learningObjective": "9F-periodic-table-bridge",
@@ -16750,13 +22275,28 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9F-periodic-table-navigator-blank.webp",
-          "alt": "Question-safe periodic table image without explanatory labels.",
+          "alt": "Unlabelled periodic table image without explanatory labels.",
           "caption": "",
           "mediaTiming": "question",
           "presentation": "media-image-base",
           "questionAssetV145": true
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "identify",
+      "examMarks": 1,
+      "examDomain": "chemistry",
+      "examPool": "written-main",
+      "examSourceQuality": "new-cgp-bridge-derived",
+      "answerFormatHint": "Use the labels, diagram or question clue to name the correct item(s). Keep the answer concise.",
+      "examFormatKind": "label-or-feature",
+      "answerFormatSteps": [
+        "Look carefully at the label, diagram or clue.",
+        "Name the correct item(s), part(s) or feature(s).",
+        "Use letters/names clearly if the diagram uses labels."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9cgp-068-F-periodic-table-bridge-give-two-general-properties-of-metals",
@@ -16791,7 +22331,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Periodic table bridge",
       "learningObjectiveDescription": "Atomic structure, proton number, groups, periods, metals, non-metals and group trends.",
       "noteId": "9F-periodic-table-bridge",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "state",
+      "examMarks": 1,
+      "examDomain": "chemistry",
+      "examPool": "written-recall",
+      "examSourceQuality": "new-cgp-bridge-derived",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examRetiredFromWritten": "v1.62.0",
+      "examRetiredReason": "low_value_recall_overlap",
+      "examRetainedCoverageAnchor": "y9cgp-064-F-periodic-table-bridge-what-are-groups-and-periods-in-the-periodic-table"
     },
     {
       "id": "y9cgp-069-F-periodic-table-bridge-give-two-general-properties-of-non-metals",
@@ -16826,7 +22383,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Periodic table bridge",
       "learningObjectiveDescription": "Atomic structure, proton number, groups, periods, metals, non-metals and group trends.",
       "noteId": "9F-periodic-table-bridge",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "state",
+      "examMarks": 1,
+      "examDomain": "chemistry",
+      "examPool": "written-recall",
+      "examSourceQuality": "new-cgp-bridge-derived",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9cgp-070-F-periodic-table-bridge-which-group-contains-the-alkali-metals",
@@ -16871,7 +22443,7 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9F-periodic-table-navigator-blank.webp",
-          "alt": "Question-safe periodic table image without explanatory labels.",
+          "alt": "Unlabelled periodic table image without explanatory labels.",
           "caption": "",
           "mediaTiming": "question",
           "presentation": "media-image-base",
@@ -16913,7 +22485,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Periodic table bridge",
       "learningObjectiveDescription": "Atomic structure, proton number, groups, periods, metals, non-metals and group trends.",
       "noteId": "9F-periodic-table-bridge",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "describe",
+      "examMarks": 2,
+      "examDomain": "chemistry",
+      "examPool": "written-main",
+      "examSourceQuality": "new-cgp-bridge-derived",
+      "answerFormatHint": "Say what happens, what changes, or what is shown. Use short linked points and include values or labels if given.",
+      "examFormatKind": "linked-description",
+      "answerFormatSteps": [
+        "Give one clear feature, step or change.",
+        "Add another linked feature, step or comparison.",
+        "Use values, labels or context from the question where useful."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9cgp-072-F-periodic-table-bridge-which-group-contains-the-halogens",
@@ -16958,7 +22545,7 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9F-periodic-table-navigator-blank.webp",
-          "alt": "Question-safe periodic table image without explanatory labels.",
+          "alt": "Unlabelled periodic table image without explanatory labels.",
           "caption": "",
           "mediaTiming": "question",
           "presentation": "media-image-base",
@@ -17000,7 +22587,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Periodic table bridge",
       "learningObjectiveDescription": "Atomic structure, proton number, groups, periods, metals, non-metals and group trends.",
       "noteId": "9F-periodic-table-bridge",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "describe",
+      "examMarks": 2,
+      "examDomain": "chemistry",
+      "examPool": "written-main",
+      "examSourceQuality": "new-cgp-bridge-derived",
+      "answerFormatHint": "Say what happens, what changes, or what is shown. Use short linked points and include values or labels if given.",
+      "examFormatKind": "linked-description",
+      "answerFormatSteps": [
+        "Give one clear feature, step or change.",
+        "Add another linked feature, step or comparison.",
+        "Use values, labels or context from the question where useful."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9cgp-074-E-climate-bridge-define-greenhouse-gas",
@@ -17009,7 +22611,7 @@ window.YEAR9_CONTENT = {
       "question": "Define: greenhouse gas",
       "answer": "A gas that helps trap heat in the atmosphere, such as carbon dioxide.",
       "choices": [],
-      "explanation": "This uses the existing revision-pack definition.",
+      "explanation": "This uses the existing key definition.",
       "source": "9E environmental impacts/greenhouse gas revision content; CGP KS3 Year 9 Topic 11 Climate; Oak climate lessons",
       "sourceExcerpt": "A gas that helps trap heat in the atmosphere, such as carbon dioxide.",
       "sourceUrls": [
@@ -17100,7 +22702,9 @@ window.YEAR9_CONTENT = {
       "tags": [
         "cgp-bridge-v1.40",
         "question-media-v1.45",
-        "source-traceable"
+        "source-traceable",
+        "written-polish-v1.56",
+        "source-question-restored-v1.60"
       ],
       "sourceFidelity": "new-cgp-bridge-derived",
       "learningObjective": "9E-climate-bridge",
@@ -17117,7 +22721,22 @@ window.YEAR9_CONTENT = {
           "presentation": "media-image-base",
           "questionAssetV145": true
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 2,
+      "examDomain": "chemistry",
+      "examPool": "written-main",
+      "examSourceQuality": "new-cgp-bridge-derived",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9cgp-077-E-climate-bridge-why-can-extra-greenhouse-gases-increase-global-temperature",
@@ -17163,7 +22782,22 @@ window.YEAR9_CONTENT = {
           "presentation": "media-image-base",
           "questionAssetV145": true
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "chemistry",
+      "examPool": "written-main",
+      "examSourceQuality": "new-cgp-bridge-derived",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9cgp-078-E-climate-bridge-which-gas-is-commonly-released-by-burning-fossil-fuels",
@@ -17238,7 +22872,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Climate and greenhouse gases",
       "learningObjectiveDescription": "Greenhouse gases, greenhouse effect, global warming evidence, human activities and reduction strategies.",
       "noteId": "9E-climate-bridge",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "state",
+      "examMarks": 1,
+      "examDomain": "chemistry",
+      "examPool": "written-recall",
+      "examSourceQuality": "new-cgp-bridge-derived",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9cgp-080-E-climate-bridge-how-can-cutting-fossil-fuel-use-help-reduce-global-warming",
@@ -17274,7 +22923,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Climate and greenhouse gases",
       "learningObjectiveDescription": "Greenhouse gases, greenhouse effect, global warming evidence, human activities and reduction strategies.",
       "noteId": "9E-climate-bridge",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "chemistry",
+      "examPool": "written-main",
+      "examSourceQuality": "new-cgp-bridge-derived",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examRetiredFromWritten": "v1.62.0",
+      "examRetiredReason": "objective_pool_trim",
+      "examRetainedCoverageAnchor": "y9cgp-077-E-climate-bridge-why-can-extra-greenhouse-gases-increase-global-temperature"
     },
     {
       "id": "y9cgp-081-E-climate-bridge-explain-one-environmental-problem-caused-by-making-materials",
@@ -17283,7 +22949,7 @@ window.YEAR9_CONTENT = {
       "question": "Explain one environmental problem caused by making materials.",
       "answer": "Making materials can burn fossil fuels, releasing carbon dioxide; some processes also release toxins or sulfur dioxide.",
       "choices": [],
-      "explanation": "This uses existing revision-pack wording and extends it to climate impact.",
+      "explanation": "This uses existing key science wording and extends it to climate impact.",
       "source": "9E environmental impacts/greenhouse gas revision content; CGP KS3 Year 9 Topic 11 Climate; Oak climate lessons",
       "sourceExcerpt": "Making materials can burn fossil fuels, releasing carbon dioxide; some processes also release toxins or sulfur dioxide.",
       "sourceUrls": [
@@ -17310,7 +22976,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Climate and greenhouse gases",
       "learningObjectiveDescription": "Greenhouse gases, greenhouse effect, global warming evidence, human activities and reduction strategies.",
       "noteId": "9E-climate-bridge",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "chemistry",
+      "examPool": "written-main",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0",
+      "examRetiredFromWrittenExam": "v1.64.0",
+      "examRetiredReason": "Exact duplicate of a stronger retained making-materials environmental problem prompt."
     },
     {
       "id": "y9cgp-082-E-climate-bridge-which-action-would-most-directly-reduce-carbon-dioxide-emiss",
@@ -17385,7 +23068,24 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Climate and greenhouse gases",
       "learningObjectiveDescription": "Greenhouse gases, greenhouse effect, global warming evidence, human activities and reduction strategies.",
       "noteId": "9E-climate-bridge",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": false,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "chemistry",
+      "examPool": "written-main",
+      "examSourceQuality": "new-cgp-bridge-derived",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examRetiredFromWritten": "v1.62.0",
+      "examRetiredReason": "objective_pool_trim",
+      "examRetainedCoverageAnchor": "y9cgp-077-E-climate-bridge-why-can-extra-greenhouse-gases-increase-global-temperature"
     },
     {
       "id": "y9cgp-084-E-climate-bridge-why-do-scientists-compare-modern-temperatures-with-long-term",
@@ -17420,7 +23120,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Climate and greenhouse gases",
       "learningObjectiveDescription": "Greenhouse gases, greenhouse effect, global warming evidence, human activities and reduction strategies.",
       "noteId": "9E-climate-bridge",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "chemistry",
+      "examPool": "written-main",
+      "examSourceQuality": "new-cgp-bridge-derived",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9cgp-085-E-climate-bridge-explain-why-a-correlation-between-greenhouse-gas-emissions-a",
@@ -17466,7 +23181,22 @@ window.YEAR9_CONTENT = {
           "presentation": "media-image-base",
           "questionAssetV145": true
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "chemistry",
+      "examPool": "written-main",
+      "examSourceQuality": "new-cgp-bridge-derived",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9cgp-096-F-chemical-energy-bridge-define-exothermic-reaction",
@@ -17475,7 +23205,7 @@ window.YEAR9_CONTENT = {
       "question": "Define: exothermic reaction",
       "answer": "A reaction that transfers energy to the surroundings.",
       "choices": [],
-      "explanation": "This uses the existing revision-pack definition.",
+      "explanation": "This uses the existing key definition.",
       "source": "9E/9F Summary sheet exothermic and endothermic reactions; CGP KS3 Year 9 Topic 10 Chemical energy; Oak chemical energy lesson",
       "sourceExcerpt": "A reaction that transfers energy to the surroundings.",
       "sourceUrls": [
@@ -17507,7 +23237,7 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9F-exothermic-endothermic-blank.webp",
-          "alt": "Question-safe split reaction image showing warming and cooling contexts without explanatory labels.",
+          "alt": "Unlabelled split reaction image showing warming and cooling contexts without explanatory labels.",
           "caption": "",
           "mediaTiming": "question",
           "presentation": "media-image-base",
@@ -17522,7 +23252,7 @@ window.YEAR9_CONTENT = {
       "question": "Define: endothermic reaction",
       "answer": "A reaction that takes in energy from the surroundings.",
       "choices": [],
-      "explanation": "This uses the existing revision-pack definition.",
+      "explanation": "This uses the existing key definition.",
       "source": "9E/9F Summary sheet exothermic and endothermic reactions; CGP KS3 Year 9 Topic 10 Chemical energy; Oak chemical energy lesson",
       "sourceExcerpt": "A reaction that takes in energy from the surroundings.",
       "sourceUrls": [
@@ -17554,7 +23284,7 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9F-exothermic-endothermic-blank.webp",
-          "alt": "Question-safe split reaction image showing warming and cooling contexts without explanatory labels.",
+          "alt": "Unlabelled split reaction image showing warming and cooling contexts without explanatory labels.",
           "caption": "",
           "mediaTiming": "question",
           "presentation": "media-image-base",
@@ -17569,7 +23299,7 @@ window.YEAR9_CONTENT = {
       "question": "What do exothermic reactions do to the surroundings?",
       "answer": "Exothermic reactions transfer energy into the surroundings and so increase the temperature around them.",
       "choices": [],
-      "explanation": "This uses the existing revision-pack wording.",
+      "explanation": "This uses the existing key science wording.",
       "source": "9E/9F Summary sheet exothermic and endothermic reactions; CGP KS3 Year 9 Topic 10 Chemical energy; Oak chemical energy lesson",
       "sourceExcerpt": "Exothermic reactions transfer energy into the surroundings and so increase the temperature around them.",
       "sourceUrls": [
@@ -17590,7 +23320,9 @@ window.YEAR9_CONTENT = {
         "cgp-bridge-v1.40",
         "question-media-v1.45",
         "revision-pack-alignment",
-        "source-traceable"
+        "source-traceable",
+        "written-polish-v1.56",
+        "source-question-restored-v1.60"
       ],
       "sourceFidelity": "exact-source-answer",
       "learningObjective": "9F-chemical-energy-bridge",
@@ -17601,13 +23333,30 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9F-exothermic-endothermic-blank.webp",
-          "alt": "Question-safe split reaction image showing warming and cooling contexts without explanatory labels.",
+          "alt": "Unlabelled split reaction image showing warming and cooling contexts without explanatory labels.",
           "caption": "",
           "mediaTiming": "question",
           "presentation": "media-image-base",
           "questionAssetV145": true
         }
-      ]
+      ],
+      "examEligible": false,
+      "examCommand": "state",
+      "examMarks": 2,
+      "examDomain": "chemistry",
+      "examPool": "written-main",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0",
+      "examRetiredFromWrittenExam": "v1.64.0",
+      "examRetiredReason": "Duplicate exothermic surroundings question; retained the 9E source version and other 9F chemical-energy coverage."
     },
     {
       "id": "y9cgp-099-F-chemical-energy-bridge-what-do-endothermic-reactions-do-to-the-surroundings",
@@ -17616,7 +23365,7 @@ window.YEAR9_CONTENT = {
       "question": "What do endothermic reactions do to the surroundings?",
       "answer": "Endothermic reactions transfer energy from the surroundings and so decrease the temperature around them.",
       "choices": [],
-      "explanation": "This uses the existing revision-pack wording.",
+      "explanation": "This uses the existing key science wording.",
       "source": "9E/9F Summary sheet exothermic and endothermic reactions; CGP KS3 Year 9 Topic 10 Chemical energy; Oak chemical energy lesson",
       "sourceExcerpt": "Endothermic reactions transfer energy from the surroundings and so decrease the temperature around them.",
       "sourceUrls": [
@@ -17637,7 +23386,9 @@ window.YEAR9_CONTENT = {
         "cgp-bridge-v1.40",
         "question-media-v1.45",
         "revision-pack-alignment",
-        "source-traceable"
+        "source-traceable",
+        "written-polish-v1.56",
+        "source-question-restored-v1.60"
       ],
       "sourceFidelity": "exact-source-answer",
       "learningObjective": "9F-chemical-energy-bridge",
@@ -17648,13 +23399,30 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9F-exothermic-endothermic-blank.webp",
-          "alt": "Question-safe split reaction image showing warming and cooling contexts without explanatory labels.",
+          "alt": "Unlabelled split reaction image showing warming and cooling contexts without explanatory labels.",
           "caption": "",
           "mediaTiming": "question",
           "presentation": "media-image-base",
           "questionAssetV145": true
         }
-      ]
+      ],
+      "examEligible": false,
+      "examCommand": "state",
+      "examMarks": 2,
+      "examDomain": "chemistry",
+      "examPool": "written-main",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0",
+      "examRetiredFromWrittenExam": "v1.64.0",
+      "examRetiredReason": "Duplicate endothermic surroundings question; retained the 9E source version and other 9F chemical-energy coverage."
     },
     {
       "id": "y9cgp-100-F-chemical-energy-bridge-a-reaction-mixture-starts-at-20-c-and-ends-at-28-c-what-type",
@@ -17774,13 +23542,28 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9F-exothermic-endothermic-blank.webp",
-          "alt": "Question-safe split reaction image showing warming and cooling contexts without explanatory labels.",
+          "alt": "Unlabelled split reaction image showing warming and cooling contexts without explanatory labels.",
           "caption": "",
           "mediaTiming": "question",
           "presentation": "media-image-base",
           "questionAssetV145": true
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "chemistry",
+      "examPool": "written-main",
+      "examSourceQuality": "new-cgp-bridge-derived",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9cgp-103-F-chemical-energy-bridge-give-one-example-of-an-endothermic-reaction-from-the-revisio",
@@ -17789,7 +23572,7 @@ window.YEAR9_CONTENT = {
       "question": "Give one example of an endothermic reaction from the revision sheet.",
       "answer": "Thermal decomposition reactions.",
       "choices": [],
-      "explanation": "This uses the existing revision-pack example.",
+      "explanation": "This uses the the class example.",
       "source": "9E/9F Summary sheet exothermic and endothermic reactions; CGP KS3 Year 9 Topic 10 Chemical energy; Oak chemical energy lesson",
       "sourceExcerpt": "Thermal decomposition reactions.",
       "sourceUrls": [
@@ -17816,7 +23599,22 @@ window.YEAR9_CONTENT = {
       "learningObjectiveTitle": "Chemical energy bridge",
       "learningObjectiveDescription": "Exothermic and endothermic reactions, temperature changes, surroundings and reaction examples.",
       "noteId": "9F-chemical-energy-bridge",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "state",
+      "examMarks": 1,
+      "examDomain": "chemistry",
+      "examPool": "written-recall",
+      "examSourceQuality": "exact-source-answer",
+      "answerFormatHint": "Give the exact fact, term, equation or short list. Keep it short and use the science key words.",
+      "examFormatKind": "short-fact",
+      "answerFormatSteps": [
+        "Find the exact fact the question is asking for.",
+        "Write the key word, equation or short list.",
+        "Do not add a long explanation unless the question asks for it."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9cgp-104-F-chemical-energy-bridge-why-is-combustion-usually-described-as-exothermic",
@@ -17856,13 +23654,28 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9F-combustion-fire-triangle-blank.webp",
-          "alt": "Question-safe combustion image showing a flame and fire-triangle icons without explanatory labels.",
+          "alt": "Unlabelled combustion image showing a flame and fire-triangle icons without explanatory labels.",
           "caption": "",
           "mediaTiming": "question",
           "presentation": "media-image-base",
           "questionAssetV145": true
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 3,
+      "examDomain": "chemistry",
+      "examPool": "written-main",
+      "examSourceQuality": "new-cgp-bridge-derived",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9cgp-105-F-chemical-energy-bridge-correct-the-misconception-a-cold-reaction-makes-cold-energy",
@@ -17890,14 +23703,31 @@ window.YEAR9_CONTENT = {
       "cue": "Try to answer in full sentences before revealing the answer.",
       "tags": [
         "cgp-bridge-v1.40",
-        "source-traceable"
+        "source-traceable",
+        "written-polish-v1.56",
+        "source-question-restored-v1.60"
       ],
       "sourceFidelity": "new-cgp-bridge-derived",
       "learningObjective": "9F-chemical-energy-bridge",
       "learningObjectiveTitle": "Chemical energy bridge",
       "learningObjectiveDescription": "Exothermic and endothermic reactions, temperature changes, surroundings and reaction examples.",
       "noteId": "9F-chemical-energy-bridge",
-      "mediaPolicy": "question-media-only-if-required"
+      "mediaPolicy": "question-media-only-if-required",
+      "examEligible": true,
+      "examCommand": "explain",
+      "examMarks": 2,
+      "examDomain": "chemistry",
+      "examPool": "written-main",
+      "examSourceQuality": "new-cgp-bridge-derived",
+      "answerFormatHint": "Make the point, give the reason, then link it to the result. Use because/so and the key science term.",
+      "examFormatKind": "cause-effect",
+      "answerFormatSteps": [
+        "Make the science point.",
+        "Use because/so to link cause and effect.",
+        "Add the result, consequence or application."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9img-001-9i-density-water-displacement-calculate-density",
@@ -17929,7 +23759,22 @@ window.YEAR9_CONTENT = {
           "mediaTiming": "question",
           "presentation": "media-image-base"
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "calculate",
+      "examMarks": 2,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "source-style-redraw",
+      "answerFormatHint": "Write the formula or method, substitute values, then give the answer with a unit or required rounding.",
+      "examFormatKind": "calculation-method",
+      "answerFormatSteps": [
+        "Write the equation or method.",
+        "Substitute the values and show working.",
+        "Give the final answer with the correct unit or rounding."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9img-002-9i-density-cuboid-calculate-density",
@@ -17961,7 +23806,22 @@ window.YEAR9_CONTENT = {
           "mediaTiming": "question",
           "presentation": "media-image-base"
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "calculate",
+      "examMarks": 2,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "source-style-redraw",
+      "answerFormatHint": "Write the formula or method, substitute values, then give the answer with a unit or required rounding.",
+      "examFormatKind": "calculation-method",
+      "answerFormatSteps": [
+        "Write the equation or method.",
+        "Substitute the values and show working.",
+        "Give the final answer with the correct unit or rounding."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9img-003-9i-pressure-solid-block-calculate-pressure",
@@ -17993,7 +23853,22 @@ window.YEAR9_CONTENT = {
           "mediaTiming": "question",
           "presentation": "media-image-base"
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "calculate",
+      "examMarks": 2,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "source-style-redraw",
+      "answerFormatHint": "Write the formula or method, substitute values, then give the answer with a unit or required rounding.",
+      "examFormatKind": "calculation-method",
+      "answerFormatSteps": [
+        "Write the equation or method.",
+        "Substitute the values and show working.",
+        "Give the final answer with the correct unit or rounding."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9img-004-9i-pressure-shoe-contact-area-compare",
@@ -18062,7 +23937,22 @@ window.YEAR9_CONTENT = {
           "mediaTiming": "question",
           "presentation": "media-image-base"
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "calculate",
+      "examMarks": 2,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "source-style-redraw",
+      "answerFormatHint": "Write the formula or method, substitute values, then give the answer with a unit or required rounding.",
+      "examFormatKind": "calculation-method",
+      "answerFormatSteps": [
+        "Write the equation or method.",
+        "Substitute the values and show working.",
+        "Give the final answer with the correct unit or rounding."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9img-006-9i-distance-time-journey-stopped-section",
@@ -18168,7 +24058,7 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9E-peer-review-process-question-v151.webp",
-          "alt": "Question-safe peer-review process flowchart.",
+          "alt": "Unlabelled peer-review process flowchart.",
           "caption": "Use the diagram to answer the question.",
           "mediaTiming": "question",
           "presentation": "media-image-base"
@@ -18199,13 +24089,13 @@ window.YEAR9_CONTENT = {
       "sourceFidelity": "source-style-redraw",
       "learningObjective": "9B-farming-yield-impact",
       "learningObjectiveTitle": "Farming methods: yield, problems and sustainability",
-      "learningObjectiveDescription": "Modern farming methods, yield, biodiversity and sustainable-development trade-offs.",
+      "learningObjectiveDescription": "Modern farming methods, yield, biodiversity and sustainable development trade-offs.",
       "noteId": "9B-farming-yield-impact",
       "mediaPolicy": "required-for-question",
       "media": [
         {
           "src": "assets/webp/9B-farming-yield-methods-question-v151.webp",
-          "alt": "Question-safe farming methods table.",
+          "alt": "Unlabelled farming methods table.",
           "caption": "Use the diagram to answer the question.",
           "mediaTiming": "question",
           "presentation": "media-image-base"
@@ -18243,7 +24133,7 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9B-glucose-uses-question-v151.webp",
-          "alt": "Question-safe flow map from glucose to labelled boxes A to E.",
+          "alt": "Unlabelled flow map from glucose to labelled boxes A to E.",
           "caption": "Use the diagram to answer the question.",
           "mediaTiming": "question",
           "presentation": "media-image-base"
@@ -18317,7 +24207,7 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9A-biodiversity-extinction-conservation-question-v151.webp",
-          "alt": "Question-safe biodiversity diagram showing causes and conservation methods.",
+          "alt": "Unlabelled biodiversity diagram showing causes and conservation methods.",
           "caption": "Use the diagram to answer the question.",
           "mediaTiming": "question",
           "presentation": "media-image-base"
@@ -18355,7 +24245,7 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9B-photosynthesis-limiting-factors-question-v152.webp",
-          "alt": "Question-safe graphs for light intensity, carbon dioxide concentration and temperature.",
+          "alt": "Unlabelled graphs for light intensity, carbon dioxide concentration and temperature.",
           "caption": "Use the diagram to answer the question.",
           "mediaTiming": "question",
           "presentation": "media-image-base"
@@ -18391,7 +24281,7 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9I-speed-time-graph-question-v152.webp",
-          "alt": "Question-safe speed-time graph labelled A to D.",
+          "alt": "Unlabelled speed-time graph labelled A to D.",
           "caption": "Use the diagram to answer the question.",
           "mediaTiming": "question",
           "presentation": "media-image-base"
@@ -18428,7 +24318,7 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9J-wire-resistance-investigation-question-v152.webp",
-          "alt": "Question-safe wire resistance investigation apparatus.",
+          "alt": "Unlabelled wire resistance investigation apparatus.",
           "caption": "Use the diagram to answer the question.",
           "mediaTiming": "question",
           "presentation": "media-image-base"
@@ -18465,7 +24355,7 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9F-reactivity-extraction-decision-question-v152.webp",
-          "alt": "Question-safe reactivity series and extraction method decision tree.",
+          "alt": "Unlabelled reactivity series and extraction method decision tree.",
           "caption": "Use the diagram to answer the question.",
           "mediaTiming": "question",
           "presentation": "media-image-base"
@@ -18501,7 +24391,7 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9A-natural-selection-sequence-question-v152.webp",
-          "alt": "Question-safe natural-selection sequence labelled A to D.",
+          "alt": "Unlabelled natural-selection sequence labelled A to D.",
           "caption": "Use the diagram to answer the question.",
           "mediaTiming": "question",
           "presentation": "media-image-base"
@@ -18538,7 +24428,7 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9E-recycling-methods-grid-question-v152.webp",
-          "alt": "Question-safe recycling methods grid.",
+          "alt": "Unlabelled recycling methods grid.",
           "caption": "Use the diagram to answer the question.",
           "mediaTiming": "question",
           "presentation": "media-image-base"
@@ -18574,7 +24464,7 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9F-displacement-magnesium-copper-question-v152.webp",
-          "alt": "Question-safe before-and-after magnesium and copper sulfate displacement diagram.",
+          "alt": "Unlabelled before-and-after magnesium and copper sulfate displacement diagram.",
           "caption": "Use the diagram to answer the question.",
           "mediaTiming": "question",
           "presentation": "media-image-base"
@@ -18610,7 +24500,7 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9I-terminal-velocity-force-chain-question-v152.webp",
-          "alt": "Question-safe falling-object sequence with force arrows labelled A to C.",
+          "alt": "Unlabelled falling-object sequence with force arrows labelled A to C.",
           "caption": "Use the diagram to answer the question.",
           "mediaTiming": "question",
           "presentation": "media-image-base"
@@ -18646,7 +24536,7 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9J-static-charge-transfer-question-v152.webp",
-          "alt": "Question-safe balloon and wool cloth electron-transfer sequence.",
+          "alt": "Unlabelled balloon and wool cloth electron-transfer sequence.",
           "caption": "Use the diagram to answer the question.",
           "mediaTiming": "question",
           "presentation": "media-image-base"
@@ -18682,7 +24572,7 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9J-electromagnet-setup-question-v152.webp",
-          "alt": "Question-safe electromagnet setup with power supply, switch, coil and iron core.",
+          "alt": "Unlabelled electromagnet setup with power supply, switch, coil and iron core.",
           "caption": "Use the diagram to answer the question.",
           "mediaTiming": "question",
           "presentation": "media-image-base"
@@ -18718,7 +24608,7 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9J-motor-effect-dc-motor-question-v152.webp",
-          "alt": "Question-safe labelled simple DC motor and motor-effect diagram.",
+          "alt": "Unlabelled labelled simple DC motor and motor-effect diagram.",
           "caption": "Use the diagram to answer the question.",
           "mediaTiming": "question",
           "presentation": "media-image-base"
@@ -18755,7 +24645,7 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9F-gas-pressure-particle-collisions-question-v153.webp",
-          "alt": "Question-safe gas pressure diagram with panels for temperature, volume and number of particles.",
+          "alt": "Unlabelled gas pressure diagram with panels for temperature, volume and number of particles.",
           "caption": "Use the diagram to answer the question.",
           "mediaTiming": "question",
           "presentation": "media-image-base"
@@ -18792,7 +24682,7 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9F-metal-reaction-products-question-v153.webp",
-          "alt": "Question-safe reactive metal products map with blank product labels A, B, C and D.",
+          "alt": "Unlabelled reactive metal products map with blank product labels A, B, C and D.",
           "caption": "Use the diagram to answer the question.",
           "mediaTiming": "question",
           "presentation": "media-image-base"
@@ -18829,7 +24719,7 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9B-plant-transport-overview-question-v153.webp",
-          "alt": "Question-safe whole-plant transport diagram with labels A to F, blue and red transport arrows, and root and leaf callouts.",
+          "alt": "Unlabelled whole-plant transport diagram with labels A to F, blue and red transport arrows, and root and leaf callouts.",
           "caption": "Use the diagram to answer the question.",
           "mediaTiming": "question",
           "presentation": "media-image-base"
@@ -18861,12 +24751,27 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9J-current-voltage-graph-comparison-question-v153.webp",
-          "alt": "Question-safe current-voltage graph with lines A and B.",
+          "alt": "Unlabelled current-voltage graph with lines A and B.",
           "caption": "Use the diagram to answer the question.",
           "mediaTiming": "question",
           "presentation": "media-image-base"
         }
-      ]
+      ],
+      "examEligible": true,
+      "examCommand": "calculate",
+      "examMarks": 2,
+      "examDomain": "physics",
+      "examPool": "written-main",
+      "examSourceQuality": "source-style-redraw",
+      "answerFormatHint": "Write the formula or method, substitute values, then give the answer with a unit or required rounding.",
+      "examFormatKind": "calculation-method",
+      "answerFormatSteps": [
+        "Write the equation or method.",
+        "Substitute the values and show working.",
+        "Give the final answer with the correct unit or rounding."
+      ],
+      "examCommandReviewed": "v1.61.0",
+      "examPruningReviewed": "v1.62.0"
     },
     {
       "id": "y9r6-005-9a-dna-gene-section",
@@ -18901,7 +24806,7 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9A-dna-hierarchy-question-v153.webp",
-          "alt": "Question-safe hierarchy diagram from a person to a cell, nucleus, chromosome, DNA, gene section and characteristic, labelled A to F.",
+          "alt": "Unlabelled hierarchy diagram from a person to a cell, nucleus, chromosome, DNA, gene section and characteristic, labelled A to F.",
           "caption": "Use the diagram to answer the question.",
           "mediaTiming": "question",
           "presentation": "media-image-base"
@@ -18938,7 +24843,7 @@ window.YEAR9_CONTENT = {
       "media": [
         {
           "src": "assets/webp/9J-force-field-comparison-question-v153.webp",
-          "alt": "Question-safe comparison diagram with three labelled field panels A, B and C.",
+          "alt": "Unlabelled comparison diagram with three labelled field panels A, B and C.",
           "caption": "Use the diagram to answer the question.",
           "mediaTiming": "question",
           "presentation": "media-image-base"
@@ -18950,7 +24855,7 @@ window.YEAR9_CONTENT = {
     "Quick-quiz cards are reconstructed from the provided Year 9 PDFs.",
     "Diagram-only questions were converted into text prompts where the original image was not carried into the static app.",
     "Use only where the source-pack licence permits classroom/institution copying.",
-    "v1.1.0 adds one-card-per-assess-yourself coverage plus missing PowerPoint progress checks and expanded calculation practice."
+    "Includes quick quizzes, progress checks and calculation practice."
   ],
   "learningObjectives": [
     {
@@ -18981,7 +24886,7 @@ window.YEAR9_CONTENT = {
       "id": "9B-farming-yield-impact",
       "unit": "9B",
       "title": "Farming yield, benefits and environmental problems",
-      "description": "Revision-pack wording for sustainable development, hedgerows, pesticides, fertilisers, crop varieties and farming trade-offs."
+      "description": "key science wording for sustainable development, hedgerows, pesticides, fertilisers, crop varieties and farming trade-offs."
     },
     {
       "id": "9B-food-webs",

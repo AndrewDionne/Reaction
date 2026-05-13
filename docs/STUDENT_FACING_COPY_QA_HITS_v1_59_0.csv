@@ -1,0 +1,462 @@
+stage,path,matched,text
+before_r158,YEAR9_CONTENT.subtitle,restored; upgraded,"Guided revision aligned to the school study pack, with expanded written exam mode and visual unit overview pages restored and upgraded."
+before_r158,YEAR9_CONTENT.units.1.theme,revision-pack,"Photosynthesis, plant adaptations, plant products, food production and revision-pack respiration links"
+before_r158,YEAR9_CONTENT.cards.38.media.0.alt,question-safe,Question-safe carbon cycle diagram without explanatory notes.
+before_r158,YEAR9_CONTENT.cards.39.media.0.alt,question-safe,Question-safe carbon cycle diagram without explanatory notes.
+before_r158,YEAR9_CONTENT.cards.45.media.0.alt,question-safe,"Question-safe structure visual showing monomers, polymer chain and composite material with blank labels."
+before_r158,YEAR9_CONTENT.cards.46.media.0.alt,question-safe,Question-safe split reaction image showing warming and cooling contexts without explanatory labels.
+before_r158,YEAR9_CONTENT.cards.54.media.0.alt,question-safe,Question-safe aquatic food chain with toxin dots increasing up the food chain.
+before_r158,YEAR9_CONTENT.cards.57.media.0.alt,question-safe,Question-safe recycling image showing several material recycling processes without explanatory labels.
+before_r158,YEAR9_CONTENT.cards.59.media.0.alt,question-safe,Question-safe recycling image showing several material recycling processes without explanatory labels.
+before_r158,YEAR9_CONTENT.cards.60.media.0.alt,question-safe,Question-safe comparison image showing physical changes and chemical reaction evidence without labels.
+before_r158,YEAR9_CONTENT.cards.61.media.0.alt,question-safe,Question-safe gas pressure particle collision diagram.
+before_r158,YEAR9_CONTENT.cards.62.media.0.alt,question-safe,Question-safe particle diagrams for gas pressure and temperature.
+before_r158,YEAR9_CONTENT.cards.63.media.0.alt,question-safe,Question-safe chemical formula cards without worked atom-count notes.
+before_r158,YEAR9_CONTENT.cards.64.media.0.alt,question-safe,Question-safe pH scale with example substances and no explanatory notes.
+before_r158,YEAR9_CONTENT.cards.67.media.0.alt,question-safe,Question-safe periodic table image without explanatory labels.
+before_r158,YEAR9_CONTENT.cards.69.media.0.alt,question-safe,Question-safe combustion image showing a flame and fire-triangle icons without explanatory labels.
+before_r158,YEAR9_CONTENT.cards.71.media.0.alt,question-safe,Question-safe split reaction image showing warming and cooling contexts without explanatory labels.
+before_r158,YEAR9_CONTENT.cards.76.media.0.alt,question-safe,Question-safe comparison of metal extraction methods.
+before_r158,YEAR9_CONTENT.cards.79.media.0.alt,question-safe,Question-safe comparison of metal extraction methods.
+before_r158,YEAR9_CONTENT.cards.86.media.0.alt,question-safe,Question-safe Sankey-style energy transfer diagram without explanatory labels.
+before_r158,YEAR9_CONTENT.cards.91.explanation,source-style,"A horizontal section shows time passing with no change in distance. In this source-style redraw, W is a stopped section."
+before_r158,YEAR9_CONTENT.cards.105.media.0.alt,question-safe,Question-safe static electricity charge-transfer diagram.
+before_r158,YEAR9_CONTENT.cards.106.media.0.alt,question-safe,Question-safe static electricity charge-transfer diagram.
+before_r158,YEAR9_CONTENT.cards.116.media.0.alt,question-safe,Question-safe electromagnet image showing comparison setups without explanatory notes.
+before_r158,YEAR9_CONTENT.cards.118.media.0.alt,question-safe,Question-safe motor effect and simple motor diagram without explanatory notes.
+before_r158,YEAR9_CONTENT.cards.119.media.0.alt,question-safe,Question-safe motor effect and simple motor diagram without explanatory notes.
+before_r158,YEAR9_CONTENT.cards.170.media.0.alt,question-safe,Question-safe thermal decomposition and gas test setup.
+before_r158,YEAR9_CONTENT.cards.177.media.0.alt,question-safe,Question-safe comparison image showing physical changes and chemical reaction evidence without labels.
+before_r158,YEAR9_CONTENT.cards.179.media.0.alt,question-safe,Question-safe gas pressure particle collision diagram.
+before_r158,YEAR9_CONTENT.cards.181.media.0.alt,question-safe,Question-safe periodic table image without explanatory labels.
+before_r158,YEAR9_CONTENT.cards.186.media.0.alt,question-safe,Question-safe combustion image showing a flame and fire-triangle icons without explanatory labels.
+before_r158,YEAR9_CONTENT.cards.201.media.0.alt,question-safe,Question-safe Sankey-style energy transfer diagram without explanatory labels.
+before_r158,YEAR9_CONTENT.cards.211.media.0.alt,question-safe,Question-safe bar magnet field-line diagram.
+before_r158,YEAR9_CONTENT.cards.218.media.0.alt,question-safe,Question-safe static electricity charge-transfer diagram.
+before_r158,YEAR9_CONTENT.cards.225.media.0.alt,question-safe,Question-safe electromagnet image showing comparison setups without explanatory notes.
+before_r158,YEAR9_CONTENT.cards.227.media.0.alt,question-safe,Question-safe motor effect and simple motor diagram without explanatory notes.
+before_r158,YEAR9_CONTENT.cards.231.explanation,revision-pack,"This keeps the revision-pack definition but asks students to use it, rather than only repeat it."
+before_r158,YEAR9_CONTENT.cards.232.explanation,revision-pack,The key revision-pack wording is “reproduce to produce fertile offspring”.
+before_r158,YEAR9_CONTENT.cards.235.media.0.alt,question-safe,"Question-safe DNA, chromosome and gene hierarchy diagram."
+before_r158,YEAR9_CONTENT.cards.241.examSourceAction,source-style; \bv1\.\d+,source-style wording polished and promoted in v1.56.0
+before_r158,YEAR9_CONTENT.cards.241.examExpansionBucket,source-style,polished source-style written exam candidate
+before_r158,YEAR9_CONTENT.cards.242.media.0.alt,question-safe,Question-safe plant transport overview diagram.
+before_r158,YEAR9_CONTENT.cards.247.media.0.alt,question-safe,Question-safe seed lifecycle image without stage labels.
+before_r158,YEAR9_CONTENT.cards.250.media.0.alt,question-safe,"Question-safe structure visual showing monomers, polymer chain and composite material with blank labels."
+before_r158,YEAR9_CONTENT.cards.252.examSourceAction,source-style; \bv1\.\d+,split into two source-style exam prompts in v1.56.0
+before_r158,YEAR9_CONTENT.cards.253.examSourceAction,\bv1\.\d+,split from broad source prompt and promoted in v1.56.0
+before_r158,YEAR9_CONTENT.cards.253.examExpansionBucket,source-style,polished source-style written exam candidate
+before_r158,YEAR9_CONTENT.cards.254.examSourceAction,\bv1\.\d+,split from broad source prompt and promoted in v1.56.0
+before_r158,YEAR9_CONTENT.cards.254.examExpansionBucket,source-style,polished source-style written exam candidate
+before_r158,YEAR9_CONTENT.cards.257.media.0.alt,question-safe,Question-safe rusting conditions and prevention image with labelled samples but no explanatory notes.
+before_r158,YEAR9_CONTENT.cards.264.media.0.alt,question-safe,Question-safe electromagnet image showing comparison setups without explanatory notes.
+before_r158,YEAR9_CONTENT.cards.266.media.0.alt,question-safe,Question-safe series and parallel circuit diagrams with voltmeters.
+before_r158,YEAR9_CONTENT.cards.268.media.0.alt,question-safe,Question-safe wire resistance investigation setup without explanatory notes.
+before_r158,YEAR9_CONTENT.cards.287.media.0.alt,question-safe,"Question-safe cell, nucleus, chromosome, DNA and gene hierarchy diagram."
+before_r158,YEAR9_CONTENT.cards.297.media.0.alt,question-safe,Question-safe plant transport overview diagram.
+before_r158,YEAR9_CONTENT.cards.300.media.0.alt,question-safe,Question-safe split farming scene showing crop yield methods and environmental impacts without explanatory notes.
+before_r158,YEAR9_CONTENT.cards.301.examSourceAction,source-style; \bv1\.\d+,source-style wording polished and promoted in v1.56.0
+before_r158,YEAR9_CONTENT.cards.301.examExpansionBucket,source-style,polished source-style written exam candidate
+before_r158,YEAR9_CONTENT.cards.305.media.0.alt,question-safe,Question-safe carbon cycle diagram without explanatory notes.
+before_r158,YEAR9_CONTENT.cards.309.media.0.alt,question-safe,Question-safe image comparing thermal transfer through different materials without explanatory labels.
+before_r158,YEAR9_CONTENT.cards.315.media.0.alt,question-safe,"Question-safe structure visual showing monomers, polymer chain and composite material with blank labels."
+before_r158,YEAR9_CONTENT.cards.318.media.0.alt,question-safe,"Question-safe structure visual showing monomers, polymer chain and composite material with blank labels."
+before_r158,YEAR9_CONTENT.cards.318.examSourceAction,source-style; \bv1\.\d+,source-style wording polished and promoted in v1.56.0
+before_r158,YEAR9_CONTENT.cards.318.examExpansionBucket,source-style,polished source-style written exam candidate
+before_r158,YEAR9_CONTENT.cards.319.media.0.alt,question-safe,"Question-safe structure visual showing monomers, polymer chain and composite material with blank labels."
+before_r158,YEAR9_CONTENT.cards.320.media.0.alt,question-safe,Question-safe thermal decomposition and gas test setup.
+before_r158,YEAR9_CONTENT.cards.321.media.0.alt,question-safe,Question-safe recycling image showing several material recycling processes without explanatory labels.
+before_r158,YEAR9_CONTENT.cards.322.examSourceAction,source-style; \bv1\.\d+,source-style wording polished and promoted in v1.56.0
+before_r158,YEAR9_CONTENT.cards.322.examExpansionBucket,source-style,polished source-style written exam candidate
+before_r158,YEAR9_CONTENT.cards.325.media.0.alt,question-safe,Question-safe split reaction image showing warming and cooling contexts without explanatory labels.
+before_r158,YEAR9_CONTENT.cards.325.examSourceAction,source-style; \bv1\.\d+,source-style wording polished and promoted in v1.56.0
+before_r158,YEAR9_CONTENT.cards.325.examExpansionBucket,source-style,polished source-style written exam candidate
+before_r158,YEAR9_CONTENT.cards.326.media.0.alt,question-safe,Question-safe aquatic food chain with toxin dots increasing up the food chain.
+before_r158,YEAR9_CONTENT.cards.327.examSourceAction,source-style; \bv1\.\d+,source-style wording polished and promoted in v1.56.0
+before_r158,YEAR9_CONTENT.cards.327.examExpansionBucket,source-style,polished source-style written exam candidate
+before_r158,YEAR9_CONTENT.cards.328.media.0.alt,question-safe,Question-safe rusting conditions and prevention image with labelled samples but no explanatory notes.
+before_r158,YEAR9_CONTENT.cards.329.media.0.alt,question-safe,Question-safe rusting conditions and prevention image with labelled samples but no explanatory notes.
+before_r158,YEAR9_CONTENT.cards.330.media.0.alt,question-safe,Question-safe rusting conditions and prevention image with labelled samples but no explanatory notes.
+before_r158,YEAR9_CONTENT.cards.331.media.0.alt,question-safe,Question-safe rusting conditions and prevention image with labelled samples but no explanatory notes.
+before_r158,YEAR9_CONTENT.cards.336.media.0.alt,question-safe,Question-safe comparison of metal extraction methods.
+before_r158,YEAR9_CONTENT.cards.338.media.0.alt,question-safe,Question-safe sacrificial protection image showing metal attached to an iron structure.
+before_r158,YEAR9_CONTENT.cards.339.media.0.alt,question-safe,Question-safe sacrificial protection image showing metal attached to an iron structure.
+before_r158,YEAR9_CONTENT.cards.340.media.0.alt,question-safe,Question-safe sacrificial protection image showing metal attached to an iron structure.
+before_r158,YEAR9_CONTENT.cards.342.examSourceAction,source-style; \bv1\.\d+,source-style wording polished and promoted in v1.56.0
+before_r158,YEAR9_CONTENT.cards.342.examExpansionBucket,source-style,polished source-style written exam candidate
+before_r158,YEAR9_CONTENT.cards.344.media.0.alt,question-safe,"Question-safe reactivity order diagram showing magnesium, zinc, iron, copper and silver from most reactive at the top to least reactive at the bottom."
+before_r158,YEAR9_CONTENT.cards.345.media.0.alt,question-safe,"Question-safe reactivity order diagram showing magnesium, zinc, iron, copper and silver from most reactive at the top to least reactive at the bottom."
+before_r158,YEAR9_CONTENT.cards.374.media.0.alt,question-safe,Question-safe seed lifecycle image without stage labels.
+before_r158,YEAR9_CONTENT.cards.374.examSourceAction,source-style; \bv1\.\d+,source-style wording polished and promoted in v1.56.0
+before_r158,YEAR9_CONTENT.cards.374.examExpansionBucket,source-style,polished source-style written exam candidate
+before_r158,YEAR9_CONTENT.cards.375.media.0.alt,question-safe,Question-safe seed lifecycle image without stage labels.
+before_r158,YEAR9_CONTENT.cards.379.answer,development,"Phosphates are needed for DNA, energy transfer and root growth; potassium helps enzymes and healthy flower/fruit development."
+before_r158,YEAR9_CONTENT.cards.379.explanation,development,"Phosphates are needed for DNA, energy transfer and root growth; potassium helps enzymes and healthy flower/fruit development."
+before_r158,YEAR9_CONTENT.cards.380.examSourceAction,source-style; \bv1\.\d+,source-style wording polished and promoted in v1.56.0
+before_r158,YEAR9_CONTENT.cards.380.examExpansionBucket,source-style,polished source-style written exam candidate
+before_r158,YEAR9_CONTENT.cards.381.media.0.alt,question-safe,Question-safe quadrat sampling image in a meadow.
+before_r158,YEAR9_CONTENT.cards.384.media.0.alt,question-safe,Question-safe carbon cycle diagram without explanatory notes.
+before_r158,YEAR9_CONTENT.cards.385.media.0.alt,question-safe,Question-safe farming image contrasting crop production and environmental impact without explanatory labels.
+before_r158,YEAR9_CONTENT.cards.386.media.0.alt,question-safe,Question-safe farming image contrasting crop production and environmental impact without explanatory labels.
+before_r158,YEAR9_CONTENT.cards.387.media.0.alt,question-safe,Question-safe farming image contrasting crop production and environmental impact without explanatory labels.
+before_r158,YEAR9_CONTENT.cards.391.media.0.alt,question-safe,Question-safe static electricity charge-transfer diagram.
+before_r158,YEAR9_CONTENT.cards.392.media.0.alt,question-safe,Question-safe static electricity charge-transfer diagram.
+before_r158,YEAR9_CONTENT.cards.393.media.0.alt,question-safe,Question-safe static electricity charge-transfer diagram.
+before_r158,YEAR9_CONTENT.cards.400.media.0.alt,question-safe,Question-safe current-voltage graph comparison diagram.
+before_r158,YEAR9_CONTENT.cards.401.media.0.alt,question-safe,Question-safe wire resistance investigation setup without explanatory notes.
+before_r158,YEAR9_CONTENT.cards.401.examSourceAction,source-style; \bv1\.\d+,source-style wording polished and promoted in v1.56.0
+before_r158,YEAR9_CONTENT.cards.401.examExpansionBucket,source-style,polished source-style written exam candidate
+before_r158,YEAR9_CONTENT.cards.403.media.0.alt,question-safe,Question-safe series and parallel circuit diagrams with voltmeters.
+before_r158,YEAR9_CONTENT.cards.404.media.0.alt,question-safe,Question-safe series and parallel circuit diagrams with voltmeters.
+before_r158,YEAR9_CONTENT.cards.405.media.0.alt,question-safe,Question-safe bar magnet field-line diagram.
+before_r158,YEAR9_CONTENT.cards.406.media.0.alt,question-safe,Question-safe motor effect and simple motor diagram without explanatory notes.
+before_r158,YEAR9_CONTENT.cards.406.examSourceAction,source-style; \bv1\.\d+,source-style wording polished and promoted in v1.56.0
+before_r158,YEAR9_CONTENT.cards.406.examExpansionBucket,source-style,polished source-style written exam candidate
+before_r158,YEAR9_CONTENT.cards.434.media.0.alt,question-safe,Question-safe grid of eight circuit symbols labelled A to H.
+before_r158,YEAR9_CONTENT.cards.434.examSourceAction,source-style; \bv1\.\d+,source-style wording polished and promoted in v1.56.0
+before_r158,YEAR9_CONTENT.cards.434.examExpansionBucket,source-style,polished source-style written exam candidate
+before_r158,YEAR9_CONTENT.cards.435.media.0.alt,question-safe,Question-safe grid of eight circuit symbols labelled A to H.
+before_r158,YEAR9_CONTENT.cards.436.media.0.alt,question-safe,Question-safe grid of eight circuit symbols labelled A to H.
+before_r158,YEAR9_CONTENT.cards.437.media.0.alt,question-safe,Question-safe circuit/meter placement diagram.
+before_r158,YEAR9_CONTENT.cards.438.media.0.alt,question-safe,Question-safe circuit/meter placement diagram.
+before_r158,YEAR9_CONTENT.cards.439.media.0.alt,question-safe,Question-safe circuit/meter placement diagram.
+before_r158,YEAR9_CONTENT.cards.440.media.0.alt,question-safe,Question-safe grid of eight circuit symbols labelled A to H.
+before_r158,YEAR9_CONTENT.cards.444.examSourceAction,source-style; \bv1\.\d+,source-style wording polished and promoted in v1.56.0
+before_r158,YEAR9_CONTENT.cards.444.examExpansionBucket,source-style,polished source-style written exam candidate
+before_r158,YEAR9_CONTENT.cards.445.media.0.alt,question-safe,Question-safe circuit/meter placement diagram.
+before_r158,YEAR9_CONTENT.cards.446.media.0.alt,question-safe,Question-safe circuit/meter placement diagram.
+before_r158,YEAR9_CONTENT.cards.450.examSourceAction,source-style; \bv1\.\d+,source-style wording polished and promoted in v1.56.0
+before_r158,YEAR9_CONTENT.cards.450.examExpansionBucket,source-style,polished source-style written exam candidate
+before_r158,YEAR9_CONTENT.cards.451.examSourceAction,source-style; \bv1\.\d+,source-style wording polished and promoted in v1.56.0
+before_r158,YEAR9_CONTENT.cards.451.examExpansionBucket,source-style,polished source-style written exam candidate
+before_r158,YEAR9_CONTENT.cards.453.examSourceAction,source-style; \bv1\.\d+,source-style wording polished and promoted in v1.56.0
+before_r158,YEAR9_CONTENT.cards.453.examExpansionBucket,source-style,polished source-style written exam candidate
+before_r158,YEAR9_CONTENT.cards.459.question,development,What is sustainable development?
+before_r158,YEAR9_CONTENT.cards.459.sourceExcerpt,development,"Developing the things we need, without destroying habitats is called sustainable development."
+before_r158,YEAR9_CONTENT.cards.459.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.460.explanation,revision-pack,This combines the revision-pack benefit and problem so students must apply both sides of the farming-methods table.
+before_r158,YEAR9_CONTENT.cards.460.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.460.media.0.alt,question-safe,Question-safe farming image contrasting crop production and environmental impact without explanatory labels.
+before_r158,YEAR9_CONTENT.cards.461.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.461.examSourceAction,source-style; \bv1\.\d+,source-style wording polished and promoted in v1.56.0
+before_r158,YEAR9_CONTENT.cards.461.examExpansionBucket,source-style,polished source-style written exam candidate
+before_r158,YEAR9_CONTENT.cards.462.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.463.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.463.media.0.alt,question-safe,Question-safe split farming scene showing crop yield methods and environmental impacts without explanatory notes.
+before_r158,YEAR9_CONTENT.cards.463.examSourceAction,source-style; \bv1\.\d+,source-style wording polished and promoted in v1.56.0
+before_r158,YEAR9_CONTENT.cards.463.examExpansionBucket,source-style,polished source-style written exam candidate
+before_r158,YEAR9_CONTENT.cards.464.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.465.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.465.media.0.alt,question-safe,Question-safe farming image contrasting crop production and environmental impact without explanatory labels.
+before_r158,YEAR9_CONTENT.cards.465.examSourceAction,source-style; \bv1\.\d+,source-style wording polished and promoted in v1.56.0
+before_r158,YEAR9_CONTENT.cards.465.examExpansionBucket,source-style,polished source-style written exam candidate
+before_r158,YEAR9_CONTENT.cards.466.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.467.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.468.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.469.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.470.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.470.examSourceAction,source-style; \bv1\.\d+,source-style wording polished and promoted in v1.56.0
+before_r158,YEAR9_CONTENT.cards.470.examExpansionBucket,source-style,polished source-style written exam candidate
+before_r158,YEAR9_CONTENT.cards.471.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.471.media.0.alt,question-safe,Question-safe split reaction image showing warming and cooling contexts without explanatory labels.
+before_r158,YEAR9_CONTENT.cards.471.examSourceAction,source-style; \bv1\.\d+,source-style wording polished and promoted in v1.56.0
+before_r158,YEAR9_CONTENT.cards.471.examExpansionBucket,source-style,polished source-style written exam candidate
+before_r158,YEAR9_CONTENT.cards.472.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.472.media.0.alt,question-safe,Question-safe split reaction image showing warming and cooling contexts without explanatory labels.
+before_r158,YEAR9_CONTENT.cards.472.examSourceAction,source-style; \bv1\.\d+,source-style wording polished and promoted in v1.56.0
+before_r158,YEAR9_CONTENT.cards.472.examExpansionBucket,source-style,polished source-style written exam candidate
+before_r158,YEAR9_CONTENT.cards.473.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.474.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.475.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.476.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.476.examSourceAction,source-style; \bv1\.\d+,source-style wording polished and promoted in v1.56.0
+before_r158,YEAR9_CONTENT.cards.476.examExpansionBucket,source-style,polished source-style written exam candidate
+before_r158,YEAR9_CONTENT.cards.477.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.477.examSourceAction,source-style; \bv1\.\d+,source-style wording polished and promoted in v1.56.0
+before_r158,YEAR9_CONTENT.cards.477.examExpansionBucket,source-style,polished source-style written exam candidate
+before_r158,YEAR9_CONTENT.cards.478.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.478.media.0.alt,question-safe,Question-safe recycling image showing several material recycling processes without explanatory labels.
+before_r158,YEAR9_CONTENT.cards.479.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.479.media.0.alt,question-safe,Question-safe recycling image showing several material recycling processes without explanatory labels.
+before_r158,YEAR9_CONTENT.cards.480.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.480.media.0.alt,question-safe,Question-safe recycling image showing several material recycling processes without explanatory labels.
+before_r158,YEAR9_CONTENT.cards.481.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.482.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.482.media.0.alt,question-safe,Question-safe recycling image showing several material recycling processes without explanatory labels.
+before_r158,YEAR9_CONTENT.cards.483.explanation,revision-pack,The question keeps the revision-pack meaning but tests it in a food-chain context.
+before_r158,YEAR9_CONTENT.cards.483.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.483.media.0.alt,question-safe,Question-safe aquatic food chain with toxin dots increasing up the food chain.
+before_r158,YEAR9_CONTENT.cards.484.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.484.media.0.alt,question-safe,Question-safe comparison image showing physical changes and chemical reaction evidence without labels.
+before_r158,YEAR9_CONTENT.cards.485.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.485.examSourceAction,source-style; \bv1\.\d+,source-style wording polished and promoted in v1.56.0
+before_r158,YEAR9_CONTENT.cards.485.examExpansionBucket,source-style,polished source-style written exam candidate
+before_r158,YEAR9_CONTENT.cards.486.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.486.examSourceAction,source-style; \bv1\.\d+,source-style wording polished and promoted in v1.56.0
+before_r158,YEAR9_CONTENT.cards.486.examExpansionBucket,source-style,polished source-style written exam candidate
+before_r158,YEAR9_CONTENT.cards.487.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.488.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.489.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.490.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.491.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.492.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.492.media.0.alt,question-safe,Question-safe reactive metal product map.
+before_r158,YEAR9_CONTENT.cards.492.examSourceAction,source-style; \bv1\.\d+,source-style wording polished and promoted in v1.56.0
+before_r158,YEAR9_CONTENT.cards.492.examExpansionBucket,source-style,polished source-style written exam candidate
+before_r158,YEAR9_CONTENT.cards.493.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.493.media.0.alt,question-safe,Question-safe pH scale with example substances and no explanatory notes.
+before_r158,YEAR9_CONTENT.cards.493.examSourceAction,source-style; \bv1\.\d+,source-style wording polished and promoted in v1.56.0
+before_r158,YEAR9_CONTENT.cards.493.examExpansionBucket,source-style,polished source-style written exam candidate
+before_r158,YEAR9_CONTENT.cards.494.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.495.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.496.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.496.media.0.alt,question-safe,Question-safe combustion image showing a flame and fire-triangle icons without explanatory labels.
+before_r158,YEAR9_CONTENT.cards.497.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.498.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.498.media.0.alt,question-safe,Question-safe combustion image showing a flame and fire-triangle icons without explanatory labels.
+before_r158,YEAR9_CONTENT.cards.499.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.499.media.0.alt,question-safe,Question-safe particle collision image comparing lower and higher particle activity without explanatory labels.
+before_r158,YEAR9_CONTENT.cards.500.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.501.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.501.examSourceAction,source-style; \bv1\.\d+,source-style wording polished and promoted in v1.56.0
+before_r158,YEAR9_CONTENT.cards.501.examExpansionBucket,source-style,polished source-style written exam candidate
+before_r158,YEAR9_CONTENT.cards.502.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.502.media.0.alt,question-safe,Question-safe comparison of metal extraction methods.
+before_r158,YEAR9_CONTENT.cards.503.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.503.media.0.alt,question-safe,Question-safe comparison of metal extraction methods.
+before_r158,YEAR9_CONTENT.cards.504.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.505.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.505.examSourceAction,source-style; \bv1\.\d+,source-style wording polished and promoted in v1.56.0
+before_r158,YEAR9_CONTENT.cards.505.examExpansionBucket,source-style,polished source-style written exam candidate
+before_r158,YEAR9_CONTENT.cards.506.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.507.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.508.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.508.examSourceAction,source-style; \bv1\.\d+,source-style wording polished and promoted in v1.56.0
+before_r158,YEAR9_CONTENT.cards.508.examExpansionBucket,source-style,polished source-style written exam candidate
+before_r158,YEAR9_CONTENT.cards.509.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.510.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.511.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.512.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.513.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.514.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.515.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.516.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.517.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.518.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.519.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.520.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.521.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.522.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.523.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.523.media.0.alt,question-safe,Question-safe force-field comparison diagram.
+before_r158,YEAR9_CONTENT.cards.524.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.525.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.526.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.526.media.0.alt,question-safe,Question-safe force-field comparison diagram.
+before_r158,YEAR9_CONTENT.cards.526.examSourceAction,source-style; \bv1\.\d+,source-style wording polished and promoted in v1.56.0
+before_r158,YEAR9_CONTENT.cards.526.examExpansionBucket,source-style,polished source-style written exam candidate
+before_r158,YEAR9_CONTENT.cards.527.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.528.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.529.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.530.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.531.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.531.examSourceAction,source-style; \bv1\.\d+,source-style wording polished and promoted in v1.56.0
+before_r158,YEAR9_CONTENT.cards.531.examExpansionBucket,source-style,polished source-style written exam candidate
+before_r158,YEAR9_CONTENT.cards.532.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.532.examSourceAction,source-style; \bv1\.\d+,source-style wording polished and promoted in v1.56.0
+before_r158,YEAR9_CONTENT.cards.532.examExpansionBucket,source-style,polished source-style written exam candidate
+before_r158,YEAR9_CONTENT.cards.533.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.533.examSourceAction,source-style; \bv1\.\d+,source-style wording polished and promoted in v1.56.0
+before_r158,YEAR9_CONTENT.cards.533.examExpansionBucket,source-style,polished source-style written exam candidate
+before_r158,YEAR9_CONTENT.cards.534.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.535.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.536.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.537.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.537.media.0.alt,question-safe,Question-safe electromagnet image showing comparison setups without explanatory notes.
+before_r158,YEAR9_CONTENT.cards.538.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.538.media.0.alt,question-safe,Question-safe electromagnet image showing comparison setups without explanatory notes.
+before_r158,YEAR9_CONTENT.cards.538.examSourceAction,source-style; \bv1\.\d+,source-style wording polished and promoted in v1.56.0
+before_r158,YEAR9_CONTENT.cards.538.examExpansionBucket,source-style,polished source-style written exam candidate
+before_r158,YEAR9_CONTENT.cards.539.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.539.media.0.alt,question-safe,Question-safe electromagnet image showing comparison setups without explanatory notes.
+before_r158,YEAR9_CONTENT.cards.540.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.540.media.0.alt,question-safe,Question-safe motor effect and simple motor diagram without explanatory notes.
+before_r158,YEAR9_CONTENT.cards.541.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.541.media.0.alt,question-safe,Question-safe motor effect and simple motor diagram without explanatory notes.
+before_r158,YEAR9_CONTENT.cards.542.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.542.media.0.alt,question-safe,Question-safe motor effect and simple motor diagram without explanatory notes.
+before_r158,YEAR9_CONTENT.cards.542.examSourceAction,source-style; \bv1\.\d+,source-style wording polished and promoted in v1.56.0
+before_r158,YEAR9_CONTENT.cards.542.examExpansionBucket,source-style,polished source-style written exam candidate
+before_r158,YEAR9_CONTENT.cards.543.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.543.media.0.alt,question-safe,Question-safe motor effect and simple motor diagram without explanatory notes.
+before_r158,YEAR9_CONTENT.cards.544.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.545.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.546.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.547.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.548.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.548.examSourceAction,source-style; \bv1\.\d+,source-style wording polished and promoted in v1.56.0
+before_r158,YEAR9_CONTENT.cards.548.examExpansionBucket,source-style,polished source-style written exam candidate
+before_r158,YEAR9_CONTENT.cards.549.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.550.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.551.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.552.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.552.media.0.alt,question-safe,Question-safe neutralisation lab setup and pH scale.
+before_r158,YEAR9_CONTENT.cards.553.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.554.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.555.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.556.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.557.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.557.examSourceAction,source-style; \bv1\.\d+,source-style wording polished and promoted in v1.56.0
+before_r158,YEAR9_CONTENT.cards.557.examExpansionBucket,source-style,polished source-style written exam candidate
+before_r158,YEAR9_CONTENT.cards.558.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.559.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.560.explanation,revision-pack,Reduction is loss of oxygen in this revision-pack context.
+before_r158,YEAR9_CONTENT.cards.560.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.560.examSourceAction,source-style; \bv1\.\d+,source-style wording polished and promoted in v1.56.0
+before_r158,YEAR9_CONTENT.cards.560.examExpansionBucket,source-style,polished source-style written exam candidate
+before_r158,YEAR9_CONTENT.cards.561.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.562.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.563.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.564.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.565.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.566.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.567.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.568.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.568.examSourceAction,source-style; \bv1\.\d+,source-style wording polished and promoted in v1.56.0
+before_r158,YEAR9_CONTENT.cards.568.examExpansionBucket,source-style,polished source-style written exam candidate
+before_r158,YEAR9_CONTENT.cards.569.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.569.examSourceAction,source-style; \bv1\.\d+,source-style wording polished and promoted in v1.56.0
+before_r158,YEAR9_CONTENT.cards.569.examExpansionBucket,source-style,polished source-style written exam candidate
+before_r158,YEAR9_CONTENT.cards.570.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.570.examSourceAction,source-style; \bv1\.\d+,source-style wording polished and promoted in v1.56.0
+before_r158,YEAR9_CONTENT.cards.570.examExpansionBucket,source-style,polished source-style written exam candidate
+before_r158,YEAR9_CONTENT.cards.571.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.571.examSourceAction,source-style; \bv1\.\d+,source-style wording polished and promoted in v1.56.0
+before_r158,YEAR9_CONTENT.cards.571.examExpansionBucket,source-style,polished source-style written exam candidate
+before_r158,YEAR9_CONTENT.cards.572.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.572.examSourceAction,source-style; \bv1\.\d+,source-style wording polished and promoted in v1.56.0
+before_r158,YEAR9_CONTENT.cards.572.examExpansionBucket,source-style,polished source-style written exam candidate
+before_r158,YEAR9_CONTENT.cards.573.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.573.examSourceAction,source-style; \bv1\.\d+,source-style wording polished and promoted in v1.56.0
+before_r158,YEAR9_CONTENT.cards.573.examExpansionBucket,source-style,polished source-style written exam candidate
+before_r158,YEAR9_CONTENT.cards.574.cue,revision-pack,Use the revision-pack wording as closely as possible.
+before_r158,YEAR9_CONTENT.cards.575.explanation,revision-pack,This combines the revision-pack farming benefits and problems and requires comparison rather than recall.
+before_r158,YEAR9_CONTENT.cards.575.learningObjectiveDescription,development,"Sustainable development, fertilisers, pesticides and farming trade-offs."
+before_r158,YEAR9_CONTENT.cards.575.media.0.alt,question-safe,Question-safe farming image contrasting crop production and environmental impact without explanatory labels.
+before_r158,YEAR9_CONTENT.cards.579.media.0.alt,question-safe,Question-safe wire resistance investigation setup without explanatory notes.
+before_r158,YEAR9_CONTENT.cards.586.media.0.alt,question-safe,Question-safe water tank image showing jets from different depths without explanatory labels.
+before_r158,YEAR9_CONTENT.cards.587.media.0.alt,question-safe,Question-safe water tank image showing jets from different depths without explanatory labels.
+before_r158,YEAR9_CONTENT.cards.588.media.0.alt,question-safe,Question-safe water tank image showing jets from different depths without explanatory labels.
+before_r158,YEAR9_CONTENT.cards.590.media.0.alt,question-safe,"Question-safe pressure image showing force over area, liquid pressure and floating forces without explanatory labels."
+before_r158,YEAR9_CONTENT.cards.591.media.0.alt,question-safe,"Question-safe pressure image showing force over area, liquid pressure and floating forces without explanatory labels."
+before_r158,YEAR9_CONTENT.cards.593.media.0.alt,question-safe,"Question-safe pressure image showing force over area, liquid pressure and floating forces without explanatory labels."
+before_r158,YEAR9_CONTENT.cards.594.media.0.alt,question-safe,"Question-safe pressure image showing force over area, liquid pressure and floating forces without explanatory labels."
+before_r158,YEAR9_CONTENT.cards.595.media.0.alt,question-safe,Question-safe water tank image showing jets from different depths without explanatory labels.
+before_r158,YEAR9_CONTENT.cards.595.examSourceAction,source-style; \bv1\.\d+,source-style wording polished and promoted in v1.56.0
+before_r158,YEAR9_CONTENT.cards.595.examExpansionBucket,source-style,polished source-style written exam candidate
+before_r158,YEAR9_CONTENT.cards.596.media.0.alt,question-safe,Question-safe image comparing thermal transfer through different materials without explanatory labels.
+before_r158,YEAR9_CONTENT.cards.597.media.0.alt,question-safe,Question-safe image comparing thermal transfer through different materials without explanatory labels.
+before_r158,YEAR9_CONTENT.cards.598.media.0.alt,question-safe,"Question-safe heating and cooling image showing a beaker, thermometer and particle panels without explanatory labels."
+before_r158,YEAR9_CONTENT.cards.599.media.0.alt,question-safe,"Question-safe heating and cooling image showing a beaker, thermometer and particle panels without explanatory labels."
+before_r158,YEAR9_CONTENT.cards.600.media.0.alt,question-safe,"Question-safe heating and cooling image showing a beaker, thermometer and particle panels without explanatory labels."
+before_r158,YEAR9_CONTENT.cards.601.media.0.alt,question-safe,"Question-safe heating and cooling image showing a beaker, thermometer and particle panels without explanatory labels."
+before_r158,YEAR9_CONTENT.cards.603.media.0.alt,question-safe,Question-safe image comparing thermal transfer through different materials without explanatory labels.
+before_r158,YEAR9_CONTENT.cards.604.media.0.alt,question-safe,Question-safe image comparing thermal transfer through different materials without explanatory labels.
+before_r158,YEAR9_CONTENT.cards.605.media.0.alt,question-safe,"Question-safe heating and cooling image showing a beaker, thermometer and particle panels without explanatory labels."
+before_r158,YEAR9_CONTENT.cards.606.media.0.alt,question-safe,"Question-safe heating and cooling image showing a beaker, thermometer and particle panels without explanatory labels."
+before_r158,YEAR9_CONTENT.cards.607.media.0.alt,question-safe,"Question-safe heating and cooling image showing a beaker, thermometer and particle panels without explanatory labels."
+before_r158,YEAR9_CONTENT.cards.607.examSourceAction,source-style; \bv1\.\d+,source-style wording polished and promoted in v1.56.0
+before_r158,YEAR9_CONTENT.cards.607.examExpansionBucket,source-style,polished source-style written exam candidate
+before_r158,YEAR9_CONTENT.cards.608.media.0.alt,question-safe,Question-safe image comparing thermal transfer through different materials without explanatory labels.
+before_r158,YEAR9_CONTENT.cards.609.media.0.alt,question-safe,Question-safe image comparing thermal transfer through different materials without explanatory labels.
+before_r158,YEAR9_CONTENT.cards.610.explanation,revision-pack,This uses the existing revision-pack definition.
+before_r158,YEAR9_CONTENT.cards.610.media.0.alt,question-safe,Question-safe periodic table image without explanatory labels.
+before_r158,YEAR9_CONTENT.cards.611.explanation,revision-pack,This uses the existing revision-pack wording.
+before_r158,YEAR9_CONTENT.cards.612.explanation,revision-pack,This uses the existing revision-pack wording.
+before_r158,YEAR9_CONTENT.cards.613.explanation,revision-pack,This uses the existing revision-pack wording.
+before_r158,YEAR9_CONTENT.cards.614.explanation,revision-pack,This uses the existing revision-pack wording.
+before_r158,YEAR9_CONTENT.cards.614.media.0.alt,question-safe,Question-safe periodic table image without explanatory labels.
+before_r158,YEAR9_CONTENT.cards.615.media.0.alt,question-safe,Question-safe periodic table image without explanatory labels.
+before_r158,YEAR9_CONTENT.cards.616.media.0.alt,question-safe,Question-safe periodic table image without explanatory labels.
+before_r158,YEAR9_CONTENT.cards.617.media.0.alt,question-safe,Question-safe periodic table image without explanatory labels.
+before_r158,YEAR9_CONTENT.cards.617.examSourceAction,source-style; \bv1\.\d+,source-style wording polished and promoted in v1.56.0
+before_r158,YEAR9_CONTENT.cards.617.examExpansionBucket,source-style,polished source-style written exam candidate
+before_r158,YEAR9_CONTENT.cards.620.media.0.alt,question-safe,Question-safe periodic table image without explanatory labels.
+before_r158,YEAR9_CONTENT.cards.622.media.0.alt,question-safe,Question-safe periodic table image without explanatory labels.
+before_r158,YEAR9_CONTENT.cards.624.explanation,revision-pack,This uses the existing revision-pack definition.
+before_r158,YEAR9_CONTENT.cards.626.examSourceAction,source-style; \bv1\.\d+,source-style wording polished and promoted in v1.56.0
+before_r158,YEAR9_CONTENT.cards.626.examExpansionBucket,source-style,polished source-style written exam candidate
+before_r158,YEAR9_CONTENT.cards.631.explanation,revision-pack,This uses existing revision-pack wording and extends it to climate impact.
+before_r158,YEAR9_CONTENT.cards.636.explanation,revision-pack,This uses the existing revision-pack definition.
+before_r158,YEAR9_CONTENT.cards.636.media.0.alt,question-safe,Question-safe split reaction image showing warming and cooling contexts without explanatory labels.
+before_r158,YEAR9_CONTENT.cards.637.explanation,revision-pack,This uses the existing revision-pack definition.
+before_r158,YEAR9_CONTENT.cards.637.media.0.alt,question-safe,Question-safe split reaction image showing warming and cooling contexts without explanatory labels.
+before_r158,YEAR9_CONTENT.cards.638.explanation,revision-pack,This uses the existing revision-pack wording.
+before_r158,YEAR9_CONTENT.cards.638.media.0.alt,question-safe,Question-safe split reaction image showing warming and cooling contexts without explanatory labels.
+before_r158,YEAR9_CONTENT.cards.638.examSourceAction,source-style; \bv1\.\d+,source-style wording polished and promoted in v1.56.0
+before_r158,YEAR9_CONTENT.cards.638.examExpansionBucket,source-style,polished source-style written exam candidate
+before_r158,YEAR9_CONTENT.cards.639.explanation,revision-pack,This uses the existing revision-pack wording.
+before_r158,YEAR9_CONTENT.cards.639.media.0.alt,question-safe,Question-safe split reaction image showing warming and cooling contexts without explanatory labels.
+before_r158,YEAR9_CONTENT.cards.639.examSourceAction,source-style; \bv1\.\d+,source-style wording polished and promoted in v1.56.0
+before_r158,YEAR9_CONTENT.cards.639.examExpansionBucket,source-style,polished source-style written exam candidate
+before_r158,YEAR9_CONTENT.cards.642.media.0.alt,question-safe,Question-safe split reaction image showing warming and cooling contexts without explanatory labels.
+before_r158,YEAR9_CONTENT.cards.643.explanation,revision-pack,This uses the existing revision-pack example.
+before_r158,YEAR9_CONTENT.cards.644.media.0.alt,question-safe,Question-safe combustion image showing a flame and fire-triangle icons without explanatory labels.
+before_r158,YEAR9_CONTENT.cards.645.examSourceAction,source-style; \bv1\.\d+,source-style wording polished and promoted in v1.56.0
+before_r158,YEAR9_CONTENT.cards.645.examExpansionBucket,source-style,polished source-style written exam candidate
+before_r158,YEAR9_CONTENT.cards.653.media.0.alt,question-safe,Question-safe peer-review process flowchart.
+before_r158,YEAR9_CONTENT.cards.654.learningObjectiveDescription,development,"Modern farming methods, yield, biodiversity and sustainable-development trade-offs."
+before_r158,YEAR9_CONTENT.cards.654.media.0.alt,question-safe,Question-safe farming methods table.
+before_r158,YEAR9_CONTENT.cards.655.media.0.alt,question-safe,Question-safe flow map from glucose to labelled boxes A to E.
+before_r158,YEAR9_CONTENT.cards.657.media.0.alt,question-safe,Question-safe biodiversity diagram showing causes and conservation methods.
+before_r158,YEAR9_CONTENT.cards.658.media.0.alt,question-safe,"Question-safe graphs for light intensity, carbon dioxide concentration and temperature."
+before_r158,YEAR9_CONTENT.cards.659.media.0.alt,question-safe,Question-safe speed-time graph labelled A to D.
+before_r158,YEAR9_CONTENT.cards.660.media.0.alt,question-safe,Question-safe wire resistance investigation apparatus.
+before_r158,YEAR9_CONTENT.cards.661.media.0.alt,question-safe,Question-safe reactivity series and extraction method decision tree.
+before_r158,YEAR9_CONTENT.cards.662.media.0.alt,question-safe,Question-safe natural-selection sequence labelled A to D.
+before_r158,YEAR9_CONTENT.cards.663.media.0.alt,question-safe,Question-safe recycling methods grid.
+before_r158,YEAR9_CONTENT.cards.664.media.0.alt,question-safe,Question-safe before-and-after magnesium and copper sulfate displacement diagram.
+before_r158,YEAR9_CONTENT.cards.665.media.0.alt,question-safe,Question-safe falling-object sequence with force arrows labelled A to C.
+before_r158,YEAR9_CONTENT.cards.666.media.0.alt,question-safe,Question-safe balloon and wool cloth electron-transfer sequence.
+before_r158,YEAR9_CONTENT.cards.667.media.0.alt,question-safe,"Question-safe electromagnet setup with power supply, switch, coil and iron core."
+before_r158,YEAR9_CONTENT.cards.668.media.0.alt,question-safe,Question-safe labelled simple DC motor and motor-effect diagram.
+before_r158,YEAR9_CONTENT.cards.669.media.0.alt,question-safe,"Question-safe gas pressure diagram with panels for temperature, volume and number of particles."
+before_r158,YEAR9_CONTENT.cards.670.media.0.alt,question-safe,"Question-safe reactive metal products map with blank product labels A, B, C and D."
+before_r158,YEAR9_CONTENT.cards.671.media.0.alt,question-safe,"Question-safe whole-plant transport diagram with labels A to F, blue and red transport arrows, and root and leaf callouts."
+before_r158,YEAR9_CONTENT.cards.672.media.0.alt,question-safe,Question-safe current-voltage graph with lines A and B.
+before_r158,YEAR9_CONTENT.cards.673.media.0.alt,question-safe,"Question-safe hierarchy diagram from a person to a cell, nucleus, chromosome, DNA, gene section and characteristic, labelled A to F."
+before_r158,YEAR9_CONTENT.cards.674.media.0.alt,question-safe,"Question-safe comparison diagram with three labelled field panels A, B and C."
+before_r158,YEAR9_CONTENT.notes.3,\bv1\.\d+,v1.1.0 adds one-card-per-assess-yourself coverage plus missing PowerPoint progress checks and expanded calculation practice.
+before_r158,YEAR9_CONTENT.learningObjectives.4.description,revision-pack; development,"Revision-pack wording for sustainable development, hedgerows, pesticides, fertilisers, crop varieties and farming trade-offs."
+before_r158,YEAR9_NOTES.notes.6.media.3.sourceTag,\bv1\.\d+,r2-image-v1.47
+before_r158,YEAR9_NOTES.notes.7.summary,development,"Modern farming can increase crop yield, but the same methods can damage habitats, reduce biodiversity or pollute water. Sustainable development means meeting human needs without destroying habitats."
+before_r158,YEAR9_NOTES.notes.7.commonMistakes.2.wrong,development,Sustainable development means stopping all farming.
+before_r158,YEAR9_NOTES.notes.7.commonMistakes.2.correct,development,Sustainable development means meeting human needs while protecting habitats and resources for the future.
+before_r158,YEAR9_NOTES.notes.7.media.1.mediaPoints.3,development,Sustainable development balances needs and habitats
+before_r158,YEAR9_NOTES.notes.8.media.2.sourceTag,\bv1\.\d+,r2-image-v1.47
+before_r158,YEAR9_NOTES.notes.8.media.3.sourceTag,\bv1\.\d+,r2-image-v1.47
+before_r158,YEAR9_NOTES.notes.15.media.4.sourceTag,\bv1\.\d+,r2-image-v1.47
+before_r158,YEAR9_NOTES.notes.15.media.5.sourceTag,\bv1\.\d+,r2-image-v1.47
+before_r158,YEAR9_NOTES.notes.15.media.6.sourceTag,\bv1\.\d+,r2-image-v1.47
+before_r158,YEAR9_NOTES.notes.15.media.7.sourceTag,\bv1\.\d+,r2-image-v1.47
+before_r158,YEAR9_NOTES.notes.18.media.2.sourceTag,\bv1\.\d+,r2-image-v1.47
+before_r158,YEAR9_NOTES.notes.19.explanation,revision-pack,"This note gathers smaller 9F revision-pack ideas that often appear as quick questions: hydrocarbons, combustion products, the oxygen test, thermal decomposition, energy changes and factors that affect reaction rate. Keep answers short and use the exact vocabulary."
+before_r158,YEAR9_NOTES.notes.25.media.1.sourceTag,\bv1\.\d+,v1.48-qa-corrected
+before_r158,YEAR9_NOTES.notes.25.media.2.sourceTag,\bv1\.\d+,v1.48-qa-corrected
+before_r158,YEAR9_NOTES.notes.26.media.1.sourceTag,\bv1\.\d+,v1.48-qa-corrected
+before_r158,YEAR9_NOTES.notes.27.media.1.sourceTag,\bv1\.\d+,v1.48-qa-corrected
+before_r158,YEAR9_NOTES.notes.27.media.2.sourceTag,\bv1\.\d+,v1.48-qa-corrected
+before_r158,YEAR9_NOTES.notes.32.media.1.sourceTag,\bv1\.\d+,v1.48-qa-corrected
+before_r158,YEAR9_NOTES.notes.32.media.2.sourceTag,\bv1\.\d+,v1.48-qa-corrected
+before_r158,YEAR9_NOTES.notes.32.media.3.sourceTag,\bv1\.\d+,v1.48-qa-corrected
+before_r158,YEAR9_NOTES.notes.34.media.3.sourceTag,\bv1\.\d+,r2-image-v1.47
+before_r158,YEAR9_NOTES.notes.34.media.4.sourceTag,\bv1\.\d+,r2-image-v1.47
+before_r158,YEAR9_NOTES.notes.34.media.5.sourceTag,\bv1\.\d+,r2-image-v1.47
+before_r158,YEAR9_NOTES.notes.34.media.6.sourceTag,\bv1\.\d+,r2-image-v1.47
+before_r158,YEAR9_NOTES.notes.35.commonMistakes.2.why,revision-pack,This is exact revision-pack wording.
+before_r158,YEAR9_NOTES.notes.35.explanation,revision-pack,"This bridge topic reuses the revision-pack atomic-structure wording, then adds CGP-style group and trend practice."
+before_r158,YEAR9_NOTES.notes.35.practicePrompt,revision-pack,"Use the exact revision-pack wording for groups, periods and atomic number."
+before_r158,YEAR9_NOTES.notes.35.media.3.sourceTag,\bv1\.\d+,r2-image-v1.47
+before_r158,YEAR9_NOTES.notes.35.media.4.sourceTag,\bv1\.\d+,r2-image-v1.47
+before_r158,YEAR9_NOTES.notes.37.explanation,revision-pack,This bridge topic tightens existing 9E/9F revision-pack wording and adds direct temperature interpretation practice.
+before_r158,YEAR9_NOTES.notes.37.practicePrompt,revision-pack,Use the exact revision-pack wording for exothermic/endothermic definitions.

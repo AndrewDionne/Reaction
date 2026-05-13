@@ -1,0 +1,18 @@
+severity,area,check,result,detail
+pass,content,unique card ids,pass,
+pass,content,card note links,pass,missing note links: 0
+pass,content,card learning-objective links,pass,missing objective links: 0
+warn,content,duplicate normalized questions,warn,duplicates: 11
+pass,content,MCQ answer keys resolve,pass,bad answer keys: 0
+pass,content,automated answer-leakage scan,pass,flags: 0
+warn,content,duplicate distractor text scan,warn,flags: 1
+pass,content,source field present,pass,missing source: 0
+pass,content,source fidelity present,pass,missing sourceFidelity: 0
+pass,media,referenced media exists,pass,missing media: 0
+pass,balance,unit difficulty spread generated,pass,units: 6
+pass,app-flow,resume session position support,pass,
+pass,app-flow,MCQ answer shuffle support,pass,
+pass,app-flow,revisit note removed,pass,
+pass,app-flow,duplicate finishTest call removed,pass,
+pass,app-flow,question captions hidden,pass,
+pass,app-flow,missed test cards move to revisit,pass,

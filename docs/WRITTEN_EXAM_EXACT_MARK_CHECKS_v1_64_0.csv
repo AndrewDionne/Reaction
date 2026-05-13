@@ -1,0 +1,10 @@
+paperMarks,domain,targetMarks,exactTargetPossible
+15,biology,5,yes
+15,chemistry,5,yes
+15,physics,5,yes
+30,biology,10,yes
+30,chemistry,10,yes
+30,physics,10,yes
+45,biology,15,yes
+45,chemistry,15,yes
+45,physics,15,yes

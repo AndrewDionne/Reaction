@@ -8,7 +8,7 @@
   <title>Reaction · Year 9 Science Study</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
   <link rel="manifest" href="manifest.webmanifest" />
-  <link rel="stylesheet" href="styles.css?v=1.53.0" />
+  <link rel="stylesheet" href="styles.css?v=1.65.0" />
 </head>
 <body>
   <canvas id="burstCanvas" aria-hidden="true"></canvas>
@@ -48,7 +48,7 @@
           <p class="journey-hint">Choose one mode, then select one or more units or sub-units below.</p>
         </div>
 
-        <div class="journey-grid journey-grid-four" role="radiogroup" aria-label="Learning mode">
+        <div class="journey-grid journey-grid-six" role="radiogroup" aria-label="Learning mode">
           <button class="journey-card status-route route-card-button active" data-mode-select="practice" type="button" role="radio" aria-checked="true">
             <span class="journey-icon">↻</span>
             <strong>Revision journey</strong>
@@ -61,11 +61,23 @@
             <small>Practise cards you nearly know and want to come back to.</small>
             <em><span id="revisitStat">0</span> ready</em>
           </button>
+          <button class="journey-card revisit-test status-route route-card-button" data-mode-select="revisit-test" type="button" role="radio" aria-checked="false">
+            <span class="journey-icon">↺</span>
+            <strong>Revisit test</strong>
+            <small>Build a test from the cards currently marked Revisit.</small>
+            <em><span id="hubRevisitTestStat">0</span> ready</em>
+          </button>
           <button class="journey-card test status-route route-card-button" data-mode-select="test" type="button" role="radio" aria-checked="false">
             <span class="journey-icon">✓</span>
             <strong>Test your knowledge</strong>
             <small>Check the cards you have already marked Mastered.</small>
             <em><span id="masteredStat">0</span> ready</em>
+          </button>
+          <button class="journey-card unit-test status-route route-card-button" data-mode-select="unit-test" type="button" role="radio" aria-checked="false">
+            <span class="journey-icon">▣</span>
+            <strong>End of unit test</strong>
+            <small>Build a written test from one selected unit. No MCQs.</small>
+            <em>Unit-specific</em>
           </button>
           <button class="journey-card written status-route route-card-button" data-mode-select="written" type="button" role="radio" aria-checked="false">
             <span class="journey-icon">✍</span>
@@ -83,8 +95,8 @@
         </div>
         <div class="written-builder-panel" aria-label="Written exam builder options">
           <div>
-            <strong>Written exam builder</strong>
-            <span>Balanced 1/3 Biology, 1/3 Chemistry and 1/3 Physics. Practise state, identify, describe, explain and calculation answers.</span>
+            <strong>Written test builder</strong>
+            <span>Choose 15, 30 or 45 marks for written exam mode or an end of unit written test.</span>
           </div>
           <div class="written-builder-actions">
             <button class="secondary-button" data-written-size="15" type="button">Quick · 15 marks</button>
@@ -138,8 +150,8 @@
     </section>
   </main>
 
-  <script src="data/year9-content.js?v=1.53.0"></script>
-  <script src="data/year9-notes.js?v=1.53.0"></script>
-  <script src="app.js?v=1.53.0"></script>
+  <script src="data/year9-content.js?v=1.65.0"></script>
+  <script src="data/year9-notes.js?v=1.65.0"></script>
+  <script src="app.js?v=1.65.0"></script>
 </body>
 </html>

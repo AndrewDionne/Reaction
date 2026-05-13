@@ -1,3 +1,72 @@
+## v1.63.0 — Written exam marking and section polish
+
+- Preserved the 301-question written exam pool and made no student-facing question text changes.
+- Structured generated written exams into neutral student-facing sections: core knowledge, written reasoning and data/calculations.
+- Improved hidden command-specific answer-format guidance and answer-structure checks without changing question wording.
+- Improved derived-card mark schemes with clearer credit checklists tied to the model answer.
+- Added post-submit student answer review and a low-mark route to add linked study cards to Revisit.
+
+## v1.62.0 — Written exam pruning without coverage loss
+
+- Retired 98 weaker derived prompts from written-exam selection without deleting study cards.
+- Preserved exact/source-style question wording and retained all learning-objective coverage.
+- Reduced the active written-exam pool from 399 to 301 prompts.
+- Kept 15, 30 and 45 mark balanced papers possible across Biology, Chemistry and Physics.
+
+## v1.61.0 — Written prompt command flags and answer-format support
+
+- Systematically reviewed all 367 derived written prompts.
+- Preserved exact/source-recorded student-facing question wording.
+- Added hidden command-format metadata for every eligible derived written prompt.
+- Added per-question answer-format support used by the Answer format button.
+- Kept the written exam question cards free of visible command-word labels.
+
+## v1.58.0 - Unit overview visual cleanup
+## v1.60.0 — Restore source-style written question wording
+
+- Restored the 54 written-review prompts to their original/source-recorded question wording.
+- Kept hidden exam classification metadata for answer-format help and balanced written-paper selection.
+- Removed the visible command-word pill from written exam cards so students read the question wording first.
+- Restored the broad 9F extraction/rusting source prompt to exam eligibility and retired the two v1.56 split prompts from exam selection.
+- Written exam mode now uses 399 eligible prompts: 32 curated visual prompts plus 367 derived open-answer prompts.
+
+- Upgraded the restored unit overview pages into visual revision hubs with one lead image and supporting visual tiles per unit.
+- Reused the strongest current `assets/webp/` visuals instead of generating new images.
+- Replaced patch-history status wording with student-facing revision guidance.
+- Marked 9E material families and 9F metal reaction products as covered now that suitable visuals exist.
+- Removed empty infographic-backlog sections and fixed the stale overview header title.
+- Preserved the v1.56 written-exam derived bank and its 400 eligible written prompts.
+
+## v1.57.0 - Unit overview route restoration
+
+- Restored the unit overview button event binding that was present in the v1.50.0 overview patch but dropped during later written-exam/app merges.
+- Preserved the current v1.54+ unit overview data, r153 image/status updates and v1.56 written-exam derived-bank work.
+- Verified all six overview entries are still available for 9A, 9B, 9E, 9F, 9I and 9J.
+- Added a restoration audit documenting the regression and the minimal repair.
+
+## v1.56.0 - Written-review source-style polish
+
+- Polished the 54 `written-review` prompts from v1.55.0 into cleaner source-style written exam wording.
+- Promoted 53 reviewed prompts from `written-review` to `written-main` while preserving source answers, references and media.
+- Split one broad 9F extraction/rusting progress-check prompt into two focused written exam prompts and retained the original as a study card only.
+- Adjusted marks on multi-part identify/state/describe items where the expected answer has more than two separate points.
+- Removed the `written-review` pool from active exam selection; the written mode now has 400 eligible prompts including the 32 curated visual prompts and 368 derived open-answer prompts.
+
+## v1.55.0 - Written exam derived-bank expansion
+
+- Added exam metadata to 367 existing open-answer cards so written exam mode can draw from the broader source-aligned card bank.
+- Combined the restored 32 visual-training questions with the derived open-answer pool for 399 eligible written exam prompts.
+- Replaced the previous combo search with a bounded exact-mark selector so 15, 30 and 45 mark exams remain balanced by Biology, Chemistry and Physics without browser freeze risk.
+- Preserved hidden mark schemes, Answer format hints, difficulty bubbles and randomized test generation.
+- Added a derived-bank inventory CSV and implementation audit for source/coverage QA.
+
+## v1.54.0 - Written exam visual training restoration
+
+- Restored the r152 written exam visual-training mode on top of the r153 image repo.
+- Expanded the written exam bank from 18 fixed questions to 32 media-backed written prompts.
+- Replaced deterministic written exam blueprints with randomized balanced exact-mark selection by domain.
+- Added student-controlled Answer format hints and 1-5 difficulty bubbles.
+- Preserved hidden mark schemes until answer submission and retained all r153 image/content updates.
 
 ## v1.53.0 - Reaction images r6 integration
 

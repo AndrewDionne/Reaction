@@ -1,0 +1,4 @@
+section,focus,questions,marks,commands
+Section A,Core knowledge,94,135,"{'state': 65, 'identify': 29}"
+Section B,Written reasoning,165,449,"{'explain': 113, 'describe': 52}"
+Section C,Data and calculations,42,90,"{'describe': 3, 'calculate': 32, 'explain': 2, 'graph': 5}"

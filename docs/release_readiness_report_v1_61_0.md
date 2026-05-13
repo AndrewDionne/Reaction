@@ -1,8 +1,8 @@
-# v1.64.0 readiness QA report
+# v1.61.0 readiness QA report
 
 ## Summary
 
-- Content version: `1.64.0`
+- Content version: `1.61.0`
 - Notes version: `1.60.0`
 - Cards: **675**
 - Class notes: **38**
@@ -37,10 +37,10 @@ The app is ready for a student trial when all `fail` checks remain at zero. Warn
 
 ## Files generated
 
-- `docs/release_readiness_findings_v1_64_0.csv`
-- `docs/release_readiness_unit_balance_v1_64_0.csv`
-- `docs/release_readiness_media_refs_v1_64_0.csv`
-- `docs/release_readiness_answer_leakage_flags_v1_64_0.csv`
+- `docs/release_readiness_findings_v1_61_0.csv`
+- `docs/release_readiness_unit_balance_v1_61_0.csv`
+- `docs/release_readiness_media_refs_v1_61_0.csv`
+- `docs/release_readiness_answer_leakage_flags_v1_61_0.csv`
 
 ## Recommendation
 

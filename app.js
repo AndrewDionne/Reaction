@@ -40,6 +40,7 @@
     hubMasteredStat: byId("hubMasteredStat"),
     revisitStat: byId("revisitStat"),
     hubRevisitStat: byId("hubRevisitStat"),
+    hubRevisitTestStat: byId("hubRevisitTestStat"),
     studyStat: byId("studyStat"),
     hubStudyStat: byId("hubStudyStat"),
     soundToggle: byId("soundToggle"),
@@ -67,11 +68,23 @@
       subtitle: "These are the cards you nearly know. Move them to Mastered when they feel secure.",
       empty: "No Revisit cards match these filters yet.",
     },
+    "revisit-test": {
+      eyebrow: "Revisit test",
+      title: "Test your Revisit cards",
+      subtitle: "Build a test from the cards currently marked Revisit.",
+      empty: "No Revisit cards match these filters yet.",
+    },
     study: {
       eyebrow: "Need notes queue",
       title: "Cards that need notes",
       subtitle: "These are cards marked Still confused after using a class-note context card.",
       empty: "No Need Notes cards match these filters yet. Open Class Notes from a card, then choose Still confused to add one here.",
+    },
+    "unit-test": {
+      eyebrow: "End of unit test",
+      title: "End of unit written test",
+      subtitle: "Build a source-style written test from one selected unit. No multiple-choice questions are included.",
+      empty: "Choose one unit with written-test questions to build an end of unit test.",
     },
     written: {
       eyebrow: "Written exam practice",
@@ -108,328 +121,1398 @@
     progress: loadProgress(),
   };
 
+  function isTestMode(mode = state.mode) {
+    return mode === "test" || mode === "revisit-test";
+  }
+
 
   const WRITTEN_EXAM_BANK = [
     {
-      id: "we-bio-state-photosynthesis-equation",
-      domain: "biology",
-      unit: "9B",
-      commandWord: "state",
-      marks: 1,
-      question: "State the word equation for photosynthesis.",
-      answerFrame: "Write one short sentence or equation only.",
-      modelAnswer: "carbon dioxide + water → glucose + oxygen",
-      markScheme: ["1 mark for carbon dioxide + water → glucose + oxygen."],
-      keywords: ["carbon dioxide", "water", "glucose", "oxygen"],
-      commonMistakes: ["Do not write respiration instead of photosynthesis.", "Do not miss out glucose."],
-      answerStructure: ["State the exact equation.", "No explanation is needed."]
+        "id": "we-bio-state-photosynthesis-equation",
+        "domain": "biology",
+        "unit": "9B",
+        "commandWord": "state",
+        "marks": 1,
+        "difficulty": 1,
+        "skills": [
+            "recall",
+            "equation"
+        ],
+        "question": "State the word equation for photosynthesis.",
+        "answerFrame": "One short equation only.",
+        "modelAnswer": "carbon dioxide + water → glucose + oxygen",
+        "markScheme": [
+            "1 mark for carbon dioxide + water → glucose + oxygen."
+        ],
+        "keywords": [
+            "carbon dioxide",
+            "water",
+            "glucose",
+            "oxygen"
+        ],
+        "commonMistakes": [
+            "Do not write the respiration equation.",
+            "Do not miss out glucose."
+        ],
+        "answerStructure": [
+            "Write the reactants.",
+            "Add the arrow.",
+            "Write the products."
+        ]
     },
     {
-      id: "we-bio-identify-root-hair-adaptation",
-      domain: "biology",
-      unit: "9B",
-      commandWord: "identify",
-      marks: 2,
-      question: "Identify two adaptations of root hair cells for absorbing water and mineral ions.",
-      answerFrame: "Use two bullet points.",
-      modelAnswer: "Root hair cells have a large surface area and a thin cell wall.",
-      markScheme: ["1 mark for large surface area.", "1 mark for thin cell wall / short diffusion distance."],
-      keywords: ["large surface area", "thin cell wall", "short diffusion distance"],
-      commonMistakes: ["Do not explain photosynthesis here.", "Do not give adaptations of leaves instead of roots."],
-      answerStructure: ["Bullet point 1: first adaptation.", "Bullet point 2: second adaptation."],
-      media: [{
-        src: "assets/webp/9B-plant-transport-overview-question-v153.webp",
-        alt: "Whole-plant transport diagram with labelled root, stem and leaf structures.",
-        mediaTiming: "question",
-        presentation: "media-image-base"
-      }]
+        "id": "we-bio-identify-glucose-uses",
+        "domain": "biology",
+        "unit": "9B",
+        "commandWord": "identify",
+        "marks": 3,
+        "difficulty": 2,
+        "skills": [
+            "visual",
+            "identify",
+            "diagram"
+        ],
+        "question": "Use the glucose map. Identify three ways a plant can use glucose.",
+        "answerFrame": "Use three short bullet points.",
+        "modelAnswer": "Glucose can be used in respiration, stored as starch and used to make cellulose for cell walls. It can also be used to make lipids/oils and proteins with mineral ions.",
+        "markScheme": [
+            "1 mark for each correct use of glucose, up to 3 marks."
+        ],
+        "keywords": [
+            "respiration",
+            "starch",
+            "cellulose",
+            "lipids",
+            "oils",
+            "proteins"
+        ],
+        "commonMistakes": [
+            "Do not say glucose is only made, not used.",
+            "Do not confuse glucose with oxygen."
+        ],
+        "answerStructure": [
+            "Bullet 1: first use.",
+            "Bullet 2: second use.",
+            "Bullet 3: third use."
+        ],
+        "media": [
+            {
+                "src": "assets/webp/9B-glucose-uses-question-v151.webp",
+                "alt": "Question-safe glucose use map with branches labelled A to E.",
+                "mediaTiming": "question",
+                "presentation": "media-image-base"
+            }
+        ]
     },
     {
-      id: "we-bio-describe-food-web-pesticide",
-      domain: "biology",
-      unit: "9B",
-      commandWord: "describe",
-      marks: 3,
-      question: "Describe what may happen in a food web if pesticides reduce the number of insects.",
-      answerFrame: "Write 2–3 short linked sentences. Describe what changes.",
-      modelAnswer: "The number of insects decreases. Animals that eat insects have less food, so their population may decrease. Predators higher in the food web may also be affected.",
-      markScheme: ["1 mark for insects decreasing.", "1 mark for insect-eaters having less food / decreasing.", "1 mark for knock-on effect on predators higher in the food web."],
-      keywords: ["insects decrease", "less food", "population decreases", "predators"],
-      commonMistakes: ["Do not only say pesticides are bad.", "Use food-web language: food, population, predator, prey."],
-      answerStructure: ["Sentence 1: what changes first.", "Sentence 2: what happens to the organism that feeds on it.", "Sentence 3: wider food-web effect."]
+        "id": "we-bio-describe-photosynthesis-light-graph",
+        "domain": "biology",
+        "unit": "9B",
+        "commandWord": "describe",
+        "marks": 3,
+        "difficulty": 3,
+        "skills": [
+            "visual",
+            "graph",
+            "describe"
+        ],
+        "question": "Use the graph. Describe how light intensity affects the rate of photosynthesis.",
+        "answerFrame": "Describe the trend in two parts.",
+        "modelAnswer": "As light intensity increases, the rate of photosynthesis increases. At higher light intensity the graph levels off, so increasing light further does not increase the rate much. This is because another factor becomes limiting.",
+        "markScheme": [
+            "1 mark for rate increasing at first.",
+            "1 mark for graph levelling off/plateauing.",
+            "1 mark for another factor becoming limiting."
+        ],
+        "keywords": [
+            "light intensity",
+            "rate",
+            "increases",
+            "levels off",
+            "limiting factor"
+        ],
+        "commonMistakes": [
+            "Do not say the rate keeps increasing forever.",
+            "Do not ignore the plateau."
+        ],
+        "answerStructure": [
+            "Say the first trend.",
+            "Say what happens at high light intensity.",
+            "Give the reason if asked to explain."
+        ],
+        "media": [
+            {
+                "src": "assets/webp/9B-photosynthesis-light-graph-blank.webp",
+                "alt": "Question-safe graph of rate of photosynthesis against light intensity.",
+                "mediaTiming": "question",
+                "presentation": "media-image-base"
+            }
+        ]
     },
     {
-      id: "we-bio-explain-magnesium",
-      domain: "biology",
-      unit: "9B",
-      commandWord: "explain",
-      marks: 3,
-      question: "Explain why plants need magnesium ions.",
-      answerFrame: "Use because / so / therefore.",
-      modelAnswer: "Plants need magnesium ions to make chlorophyll. Chlorophyll absorbs light for photosynthesis. Without enough magnesium, the plant cannot photosynthesise as well, so growth is reduced.",
-      markScheme: ["1 mark for magnesium being needed to make chlorophyll.", "1 mark for chlorophyll absorbing light / being needed for photosynthesis.", "1 mark for reduced photosynthesis or growth if magnesium is lacking."],
-      keywords: ["magnesium ions", "chlorophyll", "light", "photosynthesis", "growth"],
-      commonMistakes: ["Do not say magnesium is the food.", "Link magnesium to chlorophyll, not directly to glucose."],
-      answerStructure: ["Science fact.", "Because link.", "Result linked back to the plant."]
+        "id": "we-bio-explain-magnesium-deficiency",
+        "domain": "biology",
+        "unit": "9B",
+        "commandWord": "explain",
+        "marks": 3,
+        "difficulty": 3,
+        "skills": [
+            "explain",
+            "cause-effect"
+        ],
+        "question": "Explain why a plant may grow poorly if it does not get enough magnesium ions.",
+        "answerFrame": "Use because/so to link magnesium to growth.",
+        "modelAnswer": "Magnesium is needed to make chlorophyll. Chlorophyll absorbs light for photosynthesis. With less chlorophyll, the plant photosynthesises less and makes less glucose for growth.",
+        "markScheme": [
+            "1 mark for magnesium being needed to make chlorophyll.",
+            "1 mark for chlorophyll absorbing light/being needed for photosynthesis.",
+            "1 mark for reduced photosynthesis/glucose/growth."
+        ],
+        "keywords": [
+            "magnesium",
+            "chlorophyll",
+            "light",
+            "photosynthesis",
+            "glucose",
+            "growth"
+        ],
+        "commonMistakes": [
+            "Do not say magnesium is the food itself.",
+            "Link the ion to photosynthesis and growth."
+        ],
+        "answerStructure": [
+            "Point: magnesium role.",
+            "Because: chlorophyll/photosynthesis.",
+            "Result: less glucose/growth."
+        ]
     },
     {
-      id: "we-bio-describe-natural-selection",
-      domain: "biology",
-      unit: "9A",
-      commandWord: "describe",
-      marks: 4,
-      question: "Describe how natural selection can lead to evolution.",
-      answerFrame: "Use short steps in order.",
-      modelAnswer: "There is variation in a population. Some organisms have characteristics that make them better adapted to the environment. They are more likely to survive and reproduce. Their useful alleles are passed on, so the population changes over generations.",
-      markScheme: ["1 mark for variation.", "1 mark for better adapted individuals being more likely to survive.", "1 mark for reproduction / passing on alleles.", "1 mark for change over generations."],
-      keywords: ["variation", "adapted", "survive", "reproduce", "alleles", "generations"],
-      commonMistakes: ["Do not say individuals choose to evolve.", "Evolution happens over generations, not during one animal's life."],
-      answerStructure: ["Variation.", "Selection pressure.", "Survival and reproduction.", "Inheritance over generations."]
+        "id": "we-bio-describe-natural-selection-giraffes",
+        "domain": "biology",
+        "unit": "9A",
+        "commandWord": "explain",
+        "marks": 4,
+        "difficulty": 4,
+        "skills": [
+            "visual",
+            "explain",
+            "process"
+        ],
+        "question": "Use the giraffe image. Explain how natural selection could lead to longer necks becoming more common over many generations.",
+        "answerFrame": "Write the chain in order: variation → advantage → reproduction → inherited change.",
+        "modelAnswer": "There is variation in neck length in the giraffe population. Giraffes with longer necks can reach more food, so they are more likely to survive. They reproduce and pass on alleles for longer necks. Over many generations, long necks become more common in the population.",
+        "markScheme": [
+            "1 mark for variation in the population.",
+            "1 mark for the advantageous characteristic improving survival.",
+            "1 mark for survivors reproducing/passing on alleles.",
+            "1 mark for the characteristic becoming more common over generations."
+        ],
+        "keywords": [
+            "variation",
+            "advantage",
+            "survive",
+            "reproduce",
+            "pass on",
+            "generations"
+        ],
+        "commonMistakes": [
+            "Do not say individual giraffes stretch and pass on stretched necks.",
+            "Natural selection acts over generations."
+        ],
+        "answerStructure": [
+            "Variation.",
+            "Selection pressure/advantage.",
+            "Survival and reproduction.",
+            "Inherited change over generations."
+        ],
+        "media": [
+            {
+                "src": "assets/webp/9A-natural-selection-giraffes.webp",
+                "alt": "Giraffes of different neck lengths feeding near a tree.",
+                "mediaTiming": "question",
+                "presentation": "media-image-base"
+            }
+        ]
     },
     {
-      id: "we-bio-explain-farming-sustainability",
-      domain: "biology",
-      unit: "9B",
-      commandWord: "explain",
-      marks: 2,
-      question: "Explain one problem caused by using fertilisers to increase crop yield.",
-      answerFrame: "One cause + one effect.",
-      modelAnswer: "Fertilisers can run off fields into rivers. This can cause rapid growth of algae and reduce oxygen for aquatic animals.",
-      markScheme: ["1 mark for fertiliser runoff / entering water.", "1 mark for algal growth / reduced oxygen / harm to aquatic animals."],
-      keywords: ["fertiliser", "runoff", "algae", "oxygen", "aquatic animals"],
-      commonMistakes: ["Do not describe pesticides instead.", "Include a problem, not only the benefit of bigger yield."],
-      answerStructure: ["Cause.", "Effect."]
-    },
-
-    {
-      id: "we-chem-state-neutralisation",
-      domain: "chemistry",
-      unit: "9F",
-      commandWord: "state",
-      marks: 1,
-      question: "State the products of neutralisation.",
-      answerFrame: "Write the products only.",
-      modelAnswer: "A salt and water.",
-      markScheme: ["1 mark for salt and water."],
-      keywords: ["salt", "water"],
-      commonMistakes: ["Do not write carbon dioxide unless the reaction involves a carbonate."],
-      answerStructure: ["State the two products."]
-    },
-    {
-      id: "we-chem-identify-state-symbols",
-      domain: "chemistry",
-      unit: "9E",
-      commandWord: "identify",
-      marks: 2,
-      question: "Identify the meaning of the state symbols (s) and (aq).",
-      answerFrame: "Use two bullet points.",
-      modelAnswer: "(s) means solid. (aq) means aqueous, dissolved in water.",
-      markScheme: ["1 mark for (s) = solid.", "1 mark for (aq) = aqueous / dissolved in water."],
-      keywords: ["solid", "aqueous", "dissolved in water"],
-      commonMistakes: ["Aqueous does not mean liquid; it means dissolved in water."],
-      answerStructure: ["Bullet 1: (s).", "Bullet 2: (aq)."]
-    },
-    {
-      id: "we-chem-describe-displacement",
-      domain: "chemistry",
-      unit: "9F",
-      commandWord: "describe",
-      marks: 3,
-      question: "Describe what happens when a more reactive metal is placed in a solution containing a less reactive metal compound.",
-      answerFrame: "Say what changes places and what is seen.",
-      modelAnswer: "The more reactive metal displaces the less reactive metal from its compound. The more reactive metal goes into solution. The less reactive metal is formed as a solid deposit.",
-      markScheme: ["1 mark for the more reactive metal displacing the less reactive metal.", "1 mark for the more reactive metal going into solution / forming a compound.", "1 mark for the less reactive metal being deposited / formed."],
-      keywords: ["more reactive", "displaces", "less reactive", "solution", "deposit"],
-      commonMistakes: ["Do not say the less reactive metal displaces the more reactive metal.", "Use the word displaces."],
-      answerStructure: ["What displaces what.", "What happens to the more reactive metal.", "What is observed."],
-      media: [{
-        src: "assets/webp/9F-displacement-magnesium-copper-question-v152.webp",
-        alt: "Before-and-after displacement reaction diagram showing magnesium in copper sulfate solution.",
-        mediaTiming: "question",
-        presentation: "media-image-base"
-      }]
+        "id": "we-bio-describe-biodiversity-conservation",
+        "domain": "biology",
+        "unit": "9A",
+        "commandWord": "describe",
+        "marks": 3,
+        "difficulty": 3,
+        "skills": [
+            "visual",
+            "describe",
+            "identify"
+        ],
+        "question": "Use the biodiversity diagram. Describe two causes of extinction risk and one way biodiversity can be preserved.",
+        "answerFrame": "Use three bullet points.",
+        "modelAnswer": "Habitat destruction and climate change can put species at risk of extinction. Biodiversity can be preserved using nature reserves, breeding programmes, hunting bans or seed/gene banks.",
+        "markScheme": [
+            "1 mark for a valid cause of extinction risk.",
+            "1 mark for a second valid cause.",
+            "1 mark for a valid preservation method."
+        ],
+        "keywords": [
+            "habitat destruction",
+            "climate change",
+            "pollution",
+            "hunting",
+            "invasive species",
+            "nature reserve",
+            "breeding programme",
+            "gene bank"
+        ],
+        "commonMistakes": [
+            "Do not only name endangered animals; state causes or methods.",
+            "Use examples from the diagram."
+        ],
+        "answerStructure": [
+            "Cause 1.",
+            "Cause 2.",
+            "Preservation method."
+        ],
+        "media": [
+            {
+                "src": "assets/webp/9A-biodiversity-extinction-conservation-question-v151.webp",
+                "alt": "Question-safe biodiversity diagram showing extinction causes and preservation methods.",
+                "mediaTiming": "question",
+                "presentation": "media-image-base"
+            }
+        ]
     },
     {
-      id: "we-chem-explain-aluminium-electrolysis",
-      domain: "chemistry",
-      unit: "9F",
-      commandWord: "explain",
-      marks: 3,
-      question: "Explain why aluminium is extracted by electrolysis rather than by heating aluminium oxide with carbon.",
-      answerFrame: "Use the reactivity series and because / so.",
-      modelAnswer: "Aluminium is more reactive than carbon. Carbon cannot reduce aluminium oxide. Therefore aluminium must be extracted by electrolysis.",
-      markScheme: ["1 mark for aluminium being more reactive than carbon.", "1 mark for carbon not being able to reduce aluminium oxide / displace aluminium.", "1 mark for electrolysis being required."],
-      keywords: ["aluminium", "more reactive than carbon", "carbon", "reduce", "electrolysis"],
-      commonMistakes: ["Do not say aluminium is less reactive than carbon.", "Do not say carbon reduction works for all metals."],
-      answerStructure: ["Reactivity fact.", "Because link.", "Therefore extraction method."]
+        "id": "we-bio-explain-farming-method-impact",
+        "domain": "biology",
+        "unit": "9B",
+        "commandWord": "explain",
+        "marks": 3,
+        "difficulty": 3,
+        "skills": [
+            "visual",
+            "explain",
+            "benefit-problem"
+        ],
+        "question": "Use the farming table. Choose one farming method and explain one benefit and one environmental problem.",
+        "answerFrame": "Name the method, then give one benefit and one problem.",
+        "modelAnswer": "Using fertilisers helps crops grow because it adds mineral ions to the soil. However, fertiliser runoff can enter rivers and cause algal growth, reducing oxygen and harming aquatic animals.",
+        "markScheme": [
+            "1 mark for naming a suitable farming method.",
+            "1 mark for a linked benefit/increased yield idea.",
+            "1 mark for a linked environmental problem."
+        ],
+        "keywords": [
+            "fertiliser",
+            "pesticide",
+            "greenhouse",
+            "yield",
+            "habitat",
+            "biodiversity",
+            "pollution"
+        ],
+        "commonMistakes": [
+            "Do not give only benefits.",
+            "Link the problem to the method chosen."
+        ],
+        "answerStructure": [
+            "Method.",
+            "Benefit.",
+            "Environmental problem."
+        ],
+        "media": [
+            {
+                "src": "assets/webp/9B-farming-yield-methods-question-v151.webp",
+                "alt": "Question-safe farming methods table with blank benefit and drawback areas.",
+                "mediaTiming": "question",
+                "presentation": "media-image-base"
+            }
+        ]
     },
     {
-      id: "we-chem-explain-thermite-redox",
-      domain: "chemistry",
-      unit: "9F",
-      commandWord: "explain",
-      marks: 4,
-      question: "In the thermite reaction, aluminium reacts with iron oxide to make aluminium oxide and iron. Explain why this is a redox reaction.",
-      answerFrame: "Mention oxidation and reduction.",
-      modelAnswer: "Aluminium gains oxygen to form aluminium oxide, so aluminium is oxidised. Iron oxide loses oxygen to form iron, so iron oxide is reduced. Oxidation and reduction happen in the same reaction, so it is redox.",
-      markScheme: ["1 mark for aluminium gaining oxygen.", "1 mark for aluminium being oxidised.", "1 mark for iron oxide losing oxygen / being reduced.", "1 mark for oxidation and reduction both happening."],
-      keywords: ["aluminium", "gains oxygen", "oxidised", "iron oxide", "loses oxygen", "reduced", "redox"],
-      commonMistakes: ["Do not just say it burns.", "Redox needs both oxidation and reduction."],
-      answerStructure: ["Oxidation statement.", "Reduction statement.", "Conclusion: redox."]
+        "id": "we-bio-describe-food-web-pesticide",
+        "domain": "biology",
+        "unit": "9B",
+        "commandWord": "describe",
+        "marks": 3,
+        "difficulty": 3,
+        "skills": [
+            "visual",
+            "describe",
+            "ecosystem"
+        ],
+        "question": "Use the food web. Describe what may happen if pesticides reduce the number of insects.",
+        "answerFrame": "Write 2–3 linked sentences.",
+        "modelAnswer": "If insects decrease, animals that eat insects have less food and may decrease. Predators that feed on those animals may also decrease. This can affect the balance of the food web.",
+        "markScheme": [
+            "1 mark for insects decreasing.",
+            "1 mark for insect-eaters having less food/decreasing.",
+            "1 mark for a knock-on effect on higher predators or the food web."
+        ],
+        "keywords": [
+            "insects",
+            "less food",
+            "predator",
+            "decrease",
+            "food web"
+        ],
+        "commonMistakes": [
+            "Do not describe only one organism if the question asks about the food web.",
+            "Use linked consequences."
+        ],
+        "answerStructure": [
+            "Initial change.",
+            "Direct effect.",
+            "Knock-on effect."
+        ],
+        "media": [
+            {
+                "src": "assets/webp/9B-food-web-population-changes-blank-v2.webp",
+                "alt": "Question-safe food web diagram for population change questions.",
+                "mediaTiming": "question",
+                "presentation": "media-image-base"
+            }
+        ]
     },
     {
-      id: "we-chem-describe-recycling-aluminium",
-      domain: "chemistry",
-      unit: "9E",
-      commandWord: "explain",
-      marks: 2,
-      question: "Explain why recycling aluminium saves energy compared with extracting aluminium from its ore.",
-      answerFrame: "One reason + one consequence.",
-      modelAnswer: "Extracting aluminium from ore needs electrolysis, which uses a lot of energy. Recycling aluminium uses less energy because the metal has already been extracted.",
-      markScheme: ["1 mark for extraction needing electrolysis / lots of energy.", "1 mark for recycling using less energy because aluminium is already metal."],
-      keywords: ["aluminium", "electrolysis", "energy", "recycling", "already extracted"],
-      commonMistakes: ["Do not say recycling makes aluminium disappear.", "Compare recycling with extraction."],
-      answerStructure: ["Why extraction uses energy.", "Why recycling uses less."]
-    },
-
-    {
-      id: "we-phys-state-resultant-force",
-      domain: "physics",
-      unit: "9I",
-      commandWord: "state",
-      marks: 1,
-      question: "State what is meant by the resultant force on an object.",
-      answerFrame: "One short sentence.",
-      modelAnswer: "The resultant force is the overall force on an object.",
-      markScheme: ["1 mark for overall force / sum of all forces."],
-      keywords: ["resultant force", "overall force", "sum"],
-      commonMistakes: ["Do not list only one force if several forces act."],
-      answerStructure: ["Term is definition."]
-    },
-    {
-      id: "we-phys-identify-circuit-meters",
-      domain: "physics",
-      unit: "9J",
-      commandWord: "identify",
-      marks: 2,
-      question: "Identify how an ammeter and a voltmeter are connected in a circuit.",
-      answerFrame: "Use two bullet points.",
-      modelAnswer: "An ammeter is connected in series. A voltmeter is connected in parallel across a component.",
-      markScheme: ["1 mark for ammeter in series.", "1 mark for voltmeter in parallel / across a component."],
-      keywords: ["ammeter", "series", "voltmeter", "parallel", "across"],
-      commonMistakes: ["Do not connect the ammeter in parallel.", "Do not connect the voltmeter in series."],
-      answerStructure: ["Bullet 1: ammeter.", "Bullet 2: voltmeter."],
-      media: [{
-        src: "assets/webp/9J-meter-placement-xy-question-v149.webp",
-        alt: "Circuit diagram with positions X, Y and Z around a lamp for meter placement.",
-        mediaTiming: "question",
-        presentation: "media-image-base"
-      }]
+        "id": "we-bio-explain-bioaccumulation-top-predator",
+        "domain": "biology",
+        "unit": "9B",
+        "commandWord": "explain",
+        "marks": 3,
+        "difficulty": 4,
+        "skills": [
+            "visual",
+            "explain",
+            "ecosystem"
+        ],
+        "question": "Use the food-chain diagram. Explain why the top predator has the highest toxin concentration.",
+        "answerFrame": "Use the words toxin, food chain and concentration.",
+        "modelAnswer": "Toxins build up in organisms and are passed along the food chain when organisms are eaten. Each predator eats many prey, so more toxin accumulates at each level. The top predator has the highest concentration because it is at the end of the food chain.",
+        "markScheme": [
+            "1 mark for toxins being passed along the food chain.",
+            "1 mark for toxin building up/increasing at each level.",
+            "1 mark for top predators eating many contaminated organisms/highest concentration."
+        ],
+        "keywords": [
+            "toxin",
+            "food chain",
+            "build up",
+            "concentration",
+            "top predator"
+        ],
+        "commonMistakes": [
+            "Do not say the toxin is made by the predator.",
+            "Explain the build-up along the chain."
+        ],
+        "answerStructure": [
+            "Toxin enters food chain.",
+            "Toxin builds up at each level.",
+            "Top predator has highest concentration."
+        ],
+        "media": [
+            {
+                "src": "assets/webp/9B-bioaccumulation-food-chain-blank-v3.webp",
+                "alt": "Question-safe food chain diagram showing toxin particles increasing along the food chain.",
+                "mediaTiming": "question",
+                "presentation": "media-image-base"
+            }
+        ]
     },
     {
-      id: "we-phys-describe-speed-time",
-      domain: "physics",
-      unit: "9I",
-      commandWord: "describe",
-      marks: 3,
-      question: "A speed-time graph shows speed increasing from 0 m/s to 12 m/s in the first 4 s, then staying at 12 m/s from 4 s to 10 s. Describe the motion.",
-      answerFrame: "Use graph language and values.",
-      modelAnswer: "The object accelerates from 0 m/s to 12 m/s during the first 4 s. From 4 s to 10 s the speed is constant at 12 m/s. This means the object is moving at steady speed after 4 s.",
-      markScheme: ["1 mark for accelerating in the first 4 s.", "1 mark for using values 0 to 12 m/s or 4 s.", "1 mark for constant speed from 4 s to 10 s."],
-      keywords: ["accelerates", "0 m/s", "12 m/s", "4 s", "constant speed"],
-      commonMistakes: ["Do not say the object is stationary when the line is horizontal on a speed-time graph.", "Use the y-axis values."],
-      answerStructure: ["Describe first section.", "Use values.", "Describe second section."],
-      media: [{
-        src: "assets/webp/9I-speed-time-graph-question-v152.webp",
-        alt: "Speed-time graph for describing acceleration, constant speed, deceleration and stationary sections.",
-        mediaTiming: "question",
-        presentation: "media-image-base"
-      }]
+        "id": "we-bio-identify-root-hair-adaptations",
+        "domain": "biology",
+        "unit": "9B",
+        "commandWord": "identify",
+        "marks": 2,
+        "difficulty": 2,
+        "skills": [
+            "visual",
+            "identify"
+        ],
+        "question": "Use the root hair cell diagram. Identify two adaptations that help it absorb water and mineral ions.",
+        "answerFrame": "Use two bullet points.",
+        "modelAnswer": "Root hair cells have a long hair-like extension that gives a large surface area. They also have a thin cell wall/short diffusion distance for absorption.",
+        "markScheme": [
+            "1 mark for large surface area/long extension.",
+            "1 mark for thin cell wall/short diffusion distance or another valid adaptation."
+        ],
+        "keywords": [
+            "root hair cell",
+            "large surface area",
+            "thin cell wall",
+            "absorb",
+            "mineral ions"
+        ],
+        "commonMistakes": [
+            "Do not give adaptations of palisade cells.",
+            "Link the adaptation to absorption."
+        ],
+        "answerStructure": [
+            "Adaptation 1.",
+            "Adaptation 2."
+        ],
+        "media": [
+            {
+                "src": "assets/webp/9B-root-hair-cell-base.webp",
+                "alt": "Root hair cell diagram for identifying adaptations.",
+                "mediaTiming": "question",
+                "presentation": "media-image-base"
+            }
+        ]
     },
     {
-      id: "we-phys-explain-terminal-velocity",
-      domain: "physics",
-      unit: "9I",
-      commandWord: "explain",
-      marks: 4,
-      question: "Explain why a falling object reaches terminal velocity.",
-      answerFrame: "Use forces and because / so.",
-      modelAnswer: "At first weight is greater than air resistance, so the object accelerates. As speed increases, air resistance increases. Eventually air resistance equals weight, so the resultant force is zero. The object then falls at constant speed called terminal velocity.",
-      markScheme: ["1 mark for weight initially being greater than air resistance.", "1 mark for air resistance increasing as speed increases.", "1 mark for air resistance equalling weight / resultant force zero.", "1 mark for constant speed / terminal velocity."],
-      keywords: ["weight", "air resistance", "speed increases", "resultant force", "zero", "constant speed", "terminal velocity"],
-      commonMistakes: ["Do not say forces disappear.", "At terminal velocity the forces are balanced, not absent."],
-      answerStructure: ["Start forces.", "Change with speed.", "Balanced forces.", "Result."],
-      media: [{
-        src: "assets/webp/9I-terminal-velocity-force-chain-question-v152.webp",
-        alt: "Three-stage falling-object force diagram showing changing air resistance and balanced forces.",
-        mediaTiming: "question",
-        presentation: "media-image-base"
-      }]
+        "id": "we-bio-identify-leaf-transport-features",
+        "domain": "biology",
+        "unit": "9B",
+        "commandWord": "identify",
+        "marks": 2,
+        "difficulty": 2,
+        "skills": [
+            "visual",
+            "identify"
+        ],
+        "question": "Use the plant transport diagram. Identify the tissue that carries water and the opening that lets carbon dioxide enter the leaf.",
+        "answerFrame": "Use two short bullet points.",
+        "modelAnswer": "Xylem carries water through the plant. Stomata are openings that let carbon dioxide diffuse into the leaf.",
+        "markScheme": [
+            "1 mark for xylem carrying water.",
+            "1 mark for stomata allowing carbon dioxide to enter."
+        ],
+        "keywords": [
+            "xylem",
+            "water",
+            "stomata",
+            "carbon dioxide",
+            "diffusion"
+        ],
+        "commonMistakes": [
+            "Do not say phloem carries water.",
+            "Stomata are openings, not food stores."
+        ],
+        "answerStructure": [
+            "Water transport tissue.",
+            "Carbon dioxide entry feature."
+        ],
+        "media": [
+            {
+                "src": "assets/webp/9B-plant-transport-process.webp",
+                "alt": "Plant transport diagram showing roots, xylem and leaf gas exchange.",
+                "mediaTiming": "question",
+                "presentation": "media-image-base"
+            }
+        ]
     },
     {
-      id: "we-phys-calculate-moment",
-      domain: "physics",
-      unit: "9I",
-      commandWord: "calculate",
-      marks: 2,
-      question: "Use the balanced lever diagram. Calculate the missing distance on the right-hand side.",
-      answerFrame: "Write the moment equation, substitute values and answer with units.",
-      modelAnswer: "Left moment = 240 × 2 = 480 N m. For balance, right moment = 480 N m. Distance = 480 ÷ 160 = 3 m.",
-      markScheme: ["1 mark for using equal clockwise and anticlockwise moments / force × distance.", "1 mark for 3 m."],
-      keywords: ["moment", "force", "distance", "480 N m", "3 m"],
-      commonMistakes: ["Do not forget that balanced means equal moments.", "Use the distance from the pivot, not the total length of the lever."],
-      answerStructure: ["Find the known moment.", "Set the opposite moment equal for balance.", "Divide by the force to find distance."],
-      media: [{
-        src: "assets/webp/9I-moment-balanced-missing-distance-question-v149.webp",
-        alt: "Balanced lever with 240 N at 2 m on one side and 160 N at an unknown distance on the other side.",
-        mediaTiming: "question",
-        presentation: "media-image-base"
-      }]
+        "id": "we-chem-state-neutralisation-products",
+        "domain": "chemistry",
+        "unit": "9F",
+        "commandWord": "state",
+        "marks": 1,
+        "difficulty": 1,
+        "skills": [
+            "recall",
+            "equation"
+        ],
+        "question": "State the products of a neutralisation reaction between an acid and an alkali.",
+        "answerFrame": "One short sentence.",
+        "modelAnswer": "The products are a salt and water.",
+        "markScheme": [
+            "1 mark for salt and water."
+        ],
+        "keywords": [
+            "salt",
+            "water"
+        ],
+        "commonMistakes": [
+            "Do not write carbon dioxide unless the acid reacts with a carbonate."
+        ],
+        "answerStructure": [
+            "State the two products."
+        ]
     },
     {
-      id: "we-phys-explain-wire-resistance",
-      domain: "physics",
-      unit: "9J",
-      commandWord: "explain",
-      marks: 3,
-      question: "Explain how increasing the length of a wire affects its resistance.",
-      answerFrame: "Use particles/collisions language.",
-      modelAnswer: "Increasing the length of the wire increases its resistance. Electrons have to travel further through the metal. They collide with ions more often, so it is harder for current to flow.",
-      markScheme: ["1 mark for resistance increasing.", "1 mark for electrons travelling further.", "1 mark for more collisions / harder for current to flow."],
-      keywords: ["length", "resistance increases", "electrons", "collide", "ions", "current"],
-      commonMistakes: ["Do not say a longer wire has less resistance.", "Explain the mechanism, not just the trend."],
-      answerStructure: ["Trend.", "Reason.", "Effect on current."],
-      media: [{
-        src: "assets/webp/9J-wire-resistance-investigation-question-v152.webp",
-        alt: "Wire resistance investigation setup with power supply, ammeter, voltmeter, crocodile clips and metre ruler.",
-        mediaTiming: "question",
-        presentation: "media-image-base"
-      }]
+        "id": "we-chem-identify-state-symbols",
+        "domain": "chemistry",
+        "unit": "9E",
+        "commandWord": "identify",
+        "marks": 2,
+        "difficulty": 2,
+        "skills": [
+            "recall",
+            "identify"
+        ],
+        "question": "Identify what the state symbols (s) and (aq) mean in chemical equations.",
+        "answerFrame": "Use two bullet points.",
+        "modelAnswer": "(s) means solid. (aq) means aqueous, which means dissolved in water.",
+        "markScheme": [
+            "1 mark for (s) = solid.",
+            "1 mark for (aq) = aqueous/dissolved in water."
+        ],
+        "keywords": [
+            "solid",
+            "aqueous",
+            "dissolved in water"
+        ],
+        "commonMistakes": [
+            "Do not confuse aq with gas or liquid."
+        ],
+        "answerStructure": [
+            "Define (s).",
+            "Define (aq)."
+        ]
+    },
+    {
+        "id": "we-chem-describe-peer-review-process",
+        "domain": "chemistry",
+        "unit": "9E",
+        "commandWord": "describe",
+        "marks": 3,
+        "difficulty": 3,
+        "skills": [
+            "visual",
+            "describe",
+            "process"
+        ],
+        "question": "Use the peer-review diagram. Describe the peer-review process in science.",
+        "answerFrame": "Write the process in order.",
+        "modelAnswer": "A scientist writes a paper and submits it to a scientific journal. The editor sends it to expert reviewers. The reviewers check the method, evidence, originality and conclusions before the paper is accepted, revised or rejected.",
+        "markScheme": [
+            "1 mark for paper being submitted to a journal/editor.",
+            "1 mark for expert reviewers checking the work.",
+            "1 mark for an outcome such as accepted/revised/rejected or improved reliability."
+        ],
+        "keywords": [
+            "paper",
+            "journal",
+            "editor",
+            "expert reviewers",
+            "method",
+            "evidence",
+            "accepted",
+            "revised",
+            "rejected"
+        ],
+        "commonMistakes": [
+            "Do not say peer review is done by classmates.",
+            "Mention experts checking the evidence or method."
+        ],
+        "answerStructure": [
+            "Submission.",
+            "Expert checking.",
+            "Outcome."
+        ],
+        "media": [
+            {
+                "src": "assets/webp/9E-peer-review-process-question-v151.webp",
+                "alt": "Question-safe peer review process flowchart.",
+                "mediaTiming": "question",
+                "presentation": "media-image-base"
+            }
+        ]
+    },
+    {
+        "id": "we-chem-identify-exothermic-endothermic",
+        "domain": "chemistry",
+        "unit": "9E",
+        "commandWord": "identify",
+        "marks": 2,
+        "difficulty": 2,
+        "skills": [
+            "visual",
+            "identify",
+            "energy"
+        ],
+        "question": "Use the two energy-transfer diagrams. Identify which change is exothermic and which is endothermic.",
+        "answerFrame": "Use one sentence or two bullet points.",
+        "modelAnswer": "The diagram with energy transferred to the surroundings is exothermic. The diagram with energy taken in from the surroundings is endothermic.",
+        "markScheme": [
+            "1 mark for identifying the exothermic diagram.",
+            "1 mark for identifying the endothermic diagram."
+        ],
+        "keywords": [
+            "exothermic",
+            "endothermic",
+            "surroundings",
+            "energy transfer"
+        ],
+        "commonMistakes": [
+            "Do not focus only on the colour; use the direction of energy transfer.",
+            "Exothermic warms the surroundings; endothermic cools the surroundings."
+        ],
+        "answerStructure": [
+            "Identify exothermic.",
+            "Identify endothermic."
+        ],
+        "media": [
+            {
+                "src": "assets/webp/9E-exothermic-endothermic-question-v151.webp",
+                "alt": "Question-safe comparison of two reaction containers with energy transfer arrows and thermometer readings.",
+                "mediaTiming": "question",
+                "presentation": "media-image-base"
+            }
+        ]
+    },
+    {
+        "id": "we-chem-describe-displacement-reaction",
+        "domain": "chemistry",
+        "unit": "9F",
+        "commandWord": "describe",
+        "marks": 3,
+        "difficulty": 3,
+        "skills": [
+            "visual",
+            "describe",
+            "reactivity"
+        ],
+        "question": "Use the displacement reaction diagram. Describe what happens when magnesium is added to copper sulfate solution.",
+        "answerFrame": "Use reactivity language and say what forms.",
+        "modelAnswer": "Magnesium is more reactive than copper, so magnesium displaces copper from copper sulfate. Magnesium forms magnesium sulfate in solution. Copper forms as a solid deposit.",
+        "markScheme": [
+            "1 mark for magnesium being more reactive than copper.",
+            "1 mark for magnesium displacing copper/forming magnesium sulfate.",
+            "1 mark for copper being formed/deposited."
+        ],
+        "keywords": [
+            "magnesium",
+            "copper sulfate",
+            "more reactive",
+            "displaces",
+            "copper",
+            "deposit"
+        ],
+        "commonMistakes": [
+            "Do not say copper displaces magnesium.",
+            "Compare reactivity first."
+        ],
+        "answerStructure": [
+            "Compare reactivity.",
+            "State displacement.",
+            "State product/observation."
+        ],
+        "media": [
+            {
+                "src": "assets/webp/9F-displacement-reaction-clean-v2.webp",
+                "alt": "Before and after displacement reaction diagram for magnesium and copper sulfate.",
+                "mediaTiming": "question",
+                "presentation": "media-image-base"
+            }
+        ]
+    },
+    {
+        "id": "we-chem-explain-reactivity-extraction",
+        "domain": "chemistry",
+        "unit": "9F",
+        "commandWord": "explain",
+        "marks": 3,
+        "difficulty": 4,
+        "skills": [
+            "visual",
+            "explain",
+            "decision"
+        ],
+        "question": "Use the reactivity series. Explain why aluminium is extracted by electrolysis but iron can be extracted using carbon.",
+        "answerFrame": "Compare each metal with carbon.",
+        "modelAnswer": "Aluminium is more reactive than carbon, so carbon cannot remove oxygen from aluminium oxide. Aluminium must therefore be extracted by electrolysis. Iron is less reactive than carbon, so carbon can reduce iron oxide and extract iron.",
+        "markScheme": [
+            "1 mark for aluminium being above/more reactive than carbon.",
+            "1 mark for aluminium needing electrolysis/carbon cannot reduce it.",
+            "1 mark for iron being below/less reactive than carbon so carbon reduction works."
+        ],
+        "keywords": [
+            "reactivity series",
+            "carbon",
+            "aluminium",
+            "electrolysis",
+            "iron",
+            "reduction"
+        ],
+        "commonMistakes": [
+            "Do not choose extraction method from metal price or melting point.",
+            "Use the position relative to carbon."
+        ],
+        "answerStructure": [
+            "Aluminium compared with carbon.",
+            "Extraction method for aluminium.",
+            "Iron compared with carbon and extraction method."
+        ],
+        "media": [
+            {
+                "src": "assets/webp/9F-reactivity-series-question-safe-v2.webp",
+                "alt": "Question-safe reactivity series diagram arranged from most reactive to least reactive.",
+                "mediaTiming": "question",
+                "presentation": "media-image-base"
+            }
+        ]
+    },
+    {
+        "id": "we-chem-explain-thermite-redox",
+        "domain": "chemistry",
+        "unit": "9F",
+        "commandWord": "explain",
+        "marks": 4,
+        "difficulty": 5,
+        "skills": [
+            "explain",
+            "redox"
+        ],
+        "question": "In the thermite reaction, aluminium reacts with iron oxide to make aluminium oxide and iron. Explain which substance is oxidised and which is reduced.",
+        "answerFrame": "Use gain/loss of oxygen.",
+        "modelAnswer": "Aluminium gains oxygen to form aluminium oxide, so aluminium is oxidised. Iron oxide loses oxygen to form iron, so iron oxide is reduced. Oxidation and reduction happen together in the reaction.",
+        "markScheme": [
+            "1 mark for aluminium gaining oxygen.",
+            "1 mark for aluminium being oxidised.",
+            "1 mark for iron oxide losing oxygen/being reduced.",
+            "1 mark for recognising oxidation and reduction together."
+        ],
+        "keywords": [
+            "aluminium",
+            "iron oxide",
+            "oxygen",
+            "oxidised",
+            "reduced"
+        ],
+        "commonMistakes": [
+            "Do not define oxidation as only reacting with air.",
+            "Use gain/loss of oxygen."
+        ],
+        "answerStructure": [
+            "Aluminium change.",
+            "Iron oxide change.",
+            "Name oxidation and reduction."
+        ],
+        "media": [
+            {
+                "src": "assets/webp/9F-heating-metal-oxide.webp",
+                "alt": "Heating metal oxide reaction context for redox/extraction questions.",
+                "mediaTiming": "question",
+                "presentation": "media-image-base"
+            }
+        ]
+    },
+    {
+        "id": "we-chem-describe-recycling-method",
+        "domain": "chemistry",
+        "unit": "9E",
+        "commandWord": "describe",
+        "marks": 3,
+        "difficulty": 3,
+        "skills": [
+            "visual",
+            "describe",
+            "environment"
+        ],
+        "question": "Use the recycling diagram. Describe how one material is recycled and give one benefit of recycling.",
+        "answerFrame": "Name the material, describe the process, then give a benefit.",
+        "modelAnswer": "Glass can be collected, sorted, crushed, melted and remade into new glass products. Recycling reduces landfill and reduces the need for new raw materials.",
+        "markScheme": [
+            "1 mark for naming a recyclable material.",
+            "1 mark for describing a valid recycling process step/sequence.",
+            "1 mark for a valid benefit such as less landfill, less pollution, less energy use or fewer raw materials."
+        ],
+        "keywords": [
+            "recycling",
+            "collect",
+            "sort",
+            "melt",
+            "reuse",
+            "landfill",
+            "raw materials"
+        ],
+        "commonMistakes": [
+            "Do not only say 'put it in a bin'.",
+            "Give both method and benefit."
+        ],
+        "answerStructure": [
+            "Material.",
+            "Recycling method.",
+            "Benefit."
+        ],
+        "media": [
+            {
+                "src": "assets/webp/9E-recycling-methods-blank.webp",
+                "alt": "Question-safe recycling methods grid.",
+                "mediaTiming": "question",
+                "presentation": "media-image-base"
+            }
+        ]
+    },
+    {
+        "id": "we-chem-identify-physical-chemical-change",
+        "domain": "chemistry",
+        "unit": "9F",
+        "commandWord": "identify",
+        "marks": 2,
+        "difficulty": 2,
+        "skills": [
+            "visual",
+            "identify"
+        ],
+        "question": "Use the change diagrams. Identify one physical change and one chemical reaction.",
+        "answerFrame": "Use two bullet points and give the reason briefly.",
+        "modelAnswer": "A physical change does not make a new substance. A chemical reaction makes a new substance, often shown by signs such as gas, colour change, heat/light or a precipitate.",
+        "markScheme": [
+            "1 mark for correctly identifying a physical change.",
+            "1 mark for correctly identifying a chemical reaction or giving a valid new-substance reason."
+        ],
+        "keywords": [
+            "physical change",
+            "chemical reaction",
+            "new substance"
+        ],
+        "commonMistakes": [
+            "Do not say every change of state is a chemical reaction.",
+            "The key idea is whether a new substance forms."
+        ],
+        "answerStructure": [
+            "Physical change + reason.",
+            "Chemical reaction + reason."
+        ],
+        "media": [
+            {
+                "src": "assets/webp/9F-physical-change-chemical-reaction-blank-v2.webp",
+                "alt": "Question-safe comparison of physical and chemical changes.",
+                "mediaTiming": "question",
+                "presentation": "media-image-base"
+            }
+        ]
+    },
+    {
+        "id": "we-phys-state-resultant-force",
+        "domain": "physics",
+        "unit": "9I",
+        "commandWord": "state",
+        "marks": 1,
+        "difficulty": 1,
+        "skills": [
+            "recall"
+        ],
+        "question": "State what is meant by the resultant force on an object.",
+        "answerFrame": "One short sentence.",
+        "modelAnswer": "The resultant force is the overall force on an object.",
+        "markScheme": [
+            "1 mark for overall force/sum of all forces."
+        ],
+        "keywords": [
+            "resultant force",
+            "overall force",
+            "sum"
+        ],
+        "commonMistakes": [
+            "Do not list only one force if several forces act."
+        ],
+        "answerStructure": [
+            "Term is definition."
+        ]
+    },
+    {
+        "id": "we-phys-describe-distance-time-graph",
+        "domain": "physics",
+        "unit": "9I",
+        "commandWord": "describe",
+        "marks": 3,
+        "difficulty": 3,
+        "skills": [
+            "visual",
+            "graph",
+            "describe"
+        ],
+        "question": "Use the distance-time graph. Describe the motion shown by the graph.",
+        "answerFrame": "Describe each section and use graph language.",
+        "modelAnswer": "A sloping line means the object is moving at constant speed. A steeper line means a greater speed. A horizontal line means the object is stationary because the distance is not changing.",
+        "markScheme": [
+            "1 mark for a sloping section showing movement/constant speed.",
+            "1 mark for a horizontal section showing stationary.",
+            "1 mark for steeper line meaning faster speed or using a section label correctly."
+        ],
+        "keywords": [
+            "distance-time graph",
+            "sloping line",
+            "steeper",
+            "faster",
+            "horizontal",
+            "stationary"
+        ],
+        "commonMistakes": [
+            "Do not say a horizontal line on a distance-time graph means constant speed.",
+            "Use the y-axis: distance."
+        ],
+        "answerStructure": [
+            "Section 1.",
+            "Section 2.",
+            "Compare steepness if relevant."
+        ],
+        "media": [
+            {
+                "src": "assets/webp/9I-distance-time-journey-question-v149.webp",
+                "alt": "Question-safe distance-time graph for journey interpretation.",
+                "mediaTiming": "question",
+                "presentation": "media-image-base"
+            }
+        ]
+    },
+    {
+        "id": "we-phys-describe-speed-time-graph",
+        "domain": "physics",
+        "unit": "9I",
+        "commandWord": "describe",
+        "marks": 3,
+        "difficulty": 3,
+        "skills": [
+            "visual",
+            "graph",
+            "describe"
+        ],
+        "question": "Use the speed-time graph. Describe the motion shown in the graph.",
+        "answerFrame": "Use graph sections and values where possible.",
+        "modelAnswer": "The object accelerates at first because its speed increases. It then travels at constant speed when the line is horizontal above zero. If the line slopes down, the object decelerates.",
+        "markScheme": [
+            "1 mark for identifying acceleration from increasing speed.",
+            "1 mark for constant speed from a horizontal line above zero.",
+            "1 mark for deceleration from decreasing speed or use of graph values."
+        ],
+        "keywords": [
+            "speed-time graph",
+            "accelerates",
+            "constant speed",
+            "decelerates",
+            "horizontal"
+        ],
+        "commonMistakes": [
+            "Do not say a horizontal line above zero means stationary.",
+            "On a speed-time graph, horizontal above zero means constant speed."
+        ],
+        "answerStructure": [
+            "First section.",
+            "Middle/constant section.",
+            "Final section."
+        ],
+        "media": [
+            {
+                "src": "assets/webp/9I-speed-time-graph-blank.webp",
+                "alt": "Question-safe speed-time graph with labelled sections.",
+                "mediaTiming": "question",
+                "presentation": "media-image-base"
+            }
+        ]
+    },
+    {
+        "id": "we-phys-explain-terminal-velocity",
+        "domain": "physics",
+        "unit": "9I",
+        "commandWord": "explain",
+        "marks": 4,
+        "difficulty": 4,
+        "skills": [
+            "visual",
+            "explain",
+            "forces"
+        ],
+        "question": "Use the falling-object sequence. Explain why a falling object reaches terminal velocity.",
+        "answerFrame": "Use weight, air resistance, resultant force and constant speed.",
+        "modelAnswer": "At first weight is greater than air resistance, so the object accelerates. As speed increases, air resistance increases. Eventually air resistance equals weight, so the resultant force is zero. The object then falls at constant speed, called terminal velocity.",
+        "markScheme": [
+            "1 mark for weight initially being greater than air resistance.",
+            "1 mark for air resistance increasing as speed increases.",
+            "1 mark for air resistance equalling weight/resultant force zero.",
+            "1 mark for constant speed/terminal velocity."
+        ],
+        "keywords": [
+            "weight",
+            "air resistance",
+            "speed increases",
+            "resultant force",
+            "zero",
+            "constant speed",
+            "terminal velocity"
+        ],
+        "commonMistakes": [
+            "Do not say forces disappear.",
+            "At terminal velocity the forces are balanced, not absent."
+        ],
+        "answerStructure": [
+            "Start forces.",
+            "Change with speed.",
+            "Balanced forces.",
+            "Result."
+        ],
+        "media": [
+            {
+                "src": "assets/webp/9I-forces-terminal-velocity-sequence.webp",
+                "alt": "Falling-object sequence showing force arrows for terminal velocity explanation.",
+                "mediaTiming": "question",
+                "presentation": "media-image-base"
+            }
+        ]
+    },
+    {
+        "id": "we-phys-calculate-moment",
+        "domain": "physics",
+        "unit": "9I",
+        "commandWord": "calculate",
+        "marks": 2,
+        "difficulty": 3,
+        "skills": [
+            "visual",
+            "calculation"
+        ],
+        "question": "Use the balanced lever diagram. Calculate the missing distance on the right-hand side.",
+        "answerFrame": "Formula, substitution, answer with unit.",
+        "modelAnswer": "Left moment = 240 × 2 = 480 N m. For balance, right moment = 480 N m. Distance = 480 ÷ 160 = 3 m.",
+        "markScheme": [
+            "1 mark for using equal clockwise and anticlockwise moments/force × distance.",
+            "1 mark for 3 m."
+        ],
+        "keywords": [
+            "moment",
+            "force",
+            "distance",
+            "480 N m",
+            "3 m"
+        ],
+        "commonMistakes": [
+            "Do not forget that balanced means equal moments.",
+            "Use distance from the pivot."
+        ],
+        "answerStructure": [
+            "Known moment.",
+            "Set equal for balance.",
+            "Divide by force."
+        ],
+        "media": [
+            {
+                "src": "assets/webp/9I-moment-balanced-missing-distance-question-v149.webp",
+                "alt": "Balanced lever with 240 N at 2 m and 160 N at an unknown distance.",
+                "mediaTiming": "question",
+                "presentation": "media-image-base"
+            }
+        ]
+    },
+    {
+        "id": "we-phys-calculate-density-displacement",
+        "domain": "physics",
+        "unit": "9I",
+        "commandWord": "calculate",
+        "marks": 3,
+        "difficulty": 3,
+        "skills": [
+            "visual",
+            "calculation"
+        ],
+        "question": "Use the measuring cylinders. Calculate the density of the object in g/cm³.",
+        "answerFrame": "Find volume first, then use density = mass ÷ volume.",
+        "modelAnswer": "Initial volume = 35 cm³ and final volume = 60 cm³, so volume = 25 cm³. Density = 125 ÷ 25 = 5 g/cm³.",
+        "markScheme": [
+            "1 mark for volume = final volume − initial volume.",
+            "1 mark for volume = 25 cm³.",
+            "1 mark for density = 5 g/cm³."
+        ],
+        "keywords": [
+            "initial volume",
+            "final volume",
+            "volume",
+            "density",
+            "g/cm³"
+        ],
+        "commonMistakes": [
+            "Do not use the final volume as the object's volume.",
+            "Subtract initial volume from final volume."
+        ],
+        "answerStructure": [
+            "Calculate object volume.",
+            "Write density formula.",
+            "Substitute and answer with unit."
+        ],
+        "media": [
+            {
+                "src": "assets/webp/9I-density-water-displacement-question-v149.webp",
+                "alt": "Measuring cylinder displacement diagram with object mass.",
+                "mediaTiming": "question",
+                "presentation": "media-image-base"
+            }
+        ]
+    },
+    {
+        "id": "we-phys-explain-pressure-contact-area",
+        "domain": "physics",
+        "unit": "9I",
+        "commandWord": "explain",
+        "marks": 3,
+        "difficulty": 3,
+        "skills": [
+            "visual",
+            "explain",
+            "calculation"
+        ],
+        "question": "Use the shoe diagrams. Explain which shoe produces the greater pressure on the ground.",
+        "answerFrame": "Compare force and contact area.",
+        "modelAnswer": "Both shoes have the same force, but shoe A has a smaller contact area. Pressure = force ÷ area, so the same force over a smaller area gives a greater pressure. Shoe A produces the greater pressure.",
+        "markScheme": [
+            "1 mark for same force.",
+            "1 mark for smaller contact area.",
+            "1 mark for pressure increasing when the same force acts over a smaller area."
+        ],
+        "keywords": [
+            "pressure",
+            "force",
+            "area",
+            "smaller contact area",
+            "greater pressure"
+        ],
+        "commonMistakes": [
+            "Do not say larger area gives larger pressure when force is the same.",
+            "Compare both force and area."
+        ],
+        "answerStructure": [
+            "Compare force.",
+            "Compare area.",
+            "Link to pressure formula."
+        ],
+        "media": [
+            {
+                "src": "assets/webp/9I-pressure-shoe-contact-area-question-v149.webp",
+                "alt": "Two shoe diagrams with equal force and different contact area.",
+                "mediaTiming": "question",
+                "presentation": "media-image-base"
+            }
+        ]
+    },
+    {
+        "id": "we-phys-identify-circuit-meters",
+        "domain": "physics",
+        "unit": "9J",
+        "commandWord": "identify",
+        "marks": 2,
+        "difficulty": 2,
+        "skills": [
+            "visual",
+            "identify",
+            "circuit"
+        ],
+        "question": "Use the circuit diagram. Identify where an ammeter and a voltmeter should be connected.",
+        "answerFrame": "Use two bullet points and the position labels.",
+        "modelAnswer": "The ammeter should be connected in series, for example at position X or Z. The voltmeter should be connected in parallel across the lamp, at position Y.",
+        "markScheme": [
+            "1 mark for ammeter in series/position X or Z.",
+            "1 mark for voltmeter in parallel/position Y."
+        ],
+        "keywords": [
+            "ammeter",
+            "series",
+            "voltmeter",
+            "parallel",
+            "X",
+            "Y"
+        ],
+        "commonMistakes": [
+            "Do not connect the ammeter in parallel.",
+            "Do not connect the voltmeter in series."
+        ],
+        "answerStructure": [
+            "Ammeter position and connection.",
+            "Voltmeter position and connection."
+        ],
+        "media": [
+            {
+                "src": "assets/webp/9J-meter-placement-xy-question-v149.webp",
+                "alt": "Circuit diagram with positions X, Y and Z for meter placement.",
+                "mediaTiming": "question",
+                "presentation": "media-image-base"
+            }
+        ]
+    },
+    {
+        "id": "we-phys-explain-wire-resistance-investigation",
+        "domain": "physics",
+        "unit": "9J",
+        "commandWord": "describe",
+        "marks": 4,
+        "difficulty": 4,
+        "skills": [
+            "visual",
+            "practical",
+            "explain"
+        ],
+        "question": "Use the practical setup. Describe how to investigate how wire length affects resistance.",
+        "answerFrame": "Method, variables, measurements and calculation.",
+        "modelAnswer": "Set up the wire with an ammeter in series and a voltmeter in parallel across the test length. Change the length of the wire using the crocodile clips. Keep the wire material, thickness and temperature the same. Measure voltage and current, then calculate resistance using resistance = voltage ÷ current.",
+        "markScheme": [
+            "1 mark for changing wire length.",
+            "1 mark for ammeter in series/voltmeter in parallel.",
+            "1 mark for controlling material/thickness/temperature or another valid control variable.",
+            "1 mark for calculating resistance from voltage ÷ current or repeating/recording results."
+        ],
+        "keywords": [
+            "wire length",
+            "ammeter",
+            "series",
+            "voltmeter",
+            "parallel",
+            "control variable",
+            "resistance"
+        ],
+        "commonMistakes": [
+            "Do not change several variables at once.",
+            "Do not place the voltmeter in series."
+        ],
+        "answerStructure": [
+            "Set up circuit.",
+            "Change independent variable.",
+            "Control variables.",
+            "Measure/calculate resistance."
+        ],
+        "media": [
+            {
+                "src": "assets/webp/9J-wire-resistance-investigation-blank.webp",
+                "alt": "Question-safe circuit setup for wire resistance investigation.",
+                "mediaTiming": "question",
+                "presentation": "media-image-base"
+            }
+        ]
+    },
+    {
+        "id": "we-phys-compare-current-voltage-resistance",
+        "domain": "physics",
+        "unit": "9J",
+        "commandWord": "explain",
+        "marks": 3,
+        "difficulty": 4,
+        "skills": [
+            "visual",
+            "graph",
+            "explain"
+        ],
+        "question": "Use the current-voltage graph. Explain which component has the greater resistance.",
+        "answerFrame": "Compare current at the same voltage.",
+        "modelAnswer": "For the same potential difference, the component with the smaller current has the greater resistance. Line B has a smaller current than line A at the same voltage, so line B has the greater resistance.",
+        "markScheme": [
+            "1 mark for comparing at the same voltage/potential difference.",
+            "1 mark for lower current meaning higher resistance.",
+            "1 mark for identifying the correct line/component."
+        ],
+        "keywords": [
+            "potential difference",
+            "current",
+            "resistance",
+            "same voltage",
+            "lower current"
+        ],
+        "commonMistakes": [
+            "Do not compare two different voltages.",
+            "Use V = I × R or R = V ÷ I."
+        ],
+        "answerStructure": [
+            "Choose a voltage.",
+            "Compare current.",
+            "State resistance conclusion."
+        ],
+        "media": [
+            {
+                "src": "assets/webp/9J-current-voltage-graph-question-v149.webp",
+                "alt": "Current-voltage graph with two lines labelled A and B.",
+                "mediaTiming": "question",
+                "presentation": "media-image-base"
+            }
+        ]
+    },
+    {
+        "id": "we-phys-explain-static-charge-transfer",
+        "domain": "physics",
+        "unit": "9J",
+        "commandWord": "explain",
+        "marks": 3,
+        "difficulty": 3,
+        "skills": [
+            "visual",
+            "explain",
+            "electricity"
+        ],
+        "question": "Use the static-charge diagram. Explain how one object becomes negatively charged after rubbing.",
+        "answerFrame": "Use electron transfer language.",
+        "modelAnswer": "Electrons are transferred from one object to the other during rubbing. The object that gains electrons becomes negatively charged. The other object loses electrons and becomes positively charged.",
+        "markScheme": [
+            "1 mark for electrons being transferred.",
+            "1 mark for gaining electrons causing negative charge.",
+            "1 mark for the other object losing electrons/becoming positive."
+        ],
+        "keywords": [
+            "electrons",
+            "transferred",
+            "gains",
+            "negative",
+            "loses",
+            "positive"
+        ],
+        "commonMistakes": [
+            "Do not say protons move between objects.",
+            "Static charge is caused by electron transfer."
+        ],
+        "answerStructure": [
+            "Electron transfer.",
+            "Object that gains electrons.",
+            "Object that loses electrons."
+        ],
+        "media": [
+            {
+                "src": "assets/webp/9J-static-electricity-charge-transfer-blank-v3.webp",
+                "alt": "Question-safe static electricity electron transfer diagram.",
+                "mediaTiming": "question",
+                "presentation": "media-image-base"
+            }
+        ]
+    },
+    {
+        "id": "we-phys-describe-electromagnet-strength",
+        "domain": "physics",
+        "unit": "9J",
+        "commandWord": "describe",
+        "marks": 3,
+        "difficulty": 3,
+        "skills": [
+            "visual",
+            "describe",
+            "electromagnet"
+        ],
+        "question": "Use the electromagnet diagram. Describe two ways to make the electromagnet stronger and explain one of them.",
+        "answerFrame": "Give two changes and one reason.",
+        "modelAnswer": "The electromagnet can be made stronger by increasing the current, adding more turns to the coil or adding an iron core. More turns or a larger current produce a stronger magnetic field, and an iron core makes the field stronger inside the coil.",
+        "markScheme": [
+            "1 mark for a valid strengthening method.",
+            "1 mark for a second valid strengthening method.",
+            "1 mark for a linked explanation using magnetic field strength."
+        ],
+        "keywords": [
+            "electromagnet",
+            "current",
+            "turns",
+            "coil",
+            "iron core",
+            "magnetic field"
+        ],
+        "commonMistakes": [
+            "Do not say a permanent magnet can simply be switched off.",
+            "Link the change to magnetic field strength."
+        ],
+        "answerStructure": [
+            "Method 1.",
+            "Method 2.",
+            "Explanation."
+        ],
+        "media": [
+            {
+                "src": "assets/webp/9J-electromagnet-strength-variables-blank-v3.webp",
+                "alt": "Question-safe electromagnet strength variables diagram.",
+                "mediaTiming": "question",
+                "presentation": "media-image-base"
+            }
+        ]
     }
-  ];
+];
 
   const WRITTEN_SIZE_OPTIONS = {
     15: { label: "Quick written test", marksPerDomain: 5 },
     30: { label: "Standard written test", marksPerDomain: 10 },
     45: { label: "Full written practice", marksPerDomain: 15 },
-  };
-
-  const WRITTEN_EXAM_BLUEPRINTS = {
-    15: {
-      biology: ["we-bio-state-photosynthesis-equation", "we-bio-identify-root-hair-adaptation", "we-bio-explain-farming-sustainability"],
-      chemistry: ["we-chem-state-neutralisation", "we-chem-identify-state-symbols", "we-chem-describe-recycling-aluminium"],
-      physics: ["we-phys-state-resultant-force", "we-phys-identify-circuit-meters", "we-phys-calculate-moment"]
-    },
-    30: {
-      biology: ["we-bio-identify-root-hair-adaptation", "we-bio-describe-food-web-pesticide", "we-bio-explain-magnesium", "we-bio-explain-farming-sustainability"],
-      chemistry: ["we-chem-identify-state-symbols", "we-chem-describe-displacement", "we-chem-explain-aluminium-electrolysis", "we-chem-describe-recycling-aluminium"],
-      physics: ["we-phys-identify-circuit-meters", "we-phys-describe-speed-time", "we-phys-calculate-moment", "we-phys-explain-wire-resistance"]
-    },
-    45: {
-      biology: ["we-bio-state-photosynthesis-equation", "we-bio-identify-root-hair-adaptation", "we-bio-describe-food-web-pesticide", "we-bio-explain-magnesium", "we-bio-describe-natural-selection", "we-bio-explain-farming-sustainability"],
-      chemistry: ["we-chem-state-neutralisation", "we-chem-identify-state-symbols", "we-chem-describe-displacement", "we-chem-explain-aluminium-electrolysis", "we-chem-explain-thermite-redox", "we-chem-describe-recycling-aluminium"],
-      physics: ["we-phys-state-resultant-force", "we-phys-identify-circuit-meters", "we-phys-describe-speed-time", "we-phys-explain-terminal-velocity", "we-phys-calculate-moment", "we-phys-explain-wire-resistance"]
-    }
   };
 
   function domainLabel(domain) {
@@ -441,23 +1524,570 @@
 
   function commandHint(commandWord) {
     const hints = {
-      state: "State: give the exact fact or term. Do not explain unless asked.",
-      identify: "Identify: name the correct item, feature or method.",
-      describe: "Describe: say what happens or what the graph/diagram shows. Use values if given.",
-      explain: "Explain: give the science reason using because, so or therefore.",
-      calculate: "Calculate: write the formula, substitute values and include units.",
-      graph: "Graph: read or plot the data, then describe the trend using values."
+      state: "Give the precise fact, term, equation or short list asked for. Do not add a long explanation unless the question asks for one.",
+      identify: "Use the labels, diagram or question clue to name the correct item(s). Keep the answer short and unambiguous.",
+      describe: "Say what happens, what changes, or what is shown. Use ordered points and include labels, values or comparisons if they are given.",
+      explain: "Make the science point, then link it to a reason and result. Use because, so, therefore or this means to show the connection.",
+      calculate: "Write the equation or method, substitute values, calculate carefully, then give the answer with units or required rounding.",
+      graph: "Check both axes and the scale. Describe the trend or draw the required line, quoting values where useful."
     };
-    return hints[commandWord] || "Write a clear science answer.";
+    return hints[commandWord] || "Write a clear science answer using key words.";
+  }
+
+  function writtenDifficulty(question) {
+    const value = Number(question?.difficulty || question?.marks || 1);
+    return Math.min(5, Math.max(1, Number.isFinite(value) ? Math.round(value) : 1));
+  }
+
+  function renderDifficultyBubbles(question) {
+    const level = writtenDifficulty(question);
+    const bubbles = Array.from({ length: 5 }, (_, index) => {
+      const n = index + 1;
+      return `<span class="difficulty-bubble ${n <= level ? "filled" : ""}" aria-hidden="true">${n}</span>`;
+    }).join("");
+    return `<span class="difficulty-bubbles" role="img" aria-label="Difficulty ${level} out of 5">${bubbles}</span>`;
+  }
+
+  function writtenSectionMeta(question) {
+    const commandWord = normalizeWrittenCommand(question?.commandWord);
+    const skills = new Set(Array.isArray(question?.skills) ? question.skills : []);
+    if (commandWord === "calculate" || commandWord === "graph" || skills.has("calculation") || skills.has("graph")) {
+      return { key: "C", order: 3, label: "Section C", focus: "Data and calculations" };
+    }
+    if (commandWord === "state" || commandWord === "identify" || skills.has("recall")) {
+      return { key: "A", order: 1, label: "Section A", focus: "Core knowledge" };
+    }
+    return { key: "B", order: 2, label: "Section B", focus: "Written reasoning" };
+  }
+
+  function writtenSectionSortValue(question) {
+    return writtenSectionMeta(question).order;
+  }
+
+  function sortWrittenExamIntoSections(questions) {
+    return shuffleWritten(questions)
+      .map((question, index) => ({ question, index }))
+      .sort((a, b) => {
+        const sectionDiff = writtenSectionSortValue(a.question) - writtenSectionSortValue(b.question);
+        if (sectionDiff) return sectionDiff;
+        const domainOrder = { biology: 1, chemistry: 2, physics: 3 };
+        const domainDiff = (domainOrder[a.question.domain] || 9) - (domainOrder[b.question.domain] || 9);
+        if (domainDiff) return domainDiff;
+        return a.index - b.index;
+      })
+      .map((item) => item.question);
+  }
+
+  function unitToWrittenDomain(unit) {
+    if (["9A", "9B"].includes(unit)) return "biology";
+    if (["9E", "9F"].includes(unit)) return "chemistry";
+    if (["9I", "9J"].includes(unit)) return "physics";
+    return "science";
+  }
+
+  function clampWrittenMarks(value) {
+    const n = Number(value);
+    if (!Number.isFinite(n)) return 1;
+    return Math.min(5, Math.max(1, Math.round(n)));
+  }
+
+  function hasOpenAnswerShape(card) {
+    return Boolean(card && (!Array.isArray(card.choices) || !card.choices.length) && card.question && (card.answer || card.explanation));
+  }
+
+  function normalizeWrittenCommand(commandWord) {
+    const cmd = String(commandWord || "").toLowerCase().trim();
+    if (["state", "identify", "describe", "explain", "calculate", "graph"].includes(cmd)) return cmd;
+    if (cmd === "classify") return "identify";
+    return "state";
+  }
+
+  function writtenAnswerFrame(commandWord, marks = 1, fallback = "") {
+    if (fallback) return fallback;
+    const plural = marks === 1 ? "point" : "points";
+    const frames = {
+      state: `Give ${marks} clear ${plural}. Use the exact science word, fact or equation.`,
+      identify: `Name the correct label, feature, part or item. Give ${marks} clear ${plural} if needed.`,
+      describe: `Write ${marks} short linked ${plural}. Say what happens, what changes, or what is shown.`,
+      explain: `Use point → because → result. Aim for ${marks} credit-worthy linked ${plural}.`,
+      calculate: "Show equation/method, substitution, answer and unit where possible.",
+      graph: "Use the axes, quote values where useful, and describe or draw the trend."
+    };
+    return frames[commandWord] || "Write a clear science answer using key words.";
+  }
+
+  function writtenAnswerStructure(commandWord, marks = 1) {
+    if (commandWord === "calculate") return ["Write the equation or method before calculating.", "Substitute the values with correct units where useful.", "Give the final answer with the unit or required rounding."];
+    if (commandWord === "explain") return ["Make the science point first.", "Use because/so/therefore to link cause and effect.", "Finish with the result, consequence or application."];
+    if (commandWord === "describe") return ["State the first feature, step, observation or trend.", "Add another linked feature, step or comparison.", "Use labels, values or context from the question if shown."];
+    if (commandWord === "identify") return ["Read the labels, diagram or context carefully.", "Name the correct item(s), part(s), feature(s) or value(s).", "Keep each answer concise and clearly matched to the label if labels are used."];
+    if (commandWord === "graph") return ["Check the x-axis, y-axis and scale.", "Describe or draw the overall relationship or trend.", "Quote a value, turning point or comparison if useful."];
+    return ["Write the key term, fact or equation.", "Keep the sentence short and precise.", "Do not add unrelated detail." ];
+  }
+
+  function writtenModelSnippets(modelAnswer, limit = 4) {
+    const cleaned = String(modelAnswer || "").replace(/\s+/g, " ").trim();
+    if (!cleaned) return [];
+    const sentencePieces = cleaned
+      .split(/(?:\.\s+|;\s+|\n+|\s+•\s+)/)
+      .map((part) => part.replace(/^[-–•]\s*/, "").replace(/\.$/, "").trim())
+      .filter((part) => part.length >= 10);
+    const commaPieces = cleaned
+      .split(/,\s+|\s+and\s+|\s+or\s+/)
+      .map((part) => part.replace(/\.$/, "").trim())
+      .filter((part) => part.length >= 4 && part.length <= 70);
+    return unique((sentencePieces.length > 1 ? sentencePieces : commaPieces).map((part) => part.slice(0, 140))).slice(0, limit);
+  }
+
+  function makeWrittenMarkScheme(commandWord, marks = 1, modelAnswer = "") {
+    const safeMarks = clampWrittenMarks(marks);
+    const markText = safeMarks === 1 ? "1 mark" : `${safeMarks} marks`;
+    const snippets = writtenModelSnippets(modelAnswer, Math.min(4, safeMarks + 1));
+    const modelPrompt = snippets.length
+      ? `Use model-answer points such as: ${snippets.join(" / ")}.`
+      : "Use the model answer as the marking authority.";
+
+    if (commandWord === "calculate") {
+      if (safeMarks === 1) return ["1 mark for the correct final answer, including unit or rounding where required.", "Allow equivalent working if the final value is correct."];
+      return [
+        "Credit the correct equation, formula or method.",
+        "Credit correct substitution and working.",
+        "Credit the correct final answer, including unit or rounding where required.",
+        "Allow follow-through where the method is sound but one arithmetic slip has been made."
+      ].slice(0, Math.max(3, Math.min(4, safeMarks + 1)));
+    }
+    if (commandWord === "explain") {
+      return [
+        `Award up to ${markText} for a correct science point, a linked reason and a clear result.`,
+        "Look for because/so/therefore links rather than isolated facts.",
+        modelPrompt,
+        "Accept equivalent wording with the same science meaning."
+      ];
+    }
+    if (commandWord === "describe" || commandWord === "graph") {
+      return [
+        `Award up to ${markText} for correct observations, steps, trends or comparisons.`,
+        "Credit accurate use of labels, values, axes or diagram context where shown.",
+        modelPrompt,
+        "Do not require the exact wording if the science meaning is correct."
+      ];
+    }
+    if (commandWord === "identify") {
+      return [
+        `Award up to ${markText} for correct identification(s).`,
+        "Each label, item, feature or value must be clearly named.",
+        modelPrompt,
+        "Do not credit vague answers that could refer to more than one item."
+      ];
+    }
+    return [
+      `Award up to ${markText} for the correct key fact(s), term(s) or equation(s).`,
+      modelPrompt,
+      "Accept equivalent wording with the same science meaning.",
+      "Do not require a long explanation unless the question asks for one."
+    ];
+  }
+
+  function writtenKeywordsFromAnswer(answer) {
+    const stop = new Set(["about", "after", "because", "between", "correct", "could", "during", "each", "from", "have", "into", "more", "most", "that", "their", "there", "these", "they", "this", "when", "where", "which", "with", "would"]);
+    return unique(String(answer || "")
+      .replace(/[→=+,.()/:;!?]/g, " ")
+      .split(/\s+/)
+      .map((word) => word.trim().toLowerCase())
+      .filter((word) => word.length > 4 && !stop.has(word)))
+      .slice(0, 8);
+  }
+
+  function derivedWrittenSkills(card, commandWord) {
+    const text = `${card.question || ""} ${card.answer || ""} ${card.type || ""}`.toLowerCase();
+    const skills = [commandWord, "open-answer"];
+    if (Array.isArray(card.media) && card.media.length) skills.push("visual", "diagram");
+    if (commandWord === "calculate" || /calculate|formula|equation|substitut|unit|significant figure|decimal place/.test(text)) skills.push("calculation");
+    if (commandWord === "graph" || /graph|axis|axes|gradient|trend/.test(text)) skills.push("graph");
+    if (card.examPool === "written-recall") skills.push("recall");
+    if (card.examPool === "written-review") skills.push("review-needed");
+    return unique(skills);
+  }
+
+  function derivedWrittenQuestionFromCard(card) {
+    if (!card?.examEligible || !hasOpenAnswerShape(card)) return null;
+    const commandWord = normalizeWrittenCommand(card.examCommand);
+    const marks = clampWrittenMarks(card.examMarks || 1);
+    const modelAnswer = String(card.answer || card.explanation || "").trim();
+    const sourceParts = [card.source, card.sourceFidelity].filter(Boolean).join(" · ");
+    return {
+      id: `derived-${card.id}`,
+      sourceCardId: card.id,
+      origin: "open-answer-card",
+      pool: card.examPool || "written-main",
+      sourceRef: sourceParts,
+      domain: card.examDomain || unitToWrittenDomain(card.unit),
+      unit: card.unit,
+      commandWord,
+      marks,
+      difficulty: Math.min(5, Math.max(1, Number(card.level || marks || 1))),
+      skills: derivedWrittenSkills(card, commandWord),
+      question: String(card.question || "").trim(),
+      answerFrame: writtenAnswerFrame(commandWord, marks, card.answerFormatHint),
+      examFormatKind: card.examFormatKind || commandWord,
+      modelAnswer,
+      markScheme: makeWrittenMarkScheme(commandWord, marks, modelAnswer),
+      keywords: writtenKeywordsFromAnswer(modelAnswer),
+      commonMistakes: commandWord === "calculate"
+        ? ["Do not give a number without the correct unit where a unit is needed.", "Do not skip the method if method marks are available."]
+        : ["Do not give a vague answer without the key science term.", "Do not write a list of unrelated facts."],
+      answerStructure: Array.isArray(card.answerFormatSteps) && card.answerFormatSteps.length
+        ? card.answerFormatSteps
+        : writtenAnswerStructure(commandWord, marks),
+      media: Array.isArray(card.media) ? card.media : []
+    };
+  }
+
+  let writtenExamBankCache = null;
+
+  function writtenExamBank() {
+    if (writtenExamBankCache) return writtenExamBankCache;
+    const curatedIds = new Set(WRITTEN_EXAM_BANK.map((item) => item.id));
+    const derived = cards
+      .map(derivedWrittenQuestionFromCard)
+      .filter(Boolean)
+      .filter((item) => !curatedIds.has(item.id));
+    writtenExamBankCache = [...WRITTEN_EXAM_BANK.map((item) => ({ ...item, origin: item.origin || "curated-visual-bank", pool: item.pool || "written-visual" })), ...derived];
+    return writtenExamBankCache;
+  }
+
+  function shuffleWritten(items) {
+    const arr = [...items];
+    for (let i = arr.length - 1; i > 0; i -= 1) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr;
+  }
+
+  function writtenQuestionHasSkill(question, skill) {
+    return Array.isArray(question.skills) && question.skills.includes(skill);
+  }
+
+  function scoreWrittenCombo(combo, targetMarks) {
+    const commands = new Set(combo.map((item) => item.commandWord));
+    const units = new Set(combo.map((item) => item.unit));
+    const origins = new Set(combo.map((item) => item.origin || item.pool || "unknown"));
+    const hasVisual = combo.some((item) => Array.isArray(item.media) && item.media.length);
+    const hasGraph = combo.some((item) => writtenQuestionHasSkill(item, "graph"));
+    const hasCalculation = combo.some((item) => writtenQuestionHasSkill(item, "calculation"));
+    const hasExplain = combo.some((item) => item.commandWord === "explain");
+    const hasIdentify = combo.some((item) => item.commandWord === "identify");
+    const visualCount = combo.filter((item) => Array.isArray(item.media) && item.media.length).length;
+    const sectionMarks = combo.reduce((acc, item) => {
+      const key = writtenSectionMeta(item).key;
+      acc[key] = (acc[key] || 0) + clampWrittenMarks(item.marks);
+      return acc;
+    }, { A: 0, B: 0, C: 0 });
+    const visualRatio = combo.length ? visualCount / combo.length : 0;
+    let score = 0;
+    score += commands.size * 5;
+    score += units.size * 4;
+    score += origins.size * 2;
+    score += Math.min(visualCount, targetMarks >= 10 ? 3 : 2) * 2;
+    if (hasVisual) score += 4;
+    if (targetMarks >= 10 && hasGraph) score += 4;
+    if (targetMarks >= 10 && hasCalculation) score += 4;
+    if (hasExplain) score += 4;
+    if (hasIdentify) score += 3;
+
+    const bands = targetMarks >= 10
+      ? { A: [0.15, 0.45], B: [0.35, 0.70], C: [0.05, 0.40] }
+      : { A: [0.15, 0.45], B: [0.30, 0.70], C: [0.00, 0.45] };
+    Object.entries(bands).forEach(([key, [low, high]]) => {
+      const ratio = targetMarks ? (sectionMarks[key] || 0) / targetMarks : 0;
+      score += ratio >= low && ratio <= high ? 12 : -Math.min(24, Math.abs(ratio - ((low + high) / 2)) * 60);
+    });
+    const idealQuestionCount = targetMarks <= 5 ? 3 : targetMarks <= 10 ? 5 : 7;
+    score -= Math.abs(combo.length - idealQuestionCount) * 24;
+    if (visualRatio > 0.60) score -= (visualRatio - 0.60) * 60;
+    return score + Math.random();
+  }
+
+  function writtenItemBaseScore(item) {
+    const marks = clampWrittenMarks(item.marks);
+    let score = marks * 8 - 2.5;
+    if (item.origin === "open-answer-card") score += 0.5;
+    if (item.origin === "curated-visual-bank") score += 0.8;
+    if (item.pool === "written-main") score += 0.8;
+    if (item.pool === "written-visual") score += 0.8;
+    if (item.pool === "written-recall") score += 0.2;
+    if (item.pool === "written-review") score += 0.1;
+    if (Array.isArray(item.media) && item.media.length) score += 0.5;
+    if (["describe", "explain", "calculate", "graph"].includes(item.commandWord)) score += 0.5;
+    return score + Math.random();
+  }
+
+  function betterWrittenCandidate(candidate, existing, targetMarks, includeDiversity = false) {
+    if (!candidate) return existing;
+    if (!existing) return candidate;
+    const candidateScore = candidate.score + (includeDiversity ? scoreWrittenCombo(candidate.combo, targetMarks) : 0);
+    const existingScore = existing.score + (includeDiversity ? scoreWrittenCombo(existing.combo, targetMarks) : 0);
+    return candidateScore > existingScore ? candidate : existing;
+  }
+
+  function findWrittenCombo(items, targetMarks) {
+    const attempts = 8;
+    let best = null;
+    for (let attempt = 0; attempt < attempts; attempt += 1) {
+      const pool = shuffleWritten(items);
+      const dp = Array.from({ length: targetMarks + 1 }, () => null);
+      dp[0] = { combo: [], score: 0, sourceIds: new Set(), questionKeys: new Set() };
+      pool.forEach((item) => {
+        const marks = clampWrittenMarks(item.marks);
+        const key = String(item.question || item.id || "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim().slice(0, 80);
+        const sourceId = item.sourceCardId || item.id;
+        for (let total = targetMarks; total >= marks; total -= 1) {
+          const prev = dp[total - marks];
+          if (!prev || prev.sourceIds.has(sourceId) || prev.questionKeys.has(key)) continue;
+          const next = {
+            combo: [...prev.combo, item],
+            score: prev.score + writtenItemBaseScore(item),
+            sourceIds: new Set([...prev.sourceIds, sourceId]),
+            questionKeys: new Set([...prev.questionKeys, key])
+          };
+          dp[total] = betterWrittenCandidate(next, dp[total], targetMarks);
+        }
+      });
+      best = betterWrittenCandidate(dp[targetMarks], best, targetMarks, true);
+    }
+    return best?.combo || [];
+  }
+
+  function selectWrittenDomainQuestions(domain, targetMarks) {
+    const available = writtenExamBank().filter((item) => item.domain === domain);
+    const exact = findWrittenCombo(available, targetMarks);
+    if (exact.length) return exact;
+
+    const greedy = [];
+    let marks = 0;
+    shuffleWritten(available).sort((a, b) => writtenItemBaseScore(b) - writtenItemBaseScore(a)).forEach((item) => {
+      const nextMarks = marks + clampWrittenMarks(item.marks);
+      if (nextMarks > targetMarks) return;
+      greedy.push(item);
+      marks = nextMarks;
+    });
+    return greedy;
+  }
+
+  function writtenPaperMarkTotal(questions) {
+    return questions.reduce((sum, question) => sum + clampWrittenMarks(question.marks), 0);
+  }
+
+  function writtenPaperSectionMarks(questions) {
+    return questions.reduce((acc, question) => {
+      const key = writtenSectionMeta(question).key;
+      acc[key] = (acc[key] || 0) + clampWrittenMarks(question.marks);
+      return acc;
+    }, { A: 0, B: 0, C: 0 });
+  }
+
+  function writtenPaperQualityScore(questions, requestedMarks) {
+    if (!Array.isArray(questions) || !questions.length) return -Infinity;
+    const totalMarks = writtenPaperMarkTotal(questions);
+    const commands = new Set(questions.map((question) => question.commandWord));
+    const units = new Set(questions.map((question) => question.unit));
+    const domains = new Set(questions.map((question) => question.domain));
+    const sections = writtenPaperSectionMarks(questions);
+    const visualCount = questions.filter((question) => Array.isArray(question.media) && question.media.length).length;
+    const calculationOrGraphMarks = questions
+      .filter((question) => writtenSectionMeta(question).key === "C")
+      .reduce((sum, question) => sum + clampWrittenMarks(question.marks), 0);
+    const sourceKeys = questions.map((question) => question.sourceCardId || question.id);
+    const duplicateSourcePenalty = sourceKeys.length - new Set(sourceKeys).size;
+    const questionKeys = questions.map((question) => String(question.question || "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim().slice(0, 80));
+    const duplicateQuestionPenalty = questionKeys.length - new Set(questionKeys).size;
+
+    let score = 0;
+    score += totalMarks === requestedMarks ? 100 : -Math.abs(requestedMarks - totalMarks) * 25;
+    score += domains.size * 20;
+    score += units.size * 8;
+    score += commands.size * 7;
+    score += Math.min(visualCount, requestedMarks >= 45 ? 5 : requestedMarks >= 30 ? 4 : 2) * 8;
+    score += Math.min(calculationOrGraphMarks, requestedMarks >= 45 ? 10 : requestedMarks >= 30 ? 7 : 4) * 2;
+    score -= duplicateSourcePenalty * 80;
+    score -= duplicateQuestionPenalty * 100;
+
+    const targetBands = requestedMarks >= 30
+      ? { A: [0.18, 0.38], B: [0.38, 0.64], C: [0.12, 0.34] }
+      : { A: [0.15, 0.45], B: [0.30, 0.70], C: [0.00, 0.40] };
+    Object.entries(targetBands).forEach(([key, [low, high]]) => {
+      const ratio = totalMarks ? (sections[key] || 0) / totalMarks : 0;
+      if (ratio >= low && ratio <= high) score += 24;
+      else score -= Math.min(70, Math.abs(ratio - ((low + high) / 2)) * 140);
+    });
+
+    const visualRatio = questions.length ? visualCount / questions.length : 0;
+    const maxVisualRatio = requestedMarks >= 30 ? 0.45 : 0.60;
+    if (visualRatio > maxVisualRatio) score -= Math.min(80, (visualRatio - maxVisualRatio) * 160);
+    if (sections.A === 0) score -= requestedMarks >= 30 ? 65 : 30;
+    if (sections.B === 0) score -= 50;
+    if (requestedMarks >= 30 && visualCount === 0) score -= 30;
+    if (requestedMarks >= 30 && calculationOrGraphMarks === 0) score -= 40;
+    return score + Math.random();
+  }
+
+  function buildWrittenExamCandidate(totalMarks) {
+    const targetPerDomain = totalMarks / 3;
+    const questions = ["biology", "chemistry", "physics"].flatMap((domain) => selectWrittenDomainQuestions(domain, targetPerDomain));
+    return sortWrittenExamIntoSections(questions);
   }
 
   function buildWrittenExam(totalMarks = 30) {
     const requested = [15, 30, 45].includes(Number(totalMarks)) ? Number(totalMarks) : 30;
-    const blueprint = WRITTEN_EXAM_BLUEPRINTS[requested] || WRITTEN_EXAM_BLUEPRINTS[30];
-    const byId = new Map(WRITTEN_EXAM_BANK.map((item) => [item.id, item]));
-    return ["biology", "chemistry", "physics"].flatMap((domain) => {
-      return (blueprint[domain] || []).map((id) => byId.get(id)).filter(Boolean);
+    let best = null;
+    let bestScore = -Infinity;
+    const attempts = requested >= 30 ? 12 : 8;
+    for (let attempt = 0; attempt < attempts; attempt += 1) {
+      const candidate = buildWrittenExamCandidate(requested);
+      const score = writtenPaperQualityScore(candidate, requested);
+      if (score > bestScore) {
+        best = candidate;
+        bestScore = score;
+      }
+    }
+    return best || buildWrittenExamCandidate(requested);
+  }
+
+  function bitCount(value) {
+    let n = Number(value) || 0;
+    let count = 0;
+    while (n) {
+      n &= n - 1;
+      count += 1;
+    }
+    return count;
+  }
+
+  function selectedUnitTestUnit() {
+    const unitIds = new Set([...state.selectedUnits]);
+    [...state.selectedObjectives].forEach((objectiveId) => {
+      const objective = objectiveMeta(objectiveId);
+      if (objective?.unit) unitIds.add(objective.unit);
     });
+    return unitIds.size === 1 ? [...unitIds][0] : null;
+  }
+
+  function unitTestScopeObjectiveIds(unitId) {
+    if (!unitId) return [];
+    if (state.selectedUnits.has(unitId)) {
+      return learningObjectives.filter((objective) => objective.unit === unitId).map((objective) => objective.id);
+    }
+    const selectedForUnit = [...state.selectedObjectives].filter((objectiveId) => objectiveMeta(objectiveId)?.unit === unitId);
+    if (selectedForUnit.length) return selectedForUnit;
+    return learningObjectives.filter((objective) => objective.unit === unitId).map((objective) => objective.id);
+  }
+
+  function unitTestWrittenBank(unitId = selectedUnitTestUnit()) {
+    if (!unitId) return [];
+    const scopedObjectives = new Set(unitTestScopeObjectiveIds(unitId));
+    const hasObjectiveScope = scopedObjectives.size > 0;
+    return writtenExamBank().filter((item) => {
+      if (item.unit !== unitId) return false;
+      if (!hasObjectiveScope) return true;
+      return item.learningObjective ? scopedObjectives.has(item.learningObjective) : true;
+    });
+  }
+
+  function unitWrittenPaperQualityScore(questions, requestedMarks, objectiveIds = []) {
+    if (!Array.isArray(questions) || !questions.length) return -Infinity;
+    const totalMarks = writtenPaperMarkTotal(questions);
+    const coveredObjectives = new Set(questions.map((question) => question.learningObjective).filter(Boolean));
+    const targetObjectives = objectiveIds.filter((objectiveId) => questions.some((question) => question.learningObjective === objectiveId));
+    const visualCount = questions.filter((question) => Array.isArray(question.media) && question.media.length).length;
+    const commands = new Set(questions.map((question) => question.commandWord));
+    const sections = writtenPaperSectionMarks(questions);
+    const calculationOrGraphMarks = questions
+      .filter((question) => writtenSectionMeta(question).key === "C")
+      .reduce((sum, question) => sum + clampWrittenMarks(question.marks), 0);
+    const sourceKeys = questions.map((question) => question.sourceCardId || question.id);
+    const duplicateSourcePenalty = sourceKeys.length - new Set(sourceKeys).size;
+    let score = 0;
+    score += totalMarks === requestedMarks ? 120 : -Math.abs(requestedMarks - totalMarks) * 30;
+    score += targetObjectives.length ? (coveredObjectives.size / targetObjectives.length) * 140 : 0;
+    score += commands.size * 8;
+    score += Math.min(visualCount, requestedMarks >= 30 ? 4 : 2) * 10;
+    score += Math.min(calculationOrGraphMarks, requestedMarks >= 30 ? 8 : 4) * 2;
+    score -= duplicateSourcePenalty * 90;
+    if (sections.A === 0) score -= 35;
+    if (sections.B === 0) score -= 35;
+    if (requestedMarks >= 30 && sections.C === 0) score -= 25;
+    const visualRatio = questions.length ? visualCount / questions.length : 0;
+    if (visualRatio > 0.60) score -= (visualRatio - 0.60) * 120;
+    return score + Math.random();
+  }
+
+  function findUnitWrittenCombo(items, targetMarks, objectiveIds = []) {
+    const objectiveIndexes = new Map(objectiveIds.map((id, index) => [id, index]));
+    const maxMask = objectiveIds.length ? (1 << Math.min(objectiveIds.length, 20)) - 1 : 0;
+    const attempts = 6;
+    let best = null;
+    for (let attempt = 0; attempt < attempts; attempt += 1) {
+      const pool = shuffleWritten(items);
+      const dp = Array.from({ length: targetMarks + 1 }, () => new Map());
+      dp[0].set(0, { combo: [], score: 0, sourceIds: new Set(), questionKeys: new Set(), mask: 0 });
+      pool.forEach((item) => {
+        const marks = clampWrittenMarks(item.marks);
+        const key = String(item.question || item.id || "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim().slice(0, 80);
+        const sourceId = item.sourceCardId || item.id;
+        const objectiveIndex = objectiveIndexes.has(item.learningObjective) ? objectiveIndexes.get(item.learningObjective) : -1;
+        const objectiveBit = objectiveIndex >= 0 && objectiveIndex < 20 ? (1 << objectiveIndex) : 0;
+        for (let total = targetMarks; total >= marks; total -= 1) {
+          const previousStates = Array.from(dp[total - marks].values());
+          previousStates.forEach((prev) => {
+            if (!prev || prev.sourceIds.has(sourceId) || prev.questionKeys.has(key)) return;
+            const nextMask = prev.mask | objectiveBit;
+            const next = {
+              combo: [...prev.combo, item],
+              score: prev.score + writtenItemBaseScore(item) + (objectiveBit && !(prev.mask & objectiveBit) ? 18 : 0),
+              sourceIds: new Set([...prev.sourceIds, sourceId]),
+              questionKeys: new Set([...prev.questionKeys, key]),
+              mask: nextMask
+            };
+            const existing = dp[total].get(nextMask);
+            if (!existing || next.score > existing.score) dp[total].set(nextMask, next);
+          });
+        }
+      });
+      const exactStates = Array.from(dp[targetMarks].values());
+      exactStates.forEach((candidate) => {
+        if (!candidate) return;
+        if (!best) {
+          best = candidate;
+          return;
+        }
+        const candidateCoverage = bitCount(candidate.mask);
+        const bestCoverage = bitCount(best.mask);
+        if (candidateCoverage > bestCoverage || (candidateCoverage === bestCoverage && candidate.score > best.score)) best = candidate;
+      });
+      if (best && maxMask && best.mask === maxMask) break;
+    }
+    return best?.combo || [];
+  }
+
+  function buildUnitWrittenExam(totalMarks = 30, unitId = selectedUnitTestUnit()) {
+    const requested = [15, 30, 45].includes(Number(totalMarks)) ? Number(totalMarks) : 30;
+    const available = unitTestWrittenBank(unitId);
+    if (!available.length) return [];
+    const objectiveIds = unitTestScopeObjectiveIds(unitId).filter((objectiveId) => available.some((item) => item.learningObjective === objectiveId));
+    let best = null;
+    let bestScore = -Infinity;
+    const attempts = requested >= 30 ? 10 : 7;
+    for (let attempt = 0; attempt < attempts; attempt += 1) {
+      const candidate = findUnitWrittenCombo(available, requested, objectiveIds);
+      const score = unitWrittenPaperQualityScore(candidate, requested, objectiveIds);
+      if (score > bestScore) {
+        best = candidate;
+        bestScore = score;
+      }
+    }
+    if (best && best.length) return sortWrittenExamIntoSections(best);
+    return sortWrittenExamIntoSections(findWrittenCombo(available, requested));
   }
 
   function defaultProgress() {
@@ -609,19 +2239,24 @@
 
   function modeEntryText(mode = state.selectedMode) {
     if (mode === "revisit") return "Revisit your studies";
+    if (mode === "revisit-test") return "Build Revisit test";
     if (mode === "test") return "Test your knowledge";
+    if (mode === "unit-test") return "Build end of unit test";
     if (mode === "written") return "Build written exam";
     return "Start revision";
   }
 
   function modeReadyCount(mode = state.selectedMode) {
-    if (mode === "written") return WRITTEN_EXAM_BANK.length;
+    if (mode === "written") return writtenExamBank().length;
+    if (mode === "unit-test") return unitTestWrittenBank().length;
     return cardsForMode(mode).length;
   }
 
   function modeLabel(mode = state.selectedMode) {
     if (mode === "revisit") return "Revisit";
+    if (mode === "revisit-test") return "Revisit test";
     if (mode === "test") return "Test your knowledge";
+    if (mode === "unit-test") return "End of unit test";
     if (mode === "written") return "Written exam";
     return "Revision journey";
   }
@@ -796,7 +2431,7 @@
   }
 
   function recordSessionStatus(card, status) {
-    if (!state.session || !card || state.mode === "test") return;
+    if (!state.session || !card || isTestMode()) return;
     state.session.statuses[card.id] = status;
   }
 
@@ -854,7 +2489,7 @@
     recordSessionStatus(card, keepInRevisit ? "revisit" : status);
     saveProgress();
 
-    if (state.mode === "revisit" || state.mode === "study" || state.mode === "test") {
+    if (state.mode === "revisit" || state.mode === "study" || isTestMode()) {
       const currentId = card.id;
       rebuildDeck(false);
       const stillHere = state.deck.findIndex((candidate) => candidate.id === currentId);
@@ -897,7 +2532,7 @@
   }
 
   function saveSessionPosition() {
-    if (!state.deck.length || state.noteContext || state.mode === "test") return;
+    if (!state.deck.length || state.noteContext || isTestMode()) return;
     const card = state.deck[state.index];
     if (!card) return;
     const positions = state.progress.sessionPositions && typeof state.progress.sessionPositions === "object" ? state.progress.sessionPositions : {};
@@ -911,7 +2546,7 @@
   }
 
   function restoreSessionPosition(mode = state.mode) {
-    if (!state.deck.length || mode === "test") return;
+    if (!state.deck.length || isTestMode(mode)) return;
     const saved = state.progress.sessionPositions?.[sessionPositionKey(mode)];
     if (!saved) return;
     const byCard = state.deck.findIndex((card) => card.id === saved.cardId);
@@ -977,12 +2612,18 @@
     if (mode === "revisit") return base.filter((card) => revisit.has(card.id));
     if (mode === "study") return base.filter((card) => study.has(card.id));
     if (mode === "test") return base.filter((card) => mastered.has(card.id));
-    if (mode === "written") return WRITTEN_EXAM_BANK;
+    if (mode === "revisit-test") return base.filter((card) => revisit.has(card.id));
+    if (mode === "unit-test") return unitTestWrittenBank();
+    if (mode === "written") return writtenExamBank();
     return base;
   }
 
+  function isWrittenMode(mode = state.mode) {
+    return mode === "written" || mode === "unit-test";
+  }
+
   function rebuildDeck(resetIndex = true) {
-    if (state.mode === "written") return;
+    if (isWrittenMode()) return;
     state.deck = cardsForMode();
     if (resetIndex || state.index >= state.deck.length) state.index = 0;
     resetCardInteraction();
@@ -1017,13 +2658,14 @@
   function startSession(mode, options = {}) {
     state.mode = mode;
     state.noteContext = null;
-    state.test = mode === "test" ? { score: 0, answered: 0, answers: [] } : null;
+    state.test = isTestMode(mode) ? { score: 0, answered: 0, answers: [] } : null;
     state.written = null;
-    if (mode === "written") {
+    if (isWrittenMode(mode)) {
       const totalMarks = [15, 30, 45].includes(Number(options.totalMarks)) ? Number(options.totalMarks) : (state.progress.writtenExamMarks || 30);
       state.progress.writtenExamMarks = totalMarks;
-      state.written = { totalMarks, answers: {}, marksAwarded: {}, submitted: {} };
-      state.deck = buildWrittenExam(totalMarks);
+      const unitId = mode === "unit-test" ? selectedUnitTestUnit() : null;
+      state.written = { totalMarks, unitId, answers: {}, marksAwarded: {}, submitted: {}, formatOpen: {}, revisitAdded: {} };
+      state.deck = mode === "unit-test" ? buildUnitWrittenExam(totalMarks, unitId) : buildWrittenExam(totalMarks);
       state.index = 0;
       resetCardInteraction();
       writeProgress();
@@ -1033,7 +2675,7 @@
         rebuildDeck(true);
         restoreSessionPosition(mode);
       }
-      if (mode !== "test") startSessionTracker(mode);
+      if (!isTestMode(mode)) startSessionTracker(mode);
     }
 
     document.body.classList.add("session-active");
@@ -1075,13 +2717,14 @@
     if (els.hubMasteredStat) els.hubMasteredStat.textContent = mastered.size;
     if (els.revisitStat) els.revisitStat.textContent = cardsForMode("revisit").length;
     if (els.hubRevisitStat) els.hubRevisitStat.textContent = revisit.size;
+    if (els.hubRevisitTestStat) els.hubRevisitTestStat.textContent = cardsForMode("revisit-test").length;
     if (els.studyStat) els.studyStat.textContent = study.size;
     if (els.hubStudyStat) els.hubStudyStat.textContent = study.size;
     if (els.routeEntryButton) {
-      if (state.selectedMode === "written") {
+      if (state.selectedMode === "written" || state.selectedMode === "unit-test") {
         const marks = state.progress.writtenExamMarks || 30;
         els.routeEntryButton.textContent = `${modeEntryText()} (${marks} marks)`;
-        els.routeEntryButton.disabled = false;
+        els.routeEntryButton.disabled = state.selectedMode === "unit-test" ? ready === 0 : false;
       } else {
         els.routeEntryButton.textContent = `${modeEntryText()} (${ready})`;
         els.routeEntryButton.disabled = ready === 0;
@@ -1093,14 +2736,26 @@
       if (state.selectedMode === "written") {
         const marks = state.progress.writtenExamMarks || 30;
         const perDomain = marks / 3;
-        els.selectionSummary.textContent = `Written exam builder: ${marks} marks · ${perDomain} marks each for Biology, Chemistry and Physics`;
+        els.selectionSummary.textContent = `Written exam builder: ${marks} marks · ${perDomain} marks each for Biology, Chemistry and Physics · ${writtenExamBank().length} eligible questions`;
+      } else if (state.selectedMode === "unit-test") {
+        const marks = state.progress.writtenExamMarks || 30;
+        const unitId = selectedUnitTestUnit();
+        els.selectionSummary.textContent = unitId
+          ? `End of unit test: ${unitTitle(unitId)} · ${marks} marks · ${ready} eligible written questions`
+          : "End of unit test: choose exactly one unit or sub-unit group";
+      } else if (state.selectedMode === "revisit-test") {
+        els.selectionSummary.textContent = `Revisit test builder: ${ready} Revisit card${ready === 1 ? "" : "s"} available`;
       } else if (!unitCount && !objectiveCount) els.selectionSummary.textContent = `Selected revision set: all units · ${ready} card${ready === 1 ? "" : "s"}`;
       else els.selectionSummary.textContent = `Selected revision set: ${unitCount || "all"} unit${unitCount === 1 ? "" : "s"} · ${objectiveCount} sub-unit${objectiveCount === 1 ? "" : "s"} · ${ready} card${ready === 1 ? "" : "s"}`;
     }
     if (els.selectionDetail) {
       els.selectionDetail.textContent = state.selectedMode === "written"
-        ? "Practise state/identify, describe, explain and calculation answers. Use the mark scheme to self-mark after each response."
-        : `Mode: ${modeLabel()}. Select more units or sub-units below, then use the main button to begin.`;
+        ? "Practise written answers in three sections: core knowledge, written reasoning, then data and calculations. Use the mark scheme to self-mark after each response."
+        : state.selectedMode === "unit-test"
+          ? "Mode: End of unit test. Select one unit to build a written test covering its sub-units from the existing question bank."
+          : state.selectedMode === "revisit-test"
+            ? "Mode: Revisit test. Select units or sub-units below to narrow the Revisit test, or leave all selected."
+            : `Mode: ${modeLabel()}. Select more units or sub-units below, then use the main button to begin.`;
     }
     $$('[data-mode-select]').forEach((button) => {
       const active = button.dataset.modeSelect === state.selectedMode;
@@ -1132,10 +2787,12 @@
           const objectiveRevisit = objectiveCards.filter((card) => revisit.has(card.id)).length;
           const objectiveStudy = objectiveCards.filter((card) => study.has(card.id)).length;
           const selectedObjective = state.selectedObjectives.has(objective.id);
+          const objectivePct = objectiveCards.length ? Math.round((objectiveMastered / objectiveCards.length) * 100) : 0;
           return `<div class="objective-row ${selectedObjective ? "selected" : ""}">
             <button class="objective-toggle" data-objective-toggle="${escapeHtml(objective.id)}" type="button" aria-pressed="${selectedObjective}">
               <strong>${escapeHtml(objective.title)}</strong>
               <span>${objectiveCards.length} cards · ${objectiveMastered}/${objectiveCards.length} mastered · ${objectiveRevisit} revisit · ${objectiveStudy} need notes</span>
+              <span class="objective-progress-track" aria-label="${objectiveMastered} of ${objectiveCards.length} cards mastered"><i style="width:${objectivePct}%"></i></span>
             </button>
             <button class="objective-notes-button" data-note-open="${escapeHtml(objective.id)}" type="button" aria-label="Open class notes for ${escapeHtml(objective.title)}"><span aria-hidden="true">📘</span><span class="notes-button-text">Class Notes</span></button>
           </div>`;
@@ -1152,6 +2809,7 @@
           </div>
           <h3>${escapeHtml(unit.title)}</h3>
           <p>${escapeHtml(unit.theme)}</p>
+          <div class="unit-progress-summary"><span>Unit progress</span><strong>${pct}%</strong></div>
           <div class="progress-track" aria-label="${masteredCount} of ${unitCards.length} cards mastered"><div class="progress-fill" style="width:${pct}%"></div></div>
           <div class="objective-list" aria-label="Learning objectives in ${escapeHtml(unit.title)}">
             <div class="objective-row full-unit-row ${selectedUnit ? "selected" : ""}">
@@ -1179,6 +2837,12 @@
         openNoteContext(button.dataset.noteOpen);
       });
     });
+    $$('[data-unit-overview]', els.unitDashboard).forEach((button) => {
+      button.addEventListener('click', (event) => {
+        event.stopPropagation();
+        openUnitOverviewContext(button.dataset.unitOverview);
+      });
+    });
   }
 
 
@@ -1203,6 +2867,12 @@
     return `<ul>${items.map((item) => `<li>${escapeHtml(String(item))}</li>`).join("")}</ul>`;
   }
 
+  function renderOverviewMedia(items, className = "overview-media-grid") {
+    const mediaItems = Array.isArray(items) ? items : (items ? [items] : []);
+    if (!mediaItems.length) return "";
+    return renderMediaItems(mediaItems, "Unit overview visual", className, { showCaptions: true });
+  }
+
   function renderOverviewRoute(items = []) {
     if (!Array.isArray(items) || !items.length) return "";
     return `<div class="overview-route-grid">${items.map((item) => `
@@ -1213,12 +2883,21 @@
     `).join("")}</div>`;
   }
 
+  function overviewStatusLabel(status) {
+    const labels = {
+      covered: "Ready",
+      partial: "Practise more",
+      check: "Check"
+    };
+    return labels[status] || "Check";
+  }
+
   function renderOverviewStatus(items = []) {
     if (!Array.isArray(items) || !items.length) return "";
     return `<div class="overview-status-grid">${items.map((item) => `
       <article class="overview-status-card status-${escapeHtml(item.status || "partial")}">
-        <span class="overview-status-pill">${escapeHtml(item.status || "check")}</span>
-        <strong>${escapeHtml(item.title || "Visual coverage")}</strong>
+        <span class="overview-status-pill">${escapeHtml(overviewStatusLabel(item.status))}</span>
+        <strong>${escapeHtml(item.title || "Revision visual")}</strong>
         <p>${escapeHtml(item.detail || "")}</p>
       </article>
     `).join("")}</div>`;
@@ -1250,9 +2929,9 @@
     const noteCount = classNotes.filter((note) => note.unit === overview.unit).length;
     updateSessionChrome({
       unitId: overview.unit,
-      title: "Reaction",
+      title: unitTitle(overview.unit),
       eyebrow: "Unit overview",
-      subtitle: `${unitTitle(overview.unit)} · Revision-pack map`
+      subtitle: `${unitTitle(overview.unit)} · Unit map`
     });
     els.sessionIndex.textContent = String(unitCards.length);
     els.sessionTotal.textContent = " cards";
@@ -1271,8 +2950,9 @@
           <h2>${escapeHtml(overview.title || `${unitTitle(overview.unit)} overview`)}</h2>
           <p>${escapeHtml(overview.summary || "")}</p>
         </section>
+        ${renderOverviewMedia(overview.leadMedia, "overview-lead-media")}
         <section class="note-section">
-          <h3>Revision-pack must know</h3>
+          <h3>Must know for this unit</h3>
           ${renderPlainList(overview.revisionPackFocus)}
         </section>
         ${Array.isArray(overview.formulae) && overview.formulae.length ? `<section class="note-section formula-note"><h3>Formulae / equations</h3>${renderPlainList(overview.formulae)}</section>` : ""}
@@ -1280,14 +2960,12 @@
           <h3>How the sub-unit pages fit</h3>
           ${renderOverviewRoute(overview.subUnitRoute)}
         </section>
+        ${Array.isArray(overview.visualTiles) && overview.visualTiles.length ? `<section class="note-section overview-visual-section"><h3>Visual revision tiles</h3>${renderOverviewMedia(overview.visualTiles, "overview-tile-media")}</section>` : ""}
         <section class="note-section">
-          <h3>Diagram, graph and calculation coverage</h3>
+          <h3>Diagrams, graphs and calculations</h3>
           ${renderOverviewStatus(overview.visualCoverage)}
         </section>
-        <section class="note-section practice-note">
-          <h3>Infographics to develop next</h3>
-          ${renderInfographicBacklog(overview.infographicBacklog)}
-        </section>
+        ${Array.isArray(overview.infographicBacklog) && overview.infographicBacklog.length ? `<section class="note-section practice-note"><h3>More visuals to practise</h3>${renderInfographicBacklog(overview.infographicBacklog)}</section>` : ""}
         <section class="note-section sentence-note">
           <h3>Written-answer moves</h3>
           ${renderPlainList(overview.examAnswerMoves)}
@@ -1387,7 +3065,7 @@
             <span class="pill">Class note</span>
           </div>
         </div>
-        ${sourceCard ? `<aside class="source-question"><span class="eyebrow">Original question</span><p>${escapeHtml(sourceCard.question)}</p></aside>` : ""}
+        ${sourceCard ? `<aside class="source-question"><span class="eyebrow">Question to practise</span><p>${escapeHtml(sourceCard.question)}</p></aside>` : ""}
         ${sourceMedia.length ? renderMediaItems(sourceMedia, sourceCard.question || note.title, "media-grid note-source-media") : ""}
         ${noteMedia.length ? `<section class="note-section note-visual-section"><h3>Study visual</h3>${renderMediaItems(noteMedia, note.title, "media-grid note-media-grid")}</section>` : ""}
         <section class="note-section note-summary">
@@ -1481,26 +3159,6 @@
   }
 
 
-  function fidelityLabel(value) {
-    const labels = {
-      "exact-source-text": "Exact source text",
-      "source-style-redraw": "Source-style redraw",
-      "text-equivalent": "Text equivalent",
-      "success-criterion-derived": "Success criterion",
-      "progress-check-derived": "Progress check",
-      "calculation-practice-derived": "Calculation practice",
-      "derived": "Derived"
-    };
-    return labels[value] || value || "";
-  }
-
-  function fidelityClass(value) {
-    if (value === "exact-source-text") return "fidelity exact";
-    if (value === "source-style-redraw") return "fidelity redraw";
-    if (value === "text-equivalent") return "fidelity equivalent";
-    return "fidelity derived";
-  }
-
   function renderMediaLayerText(item, showCaptions = true) {
     if (!showCaptions) return "";
     const title = item.mediaTitle || item.title || "";
@@ -1562,7 +3220,7 @@
         <p>${escapeHtml(explanation)}</p>
         <ul>
           <li>Say the key idea out loud in your own words.</li>
-          <li>Use the diagram or source clue if one is shown.</li>
+          <li>Use the diagram or question clue if one is shown.</li>
           <li>Use Class Notes for the class-note context, then move it to Revisit or Mastered.</li>
         </ul>
       </aside>
@@ -1585,10 +3243,17 @@
     const submitted = Boolean(state.written?.submitted?.[question.id]);
     const typed = writtenCurrentAnswer(question);
     const awarded = writtenCurrentMark(question);
+    const formatOpen = Boolean(state.written?.formatOpen?.[question.id]);
+    const section = writtenSectionMeta(question);
+    const formatGuide = commandHint(question.commandWord);
+    const answerFrame = question.answerFrame || formatGuide;
+    const showAnswerFrame = answerFrame && answerFrame !== formatGuide;
     updateSessionChrome({
-      title: "Written Exam Mode",
-      eyebrow: modeText.written.eyebrow,
-      subtitle: `${domainLabel(question.domain)} · ${unitTitle(question.unit)} · ${question.marks} mark${question.marks === 1 ? "" : "s"}`
+      title: state.mode === "unit-test" ? "End of Unit Test" : "Written Exam Mode",
+      eyebrow: `${section.label}: ${section.focus}`,
+      subtitle: state.mode === "unit-test"
+        ? `${unitTitle(question.unit)} · ${question.marks} mark${question.marks === 1 ? "" : "s"}`
+        : `${domainLabel(question.domain)} · ${unitTitle(question.unit)} · ${question.marks} mark${question.marks === 1 ? "" : "s"}`
     });
     els.sessionIndex.textContent = String(state.index + 1);
     els.sessionTotal.textContent = `/ ${state.deck.length}`;
@@ -1597,26 +3262,30 @@
     els.studyPanel.innerHTML = `
       <article class="study-card written-card">
         <div class="written-question-meta">
+          <span class="pill section-pill">${escapeHtml(section.label)} · ${escapeHtml(section.focus)}</span>
           <span class="pill">${escapeHtml(domainLabel(question.domain))}</span>
           <span class="pill">${escapeHtml(unitTitle(question.unit))}</span>
-          <span class="pill command-word">${escapeHtml(question.commandWord)}</span>
           <span class="pill">${question.marks} mark${question.marks === 1 ? "" : "s"}</span>
+          <span class="difficulty-meta">${renderDifficultyBubbles(question)}</span>
         </div>
         <p class="question-text">${escapeHtml(question.question)}</p>
         ${Array.isArray(question.media) && question.media.length ? renderMediaItems(question.media.filter((item) => !item.mediaTiming || item.mediaTiming === "question"), question.question || "Question diagram", "media-grid question-media-grid", { showCaptions: false }) : ""}
-        <aside class="written-answer-guide">
+        <div class="written-answer-label-row">
+          <label for="writtenAnswer" class="written-answer-label">Your written answer</label>
+          <button class="answer-format-button" data-written-action="toggle-format" type="button" aria-expanded="${formatOpen}">Answer format</button>
+        </div>
+        ${formatOpen ? `<aside class="written-answer-guide">
           <strong>Answer format</strong>
-          <p>${escapeHtml(commandHint(question.commandWord))}</p>
-          <p><strong>Use:</strong> ${escapeHtml(question.answerFrame || "Short sentences with science key words.")}</p>
+          ${showAnswerFrame ? `<p><strong>Use:</strong> ${escapeHtml(answerFrame)}</p>` : `<p>${escapeHtml(answerFrame)}</p>`}
+          <p class="written-format-note">${escapeHtml(formatGuide)}</p>
           ${(question.answerStructure || []).length ? `<ul>${question.answerStructure.map((step) => `<li>${escapeHtml(step)}</li>`).join("")}</ul>` : ""}
-        </aside>
-        <label for="writtenAnswer" class="written-answer-label">Your written answer</label>
+        </aside>` : ""}
         <textarea id="writtenAnswer" class="open-answer written-answer-box" placeholder="Write your answer here. Use short sentences or bullet points where useful.">${escapeHtml(typed)}</textarea>
 
         ${submitted ? renderWrittenMarkScheme(question, awarded) : ""}
 
         <div class="card-actions primary-actions">
-          ${!submitted ? `<button class="primary-button" data-written-action="submit" type="button">Show mark scheme</button>` : `<button class="primary-button" data-written-action="next" type="button">Next question</button>`}
+          ${!submitted ? `<button class="primary-button" data-written-action="submit" type="button">Submit answer</button>` : `<button class="primary-button" data-written-action="next" type="button">Next question</button>`}
           <button class="secondary-button" data-written-action="prev" type="button">Previous</button>
           ${submitted ? `<button class="secondary-button" data-written-action="finish" type="button">Finish exam</button>` : ""}
         </div>
@@ -1641,13 +3310,21 @@
   }
 
   function renderWrittenMarkScheme(question, awarded) {
+    const typed = writtenCurrentAnswer(question).trim();
+    const sourceCard = question.sourceCardId ? cards.find((card) => card.id === question.sourceCardId) : null;
+    const addedToRevisit = Boolean(state.written?.revisitAdded?.[question.id]);
     const markButtons = Array.from({ length: question.marks + 1 }, (_, mark) => {
       const active = awarded === mark ? " active" : "";
-      return `<button class="written-mark-button${active}" data-written-mark="${mark}" type="button">${mark}</button>`;
+      return `<button class="written-mark-button${active}" data-written-mark="${mark}" type="button">${mark}/${question.marks}</button>`;
     }).join("");
+    const lowMark = awarded !== null && awarded < Math.ceil(Number(question.marks || 1) * 0.7);
     return `
       <section class="written-mark-scheme">
         <h3>Mark scheme</h3>
+        <div class="written-student-answer">
+          <strong>Your answer</strong>
+          <p>${typed ? escapeHtml(typed) : "No answer written."}</p>
+        </div>
         <div class="written-model-answer">
           <strong>Model answer</strong>
           <p>${escapeHtml(question.modelAnswer)}</p>
@@ -1656,6 +3333,10 @@
           <strong>Credit checklist</strong>
           <ul>${(question.markScheme || []).map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul>
         </div>
+        ${(question.answerStructure || []).length ? `<div class="written-format-review">
+          <strong>Answer structure check</strong>
+          <ul>${question.answerStructure.map((step) => `<li>${escapeHtml(step)}</li>`).join("")}</ul>
+        </div>` : ""}
         <div class="written-keywords">
           <strong>Key words/actions</strong>
           <p>${(question.keywords || []).map((word) => `<span>${escapeHtml(word)}</span>`).join("")}</p>
@@ -1666,14 +3347,40 @@
         </div>
         <div class="written-self-mark">
           <strong>Self-mark</strong>
-          <p>Select the mark your answer deserves.</p>
+          <p>Select the mark your answer deserves. Use the checklist, not just whether the final idea feels close.</p>
           <div class="written-mark-buttons">${markButtons}</div>
+          ${lowMark && sourceCard ? `<div class="written-revisit-callout">
+            <button class="secondary-button revisit-highlight-button" data-written-action="add-revisit" type="button" ${addedToRevisit ? "disabled" : ""}>${addedToRevisit ? "Added to Revisit" : "Add linked card to Revisit"}</button>
+          </div>` : ""}
         </div>
       </section>
     `;
   }
 
   function handleWrittenAction(action, question) {
+    if (action === "toggle-format") {
+      state.written.answers[question.id] = byId("writtenAnswer")?.value || "";
+      state.written.formatOpen = state.written.formatOpen || {};
+      state.written.formatOpen[question.id] = !state.written.formatOpen[question.id];
+      renderWrittenCard();
+      return;
+    }
+    if (action === "add-revisit") {
+      const sourceCard = question.sourceCardId ? cards.find((card) => card.id === question.sourceCardId) : null;
+      if (sourceCard) {
+        const mastered = new Set(state.progress.masteredIds || []);
+        const revisit = new Set(state.progress.revisitIds || []);
+        mastered.delete(sourceCard.id);
+        revisit.add(sourceCard.id);
+        state.progress.masteredIds = [...mastered];
+        state.progress.revisitIds = [...revisit];
+        state.written.revisitAdded = state.written.revisitAdded || {};
+        state.written.revisitAdded[question.id] = true;
+        saveProgress();
+      }
+      renderWrittenCard();
+      return;
+    }
     if (action === "submit") {
       state.written.answers[question.id] = byId("writtenAnswer")?.value || "";
       state.written.submitted[question.id] = true;
@@ -1701,6 +3408,7 @@
   function finishWrittenExam() {
     const total = state.deck.reduce((sum, question) => sum + Number(question.marks || 0), 0);
     const awarded = state.deck.reduce((sum, question) => sum + Number(state.written?.marksAwarded?.[question.id] || 0), 0);
+    const isUnitTest = state.mode === "unit-test";
     const byDomain = ["biology", "chemistry", "physics"].map((domain) => {
       const questions = state.deck.filter((question) => question.domain === domain);
       return {
@@ -1709,10 +3417,32 @@
         awarded: questions.reduce((sum, question) => sum + Number(state.written?.marksAwarded?.[question.id] || 0), 0)
       };
     });
+    const byObjective = [...new Set(state.deck.map((question) => question.learningObjective).filter(Boolean))].map((objectiveId) => {
+      const questions = state.deck.filter((question) => question.learningObjective === objectiveId);
+      return {
+        objectiveId,
+        title: objectiveTitle(objectiveId),
+        total: questions.reduce((sum, question) => sum + Number(question.marks || 0), 0),
+        awarded: questions.reduce((sum, question) => sum + Number(state.written?.marksAwarded?.[question.id] || 0), 0)
+      };
+    });
+    const sectionKeys = ["A", "B", "C"];
+    const bySection = sectionKeys.map((key) => {
+      const questions = state.deck.filter((question) => writtenSectionMeta(question).key === key);
+      const meta = questions.length ? writtenSectionMeta(questions[0]) : { label: `Section ${key}`, focus: "" };
+      return {
+        key,
+        label: meta.label,
+        focus: meta.focus,
+        total: questions.reduce((sum, question) => sum + Number(question.marks || 0), 0),
+        awarded: questions.reduce((sum, question) => sum + Number(state.written?.marksAwarded?.[question.id] || 0), 0)
+      };
+    }).filter((item) => item.total > 0);
     const percent = total ? Math.round((awarded / total) * 100) : 0;
     const record = {
       date: new Date().toISOString(),
-      mode: "written",
+      mode: isUnitTest ? "unit-test" : "written",
+      unit: isUnitTest ? state.written?.unitId || singleDeckUnit() || "" : "",
       totalMarks: state.written?.totalMarks || total,
       awarded,
       total,
@@ -1724,23 +3454,33 @@
     els.studyPanel.innerHTML = "";
     els.resultPanel.classList.remove("hidden");
     els.resultPanel.innerHTML = `
-      <h2>Written exam complete</h2>
+      <h2>${isUnitTest ? "End of unit test complete" : "Written exam complete"}</h2>
       <p>You self-marked <strong>${awarded}/${total}</strong> (${percent}%).</p>
+      ${isUnitTest ? `<h3>Sub-unit coverage</h3>
+      <div class="written-domain-summary written-objective-summary">
+        ${byObjective.map((item) => `<div><strong>${escapeHtml(item.title)}</strong><span>${item.awarded}/${item.total}</span></div>`).join("")}
+      </div>` : `<h3>Science balance</h3>
       <div class="written-domain-summary">
         ${byDomain.map((item) => `<div><strong>${escapeHtml(domainLabel(item.domain))}</strong><span>${item.awarded}/${item.total}</span></div>`).join("")}
+      </div>`}
+      <h3>Answer-type balance</h3>
+      <div class="written-domain-summary written-section-summary">
+        ${bySection.map((item) => `<div><strong>${escapeHtml(item.label)}</strong><span>${escapeHtml(item.focus)} · ${item.awarded}/${item.total}</span></div>`).join("")}
       </div>
-      <p>Next step: redo the lowest-scoring science section and focus on the command words that lost marks.</p>
+      <p>Use the score summary to choose what to practise next.</p>
       <div class="card-actions">
-        <button class="primary-button" data-result-action="written-again" type="button">Build another written exam</button>
+        <button class="primary-button" data-result-action="written-again" type="button">${isUnitTest ? "Build another end of unit test" : "Build another written exam"}</button>
+        ${cardsForMode("revisit-test").length ? `<button class="secondary-button" data-result-action="revisit-test" type="button">Build Revisit test</button>` : ""}
         <button class="secondary-button" data-result-action="hub" type="button">Back to revision hub</button>
       </div>
     `;
     $('[data-result-action="hub"]', els.resultPanel)?.addEventListener("click", showHub);
-    $('[data-result-action="written-again"]', els.resultPanel)?.addEventListener("click", () => startSession("written", { totalMarks: state.progress.writtenExamMarks || 30 }));
+    $('[data-result-action="written-again"]', els.resultPanel)?.addEventListener("click", () => startSession(isUnitTest ? "unit-test" : "written", { totalMarks: state.progress.writtenExamMarks || 30 }));
+    $('[data-result-action="revisit-test"]', els.resultPanel)?.addEventListener("click", () => startSession("revisit-test"));
   }
 
   function renderCard() {
-    if (state.mode === "written") {
+    if (isWrittenMode()) {
       renderWrittenCard();
       return;
     }
@@ -1748,9 +3488,7 @@
     const isMcq = cardIsMcq(card);
     const isDefinition = cardIsDefinition(card);
     const membership = setMembership(card.id);
-    const testMode = state.mode === "test";
-    const fidelityText = card.sourceFidelity ? fidelityLabel(card.sourceFidelity) : "";
-
+    const testMode = isTestMode();
     updateSessionChrome({
       card,
       title: "Reaction",
@@ -1798,8 +3536,6 @@
             <button class="secondary-button" data-state="revisit" type="button">Nearly there · Revisit</button>
           </div>
         ` : ""}
-
-        <p class="source-note">Source: ${escapeHtml(card.source || "Year 9 content pack")}${fidelityText ? ` · ${escapeHtml(fidelityText.toLowerCase())}` : ""}</p>
       </article>
     `;
 
@@ -1905,7 +3641,7 @@
         state.selectedChoice = button.dataset.choice;
         state.revealed = true;
         const correct = state.selectedChoice === correctDisplayChoice(card).key;
-        if (state.mode === "test") {
+        if (isTestMode()) {
           recordTestAnswer(card, correct, state.selectedChoice);
           if (correct) celebrate();
           beep(correct);
@@ -1944,7 +3680,7 @@
     }
     if (action === "reveal") {
       state.revealed = true;
-      if (state.mode !== "test") setCardStatus(card, "revisit", { advance: false, countAttempt: true });
+      if (!isTestMode()) setCardStatus(card, "revisit", { advance: false, countAttempt: true });
       else renderCard();
       return;
     }
@@ -1976,12 +3712,12 @@
 
   function nextCard() {
     if (!state.deck.length) return;
-    if (state.mode === "test" && state.test?.answered >= state.deck.length) {
+    if (isTestMode() && state.test?.answered >= state.deck.length) {
       finishTest();
       return;
     }
     if (state.index >= state.deck.length - 1) {
-      if (state.mode === "test") finishTest();
+      if (isTestMode()) finishTest();
       else finishSession();
       return;
     } else {
@@ -2041,19 +3777,23 @@
     state.test.answered += 1;
     if (correct) state.test.score += 1;
     recordSeen(card, correct);
+    const revisit = new Set(state.progress.revisitIds || []);
+    const mastered = new Set(state.progress.masteredIds || []);
     if (correct) {
+      if (state.mode === "revisit-test") {
+        revisit.delete(card.id);
+        mastered.add(card.id);
+      }
       state.progress.xp = (state.progress.xp || 0) + Math.max(5, (card.level || 1) * 5);
       state.progress.streak = (state.progress.streak || 0) + 1;
       state.progress.bestStreak = Math.max(state.progress.bestStreak || 0, state.progress.streak || 0);
     } else {
       state.progress.streak = 0;
-      const revisit = new Set(state.progress.revisitIds || []);
-      const mastered = new Set(state.progress.masteredIds || []);
       mastered.delete(card.id);
       revisit.add(card.id);
-      state.progress.masteredIds = [...mastered];
-      state.progress.revisitIds = [...revisit];
     }
+    state.progress.masteredIds = [...mastered];
+    state.progress.revisitIds = [...revisit];
     saveProgress();
   }
 
@@ -2073,17 +3813,19 @@
 
     els.studyPanel.innerHTML = "";
     els.resultPanel.classList.remove("hidden");
+    const revisitMode = state.mode === "revisit-test";
+    const canRunAgain = cardsForMode(revisitMode ? "revisit-test" : "test").length > 0;
     els.resultPanel.innerHTML = `
-      <h2>Test complete</h2>
+      <h2>${revisitMode ? "Revisit test complete" : "Test complete"}</h2>
       <p>You scored <strong>${score}/${total}</strong> (${percent}%).</p>
-      <p>${percent === 100 ? "Perfect. Those cards stayed mastered." : "Missed cards were moved into Revisit so they come back later."}</p>
+      <p>${revisitMode ? (percent === 100 ? "All tested cards moved to Mastered." : "Correct answers moved to Mastered. Missed cards stayed in Revisit.") : (percent === 100 ? "Perfect. Those cards stayed mastered." : "Missed cards were moved into Revisit.")}</p>
       <div class="card-actions">
         <button class="primary-button" data-result-action="hub" type="button">Back to revision hub</button>
-        <button class="secondary-button" data-result-action="again" type="button">Test again</button>
+        ${canRunAgain ? `<button class="secondary-button" data-result-action="again" type="button">${revisitMode ? "Build another Revisit test" : "Test again"}</button>` : ""}
       </div>
     `;
     $("[data-result-action='hub']", els.resultPanel)?.addEventListener("click", showHub);
-    $("[data-result-action='again']", els.resultPanel)?.addEventListener("click", () => startSession("test"));
+    $("[data-result-action='again']", els.resultPanel)?.addEventListener("click", () => startSession(revisitMode ? "revisit-test" : "test"));
   }
 
   function speak(text) {
@@ -2196,6 +3938,7 @@
 
     els.routeEntryButton?.addEventListener('click', () => {
       if ((state.selectedMode || 'practice') === 'written') startSession('written', { totalMarks: state.progress.writtenExamMarks || 30 });
+      else if ((state.selectedMode || 'practice') === 'unit-test') startSession('unit-test', { totalMarks: state.progress.writtenExamMarks || 30 });
       else startSession(state.selectedMode || 'practice');
     });
 
@@ -2204,8 +3947,16 @@
         const marks = Number(button.dataset.writtenSize || 30);
         state.progress.writtenExamMarks = marks;
         saveProgress();
-        state.selectedMode = 'written';
-        startSession('written', { totalMarks: marks });
+        if (state.selectedMode === 'unit-test') {
+          if (!unitTestWrittenBank().length) {
+            renderStats();
+            return;
+          }
+          startSession('unit-test', { totalMarks: marks });
+        } else {
+          state.selectedMode = 'written';
+          startSession('written', { totalMarks: marks });
+        }
       });
     });
 

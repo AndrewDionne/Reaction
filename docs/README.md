@@ -2,36 +2,36 @@
 
 A static, GitHub Pages-ready Year 9 science revision app covering units **9A, 9B, 9E, 9F, 9I and 9J**.
 
-This cleaned repo snapshot reflects the post-release-readiness state after the content, visual, QA and revision-pack alignment passes.
+The student app focuses on class notes, visual revision tiles, quick practice cards, revisit practice, test mode and balanced written exam practice.
 
 ## Current content status
 
-- Content version: **1.37.0**
-- Notes version: **1.35.0**
-- Question cards: **579**
-- Class notes: **33**
-- Learning objectives: **33**
-- Referenced media assets: **81**
-- Missing referenced media: **0**
+- Content version: **1.64.0**
+- Notes version: **1.60.0**
+- Question cards: **675**
+- Class notes: **38**
+- Unit overview pages: **6**
+- Written exam prompts: **284**
+- Referenced media assets: checked by `tools/release_readiness_audit.py`
 
 ## Card count by unit
 
 | Unit | Cards |
 |---|---:|
-| 9A | 74 |
-| 9B | 99 |
-| 9E | 75 |
-| 9F | 105 |
-| 9I | 82 |
-| 9J | 144 |
+| 9A | 77 |
+| 9B | 103 |
+| 9E | 104 |
+| 9F | 135 |
+| 9I | 105 |
+| 9J | 151 |
 
 ## App features
 
-- Practice / Need Notes / Revisit / Test your knowledge flows
-- Boss-style test mode with saved or discarded scores
-- Revision list for missed questions
-- Resume-position support for active sessions
-- Multiple-choice answer shuffling
+- Revision journey for selected units or sub-units
+- Revisit list for cards that need another attempt
+- Test your knowledge mode
+- Balanced written exam mode with structured sections, answer-format help and self-marking
+- Unit overview pages with lead visuals and revision tiles
 - Class Notes linked to learning objectives
 - Local browser progress storage
 - Static deployment; no backend, API key or build step required
@@ -61,20 +61,13 @@ tools/
 docs/
 ```
 
-## Useful commands
+## Useful checks
 
 ```bash
+node --check app.js
 python3 tools/validate_content.py
 python3 tools/release_readiness_audit.py
 ```
-
-## Documentation
-
-- `docs/MAINTENANCE.md` — how to validate and maintain the app
-- `docs/RELEASE_READINESS.md` — latest QA summary
-- `docs/CHANGELOG.md` — consolidated history of major patch phases
-- `docs/ASSET_MANIFEST_CURRENT.csv` — current retained asset catalogue
-- `docs/REPO_CLEANUP_v1.38.0.md` — files removed in this cleanup pass
 
 ## Source/licence note
 

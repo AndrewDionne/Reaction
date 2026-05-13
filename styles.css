@@ -996,7 +996,7 @@ select:focus, input:focus, textarea:focus {
 }
 
 
-/* v1.11 UI cleanup / focused journey flow */
+/* Focused journey flow */
 .utility-filters {
   position: absolute !important;
   width: 1px !important;
@@ -1131,7 +1131,7 @@ select:focus, input:focus, textarea:focus {
 }
 
 
-/* v1.11.1 forced UI cleanup / cache-busted focused journey flow */
+/* Focused journey layout */
 .hidden-controls,
 .control-panel,
 .utility-filters {
@@ -1335,7 +1335,7 @@ select:focus, input:focus, textarea:focus {
   .primary-actions .class-notes-button { justify-self: stretch !important; }
 }
 
-/* v1.12.0 learning-mode + multi-select patch */
+/* Learning-mode and multi-select controls */
 .journey-card {
   position: relative;
 }
@@ -1516,7 +1516,7 @@ select:focus, input:focus, textarea:focus {
 .route-action-text { display: none !important; }
 
 
-/* v1.12.1 compact selection UI pass */
+/* Compact selection UI */
 .journey-grid-three {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
@@ -1695,7 +1695,7 @@ select:focus, input:focus, textarea:focus {
 }
 
 
-/* v1.14.0 definition compare-notes flow */
+/* Definition compare-notes flow */
 .definition-response {
   display: grid;
   gap: 0.75rem;
@@ -1890,7 +1890,7 @@ select:focus, input:focus, textarea:focus {
 }
 
 
-/* v1.19.0 guided session flow */
+/* Guided session flow */
 .choice-feedback {
   margin: 1rem 0;
   padding: 1rem 1.1rem;
@@ -1944,7 +1944,7 @@ select:focus, input:focus, textarea:focus {
 }
 
 
-/* v1.20.0 visual question cleanup */
+/* Visual question layout */
 .question-media-grid {
   max-width: min(760px, 100%);
   margin: 0.75rem auto 1rem !important;
@@ -1981,7 +1981,7 @@ select:focus, input:focus, textarea:focus {
 }
 
 
-/* v1.20.1 session header / unit graphic cleanup */
+/* Session header and unit graphic layout */
 body.session-active .topbar {
   display: none !important;
 }
@@ -2139,7 +2139,7 @@ body.session-active .app-shell {
 }
 
 
-/* v1.20.2 full-bleed session header */
+/* Full-bleed session header */
 body.session-active .app-shell {
   padding-top: clamp(0.35rem, 1.4vw, 0.9rem) !important;
 }
@@ -2333,7 +2333,7 @@ body.session-active .app-shell {
 }
 
 
-/* v1.27.0 SVG base-layer media text support */
+/* Media text overlay support */
 .media-layer-text {
   display: grid;
   gap: 0.45rem;
@@ -2391,7 +2391,7 @@ body.session-active .app-shell {
   }
 }
 
-/* v1.28.0: app-layer labels for clean base images */
+/* App-layer labels for clean base images */
 .media-visual-wrap {
   position: relative;
   background: #fff;
@@ -2460,7 +2460,7 @@ body.session-active .app-shell {
 }
 
 
-/* v1.39.0 written exam mode */
+/* Written exam mode */
 .journey-grid-four {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
@@ -2513,6 +2513,17 @@ body.session-active .app-shell {
   background: rgba(124, 58, 237, 0.12);
 }
 
+.section-pill {
+  background: rgba(15, 23, 42, 0.06);
+  border-color: rgba(15, 23, 42, 0.12);
+  color: #0f172a;
+}
+
+.written-format-note {
+  color: var(--muted-text, #64748b);
+  margin-top: 0.35rem;
+}
+
 .written-answer-guide,
 .written-mark-scheme {
   border: 1px solid rgba(148, 163, 184, 0.28);
@@ -2545,12 +2556,38 @@ body.session-active .app-shell {
   margin-top: 0;
 }
 
+.written-student-answer,
 .written-model-answer,
 .written-checklist,
+.written-format-review,
 .written-keywords,
 .written-common-mistakes,
 .written-self-mark {
   margin-top: 0.85rem;
+}
+
+.written-student-answer p,
+.written-model-answer p {
+  white-space: pre-wrap;
+}
+
+.written-student-answer {
+  border-left: 4px solid rgba(100, 116, 139, 0.28);
+  padding-left: 0.75rem;
+}
+
+.written-revisit-callout {
+  margin-top: 0.8rem;
+  padding: 0.75rem;
+  border: 1px solid rgba(217, 119, 6, 0.22);
+  border-radius: 0.85rem;
+  background: rgba(255, 251, 235, 0.88);
+}
+
+.written-revisit-callout p {
+  margin: 0 0 0.55rem;
+  color: #92400e;
+  font-weight: 700;
 }
 
 .written-keywords p {
@@ -2632,7 +2669,7 @@ body.session-active .app-shell {
   }
 }
 
-/* Unit overview patch v1.50.0+ */
+/* Unit overview pages */
 .unit-overview-row {
   margin-top: 0.38rem;
 }
@@ -2665,3 +2702,215 @@ body.session-active .app-shell {
 .overview-backlog-card.priority-high span { background: #fee2e2; color: #991b1b; }
 .formula-note { background: rgba(240, 253, 244, 0.84); border-color: rgba(22, 163, 74, 0.22); }
 @media (max-width: 760px) { .overview-route-grid, .overview-status-grid { grid-template-columns: 1fr; } .unit-overview-button { min-height: 50px; } }
+
+/* Written exam visual practice */
+.written-question-meta {
+  align-items: center;
+}
+
+.difficulty-meta {
+  display: inline-flex;
+  align-items: center;
+}
+
+.difficulty-bubbles {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.18rem;
+  padding: 0.22rem 0.34rem;
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.05);
+  border: 1px solid rgba(15, 23, 42, 0.08);
+}
+
+.difficulty-bubble {
+  width: 1.25rem;
+  height: 1.25rem;
+  display: inline-grid;
+  place-items: center;
+  border-radius: 999px;
+  border: 1px solid rgba(15, 23, 42, 0.18);
+  color: #64748b;
+  background: #ffffff;
+  font-size: 0.68rem;
+  font-weight: 950;
+  line-height: 1;
+}
+
+.difficulty-bubble.filled {
+  color: #ffffff;
+  background: #0f172a;
+  border-color: #0f172a;
+}
+
+.written-answer-label-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.answer-format-button {
+  border: 1px solid rgba(14, 116, 144, 0.24);
+  background: rgba(236, 254, 255, 0.92);
+  color: #155e75;
+  border-radius: 999px;
+  padding: 0.45rem 0.75rem;
+  font-weight: 950;
+  cursor: pointer;
+}
+
+.answer-format-button:hover {
+  transform: translateY(-1px);
+}
+
+.written-card .question-media-grid {
+  margin: 1rem 0 0.5rem;
+}
+
+.written-card .media-image-base img,
+.written-card .media-item img {
+  max-height: 520px;
+  object-fit: contain;
+}
+
+@media (max-width: 760px) {
+  .written-answer-label-row {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .difficulty-bubble {
+    width: 1.1rem;
+    height: 1.1rem;
+    font-size: 0.62rem;
+  }
+}
+
+/* Unit overview visual upgrade */
+.overview-lead-media {
+  display: grid;
+  margin: 0.95rem 0 1.1rem;
+}
+
+.overview-lead-media .card-media {
+  border-color: rgba(124, 58, 237, 0.2);
+  box-shadow: 0 14px 32px rgba(15, 23, 42, 0.08);
+  background: #fff;
+}
+
+.overview-lead-media .card-media img {
+  max-height: 430px;
+  object-fit: contain;
+}
+
+.overview-tile-media {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.8rem;
+  margin-top: 0.75rem;
+}
+
+.overview-tile-media .card-media {
+  background: rgba(255, 255, 255, 0.86);
+}
+
+.overview-tile-media .card-media img {
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+
+.overview-tile-media .media-layer-text {
+  min-height: 116px;
+}
+
+.overview-visual-section {
+  background: rgba(248, 250, 252, 0.72);
+}
+
+@media (max-width: 760px) {
+  .overview-tile-media {
+    grid-template-columns: 1fr;
+  }
+  .overview-lead-media .card-media img {
+    max-height: none;
+  }
+  .overview-tile-media .card-media img {
+    aspect-ratio: auto;
+    object-fit: contain;
+  }
+  .overview-tile-media .media-layer-text {
+    min-height: auto;
+  }
+}
+
+/* r165/r166 Revisit test, end of unit test and hub progress indicators */
+.journey-grid-six {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+
+.journey-card.revisit-test {
+  border-color: rgba(217, 119, 6, 0.28);
+  background: linear-gradient(135deg, rgba(251, 191, 36, 0.13), rgba(124, 58, 237, 0.08));
+}
+
+.journey-card.unit-test {
+  border-color: rgba(14, 165, 233, 0.28);
+  background: linear-gradient(135deg, rgba(14, 165, 233, 0.12), rgba(34, 197, 94, 0.08));
+}
+
+.unit-progress-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-top: 0.55rem;
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 900;
+}
+
+.unit-progress-summary strong {
+  color: #24324b;
+}
+
+.objective-progress-track {
+  display: block;
+  height: 6px;
+  margin-top: 0.42rem;
+  overflow: hidden;
+  border-radius: 999px;
+  background: #e2e8f0;
+}
+
+.objective-progress-track i {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, var(--brand), var(--brand-2));
+}
+
+.written-revisit-callout {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.revisit-highlight-button {
+  border-color: rgba(217, 119, 6, 0.45) !important;
+  background: rgba(255, 251, 235, 0.95) !important;
+  color: #92400e !important;
+  box-shadow: 0 0 0 3px rgba(251, 191, 36, 0.18);
+}
+
+@media (max-width: 1050px) {
+  .journey-grid-six {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .journey-grid-six {
+    grid-template-columns: 1fr;
+  }
+}

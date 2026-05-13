@@ -1,6 +1,6 @@
 window.YEAR9_NOTES = {
-  "version": "1.53.0",
-  "title": "Year 9 Science Class Notes with unit overviews and completed infographic coverage",
+  "version": "1.59.0",
+  "title": "Year 9 Science Class Notes and Visual Unit Overviews",
   "unitOverviews": [
     {
       "id": "9A-overview",
@@ -33,27 +33,59 @@ window.YEAR9_NOTES = {
         }
       ],
       "examAnswerMoves": [
-        "For natural selection, write variation → selection pressure → survival/reproduction → inherited change."
+        "For natural selection, write variation → selection pressure → survival/reproduction → inherited change.",
+        "For biodiversity, name the threat first, then state how the conservation method helps."
       ],
       "formulae": [],
       "visualCoverage": [
         {
           "title": "Natural selection sequence",
           "status": "covered",
-          "detail": "r152 adds class-note and question-safe sequence visuals."
+          "detail": "Use for explain answers about variation, selection pressure, survival, reproduction and inherited change."
         },
         {
           "title": "Biodiversity conservation map",
           "status": "covered",
-          "detail": "r151 adds class-note and question-safe visuals."
+          "detail": "Use for state/describe questions about causes of extinction and conservation methods."
         },
         {
           "title": "DNA hierarchy",
           "status": "covered",
-          "detail": "r153 adds DNA/gene/chromosome hierarchy visuals for class notes and question practice."
+          "detail": "Use for identify questions linking cells, nuclei, chromosomes, DNA and genes."
+        },
+        {
+          "title": "Variation graph types",
+          "status": "covered",
+          "detail": "Use for continuous/discontinuous variation and graph interpretation."
         }
       ],
-      "infographicBacklog": []
+      "infographicBacklog": [],
+      "leadMedia": {
+        "src": "assets/webp/9A-natural-selection-sequence-notes-v152.webp",
+        "alt": "Annotated sequence showing variation, selection pressure, survival and inherited change over generations.",
+        "mediaTitle": "Natural selection sequence",
+        "mediaLead": "Use this to practise explain answers: variation → selection pressure → survival and reproduction → inherited change."
+      },
+      "visualTiles": [
+        {
+          "src": "assets/webp/9A-continuous-discontinuous-variation-notes-v2.webp",
+          "alt": "Annotated comparison of continuous and discontinuous variation using graph types.",
+          "mediaTitle": "Variation graph types",
+          "mediaLead": "Continuous variation forms a range; discontinuous variation has separate categories."
+        },
+        {
+          "src": "assets/webp/9A-dna-inheritance-hierarchy-notes-v153.webp",
+          "alt": "Annotated hierarchy linking cell nucleus, chromosomes, DNA and genes.",
+          "mediaTitle": "DNA, chromosomes and genes",
+          "mediaLead": "Use this for identify questions about where inherited information is carried."
+        },
+        {
+          "src": "assets/webp/9A-biodiversity-extinction-conservation-notes-v151.webp",
+          "alt": "Annotated biodiversity and extinction map showing causes of endangerment and conservation actions.",
+          "mediaTitle": "Biodiversity and conservation",
+          "mediaLead": "Link causes of extinction to methods used to protect biodiversity."
+        }
+      ]
     },
     {
       "id": "9B-overview",
@@ -86,7 +118,8 @@ window.YEAR9_NOTES = {
         }
       ],
       "examAnswerMoves": [
-        "For limiting-factor graphs, describe the trend and explain plateau or high-temperature fall."
+        "For limiting-factor graphs, describe the trend and explain the plateau or high-temperature fall.",
+        "For farming questions, give one yield benefit and one environmental problem."
       ],
       "formulae": [
         "carbon dioxide + water → glucose + oxygen"
@@ -95,25 +128,51 @@ window.YEAR9_NOTES = {
         {
           "title": "Photosynthesis limiting-factor graphs",
           "status": "covered",
-          "detail": "r152 adds class-note and question-safe graph sets."
+          "detail": "Use for graph questions about rate changes, plateaus and temperature effects."
         },
         {
           "title": "Glucose-use flow map",
           "status": "covered",
-          "detail": "r151 adds glucose-use visuals."
+          "detail": "Use for state/describe questions about what plants do with glucose."
         },
         {
-          "title": "Farming impact table",
+          "title": "Farming yield and sustainability",
           "status": "covered",
-          "detail": "r151 adds benefit/problem table visuals."
+          "detail": "Use for benefit/problem answers about increasing yield and environmental impact."
         },
         {
           "title": "Plant transport overview",
           "status": "covered",
-          "detail": "r153 adds a whole-plant transport overview with root, stem, xylem, phloem and stomata callouts."
+          "detail": "Use for whole-plant answers involving root hairs, xylem, phloem and stomata."
         }
       ],
-      "infographicBacklog": []
+      "infographicBacklog": [],
+      "leadMedia": {
+        "src": "assets/webp/9B-plant-transport-overview-notes-v153.webp",
+        "alt": "Whole-plant transport overview showing roots, xylem, phloem, leaves and stomata.",
+        "mediaTitle": "Whole-plant transport",
+        "mediaLead": "Use this to connect roots, xylem, phloem and stomata in one plant-growth answer."
+      },
+      "visualTiles": [
+        {
+          "src": "assets/webp/9B-photosynthesis-limiting-factors-notes-v152.webp",
+          "alt": "Annotated photosynthesis limiting-factor graphs for light intensity, carbon dioxide and temperature.",
+          "mediaTitle": "Photosynthesis limiting-factor graphs",
+          "mediaLead": "Describe the trend first, then explain the plateau or high-temperature fall."
+        },
+        {
+          "src": "assets/webp/9B-glucose-uses-notes-v151.webp",
+          "alt": "Flow map showing how plants use glucose after photosynthesis.",
+          "mediaTitle": "Uses of glucose",
+          "mediaLead": "Use this for state and describe questions about what plants do with glucose."
+        },
+        {
+          "src": "assets/webp/9B-farming-yield-sustainability-notes.webp",
+          "alt": "Split visual showing farming methods that increase yield and possible environmental impacts.",
+          "mediaTitle": "Farming yield and sustainability",
+          "mediaLead": "Balance one benefit for crop yield with one possible problem for habitats or biodiversity."
+        }
+      ]
     },
     {
       "id": "9E-overview",
@@ -146,38 +205,59 @@ window.YEAR9_NOTES = {
         }
       ],
       "examAnswerMoves": [
-        "For environmental impact questions, name the pollutant/problem and describe its effect."
+        "For environmental impact questions, name the pollutant/problem and describe its effect.",
+        "For material-use questions, link a property to why the material is suitable."
       ],
       "formulae": [
         "state symbols: (s), (l), (g), (aq)"
       ],
       "visualCoverage": [
         {
-          "title": "Recycling methods grid",
+          "title": "Material families comparison",
           "status": "covered",
-          "detail": "r152 adds class-note and question-safe grid."
+          "detail": "Use for ceramics, polymers and composites: properties, examples and suitable uses."
         },
         {
-          "title": "Peer-review flowchart",
+          "title": "Recycling methods grid",
           "status": "covered",
-          "detail": "r151 adds peer-review visuals."
+          "detail": "Use for comparing recycling methods and environmental benefits."
         },
         {
           "title": "Endothermic/exothermic diagrams",
           "status": "covered",
-          "detail": "r151 adds energy-transfer comparison visuals."
+          "detail": "Use for identifying the direction of energy transfer with the surroundings."
         },
         {
-          "title": "Material families comparison",
-          "status": "partial",
-          "detail": "A concise comparison infographic would still help."
+          "title": "Peer-review flowchart",
+          "status": "covered",
+          "detail": "Use for describing how scientists check methods, results and conclusions before publication."
         }
       ],
-      "infographicBacklog": [
+      "infographicBacklog": [],
+      "leadMedia": {
+        "src": "assets/webp/9E-polymers-monomers-composites-notes-v2.webp",
+        "alt": "Annotated comparison of polymers, monomers and composite materials with example properties and uses.",
+        "mediaTitle": "Ceramics, polymers and composites",
+        "mediaLead": "Use material properties to justify why a material is suitable for a particular use."
+      },
+      "visualTiles": [
         {
-          "priority": "medium",
-          "title": "Material families comparison",
-          "purpose": "Compare ceramics, polymers and composites by properties and uses."
+          "src": "assets/webp/9E-recycling-methods-grid-notes-v152.webp",
+          "alt": "Annotated grid comparing recycling methods for different materials.",
+          "mediaTitle": "Recycling different materials",
+          "mediaLead": "Different materials need different recycling methods and have different environmental impacts."
+        },
+        {
+          "src": "assets/webp/9E-exothermic-endothermic-notes-v151.webp",
+          "alt": "Annotated comparison of exothermic and endothermic reactions using thermometer and energy arrows.",
+          "mediaTitle": "Exothermic and endothermic reactions",
+          "mediaLead": "Identify whether energy is transferred to or taken from the surroundings."
+        },
+        {
+          "src": "assets/webp/9E-peer-review-process-notes-v151.webp",
+          "alt": "Annotated peer-review flowchart showing checks before scientific publication.",
+          "mediaTitle": "Peer review process",
+          "mediaLead": "Use this for questions about checking methods, evidence and conclusions before publication."
         }
       ]
     },
@@ -212,7 +292,8 @@ window.YEAR9_NOTES = {
         }
       ],
       "examAnswerMoves": [
-        "For extraction, compare metal position with carbon before choosing method."
+        "For extraction, compare the metal position with carbon before choosing the method.",
+        "For reaction products, write the word equation pattern before adding examples."
       ],
       "formulae": [
         "metal + acid → salt + hydrogen",
@@ -222,25 +303,62 @@ window.YEAR9_NOTES = {
         {
           "title": "Reactivity/extraction decision tree",
           "status": "covered",
-          "detail": "r152 adds class-note and question-safe decision tree."
+          "detail": "Use for choosing electrolysis or carbon reduction from the position of the metal in the reactivity series."
         },
         {
           "title": "Displacement sequence",
           "status": "covered",
-          "detail": "r152 adds magnesium/copper sulfate sequence."
-        },
-        {
-          "title": "Gas pressure particle panels",
-          "status": "covered",
-          "detail": "r153 adds class-note and question-safe gas pressure panels for temperature, volume and number of particles."
+          "detail": "Use for predicting whether a more reactive metal will displace a less reactive metal."
         },
         {
           "title": "Metal reaction products map",
-          "status": "partial",
-          "detail": "Still useful for water/acid/oxygen products."
+          "status": "covered",
+          "detail": "Use for state questions about products from metals reacting with oxygen, water or dilute acids."
+        },
+        {
+          "title": "Rusting and prevention",
+          "status": "covered",
+          "detail": "Use for explaining conditions needed for rusting and methods that prevent it."
+        },
+        {
+          "title": "Blast furnace process",
+          "status": "covered",
+          "detail": "Use for describing the stages of extracting iron from iron ore."
         }
       ],
-      "infographicBacklog": []
+      "infographicBacklog": [],
+      "leadMedia": {
+        "src": "assets/webp/9F-reactivity-extraction-decision-notes-v152.webp",
+        "alt": "Annotated reactivity series and extraction decision tree comparing electrolysis and carbon reduction.",
+        "mediaTitle": "Reactivity series and extraction decision",
+        "mediaLead": "Compare the metal with carbon before choosing electrolysis or carbon reduction."
+      },
+      "visualTiles": [
+        {
+          "src": "assets/webp/9F-displacement-magnesium-copper-notes-v152.webp",
+          "alt": "Annotated displacement sequence showing magnesium reacting with copper sulfate solution.",
+          "mediaTitle": "Displacement reactions",
+          "mediaLead": "A more reactive metal can displace a less reactive metal from its compound."
+        },
+        {
+          "src": "assets/webp/9F-metal-reaction-products-notes-v153.webp",
+          "alt": "Annotated map of products formed when metals react with oxygen, water or dilute acids.",
+          "mediaTitle": "Metal reaction products",
+          "mediaLead": "Use this for state questions about metal + oxygen, metal + water and metal + acid."
+        },
+        {
+          "src": "assets/webp/9F-rusting-conditions-prevention-notes-v2.webp",
+          "alt": "Annotated rusting diagram showing conditions for rusting and methods of rust prevention.",
+          "mediaTitle": "Rusting and prevention",
+          "mediaLead": "Rusting needs oxygen and water; prevention methods keep one or both away from iron."
+        },
+        {
+          "src": "assets/webp/9F-blast-furnace-process-v2.webp",
+          "alt": "Blast furnace process diagram showing raw materials and main stages in iron extraction.",
+          "mediaTitle": "Blast furnace process",
+          "mediaLead": "Use this to describe how iron is extracted from iron ore in stages."
+        }
+      ]
     },
     {
       "id": "9I-overview",
@@ -273,7 +391,8 @@ window.YEAR9_NOTES = {
         }
       ],
       "examAnswerMoves": [
-        "For calculations, write formula → substitution → answer with units."
+        "For calculations, write formula → substitution → answer with units.",
+        "For graph questions, describe the shape or gradient before explaining the motion."
       ],
       "formulae": [
         "speed = distance ÷ time",
@@ -285,25 +404,62 @@ window.YEAR9_NOTES = {
         {
           "title": "Speed-time graph family",
           "status": "covered",
-          "detail": "r152 adds class-note and question-safe graph visuals."
+          "detail": "Use for describing acceleration, constant speed and deceleration."
         },
         {
           "title": "Distance-time graph",
           "status": "covered",
-          "detail": "r149 adds a journey graph question asset."
+          "detail": "Use for describing speed from gradient and identifying stationary sections."
+        },
+        {
+          "title": "Moment calculations",
+          "status": "covered",
+          "detail": "Use for force × distance calculations around a pivot."
         },
         {
           "title": "Terminal velocity force-chain",
           "status": "covered",
-          "detail": "r152 adds class-note and question-safe sequence visuals."
+          "detail": "Use for explaining balanced forces on a falling object."
         },
         {
           "title": "Density/pressure calculations",
           "status": "covered",
-          "detail": "r149 adds calculation diagrams."
+          "detail": "Use for formula, substitution and units practice."
         }
       ],
-      "infographicBacklog": []
+      "infographicBacklog": [],
+      "leadMedia": {
+        "src": "assets/webp/9I-speed-time-graph-notes-v152.webp",
+        "alt": "Annotated speed-time graph family showing acceleration, constant speed and deceleration.",
+        "mediaTitle": "Speed-time graphs",
+        "mediaLead": "Use graph shape to describe motion before doing calculations."
+      },
+      "visualTiles": [
+        {
+          "src": "assets/webp/9I-distance-time-graph-notes.webp",
+          "alt": "Annotated distance-time graph showing stationary, slow and fast sections.",
+          "mediaTitle": "Distance-time graphs",
+          "mediaLead": "A steeper line means a higher speed; a horizontal line means stationary."
+        },
+        {
+          "src": "assets/webp/9I-moment-calculations-notes-v149.webp",
+          "alt": "Annotated moment calculation diagram using force and distance from pivot.",
+          "mediaTitle": "Moment calculations",
+          "mediaLead": "Write the formula, substitute force and distance, then give the answer with units."
+        },
+        {
+          "src": "assets/webp/9I-terminal-velocity-force-chain-notes-v152.webp",
+          "alt": "Annotated terminal velocity sequence showing weight, air resistance and balanced forces.",
+          "mediaTitle": "Terminal velocity force chain",
+          "mediaLead": "Explain how air resistance increases until it balances weight."
+        },
+        {
+          "src": "assets/webp/9I-density-calculations-notes-v149.webp",
+          "alt": "Annotated density calculation diagram using mass and volume.",
+          "mediaTitle": "Density calculations",
+          "mediaLead": "Use density = mass ÷ volume and keep the units consistent."
+        }
+      ]
     },
     {
       "id": "9J-overview",
@@ -337,7 +493,8 @@ window.YEAR9_NOTES = {
         }
       ],
       "examAnswerMoves": [
-        "For static electricity, mention electron transfer and resulting charge."
+        "For static electricity, mention electron transfer and the resulting charge.",
+        "For circuit practicals, state the independent variable, dependent variable and controls."
       ],
       "formulae": [
         "V = I × R",
@@ -347,30 +504,73 @@ window.YEAR9_NOTES = {
         {
           "title": "Static charge transfer",
           "status": "covered",
-          "detail": "r152 adds balloon/wool class-note and question-safe visuals."
+          "detail": "Use for electron-transfer explanations and resulting charge."
+        },
+        {
+          "title": "Circuit symbols grid",
+          "status": "covered",
+          "detail": "Use for identifying common circuit components from symbols."
         },
         {
           "title": "Wire resistance investigation",
           "status": "covered",
-          "detail": "r152 adds corrected class-note and question-safe setup visuals."
-        },
-        {
-          "title": "Electromagnet/motor effect pair",
-          "status": "covered",
-          "detail": "r152 adds class-note and question-safe visuals."
+          "detail": "Use for practical-method questions involving variables and measurements."
         },
         {
           "title": "Current-voltage graphs",
           "status": "covered",
-          "detail": "r153 adds a current-voltage comparison graph set for resistance interpretation and calculation."
+          "detail": "Use for interpreting resistance from current and voltage."
         },
         {
           "title": "Force-field comparison",
           "status": "covered",
-          "detail": "r153 adds class-note and question-safe comparison panels for gravitational, magnetic and electric fields."
+          "detail": "Use for gravitational, magnetic and electric field identification."
+        },
+        {
+          "title": "Electromagnet, relay and motor effect",
+          "status": "covered",
+          "detail": "Use for electromagnet strength, relay action and motor-effect force questions."
         }
       ],
-      "infographicBacklog": []
+      "infographicBacklog": [],
+      "leadMedia": {
+        "src": "assets/webp/9J-electromagnet-relay-motor-overview-base.webp",
+        "alt": "Overview of electromagnet applications including an electromagnet, relay and motor effect arrangement.",
+        "mediaTitle": "Electromagnet, relay and motor overview",
+        "mediaLead": "Use this to separate electromagnet strength, relay action and the motor effect."
+      },
+      "visualTiles": [
+        {
+          "src": "assets/webp/9J-static-charge-transfer-notes-v152.webp",
+          "alt": "Annotated balloon and wool static charge transfer diagram showing electron movement.",
+          "mediaTitle": "Static charge transfer",
+          "mediaLead": "Static charge is explained by electrons moving from one insulating object to another."
+        },
+        {
+          "src": "assets/webp/9J-circuit-symbols-grid-notes-v2.webp",
+          "alt": "Annotated circuit symbol grid showing common electrical components.",
+          "mediaTitle": "Circuit symbols grid",
+          "mediaLead": "Use this for identify questions on cells, lamps, switches, ammeters and voltmeters."
+        },
+        {
+          "src": "assets/webp/9J-wire-resistance-investigation-notes-v152.webp",
+          "alt": "Annotated wire resistance investigation setup showing variables and measuring equipment.",
+          "mediaTitle": "Wire resistance investigation",
+          "mediaLead": "Describe the method using independent, dependent and control variables."
+        },
+        {
+          "src": "assets/webp/9J-current-voltage-graph-comparison-notes-v153.webp",
+          "alt": "Annotated current-voltage graph comparing components with different resistance.",
+          "mediaTitle": "Current-voltage graphs",
+          "mediaLead": "A steeper line on an I-V graph means lower resistance for the same voltage."
+        },
+        {
+          "src": "assets/webp/9J-motor-effect-simple-motor-notes-v3.webp",
+          "alt": "Annotated simple motor effect diagram showing a coil between magnets and the direction of force.",
+          "mediaTitle": "Simple motor effect",
+          "mediaLead": "Use the v3 motor diagram for force on a current-carrying wire without confusing the axis of rotation."
+        }
+      ]
     }
   ],
   "notes": [
@@ -915,7 +1115,7 @@ window.YEAR9_NOTES = {
           "alt": "Annotated seed dispersal mechanisms including wind, water, animals and explosive dispersal.",
           "caption": "Seeds are dispersed away from the parent plant to reduce competition.",
           "presentation": "media-image-base",
-          "sourceTag": "r2-image-v1.47",
+          "sourceTag": "r2-image-",
           "mediaTitle": "Seed dispersal mechanisms",
           "mediaLead": "Different seed structures help seeds travel away from the parent plant.",
           "mediaPoints": [
@@ -1063,7 +1263,7 @@ window.YEAR9_NOTES = {
           "alt": "Annotated aquatic food chain showing toxin concentration increasing up the food chain.",
           "caption": "Bioaccumulation: toxin concentration increases up a food chain.",
           "presentation": "media-image-base",
-          "sourceTag": "r2-image-v1.47",
+          "sourceTag": "r2-image-",
           "mediaTitle": "Bioaccumulation in a food chain",
           "mediaLead": "Use this when explaining why top predators can be most affected by pollutants.",
           "mediaPoints": [
@@ -1077,7 +1277,7 @@ window.YEAR9_NOTES = {
           "alt": "Annotated quadrat sampling method in a meadow.",
           "caption": "Quadrats estimate populations without counting every organism.",
           "presentation": "media-image-base",
-          "sourceTag": "r2-image-v1.47",
+          "sourceTag": "r2-image-",
           "mediaTitle": "Quadrat sampling",
           "mediaLead": "A quadrat is used to sample a known area, then results are scaled to estimate the total population.",
           "mediaPoints": [
@@ -1529,7 +1729,7 @@ window.YEAR9_NOTES = {
           "alt": "Annotated balancing equations scaffold using magnesium and oxygen.",
           "caption": "Balanced equations have the same number of each atom on both sides.",
           "presentation": "media-image-base",
-          "sourceTag": "r2-image-v1.47",
+          "sourceTag": "r2-image-",
           "mediaTitle": "Balancing equations",
           "mediaLead": "Change coefficients, not formulae, when balancing an equation.",
           "mediaPoints": [
@@ -1543,7 +1743,7 @@ window.YEAR9_NOTES = {
           "alt": "Annotated neutralisation lab setup with pH scale and acid/base reaction products.",
           "caption": "Neutralisation moves pH towards 7 and forms salts.",
           "presentation": "media-image-base",
-          "sourceTag": "r2-image-v1.47",
+          "sourceTag": "r2-image-",
           "mediaTitle": "Neutralisation reactions",
           "mediaLead": "Acids react with bases, metal oxides, metal hydroxides and metal carbonates.",
           "mediaPoints": [
@@ -1557,7 +1757,7 @@ window.YEAR9_NOTES = {
           "alt": "Annotated pH scale with acids, neutral substances and alkalis.",
           "caption": "The pH scale shows how acidic or alkaline a substance is.",
           "presentation": "media-image-base",
-          "sourceTag": "r2-image-v1.47",
+          "sourceTag": "r2-image-",
           "mediaTitle": "Acids, alkalis and pH",
           "mediaLead": "Universal indicator changes colour depending on pH.",
           "mediaPoints": [
@@ -1571,7 +1771,7 @@ window.YEAR9_NOTES = {
           "alt": "Annotated chromatography and simple distillation lab methods.",
           "caption": "Separation methods can separate mixtures without making new substances.",
           "presentation": "media-image-base",
-          "sourceTag": "r2-image-v1.47",
+          "sourceTag": "r2-image-",
           "mediaTitle": "Chromatography and distillation",
           "mediaLead": "Chromatography separates soluble dyes; distillation separates substances with different boiling points.",
           "mediaPoints": [
@@ -1798,7 +1998,7 @@ window.YEAR9_NOTES = {
           "alt": "Annotated comparison of carbon reduction and electrolysis for metal extraction.",
           "caption": "Reactivity determines how a metal is extracted from its ore.",
           "presentation": "media-image-base",
-          "sourceTag": "r2-image-v1.47",
+          "sourceTag": "r2-image-",
           "mediaTitle": "Metal extraction methods",
           "mediaLead": "Metals less reactive than carbon can often be extracted by carbon reduction; more reactive metals need electrolysis.",
           "mediaPoints": [
@@ -1853,7 +2053,7 @@ window.YEAR9_NOTES = {
         "question": "What are the products of complete combustion of a hydrocarbon?",
         "answer": "Carbon dioxide and water."
       },
-      "explanation": "This note gathers smaller 9F revision-pack ideas that often appear as quick questions: hydrocarbons, combustion products, the oxygen test, thermal decomposition, energy changes and factors that affect reaction rate. Keep answers short and use the exact vocabulary.",
+      "explanation": "This note gathers smaller 9F revision ideas that often appear as quick questions: hydrocarbons, combustion products, the oxygen test, thermal decomposition, energy changes and factors that affect reaction rate. Keep answers short and use the exact vocabulary.",
       "memoryHook": "Hydrocarbon burns in oxygen → carbon dioxide + water. Oxygen relights a glowing splint.",
       "selfCheck": "Can you name three ways to increase rate of reaction and explain the oxygen gas test?",
       "sentenceStarter": "The rate increases because ___, so particles collide ___.",
@@ -2277,7 +2477,7 @@ window.YEAR9_NOTES = {
           "alt": "Lever and rock context showing pivot, load, effort force and distances.",
           "caption": "A larger distance from the pivot gives a larger moment.",
           "presentation": "media-image-base",
-          "sourceTag": "v1.48-qa-corrected",
+          "sourceTag": "-qa-corrected",
           "mediaTitle": "Lever moment context",
           "mediaLead": "Use this visual to connect the formula with a real lever.",
           "mediaPoints": [
@@ -2291,7 +2491,7 @@ window.YEAR9_NOTES = {
           "alt": "Three lever setups with the pivot in different places.",
           "caption": "Changing pivot position changes how easy the load is to lift.",
           "presentation": "media-image-base",
-          "sourceTag": "v1.48-qa-corrected",
+          "sourceTag": "-qa-corrected",
           "mediaTitle": "Comparing lever setups",
           "mediaLead": "The easiest setup usually puts the effort far from the pivot and the load close to the pivot.",
           "mediaPoints": [
@@ -2375,7 +2575,7 @@ window.YEAR9_NOTES = {
           "alt": "Annotated bar magnet showing magnetic field lines from north to south and strongest field near the poles.",
           "caption": "Magnetic field lines show field shape and direction; the field is strongest near the poles.",
           "presentation": "media-image-base",
-          "sourceTag": "v1.48-qa-corrected",
+          "sourceTag": "-qa-corrected",
           "mediaTitle": "Magnetic field around a bar magnet",
           "mediaLead": "Use the spacing and arrows of field lines to describe magnetic fields accurately.",
           "mediaPoints": [
@@ -2444,7 +2644,7 @@ window.YEAR9_NOTES = {
           "alt": "Annotated static electricity diagram showing charge transfer during rubbing and attraction of paper.",
           "caption": "Static charge builds up when electrons are transferred.",
           "presentation": "media-image-base",
-          "sourceTag": "v1.48-qa-corrected",
+          "sourceTag": "-qa-corrected",
           "mediaTitle": "Static electricity and charge transfer",
           "mediaLead": "Electrons move during rubbing; objects become charged when they gain or lose electrons.",
           "mediaPoints": [
@@ -2459,7 +2659,7 @@ window.YEAR9_NOTES = {
           "alt": "Annotated static electricity diagram showing a balloon rubbed with cloth attracting hair.",
           "caption": "A charged object can attract neutral objects by causing charge separation.",
           "presentation": "media-image-base",
-          "sourceTag": "v1.48-qa-corrected",
+          "sourceTag": "-qa-corrected",
           "mediaTitle": "Static attraction",
           "mediaLead": "This supports explain questions about why hair or paper is attracted to a charged object.",
           "mediaPoints": [
@@ -2847,7 +3047,7 @@ window.YEAR9_NOTES = {
           "alt": "Annotated electromagnet showing how iron core, current and turns affect strength.",
           "caption": "More turns, a larger current and an iron core make an electromagnet stronger.",
           "presentation": "media-image-base",
-          "sourceTag": "v1.48-qa-corrected",
+          "sourceTag": "-qa-corrected",
           "mediaTitle": "Electromagnet strength variables",
           "mediaLead": "This is the main investigation image for electromagnet strength questions.",
           "mediaPoints": [
@@ -2862,7 +3062,7 @@ window.YEAR9_NOTES = {
           "alt": "Overview image showing an electromagnet, relay and motor-effect setup.",
           "caption": "Electromagnets use current in a coil to make a magnetic field.",
           "presentation": "media-image-base",
-          "sourceTag": "v1.48-qa-corrected",
+          "sourceTag": "-qa-corrected",
           "mediaTitle": "Electromagnets, relays and motors",
           "mediaLead": "Use this overview to distinguish the main electromagnetism applications.",
           "mediaPoints": [
@@ -2876,7 +3076,7 @@ window.YEAR9_NOTES = {
           "alt": "Annotated motor effect and simple electric motor diagram.",
           "caption": "A current-carrying wire in a magnetic field can experience a force.",
           "presentation": "media-image-base",
-          "sourceTag": "v1.48-qa-corrected",
+          "sourceTag": "-qa-corrected",
           "mediaTitle": "Motor effect and simple motor",
           "mediaLead": "Opposite forces on the coil make it rotate.",
           "mediaPoints": [
@@ -3056,7 +3256,7 @@ window.YEAR9_NOTES = {
           "alt": "Annotated particle model showing solid, liquid, gas and changes of state.",
           "caption": "Changes of state can be explained using particle arrangement and movement.",
           "presentation": "media-image-base",
-          "sourceTag": "r2-image-v1.47",
+          "sourceTag": "r2-image-",
           "mediaTitle": "Changes of state",
           "mediaLead": "This image links particle arrangements with the names of state changes.",
           "mediaPoints": [
@@ -3071,7 +3271,7 @@ window.YEAR9_NOTES = {
           "alt": "Annotated gas pressure particle model showing collisions, reduced volume and higher temperature.",
           "caption": "Gas pressure is caused by particles colliding with surfaces.",
           "presentation": "media-image-base",
-          "sourceTag": "r2-image-v1.47",
+          "sourceTag": "r2-image-",
           "mediaTitle": "Gas pressure",
           "mediaLead": "More frequent or harder collisions increase the force on the walls of a container.",
           "mediaPoints": [
@@ -3085,7 +3285,7 @@ window.YEAR9_NOTES = {
           "alt": "Annotated Brownian motion diagram showing larger particles knocked by smaller moving particles.",
           "caption": "Brownian motion is evidence that tiny particles are moving randomly.",
           "presentation": "media-image-base",
-          "sourceTag": "r2-image-v1.47",
+          "sourceTag": "r2-image-",
           "mediaTitle": "Brownian motion",
           "mediaLead": "Small fast-moving particles collide with a larger visible particle and make it move randomly.",
           "mediaPoints": [
@@ -3099,7 +3299,7 @@ window.YEAR9_NOTES = {
           "alt": "Annotated diffusion sequence showing particles spreading from high to low concentration.",
           "caption": "Diffusion spreads particles from high concentration to low concentration.",
           "presentation": "media-image-base",
-          "sourceTag": "r2-image-v1.47",
+          "sourceTag": "r2-image-",
           "mediaTitle": "Diffusion",
           "mediaLead": "Particles move randomly until they become evenly spread.",
           "mediaPoints": [
@@ -3139,18 +3339,18 @@ window.YEAR9_NOTES = {
         {
           "wrong": "Groups are rows.",
           "correct": "Groups are vertical columns and periods are rows.",
-          "why": "This is exact revision-pack wording."
+          "why": "This is exact key science wording."
         }
       ],
       "example": {
         "question": "What are groups and periods?",
         "answer": "The vertical columns in the periodic table are groups and the rows are periods."
       },
-      "explanation": "This bridge topic reuses the revision-pack atomic-structure wording, then adds CGP-style group and trend practice.",
+      "explanation": "This extra practice topic reuses the atomic-structure wording, then adds exam-style group and trend practice.",
       "memoryHook": "Group = goes down. Period = goes across.",
       "selfCheck": "Can you identify atomic number, mass number, group and period from a periodic-table entry?",
       "sentenceStarter": "Elements in the same group ___.",
-      "practicePrompt": "Use the exact revision-pack wording for groups, periods and atomic number.",
+      "practicePrompt": "Use the exact key science wording for groups, periods and atomic number.",
       "media": [
         {
           "src": "assets/webp/9F-periodic-table-navigator-notes.webp",
@@ -3195,7 +3395,7 @@ window.YEAR9_NOTES = {
           "alt": "Annotated guide to chemical formulae and counting atoms.",
           "caption": "Formulae show which atoms are present and how many.",
           "presentation": "media-image-base",
-          "sourceTag": "r2-image-v1.47",
+          "sourceTag": "r2-image-",
           "mediaTitle": "Chemical formulae",
           "mediaLead": "Use subscripts and coefficients carefully when counting atoms.",
           "mediaPoints": [
@@ -3210,7 +3410,7 @@ window.YEAR9_NOTES = {
           "alt": "Annotated particle diagrams for elements, compounds and mixtures.",
           "caption": "Particle diagrams help identify elements, compounds and mixtures.",
           "presentation": "media-image-base",
-          "sourceTag": "r2-image-v1.47",
+          "sourceTag": "r2-image-",
           "mediaTitle": "Elements, compounds and mixtures",
           "mediaLead": "Look for the type of atom and whether particles are chemically joined.",
           "mediaPoints": [
@@ -3315,11 +3515,11 @@ window.YEAR9_NOTES = {
         "question": "A reaction changes from 20°C to 28°C. Classify it.",
         "answer": "Exothermic: the surroundings/reaction mixture got warmer."
       },
-      "explanation": "This bridge topic tightens existing 9E/9F revision-pack wording and adds direct temperature interpretation practice.",
+      "explanation": "This extra practice topic tightens existing 9E/9F key science wording and adds direct temperature interpretation practice.",
       "memoryHook": "Exo exits energy; Endo enters energy.",
       "selfCheck": "Can you explain temperature rising or falling using surroundings?",
       "sentenceStarter": "The reaction is ___ because the temperature ___.",
-      "practicePrompt": "Use the exact revision-pack wording for exothermic/endothermic definitions.",
+      "practicePrompt": "Use the exact key science wording for exothermic/endothermic definitions.",
       "media": [
         {
           "src": "assets/webp/9F-exothermic-endothermic-notes.webp",
