@@ -59,44 +59,44 @@
     practice: {
       eyebrow: "Revision journey",
       title: "Work through your revision cards",
-      subtitle: "Answer each card. Correct answers move to Mastered; revealed or missed answers move to Revisit.",
+      subtitle: "Answer each card, then sort it into Mastered or Revisit.",
       empty: "No cards match these filters.",
     },
     revisit: {
       eyebrow: "Revisit queue",
       title: "Revisit cards",
-      subtitle: "These are the cards you nearly know. Move them to Mastered when they feel secure.",
+      subtitle: "Practise the cards you want to come back to.",
       empty: "No Revisit cards match these filters yet.",
     },
     "revisit-test": {
       eyebrow: "Revisit test",
       title: "Test your Revisit cards",
-      subtitle: "Build a test from the cards currently marked Revisit.",
+      subtitle: "Build a test from the cards currently in Revisit.",
       empty: "No Revisit cards match these filters yet.",
     },
     study: {
       eyebrow: "Need notes queue",
-      title: "Cards that need notes",
-      subtitle: "These are cards marked Still confused after using a class-note context card.",
-      empty: "No Need Notes cards match these filters yet. Open Class Notes from a card, then choose Still confused to add one here.",
+      title: "Review with notes",
+      subtitle: "Review cards where class notes would help.",
+      empty: "No cards are marked for notes with these filters.",
     },
     "unit-test": {
       eyebrow: "End of unit test",
       title: "End of unit written test",
-      subtitle: "Build a source-style written test from one selected unit. No multiple-choice questions are included.",
-      empty: "Choose one unit with written-test questions to build an end of unit test.",
+      subtitle: "Build a written test from one selected unit. No multiple-choice questions are included.",
+      empty: "Choose one unit to build an end of unit test.",
     },
     written: {
       eyebrow: "Written exam practice",
-      title: "End-of-year written exam builder",
-      subtitle: "Practise state, identify, describe and explain answers with balanced Biology, Chemistry and Physics marks.",
-      empty: "No written exam questions are available for this selection.",
+      title: "Written exam practice",
+      subtitle: "Build a written-answer paper with balanced Biology, Chemistry and Physics marks.",
+      empty: "No written questions are available for this selection.",
     },
     test: {
       eyebrow: "Focused check",
       title: "Test your knowledge",
-      subtitle: "This checks only cards you have already marked Mastered. Answers are scored as you go.",
-      empty: "No Mastered cards match these filters yet. Mark some cards as Mastered first.",
+      subtitle: "Check the cards you have already marked Mastered.",
+      empty: "No Mastered cards match these filters yet.",
     },
   };
 
@@ -2736,26 +2736,26 @@
       if (state.selectedMode === "written") {
         const marks = state.progress.writtenExamMarks || 30;
         const perDomain = marks / 3;
-        els.selectionSummary.textContent = `Written exam builder: ${marks} marks · ${perDomain} marks each for Biology, Chemistry and Physics · ${writtenExamBank().length} eligible questions`;
+        els.selectionSummary.textContent = `Written exam: ${marks} marks · ${perDomain} marks each for Biology, Chemistry and Physics · ${writtenExamBank().length} questions available`;
       } else if (state.selectedMode === "unit-test") {
         const marks = state.progress.writtenExamMarks || 30;
         const unitId = selectedUnitTestUnit();
         els.selectionSummary.textContent = unitId
-          ? `End of unit test: ${unitTitle(unitId)} · ${marks} marks · ${ready} eligible written questions`
-          : "End of unit test: choose exactly one unit or sub-unit group";
+          ? `End of unit test: ${unitTitle(unitId)} · ${marks} marks · ${ready} written questions available`
+          : "End of unit test: choose exactly one unit";
       } else if (state.selectedMode === "revisit-test") {
-        els.selectionSummary.textContent = `Revisit test builder: ${ready} Revisit card${ready === 1 ? "" : "s"} available`;
-      } else if (!unitCount && !objectiveCount) els.selectionSummary.textContent = `Selected revision set: all units · ${ready} card${ready === 1 ? "" : "s"}`;
-      else els.selectionSummary.textContent = `Selected revision set: ${unitCount || "all"} unit${unitCount === 1 ? "" : "s"} · ${objectiveCount} sub-unit${objectiveCount === 1 ? "" : "s"} · ${ready} card${ready === 1 ? "" : "s"}`;
+        els.selectionSummary.textContent = `Revisit test: ${ready} Revisit card${ready === 1 ? "" : "s"} available`;
+      } else if (!unitCount && !objectiveCount) els.selectionSummary.textContent = `Selected cards: all units · ${ready} card${ready === 1 ? "" : "s"}`;
+      else els.selectionSummary.textContent = `Selected cards: ${unitCount || "all"} unit${unitCount === 1 ? "" : "s"} · ${objectiveCount} sub-unit${objectiveCount === 1 ? "" : "s"} · ${ready} card${ready === 1 ? "" : "s"}`;
     }
     if (els.selectionDetail) {
       els.selectionDetail.textContent = state.selectedMode === "written"
-        ? "Practise written answers in three sections: core knowledge, written reasoning, then data and calculations. Use the mark scheme to self-mark after each response."
+        ? "Answer the paper in three sections: core knowledge, written reasoning, then data and calculations. Self-mark each response after submitting it."
         : state.selectedMode === "unit-test"
-          ? "Mode: End of unit test. Select one unit to build a written test covering its sub-units from the existing question bank."
+          ? "Select one unit to build a written test that covers its sub-units."
           : state.selectedMode === "revisit-test"
-            ? "Mode: Revisit test. Select units or sub-units below to narrow the Revisit test, or leave all selected."
-            : `Mode: ${modeLabel()}. Select more units or sub-units below, then use the main button to begin.`;
+            ? "Select units or sub-units below to narrow the Revisit test, or leave all selected."
+            : `Select more units or sub-units below, then use the main button to begin.`;
     }
     $$('[data-mode-select]').forEach((button) => {
       const active = button.dataset.modeSelect === state.selectedMode;
@@ -2791,7 +2791,7 @@
           return `<div class="objective-row ${selectedObjective ? "selected" : ""}">
             <button class="objective-toggle" data-objective-toggle="${escapeHtml(objective.id)}" type="button" aria-pressed="${selectedObjective}">
               <strong>${escapeHtml(objective.title)}</strong>
-              <span>${objectiveCards.length} cards · ${objectiveMastered}/${objectiveCards.length} mastered · ${objectiveRevisit} revisit · ${objectiveStudy} need notes</span>
+              <span>${objectiveCards.length} cards · ${objectiveMastered}/${objectiveCards.length} mastered · ${objectiveRevisit} revisit · ${objectiveStudy} notes</span>
               <span class="objective-progress-track" aria-label="${objectiveMastered} of ${objectiveCards.length} cards mastered"><i style="width:${objectivePct}%"></i></span>
             </button>
             <button class="objective-notes-button" data-note-open="${escapeHtml(objective.id)}" type="button" aria-label="Open class notes for ${escapeHtml(objective.title)}"><span aria-hidden="true">📘</span><span class="notes-button-text">Class Notes</span></button>
@@ -2805,7 +2805,7 @@
             <span class="pill">${sortedCount} / ${unitCards.length} sorted</span>
             <span class="pill good">${masteredCount}/${unitCards.length} mastered</span>
             <span class="pill warn">${revisitCount} revisit</span>
-            <span class="pill study">${studyCount} need notes</span>
+            <span class="pill study">${studyCount} notes</span>
           </div>
           <h3>${escapeHtml(unit.title)}</h3>
           <p>${escapeHtml(unit.theme)}</p>
@@ -2815,7 +2815,7 @@
             <div class="objective-row full-unit-row ${selectedUnit ? "selected" : ""}">
               <button class="objective-toggle full-unit-toggle" data-unit-toggle="${escapeHtml(unit.id)}" type="button" aria-pressed="${selectedUnit}">
                 <strong>${escapeHtml(unit.title)}</strong>
-                <span>Full unit option · ${unitCards.length} revision cards</span>
+                <span>Full unit · ${unitCards.length} revision cards</span>
               </button>
             </div>
             ${unitOverviewMeta(unit.id) ? `<div class="unit-overview-row"><button class="unit-overview-button" data-unit-overview="${escapeHtml(unit.id)}" type="button">📚 Unit overview</button></div>` : ""}
@@ -2957,7 +2957,7 @@
         </section>
         ${Array.isArray(overview.formulae) && overview.formulae.length ? `<section class="note-section formula-note"><h3>Formulae / equations</h3>${renderPlainList(overview.formulae)}</section>` : ""}
         <section class="note-section">
-          <h3>How the sub-unit pages fit</h3>
+          <h3>How to use this unit</h3>
           ${renderOverviewRoute(overview.subUnitRoute)}
         </section>
         ${Array.isArray(overview.visualTiles) && overview.visualTiles.length ? `<section class="note-section overview-visual-section"><h3>Visual revision tiles</h3>${renderOverviewMedia(overview.visualTiles, "overview-tile-media")}</section>` : ""}
@@ -3053,7 +3053,7 @@
       subtitle: `${unitTitle(note.unit)} · ${note.title}`
     });
     els.sessionIndex.textContent = String(linked.length);
-    els.sessionTotal.textContent = " linked cards";
+    els.sessionTotal.textContent = " related cards";
     els.resultPanel.classList.add("hidden");
 
     els.studyPanel.innerHTML = `
@@ -3087,10 +3087,10 @@
           ${sourceCard ? `
             <button class="primary-button" data-note-action="mastered" type="button">I get it now · Mastered</button>
             <button class="secondary-button" data-note-action="revisit" type="button">Almost · Revisit</button>
-            <button class="danger-button" data-note-action="study" type="button">Still confused · Need notes</button>
+            <button class="danger-button" data-note-action="study" type="button">Use notes again</button>
             <button class="secondary-button" data-note-action="back-card" type="button">Back to card</button>
           ` : `
-            <button class="primary-button" data-note-action="practice" type="button">Practise linked cards</button>
+            <button class="primary-button" data-note-action="practice" type="button">Practise related cards</button>
             <button class="secondary-button" data-note-action="hub" type="button">Back to hub</button>
           `}
         </div>
@@ -3213,15 +3213,15 @@
 
   function renderStudyPrompt(card) {
     if (state.mode !== "study") return "";
-    const explanation = card.explanation || card.cue || "Read the question, inspect any diagram, then use Study this if you need the class-note explanation before deciding.";
+    const explanation = card.explanation || card.cue || "Read the question and inspect any diagram. Open Class Notes if you want the explanation before deciding.";
     return `
       <aside class="study-support">
-        <strong>Need notes focus</strong>
+        <strong>Class notes focus</strong>
         <p>${escapeHtml(explanation)}</p>
         <ul>
           <li>Say the key idea out loud in your own words.</li>
           <li>Use the diagram or question clue if one is shown.</li>
-          <li>Use Class Notes for the class-note context, then move it to Revisit or Mastered.</li>
+          <li>Use Class Notes, then move the card to Revisit or Mastered.</li>
         </ul>
       </aside>
     `;
@@ -3249,7 +3249,7 @@
     const answerFrame = question.answerFrame || formatGuide;
     const showAnswerFrame = answerFrame && answerFrame !== formatGuide;
     updateSessionChrome({
-      title: state.mode === "unit-test" ? "End of Unit Test" : "Written Exam Mode",
+      title: state.mode === "unit-test" ? "End of unit test" : "Written exam practice",
       eyebrow: `${section.label}: ${section.focus}`,
       subtitle: state.mode === "unit-test"
         ? `${unitTitle(question.unit)} · ${question.marks} mark${question.marks === 1 ? "" : "s"}`
@@ -3338,7 +3338,7 @@
           <ul>${question.answerStructure.map((step) => `<li>${escapeHtml(step)}</li>`).join("")}</ul>
         </div>` : ""}
         <div class="written-keywords">
-          <strong>Key words/actions</strong>
+          <strong>Key words and actions</strong>
           <p>${(question.keywords || []).map((word) => `<span>${escapeHtml(word)}</span>`).join("")}</p>
         </div>
         <div class="written-common-mistakes">
@@ -3347,10 +3347,10 @@
         </div>
         <div class="written-self-mark">
           <strong>Self-mark</strong>
-          <p>Select the mark your answer deserves. Use the checklist, not just whether the final idea feels close.</p>
+          <p>Select the mark your answer deserves. Use the checklist and choose the mark your answer earns.</p>
           <div class="written-mark-buttons">${markButtons}</div>
           ${lowMark && sourceCard ? `<div class="written-revisit-callout">
-            <button class="secondary-button revisit-highlight-button" data-written-action="add-revisit" type="button" ${addedToRevisit ? "disabled" : ""}>${addedToRevisit ? "Added to Revisit" : "Add linked card to Revisit"}</button>
+            <button class="secondary-button revisit-highlight-button" data-written-action="add-revisit" type="button" ${addedToRevisit ? "disabled" : ""}>${addedToRevisit ? "Added to Revisit" : "Add to Revisit"}</button>
           </div>` : ""}
         </div>
       </section>
@@ -3507,7 +3507,7 @@
             <span class="pill">Level ${card.level}</span>
             ${(!isMcq && membership.mastered) ? `<span class="pill good">mastered</span>` : ""}
             ${(!isMcq && membership.revisit) ? `<span class="pill warn">revisit</span>` : ""}
-            ${(!isMcq && membership.study) ? `<span class="pill study">need notes</span>` : ""}
+            ${(!isMcq && membership.study) ? `<span class="pill study">notes</span>` : ""}
           </div>
         </div>
 
@@ -3755,11 +3755,11 @@
       <div class="session-summary-grid">
         <div><strong>${counts.mastered}</strong><span>mastered</span></div>
         <div><strong>${counts.revisit}</strong><span>revisit</span></div>
-        <div><strong>${counts.study}</strong><span>need notes</span></div>
+        <div><strong>${counts.study}</strong><span>notes</span></div>
       </div>
-      <p>${counts.revisit ? `Recommended next: review your ${counts.revisit} Revisit card${counts.revisit === 1 ? "" : "s"}.` : counts.study ? `Recommended next: open Class Notes for the ${counts.study} card${counts.study === 1 ? "" : "s"} that need notes.` : "Recommended next: test your knowledge when you feel ready."}</p>
+      <p>${counts.revisit ? `Next: review your ${counts.revisit} Revisit card${counts.revisit === 1 ? "" : "s"}.` : counts.study ? `Next: open Class Notes for ${counts.study} card${counts.study === 1 ? "" : "s"}.` : "Next: test your knowledge when you feel ready."}</p>
       <div class="card-actions">
-        ${counts.revisit ? `<button class="primary-button" data-result-action="revisit" type="button">Review revisit cards</button>` : ""}
+        ${counts.revisit ? `<button class="primary-button" data-result-action="revisit" type="button">Review Revisit cards</button>` : ""}
         ${counts.mastered ? `<button class="secondary-button" data-result-action="test" type="button">Test your knowledge</button>` : ""}
         <button class="secondary-button" data-result-action="hub" type="button">Back to revision hub</button>
       </div>
