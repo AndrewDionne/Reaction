@@ -1,164 +1,210 @@
 window.YEAR9_NOTES = {
-  "version": "1.67.0",
-  "title": "Year 9 Science Class Notes and Visual Unit Overviews",
+  "version": "1.69.1",
+  "title": "Year 9 Science Class Notes and Student Unit Overviews",
   "unitOverviews": [
     {
       "id": "9A-overview",
       "unit": "9A",
-      "title": "9A Genetics and evolution — unit overview",
-      "summary": "Variation, inheritance, biodiversity and natural selection are linked: organisms vary, some traits help survival, and populations can change over generations.",
+      "title": "9A Genetics and evolution",
+      "summary": "In this unit you learn why organisms of the same species are not all identical, how genetic information is stored, how adaptations help survival, and how environmental change can lead to natural selection, evolution or extinction.",
       "revisionPackFocus": [
-        "Variation can be inherited, environmental or both.",
-        "DNA, chromosomes and genes carry inherited information.",
-        "Adaptations help organisms survive in habitats.",
-        "Natural selection over generations can lead to evolution.",
-        "Biodiversity can be protected by conservation methods."
+        "State what variation is and identify inherited and environmental examples.",
+        "Describe how cells, nuclei, chromosomes, DNA and genes are linked.",
+        "Explain how adaptations help organisms survive in their habitat.",
+        "Explain how environmental change can make a species endangered or extinct.",
+        "Explain natural selection using variation, survival, reproduction and inherited characteristics.",
+        "Describe ways biodiversity can be protected and why this matters."
       ],
       "subUnitRoute": [
         {
           "title": "Variation and classification",
-          "focus": "species and variation types"
+          "focus": "Look for differences between organisms and decide what causes those differences.",
+          "mustKnow": [
+            "A species is a group of organisms that can reproduce to produce fertile offspring.",
+            "Variation means differences in characteristics between organisms.",
+            "Inherited variation comes from genetic information passed from parents.",
+            "Environmental variation is caused by surroundings, such as diet, sunlight, training, disease or competition.",
+            "Continuous variation forms a range; discontinuous variation falls into separate groups."
+          ]
         },
         {
           "title": "Inheritance, DNA and genes",
-          "focus": "chromosomes, DNA, genes and gametes"
+          "focus": "Place the structures that carry genetic information in the correct order.",
+          "mustKnow": [
+            "Most body cells contain a nucleus.",
+            "The nucleus contains chromosomes.",
+            "Chromosomes are made from DNA.",
+            "Genes are sections of DNA that carry genetic information and can affect characteristics.",
+            "Gametes contain one copy of each chromosome type; fertilisation combines chromosomes from both parents."
+          ]
         },
         {
-          "title": "Biodiversity and extinction",
-          "focus": "causes of endangerment and conservation"
+          "title": "Adaptation, natural selection and evolution",
+          "focus": "Explain why some individuals survive and reproduce more successfully than others.",
+          "mustKnow": [
+            "An adaptation is a characteristic that helps an organism survive in its habitat.",
+            "Fossils and body structures can be used as evidence to infer how an extinct organism lived.",
+            "If conditions change, better-adapted individuals are more likely to survive and reproduce.",
+            "Useful inherited characteristics can become more common over many generations.",
+            "Evolution is a gradual change in inherited characteristics of a population over time."
+          ]
         },
         {
-          "title": "Natural selection",
-          "focus": "variation, selection pressure and inherited change"
+          "title": "Biodiversity, conservation and extinction",
+          "focus": "Link threats to living things with methods used to protect biodiversity.",
+          "mustKnow": [
+            "A species is extinct when all its individuals have died.",
+            "Changes in an ecosystem can be caused by physical factors, competition, disease or human activity.",
+            "Biodiversity means the variety of species in an area.",
+            "Nature reserves, breeding programmes, hunting bans and gene or seed banks can help preserve biodiversity.",
+            "Biodiverse ecosystems are more stable because organisms depend on one another."
+          ]
         }
       ],
       "examAnswerMoves": [
-        "For natural selection, write variation → selection pressure → survival/reproduction → inherited change.",
-        "For biodiversity, name the threat first, then state how the conservation method helps."
+        "For natural selection, write the chain: variation → selection pressure → better survival → reproduction → inherited characteristic becomes more common.",
+        "For extinction, name the environmental change first, then explain how it affects food, shelter, competition, disease or reproduction.",
+        "For DNA questions, keep the order clear: cell → nucleus → chromosome → DNA → gene."
       ],
       "formulae": [],
       "visualCoverage": [
         {
-          "title": "Natural selection sequence",
+          "title": "Variation graphs",
           "status": "covered",
-          "detail": "Use for explain answers about variation, selection pressure, survival, reproduction and inherited change."
-        },
-        {
-          "title": "Biodiversity conservation map",
-          "status": "covered",
-          "detail": "Use for state/describe questions about causes of extinction and conservation methods."
+          "detail": "Use histograms for continuous variation and bar charts for discontinuous variation."
         },
         {
           "title": "DNA hierarchy",
           "status": "covered",
-          "detail": "Use for identify questions linking cells, nuclei, chromosomes, DNA and genes."
+          "detail": "Practise describing the order from cell to gene without mixing up DNA, chromosomes and the nucleus."
         },
         {
-          "title": "Variation graph types",
+          "title": "Natural selection sequence",
           "status": "covered",
-          "detail": "Use for continuous/discontinuous variation and graph interpretation."
+          "detail": "Practise explaining why a useful inherited feature can become more common over generations."
+        },
+        {
+          "title": "Biodiversity and conservation",
+          "status": "covered",
+          "detail": "Practise matching a threat, such as habitat loss or hunting, to a conservation method."
         }
       ],
       "infographicBacklog": [],
       "leadMedia": {
         "src": "assets/webp/9A-adaptation-environmental-change-extinction-notes-r167.webp",
-        "alt": "Annotated four-panel sequence showing environmental change, survival and extinction risk.",
-        "mediaTitle": "Adaptation and extinction sequence",
-        "mediaLead": "Use this to explain how environmental change affects survival and extinction risk.",
-        "r7Integrated": true
+        "alt": "Four-panel sequence showing environmental change, survival and extinction risk.",
+        "mediaTitle": "Environmental change, survival and extinction",
+        "mediaLead": "Use this to practise explaining how a change in conditions affects survival and extinction risk."
       },
       "visualTiles": [
         {
-          "src": "assets/webp/9A-ecosystem-components-interdependence-notes-r167.webp",
-          "alt": "Annotated ecosystem scene showing living and non-living factors.",
-          "mediaTitle": "Ecosystem components",
-          "mediaLead": "An ecosystem includes a community of organisms and the non-living environment.",
-          "r7Integrated": true
+          "src": "assets/diagrams/9A-dna-genes-chromosomes.svg",
+          "alt": "Simple cell, nucleus, chromosome, DNA and gene hierarchy.",
+          "mediaTitle": "DNA, chromosomes and genes",
+          "mediaLead": "Practise the correct order: cell, nucleus, chromosome, DNA, gene."
         },
         {
           "src": "assets/webp/9A-continuous-discontinuous-variation-notes-v2.webp",
-          "alt": "Annotated comparison of continuous and discontinuous variation using graph types.",
-          "mediaTitle": "Variation graph types",
+          "alt": "Comparison of continuous and discontinuous variation using graph types.",
+          "mediaTitle": "Continuous and discontinuous variation",
           "mediaLead": "Continuous variation forms a range; discontinuous variation has separate categories."
         },
         {
-          "src": "assets/webp/9A-dna-inheritance-hierarchy-notes-v153.webp",
-          "alt": "Annotated hierarchy linking cell nucleus, chromosomes, DNA and genes.",
-          "mediaTitle": "DNA, chromosomes and genes",
-          "mediaLead": "Use this for identify questions about where inherited information is carried."
-        },
-        {
-          "src": "assets/webp/9A-biodiversity-extinction-conservation-notes-v151.webp",
-          "alt": "Annotated biodiversity and extinction map showing causes of endangerment and conservation actions.",
-          "mediaTitle": "Biodiversity and conservation",
-          "mediaLead": "Link causes of extinction to methods used to protect biodiversity."
-        },
-        {
-          "src": "assets/webp/9A-conservation-biodiversity-methods-notes-r167.webp",
-          "alt": "Annotated conservation methods map.",
-          "mediaTitle": "Conservation methods",
-          "mediaLead": "Protected habitats, seed banks and captive breeding can help protect biodiversity.",
-          "r7Integrated": true
+          "src": "assets/webp/9A-ecosystem-components-interdependence-notes-r167.webp",
+          "alt": "Ecosystem scene showing living and non-living factors.",
+          "mediaTitle": "Ecosystems and interdependence",
+          "mediaLead": "An ecosystem includes living organisms and the non-living environment."
         }
       ]
     },
     {
       "id": "9B-overview",
       "unit": "9B",
-      "title": "9B Plant growth — unit overview",
-      "summary": "Plants make glucose by photosynthesis, transport materials through tissues and farming methods can increase yield but may reduce biodiversity.",
+      "title": "9B Plant growth",
+      "summary": "In this unit you learn how plants make glucose, how water and minerals move through a plant, how plants use glucose, and how farming methods can increase yield while also affecting habitats and biodiversity.",
       "revisionPackFocus": [
-        "Photosynthesis: carbon dioxide + water → glucose + oxygen.",
-        "Chlorophyll absorbs light energy.",
-        "Water enters through roots and moves through xylem.",
-        "Glucose is used for respiration, starch, cellulose, lipids and proteins.",
-        "Farming methods increase yield but can harm habitats."
+        "Recall the resources plants need to grow well: light, carbon dioxide, water, warmth, oxygen and mineral salts.",
+        "Describe photosynthesis using carbon dioxide, water, light, chlorophyll, glucose and oxygen.",
+        "Explain how roots, stems and leaves help a plant carry out photosynthesis.",
+        "Describe how glucose is used for respiration, storage and making new plant materials.",
+        "Explain how fertilisers, pesticides, weedkillers and selected varieties can increase yield.",
+        "Explain environmental problems caused by some farming methods."
       ],
       "subUnitRoute": [
         {
           "title": "Photosynthesis",
-          "focus": "equation, chlorophyll and limiting factors"
+          "focus": "Explain how plants make glucose and what conditions affect the rate.",
+          "mustKnow": [
+            "Plants make their own food by photosynthesis.",
+            "Photosynthesis uses carbon dioxide and water to make glucose and oxygen.",
+            "Light transfers the energy needed for photosynthesis.",
+            "Chlorophyll absorbs light energy.",
+            "Light intensity, carbon dioxide concentration and temperature can become limiting factors."
+          ]
         },
         {
-          "title": "Plant transport",
-          "focus": "root hairs, xylem, phloem and stomata"
+          "title": "Plant organs and transport",
+          "focus": "Describe how roots, stems and leaves help plants get materials to the cells that need them.",
+          "mustKnow": [
+            "Roots absorb water and mineral salts from the soil.",
+            "Root hair cells have a large surface area for absorption.",
+            "Xylem carries water and dissolved minerals from roots to leaves.",
+            "Stomata allow carbon dioxide to diffuse into leaves.",
+            "Leaves are adapted to absorb light and exchange gases."
+          ]
         },
         {
-          "title": "Glucose uses",
-          "focus": "respiration, starch, cellulose, lipids and proteins"
+          "title": "Uses of glucose and plant growth",
+          "focus": "Describe what plants do with the glucose made in photosynthesis.",
+          "mustKnow": [
+            "Glucose is used in respiration to release energy.",
+            "Glucose can be stored as starch.",
+            "Glucose is used to make cellulose for cell walls.",
+            "Glucose is also used to make lipids and proteins for growth.",
+            "Mineral salts are needed, such as nitrates for proteins and magnesium for chlorophyll."
+          ]
         },
         {
-          "title": "Farming impacts",
-          "focus": "yield benefits and biodiversity problems"
+          "title": "Farming yield and environmental impact",
+          "focus": "Explain how farming methods improve crop growth and why they can cause problems.",
+          "mustKnow": [
+            "Fertilisers provide mineral salts that help crops grow and increase yield.",
+            "Insecticides and fungicides reduce crop damage; herbicides reduce competition from weeds.",
+            "Selected crop varieties can produce higher yields.",
+            "Fertilisers can wash into rivers and harm aquatic organisms.",
+            "Pesticides and habitat removal can damage food webs and reduce biodiversity."
+          ]
         }
       ],
       "examAnswerMoves": [
-        "For limiting-factor graphs, describe the trend and explain the plateau or high-temperature fall.",
+        "For photosynthesis, name the raw materials, products and conditions separately.",
+        "For limiting-factor graphs, describe the trend first, then explain why the graph levels off or falls.",
         "For farming questions, give one yield benefit and one environmental problem."
       ],
       "formulae": [
-        "carbon dioxide + water → glucose + oxygen"
+        "carbon dioxide + water → glucose + oxygen",
+        "glucose + oxygen → carbon dioxide + water (+ energy)"
       ],
       "visualCoverage": [
         {
-          "title": "Photosynthesis limiting-factor graphs",
+          "title": "Photosynthesis equation and graph skills",
           "status": "covered",
-          "detail": "Use for graph questions about rate changes, plateaus and temperature effects."
+          "detail": "Practise writing the word equation and explaining limiting-factor graph shapes."
         },
         {
-          "title": "Glucose-use flow map",
+          "title": "Plant transport",
           "status": "covered",
-          "detail": "Use for state/describe questions about what plants do with glucose."
+          "detail": "Practise linking roots, xylem, leaves, stomata and phloem in one answer."
         },
         {
-          "title": "Farming yield and sustainability",
+          "title": "Uses of glucose",
           "status": "covered",
-          "detail": "Use for benefit/problem answers about increasing yield and environmental impact."
+          "detail": "Practise moving from glucose to respiration, starch, cellulose, lipids and proteins."
         },
         {
-          "title": "Plant transport overview",
+          "title": "Farming trade-offs",
           "status": "covered",
-          "detail": "Use for whole-plant answers involving root hairs, xylem, phloem and stomata."
+          "detail": "Practise balancing crop yield benefits with effects on habitats, food webs and biodiversity."
         }
       ],
       "infographicBacklog": [],
@@ -166,469 +212,539 @@ window.YEAR9_NOTES = {
         "src": "assets/webp/9B-plant-transport-overview-notes-v153.webp",
         "alt": "Whole-plant transport overview showing roots, xylem, phloem, leaves and stomata.",
         "mediaTitle": "Whole-plant transport",
-        "mediaLead": "Use this to connect roots, xylem, phloem and stomata in one plant-growth answer."
+        "mediaLead": "Use this to connect roots, xylem, phloem, leaves and stomata in a full plant-growth answer."
       },
       "visualTiles": [
         {
-          "src": "assets/webp/9B-photosynthesis-limiting-factors-notes-v152.webp",
-          "alt": "Annotated photosynthesis limiting-factor graphs for light intensity, carbon dioxide and temperature.",
-          "mediaTitle": "Photosynthesis limiting-factor graphs",
-          "mediaLead": "Describe the trend first, then explain the plateau or high-temperature fall."
+          "src": "assets/diagrams/9B-photosynthesis-light-graph.svg",
+          "alt": "Photosynthesis light intensity graph.",
+          "mediaTitle": "Photosynthesis and limiting factors",
+          "mediaLead": "A graph can rise at first and then level off when another factor limits the rate."
         },
         {
           "src": "assets/webp/9B-glucose-uses-notes-v151.webp",
           "alt": "Flow map showing how plants use glucose after photosynthesis.",
           "mediaTitle": "Uses of glucose",
-          "mediaLead": "Use this for state and describe questions about what plants do with glucose."
+          "mediaLead": "Glucose can be used for respiration, storage and making new plant materials."
         },
         {
           "src": "assets/webp/9B-farming-yield-sustainability-notes.webp",
           "alt": "Split visual showing farming methods that increase yield and possible environmental impacts.",
           "mediaTitle": "Farming yield and sustainability",
-          "mediaLead": "Balance one benefit for crop yield with one possible problem for habitats or biodiversity."
+          "mediaLead": "Modern farming can increase yield, but some methods can damage habitats or reduce biodiversity."
         }
       ]
     },
     {
       "id": "9E-overview",
       "unit": "9E",
-      "title": "9E Making materials — unit overview",
-      "summary": "Materials topics include polymers, composites, recycling, environmental impacts, energy changes and peer review.",
+      "title": "9E Making materials",
+      "summary": "In this unit you learn how the properties of materials affect their uses, how polymers and composites are made, why material production can damage the environment, how recycling helps, and how energy changes are described in reactions.",
       "revisionPackFocus": [
-        "Recycling reduces landfill and demand for raw materials.",
-        "Different materials need different recycling methods.",
-        "Exothermic reactions transfer energy to surroundings.",
-        "Endothermic reactions take energy from surroundings.",
-        "Peer review checks scientific work before publication."
+        "Name examples of conductors, insulators, ceramics, polymers and composite materials.",
+        "Link the properties of materials to their uses.",
+        "Describe how polymers are formed from monomers and compare biodegradable and non-biodegradable polymers.",
+        "Explain environmental problems linked to fossil fuels, landfill, polymer waste, acid rain, greenhouse gases and biomagnification.",
+        "Explain the advantages of recycling and describe recycling methods for different materials.",
+        "Classify exothermic and endothermic reactions using temperature change and energy transfer."
       ],
       "subUnitRoute": [
         {
-          "title": "Material families",
-          "focus": "ceramics, polymers and composites"
+          "title": "Material families and uses",
+          "focus": "Compare ceramics, polymers and composites and connect their properties to uses.",
+          "mustKnow": [
+            "Ceramics are usually hard, have high melting points and can be brittle.",
+            "Polymers are long-chain materials made from smaller molecules called monomers.",
+            "Composite materials combine materials so the final material has useful properties.",
+            "A material is chosen for a use because of its properties, such as strength, flexibility, hardness, low density or insulation.",
+            "Thermal conductors transfer energy quickly; thermal insulators transfer energy slowly."
+          ]
         },
         {
-          "title": "Environmental impacts",
-          "focus": "pollution, bioaccumulation and landfill"
+          "title": "Structure, bonding and polymerisation",
+          "focus": "Explain why material properties depend on structure and how polymers form.",
+          "mustKnow": [
+            "Polymerisation joins many monomers to make a polymer.",
+            "Biodegradable polymers break down more easily; non-biodegradable polymers remain for longer.",
+            "The properties of ceramics, polymers and composites depend on their bonding and structure.",
+            "Crystal size in a solid depends on the speed of cooling.",
+            "Thermal decomposition reactions break compounds down using heat."
+          ]
         },
         {
-          "title": "Recycling methods",
-          "focus": "metals, glass, paper, polymers and concrete"
+          "title": "Environmental impact and recycling",
+          "focus": "Explain how making, using and disposing of materials can affect the environment.",
+          "mustKnow": [
+            "Landfill sites take up space and can cause pollution.",
+            "Burning fossil fuels can release carbon dioxide, sulfur dioxide and soot.",
+            "Carbon dioxide contributes to the greenhouse effect; sulfur dioxide can cause acid rain.",
+            "Toxins can build up along food chains by biomagnification.",
+            "Recycling reduces landfill, saves raw materials and can reduce pollution from manufacturing."
+          ]
         },
         {
           "title": "Energy changes and peer review",
-          "focus": "endo/exothermic and scientific checking"
+          "focus": "Use temperature change and energy transfer to classify reactions, then explain how scientists check new ideas.",
+          "mustKnow": [
+            "Exothermic reactions transfer energy to the surroundings and usually increase temperature.",
+            "Endothermic reactions take in energy from the surroundings and usually decrease temperature.",
+            "State symbols show physical state: (s), (l), (g) and (aq).",
+            "Peer review checks whether methods, evidence and conclusions are valid before publication.",
+            "A reviewed scientific paper may be accepted, changed or rejected."
+          ]
         }
       ],
       "examAnswerMoves": [
-        "For environmental impact questions, name the pollutant/problem and describe its effect.",
-        "For material-use questions, link a property to why the material is suitable."
+        "For material-choice questions, name the property and link it directly to the use.",
+        "For environmental questions, name the pollutant or waste problem, then describe the effect it causes.",
+        "For endothermic/exothermic questions, say the direction of energy transfer and the temperature change."
       ],
       "formulae": [
         "state symbols: (s), (l), (g), (aq)"
       ],
       "visualCoverage": [
         {
-          "title": "Material families comparison",
+          "title": "Material choice",
           "status": "covered",
-          "detail": "Use for ceramics, polymers and composites: properties, examples and suitable uses."
+          "detail": "Practise linking properties to uses for ceramics, polymers and composites."
         },
         {
-          "title": "Recycling methods grid",
+          "title": "Polymerisation and biodegradability",
           "status": "covered",
-          "detail": "Use for comparing recycling methods and environmental benefits."
+          "detail": "Practise explaining how monomers form polymers and why disposal matters."
         },
         {
-          "title": "Endothermic/exothermic diagrams",
+          "title": "Environmental impacts",
           "status": "covered",
-          "detail": "Use for identifying the direction of energy transfer with the surroundings."
+          "detail": "Practise linking fossil fuels, acid rain, greenhouse gases, landfill and biomagnification to their effects."
         },
         {
-          "title": "Peer-review flowchart",
+          "title": "Energy changes",
           "status": "covered",
-          "detail": "Use for describing how scientists check methods, results and conclusions before publication."
+          "detail": "Practise classifying reactions as exothermic or endothermic from temperature change and energy transfer."
         }
       ],
       "infographicBacklog": [],
       "leadMedia": {
-        "src": "assets/webp/9E-polymers-monomers-composites-notes-v2.webp",
-        "alt": "Annotated comparison of polymers, monomers and composite materials with example properties and uses.",
-        "mediaTitle": "Ceramics, polymers and composites",
-        "mediaLead": "Use material properties to justify why a material is suitable for a particular use."
+        "src": "assets/diagrams/9E-polymers-composites.svg",
+        "alt": "Simple comparison of polymer and composite structures.",
+        "mediaTitle": "Polymers and composites",
+        "mediaLead": "Use structure and properties to explain why a material is suitable for a job."
       },
       "visualTiles": [
         {
-          "src": "assets/webp/9E-recycling-methods-grid-notes-v152.webp",
-          "alt": "Annotated grid comparing recycling methods for different materials.",
-          "mediaTitle": "Recycling different materials",
-          "mediaLead": "Different materials need different recycling methods and have different environmental impacts."
-        },
-        {
           "src": "assets/webp/9E-exothermic-endothermic-notes-v151.webp",
-          "alt": "Annotated comparison of exothermic and endothermic reactions using thermometer and energy arrows.",
+          "alt": "Comparison of exothermic and endothermic reactions using thermometer and energy arrows.",
           "mediaTitle": "Exothermic and endothermic reactions",
-          "mediaLead": "Identify whether energy is transferred to or taken from the surroundings."
+          "mediaLead": "Classify the reaction by temperature change and direction of energy transfer."
         },
         {
-          "src": "assets/webp/9E-peer-review-process-notes-v151.webp",
-          "alt": "Annotated peer-review flowchart showing checks before scientific publication.",
-          "mediaTitle": "Peer review process",
-          "mediaLead": "Use this for questions about checking methods, evidence and conclusions before publication."
+          "src": "assets/webp/9E-recycling-methods-notes.webp",
+          "alt": "Recycling methods for different materials.",
+          "mediaTitle": "Recycling materials",
+          "mediaLead": "Different materials need different recycling methods, but recycling generally saves resources and reduces landfill."
         }
       ]
     },
     {
       "id": "9F-overview",
       "unit": "9F",
-      "title": "9F Reactivity and extraction — unit overview",
-      "summary": "This unit maps chemical change, atomic structure, reactivity, displacement, combustion, redox and metal extraction.",
+      "title": "9F Reactivity and extraction",
+      "summary": "In this unit you learn how chemical reactions are represented, how the reactivity series predicts reactions, how metals are extracted from ores, and how iron can rust or be protected from corrosion.",
       "revisionPackFocus": [
-        "The reactivity series orders metals.",
-        "A more reactive metal can displace a less reactive metal from a compound.",
-        "Metals above carbon need electrolysis.",
-        "Metals below carbon can often be extracted by carbon reduction.",
-        "Oxidation is gain of oxygen and reduction is loss of oxygen."
+        "Use word equations and balanced symbol equations to represent reactions.",
+        "Describe the reactivity series and use it to predict metal reactions and displacement reactions.",
+        "Explain how the position of a metal in the reactivity series determines its extraction method.",
+        "Describe iron extraction in a blast furnace and explain why energy needs and cost matter.",
+        "Describe what causes rusting and why rusting is a problem.",
+        "Explain sacrificial protection using the reactivity series."
       ],
       "subUnitRoute": [
         {
-          "title": "Chemical changes",
-          "focus": "new substances and equations"
+          "title": "Chemical reactions and equations",
+          "focus": "Represent reactions accurately and recognise when a chemical change has happened.",
+          "mustKnow": [
+            "Chemical reactions make new substances; physical changes do not.",
+            "Word equations name the reactants and products.",
+            "Balanced equations show that atoms are conserved.",
+            "State symbols show whether substances are solid, liquid, gas or dissolved in water.",
+            "Oxidation can mean gain of oxygen and reduction can mean loss of oxygen."
+          ]
         },
         {
           "title": "Reactivity and displacement",
-          "focus": "series and displacement predictions"
+          "focus": "Use the reactivity series to predict whether reactions will happen.",
+          "mustKnow": [
+            "The reactivity series lists metals from most reactive to least reactive.",
+            "Some metals react with water to make a metal hydroxide and hydrogen.",
+            "Metals reacting with dilute acids make a salt and hydrogen.",
+            "A more reactive metal can displace a less reactive metal from a compound.",
+            "Most metals react with oxygen to make metal oxides."
+          ]
         },
         {
-          "title": "Extraction",
-          "focus": "carbon reduction vs electrolysis"
+          "title": "Metal extraction and the blast furnace",
+          "focus": "Choose an extraction method using the reactivity series and describe iron extraction.",
+          "mustKnow": [
+            "Most metals are found as compounds in ores in the Earth’s crust.",
+            "Metals below carbon in the reactivity series can often be extracted by heating with carbon.",
+            "Metals above carbon need electrolysis, which uses more energy.",
+            "A blast furnace extracts iron from iron ore using carbon monoxide as a reducing agent.",
+            "Energy needs, cost and environmental impact affect the choice of extraction method."
+          ]
         },
         {
-          "title": "Combustion/redox",
-          "focus": "energy, oxygen and redox language"
+          "title": "Rusting and corrosion protection",
+          "focus": "Explain how iron rusts and how rusting can be prevented.",
+          "mustKnow": [
+            "Rusting is corrosion of iron and needs oxygen and water.",
+            "Rusting weakens iron structures and can make them unsafe or costly to repair.",
+            "Paint, oil, grease or plastic coatings prevent rusting by keeping oxygen and water away.",
+            "Galvanising protects iron with a layer of zinc.",
+            "Sacrificial protection works because a more reactive metal corrodes instead of iron."
+          ]
+        },
+        {
+          "title": "Combustion, rates and energy changes",
+          "focus": "Use reaction patterns for hydrocarbons, energy transfer and rate changes.",
+          "mustKnow": [
+            "A hydrocarbon contains hydrogen and carbon only.",
+            "Complete combustion of a hydrocarbon makes carbon dioxide and water.",
+            "Oxygen relights a glowing splint.",
+            "Reaction rate can increase when temperature, concentration or surface area increases.",
+            "Exothermic reactions warm the surroundings; endothermic reactions cool the surroundings."
+          ]
         }
       ],
       "examAnswerMoves": [
-        "For extraction, compare the metal position with carbon before choosing the method.",
-        "For reaction products, write the word equation pattern before adding examples."
+        "For extraction, compare the metal with carbon in the reactivity series before choosing carbon reduction or electrolysis.",
+        "For displacement, name the more reactive metal and say that it takes the place of the less reactive metal.",
+        "For rusting prevention, say which reactant is kept away or which metal corrodes instead."
       ],
       "formulae": [
         "metal + acid → salt + hydrogen",
-        "hydrocarbon + oxygen → carbon dioxide + water"
+        "hydrocarbon + oxygen → carbon dioxide + water",
+        "percentage change = actual change ÷ original amount × 100"
       ],
       "visualCoverage": [
         {
-          "title": "Reactivity/extraction decision tree",
+          "title": "Reactivity series decisions",
           "status": "covered",
-          "detail": "Use for choosing electrolysis or carbon reduction from the position of the metal in the reactivity series."
+          "detail": "Practise using the reactivity series to predict displacement and extraction methods."
         },
         {
-          "title": "Displacement sequence",
+          "title": "Blast furnace extraction",
           "status": "covered",
-          "detail": "Use for predicting whether a more reactive metal will displace a less reactive metal."
+          "detail": "Practise describing the stages and explaining reduction in iron extraction."
         },
         {
-          "title": "Metal reaction products map",
+          "title": "Rusting and sacrificial protection",
           "status": "covered",
-          "detail": "Use for state questions about products from metals reacting with oxygen, water or dilute acids."
+          "detail": "Practise explaining rusting conditions and how zinc or magnesium can protect iron."
         },
         {
-          "title": "Rusting and prevention",
+          "title": "Reaction equations",
           "status": "covered",
-          "detail": "Use for explaining conditions needed for rusting and methods that prevent it."
-        },
-        {
-          "title": "Blast furnace process",
-          "status": "covered",
-          "detail": "Use for describing the stages of extracting iron from iron ore."
+          "detail": "Practise writing word equations and balanced equations with correct reactants and products."
         }
       ],
       "infographicBacklog": [],
       "leadMedia": {
-        "src": "assets/webp/9F-reactivity-extraction-decision-notes-v152.webp",
-        "alt": "Annotated reactivity series and extraction decision tree comparing electrolysis and carbon reduction.",
-        "mediaTitle": "Reactivity series and extraction decision",
-        "mediaLead": "Compare the metal with carbon before choosing electrolysis or carbon reduction."
+        "src": "assets/webp/9F-reactivity-extraction-decision-notes-r167.webp",
+        "alt": "Reactivity series and extraction decision map.",
+        "mediaTitle": "Reactivity series and extraction decisions",
+        "mediaLead": "Use the metal’s position in the reactivity series to choose carbon reduction or electrolysis."
       },
       "visualTiles": [
         {
-          "src": "assets/webp/9F-reactivity-extraction-decision-notes-r167.webp",
-          "alt": "Annotated reactivity and extraction decision map.",
-          "mediaTitle": "Extraction decision map",
-          "mediaLead": "Use reactivity relative to carbon to choose electrolysis or carbon reduction.",
-          "r7Integrated": true
+          "src": "assets/webp/9F-displacement-magnesium-copper-notes-v152.webp",
+          "alt": "Displacement sequence showing magnesium reacting with copper sulfate solution.",
+          "mediaTitle": "Displacement reactions",
+          "mediaLead": "A more reactive metal can take the place of a less reactive metal in a compound."
         },
         {
           "src": "assets/webp/9F-blast-furnace-process-notes-r167.webp",
-          "alt": "Annotated blast furnace cross-section.",
+          "alt": "Blast furnace cross-section for iron extraction.",
           "mediaTitle": "Blast furnace process",
-          "mediaLead": "Inputs, hot air, molten iron and slag are shown in one process diagram.",
-          "r7Integrated": true
-        },
-        {
-          "src": "assets/webp/9F-displacement-magnesium-copper-notes-v152.webp",
-          "alt": "Annotated displacement sequence showing magnesium reacting with copper sulfate solution.",
-          "mediaTitle": "Displacement reactions",
-          "mediaLead": "A more reactive metal can displace a less reactive metal from its compound."
-        },
-        {
-          "src": "assets/webp/9F-rusting-conditions-prevention-notes-v2.webp",
-          "alt": "Annotated rusting diagram showing conditions for rusting and methods of rust prevention.",
-          "mediaTitle": "Rusting and prevention",
-          "mediaLead": "Rusting needs oxygen and water; prevention methods keep one or both away from iron."
+          "mediaLead": "Practise naming the inputs, products and key reduction steps."
         },
         {
           "src": "assets/webp/9F-rusting-conditions-prevention-notes-r167.webp",
-          "alt": "Annotated rusting conditions and prevention comparison.",
-          "mediaTitle": "Rusting conditions and prevention",
-          "mediaLead": "Rusting needs oxygen and water; prevention methods block or replace the reaction.",
-          "r7Integrated": true
-        },
-        {
-          "src": "assets/webp/9F-metal-reaction-products-notes-r167.webp",
-          "alt": "Annotated products of metal reactions with water and dilute acids.",
-          "mediaTitle": "Metal reaction products",
-          "mediaLead": "Metal + water and metal + acid both produce hydrogen, with different other products.",
-          "r7Integrated": true
+          "alt": "Rusting conditions and prevention comparison.",
+          "mediaTitle": "Rusting and prevention",
+          "mediaLead": "Rusting needs oxygen and water; prevention methods keep one or both away from iron."
         }
       ]
     },
     {
       "id": "9I-overview",
       "unit": "9I",
-      "title": "9I Forces and motion — unit overview",
-      "summary": "This unit is calculation and graph heavy: speed, graphs, moments, work, pressure, density and terminal velocity.",
+      "title": "9I Forces and motion",
+      "summary": "In this unit you learn how forces affect motion, how speed and journeys are represented on graphs, how moments make objects turn, and how levers, ramps and pulleys can make moving loads easier without reducing the total energy needed.",
       "revisionPackFocus": [
-        "Speed = distance ÷ time.",
-        "On distance-time graphs, steeper means faster.",
-        "On speed-time graphs, horizontal means constant speed.",
-        "Moment = force × perpendicular distance from pivot.",
-        "Terminal velocity happens when air resistance balances weight."
+        "Recall units for speed and explain what speed means.",
+        "Use the relationship between speed, distance and time.",
+        "Represent journeys on distance-time graphs and interpret graph gradient.",
+        "Describe balanced and unbalanced forces, drag and terminal velocity.",
+        "Use moments to explain turning, balance and simple machines.",
+        "Explain why machines can reduce the force needed but not the total work done."
       ],
       "subUnitRoute": [
         {
           "title": "Forces and terminal velocity",
-          "focus": "balanced forces and drag"
+          "focus": "Describe how forces change motion and why falling objects reach a maximum speed.",
+          "mustKnow": [
+            "Forces can make objects speed up, slow down or change direction.",
+            "Balanced forces do not change the speed of a moving object.",
+            "Unbalanced forces change motion.",
+            "Drag includes air resistance and water resistance.",
+            "Terminal velocity is reached when drag balances weight."
+          ]
         },
         {
-          "title": "Speed and graphs",
-          "focus": "distance-time and speed-time graphs"
+          "title": "Speed and distance-time graphs",
+          "focus": "Calculate speed and explain journeys from graph shapes and gradients.",
+          "mustKnow": [
+            "Speed is distance travelled divided by time taken.",
+            "Speed can be measured in m/s, km/h or mph.",
+            "Mean speed is total distance divided by total time.",
+            "On a distance-time graph, a steeper line means a higher speed.",
+            "A horizontal line on a distance-time graph means the object is stationary."
+          ]
         },
         {
-          "title": "Moments and machines",
-          "focus": "turning forces, work and simple machines"
+          "title": "Speed-time graphs and relative speed",
+          "focus": "Use speed-time graphs to describe acceleration, constant speed and deceleration.",
+          "mustKnow": [
+            "A speed-time graph shows speed at different times in a journey.",
+            "A horizontal line means constant speed.",
+            "An upward sloping line means acceleration.",
+            "A downward sloping line means deceleration.",
+            "Relative speed compares the speed of one object with another."
+          ]
         },
         {
-          "title": "Pressure and density",
-          "focus": "calculations and floating"
+          "title": "Levers, moments and balance",
+          "focus": "Use turning forces to explain levers, pivots and equilibrium.",
+          "mustKnow": [
+            "A pivot is the point an object turns around; it is also called a fulcrum.",
+            "A moment is a turning effect of a force.",
+            "Moment = force × perpendicular distance from the pivot.",
+            "An object balances when clockwise and anticlockwise moments are equal and opposite.",
+            "A longer distance from the pivot gives a larger moment for the same force."
+          ]
+        },
+        {
+          "title": "Work, energy and simple machines",
+          "focus": "Explain how ramps, levers and pulleys make movement easier while conserving energy.",
+          "mustKnow": [
+            "Levers, ramps and pulleys are simple machines.",
+            "A force multiplier lets a smaller effort move a larger load.",
+            "If a machine reduces the force needed, the force must move through a greater distance.",
+            "Work done is the energy transferred when a force moves through a distance.",
+            "Friction usually means more energy is needed because some energy is dissipated as heating."
+          ]
         }
       ],
       "examAnswerMoves": [
         "For calculations, write formula → substitution → answer with units.",
-        "For graph questions, describe the shape or gradient before explaining the motion."
+        "For distance-time graphs, mention the gradient before describing the speed.",
+        "For simple machines, say smaller force over a larger distance, not less energy overall."
       ],
       "formulae": [
         "speed = distance ÷ time",
-        "moment = force × distance",
-        "pressure = force ÷ area",
-        "density = mass ÷ volume"
+        "moment = force × perpendicular distance from pivot",
+        "work done = force × distance moved in the direction of the force"
       ],
       "visualCoverage": [
         {
-          "title": "Speed-time graph family",
+          "title": "Distance-time graphs",
           "status": "covered",
-          "detail": "Use for describing acceleration, constant speed and deceleration."
+          "detail": "Practise identifying faster motion, slower motion and stopped sections from graph gradient."
         },
         {
-          "title": "Distance-time graph",
+          "title": "Speed-time graphs",
           "status": "covered",
-          "detail": "Use for describing speed from gradient and identifying stationary sections."
+          "detail": "Practise describing constant speed, acceleration and deceleration from graph shapes."
         },
         {
-          "title": "Moment calculations",
+          "title": "Moments and levers",
           "status": "covered",
-          "detail": "Use for force × distance calculations around a pivot."
+          "detail": "Practise calculating moments and explaining balance around a pivot."
         },
         {
-          "title": "Terminal velocity force-chain",
+          "title": "Terminal velocity",
           "status": "covered",
-          "detail": "Use for explaining balanced forces on a falling object."
-        },
-        {
-          "title": "Density/pressure calculations",
-          "status": "covered",
-          "detail": "Use for formula, substitution and units practice."
+          "detail": "Practise explaining how air resistance increases until it balances weight."
         }
       ],
       "infographicBacklog": [],
       "leadMedia": {
-        "src": "assets/webp/9I-speed-time-graph-notes-v152.webp",
-        "alt": "Annotated speed-time graph family showing acceleration, constant speed and deceleration.",
-        "mediaTitle": "Speed-time graphs",
-        "mediaLead": "Use graph shape to describe motion before doing calculations."
+        "src": "assets/webp/9I-distance-time-graph-notes.webp",
+        "alt": "Distance-time graph notes showing how gradient links to speed.",
+        "mediaTitle": "Distance-time graphs",
+        "mediaLead": "Use gradient to compare speeds and use horizontal sections for stops."
       },
       "visualTiles": [
         {
-          "src": "assets/webp/9I-liquid-pressure-depth-notes-r167.webp",
-          "alt": "Annotated liquid pressure and depth comparison.",
-          "mediaTitle": "Liquid pressure and depth",
-          "mediaLead": "Pressure increases with depth and is not mainly about container width.",
-          "r7Integrated": true
+          "src": "assets/webp/9I-speed-time-graph-notes-v152.webp",
+          "alt": "Speed-time graph family showing acceleration, constant speed and deceleration.",
+          "mediaTitle": "Speed-time graphs",
+          "mediaLead": "Horizontal lines show constant speed; slopes show changes in speed."
         },
         {
           "src": "assets/webp/9I-moments-levers-perpendicular-distance-notes-r167.webp",
-          "alt": "Annotated moments and levers visual.",
+          "alt": "Moments and levers diagram showing force, pivot and perpendicular distance.",
           "mediaTitle": "Moments and levers",
-          "mediaLead": "Pivot, force and perpendicular distance control the size of a moment.",
-          "r7Integrated": true
-        },
-        {
-          "src": "assets/webp/9I-distance-time-graph-notes.webp",
-          "alt": "Annotated distance-time graph showing stationary, slow and fast sections.",
-          "mediaTitle": "Distance-time graphs",
-          "mediaLead": "A steeper line means a higher speed; a horizontal line means stationary."
-        },
-        {
-          "src": "assets/webp/9I-moment-calculations-notes-v149.webp",
-          "alt": "Annotated moment calculation diagram using force and distance from pivot.",
-          "mediaTitle": "Moment calculations",
-          "mediaLead": "Write the formula, substitute force and distance, then give the answer with units."
-        },
-        {
-          "src": "assets/webp/9I-terminal-velocity-force-chain-notes-v152.webp",
-          "alt": "Annotated terminal velocity sequence showing weight, air resistance and balanced forces.",
-          "mediaTitle": "Terminal velocity force chain",
-          "mediaLead": "Explain how air resistance increases until it balances weight."
-        },
-        {
-          "src": "assets/webp/9I-density-calculations-notes-v149.webp",
-          "alt": "Annotated density calculation diagram using mass and volume.",
-          "mediaTitle": "Density calculations",
-          "mediaLead": "Use density = mass ÷ volume and keep the units consistent."
+          "mediaLead": "Moment depends on force and perpendicular distance from the pivot."
         },
         {
           "src": "assets/webp/9I-terminal-velocity-force-sequence-notes-r167.webp",
-          "alt": "Annotated terminal velocity force sequence.",
-          "mediaTitle": "Terminal velocity sequence",
-          "mediaLead": "Compare weight and air resistance as a falling object speeds up.",
-          "r7Integrated": true
+          "alt": "Sequence showing forces on a falling object until terminal velocity.",
+          "mediaTitle": "Terminal velocity",
+          "mediaLead": "As speed increases, air resistance increases until it balances weight."
         }
       ]
     },
     {
       "id": "9J-overview",
       "unit": "9J",
-      "title": "9J Force fields and electromagnets — unit overview",
-      "summary": "This unit combines fields, static electricity, circuits, resistance, electromagnets and the motor effect.",
+      "title": "9J Force fields and electromagnets",
+      "summary": "In this unit you learn how non-contact forces act through fields, how static charge is caused by electron transfer, how current and voltage are measured in circuits, how resistance affects current, and how electromagnets and motors use magnetic fields.",
       "revisionPackFocus": [
-        "Static electricity is caused by electron transfer.",
-        "Current is measured with an ammeter in series.",
-        "Potential difference is measured with a voltmeter in parallel.",
-        "Resistance = voltage ÷ current.",
-        "Electromagnets are stronger with more turns, larger current or an iron core.",
-        "The motor effect is a force on a current-carrying wire in a magnetic field."
+        "Describe magnetic, gravitational and electric fields as regions where non-contact forces act.",
+        "Calculate weight using mass and gravitational field strength.",
+        "Explain static electricity using electron transfer and use attraction/repulsion rules for charges.",
+        "Measure current with an ammeter in series and voltage with a voltmeter in parallel.",
+        "Use voltage, current and resistance correctly in calculations and circuit explanations.",
+        "Explain how to make electromagnets and motors stronger."
       ],
       "subUnitRoute": [
         {
-          "title": "Static and fields",
-          "focus": "electron transfer and non-contact forces"
+          "title": "Force fields, gravity and magnetism",
+          "focus": "Describe fields as regions where forces act without contact.",
+          "mustKnow": [
+            "A force field is a space where a non-contact force has an effect.",
+            "The space around a magnet where it affects magnetic materials is a magnetic field.",
+            "Magnetic field direction is from north pole to south pole.",
+            "Objects with mass attract each other through gravitational fields.",
+            "Weight is the force caused by gravity pulling on a mass."
+          ]
         },
         {
-          "title": "Circuits and resistance",
-          "focus": "symbols, meters and resistance"
+          "title": "Static electricity and electric fields",
+          "focus": "Explain charge transfer and predict attraction or repulsion.",
+          "mustKnow": [
+            "Atoms normally have no overall charge because positive and negative charges balance.",
+            "Rubbing insulating materials can transfer electrons.",
+            "An object that gains electrons becomes negatively charged.",
+            "An object that loses electrons becomes positively charged.",
+            "Opposite charges attract; like charges repel."
+          ]
         },
         {
-          "title": "Wire resistance practical",
-          "focus": "variables and controls"
+          "title": "Current, voltage and circuits",
+          "focus": "Use circuit symbols and connect meters correctly.",
+          "mustKnow": [
+            "Current is a flow of electrons and is measured in amps.",
+            "An ammeter measures current and is connected in series.",
+            "Voltage is a measure of energy transferred by a cell or component.",
+            "A voltmeter measures voltage and is connected in parallel.",
+            "In a parallel circuit, the voltage is the same across each branch."
+          ]
         },
         {
-          "title": "Electromagnets and motor effect",
-          "focus": "strength factors and force on wire"
+          "title": "Resistance and wire investigations",
+          "focus": "Explain how resistance affects current and what changes the resistance of a wire.",
+          "mustKnow": [
+            "Resistance tells us how difficult it is for current to flow.",
+            "Higher voltage gives a higher current if resistance stays the same.",
+            "Higher resistance gives a lower current if voltage stays the same.",
+            "Wire resistance depends on material, length and thickness.",
+            "Longer wires have higher resistance; thicker wires have lower resistance."
+          ]
+        },
+        {
+          "title": "Electromagnets, relays and motors",
+          "focus": "Explain how current in a wire produces magnetism and how motors produce turning.",
+          "mustKnow": [
+            "An electromagnet is a coil of wire with current flowing through it.",
+            "An electromagnet is magnetic only while current is flowing.",
+            "An electromagnet is stronger with more coils, a larger current or an iron core.",
+            "A relay allows a low-current circuit to switch on a higher-current circuit.",
+            "The motor effect is a force on a current-carrying wire in a magnetic field."
+          ]
         }
       ],
       "examAnswerMoves": [
-        "For static electricity, mention electron transfer and the resulting charge.",
-        "For circuit practicals, state the independent variable, dependent variable and controls."
+        "For static electricity, state which object gains or loses electrons, then state the charge produced.",
+        "For meter-placement questions, say series for ammeter and parallel for voltmeter.",
+        "For motor-effect questions, name the current, magnetic field and force; then state how the force can be increased."
       ],
       "formulae": [
-        "V = I × R",
-        "weight = mass × gravitational field strength"
+        "weight = mass × gravitational field strength",
+        "voltage = current × resistance",
+        "resistance = voltage ÷ current"
       ],
       "visualCoverage": [
         {
           "title": "Static charge transfer",
           "status": "covered",
-          "detail": "Use for electron-transfer explanations and resulting charge."
+          "detail": "Practise explaining positive and negative charge using electrons, not movement of positive charge."
         },
         {
-          "title": "Circuit symbols grid",
+          "title": "Circuit symbols and meters",
           "status": "covered",
-          "detail": "Use for identifying common circuit components from symbols."
+          "detail": "Practise identifying components and placing ammeters and voltmeters correctly."
         },
         {
-          "title": "Wire resistance investigation",
+          "title": "Resistance graphs and calculations",
           "status": "covered",
-          "detail": "Use for practical-method questions involving variables and measurements."
+          "detail": "Practise using voltage, current and resistance with correct units."
         },
         {
-          "title": "Current-voltage graphs",
+          "title": "Electromagnets and motor effect",
           "status": "covered",
-          "detail": "Use for interpreting resistance from current and voltage."
-        },
-        {
-          "title": "Force-field comparison",
-          "status": "covered",
-          "detail": "Use for gravitational, magnetic and electric field identification."
-        },
-        {
-          "title": "Electromagnet, relay and motor effect",
-          "status": "covered",
-          "detail": "Use for electromagnet strength, relay action and motor-effect force questions."
+          "detail": "Practise describing how coil turns, current and magnetic field strength affect the force or motor speed."
         }
       ],
       "infographicBacklog": [],
       "leadMedia": {
         "src": "assets/webp/9J-electromagnet-relay-motor-overview-base.webp",
-        "alt": "Overview of electromagnet applications including an electromagnet, relay and motor effect arrangement.",
-        "mediaTitle": "Electromagnet, relay and motor overview",
-        "mediaLead": "Use this to separate electromagnet strength, relay action and the motor effect."
+        "alt": "Overview visual showing electromagnets, relays and motors.",
+        "mediaTitle": "Electromagnets, relays and motors",
+        "mediaLead": "Use this to connect current in a coil, magnetic fields and useful movement."
       },
       "visualTiles": [
         {
           "src": "assets/webp/9J-static-charge-transfer-notes-v152.webp",
-          "alt": "Annotated balloon and wool static charge transfer diagram showing electron movement.",
+          "alt": "Static charge transfer notes showing electrons moving between materials.",
           "mediaTitle": "Static charge transfer",
-          "mediaLead": "Static charge is explained by electrons moving from one insulating object to another."
+          "mediaLead": "Electrons move during charging; the object that gains electrons becomes negative."
         },
         {
-          "src": "assets/webp/9J-circuit-symbols-grid-notes-v2.webp",
-          "alt": "Annotated circuit symbol grid showing common electrical components.",
-          "mediaTitle": "Circuit symbols grid",
-          "mediaLead": "Use this for identify questions on cells, lamps, switches, ammeters and voltmeters."
+          "src": "assets/diagrams/9J-circuit-symbols-question.svg",
+          "alt": "Common circuit symbols.",
+          "mediaTitle": "Circuit symbols",
+          "mediaLead": "Practise recognising components before answering current and voltage questions."
         },
         {
-          "src": "assets/webp/9J-current-voltage-graph-comparison-notes-v153.webp",
-          "alt": "Annotated current-voltage graph comparing components with different resistance.",
+          "src": "assets/diagrams/9J-current-voltage-graph.svg",
+          "alt": "Current-voltage graph.",
           "mediaTitle": "Current-voltage graphs",
-          "mediaLead": "A steeper line on an I-V graph means lower resistance for the same voltage."
+          "mediaLead": "Use graph shape and gradient to compare resistance."
         },
         {
           "src": "assets/webp/9J-motor-effect-simple-motor-notes-v3.webp",
-          "alt": "Annotated simple motor effect diagram showing a coil between magnets and the direction of force.",
+          "alt": "Simple motor-effect diagram showing a coil between magnets.",
           "mediaTitle": "Simple motor effect",
-          "mediaLead": "Use the v3 motor diagram for force on a current-carrying wire without confusing the axis of rotation."
-        },
-        {
-          "src": "assets/webp/9J-wire-resistance-investigation-notes-r167.webp",
-          "alt": "Annotated wire resistance investigation setup.",
-          "mediaTitle": "Wire resistance investigation",
-          "mediaLead": "Plan fair tests by changing one wire property and controlling the others.",
-          "r7Integrated": true
+          "mediaLead": "A current-carrying coil in a magnetic field experiences forces that make it turn."
         },
         {
           "src": "assets/webp/9J-electric-fields-direction-notes-r167.webp",
-          "alt": "Annotated electric field diagrams showing field arrows.",
+          "alt": "Electric field lines around positive and negative charges.",
           "mediaTitle": "Electric fields",
-          "mediaLead": "Use arrows to identify field direction around positive and negative charges.",
-          "r7Integrated": true
+          "mediaLead": "Field arrows show the direction of the force on a positive test charge."
         }
       ]
     }

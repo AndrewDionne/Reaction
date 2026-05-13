@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.69.1 — Student-facing unit overview rewrite
+
+- Rewrote all six unit overview pages against the uploaded Year 9 source materials and assess-yourself criteria.
+- Added sub-unit must-know points and removed status/developer-style badges from overview pages.
+- Changed overview visuals to full-width, single-column display and documented dense images needing replacement.
+
 ## v1.69.0 — Docs cleanup and consolidation
 
 - Consolidated the `docs/` folder from **138** historical/generated files to a compact current documentation set.

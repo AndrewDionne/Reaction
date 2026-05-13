@@ -2688,20 +2688,19 @@ body.session-active .app-shell {
 
 .unit-overview-button:hover { transform: translateY(-1px); }
 .unit-overview-card .note-section h3 { display: flex; align-items: center; gap: 0.4rem; }
-.overview-route-grid, .overview-status-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.65rem; }
-.overview-route-card, .overview-status-card { border: 1px solid var(--line); border-radius: 16px; padding: 0.78rem 0.85rem; background: rgba(248, 250, 252, 0.86); }
+.overview-route-grid { display: grid; grid-template-columns: 1fr; gap: 0.8rem; }
+.overview-status-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.65rem; }
+.overview-route-card, .overview-status-card { border: 1px solid var(--line); border-radius: 16px; padding: 0.9rem 1rem; background: rgba(248, 250, 252, 0.86); }
 .overview-route-card strong, .overview-status-card strong { display: block; color: #0f172a; letter-spacing: -0.02em; }
-.overview-route-card p, .overview-status-card p, .overview-backlog-card p { margin: 0.3rem 0 0; color: #475569; line-height: 1.42; font-size: 0.92rem; }
-.overview-status-pill { display: inline-flex; align-items: center; margin-bottom: 0.45rem; padding: 0.18rem 0.48rem; border-radius: 999px; background: #e2e8f0; color: #334155; font-size: 0.72rem; font-weight: 950; text-transform: uppercase; }
-.overview-status-card.status-covered .overview-status-pill { background: var(--good-soft); color: #166534; }
-.overview-status-card.status-partial .overview-status-pill { background: var(--warn-soft); color: #92400e; }
-.overview-status-card.status-gap .overview-status-pill { background: #fee2e2; color: #991b1b; }
+.overview-route-card p, .overview-status-card p, .overview-backlog-card p { margin: 0.3rem 0 0; color: #475569; line-height: 1.46; font-size: 0.95rem; }
+.overview-route-card ul { margin-top: 0.55rem; padding-left: 1.2rem; color: #334155; line-height: 1.48; }
+.overview-route-card li + li { margin-top: 0.22rem; }
 .overview-backlog-list { display: grid; gap: 0.55rem; }
 .overview-backlog-card { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 0.65rem; align-items: start; border: 1px solid rgba(124, 58, 237, 0.16); border-radius: 16px; padding: 0.72rem 0.8rem; background: rgba(250, 245, 255, 0.72); }
 .overview-backlog-card span { border-radius: 999px; padding: 0.18rem 0.45rem; background: #ede9fe; color: #5b21b6; font-size: 0.7rem; font-weight: 950; }
 .overview-backlog-card.priority-high span { background: #fee2e2; color: #991b1b; }
 .formula-note { background: rgba(240, 253, 244, 0.84); border-color: rgba(22, 163, 74, 0.22); }
-@media (max-width: 760px) { .overview-route-grid, .overview-status-grid { grid-template-columns: 1fr; } .unit-overview-button { min-height: 50px; } }
+@media (max-width: 760px) { .overview-status-grid { grid-template-columns: 1fr; } .unit-overview-button { min-height: 50px; } }
 
 /* Written exam visual practice */
 .written-question-meta {
@@ -2801,28 +2800,35 @@ body.session-active .app-shell {
 }
 
 .overview-lead-media .card-media img {
-  max-height: 430px;
+  width: 100%;
+  height: auto;
+  max-height: none;
   object-fit: contain;
 }
 
 .overview-tile-media {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0.8rem;
+  grid-template-columns: 1fr;
+  gap: 1rem;
   margin-top: 0.75rem;
 }
 
 .overview-tile-media .card-media {
-  background: rgba(255, 255, 255, 0.86);
+  background: rgba(255, 255, 255, 0.9);
 }
 
 .overview-tile-media .card-media img {
-  aspect-ratio: 16 / 10;
-  object-fit: cover;
+  width: 100%;
+  height: auto;
+  max-height: none;
+  aspect-ratio: auto;
+  object-fit: contain;
 }
 
-.overview-tile-media .media-layer-text {
-  min-height: 116px;
+.overview-tile-media .media-layer-text,
+.overview-lead-media .media-layer-text {
+  min-height: auto;
+  font-size: 1rem;
 }
 
 .overview-visual-section {
@@ -2832,16 +2838,6 @@ body.session-active .app-shell {
 @media (max-width: 760px) {
   .overview-tile-media {
     grid-template-columns: 1fr;
-  }
-  .overview-lead-media .card-media img {
-    max-height: none;
-  }
-  .overview-tile-media .card-media img {
-    aspect-ratio: auto;
-    object-fit: contain;
-  }
-  .overview-tile-media .media-layer-text {
-    min-height: auto;
   }
 }
 

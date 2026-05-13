@@ -2879,25 +2879,16 @@
       <article class="overview-route-card">
         <strong>${escapeHtml(item.title || "Sub-unit")}</strong>
         <p>${escapeHtml(item.focus || "")}</p>
+        ${renderPlainList(item.mustKnow)}
       </article>
     `).join("")}</div>`;
-  }
-
-  function overviewStatusLabel(status) {
-    const labels = {
-      covered: "Ready",
-      partial: "Practise more",
-      check: "Check"
-    };
-    return labels[status] || "Check";
   }
 
   function renderOverviewStatus(items = []) {
     if (!Array.isArray(items) || !items.length) return "";
     return `<div class="overview-status-grid">${items.map((item) => `
-      <article class="overview-status-card status-${escapeHtml(item.status || "partial")}">
-        <span class="overview-status-pill">${escapeHtml(overviewStatusLabel(item.status))}</span>
-        <strong>${escapeHtml(item.title || "Revision visual")}</strong>
+      <article class="overview-status-card">
+        <strong>${escapeHtml(item.title || "Revision skill")}</strong>
         <p>${escapeHtml(item.detail || "")}</p>
       </article>
     `).join("")}</div>`;
@@ -2925,8 +2916,6 @@
       return;
     }
     const unitCards = cards.filter((card) => card.unit === overview.unit);
-    const unitObjectives = learningObjectives.filter((objective) => objective.unit === overview.unit);
-    const noteCount = classNotes.filter((note) => note.unit === overview.unit).length;
     updateSessionChrome({
       unitId: overview.unit,
       title: unitTitle(overview.unit),
@@ -2938,41 +2927,33 @@
     els.resultPanel.classList.add("hidden");
     els.studyPanel.innerHTML = `
       <article class="study-card note-context-card unit-overview-card">
-        <div class="card-topline">
-          <div class="card-title-row">
-            <span class="pill">${escapeHtml(unitTitle(overview.unit))}</span>
-            <span class="pill objective-pill">Unit overview</span>
-            <span class="pill">${unitObjectives.length} sub-units</span>
-            <span class="pill">${noteCount} note pages</span>
-          </div>
-        </div>
         <section class="note-section note-summary">
           <h2>${escapeHtml(overview.title || `${unitTitle(overview.unit)} overview`)}</h2>
           <p>${escapeHtml(overview.summary || "")}</p>
         </section>
         ${renderOverviewMedia(overview.leadMedia, "overview-lead-media")}
         <section class="note-section">
-          <h3>Must know for this unit</h3>
+          <h3>By the end of this unit, you should be able to...</h3>
           ${renderPlainList(overview.revisionPackFocus)}
         </section>
-        ${Array.isArray(overview.formulae) && overview.formulae.length ? `<section class="note-section formula-note"><h3>Formulae / equations</h3>${renderPlainList(overview.formulae)}</section>` : ""}
+        ${Array.isArray(overview.formulae) && overview.formulae.length ? `<section class="note-section formula-note"><h3>Key formulae and equations</h3>${renderPlainList(overview.formulae)}</section>` : ""}
         <section class="note-section">
-          <h3>How to use this unit</h3>
+          <h3>Sub-units and must-know points</h3>
           ${renderOverviewRoute(overview.subUnitRoute)}
         </section>
-        ${Array.isArray(overview.visualTiles) && overview.visualTiles.length ? `<section class="note-section overview-visual-section"><h3>Visual revision tiles</h3>${renderOverviewMedia(overview.visualTiles, "overview-tile-media")}</section>` : ""}
+        ${Array.isArray(overview.visualTiles) && overview.visualTiles.length ? `<section class="note-section overview-visual-section"><h3>Useful visuals</h3>${renderOverviewMedia(overview.visualTiles, "overview-tile-media")}</section>` : ""}
         <section class="note-section">
-          <h3>Diagrams, graphs and calculations</h3>
+          <h3>Practise these skills</h3>
           ${renderOverviewStatus(overview.visualCoverage)}
         </section>
         ${Array.isArray(overview.infographicBacklog) && overview.infographicBacklog.length ? `<section class="note-section practice-note"><h3>More visuals to practise</h3>${renderInfographicBacklog(overview.infographicBacklog)}</section>` : ""}
         <section class="note-section sentence-note">
-          <h3>Written-answer moves</h3>
+          <h3>How to write better answers</h3>
           ${renderPlainList(overview.examAnswerMoves)}
         </section>
         <div class="card-actions">
-          <button class="primary-button" data-overview-action="practice-unit" type="button">Practise this full unit</button>
-          <button class="secondary-button" data-overview-action="hub" type="button">Back to hub</button>
+          <button class="primary-button" data-overview-action="practice-unit" type="button">Practise this unit</button>
+          <button class="secondary-button" data-overview-action="hub" type="button">Back to revision hub</button>
         </div>
       </article>
     `;
