@@ -28,7 +28,6 @@
     unitDashboard: byId("unitDashboard"),
     notesDashboard: byId("notesDashboard"),
     routeEntryButton: byId("routeEntryButton"),
-    writtenBuilderPanel: byId("writtenBuilderPanel"),
     selectionSummary: byId("selectionSummary"),
     selectionDetail: byId("selectionDetail"),
     studyPanel: byId("studyPanel"),
@@ -2289,28 +2288,6 @@
     return questions.filter((card) => (card.noteId || card.learningObjective) === noteId);
   }
 
-  function notesForUnit(unitId) {
-    if (!unitId) return [];
-    const objectiveIds = new Set(learningObjectives.filter((objective) => objective.unit === unitId).map((objective) => objective.id));
-    const byId = new Map();
-    classNotes.forEach((note) => {
-      if (note.unit === unitId || objectiveIds.has(note.id)) byId.set(note.id, note);
-    });
-    return Array.from(byId.values()).sort((a, b) => {
-      const ai = learningObjectives.findIndex((objective) => objective.id === a.id);
-      const bi = learningObjectives.findIndex((objective) => objective.id === b.id);
-      if (ai === -1 && bi === -1) return String(a.title || a.id).localeCompare(String(b.title || b.id));
-      if (ai === -1) return 1;
-      if (bi === -1) return -1;
-      return ai - bi;
-    });
-  }
-
-  function objectivesWithNotesForUnit(unitId) {
-    const noteIds = new Set(notesForUnit(unitId).map((note) => note.id));
-    return learningObjectives.filter((objective) => objective.unit === unitId && noteIds.has(objective.id));
-  }
-
   function objectivesForUnit(unitId) {
     const list = unitId && unitId !== "all"
       ? learningObjectives.filter((objective) => objective.unit === unitId)
@@ -2697,7 +2674,7 @@
   function initFilters() {
     if (els.unitFilter) els.unitFilter.innerHTML = `<option value="all">All units</option>` + units.map((unit) => `<option value="${escapeHtml(unit.id)}">${escapeHtml(unit.title)}</option>`).join("");
     updateObjectiveOptions();
-    const types = unique(cards.map((card) => card.type));
+    const types = unique(questions.map((card) => card.type));
     if (els.typeFilter) els.typeFilter.innerHTML = `<option value="all">All card types</option>` + types.map((type) => `<option value="${escapeHtml(type)}">${escapeHtml(type)}</option>`).join("");
 
     [els.typeFilter, els.levelFilter, els.searchBox].filter(Boolean).forEach((el) => {
@@ -2813,9 +2790,6 @@
       } else if (!unitCount && !objectiveCount) els.selectionSummary.textContent = `Selected questions: all units · ${ready} card${ready === 1 ? "" : "s"}`;
       else els.selectionSummary.textContent = `Selected questions: ${unitCount || "all"} unit${unitCount === 1 ? "" : "s"} · ${objectiveCount} sub-unit${objectiveCount === 1 ? "" : "s"} · ${ready} card${ready === 1 ? "" : "s"}`;
     }
-    if (els.writtenBuilderPanel) {
-      els.writtenBuilderPanel.classList.toggle("hidden", state.selectedMode !== "written");
-    }
     if (els.selectionDetail) {
       els.selectionDetail.textContent = state.selectedMode === "written"
         ? "Answer the paper in three sections: core knowledge, written reasoning, then data and calculations. Self-mark each response after submitting it."
@@ -2879,10 +2853,6 @@
           <p>${escapeHtml(unit.theme)}</p>
           <div class="unit-progress-summary"><span>Unit progress</span><strong>${pct}%</strong></div>
           <div class="progress-track" aria-label="${masteredCount} of ${unitCards.length} questions secure"><div class="progress-fill" style="width:${pct}%"></div></div>
-          <div class="unit-study-actions" aria-label="Study actions for ${escapeHtml(unit.title)}">
-            ${unitOverviewMeta(unit.id) ? `<button class="unit-study-button overview" data-unit-overview="${escapeHtml(unit.id)}" type="button">📚 Unit overview</button>` : ""}
-            ${notesForUnit(unit.id).length ? `<button class="unit-study-button notes" data-unit-notes="${escapeHtml(unit.id)}" type="button">📘 Class notes</button>` : ""}
-          </div>
           <div class="objective-list" aria-label="Learning objectives in ${escapeHtml(unit.title)}">
             <div class="objective-row full-unit-row ${selectedUnit ? "selected" : ""}">
               <button class="objective-toggle full-unit-toggle" data-unit-toggle="${escapeHtml(unit.id)}" type="button" aria-pressed="${selectedUnit}">
@@ -2890,6 +2860,7 @@
                 <span>Full unit · ${unitCards.length} revision questions</span>
               </button>
             </div>
+            ${unitOverviewMeta(unit.id) ? `<div class="unit-overview-row"><button class="unit-overview-button" data-unit-overview="${escapeHtml(unit.id)}" type="button">📚 Unit overview</button></div>` : ""}
             ${objectiveRows}
           </div>
         </article>
@@ -2908,12 +2879,6 @@
         openNoteContext(button.dataset.noteOpen);
       });
     });
-    $$('[data-unit-notes]', els.unitDashboard).forEach((button) => {
-      button.addEventListener('click', (event) => {
-        event.stopPropagation();
-        openUnitNotesContext(button.dataset.unitNotes);
-      });
-    });
     $$('[data-unit-overview]', els.unitDashboard).forEach((button) => {
       button.addEventListener('click', (event) => {
         event.stopPropagation();
@@ -2925,67 +2890,6 @@
 
   function renderNotesDashboard() {
     return;
-  }
-
-  function openUnitNotesContext(unitId) {
-    state.noteContext = { unitNotesUnitId: unitId };
-    state.test = null;
-    resetCardInteraction();
-    document.body.classList.add("session-active");
-    els.hubView.classList.add("hidden");
-    els.sessionView.classList.remove("hidden");
-    els.resultPanel.classList.add("hidden");
-    renderSession();
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  }
-
-  function renderUnitNotesContext() {
-    const unitId = state.noteContext?.unitNotesUnitId;
-    const unit = units.find((item) => item.id === unitId);
-    const notes = notesForUnit(unitId);
-    if (!unit || !notes.length) {
-      state.noteContext = null;
-      showHub();
-      return;
-    }
-    updateSessionChrome({
-      unitId,
-      title: "Reaction",
-      eyebrow: "Class notes",
-      subtitle: `${unitTitle(unitId)} · choose a note page`
-    });
-    els.sessionIndex.textContent = String(notes.length);
-    els.sessionTotal.textContent = " note pages";
-    els.resultPanel.classList.add("hidden");
-    const overview = unitOverviewMeta(unitId);
-    els.studyPanel.innerHTML = `
-      <article class="study-card unit-notes-index-card">
-        <div class="card-topline">
-          <div class="card-title-row">
-            <span class="pill">${escapeHtml(unitTitle(unitId))}</span>
-            <span class="pill">Class notes</span>
-          </div>
-        </div>
-        <h2>${escapeHtml(unit.title)} class notes</h2>
-        <p class="note-lede">Choose a class-notes page for this unit, or open the full unit overview first.</p>
-        <div class="unit-note-actions">
-          ${overview ? `<button class="secondary-button" data-unit-overview-from-notes="${escapeHtml(unitId)}" type="button">Open unit overview</button>` : ""}
-          <button class="secondary-button" data-back-to-hub type="button">Back to unit cards</button>
-        </div>
-        <div class="unit-notes-list">
-          ${notes.map((note) => {
-            const linked = linkedCardsForNote(note.id);
-            return `<button class="unit-note-card" data-unit-note-open="${escapeHtml(note.id)}" type="button">
-              <strong>${escapeHtml(note.title || note.id)}</strong>
-              <span>${linked.length} related question${linked.length === 1 ? "" : "s"}</span>
-            </button>`;
-          }).join("")}
-        </div>
-      </article>
-    `;
-    $("[data-back-to-hub]", els.studyPanel)?.addEventListener("click", showHub);
-    $("[data-unit-overview-from-notes]", els.studyPanel)?.addEventListener("click", (event) => openUnitOverviewContext(event.currentTarget.dataset.unitOverviewFromNotes));
-    $$('[data-unit-note-open]', els.studyPanel).forEach((button) => button.addEventListener("click", () => openNoteContext(button.dataset.unitNoteOpen)));
   }
 
   function openUnitOverviewContext(unitId) {
@@ -3351,10 +3255,6 @@
   }
 
   function renderSession() {
-    if (state.noteContext?.unitNotesUnitId) {
-      renderUnitNotesContext();
-      return;
-    }
     if (state.noteContext?.overviewUnitId) {
       renderUnitOverviewContext();
       return;

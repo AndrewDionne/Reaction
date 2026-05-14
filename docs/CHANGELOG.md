@@ -1,10 +1,8 @@
-## v1.72.5 — Restore visible unit cards and mode-specific written builder
+## v1.72.6 — Fix unit card render crash
 
-- Moved the unit selection area into a dedicated **Study units** section so the unit cards are clearly visible from the hub.
-- Hid the written-test builder unless **Written exam mode** is selected, preventing it from pushing the unit cards below the first screen in normal revision mode.
-- Added prominent unit-level **Unit overview** and **Class notes** buttons on each unit card.
-- Added a unit-level class-notes chooser page so students can open all class notes for a unit from one place.
-- Bumped `index.html` cache strings to `1.72.5`.
+- Fixed a startup crash in `initFilters()` where `cards` was referenced after the app data variable had been renamed to `questions`.
+- This crash prevented the rest of `init()` from running, so the Study Units cards and their buttons did not render and existing buttons appeared non-functional.
+- Bumped `index.html` cache strings to `1.72.6`.
 
 ## v1.72.3 — Refreshed five overview explainer images
 
