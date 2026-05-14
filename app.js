@@ -2225,7 +2225,7 @@
   function updateSessionChrome({ card = null, unitId = "", title = "Reaction", subtitle = "", eyebrow = "" } = {}) {
     const resolvedUnit = sessionUnitFor(card, unitId);
     const text = modeText[state.mode] || modeText.practice;
-    const modeName = state.noteContext?.overviewUnitId ? "Unit overview" : state.noteContext ? "Class Notes" : modeLabel(state.mode);
+    const modeName = state.noteContext?.overviewUnitId ? "Unit overview" : state.noteContext?.unitNotesId ? "Class notes" : state.noteContext ? "Class notes" : modeLabel(state.mode);
     if (els.sessionEyebrow) els.sessionEyebrow.textContent = eyebrow || text.eyebrow || "Focused session";
     if (els.sessionTitle) els.sessionTitle.textContent = title || "Reaction";
     if (els.sessionSubtitle) {
@@ -2286,6 +2286,22 @@
 
   function linkedCardsForNote(noteId) {
     return questions.filter((card) => (card.noteId || card.learningObjective) === noteId);
+  }
+
+  function notesForUnit(unitId) {
+    const objectiveIds = new Set(learningObjectives
+      .filter((objective) => objective.unit === unitId)
+      .map((objective) => objective.id));
+    return classNotes.filter((note) => note.unit === unitId || objectiveIds.has(note.id));
+  }
+
+  function firstNoteIdForUnit(unitId) {
+    return notesForUnit(unitId)[0]?.id || learningObjectives.find((objective) => objective.unit === unitId)?.id || null;
+  }
+
+  function objectivesWithNotesForUnit(unitId) {
+    const noteIds = new Set(classNotes.map((note) => note.id));
+    return learningObjectives.filter((objective) => objective.unit === unitId && noteIds.has(objective.id));
   }
 
   function objectivesForUnit(unitId) {
@@ -2851,6 +2867,10 @@
           </div>
           <h3>${escapeHtml(unit.title)}</h3>
           <p>${escapeHtml(unit.theme)}</p>
+          <div class="unit-study-actions" aria-label="Study options for ${escapeHtml(unit.title)}">
+            ${unitOverviewMeta(unit.id) ? `<button class="unit-study-action overview" data-unit-overview="${escapeHtml(unit.id)}" type="button">📚 Unit overview</button>` : ""}
+            ${firstNoteIdForUnit(unit.id) ? `<button class="unit-study-action notes" data-unit-notes="${escapeHtml(unit.id)}" type="button">📘 Class notes</button>` : ""}
+          </div>
           <div class="unit-progress-summary"><span>Unit progress</span><strong>${pct}%</strong></div>
           <div class="progress-track" aria-label="${masteredCount} of ${unitCards.length} questions secure"><div class="progress-fill" style="width:${pct}%"></div></div>
           <div class="objective-list" aria-label="Learning objectives in ${escapeHtml(unit.title)}">
@@ -2860,7 +2880,6 @@
                 <span>Full unit · ${unitCards.length} revision questions</span>
               </button>
             </div>
-            ${unitOverviewMeta(unit.id) ? `<div class="unit-overview-row"><button class="unit-overview-button" data-unit-overview="${escapeHtml(unit.id)}" type="button">📚 Unit overview</button></div>` : ""}
             ${objectiveRows}
           </div>
         </article>
@@ -2885,11 +2904,81 @@
         openUnitOverviewContext(button.dataset.unitOverview);
       });
     });
+    $$('[data-unit-notes]', els.unitDashboard).forEach((button) => {
+      button.addEventListener('click', (event) => {
+        event.stopPropagation();
+        openUnitNotesContext(button.dataset.unitNotes);
+      });
+    });
   }
 
 
   function renderNotesDashboard() {
     return;
+  }
+
+  function openUnitNotesContext(unitId) {
+    state.noteContext = { unitNotesId: unitId };
+    state.test = null;
+    resetCardInteraction();
+    document.body.classList.add("session-active");
+    els.hubView.classList.add("hidden");
+    els.sessionView.classList.remove("hidden");
+    els.resultPanel.classList.add("hidden");
+    renderSession();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+
+  function renderUnitNotesContext(unitId) {
+    const unitNotes = notesForUnit(unitId);
+    const objectives = objectivesWithNotesForUnit(unitId);
+    if (!unitNotes.length && !objectives.length) {
+      showHub();
+      return;
+    }
+    updateSessionChrome({
+      unitId,
+      title: `${unitTitle(unitId)} class notes`,
+      eyebrow: "Class notes",
+      subtitle: `${unitTitle(unitId)} · choose a note to learn or revise`
+    });
+    els.sessionIndex.textContent = String(unitNotes.length || objectives.length);
+    els.sessionTotal.textContent = " notes";
+    els.resultPanel.classList.add("hidden");
+    const rows = (unitNotes.length ? unitNotes : objectives).map((note) => {
+      const noteId = note.id;
+      const title = note.title || objectiveTitle(noteId);
+      const summary = note.summary || note.subtitle || note.description || "Open this class note for the key ideas and examples.";
+      return `<button class="unit-note-card" data-unit-note-open="${escapeHtml(noteId)}" type="button">
+        <span>Class note</span>
+        <strong>${escapeHtml(title)}</strong>
+        <small>${escapeHtml(summary)}</small>
+      </button>`;
+    }).join("");
+    els.studyPanel.innerHTML = `
+      <article class="study-card note-context-card unit-notes-card">
+        <section class="note-section note-summary">
+          <p class="overview-kicker">Class notes</p>
+          <h2>${escapeHtml(unitTitle(unitId))}</h2>
+          <p>Choose a class note below. Use these notes when a checklist item or question is not secure yet.</p>
+        </section>
+        <section class="note-section">
+          <h3>Available class notes</h3>
+          <div class="unit-notes-grid">${rows}</div>
+        </section>
+        <section class="note-actions">
+          ${unitOverviewMeta(unitId) ? `<button class="secondary-button" data-unit-notes-overview="${escapeHtml(unitId)}" type="button">Open unit overview</button>` : ""}
+          <button class="primary-button" data-overview-action="back" type="button">Back to hub</button>
+        </section>
+      </article>
+    `;
+    $$('[data-unit-note-open]', els.studyPanel).forEach((button) => {
+      button.addEventListener('click', () => openNoteContext(button.dataset.unitNoteOpen));
+    });
+    $$('[data-unit-notes-overview]', els.studyPanel).forEach((button) => {
+      button.addEventListener('click', () => openUnitOverviewContext(button.dataset.unitNotesOverview));
+    });
+    $$('[data-overview-action="back"]', els.studyPanel).forEach((button) => button.addEventListener('click', showHub));
   }
 
   function openUnitOverviewContext(unitId) {
@@ -3257,6 +3346,10 @@
   function renderSession() {
     if (state.noteContext?.overviewUnitId) {
       renderUnitOverviewContext();
+      return;
+    }
+    if (state.noteContext?.unitNotesId) {
+      renderUnitNotesContext(state.noteContext.unitNotesId);
       return;
     }
     if (state.noteContext) {

@@ -1,3 +1,11 @@
+## v1.72.4 — Restore unit study cards and class-note entry
+
+- Restored prominent unit-level study actions on each unit selection card.
+- Added explicit **Unit overview** and **Class notes** buttons directly inside each unit card.
+- Added a unit class-notes chooser so students can open all class notes for a selected unit from one place.
+- Kept the existing sub-unit class-note buttons for targeted notes.
+- Bumped `index.html` cache strings to `1.72.4`.
+
 ## v1.72.3 — Refreshed five overview explainer images
 
 - Replaced the five overview explainer images below with updated source images from `reaction image coverage.zip` and converted them to `webp` in `assets/webp/`:
