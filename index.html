@@ -8,7 +8,7 @@
   <title>Reaction · Year 9 Science Study</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
   <link rel="manifest" href="manifest.webmanifest" />
-  <link rel="stylesheet" href="styles.css?v=1.70.0" />
+  <link rel="stylesheet" href="styles.css?v=1.72.2" />
 </head>
 <body>
   <canvas id="burstCanvas" aria-hidden="true"></canvas>
@@ -52,56 +52,58 @@
           <button class="journey-card status-route route-card-button active" data-mode-select="practice" type="button" role="radio" aria-checked="true">
             <span class="journey-icon">↻</span>
             <strong>Revision journey</strong>
-            <small>Work through selected cards and sort them as you go.</small>
+            <small>Work through selected questions and sort them as you go.</small>
             <em><span id="journeyCount">0 / 0 sorted</span></em>
           </button>
           <button class="journey-card revisit status-route route-card-button" data-mode-select="revisit" type="button" role="radio" aria-checked="false">
             <span class="journey-icon">⟳</span>
             <strong>Revisit</strong>
-            <small>Practise cards you nearly know and want to come back to.</small>
+            <small>Practise questions you nearly know and want to come back to.</small>
             <em><span id="revisitStat">0</span> ready</em>
           </button>
           <button class="journey-card revisit-test status-route route-card-button" data-mode-select="revisit-test" type="button" role="radio" aria-checked="false">
             <span class="journey-icon">↺</span>
             <strong>Revisit test</strong>
-            <small>Build a test from the cards currently in Revisit.</small>
+            <small>Build a test from the questions currently in Revisit.</small>
             <em><span id="hubRevisitTestStat">0</span> ready</em>
           </button>
           <button class="journey-card test status-route route-card-button" data-mode-select="test" type="button" role="radio" aria-checked="false">
             <span class="journey-icon">✓</span>
             <strong>Test your knowledge</strong>
-            <small>Check the cards you have already marked Mastered.</small>
+            <small>Check the questions you have already marked Secure.</small>
             <em><span id="masteredStat">0</span> ready</em>
           </button>
           <button class="journey-card unit-test status-route route-card-button" data-mode-select="unit-test" type="button" role="radio" aria-checked="false">
             <span class="journey-icon">▣</span>
             <strong>End of unit test</strong>
-            <small>Build a written test from one selected unit. No MCQs.</small>
+            <small>Build a written test from one selected unit. No multiple-choice questions.</small>
             <em>Unit-specific</em>
           </button>
           <button class="journey-card written status-route route-card-button" data-mode-select="written" type="button" role="radio" aria-checked="false">
             <span class="journey-icon">✍</span>
             <strong>Written exam mode</strong>
-            <small>Build a written paper with balanced Biology, Chemistry and Physics marks.</small>
+            <small>Build an 80-mark source-style paper with Biology, Chemistry, Physics and Working scientifically.</small>
             <em>15 · 30 · 45 marks</em>
           </button>
         </div>
         <div class="journey-entry-row">
           <div>
             <strong id="selectionSummary">All units selected</strong>
-            <span id="selectionDetail">Use the unit cards below to narrow the journey.</span>
+            <span id="selectionDetail">Use the unit choices below to narrow the journey.</span>
           </div>
           <button id="routeEntryButton" class="primary-button route-entry-button" type="button">Start revision</button>
         </div>
         <div class="written-builder-panel" aria-label="Written exam builder options">
           <div>
             <strong>Written test builder</strong>
-            <span>Choose 15, 30 or 45 marks for written exam practice or an end of unit test.</span>
+            <span>Choose quick written practice, or build a normal 80-mark year-end paper.</span>
           </div>
           <div class="written-builder-actions">
             <button class="secondary-button" data-written-size="15" type="button">Quick · 15 marks</button>
             <button class="secondary-button" data-written-size="30" type="button">Standard · 30 marks</button>
             <button class="secondary-button" data-written-size="45" type="button">Full · 45 marks</button>
+            <a class="secondary-button" href="exam-paper.html">Normal paper · 80 marks</a>
+            <a class="secondary-button" href="year-end-essentials.html">Year-end essentials</a>
           </div>
         </div>
       </section>
@@ -127,7 +129,7 @@
         <span id="hubStudyStat">0</span>
       </div>
 
-      <section class="dashboard-grid" id="unitDashboard" aria-label="Unit status cards"></section>
+      <section class="dashboard-grid" id="unitDashboard" aria-label="Unit choices"></section>
     </section>
 
     <section id="sessionView" class="session-view hidden">
@@ -136,7 +138,7 @@
         <div class="session-title-block">
           <p class="eyebrow" id="sessionEyebrow">Focused session</p>
           <h1 id="sessionTitle">Reaction</h1>
-          <p id="sessionSubtitle">Work through the cards and sort each one into the right learning bucket.</p>
+          <p id="sessionSubtitle">Work through the questions and sort each one into the right learning group.</p>
         </div>
         <div id="sessionUnitArt" class="session-unit-art" aria-hidden="true"></div>
         <div class="session-count">
@@ -150,8 +152,8 @@
     </section>
   </main>
 
-  <script src="data/year9-content.js?v=1.70.0"></script>
-  <script src="data/year9-notes.js?v=1.70.0"></script>
-  <script src="app.js?v=1.70.0"></script>
+  <script src="data/year9-content.js?v=1.72.2"></script>
+  <script src="data/year9-notes.js?v=1.72.2"></script>
+  <script src="app.js?v=1.72.2"></script>
 </body>
 </html>

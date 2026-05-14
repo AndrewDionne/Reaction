@@ -1,7 +1,7 @@
 
 (() => {
-  const content = window.YEAR9_CONTENT || { units: [], cards: [] };
-  const cards = Array.isArray(content.cards) ? content.cards : [];
+  const content = window.YEAR9_CONTENT || { units: [], questions: [] };
+  const questions = Array.isArray(content.cards) ? content.cards : [];
   const units = Array.isArray(content.units) ? content.units : [];
   const learningObjectives = Array.isArray(content.learningObjectives) ? content.learningObjectives : [];
   const notesBundle = window.YEAR9_NOTES || { notes: [] };
@@ -58,27 +58,27 @@
   const modeText = {
     practice: {
       eyebrow: "Revision journey",
-      title: "Work through your revision cards",
-      subtitle: "Answer each card, then sort it into Mastered or Revisit.",
-      empty: "No cards match these filters.",
+      title: "Work through your revision questions",
+      subtitle: "Answer each question, then sort it into Secure or Revisit.",
+      empty: "No questions match these filters.",
     },
     revisit: {
       eyebrow: "Revisit queue",
-      title: "Revisit cards",
-      subtitle: "Practise the cards you want to come back to.",
-      empty: "No Revisit cards match these filters yet.",
+      title: "Revisit questions",
+      subtitle: "Practise the questions you want to come back to.",
+      empty: "No Revisit questions match these filters yet.",
     },
     "revisit-test": {
       eyebrow: "Revisit test",
-      title: "Test your Revisit cards",
-      subtitle: "Build a test from the cards currently in Revisit.",
-      empty: "No Revisit cards match these filters yet.",
+      title: "Test your Revisit questions",
+      subtitle: "Build a test from the questions currently in Revisit.",
+      empty: "No Revisit questions match these filters yet.",
     },
     study: {
       eyebrow: "Need notes queue",
       title: "Review with notes",
-      subtitle: "Review cards where class notes would help.",
-      empty: "No cards are marked for notes with these filters.",
+      subtitle: "Review questions where class notes would help.",
+      empty: "No questions are marked for notes with these filters.",
     },
     "unit-test": {
       eyebrow: "End of unit test",
@@ -95,8 +95,8 @@
     test: {
       eyebrow: "Focused check",
       title: "Test your knowledge",
-      subtitle: "Check the cards you have already marked Mastered.",
-      empty: "No Mastered cards match these filters yet.",
+      subtitle: "Check the questions you have already marked Secure.",
+      empty: "No Secure questions match these filters yet.",
     },
   };
 
@@ -1750,7 +1750,7 @@
   function writtenExamBank() {
     if (writtenExamBankCache) return writtenExamBankCache;
     const curatedIds = new Set(WRITTEN_EXAM_BANK.map((item) => item.id));
-    const derived = cards
+    const derived = questions
       .map(derivedWrittenQuestionFromCard)
       .filter(Boolean)
       .filter((item) => !curatedIds.has(item.id));
@@ -2252,7 +2252,7 @@
   function modeReadyCount(mode = state.selectedMode) {
     if (mode === "written") return writtenExamBank().length;
     if (mode === "unit-test") return unitTestWrittenBank().length;
-    return cardsForMode(mode).length;
+    return questionsForMode(mode).length;
   }
 
   function modeLabel(mode = state.selectedMode) {
@@ -2285,7 +2285,7 @@
   }
 
   function linkedCardsForNote(noteId) {
-    return cards.filter((card) => (card.noteId || card.learningObjective) === noteId);
+    return questions.filter((card) => (card.noteId || card.learningObjective) === noteId);
   }
 
   function objectivesForUnit(unitId) {
@@ -2319,7 +2319,7 @@
 
   function buildQidCounterSeed() {
     const seed = {};
-    cards.forEach((card) => {
+    questions.forEach((card) => {
       const match = String(card.qid || "").match(/^(9[A-Z])-([A-Z]+)-(\d+)$/i);
       if (!match) return;
       const unit = match[1].toUpperCase();
@@ -2446,7 +2446,7 @@
     if (ratio >= 0.6) {
       label = "Looks like a good match";
       tone = "good";
-      guidance = "You included most of the key ideas. If the meaning is clear, mark it Mastered.";
+      guidance = "You included most of the key ideas. If the meaning is clear, mark it Secure.";
     } else if (ratio >= 0.3) {
       label = "Partly there";
       tone = "partial";
@@ -2605,7 +2605,7 @@
 
   function baseFilteredCards() {
     const f = activeFilters();
-    return cards.filter((card) => {
+    return questions.filter((card) => {
       if (!selectionMatchesCard(card, f)) return false;
       if (f.type !== "all" && card.type !== f.type) return false;
       if (f.level !== "all" && String(card.level) !== f.level) return false;
@@ -2645,7 +2645,7 @@
     renderDashboard();
   }
 
-  function cardsForMode(mode = state.mode) {
+  function questionsForMode(mode = state.mode) {
     const base = baseFilteredCards();
     const mastered = new Set(state.progress.masteredIds || []);
     const revisit = new Set(state.progress.revisitIds || []);
@@ -2666,7 +2666,7 @@
 
   function rebuildDeck(resetIndex = true) {
     if (isWrittenMode()) return;
-    state.deck = cardsForMode();
+    state.deck = questionsForMode();
     if (resetIndex || state.index >= state.deck.length) state.index = 0;
     resetCardInteraction();
   }
@@ -2751,15 +2751,15 @@
     const selectedCards = baseFilteredCards();
     const sortedSelected = selectedCards.filter((card) => mastered.has(card.id) || revisit.has(card.id) || study.has(card.id)).length;
     const ready = modeReadyCount(state.selectedMode);
-    if (els.totalCardCount) els.totalCardCount.textContent = cards.length;
+    if (els.totalCardCount) els.totalCardCount.textContent = questions.length;
     if (els.journeyCount) els.journeyCount.textContent = `${sortedSelected} / ${selectedCards.length} sorted`;
     if (els.xpStat) els.xpStat.textContent = state.progress.xp || 0;
     if (els.streakStat) els.streakStat.textContent = state.progress.streak || 0;
-    if (els.masteredStat) els.masteredStat.textContent = cardsForMode("test").length;
+    if (els.masteredStat) els.masteredStat.textContent = questionsForMode("test").length;
     if (els.hubMasteredStat) els.hubMasteredStat.textContent = mastered.size;
-    if (els.revisitStat) els.revisitStat.textContent = cardsForMode("revisit").length;
+    if (els.revisitStat) els.revisitStat.textContent = questionsForMode("revisit").length;
     if (els.hubRevisitStat) els.hubRevisitStat.textContent = revisit.size;
-    if (els.hubRevisitTestStat) els.hubRevisitTestStat.textContent = cardsForMode("revisit-test").length;
+    if (els.hubRevisitTestStat) els.hubRevisitTestStat.textContent = questionsForMode("revisit-test").length;
     if (els.studyStat) els.studyStat.textContent = study.size;
     if (els.hubStudyStat) els.hubStudyStat.textContent = study.size;
     if (els.routeEntryButton) {
@@ -2787,8 +2787,8 @@
           : "End of unit test: choose exactly one unit";
       } else if (state.selectedMode === "revisit-test") {
         els.selectionSummary.textContent = `Revisit test: ${ready} Revisit card${ready === 1 ? "" : "s"} available`;
-      } else if (!unitCount && !objectiveCount) els.selectionSummary.textContent = `Selected cards: all units · ${ready} card${ready === 1 ? "" : "s"}`;
-      else els.selectionSummary.textContent = `Selected cards: ${unitCount || "all"} unit${unitCount === 1 ? "" : "s"} · ${objectiveCount} sub-unit${objectiveCount === 1 ? "" : "s"} · ${ready} card${ready === 1 ? "" : "s"}`;
+      } else if (!unitCount && !objectiveCount) els.selectionSummary.textContent = `Selected questions: all units · ${ready} card${ready === 1 ? "" : "s"}`;
+      else els.selectionSummary.textContent = `Selected questions: ${unitCount || "all"} unit${unitCount === 1 ? "" : "s"} · ${objectiveCount} sub-unit${objectiveCount === 1 ? "" : "s"} · ${ready} card${ready === 1 ? "" : "s"}`;
     }
     if (els.selectionDetail) {
       els.selectionDetail.textContent = state.selectedMode === "written"
@@ -2814,7 +2814,7 @@
     const study = new Set(state.progress.studyIds || []);
 
     els.unitDashboard.innerHTML = units.map((unit) => {
-      const unitCards = cards.filter((card) => card.unit === unit.id);
+      const unitCards = questions.filter((card) => card.unit === unit.id);
       const masteredCount = unitCards.filter((card) => mastered.has(card.id)).length;
       const revisitCount = unitCards.filter((card) => revisit.has(card.id)).length;
       const studyCount = unitCards.filter((card) => study.has(card.id)).length;
@@ -2833,8 +2833,8 @@
           return `<div class="objective-row ${selectedObjective ? "selected" : ""}">
             <button class="objective-toggle" data-objective-toggle="${escapeHtml(objective.id)}" type="button" aria-pressed="${selectedObjective}">
               <strong>${escapeHtml(objective.title)}</strong>
-              <span>${objectiveCards.length} cards · ${objectiveMastered}/${objectiveCards.length} mastered · ${objectiveRevisit} revisit · ${objectiveStudy} notes</span>
-              <span class="objective-progress-track" aria-label="${objectiveMastered} of ${objectiveCards.length} cards mastered"><i style="width:${objectivePct}%"></i></span>
+              <span>${objectiveCards.length} questions · ${objectiveMastered}/${objectiveCards.length} secure · ${objectiveRevisit} revisit · ${objectiveStudy} notes</span>
+              <span class="objective-progress-track" aria-label="${objectiveMastered} of ${objectiveCards.length} questions secure"><i style="width:${objectivePct}%"></i></span>
             </button>
             <button class="objective-notes-button" data-note-open="${escapeHtml(objective.id)}" type="button" aria-label="Open class notes for ${escapeHtml(objective.title)}"><span aria-hidden="true">📘</span><span class="notes-button-text">Class Notes</span></button>
           </div>`;
@@ -2845,19 +2845,19 @@
           ${graphic ? `<div class="unit-graphic"><img src="${escapeHtml(graphic)}" alt="" loading="lazy"></div>` : ""}
           <div class="unit-summary-row">
             <span class="pill">${sortedCount} / ${unitCards.length} sorted</span>
-            <span class="pill good">${masteredCount}/${unitCards.length} mastered</span>
+            <span class="pill good">${masteredCount}/${unitCards.length} secure</span>
             <span class="pill warn">${revisitCount} revisit</span>
             <span class="pill study">${studyCount} notes</span>
           </div>
           <h3>${escapeHtml(unit.title)}</h3>
           <p>${escapeHtml(unit.theme)}</p>
           <div class="unit-progress-summary"><span>Unit progress</span><strong>${pct}%</strong></div>
-          <div class="progress-track" aria-label="${masteredCount} of ${unitCards.length} cards mastered"><div class="progress-fill" style="width:${pct}%"></div></div>
+          <div class="progress-track" aria-label="${masteredCount} of ${unitCards.length} questions secure"><div class="progress-fill" style="width:${pct}%"></div></div>
           <div class="objective-list" aria-label="Learning objectives in ${escapeHtml(unit.title)}">
             <div class="objective-row full-unit-row ${selectedUnit ? "selected" : ""}">
               <button class="objective-toggle full-unit-toggle" data-unit-toggle="${escapeHtml(unit.id)}" type="button" aria-pressed="${selectedUnit}">
                 <strong>${escapeHtml(unit.title)}</strong>
-                <span>Full unit · ${unitCards.length} revision cards</span>
+                <span>Full unit · ${unitCards.length} revision questions</span>
               </button>
             </div>
             ${unitOverviewMeta(unit.id) ? `<div class="unit-overview-row"><button class="unit-overview-button" data-unit-overview="${escapeHtml(unit.id)}" type="button">📚 Unit overview</button></div>` : ""}
@@ -2925,45 +2925,18 @@
     `).join("")}</div>`;
   }
 
-  function overviewStatusLabel(status) {
-    const labels = {
-      covered: "Ready",
-      partial: "Practise more",
-      check: "Check"
-    };
-    return labels[status] || "Check";
-  }
-
-  function renderOverviewStatus(items = []) {
-    if (!Array.isArray(items) || !items.length) return "";
-    return `<div class="overview-status-grid">${items.map((item) => `
-      <article class="overview-status-card status-${escapeHtml(item.status || "partial")}">
-        <span class="overview-status-pill">${escapeHtml(overviewStatusLabel(item.status))}</span>
-        <strong>${escapeHtml(item.title || "Revision visual")}</strong>
-        <p>${escapeHtml(item.detail || "")}</p>
-      </article>
-    `).join("")}</div>`;
-  }
-
-  function renderInfographicBacklog(items = []) {
-    if (!Array.isArray(items) || !items.length) return "";
-    return `<div class="overview-backlog-list">${items.map((item) => `
-      <article class="overview-backlog-card priority-${escapeHtml(item.priority || "medium")}">
-        <span>${escapeHtml((item.priority || "medium").toUpperCase())}</span>
-        <div>
-          <strong>${escapeHtml(item.title || "Infographic")}</strong>
-          <p>${escapeHtml(item.purpose || "")}</p>
-        </div>
-      </article>
-    `).join("")}</div>`;
-  }
-
   function renderVocabularySections(sections = []) {
     if (!Array.isArray(sections) || !sections.length) return "";
+    const entries = (terms = []) => terms.map((entry) => {
+      if (entry && typeof entry === "object") {
+        return { term: String(entry.term || "").trim(), definition: String(entry.definition || "").trim() };
+      }
+      return { term: String(entry || "").trim(), definition: "" };
+    }).filter((entry) => entry.term);
     return `<div class="overview-vocabulary-list">${sections.map((section) => `
       <details class="overview-vocab-group">
         <summary>${escapeHtml(section.title || "Vocabulary")}</summary>
-        <div class="overview-vocab-terms">${(section.terms || []).map((term) => `<span>${escapeHtml(term)}</span>`).join("")}</div>
+        <div class="overview-vocab-terms">${entries(section.terms || []).map((item) => `<article class="overview-vocab-entry"><strong>${escapeHtml(item.term)}</strong>${item.definition ? `<p>${escapeHtml(item.definition)}</p>` : ""}</article>`).join("")}</div>
       </details>
     `).join("")}</div>`;
   }
@@ -2981,14 +2954,14 @@
   function renderOverviewPracticeLinks(qids = []) {
     const clean = Array.isArray(qids) ? qids.filter(Boolean) : [];
     if (!clean.length) return "";
-    return `<div class="overview-practice-row"><strong>Practise:</strong>${clean.map((qid) => `<button class="overview-qid-button" data-overview-practice="${escapeHtml(qid)}" type="button">${escapeHtml(qid)}</button>`).join("")}</div>`;
+    return `<div class="overview-practice-row"><strong>Practise questions:</strong>${clean.map((qid) => `<button class="overview-qid-button" data-overview-practice="${escapeHtml(qid)}" type="button">${escapeHtml(qid)}</button>`).join("")}</div>`;
   }
 
   function renderOverviewClassNoteLink(noteId) {
     if (!noteId) return "";
     const note = noteMeta(noteId);
     if (!note) return "";
-    return `<button class="secondary-button overview-note-button" data-overview-note="${escapeHtml(noteId)}" type="button">Open class notes: ${escapeHtml(note.title)}</button>`;
+    return `<button class="secondary-button overview-note-button" data-overview-note="${escapeHtml(noteId)}" type="button">Learn this: ${escapeHtml(note.title)}</button>`;
   }
 
   function renderTargetedChecklistItem(item = {}, index = 0) {
@@ -3015,7 +2988,7 @@
   }
 
   function qidCard(qid) {
-    return cards.find((card) => card.qid === qid || card.id === qid);
+    return questions.find((card) => card.qid === qid || card.id === qid);
   }
 
   function practiceOverviewQids(qidString = "") {
@@ -3032,7 +3005,7 @@
 
   function renderTargetedUnitOverview(overview) {
     const target = overview.targetedOverview;
-    const unitCards = cards.filter((card) => card.unit === overview.unit);
+    const unitCards = questions.filter((card) => card.unit === overview.unit);
     updateSessionChrome({
       unitId: overview.unit,
       title: unitTitle(overview.unit),
@@ -3040,7 +3013,7 @@
       subtitle: `${unitTitle(overview.unit)} · What to know, understand and practise`
     });
     els.sessionIndex.textContent = String(unitCards.length);
-    els.sessionTotal.textContent = " cards";
+    els.sessionTotal.textContent = " questions";
     els.resultPanel.classList.add("hidden");
     els.studyPanel.innerHTML = `
       <article class="study-card note-context-card unit-overview-card targeted-overview-card">
@@ -3055,7 +3028,7 @@
         </section>
         <section class="note-section targeted-overview-section vocabulary-section">
           <h3>Must know vocabulary</h3>
-          <p class="overview-section-help">Open a group, check the terms, then use the vocabulary cards if any words are unfamiliar.</p>
+          <p class="overview-section-help">Open a group, check the terms, then use the vocabulary questions if any words are unfamiliar.</p>
           ${renderVocabularySections(target.vocabulary)}
         </section>
         ${renderTargetedChecklistSection("Must understand", target.understand, "must-understand-section")}
@@ -3090,7 +3063,7 @@
       renderTargetedUnitOverview(overview);
       return;
     }
-    const unitCards = cards.filter((card) => card.unit === overview.unit);
+    const unitCards = questions.filter((card) => card.unit === overview.unit);
     updateSessionChrome({
       unitId: overview.unit,
       title: unitTitle(overview.unit),
@@ -3098,7 +3071,7 @@
       subtitle: `${unitTitle(overview.unit)} · Unit map`
     });
     els.sessionIndex.textContent = String(unitCards.length);
-    els.sessionTotal.textContent = " cards";
+    els.sessionTotal.textContent = " questions";
     els.resultPanel.classList.add("hidden");
     els.studyPanel.innerHTML = `
       <article class="study-card note-context-card unit-overview-card">
@@ -3188,7 +3161,7 @@
   function renderNoteContext() {
     const ctx = state.noteContext;
     const note = noteMeta(ctx?.noteId);
-    const sourceCard = ctx?.cardId ? cards.find((card) => card.id === ctx.cardId) : null;
+    const sourceCard = ctx?.cardId ? questions.find((card) => card.id === ctx.cardId) : null;
     const returnOverviewUnitId = ctx?.returnOverviewUnitId || "";
     if (!note) {
       state.noteContext = null;
@@ -3201,11 +3174,11 @@
     updateSessionChrome({
       unitId: note.unit,
       title: "Reaction",
-      eyebrow: sourceCard ? "Study this concept" : (returnOverviewUnitId ? "Class notes from overview" : "Class notes"),
+      eyebrow: sourceCard ? "Study this concept" : (returnOverviewUnitId ? "Class notes" : "Class notes"),
       subtitle: `${unitTitle(note.unit)} · ${note.title}`
     });
     els.sessionIndex.textContent = String(linked.length);
-    els.sessionTotal.textContent = " related cards";
+    els.sessionTotal.textContent = " related questions";
     els.resultPanel.classList.add("hidden");
 
     els.studyPanel.innerHTML = `
@@ -3237,12 +3210,12 @@
         ${note.practicePrompt ? `<section class="note-section practice-note"><h3>Try next</h3><p>${escapeHtml(note.practicePrompt)}</p></section>` : ""}
         <div class="card-actions">
           ${sourceCard ? `
-            <button class="primary-button" data-note-action="mastered" type="button">I get it now · Mastered</button>
+            <button class="primary-button" data-note-action="mastered" type="button">I get it now · Secure</button>
             <button class="secondary-button" data-note-action="revisit" type="button">Almost · Revisit</button>
             <button class="danger-button" data-note-action="study" type="button">Use notes again</button>
             <button class="secondary-button" data-note-action="back-card" type="button">Back to card</button>
           ` : `
-            <button class="primary-button" data-note-action="practice" type="button">Practise related cards</button>
+            <button class="primary-button" data-note-action="practice" type="button">Practise related questions</button>
             ${returnOverviewUnitId ? `<button class="secondary-button" data-note-action="back-overview" type="button">Back to unit overview</button>` : `<button class="secondary-button" data-note-action="hub" type="button">Back to hub</button>`}
           `}
         </div>
@@ -3377,7 +3350,7 @@
         <ul>
           <li>Say the key idea out loud in your own words.</li>
           <li>Use the diagram or question clue if one is shown.</li>
-          <li>Use Class Notes, then move the card to Revisit or Mastered.</li>
+          <li>Use Class Notes, then move the card to Revisit or Secure.</li>
         </ul>
       </aside>
     `;
@@ -3468,7 +3441,7 @@
 
   function renderWrittenMarkScheme(question, awarded) {
     const typed = writtenCurrentAnswer(question).trim();
-    const sourceCard = question.sourceCardId ? cards.find((card) => card.id === question.sourceCardId) : null;
+    const sourceCard = question.sourceCardId ? questions.find((card) => card.id === question.sourceCardId) : null;
     const addedToRevisit = Boolean(state.written?.revisitAdded?.[question.id]);
     const markButtons = Array.from({ length: question.marks + 1 }, (_, mark) => {
       const active = awarded === mark ? " active" : "";
@@ -3523,7 +3496,7 @@
       return;
     }
     if (action === "add-revisit") {
-      const sourceCard = question.sourceCardId ? cards.find((card) => card.id === question.sourceCardId) : null;
+      const sourceCard = question.sourceCardId ? questions.find((card) => card.id === question.sourceCardId) : null;
       if (sourceCard) {
         const mastered = new Set(state.progress.masteredIds || []);
         const revisit = new Set(state.progress.revisitIds || []);
@@ -3613,7 +3586,7 @@
     els.resultPanel.innerHTML = `
       <h2>${isUnitTest ? "End of unit test complete" : "Written exam complete"}</h2>
       <p>You self-marked <strong>${awarded}/${total}</strong> (${percent}%).</p>
-      ${isUnitTest ? `<h3>Sub-unit coverage</h3>
+      ${isUnitTest ? `<h3>Sub-units practised</h3>
       <div class="written-domain-summary written-objective-summary">
         ${byObjective.map((item) => `<div><strong>${escapeHtml(item.title)}</strong><span>${item.awarded}/${item.total}</span></div>`).join("")}
       </div>` : `<h3>Science balance</h3>
@@ -3663,7 +3636,7 @@
             ${questionIdentifier(card) ? `<span class="pill question-id-pill">${escapeHtml(questionIdentifier(card))}</span>` : ""}
             ${card.learningObjective ? `<span class="pill objective-pill">${escapeHtml(objectiveTitle(card.learningObjective))}</span>` : ""}
             <span class="pill">Level ${card.level}</span>
-            ${(!isMcq && membership.mastered) ? `<span class="pill good">mastered</span>` : ""}
+            ${(!isMcq && membership.mastered) ? `<span class="pill good">secure</span>` : ""}
             ${(!isMcq && membership.revisit) ? `<span class="pill warn">revisit</span>` : ""}
             ${(!isMcq && membership.study) ? `<span class="pill study">notes</span>` : ""}
           </div>
@@ -3690,7 +3663,7 @@
 
         ${!testMode && !isMcq && (!isDefinition || state.definitionCompared) ? `
           <div class="state-actions" aria-label="Learning state">
-            <button class="primary-button" data-state="mastered" type="button">Good match · Mastered</button>
+            <button class="primary-button" data-state="mastered" type="button">Good match · Secure</button>
             <button class="secondary-button" data-state="revisit" type="button">Nearly there · Revisit</button>
           </div>
         ` : ""}
@@ -3767,7 +3740,7 @@
             ${note ? `<button class="secondary-button class-notes-button" data-action="study-context" type="button">Open Class Notes</button>` : ""}
           </div>
         ` : `
-          <p class="definition-hint">Your wording does not need to be identical. The comparison checks for key ideas, then you choose the final status.</p>
+          <p class="definition-hint">Your wording does not need to be identical. The comparison checks for key ideas, then you choose what to do next.</p>
         `}
       </div>
     `;
@@ -3911,13 +3884,13 @@
       <h2>Session complete</h2>
       <p>You reviewed <strong>${counts.reviewed}/${total}</strong> card${total === 1 ? "" : "s"}.</p>
       <div class="session-summary-grid">
-        <div><strong>${counts.mastered}</strong><span>mastered</span></div>
+        <div><strong>${counts.mastered}</strong><span>secure</span></div>
         <div><strong>${counts.revisit}</strong><span>revisit</span></div>
         <div><strong>${counts.study}</strong><span>notes</span></div>
       </div>
       <p>${counts.revisit ? `Next: review your ${counts.revisit} Revisit card${counts.revisit === 1 ? "" : "s"}.` : counts.study ? `Next: open Class Notes for ${counts.study} card${counts.study === 1 ? "" : "s"}.` : "Next: test your knowledge when you feel ready."}</p>
       <div class="card-actions">
-        ${counts.revisit ? `<button class="primary-button" data-result-action="revisit" type="button">Review Revisit cards</button>` : ""}
+        ${counts.revisit ? `<button class="primary-button" data-result-action="revisit" type="button">Review Revisit questions</button>` : ""}
         ${counts.mastered ? `<button class="secondary-button" data-result-action="test" type="button">Test your knowledge</button>` : ""}
         <button class="secondary-button" data-result-action="hub" type="button">Back to revision hub</button>
       </div>
@@ -3972,11 +3945,11 @@
     els.studyPanel.innerHTML = "";
     els.resultPanel.classList.remove("hidden");
     const revisitMode = state.mode === "revisit-test";
-    const canRunAgain = cardsForMode(revisitMode ? "revisit-test" : "test").length > 0;
+    const canRunAgain = questionsForMode(revisitMode ? "revisit-test" : "test").length > 0;
     els.resultPanel.innerHTML = `
       <h2>${revisitMode ? "Revisit test complete" : "Test complete"}</h2>
       <p>You scored <strong>${score}/${total}</strong> (${percent}%).</p>
-      <p>${revisitMode ? (percent === 100 ? "All tested cards moved to Mastered." : "Correct answers moved to Mastered. Missed cards stayed in Revisit.") : (percent === 100 ? "Perfect. Those cards stayed mastered." : "Missed cards were moved into Revisit.")}</p>
+      <p>${revisitMode ? (percent === 100 ? "All tested questions moved to Secure." : "Correct answers moved to Secure. Missed questions stayed in Revisit.") : (percent === 100 ? "Perfect. Those questions stayed secure." : "Missed questions were moved into Revisit.")}</p>
       <div class="card-actions">
         <button class="primary-button" data-result-action="hub" type="button">Back to revision hub</button>
         ${canRunAgain ? `<button class="secondary-button" data-result-action="again" type="button">${revisitMode ? "Build another Revisit test" : "Test again"}</button>` : ""}
@@ -4133,6 +4106,15 @@
     els.importProgressFile.addEventListener("change", importProgress);
   }
 
+  function initDeepLink() {
+    const hash = String(window.location.hash || "").replace(/^#/, "");
+    const match = hash.match(/^note=([^&]+)/);
+    if (!match) return;
+    const noteId = decodeURIComponent(match[1]);
+    if (!noteMeta(noteId)) return;
+    setTimeout(() => openNoteContext(noteId), 0);
+  }
+
   function init() {
     state.sound = state.progress.sound !== false;
     initFilters();
@@ -4140,6 +4122,7 @@
     renderStats();
     renderDashboard();
     renderNotesDashboard();
+    initDeepLink();
   }
 
   init();

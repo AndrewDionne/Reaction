@@ -1,3 +1,94 @@
+## v1.72.2 — Year-end essentials promoted to class notes
+
+- Added full class notes for repeated source-exam essentials: cells/microscopy, digestion/enzymes/food tests, acids/alkalis, states/particles/density, waves/light/sound, energy resources, and working scientifically.
+- Updated revision answer-key learn-more links so source-exam topics now open app class notes via `index.html#note=...`.
+- Added **Open class notes** links to `year-end-essentials.html` topic blocks.
+- Added `tools/validate_learn_more_links.py` to check that exam-bank learn-more note links resolve to existing class notes.
+
+## v1.72.1 — Revision answer key enhancement
+
+- Added answer-key mode selector to `exam-paper.html` with **Mark scheme** and **Revision answer key** modes.
+- Added expanded revision explanations, learn-more links and common-mistake guidance to exam-paper subquestions.
+- Added the same revision-support fields to `data/year9-source-style-question-bank.js`.
+- Added class-note deep-link support in `app.js` for links such as `index.html#note=9J-circuits`.
+- Added anchors to `year-end-essentials.html` so source-exam gap topics can be linked from the revision answer key.
+- Updated validators to require answer explanations and learn-more/practice references.
+
+## v1.72.0 — Year-end essentials expansion and 80-mark paper focus
+
+- Retired the active 110-mark challenge paper format from the exam builder.
+- Removed the **Challenge 110-mark** mode from `exam-paper.html`.
+- Kept the exam builder focused on normal 80-mark papers, source examples and section-only practice.
+- Added `YEAREND-NORMAL-80-C`, a third 80-mark source-style generated paper.
+- Expanded `year-end-essentials.html` into a detailed source-style study checklist with must-know content and exam wording patterns.
+- Added `data/year9-source-style-question-bank.js` as a reusable source-style subquestion bank for future randomised papers.
+- Added `tools/validate_source_style_question_bank.py`.
+
+## v1.71.4 — Normal 80-mark paper mode and year-end essentials
+
+- Added two source-style 80-mark normal practice papers to `data/year9-exam-paper-bank.js`.
+- Added a paper mode selector in `exam-paper.html`: Normal 80-mark, Challenge 110-mark, Source examples, and All papers.
+- Kept the existing 110-mark papers as challenge papers.
+- Added `year-end-essentials.html` as a study checklist based on the two uploaded source-style exams.
+- Updated the written-builder links on the home page to point students toward the normal 80-mark paper and year-end essentials.
+- Extended the exam-paper validator to accept source-style command words such as `name`, `complete`, `interpret`, and `suggest`.
+
+## v1.71.3 — Program test alignment audit
+
+- Generated program paper samples from the current exam-paper bank for Paper B and Paper C.
+- Compared generated papers against the two uploaded source exams.
+- Added an alignment matrix covering topic family, source-exam overlap, and command-word wording.
+- Added a coverage-gap audit showing source-exam topics that need stronger study content in the app.
+- Recommended a shorter 80–90 mark normal paper mode and keeping the 110-mark paper as a challenge paper.
+
+## v1.71.2 — Source exam 2 logging and overlap audit
+
+- Added the second user-provided practice examination as `YEAREND-PAPER-D-SOURCE2` in `data/year9-exam-paper-bank.js`.
+- Preserved the source paper as a selectable Paper D / normal-version paper.
+- Documented that the second paper cover states 80 marks, while visible question-block marks sum to 88.
+- Added `docs/EXAM_SOURCE_COMPARISON_v1_71_2.md` and `.csv` to compare the two source papers and identify repeated topic/question trends.
+
+## v1.71.1 — Exam paper variants and section practice
+
+- Added Paper A, Paper B and Paper C to `data/year9-exam-paper-bank.js`.
+- Added a paper selector and random paper button to `exam-paper.html`.
+- Added section-only filtering for Biology, Chemistry, Physics and Working scientifically.
+- Updated total marks and answer key rendering so they follow the selected paper/section.
+
+## v1.71.0 — Year-end exam paper format
+
+- Added `exam-paper.html`, a print/PDF-friendly year-end written paper view.
+- Added `data/year9-exam-paper-bank.js` with a structured section/question/part/answer-key data model based on the uploaded year-end exam example.
+- Added Biology, Chemistry, Physics and Working scientifically sections with topic-level question blocks.
+- Added lined answer spaces, graph grid rendering and a separate answer key.
+- Added a `Year-end paper · 110 marks` entry point in the written builder panel.
+
+## v1.70.3 — Generated and integrated overview explainer images
+
+- Generated and added five new full-width overview explainer images in `assets/webp/`.
+- Replaced the targeted overview image references for biodiversity conservation, peer review, metal extraction, metal reaction products, and wire resistance.
+- Updated `data/year9-notes.js` to wire the new images into the relevant overview checklist items.
+- Bumped cache-busting query strings in `index.html` to `1.70.3`.
+
+## v1.70.2 — Vocabulary definitions, secure label, and image prompt audit
+
+- Replaced visible **Mastered** wording with **Secure** across the student UI and guided note prompts.
+- Kept question IDs visible as small badge-style labels on question cards and written questions.
+- Upgraded targeted unit overview vocabulary lists so each term now shows a direct definition when opened.
+- Updated the overview review export so vocabulary definitions appear in the audit view.
+- Tightened the question-ID badge styling so it stays compact.
+- Added `docs/OVERVIEW_IMAGE_PROMPTS_v1_70_2.md` and `docs/OVERVIEW_IMAGE_NEEDS_v1_70_2.csv` for the remaining overview-image gaps.
+- Extended `tools/validate_unit_overviews.py` so vocabulary entries must include definitions.
+
+## v1.70.1 — Overview QA and student-language cleanup
+
+- Audited the targeted unit overview mode for student-facing wording.
+- Removed leftover developer/reviewer wording from visible overview and review-export text.
+- Fixed an extra closing section tag in the targeted overview render.
+- Changed visible “card” wording to “question” where it appears in student-facing instructions.
+- Removed unused legacy overview status/backlog render helpers.
+- Kept the targeted overview structure and coverage mapping from v1.70.0.
+
 ## v1.70.0 - Targeted unit overview checklist
 
 - Replaced the unit overview mode with a targeted learning checklist structure.

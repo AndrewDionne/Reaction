@@ -1,5 +1,5 @@
 window.YEAR9_NOTES = {
-  "version": "1.70.0",
+  "version": "1.72.2",
   "title": "Year 9 Science Class Notes and Visual Unit Overviews",
   "unitOverviews": [
     {
@@ -126,48 +126,144 @@ window.YEAR9_NOTES = {
           {
             "title": "Variation and classification",
             "terms": [
-              "genus",
-              "species",
-              "variation",
-              "characteristic",
-              "classification",
-              "continuous variation",
-              "discontinuous variation",
-              "environmental variation",
-              "inherited variation",
-              "ecosystem",
-              "biotic factor",
-              "abiotic factor"
+              {
+                "term": "genus",
+                "definition": "A group of closely related species."
+              },
+              {
+                "term": "species",
+                "definition": "A group of organisms that can reproduce and have fertile offspring."
+              },
+              {
+                "term": "variation",
+                "definition": "The differences between individuals of the same species."
+              },
+              {
+                "term": "characteristic",
+                "definition": "A feature or trait of a living organism."
+              },
+              {
+                "term": "classification",
+                "definition": "The way living things are grouped by shared features."
+              },
+              {
+                "term": "continuous variation",
+                "definition": "Variation with a full range of values, such as height."
+              },
+              {
+                "term": "discontinuous variation",
+                "definition": "Variation with separate categories, such as blood group."
+              },
+              {
+                "term": "environmental variation",
+                "definition": "Differences caused mainly by surroundings or conditions."
+              },
+              {
+                "term": "inherited variation",
+                "definition": "Differences caused by genes passed on from parents."
+              },
+              {
+                "term": "ecosystem",
+                "definition": "A community of organisms interacting with each other and their environment."
+              },
+              {
+                "term": "biotic factor",
+                "definition": "A living factor in an ecosystem."
+              },
+              {
+                "term": "abiotic factor",
+                "definition": "A non-living factor in an ecosystem."
+              }
             ]
           },
           {
             "title": "DNA and inheritance",
             "terms": [
-              "gamete",
-              "fertilisation",
-              "zygote",
-              "gene",
-              "chromosome",
-              "DNA",
-              "nucleus",
-              "genetic information",
-              "offspring",
-              "normal distribution",
-              "probability"
+              {
+                "term": "gamete",
+                "definition": "A sex cell such as a sperm cell or egg cell."
+              },
+              {
+                "term": "fertilisation",
+                "definition": "The joining of male and female gametes."
+              },
+              {
+                "term": "zygote",
+                "definition": "The fertilised egg cell formed after fertilisation."
+              },
+              {
+                "term": "gene",
+                "definition": "A short section of DNA that codes for a feature or protein."
+              },
+              {
+                "term": "chromosome",
+                "definition": "A long coiled DNA molecule that contains many genes."
+              },
+              {
+                "term": "DNA",
+                "definition": "The molecule that carries genetic information."
+              },
+              {
+                "term": "nucleus",
+                "definition": "The part of a cell that contains the genetic material."
+              },
+              {
+                "term": "genetic information",
+                "definition": "The coded instructions carried in DNA."
+              },
+              {
+                "term": "offspring",
+                "definition": "The young produced by parent organisms."
+              },
+              {
+                "term": "normal distribution",
+                "definition": "A bell-shaped pattern where most values are near the average."
+              },
+              {
+                "term": "probability",
+                "definition": "How likely an event is to happen."
+              }
             ]
           },
           {
             "title": "Evolution and biodiversity",
             "terms": [
-              "adaptation",
-              "biodiversity",
-              "competition",
-              "endangered",
-              "extinct",
-              "food web",
-              "gene bank",
-              "natural selection",
-              "evolution"
+              {
+                "term": "adaptation",
+                "definition": "A feature that helps an organism survive in its environment."
+              },
+              {
+                "term": "biodiversity",
+                "definition": "The variety of different living species in an area."
+              },
+              {
+                "term": "competition",
+                "definition": "The struggle between organisms for the same limited resources."
+              },
+              {
+                "term": "endangered",
+                "definition": "At serious risk of becoming extinct."
+              },
+              {
+                "term": "extinct",
+                "definition": "When all members of a species have died out."
+              },
+              {
+                "term": "food web",
+                "definition": "A network of linked food chains."
+              },
+              {
+                "term": "gene bank",
+                "definition": "A store of seeds, cells or DNA for future use."
+              },
+              {
+                "term": "natural selection",
+                "definition": "The process where better-adapted organisms are more likely to survive and reproduce."
+              },
+              {
+                "term": "evolution",
+                "definition": "The gradual change of species over long periods of time."
+              }
             ]
           }
         ],
@@ -279,7 +375,7 @@ window.YEAR9_NOTES = {
             ],
             "noteId": "9A-biodiversity",
             "media": [
-              "assets/webp/9A-conservation-biodiversity-methods-notes-r167.webp"
+              "assets/webp/9A-conservation-methods-overview.webp"
             ],
             "practice": [
               "9A-WE-28",
@@ -349,7 +445,7 @@ window.YEAR9_NOTES = {
             ],
             "noteId": "9A-biodiversity",
             "media": [
-              "assets/webp/9A-seed-bank-conservation.webp"
+              "assets/webp/9A-conservation-methods-overview.webp"
             ],
             "practice": [
               "9A-WE-28",
@@ -396,6 +492,9 @@ window.YEAR9_NOTES = {
             "practice": [
               "9A-WE-23",
               "9A-WE-28"
+            ],
+            "media": [
+              "assets/webp/9A-conservation-methods-overview.webp"
             ]
           }
         ]
@@ -512,53 +611,164 @@ window.YEAR9_NOTES = {
           {
             "title": "Photosynthesis and respiration",
             "terms": [
-              "photosynthesis",
-              "chlorophyll",
-              "chloroplast",
-              "glucose",
-              "limiting factor",
-              "raw material",
-              "reactant",
-              "product",
-              "aerobic respiration",
-              "ATP"
+              {
+                "term": "photosynthesis",
+                "definition": "The process by which plants make glucose using light energy."
+              },
+              {
+                "term": "chlorophyll",
+                "definition": "The green pigment that absorbs light for photosynthesis."
+              },
+              {
+                "term": "chloroplast",
+                "definition": "The part of a plant cell where photosynthesis happens."
+              },
+              {
+                "term": "glucose",
+                "definition": "A simple sugar made in photosynthesis."
+              },
+              {
+                "term": "limiting factor",
+                "definition": "A factor that stops a process increasing further."
+              },
+              {
+                "term": "raw material",
+                "definition": "A substance used up to make a product."
+              },
+              {
+                "term": "reactant",
+                "definition": "A starting substance in a chemical reaction."
+              },
+              {
+                "term": "product",
+                "definition": "A new substance made in a reaction."
+              },
+              {
+                "term": "aerobic respiration",
+                "definition": "Respiration that releases energy using oxygen."
+              },
+              {
+                "term": "ATP",
+                "definition": "The energy-carrying molecule made in respiration."
+              }
             ]
           },
           {
             "title": "Plant transport and adaptations",
             "terms": [
-              "xylem",
-              "phloem",
-              "root hair cell",
-              "stoma/stomata",
-              "guard cell",
-              "palisade cell",
-              "diffusion",
-              "gas exchange",
-              "surface area",
-              "mineral salt",
-              "wilting"
+              {
+                "term": "xylem",
+                "definition": "Plant tissue that transports water and mineral ions."
+              },
+              {
+                "term": "phloem",
+                "definition": "Plant tissue that transports sugars around the plant."
+              },
+              {
+                "term": "root hair cell",
+                "definition": "A root cell adapted to absorb water and mineral ions."
+              },
+              {
+                "term": "stoma/stomata",
+                "definition": "A tiny pore in a leaf used for gas exchange."
+              },
+              {
+                "term": "guard cell",
+                "definition": "A cell that opens and closes a stoma."
+              },
+              {
+                "term": "palisade cell",
+                "definition": "A leaf cell packed with chloroplasts for photosynthesis."
+              },
+              {
+                "term": "diffusion",
+                "definition": "The spreading of particles from high concentration to low concentration."
+              },
+              {
+                "term": "gas exchange",
+                "definition": "The movement of gases into and out of an organism."
+              },
+              {
+                "term": "surface area",
+                "definition": "The total area of an exposed surface."
+              },
+              {
+                "term": "mineral salt",
+                "definition": "A mineral ion needed by plants for healthy growth."
+              },
+              {
+                "term": "wilting",
+                "definition": "Drooping caused by loss of water from plant cells."
+              }
             ]
           },
           {
             "title": "Plant products and farming",
             "terms": [
-              "starch",
-              "cellulose",
-              "lipid",
-              "protein",
-              "nitrate",
-              "magnesium",
-              "fertiliser",
-              "pesticide",
-              "herbicide",
-              "insecticide",
-              "fungicide",
-              "yield",
-              "selective breeding",
-              "cross-breeding",
-              "sustainable development",
-              "biodiversity"
+              {
+                "term": "starch",
+                "definition": "A storage carbohydrate made from many glucose molecules."
+              },
+              {
+                "term": "cellulose",
+                "definition": "The strong material that makes plant cell walls."
+              },
+              {
+                "term": "lipid",
+                "definition": "A fat or oil used for energy storage and insulation."
+              },
+              {
+                "term": "protein",
+                "definition": "A large molecule used for growth, repair and enzymes."
+              },
+              {
+                "term": "nitrate",
+                "definition": "A mineral ion needed to make proteins."
+              },
+              {
+                "term": "magnesium",
+                "definition": "A mineral ion needed to make chlorophyll."
+              },
+              {
+                "term": "fertiliser",
+                "definition": "A substance added to soil to supply mineral ions."
+              },
+              {
+                "term": "pesticide",
+                "definition": "A chemical used to kill pests that damage crops."
+              },
+              {
+                "term": "herbicide",
+                "definition": "A pesticide used to kill weeds."
+              },
+              {
+                "term": "insecticide",
+                "definition": "A pesticide used to kill insects."
+              },
+              {
+                "term": "fungicide",
+                "definition": "A pesticide used to kill fungi."
+              },
+              {
+                "term": "yield",
+                "definition": "The amount of useful crop produced."
+              },
+              {
+                "term": "selective breeding",
+                "definition": "Choosing parents with desired features so offspring inherit them."
+              },
+              {
+                "term": "cross-breeding",
+                "definition": "Breeding two different varieties to combine useful features."
+              },
+              {
+                "term": "sustainable development",
+                "definition": "Meeting present needs without harming the future."
+              },
+              {
+                "term": "biodiversity",
+                "definition": "The variety of different living species in an area."
+              }
             ]
           }
         ],
@@ -888,66 +1098,201 @@ window.YEAR9_NOTES = {
           {
             "title": "Ceramics and composites",
             "terms": [
-              "ceramic",
-              "brittle",
-              "bond",
-              "clay",
-              "crystal",
-              "heat resistant",
-              "insulator",
-              "lattice structure",
-              "aggregate",
-              "cement",
-              "composite material",
-              "concrete",
-              "fibre"
+              {
+                "term": "ceramic",
+                "definition": "A hard material made by heating clay or similar substances."
+              },
+              {
+                "term": "brittle",
+                "definition": "Easy to break or shatter."
+              },
+              {
+                "term": "bond",
+                "definition": "The force holding atoms or particles together."
+              },
+              {
+                "term": "clay",
+                "definition": "A fine natural material used to make pottery and ceramics."
+              },
+              {
+                "term": "crystal",
+                "definition": "A solid with particles arranged in a regular pattern."
+              },
+              {
+                "term": "heat resistant",
+                "definition": "Able to withstand high temperatures."
+              },
+              {
+                "term": "insulator",
+                "definition": "A material that does not easily transfer heat or electricity."
+              },
+              {
+                "term": "lattice structure",
+                "definition": "A regular repeating arrangement of particles in a solid."
+              },
+              {
+                "term": "aggregate",
+                "definition": "Sand or gravel mixed into concrete."
+              },
+              {
+                "term": "cement",
+                "definition": "A powder that sets hard and binds materials together."
+              },
+              {
+                "term": "composite material",
+                "definition": "A material made by combining two or more materials."
+              },
+              {
+                "term": "concrete",
+                "definition": "A composite made from cement, aggregate and water."
+              },
+              {
+                "term": "fibre",
+                "definition": "A thin thread-like material used to strengthen composites."
+              }
             ]
           },
           {
             "title": "Polymers",
             "terms": [
-              "polymer",
-              "monomer",
-              "addition polymerisation",
-              "plastic",
-              "synthetic polymer",
-              "crude oil",
-              "elastic",
-              "vulcanisation",
-              "biodegradable",
-              "non-biodegradable"
+              {
+                "term": "polymer",
+                "definition": "A large molecule made from many repeating monomers."
+              },
+              {
+                "term": "monomer",
+                "definition": "A small molecule that can join to make a polymer."
+              },
+              {
+                "term": "addition polymerisation",
+                "definition": "A reaction where monomers join to form a polymer with no other products."
+              },
+              {
+                "term": "plastic",
+                "definition": "A mouldable synthetic or semi-synthetic polymer material."
+              },
+              {
+                "term": "synthetic polymer",
+                "definition": "A man-made polymer."
+              },
+              {
+                "term": "crude oil",
+                "definition": "A fossil fuel mixture used as a source of many polymers."
+              },
+              {
+                "term": "elastic",
+                "definition": "Able to stretch and return to its original shape."
+              },
+              {
+                "term": "vulcanisation",
+                "definition": "Adding sulfur links to rubber to make it stronger and less sticky."
+              },
+              {
+                "term": "biodegradable",
+                "definition": "Able to be broken down naturally by microorganisms."
+              },
+              {
+                "term": "non-biodegradable",
+                "definition": "Not able to be broken down naturally quickly."
+              }
             ]
           },
           {
             "title": "Environment and recycling",
             "terms": [
-              "acid rain",
-              "greenhouse effect",
-              "climate change",
-              "soot",
-              "carbon capture technology",
-              "landfill site",
-              "finite",
-              "recycling",
-              "renewable",
-              "non-renewable"
+              {
+                "term": "acid rain",
+                "definition": "Rain made acidic by gases such as sulfur dioxide."
+              },
+              {
+                "term": "greenhouse effect",
+                "definition": "Warming caused when greenhouse gases trap heat in the atmosphere."
+              },
+              {
+                "term": "climate change",
+                "definition": "Long-term changes in the Earth's climate."
+              },
+              {
+                "term": "soot",
+                "definition": "Tiny black carbon particles formed in incomplete combustion."
+              },
+              {
+                "term": "carbon capture technology",
+                "definition": "Technology that traps carbon dioxide before it enters the atmosphere."
+              },
+              {
+                "term": "landfill site",
+                "definition": "A place where waste is buried."
+              },
+              {
+                "term": "finite",
+                "definition": "Limited so it will eventually run out."
+              },
+              {
+                "term": "recycling",
+                "definition": "Processing waste materials so they can be used again."
+              },
+              {
+                "term": "renewable",
+                "definition": "A resource that is replaced naturally."
+              },
+              {
+                "term": "non-renewable",
+                "definition": "A resource that is used faster than it is replaced."
+              }
             ]
           },
           {
             "title": "Reactions and peer review",
             "terms": [
-              "exothermic",
-              "endothermic",
-              "thermal decomposition",
-              "state symbols",
-              "hypothesis",
-              "method",
-              "results",
-              "conclusion",
-              "evaluation",
-              "peer review",
-              "journal",
-              "scientific paper"
+              {
+                "term": "exothermic",
+                "definition": "Releasing energy to the surroundings."
+              },
+              {
+                "term": "endothermic",
+                "definition": "Taking in energy from the surroundings."
+              },
+              {
+                "term": "thermal decomposition",
+                "definition": "Breaking down by heating."
+              },
+              {
+                "term": "state symbols",
+                "definition": "Symbols showing if a substance is solid, liquid, gas or aqueous."
+              },
+              {
+                "term": "hypothesis",
+                "definition": "A scientific idea or prediction that can be tested."
+              },
+              {
+                "term": "method",
+                "definition": "The set of steps used in an investigation."
+              },
+              {
+                "term": "results",
+                "definition": "The measurements or observations collected."
+              },
+              {
+                "term": "conclusion",
+                "definition": "What the results show."
+              },
+              {
+                "term": "evaluation",
+                "definition": "Judging the quality of a method and suggesting improvements."
+              },
+              {
+                "term": "peer review",
+                "definition": "When other scientists check a scientist's work before publication."
+              },
+              {
+                "term": "journal",
+                "definition": "A publication that shares scientific work."
+              },
+              {
+                "term": "scientific paper",
+                "definition": "A written report of a scientific investigation."
+              }
             ]
           }
         ],
@@ -1054,7 +1399,7 @@ window.YEAR9_NOTES = {
             ],
             "noteId": "9E-energy-thermal-peer-review",
             "media": [
-              "assets/webp/9E-peer-review-process-notes-v151.webp"
+              "assets/webp/9E-peer-review-overview.webp"
             ],
             "practice": [
               "9E-WE-28"
@@ -1124,7 +1469,7 @@ window.YEAR9_NOTES = {
             ],
             "noteId": "9E-energy-thermal-peer-review",
             "media": [
-              "assets/webp/9E-peer-review-process-notes-v151.webp"
+              "assets/webp/9E-peer-review-overview.webp"
             ],
             "practice": [
               "9E-WE-28"
@@ -1309,58 +1654,169 @@ window.YEAR9_NOTES = {
           {
             "title": "Reactions and pressure",
             "terms": [
-              "chemical reaction",
-              "combustion",
-              "flammable",
-              "physical change",
-              "particle model",
-              "pressure",
-              "implosion",
-              "explosive"
+              {
+                "term": "chemical reaction",
+                "definition": "A process in which new substances are formed."
+              },
+              {
+                "term": "combustion",
+                "definition": "Burning in oxygen."
+              },
+              {
+                "term": "flammable",
+                "definition": "Easy to catch fire."
+              },
+              {
+                "term": "physical change",
+                "definition": "A change where no new substance is formed."
+              },
+              {
+                "term": "particle model",
+                "definition": "A model that explains matter as tiny moving particles."
+              },
+              {
+                "term": "pressure",
+                "definition": "Force acting on an area, or force per unit area."
+              },
+              {
+                "term": "implosion",
+                "definition": "A collapse inwards caused by greater pressure outside."
+              },
+              {
+                "term": "explosive",
+                "definition": "Likely to explode or react very rapidly."
+              }
             ]
           },
           {
             "title": "Atomic structure and periodic table",
             "terms": [
-              "atomic number",
-              "mass number",
-              "proton",
-              "neutron",
-              "electron",
-              "nucleus",
-              "periodic table",
-              "group",
-              "period",
-              "reactivity series"
+              {
+                "term": "atomic number",
+                "definition": "The number of protons in an atom."
+              },
+              {
+                "term": "mass number",
+                "definition": "The total number of protons and neutrons in an atom."
+              },
+              {
+                "term": "proton",
+                "definition": "A positively charged particle in the nucleus."
+              },
+              {
+                "term": "neutron",
+                "definition": "A neutral particle in the nucleus."
+              },
+              {
+                "term": "electron",
+                "definition": "A negatively charged particle around the nucleus."
+              },
+              {
+                "term": "nucleus",
+                "definition": "The part of a cell that contains the genetic material."
+              },
+              {
+                "term": "periodic table",
+                "definition": "The table that arranges elements by atomic number."
+              },
+              {
+                "term": "group",
+                "definition": "A vertical column in the periodic table."
+              },
+              {
+                "term": "period",
+                "definition": "A horizontal row in the periodic table."
+              },
+              {
+                "term": "reactivity series",
+                "definition": "A list of metals in order of reactivity."
+              }
             ]
           },
           {
             "title": "Energy, rates and redox",
             "terms": [
-              "endothermic",
-              "exothermic",
-              "hydrocarbon",
-              "neutralisation",
-              "rate",
-              "rate of reaction",
-              "oxidising agent",
-              "oxidation",
-              "reduction",
-              "displacement reaction",
-              "thermite reaction"
+              {
+                "term": "endothermic",
+                "definition": "Taking in energy from the surroundings."
+              },
+              {
+                "term": "exothermic",
+                "definition": "Releasing energy to the surroundings."
+              },
+              {
+                "term": "hydrocarbon",
+                "definition": "A compound made only of hydrogen and carbon."
+              },
+              {
+                "term": "neutralisation",
+                "definition": "A reaction between an acid and a base that makes a salt and water."
+              },
+              {
+                "term": "rate",
+                "definition": "How quickly something happens."
+              },
+              {
+                "term": "rate of reaction",
+                "definition": "How fast reactants are changed into products."
+              },
+              {
+                "term": "oxidising agent",
+                "definition": "A substance that causes another substance to be oxidised."
+              },
+              {
+                "term": "oxidation",
+                "definition": "A reaction involving gain of oxygen or loss of electrons."
+              },
+              {
+                "term": "reduction",
+                "definition": "A reaction involving loss of oxygen or gain of electrons."
+              },
+              {
+                "term": "displacement reaction",
+                "definition": "A reaction where a more reactive element replaces a less reactive one."
+              },
+              {
+                "term": "thermite reaction",
+                "definition": "A very exothermic reaction between aluminium and iron oxide."
+              }
             ]
           },
           {
             "title": "Extraction",
             "terms": [
-              "ore",
-              "native state",
-              "mineral",
-              "redox reaction",
-              "reduced",
-              "reducing agent",
-              "electrolysis",
-              "blast furnace"
+              {
+                "term": "ore",
+                "definition": "A rock containing enough metal compound to make extraction worthwhile."
+              },
+              {
+                "term": "native state",
+                "definition": "Found uncombined in nature."
+              },
+              {
+                "term": "mineral",
+                "definition": "A naturally occurring substance in the Earth's crust."
+              },
+              {
+                "term": "redox reaction",
+                "definition": "A reaction where oxidation and reduction happen together."
+              },
+              {
+                "term": "reduced",
+                "definition": "Having oxygen removed, or having gained electrons."
+              },
+              {
+                "term": "reducing agent",
+                "definition": "A substance that causes another substance to be reduced."
+              },
+              {
+                "term": "electrolysis",
+                "definition": "Using electricity to break down an ionic compound."
+              },
+              {
+                "term": "blast furnace",
+                "definition": "An industrial furnace used to extract iron from iron ore."
+              }
             ]
           }
         ],
@@ -1467,7 +1923,7 @@ window.YEAR9_NOTES = {
             ],
             "noteId": "9F-extraction",
             "media": [
-              "assets/webp/9F-reactivity-extraction-decision-notes-r167.webp"
+              "assets/webp/9F-extraction-decision-overview.webp"
             ],
             "practice": [
               "9F-MCQ-25",
@@ -1528,7 +1984,7 @@ window.YEAR9_NOTES = {
             ],
             "noteId": "9F-extraction",
             "media": [
-              "assets/webp/9F-reactivity-extraction-decision-notes-r167.webp"
+              "assets/webp/9F-extraction-decision-overview.webp"
             ],
             "practice": [
               "9F-MCQ-25"
@@ -1581,7 +2037,7 @@ window.YEAR9_NOTES = {
             ],
             "noteId": "9F-reactivity",
             "media": [
-              "assets/webp/9F-metal-reaction-products-notes-r167.webp"
+              "assets/webp/9F-metal-reaction-products-overview.webp"
             ],
             "practice": [
               "9F-WE-14"
@@ -1758,65 +2214,197 @@ window.YEAR9_NOTES = {
           {
             "title": "Forces and movement",
             "terms": [
-              "accelerate",
-              "air resistance",
-              "balanced force",
-              "drag",
-              "fluid",
-              "friction",
-              "resultant force",
-              "terminal velocity",
-              "unbalanced force",
-              "upthrust",
-              "water resistance",
-              "weight"
+              {
+                "term": "accelerate",
+                "definition": "To increase speed."
+              },
+              {
+                "term": "air resistance",
+                "definition": "A frictional force from air acting against motion."
+              },
+              {
+                "term": "balanced force",
+                "definition": "Forces that cancel out so there is no change in motion."
+              },
+              {
+                "term": "drag",
+                "definition": "A force that opposes motion through a fluid."
+              },
+              {
+                "term": "fluid",
+                "definition": "A substance that can flow, such as a liquid or gas."
+              },
+              {
+                "term": "friction",
+                "definition": "A force that opposes motion between surfaces or through a fluid."
+              },
+              {
+                "term": "resultant force",
+                "definition": "The overall force after all forces are combined."
+              },
+              {
+                "term": "terminal velocity",
+                "definition": "A constant speed reached when forces become balanced."
+              },
+              {
+                "term": "unbalanced force",
+                "definition": "Forces that do not cancel out, causing a change in motion."
+              },
+              {
+                "term": "upthrust",
+                "definition": "The upward force a fluid exerts on an object."
+              },
+              {
+                "term": "water resistance",
+                "definition": "Drag acting in water."
+              },
+              {
+                "term": "weight",
+                "definition": "The force of gravity acting on an object."
+              }
             ]
           },
           {
             "title": "Energy and work",
             "terms": [
-              "chemical energy",
-              "kinetic energy",
-              "gravitational potential energy",
-              "elastic potential energy",
-              "dissipate",
-              "efficiency",
-              "law of conservation of energy",
-              "renewable resource",
-              "non-renewable resource",
-              "work"
+              {
+                "term": "chemical energy",
+                "definition": "Energy stored in fuels, food and batteries."
+              },
+              {
+                "term": "kinetic energy",
+                "definition": "Energy of movement."
+              },
+              {
+                "term": "gravitational potential energy",
+                "definition": "Stored energy due to height in a gravitational field."
+              },
+              {
+                "term": "elastic potential energy",
+                "definition": "Stored energy in a stretched or compressed object."
+              },
+              {
+                "term": "dissipate",
+                "definition": "To spread out or transfer energy to the surroundings."
+              },
+              {
+                "term": "efficiency",
+                "definition": "The proportion of input energy transferred usefully."
+              },
+              {
+                "term": "law of conservation of energy",
+                "definition": "Energy cannot be created or destroyed, only transferred or stored."
+              },
+              {
+                "term": "renewable resource",
+                "definition": "A resource that is naturally replaced."
+              },
+              {
+                "term": "non-renewable resource",
+                "definition": "A resource that is not replaced quickly enough."
+              },
+              {
+                "term": "work",
+                "definition": "Energy transferred when a force moves an object."
+              }
             ]
           },
           {
             "title": "Speed and graphs",
             "terms": [
-              "speed",
-              "mean speed",
-              "relative speed",
-              "distance–time graph",
-              "speed–time graph",
-              "gradient",
-              "m/s",
-              "km/h",
-              "mph",
-              "displacement"
+              {
+                "term": "speed",
+                "definition": "Distance travelled per unit time."
+              },
+              {
+                "term": "mean speed",
+                "definition": "Total distance divided by total time."
+              },
+              {
+                "term": "relative speed",
+                "definition": "The speed of one object compared with another."
+              },
+              {
+                "term": "distance–time graph",
+                "definition": "A graph showing how distance changes with time."
+              },
+              {
+                "term": "speed–time graph",
+                "definition": "A graph showing how speed changes with time."
+              },
+              {
+                "term": "gradient",
+                "definition": "The slope of a graph."
+              },
+              {
+                "term": "m/s",
+                "definition": "Metres per second, a unit of speed."
+              },
+              {
+                "term": "km/h",
+                "definition": "Kilometres per hour, a unit of speed."
+              },
+              {
+                "term": "mph",
+                "definition": "Miles per hour, a unit of speed."
+              },
+              {
+                "term": "displacement",
+                "definition": "Distance moved in a given direction."
+              }
             ]
           },
           {
             "title": "Levers and machines",
             "terms": [
-              "pivot",
-              "fulcrum",
-              "lever",
-              "load",
-              "effort",
-              "moment",
-              "equilibrium",
-              "force multiplier",
-              "distance multiplier",
-              "machine",
-              "pulley",
-              "ramp"
+              {
+                "term": "pivot",
+                "definition": "The point about which an object turns."
+              },
+              {
+                "term": "fulcrum",
+                "definition": "Another name for a pivot."
+              },
+              {
+                "term": "lever",
+                "definition": "A rigid bar that turns around a pivot."
+              },
+              {
+                "term": "load",
+                "definition": "The object or force being moved by a machine."
+              },
+              {
+                "term": "effort",
+                "definition": "The force applied to a machine."
+              },
+              {
+                "term": "moment",
+                "definition": "The turning effect of a force."
+              },
+              {
+                "term": "equilibrium",
+                "definition": "A balanced state with no overall change."
+              },
+              {
+                "term": "force multiplier",
+                "definition": "A machine that increases the size of the output force."
+              },
+              {
+                "term": "distance multiplier",
+                "definition": "A machine that increases the distance or speed moved."
+              },
+              {
+                "term": "machine",
+                "definition": "A device that makes work easier by changing a force."
+              },
+              {
+                "term": "pulley",
+                "definition": "A wheel and rope system used to lift loads."
+              },
+              {
+                "term": "ramp",
+                "definition": "A sloping surface that helps move loads with less force."
+              }
             ]
           }
         ],
@@ -2198,55 +2786,157 @@ window.YEAR9_NOTES = {
           {
             "title": "Force fields",
             "terms": [
-              "force field",
-              "magnetic field",
-              "gravitational field",
-              "gravitational field strength",
-              "mass",
-              "non-contact force",
-              "weight",
-              "gravitational potential energy"
+              {
+                "term": "force field",
+                "definition": "A region where a non-contact force acts."
+              },
+              {
+                "term": "magnetic field",
+                "definition": "The region where magnetic forces act."
+              },
+              {
+                "term": "gravitational field",
+                "definition": "The region where gravitational forces act."
+              },
+              {
+                "term": "gravitational field strength",
+                "definition": "The force per kilogram in a gravitational field."
+              },
+              {
+                "term": "mass",
+                "definition": "The amount of matter in an object."
+              },
+              {
+                "term": "non-contact force",
+                "definition": "A force that acts without objects touching."
+              },
+              {
+                "term": "weight",
+                "definition": "The force of gravity acting on an object."
+              },
+              {
+                "term": "gravitational potential energy",
+                "definition": "Stored energy due to height in a gravitational field."
+              }
             ]
           },
           {
             "title": "Static electricity",
             "terms": [
-              "electric field",
-              "electron",
-              "proton",
-              "neutron",
-              "nucleus",
-              "positive charge",
-              "negative charge",
-              "static electricity"
+              {
+                "term": "electric field",
+                "definition": "The region where electric forces act."
+              },
+              {
+                "term": "electron",
+                "definition": "A negatively charged particle around the nucleus."
+              },
+              {
+                "term": "proton",
+                "definition": "A positively charged particle in the nucleus."
+              },
+              {
+                "term": "neutron",
+                "definition": "A neutral particle in the nucleus."
+              },
+              {
+                "term": "nucleus",
+                "definition": "The part of a cell that contains the genetic material."
+              },
+              {
+                "term": "positive charge",
+                "definition": "A type of charge that repels positive and attracts negative."
+              },
+              {
+                "term": "negative charge",
+                "definition": "A type of charge that repels negative and attracts positive."
+              },
+              {
+                "term": "static electricity",
+                "definition": "Charge that builds up on an object and stays there temporarily."
+              }
             ]
           },
           {
             "title": "Circuits and resistance",
             "terms": [
-              "ammeter",
-              "ampere (A)",
-              "electric current",
-              "parallel circuit",
-              "series circuit",
-              "volt (V)",
-              "voltage",
-              "voltmeter",
-              "ohm (Ω)",
-              "resistance",
-              "resistor"
+              {
+                "term": "ammeter",
+                "definition": "A meter used to measure current."
+              },
+              {
+                "term": "ampere (A)",
+                "definition": "The unit of electric current."
+              },
+              {
+                "term": "electric current",
+                "definition": "The flow of electric charge."
+              },
+              {
+                "term": "parallel circuit",
+                "definition": "A circuit with more than one path for current."
+              },
+              {
+                "term": "series circuit",
+                "definition": "A circuit with only one path for current."
+              },
+              {
+                "term": "volt (V)",
+                "definition": "The unit of voltage."
+              },
+              {
+                "term": "voltage",
+                "definition": "The potential difference that pushes charge around a circuit."
+              },
+              {
+                "term": "voltmeter",
+                "definition": "A meter used to measure voltage."
+              },
+              {
+                "term": "ohm (Ω)",
+                "definition": "The unit of resistance."
+              },
+              {
+                "term": "resistance",
+                "definition": "How much a component opposes current."
+              },
+              {
+                "term": "resistor",
+                "definition": "A component that provides resistance."
+              }
             ]
           },
           {
             "title": "Electromagnets and motors",
             "terms": [
-              "electromagnet",
-              "relay",
-              "electric motor",
-              "motor effect",
-              "current-carrying wire",
-              "coil",
-              "iron core"
+              {
+                "term": "electromagnet",
+                "definition": "A magnet made by a current flowing through a coil."
+              },
+              {
+                "term": "relay",
+                "definition": "A switch operated by an electromagnet."
+              },
+              {
+                "term": "electric motor",
+                "definition": "A device that uses electricity to produce movement."
+              },
+              {
+                "term": "motor effect",
+                "definition": "The force on a current-carrying wire in a magnetic field."
+              },
+              {
+                "term": "current-carrying wire",
+                "definition": "A wire with electric current flowing through it."
+              },
+              {
+                "term": "coil",
+                "definition": "A wire wound into loops."
+              },
+              {
+                "term": "iron core",
+                "definition": "A piece of iron placed inside a coil to strengthen an electromagnet."
+              }
             ]
           }
         ],
@@ -2325,7 +3015,7 @@ window.YEAR9_NOTES = {
             ],
             "noteId": "9J-resistance",
             "media": [
-              "assets/webp/9J-current-voltage-graph-comparison-notes-v153.webp"
+              "assets/webp/9J-wire-resistance-overview.webp"
             ],
             "practice": [
               "9J-MCQ-14",
@@ -2435,7 +3125,7 @@ window.YEAR9_NOTES = {
             ],
             "noteId": "9J-wire-resistance-investigation",
             "media": [
-              "assets/webp/9J-wire-resistance-investigation-notes.webp"
+              "assets/webp/9J-wire-resistance-overview.webp"
             ],
             "practice": [
               "9J-MCQ-14",
@@ -2574,7 +3264,7 @@ window.YEAR9_NOTES = {
       "memoryHook": "Ask: “Can I measure it on a scale?” If yes, it is often continuous. Ask: “Does it fall into named groups?” If yes, it is often discontinuous.",
       "selfCheck": "Can you classify height, blood group, a suntan and eye colour as inherited, environmental, continuous or discontinuous?",
       "sentenceStarter": "This is an example of ___ variation because ___.",
-      "practicePrompt": "Pick one linked revision card for Variation and classification and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
+      "practicePrompt": "Pick one linked revision card for Variation and classification and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Secure.",
       "media": [
         {
           "src": "assets/webp/9A-continuous-discontinuous-variation-notes-v2.webp",
@@ -2634,7 +3324,7 @@ window.YEAR9_NOTES = {
       "memoryHook": "Order: cell → nucleus → chromosome → DNA → gene section.",
       "selfCheck": "Can you explain why a human sperm cell has 23 chromosomes but a liver cell has 46?",
       "sentenceStarter": "A gene is a section of DNA found on a chromosome, and it can affect ___.",
-      "practicePrompt": "Pick one linked revision card for Inheritance, DNA and genes and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
+      "practicePrompt": "Pick one linked revision card for Inheritance, DNA and genes and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Secure.",
       "media": [
         {
           "src": "assets/webp/9A-dna-hierarchy-overview.webp",
@@ -2700,7 +3390,7 @@ window.YEAR9_NOTES = {
       "memoryHook": "Biodiversity = variety of life. Conservation = protecting that variety.",
       "selfCheck": "Can you give one reason biodiversity matters and one way humans can protect it?",
       "sentenceStarter": "Biodiversity is important because ___, so conservation methods such as ___ help by ___.",
-      "practicePrompt": "Pick one linked revision card for Biodiversity, conservation and extinction and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
+      "practicePrompt": "Pick one linked revision card for Biodiversity, conservation and extinction and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Secure.",
       "media": [
         {
           "src": "assets/webp/9A-ecosystem-components-interdependence-notes-r167.webp",
@@ -2776,7 +3466,7 @@ window.YEAR9_NOTES = {
       "memoryHook": "Variation → pressure → survival → reproduction → change over generations.",
       "selfCheck": "Can you use the giraffe example or a beak-length example to explain natural selection in five steps?",
       "sentenceStarter": "Individuals with ___ were more likely to survive because ___, so they reproduced and passed on ___.",
-      "practicePrompt": "Pick one linked revision card for Adaptation, natural selection and evolution and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
+      "practicePrompt": "Pick one linked revision card for Adaptation, natural selection and evolution and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Secure.",
       "media": [
         {
           "src": "assets/webp/9A-adaptation-environmental-change-extinction-notes-r167.webp",
@@ -2863,7 +3553,7 @@ window.YEAR9_NOTES = {
       "memoryHook": "Photosynthesis stores energy in glucose; respiration releases energy from glucose into ATP.",
       "selfCheck": "Can you write both the word equation and the symbol equation for photosynthesis, and explain why plants still respire?",
       "sentenceStarter": "The rate stops increasing because ___ is no longer the limiting factor; instead ___ limits the rate.",
-      "practicePrompt": "Pick one linked revision card for Photosynthesis and respiration and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
+      "practicePrompt": "Pick one linked revision card for Photosynthesis and respiration and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Secure.",
       "media": [
         {
           "src": "assets/webp/9B-photosynthesis-limiting-factors-notes-v152.webp",
@@ -2945,7 +3635,7 @@ window.YEAR9_NOTES = {
       "memoryHook": "Xylem: water up. Phloem: food/sugars around the plant.",
       "selfCheck": "Can you trace the route of water from soil to leaf?",
       "sentenceStarter": "Water enters through ___, then travels through ___ to reach ___.",
-      "practicePrompt": "Pick one linked revision card for Plant transport and specialised cells and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
+      "practicePrompt": "Pick one linked revision card for Plant transport and specialised cells and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Secure.",
       "media": [
         {
           "src": "assets/webp/9B-plant-transport-overview-notes-v153.webp",
@@ -3033,7 +3723,7 @@ window.YEAR9_NOTES = {
       "memoryHook": "Glucose is a building block: starch for storage, cellulose for walls, proteins with nitrates.",
       "selfCheck": "Can you explain why nitrate mineral salts help plants grow?",
       "sentenceStarter": "Farmers can increase yield by ___ because this gives the plant more ___.",
-      "practicePrompt": "Pick one linked revision card for Plant products, seeds and food production and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
+      "practicePrompt": "Pick one linked revision card for Plant products, seeds and food production and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Secure.",
       "media": [
         {
           "src": "assets/webp/9B-glucose-uses-notes-v151.webp",
@@ -3129,7 +3819,7 @@ window.YEAR9_NOTES = {
       "memoryHook": "For every farming method, ask: “How does it increase yield?” and “What environmental problem could it cause?”",
       "selfCheck": "Can you give a benefit and a problem for clearing hedges, using pesticides, using fertilisers and planting one high-yield variety?",
       "sentenceStarter": "This method increases yield because ___, but it can cause problems because ___.",
-      "practicePrompt": "Pick one linked revision card for plant growth or farming and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
+      "practicePrompt": "Pick one linked revision card for plant growth or farming and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Secure.",
       "media": [
         {
           "src": "assets/webp/9B-farming-yield-methods-notes-v151.webp",
@@ -3197,7 +3887,7 @@ window.YEAR9_NOTES = {
       "memoryHook": "Follow the arrows: less food for one organism can reduce the population that depends on it.",
       "selfCheck": "Can you predict what happens to a predator population if its main prey decreases?",
       "sentenceStarter": "If the number of ___ decreases, then ___ may decrease because ___.",
-      "practicePrompt": "Pick one linked revision card for Food webs, biodiversity and ecosystems and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
+      "practicePrompt": "Pick one linked revision card for Food webs, biodiversity and ecosystems and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Secure.",
       "media": [
         {
           "src": "assets/webp/9B-carbon-cycle-source-style-notes-v2.webp",
@@ -3293,7 +3983,7 @@ window.YEAR9_NOTES = {
       "memoryHook": "Ceramics: hard and heat-resistant, but brittle.",
       "selfCheck": "Can you explain why pottery is useful for teapots but can still break if dropped?",
       "sentenceStarter": "This material is suitable because it is ___, but a limitation is ___.",
-      "practicePrompt": "Pick one linked revision card for Ceramics, crystals and materials properties and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
+      "practicePrompt": "Pick one linked revision card for Ceramics, crystals and materials properties and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Secure.",
       "media": [
         {
           "src": "assets/webp/9E-crystal-cooling-comparison.webp",
@@ -3351,7 +4041,7 @@ window.YEAR9_NOTES = {
       "memoryHook": "Polymer = many repeating units. Cross-links = bridges between chains.",
       "selfCheck": "Can you describe how vulcanisation changes the structure and properties of rubber?",
       "sentenceStarter": "Vulcanisation changes rubber because cross-links ___, which makes the material ___.",
-      "practicePrompt": "Pick one linked revision card for Polymers and polymerisation and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
+      "practicePrompt": "Pick one linked revision card for Polymers and polymerisation and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Secure.",
       "media": [
         {
           "src": "assets/webp/9E-vulcanisation-crosslinks-base.webp",
@@ -3404,7 +4094,7 @@ window.YEAR9_NOTES = {
       "memoryHook": "Composite = combination. Matrix holds it together; reinforcement adds strength.",
       "selfCheck": "Can you explain why glass-reinforced plastic is useful for boats?",
       "sentenceStarter": "This is a composite because it contains ___ and ___, giving it properties such as ___.",
-      "practicePrompt": "Pick one linked revision card for Composites and material choice and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
+      "practicePrompt": "Pick one linked revision card for Composites and material choice and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Secure.",
       "media": [
         {
           "src": "assets/webp/9E-polymers-monomers-composites-notes-v2.webp",
@@ -3461,7 +4151,7 @@ window.YEAR9_NOTES = {
       "memoryHook": "Reduce harm by using less, recycling more, and choosing materials carefully.",
       "selfCheck": "Can you give one problem with landfill and one advantage of recycling?",
       "sentenceStarter": "Recycling helps because it reduces ___ and saves ___.",
-      "practicePrompt": "Pick one linked revision card for Environmental impacts and recycling and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
+      "practicePrompt": "Pick one linked revision card for Environmental impacts and recycling and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Secure.",
       "media": [
         {
           "src": "assets/webp/9E-environmental-impacts-recycling.webp",
@@ -3509,7 +4199,7 @@ window.YEAR9_NOTES = {
       "memoryHook": "Exo = exits to surroundings; endo = enters the reaction.",
       "selfCheck": "Can you explain the difference between exothermic and endothermic and write what (s), (l), (g) and (aq) mean?",
       "sentenceStarter": "This reaction is ___ because energy is transferred ___ the surroundings.",
-      "practicePrompt": "Pick one linked revision card for 9E energy changes or equations and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
+      "practicePrompt": "Pick one linked revision card for 9E energy changes or equations and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Secure.",
       "media": [
         {
           "src": "assets/webp/9E-exothermic-endothermic-notes-v151.webp",
@@ -3573,7 +4263,7 @@ window.YEAR9_NOTES = {
       "memoryHook": "Metal and glass: separate then melt. Paper: remove ink and make pulp. Concrete: crush and grade.",
       "selfCheck": "Can you match metal, glass, polymer, paper and concrete to their recycling methods?",
       "sentenceStarter": "___ is recycled by ___, which helps because ___.",
-      "practicePrompt": "Pick one linked revision card for materials and recycling and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
+      "practicePrompt": "Pick one linked revision card for materials and recycling and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Secure.",
       "media": [
         {
           "src": "assets/webp/9E-recycling-methods-grid-notes-v152.webp",
@@ -3645,7 +4335,7 @@ window.YEAR9_NOTES = {
       "memoryHook": "Physical = same substance, different form. Chemical = new substance.",
       "selfCheck": "Can you decide whether melting ice, burning magnesium and rusting iron are physical or chemical changes?",
       "sentenceStarter": "This is a chemical change because ___.",
-      "practicePrompt": "Pick one linked revision card for Physical and chemical changes and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
+      "practicePrompt": "Pick one linked revision card for Physical and chemical changes and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Secure.",
       "media": [
         {
           "src": "assets/webp/9F-gas-pressure-particle-collisions-notes-v153.webp",
@@ -3787,7 +4477,7 @@ window.YEAR9_NOTES = {
       "memoryHook": "Atomic number = protons. Mass number = protons + neutrons. Groups go down; periods go across.",
       "selfCheck": "Can you define proton, neutron, electron, nucleus, atomic number, mass number, group and period?",
       "sentenceStarter": "The atomic number is ___ because it tells us ___.",
-      "practicePrompt": "Pick one linked revision card for 9F atomic structure or the periodic table and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered."
+      "practicePrompt": "Pick one linked revision card for 9F atomic structure or the periodic table and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Secure."
     },
     {
       "id": "9F-reactivity",
@@ -3837,7 +4527,7 @@ window.YEAR9_NOTES = {
       "memoryHook": "More reactive kicks out less reactive.",
       "selfCheck": "Can magnesium displace copper from copper sulfate? Explain using reactivity.",
       "sentenceStarter": "___ is more reactive than ___, so it displaces ___ from its compound.",
-      "practicePrompt": "Pick one linked revision card for Reactivity and displacement and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
+      "practicePrompt": "Pick one linked revision card for Reactivity and displacement and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Secure.",
       "media": [
         {
           "src": "assets/webp/9F-metal-reaction-products-notes-r167.webp",
@@ -3946,7 +4636,7 @@ window.YEAR9_NOTES = {
       "memoryHook": "Below carbon: carbon can extract. Above carbon: electrolysis.",
       "selfCheck": "Why can iron be extracted using carbon but aluminium cannot?",
       "sentenceStarter": "Aluminium is extracted by electrolysis because ___.",
-      "practicePrompt": "Pick one linked revision card for Metal extraction and reduction and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
+      "practicePrompt": "Pick one linked revision card for Metal extraction and reduction and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Secure.",
       "media": [
         {
           "src": "assets/webp/9F-reactivity-extraction-decision-notes-r167.webp",
@@ -4040,7 +4730,7 @@ window.YEAR9_NOTES = {
       "memoryHook": "Hydrocarbon burns in oxygen → carbon dioxide + water. Oxygen relights a glowing splint.",
       "selfCheck": "Can you name three ways to increase rate of reaction and explain the oxygen gas test?",
       "sentenceStarter": "The rate increases because ___, so particles collide ___.",
-      "practicePrompt": "Pick one linked revision card for 9F reactions and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
+      "practicePrompt": "Pick one linked revision card for 9F reactions and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Secure.",
       "media": [
         {
           "src": "assets/webp/9F-combustion-fire-triangle-notes.webp",
@@ -4107,7 +4797,7 @@ window.YEAR9_NOTES = {
       "memoryHook": "Rusting needs oxygen + water. Sacrificial protection means another metal “takes the hit”.",
       "selfCheck": "Why does coating iron in plastic prevent rusting?",
       "sentenceStarter": "This method prevents rusting because it stops ___ from reaching the iron.",
-      "practicePrompt": "Pick one linked revision card for Rusting and corrosion protection and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
+      "practicePrompt": "Pick one linked revision card for Rusting and corrosion protection and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Secure.",
       "media": [
         {
           "src": "assets/webp/9F-rusting-conditions-prevention-notes-r167.webp",
@@ -4177,7 +4867,7 @@ window.YEAR9_NOTES = {
       "memoryHook": "Terminal velocity: forces balanced, speed constant.",
       "selfCheck": "Can you explain why a parachutist slows down when the parachute opens?",
       "sentenceStarter": "The parachute increases ___, so the upward force becomes ___ than before.",
-      "practicePrompt": "Pick one linked revision card for Forces, drag and terminal velocity and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
+      "practicePrompt": "Pick one linked revision card for Forces, drag and terminal velocity and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Secure.",
       "media": [
         {
           "src": "assets/webp/9I-terminal-velocity-force-sequence-notes-r167.webp",
@@ -4248,7 +4938,7 @@ window.YEAR9_NOTES = {
       "memoryHook": "Less force usually means more distance; energy is not free.",
       "selfCheck": "If a ramp reduces the force needed, why does it not reduce the total energy needed?",
       "sentenceStarter": "A ramp reduces the force because ___, but the object must move ___.",
-      "practicePrompt": "Pick one linked revision card for Energy, work and simple machines and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
+      "practicePrompt": "Pick one linked revision card for Energy, work and simple machines and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Secure.",
       "media": [
         {
           "src": "assets/webp/9I-sankey-efficiency-notes.webp",
@@ -4305,7 +4995,7 @@ window.YEAR9_NOTES = {
       "memoryHook": "Distance-time graph: slope = speed; flat = stopped.",
       "selfCheck": "Can you calculate speed for 20 km in 2 hours and identify a stopped section on a graph?",
       "sentenceStarter": "The object is stopped during section ___ because the distance ___ while time ___.",
-      "practicePrompt": "Pick one linked revision card for Speed and distance-time graphs and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
+      "practicePrompt": "Pick one linked revision card for Speed and distance-time graphs and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Secure.",
       "media": [
         {
           "src": "assets/webp/9I-distance-time-graph-notes.webp",
@@ -4324,7 +5014,7 @@ window.YEAR9_NOTES = {
           "src": "assets/webp/science-graph-reading-notes-v149.webp",
           "alt": "Class-note visual explaining graph reading.",
           "caption": "Read the title, axes, scale and units before describing a trend.",
-          "mediaTitle": "Graph-reading source diagrams",
+          "mediaTitle": "Graph-reading diagrams",
           "mediaLead": "Read the title, axes, scale and units before describing a trend.",
           "mediaPoints": [
             "Read x-axis and y-axis labels with units",
@@ -4374,7 +5064,7 @@ window.YEAR9_NOTES = {
       "memoryHook": "Speed-time graph: flat = steady speed; up slope = speeding up; down slope = slowing down.",
       "selfCheck": "Can you explain the difference between a flat line on a distance-time graph and a flat line on a speed-time graph?",
       "sentenceStarter": "This section shows ___ because the speed is ___.",
-      "practicePrompt": "Pick one linked revision card for speed graphs and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
+      "practicePrompt": "Pick one linked revision card for speed graphs and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Secure.",
       "media": [
         {
           "src": "assets/webp/9I-speed-time-graph-notes-v152.webp",
@@ -4443,7 +5133,7 @@ window.YEAR9_NOTES = {
       "memoryHook": "Moment gets bigger if force gets bigger or distance from pivot gets bigger.",
       "selfCheck": "What is the moment from a 5 N force acting 0.4 m from a pivot?",
       "sentenceStarter": "The moment is ___ N m because moment = ___ × ___.",
-      "practicePrompt": "Pick one linked revision card for Levers, pivots and moments and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
+      "practicePrompt": "Pick one linked revision card for Levers, pivots and moments and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Secure.",
       "media": [
         {
           "src": "assets/webp/9I-moments-levers-perpendicular-distance-notes-r167.webp",
@@ -4542,7 +5232,7 @@ window.YEAR9_NOTES = {
       "memoryHook": "Fields let forces act without touching.",
       "selfCheck": "Can you explain why the same person weighs less on the Moon than on Earth?",
       "sentenceStarter": "The person’s mass is the same, but their weight is different because ___.",
-      "practicePrompt": "Pick one linked revision card for Force fields, gravity and magnetism and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
+      "practicePrompt": "Pick one linked revision card for Force fields, gravity and magnetism and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Secure.",
       "media": [
         {
           "src": "assets/webp/9J-force-field-comparison-notes-v153.webp",
@@ -4611,7 +5301,7 @@ window.YEAR9_NOTES = {
       "memoryHook": "Electrons move. Negative means extra electrons.",
       "selfCheck": "Why does a rubbed polythene rod become negatively charged?",
       "sentenceStarter": "The rod becomes negatively charged because electrons ___.",
-      "practicePrompt": "Pick one linked revision card for Static electricity and charge and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
+      "practicePrompt": "Pick one linked revision card for Static electricity and charge and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Secure.",
       "media": [
         {
           "src": "assets/webp/9J-static-charge-transfer-notes-v152.webp",
@@ -4698,7 +5388,7 @@ window.YEAR9_NOTES = {
       "memoryHook": "Current flows; voltage pushes/transfers energy; resistance opposes.",
       "selfCheck": "Can you compare current and voltage in series and parallel circuits?",
       "sentenceStarter": "In a series circuit, current is ___, whereas in a parallel circuit current ___.",
-      "practicePrompt": "Pick one linked revision card for Current, voltage and circuits and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
+      "practicePrompt": "Pick one linked revision card for Current, voltage and circuits and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Secure.",
       "media": [
         {
           "src": "assets/webp/9J-real-components-vs-symbols.webp",
@@ -4803,7 +5493,7 @@ window.YEAR9_NOTES = {
       "memoryHook": "Resistance resists current. R = V ÷ I.",
       "selfCheck": "Calculate the resistance when voltage is 8 V and current is 0.02 A.",
       "sentenceStarter": "The resistance is ___ Ω because R = ___ ÷ ___.",
-      "practicePrompt": "Pick one linked revision card for Resistance and Ohm’s law and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
+      "practicePrompt": "Pick one linked revision card for Resistance and Ohm’s law and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Secure.",
       "media": [
         {
           "src": "assets/webp/9J-current-voltage-graph-comparison-notes-v153.webp",
@@ -4877,7 +5567,7 @@ window.YEAR9_NOTES = {
       "memoryHook": "Wire resistance: material, length, thickness. Change one; control the other two.",
       "selfCheck": "If wire length is the independent variable, what should be kept the same?",
       "sentenceStarter": "This is a fair test because only ___ changes, while ___ and ___ are kept the same.",
-      "practicePrompt": "Pick one linked revision card for resistance and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
+      "practicePrompt": "Pick one linked revision card for resistance and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Secure.",
       "media": [
         {
           "src": "assets/webp/9J-wire-resistance-investigation-notes-r167.webp",
@@ -5015,7 +5705,7 @@ window.YEAR9_NOTES = {
       "memoryHook": "Coil + current = electromagnet. More turns or more current = stronger field.",
       "selfCheck": "Name two ways to make an electromagnet stronger and explain why relays are useful.",
       "sentenceStarter": "The electromagnet becomes stronger when ___ because ___.",
-      "practicePrompt": "Pick one linked revision card for Electromagnets, relays and motors and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Mastered.",
+      "practicePrompt": "Pick one linked revision card for Electromagnets, relays and motors and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Secure.",
       "media": [
         {
           "src": "assets/webp/9J-electromagnet-motor-effect-notes-v152.webp",
@@ -5523,9 +6213,225 @@ window.YEAR9_NOTES = {
           "presentation": "media-image-base"
         }
       ]
+    },
+    {
+      "id": "9B-cells-microscopy-organisation",
+      "unit": "9B",
+      "objective": "year-end-essentials-biology",
+      "title": "Cells, microscopy and organisation",
+      "summary": "Cells are the basic building blocks of living things. Year-end papers often ask about cell structures, microscopes, magnification and levels of organisation.",
+      "keyPoints": [
+        "Animal cells usually include a nucleus, cytoplasm, cell membrane, mitochondria and ribosomes.",
+        "Plant cells also have a cell wall, chloroplasts and a permanent vacuole.",
+        "The nucleus controls cell activities and contains genetic information.",
+        "Mitochondria are where aerobic respiration releases energy.",
+        "A tissue is a group of similar cells working together. Organs are made from different tissues.",
+        "Magnification = image size ÷ actual size. Use the same units before calculating.",
+        "Specialised cells have features that help them do a particular job, such as root hair cells having a large surface area."
+      ],
+      "commonMistakes": [
+        "Do not say plant cells have a cell membrane instead of a cell wall; plant cells have both.",
+        "Do not confuse magnification with actual size. Magnification has no unit.",
+        "Do not describe a tissue as one cell; it is a group of similar cells."
+      ],
+      "example": {
+        "question": "Name two structures found in plant cells but not animal cells.",
+        "answer": "Cell wall and chloroplasts. A permanent vacuole is also correct."
+      },
+      "explanation": "Cell structure questions often reward precise names and functions. For organisation questions, build the sequence from cells to tissues, organs, organ systems and organisms. For magnification, check units first, then divide image size by actual size.",
+      "memoryHook": "Cells → tissues → organs → organ systems → organism.",
+      "selfCheck": "Can you name two plant-only structures and explain the function of the nucleus?",
+      "sentenceStarter": "The cell is adapted for its function because...",
+      "practicePrompt": "Practise naming cell parts, describing functions and using the magnification equation.",
+      "media": []
+    },
+    {
+      "id": "9B-digestion-enzymes-food-tests",
+      "unit": "9B",
+      "objective": "year-end-essentials-biology",
+      "title": "Digestion, enzymes and food tests",
+      "summary": "Digestion breaks large food molecules into small soluble molecules. Source-style papers often test food tests, enzymes and small-intestine adaptation.",
+      "keyPoints": [
+        "Carbohydrase enzymes break carbohydrates into sugars. Amylase breaks starch into sugars.",
+        "Protease enzymes break proteins into amino acids. Lipase enzymes break lipids into fatty acids and glycerol.",
+        "Enzymes have an optimum temperature and pH. Above the optimum, the active site changes shape and the enzyme denatures.",
+        "Iodine solution tests for starch: orange-brown to blue-black.",
+        "Benedict’s solution tests for reducing sugar: blue to green/yellow/orange/brick-red when heated.",
+        "Biuret solution tests for protein: blue to purple/lilac.",
+        "The small intestine has villi and a large surface area so digested nutrients are absorbed quickly into the blood."
+      ],
+      "commonMistakes": [
+        "Do not say enzymes are killed; say they are denatured.",
+        "Do not mix up the starch and protein food tests.",
+        "For food tests, include both the reagent and the positive colour change."
+      ],
+      "example": {
+        "question": "Explain why enzyme activity falls at high temperature.",
+        "answer": "The enzyme denatures. Its active site changes shape, so the substrate no longer fits and fewer enzyme-substrate complexes form."
+      },
+      "explanation": "Enzyme questions usually need cause and effect. High temperature breaks bonds in the enzyme, changing the active site. Food-test questions usually need a reagent and colour change. Adaptation questions need a feature plus how that feature helps absorption.",
+      "memoryHook": "Food tests: Iodine = starch, Benedict’s = sugar, Biuret = protein.",
+      "selfCheck": "Can you give the positive result for iodine, Benedict’s and Biuret tests?",
+      "sentenceStarter": "The enzyme works best at this temperature because...",
+      "practicePrompt": "Practise food-test colour changes and explaining enzyme denaturation.",
+      "media": []
+    },
+    {
+      "id": "9F-acids-alkalis-neutralisation",
+      "unit": "9F",
+      "objective": "year-end-essentials-chemistry",
+      "title": "Acids, alkalis, pH and neutralisation",
+      "summary": "Acids and alkalis are a repeated source-exam topic. You need pH patterns, common word equations, gas tests and safety precautions.",
+      "keyPoints": [
+        "Acids have pH below 7. Alkalis have pH above 7. Neutral solutions have pH 7.",
+        "Acid + metal → salt + hydrogen.",
+        "Acid + alkali → salt + water. This is neutralisation.",
+        "Acid + carbonate → salt + water + carbon dioxide.",
+        "Hydrogen is tested with a lit splint and gives a squeaky pop.",
+        "Carbon dioxide turns limewater cloudy.",
+        "A named safety precaution should match the hazard, such as wearing eye protection because acids can irritate or damage eyes."
+      ],
+      "commonMistakes": [
+        "Do not say all alkalis are neutral; alkalis have pH above 7.",
+        "Do not forget hydrogen in acid + metal reactions.",
+        "Do not give a vague safety answer such as “be careful”; name a precaution and reason."
+      ],
+      "example": {
+        "question": "Complete the word equation: magnesium + hydrochloric acid →",
+        "answer": "magnesium chloride + hydrogen"
+      },
+      "explanation": "Most acid-reaction questions are pattern questions. Identify the type of reaction, then apply the product pattern. For safety questions, link the precaution to the hazard.",
+      "memoryHook": "Acid + metal makes hydrogen. Acid + alkali makes water. Acid + carbonate makes carbon dioxide.",
+      "selfCheck": "Can you state the products for acid + metal, acid + alkali and acid + carbonate?",
+      "sentenceStarter": "The gas produced is..., which can be tested by...",
+      "practicePrompt": "Practise completing acid reaction word equations and naming gas tests.",
+      "media": []
+    },
+    {
+      "id": "9F-particle-model-states-density",
+      "unit": "9F",
+      "objective": "year-end-essentials-chemistry",
+      "title": "States of matter, particle model and density",
+      "summary": "Source-style chemistry questions often combine particle diagrams, changes of state and density calculations.",
+      "keyPoints": [
+        "In a solid, particles are close together and vibrate about fixed positions.",
+        "In a liquid, particles are close together but can move past each other.",
+        "In a gas, particles are far apart and move quickly in random directions.",
+        "Gases can be compressed because their particles are far apart.",
+        "Heating gives particles more energy, so they move faster.",
+        "Diffusion happens faster at higher temperature because particles move faster.",
+        "Density = mass ÷ volume. Use units such as g/cm³ or kg/m³."
+      ],
+      "commonMistakes": [
+        "Do not say particles expand when a substance is heated; the particles move further apart.",
+        "Do not forget density units.",
+        "Do not describe gas particles as having no mass; they are far apart and moving quickly."
+      ],
+      "example": {
+        "question": "A cube has mass 80 g and volume 20 cm³. Calculate its density.",
+        "answer": "density = mass ÷ volume = 80 ÷ 20 = 4 g/cm³"
+      },
+      "explanation": "Particle model answers should describe arrangement and movement. Density calculations need the equation, substitution, answer and unit.",
+      "memoryHook": "Solid = fixed; liquid = flows; gas = far apart.",
+      "selfCheck": "Can you describe a solid, liquid and gas using arrangement and movement?",
+      "sentenceStarter": "The particles are..., so the substance can...",
+      "practicePrompt": "Practise particle descriptions and density calculations.",
+      "media": []
+    },
+    {
+      "id": "9I-waves-light-sound",
+      "unit": "9I",
+      "objective": "year-end-essentials-physics",
+      "title": "Waves, light and sound",
+      "summary": "The source-style papers include waves, reflection, refraction, dispersion and sound. These are now full class-note topics for year-end revision.",
+      "keyPoints": [
+        "Wave speed = frequency × wavelength.",
+        "Sound needs particles to travel, so it cannot travel through a vacuum.",
+        "Light can travel through a vacuum.",
+        "Reflection is when a wave bounces off a surface.",
+        "Refraction is when a wave changes direction as it enters a different medium.",
+        "White light can be dispersed into a spectrum by a prism.",
+        "Higher frequency sound has higher pitch. Louder sound has larger amplitude."
+      ],
+      "commonMistakes": [
+        "Do not say sound travels through space as normal sound; sound needs particles.",
+        "Do not confuse reflection with refraction.",
+        "Do not say higher pitch means louder; pitch depends on frequency."
+      ],
+      "example": {
+        "question": "Explain why sound cannot travel through a vacuum.",
+        "answer": "Sound is a vibration passed between particles. A vacuum has no particles, so there is nothing to pass the vibration on."
+      },
+      "explanation": "Wave questions often reward a precise definition and a reason. Link sound to vibrations and particles. Link refraction to a change in speed at a boundary.",
+      "memoryHook": "Sound needs stuff; light can cross space.",
+      "selfCheck": "Can you explain the difference between reflection, refraction and dispersion?",
+      "sentenceStarter": "Sound cannot travel through a vacuum because...",
+      "practicePrompt": "Practise wave equations, sound in a vacuum and light ray descriptions.",
+      "media": []
+    },
+    {
+      "id": "9I-energy-resources",
+      "unit": "9I",
+      "objective": "year-end-essentials-physics",
+      "title": "Energy resources and energy transfers",
+      "summary": "Year-end papers often ask for renewable energy examples, energy transfer descriptions and advantages or disadvantages of resources.",
+      "keyPoints": [
+        "Energy cannot be created or destroyed; it is transferred or stored.",
+        "Renewable resources are replaced naturally, such as solar, wind, hydroelectric, tidal, wave and geothermal.",
+        "Non-renewable resources are used faster than they are replaced, such as coal, oil, gas and nuclear fuels.",
+        "Fossil fuels release carbon dioxide when burned. This contributes to climate change.",
+        "Some renewable resources are intermittent because their output depends on weather or location.",
+        "Useful energy is transferred to the intended store or pathway. Wasted energy is usually dissipated to the surroundings by heating or sound."
+      ],
+      "commonMistakes": [
+        "Do not call nuclear fuel renewable; it is non-renewable.",
+        "Do not say energy is used up; say it is transferred or dissipated.",
+        "For advantages and disadvantages, give a clear reason, not just “good” or “bad”."
+      ],
+      "example": {
+        "question": "Name two renewable energy resources.",
+        "answer": "Solar and wind. Hydroelectric, tidal, wave and geothermal are also renewable."
+      },
+      "explanation": "Energy-resource answers should classify the resource and give a reason. Energy-transfer answers should avoid “used up” and instead describe transfers and stores.",
+      "memoryHook": "Renewable = replaced. Non-renewable = runs out.",
+      "selfCheck": "Can you name three renewable and three non-renewable energy resources?",
+      "sentenceStarter": "This resource is renewable because...",
+      "practicePrompt": "Practise classifying energy resources and explaining one advantage or disadvantage.",
+      "media": []
+    },
+    {
+      "id": "9S-working-scientifically",
+      "unit": "9I",
+      "objective": "year-end-essentials-working-scientifically",
+      "title": "Working scientifically: graphs, variables and safety",
+      "summary": "The source-style papers always include working-scientifically marks. Focus on graph plotting, variables, controls, repeats, anomalies and safety.",
+      "keyPoints": [
+        "Independent variable = what the scientist changes.",
+        "Dependent variable = what the scientist measures.",
+        "Control variables are kept the same to make the test fair.",
+        "Repeats improve reliability and help identify anomalies.",
+        "A line of best fit shows the trend without forcing the line through every point.",
+        "Describe graph trends using both variables, such as “as temperature increases, rate increases”.",
+        "Safety answers should name the hazard and a matching precaution."
+      ],
+      "commonMistakes": [
+        "Do not confuse independent and dependent variables.",
+        "Do not say repeats make results accurate by themselves; they improve reliability and help spot anomalies.",
+        "Do not give vague safety answers without a hazard."
+      ],
+      "example": {
+        "question": "Identify the independent variable in an experiment where a student changes temperature and measures reaction time.",
+        "answer": "Temperature."
+      },
+      "explanation": "Working-scientifically questions reward exact method language. Name variables precisely, describe trends using data headings, and link safety precautions to hazards.",
+      "memoryHook": "Change it = independent. Measure it = dependent. Keep it same = control.",
+      "selfCheck": "Can you identify the independent, dependent and control variables in any practical question?",
+      "sentenceStarter": "The independent variable is..., because this is what is changed.",
+      "practicePrompt": "Practise variable identification, graph trends and safety precautions.",
+      "media": []
     }
   ],
-  "mediaPolicy": "question cards use only required source-style media; conceptual images live in class notes.",
+  "mediaPolicy": "Question diagrams are used where they help; wider explanation images live in class notes.",
   "mediaPolicyV117": "Detailed generated images are used in Class Notes only, not as question-card prompts, unless the question explicitly requires visual interpretation.",
-  "mediaPolicyV118": "Five generated infographic panels are split from a single collage and used as Class Notes visuals only. They are not attached to question cards."
+  "mediaPolicyV118": "Five generated infographic panels are split from a single collage and used as Class Notes visuals only. They are not attached to questions."
 };

@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Year 9 Science Exam Paper Builder</title>
+  <style>
+    :root { --ink:#111827; --muted:#475569; --line:#9ca3af; --soft:#f8fafc; --panel:#ffffff; }
+    body { margin:0; background:#eaf0f7; color:var(--ink); font-family: Arial, Helvetica, sans-serif; }
+    .toolbar { position:sticky; top:0; z-index:20; display:flex; flex-wrap:wrap; gap:10px; align-items:center; padding:14px 18px; background:#0f172a; color:#fff; }
+    .toolbar strong { margin-right:auto; }
+    .toolbar button, .toolbar a { border:0; border-radius:999px; padding:9px 14px; font-weight:800; cursor:pointer; text-decoration:none; background:#e2e8f0; color:#0f172a; }
+    .toolbar-field { display:inline-flex; align-items:center; gap:6px; font-size:13px; font-weight:800; }
+    .toolbar select { border:0; border-radius:999px; padding:8px 12px; font-weight:800; background:#fff; color:#0f172a; }
+    .toolbar button.primary { background:#38bdf8; }
+    .wrap { width:min(960px, calc(100% - 32px)); margin:24px auto 60px; }
+    .paper, .answer-key { background:var(--panel); box-shadow:0 18px 45px rgba(15,23,42,.12); padding:48px 58px; margin-bottom:26px; }
+    .paper-title { display:flex; justify-content:space-between; gap:18px; border-bottom:2px solid var(--ink); padding-bottom:16px; margin-bottom:26px; }
+    h1 { margin:0 0 6px; font-size:30px; } h2 { font-size:24px; margin:28px 0 12px; } h3 { font-size:18px; margin:16px 0 10px; }
+    .meta { color:var(--muted); font-size:14px; line-height:1.4; } .marks { font-weight:800; white-space:nowrap; }
+    .question-block { break-inside:avoid; page-break-inside:avoid; margin:18px 0 28px; }
+    .question-head { font-weight:800; font-size:17px; margin-bottom:10px; }
+    .part { display:grid; grid-template-columns:36px minmax(0,1fr); gap:8px; margin:9px 0; line-height:1.35; }
+    .part-label { font-weight:700; }
+    .answer-lines { margin:16px 0 12px; }
+    .answer-lines span { display:block; height:27px; border-bottom:1px solid #4b5563; }
+    .graph-instruction { margin:14px 0 7px; font-size:14px; }
+    .graph-grid { position:relative; height:330px; border-left:3px solid #111; border-bottom:3px solid #111; border-top:1px solid #111; border-right:1px solid #111; background-color:#fff; background-image:linear-gradient(#d1d5db 1px, transparent 1px), linear-gradient(90deg, #d1d5db 1px, transparent 1px), linear-gradient(#eef2f7 1px, transparent 1px), linear-gradient(90deg, #eef2f7 1px, transparent 1px); background-size: calc(100% / 6) calc(100% / 7), calc(100% / 6) calc(100% / 7), calc(100% / 30) calc(100% / 35), calc(100% / 30) calc(100% / 35); }
+    .axis-label { position:absolute; font-size:13px; color:#111; } .y-label { left:8px; top:8px; } .x-label { right:10px; bottom:8px; }
+    .axis-numbers-x { display:grid; grid-template-columns:repeat(7,1fr); margin-left:-10px; font-size:12px; } .axis-numbers-x span { text-align:center; }
+    .data-table { margin:10px 0 12px; line-height:1.8; }
+    .answer-key .answer-item { margin:10px 0; line-height:1.35; }
+    .answer-key h2 { border-bottom:2px solid var(--ink); padding-bottom:10px; }
+    .revision-question { border:1px solid #cbd5e1; border-radius:16px; padding:14px 16px; margin:14px 0; background:#f8fafc; break-inside:avoid; page-break-inside:avoid; }
+    .revision-part { border-top:1px solid #e2e8f0; padding-top:12px; margin-top:12px; }
+    .revision-part:first-of-type { border-top:0; padding-top:0; margin-top:0; }
+    .revision-answer { margin:4px 0 8px; }
+    .revision-detail { margin-top:8px; }
+    .revision-detail summary { cursor:pointer; font-weight:800; color:#0f172a; }
+    .revision-detail p { margin:8px 0; color:#334155; }
+    .revision-links { display:flex; flex-wrap:wrap; gap:8px; margin-top:8px; }
+    .revision-links a, .revision-pill { display:inline-flex; align-items:center; border-radius:999px; padding:5px 9px; background:#e0f2fe; color:#075985; font-size:12px; font-weight:800; text-decoration:none; }
+    .revision-mistakes { margin:8px 0 0 18px; color:#334155; }
+    .revision-mistakes li { margin:3px 0; }
+
+    .hidden { display:none; }
+    @media print { body { background:#fff; } .toolbar { display:none; } .wrap { width:auto; margin:0; } .paper, .answer-key { box-shadow:none; padding:0; margin:0; } .answer-key { page-break-before:always; } h2 { page-break-after:avoid; } .question-block { page-break-inside:avoid; } @page { size:A4; margin:14mm 16mm; } }
+  </style>
+</head>
+<body>
+  <div class="toolbar">
+    <strong>Year 9 normal exam paper builder</strong>
+    <label class="toolbar-field">Mode <select id="paperTypeSelect"><option value="normal">Normal 80-mark</option><option value="source">Source examples</option><option value="all">All available papers</option></select></label>
+    <label class="toolbar-field">Paper <select id="paperSelect"></select></label>
+    <label class="toolbar-field">Section <select id="sectionSelect"><option value="all">Full paper</option><option value="A">Section A only</option><option value="B">Section B only</option><option value="C">Section C only</option><option value="D">Section D only</option></select></label>
+    <button id="randomBtn" type="button">Random paper</button>
+    <label class="toolbar-field">Answer key <select id="answerModeSelect"><option value="mark">Mark scheme</option><option value="revision">Revision answer key</option></select></label>
+    <button class="primary" id="printBtn" type="button">Print / Save PDF</button>
+    <button id="toggleAnswersBtn" type="button">Hide answer key</button>
+    <a href="index.html">Back to app</a>
+  </div>
+  <main class="wrap">
+    <section class="paper" id="paper"></section>
+    <section class="answer-key" id="answerKey"></section>
+  </main>
+  <script src="data/year9-exam-paper-bank.js?v=1.72.2"></script>
+  <script>
+    const bank = window.YEAR9_EXAM_PAPER_BANK || { papers: [] };
+    const papers = Array.isArray(bank.papers) ? bank.papers : [];
+    let paperTypeFilter = 'normal';
+    let filteredPapers = papers.filter((p) => (p.paperType || 'normal') === paperTypeFilter);
+    if (!filteredPapers.length) filteredPapers = papers;
+    let paper = filteredPapers[0] || papers[0] || { sections: [] };
+    let sectionFilter = 'all';
+    let answerMode = 'mark';
+    const escapeHtml = (value) => String(value ?? '').replace(/[&<>"']/g, (ch) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[ch]));
+    const lineCountFor = (question) => Number(question.answerLines ?? Math.max(3, Math.ceil((question.marks || 6) * 0.8)));
+    function activeSections() { return (paper.sections || []).filter((section) => sectionFilter === 'all' || section.id === sectionFilter); }
+    function activeTotalMarks() { return activeSections().reduce((total, section) => total + section.questions.reduce((sum, question) => sum + Number(question.marks || 0), 0), 0); }
+    function renderLines(n) { return n > 0 ? `<div class="answer-lines">${Array.from({length:n}, () => '<span></span>').join('')}</div>` : ''; }
+    function renderGraph(graph) {
+      if (!graph) return '';
+      return `<div class="data-table"><strong>${escapeHtml(graph.xLabel.replace(/\s*\/.*/, ''))}:</strong> ${graph.xValues.join(' ')}<br><strong>${escapeHtml(graph.yLabel.replace(/\s*\/.*/, ''))}:</strong> ${graph.yValues.join(' ')}</div><p class="graph-instruction">${escapeHtml(graph.instruction || '')}</p><div class="graph-grid"><span class="axis-label y-label">${escapeHtml(graph.yLabel)}</span><span class="axis-label x-label">${escapeHtml(graph.xLabel)}</span></div><div class="axis-numbers-x">${graph.xValues.map((v) => `<span>${escapeHtml(v)}</span>`).join('')}</div>`;
+    }
+    function renderQuestion(question) {
+      return `<article class="question-block"><div class="question-head">${question.number}. ${escapeHtml(question.topic)}. <span class="marks">[${question.marks}]</span></div>${question.parts.map((part) => `<div class="part"><div class="part-label">(${escapeHtml(part.label)})</div><div>${escapeHtml(part.prompt)}</div></div>`).join('')}${renderGraph(question.graph)}${renderLines(lineCountFor(question))}</article>`;
+    }
+    function renderPaper() {
+      const label = paper.variantLabel ? ` · ${paper.variantLabel}` : '';
+      document.getElementById('paper').innerHTML = `<div class="paper-title"><div><h1>${escapeHtml(paper.title)}</h1><div class="meta">${escapeHtml(paper.subtitle || '')}${escapeHtml(label)}${paper.timeAllowed ? ` · Time allowed: ${escapeHtml(paper.timeAllowed)}` : ''}</div></div><div class="marks">Total: ${activeTotalMarks()} marks</div></div>${activeSections().map((section) => `<h2>${escapeHtml(section.title)}</h2>${section.questions.map(renderQuestion).join('')}`).join('')}`;
+    }
+    function renderLearnMore(part) {
+      const links = Array.isArray(part.learnMore) ? part.learnMore : [];
+      const practice = Array.isArray(part.practice) ? part.practice : [];
+      if (!links.length && !practice.length) return '';
+      const linkHtml = links.map((link) => `<a href="${escapeHtml(link.href || 'index.html')}" target="_blank" rel="noopener">Learn more: ${escapeHtml(link.title || 'Class notes')}</a>`).join('');
+      const practiceHtml = practice.map((qid) => `<span class="revision-pill">Practise ${escapeHtml(qid)}</span>`).join('');
+      return `<div class="revision-links">${linkHtml}${practiceHtml}</div>`;
+    }
+    function renderCommonMistakes(part) {
+      const mistakes = Array.isArray(part.commonMistakes) ? part.commonMistakes.filter(Boolean) : [];
+      if (!mistakes.length) return '';
+      return `<ul class="revision-mistakes">${mistakes.map((item) => `<li>${escapeHtml(item)}</li>`).join('')}</ul>`;
+    }
+    function renderRevisionPart(part) {
+      return `<div class="revision-part"><div class="revision-answer"><strong>(${escapeHtml(part.label)}) Expected answer:</strong> ${escapeHtml(part.answer)}</div><details class="revision-detail"><summary>Why this is correct / learn more</summary>${part.explanation ? `<p>${escapeHtml(part.explanation)}</p>` : ''}${renderCommonMistakes(part)}${renderLearnMore(part)}</details></div>`;
+    }
+    function renderRevisionQuestion(question) {
+      return `<article class="revision-question"><strong>${question.number}. ${escapeHtml(question.topic)}</strong>${question.parts.map(renderRevisionPart).join('')}</article>`;
+    }
+    function renderAnswerKey() {
+      if (answerMode === 'revision') {
+        document.getElementById('answerKey').innerHTML = `<h2>Revision answer key</h2><p class="meta">Use this after marking. It explains why answers are correct and points back to learning material.</p>${activeSections().map((section) => `<h3>${escapeHtml(section.title)}</h3>${section.questions.map(renderRevisionQuestion).join('')}`).join('')}`;
+        return;
+      }
+      document.getElementById('answerKey').innerHTML = `<h2>Mark scheme</h2>${activeSections().map((section) => `<h3>${escapeHtml(section.title)}</h3>${section.questions.map((question) => `<div class="answer-item"><strong>${question.number}.</strong> ${question.parts.map((part) => `<span><strong>(${escapeHtml(part.label)})</strong> ${escapeHtml(part.answer)}</span>`).join(' ')}</div>`).join('')}`).join('')}`;
+    }
+    function renderAll() { renderPaper(); renderAnswerKey(); }
+    function papersForType() {
+      const list = paperTypeFilter === 'all' ? papers : papers.filter((p) => (p.paperType || 'normal') === paperTypeFilter);
+      return list.length ? list : papers;
+    }
+    function populatePaperSelect() {
+      const select = document.getElementById('paperSelect');
+      filteredPapers = papersForType();
+      select.innerHTML = filteredPapers.map((p, index) => `<option value="${index}">${escapeHtml(p.variantLabel || p.title || `Paper ${index + 1}`)}</option>`).join('');
+      paper = filteredPapers[0] || papers[0] || { sections: [] };
+      select.value = '0';
+    }
+    document.getElementById('paperTypeSelect').addEventListener('change', (event) => { paperTypeFilter = event.currentTarget.value; populatePaperSelect(); renderAll(); });
+    document.getElementById('paperSelect').addEventListener('change', (event) => { paper = filteredPapers[Number(event.currentTarget.value)] || filteredPapers[0] || papers[0]; renderAll(); });
+    populatePaperSelect(); renderAll();
+    document.getElementById('sectionSelect').addEventListener('change', (event) => { sectionFilter = event.currentTarget.value; renderAll(); });
+    document.getElementById('answerModeSelect').addEventListener('change', (event) => { answerMode = event.currentTarget.value; renderAnswerKey(); });
+    document.getElementById('randomBtn').addEventListener('click', () => { filteredPapers = papersForType(); const next = Math.floor(Math.random() * filteredPapers.length); document.getElementById('paperSelect').value = String(next); paper = filteredPapers[next]; renderAll(); });
+    document.getElementById('printBtn').addEventListener('click', () => window.print());
+    document.getElementById('toggleAnswersBtn').addEventListener('click', (event) => { const key = document.getElementById('answerKey'); key.classList.toggle('hidden'); event.currentTarget.textContent = key.classList.contains('hidden') ? 'Show answer key' : 'Hide answer key'; });
+  </script>
+</body>
+</html>

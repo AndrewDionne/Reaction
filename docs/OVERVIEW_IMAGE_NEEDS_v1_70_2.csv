@@ -1,0 +1,7 @@
+unit,topic,target_file,priority,reason
+9A,Conservation methods,assets/webp/9A-conservation-methods-overview.webp,required,Need a clear full-width comparison of the main conservation methods.
+9E,Peer review process,assets/webp/9E-peer-review-overview.webp,required,Need a simple full-width flow for scientific review and publication.
+9F,Extraction decision,assets/webp/9F-extraction-decision-overview.webp,required,Current extraction image is too dense for overview use.
+9F,Metal reaction products,assets/webp/9F-metal-reaction-products-overview.webp,required,Need a cleaner comparison of reaction products.
+9J,Wire resistance investigation,assets/webp/9J-wire-resistance-overview.webp,required,Need a simpler overview practical image with variables shown clearly.
+9B,Limiting factors comparison,assets/webp/9B-limiting-factors-comparison-overview.webp,optional,Would improve the overview if a clean readable 3-graph version is made.

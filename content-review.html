@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Year 9 Science Content Review Export</title>
+  <title>Year 9 Science Content Check Export</title>
   <link rel="stylesheet" href="styles.css">
   <style>
     :root {
@@ -128,7 +128,34 @@
       background: #111827;
       color: #ffffff;
       font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+      font-size: 0.76rem;
+      padding: 5px 8px;
       letter-spacing: 0.02em;
+    }
+
+    .review-vocab-list {
+      display: grid;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .review-vocab-item {
+      border: 1px solid var(--review-line);
+      border-radius: 12px;
+      padding: 10px 12px;
+      background: #fbfdff;
+    }
+
+    .review-vocab-item span {
+      display: block;
+      font-weight: 800;
+      color: #0f172a;
+    }
+
+    .review-vocab-item p {
+      margin: 6px 0 0;
+      color: #334155;
+      line-height: 1.45;
     }
 
     .review-section {
@@ -379,21 +406,21 @@
 <body class="review-body">
   <main class="review-shell">
     <header class="review-header">
-      <h1>Year 9 Science Content Review Export</h1>
-      <p>This page renders the same Year 9 unit overview, class-note and question-card content used by the app. It is intended for content QA, image-readability checks and PDF printing.</p>
+      <h1>Year 9 Science Content Check Export</h1>
+      <p>This page renders the same Year 9 unit overview, class-note and question-card content used by the app. It is intended for content checking, image-readability checks and PDF printing.</p>
       <p class="review-no-print">Use the filters, then choose <strong>Print / Save PDF</strong>. For image readability checks, print one unit at a time so diagrams stay large.</p>
       <div class="review-counts" id="reviewCounts"></div>
     </header>
 
-    <section class="review-toolbar" aria-label="Review export controls">
+    <section class="review-toolbar" aria-label="Content check controls">
       <div class="review-control">
         <label for="reviewMode">Show</label>
         <select id="reviewMode">
           <option value="overviews" selected>Unit overviews</option>
           <option value="all">Everything</option>
           <option value="notes">Class notes</option>
-          <option value="questions">Question cards</option>
-          <option value="images">Image-only review</option>
+          <option value="questions">Questions</option>
+          <option value="images">Images only</option>
         </select>
       </div>
       <div class="review-control">
@@ -405,14 +432,14 @@
       <div class="review-control">
         <label for="reviewMedia">Media</label>
         <select id="reviewMedia">
-          <option value="all">All cards</option>
+          <option value="all">All questions</option>
           <option value="media">With images only</option>
           <option value="no-media">Without images only</option>
         </select>
       </div>
       <div class="review-control">
         <label for="reviewSearch">Search</label>
-        <input id="reviewSearch" type="search" placeholder="keyword, objective, source">
+        <input id="reviewSearch" type="search" placeholder="keyword, objective, question ID">
       </div>
       <button class="review-print-button" type="button" id="reviewPrint">Print / Save PDF</button>
     </section>
@@ -428,12 +455,12 @@
     </section>
 
     <section class="review-section" data-review-section="questions">
-      <h2>Question cards</h2>
+      <h2>Questions</h2>
       <div class="review-grid" id="questionsReview"></div>
     </section>
 
     <section class="review-section" data-review-section="images">
-      <h2>Image-only review</h2>
+      <h2>Images only</h2>
       <div class="review-grid" id="imageReview"></div>
     </section>
   </main>
@@ -534,7 +561,13 @@
 
       function renderVocabularySectionsReview(sections = []) {
         if (!Array.isArray(sections) || !sections.length) return '';
-        return `<div class="review-route-grid">${sections.map((section) => `<article class="review-route-card"><strong>${escapeHtml(section.title || 'Vocabulary')}</strong><p>${escapeHtml((section.terms || []).join(', '))}</p></article>`).join('')}</div>`;
+        const entries = (terms = []) => terms.map((entry) => {
+          if (entry && typeof entry === 'object') {
+            return { term: String(entry.term || '').trim(), definition: String(entry.definition || '').trim() };
+          }
+          return { term: String(entry || '').trim(), definition: '' };
+        }).filter((entry) => entry.term);
+        return `<div class="review-route-grid">${sections.map((section) => `<article class="review-route-card"><strong>${escapeHtml(section.title || 'Vocabulary')}</strong><div class="review-vocab-list">${entries(section.terms || []).map((item) => `<div class="review-vocab-item"><span>${escapeHtml(item.term)}</span>${item.definition ? `<p>${escapeHtml(item.definition)}</p>` : ''}</div>`).join('')}</div></article>`).join('')}</div>`;
       }
 
       function renderChecklistReview(title, items = []) {
@@ -615,11 +648,11 @@
           <p class="review-question">${escapeHtml(card.question || '')}</p>
           ${renderMediaItems(asArray(card.media).filter((item) => !item.mediaTiming || item.mediaTiming === 'question'), 'review-question-media', false)}
           ${card.cue ? `<p class="explanation"><strong>Cue:</strong> ${escapeHtml(card.cue)}</p>` : ''}
-          ${card.qid ? `<p class="explanation"><strong>QC ID:</strong> ${escapeHtml(card.qid)}</p>` : ''}
+          ${card.qid ? `<p class="explanation"><strong>Question ID:</strong> ${escapeHtml(card.qid)}</p>` : ''}
           ${renderChoices(card)}
           <details class="review-answer" open>
-            <summary>Reviewer answer / mark scheme</summary>
-            <div>${answer || 'No answer text stored.'}${card.explanation ? `<p>${escapeHtml(card.explanation)}</p>` : ''}${card.source ? `<p><strong>Source:</strong> ${escapeHtml(card.source)}</p>` : ''}</div>
+            <summary>Answer / mark scheme</summary>
+            <div>${answer || 'No answer text stored.'}${card.explanation ? `<p>${escapeHtml(card.explanation)}</p>` : ''}${card.source ? `<p><strong>Source reference:</strong> ${escapeHtml(card.source)}</p>` : ''}</div>
           </details>
         </article>`;
       }
@@ -637,7 +670,7 @@
           add('Unit overview tile', overview.unit, overview.title, overview.visualTiles);
         });
         notes.forEach((note) => add('Class note', note.unit, note.title, note.media));
-        cards.forEach((card) => add('Question card', card.unit, card.question, card.media));
+        cards.forEach((card) => add('Question', card.unit, card.question, card.media));
         return rows;
       }
 
@@ -672,7 +705,7 @@
         const sections = new Set(contentModeItems(mode));
         els.overviews.innerHTML = sections.has('overviews') ? (overviews.map(renderOverview).join('') || '<div class="review-empty">No unit overviews found.</div>') : '';
         els.notes.innerHTML = sections.has('notes') ? (notes.map(renderNote).join('') || '<div class="review-empty">No class notes found.</div>') : '';
-        els.questions.innerHTML = sections.has('questions') ? (cards.map(renderCard).join('') || '<div class="review-empty">No question cards found.</div>') : '';
+        els.questions.innerHTML = sections.has('questions') ? (cards.map(renderCard).join('') || '<div class="review-empty">No questions found.</div>') : '';
         els.images.innerHTML = sections.has('images') ? (collectImages().map(renderImageRow).join('') || '<div class="review-empty">No images found.</div>') : '';
         applyFilters();
       }
@@ -717,8 +750,8 @@
         els.counts.innerHTML = [
           `${overviews.length} unit overviews`,
           `${notes.length} class notes`,
-          `${cards.length} question cards`,
-          `${cards.filter(hasMedia).length} question cards with images`,
+          `${cards.length} questions`,
+          `${cards.filter(hasMedia).length} questions with images`,
           `${collectImages().length} total image references`
         ].map((label) => `<span>${escapeHtml(label)}</span>`).join('');
       }
