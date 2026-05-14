@@ -8,7 +8,7 @@
   <title>Reaction · Year 9 Science Study</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
   <link rel="manifest" href="manifest.webmanifest" />
-  <link rel="stylesheet" href="styles.css?v=1.72.4" />
+  <link rel="stylesheet" href="styles.css?v=1.72.5" />
 </head>
 <body>
   <canvas id="burstCanvas" aria-hidden="true"></canvas>
@@ -93,7 +93,7 @@
           </div>
           <button id="routeEntryButton" class="primary-button route-entry-button" type="button">Start revision</button>
         </div>
-        <div class="written-builder-panel" aria-label="Written exam builder options">
+        <div class="written-builder-panel hidden" id="writtenBuilderPanel" aria-label="Written exam builder options">
           <div>
             <strong>Written test builder</strong>
             <span>Choose quick written practice, or build a normal 80-mark year-end paper.</span>
@@ -129,7 +129,16 @@
         <span id="hubStudyStat">0</span>
       </div>
 
-      <section class="dashboard-grid" id="unitDashboard" aria-label="Unit choices"></section>
+      <section class="unit-picker-section panel" aria-label="Study units">
+        <div class="section-heading-row compact-heading unit-picker-heading">
+          <div>
+            <p class="eyebrow">Study units</p>
+            <h2>Choose a unit to study.</h2>
+          </div>
+          <p class="journey-hint">Open a unit overview, open class notes, or select a whole unit/sub-unit for practice.</p>
+        </div>
+        <section class="dashboard-grid" id="unitDashboard" aria-label="Unit choices"></section>
+      </section>
     </section>
 
     <section id="sessionView" class="session-view hidden">
@@ -152,8 +161,8 @@
     </section>
   </main>
 
-  <script src="data/year9-content.js?v=1.72.4"></script>
-  <script src="data/year9-notes.js?v=1.72.4"></script>
-  <script src="app.js?v=1.72.4"></script>
+  <script src="data/year9-content.js?v=1.72.5"></script>
+  <script src="data/year9-notes.js?v=1.72.5"></script>
+  <script src="app.js?v=1.72.5"></script>
 </body>
 </html>

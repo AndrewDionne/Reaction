@@ -1,10 +1,10 @@
-## v1.72.4 — Restore unit study cards and class-note entry
+## v1.72.5 — Restore visible unit cards and mode-specific written builder
 
-- Restored prominent unit-level study actions on each unit selection card.
-- Added explicit **Unit overview** and **Class notes** buttons directly inside each unit card.
-- Added a unit class-notes chooser so students can open all class notes for a selected unit from one place.
-- Kept the existing sub-unit class-note buttons for targeted notes.
-- Bumped `index.html` cache strings to `1.72.4`.
+- Moved the unit selection area into a dedicated **Study units** section so the unit cards are clearly visible from the hub.
+- Hid the written-test builder unless **Written exam mode** is selected, preventing it from pushing the unit cards below the first screen in normal revision mode.
+- Added prominent unit-level **Unit overview** and **Class notes** buttons on each unit card.
+- Added a unit-level class-notes chooser page so students can open all class notes for a unit from one place.
+- Bumped `index.html` cache strings to `1.72.5`.
 
 ## v1.72.3 — Refreshed five overview explainer images
 
