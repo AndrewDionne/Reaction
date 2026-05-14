@@ -1,3 +1,14 @@
+## v1.72.3 — Refreshed five overview explainer images
+
+- Replaced the five overview explainer images below with updated source images from `reaction image coverage.zip` and converted them to `webp` in `assets/webp/`:
+  - `9A-conservation-methods-overview.webp`
+  - `9E-peer-review-overview.webp`
+  - `9F-extraction-decision-overview.webp`
+  - `9F-metal-reaction-products-overview.webp`
+  - `9J-wire-resistance-overview.webp`
+- Kept the same filenames and asset paths so no content or note references needed to change.
+- Preserved text-forward layout and readable type for overview expansion panels.
+
 ## v1.72.2 — Year-end essentials promoted to class notes
 
 - Added full class notes for repeated source-exam essentials: cells/microscopy, digestion/enzymes/food tests, acids/alkalis, states/particles/density, waves/light/sound, energy resources, and working scientifically.
