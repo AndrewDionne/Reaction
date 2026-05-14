@@ -2958,6 +2958,126 @@
     `).join("")}</div>`;
   }
 
+  function renderVocabularySections(sections = []) {
+    if (!Array.isArray(sections) || !sections.length) return "";
+    return `<div class="overview-vocabulary-list">${sections.map((section) => `
+      <details class="overview-vocab-group">
+        <summary>${escapeHtml(section.title || "Vocabulary")}</summary>
+        <div class="overview-vocab-terms">${(section.terms || []).map((term) => `<span>${escapeHtml(term)}</span>`).join("")}</div>
+      </details>
+    `).join("")}</div>`;
+  }
+
+  function renderTargetedSubUnits(items = []) {
+    if (!Array.isArray(items) || !items.length) return "";
+    return `<div class="targeted-subunit-grid">${items.map((item) => `
+      <article class="targeted-subunit-card">
+        <strong>${escapeHtml(item.title || "Sub-unit")}</strong>
+        <p>${escapeHtml(item.description || "")}</p>
+      </article>
+    `).join("")}</div>`;
+  }
+
+  function renderOverviewPracticeLinks(qids = []) {
+    const clean = Array.isArray(qids) ? qids.filter(Boolean) : [];
+    if (!clean.length) return "";
+    return `<div class="overview-practice-row"><strong>Practise:</strong>${clean.map((qid) => `<button class="overview-qid-button" data-overview-practice="${escapeHtml(qid)}" type="button">${escapeHtml(qid)}</button>`).join("")}</div>`;
+  }
+
+  function renderOverviewClassNoteLink(noteId) {
+    if (!noteId) return "";
+    const note = noteMeta(noteId);
+    if (!note) return "";
+    return `<button class="secondary-button overview-note-button" data-overview-note="${escapeHtml(noteId)}" type="button">Open class notes: ${escapeHtml(note.title)}</button>`;
+  }
+
+  function renderTargetedChecklistItem(item = {}, index = 0) {
+    const media = Array.isArray(item.media) ? item.media : (item.media ? [item.media] : []);
+    const mediaItems = media.map((entry) => typeof entry === "string" ? { src: entry, alt: item.title || "Study image" } : entry);
+    return `
+      <details class="targeted-check-row">
+        <summary><span>${escapeHtml(item.title || `Checklist item ${index + 1}`)}</span></summary>
+        <div class="targeted-check-detail">
+          ${Array.isArray(item.notes) && item.notes.length ? `<ul>${item.notes.map((note) => `<li>${escapeHtml(note)}</li>`).join("")}</ul>` : ""}
+          ${mediaItems.length ? renderMediaItems(mediaItems, item.title || "Study visual", "media-grid overview-detail-media", { showCaptions: true }) : ""}
+          <div class="overview-detail-actions">
+            ${renderOverviewClassNoteLink(item.noteId)}
+            ${renderOverviewPracticeLinks(item.practice)}
+          </div>
+        </div>
+      </details>
+    `;
+  }
+
+  function renderTargetedChecklistSection(title, items = [], className = "") {
+    if (!Array.isArray(items) || !items.length) return "";
+    return `<section class="note-section targeted-overview-section ${escapeHtml(className)}"><h3>${escapeHtml(title)}</h3><div class="targeted-check-list">${items.map((item, index) => renderTargetedChecklistItem(item, index)).join("")}</div></section>`;
+  }
+
+  function qidCard(qid) {
+    return cards.find((card) => card.qid === qid || card.id === qid);
+  }
+
+  function practiceOverviewQids(qidString = "") {
+    const qids = String(qidString || "").split(",").map((item) => item.trim()).filter(Boolean);
+    const selected = qids.map(qidCard).filter(Boolean);
+    if (!selected.length) return;
+    state.noteContext = null;
+    state.selectedMode = "practice";
+    state.mode = "practice";
+    state.deck = selected;
+    state.index = 0;
+    startSession("practice", { preserveDeck: true });
+  }
+
+  function renderTargetedUnitOverview(overview) {
+    const target = overview.targetedOverview;
+    const unitCards = cards.filter((card) => card.unit === overview.unit);
+    updateSessionChrome({
+      unitId: overview.unit,
+      title: unitTitle(overview.unit),
+      eyebrow: "Unit learning checklist",
+      subtitle: `${unitTitle(overview.unit)} · What to know, understand and practise`
+    });
+    els.sessionIndex.textContent = String(unitCards.length);
+    els.sessionTotal.textContent = " cards";
+    els.resultPanel.classList.add("hidden");
+    els.studyPanel.innerHTML = `
+      <article class="study-card note-context-card unit-overview-card targeted-overview-card">
+        <section class="note-section note-summary targeted-overview-hero">
+          <p class="overview-kicker">Unit learning checklist</p>
+          <h2>${escapeHtml(target.title || overview.title || `${unitTitle(overview.unit)} overview`)}</h2>
+          <p>${escapeHtml(target.description || overview.summary || "")}</p>
+        </section>
+        <section class="note-section targeted-overview-section">
+          <h3>Sub-units</h3>
+          ${renderTargetedSubUnits(target.subUnits)}
+        </section>
+        <section class="note-section targeted-overview-section vocabulary-section">
+          <h3>Must know vocabulary</h3>
+          <p class="overview-section-help">Open a group, check the terms, then use the vocabulary cards if any words are unfamiliar.</p>
+          ${renderVocabularySections(target.vocabulary)}
+        </section>
+        ${renderTargetedChecklistSection("Must understand", target.understand, "must-understand-section")}
+        ${renderTargetedChecklistSection("Must be able to identify", target.identify, "must-identify-section")}
+        ${renderTargetedChecklistSection("Must memorise equations / calculations", target.memorize, "must-memorize-section")}
+        <div class="card-actions">
+          <button class="primary-button" data-overview-action="practice-unit" type="button">Practise this unit</button>
+          <button class="secondary-button" data-overview-action="hub" type="button">Back to revision hub</button>
+        </div>
+      </article>
+    `;
+    $$('[data-overview-action]', els.studyPanel).forEach((button) => {
+      button.addEventListener('click', () => handleUnitOverviewAction(button.dataset.overviewAction, overview));
+    });
+    $$('[data-overview-note]', els.studyPanel).forEach((button) => {
+      button.addEventListener('click', () => openNoteContext(button.dataset.overviewNote, null, overview.unit));
+    });
+    $$('[data-overview-practice]', els.studyPanel).forEach((button) => {
+      button.addEventListener('click', () => practiceOverviewQids(button.dataset.overviewPractice));
+    });
+  }
+
   function renderUnitOverviewContext() {
     const ctx = state.noteContext;
     const overview = unitOverviewMeta(ctx?.overviewUnitId);
@@ -2966,9 +3086,11 @@
       renderSession();
       return;
     }
+    if (overview.targetedOverview) {
+      renderTargetedUnitOverview(overview);
+      return;
+    }
     const unitCards = cards.filter((card) => card.unit === overview.unit);
-    const unitObjectives = learningObjectives.filter((objective) => objective.unit === overview.unit);
-    const noteCount = classNotes.filter((note) => note.unit === overview.unit).length;
     updateSessionChrome({
       unitId: overview.unit,
       title: unitTitle(overview.unit),
@@ -2980,41 +3102,28 @@
     els.resultPanel.classList.add("hidden");
     els.studyPanel.innerHTML = `
       <article class="study-card note-context-card unit-overview-card">
-        <div class="card-topline">
-          <div class="card-title-row">
-            <span class="pill">${escapeHtml(unitTitle(overview.unit))}</span>
-            <span class="pill objective-pill">Unit overview</span>
-            <span class="pill">${unitObjectives.length} sub-units</span>
-            <span class="pill">${noteCount} note pages</span>
-          </div>
-        </div>
         <section class="note-section note-summary">
           <h2>${escapeHtml(overview.title || `${unitTitle(overview.unit)} overview`)}</h2>
           <p>${escapeHtml(overview.summary || "")}</p>
         </section>
         ${renderOverviewMedia(overview.leadMedia, "overview-lead-media")}
         <section class="note-section">
-          <h3>Must know for this unit</h3>
+          <h3>By the end of this unit, you should be able to...</h3>
           ${renderPlainList(overview.revisionPackFocus)}
         </section>
-        ${Array.isArray(overview.formulae) && overview.formulae.length ? `<section class="note-section formula-note"><h3>Formulae / equations</h3>${renderPlainList(overview.formulae)}</section>` : ""}
+        ${Array.isArray(overview.formulae) && overview.formulae.length ? `<section class="note-section formula-note"><h3>Key formulae and equations</h3>${renderPlainList(overview.formulae)}</section>` : ""}
         <section class="note-section">
-          <h3>How to use this unit</h3>
+          <h3>Sub-units and must-know points</h3>
           ${renderOverviewRoute(overview.subUnitRoute)}
         </section>
         ${Array.isArray(overview.visualTiles) && overview.visualTiles.length ? `<section class="note-section overview-visual-section"><h3>Revision images</h3>${renderOverviewMedia(overview.visualTiles, "overview-tile-media")}</section>` : ""}
-        <section class="note-section">
-          <h3>Diagrams, graphs and calculations</h3>
-          ${renderOverviewStatus(overview.visualCoverage)}
-        </section>
-        ${Array.isArray(overview.infographicBacklog) && overview.infographicBacklog.length ? `<section class="note-section practice-note"><h3>More visuals to practise</h3>${renderInfographicBacklog(overview.infographicBacklog)}</section>` : ""}
         <section class="note-section sentence-note">
-          <h3>Written-answer moves</h3>
+          <h3>How to write better answers</h3>
           ${renderPlainList(overview.examAnswerMoves)}
         </section>
         <div class="card-actions">
-          <button class="primary-button" data-overview-action="practice-unit" type="button">Practise this full unit</button>
-          <button class="secondary-button" data-overview-action="hub" type="button">Back to hub</button>
+          <button class="primary-button" data-overview-action="practice-unit" type="button">Practise this unit</button>
+          <button class="secondary-button" data-overview-action="hub" type="button">Back to revision hub</button>
         </div>
       </article>
     `;
@@ -3034,8 +3143,8 @@
     showHub();
   }
 
-  function openNoteContext(noteId, cardId = null) {
-    state.noteContext = { noteId, cardId };
+  function openNoteContext(noteId, cardId = null, returnOverviewUnitId = null) {
+    state.noteContext = { noteId, cardId, returnOverviewUnitId };
     state.test = null;
     resetCardInteraction();
     document.body.classList.add("session-active");
@@ -3080,6 +3189,7 @@
     const ctx = state.noteContext;
     const note = noteMeta(ctx?.noteId);
     const sourceCard = ctx?.cardId ? cards.find((card) => card.id === ctx.cardId) : null;
+    const returnOverviewUnitId = ctx?.returnOverviewUnitId || "";
     if (!note) {
       state.noteContext = null;
       renderSession();
@@ -3091,7 +3201,7 @@
     updateSessionChrome({
       unitId: note.unit,
       title: "Reaction",
-      eyebrow: sourceCard ? "Study this concept" : "Class notes",
+      eyebrow: sourceCard ? "Study this concept" : (returnOverviewUnitId ? "Class notes from overview" : "Class notes"),
       subtitle: `${unitTitle(note.unit)} · ${note.title}`
     });
     els.sessionIndex.textContent = String(linked.length);
@@ -3133,17 +3243,21 @@
             <button class="secondary-button" data-note-action="back-card" type="button">Back to card</button>
           ` : `
             <button class="primary-button" data-note-action="practice" type="button">Practise related cards</button>
-            <button class="secondary-button" data-note-action="hub" type="button">Back to hub</button>
+            ${returnOverviewUnitId ? `<button class="secondary-button" data-note-action="back-overview" type="button">Back to unit overview</button>` : `<button class="secondary-button" data-note-action="hub" type="button">Back to hub</button>`}
           `}
         </div>
       </article>
     `;
     $$('[data-note-action]', els.studyPanel).forEach((button) => {
-      button.addEventListener('click', () => handleNoteAction(button.dataset.noteAction, note, sourceCard));
+      button.addEventListener('click', () => handleNoteAction(button.dataset.noteAction, note, sourceCard, returnOverviewUnitId));
     });
   }
 
-  function handleNoteAction(action, note, sourceCard) {
+  function handleNoteAction(action, note, sourceCard, returnOverviewUnitId = "") {
+    if (action === "back-overview" && returnOverviewUnitId) {
+      openUnitOverviewContext(returnOverviewUnitId);
+      return;
+    }
     if (action === "hub") {
       showHub();
       return;

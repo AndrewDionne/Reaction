@@ -531,7 +531,33 @@
         }).join('')}</div>`;
       }
 
+
+      function renderVocabularySectionsReview(sections = []) {
+        if (!Array.isArray(sections) || !sections.length) return '';
+        return `<div class="review-route-grid">${sections.map((section) => `<article class="review-route-card"><strong>${escapeHtml(section.title || 'Vocabulary')}</strong><p>${escapeHtml((section.terms || []).join(', '))}</p></article>`).join('')}</div>`;
+      }
+
+      function renderChecklistReview(title, items = []) {
+        if (!Array.isArray(items) || !items.length) return '';
+        return `<div class="review-note-section"><h4>${escapeHtml(title)}</h4><div class="review-route-grid">${items.map((item) => `<article class="review-route-card"><strong>${escapeHtml(item.title || '')}</strong>${renderList(item.notes)}${item.noteId ? `<p><strong>Class note:</strong> ${escapeHtml(item.noteId)}</p>` : ''}${Array.isArray(item.practice) && item.practice.length ? `<p><strong>Practise:</strong> ${escapeHtml(item.practice.join(', '))}</p>` : ''}${renderMediaItems(item.media || [], 'review-overview-media', true)}</article>`).join('')}</div></div>`;
+      }
+
+      function renderTargetedOverviewReview(overview) {
+        const target = overview.targetedOverview;
+        return `<article class="review-overview" data-unit="${escapeHtml(overview.unit)}" data-search="${escapeHtml(textBlob(overview))}">
+          <div class="review-meta"><span class="review-pill">${escapeHtml(unitTitle(overview.unit))}</span><span class="review-pill">Targeted unit overview</span></div>
+          <h3>${escapeHtml(target.title || overview.title || `${unitTitle(overview.unit)} overview`)}</h3>
+          <p>${escapeHtml(target.description || overview.summary || '')}</p>
+          <div class="review-note-section"><h4>Sub-units</h4><div class="review-route-grid">${asArray(target.subUnits).map((item) => `<article class="review-route-card"><strong>${escapeHtml(item.title || 'Sub-unit')}</strong><p>${escapeHtml(item.description || '')}</p></article>`).join('')}</div></div>
+          <div class="review-note-section"><h4>Must know vocabulary</h4>${renderVocabularySectionsReview(target.vocabulary)}</div>
+          ${renderChecklistReview('Must understand', target.understand)}
+          ${renderChecklistReview('Must be able to identify', target.identify)}
+          ${renderChecklistReview('Must memorise equations / calculations', target.memorize)}
+        </article>`;
+      }
+
       function renderOverview(overview) {
+        if (overview.targetedOverview) return renderTargetedOverviewReview(overview);
         return `<article class="review-overview" data-unit="${escapeHtml(overview.unit)}" data-search="${escapeHtml(textBlob(overview))}">
           <div class="review-meta"><span class="review-pill">${escapeHtml(unitTitle(overview.unit))}</span><span class="review-pill">Unit overview</span></div>
           <h3>${escapeHtml(overview.title || `${unitTitle(overview.unit)} overview`)}</h3>

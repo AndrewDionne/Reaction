@@ -1,3 +1,12 @@
+## v1.70.0 - Targeted unit overview checklist
+
+- Replaced the unit overview mode with a targeted learning checklist structure.
+- Added expandable sections for sub-units, must-know vocabulary, must understand, must identify and must memorise equations/calculations.
+- Added full-width graphics inside expanded checklist rows only.
+- Added class-note jump links from overview rows and a Back to unit overview action from linked class notes.
+- Added practice QC ID buttons inside overview rows.
+- Added `tools/validate_unit_overviews.py` and coverage-audit documentation.
+
 
 ## v1.69.6 - Question QC identifiers
 

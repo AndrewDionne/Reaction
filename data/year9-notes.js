@@ -1,12 +1,12 @@
 window.YEAR9_NOTES = {
-  "version": "1.69.3",
+  "version": "1.70.0",
   "title": "Year 9 Science Class Notes and Visual Unit Overviews",
   "unitOverviews": [
     {
       "id": "9A-overview",
       "unit": "9A",
-      "title": "9A Genetics and evolution — unit overview",
-      "summary": "Variation, inheritance, biodiversity and natural selection are linked: organisms vary, some traits help survival, and populations can change over generations.",
+      "title": "9A — Variation and inheritance",
+      "summary": "This unit explains why organisms vary, how genetic information is stored and inherited, how adaptations help survival, and why species can evolve, become endangered or become extinct.",
       "revisionPackFocus": [
         "Variation can be inherited, environmental or both.",
         "DNA, chromosomes and genes carry inherited information.",
@@ -100,13 +100,312 @@ window.YEAR9_NOTES = {
           "mediaLead": "Protected habitats, seed banks and captive breeding can help protect biodiversity.",
           "r7Integrated": true
         }
-      ]
+      ],
+      "targetedOverview": {
+        "title": "9A — Variation and inheritance",
+        "description": "This unit explains why organisms vary, how genetic information is stored and inherited, how adaptations help survival, and why species can evolve, become endangered or become extinct.",
+        "subUnits": [
+          {
+            "title": "Variation",
+            "description": "Environmental and inherited variation within species; continuous and discontinuous variation; classification into species."
+          },
+          {
+            "title": "DNA and inheritance",
+            "description": "Chromosomes, genes and DNA; gametes, fertilisation and zygotes; predicting inherited characteristics."
+          },
+          {
+            "title": "Adaptation and natural selection",
+            "description": "How adaptations help survival and how natural selection can lead to evolution over many generations."
+          },
+          {
+            "title": "Extinction and biodiversity",
+            "description": "Causes of endangerment and extinction; conservation methods used to preserve biodiversity."
+          }
+        ],
+        "vocabulary": [
+          {
+            "title": "Variation and classification",
+            "terms": [
+              "genus",
+              "species",
+              "variation",
+              "characteristic",
+              "classification",
+              "continuous variation",
+              "discontinuous variation",
+              "environmental variation",
+              "inherited variation",
+              "ecosystem",
+              "biotic factor",
+              "abiotic factor"
+            ]
+          },
+          {
+            "title": "DNA and inheritance",
+            "terms": [
+              "gamete",
+              "fertilisation",
+              "zygote",
+              "gene",
+              "chromosome",
+              "DNA",
+              "nucleus",
+              "genetic information",
+              "offspring",
+              "normal distribution",
+              "probability"
+            ]
+          },
+          {
+            "title": "Evolution and biodiversity",
+            "terms": [
+              "adaptation",
+              "biodiversity",
+              "competition",
+              "endangered",
+              "extinct",
+              "food web",
+              "gene bank",
+              "natural selection",
+              "evolution"
+            ]
+          }
+        ],
+        "understand": [
+          {
+            "title": "Explain the difference between environmental and inherited variation.",
+            "notes": [
+              "Environmental variation is caused by surroundings such as diet, sunlight, disease or competition.",
+              "Inherited variation is passed from parents to offspring through genetic information.",
+              "Some characteristics can be affected by both genes and environment."
+            ],
+            "noteId": "9A-variation",
+            "media": [
+              "assets/webp/9A-continuous-discontinuous-variation-notes-v2.webp"
+            ],
+            "practice": [
+              "9A-MCQ-02",
+              "9A-MCQ-05",
+              "9A-WE-01"
+            ]
+          },
+          {
+            "title": "Describe how DNA, genes and chromosomes are linked.",
+            "notes": [
+              "Most cells contain a nucleus.",
+              "Chromosomes are found in the nucleus and are made from long DNA molecules.",
+              "Genes are sections of DNA that contain instructions for characteristics."
+            ],
+            "noteId": "9A-inheritance",
+            "media": [
+              "assets/webp/9A-dna-hierarchy-overview.webp"
+            ],
+            "practice": [
+              "9A-MCQ-09",
+              "9A-VOC-13",
+              "9A-WE-02"
+            ]
+          },
+          {
+            "title": "Describe fertilisation and inheritance from both parents.",
+            "notes": [
+              "Gametes are sex cells.",
+              "During fertilisation, a male gamete fuses with a female gamete.",
+              "The zygote receives chromosomes from both parents."
+            ],
+            "noteId": "9A-inheritance",
+            "practice": [
+              "9A-VOC-10",
+              "9A-VOC-11",
+              "9A-VOC-12"
+            ]
+          },
+          {
+            "title": "Explain how adaptations help organisms survive in a habitat.",
+            "notes": [
+              "An adaptation is a feature that helps an organism survive.",
+              "Adaptations can help organisms find food, avoid predators, reproduce or cope with physical conditions.",
+              "Evidence from body structures can be used to infer how extinct organisms lived."
+            ],
+            "noteId": "9A-evolution",
+            "media": [
+              "assets/webp/9A-adaptation-environmental-change-extinction-notes-r167.webp"
+            ],
+            "practice": [
+              "9A-VOC-17",
+              "9A-WE-19",
+              "9A-WE-20"
+            ]
+          },
+          {
+            "title": "Explain natural selection.",
+            "notes": [
+              "Individuals in a species vary.",
+              "If conditions change, some inherited variations help survival.",
+              "Better-adapted individuals are more likely to reproduce, so useful inherited features become more common."
+            ],
+            "noteId": "9A-evolution",
+            "media": [
+              "assets/webp/9A-natural-selection-giraffes.webp"
+            ],
+            "practice": [
+              "9A-VOC-20",
+              "9A-WE-10",
+              "9A-WE-25"
+            ]
+          },
+          {
+            "title": "Explain why species become endangered or extinct.",
+            "notes": [
+              "Species may become endangered because of physical changes, competition, disease or human activity.",
+              "If all individuals of a species die, the species is extinct.",
+              "Human actions such as hunting, habitat destruction and poison use can reduce biodiversity."
+            ],
+            "noteId": "9A-biodiversity",
+            "media": [
+              "assets/webp/9A-ecosystem-components-interdependence-notes-r167.webp"
+            ],
+            "practice": [
+              "9A-WE-12",
+              "9A-WE-23"
+            ]
+          },
+          {
+            "title": "Describe ways to preserve biodiversity.",
+            "notes": [
+              "Nature reserves protect habitats.",
+              "Breeding programmes can increase numbers of endangered species.",
+              "Hunting bans and gene banks help preserve species or their genetic material."
+            ],
+            "noteId": "9A-biodiversity",
+            "media": [
+              "assets/webp/9A-conservation-biodiversity-methods-notes-r167.webp"
+            ],
+            "practice": [
+              "9A-WE-28",
+              "9A-WE-29"
+            ]
+          }
+        ],
+        "identify": [
+          {
+            "title": "Identify continuous and discontinuous variation.",
+            "notes": [
+              "Continuous variation forms a range and is usually shown on a histogram or line of grouped values.",
+              "Discontinuous variation has separate categories and is usually shown with bars."
+            ],
+            "noteId": "9A-variation",
+            "media": [
+              "assets/webp/9A-continuous-discontinuous-variation-notes-v2.webp"
+            ],
+            "practice": [
+              "9A-MCQ-04",
+              "9A-MCQ-08"
+            ]
+          },
+          {
+            "title": "Identify whether a variation example is inherited or environmental.",
+            "notes": [
+              "Ask whether the difference is passed through genes or caused by surroundings.",
+              "Examples such as suntan are environmental; eye colour is mainly inherited."
+            ],
+            "noteId": "9A-variation",
+            "practice": [
+              "9A-MCQ-02",
+              "9A-MCQ-05"
+            ]
+          },
+          {
+            "title": "Label the hierarchy of genetic material.",
+            "notes": [
+              "Use the order: cell → nucleus → chromosome → DNA → gene.",
+              "Do not describe a gene as larger than a chromosome."
+            ],
+            "noteId": "9A-inheritance",
+            "media": [
+              "assets/webp/9A-dna-hierarchy-overview.webp"
+            ],
+            "practice": [
+              "9A-MCQ-09",
+              "9A-MCQ-11"
+            ]
+          },
+          {
+            "title": "Recognise biotic and abiotic ecosystem factors.",
+            "notes": [
+              "Biotic factors are living or caused by living organisms.",
+              "Abiotic factors are non-living physical factors such as light, water or temperature."
+            ],
+            "noteId": "9A-variation",
+            "practice": [
+              "9A-VOC-02",
+              "9A-VOC-06"
+            ]
+          },
+          {
+            "title": "Identify conservation methods from descriptions.",
+            "notes": [
+              "Match the threat to the conservation action: habitat loss → nature reserve; low population → breeding programme; genetic loss → gene bank."
+            ],
+            "noteId": "9A-biodiversity",
+            "media": [
+              "assets/webp/9A-seed-bank-conservation.webp"
+            ],
+            "practice": [
+              "9A-WE-28",
+              "9A-WE-29"
+            ]
+          }
+        ],
+        "memorize": [
+          {
+            "title": "Memorise the genetic hierarchy: cell → nucleus → chromosome → DNA → gene.",
+            "notes": [
+              "This order is needed for label, state and explain questions."
+            ],
+            "noteId": "9A-inheritance",
+            "media": [
+              "assets/webp/9A-dna-hierarchy-overview.webp"
+            ],
+            "practice": [
+              "9A-MCQ-09",
+              "9A-VOC-15"
+            ]
+          },
+          {
+            "title": "Memorise the natural selection answer chain.",
+            "notes": [
+              "variation → selection pressure → survival advantage → reproduction → inherited feature becomes more common."
+            ],
+            "noteId": "9A-evolution",
+            "media": [
+              "assets/webp/9A-natural-selection-giraffes.webp"
+            ],
+            "practice": [
+              "9A-WE-10",
+              "9A-WE-25"
+            ]
+          },
+          {
+            "title": "Memorise the main causes of extinction and conservation methods.",
+            "notes": [
+              "Causes: physical change, competition, disease, human activity.",
+              "Conservation: nature reserves, breeding programmes, hunting bans, gene banks."
+            ],
+            "noteId": "9A-biodiversity",
+            "practice": [
+              "9A-WE-23",
+              "9A-WE-28"
+            ]
+          }
+        ]
+      }
     },
     {
       "id": "9B-overview",
       "unit": "9B",
-      "title": "9B Plant growth — unit overview",
-      "summary": "Plants make glucose by photosynthesis, transport materials through tissues and farming methods can increase yield but may reduce biodiversity.",
+      "title": "9B — Plant growth and photosynthesis",
+      "summary": "This unit explains how plants make glucose, how water, carbon dioxide and minerals reach plant cells, how glucose is used, and how farming methods increase yield while affecting ecosystems.",
       "revisionPackFocus": [
         "Photosynthesis: carbon dioxide + water → glucose + oxygen.",
         "Chlorophyll absorbs light energy.",
@@ -187,13 +486,302 @@ window.YEAR9_NOTES = {
           "mediaTitle": "Farming yield and sustainability",
           "mediaLead": "Balance one benefit for crop yield with one possible problem for habitats or biodiversity."
         }
-      ]
+      ],
+      "targetedOverview": {
+        "title": "9B — Plant growth and photosynthesis",
+        "description": "This unit explains how plants make glucose, how water, carbon dioxide and minerals reach plant cells, how glucose is used, and how farming methods increase yield while affecting ecosystems.",
+        "subUnits": [
+          {
+            "title": "Photosynthesis",
+            "description": "Word and symbol equations for photosynthesis; the need for light energy and chlorophyll."
+          },
+          {
+            "title": "Water, minerals and gas exchange",
+            "description": "Root hair cells, xylem, stomata, diffusion and leaf adaptations."
+          },
+          {
+            "title": "Respiration and glucose uses",
+            "description": "Aerobic respiration and how plants use glucose for energy, storage and growth."
+          },
+          {
+            "title": "Farming and breeding",
+            "description": "Fertilisers, pesticides, selective breeding, yield, sustainability and biodiversity impacts."
+          }
+        ],
+        "vocabulary": [
+          {
+            "title": "Photosynthesis and respiration",
+            "terms": [
+              "photosynthesis",
+              "chlorophyll",
+              "chloroplast",
+              "glucose",
+              "limiting factor",
+              "raw material",
+              "reactant",
+              "product",
+              "aerobic respiration",
+              "ATP"
+            ]
+          },
+          {
+            "title": "Plant transport and adaptations",
+            "terms": [
+              "xylem",
+              "phloem",
+              "root hair cell",
+              "stoma/stomata",
+              "guard cell",
+              "palisade cell",
+              "diffusion",
+              "gas exchange",
+              "surface area",
+              "mineral salt",
+              "wilting"
+            ]
+          },
+          {
+            "title": "Plant products and farming",
+            "terms": [
+              "starch",
+              "cellulose",
+              "lipid",
+              "protein",
+              "nitrate",
+              "magnesium",
+              "fertiliser",
+              "pesticide",
+              "herbicide",
+              "insecticide",
+              "fungicide",
+              "yield",
+              "selective breeding",
+              "cross-breeding",
+              "sustainable development",
+              "biodiversity"
+            ]
+          }
+        ],
+        "understand": [
+          {
+            "title": "Explain photosynthesis using reactants, products and conditions.",
+            "notes": [
+              "Plants use carbon dioxide and water to make glucose and oxygen.",
+              "Light transfers the energy needed.",
+              "Chlorophyll absorbs light energy."
+            ],
+            "noteId": "9B-photosynthesis",
+            "media": [
+              "assets/webp/9B-photosynthesis-light-graph-notes.webp"
+            ],
+            "practice": [
+              "9B-VOC-01",
+              "9B-WE-01",
+              "9B-WE-02"
+            ]
+          },
+          {
+            "title": "Explain why light and chlorophyll are needed.",
+            "notes": [
+              "Without light, the energy needed for photosynthesis is not supplied.",
+              "Without chlorophyll, the leaf cannot absorb light energy effectively."
+            ],
+            "noteId": "9B-photosynthesis",
+            "media": [
+              "assets/webp/9B-photosynthesis-limiting-factors-notes-v152.webp"
+            ],
+            "practice": [
+              "9B-MCQ-04",
+              "9B-WE-15"
+            ]
+          },
+          {
+            "title": "Describe how roots and xylem get water to the leaf.",
+            "notes": [
+              "Roots are branched to absorb water from a large volume of soil.",
+              "Root hair cells have a large surface area.",
+              "Water moves up the plant in xylem vessels."
+            ],
+            "noteId": "9B-plant-transport",
+            "media": [
+              "assets/webp/9B-plant-transport-overview-notes-v153.webp"
+            ],
+            "practice": [
+              "9B-MCQ-08",
+              "9B-WE-05"
+            ]
+          },
+          {
+            "title": "Explain how carbon dioxide enters leaves.",
+            "notes": [
+              "Carbon dioxide diffuses through stomata.",
+              "Thin leaves reduce diffusion distance.",
+              "Higher carbon dioxide concentration can increase the rate of photosynthesis until another factor limits it."
+            ],
+            "noteId": "9B-plant-transport",
+            "media": [
+              "assets/webp/9B-stomata-micrograph.webp"
+            ],
+            "practice": [
+              "9B-WE-09",
+              "9B-WE-11"
+            ]
+          },
+          {
+            "title": "Describe how plants use glucose.",
+            "notes": [
+              "Glucose is used in respiration to release energy.",
+              "It can be stored as starch.",
+              "It is used to make cellulose, lipids and proteins for growth."
+            ],
+            "noteId": "9B-plant-products",
+            "media": [
+              "assets/webp/9B-glucose-uses-notes-v151.webp"
+            ],
+            "practice": [
+              "9B-MCQ-11",
+              "9B-WE-18",
+              "9B-WE-19"
+            ]
+          },
+          {
+            "title": "Explain how farming increases yield and causes environmental problems.",
+            "notes": [
+              "Fertilisers add mineral salts and increase growth.",
+              "Pesticides kill organisms that damage crops.",
+              "Clearing land, pesticides and fertilisers can damage habitats, food webs and biodiversity."
+            ],
+            "noteId": "9B-farming-yield-impact",
+            "media": [
+              "assets/webp/9B-farming-yield-sustainability-notes.webp"
+            ],
+            "practice": [
+              "9B-MCQ-21",
+              "9B-WE-50",
+              "9B-WE-61"
+            ]
+          }
+        ],
+        "identify": [
+          {
+            "title": "Identify reactants and products in photosynthesis and respiration.",
+            "notes": [
+              "Photosynthesis reactants: carbon dioxide and water.",
+              "Photosynthesis products: glucose and oxygen.",
+              "Respiration uses glucose and oxygen to make carbon dioxide and water."
+            ],
+            "noteId": "9B-photosynthesis",
+            "practice": [
+              "9B-WE-02",
+              "9B-MCQ-02"
+            ]
+          },
+          {
+            "title": "Identify plant adaptations in diagrams.",
+            "notes": [
+              "Root hair cells absorb water.",
+              "Palisade cells contain many chloroplasts.",
+              "Stomata allow gas exchange."
+            ],
+            "noteId": "9B-plant-transport",
+            "media": [
+              "assets/webp/9B-plant-transport-process.webp"
+            ],
+            "practice": [
+              "9B-MCQ-01",
+              "9B-MCQ-08"
+            ]
+          },
+          {
+            "title": "Identify xylem and phloem functions.",
+            "notes": [
+              "Xylem carries water and dissolved minerals from roots to leaves.",
+              "Phloem carries substances made by the plant, such as sugars."
+            ],
+            "noteId": "9B-plant-transport",
+            "media": [
+              "assets/webp/9B-leaf-vein-bundle.webp"
+            ],
+            "practice": [
+              "9B-WE-05"
+            ]
+          },
+          {
+            "title": "Identify limiting-factor graph patterns.",
+            "notes": [
+              "A graph rises when the tested factor increases the rate.",
+              "A plateau shows another factor has become limiting.",
+              "Very high temperature can reduce the rate by damaging enzymes."
+            ],
+            "noteId": "9B-photosynthesis",
+            "media": [
+              "assets/webp/9B-photosynthesis-limiting-factors-notes-v152.webp"
+            ],
+            "practice": [
+              "9B-MCQ-03",
+              "9B-WE-16"
+            ]
+          },
+          {
+            "title": "Identify sustainable and unsustainable farming choices.",
+            "notes": [
+              "A sustainable method meets human needs without destroying habitats.",
+              "Monocultures and habitat removal can reduce biodiversity."
+            ],
+            "noteId": "9B-farming-yield-impact",
+            "media": [
+              "assets/webp/9B-farming-yield-sustainability-notes.webp"
+            ],
+            "practice": [
+              "9B-WE-45",
+              "9B-WE-50"
+            ]
+          }
+        ],
+        "memorize": [
+          {
+            "title": "Photosynthesis: carbon dioxide + water → glucose + oxygen.",
+            "notes": [
+              "Balanced symbol equation: 6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂."
+            ],
+            "noteId": "9B-photosynthesis",
+            "practice": [
+              "9B-WE-02"
+            ]
+          },
+          {
+            "title": "Aerobic respiration: glucose + oxygen → carbon dioxide + water (+ energy).",
+            "notes": [
+              "Balanced symbol equation: C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O (+ energy)."
+            ],
+            "noteId": "9B-photosynthesis",
+            "practice": [
+              "9B-MCQ-02",
+              "9B-WE-20"
+            ]
+          },
+          {
+            "title": "Limiting factors of photosynthesis: light intensity, carbon dioxide concentration and temperature.",
+            "notes": [
+              "Any one of these can stop the rate increasing further."
+            ],
+            "noteId": "9B-photosynthesis",
+            "media": [
+              "assets/webp/9B-photosynthesis-limiting-factors-notes-v152.webp"
+            ],
+            "practice": [
+              "9B-MCQ-03",
+              "9B-WE-16"
+            ]
+          }
+        ]
+      }
     },
     {
       "id": "9E-overview",
       "unit": "9E",
-      "title": "9E Making materials — unit overview",
-      "summary": "Materials topics include material families, recycling, environmental impacts, energy changes and peer review.",
+      "title": "9E — Materials and their impact",
+      "summary": "This unit explains ceramics, polymers and composites, environmental impacts of material use, recycling methods, energy changes, state symbols, thermal decomposition and peer review.",
       "revisionPackFocus": [
         "Recycling reduces landfill and demand for raw materials.",
         "Different materials need different recycling methods.",
@@ -274,13 +862,319 @@ window.YEAR9_NOTES = {
           "mediaTitle": "Peer review process",
           "mediaLead": "Use this for questions about checking methods, evidence and conclusions before publication."
         }
-      ]
+      ],
+      "targetedOverview": {
+        "title": "9E — Materials and their impact",
+        "description": "This unit explains ceramics, polymers and composites, environmental impacts of material use, recycling methods, energy changes, state symbols, thermal decomposition and peer review.",
+        "subUnits": [
+          {
+            "title": "Materials and properties",
+            "description": "Ceramics, polymers, composites and how structure links to properties and uses."
+          },
+          {
+            "title": "Environmental impacts",
+            "description": "Pollution from fossil fuels, acid rain, greenhouse effect, soot, toxic waste and polymer waste."
+          },
+          {
+            "title": "Solutions and recycling",
+            "description": "Biodegradable polymers, renewable energy, desulfurisation, landfill reduction and material recycling."
+          },
+          {
+            "title": "Energy changes and peer review",
+            "description": "Endothermic and exothermic reactions, state symbols, thermal decomposition and how peer review checks science."
+          }
+        ],
+        "vocabulary": [
+          {
+            "title": "Ceramics and composites",
+            "terms": [
+              "ceramic",
+              "brittle",
+              "bond",
+              "clay",
+              "crystal",
+              "heat resistant",
+              "insulator",
+              "lattice structure",
+              "aggregate",
+              "cement",
+              "composite material",
+              "concrete",
+              "fibre"
+            ]
+          },
+          {
+            "title": "Polymers",
+            "terms": [
+              "polymer",
+              "monomer",
+              "addition polymerisation",
+              "plastic",
+              "synthetic polymer",
+              "crude oil",
+              "elastic",
+              "vulcanisation",
+              "biodegradable",
+              "non-biodegradable"
+            ]
+          },
+          {
+            "title": "Environment and recycling",
+            "terms": [
+              "acid rain",
+              "greenhouse effect",
+              "climate change",
+              "soot",
+              "carbon capture technology",
+              "landfill site",
+              "finite",
+              "recycling",
+              "renewable",
+              "non-renewable"
+            ]
+          },
+          {
+            "title": "Reactions and peer review",
+            "terms": [
+              "exothermic",
+              "endothermic",
+              "thermal decomposition",
+              "state symbols",
+              "hypothesis",
+              "method",
+              "results",
+              "conclusion",
+              "evaluation",
+              "peer review",
+              "journal",
+              "scientific paper"
+            ]
+          }
+        ],
+        "understand": [
+          {
+            "title": "Explain how properties affect material choice.",
+            "notes": [
+              "Ceramics are hard and heat resistant but can be brittle.",
+              "Polymers are long-chain materials that can be flexible, elastic or waterproof.",
+              "Composites combine materials to give useful properties."
+            ],
+            "noteId": "9E-composites",
+            "media": [
+              "assets/webp/9E-structure-of-materials-overview.webp"
+            ],
+            "practice": [
+              "9E-WE-01",
+              "9E-MCQ-05"
+            ]
+          },
+          {
+            "title": "Explain how polymers form and why biodegradability matters.",
+            "notes": [
+              "Polymerisation joins many monomers into long chains.",
+              "Non-biodegradable polymers remain in the environment for a long time.",
+              "Biodegradable polymers break down more easily."
+            ],
+            "noteId": "9E-polymers",
+            "media": [
+              "assets/webp/9E-polymers-monomers-composites-notes-v2.webp"
+            ],
+            "practice": [
+              "9E-MCQ-06",
+              "9E-MCQ-14"
+            ]
+          },
+          {
+            "title": "Describe pollutants from burning fossil fuels and their effects.",
+            "notes": [
+              "Sulfur dioxide can cause acid rain.",
+              "Carbon dioxide contributes to the greenhouse effect and climate change.",
+              "Soot contributes to air pollution."
+            ],
+            "noteId": "9E-environment",
+            "media": [
+              "assets/webp/9E-environmental-impacts-recycling.webp"
+            ],
+            "practice": [
+              "9E-WE-11",
+              "9E-WE-12"
+            ]
+          },
+          {
+            "title": "Explain biomagnification and persistent waste.",
+            "notes": [
+              "Toxic substances can build up in organisms.",
+              "Concentration can increase along a food chain.",
+              "Persistent pollutants and non-biodegradable polymers can remain in ecosystems."
+            ],
+            "noteId": "9E-environment",
+            "practice": [
+              "9E-WE-13",
+              "9E-WE-14"
+            ]
+          },
+          {
+            "title": "Summarise the benefits and methods of recycling.",
+            "notes": [
+              "Recycling reduces landfill.",
+              "It saves raw materials and can reduce energy use and pollution.",
+              "Metals and glass can be melted; polymers are sorted; paper is pulped; concrete is crushed and graded."
+            ],
+            "noteId": "9E-recycling-methods",
+            "media": [
+              "assets/webp/9E-recycling-methods-notes.webp"
+            ],
+            "practice": [
+              "9E-VOC-18",
+              "9E-WE-17",
+              "9E-WE-35"
+            ]
+          },
+          {
+            "title": "Distinguish exothermic and endothermic reactions.",
+            "notes": [
+              "Exothermic reactions transfer energy to the surroundings and usually increase temperature.",
+              "Endothermic reactions take in energy from the surroundings and usually decrease temperature."
+            ],
+            "noteId": "9E-energy-thermal-peer-review",
+            "media": [
+              "assets/webp/9E-exothermic-endothermic-notes-v151.webp"
+            ],
+            "practice": [
+              "9E-WE-21",
+              "9E-WE-25"
+            ]
+          },
+          {
+            "title": "Describe how peer review checks scientific work.",
+            "notes": [
+              "Other scientists check the method, results and conclusion.",
+              "They decide whether the work should be accepted, improved or rejected.",
+              "Peer review helps reduce errors before publication."
+            ],
+            "noteId": "9E-energy-thermal-peer-review",
+            "media": [
+              "assets/webp/9E-peer-review-process-notes-v151.webp"
+            ],
+            "practice": [
+              "9E-WE-28"
+            ]
+          }
+        ],
+        "identify": [
+          {
+            "title": "Identify ceramics, polymers and composites from examples.",
+            "notes": [
+              "Ceramics include clay and glass-type materials.",
+              "Polymers include plastics and rubber-like materials.",
+              "Composites include concrete and fibre-reinforced materials."
+            ],
+            "noteId": "9E-composites",
+            "media": [
+              "assets/webp/9E-structure-of-materials-overview.webp"
+            ],
+            "practice": [
+              "9E-MCQ-05"
+            ]
+          },
+          {
+            "title": "Identify exothermic and endothermic changes from temperature.",
+            "notes": [
+              "Temperature rise usually means exothermic.",
+              "Temperature fall usually means endothermic."
+            ],
+            "noteId": "9E-energy-thermal-peer-review",
+            "media": [
+              "assets/webp/9E-exothermic-endothermic-notes-v151.webp"
+            ],
+            "practice": [
+              "9E-MCQ-07",
+              "9E-WE-21"
+            ]
+          },
+          {
+            "title": "Identify state symbols in equations.",
+            "notes": [
+              "(s) means solid, (l) liquid, (g) gas and (aq) dissolved in water."
+            ],
+            "noteId": "9E-energy-thermal-peer-review",
+            "practice": [
+              "9E-WE-23"
+            ]
+          },
+          {
+            "title": "Identify recycling methods for different materials.",
+            "notes": [
+              "Metals and glass are often melted and reformed.",
+              "Paper is pulped after ink is removed.",
+              "Concrete is crushed and graded."
+            ],
+            "noteId": "9E-recycling-methods",
+            "media": [
+              "assets/webp/9E-recycling-methods-notes.webp"
+            ],
+            "practice": [
+              "9E-WE-35"
+            ]
+          },
+          {
+            "title": "Identify the peer-review steps.",
+            "notes": [
+              "Look for the sequence: investigation → paper submitted → other scientists check it → accept, improve or reject."
+            ],
+            "noteId": "9E-energy-thermal-peer-review",
+            "media": [
+              "assets/webp/9E-peer-review-process-notes-v151.webp"
+            ],
+            "practice": [
+              "9E-WE-28"
+            ]
+          }
+        ],
+        "memorize": [
+          {
+            "title": "Thermal decomposition of limestone: CaCO₃(s) → CaO(s) + CO₂(g).",
+            "notes": [
+              "Calcium carbonate breaks down to calcium oxide and carbon dioxide when heated."
+            ],
+            "noteId": "9E-energy-thermal-peer-review",
+            "practice": [
+              "9E-WE-24"
+            ]
+          },
+          {
+            "title": "State symbols: (s), (l), (g), (aq).",
+            "notes": [
+              "Solid, liquid, gas and aqueous."
+            ],
+            "noteId": "9E-energy-thermal-peer-review",
+            "practice": [
+              "9E-WE-23"
+            ]
+          },
+          {
+            "title": "Exothermic vs endothermic.",
+            "notes": [
+              "Exothermic: energy to surroundings.",
+              "Endothermic: energy taken in from surroundings."
+            ],
+            "noteId": "9E-energy-thermal-peer-review",
+            "media": [
+              "assets/webp/9E-exothermic-endothermic-notes-v151.webp"
+            ],
+            "practice": [
+              "9E-WE-21",
+              "9E-WE-25"
+            ]
+          }
+        ]
+      }
     },
     {
       "id": "9F-overview",
       "unit": "9F",
-      "title": "9F Reactivity and extraction — unit overview",
-      "summary": "This unit maps chemical change, atomic structure, reactivity, displacement, combustion, redox and metal extraction.",
+      "title": "9F — Reactivity and reactions",
+      "summary": "This unit explains chemical reactions and equations, particle ideas behind pressure, the reactivity series, atomic structure, combustion, reaction rates, displacement, redox and metal extraction.",
       "revisionPackFocus": [
         "The reactivity series orders metals.",
         "A more reactive metal can displace a less reactive metal from a compound.",
@@ -389,13 +1283,340 @@ window.YEAR9_NOTES = {
           "mediaLead": "Metal + water and metal + acid both produce hydrogen, with different other products.",
           "r7Integrated": true
         }
-      ]
+      ],
+      "targetedOverview": {
+        "title": "9F — Reactivity and reactions",
+        "description": "This unit explains chemical reactions and equations, particle ideas behind pressure, the reactivity series, atomic structure, combustion, reaction rates, displacement, redox and metal extraction.",
+        "subUnits": [
+          {
+            "title": "Reactions and equations",
+            "description": "Conservation of atoms, physical and chemical changes, word equations, symbol equations and state symbols."
+          },
+          {
+            "title": "Pressure, particles and reaction rate",
+            "description": "Gas pressure and factors that affect reaction rate and energy transfer."
+          },
+          {
+            "title": "Reactivity and displacement",
+            "description": "Reactivity series, metal reactions with water/acids/oxygen, displacement, oxidation and reduction."
+          },
+          {
+            "title": "Atomic structure and extraction",
+            "description": "Protons, neutrons and electrons, periodic table positions, ores, carbon reduction and electrolysis."
+          }
+        ],
+        "vocabulary": [
+          {
+            "title": "Reactions and pressure",
+            "terms": [
+              "chemical reaction",
+              "combustion",
+              "flammable",
+              "physical change",
+              "particle model",
+              "pressure",
+              "implosion",
+              "explosive"
+            ]
+          },
+          {
+            "title": "Atomic structure and periodic table",
+            "terms": [
+              "atomic number",
+              "mass number",
+              "proton",
+              "neutron",
+              "electron",
+              "nucleus",
+              "periodic table",
+              "group",
+              "period",
+              "reactivity series"
+            ]
+          },
+          {
+            "title": "Energy, rates and redox",
+            "terms": [
+              "endothermic",
+              "exothermic",
+              "hydrocarbon",
+              "neutralisation",
+              "rate",
+              "rate of reaction",
+              "oxidising agent",
+              "oxidation",
+              "reduction",
+              "displacement reaction",
+              "thermite reaction"
+            ]
+          },
+          {
+            "title": "Extraction",
+            "terms": [
+              "ore",
+              "native state",
+              "mineral",
+              "redox reaction",
+              "reduced",
+              "reducing agent",
+              "electrolysis",
+              "blast furnace"
+            ]
+          }
+        ],
+        "understand": [
+          {
+            "title": "Explain why mass is conserved in reactions.",
+            "notes": [
+              "Atoms are not created or destroyed in a chemical reaction.",
+              "The number of each type of atom is the same before and after.",
+              "This is why equations are balanced."
+            ],
+            "noteId": "9F-changes",
+            "media": [
+              "assets/webp/9F-balancing-equations-notes-v3.webp"
+            ],
+            "practice": [
+              "9F-WE-04"
+            ]
+          },
+          {
+            "title": "Interpret word and symbol equations.",
+            "notes": [
+              "Coefficients show numbers of particles or molecules.",
+              "Subscripts show how many atoms are in a formula.",
+              "State symbols tell you the physical state."
+            ],
+            "noteId": "9F-changes",
+            "media": [
+              "assets/webp/9F-balancing-equations-notes-v3.webp"
+            ],
+            "practice": [
+              "9F-WE-05"
+            ]
+          },
+          {
+            "title": "Describe gas pressure using particles.",
+            "notes": [
+              "Gas particles move and collide with container walls.",
+              "Higher temperature or more particles causes more collisions.",
+              "Smaller volume makes collisions more frequent."
+            ],
+            "noteId": "9F-changes",
+            "media": [
+              "assets/webp/9F-gas-pressure-particle-collisions-notes-v153.webp"
+            ],
+            "practice": [
+              "9F-WE-44"
+            ]
+          },
+          {
+            "title": "Use the reactivity series to predict reactions.",
+            "notes": [
+              "More reactive metals react more vigorously.",
+              "Metals reacting with acids produce a salt and hydrogen.",
+              "A more reactive metal can displace a less reactive metal from a compound."
+            ],
+            "noteId": "9F-reactivity",
+            "media": [
+              "assets/webp/9F-reactivity-series-notes-medium-v2.webp"
+            ],
+            "practice": [
+              "9F-WE-14",
+              "9F-MCQ-21",
+              "9F-MCQ-25"
+            ]
+          },
+          {
+            "title": "Explain displacement, oxidation and reduction.",
+            "notes": [
+              "Displacement happens when a more reactive metal takes the place of a less reactive metal.",
+              "Oxidation can mean gain of oxygen.",
+              "Reduction can mean loss of oxygen."
+            ],
+            "noteId": "9F-reactivity",
+            "media": [
+              "assets/webp/9F-displacement-magnesium-copper-notes-v152.webp"
+            ],
+            "practice": [
+              "9F-WE-52",
+              "9F-WE-53"
+            ]
+          },
+          {
+            "title": "Explain combustion of hydrocarbons.",
+            "notes": [
+              "Hydrocarbons contain carbon and hydrogen only.",
+              "Complete combustion produces carbon dioxide and water.",
+              "Combustion is an exothermic reaction."
+            ],
+            "noteId": "9F-combustion-energy-rates",
+            "media": [
+              "assets/webp/9F-combustion-fire-triangle-notes.webp"
+            ],
+            "practice": [
+              "9F-WE-35"
+            ]
+          },
+          {
+            "title": "Describe metal extraction using carbon or electrolysis.",
+            "notes": [
+              "Metals below carbon can often be extracted by heating with carbon.",
+              "Metals above carbon need electrolysis.",
+              "A reducing agent removes oxygen from the metal compound."
+            ],
+            "noteId": "9F-extraction",
+            "media": [
+              "assets/webp/9F-reactivity-extraction-decision-notes-r167.webp"
+            ],
+            "practice": [
+              "9F-MCQ-25",
+              "9F-WE-55"
+            ]
+          },
+          {
+            "title": "Describe rusting and corrosion protection.",
+            "notes": [
+              "Rusting needs iron, oxygen and water.",
+              "Coatings keep oxygen and water away.",
+              "Sacrificial protection uses a more reactive metal to corrode instead of iron."
+            ],
+            "noteId": "9F-rusting",
+            "media": [
+              "assets/webp/9F-rusting-conditions-prevention-notes-r167.webp"
+            ],
+            "practice": [
+              "9F-WE-07",
+              "9F-WE-18"
+            ]
+          }
+        ],
+        "identify": [
+          {
+            "title": "Identify balanced and unbalanced equations.",
+            "notes": [
+              "Count atoms of each element on both sides.",
+              "A balanced equation has the same number of each atom on each side."
+            ],
+            "noteId": "9F-changes",
+            "media": [
+              "assets/webp/9F-balancing-equations-notes-v3.webp"
+            ],
+            "practice": [
+              "9F-WE-04"
+            ]
+          },
+          {
+            "title": "Identify metals in the reactivity series.",
+            "notes": [
+              "Use the metal position to predict reaction strength, displacement and extraction method."
+            ],
+            "noteId": "9F-reactivity",
+            "media": [
+              "assets/webp/9F-reactivity-series-notes-medium-v2.webp"
+            ],
+            "practice": [
+              "9F-MCQ-21",
+              "9F-MCQ-22"
+            ]
+          },
+          {
+            "title": "Identify extraction methods from reactivity.",
+            "notes": [
+              "Below carbon: carbon reduction is possible.",
+              "Above carbon: electrolysis is needed."
+            ],
+            "noteId": "9F-extraction",
+            "media": [
+              "assets/webp/9F-reactivity-extraction-decision-notes-r167.webp"
+            ],
+            "practice": [
+              "9F-MCQ-25"
+            ]
+          },
+          {
+            "title": "Identify parts or outputs of a blast furnace diagram.",
+            "notes": [
+              "Look for hot air input, coke/limestone/iron ore input, molten iron and slag."
+            ],
+            "noteId": "9F-extraction",
+            "media": [
+              "assets/webp/9F-blast-furnace-process-notes-r167.webp"
+            ],
+            "practice": [
+              "9F-MCQ-26",
+              "9F-MCQ-27"
+            ]
+          },
+          {
+            "title": "Identify whether a reaction is exothermic or endothermic.",
+            "notes": [
+              "Exothermic reactions warm the surroundings.",
+              "Endothermic reactions cool the surroundings."
+            ],
+            "noteId": "9F-combustion-energy-rates",
+            "media": [
+              "assets/webp/9F-exothermic-endothermic-notes.webp"
+            ],
+            "practice": [
+              "9F-VOC-13"
+            ]
+          }
+        ],
+        "memorize": [
+          {
+            "title": "Hydrocarbon + oxygen → carbon dioxide + water.",
+            "notes": [
+              "Use this for complete combustion."
+            ],
+            "noteId": "9F-combustion-energy-rates",
+            "practice": [
+              "9F-WE-35"
+            ]
+          },
+          {
+            "title": "Metal + acid → salt + hydrogen.",
+            "notes": [
+              "This pattern is used for many metal-acid reactions."
+            ],
+            "noteId": "9F-reactivity",
+            "media": [
+              "assets/webp/9F-metal-reaction-products-notes-r167.webp"
+            ],
+            "practice": [
+              "9F-WE-14"
+            ]
+          },
+          {
+            "title": "Percentage change = actual change ÷ original amount × 100.",
+            "notes": [
+              "Use units carefully and show substitution before calculating."
+            ],
+            "practice": [
+              "9F-WE-45"
+            ]
+          },
+          {
+            "title": "Gas pressure increases with higher temperature, more particles or smaller volume.",
+            "notes": [
+              "Link each change to collision frequency or collision force."
+            ],
+            "noteId": "9F-changes",
+            "media": [
+              "assets/webp/9F-gas-pressure-particle-collisions-notes-v153.webp"
+            ],
+            "practice": [
+              "9F-WE-44"
+            ]
+          }
+        ]
+      }
     },
     {
       "id": "9I-overview",
       "unit": "9I",
-      "title": "9I Forces and motion — unit overview",
-      "summary": "This unit is calculation and graph heavy: speed, graphs, moments, work, pressure, density and terminal velocity.",
+      "title": "9I — Forces, motion and machines",
+      "summary": "This unit explains how forces change motion, how to calculate and graph speed, how levers and moments work, and how machines reduce force by increasing distance.",
       "revisionPackFocus": [
         "Speed = distance ÷ time.",
         "On distance-time graphs, steeper means faster.",
@@ -511,13 +1732,330 @@ window.YEAR9_NOTES = {
           "mediaLead": "Compare weight and air resistance as a falling object speeds up.",
           "r7Integrated": true
         }
-      ]
+      ],
+      "targetedOverview": {
+        "title": "9I — Forces, motion and machines",
+        "description": "This unit explains how forces change motion, how to calculate and graph speed, how levers and moments work, and how machines reduce force by increasing distance.",
+        "subUnits": [
+          {
+            "title": "Forces and terminal velocity",
+            "description": "Balanced and unbalanced forces, friction, drag, air resistance and terminal velocity."
+          },
+          {
+            "title": "Speed and graphs",
+            "description": "Mean speed, relative speed, distance–time graphs, speed–time graphs and gradients."
+          },
+          {
+            "title": "Levers and moments",
+            "description": "Pivots, loads, efforts, moments, force multipliers and distance multipliers."
+          },
+          {
+            "title": "Simple machines and work",
+            "description": "Ramps, pulleys, work done and conservation of energy."
+          }
+        ],
+        "vocabulary": [
+          {
+            "title": "Forces and movement",
+            "terms": [
+              "accelerate",
+              "air resistance",
+              "balanced force",
+              "drag",
+              "fluid",
+              "friction",
+              "resultant force",
+              "terminal velocity",
+              "unbalanced force",
+              "upthrust",
+              "water resistance",
+              "weight"
+            ]
+          },
+          {
+            "title": "Energy and work",
+            "terms": [
+              "chemical energy",
+              "kinetic energy",
+              "gravitational potential energy",
+              "elastic potential energy",
+              "dissipate",
+              "efficiency",
+              "law of conservation of energy",
+              "renewable resource",
+              "non-renewable resource",
+              "work"
+            ]
+          },
+          {
+            "title": "Speed and graphs",
+            "terms": [
+              "speed",
+              "mean speed",
+              "relative speed",
+              "distance–time graph",
+              "speed–time graph",
+              "gradient",
+              "m/s",
+              "km/h",
+              "mph",
+              "displacement"
+            ]
+          },
+          {
+            "title": "Levers and machines",
+            "terms": [
+              "pivot",
+              "fulcrum",
+              "lever",
+              "load",
+              "effort",
+              "moment",
+              "equilibrium",
+              "force multiplier",
+              "distance multiplier",
+              "machine",
+              "pulley",
+              "ramp"
+            ]
+          }
+        ],
+        "understand": [
+          {
+            "title": "Explain how forces affect motion.",
+            "notes": [
+              "Forces can speed up, slow down or change direction.",
+              "Balanced forces do not change the speed of a moving object.",
+              "Unbalanced forces change motion."
+            ],
+            "noteId": "9I-forces",
+            "media": [
+              "assets/webp/9I-terminal-velocity-force-sequence-notes-r167.webp"
+            ],
+            "practice": [
+              "9I-MCQ-01",
+              "9I-WE-17"
+            ]
+          },
+          {
+            "title": "Describe terminal velocity.",
+            "notes": [
+              "As a falling object speeds up, air resistance increases.",
+              "Terminal velocity is reached when air resistance balances weight.",
+              "At terminal velocity, the object continues at constant speed."
+            ],
+            "noteId": "9I-forces",
+            "media": [
+              "assets/webp/9I-terminal-velocity-force-sequence-notes-r167.webp"
+            ],
+            "practice": [
+              "9I-VOC-04",
+              "9I-WE-17"
+            ]
+          },
+          {
+            "title": "Calculate and compare speed.",
+            "notes": [
+              "Speed is distance divided by time.",
+              "Mean speed uses total distance and total time.",
+              "Relative speed compares one object with another."
+            ],
+            "noteId": "9I-speed",
+            "media": [
+              "assets/webp/9I-distance-time-graph-notes.webp"
+            ],
+            "practice": [
+              "9I-WE-24",
+              "9I-MCQ-24"
+            ]
+          },
+          {
+            "title": "Interpret distance–time and speed–time graphs.",
+            "notes": [
+              "On a distance–time graph, a steeper line means a higher speed.",
+              "A horizontal line on a distance–time graph means stationary.",
+              "On a speed–time graph, horizontal means constant speed and slopes show acceleration or deceleration."
+            ],
+            "noteId": "9I-speed-time-graphs",
+            "media": [
+              "assets/webp/9I-speed-time-graph-notes-v152.webp"
+            ],
+            "practice": [
+              "9I-MCQ-24",
+              "9I-WE-10"
+            ]
+          },
+          {
+            "title": "Explain levers, pivots and moments.",
+            "notes": [
+              "A pivot is the turning point.",
+              "A moment is a turning effect of a force.",
+              "Moment depends on force and perpendicular distance from the pivot."
+            ],
+            "noteId": "9I-moments",
+            "media": [
+              "assets/webp/9I-moments-levers-perpendicular-distance-notes-r167.webp"
+            ],
+            "practice": [
+              "9I-MCQ-13",
+              "9I-CALC-06"
+            ]
+          },
+          {
+            "title": "Explain balance and equilibrium.",
+            "notes": [
+              "An object balances when clockwise and anticlockwise moments are equal.",
+              "The same moment can be made by a larger force over a shorter distance or a smaller force over a longer distance."
+            ],
+            "noteId": "9I-moments",
+            "media": [
+              "assets/webp/9I-moment-calculations-notes-v149.webp"
+            ],
+            "practice": [
+              "9I-WE-08",
+              "9I-CALC-06"
+            ]
+          },
+          {
+            "title": "Explain simple machines and work.",
+            "notes": [
+              "Levers, ramps and pulleys can reduce the force needed.",
+              "If force is reduced, the distance moved increases.",
+              "The total work done/energy transferred is the same, ignoring losses."
+            ],
+            "noteId": "9I-energy-work",
+            "media": [
+              "assets/webp/9I-sankey-efficiency-notes.webp"
+            ],
+            "practice": [
+              "9I-MCQ-18",
+              "9I-VOC-15"
+            ]
+          }
+        ],
+        "identify": [
+          {
+            "title": "Identify balanced and unbalanced force situations.",
+            "notes": [
+              "Equal opposite forces are balanced.",
+              "If one force is larger, there is a resultant force."
+            ],
+            "noteId": "9I-forces",
+            "practice": [
+              "9I-MCQ-01",
+              "9I-MCQ-03"
+            ]
+          },
+          {
+            "title": "Identify terminal velocity diagrams.",
+            "notes": [
+              "Look for equal-size upward drag and downward weight arrows."
+            ],
+            "noteId": "9I-forces",
+            "media": [
+              "assets/webp/9I-terminal-velocity-force-sequence-notes-r167.webp"
+            ],
+            "practice": [
+              "9I-WE-17"
+            ]
+          },
+          {
+            "title": "Read a distance–time or speed–time graph.",
+            "notes": [
+              "State what each section shows: stationary, constant speed, acceleration or deceleration."
+            ],
+            "noteId": "9I-speed",
+            "media": [
+              "assets/webp/9I-distance-time-graph-notes.webp"
+            ],
+            "practice": [
+              "9I-MCQ-24",
+              "9I-WE-10"
+            ]
+          },
+          {
+            "title": "Identify pivot, effort and load in lever diagrams.",
+            "notes": [
+              "The pivot/fulcrum is the turning point.",
+              "The effort is the force applied by the user.",
+              "The load is the object being moved."
+            ],
+            "noteId": "9I-moments",
+            "media": [
+              "assets/webp/9I-lever-moment-context.webp"
+            ],
+            "practice": [
+              "9I-MCQ-13",
+              "9I-WE-08"
+            ]
+          },
+          {
+            "title": "Identify which formula to use in a calculation.",
+            "notes": [
+              "Speed uses distance and time.",
+              "Moment uses force and perpendicular distance.",
+              "Work uses force and distance moved in the direction of the force."
+            ],
+            "practice": [
+              "9I-CALC-06",
+              "9I-MCQ-19"
+            ]
+          }
+        ],
+        "memorize": [
+          {
+            "title": "speed = distance ÷ time.",
+            "notes": [
+              "Units include m/s, km/h and mph."
+            ],
+            "noteId": "9I-speed",
+            "media": [
+              "assets/webp/9I-distance-time-graph-notes.webp"
+            ],
+            "practice": [
+              "9I-WE-24"
+            ]
+          },
+          {
+            "title": "moment = force × perpendicular distance from pivot.",
+            "notes": [
+              "Moment is measured in newton metres (N m)."
+            ],
+            "noteId": "9I-moments",
+            "media": [
+              "assets/webp/9I-moments-levers-perpendicular-distance-notes-r167.webp"
+            ],
+            "practice": [
+              "9I-CALC-06"
+            ]
+          },
+          {
+            "title": "work = force × distance moved in the direction of the force.",
+            "notes": [
+              "Work is measured in joules (J)."
+            ],
+            "noteId": "9I-energy-work",
+            "practice": [
+              "9I-MCQ-19"
+            ]
+          },
+          {
+            "title": "weight = mass × gravitational field strength.",
+            "notes": [
+              "Approximate Earth gravitational field strength is 10 N/kg."
+            ],
+            "practice": [
+              "9J-CALC-01"
+            ]
+          }
+        ]
+      }
     },
     {
       "id": "9J-overview",
       "unit": "9J",
-      "title": "9J Force fields and electromagnets — unit overview",
-      "summary": "This unit combines fields, static electricity, circuits, resistance, electromagnets and the motor effect.",
+      "title": "9J — Electricity and magnetism",
+      "summary": "This unit explains force fields, static charge, current and voltage, resistance, electromagnets, relays, motors and the motor effect.",
       "revisionPackFocus": [
         "Static electricity is caused by electron transfer.",
         "Current is measured with an ammeter in series.",
@@ -630,7 +2168,359 @@ window.YEAR9_NOTES = {
           "mediaLead": "Use this to compare the main non-contact force fields and what the arrows show.",
           "r7Integrated": true
         }
-      ]
+      ],
+      "targetedOverview": {
+        "title": "9J — Electricity and magnetism",
+        "description": "This unit explains force fields, static charge, current and voltage, resistance, electromagnets, relays, motors and the motor effect.",
+        "subUnits": [
+          {
+            "title": "Force fields",
+            "description": "Magnetic, gravitational and electric fields, non-contact forces and weight."
+          },
+          {
+            "title": "Static electricity",
+            "description": "Charges in atoms, electron transfer, attraction, repulsion and electric fields."
+          },
+          {
+            "title": "Electric circuits",
+            "description": "Series and parallel circuits, current, voltage, ammeters and voltmeters."
+          },
+          {
+            "title": "Resistance",
+            "description": "Ohms, resistance, wire investigations and Ohm’s law."
+          },
+          {
+            "title": "Electromagnets and motors",
+            "description": "Electromagnets, relays, motor effect and factors that increase motor speed/force."
+          }
+        ],
+        "vocabulary": [
+          {
+            "title": "Force fields",
+            "terms": [
+              "force field",
+              "magnetic field",
+              "gravitational field",
+              "gravitational field strength",
+              "mass",
+              "non-contact force",
+              "weight",
+              "gravitational potential energy"
+            ]
+          },
+          {
+            "title": "Static electricity",
+            "terms": [
+              "electric field",
+              "electron",
+              "proton",
+              "neutron",
+              "nucleus",
+              "positive charge",
+              "negative charge",
+              "static electricity"
+            ]
+          },
+          {
+            "title": "Circuits and resistance",
+            "terms": [
+              "ammeter",
+              "ampere (A)",
+              "electric current",
+              "parallel circuit",
+              "series circuit",
+              "volt (V)",
+              "voltage",
+              "voltmeter",
+              "ohm (Ω)",
+              "resistance",
+              "resistor"
+            ]
+          },
+          {
+            "title": "Electromagnets and motors",
+            "terms": [
+              "electromagnet",
+              "relay",
+              "electric motor",
+              "motor effect",
+              "current-carrying wire",
+              "coil",
+              "iron core"
+            ]
+          }
+        ],
+        "understand": [
+          {
+            "title": "Explain force fields, gravity and weight.",
+            "notes": [
+              "A force field is a space where a non-contact force has an effect.",
+              "Objects with mass attract each other through gravitational fields.",
+              "Weight is the force caused by gravity and can be calculated from mass and gravitational field strength."
+            ],
+            "noteId": "9J-fields",
+            "media": [
+              "assets/webp/9J-force-field-comparison-notes-v153.webp"
+            ],
+            "practice": [
+              "9J-WE-03",
+              "9J-CALC-01"
+            ]
+          },
+          {
+            "title": "Explain static electricity using electron transfer.",
+            "notes": [
+              "Rubbing insulating materials can transfer electrons.",
+              "An object that gains electrons becomes negatively charged.",
+              "An object that loses electrons becomes positively charged."
+            ],
+            "noteId": "9J-static",
+            "media": [
+              "assets/webp/9J-static-charge-transfer-notes-v152.webp"
+            ],
+            "practice": [
+              "9J-VOC-09",
+              "9J-WE-08"
+            ]
+          },
+          {
+            "title": "Describe attraction, repulsion and electric fields.",
+            "notes": [
+              "Opposite charges attract.",
+              "Like charges repel.",
+              "An electric field is the region around a charged object where another charge feels a force."
+            ],
+            "noteId": "9J-static",
+            "media": [
+              "assets/webp/9J-electric-fields-direction-notes-r167.webp"
+            ],
+            "practice": [
+              "9J-MCQ-44",
+              "9J-WE-08"
+            ]
+          },
+          {
+            "title": "Explain current, voltage and meter placement.",
+            "notes": [
+              "Current is a flow of electrons and is measured with an ammeter in series.",
+              "Voltage is energy transferred by a cell or component and is measured with a voltmeter in parallel.",
+              "Series and parallel circuits behave differently."
+            ],
+            "noteId": "9J-circuits",
+            "media": [
+              "assets/webp/9J-circuit-symbols-overview.webp"
+            ],
+            "practice": [
+              "9J-MCQ-25",
+              "9J-MCQ-30",
+              "9J-WE-36"
+            ]
+          },
+          {
+            "title": "Explain resistance and wire factors.",
+            "notes": [
+              "Resistance is how difficult it is for current to flow.",
+              "Higher voltage increases current if resistance stays the same.",
+              "Longer wires have higher resistance; thicker wires have lower resistance."
+            ],
+            "noteId": "9J-resistance",
+            "media": [
+              "assets/webp/9J-current-voltage-graph-comparison-notes-v153.webp"
+            ],
+            "practice": [
+              "9J-MCQ-14",
+              "9J-MCQ-16",
+              "9J-WE-39"
+            ]
+          },
+          {
+            "title": "Describe how electromagnets are made stronger.",
+            "notes": [
+              "An electromagnet is a current-carrying coil.",
+              "It is magnetic only while current flows.",
+              "Strength increases with more coils, larger current or an iron core."
+            ],
+            "noteId": "9J-electromagnets",
+            "media": [
+              "assets/webp/9J-electromagnet-relay-motor-overview-base.webp"
+            ],
+            "practice": [
+              "9J-MCQ-17",
+              "9J-WE-02"
+            ]
+          },
+          {
+            "title": "Explain the motor effect.",
+            "notes": [
+              "A current-carrying wire in a magnetic field experiences a force.",
+              "In a motor, forces on opposite sides of the coil make it turn.",
+              "Increasing current, magnetic field strength or coil turns increases the force/speed."
+            ],
+            "noteId": "9J-electromagnets",
+            "media": [
+              "assets/webp/9J-motor-effect-simple-motor-notes-v3.webp"
+            ],
+            "practice": [
+              "9J-VOC-18",
+              "9J-WE-48"
+            ]
+          }
+        ],
+        "identify": [
+          {
+            "title": "Identify field diagrams and field direction.",
+            "notes": [
+              "Magnetic field direction is shown from north to south.",
+              "Electric field arrows show the direction a positive charge would move."
+            ],
+            "noteId": "9J-fields",
+            "media": [
+              "assets/webp/9J-force-field-comparison-notes-v153.webp"
+            ],
+            "practice": [
+              "9J-MCQ-44",
+              "9J-WE-03"
+            ]
+          },
+          {
+            "title": "Identify circuit symbols.",
+            "notes": [
+              "Know common symbols for cells, batteries, switches, lamps, motors, resistors, ammeters and voltmeters."
+            ],
+            "noteId": "9J-circuits",
+            "media": [
+              "assets/webp/9J-circuit-symbols-overview.webp"
+            ],
+            "practice": [
+              "9J-MCQ-24",
+              "9J-MCQ-25",
+              "9J-WE-25"
+            ]
+          },
+          {
+            "title": "Identify series and parallel circuits.",
+            "notes": [
+              "A series circuit has one loop.",
+              "A parallel circuit has branches."
+            ],
+            "noteId": "9J-circuits",
+            "media": [
+              "assets/webp/9J-series-parallel-current-voltage.webp"
+            ],
+            "practice": [
+              "9J-WE-26",
+              "9J-WE-27"
+            ]
+          },
+          {
+            "title": "Identify where to place ammeters and voltmeters.",
+            "notes": [
+              "Ammeters go in series.",
+              "Voltmeters go in parallel across the cell or component."
+            ],
+            "noteId": "9J-circuits",
+            "media": [
+              "assets/webp/9J-meter-placement-candidates-notes-v2.webp"
+            ],
+            "practice": [
+              "9J-MCQ-30",
+              "9J-MCQ-31"
+            ]
+          },
+          {
+            "title": "Identify factors that change resistance in a wire.",
+            "notes": [
+              "Material, length and thickness affect wire resistance.",
+              "Longer wires have higher resistance; thicker wires have lower resistance."
+            ],
+            "noteId": "9J-wire-resistance-investigation",
+            "media": [
+              "assets/webp/9J-wire-resistance-investigation-notes.webp"
+            ],
+            "practice": [
+              "9J-MCQ-14",
+              "9J-WE-41"
+            ]
+          },
+          {
+            "title": "Label an electromagnet or motor diagram.",
+            "notes": [
+              "Look for coil, iron core, current direction, magnetic poles and forces on the coil."
+            ],
+            "noteId": "9J-electromagnets",
+            "media": [
+              "assets/webp/9J-electromagnet-motor-effect-notes-v152.webp"
+            ],
+            "practice": [
+              "9J-WE-01",
+              "9J-WE-48"
+            ]
+          }
+        ],
+        "memorize": [
+          {
+            "title": "weight = mass × gravitational field strength.",
+            "notes": [
+              "On Earth, g is approximately 10 N/kg."
+            ],
+            "noteId": "9J-fields",
+            "practice": [
+              "9J-CALC-01"
+            ]
+          },
+          {
+            "title": "voltage = current × resistance.",
+            "notes": [
+              "Voltage is measured in volts, current in amps and resistance in ohms."
+            ],
+            "noteId": "9J-resistance",
+            "media": [
+              "assets/webp/9J-current-voltage-graph-comparison-notes-v153.webp"
+            ],
+            "practice": [
+              "9J-MCQ-16",
+              "9J-CALC-03"
+            ]
+          },
+          {
+            "title": "resistance = voltage ÷ current.",
+            "notes": [
+              "Use this rearranged form when voltage and current are given."
+            ],
+            "noteId": "9J-resistance",
+            "media": [
+              "assets/webp/9J-current-voltage-graph-comparison-notes-v153.webp"
+            ],
+            "practice": [
+              "9J-MCQ-16",
+              "9J-CALC-03"
+            ]
+          },
+          {
+            "title": "current = voltage ÷ resistance.",
+            "notes": [
+              "Use this rearranged form when voltage and resistance are given."
+            ],
+            "noteId": "9J-resistance",
+            "practice": [
+              "9J-CALC-04"
+            ]
+          },
+          {
+            "title": "Motor strength/speed increases with current, magnetic field strength and turns on the coil.",
+            "notes": [
+              "These are the key improvement factors for motor-effect answers."
+            ],
+            "noteId": "9J-electromagnets",
+            "media": [
+              "assets/webp/9J-motor-effect-simple-motor-notes-v3.webp"
+            ],
+            "practice": [
+              "9J-WE-48"
+            ]
+          }
+        ]
+      }
     }
   ],
   "notes": [
