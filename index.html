@@ -8,7 +8,7 @@
   <title>Reaction · Year 9 Science Study</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
   <link rel="manifest" href="manifest.webmanifest" />
-  <link rel="stylesheet" href="styles.css?v=1.72.2" />
+  <link rel="stylesheet" href="styles.css?v=1.73.0" />
 </head>
 <body>
   <canvas id="burstCanvas" aria-hidden="true"></canvas>
@@ -48,42 +48,24 @@
           <p class="journey-hint">Choose one mode, then select one or more units or sub-units below.</p>
         </div>
 
-        <div class="journey-grid journey-grid-six" role="radiogroup" aria-label="Learning mode">
+        <div class="journey-grid journey-grid-three" role="radiogroup" aria-label="Learning mode">
           <button class="journey-card status-route route-card-button active" data-mode-select="practice" type="button" role="radio" aria-checked="true">
             <span class="journey-icon">↻</span>
             <strong>Revision journey</strong>
-            <small>Work through selected questions and sort them as you go.</small>
+            <small>Flexible learn-as-you-go practice. Select units or sub-units, use feedback and class notes, then sort questions into Secure or Revisit.</small>
             <em><span id="journeyCount">0 / 0 sorted</span></em>
-          </button>
-          <button class="journey-card revisit status-route route-card-button" data-mode-select="revisit" type="button" role="radio" aria-checked="false">
-            <span class="journey-icon">⟳</span>
-            <strong>Revisit</strong>
-            <small>Practise questions you nearly know and want to come back to.</small>
-            <em><span id="revisitStat">0</span> ready</em>
-          </button>
-          <button class="journey-card revisit-test status-route route-card-button" data-mode-select="revisit-test" type="button" role="radio" aria-checked="false">
-            <span class="journey-icon">↺</span>
-            <strong>Revisit test</strong>
-            <small>Build a test from the questions currently in Revisit.</small>
-            <em><span id="hubRevisitTestStat">0</span> ready</em>
           </button>
           <button class="journey-card test status-route route-card-button" data-mode-select="test" type="button" role="radio" aria-checked="false">
             <span class="journey-icon">✓</span>
             <strong>Test your knowledge</strong>
-            <small>Check the questions you have already marked Secure.</small>
+            <small>Build a selected-unit question-bank test. Answers, explanations and class-note links stay hidden until you submit.</small>
             <em><span id="masteredStat">0</span> ready</em>
           </button>
-          <button class="journey-card unit-test status-route route-card-button" data-mode-select="unit-test" type="button" role="radio" aria-checked="false">
-            <span class="journey-icon">▣</span>
-            <strong>End of unit test</strong>
-            <small>Build a written test from one selected unit. No multiple-choice questions.</small>
-            <em>Unit-specific</em>
-          </button>
-          <button class="journey-card written status-route route-card-button" data-mode-select="written" type="button" role="radio" aria-checked="false">
+          <button class="journey-card written status-route route-card-button" data-mode-select="exam" type="button" role="radio" aria-checked="false">
             <span class="journey-icon">✍</span>
-            <strong>Written exam mode</strong>
-            <small>Build an 80-mark source-style paper with Biology, Chemistry, Physics and Working scientifically.</small>
-            <em>15 · 30 · 45 marks</em>
+            <strong>Exam mode</strong>
+            <small>Open a normal 80-mark source-style written paper with digital answer boxes first and Print / Save PDF as a secondary option.</small>
+            <em>80-mark paper</em>
           </button>
         </div>
         <div class="journey-entry-row">
@@ -92,19 +74,6 @@
             <span id="selectionDetail">Use the unit choices below to narrow the journey.</span>
           </div>
           <button id="routeEntryButton" class="primary-button route-entry-button" type="button">Start revision</button>
-        </div>
-        <div class="written-builder-panel" aria-label="Written exam builder options">
-          <div>
-            <strong>Written test builder</strong>
-            <span>Choose quick written practice, or build a normal 80-mark year-end paper.</span>
-          </div>
-          <div class="written-builder-actions">
-            <button class="secondary-button" data-written-size="15" type="button">Quick · 15 marks</button>
-            <button class="secondary-button" data-written-size="30" type="button">Standard · 30 marks</button>
-            <button class="secondary-button" data-written-size="45" type="button">Full · 45 marks</button>
-            <a class="secondary-button" href="exam-paper.html">Normal paper · 80 marks</a>
-            <a class="secondary-button" href="year-end-essentials.html">Year-end essentials</a>
-          </div>
         </div>
       </section>
 
@@ -152,8 +121,8 @@
     </section>
   </main>
 
-  <script src="data/year9-content.js?v=1.72.2"></script>
-  <script src="data/year9-notes.js?v=1.72.2"></script>
-  <script src="app.js?v=1.72.2"></script>
+  <script src="data/year9-content.js?v=1.73.0"></script>
+  <script src="data/year9-notes.js?v=1.73.0"></script>
+  <script src="app.js?v=1.73.0"></script>
 </body>
 </html>

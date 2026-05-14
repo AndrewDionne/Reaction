@@ -58,8 +58,8 @@
   const modeText = {
     practice: {
       eyebrow: "Revision journey",
-      title: "Work through your revision questions",
-      subtitle: "Answer each question, then sort it into Secure or Revisit.",
+      title: "Revision journey",
+      subtitle: "Flexible learn-as-you-go practice with feedback, class notes, Secure and Revisit sorting.",
       empty: "No questions match these filters.",
     },
     revisit: {
@@ -92,11 +92,17 @@
       subtitle: "Build a written-answer paper with balanced Biology, Chemistry and Physics marks.",
       empty: "No written questions are available for this selection.",
     },
+    exam: {
+      eyebrow: "Exam mode",
+      title: "Exam mode",
+      subtitle: "Open a normal 80-mark source-style written paper. Digital answers come first; print/PDF is secondary.",
+      empty: "No exam paper is available.",
+    },
     test: {
-      eyebrow: "Focused check",
+      eyebrow: "Test your knowledge",
       title: "Test your knowledge",
-      subtitle: "Check the questions you have already marked Secure.",
-      empty: "No Secure questions match these filters yet.",
+      subtitle: "Use selected units or sub-units. Answers stay locked until the test is submitted.",
+      empty: "No questions match these filters.",
     },
   };
 
@@ -2241,21 +2247,24 @@
   }
 
   function modeEntryText(mode = state.selectedMode) {
+    if (mode === "exam") return "Open exam mode";
     if (mode === "revisit") return "Revisit your studies";
     if (mode === "revisit-test") return "Build Revisit test";
-    if (mode === "test") return "Test your knowledge";
+    if (mode === "test") return "Start test";
     if (mode === "unit-test") return "Build end of unit test";
     if (mode === "written") return "Build written exam";
     return "Start revision";
   }
 
   function modeReadyCount(mode = state.selectedMode) {
+    if (mode === "exam") return 1;
     if (mode === "written") return writtenExamBank().length;
     if (mode === "unit-test") return unitTestWrittenBank().length;
     return questionsForMode(mode).length;
   }
 
   function modeLabel(mode = state.selectedMode) {
+    if (mode === "exam") return "Exam mode";
     if (mode === "revisit") return "Revisit";
     if (mode === "revisit-test") return "Revisit test";
     if (mode === "test") return "Test your knowledge";
@@ -2653,10 +2662,11 @@
 
     if (mode === "revisit") return base.filter((card) => revisit.has(card.id));
     if (mode === "study") return base.filter((card) => study.has(card.id));
-    if (mode === "test") return base.filter((card) => mastered.has(card.id));
+    if (mode === "test") return base;
     if (mode === "revisit-test") return base.filter((card) => revisit.has(card.id));
     if (mode === "unit-test") return unitTestWrittenBank();
     if (mode === "written") return writtenExamBank();
+    if (mode === "exam") return [];
     return base;
   }
 
@@ -2690,7 +2700,7 @@
     });
 
     els.shuffleButton?.addEventListener("click", () => {
-      state.deck = shuffle(cardsForMode("practice"));
+      state.deck = shuffle(questionsForMode("practice"));
       state.index = 0;
       state.mode = "practice";
       startSession("practice", { preserveDeck: true });
@@ -2698,9 +2708,13 @@
   }
 
   function startSession(mode, options = {}) {
+    if (mode === "exam") {
+      window.location.href = "exam-paper.html";
+      return;
+    }
     state.mode = mode;
     state.noteContext = null;
-    state.test = isTestMode(mode) ? { score: 0, answered: 0, answers: [] } : null;
+    state.test = isTestMode(mode) ? { answers: {}, submitted: false } : null;
     state.written = null;
     if (isWrittenMode(mode)) {
       const totalMarks = [15, 30, 45].includes(Number(options.totalMarks)) ? Number(options.totalMarks) : (state.progress.writtenExamMarks || 30);
@@ -2763,7 +2777,10 @@
     if (els.studyStat) els.studyStat.textContent = study.size;
     if (els.hubStudyStat) els.hubStudyStat.textContent = study.size;
     if (els.routeEntryButton) {
-      if (state.selectedMode === "written" || state.selectedMode === "unit-test") {
+      if (state.selectedMode === "exam") {
+        els.routeEntryButton.textContent = modeEntryText();
+        els.routeEntryButton.disabled = false;
+      } else if (state.selectedMode === "written" || state.selectedMode === "unit-test") {
         const marks = state.progress.writtenExamMarks || 30;
         els.routeEntryButton.textContent = `${modeEntryText()} (${marks} marks)`;
         els.routeEntryButton.disabled = state.selectedMode === "unit-test" ? ready === 0 : false;
@@ -2775,7 +2792,9 @@
     if (els.selectionSummary) {
       const unitCount = state.selectedUnits.size;
       const objectiveCount = state.selectedObjectives.size;
-      if (state.selectedMode === "written") {
+      if (state.selectedMode === "exam") {
+        els.selectionSummary.textContent = "Exam mode: normal 80-mark source-style written paper";
+      } else if (state.selectedMode === "written") {
         const marks = state.progress.writtenExamMarks || 30;
         const perDomain = marks / 3;
         els.selectionSummary.textContent = `Written exam: ${marks} marks · ${perDomain} marks each for Biology, Chemistry and Physics · ${writtenExamBank().length} questions available`;
@@ -2791,13 +2810,17 @@
       else els.selectionSummary.textContent = `Selected questions: ${unitCount || "all"} unit${unitCount === 1 ? "" : "s"} · ${objectiveCount} sub-unit${objectiveCount === 1 ? "" : "s"} · ${ready} card${ready === 1 ? "" : "s"}`;
     }
     if (els.selectionDetail) {
-      els.selectionDetail.textContent = state.selectedMode === "written"
-        ? "Answer the paper in three sections: core knowledge, written reasoning, then data and calculations. Self-mark each response after submitting it."
-        : state.selectedMode === "unit-test"
-          ? "Select one unit to build a written test that covers its sub-units."
-          : state.selectedMode === "revisit-test"
-            ? "Select units or sub-units below to narrow the Revisit test, or leave all selected."
-            : `Select more units or sub-units below, then use the main button to begin.`;
+      els.selectionDetail.textContent = state.selectedMode === "exam"
+        ? "Opens the digital-first paper. Use Print / Save PDF inside exam mode only if needed."
+        : state.selectedMode === "written"
+          ? "Answer the paper in three sections: core knowledge, written reasoning, then data and calculations. Self-mark each response after submitting it."
+          : state.selectedMode === "unit-test"
+            ? "Select one unit to build a written test that covers its sub-units."
+            : state.selectedMode === "test"
+              ? "Select units or sub-units below. Select one full unit to use this as an end-of-unit style test. Answers unlock after submission."
+              : state.selectedMode === "revisit-test"
+                ? "Select units or sub-units below to narrow the Revisit test, or leave all selected."
+                : `Select more units or sub-units below, then use the main button to begin.`;
     }
     $$('[data-mode-select]').forEach((button) => {
       const active = button.dataset.modeSelect === state.selectedMode;
@@ -3600,7 +3623,7 @@
       <p>Use the score summary to choose what to practise next.</p>
       <div class="card-actions">
         <button class="primary-button" data-result-action="written-again" type="button">${isUnitTest ? "Build another end of unit test" : "Build another written exam"}</button>
-        ${cardsForMode("revisit-test").length ? `<button class="secondary-button" data-result-action="revisit-test" type="button">Build Revisit test</button>` : ""}
+        
         <button class="secondary-button" data-result-action="hub" type="button">Back to revision hub</button>
       </div>
     `;
@@ -3646,19 +3669,23 @@
         <p class="question-text">${escapeHtml(card.question)}</p>
         ${renderMedia(card)}
         ${card.cue ? `<p class="explanation"><strong>Cue:</strong> ${escapeHtml(card.cue)}</p>` : ""}
-        ${isMcq ? renderChoices(card, testMode) : isDefinition && !testMode ? renderDefinitionResponse(card) : renderOpenResponse(testMode)}
-        ${state.revealed ? renderReveal(card) : ""}
-        ${isMcq && state.selectedChoice ? renderChoiceFeedback(card) : ""}
+        ${isMcq ? renderChoices(card, testMode) : isDefinition && !testMode ? renderDefinitionResponse(card) : renderOpenResponse(testMode, card)}
+        ${!testMode && state.revealed ? renderReveal(card) : ""}
+        ${!testMode && isMcq && state.selectedChoice ? renderChoiceFeedback(card) : ""}
 
         <div class="card-actions primary-actions">
-          ${!state.revealed && !testMode && !isDefinition && !state.selectedChoice ? `<button class="primary-button" data-action="reveal" type="button">Reveal answer</button>` : ""}
-          ${isDefinition && !testMode && !state.definitionCompared ? `<button class="primary-button" data-action="compare-definition" type="button">Compare notes</button>` : ""}
-          ${!isMcq && testMode && !state.revealed ? `<button class="primary-button" data-action="test-open-submit" type="button">Show mark scheme</button>` : ""}
-          ${!isMcq && testMode && state.revealed ? `<button class="primary-button" data-action="test-right" type="button">Mark right</button><button class="danger-button" data-action="test-wrong" type="button">Mark wrong</button>` : ""}
-          ${isMcq && (state.selectedChoice || state.revealed) ? `<button class="primary-button" data-action="next" type="button">Next card</button>` : ""}
-          <button class="secondary-button" data-action="prev" type="button">Previous</button>
-          ${!(isMcq && (state.selectedChoice || state.revealed)) ? `<button class="secondary-button" data-action="next" type="button">Skip</button>` : ""}
-          ${!testMode ? `<button class="secondary-button class-notes-button" data-action="study-context" type="button">Class Notes</button>` : ""}
+          ${testMode ? `
+            <button class="primary-button" data-action="${state.index >= state.deck.length - 1 ? "test-submit" : "next"}" type="button">${state.index >= state.deck.length - 1 ? "Submit test" : "Save and next"}</button>
+            <button class="secondary-button" data-action="prev" type="button">Previous</button>
+            <button class="secondary-button" data-action="test-submit" type="button">Submit test</button>
+          ` : `
+            ${!state.revealed && !isDefinition && !state.selectedChoice ? `<button class="primary-button" data-action="reveal" type="button">Reveal answer</button>` : ""}
+            ${isDefinition && !state.definitionCompared ? `<button class="primary-button" data-action="compare-definition" type="button">Compare notes</button>` : ""}
+            ${isMcq && (state.selectedChoice || state.revealed) ? `<button class="primary-button" data-action="next" type="button">Next card</button>` : ""}
+            <button class="secondary-button" data-action="prev" type="button">Previous</button>
+            ${!(isMcq && (state.selectedChoice || state.revealed)) ? `<button class="secondary-button" data-action="next" type="button">Skip</button>` : ""}
+            <button class="secondary-button class-notes-button" data-action="study-context" type="button">Class Notes</button>
+          `}
         </div>
 
         ${!testMode && !isMcq && (!isDefinition || state.definitionCompared) ? `
@@ -3693,16 +3720,19 @@
   function renderChoices(card, testMode) {
     const displayChoices = getDisplayChoices(card);
     const correctKey = correctDisplayChoice(card).key;
+    const savedAnswer = testMode ? testAnswerFor(card)?.answer : "";
     return `<div class="answer-grid" role="group" aria-label="Answer choices">
       ${displayChoices.map((choice) => {
         const key = choice.key;
         let cls = "answer-button";
-        if (state.selectedChoice) {
+        if (testMode) {
+          if (savedAnswer === key) cls += " selected";
+        } else if (state.selectedChoice) {
           if (key === correctKey) cls += " correct";
           else if (key === state.selectedChoice) cls += " wrong";
           else cls += " neutral";
         }
-        const label = testMode && !state.selectedChoice ? "Choose answer" : "Answer choice";
+        const label = testMode ? "Choose answer" : "Answer choice";
         return `<button class="${cls}" data-choice="${escapeHtml(key)}" type="button" aria-label="${label}: ${escapeHtml(choice.label)}">${escapeHtml(choice.label)}</button>`;
       }).join("")}
     </div>`;
@@ -3746,11 +3776,13 @@
     `;
   }
 
-  function renderOpenResponse(testMode) {
+  function renderOpenResponse(testMode, card = null) {
+    const savedAnswer = testMode && card ? testAnswerFor(card)?.answer || "" : "";
     const placeholder = testMode
-      ? "Type your answer. Then show the mark scheme and self-mark."
+      ? "Type your answer. Answers and explanations unlock after you submit the test."
       : "Type a rough answer here, then reveal the mark-scheme answer.";
-    return `<textarea class="open-answer" placeholder="${escapeHtml(placeholder)}"></textarea>`;
+    const id = testMode ? "testOpenAnswer" : "";
+    return `<textarea ${id ? `id="${id}"` : ""} class="open-answer" placeholder="${escapeHtml(placeholder)}">${escapeHtml(savedAnswer)}</textarea>`;
   }
 
   function renderReveal(card) {
@@ -3768,17 +3800,16 @@
   function bindCardActions(card) {
     $$("[data-choice]", els.studyPanel).forEach((button) => {
       button.addEventListener("click", () => {
+        if (isTestMode()) {
+          recordTestAnswer(card, button.dataset.choice);
+          if (state.index >= state.deck.length - 1) renderCard();
+          else nextCard();
+          return;
+        }
         if (state.selectedChoice) return;
         state.selectedChoice = button.dataset.choice;
         state.revealed = true;
         const correct = state.selectedChoice === correctDisplayChoice(card).key;
-        if (isTestMode()) {
-          recordTestAnswer(card, correct, state.selectedChoice);
-          if (correct) celebrate();
-          beep(correct);
-          renderCard();
-          return;
-        }
         setCardStatus(card, correct ? "mastered" : "revisit", { advance: false, countAttempt: true });
       });
     });
@@ -3800,6 +3831,13 @@
   }
 
   function handleAction(action, card) {
+    if (isTestMode() && ["next", "prev", "test-submit"].includes(action)) {
+      saveOpenTestAnswer(card);
+      if (action === "test-submit") finishTest();
+      else if (action === "next") nextCard();
+      else prevCard();
+      return;
+    }
     if (action === "compare-definition") {
       const typed = byId("definitionAnswer")?.value || state.definitionInput || "";
       state.definitionInput = typed;
@@ -3843,10 +3881,6 @@
 
   function nextCard() {
     if (!state.deck.length) return;
-    if (isTestMode() && state.test?.answered >= state.deck.length) {
-      finishTest();
-      return;
-    }
     if (state.index >= state.deck.length - 1) {
       if (isTestMode()) finishTest();
       else finishSession();
@@ -3900,63 +3934,149 @@
     $("[data-result-action='test']", els.resultPanel)?.addEventListener("click", () => startSession("test"));
   }
 
-  function recordTestAnswer(card, correct, answer) {
-    if (!state.test) return;
-    const already = state.test.answers.find((item) => item.cardId === card.id);
-    if (already) return;
-    state.test.answers.push({ cardId: card.id, correct, answer });
-    state.test.answered += 1;
-    if (correct) state.test.score += 1;
-    recordSeen(card, correct);
+  function testAnswerFor(card) {
+    if (!card || !state.test?.answers) return null;
+    return state.test.answers[card.id] || null;
+  }
+
+  function saveOpenTestAnswer(card) {
+    if (!isTestMode() || cardIsMcq(card)) return;
+    recordTestAnswer(card, byId("testOpenAnswer")?.value || "");
+  }
+
+  function testAnswerCount() {
+    return Object.keys(state.test?.answers || {}).length;
+  }
+
+  function testAutoScore() {
+    const answers = Object.values(state.test?.answers || {});
+    const autoMarked = answers.filter((item) => typeof item.correct === "boolean");
+    return {
+      score: autoMarked.filter((item) => item.correct).length,
+      total: autoMarked.length,
+      percent: autoMarked.length ? Math.round((autoMarked.filter((item) => item.correct).length / autoMarked.length) * 100) : 0,
+    };
+  }
+
+  function renderTestAnswerReview(card) {
+    const saved = testAnswerFor(card) || { answer: "", correct: null };
+    const note = noteForCard(card);
+    const isMcq = cardIsMcq(card);
+    const correctChoice = isMcq ? correctDisplayChoice(card) : null;
+    const expected = isMcq ? `${correctChoice.key} — ${correctChoice.text}` : card.answer;
+    const answerText = saved.answer ? saved.answer : "No answer entered.";
+    const status = typeof saved.correct === "boolean" ? (saved.correct ? "Correct" : "Needs review") : "Self-mark";
+    return `
+      <article class="test-review-card ${saved.correct === false ? "needs-review" : saved.correct === true ? "good" : ""}">
+        <div class="written-question-meta">
+          ${questionIdentifier(card) ? `<span class="pill question-id-pill">${escapeHtml(questionIdentifier(card))}</span>` : ""}
+          ${card.learningObjective ? `<span class="pill objective-pill">${escapeHtml(objectiveTitle(card.learningObjective))}</span>` : ""}
+          <span class="pill">${escapeHtml(status)}</span>
+        </div>
+        <h3>${escapeHtml(card.question)}</h3>
+        <div class="written-student-answer"><strong>Your answer</strong><p>${escapeHtml(answerText)}</p></div>
+        <details class="written-mark-scheme" open>
+          <summary><strong>Answer, explanation and class notes</strong></summary>
+          <div class="written-model-answer"><strong>Expected answer</strong><p>${escapeHtml(expected || "Check the class notes for the expected answer.")}</p></div>
+          ${card.explanation ? `<div class="written-format-review"><strong>Why it is correct</strong><p>${escapeHtml(card.explanation)}</p></div>` : ""}
+          <div class="written-common-mistakes"><strong>Common mistakes</strong><ul><li>Choosing a keyword without linking it to the question.</li><li>Writing a vague answer when a specific science term is needed.</li></ul></div>
+          ${note ? `<button class="secondary-button class-notes-button" data-result-note="${escapeHtml(note.id)}" type="button">Class Notes: ${escapeHtml(note.title)}</button>` : ""}
+        </details>
+      </article>
+    `;
+  }
+
+  function recordTestAnswer(card, answer) {
+    if (!state.test || !card) return;
+    const cleanAnswer = String(answer ?? "").trim();
+    const isMcq = cardIsMcq(card);
+    const correct = isMcq ? cleanAnswer === correctDisplayChoice(card).key : null;
+    state.test.answers = state.test.answers && typeof state.test.answers === "object" && !Array.isArray(state.test.answers)
+      ? state.test.answers
+      : {};
+    if (!isMcq && !cleanAnswer) {
+      delete state.test.answers[card.id];
+      return;
+    }
+    state.test.answers[card.id] = { cardId: card.id, answer: cleanAnswer, correct };
+  }
+
+  function applySubmittedTestProgress() {
+    const answers = state.test?.answers || {};
     const revisit = new Set(state.progress.revisitIds || []);
     const mastered = new Set(state.progress.masteredIds || []);
-    if (correct) {
-      if (state.mode === "revisit-test") {
+    Object.values(answers).forEach((item) => {
+      if (typeof item.correct !== "boolean") return;
+      const card = questions.find((candidate) => candidate.id === item.cardId);
+      if (!card) return;
+      recordSeen(card, item.correct);
+      if (item.correct) {
         revisit.delete(card.id);
         mastered.add(card.id);
+        state.progress.xp = (state.progress.xp || 0) + Math.max(5, (card.level || 1) * 5);
+        state.progress.streak = (state.progress.streak || 0) + 1;
+        state.progress.bestStreak = Math.max(state.progress.bestStreak || 0, state.progress.streak || 0);
+      } else {
+        mastered.delete(card.id);
+        revisit.add(card.id);
+        state.progress.streak = 0;
       }
-      state.progress.xp = (state.progress.xp || 0) + Math.max(5, (card.level || 1) * 5);
-      state.progress.streak = (state.progress.streak || 0) + 1;
-      state.progress.bestStreak = Math.max(state.progress.bestStreak || 0, state.progress.streak || 0);
-    } else {
-      state.progress.streak = 0;
-      mastered.delete(card.id);
-      revisit.add(card.id);
-    }
+    });
     state.progress.masteredIds = [...mastered];
     state.progress.revisitIds = [...revisit];
-    saveProgress();
   }
 
   function finishTest() {
+    if (state.test?.submitted) return;
+    saveOpenTestAnswer(state.deck[state.index]);
+    state.test.submitted = true;
     const total = state.deck.length;
-    const score = state.test?.score || 0;
-    const percent = total ? Math.round((score / total) * 100) : 0;
+    const answered = testAnswerCount();
+    const auto = testAutoScore();
+    applySubmittedTestProgress();
     const record = {
       date: new Date().toISOString(),
       selection: sessionPositionKey("test"),
-      score,
-      total,
-      percent,
+      score: auto.score,
+      total: auto.total,
+      percent: auto.percent,
+      answered,
+      questionCount: total,
     };
     state.progress.testHistory = [...(state.progress.testHistory || []), record].slice(-20);
     saveProgress();
 
     els.studyPanel.innerHTML = "";
     els.resultPanel.classList.remove("hidden");
-    const revisitMode = state.mode === "revisit-test";
-    const canRunAgain = questionsForMode(revisitMode ? "revisit-test" : "test").length > 0;
+    updateSessionChrome({
+      unitId: singleDeckUnit(),
+      title: "Reaction",
+      eyebrow: "Test submitted",
+      subtitle: "Answers, explanations and class-note links are now unlocked."
+    });
+    els.sessionIndex.textContent = String(answered);
+    els.sessionTotal.textContent = `/ ${total}`;
+    const canRunAgain = questionsForMode("test").length > 0;
+    const scoreLine = auto.total
+      ? `Auto-marked score: <strong>${auto.score}/${auto.total}</strong> multiple-choice question${auto.total === 1 ? "" : "s"} (${auto.percent}%).`
+      : "No multiple-choice questions were auto-marked. Use the answer review below to self-mark your written answers.";
     els.resultPanel.innerHTML = `
-      <h2>${revisitMode ? "Revisit test complete" : "Test complete"}</h2>
-      <p>You scored <strong>${score}/${total}</strong> (${percent}%).</p>
-      <p>${revisitMode ? (percent === 100 ? "All tested questions moved to Secure." : "Correct answers moved to Secure. Missed questions stayed in Revisit.") : (percent === 100 ? "Perfect. Those questions stayed secure." : "Missed questions were moved into Revisit.")}</p>
+      <h2>Test your knowledge submitted</h2>
+      <p>${scoreLine}</p>
+      <p>You answered <strong>${answered}/${total}</strong> question${total === 1 ? "" : "s"}. Written answers are shown with the expected answer, explanation, common mistakes and class-note links.</p>
+      <div class="test-review-list">
+        ${state.deck.map(renderTestAnswerReview).join("")}
+      </div>
       <div class="card-actions">
         <button class="primary-button" data-result-action="hub" type="button">Back to revision hub</button>
-        ${canRunAgain ? `<button class="secondary-button" data-result-action="again" type="button">${revisitMode ? "Build another Revisit test" : "Test again"}</button>` : ""}
+        ${canRunAgain ? `<button class="secondary-button" data-result-action="again" type="button">Build another test</button>` : ""}
       </div>
     `;
-    $("[data-result-action='hub']", els.resultPanel)?.addEventListener("click", showHub);
-    $("[data-result-action='again']", els.resultPanel)?.addEventListener("click", () => startSession(revisitMode ? "revisit-test" : "test"));
+    $('[data-result-action="hub"]', els.resultPanel)?.addEventListener("click", showHub);
+    $('[data-result-action="again"]', els.resultPanel)?.addEventListener("click", () => startSession("test"));
+    $$('[data-result-note]', els.resultPanel).forEach((button) => {
+      button.addEventListener("click", () => openNoteContext(button.dataset.resultNote));
+    });
   }
 
   function speak(text) {
@@ -4068,7 +4188,8 @@
     });
 
     els.routeEntryButton?.addEventListener('click', () => {
-      if ((state.selectedMode || 'practice') === 'written') startSession('written', { totalMarks: state.progress.writtenExamMarks || 30 });
+      if ((state.selectedMode || 'practice') === 'exam') startSession('exam');
+      else if ((state.selectedMode || 'practice') === 'written') startSession('written', { totalMarks: state.progress.writtenExamMarks || 30 });
       else if ((state.selectedMode || 'practice') === 'unit-test') startSession('unit-test', { totalMarks: state.progress.writtenExamMarks || 30 });
       else startSession(state.selectedMode || 'practice');
     });

@@ -1,3 +1,14 @@
+## v1.73.0 — Simplified learning modes
+
+- Consolidated the home learning routes into three primary cards: **Revision journey**, **Test your knowledge**, and **Exam mode**.
+- Removed the standalone home-page entries for Revisit test, End of unit test, Written exam mode naming, Written test builder, quick/standard/full written-test buttons, normal-paper shortcut, and year-end essentials shortcut.
+- Reworked **Test your knowledge** to use the selected unit/sub-unit question bank directly, keep answers hidden during the test, and unlock score/review content only after submission.
+- Moved the end-of-unit workflow into the Test your knowledge selection model: selecting a single full unit now acts as the end-of-unit style filter without a separate top-level card.
+- Reworked **Exam mode** as the route to the normal 80-mark source-style written paper, with digital answer boxes first and Print / Save PDF retained as a secondary control.
+- Updated `exam-paper.html` so answer guidance is locked until submission, then appears under each written answer with expected answer, explanation, common mistakes and class-note links.
+- Kept the global header consistent and moved exam-specific controls into the page body.
+- Fixed stale `cardsForMode(...)` references so app actions consistently use the canonical `questions` data source.
+
 ## v1.72.6 — Fix unit card render crash
 
 - Fixed a startup crash in `initFilters()` where `cards` was referenced after the app data variable had been renamed to `questions`.

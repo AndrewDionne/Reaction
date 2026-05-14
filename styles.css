@@ -3233,3 +3233,56 @@ body.session-active .app-shell {
     grid-template-columns: 1fr;
   }
 }
+
+/* v1.73.0 simplified learning modes */
+.journey-grid-three {
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+}
+
+.journey-card.written .journey-icon {
+  color: #6d28d9;
+  background: rgba(124, 58, 237, 0.12);
+}
+
+.answer-button.selected {
+  border-color: rgba(37, 99, 235, 0.5);
+  background: #eff6ff;
+  color: #1d4ed8;
+}
+
+.test-review-list {
+  display: grid;
+  gap: 1rem;
+  margin: 1.2rem 0;
+}
+
+.test-review-card {
+  border: 1px solid rgba(148, 163, 184, 0.28);
+  border-radius: 1.1rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.86);
+}
+
+.test-review-card.good {
+  border-color: rgba(22, 163, 74, 0.28);
+  background: rgba(240, 253, 244, 0.72);
+}
+
+.test-review-card.needs-review {
+  border-color: rgba(217, 119, 6, 0.32);
+  background: rgba(255, 251, 235, 0.72);
+}
+
+.test-review-card h3 {
+  margin: 0.45rem 0 0.8rem;
+}
+
+.test-review-card summary {
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .journey-grid-three {
+    grid-template-columns: 1fr !important;
+  }
+}
