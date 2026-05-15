@@ -1,3 +1,17 @@
+## v1.73.5 — Larger written-answer help pop-out
+
+- Enlarged the **How to answer written questions** pop-out to use most of the main page width on desktop.
+- Increased modal padding and maximum height so the Identify / Describe / Explain guide reads like a focused reference panel rather than a small dialog.
+- Kept the global header, learning-mode cards and compact in-question **Question type** hints unchanged.
+- Bumped app/static cache strings to `1.73.5`.
+
+## v1.73.4 — Compact question-type hint cards
+
+- Reworked the in-test **Question type** hint into a compact card instead of a large strategy panel.
+- Kept only the detected type, clue words, a short good-answer description, and a decomposed answer-format line.
+- Preserved the full **How to answer written questions** pop-out as the main place for expanded examples and common pitfalls.
+- Bumped app/static cache strings to `1.73.4`.
+
 ## v1.73.3 — Written-answer help pop-out simplification
 
 - Removed the written-answer format guide from individual unit overview pages so unit overviews stay focused on science content.

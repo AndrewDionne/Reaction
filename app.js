@@ -1599,22 +1599,35 @@
     return answerTypeGuide({ commandWord }).summary;
   }
 
+  function formatSlot(label) {
+    return `<span class="question-type-format-slot"><span>${escapeHtml(label)}</span><b>____</b></span>`;
+  }
+
+  function renderDecomposedAnswerFormat(guide) {
+    const type = String(guide.label || "").toLowerCase();
+    if (type === "identify") {
+      return `The answer is ${formatSlot("answer")}.`;
+    }
+    if (type === "describe") {
+      return `As ${formatSlot("thing that changes")} changes, ${formatSlot("what happens")} changes. Evidence: ${formatSlot("value / observation")}.`;
+    }
+    return `${formatSlot("science point")} happens because ${formatSlot("reason")}. This means ${formatSlot("result")}.`;
+  }
+
   function renderAnswerTypeGuide(item = {}, className = "question-type-guide") {
     const guide = answerTypeGuide(item);
     return `
-      <aside class="${className}">
-        <div class="answer-type-compact-heading">
+      <aside class="${className} compact-question-type-guide">
+        <div class="question-type-mini-heading">
           <span class="pill command-word">${escapeHtml(guide.label)}</span>
-          <strong>${escapeHtml(guide.summary)}</strong>
+          <strong>${escapeHtml(guide.also)}</strong>
+          <span>${escapeHtml(guide.goodAnswer)}</span>
         </div>
-        <div class="answer-type-compact-grid">
-          <p><strong>Look for:</strong> ${escapeHtml(guide.clueWords)}</p>
-          <p><strong>Answer shape:</strong> ${escapeHtml(guide.template)}</p>
-          <p><strong>Question part:</strong> ${escapeHtml(guide.questionPiece)}</p>
-          <p><strong>Answer gives:</strong> ${escapeHtml(guide.answerPiece)}</p>
+        <div class="question-type-format-line">
+          <strong>Answer format:</strong>
+          <span>${renderDecomposedAnswerFormat(guide)}</span>
         </div>
-        <p class="written-format-note"><strong>Strategy:</strong> ${escapeHtml(guide.strategy)}</p>
-        <p class="written-format-note"><strong>Watch out:</strong> ${escapeHtml(guide.pitfall)}</p>
+        <p class="question-type-clue-line"><strong>Look for:</strong> ${escapeHtml(guide.questionPiece)}. <strong>Remember:</strong> ${escapeHtml(guide.pitfall)}</p>
       </aside>
     `;
   }
