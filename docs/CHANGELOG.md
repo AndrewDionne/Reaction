@@ -1,3 +1,10 @@
+## v1.73.6 — Describe hint language refinement
+
+- Revised the Describe written-answer hint so it focuses on linking science points in a clear order rather than only describing a change or trend.
+- Updated the compact in-question Describe answer format to use: science point → linked detail → final detail/evidence.
+- Updated the written-answer help pop-out quick choice language for Describe.
+- Bumped app/static cache strings to `1.73.6`.
+
 ## v1.73.5 — Larger written-answer help pop-out
 
 - Enlarged the **How to answer written questions** pop-out to use most of the main page width on desktop.

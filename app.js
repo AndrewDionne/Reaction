@@ -1547,17 +1547,17 @@
     },
     describe: {
       label: "Describe",
-      also: "what happens / what changes",
-      clueWords: "describe, what happens, what changes, pattern, trend, use the graph/table",
-      summary: "Say what happens or what changes. Add evidence if it is given.",
-      goodAnswer: "A good answer gives the visible pattern, sequence or change.",
-      template: "As ____ changes, ____ changes. The evidence is ____.",
-      questionPiece: "what happens / what changes / pattern",
-      answerPiece: "the change, sequence, trend or observation",
-      strategy: "Name what changes, say the direction of change, then add a value or label if useful.",
-      exampleQuestion: "Describe what happens to distance as time increases.",
-      exampleAnswer: "As time increases, distance increases.",
-      pitfall: "Do not spend the answer explaining why unless the question asks for a reason."
+      also: "what is linked / what happens / pattern",
+      clueWords: "describe, what happens, what changes, how things are linked, relationship, sequence, pattern, trend, use the graph/table",
+      summary: "Link science points together in a clear order.",
+      goodAnswer: "A good answer links science points together in a clear order.",
+      template: "First say what one thing is. Then link it to the next thing. Then add a final detail.",
+      questionPiece: "what is linked / what happens / sequence / pattern",
+      answerPiece: "science point → linked detail → final detail",
+      strategy: "Say one science point, link it to the next thing, then add a final detail or evidence.",
+      exampleQuestion: "Describe how chromosomes, DNA and genes are linked together.",
+      exampleAnswer: "Chromosomes are made from long DNA molecules. Genes are short sections of DNA on chromosomes that carry instructions for inherited features.",
+      pitfall: "Do not explain why unless the question asks for a reason."
     },
     explain: {
       label: "Explain",
@@ -1609,7 +1609,7 @@
       return `The answer is ${formatSlot("answer")}.`;
     }
     if (type === "describe") {
-      return `As ${formatSlot("thing that changes")} changes, ${formatSlot("what happens")} changes. Evidence: ${formatSlot("value / observation")}.`;
+      return `First: ${formatSlot("science point")}. Then link: ${formatSlot("linked detail")}. Finally: ${formatSlot("final detail / evidence")}.`;
     }
     return `${formatSlot("science point")} happens because ${formatSlot("reason")}. This means ${formatSlot("result")}.`;
   }
@@ -1639,14 +1639,14 @@
           <div>
             <p class="eyebrow">Written answers</p>
             <h2>How to answer written questions</h2>
-            <p>Use three answer types. The quickest choice is: identify gives the answer, describe says what happens, explain gives the reason.</p>
+            <p>Use three answer types. The quickest choice is: identify gives the answer, describe links science points in order, explain gives the reason.</p>
           </div>
           <button class="soft-button answer-help-close" data-answer-help-close type="button" aria-label="Close answer help">×</button>
         </div>
         <div class="answer-help-quick-choice">
           <strong>Quick choice:</strong>
           <span><b>Identify</b> = what / which / where / name</span>
-          <span><b>Describe</b> = what happens / what changes / pattern</span>
+          <span><b>Describe</b> = what is linked / what happens / pattern</span>
           <span><b>Explain</b> = why / how / because / suggest / compare</span>
         </div>
         <div class="answer-help-stack">
