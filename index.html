@@ -8,7 +8,7 @@
   <title>Reaction · Year 9 Science Study</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
   <link rel="manifest" href="manifest.webmanifest" />
-  <link rel="stylesheet" href="styles.css?v=1.73.2" />
+  <link rel="stylesheet" href="styles.css?v=1.73.3" />
 </head>
 <body>
   <canvas id="burstCanvas" aria-hidden="true"></canvas>
@@ -40,12 +40,14 @@
       </section>
 
       <section class="journey-panel panel">
-        <div class="section-heading-row compact-heading">
+        <div class="section-heading-row compact-heading mode-heading-row">
           <div>
             <p class="eyebrow">Learning mode</p>
             <h2>Choose how you want to learn.</h2>
           </div>
-          <p class="journey-hint">Choose one mode, then select one or more units or sub-units below.</p>
+          <div class="mode-help-actions">
+            <button id="answerFormatHelpButton" class="answer-help-button" type="button">How to answer written questions</button>
+          </div>
         </div>
 
         <div class="journey-grid journey-grid-three" role="radiogroup" aria-label="Learning mode">
@@ -121,8 +123,10 @@
     </section>
   </main>
 
-  <script src="data/year9-content.js?v=1.73.2"></script>
-  <script src="data/year9-notes.js?v=1.73.2"></script>
-  <script src="app.js?v=1.73.2"></script>
+  <div id="answerFormatModal" class="answer-format-modal hidden" role="dialog" aria-modal="true" aria-label="How to answer written questions"></div>
+
+  <script src="data/year9-content.js?v=1.73.3"></script>
+  <script src="data/year9-notes.js?v=1.73.3"></script>
+  <script src="app.js?v=1.73.3"></script>
 </body>
 </html>

@@ -1,3 +1,11 @@
+## v1.73.3 — Written-answer help pop-out simplification
+
+- Removed the written-answer format guide from individual unit overview pages so unit overviews stay focused on science content.
+- Added a single **How to answer written questions** pop-out button in the learning-mode panel, aligned with the three learning mode cards.
+- Simplified the pop-out into three stacked question types: **Identify**, **Describe**, and **Explain**, with quick-choice clues, answer format, examples, and common pitfalls.
+- Simplified the in-test **Question type** hint so it shows only the relevant type, clue words, answer shape, question-to-answer mapping, strategy, and watch-out note.
+- Kept the distinction clear for students: **describe = what happens**, **explain = why/how it happens**.
+
 ## v1.73.2 — Simplified written-answer formats
 
 - Added a simple three-type written-answer typology: **Identify**, **Describe**, and **Explain**.

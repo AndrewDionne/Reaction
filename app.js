@@ -53,6 +53,8 @@
     sessionIndex: byId("sessionIndex"),
     sessionTotal: byId("sessionTotal"),
     sessionUnitArt: byId("sessionUnitArt"),
+    answerFormatHelpButton: byId("answerFormatHelpButton"),
+    answerFormatModal: byId("answerFormatModal"),
   };
 
   const modeText = {
@@ -1533,52 +1535,43 @@
       label: "Identify",
       also: "state / name / label",
       clueWords: "what, which, where, name, state, identify, label",
-      summary: "Give the fact, label, place, part, word or short answer. Keep it precise.",
-      goodAnswer: "A good answer is short, accurate and uses the correct science word.",
+      summary: "Give the answer. Keep it short and exact.",
+      goodAnswer: "A good answer gives the correct science word or short fact.",
       template: "The answer is ____.",
-      map: [
-        ["Question asks for", "the named thing, part, place, value or fact"],
-        ["Answer gives", "the exact word, phrase or one short sentence"]
-      ],
-      steps: [
-        "Find the thing the question asks you to name.",
-        "Write the science term or short fact only.",
-        "Do not add a long explanation unless the question asks why or how."
-      ]
+      questionPiece: "what / which / where / name",
+      answerPiece: "the word, label, place, value or short fact",
+      strategy: "Find the thing being asked for, then write only that answer.",
+      exampleQuestion: "Name the organelle that controls the cell.",
+      exampleAnswer: "The nucleus.",
+      pitfall: "Do not write a long explanation unless the question asks why or how."
     },
     describe: {
       label: "Describe",
-      also: "what happens / pattern / trend",
-      clueWords: "what happens, what changes, pattern, trend, use the graph/table",
-      summary: "Say what happens, what changes, or what is shown. Do not focus on the reason unless asked.",
-      goodAnswer: "A good answer gives clear observations or a pattern, often with data or labels from the question.",
+      also: "what happens / what changes",
+      clueWords: "describe, what happens, what changes, pattern, trend, use the graph/table",
+      summary: "Say what happens or what changes. Add evidence if it is given.",
+      goodAnswer: "A good answer gives the visible pattern, sequence or change.",
       template: "As ____ changes, ____ changes. The evidence is ____.",
-      map: [
-        ["Question gives", "a process, graph, table, diagram or change"],
-        ["Answer says", "what happens, what changes, or the pattern you can see"]
-      ],
-      steps: [
-        "Name the thing that changes or the feature you can see.",
-        "Say the direction of change: increases, decreases, stays the same, or changes shape.",
-        "Use a value, label or comparison if the question gives one."
-      ]
+      questionPiece: "what happens / what changes / pattern",
+      answerPiece: "the change, sequence, trend or observation",
+      strategy: "Name what changes, say the direction of change, then add a value or label if useful.",
+      exampleQuestion: "Describe what happens to distance as time increases.",
+      exampleAnswer: "As time increases, distance increases.",
+      pitfall: "Do not spend the answer explaining why unless the question asks for a reason."
     },
     explain: {
       label: "Explain",
       also: "why / how / suggest / compare",
       clueWords: "why, how, because, give a reason, suggest, compare",
-      summary: "Give the reason. Link your point to the science using because, so or therefore.",
-      goodAnswer: "A good answer links a point to a reason and then to the result.",
+      summary: "Give the reason. Link the science point to the result.",
+      goodAnswer: "A good answer uses because, so or therefore to link cause and effect.",
       template: "____ happens because ____. This means ____.",
-      map: [
-        ["Question asks", "why or how something happens"],
-        ["Answer gives", "point → because/reason → result"]
-      ],
-      steps: [
-        "Make the main science point.",
-        "Add because, so, therefore or this means.",
-        "Finish with the result, effect or comparison."
-      ]
+      questionPiece: "why / how / suggest / compare",
+      answerPiece: "point → because/reason → result",
+      strategy: "Make the science point, add because, then finish with the result or effect.",
+      exampleQuestion: "Explain why an iron core makes an electromagnet stronger.",
+      exampleAnswer: "The iron core becomes magnetised, so the magnetic field is stronger.",
+      pitfall: "Do not only describe what happens. Explain why or how it happens."
     }
   };
 
@@ -1610,42 +1603,79 @@
     const guide = answerTypeGuide(item);
     return `
       <aside class="${className}">
-        <div class="answer-type-heading">
+        <div class="answer-type-compact-heading">
           <span class="pill command-word">${escapeHtml(guide.label)}</span>
-          <span>${escapeHtml(guide.also)}</span>
+          <strong>${escapeHtml(guide.summary)}</strong>
         </div>
-        <p><strong>Good answer:</strong> ${escapeHtml(guide.goodAnswer)}</p>
-        <p><strong>Use this shape:</strong> ${escapeHtml(guide.template)}</p>
-        <div class="answer-type-map">
-          ${guide.map.map(([left, right]) => `<div><strong>${escapeHtml(left)}</strong><span>${escapeHtml(right)}</span></div>`).join("")}
+        <div class="answer-type-compact-grid">
+          <p><strong>Look for:</strong> ${escapeHtml(guide.clueWords)}</p>
+          <p><strong>Answer shape:</strong> ${escapeHtml(guide.template)}</p>
+          <p><strong>Question part:</strong> ${escapeHtml(guide.questionPiece)}</p>
+          <p><strong>Answer gives:</strong> ${escapeHtml(guide.answerPiece)}</p>
         </div>
-        <ul>${guide.steps.map((step) => `<li>${escapeHtml(step)}</li>`).join("")}</ul>
-        <p class="written-format-note"><strong>Clue words:</strong> ${escapeHtml(guide.clueWords)}</p>
-        <p class="written-format-note"><strong>Describe vs explain:</strong> describe says what happens; explain says why or how it happens.</p>
+        <p class="written-format-note"><strong>Strategy:</strong> ${escapeHtml(guide.strategy)}</p>
+        <p class="written-format-note"><strong>Watch out:</strong> ${escapeHtml(guide.pitfall)}</p>
       </aside>
     `;
   }
 
-  function renderAnswerFormatClassNotesSection() {
+  function renderAnswerFormatHelpDialog() {
     return `
-      <section class="note-section answer-format-section">
-        <h3>How to answer written questions</h3>
-        <p class="overview-section-help">Use three simple answer types. Identify gives the answer. Describe says what happens. Explain gives the reason.</p>
-        <div class="answer-type-grid">
+      <div class="answer-help-dialog-card">
+        <div class="answer-help-header">
+          <div>
+            <p class="eyebrow">Written answers</p>
+            <h2>How to answer written questions</h2>
+            <p>Use three answer types. The quickest choice is: identify gives the answer, describe says what happens, explain gives the reason.</p>
+          </div>
+          <button class="soft-button answer-help-close" data-answer-help-close type="button" aria-label="Close answer help">×</button>
+        </div>
+        <div class="answer-help-quick-choice">
+          <strong>Quick choice:</strong>
+          <span><b>Identify</b> = what / which / where / name</span>
+          <span><b>Describe</b> = what happens / what changes / pattern</span>
+          <span><b>Explain</b> = why / how / because / suggest / compare</span>
+        </div>
+        <div class="answer-help-stack">
           ${Object.values(ANSWER_TYPE_GUIDES).map((guide) => `
-            <article class="answer-type-card">
-              <strong>${escapeHtml(guide.label)}</strong>
-              <span>${escapeHtml(guide.also)}</span>
-              <p>${escapeHtml(guide.summary)}</p>
-              <em>${escapeHtml(guide.template)}</em>
+            <article class="answer-help-type-card">
+              <div class="answer-help-type-title">
+                <span class="pill command-word">${escapeHtml(guide.label)}</span>
+                <strong>${escapeHtml(guide.also)}</strong>
+              </div>
+              <p>${escapeHtml(guide.goodAnswer)}</p>
+              <div class="answer-help-decompose">
+                <span><b>Question clue:</b> ${escapeHtml(guide.questionPiece)}</span>
+                <span><b>Answer gives:</b> ${escapeHtml(guide.answerPiece)}</span>
+                <span><b>Format:</b> ${escapeHtml(guide.template)}</span>
+              </div>
+              <p class="answer-help-example"><strong>Example:</strong> ${escapeHtml(guide.exampleQuestion)} → ${escapeHtml(guide.exampleAnswer)}</p>
+              <p class="answer-help-pitfall"><strong>Common pitfall:</strong> ${escapeHtml(guide.pitfall)}</p>
             </article>
           `).join("")}
         </div>
-        <div class="answer-type-rule">
-          <strong>Quick choice:</strong> what/which/where/name = identify; what happens or what changes = describe; why/how/because/suggest/compare = explain.
-        </div>
-      </section>
+      </div>
     `;
+  }
+
+  function openAnswerFormatHelp() {
+    if (!els.answerFormatModal) return;
+    els.answerFormatModal.innerHTML = renderAnswerFormatHelpDialog();
+    els.answerFormatModal.classList.remove("hidden");
+    document.body.classList.add("modal-open");
+    els.answerFormatModal.querySelector("[data-answer-help-close]")?.focus();
+  }
+
+  function closeAnswerFormatHelp() {
+    if (!els.answerFormatModal) return;
+    els.answerFormatModal.classList.add("hidden");
+    els.answerFormatModal.innerHTML = "";
+    document.body.classList.remove("modal-open");
+    els.answerFormatHelpButton?.focus();
+  }
+
+  function renderAnswerFormatClassNotesSection() {
+    return "";
   }
 
   function writtenDifficulty(question) {
@@ -3206,7 +3236,6 @@
           <h3>Sub-units</h3>
           ${renderTargetedSubUnits(target.subUnits)}
         </section>
-        ${renderAnswerFormatClassNotesSection()}
         <section class="note-section targeted-overview-section vocabulary-section">
           <h3>Must know vocabulary</h3>
           <p class="overview-section-help">Open a group, check the terms, then use the vocabulary questions if any words are unfamiliar.</p>
@@ -3271,7 +3300,6 @@
           <h3>Sub-units and must-know points</h3>
           ${renderOverviewRoute(overview.subUnitRoute)}
         </section>
-        ${renderAnswerFormatClassNotesSection()}
         ${Array.isArray(overview.visualTiles) && overview.visualTiles.length ? `<section class="note-section overview-visual-section"><h3>Revision images</h3>${renderOverviewMedia(overview.visualTiles, "overview-tile-media")}</section>` : ""}
         <section class="note-section sentence-note">
           <h3>How to write better answers</h3>
@@ -4363,6 +4391,15 @@
       else if ((state.selectedMode || 'practice') === 'written') startSession('written', { totalMarks: state.progress.writtenExamMarks || 30 });
       else if ((state.selectedMode || 'practice') === 'unit-test') startSession('unit-test', { totalMarks: state.progress.writtenExamMarks || 30 });
       else startSession(state.selectedMode || 'practice');
+    });
+
+
+    els.answerFormatHelpButton?.addEventListener('click', openAnswerFormatHelp);
+    els.answerFormatModal?.addEventListener('click', (event) => {
+      if (event.target === els.answerFormatModal || event.target.closest('[data-answer-help-close]')) closeAnswerFormatHelp();
+    });
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && els.answerFormatModal && !els.answerFormatModal.classList.contains('hidden')) closeAnswerFormatHelp();
     });
 
     $$('[data-written-size]').forEach((button) => {
