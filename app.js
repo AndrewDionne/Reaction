@@ -1528,16 +1528,124 @@
     return domain || "Science";
   }
 
+  const ANSWER_TYPE_GUIDES = {
+    identify: {
+      label: "Identify",
+      also: "state / name / label",
+      clueWords: "what, which, where, name, state, identify, label",
+      summary: "Give the fact, label, place, part, word or short answer. Keep it precise.",
+      goodAnswer: "A good answer is short, accurate and uses the correct science word.",
+      template: "The answer is ____.",
+      map: [
+        ["Question asks for", "the named thing, part, place, value or fact"],
+        ["Answer gives", "the exact word, phrase or one short sentence"]
+      ],
+      steps: [
+        "Find the thing the question asks you to name.",
+        "Write the science term or short fact only.",
+        "Do not add a long explanation unless the question asks why or how."
+      ]
+    },
+    describe: {
+      label: "Describe",
+      also: "what happens / pattern / trend",
+      clueWords: "what happens, what changes, pattern, trend, use the graph/table",
+      summary: "Say what happens, what changes, or what is shown. Do not focus on the reason unless asked.",
+      goodAnswer: "A good answer gives clear observations or a pattern, often with data or labels from the question.",
+      template: "As ____ changes, ____ changes. The evidence is ____.",
+      map: [
+        ["Question gives", "a process, graph, table, diagram or change"],
+        ["Answer says", "what happens, what changes, or the pattern you can see"]
+      ],
+      steps: [
+        "Name the thing that changes or the feature you can see.",
+        "Say the direction of change: increases, decreases, stays the same, or changes shape.",
+        "Use a value, label or comparison if the question gives one."
+      ]
+    },
+    explain: {
+      label: "Explain",
+      also: "why / how / suggest / compare",
+      clueWords: "why, how, because, give a reason, suggest, compare",
+      summary: "Give the reason. Link your point to the science using because, so or therefore.",
+      goodAnswer: "A good answer links a point to a reason and then to the result.",
+      template: "____ happens because ____. This means ____.",
+      map: [
+        ["Question asks", "why or how something happens"],
+        ["Answer gives", "point → because/reason → result"]
+      ],
+      steps: [
+        "Make the main science point.",
+        "Add because, so, therefore or this means.",
+        "Finish with the result, effect or comparison."
+      ]
+    }
+  };
+
+  function inferAnswerType(item = {}) {
+    const command = String(item.examCommand || item.commandWord || item.command || "").toLowerCase().trim();
+    if (["identify", "state", "name", "label", "classify", "complete"].includes(command)) return "identify";
+    if (["describe", "graph", "interpret"].includes(command)) return "describe";
+    if (["explain", "suggest", "compare", "evaluate"].includes(command)) return "explain";
+
+    const text = String(item.question || item.prompt || "").toLowerCase().replace(/\s+/g, " ").trim();
+    if (/\b(why|explain|because|give a reason|suggest)\b/.test(text)) return "explain";
+    if (/\b(compare|difference between|similarity|different from|higher than|lower than|greater than|less than)\b/.test(text)) return "explain";
+    if (/\b(how)\b/.test(text) && /\b(cause|affect|increase|decrease|change|make|become|produce|result)\b/.test(text)) return "explain";
+    if (/\b(describe|what happens|what changes|pattern|trend|use the graph|use the table|shown by the graph|shown in the diagram)\b/.test(text)) return "describe";
+    if (/\b(identify|state|name|label|which|where|what is|what are|give one|give two|complete)\b/.test(text)) return "identify";
+    if (item.type === "definition") return "identify";
+    return "describe";
+  }
+
+  function answerTypeGuide(item = {}) {
+    return ANSWER_TYPE_GUIDES[inferAnswerType(item)] || ANSWER_TYPE_GUIDES.describe;
+  }
+
   function commandHint(commandWord) {
-    const hints = {
-      state: "Give the precise fact, term, equation or short list asked for. Do not add a long explanation unless the question asks for one.",
-      identify: "Use the labels, diagram or question clue to name the correct item(s). Keep the answer short and unambiguous.",
-      describe: "Say what happens, what changes, or what is shown. Use ordered points and include labels, values or comparisons if they are given.",
-      explain: "Make the science point, then link it to a reason and result. Use because, so, therefore or this means to show the connection.",
-      calculate: "Write the equation or method, substitute values, calculate carefully, then give the answer with units or required rounding.",
-      graph: "Check both axes and the scale. Describe the trend or draw the required line, quoting values where useful."
-    };
-    return hints[commandWord] || "Write a clear science answer using key words.";
+    return answerTypeGuide({ commandWord }).summary;
+  }
+
+  function renderAnswerTypeGuide(item = {}, className = "question-type-guide") {
+    const guide = answerTypeGuide(item);
+    return `
+      <aside class="${className}">
+        <div class="answer-type-heading">
+          <span class="pill command-word">${escapeHtml(guide.label)}</span>
+          <span>${escapeHtml(guide.also)}</span>
+        </div>
+        <p><strong>Good answer:</strong> ${escapeHtml(guide.goodAnswer)}</p>
+        <p><strong>Use this shape:</strong> ${escapeHtml(guide.template)}</p>
+        <div class="answer-type-map">
+          ${guide.map.map(([left, right]) => `<div><strong>${escapeHtml(left)}</strong><span>${escapeHtml(right)}</span></div>`).join("")}
+        </div>
+        <ul>${guide.steps.map((step) => `<li>${escapeHtml(step)}</li>`).join("")}</ul>
+        <p class="written-format-note"><strong>Clue words:</strong> ${escapeHtml(guide.clueWords)}</p>
+        <p class="written-format-note"><strong>Describe vs explain:</strong> describe says what happens; explain says why or how it happens.</p>
+      </aside>
+    `;
+  }
+
+  function renderAnswerFormatClassNotesSection() {
+    return `
+      <section class="note-section answer-format-section">
+        <h3>How to answer written questions</h3>
+        <p class="overview-section-help">Use three simple answer types. Identify gives the answer. Describe says what happens. Explain gives the reason.</p>
+        <div class="answer-type-grid">
+          ${Object.values(ANSWER_TYPE_GUIDES).map((guide) => `
+            <article class="answer-type-card">
+              <strong>${escapeHtml(guide.label)}</strong>
+              <span>${escapeHtml(guide.also)}</span>
+              <p>${escapeHtml(guide.summary)}</p>
+              <em>${escapeHtml(guide.template)}</em>
+            </article>
+          `).join("")}
+        </div>
+        <div class="answer-type-rule">
+          <strong>Quick choice:</strong> what/which/where/name = identify; what happens or what changes = describe; why/how/because/suggest/compare = explain.
+        </div>
+      </section>
+    `;
   }
 
   function writtenDifficulty(question) {
@@ -1604,7 +1712,9 @@
   function normalizeWrittenCommand(commandWord) {
     const cmd = String(commandWord || "").toLowerCase().trim();
     if (["state", "identify", "describe", "explain", "calculate", "graph"].includes(cmd)) return cmd;
-    if (cmd === "classify") return "identify";
+    if (["classify", "name", "label", "complete"].includes(cmd)) return "identify";
+    if (["suggest", "compare", "evaluate"].includes(cmd)) return "explain";
+    if (cmd === "interpret") return "describe";
     return "state";
   }
 
@@ -2714,7 +2824,7 @@
     }
     state.mode = mode;
     state.noteContext = null;
-    state.test = isTestMode(mode) ? { answers: {}, submitted: false } : null;
+    state.test = isTestMode(mode) ? { answers: {}, submitted: false, typeOpen: {} } : null;
     state.written = null;
     if (isWrittenMode(mode)) {
       const totalMarks = [15, 30, 45].includes(Number(options.totalMarks)) ? Number(options.totalMarks) : (state.progress.writtenExamMarks || 30);
@@ -3096,6 +3206,7 @@
           <h3>Sub-units</h3>
           ${renderTargetedSubUnits(target.subUnits)}
         </section>
+        ${renderAnswerFormatClassNotesSection()}
         <section class="note-section targeted-overview-section vocabulary-section">
           <h3>Must know vocabulary</h3>
           <p class="overview-section-help">Open a group, check the terms, then use the vocabulary questions if any words are unfamiliar.</p>
@@ -3160,6 +3271,7 @@
           <h3>Sub-units and must-know points</h3>
           ${renderOverviewRoute(overview.subUnitRoute)}
         </section>
+        ${renderAnswerFormatClassNotesSection()}
         ${Array.isArray(overview.visualTiles) && overview.visualTiles.length ? `<section class="note-section overview-visual-section"><h3>Revision images</h3>${renderOverviewMedia(overview.visualTiles, "overview-tile-media")}</section>` : ""}
         <section class="note-section sentence-note">
           <h3>How to write better answers</h3>
@@ -3446,9 +3558,6 @@
     const awarded = writtenCurrentMark(question);
     const formatOpen = Boolean(state.written?.formatOpen?.[question.id]);
     const section = writtenSectionMeta(question);
-    const formatGuide = commandHint(question.commandWord);
-    const answerFrame = question.answerFrame || formatGuide;
-    const showAnswerFrame = answerFrame && answerFrame !== formatGuide;
     updateSessionChrome({
       title: state.mode === "unit-test" ? "End of unit test" : "Written exam practice",
       eyebrow: `${section.label}: ${section.focus}`,
@@ -3474,14 +3583,9 @@
         ${Array.isArray(question.media) && question.media.length ? renderMediaItems(question.media.filter((item) => !item.mediaTiming || item.mediaTiming === "question"), question.question || "Question diagram", "media-grid question-media-grid", { showCaptions: false }) : ""}
         <div class="written-answer-label-row">
           <label for="writtenAnswer" class="written-answer-label">Your written answer</label>
-          <button class="answer-format-button" data-written-action="toggle-format" type="button" aria-expanded="${formatOpen}">Answer format</button>
+          <button class="answer-format-button" data-written-action="toggle-format" type="button" aria-expanded="${formatOpen}">Question type</button>
         </div>
-        ${formatOpen ? `<aside class="written-answer-guide">
-          <strong>Answer format</strong>
-          ${showAnswerFrame ? `<p><strong>Use:</strong> ${escapeHtml(answerFrame)}</p>` : `<p>${escapeHtml(answerFrame)}</p>`}
-          <p class="written-format-note">${escapeHtml(formatGuide)}</p>
-          ${(question.answerStructure || []).length ? `<ul>${question.answerStructure.map((step) => `<li>${escapeHtml(step)}</li>`).join("")}</ul>` : ""}
-        </aside>` : ""}
+        ${formatOpen ? renderAnswerTypeGuide(question, "written-answer-guide") : ""}
         <textarea id="writtenAnswer" class="open-answer written-answer-box" placeholder="Write your answer here. Use short sentences or bullet points where useful.">${escapeHtml(typed)}</textarea>
 
         ${submitted ? renderWrittenMarkScheme(question, awarded) : ""}
@@ -3717,7 +3821,7 @@
         ${renderStudyPrompt(card)}
         <p class="question-text">${escapeHtml(card.question)}</p>
         ${renderMedia(card)}
-        ${card.cue ? `<p class="explanation"><strong>Cue:</strong> ${escapeHtml(card.cue)}</p>` : ""}
+        ${(!testMode && card.cue) ? `<p class="explanation"><strong>Cue:</strong> ${escapeHtml(card.cue)}</p>` : ""}
         ${isMcq ? renderChoices(card, testMode) : isDefinition && !testMode ? renderDefinitionResponse(card) : renderOpenResponse(testMode, card)}
         ${!testMode && state.revealed ? renderReveal(card) : ""}
         ${!testMode && isMcq && state.selectedChoice ? renderChoiceFeedback(card) : ""}
@@ -3831,7 +3935,18 @@
       ? "Type your answer. Answers and explanations unlock after you submit the test."
       : "Type a rough answer here, then reveal the mark-scheme answer.";
     const id = testMode ? "testOpenAnswer" : "";
-    return `<textarea ${id ? `id="${id}"` : ""} class="open-answer" placeholder="${escapeHtml(placeholder)}">${escapeHtml(savedAnswer)}</textarea>`;
+    if (!testMode || !card) {
+      return `<textarea ${id ? `id="${id}"` : ""} class="open-answer" placeholder="${escapeHtml(placeholder)}">${escapeHtml(savedAnswer)}</textarea>`;
+    }
+    const typeOpen = Boolean(state.test?.typeOpen?.[card.id]);
+    return `
+      <div class="written-answer-label-row test-answer-label-row">
+        <label for="testOpenAnswer" class="written-answer-label">Your written answer</label>
+        <button class="answer-format-button" data-action="toggle-question-type" type="button" aria-expanded="${typeOpen}">Question type</button>
+      </div>
+      ${typeOpen ? renderAnswerTypeGuide(card, "written-answer-guide test-question-type-guide") : ""}
+      <textarea id="testOpenAnswer" class="open-answer" placeholder="${escapeHtml(placeholder)}">${escapeHtml(savedAnswer)}</textarea>
+    `;
   }
 
   function renderReveal(card) {
@@ -3880,6 +3995,13 @@
   }
 
   function handleAction(action, card) {
+    if (isTestMode() && action === "toggle-question-type") {
+      saveOpenTestAnswer(card);
+      state.test.typeOpen = state.test.typeOpen || {};
+      state.test.typeOpen[card.id] = !state.test.typeOpen[card.id];
+      renderCard();
+      return;
+    }
     if (isTestMode() && ["next", "prev", "test-submit"].includes(action)) {
       saveOpenTestAnswer(card);
       if (action === "test-submit") finishTest();

@@ -1,3 +1,11 @@
+## v1.73.2 — Simplified written-answer formats
+
+- Added a simple three-type written-answer typology: **Identify**, **Describe**, and **Explain**.
+- Replaced the test-mode `Cue:` line for open-answer questions with a **Question type** button that shows the likely type, answer shape, clue words, and a short format strategy.
+- Updated written-answer practice cards to use the same **Question type** language instead of a longer answer-format hint.
+- Added a compact **How to answer written questions** section to unit overview/class-note pages so students can review the strategy before practising.
+- Kept answer guidance short and focused on the key distinction: describe = what happens; explain = why/how it happens.
+
 ## v1.73.1 — Exam mode UI cleanup and digital graph answers
 
 - Reworked `exam-paper.html` into a cleaner app-first GCSE-style exam route with a compact setup/action bar, paper selector, and secondary Print / Save PDF action.
