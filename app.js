@@ -2986,6 +2986,53 @@
     if (!note) return "";
     return `<button class="secondary-button overview-note-button" data-overview-note="${escapeHtml(noteId)}" type="button">Learn this: ${escapeHtml(note.title)}</button>`;
   }
+  function isYearEndEssentialNote(note = {}) {
+    return String(note.objective || "").startsWith("year-end-essentials");
+  }
+
+  function commonMistakeText(item) {
+    if (!item) return "";
+    if (typeof item === "string") return item;
+    if (typeof item === "object") {
+      const wrong = item.wrong ? `Avoid: ${item.wrong}` : "";
+      const correct = item.correct ? `Use: ${item.correct}` : "";
+      const why = item.why ? `Why: ${item.why}` : "";
+      return [wrong, correct, why].filter(Boolean).join(" ");
+    }
+    return String(item);
+  }
+
+  function yearEndEssentialsForUnit(unitId) {
+    return classNotes.filter((note) => note.unit === unitId && isYearEndEssentialNote(note));
+  }
+
+  function renderYearEndEssentialsSection(unitId) {
+    const notes = yearEndEssentialsForUnit(unitId);
+    if (!notes.length) return "";
+    return `<section class="note-section targeted-overview-section year-end-essentials-section">
+      <div class="year-end-essentials-heading">
+        <div>
+          <p class="overview-kicker">Year-end essentials</p>
+          <h3>High-value exam content for this unit</h3>
+        </div>
+        <p>These used to sit behind a separate Year-end essentials button. They now live inside the relevant unit overview and class notes.</p>
+      </div>
+      <div class="year-end-essential-grid">
+        ${notes.map((note) => {
+          const keyPoints = Array.isArray(note.keyPoints) ? note.keyPoints.slice(0, 6) : [];
+          const mistakes = Array.isArray(note.commonMistakes) ? note.commonMistakes.map(commonMistakeText).filter(Boolean).slice(0, 3) : [];
+          return `<article class="year-end-essential-card">
+            <h4>${escapeHtml(note.title || "Year-end essential")}</h4>
+            ${note.summary ? `<p>${escapeHtml(note.summary)}</p>` : ""}
+            ${keyPoints.length ? `<details open><summary>Must know</summary><ul>${keyPoints.map((point) => `<li>${escapeHtml(point)}</li>`).join("")}</ul></details>` : ""}
+            ${mistakes.length ? `<details><summary>Common exam traps</summary><ul>${mistakes.map((point) => `<li>${escapeHtml(point)}</li>`).join("")}</ul></details>` : ""}
+            <button class="secondary-button overview-note-button" data-overview-note="${escapeHtml(note.id)}" type="button">Open class note</button>
+          </article>`;
+        }).join("")}
+      </div>
+    </section>`;
+  }
+
 
   function renderTargetedChecklistItem(item = {}, index = 0) {
     const media = Array.isArray(item.media) ? item.media : (item.media ? [item.media] : []);
@@ -3057,6 +3104,7 @@
         ${renderTargetedChecklistSection("Must understand", target.understand, "must-understand-section")}
         ${renderTargetedChecklistSection("Must be able to identify", target.identify, "must-identify-section")}
         ${renderTargetedChecklistSection("Must memorise equations / calculations", target.memorize, "must-memorize-section")}
+        ${renderYearEndEssentialsSection(overview.unit)}
         <div class="card-actions">
           <button class="primary-button" data-overview-action="practice-unit" type="button">Practise this unit</button>
           <button class="secondary-button" data-overview-action="hub" type="button">Back to revision hub</button>
@@ -3117,6 +3165,7 @@
           <h3>How to write better answers</h3>
           ${renderPlainList(overview.examAnswerMoves)}
         </section>
+        ${renderYearEndEssentialsSection(overview.unit)}
         <div class="card-actions">
           <button class="primary-button" data-overview-action="practice-unit" type="button">Practise this unit</button>
           <button class="secondary-button" data-overview-action="hub" type="button">Back to revision hub</button>

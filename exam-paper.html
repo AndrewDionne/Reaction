@@ -7,27 +7,45 @@
   <meta name="description" content="Reaction — Year 9 Science digital-first exam mode.">
   <title>Reaction · Exam mode</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css?v=1.73.0">
+  <link rel="stylesheet" href="styles.css?v=1.73.1">
   <style>
-    :root { --exam-ink:#111827; --exam-muted:#475569; --exam-line:#cbd5e1; --exam-soft:#f8fafc; --exam-panel:#ffffff; }
+    :root { --exam-ink:#111827; --exam-muted:#475569; --exam-line:#cbd5e1; --exam-soft:#f8fafc; --exam-panel:#ffffff; --plot-left:70; --plot-top:34; --plot-width:900; --plot-height:470; }
+    * { box-sizing: border-box; }
     body { background:#eaf0f7; color:var(--exam-ink); }
-    .exam-wrap { width:min(1040px, calc(100% - 32px)); margin:24px auto 60px; }
-    .exam-controls { display:grid; gap:1rem; margin-bottom:1rem; }
-    .exam-control-grid { display:grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap:0.75rem; align-items:end; }
-    .exam-control-grid label { display:grid; gap:0.35rem; color:#34415a; font-size:0.86rem; font-weight:900; }
-    .exam-control-actions { display:flex; flex-wrap:wrap; gap:0.6rem; }
-    .paper, .answer-key { background:var(--exam-panel); box-shadow:0 18px 45px rgba(15,23,42,.12); padding:48px 58px; margin-bottom:26px; border-radius:24px; }
-    .paper-title { display:flex; justify-content:space-between; gap:18px; border-bottom:2px solid var(--exam-ink); padding-bottom:16px; margin-bottom:26px; }
-    .paper-title h1 { margin:0 0 6px; font-size:30px; letter-spacing:-0.04em; }
-    .paper h2, .answer-key h2 { font-size:24px; margin:28px 0 12px; }
-    .paper h3, .answer-key h3 { font-size:18px; margin:16px 0 10px; }
-    .meta { color:var(--exam-muted); font-size:14px; line-height:1.4; }
+    .exam-wrap { width:min(1040px, calc(100% - 32px)); margin:22px auto 60px; }
+    .exam-actionbar { margin-bottom:1rem; padding:clamp(1rem, 2vw, 1.35rem); border-radius:24px; overflow:hidden; }
+    .exam-actionbar-main { display:grid; grid-template-columns:minmax(0, 1fr) minmax(220px, 320px) auto; gap:1rem; align-items:end; }
+    .exam-actionbar h1 { margin:0.1rem 0 0; font-size:clamp(1.45rem, 3vw, 2.3rem); line-height:0.98; letter-spacing:-0.05em; overflow-wrap:anywhere; }
+    .exam-actionbar p { margin:0.35rem 0 0; max-width:42rem; color:#475569; line-height:1.42; }
+    .exam-actionbar label { display:grid; gap:0.35rem; color:#334155; font-size:0.84rem; font-weight:900; min-width:0; }
+    .exam-actionbar select { min-width:0; }
+    .exam-secondary-actions { display:flex; flex-wrap:wrap; gap:0.6rem; justify-content:flex-end; }
+    .paper { background:var(--exam-panel); box-shadow:0 18px 45px rgba(15,23,42,.12); padding:48px 58px; margin-bottom:26px; border-radius:24px; overflow:hidden; overflow-wrap:anywhere; }
+    .exam-cover { min-height:calc(100vh - 190px); padding:10px 0 34px; break-after:page; page-break-after:always; }
+    .exam-cover-title { text-align:center; margin:2rem auto 2.5rem; }
+    .exam-cover-title h1 { margin:0; font-size:clamp(2rem, 4vw, 3rem); line-height:1.05; letter-spacing:-0.04em; }
+    .exam-cover-title p { margin:0.75rem 0 0; color:#1f2937; font-size:1.05rem; font-weight:900; }
+    .exam-cover-table { width:100%; border-collapse:collapse; margin:0 auto 2.5rem; table-layout:fixed; }
+    .exam-cover-table th, .exam-cover-table td { border:1.5px solid #111827; padding:0.75rem 0.85rem; text-align:left; vertical-align:top; line-height:1.35; }
+    .exam-cover-table th { width:26%; background:#f8fafc; font-weight:800; }
+    .candidate-details, .exam-information { margin-top:2rem; }
+    .candidate-details h2, .exam-information h2 { margin:0 0 1rem; font-size:1.55rem; }
+    .candidate-grid { display:grid; gap:0.75rem; max-width:760px; }
+    .candidate-row { display:grid; grid-template-columns:86px minmax(0, 1fr); align-items:center; gap:0.9rem; }
+    .candidate-row label { font-weight:700; }
+    .candidate-row input { border:0; border-bottom:1.5px solid #111827; border-radius:0; padding:0.45rem 0.2rem; background:transparent; font:inherit; }
+    .exam-information ul { margin:0; padding-left:1.4rem; line-height:1.6; }
+    .paper-start { border-top:2px solid var(--exam-ink); padding-top:1.6rem; }
+    .paper-summary { display:flex; justify-content:space-between; gap:1rem; align-items:flex-start; margin-bottom:1.35rem; }
+    .paper-summary h2 { margin:0 0 0.35rem; font-size:clamp(1.45rem, 3vw, 2.1rem); letter-spacing:-0.04em; }
+    .paper h3 { font-size:1.45rem; margin:1.8rem 0 0.75rem; }
+    .meta { color:var(--exam-muted); font-size:14px; line-height:1.45; }
     .marks { font-weight:900; white-space:nowrap; }
     .question-block { break-inside:avoid; page-break-inside:avoid; margin:18px 0 30px; padding-bottom:20px; border-bottom:1px solid #e2e8f0; }
     .question-head { font-weight:900; font-size:17px; margin-bottom:10px; }
     .part { display:grid; grid-template-columns:36px minmax(0,1fr); gap:8px; margin:12px 0; line-height:1.35; }
     .part-label { font-weight:800; }
-    .digital-answer-wrap { grid-column:2; display:grid; gap:0.4rem; margin-top:0.55rem; }
+    .digital-answer-wrap { grid-column:2; display:grid; gap:0.4rem; margin-top:0.55rem; min-width:0; }
     .digital-answer-wrap label { font-weight:900; color:#334155; font-size:0.86rem; }
     .digital-answer { width:100%; min-height:8.5rem; resize:vertical; border:1px solid var(--exam-line); border-radius:16px; padding:0.8rem 0.9rem; line-height:1.45; font:inherit; background:#fff; }
     .digital-answer:disabled { color:#0f172a; background:#f8fafc; }
@@ -40,19 +58,34 @@
     .revision-links { display:flex; flex-wrap:wrap; gap:8px; margin-top:8px; }
     .revision-links a, .revision-pill { display:inline-flex; align-items:center; border-radius:999px; padding:5px 9px; background:#e0f2fe; color:#075985; font-size:12px; font-weight:900; text-decoration:none; }
     .graph-instruction { margin:14px 0 7px; font-size:14px; }
-    .graph-grid { position:relative; height:330px; border-left:3px solid #111; border-bottom:3px solid #111; border-top:1px solid #111; border-right:1px solid #111; background-color:#fff; background-image:linear-gradient(#d1d5db 1px, transparent 1px), linear-gradient(90deg, #d1d5db 1px, transparent 1px), linear-gradient(#eef2f7 1px, transparent 1px), linear-gradient(90deg, #eef2f7 1px, transparent 1px); background-size: calc(100% / 6) calc(100% / 7), calc(100% / 6) calc(100% / 7), calc(100% / 30) calc(100% / 35), calc(100% / 30) calc(100% / 35); }
-    .axis-label { position:absolute; font-size:13px; color:#111; }
-    .y-label { left:8px; top:8px; }
-    .x-label { right:10px; bottom:8px; }
-    .axis-numbers-x { display:grid; grid-template-columns:repeat(7,1fr); margin-left:-10px; font-size:12px; }
-    .axis-numbers-x span { text-align:center; }
-    .data-table { margin:10px 0 12px; line-height:1.8; }
-    .answer-key .answer-item { margin:10px 0; line-height:1.35; }
-    .answer-key h2 { border-bottom:2px solid var(--exam-ink); padding-bottom:10px; }
+    .data-table { margin:10px 0 12px; overflow-x:auto; }
+    .data-table table { width:100%; border-collapse:collapse; table-layout:fixed; min-width:520px; }
+    .data-table th, .data-table td { border:1px solid #cbd5e1; padding:0.45rem; text-align:center; }
+    .data-table th { background:#f8fafc; text-align:left; width:142px; }
+    .graph-tools { display:flex; flex-wrap:wrap; gap:0.55rem; align-items:center; margin:0.75rem 0; }
+    .graph-tools span { color:#475569; font-size:0.86rem; font-weight:800; }
+    .graph-tool-button { border:1px solid #cbd5e1; border-radius:999px; padding:0.48rem 0.72rem; background:#fff; color:#334155; font-weight:900; cursor:pointer; }
+    .graph-tool-button:hover, .graph-tool-button:focus-visible { border-color:#2563eb; color:#1d4ed8; outline:none; }
+    .digital-graph { width:100%; border:1.5px solid #111827; border-radius:6px; background:#fff; overflow:hidden; touch-action:manipulation; }
+    .digital-graph.submitted { background:#f8fafc; }
+    .digital-graph-svg { display:block; width:100%; height:auto; min-height:330px; }
+    .graph-minor { stroke:#edf2f7; stroke-width:1; }
+    .graph-major { stroke:#cbd5e1; stroke-width:1.4; }
+    .graph-axis { stroke:#111827; stroke-width:3; }
+    .graph-label { fill:#111827; font-size:19px; font-weight:700; }
+    .graph-number { fill:#334155; font-size:15px; }
+    .graph-point { fill:#2563eb; stroke:#0f172a; stroke-width:2; cursor:pointer; }
+    .graph-line { fill:none; stroke:#0f172a; stroke-width:3; stroke-linecap:round; stroke-linejoin:round; }
+    .graph-hit-zone { fill:transparent; cursor:crosshair; }
+    .plotted-point-list { display:flex; flex-wrap:wrap; gap:0.45rem; margin:0.65rem 0 0; padding:0; list-style:none; color:#334155; font-size:0.85rem; }
+    .plotted-point-list li { border:1px solid #cbd5e1; border-radius:999px; padding:0.28rem 0.5rem; background:#f8fafc; }
+    .paper-submit-zone { margin:2.2rem 0 0; padding:1.15rem; border:1px solid #cbd5e1; border-radius:18px; background:#f8fafc; display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:1rem; }
+    .paper-submit-zone p { margin:0; color:#475569; font-weight:800; }
+    .submitted-banner { margin-top:1rem; border:1px solid rgba(22,163,74,0.28); border-radius:16px; padding:0.9rem 1rem; background:#f0fdf4; color:#166534; font-weight:900; }
     .hidden { display:none !important; }
-    @media (max-width: 860px) { .exam-control-grid { grid-template-columns:1fr 1fr; } .paper, .answer-key { padding:28px 22px; } .paper-title { flex-direction:column; } }
-    @media (max-width: 620px) { .exam-control-grid { grid-template-columns:1fr; } .part { grid-template-columns:1fr; } .digital-answer-wrap { grid-column:1; } }
-    @media print { body { background:#fff; } .topbar, .exam-controls, .answer-key.hidden { display:none !important; } .exam-wrap { width:auto; margin:0; } .paper, .answer-key { box-shadow:none; padding:0; margin:0; border-radius:0; } .answer-feedback { display:none; } .digital-answer { min-height:8rem; border:0; border-bottom:1px solid #4b5563; border-radius:0; } h2 { page-break-after:avoid; } .question-block { page-break-inside:avoid; } @page { size:A4; margin:14mm 16mm; } }
+    @media (max-width: 860px) { .exam-actionbar-main { grid-template-columns:1fr; align-items:start; } .exam-secondary-actions { justify-content:flex-start; } .paper { padding:28px 22px; } .paper-summary { flex-direction:column; } }
+    @media (max-width: 620px) { .exam-wrap { width:min(100% - 18px, 1040px); } .part { grid-template-columns:1fr; } .digital-answer-wrap { grid-column:1; } .candidate-row { grid-template-columns:1fr; gap:0.15rem; } .exam-cover-table th, .exam-cover-table td { display:block; width:100%; } }
+    @media print { body { background:#fff; } .topbar, .exam-actionbar, .paper-submit-zone, .graph-tools, .submitted-banner { display:none !important; } .exam-wrap { width:auto; margin:0; } .paper { box-shadow:none; padding:0; margin:0; border-radius:0; } .exam-cover { min-height:255mm; } .answer-feedback { display:none; } .digital-answer { min-height:8rem; border:0; border-bottom:1px solid #4b5563; border-radius:0; } .digital-graph { break-inside:avoid; page-break-inside:avoid; } h2, h3 { page-break-after:avoid; } .question-block { page-break-inside:avoid; } @page { size:A4; margin:14mm 16mm; } }
   </style>
 </head>
 <body>
@@ -75,65 +108,135 @@
   </header>
 
   <main class="exam-wrap">
-    <section class="exam-controls panel" aria-label="Exam controls">
-      <div class="section-heading-row compact-heading">
+    <section class="exam-actionbar panel" aria-label="Exam setup and actions">
+      <div class="exam-actionbar-main">
         <div>
           <p class="eyebrow">Exam mode</p>
-          <h1>Digital-first 80-mark written paper</h1>
+          <h1>Digital GCSE-style written paper</h1>
+          <p>Choose a practice paper, type answers directly into the app, then submit at the end to unlock the answer guidance under each response.</p>
         </div>
-        <p class="journey-hint">Type answers first. Submit to unlock expected answers, explanations, common mistakes and class-note links. Print / PDF is optional.</p>
-      </div>
-      <div class="exam-control-grid">
-        <label>Paper type
-          <select id="paperTypeSelect"><option value="normal">Normal 80-mark</option><option value="source">Source examples</option><option value="all">All available papers</option></select>
-        </label>
-        <label>Paper
+        <label>Practice paper
           <select id="paperSelect"></select>
         </label>
-        <label>Section
-          <select id="sectionSelect"><option value="all">Full paper</option><option value="A">Section A only</option><option value="B">Section B only</option><option value="C">Section C only</option><option value="D">Section D only</option></select>
-        </label>
-        <label>Answer view
-          <select id="answerModeSelect"><option value="revision">Revision answer key</option><option value="mark">Compact mark scheme</option></select>
-        </label>
-      </div>
-      <div class="exam-control-actions">
-        <button class="primary-button" id="submitPaperBtn" type="button">Submit paper</button>
-        <button class="secondary-button" id="randomBtn" type="button">Random paper</button>
-        <button class="secondary-button" id="printBtn" type="button">Print / Save PDF</button>
-        <button class="secondary-button" id="toggleAnswersBtn" type="button" disabled>Answer key locked</button>
-        <a class="secondary-button" href="index.html">Back to app</a>
+        <div class="exam-secondary-actions">
+          <button class="secondary-button" id="printBtn" type="button">Print / Save PDF</button>
+        </div>
       </div>
     </section>
 
     <section class="paper" id="paper"></section>
-    <section class="answer-key hidden" id="answerKey"></section>
   </main>
 
-  <script src="data/year9-exam-paper-bank.js?v=1.73.0"></script>
+  <script src="data/year9-exam-paper-bank.js?v=1.73.1"></script>
   <script>
     const bank = window.YEAR9_EXAM_PAPER_BANK || { papers: [] };
     const papers = Array.isArray(bank.papers) ? bank.papers : [];
-    let paperTypeFilter = 'normal';
-    let filteredPapers = papers.filter((p) => (p.paperType || 'normal') === paperTypeFilter);
-    if (!filteredPapers.length) filteredPapers = papers;
-    let paper = filteredPapers[0] || papers[0] || { sections: [] };
-    let sectionFilter = 'all';
-    let answerMode = 'revision';
+    let paper = papers.find((candidate) => (candidate.paperType || 'normal') === 'normal') || papers[0] || { sections: [] };
     let paperSubmitted = false;
     let soundOn = true;
     let digitalAnswers = {};
+    let digitalGraphs = {};
+    let candidateDetails = { name: '', className: '', date: '' };
 
     const escapeHtml = (value) => String(value ?? '').replace(/[&<>"']/g, (ch) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[ch]));
+    const clamp = (value, min, max) => Math.max(min, Math.min(max, value));
+    const roundToStep = (value, step) => Math.round(value / step) * step;
+    const displayNumber = (value) => Number.isInteger(Number(value)) ? String(Number(value)) : String(Number(value).toFixed(2)).replace(/0+$/, '').replace(/\.$/, '');
     const paperKey = () => paper.id || paper.title || 'paper';
     const answerKeyFor = (question, part) => `${paperKey()}::${question.number || ''}::${part.label || ''}`;
+    const graphKeyFor = (question) => `${paperKey()}::graph::${question.number || question.topic || ''}`;
     const lineCountFor = (question) => Number(question.answerLines ?? Math.max(3, Math.ceil((question.marks || 6) * 0.8)));
-    function activeSections() { return (paper.sections || []).filter((section) => sectionFilter === 'all' || section.id === sectionFilter); }
-    function activeTotalMarks() { return activeSections().reduce((total, section) => total + section.questions.reduce((sum, question) => sum + Number(question.marks || 0), 0), 0); }
-    function answerRowsFor(question) { return Math.max(4, Math.min(10, Math.ceil(lineCountFor(question) / Math.max(1, question.parts.length)))); }
-    function renderGraph(graph) {
+    function activeSections() { return paper.sections || []; }
+    function activeTotalMarks() { return activeSections().reduce((total, section) => total + (section.questions || []).reduce((sum, question) => sum + Number(question.marks || 0), 0), 0); }
+    function answerRowsFor(question) { return Math.max(4, Math.min(10, Math.ceil(lineCountFor(question) / Math.max(1, (question.parts || []).length)))); }
+    function paperLabel(candidate = paper) { return candidate.variantLabel || candidate.title || 'Practice paper'; }
+    function paperSubtitle() { return paper.subtitle || 'GCSE-style practice paper'; }
+    function paperVariantLine() { return `${paperLabel(paper).replace(/\s*·\s*80 marks/i, '')} — GCSE-style practice paper`; }
+
+    function niceGraphMax(values = []) {
+      const max = Math.max(1, ...values.map(Number).filter(Number.isFinite));
+      if (max <= 8) return 8;
+      if (max <= 10) return 10;
+      if (max <= 20) return Math.ceil(max / 2) * 2;
+      if (max <= 100) return Math.ceil(max / 10) * 10;
+      return Math.ceil(max / 100) * 100;
+    }
+    function graphMeta(graph = {}) {
+      const xs = Array.isArray(graph.xValues) ? graph.xValues.map(Number).filter(Number.isFinite) : [];
+      const ys = Array.isArray(graph.yValues) ? graph.yValues.map(Number).filter(Number.isFinite) : [];
+      const xMin = Math.min(0, ...xs);
+      const rawXMax = Math.max(1, ...xs);
+      const xMax = rawXMax === xMin ? rawXMax + 1 : rawXMax;
+      const yMin = 0;
+      const yMax = niceGraphMax(ys);
+      const xSnap = (xMax - xMin) <= 8 ? 0.5 : 1;
+      const ySnap = yMax <= 10 ? 0.5 : yMax <= 30 ? 1 : 2;
+      return { xMin, xMax, yMin, yMax, xSnap, ySnap, left:70, top:34, width:900, height:470 };
+    }
+    function plotCoords(point, meta) {
+      const x = meta.left + ((Number(point.x) - meta.xMin) / (meta.xMax - meta.xMin)) * meta.width;
+      const y = meta.top + meta.height - ((Number(point.y) - meta.yMin) / (meta.yMax - meta.yMin)) * meta.height;
+      return { x, y };
+    }
+    function pointFromCoords(svgX, svgY, meta) {
+      const rawX = meta.xMin + ((svgX - meta.left) / meta.width) * (meta.xMax - meta.xMin);
+      const rawY = meta.yMin + ((meta.top + meta.height - svgY) / meta.height) * (meta.yMax - meta.yMin);
+      return {
+        x: clamp(roundToStep(rawX, meta.xSnap), meta.xMin, meta.xMax),
+        y: clamp(roundToStep(rawY, meta.ySnap), meta.yMin, meta.yMax)
+      };
+    }
+    function graphState(key) {
+      if (!digitalGraphs[key] || typeof digitalGraphs[key] !== 'object') digitalGraphs[key] = { points: [], line: false };
+      if (!Array.isArray(digitalGraphs[key].points)) digitalGraphs[key].points = [];
+      return digitalGraphs[key];
+    }
+    function renderGraphGrid(graph, meta) {
+      const lines = [];
+      for (let i = 0; i <= 30; i += 1) {
+        const x = meta.left + (i / 30) * meta.width;
+        lines.push(`<line class="${i % 5 === 0 ? 'graph-major' : 'graph-minor'}" x1="${x}" y1="${meta.top}" x2="${x}" y2="${meta.top + meta.height}" />`);
+      }
+      for (let i = 0; i <= 35; i += 1) {
+        const y = meta.top + (i / 35) * meta.height;
+        lines.push(`<line class="${i % 5 === 0 ? 'graph-major' : 'graph-minor'}" x1="${meta.left}" y1="${y}" x2="${meta.left + meta.width}" y2="${y}" />`);
+      }
+      const xLabels = (Array.isArray(graph.xValues) ? graph.xValues : []).map((value) => {
+        const p = plotCoords({ x: Number(value), y: meta.yMin }, meta);
+        return `<text class="graph-number" x="${p.x}" y="540" text-anchor="middle">${escapeHtml(displayNumber(value))}</text>`;
+      }).join('');
+      const yStep = meta.yMax <= 10 ? 1 : meta.yMax <= 30 ? 5 : 10;
+      const yLabels = [];
+      for (let value = meta.yMin; value <= meta.yMax + 1e-9; value += yStep) {
+        const p = plotCoords({ x: meta.xMin, y: value }, meta);
+        yLabels.push(`<text class="graph-number" x="58" y="${p.y + 5}" text-anchor="end">${escapeHtml(displayNumber(value))}</text>`);
+      }
+      return `${lines.join('')}<line class="graph-axis" x1="${meta.left}" y1="${meta.top + meta.height}" x2="${meta.left + meta.width}" y2="${meta.top + meta.height}" /><line class="graph-axis" x1="${meta.left}" y1="${meta.top}" x2="${meta.left}" y2="${meta.top + meta.height}" /><text class="graph-label" x="${meta.left + meta.width - 8}" y="526" text-anchor="end">${escapeHtml(graph.xLabel || 'x')}</text><text class="graph-label" x="82" y="24">${escapeHtml(graph.yLabel || 'y')}</text>${xLabels}${yLabels.join('')}`;
+    }
+    function renderGraphPoints(key, meta) {
+      const state = graphState(key);
+      const sorted = [...state.points].sort((a, b) => Number(a.x) - Number(b.x));
+      const line = state.line && sorted.length >= 2 ? `<polyline class="graph-line" points="${sorted.map((point) => { const p = plotCoords(point, meta); return `${p.x},${p.y}`; }).join(' ')}" />` : '';
+      const points = state.points.map((point, index) => {
+        const p = plotCoords(point, meta);
+        return `<circle class="graph-point" data-point-index="${index}" cx="${p.x}" cy="${p.y}" r="8"><title>(${escapeHtml(displayNumber(point.x))}, ${escapeHtml(displayNumber(point.y))}) — click to remove</title></circle>`;
+      }).join('');
+      return `${line}${points}`;
+    }
+    function renderGraphTable(graph) {
+      const xs = Array.isArray(graph.xValues) ? graph.xValues : [];
+      const ys = Array.isArray(graph.yValues) ? graph.yValues : [];
+      return `<div class="data-table"><table><tbody><tr><th>${escapeHtml(graph.xLabel || 'x')}</th>${xs.map((value) => `<td>${escapeHtml(displayNumber(value))}</td>`).join('')}</tr><tr><th>${escapeHtml(graph.yLabel || 'y')}</th>${ys.map((value) => `<td>${escapeHtml(displayNumber(value))}</td>`).join('')}</tr></tbody></table></div>`;
+    }
+    function renderGraph(question) {
+      const graph = question.graph;
       if (!graph) return '';
-      return `<div class="data-table"><strong>${escapeHtml(graph.xLabel.replace(/\s*\/.*/, ''))}:</strong> ${graph.xValues.join(' ')}<br><strong>${escapeHtml(graph.yLabel.replace(/\s*\/.*/, ''))}:</strong> ${graph.yValues.join(' ')}</div><p class="graph-instruction">${escapeHtml(graph.instruction || '')}</p><div class="graph-grid"><span class="axis-label y-label">${escapeHtml(graph.yLabel)}</span><span class="axis-label x-label">${escapeHtml(graph.xLabel)}</span></div><div class="axis-numbers-x">${graph.xValues.map((v) => `<span>${escapeHtml(v)}</span>`).join('')}</div>`;
+      const key = graphKeyFor(question);
+      const meta = graphMeta(graph);
+      const state = graphState(key);
+      const pointsList = state.points.length ? state.points.map((point) => `<li>(${escapeHtml(displayNumber(point.x))}, ${escapeHtml(displayNumber(point.y))})</li>`).join('') : '<li>No points plotted yet</li>';
+      const disabled = paperSubmitted ? 'disabled' : '';
+      return `<div class="graph-question" data-graph-question="${escapeHtml(key)}">${renderGraphTable(graph)}<p class="graph-instruction">${escapeHtml(graph.instruction || 'Plot the points on the grid.')}</p><div class="graph-tools"><button class="graph-tool-button" data-graph-action="line" data-graph-key="${escapeHtml(key)}" type="button" ${disabled}>${state.line ? 'Remove line' : 'Draw straight line'}</button><button class="graph-tool-button" data-graph-action="clear" data-graph-key="${escapeHtml(key)}" type="button" ${disabled}>Clear plotted points</button><span>${paperSubmitted ? 'Graph locked after submission.' : 'Click the grid to plot a point. Click a point to remove it.'}</span></div><div class="digital-graph ${paperSubmitted ? 'submitted' : ''}" data-graph-key="${escapeHtml(key)}" data-x-min="${meta.xMin}" data-x-max="${meta.xMax}" data-y-min="${meta.yMin}" data-y-max="${meta.yMax}" data-x-snap="${meta.xSnap}" data-y-snap="${meta.ySnap}"><svg class="digital-graph-svg" viewBox="0 0 1000 560" role="img" aria-label="Digital graph grid for ${escapeHtml(graph.yLabel || 'y')} against ${escapeHtml(graph.xLabel || 'x')}">${renderGraphGrid(graph, meta)}<rect class="graph-hit-zone" x="${meta.left}" y="${meta.top}" width="${meta.width}" height="${meta.height}" />${renderGraphPoints(key, meta)}</svg></div><ol class="plotted-point-list">${pointsList}</ol></div>`;
     }
     function renderLearnMore(part) {
       const links = Array.isArray(part.learnMore) ? part.learnMore : [];
@@ -165,65 +268,95 @@
       return `<div class="part"><div class="part-label">(${escapeHtml(part.label)})</div><div>${escapeHtml(part.prompt)}</div><div class="digital-answer-wrap"><label for="answer-${escapeHtml(key)}">Your written answer</label><textarea id="answer-${escapeHtml(key)}" class="digital-answer" data-answer-key="${escapeHtml(key)}" rows="${rows}" ${disabled} placeholder="Write your answer here before submitting the paper.">${escapeHtml(digitalAnswers[key] || '')}</textarea>${renderPartFeedback(part)}</div></div>`;
     }
     function renderQuestion(question) {
-      return `<article class="question-block"><div class="question-head">${question.number}. ${escapeHtml(question.topic)}. <span class="marks">[${question.marks}]</span></div>${renderGraph(question.graph)}${question.parts.map((part) => renderPart(question, part)).join('')}</article>`;
+      return `<article class="question-block"><div class="question-head">${question.number}. ${escapeHtml(question.topic)}. <span class="marks">[${question.marks}]</span></div>${renderGraph(question)}${(question.parts || []).map((part) => renderPart(question, part)).join('')}</article>`;
+    }
+    function renderCoverPage() {
+      return `<section class="exam-cover" aria-label="Exam front page"><div class="exam-cover-title"><h1>Year 9 Science Practice Examination</h1><p>${escapeHtml(paperVariantLine())}</p></div><table class="exam-cover-table"><tbody><tr><th>Time allowed</th><td>${escapeHtml(paper.timeAllowed || '1 hour 30 minutes')}</td></tr><tr><th>Total marks</th><td>${activeTotalMarks()}</td></tr><tr><th>Equipment</th><td>Calculator allowed. Ruler and pencil may be used for graphs.</td></tr><tr><th>Instructions</th><td>Answer all questions. Show all working and use scientific terms where appropriate. Submit at the end to unlock the answer guidance.</td></tr></tbody></table><section class="candidate-details"><h2>Candidate details</h2><div class="candidate-grid"><div class="candidate-row"><label for="candidateName">Name:</label><input id="candidateName" data-candidate-field="name" value="${escapeHtml(candidateDetails.name)}" autocomplete="name"></div><div class="candidate-row"><label for="candidateClass">Class:</label><input id="candidateClass" data-candidate-field="className" value="${escapeHtml(candidateDetails.className)}"></div><div class="candidate-row"><label for="candidateDate">Date:</label><input id="candidateDate" data-candidate-field="date" value="${escapeHtml(candidateDetails.date)}"></div></div></section><section class="exam-information"><h2>Information</h2><ul><li>Write your answers in the spaces provided in the app.</li><li>Use a black or blue pen only if printing. Pencil may be used for graphs and diagrams.</li><li>Diagrams are not necessarily drawn to scale.</li><li>This is an original GCSE-style practice paper for Year 9 revision. It is not affiliated with any exam board.</li></ul><p class="meta">The paper includes Biology, Chemistry, Physics and Working scientifically questions. Try to use clear scientific vocabulary in your answers.</p></section></section>`;
     }
     function renderPaper() {
-      const label = paper.variantLabel ? ` · ${paper.variantLabel}` : '';
-      document.getElementById('paper').innerHTML = `<div class="paper-title"><div><h1>${escapeHtml(paper.title || 'Year 9 Science exam paper')}</h1><div class="meta">${escapeHtml(paper.subtitle || '')}${escapeHtml(label)}${paper.timeAllowed ? ` · Time allowed: ${escapeHtml(paper.timeAllowed)}` : ''}</div></div><div class="marks">Total: ${activeTotalMarks()} marks</div></div>${activeSections().map((section) => `<h2>${escapeHtml(section.title)}</h2>${section.questions.map(renderQuestion).join('')}`).join('')}`;
-    }
-    function renderRevisionPart(part) {
-      return `<div class="answer-item"><strong>(${escapeHtml(part.label)}) Expected answer:</strong> ${escapeHtml(part.answer || '')}<br><em>${escapeHtml(part.explanation || '')}</em></div>`;
-    }
-    function renderAnswerKey() {
-      const keyEl = document.getElementById('answerKey');
-      keyEl.classList.toggle('hidden', !paperSubmitted);
-      if (!paperSubmitted) { keyEl.innerHTML = ''; return; }
-      if (answerMode === 'revision') {
-        keyEl.innerHTML = `<h2>Revision answer key</h2><p class="meta">The same answer guidance is shown under each written answer above. This section keeps a compact reference at the end of the paper.</p>${activeSections().map((section) => `<h3>${escapeHtml(section.title)}</h3>${section.questions.map((question) => `<div class="answer-item"><strong>${question.number}. ${escapeHtml(question.topic)}</strong>${question.parts.map(renderRevisionPart).join('')}</div>`).join('')}`).join('')}`;
-        return;
-      }
-      keyEl.innerHTML = `<h2>Compact mark scheme</h2>${activeSections().map((section) => `<h3>${escapeHtml(section.title)}</h3>${section.questions.map((question) => `<div class="answer-item"><strong>${question.number}.</strong> ${question.parts.map((part) => `<span><strong>(${escapeHtml(part.label)})</strong> ${escapeHtml(part.answer || '')}</span>`).join(' ')}</div>`).join('')}`).join('')}`;
+      document.getElementById('paper').innerHTML = `${renderCoverPage()}<section class="paper-start"><div class="paper-summary"><div><h2>${escapeHtml(paper.title || 'Year 9 Science exam paper')}</h2><div class="meta">${escapeHtml(paperSubtitle())}${paper.timeAllowed ? ` · Time allowed: ${escapeHtml(paper.timeAllowed)}` : ''}</div></div><div class="marks">Total: ${activeTotalMarks()} marks</div></div>${activeSections().map((section) => `<h3>${escapeHtml(section.title)}</h3>${(section.questions || []).map(renderQuestion).join('')}`).join('')}<div class="paper-submit-zone"><p>${paperSubmitted ? 'Paper submitted — answer guidance is now unlocked under each answer.' : 'Finished? Submit the paper to lock your answers and reveal the answer key.'}</p><button class="primary-button" id="submitPaperBtn" type="button" ${paperSubmitted ? 'disabled' : ''}>${paperSubmitted ? 'Paper submitted' : 'Submit paper'}</button></div>${paperSubmitted ? '<div class="submitted-banner">Answer key unlocked. Review each question and compare your response with the expected answer, explanation, common mistakes and class-note link.</div>' : ''}</section>`;
     }
     function bindDigitalAnswerBoxes() {
       document.querySelectorAll('[data-answer-key]').forEach((box) => {
         box.addEventListener('input', () => { digitalAnswers[box.dataset.answerKey] = box.value; });
       });
     }
-    function updateControlState() {
+    function bindCoverInputs() {
+      document.querySelectorAll('[data-candidate-field]').forEach((input) => {
+        input.addEventListener('input', () => { candidateDetails[input.dataset.candidateField] = input.value; });
+      });
+    }
+    function bindGraphWidgets() {
+      document.querySelectorAll('[data-graph-action]').forEach((button) => {
+        button.addEventListener('click', () => {
+          if (paperSubmitted) return;
+          const state = graphState(button.dataset.graphKey);
+          if (button.dataset.graphAction === 'line') state.line = !state.line;
+          if (button.dataset.graphAction === 'clear') state.points = [];
+          renderAll();
+        });
+      });
+      document.querySelectorAll('.digital-graph').forEach((widget) => {
+        widget.addEventListener('click', (event) => {
+          if (paperSubmitted) return;
+          const key = widget.dataset.graphKey;
+          const state = graphState(key);
+          const pointNode = event.target.closest ? event.target.closest('[data-point-index]') : null;
+          if (pointNode) {
+            state.points.splice(Number(pointNode.dataset.pointIndex), 1);
+            renderAll();
+            return;
+          }
+          const svg = widget.querySelector('svg');
+          const rect = svg.getBoundingClientRect();
+          const svgX = ((event.clientX - rect.left) / rect.width) * 1000;
+          const svgY = ((event.clientY - rect.top) / rect.height) * 560;
+          const meta = {
+            xMin: Number(widget.dataset.xMin),
+            xMax: Number(widget.dataset.xMax),
+            yMin: Number(widget.dataset.yMin),
+            yMax: Number(widget.dataset.yMax),
+            xSnap: Number(widget.dataset.xSnap),
+            ySnap: Number(widget.dataset.ySnap),
+            left:70,
+            top:34,
+            width:900,
+            height:470
+          };
+          if (svgX < meta.left || svgX > meta.left + meta.width || svgY < meta.top || svgY > meta.top + meta.height) return;
+          const next = pointFromCoords(svgX, svgY, meta);
+          const existing = state.points.findIndex((point) => Math.abs(Number(point.x) - next.x) <= meta.xSnap / 2 && Math.abs(Number(point.y) - next.y) <= meta.ySnap / 2);
+          if (existing >= 0) state.points[existing] = next;
+          else state.points.push(next);
+          renderAll();
+        });
+      });
+    }
+    function bindPaperActions() {
       const submit = document.getElementById('submitPaperBtn');
-      const toggle = document.getElementById('toggleAnswersBtn');
-      submit.textContent = paperSubmitted ? 'Paper submitted' : 'Submit paper';
-      submit.disabled = paperSubmitted;
-      toggle.disabled = !paperSubmitted;
-      toggle.textContent = paperSubmitted && !document.getElementById('answerKey').classList.contains('hidden') ? 'Hide answer key' : (paperSubmitted ? 'Show answer key' : 'Answer key locked');
+      if (submit) submit.addEventListener('click', submitPaper);
     }
-    function renderAll() { renderPaper(); renderAnswerKey(); bindDigitalAnswerBoxes(); updateControlState(); }
-    function papersForType() {
-      const list = paperTypeFilter === 'all' ? papers : papers.filter((p) => (p.paperType || 'normal') === paperTypeFilter);
-      return list.length ? list : papers;
-    }
+    function renderAll() { renderPaper(); bindDigitalAnswerBoxes(); bindCoverInputs(); bindGraphWidgets(); bindPaperActions(); }
     function populatePaperSelect() {
       const select = document.getElementById('paperSelect');
-      filteredPapers = papersForType();
-      select.innerHTML = filteredPapers.map((p, index) => `<option value="${index}">${escapeHtml(p.variantLabel || p.title || `Paper ${index + 1}`)}</option>`).join('');
-      paper = filteredPapers[0] || papers[0] || { sections: [] };
-      select.value = '0';
+      select.innerHTML = papers.map((candidate, index) => `<option value="${index}">${escapeHtml(paperLabel(candidate))}</option>`).join('');
+      const selected = Math.max(0, papers.findIndex((candidate) => candidate.id === paper.id));
+      select.value = String(selected);
     }
-    function resetSubmission() { paperSubmitted = false; renderAll(); }
     function captureAnswers() {
       document.querySelectorAll('[data-answer-key]').forEach((box) => { digitalAnswers[box.dataset.answerKey] = box.value; });
+      document.querySelectorAll('[data-candidate-field]').forEach((input) => { candidateDetails[input.dataset.candidateField] = input.value; });
     }
     function submitPaper() {
       captureAnswers();
       paperSubmitted = true;
-      answerMode = 'revision';
-      document.getElementById('answerModeSelect').value = 'revision';
       renderAll();
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+      const firstFeedback = document.querySelector('.answer-feedback');
+      if (firstFeedback) firstFeedback.scrollIntoView({ behavior: 'smooth', block: 'center' });
     }
     function exportProgress() {
       captureAnswers();
-      const payload = { app: 'Reaction Year 9 Science', type: 'exam-paper-answers', exportedAt: new Date().toISOString(), paperId: paper.id || '', sectionFilter, answers: digitalAnswers };
+      const payload = { app: 'Reaction Year 9 Science', type: 'exam-paper-answers', exportedAt: new Date().toISOString(), paperId: paper.id || '', answers: digitalAnswers, graphs: digitalGraphs, candidateDetails };
       const blob = new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' });
       const url = URL.createObjectURL(blob);
       const a = document.createElement('a');
@@ -241,16 +374,13 @@
           const payload = JSON.parse(String(reader.result || '{}'));
           if (payload.paperId) {
             const match = papers.find((candidate) => candidate.id === payload.paperId);
-            if (match) {
-              paperTypeFilter = match.paperType || 'normal';
-              document.getElementById('paperTypeSelect').value = paperTypeFilter;
-              populatePaperSelect();
-              const index = filteredPapers.findIndex((candidate) => candidate.id === match.id);
-              if (index >= 0) { document.getElementById('paperSelect').value = String(index); paper = filteredPapers[index]; }
-            }
+            if (match) paper = match;
           }
           digitalAnswers = payload.answers && typeof payload.answers === 'object' ? payload.answers : {};
+          digitalGraphs = payload.graphs && typeof payload.graphs === 'object' ? payload.graphs : {};
+          candidateDetails = payload.candidateDetails && typeof payload.candidateDetails === 'object' ? { ...candidateDetails, ...payload.candidateDetails } : candidateDetails;
           paperSubmitted = false;
+          populatePaperSelect();
           renderAll();
         } catch (error) {
           alert('Could not import this exam answer file.');
@@ -260,14 +390,13 @@
       event.target.value = '';
     }
 
-    document.getElementById('paperTypeSelect').addEventListener('change', (event) => { paperTypeFilter = event.currentTarget.value; populatePaperSelect(); resetSubmission(); });
-    document.getElementById('paperSelect').addEventListener('change', (event) => { paper = filteredPapers[Number(event.currentTarget.value)] || filteredPapers[0] || papers[0]; resetSubmission(); });
-    document.getElementById('sectionSelect').addEventListener('change', (event) => { captureAnswers(); sectionFilter = event.currentTarget.value; resetSubmission(); });
-    document.getElementById('answerModeSelect').addEventListener('change', (event) => { answerMode = event.currentTarget.value; renderAnswerKey(); updateControlState(); });
-    document.getElementById('randomBtn').addEventListener('click', () => { filteredPapers = papersForType(); const next = Math.floor(Math.random() * filteredPapers.length); document.getElementById('paperSelect').value = String(next); paper = filteredPapers[next]; resetSubmission(); });
+    document.getElementById('paperSelect').addEventListener('change', (event) => {
+      captureAnswers();
+      paper = papers[Number(event.currentTarget.value)] || papers[0] || { sections: [] };
+      paperSubmitted = false;
+      renderAll();
+    });
     document.getElementById('printBtn').addEventListener('click', () => window.print());
-    document.getElementById('submitPaperBtn').addEventListener('click', submitPaper);
-    document.getElementById('toggleAnswersBtn').addEventListener('click', () => { const key = document.getElementById('answerKey'); if (!paperSubmitted) return; key.classList.toggle('hidden'); updateControlState(); });
     document.getElementById('soundToggle').addEventListener('click', () => { soundOn = !soundOn; const btn = document.getElementById('soundToggle'); btn.textContent = soundOn ? 'Sound on' : 'Sound off'; btn.setAttribute('aria-pressed', String(soundOn)); });
     document.getElementById('exportProgress').addEventListener('click', exportProgress);
     document.getElementById('importProgressFile').addEventListener('change', importProgress);

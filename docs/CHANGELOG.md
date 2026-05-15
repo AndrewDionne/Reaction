@@ -1,3 +1,13 @@
+## v1.73.1 — Exam mode UI cleanup and digital graph answers
+
+- Reworked `exam-paper.html` into a cleaner app-first GCSE-style exam route with a compact setup/action bar, paper selector, and secondary Print / Save PDF action.
+- Added a GCSE-style digital cover page with time allowed, total marks, equipment, instructions, candidate details, and information notes.
+- Removed remaining exam-builder controls from the exam page body: paper type, section, answer view, random paper, answer-key toggle, and back-to-app controls.
+- Moved Submit paper to the bottom of the paper and kept answer guidance locked until submission.
+- Added digital graph plotting: students can click to plot graph points, clear points, and add/remove a straight line; plotted graph work is preserved in export/import and print output.
+- Integrated promoted Year-end essentials class-note content into relevant unit overviews instead of exposing it as a separate mode or exam button.
+- Added card overflow safeguards so long headings and controls stay inside their cards on narrow screens.
+
 ## v1.73.0 — Simplified learning modes
 
 - Consolidated the home learning routes into three primary cards: **Revision journey**, **Test your knowledge**, and **Exam mode**.
