@@ -1547,17 +1547,17 @@
     },
     describe: {
       label: "Describe",
-      also: "what is linked / what happens / pattern",
+      also: "short linked science sentences",
       clueWords: "describe, what happens, what changes, how things are linked, relationship, sequence, pattern, trend, use the graph/table",
-      summary: "Link science points together in a clear order.",
-      goodAnswer: "A good answer links science points together in a clear order.",
-      template: "First say what one thing is. Then link it to the next thing. Then add a final detail.",
+      summary: "Use short descriptive sentences to link science points in order.",
+      goodAnswer: "A good answer uses short sentences. Each sentence describes one science point or one link to the next point.",
+      template: "Sentence 1: say the first science point. Sentence 2: link it to the next science point. Sentence 3: add a final detail or evidence.",
       questionPiece: "what is linked / what happens / sequence / pattern",
-      answerPiece: "science point → linked detail → final detail",
-      strategy: "Say one science point, link it to the next thing, then add a final detail or evidence.",
+      answerPiece: "short sentence → linked science sentence → final detail or evidence",
+      strategy: "Write a series of short sentences. Keep each sentence limited to one science point, one link, or one detail.",
       exampleQuestion: "Describe how chromosomes, DNA and genes are linked together.",
-      exampleAnswer: "Chromosomes are made from long DNA molecules. Genes are short sections of DNA on chromosomes that carry instructions for inherited features.",
-      pitfall: "Do not explain why unless the question asks for a reason."
+      exampleAnswer: "Chromosomes are found in the nucleus. Chromosomes are made from long molecules of DNA. Genes are short sections of DNA found on chromosomes. Genes carry instructions for inherited features.",
+      pitfall: "If the question asks why, it is an Explain question. Do not turn a Describe answer into a long because explanation."
     },
     explain: {
       label: "Explain",
@@ -1609,7 +1609,7 @@
       return `The answer is ${formatSlot("answer")}.`;
     }
     if (type === "describe") {
-      return `First: ${formatSlot("science point")}. Then link: ${formatSlot("linked detail")}. Finally: ${formatSlot("final detail / evidence")}.`;
+      return `Sentence 1: ${formatSlot("first science point")}. Sentence 2: ${formatSlot("linked science point")}. Sentence 3: ${formatSlot("final detail / evidence")}.`;
     }
     return `${formatSlot("science point")} happens because ${formatSlot("reason")}. This means ${formatSlot("result")}.`;
   }
@@ -1646,8 +1646,8 @@
         <div class="answer-help-quick-choice">
           <strong>Quick choice:</strong>
           <span><b>Identify</b> = what / which / where / name</span>
-          <span><b>Describe</b> = what is linked / what happens / pattern</span>
-          <span><b>Explain</b> = why / how / because / suggest / compare</span>
+          <span><b>Describe</b> = short sentences linking science points</span>
+          <span><b>Explain</b> = why / because / give a reason</span>
         </div>
         <div class="answer-help-stack">
           ${Object.values(ANSWER_TYPE_GUIDES).map((guide) => `
@@ -1767,7 +1767,7 @@
     const frames = {
       state: `Give ${marks} clear ${plural}. Use the exact science word, fact or equation.`,
       identify: `Name the correct label, feature, part or item. Give ${marks} clear ${plural} if needed.`,
-      describe: `Write ${marks} short linked ${plural}. Say what happens, what changes, or what is shown.`,
+      describe: `Write ${marks} short descriptive ${plural}. Link one science point to the next without explaining why unless asked.`,
       explain: `Use point → because → result. Aim for ${marks} credit-worthy linked ${plural}.`,
       calculate: "Show equation/method, substitution, answer and unit where possible.",
       graph: "Use the axes, quote values where useful, and describe or draw the trend."
@@ -1778,7 +1778,7 @@
   function writtenAnswerStructure(commandWord, marks = 1) {
     if (commandWord === "calculate") return ["Write the equation or method before calculating.", "Substitute the values with correct units where useful.", "Give the final answer with the unit or required rounding."];
     if (commandWord === "explain") return ["Make the science point first.", "Use because/so/therefore to link cause and effect.", "Finish with the result, consequence or application."];
-    if (commandWord === "describe") return ["State the first feature, step, observation or trend.", "Add another linked feature, step or comparison.", "Use labels, values or context from the question if shown."];
+    if (commandWord === "describe") return ["Write one short sentence for the first science point.", "Write another short sentence linking it to the next science point.", "Add a final detail, observation or evidence without explaining why unless asked."];
     if (commandWord === "identify") return ["Read the labels, diagram or context carefully.", "Name the correct item(s), part(s), feature(s) or value(s).", "Keep each answer concise and clearly matched to the label if labels are used."];
     if (commandWord === "graph") return ["Check the x-axis, y-axis and scale.", "Describe or draw the overall relationship or trend.", "Quote a value, turning point or comparison if useful."];
     return ["Write the key term, fact or equation.", "Keep the sentence short and precise.", "Do not add unrelated detail." ];

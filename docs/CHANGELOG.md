@@ -1,3 +1,16 @@
+## v1.73.8 — Describe short-sentence strategy
+
+- Refined the **Describe** written-answer guidance so students build answers from short descriptive sentences.
+- Updated the compact **Question type** card to show: Sentence 1 = first science point, Sentence 2 = linked science point, Sentence 3 = final detail/evidence.
+- Added the pitfall that questions asking **why** should be treated as **Explain** questions.
+- Kept Identify and Explain formats unchanged.
+- Bumped app/static cache strings to `1.73.8`.
+
+## v1.73.7 — Taller written-answer help pop-out
+
+- Increased the **How to answer written questions** pop-out to use 90% of the viewport height.
+- Kept the compact in-question **Question type** hints unchanged.
+
 ## v1.73.6 — Describe hint language refinement
 
 - Revised the Describe written-answer hint so it focuses on linking science points in a clear order rather than only describing a change or trend.
