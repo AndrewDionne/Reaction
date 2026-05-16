@@ -1521,7 +1521,7 @@ window.YEAR9_NOTES = {
       "title": "9F — Reactivity and reactions",
       "summary": "This unit explains chemical reactions and equations, particle ideas behind pressure, the reactivity series, atomic structure, combustion, reaction rates, displacement, redox and metal extraction.",
       "revisionPackFocus": [
-        "The reactivity series orders metals.",
+        "The reactivity hierarchy is potassium, sodium, lithium, calcium, magnesium, aluminium, carbon, zinc, lead, copper, silver, gold.",
         "A more reactive metal can displace a less reactive metal from a compound.",
         "Metals above carbon need electrolysis.",
         "Metals below carbon can often be extracted by carbon reduction.",
@@ -1582,17 +1582,17 @@ window.YEAR9_NOTES = {
       ],
       "infographicBacklog": [],
       "leadMedia": {
-        "src": "assets/webp/9F-reactivity-extraction-decision-notes-v152.webp",
-        "alt": "Annotated reactivity series and extraction decision tree comparing electrolysis and carbon reduction.",
-        "mediaTitle": "Reactivity series and extraction decision",
-        "mediaLead": "Compare the metal with carbon before choosing electrolysis or carbon reduction."
+        "src": "assets/webp/9F-reactivity-extraction-full-v174.webp",
+        "alt": "Full reactivity strip showing potassium to gold, with carbon marked as the extraction reference point and the linked extraction method regions.",
+        "mediaTitle": "Reactivity strip and extraction overview",
+        "mediaLead": "Use the metal hierarchy first, then compare its position with carbon to decide the extraction method."
       },
       "visualTiles": [
         {
-          "src": "assets/webp/9F-reactivity-extraction-decision-notes-r167.webp",
-          "alt": "Annotated reactivity and extraction decision map.",
-          "mediaTitle": "Extraction decision map",
-          "mediaLead": "Use reactivity relative to carbon to choose electrolysis or carbon reduction.",
+          "src": "assets/webp/9F-reactivity-extraction-full-v174.webp",
+          "alt": "Full reactivity strip showing potassium to gold, with carbon marked as the extraction reference point and the linked extraction method regions.",
+          "mediaTitle": "Reactivity strip and extraction overview",
+          "mediaLead": "Use the full reactivity hierarchy first, then compare the metal with carbon.",
           "r7Integrated": true
         },
         {
@@ -1875,7 +1875,7 @@ window.YEAR9_NOTES = {
             ],
             "noteId": "9F-reactivity",
             "media": [
-              "assets/webp/9F-reactivity-series-notes-medium-v2.webp"
+              "assets/webp/9F-reactivity-extraction-full-v174.webp"
             ],
             "practice": [
               "9F-WE-14",
@@ -1923,7 +1923,7 @@ window.YEAR9_NOTES = {
             ],
             "noteId": "9F-extraction",
             "media": [
-              "assets/webp/9F-extraction-decision-overview.webp"
+              "assets/webp/9F-reactivity-extraction-full-v174.webp"
             ],
             "practice": [
               "9F-MCQ-25",
@@ -1969,7 +1969,7 @@ window.YEAR9_NOTES = {
             ],
             "noteId": "9F-reactivity",
             "media": [
-              "assets/webp/9F-reactivity-series-notes-medium-v2.webp"
+              "assets/webp/9F-reactivity-extraction-full-v174.webp"
             ],
             "practice": [
               "9F-MCQ-21",
@@ -1984,7 +1984,7 @@ window.YEAR9_NOTES = {
             ],
             "noteId": "9F-extraction",
             "media": [
-              "assets/webp/9F-extraction-decision-overview.webp"
+              "assets/webp/9F-reactivity-extraction-full-v174.webp"
             ],
             "practice": [
               "9F-MCQ-25"
@@ -2041,6 +2041,23 @@ window.YEAR9_NOTES = {
             ],
             "practice": [
               "9F-WE-14"
+            ]
+          },
+          {
+            "title": "Reactivity hierarchy: potassium, sodium, lithium, calcium, magnesium, aluminium, carbon, zinc, lead, copper, silver, gold.",
+            "notes": [
+              "Learn the order from most reactive to least reactive.",
+              "Carbon is included as the comparison point for extraction questions, even though it is not a metal.",
+              "Use the hierarchy to predict displacement, reaction strength and extraction method."
+            ],
+            "noteId": "9F-reactivity",
+            "media": [
+              "assets/webp/9F-reactivity-extraction-full-v174.webp"
+            ],
+            "practice": [
+              "9F-MCQ-21",
+              "9F-MCQ-22",
+              "9F-MCQ-25"
             ]
           },
           {
@@ -4570,7 +4587,7 @@ window.YEAR9_NOTES = {
           "presentation": "media-image-base"
         },
         {
-          "src": "assets/webp/9F-reactivity-series-notes-medium-v2.webp",
+          "src": "assets/webp/9F-reactivity-extraction-full-v174.webp",
           "alt": "Reactivity series chart showing magnesium, zinc, iron, copper and silver with short reaction-behaviour cues.",
           "caption": "The reactivity series ranks metals from most reactive to least reactive and helps predict reactions with water, acids and displacement.",
           "mediaTitle": "Reactivity series",
@@ -4639,16 +4656,16 @@ window.YEAR9_NOTES = {
       "practicePrompt": "Pick one linked revision card for Metal extraction and reduction and answer it before revealing the answer. If you need the note again, mark it Revisit rather than Secure.",
       "media": [
         {
-          "src": "assets/webp/9F-reactivity-extraction-decision-notes-r167.webp",
-          "alt": "Annotated decision map linking metal reactivity to electrolysis or carbon reduction extraction methods.",
+          "src": "assets/webp/9F-reactivity-extraction-full-v174.webp",
+          "alt": "Full reactivity strip showing potassium to gold, with carbon marked as the extraction reference point and the linked extraction method regions.",
           "mediaTiming": "notes",
           "presentation": "media-image-base",
           "mediaTitle": "Reactivity and extraction methods",
-          "mediaLead": "A metal’s position relative to carbon helps decide whether electrolysis or carbon reduction is used.",
+          "mediaLead": "Use the full metal hierarchy first, then use the position relative to carbon to choose the extraction method.",
           "mediaPoints": [
             "Metals above carbon usually need electrolysis",
             "Metals below carbon can often be extracted with carbon",
-            "More reactive metals are harder and often more expensive to extract"
+            "Silver and gold are very unreactive and may be found native"
           ],
           "r7Integrated": true
         },

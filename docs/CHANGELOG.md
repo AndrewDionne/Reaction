@@ -1,3 +1,9 @@
+## v1.74.1 — Reactivity strip full-image integration
+- Replaced the main 9F reactivity/extraction note and overview visuals with the new full reactivity strip image.
+- Reused the full image across the 9F overview, reactivity note, extraction note, and targeted overview checklist references.
+- Added a 9F must-know memorize item for the full reactivity hierarchy: potassium, sodium, lithium, calcium, magnesium, aluminium, carbon, zinc, lead, copper, silver, gold.
+- Kept question-safe blank/question visuals unchanged so test-mode answer leakage is avoided.
+
 ## v1.73.8 — Describe short-sentence strategy
 
 - Refined the **Describe** written-answer guidance so students build answers from short descriptive sentences.
