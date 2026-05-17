@@ -1,3 +1,11 @@
+## v1.74.2 — Balanced question set builder
+- Added a Number of questions control for Revision journey and Test your knowledge: 10, 20, 30, 40, or All.
+- Generated smaller mixed sets from the selected units/sub-units instead of always using every available card.
+- Mixed mostly new questions with a smaller Revisit share so repeated sessions include fresh material plus known weak spots.
+- Balanced Biology, Chemistry and Physics when all material is selected.
+- Deprioritised questions recently used in the same mode.
+- Preserved Test your knowledge answer locking until submission.
+
 ## v1.74.1 — Reactivity strip full-image integration
 - Replaced the main 9F reactivity/extraction note and overview visuals with the new full reactivity strip image.
 - Reused the full image across the 9F overview, reactivity note, extraction note, and targeted overview checklist references.

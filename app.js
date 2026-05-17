@@ -9,6 +9,14 @@
   const unitOverviews = Array.isArray(notesBundle.unitOverviews) ? notesBundle.unitOverviews : [];
   const STORAGE_KEY = "reaction-y9-progress-v2";
   const LEGACY_STORAGE_KEY = "year9-science-study-progress-v1";
+  const QUESTION_SET_SIZE_OPTIONS = [10, 20, 30, 40, "all"];
+  const QUESTION_SET_DEFAULTS = { practice: 20, test: 20 };
+  const SUBJECT_UNITS = {
+    biology: ["9A", "9B"],
+    chemistry: ["9E", "9F"],
+    physics: ["9I", "9J"],
+  };
+  const SUBJECT_ORDER = ["biology", "chemistry", "physics"];
 
   const $ = (selector, root = document) => root.querySelector(selector);
   const $$ = (selector, root = document) => Array.from(root.querySelectorAll(selector));
@@ -54,7 +62,6 @@
     sessionTotal: byId("sessionTotal"),
     sessionUnitArt: byId("sessionUnitArt"),
     answerFormatHelpButton: byId("answerFormatHelpButton"),
-    reviewSheetButton: byId("reviewSheetButton"),
     answerFormatModal: byId("answerFormatModal"),
   };
 
@@ -109,53 +116,6 @@
     },
   };
 
-  const REVIEW_CATEGORIES = ["formulas", "vocabulary", "concepts", "questions"];
-  const REVIEW_CATEGORY_LABELS = {
-    formulas: "Formulas",
-    vocabulary: "Vocabulary",
-    concepts: "Concepts",
-    questions: "Questions",
-  };
-
-  function emptyReviewSheet() {
-    return REVIEW_CATEGORIES.reduce((sheet, category) => {
-      sheet[category] = [];
-      return sheet;
-    }, {});
-  }
-
-  function normalizeReviewCategory(category) {
-    const clean = String(category || "concepts").toLowerCase().trim();
-    if (["formula", "formulae", "equation", "equations", "memorize", "memorise"].includes(clean)) return "formulas";
-    if (["vocab", "term", "terms", "definition", "definitions"].includes(clean)) return "vocabulary";
-    if (["question", "questions", "review-question"].includes(clean)) return "questions";
-    return REVIEW_CATEGORIES.includes(clean) ? clean : "concepts";
-  }
-
-  function normalizeReviewSheet(raw) {
-    const sheet = emptyReviewSheet();
-    if (!raw || typeof raw !== "object") return sheet;
-    REVIEW_CATEGORIES.forEach((category) => {
-      const items = Array.isArray(raw[category]) ? raw[category] : [];
-      sheet[category] = items.map((item) => ({
-        id: String(item?.id || "").trim(),
-        category,
-        unit: String(item?.unit || "").trim(),
-        source: String(item?.source || "").trim(),
-        title: String(item?.title || "").trim(),
-        text: String(item?.text || "").trim(),
-        detail: String(item?.detail || "").trim(),
-        noteId: String(item?.noteId || "").trim(),
-        questionId: String(item?.questionId || "").trim(),
-        qid: String(item?.qid || "").trim(),
-        answer: String(item?.answer || "").trim(),
-        addedAt: String(item?.addedAt || "").trim(),
-      })).filter((item) => item.id && (item.text || item.title));
-    });
-    return sheet;
-  }
-
-
   const state = {
     mode: "practice",
     selectedMode: "practice",
@@ -175,9 +135,6 @@
     definitionReview: null,
     sound: true,
     progress: loadProgress(),
-    reviewSelection: null,
-    reviewCandidates: {},
-    reviewNotice: "",
   };
 
   function isTestMode(mode = state.mode) {
@@ -2303,7 +2260,6 @@
     return sortWrittenExamIntoSections(findWrittenCombo(available, requested));
   }
 
-
   function defaultProgress() {
     return {
       xp: 0,
@@ -2316,10 +2272,33 @@
       testHistory: [],
       writtenExamHistory: [],
       writtenExamMarks: 30,
-      reviewSheet: emptyReviewSheet(),
+      questionSetSize: { ...QUESTION_SET_DEFAULTS },
+      recentQuestionIds: { practice: [], test: [] },
       sessionPositions: {},
       sound: true,
       updatedAt: new Date().toISOString(),
+    };
+  }
+
+  function normalizeQuestionSetSize(value, fallback = 20) {
+    if (value === "all") return "all";
+    const numeric = Number(value);
+    return QUESTION_SET_SIZE_OPTIONS.includes(numeric) ? numeric : fallback;
+  }
+
+  function normalizeQuestionSetSizeMap(raw) {
+    const source = raw && typeof raw === "object" ? raw : {};
+    return {
+      practice: normalizeQuestionSetSize(source.practice, QUESTION_SET_DEFAULTS.practice),
+      test: normalizeQuestionSetSize(source.test, QUESTION_SET_DEFAULTS.test),
+    };
+  }
+
+  function normalizeRecentQuestionIds(raw) {
+    const source = raw && typeof raw === "object" ? raw : {};
+    return {
+      practice: Array.isArray(source.practice) ? source.practice.filter(Boolean).slice(0, 160) : [],
+      test: Array.isArray(source.test) ? source.test.filter(Boolean).slice(0, 160) : [],
     };
   }
 
@@ -2338,7 +2317,8 @@
       testHistory: Array.isArray(raw.testHistory) ? raw.testHistory : Array.isArray(raw.bossHistory) ? raw.bossHistory : [],
       writtenExamHistory: Array.isArray(raw.writtenExamHistory) ? raw.writtenExamHistory : [],
       writtenExamMarks: [15, 30, 45].includes(Number(raw.writtenExamMarks)) ? Number(raw.writtenExamMarks) : 30,
-      reviewSheet: normalizeReviewSheet(raw.reviewSheet),
+      questionSetSize: normalizeQuestionSetSizeMap(raw.questionSetSize),
+      recentQuestionIds: normalizeRecentQuestionIds(raw.recentQuestionIds),
       sessionPositions: raw.sessionPositions && typeof raw.sessionPositions === "object" ? raw.sessionPositions : {},
       sound: typeof raw.sound === "boolean" ? raw.sound : true,
     };
@@ -2389,323 +2369,6 @@
       [copy[i], copy[j]] = [copy[j], copy[i]];
     }
     return copy;
-  }
-
-
-  function reviewSheetCount(sheet = state.progress.reviewSheet) {
-    const clean = normalizeReviewSheet(sheet);
-    return REVIEW_CATEGORIES.reduce((sum, category) => sum + clean[category].length, 0);
-  }
-
-  function reviewHash(value) {
-    const text = String(value || "").toLowerCase().replace(/\s+/g, " ").trim();
-    let hash = 0;
-    for (let i = 0; i < text.length; i += 1) {
-      hash = ((hash << 5) - hash + text.charCodeAt(i)) | 0;
-    }
-    return Math.abs(hash).toString(36);
-  }
-
-  function makeReviewItemId(item = {}) {
-    const category = normalizeReviewCategory(item.category);
-    const unit = String(item.unit || "mixed").replace(/[^a-z0-9]+/gi, "-").toLowerCase() || "mixed";
-    const source = String(item.questionId || item.noteId || item.source || "item").replace(/[^a-z0-9]+/gi, "-").toLowerCase() || "item";
-    return `${category}-${unit}-${source}-${reviewHash([item.title, item.text, item.answer].filter(Boolean).join("|"))}`;
-  }
-
-  function isReviewSelectionActive(contextKey) {
-    return Boolean(state.reviewSelection?.active && state.reviewSelection.contextKey === contextKey);
-  }
-
-  function registerReviewCandidate(item = {}) {
-    const category = normalizeReviewCategory(item.category);
-    const candidate = {
-      id: item.id || makeReviewItemId({ ...item, category }),
-      category,
-      unit: String(item.unit || "").trim(),
-      source: String(item.source || "").trim(),
-      title: String(item.title || "").trim(),
-      text: String(item.text || "").trim(),
-      detail: String(item.detail || "").trim(),
-      noteId: String(item.noteId || "").trim(),
-      questionId: String(item.questionId || "").trim(),
-      qid: String(item.qid || "").trim(),
-      answer: String(item.answer || "").trim(),
-      addedAt: item.addedAt || new Date().toISOString(),
-    };
-    if (!state.reviewCandidates || typeof state.reviewCandidates !== "object") state.reviewCandidates = {};
-    state.reviewCandidates[candidate.id] = candidate;
-    return candidate;
-  }
-
-  function reviewItemExists(id, category = "") {
-    const sheet = normalizeReviewSheet(state.progress.reviewSheet);
-    const categories = category ? [normalizeReviewCategory(category)] : REVIEW_CATEGORIES;
-    return categories.some((cat) => sheet[cat].some((item) => item.id === id));
-  }
-
-  function addReviewItems(items = []) {
-    const sheet = normalizeReviewSheet(state.progress.reviewSheet);
-    let added = 0;
-    items.forEach((raw) => {
-      if (!raw || typeof raw !== "object") return;
-      const item = registerReviewCandidate(raw);
-      const category = normalizeReviewCategory(item.category);
-      const existingIndex = sheet[category].findIndex((existing) => existing.id === item.id);
-      if (existingIndex >= 0) {
-        const existing = sheet[category][existingIndex];
-        if (item.answer && !existing.answer) sheet[category][existingIndex] = { ...existing, answer: item.answer, detail: item.detail || existing.detail };
-        return;
-      }
-      sheet[category].push({ ...item, category, addedAt: new Date().toISOString() });
-      added += 1;
-    });
-    state.progress.reviewSheet = sheet;
-    if (added) saveProgress();
-    return added;
-  }
-
-  function removeReviewItem(category, id) {
-    const sheet = normalizeReviewSheet(state.progress.reviewSheet);
-    const cleanCategory = normalizeReviewCategory(category);
-    sheet[cleanCategory] = sheet[cleanCategory].filter((item) => item.id !== id);
-    state.progress.reviewSheet = sheet;
-    saveProgress();
-  }
-
-  function clearReviewSheet() {
-    state.progress.reviewSheet = emptyReviewSheet();
-    saveProgress();
-  }
-
-  function compactReviewText(value, max = 180) {
-    const clean = String(value || "").replace(/\s+/g, " ").trim();
-    if (clean.length <= max) return clean;
-    return `${clean.slice(0, max - 1).trim()}…`;
-  }
-
-  function compactQuestionAnswer(card = {}) {
-    return compactReviewText(card.answer || card.explanation || "Check the linked class note for the expected answer.", 220);
-  }
-
-  function questionReviewItem(card = {}, source = "Question card", options = {}) {
-    const note = noteForCard(card);
-    return registerReviewCandidate({
-      category: "questions",
-      unit: card.unit || "",
-      source,
-      title: questionIdentifier(card) || card.id || "Question to review",
-      text: card.question || "Question to review",
-      detail: note ? `Class note: ${note.title}` : unitTitle(card.unit || ""),
-      noteId: note?.id || "",
-      questionId: card.id || "",
-      qid: questionIdentifier(card),
-      answer: options.includeAnswer === false ? "" : compactQuestionAnswer(card),
-    });
-  }
-
-  function addQuestionToReview(card, source = "Question card", options = {}) {
-    const added = addReviewItems([questionReviewItem(card, source, options)]);
-    state.reviewNotice = added ? "Added question to last-minute review." : "This question is already on the last-minute review sheet.";
-    return added;
-  }
-
-  function renderReviewSelectionToolbar(contextKey, label = "class notes") {
-    const active = isReviewSelectionActive(contextKey);
-    const count = reviewSheetCount();
-    const notice = state.reviewNotice ? `<p class="review-sheet-notice">${escapeHtml(state.reviewNotice)}</p>` : "";
-    if (active) {
-      return `<div class="review-selection-toolbar active">
-        <div>
-          <strong>Select items for last-minute review</strong>
-          <span>Choose only the formulas, vocabulary or concepts you want on the compact sheet.</span>
-          ${notice}
-        </div>
-        <div class="review-selection-actions">
-          <button class="primary-button" data-review-action="add-selected" type="button">Add selected items</button>
-          <button class="secondary-button" data-review-action="cancel-selection" type="button">Cancel</button>
-        </div>
-      </div>`;
-    }
-    return `<div class="review-selection-toolbar">
-      <div>
-        <strong>Build a last-minute review sheet</strong>
-        <span>Add selected ${escapeHtml(label)} points, then print a compact summary before the test.</span>
-        ${notice}
-      </div>
-      <div class="review-selection-actions">
-        <button class="secondary-button" data-review-action="start-selection" type="button">Add to last-minute review</button>
-        <button class="soft-button" data-review-action="open-sheet" type="button">Open review sheet (${count})</button>
-      </div>
-    </div>`;
-  }
-
-  function renderReviewCheckbox(item, contextKey) {
-    const candidate = registerReviewCandidate(item);
-    if (!isReviewSelectionActive(contextKey)) return "";
-    const exists = reviewItemExists(candidate.id, candidate.category);
-    return `<label class="review-select-box ${exists ? "already-added" : ""}">
-      <input type="checkbox" data-review-candidate="${escapeHtml(candidate.id)}" ${exists ? "disabled" : ""}>
-      <span>${exists ? "Added" : "Add"}</span>
-    </label>`;
-  }
-
-  function renderReviewableBulletList(items = [], category = "concepts", options = {}) {
-    if (!Array.isArray(items) || !items.length) return "";
-    const contextKey = options.contextKey || "";
-    const title = options.title || "";
-    const unit = options.unit || "";
-    const detail = options.detail || title || REVIEW_CATEGORY_LABELS[normalizeReviewCategory(category)];
-    const noteId = options.noteId || "";
-    return `<ul class="reviewable-list">${items.map((raw) => {
-      const text = typeof raw === "string" ? raw : (raw?.text || raw?.title || raw?.definition || "");
-      if (!text) return "";
-      const checkbox = renderReviewCheckbox({ category, unit, title, text, detail, source: options.source || title, noteId }, contextKey);
-      return `<li class="reviewable-list-item">${checkbox}<span>${escapeHtml(String(text))}</span></li>`;
-    }).join("")}</ul>`;
-  }
-
-  function renderReviewableVocabularySections(sections = [], options = {}) {
-    if (!Array.isArray(sections) || !sections.length) return "";
-    const contextKey = options.contextKey || "";
-    const unit = options.unit || "";
-    const entries = (terms = []) => terms.map((entry) => {
-      if (entry && typeof entry === "object") {
-        return { term: String(entry.term || "").trim(), definition: String(entry.definition || "").trim() };
-      }
-      return { term: String(entry || "").trim(), definition: "" };
-    }).filter((entry) => entry.term);
-    return `<div class="overview-vocabulary-list">${sections.map((section) => `
-      <details class="overview-vocab-group">
-        <summary>${escapeHtml(section.title || "Vocabulary")}</summary>
-        <div class="overview-vocab-terms">${entries(section.terms || []).map((item) => {
-          const text = item.definition ? `${item.term} — ${item.definition}` : item.term;
-          const checkbox = renderReviewCheckbox({
-            category: "vocabulary",
-            unit,
-            title: item.term,
-            text,
-            detail: section.title || "Vocabulary",
-            source: "Unit overview vocabulary",
-          }, contextKey);
-          return `<article class="overview-vocab-entry reviewable-vocab-entry">${checkbox}<div><strong>${escapeHtml(item.term)}</strong>${item.definition ? `<p>${escapeHtml(item.definition)}</p>` : ""}</div></article>`;
-        }).join("")}</div>
-      </details>
-    `).join("")}</div>`;
-  }
-
-  function bindReviewSelectionActions(contextKey) {
-    $$('[data-review-action]', els.studyPanel).forEach((button) => {
-      button.addEventListener('click', () => {
-        const action = button.dataset.reviewAction;
-        if (action === "start-selection") {
-          state.reviewSelection = { active: true, contextKey };
-          state.reviewNotice = "";
-          renderSession();
-          return;
-        }
-        if (action === "cancel-selection") {
-          state.reviewSelection = null;
-          state.reviewNotice = "";
-          renderSession();
-          return;
-        }
-        if (action === "add-selected") {
-          const selected = $$('[data-review-candidate]:checked', els.studyPanel)
-            .map((input) => state.reviewCandidates?.[input.dataset.reviewCandidate])
-            .filter(Boolean);
-          const added = addReviewItems(selected);
-          state.reviewSelection = null;
-          state.reviewNotice = added ? `Added ${added} item${added === 1 ? "" : "s"} to last-minute review.` : "No new items were selected.";
-          renderSession();
-          return;
-        }
-        if (action === "open-sheet") {
-          state.reviewNotice = "";
-          openReviewSheet();
-        }
-      });
-    });
-  }
-
-  function renderReviewSheetItem(item) {
-    const noteButton = item.noteId && noteMeta(item.noteId) ? `<button class="soft-button review-note-link" data-review-note="${escapeHtml(item.noteId)}" type="button">Class notes</button>` : "";
-    return `<article class="review-sheet-item">
-      <div>
-        ${item.unit ? `<span class="review-sheet-unit">${escapeHtml(item.unit)}</span>` : ""}
-        ${item.title ? `<strong>${escapeHtml(item.title)}</strong>` : ""}
-        <p>${escapeHtml(item.text)}</p>
-        ${item.answer ? `<p class="review-sheet-answer"><b>Key answer:</b> ${escapeHtml(item.answer)}</p>` : ""}
-        ${item.detail ? `<small>${escapeHtml(item.detail)}</small>` : ""}
-      </div>
-      <div class="review-sheet-item-actions">
-        ${noteButton}
-        <button class="soft-button" data-review-remove="${escapeHtml(item.id)}" data-review-category="${escapeHtml(item.category)}" type="button">Remove</button>
-      </div>
-    </article>`;
-  }
-
-  function renderReviewSheetDialog() {
-    const sheet = normalizeReviewSheet(state.progress.reviewSheet);
-    const total = reviewSheetCount(sheet);
-    return `<div class="answer-help-dialog-card review-sheet-dialog-card">
-      <div class="answer-help-header review-sheet-header">
-        <div>
-          <p class="eyebrow">Last-minute review</p>
-          <h2>Review sheet</h2>
-          <p>A compact summary built from selected class-note items and questions to review.</p>
-        </div>
-        <button class="soft-button answer-help-close" data-answer-help-close type="button" aria-label="Close review sheet">×</button>
-      </div>
-      <div class="review-sheet-actions">
-        <button class="primary-button" data-review-print type="button">Print / Save PDF</button>
-        ${total ? `<button class="secondary-button" data-review-clear type="button">Clear sheet</button>` : ""}
-      </div>
-      ${total ? `<div class="review-sheet-sections">
-        ${REVIEW_CATEGORIES.map((category) => {
-          const items = sheet[category] || [];
-          return `<section class="review-sheet-section ${escapeHtml(category)}">
-            <h3>${escapeHtml(REVIEW_CATEGORY_LABELS[category])} <span>${items.length}</span></h3>
-            ${items.length ? items.map(renderReviewSheetItem).join("") : `<p class="empty-review-section">No ${escapeHtml(REVIEW_CATEGORY_LABELS[category].toLowerCase())} added yet.</p>`}
-          </section>`;
-        }).join("")}
-      </div>` : `<div class="empty-state compact-empty"><h3>No review items yet</h3><p>Open class notes and use <strong>Add to last-minute review</strong>, or add questions from Revision journey and Test your knowledge.</p></div>`}
-    </div>`;
-  }
-
-  function openReviewSheet() {
-    if (!els.answerFormatModal) return;
-    els.answerFormatModal.innerHTML = renderReviewSheetDialog();
-    els.answerFormatModal.classList.remove("hidden");
-    document.body.classList.add("modal-open");
-    bindReviewSheetDialogActions();
-    els.answerFormatModal.querySelector("[data-answer-help-close]")?.focus();
-  }
-
-  function bindReviewSheetDialogActions() {
-    $$('[data-review-remove]', els.answerFormatModal).forEach((button) => {
-      button.addEventListener('click', () => {
-        removeReviewItem(button.dataset.reviewCategory, button.dataset.reviewRemove);
-        openReviewSheet();
-      });
-    });
-    $$('[data-review-note]', els.answerFormatModal).forEach((button) => {
-      button.addEventListener('click', () => {
-        closeAnswerFormatHelp();
-        openNoteContext(button.dataset.reviewNote);
-      });
-    });
-    $('[data-review-clear]', els.answerFormatModal)?.addEventListener('click', () => {
-      if (confirm("Clear all items from the last-minute review sheet?")) {
-        clearReviewSheet();
-        openReviewSheet();
-      }
-    });
-    $('[data-review-print]', els.answerFormatModal)?.addEventListener('click', () => {
-      document.body.classList.add('print-review-sheet');
-      window.print();
-      setTimeout(() => document.body.classList.remove('print-review-sheet'), 250);
-    });
   }
 
   function unitTitle(unitId) {
@@ -3099,6 +2762,234 @@
     };
   }
 
+  function usesQuestionSetBuilder(mode = state.selectedMode) {
+    return mode === "practice" || mode === "test";
+  }
+
+  function questionSetSizeForMode(mode = state.selectedMode) {
+    const sizes = normalizeQuestionSetSizeMap(state.progress.questionSetSize);
+    state.progress.questionSetSize = sizes;
+    return sizes[mode] || "all";
+  }
+
+  function questionSetLimit(mode = state.selectedMode, availableCount = 0) {
+    if (!usesQuestionSetBuilder(mode)) return availableCount;
+    const size = questionSetSizeForMode(mode);
+    return size === "all" ? availableCount : Math.max(0, Math.min(Number(size), availableCount));
+  }
+
+  function setQuestionSetSize(mode, value) {
+    if (!usesQuestionSetBuilder(mode)) return;
+    const sizes = normalizeQuestionSetSizeMap(state.progress.questionSetSize);
+    sizes[mode] = normalizeQuestionSetSize(value, QUESTION_SET_DEFAULTS[mode] || 20);
+    state.progress.questionSetSize = sizes;
+    writeProgress();
+    renderStats();
+  }
+
+  function isAllMaterialSelection() {
+    const f = activeFilters();
+    return !(f.units && f.units.size)
+      && !(f.objectives && f.objectives.size)
+      && (f.type || "all") === "all"
+      && (f.level || "all") === "all"
+      && !f.search;
+  }
+
+  function subjectForUnit(unitId) {
+    return SUBJECT_ORDER.find((subject) => SUBJECT_UNITS[subject].includes(unitId)) || "other";
+  }
+
+  function recentQuestionIdSet(mode) {
+    const recent = normalizeRecentQuestionIds(state.progress.recentQuestionIds);
+    state.progress.recentQuestionIds = recent;
+    return new Set(recent[mode] || []);
+  }
+
+  function attemptForCard(card) {
+    return state.progress.attempts?.[card.id] || { seen: 0, correct: 0, wrong: 0 };
+  }
+
+  function rankedQuestionPool(cards = [], mode = state.mode) {
+    const recent = recentQuestionIdSet(mode);
+    const shuffled = shuffle(cards);
+    return shuffled.sort((a, b) => {
+      const aa = attemptForCard(a);
+      const bb = attemptForCard(b);
+      const score = (card, attempt) => {
+        const seen = Number(attempt.seen || 0);
+        const wrong = Number(attempt.wrong || 0);
+        const correct = Number(attempt.correct || 0);
+        return (recent.has(card.id) ? 80 : 0) + (seen * 8) + correct - (wrong * 2);
+      };
+      return score(a, aa) - score(b, bb);
+    });
+  }
+
+  function takeRankedCards(pool, count, pickedIds, mode) {
+    if (count <= 0) return [];
+    const result = [];
+    for (const card of rankedQuestionPool(pool, mode)) {
+      if (pickedIds.has(card.id)) continue;
+      result.push(card);
+      pickedIds.add(card.id);
+      if (result.length >= count) break;
+    }
+    return result;
+  }
+
+  function takeBalancedCards(pool, count, pickedIds, mode) {
+    if (count <= 0) return [];
+    if (!isAllMaterialSelection()) return takeRankedCards(pool, count, pickedIds, mode);
+    const grouped = new Map();
+    SUBJECT_ORDER.forEach((subject) => grouped.set(subject, []));
+    grouped.set("other", []);
+    rankedQuestionPool(pool, mode).forEach((card) => {
+      if (pickedIds.has(card.id)) return;
+      const subject = subjectForUnit(card.unit);
+      if (!grouped.has(subject)) grouped.set(subject, []);
+      grouped.get(subject).push(card);
+    });
+    const result = [];
+    let guard = 0;
+    while (result.length < count && guard < count * 8 + 12) {
+      guard += 1;
+      const subjects = SUBJECT_ORDER.filter((subject) => (grouped.get(subject) || []).length);
+      const fallback = (grouped.get("other") || []).length ? ["other"] : [];
+      const availableSubjects = subjects.length ? subjects : fallback;
+      if (!availableSubjects.length) break;
+      availableSubjects.sort((a, b) => {
+        const pickedA = result.filter((card) => subjectForUnit(card.unit) === a).length;
+        const pickedB = result.filter((card) => subjectForUnit(card.unit) === b).length;
+        return pickedA - pickedB;
+      });
+      const subject = availableSubjects[0];
+      const next = grouped.get(subject).shift();
+      if (!next || pickedIds.has(next.id)) continue;
+      result.push(next);
+      pickedIds.add(next.id);
+    }
+    return result;
+  }
+
+  function mixedQuestionSetFromPool(available = [], mode = state.mode, limit = available.length, pickedIds = new Set()) {
+    if (limit <= 0 || !available.length) return [];
+    const revisit = new Set(state.progress.revisitIds || []);
+    const revisitPool = available.filter((card) => revisit.has(card.id));
+    const newPool = available.filter((card) => !revisit.has(card.id) && !Number(attemptForCard(card).seen || 0));
+    const olderPool = available.filter((card) => !revisit.has(card.id) && Number(attemptForCard(card).seen || 0));
+    const revisitShare = mode === "test" ? 0.2 : 0.3;
+    const revisitTarget = Math.min(revisitPool.length, Math.round(limit * revisitShare));
+    const selected = [];
+    selected.push(...takeRankedCards(revisitPool, revisitTarget, pickedIds, mode));
+    selected.push(...takeRankedCards(newPool, limit - selected.length, pickedIds, mode));
+    selected.push(...takeRankedCards(olderPool, limit - selected.length, pickedIds, mode));
+    selected.push(...takeRankedCards(revisitPool, limit - selected.length, pickedIds, mode));
+    return selected.slice(0, limit);
+  }
+
+  function balancedSubjectTargets(available = [], limit = 0) {
+    const counts = new Map(SUBJECT_ORDER.map((subject) => [subject, available.filter((card) => subjectForUnit(card.unit) === subject).length]));
+    const targets = new Map(SUBJECT_ORDER.map((subject) => [subject, 0]));
+    let remaining = Math.max(0, limit);
+    while (remaining > 0) {
+      let assignedThisRound = 0;
+      for (const subject of SUBJECT_ORDER) {
+        if (remaining <= 0) break;
+        const count = counts.get(subject) || 0;
+        const current = targets.get(subject) || 0;
+        if (current >= count) continue;
+        targets.set(subject, current + 1);
+        assignedThisRound += 1;
+        remaining -= 1;
+      }
+      if (!assignedThisRound) break;
+    }
+    return targets;
+  }
+
+  function interleaveSubjectCards(cards = []) {
+    const grouped = new Map();
+    SUBJECT_ORDER.forEach((subject) => grouped.set(subject, []));
+    grouped.set("other", []);
+    cards.forEach((card) => {
+      const subject = subjectForUnit(card.unit);
+      if (!grouped.has(subject)) grouped.set(subject, []);
+      grouped.get(subject).push(card);
+    });
+    const ordered = [];
+    let guard = 0;
+    while (ordered.length < cards.length && guard < cards.length * 4 + 12) {
+      guard += 1;
+      const subjects = [...SUBJECT_ORDER, "other"].filter((subject) => (grouped.get(subject) || []).length);
+      if (!subjects.length) break;
+      subjects.sort((a, b) => {
+        const pickedA = ordered.filter((card) => subjectForUnit(card.unit) === a).length;
+        const pickedB = ordered.filter((card) => subjectForUnit(card.unit) === b).length;
+        return pickedA - pickedB;
+      });
+      const next = grouped.get(subjects[0]).shift();
+      if (next) ordered.push(next);
+    }
+    return ordered;
+  }
+
+  function buildBalancedSubjectQuestionSet(available = [], mode = state.mode, limit = available.length) {
+    const targets = balancedSubjectTargets(available, limit);
+    const pickedIds = new Set();
+    const selected = [];
+    for (const subject of SUBJECT_ORDER) {
+      const target = targets.get(subject) || 0;
+      const pool = available.filter((card) => subjectForUnit(card.unit) === subject);
+      selected.push(...mixedQuestionSetFromPool(pool, mode, target, pickedIds));
+    }
+    if (selected.length < limit) {
+      selected.push(...mixedQuestionSetFromPool(available, mode, limit - selected.length, pickedIds));
+    }
+    return interleaveSubjectCards(selected).slice(0, limit);
+  }
+
+  function buildPriorityQuestionSet(available = [], mode = state.mode, limit = available.length) {
+    if (!usesQuestionSetBuilder(mode) || limit >= available.length) return available.slice();
+    if (isAllMaterialSelection()) return buildBalancedSubjectQuestionSet(available, mode, limit);
+    return mixedQuestionSetFromPool(available, mode, limit, new Set());
+  }
+
+  function buildDeckForMode(mode = state.mode) {
+    const available = questionsForMode(mode);
+    if (!usesQuestionSetBuilder(mode)) return available;
+    const limit = questionSetLimit(mode, available.length);
+    return buildPriorityQuestionSet(available, mode, limit);
+  }
+
+  function rememberQuestionSet(mode, cards = []) {
+    if (!usesQuestionSetBuilder(mode) || !cards.length) return;
+    const recent = normalizeRecentQuestionIds(state.progress.recentQuestionIds);
+    const ids = cards.map((card) => card.id).filter(Boolean);
+    const combined = [...ids, ...(recent[mode] || [])];
+    recent[mode] = unique(combined).slice(0, 160);
+    state.progress.recentQuestionIds = recent;
+    writeProgress();
+  }
+
+  function renderQuestionSetControls(mode = state.selectedMode, ready = 0) {
+    if (!usesQuestionSetBuilder(mode) || ready <= 0) return "";
+    const selected = questionSetSizeForMode(mode);
+    const options = QUESTION_SET_SIZE_OPTIONS.map((value) => {
+      const active = String(selected) === String(value);
+      const label = value === "all" ? "All" : String(value);
+      return `<button class="question-size-option ${active ? "active" : ""}" data-question-set-size="${escapeHtml(value)}" type="button" aria-pressed="${active}">${escapeHtml(label)}</button>`;
+    }).join("");
+    const limit = questionSetLimit(mode, ready);
+    return `<span class="question-set-size-controls"><span class="question-size-label">Number of questions</span><span class="question-size-options">${options}</span><span class="question-size-note">This session will use ${limit} of ${ready} available questions.</span></span>`;
+  }
+
+  function bindQuestionSetControls() {
+    $$('[data-question-set-size]').forEach((button) => {
+      button.addEventListener('click', () => setQuestionSetSize(state.selectedMode, button.dataset.questionSetSize));
+    });
+  }
+
   function sessionPositionKey(mode = state.mode) {
     const f = activeFilters();
     const unitsKey = [...(f.units || [])].sort().join(",") || "all";
@@ -3200,7 +3091,7 @@
 
   function rebuildDeck(resetIndex = true) {
     if (isWrittenMode()) return;
-    state.deck = questionsForMode();
+    state.deck = buildDeckForMode(state.mode);
     if (resetIndex || state.index >= state.deck.length) state.index = 0;
     resetCardInteraction();
   }
@@ -3224,9 +3115,10 @@
     });
 
     els.shuffleButton?.addEventListener("click", () => {
-      state.deck = shuffle(questionsForMode("practice"));
-      state.index = 0;
       state.mode = "practice";
+      state.deck = buildDeckForMode("practice");
+      state.index = 0;
+      rememberQuestionSet("practice", state.deck);
       startSession("practice", { preserveDeck: true });
     });
   }
@@ -3253,7 +3145,8 @@
       resetCardInteraction();
       if (!options.preserveDeck) {
         rebuildDeck(true);
-        restoreSessionPosition(mode);
+        if (!usesQuestionSetBuilder(mode) || questionSetSizeForMode(mode) === "all") restoreSessionPosition(mode);
+        rememberQuestionSet(mode, state.deck);
       }
       if (!isTestMode(mode)) startSessionTracker(mode);
     }
@@ -3308,6 +3201,10 @@
         const marks = state.progress.writtenExamMarks || 30;
         els.routeEntryButton.textContent = `${modeEntryText()} (${marks} marks)`;
         els.routeEntryButton.disabled = state.selectedMode === "unit-test" ? ready === 0 : false;
+      } else if (usesQuestionSetBuilder(state.selectedMode)) {
+        const limit = questionSetLimit(state.selectedMode, ready);
+        els.routeEntryButton.textContent = `${modeEntryText()} (${limit})`;
+        els.routeEntryButton.disabled = ready === 0 || limit === 0;
       } else {
         els.routeEntryButton.textContent = `${modeEntryText()} (${ready})`;
         els.routeEntryButton.disabled = ready === 0;
@@ -3330,21 +3227,30 @@
           : "End of unit test: choose exactly one unit";
       } else if (state.selectedMode === "revisit-test") {
         els.selectionSummary.textContent = `Revisit test: ${ready} Revisit card${ready === 1 ? "" : "s"} available`;
+      } else if (usesQuestionSetBuilder(state.selectedMode)) {
+        const limit = questionSetLimit(state.selectedMode, ready);
+        const availableText = `${ready} card${ready === 1 ? "" : "s"} available`;
+        const setText = questionSetSizeForMode(state.selectedMode) === "all" ? "all selected" : `${limit}-question set`;
+        els.selectionSummary.textContent = !unitCount && !objectiveCount
+          ? `Selected questions: all units · ${availableText} · ${setText}`
+          : `Selected questions: ${unitCount || "all"} unit${unitCount === 1 ? "" : "s"} · ${objectiveCount} sub-unit${objectiveCount === 1 ? "" : "s"} · ${availableText} · ${setText}`;
       } else if (!unitCount && !objectiveCount) els.selectionSummary.textContent = `Selected questions: all units · ${ready} card${ready === 1 ? "" : "s"}`;
       else els.selectionSummary.textContent = `Selected questions: ${unitCount || "all"} unit${unitCount === 1 ? "" : "s"} · ${objectiveCount} sub-unit${objectiveCount === 1 ? "" : "s"} · ${ready} card${ready === 1 ? "" : "s"}`;
     }
     if (els.selectionDetail) {
-      els.selectionDetail.textContent = state.selectedMode === "exam"
+      const detailText = state.selectedMode === "exam"
         ? "Opens the digital-first paper. Use Print / Save PDF inside exam mode only if needed."
         : state.selectedMode === "written"
           ? "Answer the paper in three sections: core knowledge, written reasoning, then data and calculations. Self-mark each response after submitting it."
           : state.selectedMode === "unit-test"
             ? "Select one unit to build a written test that covers its sub-units."
             : state.selectedMode === "test"
-              ? "Select units or sub-units below. Select one full unit to use this as an end-of-unit style test. Answers unlock after submission."
+              ? "Choose a smaller mixed set. The app includes mostly new questions plus a few Revisit questions. Answers unlock after submission."
               : state.selectedMode === "revisit-test"
                 ? "Select units or sub-units below to narrow the Revisit test, or leave all selected."
-                : `Select more units or sub-units below, then use the main button to begin.`;
+                : `Choose a smaller mixed set. The app includes mostly new questions plus a few Revisit questions.`;
+      els.selectionDetail.innerHTML = `<span>${escapeHtml(detailText)}</span>${renderQuestionSetControls(state.selectedMode, ready)}`;
+      bindQuestionSetControls();
     }
     $$('[data-mode-select]').forEach((button) => {
       const active = button.dataset.modeSelect === state.selectedMode;
@@ -3530,7 +3436,7 @@
     return classNotes.filter((note) => note.unit === unitId && isYearEndEssentialNote(note));
   }
 
-  function renderYearEndEssentialsSection(unitId, contextKey = "") {
+  function renderYearEndEssentialsSection(unitId) {
     const notes = yearEndEssentialsForUnit(unitId);
     if (!notes.length) return "";
     return `<section class="note-section targeted-overview-section year-end-essentials-section">
@@ -3548,8 +3454,8 @@
           return `<article class="year-end-essential-card">
             <h4>${escapeHtml(note.title || "Year-end essential")}</h4>
             ${note.summary ? `<p>${escapeHtml(note.summary)}</p>` : ""}
-            ${keyPoints.length ? `<details open><summary>Must know</summary>${renderReviewableBulletList(keyPoints, "concepts", { contextKey, unit: unitId, title: note.title || "Year-end essential", detail: "Year-end essentials", source: "Year-end essentials", noteId: note.id })}</details>` : ""}
-            ${mistakes.length ? `<details><summary>Common exam traps</summary>${renderReviewableBulletList(mistakes, "concepts", { contextKey, unit: unitId, title: note.title || "Common exam trap", detail: "Year-end essentials · common trap", source: "Year-end essentials", noteId: note.id })}</details>` : ""}
+            ${keyPoints.length ? `<details open><summary>Must know</summary><ul>${keyPoints.map((point) => `<li>${escapeHtml(point)}</li>`).join("")}</ul></details>` : ""}
+            ${mistakes.length ? `<details><summary>Common exam traps</summary><ul>${mistakes.map((point) => `<li>${escapeHtml(point)}</li>`).join("")}</ul></details>` : ""}
             <button class="secondary-button overview-note-button" data-overview-note="${escapeHtml(note.id)}" type="button">Open class note</button>
           </article>`;
         }).join("")}
@@ -3558,28 +3464,14 @@
   }
 
 
-  function renderTargetedChecklistItem(item = {}, index = 0, options = {}) {
+  function renderTargetedChecklistItem(item = {}, index = 0) {
     const media = Array.isArray(item.media) ? item.media : (item.media ? [item.media] : []);
     const mediaItems = media.map((entry) => typeof entry === "string" ? { src: entry, alt: item.title || "Study image" } : entry);
-    const category = options.category || "concepts";
-    const contextKey = options.contextKey || "";
-    const unit = options.unit || "";
-    const title = item.title || `Checklist item ${index + 1}`;
-    const summaryText = item.description ? `${title} — ${item.description}` : title;
-    const checkbox = renderReviewCheckbox({
-      category,
-      unit,
-      title,
-      text: summaryText,
-      detail: options.title || "Unit overview",
-      source: "Unit overview",
-      noteId: item.noteId || "",
-    }, contextKey);
     return `
       <details class="targeted-check-row">
-        <summary><span class="targeted-summary-title">${checkbox}<span>${escapeHtml(title)}</span></span></summary>
+        <summary><span>${escapeHtml(item.title || `Checklist item ${index + 1}`)}</span></summary>
         <div class="targeted-check-detail">
-          ${Array.isArray(item.notes) && item.notes.length ? renderReviewableBulletList(item.notes, category, { contextKey, unit, title, detail: options.title || title, source: "Unit overview", noteId: item.noteId || "" }) : ""}
+          ${Array.isArray(item.notes) && item.notes.length ? `<ul>${item.notes.map((note) => `<li>${escapeHtml(note)}</li>`).join("")}</ul>` : ""}
           ${mediaItems.length ? renderMediaItems(mediaItems, item.title || "Study visual", "media-grid overview-detail-media", { showCaptions: true }) : ""}
           <div class="overview-detail-actions">
             ${renderOverviewClassNoteLink(item.noteId)}
@@ -3590,9 +3482,9 @@
     `;
   }
 
-  function renderTargetedChecklistSection(title, items = [], className = "", options = {}) {
+  function renderTargetedChecklistSection(title, items = [], className = "") {
     if (!Array.isArray(items) || !items.length) return "";
-    return `<section class="note-section targeted-overview-section ${escapeHtml(className)}"><h3>${escapeHtml(title)}</h3><div class="targeted-check-list">${items.map((item, index) => renderTargetedChecklistItem(item, index, { ...options, title })).join("")}</div></section>`;
+    return `<section class="note-section targeted-overview-section ${escapeHtml(className)}"><h3>${escapeHtml(title)}</h3><div class="targeted-check-list">${items.map((item, index) => renderTargetedChecklistItem(item, index)).join("")}</div></section>`;
   }
 
   function qidCard(qid) {
@@ -3614,8 +3506,6 @@
   function renderTargetedUnitOverview(overview) {
     const target = overview.targetedOverview;
     const unitCards = questions.filter((card) => card.unit === overview.unit);
-    const reviewContextKey = `overview:${overview.unit}`;
-    state.reviewCandidates = {};
     updateSessionChrome({
       unitId: overview.unit,
       title: unitTitle(overview.unit),
@@ -3632,7 +3522,6 @@
           <h2>${escapeHtml(target.title || overview.title || `${unitTitle(overview.unit)} overview`)}</h2>
           <p>${escapeHtml(target.description || overview.summary || "")}</p>
         </section>
-        ${renderReviewSelectionToolbar(reviewContextKey, "unit overview")}
         <section class="note-section targeted-overview-section">
           <h3>Sub-units</h3>
           ${renderTargetedSubUnits(target.subUnits)}
@@ -3640,12 +3529,12 @@
         <section class="note-section targeted-overview-section vocabulary-section">
           <h3>Must know vocabulary</h3>
           <p class="overview-section-help">Open a group, check the terms, then use the vocabulary questions if any words are unfamiliar.</p>
-          ${renderReviewableVocabularySections(target.vocabulary, { contextKey: reviewContextKey, unit: overview.unit })}
+          ${renderVocabularySections(target.vocabulary)}
         </section>
-        ${renderTargetedChecklistSection("Must understand", target.understand, "must-understand-section", { contextKey: reviewContextKey, unit: overview.unit, category: "concepts" })}
-        ${renderTargetedChecklistSection("Must be able to identify", target.identify, "must-identify-section", { contextKey: reviewContextKey, unit: overview.unit, category: "concepts" })}
-        ${renderTargetedChecklistSection("Must memorise equations / calculations", target.memorize, "must-memorize-section", { contextKey: reviewContextKey, unit: overview.unit, category: "formulas" })}
-        ${renderYearEndEssentialsSection(overview.unit, reviewContextKey)}
+        ${renderTargetedChecklistSection("Must understand", target.understand, "must-understand-section")}
+        ${renderTargetedChecklistSection("Must be able to identify", target.identify, "must-identify-section")}
+        ${renderTargetedChecklistSection("Must memorise equations / calculations", target.memorize, "must-memorize-section")}
+        ${renderYearEndEssentialsSection(overview.unit)}
         <div class="card-actions">
           <button class="primary-button" data-overview-action="practice-unit" type="button">Practise this unit</button>
           <button class="secondary-button" data-overview-action="hub" type="button">Back to revision hub</button>
@@ -3661,7 +3550,6 @@
     $$('[data-overview-practice]', els.studyPanel).forEach((button) => {
       button.addEventListener('click', () => practiceOverviewQids(button.dataset.overviewPractice));
     });
-    bindReviewSelectionActions(reviewContextKey);
   }
 
   function renderUnitOverviewContext() {
@@ -3677,8 +3565,6 @@
       return;
     }
     const unitCards = questions.filter((card) => card.unit === overview.unit);
-    const reviewContextKey = `overview:${overview.unit}`;
-    state.reviewCandidates = {};
     updateSessionChrome({
       unitId: overview.unit,
       title: unitTitle(overview.unit),
@@ -3694,13 +3580,12 @@
           <h2>${escapeHtml(overview.title || `${unitTitle(overview.unit)} overview`)}</h2>
           <p>${escapeHtml(overview.summary || "")}</p>
         </section>
-        ${renderReviewSelectionToolbar(reviewContextKey, "unit overview")}
         ${renderOverviewMedia(overview.leadMedia, "overview-lead-media")}
         <section class="note-section">
           <h3>By the end of this unit, you should be able to...</h3>
-          ${renderReviewableBulletList(overview.revisionPackFocus, "concepts", { contextKey: reviewContextKey, unit: overview.unit, title: "Unit focus", detail: "Unit overview", source: "Unit overview" })}
+          ${renderPlainList(overview.revisionPackFocus)}
         </section>
-        ${Array.isArray(overview.formulae) && overview.formulae.length ? `<section class="note-section formula-note"><h3>Key formulae and equations</h3>${renderReviewableBulletList(overview.formulae, "formulas", { contextKey: reviewContextKey, unit: overview.unit, title: "Formula", detail: "Key formulae and equations", source: "Unit overview" })}</section>` : ""}
+        ${Array.isArray(overview.formulae) && overview.formulae.length ? `<section class="note-section formula-note"><h3>Key formulae and equations</h3>${renderPlainList(overview.formulae)}</section>` : ""}
         <section class="note-section">
           <h3>Sub-units and must-know points</h3>
           ${renderOverviewRoute(overview.subUnitRoute)}
@@ -3710,7 +3595,7 @@
           <h3>How to write better answers</h3>
           ${renderPlainList(overview.examAnswerMoves)}
         </section>
-        ${renderYearEndEssentialsSection(overview.unit, reviewContextKey)}
+        ${renderYearEndEssentialsSection(overview.unit)}
         <div class="card-actions">
           <button class="primary-button" data-overview-action="practice-unit" type="button">Practise this unit</button>
           <button class="secondary-button" data-overview-action="hub" type="button">Back to revision hub</button>
@@ -3720,13 +3605,6 @@
     $$('[data-overview-action]', els.studyPanel).forEach((button) => {
       button.addEventListener('click', () => handleUnitOverviewAction(button.dataset.overviewAction, overview));
     });
-    $$('[data-overview-note]', els.studyPanel).forEach((button) => {
-      button.addEventListener('click', () => openNoteContext(button.dataset.overviewNote, null, overview.unit));
-    });
-    $$('[data-overview-practice]', els.studyPanel).forEach((button) => {
-      button.addEventListener('click', () => practiceOverviewQids(button.dataset.overviewPractice));
-    });
-    bindReviewSelectionActions(reviewContextKey);
   }
 
   function handleUnitOverviewAction(action, overview) {
@@ -3793,8 +3671,6 @@
       return;
     }
     const linked = linkedCardsForNote(note.id);
-    const reviewContextKey = `note:${note.id}`;
-    state.reviewCandidates = {};
     const sourceMedia = sourceCard && Array.isArray(sourceCard.media) ? sourceCard.media.filter((item) => !item.mediaTiming || item.mediaTiming === "question") : [];
     const noteMedia = Array.isArray(note.media) ? note.media : [];
     updateSessionChrome({
@@ -3817,26 +3693,22 @@
           </div>
         </div>
         ${sourceCard ? `<aside class="source-question"><span class="eyebrow">Question to practise</span><p>${escapeHtml(sourceCard.question)}</p></aside>` : ""}
-        ${renderReviewSelectionToolbar(reviewContextKey, "class-note")}
         ${sourceMedia.length ? renderMediaItems(sourceMedia, sourceCard.question || note.title, "media-grid note-source-media") : ""}
         ${noteMedia.length ? `<section class="note-section note-visual-section"><h3>Study visual</h3>${renderMediaItems(noteMedia, note.title, "media-grid note-media-grid")}</section>` : ""}
         <section class="note-section note-summary">
           <h2>Big idea</h2>
-          <div class="reviewable-note-summary">
-            ${renderReviewCheckbox({ category: "concepts", unit: note.unit, title: note.title, text: note.summary, detail: "Big idea", source: "Class note", noteId: note.id }, reviewContextKey)}
-            <p>${escapeHtml(note.summary)}</p>
-          </div>
+          <p>${escapeHtml(note.summary)}</p>
         </section>
         ${note.explanation ? `<section class="note-section explanation-note"><h3>Deeper explanation</h3><p>${escapeHtml(note.explanation)}</p></section>` : ""}
         <section class="note-section">
           <h3>Key points</h3>
-          ${renderReviewableBulletList(note.keyPoints || [], "concepts", { contextKey: reviewContextKey, unit: note.unit, title: note.title, detail: "Key point", source: "Class note", noteId: note.id })}
+          <ul>${(note.keyPoints || []).map((point) => `<li>${escapeHtml(point)}</li>`).join("")}</ul>
         </section>
         ${note.memoryHook ? `<section class="note-section memory-note"><h3>Memory hook</h3><p>${escapeHtml(note.memoryHook)}</p></section>` : ""}
-        ${Array.isArray(note.commonMistakes) && note.commonMistakes.length ? `<section class="note-section warning-note"><h3>Common mistakes</h3>${renderReviewableBulletList(note.commonMistakes.map(commonMistakeText), "concepts", { contextKey: reviewContextKey, unit: note.unit, title: note.title, detail: "Common mistake", source: "Class note", noteId: note.id })}</section>` : ""}
+        ${renderCommonMistakes(note.commonMistakes)}
         ${note.example ? `<section class="note-section example-note"><h3>Worked / model example</h3><p><strong>Question:</strong> ${escapeHtml(note.example.question)}</p><p><strong>Answer:</strong> ${escapeHtml(note.example.answer)}</p></section>` : ""}
         ${note.selfCheck ? `<section class="note-section self-check-note"><h3>Quick self-check</h3><p>${escapeHtml(note.selfCheck)}</p></section>` : ""}
-        ${note.sentenceStarter ? `<section class="note-section sentence-note"><h3>Useful answer sentence</h3><div class="reviewable-note-summary">${renderReviewCheckbox({ category: "concepts", unit: note.unit, title: note.title, text: note.sentenceStarter, detail: "Useful answer sentence", source: "Class note", noteId: note.id }, reviewContextKey)}<p>${escapeHtml(note.sentenceStarter)}</p></div></section>` : ""}
+        ${note.sentenceStarter ? `<section class="note-section sentence-note"><h3>Useful answer sentence</h3><p>${escapeHtml(note.sentenceStarter)}</p></section>` : ""}
         ${note.practicePrompt ? `<section class="note-section practice-note"><h3>Try next</h3><p>${escapeHtml(note.practicePrompt)}</p></section>` : ""}
         <div class="card-actions">
           ${sourceCard ? `
@@ -3854,7 +3726,6 @@
     $$('[data-note-action]', els.studyPanel).forEach((button) => {
       button.addEventListener('click', () => handleNoteAction(button.dataset.noteAction, note, sourceCard, returnOverviewUnitId));
     });
-    bindReviewSelectionActions(reviewContextKey);
   }
 
   function handleNoteAction(action, note, sourceCard, returnOverviewUnitId = "") {
@@ -4242,8 +4113,6 @@
     const isDefinition = cardIsDefinition(card);
     const membership = setMembership(card.id);
     const testMode = isTestMode();
-    const reviewCandidate = questionReviewItem(card, testMode ? "Test your knowledge" : "Revision journey");
-    const reviewQuestionAdded = reviewItemExists(reviewCandidate.id, "questions");
     updateSessionChrome({
       card,
       title: "Reaction",
@@ -4280,7 +4149,6 @@
             <button class="primary-button" data-action="${state.index >= state.deck.length - 1 ? "test-submit" : "next"}" type="button">${state.index >= state.deck.length - 1 ? "Submit test" : "Save and next"}</button>
             <button class="secondary-button" data-action="prev" type="button">Previous</button>
             <button class="secondary-button" data-action="test-submit" type="button">Submit test</button>
-            <button class="secondary-button review-sheet-card-button" data-action="add-review-question" type="button" ${reviewQuestionAdded ? "disabled" : ""}>${reviewQuestionAdded ? "On review sheet" : "Last-minute review"}</button>
           ` : `
             ${!state.revealed && !isDefinition && !state.selectedChoice ? `<button class="primary-button" data-action="reveal" type="button">Reveal answer</button>` : ""}
             ${isDefinition && !state.definitionCompared ? `<button class="primary-button" data-action="compare-definition" type="button">Compare notes</button>` : ""}
@@ -4288,7 +4156,6 @@
             <button class="secondary-button" data-action="prev" type="button">Previous</button>
             ${!(isMcq && (state.selectedChoice || state.revealed)) ? `<button class="secondary-button" data-action="next" type="button">Skip</button>` : ""}
             <button class="secondary-button class-notes-button" data-action="study-context" type="button">Class Notes</button>
-            <button class="secondary-button review-sheet-card-button" data-action="add-review-question" type="button" ${reviewQuestionAdded ? "disabled" : ""}>${reviewQuestionAdded ? "On review sheet" : "Last-minute review"}</button>
           `}
         </div>
 
@@ -4446,12 +4313,6 @@
   }
 
   function handleAction(action, card) {
-    if (action === "add-review-question") {
-      if (isTestMode()) saveOpenTestAnswer(card);
-      addQuestionToReview(card, isTestMode() ? "Test your knowledge" : "Revision journey", { includeAnswer: !isTestMode() });
-      renderCard();
-      return;
-    }
     if (isTestMode() && action === "toggle-question-type") {
       saveOpenTestAnswer(card);
       state.test.typeOpen = state.test.typeOpen || {};
@@ -4608,10 +4469,7 @@
           <div class="written-model-answer"><strong>Expected answer</strong><p>${escapeHtml(expected || "Check the class notes for the expected answer.")}</p></div>
           ${card.explanation ? `<div class="written-format-review"><strong>Why it is correct</strong><p>${escapeHtml(card.explanation)}</p></div>` : ""}
           <div class="written-common-mistakes"><strong>Common mistakes</strong><ul><li>Choosing a keyword without linking it to the question.</li><li>Writing a vague answer when a specific science term is needed.</li></ul></div>
-          <div class="test-review-actions">
-            ${note ? `<button class="secondary-button class-notes-button" data-result-note="${escapeHtml(note.id)}" type="button">Class Notes: ${escapeHtml(note.title)}</button>` : ""}
-            <button class="secondary-button review-sheet-card-button" data-result-review-question="${escapeHtml(card.id)}" type="button">Last-minute review</button>
-          </div>
+          ${note ? `<button class="secondary-button class-notes-button" data-result-note="${escapeHtml(note.id)}" type="button">Class Notes: ${escapeHtml(note.title)}</button>` : ""}
         </details>
       </article>
     `;
@@ -4707,15 +4565,6 @@
     $('[data-result-action="again"]', els.resultPanel)?.addEventListener("click", () => startSession("test"));
     $$('[data-result-note]', els.resultPanel).forEach((button) => {
       button.addEventListener("click", () => openNoteContext(button.dataset.resultNote));
-    });
-    $$('[data-result-review-question]', els.resultPanel).forEach((button) => {
-      button.addEventListener("click", () => {
-        const card = questions.find((candidate) => candidate.id === button.dataset.resultReviewQuestion);
-        if (!card) return;
-        const added = addQuestionToReview(card, "Test your knowledge review");
-        button.textContent = added ? "Added to review sheet" : "On review sheet";
-        button.disabled = true;
-      });
     });
   }
 
@@ -4836,7 +4685,6 @@
 
 
     els.answerFormatHelpButton?.addEventListener('click', openAnswerFormatHelp);
-    els.reviewSheetButton?.addEventListener('click', openReviewSheet);
     els.answerFormatModal?.addEventListener('click', (event) => {
       if (event.target === els.answerFormatModal || event.target.closest('[data-answer-help-close]')) closeAnswerFormatHelp();
     });
