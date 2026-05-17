@@ -1,3 +1,9 @@
+## v1.74.3 — Restore last-minute review sheet with balanced sets
+- Restored the Last-minute review sheet builder after the balanced question set patch.
+- Kept the v1.74.2 Number of questions selector and balanced Biology/Chemistry/Physics question mixing.
+- Preserved review-sheet progress export/import, class-notes selection mode, question-card save buttons, and compact print/PDF styling.
+- Bumped app/static cache strings to `1.74.3`.
+
 ## v1.74.2 — Balanced question set builder
 - Added a Number of questions control for Revision journey and Test your knowledge: 10, 20, 30, 40, or All.
 - Generated smaller mixed sets from the selected units/sub-units instead of always using every available card.
@@ -11,6 +17,17 @@
 - Reused the full image across the 9F overview, reactivity note, extraction note, and targeted overview checklist references.
 - Added a 9F must-know memorize item for the full reactivity hierarchy: potassium, sodium, lithium, calcium, magnesium, aluminium, carbon, zinc, lead, copper, silver, gold.
 - Kept question-safe blank/question visuals unchanged so test-mode answer leakage is avoided.
+
+## v1.74.0 — Last-minute review sheet builder
+
+- Added a **Last-minute review** builder as a support tool, not a new home-page learning mode.
+- Added **Add to last-minute review** selection mode in class notes and unit overviews.
+- Added compact **Last-minute review** buttons on question cards and submitted test-review cards.
+- Organised saved content into **Formulas**, **Vocabulary**, **Concepts**, and **Questions**.
+- Added a compact digital review sheet pop-out with remove actions and class-note links.
+- Added print/PDF styling that compresses the review sheet into a two-column last-minute summary.
+- Stored review-sheet data in the existing exported/imported progress object.
+- Bumped app/static cache strings to `1.74.0`.
 
 ## v1.73.8 — Describe short-sentence strategy
 
